@@ -1,0 +1,42 @@
+{
+  "stage": "ordered_scanline_joint_depth_running",
+  "updated_utc": "2026-10-13T08:43:59.978855+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v56.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1",
+  "protocol": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/protocol.json",
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-13T08:39:25.404658+00:00",
+    "parent_pid": 2006792,
+    "child_pid": 2006793,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "supervisor_exec_session": 34650,
+  "budget": {
+    "candidate": "ordered_scanline_joint_depth_v1",
+    "status": "source_generation_registered",
+    "utc": "2026-10-13T08:39:25.404431+00:00",
+    "physical_cap": 4,
+    "physical_used": 0,
+    "fit": 0,
+    "recovery_used": 0,
+    "parent_pid": 2006792,
+    "source_hashes": {
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/protocol.json": "e5646f73e37e4795443ac5d9b565b801edf85214765c75c6911fdc5cb4ba6a26",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/joint.py": "730f1ca525ba42fda59c44e61db3f15db2e2e000d34d84aa848ba4b02860ddbc",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/frozen_cost.py": "76b6bd1db9ffff9de0e1c9dc2c1c0472d7f1cec7e20e0250ef09ba60a149a4ac",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/generate.py": "be5e3ed1127938fc81ac2b3e65f2f2b76ea626a1b82ddce67516cc5f78fee7be",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/common.py": "fc8d1b5eb2a3e3c31e82d7dcfcf867b3a5e75a80d9e4a3ea59abc7a1d4cd3ab8"
+    }
+  },
+  "summary": "v57新的整条扫描线联合对应已冻结并实现：保持v56局部Census代价字节身份，只改变对应求解为顺序/一对一/显式缺口的联合最小代价，歧义取所有最优路径均必须包含的匹配。48+256小例穷举、462直接成本/70有效移位、CPU/GPU精确与单对1.04s通过；独立离线准入通过。905对/4500地图更新已启动，GT尚未读，性能未评分。",
+  "next_action": "监督现有2006792/2006793和exec34650；905对预测与地图封存正常退出后执行launch_score.py并独立复核。不得重复派发或提前判定源成功。",
+  "stop_reason": null,
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

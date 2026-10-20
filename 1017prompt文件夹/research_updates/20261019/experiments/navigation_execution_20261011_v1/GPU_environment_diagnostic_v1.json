@@ -1,0 +1,16 @@
+{
+  "nvidia_devices": [],
+  "render_nodes": [],
+  "nvidia_smi": "/usr/bin/nvidia-smi",
+  "gpu_environment": {
+    "CUDA_VISIBLE_DEVICES": null,
+    "NVIDIA_VISIBLE_DEVICES": null,
+    "NVIDIA_DRIVER_CAPABILITIES": null,
+    "DISPLAY": ":0"
+  },
+  "nvidia_smi_result": {
+    "returncode": 9,
+    "stdout": "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\n\n",
+    "stderr": ""
+  }
+}

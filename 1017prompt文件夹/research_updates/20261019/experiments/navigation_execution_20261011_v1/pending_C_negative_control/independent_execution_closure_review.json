@@ -1,0 +1,424 @@
+{
+  "artifact_type": "independent_execution_closure_review",
+  "utc": "2026-10-18T22:46:44.249213+00:00",
+  "scope": "Read-only independent closure audit of already saved C execution metadata, policy records, requests/physics/map NPY ZIP headers, file presence and exact source hashes. No numeric GT/RGB or physics trajectory values were loaded; no scorer/source/simulator/replay/memory/decoder/test ran. Only this new audit JSON is written. No scientific file changes, budget allocation, repair or restart.",
+  "reviewed_SHA256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/proposal.json": "09cc94faff624a26bd126129a5e8d809a69e8980a7dd0dd0e962b8843246c8b6",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/approval.json": "2ac173cacc62b7aeb13fb887de29023741a54f23b618af3a51532bab3e87a2f5",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/execution_protocol.json": "b16696fd2750731f60c8a87e9e1782bb80559f4839c65ccbc331c1b5b14ff424",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/execution_ledger.json": "b43958e0280b3ba87c2716b91b3fd6f71c008c024f989baec2f8e582d84a3daf",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/C_interface.py": "abb67a2c6dc310382ea41462843abf95abf50179e5b06986af710efbbe35b16b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/supervise_C.py": "f0479791523d43321c3aa0e0985fb7115f95c745d6b03b8a287098efc786874a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/score_C.py": "33d2115df3bfe6a83281bbdaaec4a4c2517e2b75b2b5570d81b4881e703e9dd5",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/navigation_pending.py": "223287b6d9da0c5d140bd27134a7a84860fbbde6fab834e469eccd94c47231b1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/metadata_adapter.py": "5e4dc961bbfebaacd5ad08d9436ceca12793aca4e35dc55a8008b69242f9c459",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/interface_status.json": "64c6ea1e65411c27e3cdd465816fbfd6a0e205b8fc80a3ba5a815ae08b794dae",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/navigation_status.json": "11b3eda5ddf6709ee50149adef429d48bdf745e35de5ad9984f5f487fd064a5f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/score_status.json": "a2cca170af9b1555e980e3d39e755c10c55b24ad11c53baed4f7a82b2bb4b188",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/score.log": "75588b76fbed37da9b0a94de734cd3f749c18d65384e6f9758edd6a10fb6b0f9",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/e1_run/requests.npz": "4c8c31327200993792f8e2d56d388741fd3663952f86590b912106bd5cc9f1a1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/e1_run/policy_records.json": "4e4ec7f401d79ed810e9b0b030d0b97105a14d0292964d0563a4c2bb930eeaaa",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/e1_run/loaded_source_identity.json": "ff482699ca3f6e78b38adaf580d404f2f4433fc64b9c51b519c1372457fbbe99",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/e1_run/source_seal.json": "6f6f53ade2ee5eb5b407ac3f6abd7c1de5fb8a3edc0d9275994c8261a91f20a8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/e1_run/capture_seal.json": "710c4376ae65a6e0641ad1af88ef70e303d672d7ccc63c198a1c1029257ae9e8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/e1_run/terminal.json": "bd1b437e351b6003087dd3241234f37e1fc54ec9ebf547ef5a70ac161266956b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/view_supported_memory_20261017_v1/memory.py": "1f70e4a17ab1a4d7bfb392193776bc9b9f36d26789b0df1a88d2e5d0b72a671c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation.py": "8a07dd55ed917a492e7fc43da8500305688f6ed0dc5cad408d0b0856ffa7492e",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/data_contract.yaml": "72b039ac68b829bd714da28e8b69d44c0359de546bef07abade220b313ad462d",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py": "468f240318f817fca7e6fc28852c94914896084798384b88b228f3cbe6a7380e",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f"
+  },
+  "check_counts": {
+    "named_metadata_header_identity_checks": 16,
+    "named_checks_passed": 16,
+    "execution_frozen_identity_files": 11,
+    "proposal_frozen_identity_files": 27,
+    "present_loaded_module_identity_files": 107,
+    "saved_policy_records_inspected": 900,
+    "requests_archives_header_only": 3,
+    "map_archives_header_only": 2,
+    "physics_archives_header_only": 1,
+    "source_packets_or_costs_recomputed": 0,
+    "GT_performance_scoring_calls": 0,
+    "reviewer_experiment_runs": 0
+  },
+  "checks": {
+    "proposal_and_authorization_identity_preserved": true,
+    "execution_frozen_source_SHA_match": true,
+    "proposal_frozen_identity_SHA_match": true,
+    "present_loaded_identity_entries_SHA_match": true,
+    "interface_and_navigation_finished_zero": true,
+    "score_failed_one_before_GT_evaluator": true,
+    "saved_statuses_match_ledger": true,
+    "budget_three_of_three_recovery_zero": true,
+    "all_saved_stage_groups_empty": true,
+    "terminal_900actions_181exposures_timeout90": true,
+    "saved_request_shape_matches_original_AB_block_format": true,
+    "capture_source_policy_and_IMU_counts_consistent": true,
+    "all_900_map_and_plan_names_present": true,
+    "C_specific_policy_diagnostics_all_900_records": true,
+    "source_seal_binds_original_C_memory_SHA": true,
+    "scoring_outputs_and_scoring_complete_manifest_absent": true
+  },
+  "findings": {
+    "critical": [],
+    "important": [
+      {
+        "id": "P1-score-request-width-assumption",
+        "file": "score_C.py",
+        "line": 21,
+        "finding": "Frozen scorer asserts requests.shape==(actions,4), but saved C requests.npy is float32(900,10), every saved policy request has length10, and archived actual A and B requests headers are also(900,10). Frozen data_contract.yaml action.dimension=2 and controls_per_block=5; training.action_protocol.ActionProtocol.action_block_dim multiplies these; benchmark.policies._repeated_control tiles the two-component request five times.",
+        "classification": "Deterministic scoring integration/schema assumption error, not evidence of malformed C source/control output, not a failed C scientific performance gate.",
+        "effect": "Sole authorized score dispatch exited1 before completeness certificate, whole-run scoring manifest and numeric GT evaluator/metrics. Prior static preflight missed validation of this width assumption against the frozen contract; that prior readiness statement is superseded by this observed failure.",
+        "disposition": "Preserve failed code/log/outputs. Do not patch or rerun score under the exhausted3/3,recovery0 approval. Any later scoring repair/re-execution requires a separately authorized scope/budget decision."
+      },
+      {
+        "id": "P1-dynamic-C-module-identity-gap",
+        "file": "navigation_pending.py",
+        "lines": [
+          44,
+          47
+        ],
+        "finding": "Both archived navigation and exact C memory are created by importlib.util.module_from_spec and exec_module without insertion into sys.modules. Archived navigation builds loaded_source_identity only by iterating sys.modules. Thus both actual dynamically loaded modules are omitted; the C memory root has no loaded identity entry despite the launcher and adapter being recorded.",
+        "supporting_evidence": "Source seal/proposal contain exact original C memory SHA; frozen launcher assigns memory.ViewSupportMemoryGrid, and all900 policy records contain C-specific geometry confirmation rule/hazard lifetime. First/last geometry confirmation diagnostics are0/264. These support C execution but do not retroactively repair the incomplete loaded-module manifest.",
+        "classification": "Runtime provenance recording gap; absence from loaded_source_identity does not demonstrate that B ran instead. Preserve distinction between frozen intended identity, supporting runtime diagnostics, and a complete actual-loaded-module audit.",
+        "disposition": "Record limitation only; do not modify/replay original C or fabricate a replacement complete loaded-module manifest."
+      }
+    ],
+    "minor": [
+      {
+        "id": "P2-stale-baseline-descriptive-labels",
+        "finding": "Capture and terminal records inherit e1_weak_baseline/E1_development_weak_conditional_baseline90s labels and policy memory_mode=current from the archived navigation shell. These generic inherited descriptions are not the C identity proof; refer to bound proposal/launcher/C-specific diagnostics and preserve original artifacts."
+      }
+    ]
+  },
+  "structural_evidence": {
+    "terminal": {
+      "exit_code": 0,
+      "termination": "timeout90",
+      "requested_blocks": 900,
+      "executed_blocks": 900,
+      "frames": 181,
+      "time_s": 89.99999798834324,
+      "is_navigation": true,
+      "no_GT_geometry_to_RGB_decision": true,
+      "lowlevel_bank_feedback_ideal_IMU_privileged": true,
+      "closed_loop_source": "four_RGB_SGBM_current_rig"
+    },
+    "requests_header": {
+      "requests.npy": {
+        "shape": [
+          900,
+          10
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      }
+    },
+    "archived_AB_requests_headers": {
+      "A": {
+        "requests.npy": {
+          "shape": [
+            900,
+            10
+          ],
+          "dtype": "float32",
+          "fortran_order": false
+        }
+      },
+      "B": {
+        "requests.npy": {
+          "shape": [
+            900,
+            10
+          ],
+          "dtype": "float32",
+          "fortran_order": false
+        }
+      }
+    },
+    "action_contract": {
+      "dimension": 2,
+      "controls_per_block": 5,
+      "flattened_request_width": 10,
+      "source": "data_contract.yaml:50-54; training/action_protocol.py:60-61; benchmark/policies.py:337-340"
+    },
+    "policy_request_lengths": [
+      10
+    ],
+    "source_exposures": 181,
+    "capture_exposures": 181,
+    "native_IMU_packets": 4501,
+    "native_all_qualified": true,
+    "file_presence_counts": {
+      "frames": 181,
+      "predictions": 181,
+      "maps": 900,
+      "plans": 900
+    },
+    "first_map_headers": {
+      "labels.npy": {
+        "shape": [
+          400,
+          400
+        ],
+        "dtype": "int8",
+        "fortran_order": false
+      },
+      "codes.npy": {
+        "shape": [
+          400,
+          400
+        ],
+        "dtype": "uint8",
+        "fortran_order": false
+      },
+      "hazard_time.npy": {
+        "shape": [
+          400,
+          400
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "origin.npy": {
+        "shape": [
+          2
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "resolution.npy": {
+        "shape": [],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "time_s.npy": {
+        "shape": [],
+        "dtype": "float64",
+        "fortran_order": false
+      }
+    },
+    "last_map_headers": {
+      "labels.npy": {
+        "shape": [
+          400,
+          400
+        ],
+        "dtype": "int8",
+        "fortran_order": false
+      },
+      "codes.npy": {
+        "shape": [
+          400,
+          400
+        ],
+        "dtype": "uint8",
+        "fortran_order": false
+      },
+      "hazard_time.npy": {
+        "shape": [
+          400,
+          400
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "origin.npy": {
+        "shape": [
+          2
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "resolution.npy": {
+        "shape": [],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "time_s.npy": {
+        "shape": [],
+        "dtype": "float64",
+        "fortran_order": false
+      }
+    },
+    "physics_headers": {
+      "raw_command_target.npy": {
+        "shape": [
+          4501,
+          2
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "clipped_target.npy": {
+        "shape": [
+          4501,
+          2
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "smoothed_target.npy": {
+        "shape": [
+          4501,
+          2
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "applied_action.npy": {
+        "shape": [
+          4501,
+          2
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "joint_position_rad.npy": {
+        "shape": [
+          4501,
+          3
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "joint_velocity_rad_s.npy": {
+        "shape": [
+          4501,
+          3
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "position_world_xy.npy": {
+        "shape": [
+          4501,
+          2
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "root_position_world_m.npy": {
+        "shape": [
+          4501,
+          3
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "root_quaternion_world_wxyz.npy": {
+        "shape": [
+          4501,
+          4
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "linear_velocity_world_m_s.npy": {
+        "shape": [
+          4501,
+          3
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "angular_velocity_world_rad_s.npy": {
+        "shape": [
+          4501,
+          3
+        ],
+        "dtype": "float32",
+        "fortran_order": false
+      },
+      "yaw_world_rad.npy": {
+        "shape": [
+          4501
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "roll_world_rad.npy": {
+        "shape": [
+          4501
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "simulation_time_s.npy": {
+        "shape": [
+          4501
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "physics_step_index.npy": {
+        "shape": [
+          4501
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "raw_simulation_time_s.npy": {
+        "shape": [
+          4501
+        ],
+        "dtype": "float64",
+        "fortran_order": false
+      },
+      "raw_physics_step_index.npy": {
+        "shape": [
+          4501
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "action_block_index.npy": {
+        "shape": [
+          4501
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      },
+      "physics_step_in_block.npy": {
+        "shape": [
+          4501
+        ],
+        "dtype": "int64",
+        "fortran_order": false
+      }
+    },
+    "C_rule_records": 900,
+    "C_geometry_confirmation_diagnostics_first_last": [
+      0,
+      264
+    ],
+    "diagnostic_not_performance": "Geometry-confirmation counts and inherited memory labels are unscored runtime diagnostics, not correct obstacles, calibrated confidence, safety or C benefit.",
+    "missing_dynamic_module_paths": [
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/view_supported_memory_20261017_v1/memory.py",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation.py"
+    ]
+  },
+  "valid_conclusions": [
+    "Saved interface and navigation statuses report normal0; original-C one-run wiring is supported by frozen identities and C-specific diagnostics. Run reached900 action blocks/181 four-eye exposures and reported timeout90 at89.99999798834324s, rather than declared success.",
+    "Saved score failed at a structural request-width assertion before its numeric GT evaluator. No C GT performance result, supported-memory result, cause diagnostic or ABC comparative gate result exists.",
+    "C performance benefit/noninferiority, goal progress, false-map cellseconds, blindmissing, GT source accuracy and full-chain latency gates remain unevaluated. No actual ABC performance conclusion or completed research-goal claim is valid.",
+    "Original C offline failure is unchanged. Execution approval is exhausted3/3,recovery0; no retry/repair/restart is authorized by this closure audit."
+  ],
+  "limits": [
+    "This review does not recompute any GT metric, inspect numeric GT/physics trajectory arrays, rederive source costs/maps, or compare policy outputs by replay.",
+    "File presence and selected NPY headers are structural evidence, not a complete saved-frame/video binary integrity/decoding audit; the author is independently packaging and recording the run.",
+    "No system file-access trace exists to prove all GT isolation; claim here is precise score control-flow/log location before evaluator plus missing scoring products.",
+    "Current source hashes match frozen identities, but the missing dynamic module entries limit completeness of actual runtime loaded-source identity."
+  ],
+  "no_rerun": {
+    "project_runtime_imports": 0,
+    "scientific_code_calls": 0,
+    "GT_scoring": 0,
+    "new_experiments": 0,
+    "scientific_files_modified": 0,
+    "budget_reserved": false,
+    "budget_restarted": false
+  },
+  "closure_assessment": "RECORD_EXECUTED_C_NEGATIVE_CONTROL_AND_SCORING_INTEGRATION_FAILURE_CLOSE_WITHOUT_C_PERFORMANCE_OR_RETRY"
+}

@@ -1,0 +1,25 @@
+{
+  "cap": 1,
+  "used": 1,
+  "recovery_after_this": 0,
+  "status": "finished",
+  "parent_pid": 2423843,
+  "utc": "2026-10-19T06:28:08.081788+00:00",
+  "proposal_sha256": "1b0836725f973719bf7a45d84be25f914f6d38baf42678168c3a7b9b4336e1d7",
+  "approval_sha256": "b01404592c8a3e9fe87e55844d9462ea026ef92def4f68a4789dcf70ca850a09",
+  "execution": {
+    "status": "finished",
+    "start_utc": "2026-10-19T06:28:08.088571+00:00",
+    "parent_pid": 2423843,
+    "child_pid": 2423844,
+    "process_group_id": 2423844,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-19T06:28:57.649377+00:00"
+  }
+}

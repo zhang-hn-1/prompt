@@ -1,0 +1,70 @@
+{
+  "utc": "2026-10-19T07:35:29.473141+00:00",
+  "heartbeat_utc": "2026-10-19T07:31:31.067Z",
+  "scope": "One bounded direct code/metric contract preflight prompted by new C pending-state43.3s vs B14.3s. No numeric policy/GT/RGB arrays read or replayed; oldA/B guard audit only read for direct overlap.",
+  "question": "Does C pending flag occupancy independently establish direction-change braking delay or justify a new planner/control repair?",
+  "scientific_entry_unchanged": "execution_next_entry_v122.json",
+  "findings": [
+    {
+      "fact": "The archived helper counts tracker_state.pending_direction is not None across all policy queries, then multiplies by.1.",
+      "evidence": "supported_memory_diagnostic.py result construction; boundary_state directly copies _pending_drive_direction.",
+      "implication": "A/B/C24.4/14.3/43.3s are pending-state occupancy, not direct measured braking or switch-qualification duration."
+    },
+    {
+      "fact": "GuardedReferencePolicy.act calls _begin_tracking_audit and _zero_action(local_no_route) when self.plan is None; it bypasses tracker.act.",
+      "evidence": "guarded_reference.py lines44-48. OraclePathPolicy._zero_action delegates _request_action(0,0) without clearing pending. _handle_direction_change clears/updates pending only when reached.",
+      "implication": "An old pending value can remain during planner-level no-route or other earlier-return states. Counting non-None alone cannot distinguish active switch braking from stale state; no claim about how much actual C time overlaps is made."
+    },
+    {
+      "fact": "Current saved boundary_state contains pending/braking flags and mapping_count but no per-call tracker request_source/handler-reached receipt.",
+      "evidence": "guarded_reference.py boundary_state; navigation.py writes policy and boundary_state but does not export tracker.tracking_records.",
+      "implication": "The present read does not recover measured braking duration or prove a direction-latch defect. More field occupancy is not a controlled intervention or evidence to reset latch, force direction, alterPID/velocity or retain oldunsafe reference."
+    },
+    {
+      "fact": "The existing first-primitive and cusp/tube consumers already consume direction/braking/measured-motion state. FullA/B guard audit rejected unguarded-rebuild inference.",
+      "evidence": "minimum_prefix_transition_consumer_v1.py measured_first_direction; continuous_cell_tube_consumer_v1.py boundary keep condition; trace_full_guard_audit.json correction.",
+      "implication": "Replacing guarded direction logic or repeating the fulloldA/B trace is not admitted by this observation; no new substantive planner mechanism or learned target established."
+    }
+  ],
+  "clarification": {
+    "old_field": "tracker_pending_direction_time_s",
+    "accurate_label": "累计pending方向状态非空时间；非实测换向制动等待",
+    "archived_values_unchanged": {
+      "A": 24.4,
+      "B": 14.3,
+      "C": 43.3
+    },
+    "new_braking_duration_measurement": null,
+    "all_v122_scores_and_gate_decisions_unchanged": true
+  },
+  "direct_source_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/supported_memory_diagnostic.py": "7e383f953e455f9618cdfc9ef70faed180b055f03d8e83a11fe83836351822d3",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/guarded_reference.py": "30c8b79fef8bb097f2306f6579f51fe932288a6a320bc41604d725f56cec41bf",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/continuous_cell_tube_consumer_v1.py": "9d6f11b1e2278b9fb85eb10a8f2c8f5cbe2df601a1cfb189cf87ced1f424a5f2",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_consumer_v1.py": "18d0213d94c0ae27f37cd17f8162bce443e584e82d20027d4f34d9b4cc53d531",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation.py": "8a07dd55ed917a492e7fc43da8500305688f6ed0dc5cad408d0b0856ffa7492e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1/trace_diagnosis.py": "e2d66ee9f695a9a70725e45b6d57d2b6be656e75e91658fd6e152d0e6a742fe0",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1/trace_full_guard_audit.json": "3a4634ca87e62b0f68f75c250563322bbf215086f814e207e0c0351e5d0e24cb"
+  },
+  "navigation_frozen_source_matches": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/guarded_reference.py": "30c8b79fef8bb097f2306f6579f51fe932288a6a320bc41604d725f56cec41bf",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/continuous_cell_tube_consumer_v1.py": "9d6f11b1e2278b9fb85eb10a8f2c8f5cbe2df601a1cfb189cf87ced1f424a5f2",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_consumer_v1.py": "18d0213d94c0ae27f37cd17f8162bce443e584e82d20027d4f34d9b4cc53d531",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation.py": "8a07dd55ed917a492e7fc43da8500305688f6ed0dc5cad408d0b0856ffa7492e"
+  },
+  "actual_work": {
+    "direct_contract_preflight": 1,
+    "old_pred_or_numeric_policy_or_GT_or_RGB_reads": 0,
+    "source_calls": 0,
+    "policy_or_planner_replay": 0,
+    "scientific_dispatch": 0,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "decision": "NO_NEW_CONSUMER_ADMITTED; recordmetricsemanticcaveat, no implementation or new experiment",
+  "next_action": "This pending-state conjecture is closed beforeimplementation. Do not rerun closedguard/oracle/score/candidate, resetdirection or infer independence from flags. Next requires concrete online available evidence separating measurement falseblocking from a new consumer failure; none currently admitted. Report currentresearchstagnation honestly, retain reproducibleABC and unfinishedlearning/reliability. No new userinput or externalresource blocker claimed.",
+  "runtime": null
+}

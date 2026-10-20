@@ -1,0 +1,11 @@
+{
+  "tag": "P040D070",
+  "gains": {
+    "kp": 0.4,
+    "ki": 0.1,
+    "kd": 0.7
+  },
+  "tuning_eligible": false,
+  "selection": "minimum transient curvature RMS among eligible; if none diagnostic-only best",
+  "improvement_fraction": 0.09288906468562486
+}

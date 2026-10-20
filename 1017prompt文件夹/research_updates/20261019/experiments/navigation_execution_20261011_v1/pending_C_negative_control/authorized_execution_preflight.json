@@ -1,0 +1,90 @@
+{
+  "artifact_type": "authorized_execution_static_preflight",
+  "utc": "2026-10-18T12:09:55.992001+00:00",
+  "scope": "Static-only independent preflight of C_interface.py, supervise_C.py, score_C.py, execution_protocol.json and initial execution_ledger.json after direct human one-C negative-control authorization. Read text/JSON and hashes only. No project/runtime import, test, interface, source, array, simulator, GT or scorer execution. No budget reservation by reviewer.",
+  "proposal_sha256": "09cc94faff624a26bd126129a5e8d809a69e8980a7dd0dd0e962b8843246c8b6",
+  "approval_sha256": "2ac173cacc62b7aeb13fb887de29023741a54f23b618af3a51532bab3e87a2f5",
+  "execution_protocol_sha256": "0647eaeaf99a081183ec872f4f1fd43961fa21db519ac8f80f2d3e31c0d043b3",
+  "reviewed_newcode_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/C_interface.py": "abb67a2c6dc310382ea41462843abf95abf50179e5b06986af710efbbe35b16b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/supervise_C.py": "f0479791523d43321c3aa0e0985fb7115f95c745d6b03b8a287098efc786874a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/score_C.py": "04ecc47769e4213581580b182fed34a5528676bb212035b0ab429f8f1cf46b9c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/metadata_adapter.py": "5e4dc961bbfebaacd5ad08d9436ceca12793aca4e35dc55a8008b69242f9c459",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/pending_C_negative_control/navigation_pending.py": "223287b6d9da0c5d140bd27134a7a84860fbbde6fab834e469eccd94c47231b1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/evaluate_navigation.py": "2c90ae4851c5f772965557908b2870d7a62566304a41551b89b7e05d11543302",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/supported_memory_diagnostic.py": "7e383f953e455f9618cdfc9ef70faed180b055f03d8e83a11fe83836351822d3",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/diagnose_no_route.py": "fc0896f5466153ec1f6420b3879c7ca56e677164c87512b4b95ca863753c7374"
+  },
+  "initial_execution_ledger_sha256": "2fe4affd1b97f4d336f71e796e6eb0d453174e2dc9844907b4587a93cfb28c58",
+  "static_checks": {
+    "workspace_parent_expression_correct": true,
+    "proposal_SHA_unchanged": true,
+    "approval_binds_frozen_proposal": true,
+    "execution_protocol_binds_approval_and_proposal": true,
+    "new_code_SHA_all_match": true,
+    "proposal_frozen_identity_all_match": true,
+    "initial_ledger_three_stages_zero_used_zero_recovery": true,
+    "initial_ledger_binds_approval_and_proposal": true,
+    "timeouts_interface90_navigation2400_score300": true,
+    "no_interface_navigation_or_score_runtime_output_present": true
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": [
+      {
+        "id": "P2-archived-raw-comparison-identities",
+        "file": "score_C.py",
+        "lines": [
+          42,
+          49
+        ],
+        "finding": "Frozen comparator JSON seals/results are checked, but archived A/B request NPZ and RGB frames used for common-prefix divergence are read without checking each input SHA against their sealed lineage. Before interpreting those descriptive divergence results, verify frame SHAs from archived capture seals and requests against archived whole-run manifests; do not imply shared-RGB causal equivalence."
+      }
+    ]
+  },
+  "positive_static_assessment": {
+    "interface": "Workspace root is correctly D.parents[2]. Before importing exact C and metadata modules, interface invokes pending guard expecting missing execution admission; remaining cases use literal synthetic records only. Stationary expiry, geometric confirmation and future-before-payload cases are the approved minimal interface; none have been run by reviewer.",
+    "supervision": "Each stage is limited to one ledger occurrence and total three reservations; recovery0. Navigation requires interface normal0/pass and absent prior run; it writes one-run reserved navigation ledger and execution admission before run_group. Current supervisor PID equals run_group parent_pid; child status registration plus bounded2s wait aligns with frozen launcher. Navigation900actions/90s/contact stop remains archived code, wall2400 external run_group; no retry path.",
+    "score_root_and_helpers": "Archived B evaluator is imported in isolated child then ev.D overrides root to C. A paths module shim with D=C directs postseal supported-memory/no-route helpers to C while source numerical constants remain archived B. The helpers are postseal only and no policy feedback occurs.",
+    "evaluation_scope": "Same B evaluator and fixed known A/B results/gates; source-supported blindmissing helper retains its separate denominator. No-route helper selects only first sustained>=5s zero/no-success-plan event after6s, no alternate event; GT deletion produces UNKNOWN only. No A/B navigation/source rerun.",
+    "frozen_scope": "Original exact C memory/metadata, rejected offline result, proposal and frozen source remain unchanged; approval grants one negative control, not expected C benefit or reliable-navigation completion.",
+    "complete_run_gate": "New structural/video-header/source-count gate at score_C.py:16-34 precedes complete artifact manifest at:35-40 and GT evaluator at:41-43. It uses no numeric physics/GT arrays before sealing; requests are action data, native packets are causal estimates, video frame counts are headers. Static code presence does not prove future artifacts will pass or video content is valid."
+  },
+  "assessment": {
+    "interface_static_preflight_pass": true,
+    "interface_dispatch_allowed_within_existing_human_approval": true,
+    "navigation_runtime_qualification_claimed": false,
+    "score_preflight_pass": true,
+    "all_three_stages_claimed_ready": false,
+    "next_action": "Approved interface may dispatch once. Navigation still requires its normal0 identity-bound result and registered durable launch admission; scoring still requires navigation normal0, no residual live group and the new complete-run gate. One minor remains: bind archived requests/RGB raw file SHAs before descriptive A/B divergence, as planned. No stage was executed by this reviewer.",
+    "current_critical_or_important_findings": 0
+  },
+  "no_execution": {
+    "project_imports": 0,
+    "interface_runs": 0,
+    "tests": 0,
+    "arrays_read": 0,
+    "source_simulator_or_GT_calls": 0,
+    "budget_reserved": false
+  },
+  "prior_review_sha256": "abfc36184e094cab03971dba73617f7d91db556842134e105e2743467d851811",
+  "updated_utc": "2026-10-18T12:10:34.746660+00:00",
+  "resolved_findings": [
+    {
+      "id": "P1-complete-manifest-gate",
+      "file": "score_C.py",
+      "lines": [
+        13,
+        18
+      ],
+      "finding": "Before numeric GT access, the script verifies source/capture complete flags, row lengths and frame/prediction hashes, then marks an enumeration of currently existing files as whole_run_complete. It does not first require the promised physics/requests/contacts/native IMU/policy/trajectory inputs, four nonempty videos, every action map/plan or terminal/capture/action count consistency. Missing artifacts could be omitted from this manifest while it still claims a complete whole run.",
+      "required_resolution": "Before creating the whole-run manifest or importing/running GT evaluator, fail closed on a declared required-file set and terminal/capture/source/action consistency, including four video and per-action map/plan coverage. Record exact scope: static metadata/file completeness, not verified numerical performance or video contents.",
+      "stage_blocked": "score only; approved synthetic interface may dispatch once because it does not use this gate.",
+      "resolution_status": "RESOLVED_STATIC_ONLY_NOT_EXECUTED",
+      "resolution": "score_C.py now requires nonempty mandatory source/physics/requests/contacts/IMU/policy/episode/stage/execution/gauge/primitives/loaded identity files; terminal actions1..900 and matching frame counts; policy/request action counts; physics NPZ field names without numeric reads; >=5 qualified native packets per action; exact per-action map/plan filenames and counts; frame/prediction file counts; four camera names and four nonempty video headers with capture frame counts. All these checks precede whole-run manifest creation, archived evaluator import and numeric GT evaluation.",
+      "resolved_score_sha256": "04ecc47769e4213581580b182fed34a5528676bb212035b0ab429f8f1cf46b9c"
+    }
+  ]
+}

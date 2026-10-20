@@ -1,0 +1,27 @@
+{
+  "cap": 1,
+  "used": 1,
+  "recovery_cap": 0,
+  "recovery_used": 0,
+  "status": "finished",
+  "parent_pid": 1681289,
+  "proposal_sha256": "09cc94faff624a26bd126129a5e8d809a69e8980a7dd0dd0e962b8843246c8b6",
+  "source_physical_cumulative": 3,
+  "arm": "C_original_negative_control",
+  "direct_user_exception_sha256": "2ac173cacc62b7aeb13fb887de29023741a54f23b618af3a51532bab3e87a2f5",
+  "execution": {
+    "status": "finished",
+    "start_utc": "2026-10-18T18:11:11.159536+00:00",
+    "parent_pid": 1681289,
+    "child_pid": 1681290,
+    "process_group_id": 1681290,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-18T18:24:04.830884+00:00"
+  }
+}

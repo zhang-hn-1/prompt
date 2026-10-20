@@ -1,0 +1,211 @@
+{
+  "version": 110,
+  "utc": "2026-10-17T08:15:27.588806+00:00",
+  "status": "A_actual90s_complete_AB_tradeoff_and_full_guard_attribution_complete",
+  "task_list": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-17-navigation-memory-task-list.md",
+  "prior_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/execution_next_entry_v109.json",
+  "roots": [
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_counterevidence_input_20261017_v1"
+  ],
+  "reports": [
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/current_observation_vs_memory_navigation_results_20261017.md",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/current_risk_counterevidence_and_birth_results_20261017.md"
+  ],
+  "actual_A": {
+    "root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1",
+    "termination": "timeout90",
+    "contact_stop": false,
+    "actions": 900,
+    "frames": 181,
+    "sim_time_s": 89.99999798834324,
+    "net_goal_progress_m": 0.7260657262594457,
+    "path_length_m": 10.921833038330078,
+    "request_reverse_time_s": 34.5,
+    "tracker_pending_direction_time_s": 24.400000000000002,
+    "source_supported_blind_denominator": 66215,
+    "source_supported_blind_missing": 61455,
+    "source_supported_blind_missing_fraction": 0.9281129653401797,
+    "false_map_cell_seconds": 1109.000000000002,
+    "max_false_map_cells": 98,
+    "first_sustained_no_route_policy": null,
+    "first_sustained_no_route_time_s": null,
+    "max_sustained_no_route_s": 0.0,
+    "total_no_route_s": 0.0,
+    "source": {
+      "target_cells": 14903,
+      "covered_cells": 9035,
+      "predicted_cells": 16972,
+      "correct_cells": 14353,
+      "precision": 0.8456870139052557,
+      "recall": 0.6062537744078373,
+      "valid_target_pixels": 4812812,
+      "conditional_depth_P50_P90_P95_m": [
+        0.032555580139160156,
+        0.12988721132278447,
+        0.15398205816745764
+      ],
+      "generation_P50_P90_P95_s": [
+        2.8596427070442587,
+        2.916660321992822,
+        2.941014584968798
+      ]
+    },
+    "full_chain_P50_P90_P95_s": [
+      0.06423133501084521,
+      3.8110081350198017,
+      3.8351866538228934
+    ]
+  },
+  "known_B": {
+    "root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1",
+    "termination": "timeout90",
+    "contact_stop": false,
+    "actions": 900,
+    "frames": 181,
+    "sim_time_s": 89.99999798834324,
+    "net_goal_progress_m": 1.14976528276972,
+    "path_length_m": 6.776336669921875,
+    "request_reverse_time_s": 7.1000000000000005,
+    "tracker_pending_direction_time_s": 14.3,
+    "source_supported_blind_denominator": 75700,
+    "source_supported_blind_missing": 634,
+    "source_supported_blind_missing_fraction": 0.008375165125495377,
+    "false_map_cell_seconds": 14501.299999999972,
+    "max_false_map_cells": 286,
+    "first_sustained_no_route_policy": 61,
+    "first_sustained_no_route_time_s": 6.099999863654375,
+    "max_sustained_no_route_s": 30.0,
+    "total_no_route_s": 38.400000000000006,
+    "source": {
+      "target_cells": 17942,
+      "covered_cells": 10761,
+      "predicted_cells": 21319,
+      "correct_cells": 17248,
+      "precision": 0.8090435761527276,
+      "recall": 0.5997659123843496,
+      "valid_target_pixels": 5404827,
+      "conditional_depth_P50_P90_P95_m": [
+        0.04593515396118164,
+        0.1417606353759766,
+        0.16153701543807986
+      ],
+      "generation_P50_P90_P95_s": [
+        2.861619882984087,
+        3.14842393505387,
+        3.2624018519418314
+      ]
+    },
+    "full_chain_P50_P90_P95_s": [
+      0.14765836851438507,
+      3.8008249707869255,
+      3.893386974360328
+    ]
+  },
+  "comparison_limits": "OneprospectiveA vsknownpriorB; same nominalgeometry/physics/source/controlbutRGBprefixMAE~.9/255 differs. Firstactiondivergencepolicy60=6s. Trajectories andblinddenominators diverge; not pixelpaired/statsgeneralization/full3arm.",
+  "gates": {
+    "minimum_visual_observation_support": true,
+    "collision_noninferiority": true,
+    "blind_missing_noninferiority": false,
+    "latency_noninferiority": true,
+    "net_progress_benefit": false,
+    "false_memory_benefit": true,
+    "arrival_A": false,
+    "arrival_B": false
+  },
+  "memory_decision": "No improvement: A false-riskpersistence -92.35% butblindmissing92.81%,netprogress.726m<B1.150m;bothcontact0/timeout90.Cofflineclosed.",
+  "cause": "Sourceerror/eligibility causes wronginputs; B persistsfalseblinds, A forgetsrealblinds. Farthercurrent pairedinput recall2.02% insufficient. Bfalsegrid teacherremoval15 restores firstglobalgridconnectivity only. Fullguardtrace0unexplainedrebuild; no immediate rebuild-to-requestreversal association. No controllerfix admitted.",
+  "trace": {
+    "rows": 1800,
+    "A_initial": 1,
+    "A_geometry_reject": 3,
+    "A_tube_reject": 22,
+    "B_initial_or_no_route": 77,
+    "B_geometry_reject": 4,
+    "B_tube_reject": 1,
+    "unguarded_complete_pass": 0,
+    "request_sign_switches_A_B": [
+      9,
+      7
+    ],
+    "switches_within1s_after_rebuild_A_B": [
+      0,
+      0
+    ],
+    "raw_geometry_only_field_corrected": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/trace_full_guard_audit.json"
+  },
+  "runtime": {
+    "status": "none",
+    "pid_namespace": "hostsystemd, no separate sandboxPID",
+    "A": {
+      "status": "finished",
+      "start_utc": "2026-10-17T07:52:18.574328+00:00",
+      "parent_pid": 3785925,
+      "child_pid": 3785926,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-17T08:05:04.248976+00:00"
+    },
+    "evaluation": {
+      "status": "finished",
+      "start_utc": "2026-10-17T08:05:24.780113+00:00",
+      "parent_pid": 3800631,
+      "child_pid": 3800632,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-17T08:06:04.271189+00:00"
+    },
+    "trace": {
+      "status": "finished",
+      "start_utc": "2026-10-17T08:09:48.962893+00:00",
+      "parent_pid": 3805989,
+      "child_pid": 3805990,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-17T08:09:49.227261+00:00"
+    },
+    "services": "allinactive/MainPID0/ExecMainStatus0 verified",
+    "no_GPU_or_storage_failure_reported": true
+  },
+  "budgets": {
+    "A_physics": "1/1closed,recovery0 remainingclosed",
+    "A_evaluation": "1/1closed,recovery0 remainingclosed",
+    "A_trace": "1/1closed,recovery0/0",
+    "counterevidence": "1/1closed",
+    "birth": "1/1closed",
+    "C": "offline rejected,physical0;not pendingrun",
+    "B": "priorclosed no rerun",
+    "source_physics_current_weak_baseline_total_B_plus_A": 2,
+    "fit": 0,
+    "old_budgets_reopened": false
+  },
+  "artifacts": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/artifact_manifest_post_close.json": {
+      "files": 2363,
+      "sha256": "3e8234f29eac84ddc05e3ad6200e4f4981711ae1c855ba5e45230fe61b7a9330"
+    },
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_counterevidence_input_20261017_v1/artifact_manifest_post_close.json": {
+      "files": 210,
+      "sha256": "ce5edbae6a8f589c970fa7579c2625a85a6939d561f42b5951eb03f633bcb2f1"
+    }
+  },
+  "source_snapshot_files": 126,
+  "proposed_learning_target": "historicalriskpersistententrytrust qualification only; not implemented/admitted/fitted",
+  "next_action": "Only bounded qualification of ONE proposed supervised historical-risk persistent-entry trust target, not training yet. Keep current positive risk/source/pose/planner/control unchanged; distinguish persistent entry decision from old fixed patch-confidence source filtering and closed viewnoveltyC. Check existing current4rig E0 and E1 whole-sequence causalRGB/disparity/provenance and complete offline teacher-risk/unknown label coverage; all seen data DEVELOPMENT. State exact consumer/target/invalid cases and groupedtrain/dev/freshheldout contract; no futureGT online or world-ID memorization. Freeze independent minimumdataqualification budget before compute. Missinglabels/coverage => no fit. No PID/reference guard change, no oldC/source confidence/duration sweep or old radiancechain. No live run, do not restart A/B.",
+  "overall_complete": false,
+  "reliable_navigation": false,
+  "learning_increment": false,
+  "P2_actual_three_arm_complete": false,
+  "automation": "originalidautomation/currentchat/hourlyACTIVE unchanged",
+  "original_project_readonly": true,
+  "Git": "no commit or push"
+}

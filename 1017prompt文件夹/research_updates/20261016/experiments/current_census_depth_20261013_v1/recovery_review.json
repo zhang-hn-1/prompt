@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-13T07:25:45.490980+00:00",
+  "decision": "APPROVE_ONE_REGISTERED_INTERFACE_RECOVERY_ONLY",
+  "reviewed_sha256": {
+    "generate.py": "4783fba8f59a79861252b7b3b5491bfac1daea22cd0691d162c0a05c97ac2306",
+    "launch_recovery.py": "dd8863b0a44e0b110113488d429593bcc82834f96733a79d289bd98305d6a356",
+    "recovery_registration.json": "0f79fa5d1fd5340f9d6fbda66f27600837abfb0e040480a30b89ba211740690e",
+    "generate.initial_clock_check.py": "f38f1c544fd8a446103df5d9c77babaa69c6ccd9fd186f4390a4d97ed75825c5",
+    "census.py": "76b6bd1db9ffff9de0e1c9dc2c1c0472d7f1cec7e20e0250ef09ba60a149a4ac",
+    "protocol.json": "397d2ff7c2dc2839e1a89380bb63b679119c3a1b80c6dbe2d27e07b7059f5111"
+  },
+  "checks": {
+    "all_270_prefix_file_hashes_match": true,
+    "prefix_is_H_frames_0_to_445_step5_with_frame_packet_surface": true,
+    "original_code_matches_first_launch_ledger": true,
+    "census_and_protocol_match_original_ledger": true,
+    "schedule_tolerance_only_1us_to_10us": true,
+    "exact_source_pose_and_loaded_prediction_clocks_still_required": true,
+    "isolated_save_helper_same_arrays_preserve_file_hash_and_changed_arrays_rejected_without_write": true,
+    "launch_requires_runtime_failed_and_unused_recovery_then_records_recovery1": true
+  },
+  "critical": [],
+  "important": [],
+  "notes": [
+    "Prediction bytes were hashed without decoding candidate arrays; no performance measurement or classification was performed.",
+    "Reused predictions are hash-frozen; inherited projection and surface qualification are recomputed for exact array comparison, and then memory replay starts from an empty state.",
+    "The reported 2.011656761us maximum schedule drift is the parent audit evidence; this review verifies the correction and does not independently reread actual clocks.",
+    "Final source, map and gate scoring review remains required after complete generation; no source or navigation admission is granted."
+  ]
+}

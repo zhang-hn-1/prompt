@@ -1,0 +1,29 @@
+{
+  "stage": "tangent_field_actual_e1_pair_running",
+  "updated_utc": "2026-10-13T02:23:06.632177+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/execution_next_entry_v45.json",
+  "resource_block_resolved": true,
+  "available_bytes_at_resume": 158204157952,
+  "experiment": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tangent_field_navigation_20261013_v1",
+  "ledger": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tangent_field_navigation_20261013_v1/ledger.json",
+  "budget": {
+    "status": "running",
+    "cap": 2,
+    "used": 1,
+    "recovery_used": 0,
+    "fit": 0,
+    "parent_pid": 1570097,
+    "groups": [
+      {
+        "arm": "baseline_e1",
+        "state": "reserved",
+        "utc": "2026-10-13T02:21:49.527951+00:00"
+      }
+    ]
+  },
+  "baseline_pid": 1570113,
+  "next": "Supervise existing parent1570097 baseline1570113; candidate starts after baseline raw/source qualification. Do not repeat dispatch. Close full raw results/effect/maps/depth and keep/reject. Existing old budgets remain closed.",
+  "whole_project_complete": false,
+  "reliable_navigation": false,
+  "learning_increment": false
+}

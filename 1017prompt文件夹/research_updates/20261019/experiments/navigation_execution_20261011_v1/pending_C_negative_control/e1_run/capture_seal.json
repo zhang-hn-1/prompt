@@ -1,0 +1,3792 @@
+{
+  "complete": true,
+  "camera_names": [
+    "front_left",
+    "front_right",
+    "rear_left",
+    "rear_right"
+  ],
+  "rows": [
+    {
+      "frame": "frame_000.npz",
+      "sha256": "296804d3e79c69e52d2e6cba303f58a9429855ad413af07d597122af7a2fc0db",
+      "clock": [
+        0.0,
+        0,
+        0.19999999552965164,
+        10
+      ],
+      "pair_error": 3.4228542959436775e-08,
+      "imu_index": 0,
+      "render_frames": [
+        200,
+        200,
+        200,
+        200
+      ],
+      "request_blocks_executed": 0,
+      "terminal": false
+    },
+    {
+      "frame": "frame_001.npz",
+      "sha256": "e018b47c553cd30fd60a942b314ead8de7f298133eb1a6b4334d5c5496b33f99",
+      "clock": [
+        0.4999999888241291,
+        25,
+        0.6999999843537807,
+        35
+      ],
+      "pair_error": 3.4228543097092334e-08,
+      "imu_index": 25,
+      "render_frames": [
+        213,
+        213,
+        213,
+        213
+      ],
+      "request_blocks_executed": 5,
+      "terminal": false
+    },
+    {
+      "frame": "frame_002.npz",
+      "sha256": "4f3331ab72bdbf24ac4106fa94067159ff7ba89fe10e689e8e39b2a30d53cdb1",
+      "clock": [
+        0.9999999776482582,
+        50,
+        1.1999999731779099,
+        60
+      ],
+      "pair_error": 3.422854305545897e-08,
+      "imu_index": 50,
+      "render_frames": [
+        226,
+        226,
+        226,
+        226
+      ],
+      "request_blocks_executed": 10,
+      "terminal": false
+    },
+    {
+      "frame": "frame_003.npz",
+      "sha256": "9c610a7796900601d02da96adc47dac8125b876307efc4d7fd187132530b668f",
+      "clock": [
+        1.4999999664723873,
+        75,
+        1.699999962002039,
+        85
+      ],
+      "pair_error": 3.4228543083214547e-08,
+      "imu_index": 75,
+      "render_frames": [
+        239,
+        239,
+        239,
+        239
+      ],
+      "request_blocks_executed": 15,
+      "terminal": false
+    },
+    {
+      "frame": "frame_004.npz",
+      "sha256": "3a8594905cd9e516cd22ad8a12cf5f21c4d8e654964b62195277aa2e335d8fa9",
+      "clock": [
+        1.9999999552965164,
+        100,
+        2.199999950826168,
+        110
+      ],
+      "pair_error": 3.4228542958314456e-08,
+      "imu_index": 100,
+      "render_frames": [
+        252,
+        252,
+        252,
+        252
+      ],
+      "request_blocks_executed": 20,
+      "terminal": false
+    },
+    {
+      "frame": "frame_005.npz",
+      "sha256": "72f8a72413ab04bd0d4720ebc79865ff0d54b29066e1a4c05318478bf7e70f69",
+      "clock": [
+        2.4999999441206455,
+        125,
+        2.699999939650297,
+        135
+      ],
+      "pair_error": 3.4228542958314456e-08,
+      "imu_index": 125,
+      "render_frames": [
+        265,
+        265,
+        265,
+        265
+      ],
+      "request_blocks_executed": 25,
+      "terminal": false
+    },
+    {
+      "frame": "frame_006.npz",
+      "sha256": "a2de508817a56536efc406a20094322a99b757d884df678d8c89f6ea29fa5401",
+      "clock": [
+        2.9999999329447746,
+        150,
+        3.1999999284744263,
+        160
+      ],
+      "pair_error": 3.422854298143615e-08,
+      "imu_index": 150,
+      "render_frames": [
+        278,
+        278,
+        278,
+        278
+      ],
+      "request_blocks_executed": 30,
+      "terminal": false
+    },
+    {
+      "frame": "frame_007.npz",
+      "sha256": "4e83d7de9273204a995745161d6e8cfad07f7d47029e7fb88b0359f359bae746",
+      "clock": [
+        3.4999999217689037,
+        175,
+        3.6999999172985554,
+        185
+      ],
+      "pair_error": 3.422854319423685e-08,
+      "imu_index": 175,
+      "render_frames": [
+        291,
+        291,
+        291,
+        291
+      ],
+      "request_blocks_executed": 35,
+      "terminal": false
+    },
+    {
+      "frame": "frame_008.npz",
+      "sha256": "725d5df4500cf7d41b152cab3f897083b17aa2553bf5d5405fc9b0352bff8c69",
+      "clock": [
+        3.999999910593033,
+        200,
+        4.1999999061226845,
+        210
+      ],
+      "pair_error": 3.422854298607003e-08,
+      "imu_index": 200,
+      "render_frames": [
+        304,
+        304,
+        304,
+        304
+      ],
+      "request_blocks_executed": 40,
+      "terminal": false
+    },
+    {
+      "frame": "frame_009.npz",
+      "sha256": "5e1d9c1f4222aa3d6010480e22340545e9da1e55f158925cc715a968d4c17e1d",
+      "clock": [
+        4.499999899417162,
+        225,
+        4.699999894946814,
+        235
+      ],
+      "pair_error": 3.422854306933676e-08,
+      "imu_index": 225,
+      "render_frames": [
+        317,
+        317,
+        317,
+        317
+      ],
+      "request_blocks_executed": 45,
+      "terminal": false
+    },
+    {
+      "frame": "frame_010.npz",
+      "sha256": "dabf30ae25b011e0c40f30c2ac4866073bdd15376f14ce5a0f7a02463faa0e41",
+      "clock": [
+        4.999999888241291,
+        250,
+        5.199999883770943,
+        260
+      ],
+      "pair_error": 3.4228542902803305e-08,
+      "imu_index": 250,
+      "render_frames": [
+        330,
+        330,
+        330,
+        330
+      ],
+      "request_blocks_executed": 50,
+      "terminal": false
+    },
+    {
+      "frame": "frame_011.npz",
+      "sha256": "0b473f0db78364ae1557272a2d955b0650475d084980959d063a4757aea61f50",
+      "clock": [
+        5.49999987706542,
+        275,
+        5.699999872595072,
+        285
+      ],
+      "pair_error": 3.4228542972192244e-08,
+      "imu_index": 275,
+      "render_frames": [
+        343,
+        343,
+        343,
+        343
+      ],
+      "request_blocks_executed": 55,
+      "terminal": false
+    },
+    {
+      "frame": "frame_012.npz",
+      "sha256": "d2af61b935bc704feb9722a5ee1e01599f5c3c12cd24eb208ab38cd15057fc7f",
+      "clock": [
+        5.999999865889549,
+        300,
+        6.199999861419201,
+        310
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 300,
+      "render_frames": [
+        356,
+        356,
+        356,
+        356
+      ],
+      "request_blocks_executed": 60,
+      "terminal": false
+    },
+    {
+      "frame": "frame_013.npz",
+      "sha256": "b27039ef4ef267a21cc6935b9595981f8a94c5451100db47303c99fee689ce2d",
+      "clock": [
+        6.499999854713678,
+        325,
+        6.69999985024333,
+        335
+      ],
+      "pair_error": 3.422854299994782e-08,
+      "imu_index": 325,
+      "render_frames": [
+        369,
+        369,
+        369,
+        369
+      ],
+      "request_blocks_executed": 65,
+      "terminal": false
+    },
+    {
+      "frame": "frame_014.npz",
+      "sha256": "f9d9b9c4e3c2db38a5298009144aca8e570296f2b19e8f69ab9adaaeb2feabd6",
+      "clock": [
+        6.9999998435378075,
+        350,
+        7.199999839067459,
+        360
+      ],
+      "pair_error": 3.42285431387257e-08,
+      "imu_index": 350,
+      "render_frames": [
+        382,
+        382,
+        382,
+        382
+      ],
+      "request_blocks_executed": 70,
+      "terminal": false
+    },
+    {
+      "frame": "frame_015.npz",
+      "sha256": "ce807c07d30a6aae493a41c778f71e5393304fc5ae374506953fc8f9f40304de",
+      "clock": [
+        7.499999832361937,
+        375,
+        7.699999827891588,
+        385
+      ],
+      "pair_error": 3.4228543083214547e-08,
+      "imu_index": 375,
+      "render_frames": [
+        395,
+        395,
+        395,
+        395
+      ],
+      "request_blocks_executed": 75,
+      "terminal": false
+    },
+    {
+      "frame": "frame_016.npz",
+      "sha256": "d4075031d0f21cbeb694b1d1f6f8c84f0b5d719abdc178578f5ef41bf42144af",
+      "clock": [
+        7.999999821186066,
+        400,
+        8.199999816715717,
+        410
+      ],
+      "pair_error": 3.422854320811464e-08,
+      "imu_index": 400,
+      "render_frames": [
+        408,
+        408,
+        408,
+        408
+      ],
+      "request_blocks_executed": 80,
+      "terminal": false
+    },
+    {
+      "frame": "frame_017.npz",
+      "sha256": "3476302c27557f7262b20ed7b67c377ccfe6dddd11a89ef55f655757d91e09a7",
+      "clock": [
+        8.499999810010195,
+        425,
+        8.699999805539846,
+        435
+      ],
+      "pair_error": 3.4228543382681106e-08,
+      "imu_index": 425,
+      "render_frames": [
+        421,
+        421,
+        421,
+        421
+      ],
+      "request_blocks_executed": 85,
+      "terminal": false
+    },
+    {
+      "frame": "frame_018.npz",
+      "sha256": "de2e348ea988cd73bb556f06475f1492f1dcf5e1c47a216ad4714135a0eb7297",
+      "clock": [
+        8.999999798834324,
+        450,
+        9.199999794363976,
+        460
+      ],
+      "pair_error": 3.4228543083214547e-08,
+      "imu_index": 450,
+      "render_frames": [
+        434,
+        434,
+        434,
+        434
+      ],
+      "request_blocks_executed": 90,
+      "terminal": false
+    },
+    {
+      "frame": "frame_019.npz",
+      "sha256": "5182a252d66d22ad502aef28f7d1130d05eb64aa306a89dec084819b783631e5",
+      "clock": [
+        9.499999787658453,
+        475,
+        9.699999783188105,
+        485
+      ],
+      "pair_error": 3.4228543249748e-08,
+      "imu_index": 475,
+      "render_frames": [
+        447,
+        447,
+        447,
+        447
+      ],
+      "request_blocks_executed": 95,
+      "terminal": false
+    },
+    {
+      "frame": "frame_020.npz",
+      "sha256": "82683e736016a7c8ae3659b4877a09bf36d11bbed442583425719bf447c2d76c",
+      "clock": [
+        9.999999776482582,
+        500,
+        10.199999772012234,
+        510
+      ],
+      "pair_error": 3.422854325438005e-08,
+      "imu_index": 500,
+      "render_frames": [
+        460,
+        460,
+        460,
+        460
+      ],
+      "request_blocks_executed": 100,
+      "terminal": false
+    },
+    {
+      "frame": "frame_021.npz",
+      "sha256": "9db4e748d1696b5a29319360df46f986c4b43584b3e39655d04c41fc56be4a7a",
+      "clock": [
+        10.499999765306711,
+        525,
+        10.699999760836363,
+        535
+      ],
+      "pair_error": 3.422854305545897e-08,
+      "imu_index": 525,
+      "render_frames": [
+        473,
+        473,
+        473,
+        473
+      ],
+      "request_blocks_executed": 105,
+      "terminal": false
+    },
+    {
+      "frame": "frame_022.npz",
+      "sha256": "2ad4af2f1fe93fa35559d7df4fae4643009b8403f3a8f809de0f3026e6e8e335",
+      "clock": [
+        10.99999975413084,
+        550,
+        11.199999749660492,
+        560
+      ],
+      "pair_error": 3.422854304158118e-08,
+      "imu_index": 550,
+      "render_frames": [
+        486,
+        486,
+        486,
+        486
+      ],
+      "request_blocks_executed": 110,
+      "terminal": false
+    },
+    {
+      "frame": "frame_023.npz",
+      "sha256": "856ee120f6d99442dca648a497e1a237117c32ebf0467f3a6898d8e5a272b6ee",
+      "clock": [
+        11.49999974295497,
+        575,
+        11.699999738484621,
+        585
+      ],
+      "pair_error": 3.422854307627565e-08,
+      "imu_index": 575,
+      "render_frames": [
+        499,
+        499,
+        499,
+        499
+      ],
+      "request_blocks_executed": 115,
+      "terminal": false
+    },
+    {
+      "frame": "frame_024.npz",
+      "sha256": "fce4f2ece56f5c191994d74876eedd1d30b4ea62dd0e073a4c7b19a261c17f93",
+      "clock": [
+        11.999999731779099,
+        600,
+        12.19999972730875,
+        610
+      ],
+      "pair_error": 3.422854306933676e-08,
+      "imu_index": 600,
+      "render_frames": [
+        512,
+        512,
+        512,
+        512
+      ],
+      "request_blocks_executed": 120,
+      "terminal": false
+    },
+    {
+      "frame": "frame_025.npz",
+      "sha256": "b3feb2f7a9b89de63641990215155318fe73d726e20ec94fdc19f0f5d343de52",
+      "clock": [
+        12.499999720603228,
+        625,
+        12.69999971613288,
+        635
+      ],
+      "pair_error": 3.4228543083214547e-08,
+      "imu_index": 625,
+      "render_frames": [
+        525,
+        525,
+        525,
+        525
+      ],
+      "request_blocks_executed": 125,
+      "terminal": false
+    },
+    {
+      "frame": "frame_026.npz",
+      "sha256": "fd2971a6599e1209f31447e71a73e97e3dbb2c56381cfb05086b87e4436e1492",
+      "clock": [
+        12.999999709427357,
+        650,
+        13.199999704957008,
+        660
+      ],
+      "pair_error": 3.422854305545897e-08,
+      "imu_index": 650,
+      "render_frames": [
+        538,
+        538,
+        538,
+        538
+      ],
+      "request_blocks_executed": 130,
+      "terminal": false
+    },
+    {
+      "frame": "frame_027.npz",
+      "sha256": "8258a063e6852fa064349d8d3d77472cd6671c85ac317851898b1ad88dbf6894",
+      "clock": [
+        13.499999698251486,
+        675,
+        13.699999693781137,
+        685
+      ],
+      "pair_error": 3.422854293055888e-08,
+      "imu_index": 675,
+      "render_frames": [
+        551,
+        551,
+        551,
+        551
+      ],
+      "request_blocks_executed": 135,
+      "terminal": false
+    },
+    {
+      "frame": "frame_028.npz",
+      "sha256": "54656f1892c3e6871dd5d8efa1083be8d9698a1105f3618cff4020077791e803",
+      "clock": [
+        13.999999687075615,
+        700,
+        14.199999682605267,
+        710
+      ],
+      "pair_error": 3.422854293055888e-08,
+      "imu_index": 700,
+      "render_frames": [
+        564,
+        564,
+        564,
+        564
+      ],
+      "request_blocks_executed": 140,
+      "terminal": false
+    },
+    {
+      "frame": "frame_029.npz",
+      "sha256": "fdae79b25de3ff60f3828091271e5044a1565035fd234d762f9ceeb333109f4a",
+      "clock": [
+        14.499999675899744,
+        725,
+        14.699999671429396,
+        735
+      ],
+      "pair_error": 3.4228542958314456e-08,
+      "imu_index": 725,
+      "render_frames": [
+        577,
+        577,
+        577,
+        577
+      ],
+      "request_blocks_executed": 145,
+      "terminal": false
+    },
+    {
+      "frame": "frame_030.npz",
+      "sha256": "6fd2a9ac76dc61de5149d5380e9a24a77adec4cfc1035e3eaf2abea308d6adfa",
+      "clock": [
+        14.999999664723873,
+        750,
+        15.199999660253525,
+        760
+      ],
+      "pair_error": 3.422854319423685e-08,
+      "imu_index": 750,
+      "render_frames": [
+        590,
+        590,
+        590,
+        590
+      ],
+      "request_blocks_executed": 150,
+      "terminal": false
+    },
+    {
+      "frame": "frame_031.npz",
+      "sha256": "c4c1db678fe71827cb70eda4f8752ab50c9a3af06c0640c03033480ed516279c",
+      "clock": [
+        15.499999653548002,
+        775,
+        15.699999649077654,
+        785
+      ],
+      "pair_error": 3.42285431387257e-08,
+      "imu_index": 775,
+      "render_frames": [
+        603,
+        603,
+        603,
+        603
+      ],
+      "request_blocks_executed": 155,
+      "terminal": false
+    },
+    {
+      "frame": "frame_032.npz",
+      "sha256": "1cfecc984f17cd7f74605d4e178e867a301c448ed18f27d9658435801ed3510e",
+      "clock": [
+        15.999999642372131,
+        800,
+        16.199999637901783,
+        810
+      ],
+      "pair_error": 3.4228543136227645e-08,
+      "imu_index": 800,
+      "render_frames": [
+        616,
+        616,
+        616,
+        616
+      ],
+      "request_blocks_executed": 160,
+      "terminal": false
+    },
+    {
+      "frame": "frame_033.npz",
+      "sha256": "9575e9c5afc5cb1ff60221b089d849bc8863818f752784f1efdf8b5c89443682",
+      "clock": [
+        16.49999963119626,
+        825,
+        16.699999626725912,
+        835
+      ],
+      "pair_error": 3.422854300500176e-08,
+      "imu_index": 825,
+      "render_frames": [
+        629,
+        629,
+        629,
+        629
+      ],
+      "request_blocks_executed": 165,
+      "terminal": false
+    },
+    {
+      "frame": "frame_034.npz",
+      "sha256": "93959179f30bd7a884638b2e3d32aca7b8e7874362f43b4d525e095d30fb1a49",
+      "clock": [
+        16.99999962002039,
+        850,
+        17.19999961555004,
+        860
+      ],
+      "pair_error": 3.4228543083214547e-08,
+      "imu_index": 850,
+      "render_frames": [
+        642,
+        642,
+        642,
+        642
+      ],
+      "request_blocks_executed": 170,
+      "terminal": false
+    },
+    {
+      "frame": "frame_035.npz",
+      "sha256": "9749fd7fc85e427f260d383ed892e4952f6f62c38885b7b419ae17567bdd862a",
+      "clock": [
+        17.49999960884452,
+        875,
+        17.69999960437417,
+        885
+      ],
+      "pair_error": 3.4228543097092334e-08,
+      "imu_index": 875,
+      "render_frames": [
+        655,
+        655,
+        655,
+        655
+      ],
+      "request_blocks_executed": 175,
+      "terminal": false
+    },
+    {
+      "frame": "frame_036.npz",
+      "sha256": "e912931e3232b2424ba0c3cca761cbab3c9df50b1fb9fa7db9920a0fb2bcca5f",
+      "clock": [
+        17.999999597668648,
+        900,
+        18.1999995931983,
+        910
+      ],
+      "pair_error": 3.422854311097012e-08,
+      "imu_index": 900,
+      "render_frames": [
+        668,
+        668,
+        668,
+        668
+      ],
+      "request_blocks_executed": 180,
+      "terminal": false
+    },
+    {
+      "frame": "frame_037.npz",
+      "sha256": "f79989f2f5b3591e87f2a4914b333b2a3b11d8b4cffad79e708049431d790c00",
+      "clock": [
+        18.499999586492777,
+        925,
+        18.69999958202243,
+        935
+      ],
+      "pair_error": 3.422854319423685e-08,
+      "imu_index": 925,
+      "render_frames": [
+        681,
+        681,
+        681,
+        681
+      ],
+      "request_blocks_executed": 185,
+      "terminal": false
+    },
+    {
+      "frame": "frame_038.npz",
+      "sha256": "fb9ea557c0722086db3a57fa61e12fceb4ad408b74996f81b7d612bc07e1fa47",
+      "clock": [
+        18.999999575316906,
+        950,
+        19.199999570846558,
+        960
+      ],
+      "pair_error": 3.4228542972192244e-08,
+      "imu_index": 950,
+      "render_frames": [
+        694,
+        694,
+        694,
+        694
+      ],
+      "request_blocks_executed": 190,
+      "terminal": false
+    },
+    {
+      "frame": "frame_039.npz",
+      "sha256": "553363a425d8cd09992cd73525d05316be6599b9cd37a756be37c8db4496c0c0",
+      "clock": [
+        19.499999564141035,
+        975,
+        19.699999559670687,
+        985
+      ],
+      "pair_error": 3.4228543166481273e-08,
+      "imu_index": 975,
+      "render_frames": [
+        707,
+        707,
+        707,
+        707
+      ],
+      "request_blocks_executed": 195,
+      "terminal": false
+    },
+    {
+      "frame": "frame_040.npz",
+      "sha256": "6ae7b64c48e66149d1f78cde20c433210341708845f46cc80c3f1a27aaaebab1",
+      "clock": [
+        19.999999552965164,
+        1000,
+        20.199999548494816,
+        1010
+      ],
+      "pair_error": 3.42285431387257e-08,
+      "imu_index": 1000,
+      "render_frames": [
+        720,
+        720,
+        720,
+        720
+      ],
+      "request_blocks_executed": 200,
+      "terminal": false
+    },
+    {
+      "frame": "frame_041.npz",
+      "sha256": "9409e3bbe1c6fa569ae805aa814cfc0e54d57fa286a371cff1cd0d87f8eca225",
+      "clock": [
+        20.499999541789293,
+        1025,
+        20.699999537318945,
+        1035
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu_index": 1025,
+      "render_frames": [
+        733,
+        733,
+        733,
+        733
+      ],
+      "request_blocks_executed": 205,
+      "terminal": false
+    },
+    {
+      "frame": "frame_042.npz",
+      "sha256": "004208c61b2efeee21c5625234db4fa5ea4e1eb83ea7e5497d542027a92f1443",
+      "clock": [
+        20.999999530613422,
+        1050,
+        21.199999526143074,
+        1060
+      ],
+      "pair_error": 3.4228542945234845e-08,
+      "imu_index": 1050,
+      "render_frames": [
+        746,
+        746,
+        746,
+        746
+      ],
+      "request_blocks_executed": 210,
+      "terminal": false
+    },
+    {
+      "frame": "frame_043.npz",
+      "sha256": "0b4783bf0e1534d30def0f4634f5df1d5aef2b1fd830f8fd376a4e383425923e",
+      "clock": [
+        21.49999951943755,
+        1075,
+        21.699999514967203,
+        1085
+      ],
+      "pair_error": 3.422854299994782e-08,
+      "imu_index": 1075,
+      "render_frames": [
+        759,
+        759,
+        759,
+        759
+      ],
+      "request_blocks_executed": 215,
+      "terminal": false
+    },
+    {
+      "frame": "frame_044.npz",
+      "sha256": "ecd7764a330b3b51a5cd8ef60a877525f1f0fce35ffc7cf72c826add3f5490e2",
+      "clock": [
+        21.99999950826168,
+        1100,
+        22.199999503791332,
+        1110
+      ],
+      "pair_error": 3.422854301956413e-08,
+      "imu_index": 1100,
+      "render_frames": [
+        772,
+        772,
+        772,
+        772
+      ],
+      "request_blocks_executed": 220,
+      "terminal": false
+    },
+    {
+      "frame": "frame_045.npz",
+      "sha256": "f1f46740d85e964a6d41a7e6543bc4d9c1da17838fc99ac3e5f7616a3337e158",
+      "clock": [
+        22.49999949708581,
+        1125,
+        22.69999949261546,
+        1135
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu_index": 1125,
+      "render_frames": [
+        785,
+        785,
+        785,
+        785
+      ],
+      "request_blocks_executed": 225,
+      "terminal": false
+    },
+    {
+      "frame": "frame_046.npz",
+      "sha256": "8b1e9eca6f2c385117b2f0b67a0ccbd6a5af9d8aa25239a5d1316d6fd86f44e6",
+      "clock": [
+        22.99999948590994,
+        1150,
+        23.19999948143959,
+        1160
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu_index": 1150,
+      "render_frames": [
+        798,
+        798,
+        798,
+        798
+      ],
+      "request_blocks_executed": 230,
+      "terminal": false
+    },
+    {
+      "frame": "frame_047.npz",
+      "sha256": "f1d1efa549e84d28ce46722bccc810729aceb43a677bcc3943c30455733d71ed",
+      "clock": [
+        23.499999474734068,
+        1175,
+        23.69999947026372,
+        1185
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu_index": 1175,
+      "render_frames": [
+        811,
+        811,
+        811,
+        811
+      ],
+      "request_blocks_executed": 235,
+      "terminal": false
+    },
+    {
+      "frame": "frame_048.npz",
+      "sha256": "3a3487230a30e46baf6a604e4aceb948959737a640ff9c4a5e1e3afef8a59370",
+      "clock": [
+        23.999999463558197,
+        1200,
+        24.19999945908785,
+        1210
+      ],
+      "pair_error": 3.422854298607003e-08,
+      "imu_index": 1200,
+      "render_frames": [
+        824,
+        824,
+        824,
+        824
+      ],
+      "request_blocks_executed": 240,
+      "terminal": false
+    },
+    {
+      "frame": "frame_049.npz",
+      "sha256": "a1d36d3c5eebdd3f9fe00c47e884370e1be5e7b45fe34344819321eaa8a66d4d",
+      "clock": [
+        24.499999452382326,
+        1225,
+        24.699999447911978,
+        1235
+      ],
+      "pair_error": 3.42285431387257e-08,
+      "imu_index": 1225,
+      "render_frames": [
+        837,
+        837,
+        837,
+        837
+      ],
+      "request_blocks_executed": 245,
+      "terminal": false
+    },
+    {
+      "frame": "frame_050.npz",
+      "sha256": "15c3d15daf4e104566913cdda64844dbcab1256f430393cf357c0f12cd9fbc95",
+      "clock": [
+        24.999999441206455,
+        1250,
+        25.199999436736107,
+        1260
+      ],
+      "pair_error": 3.422854303615823e-08,
+      "imu_index": 1250,
+      "render_frames": [
+        850,
+        850,
+        850,
+        850
+      ],
+      "request_blocks_executed": 250,
+      "terminal": false
+    },
+    {
+      "frame": "frame_051.npz",
+      "sha256": "e97f2eb4eb912d5667ba564859becf279ddea16b85e0a9fff10e9d5b291bfa73",
+      "clock": [
+        25.499999430030584,
+        1275,
+        25.699999425560236,
+        1285
+      ],
+      "pair_error": 3.4228542972192244e-08,
+      "imu_index": 1275,
+      "render_frames": [
+        863,
+        863,
+        863,
+        863
+      ],
+      "request_blocks_executed": 255,
+      "terminal": false
+    },
+    {
+      "frame": "frame_052.npz",
+      "sha256": "fb8f43c81646c5307bb047eca6440eafdb6ad67f62aeac1154a1b4b66bb2b31c",
+      "clock": [
+        25.999999418854713,
+        1300,
+        26.199999414384365,
+        1310
+      ],
+      "pair_error": 3.422854320811464e-08,
+      "imu_index": 1300,
+      "render_frames": [
+        876,
+        876,
+        876,
+        876
+      ],
+      "request_blocks_executed": 260,
+      "terminal": false
+    },
+    {
+      "frame": "frame_053.npz",
+      "sha256": "a753f103226dbc6d339073d2edce335cd89d180e751099547c59ce9bc718be07",
+      "clock": [
+        26.499999407678843,
+        1325,
+        26.699999403208494,
+        1335
+      ],
+      "pair_error": 3.422854306933676e-08,
+      "imu_index": 1325,
+      "render_frames": [
+        889,
+        889,
+        889,
+        889
+      ],
+      "request_blocks_executed": 265,
+      "terminal": false
+    },
+    {
+      "frame": "frame_054.npz",
+      "sha256": "f47978918fc16416b104d6adb828afb173daca00f2674eb93f691f0743480851",
+      "clock": [
+        26.99999939650297,
+        1350,
+        27.199999392032623,
+        1360
+      ],
+      "pair_error": 3.4228543160021284e-08,
+      "imu_index": 1350,
+      "render_frames": [
+        902,
+        902,
+        902,
+        902
+      ],
+      "request_blocks_executed": 270,
+      "terminal": false
+    },
+    {
+      "frame": "frame_055.npz",
+      "sha256": "b401e51b3a03f7e436a1d099e89d5fe55e89b2497fa4a7102f6c38aa59945d98",
+      "clock": [
+        27.4999993853271,
+        1375,
+        27.699999380856752,
+        1385
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu_index": 1375,
+      "render_frames": [
+        915,
+        915,
+        915,
+        915
+      ],
+      "request_blocks_executed": 275,
+      "terminal": false
+    },
+    {
+      "frame": "frame_056.npz",
+      "sha256": "c8a449c29d6a529ff7527a6f2e1f738d2cff7c323605bb4566dbc97f1573f146",
+      "clock": [
+        27.99999937415123,
+        1400,
+        28.19999936968088,
+        1410
+      ],
+      "pair_error": 3.422854306933676e-08,
+      "imu_index": 1400,
+      "render_frames": [
+        928,
+        928,
+        928,
+        928
+      ],
+      "request_blocks_executed": 280,
+      "terminal": false
+    },
+    {
+      "frame": "frame_057.npz",
+      "sha256": "3c63b7c61a320af35d376a4c21a35b4ab84732b5d818a9ad8161f7e87c3c88b9",
+      "clock": [
+        28.49999936297536,
+        1425,
+        28.69999935850501,
+        1435
+      ],
+      "pair_error": 3.422854330525915e-08,
+      "imu_index": 1425,
+      "render_frames": [
+        941,
+        941,
+        941,
+        941
+      ],
+      "request_blocks_executed": 285,
+      "terminal": false
+    },
+    {
+      "frame": "frame_058.npz",
+      "sha256": "478d82b5a74a68b329b9e37c3d61c091eb2734444e46ac60e91ec9fd446bc9f8",
+      "clock": [
+        28.999999351799488,
+        1450,
+        29.19999934732914,
+        1460
+      ],
+      "pair_error": 3.4228543013499784e-08,
+      "imu_index": 1450,
+      "render_frames": [
+        954,
+        954,
+        954,
+        954
+      ],
+      "request_blocks_executed": 290,
+      "terminal": false
+    },
+    {
+      "frame": "frame_059.npz",
+      "sha256": "8a7a6d360775aa845d5dec90b19ece5d787c8894f38772a874a8a133e80512ab",
+      "clock": [
+        29.499999340623617,
+        1475,
+        29.69999933615327,
+        1485
+      ],
+      "pair_error": 3.422854306933676e-08,
+      "imu_index": 1475,
+      "render_frames": [
+        967,
+        967,
+        967,
+        967
+      ],
+      "request_blocks_executed": 295,
+      "terminal": false
+    },
+    {
+      "frame": "frame_060.npz",
+      "sha256": "5ba6a05b252a4492373a9c21a026bf683b29cbda51ce1310ad179b9a1d4f34db",
+      "clock": [
+        29.999999329447746,
+        1500,
+        30.199999324977398,
+        1510
+      ],
+      "pair_error": 3.422854301035616e-08,
+      "imu_index": 1500,
+      "render_frames": [
+        980,
+        980,
+        980,
+        980
+      ],
+      "request_blocks_executed": 300,
+      "terminal": false
+    },
+    {
+      "frame": "frame_061.npz",
+      "sha256": "7c370930434099645eb59fb9147a6c95de8d22524d2b501027f87874a3d60b35",
+      "clock": [
+        30.499999318271875,
+        1525,
+        30.699999313801527,
+        1535
+      ],
+      "pair_error": 3.422854305545897e-08,
+      "imu_index": 1525,
+      "render_frames": [
+        993,
+        993,
+        993,
+        993
+      ],
+      "request_blocks_executed": 305,
+      "terminal": false
+    },
+    {
+      "frame": "frame_062.npz",
+      "sha256": "6ba505b5a4c20df7715e825bc623f3f5b1f1163d52b8f0af9d2f8dadaeabb567",
+      "clock": [
+        30.999999307096004,
+        1550,
+        31.199999302625656,
+        1560
+      ],
+      "pair_error": 3.422854306933676e-08,
+      "imu_index": 1550,
+      "render_frames": [
+        1006,
+        1006,
+        1006,
+        1006
+      ],
+      "request_blocks_executed": 310,
+      "terminal": false
+    },
+    {
+      "frame": "frame_063.npz",
+      "sha256": "7d82a9dfb3e694514ba17c8c43dbcfcff58e31599c40788c9a3afc3dc35b5985",
+      "clock": [
+        31.499999295920134,
+        1575,
+        31.699999291449785,
+        1585
+      ],
+      "pair_error": 3.422854314742855e-08,
+      "imu_index": 1575,
+      "render_frames": [
+        1019,
+        1019,
+        1019,
+        1019
+      ],
+      "request_blocks_executed": 315,
+      "terminal": false
+    },
+    {
+      "frame": "frame_064.npz",
+      "sha256": "00b4823a377deec928dd41aeafd4cc4d3fb4954a2cae5336c0969e589e4a38d4",
+      "clock": [
+        31.999999284744263,
+        1600,
+        32.199999280273914,
+        1610
+      ],
+      "pair_error": 3.422854306933676e-08,
+      "imu_index": 1600,
+      "render_frames": [
+        1032,
+        1032,
+        1032,
+        1032
+      ],
+      "request_blocks_executed": 320,
+      "terminal": false
+    },
+    {
+      "frame": "frame_065.npz",
+      "sha256": "1d939860d9aaeac0fb1b8a39ebe34e793d33331213f76feede2f58b6aa2ae476",
+      "clock": [
+        32.49999927356839,
+        1625,
+        32.69999926909804,
+        1635
+      ],
+      "pair_error": 3.422854311097012e-08,
+      "imu_index": 1625,
+      "render_frames": [
+        1045,
+        1045,
+        1045,
+        1045
+      ],
+      "request_blocks_executed": 325,
+      "terminal": false
+    },
+    {
+      "frame": "frame_066.npz",
+      "sha256": "d6a415da6cb9e8719a839b4bc162f5810a18e2f80f4bfb6312c0298e80e04179",
+      "clock": [
+        32.99999926239252,
+        1650,
+        33.19999925792217,
+        1660
+      ],
+      "pair_error": 3.422854299605432e-08,
+      "imu_index": 1650,
+      "render_frames": [
+        1058,
+        1058,
+        1058,
+        1058
+      ],
+      "request_blocks_executed": 330,
+      "terminal": false
+    },
+    {
+      "frame": "frame_067.npz",
+      "sha256": "e70877c28a5ab7a1a1dee8a2d00d637cfbe9bc520bfd62808e7068727a478acb",
+      "clock": [
+        33.49999925121665,
+        1675,
+        33.6999992467463,
+        1685
+      ],
+      "pair_error": 3.422854304158118e-08,
+      "imu_index": 1675,
+      "render_frames": [
+        1071,
+        1071,
+        1071,
+        1071
+      ],
+      "request_blocks_executed": 335,
+      "terminal": false
+    },
+    {
+      "frame": "frame_068.npz",
+      "sha256": "665820a29b216c3208d28127f28408bdef30c9761380d1f95ce466be87d90314",
+      "clock": [
+        33.99999924004078,
+        1700,
+        34.19999923557043,
+        1710
+      ],
+      "pair_error": 3.422854293055888e-08,
+      "imu_index": 1700,
+      "render_frames": [
+        1084,
+        1084,
+        1084,
+        1084
+      ],
+      "request_blocks_executed": 340,
+      "terminal": false
+    },
+    {
+      "frame": "frame_069.npz",
+      "sha256": "8bb7701a1236b96f9dc911846d608960c60c86b5732735d3e9559577d85fecc2",
+      "clock": [
+        34.49999922886491,
+        1725,
+        34.69999922439456,
+        1735
+      ],
+      "pair_error": 3.42285431387257e-08,
+      "imu_index": 1725,
+      "render_frames": [
+        1097,
+        1097,
+        1097,
+        1097
+      ],
+      "request_blocks_executed": 345,
+      "terminal": false
+    },
+    {
+      "frame": "frame_070.npz",
+      "sha256": "556b6f61b276669abd84540283025aca65cc03aa8123146a0d872b6db86a6bd5",
+      "clock": [
+        34.99999921768904,
+        1750,
+        35.19999921321869,
+        1760
+      ],
+      "pair_error": 3.422854312484791e-08,
+      "imu_index": 1750,
+      "render_frames": [
+        1110,
+        1110,
+        1110,
+        1110
+      ],
+      "request_blocks_executed": 350,
+      "terminal": false
+    },
+    {
+      "frame": "frame_071.npz",
+      "sha256": "932101a8e0f6633d9c5991716d88ccd943fff933eb9756cfe1aeb406cbd0765b",
+      "clock": [
+        35.499999206513166,
+        1775,
+        35.69999920204282,
+        1785
+      ],
+      "pair_error": 3.422854300985882e-08,
+      "imu_index": 1775,
+      "render_frames": [
+        1123,
+        1123,
+        1123,
+        1123
+      ],
+      "request_blocks_executed": 355,
+      "terminal": false
+    },
+    {
+      "frame": "frame_072.npz",
+      "sha256": "bee0963266c225b69266308cd0455aa3b178be6b8fc9e34922e0d184fccd135c",
+      "clock": [
+        35.999999195337296,
+        1800,
+        36.19999919086695,
+        1810
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 1800,
+      "render_frames": [
+        1136,
+        1136,
+        1136,
+        1136
+      ],
+      "request_blocks_executed": 360,
+      "terminal": false
+    },
+    {
+      "frame": "frame_073.npz",
+      "sha256": "8170057151f507683b77958b88845336c8b4560e40bc827b770fd4b29e17bfe5",
+      "clock": [
+        36.499999184161425,
+        1825,
+        36.699999179691076,
+        1835
+      ],
+      "pair_error": 3.4228543249748e-08,
+      "imu_index": 1825,
+      "render_frames": [
+        1149,
+        1149,
+        1149,
+        1149
+      ],
+      "request_blocks_executed": 365,
+      "terminal": false
+    },
+    {
+      "frame": "frame_074.npz",
+      "sha256": "3edea92b46ed13db21b6e4c0cc3c18d53ed0bdbb49218a31b4b16ac2b982fd14",
+      "clock": [
+        36.999999172985554,
+        1850,
+        37.199999168515205,
+        1860
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu_index": 1850,
+      "render_frames": [
+        1162,
+        1162,
+        1162,
+        1162
+      ],
+      "request_blocks_executed": 370,
+      "terminal": false
+    },
+    {
+      "frame": "frame_075.npz",
+      "sha256": "cb557fc5c3f31f4aadedef835fdcfc4500777c20953cd2a025a3b049870777d3",
+      "clock": [
+        37.49999916180968,
+        1875,
+        37.699999157339334,
+        1885
+      ],
+      "pair_error": 3.422854330525915e-08,
+      "imu_index": 1875,
+      "render_frames": [
+        1175,
+        1175,
+        1175,
+        1175
+      ],
+      "request_blocks_executed": 375,
+      "terminal": false
+    },
+    {
+      "frame": "frame_076.npz",
+      "sha256": "8da0ce02ffe6708e1f1237c03445aaf5d182022407a420aac197e562067d398e",
+      "clock": [
+        37.99999915063381,
+        1900,
+        38.199999146163464,
+        1910
+      ],
+      "pair_error": 3.4228542958314456e-08,
+      "imu_index": 1900,
+      "render_frames": [
+        1188,
+        1188,
+        1188,
+        1188
+      ],
+      "request_blocks_executed": 380,
+      "terminal": false
+    },
+    {
+      "frame": "frame_077.npz",
+      "sha256": "58fb3fa24a3338af54b857b6a3666999c215de564f9527185f6521cd8e0e0b72",
+      "clock": [
+        38.49999913945794,
+        1925,
+        38.69999913498759,
+        1935
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu_index": 1925,
+      "render_frames": [
+        1201,
+        1201,
+        1201,
+        1201
+      ],
+      "request_blocks_executed": 385,
+      "terminal": false
+    },
+    {
+      "frame": "frame_078.npz",
+      "sha256": "030717398654ee4658734eb55b8925b8847f5b730980fb3e21bf6c01ca4d337c",
+      "clock": [
+        38.99999912828207,
+        1950,
+        39.19999912381172,
+        1960
+      ],
+      "pair_error": 3.422854294443667e-08,
+      "imu_index": 1950,
+      "render_frames": [
+        1214,
+        1214,
+        1214,
+        1214
+      ],
+      "request_blocks_executed": 390,
+      "terminal": false
+    },
+    {
+      "frame": "frame_079.npz",
+      "sha256": "e0a00fb721765898d1e3cb27103d286c5ca694b11de0a233aa9bbe1fcfd83713",
+      "clock": [
+        39.4999991171062,
+        1975,
+        39.69999911263585,
+        1985
+      ],
+      "pair_error": 3.422854311097012e-08,
+      "imu_index": 1975,
+      "render_frames": [
+        1227,
+        1227,
+        1227,
+        1227
+      ],
+      "request_blocks_executed": 395,
+      "terminal": false
+    },
+    {
+      "frame": "frame_080.npz",
+      "sha256": "a5f8a4a4852276b5a7bdd4ea06234509871dc4fce3de111bd338e5b171429847",
+      "clock": [
+        39.99999910593033,
+        2000,
+        40.19999910145998,
+        2010
+      ],
+      "pair_error": 3.422854305545897e-08,
+      "imu_index": 2000,
+      "render_frames": [
+        1240,
+        1240,
+        1240,
+        1240
+      ],
+      "request_blocks_executed": 400,
+      "terminal": false
+    },
+    {
+      "frame": "frame_081.npz",
+      "sha256": "96ef45df27aaa9b5b2ad8f68dbcaafc19a83507c6c48b74383e74d539f225014",
+      "clock": [
+        40.49999909475446,
+        2025,
+        40.69999909028411,
+        2035
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 2025,
+      "render_frames": [
+        1253,
+        1253,
+        1253,
+        1253
+      ],
+      "request_blocks_executed": 405,
+      "terminal": false
+    },
+    {
+      "frame": "frame_082.npz",
+      "sha256": "9d7f9ab89e69d7ce417f5fb8576e034d7324d5669e0bc90f17741a93853872b9",
+      "clock": [
+        40.99999908357859,
+        2050,
+        41.19999907910824,
+        2060
+      ],
+      "pair_error": 3.422854299994782e-08,
+      "imu_index": 2050,
+      "render_frames": [
+        1266,
+        1266,
+        1266,
+        1266
+      ],
+      "request_blocks_executed": 410,
+      "terminal": false
+    },
+    {
+      "frame": "frame_083.npz",
+      "sha256": "e4f928fc07d8ac124f8eadba5a85cadeae774f98a11878ffaf5d79e48f2133c4",
+      "clock": [
+        41.499999072402716,
+        2075,
+        41.69999906793237,
+        2085
+      ],
+      "pair_error": 3.422854318059153e-08,
+      "imu_index": 2075,
+      "render_frames": [
+        1279,
+        1279,
+        1279,
+        1279
+      ],
+      "request_blocks_executed": 415,
+      "terminal": false
+    },
+    {
+      "frame": "frame_084.npz",
+      "sha256": "9512bbeaad80f0baa85609729cc2d8efcd62685e246b2e5dc8e3dba99f53b186",
+      "clock": [
+        41.999999061226845,
+        2100,
+        42.199999056756496,
+        2110
+      ],
+      "pair_error": 3.422854299994782e-08,
+      "imu_index": 2100,
+      "render_frames": [
+        1292,
+        1292,
+        1292,
+        1292
+      ],
+      "request_blocks_executed": 420,
+      "terminal": false
+    },
+    {
+      "frame": "frame_085.npz",
+      "sha256": "e721ef535cced17f189287989a591106be02ca8c848542a516afd46d62003f72",
+      "clock": [
+        42.499999050050974,
+        2125,
+        42.699999045580626,
+        2135
+      ],
+      "pair_error": 3.4228543083214547e-08,
+      "imu_index": 2125,
+      "render_frames": [
+        1305,
+        1305,
+        1305,
+        1305
+      ],
+      "request_blocks_executed": 425,
+      "terminal": false
+    },
+    {
+      "frame": "frame_086.npz",
+      "sha256": "25505558477911302bf7a3a27ed8f142b5661f7e2268b9f97d796eb1cfaa26e2",
+      "clock": [
+        42.9999990388751,
+        2150,
+        43.199999034404755,
+        2160
+      ],
+      "pair_error": 3.4228543093476754e-08,
+      "imu_index": 2150,
+      "render_frames": [
+        1318,
+        1318,
+        1318,
+        1318
+      ],
+      "request_blocks_executed": 430,
+      "terminal": false
+    },
+    {
+      "frame": "frame_087.npz",
+      "sha256": "13198d191503579316e519222e4b0c11ffeb8cfd8a8b89f9546b6b4cc08d67e1",
+      "clock": [
+        43.49999902769923,
+        2175,
+        43.699999023228884,
+        2185
+      ],
+      "pair_error": 3.422854295041879e-08,
+      "imu_index": 2175,
+      "render_frames": [
+        1331,
+        1331,
+        1331,
+        1331
+      ],
+      "request_blocks_executed": 435,
+      "terminal": false
+    },
+    {
+      "frame": "frame_088.npz",
+      "sha256": "7c01184980b5a728a6842cc0f1d8520559064ddcd5ea1b12f3ea7d995415a9da",
+      "clock": [
+        43.99999901652336,
+        2200,
+        44.19999901205301,
+        2210
+      ],
+      "pair_error": 3.422854315616701e-08,
+      "imu_index": 2200,
+      "render_frames": [
+        1344,
+        1344,
+        1344,
+        1344
+      ],
+      "request_blocks_executed": 440,
+      "terminal": false
+    },
+    {
+      "frame": "frame_089.npz",
+      "sha256": "57c133bea7c8193d7debbf0f1c26a7c92c2b6889d06cc68790041ba0b87ecc15",
+      "clock": [
+        44.49999900534749,
+        2225,
+        44.69999900087714,
+        2235
+      ],
+      "pair_error": 3.4228543033751436e-08,
+      "imu_index": 2225,
+      "render_frames": [
+        1357,
+        1357,
+        1357,
+        1357
+      ],
+      "request_blocks_executed": 445,
+      "terminal": false
+    },
+    {
+      "frame": "frame_090.npz",
+      "sha256": "c00729b9b10a72397cf90155e53f54fa1ec49b325a1b57cf9c87513377ff0e20",
+      "clock": [
+        44.99999899417162,
+        2250,
+        45.19999898970127,
+        2260
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 2250,
+      "render_frames": [
+        1370,
+        1370,
+        1370,
+        1370
+      ],
+      "request_blocks_executed": 450,
+      "terminal": false
+    },
+    {
+      "frame": "frame_091.npz",
+      "sha256": "9e67a7798705a4748580fea700bf28a5b007a4b26ea8de6bd96a3dd19070a05e",
+      "clock": [
+        45.49999898299575,
+        2275,
+        45.6999989785254,
+        2285
+      ],
+      "pair_error": 3.422854294443667e-08,
+      "imu_index": 2275,
+      "render_frames": [
+        1383,
+        1383,
+        1383,
+        1383
+      ],
+      "request_blocks_executed": 455,
+      "terminal": false
+    },
+    {
+      "frame": "frame_092.npz",
+      "sha256": "b022cdc8f48c4fcb802a869a953e8f63deb305ed32bbc6286863d0df7d643b37",
+      "clock": [
+        45.99999897181988,
+        2300,
+        46.19999896734953,
+        2310
+      ],
+      "pair_error": 3.422854304158118e-08,
+      "imu_index": 2300,
+      "render_frames": [
+        1396,
+        1396,
+        1396,
+        1396
+      ],
+      "request_blocks_executed": 460,
+      "terminal": false
+    },
+    {
+      "frame": "frame_093.npz",
+      "sha256": "8b34e6ca83110bab7e174d055bafd8f3c97716386c5968f91b9656cd33890ec0",
+      "clock": [
+        46.49999896064401,
+        2325,
+        46.69999895617366,
+        2335
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 2325,
+      "render_frames": [
+        1409,
+        1409,
+        1409,
+        1409
+      ],
+      "request_blocks_executed": 465,
+      "terminal": false
+    },
+    {
+      "frame": "frame_094.npz",
+      "sha256": "654e49010ebbc2c2455839971d3cab0a071efb74a7007ca5111c9278c06b4f2e",
+      "clock": [
+        46.999998949468136,
+        2350,
+        47.19999894499779,
+        2360
+      ],
+      "pair_error": 3.422854293055888e-08,
+      "imu_index": 2350,
+      "render_frames": [
+        1422,
+        1422,
+        1422,
+        1422
+      ],
+      "request_blocks_executed": 470,
+      "terminal": false
+    },
+    {
+      "frame": "frame_095.npz",
+      "sha256": "1abc912659effc2c769fb7d161af6a6c03dce51cba29c00c99b0dd245d81963c",
+      "clock": [
+        47.499998938292265,
+        2375,
+        47.69999893382192,
+        2385
+      ],
+      "pair_error": 3.422854306933676e-08,
+      "imu_index": 2375,
+      "render_frames": [
+        1435,
+        1435,
+        1435,
+        1435
+      ],
+      "request_blocks_executed": 475,
+      "terminal": false
+    },
+    {
+      "frame": "frame_096.npz",
+      "sha256": "91faf0213a6b21518019b8e5c883c2180084adc408a87ee10cd481883c100b1f",
+      "clock": [
+        47.999998927116394,
+        2400,
+        48.199998922646046,
+        2410
+      ],
+      "pair_error": 3.422854319423685e-08,
+      "imu_index": 2400,
+      "render_frames": [
+        1448,
+        1448,
+        1448,
+        1448
+      ],
+      "request_blocks_executed": 480,
+      "terminal": false
+    },
+    {
+      "frame": "frame_097.npz",
+      "sha256": "2a5da829fbc65776fab15f2f2c36a0a105308594bba9cd2dde89b57d707f12e4",
+      "clock": [
+        48.49999891594052,
+        2425,
+        48.699998911470175,
+        2435
+      ],
+      "pair_error": 3.4228543129470996e-08,
+      "imu_index": 2425,
+      "render_frames": [
+        1461,
+        1461,
+        1461,
+        1461
+      ],
+      "request_blocks_executed": 485,
+      "terminal": false
+    },
+    {
+      "frame": "frame_098.npz",
+      "sha256": "27e3353530dca80f45dfbfe77df4f4993358ed08875011a11dd903000b7f8b7a",
+      "clock": [
+        48.99999890476465,
+        2450,
+        49.199998900294304,
+        2460
+      ],
+      "pair_error": 3.4228543166481273e-08,
+      "imu_index": 2450,
+      "render_frames": [
+        1474,
+        1474,
+        1474,
+        1474
+      ],
+      "request_blocks_executed": 490,
+      "terminal": false
+    },
+    {
+      "frame": "frame_099.npz",
+      "sha256": "1545b0e6c3db636d90ef5953e1e71324ea96200f56bbf29e0d118f9c819d29dd",
+      "clock": [
+        49.49999889358878,
+        2475,
+        49.69999888911843,
+        2485
+      ],
+      "pair_error": 3.4228542972192244e-08,
+      "imu_index": 2475,
+      "render_frames": [
+        1487,
+        1487,
+        1487,
+        1487
+      ],
+      "request_blocks_executed": 495,
+      "terminal": false
+    },
+    {
+      "frame": "frame_100.npz",
+      "sha256": "4399ddc5bb51fa576923e31551acb2427d90d00a134182b8ae4d6df6a86a8325",
+      "clock": [
+        49.99999888241291,
+        2500,
+        50.19999887794256,
+        2510
+      ],
+      "pair_error": 3.422854305545897e-08,
+      "imu_index": 2500,
+      "render_frames": [
+        1500,
+        1500,
+        1500,
+        1500
+      ],
+      "request_blocks_executed": 500,
+      "terminal": false
+    },
+    {
+      "frame": "frame_101.npz",
+      "sha256": "6c4a98cf59054a1640a656e1c1a96ed02e3cfac6d09017a638edc1f058caad7a",
+      "clock": [
+        50.49999887123704,
+        2525,
+        50.69999886676669,
+        2535
+      ],
+      "pair_error": 3.42285431387257e-08,
+      "imu_index": 2525,
+      "render_frames": [
+        1513,
+        1513,
+        1513,
+        1513
+      ],
+      "request_blocks_executed": 505,
+      "terminal": false
+    },
+    {
+      "frame": "frame_102.npz",
+      "sha256": "c189763fbebc0f5ad8158d5a23e9dd8658de975f71e64165e3b5ff3c7bcfeb66",
+      "clock": [
+        50.99999886006117,
+        2550,
+        51.19999885559082,
+        2560
+      ],
+      "pair_error": 3.4228543249748e-08,
+      "imu_index": 2550,
+      "render_frames": [
+        1526,
+        1526,
+        1526,
+        1526
+      ],
+      "request_blocks_executed": 510,
+      "terminal": false
+    },
+    {
+      "frame": "frame_103.npz",
+      "sha256": "6b71f082b8cee17914d262b4052b6e6a1fc4cf41ce9d0aec09f4adf5e105cd74",
+      "clock": [
+        51.4999988488853,
+        2575,
+        51.69999884441495,
+        2585
+      ],
+      "pair_error": 3.422854291668109e-08,
+      "imu_index": 2575,
+      "render_frames": [
+        1539,
+        1539,
+        1539,
+        1539
+      ],
+      "request_blocks_executed": 515,
+      "terminal": false
+    },
+    {
+      "frame": "frame_104.npz",
+      "sha256": "8de71fcfc02c37f69c27a814eb5f6598a1fec89e606455df3007c20f66d16a42",
+      "clock": [
+        51.99999883770943,
+        2600,
+        52.19999883323908,
+        2610
+      ],
+      "pair_error": 3.422854312484791e-08,
+      "imu_index": 2600,
+      "render_frames": [
+        1552,
+        1552,
+        1552,
+        1552
+      ],
+      "request_blocks_executed": 520,
+      "terminal": false
+    },
+    {
+      "frame": "frame_105.npz",
+      "sha256": "d1a2f32e889fd3c20ca993f2d070358e072b1c10fcc22476db3520ea655152dd",
+      "clock": [
+        52.499998826533556,
+        2625,
+        52.69999882206321,
+        2635
+      ],
+      "pair_error": 3.422854298607003e-08,
+      "imu_index": 2625,
+      "render_frames": [
+        1565,
+        1565,
+        1565,
+        1565
+      ],
+      "request_blocks_executed": 525,
+      "terminal": false
+    },
+    {
+      "frame": "frame_106.npz",
+      "sha256": "f2e6e23e2891fc318a174784d64c4b2b9c288bfdd35303f848ccb95ddced59bb",
+      "clock": [
+        52.999998815357685,
+        2650,
+        53.19999881088734,
+        2660
+      ],
+      "pair_error": 3.422854314646131e-08,
+      "imu_index": 2650,
+      "render_frames": [
+        1578,
+        1578,
+        1578,
+        1578
+      ],
+      "request_blocks_executed": 530,
+      "terminal": false
+    },
+    {
+      "frame": "frame_107.npz",
+      "sha256": "5455fc576ce61a0882f22863b4e680a065fba40a1b6386858075a911e9f5da09",
+      "clock": [
+        53.499998804181814,
+        2675,
+        53.699998799711466,
+        2685
+      ],
+      "pair_error": 3.422854305545897e-08,
+      "imu_index": 2675,
+      "render_frames": [
+        1591,
+        1591,
+        1591,
+        1591
+      ],
+      "request_blocks_executed": 535,
+      "terminal": false
+    },
+    {
+      "frame": "frame_108.npz",
+      "sha256": "7cab398712049769df3a9ff104402538fccf8cbb8437eea191ccce46aa5e0366",
+      "clock": [
+        53.99999879300594,
+        2700,
+        54.199998788535595,
+        2710
+      ],
+      "pair_error": 3.422854303429753e-08,
+      "imu_index": 2700,
+      "render_frames": [
+        1604,
+        1604,
+        1604,
+        1604
+      ],
+      "request_blocks_executed": 540,
+      "terminal": false
+    },
+    {
+      "frame": "frame_109.npz",
+      "sha256": "b3f75f1b07307ababe48f55975af1f34dff1fdc4ace5fcd9cdf8e22bba476813",
+      "clock": [
+        54.49999878183007,
+        2725,
+        54.699998777359724,
+        2735
+      ],
+      "pair_error": 3.422854304496784e-08,
+      "imu_index": 2725,
+      "render_frames": [
+        1617,
+        1617,
+        1617,
+        1617
+      ],
+      "request_blocks_executed": 545,
+      "terminal": false
+    },
+    {
+      "frame": "frame_110.npz",
+      "sha256": "c8fb972c99bc992c99ef12ac8abd409fafe628491c9d3f33c7566f3a79d54928",
+      "clock": [
+        54.9999987706542,
+        2750,
+        55.19999876618385,
+        2760
+      ],
+      "pair_error": 3.422854304158118e-08,
+      "imu_index": 2750,
+      "render_frames": [
+        1630,
+        1630,
+        1630,
+        1630
+      ],
+      "request_blocks_executed": 550,
+      "terminal": false
+    },
+    {
+      "frame": "frame_111.npz",
+      "sha256": "cafb74a30abef5393bf9952f1c24a8acb3d66b2522c745c3e276352c3f80e05a",
+      "clock": [
+        55.49999875947833,
+        2775,
+        55.69999875500798,
+        2785
+      ],
+      "pair_error": 3.422854319423685e-08,
+      "imu_index": 2775,
+      "render_frames": [
+        1643,
+        1643,
+        1643,
+        1643
+      ],
+      "request_blocks_executed": 555,
+      "terminal": false
+    },
+    {
+      "frame": "frame_112.npz",
+      "sha256": "dc084c9f25920e166af1044338996511e55f531f906c06c6dabcfd273c912161",
+      "clock": [
+        55.99999874830246,
+        2800,
+        56.19999874383211,
+        2810
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 2800,
+      "render_frames": [
+        1656,
+        1656,
+        1656,
+        1656
+      ],
+      "request_blocks_executed": 560,
+      "terminal": false
+    },
+    {
+      "frame": "frame_113.npz",
+      "sha256": "8bb45f0dc22a351ea9d19e7d9abbd98da1289b9ca57b53661fe0331204d1083d",
+      "clock": [
+        56.49999873712659,
+        2825,
+        56.69999873265624,
+        2835
+      ],
+      "pair_error": 3.4228543083214547e-08,
+      "imu_index": 2825,
+      "render_frames": [
+        1669,
+        1669,
+        1669,
+        1669
+      ],
+      "request_blocks_executed": 565,
+      "terminal": false
+    },
+    {
+      "frame": "frame_114.npz",
+      "sha256": "59b04a31521c4f2ad23cebe486fdcaff4d079ee073df1e85582aaa62492aec43",
+      "clock": [
+        56.99999872595072,
+        2850,
+        57.19999872148037,
+        2860
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu_index": 2850,
+      "render_frames": [
+        1682,
+        1682,
+        1682,
+        1682
+      ],
+      "request_blocks_executed": 570,
+      "terminal": false
+    },
+    {
+      "frame": "frame_115.npz",
+      "sha256": "93dcaee57b2ba0007ae6648e2451b9968f7f292ac1da92e3391336cecc980218",
+      "clock": [
+        57.49999871477485,
+        2875,
+        57.6999987103045,
+        2885
+      ],
+      "pair_error": 3.422854303464229e-08,
+      "imu_index": 2875,
+      "render_frames": [
+        1695,
+        1695,
+        1695,
+        1695
+      ],
+      "request_blocks_executed": 575,
+      "terminal": false
+    },
+    {
+      "frame": "frame_116.npz",
+      "sha256": "81d07dc0c2b438b819db00782608a794357acdbca2f697e5ad1f1d10fb4dd84b",
+      "clock": [
+        57.999998703598976,
+        2900,
+        58.19999869912863,
+        2910
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 2900,
+      "render_frames": [
+        1708,
+        1708,
+        1708,
+        1708
+      ],
+      "request_blocks_executed": 580,
+      "terminal": false
+    },
+    {
+      "frame": "frame_117.npz",
+      "sha256": "1ff585d5db9c3fd7f5ca4dfd25f870153b43e7cebc9ebcafb31ced3638e77d1c",
+      "clock": [
+        58.499998692423105,
+        2925,
+        58.69999868795276,
+        2935
+      ],
+      "pair_error": 3.4228543156506627e-08,
+      "imu_index": 2925,
+      "render_frames": [
+        1721,
+        1721,
+        1721,
+        1721
+      ],
+      "request_blocks_executed": 585,
+      "terminal": false
+    },
+    {
+      "frame": "frame_118.npz",
+      "sha256": "56dff219cc90ae063842652ad4d8f0254739f3996c6bcce1d4350b6eb029eadd",
+      "clock": [
+        58.999998681247234,
+        2950,
+        59.199998676776886,
+        2960
+      ],
+      "pair_error": 3.422854299994782e-08,
+      "imu_index": 2950,
+      "render_frames": [
+        1734,
+        1734,
+        1734,
+        1734
+      ],
+      "request_blocks_executed": 590,
+      "terminal": false
+    },
+    {
+      "frame": "frame_119.npz",
+      "sha256": "c32edca3eca7a37cfdd2369f643f2679f264e483da63f9c729ebdac967eb9b3d",
+      "clock": [
+        59.49999867007136,
+        2975,
+        59.699998665601015,
+        2985
+      ],
+      "pair_error": 3.4228542902803305e-08,
+      "imu_index": 2975,
+      "render_frames": [
+        1747,
+        1747,
+        1747,
+        1747
+      ],
+      "request_blocks_executed": 595,
+      "terminal": false
+    },
+    {
+      "frame": "frame_120.npz",
+      "sha256": "d5180ed120deaa8dcb187cf7329380c8c845845e2d506612a21640793c776e36",
+      "clock": [
+        59.99999865889549,
+        3000,
+        60.199998654425144,
+        3010
+      ],
+      "pair_error": 3.422854317585249e-08,
+      "imu_index": 3000,
+      "render_frames": [
+        1760,
+        1760,
+        1760,
+        1760
+      ],
+      "request_blocks_executed": 600,
+      "terminal": false
+    },
+    {
+      "frame": "frame_121.npz",
+      "sha256": "62de23e823df933a704361cb8d9ffff27c46526afd5397b0c71504ab0222dc58",
+      "clock": [
+        60.49999864771962,
+        3025,
+        60.69999864324927,
+        3035
+      ],
+      "pair_error": 3.4228543221992425e-08,
+      "imu_index": 3025,
+      "render_frames": [
+        1773,
+        1773,
+        1773,
+        1773
+      ],
+      "request_blocks_executed": 605,
+      "terminal": false
+    },
+    {
+      "frame": "frame_122.npz",
+      "sha256": "968720b7053df8e7bbf1dc5b4416f7884efe75900b03daa2e3cf7d0ea8477c56",
+      "clock": [
+        60.99999863654375,
+        3050,
+        61.1999986320734,
+        3060
+      ],
+      "pair_error": 3.4228543083214547e-08,
+      "imu_index": 3050,
+      "render_frames": [
+        1786,
+        1786,
+        1786,
+        1786
+      ],
+      "request_blocks_executed": 610,
+      "terminal": false
+    },
+    {
+      "frame": "frame_123.npz",
+      "sha256": "adb850c24bf0f9dee54120e72e1d01a5427a5d0093cf4b3a9d3b23c611e3c844",
+      "clock": [
+        61.49999862536788,
+        3075,
+        61.69999862089753,
+        3085
+      ],
+      "pair_error": 3.4228542972192244e-08,
+      "imu_index": 3075,
+      "render_frames": [
+        1799,
+        1799,
+        1799,
+        1799
+      ],
+      "request_blocks_executed": 615,
+      "terminal": false
+    },
+    {
+      "frame": "frame_124.npz",
+      "sha256": "6be64b82567baec5c420481572d9329d83b3f5bbbe269020b651b5fc38878b54",
+      "clock": [
+        61.99999861419201,
+        3100,
+        62.19999860972166,
+        3110
+      ],
+      "pair_error": 3.422854306933676e-08,
+      "imu_index": 3100,
+      "render_frames": [
+        1812,
+        1812,
+        1812,
+        1812
+      ],
+      "request_blocks_executed": 620,
+      "terminal": false
+    },
+    {
+      "frame": "frame_125.npz",
+      "sha256": "17135090ff5f732ca9e90b302b5a7df3b6127ebfe34207fa35407167c4915bc0",
+      "clock": [
+        62.49999860301614,
+        3125,
+        62.69999859854579,
+        3135
+      ],
+      "pair_error": 3.422854309840035e-08,
+      "imu_index": 3125,
+      "render_frames": [
+        1825,
+        1825,
+        1825,
+        1825
+      ],
+      "request_blocks_executed": 625,
+      "terminal": false
+    },
+    {
+      "frame": "frame_126.npz",
+      "sha256": "c17118cde02d2eb9734645078890211f3d302d7020a9534a20e49762e41d6c7f",
+      "clock": [
+        62.99999859184027,
+        3150,
+        63.19999858736992,
+        3160
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 3150,
+      "render_frames": [
+        1838,
+        1838,
+        1838,
+        1838
+      ],
+      "request_blocks_executed": 630,
+      "terminal": false
+    },
+    {
+      "frame": "frame_127.npz",
+      "sha256": "5400bb6232e042238c88e0c55d7c98817d7dfcc35192df5c25d177b340e08d11",
+      "clock": [
+        63.499998580664396,
+        3175,
+        63.69999857619405,
+        3185
+      ],
+      "pair_error": 3.422854305545897e-08,
+      "imu_index": 3175,
+      "render_frames": [
+        1851,
+        1851,
+        1851,
+        1851
+      ],
+      "request_blocks_executed": 635,
+      "terminal": false
+    },
+    {
+      "frame": "frame_128.npz",
+      "sha256": "6fbdf0d35403908e9379df797f34b52fa76375691032bb41fe6a19e6e9a4ede6",
+      "clock": [
+        63.999998569488525,
+        3200,
+        64.19999856501818,
+        3210
+      ],
+      "pair_error": 3.422854319423685e-08,
+      "imu_index": 3200,
+      "render_frames": [
+        1864,
+        1864,
+        1864,
+        1864
+      ],
+      "request_blocks_executed": 640,
+      "terminal": false
+    },
+    {
+      "frame": "frame_129.npz",
+      "sha256": "8cf1d0f59446f5c2d33798194d098be97d0bd41e4d75f26c38c1b64497a03c37",
+      "clock": [
+        64.49999855831265,
+        3225,
+        64.6999985538423,
+        3235
+      ],
+      "pair_error": 3.422854317230861e-08,
+      "imu_index": 3225,
+      "render_frames": [
+        1877,
+        1877,
+        1877,
+        1877
+      ],
+      "request_blocks_executed": 645,
+      "terminal": false
+    },
+    {
+      "frame": "frame_130.npz",
+      "sha256": "a66de7436212a0f2bfe39bc16c509a5f20f3abc56a844027f0f7e871cb877948",
+      "clock": [
+        64.99999854713678,
+        3250,
+        65.19999854266644,
+        3260
+      ],
+      "pair_error": 3.422854298607003e-08,
+      "imu_index": 3250,
+      "render_frames": [
+        1890,
+        1890,
+        1890,
+        1890
+      ],
+      "request_blocks_executed": 650,
+      "terminal": false
+    },
+    {
+      "frame": "frame_131.npz",
+      "sha256": "3db96aaa7b1ea74c5cd7a13eb5673430aaf66bfbe00e0e2c1149469981c929fc",
+      "clock": [
+        65.49999853596091,
+        3275,
+        65.69999853149056,
+        3285
+      ],
+      "pair_error": 3.4228543291381364e-08,
+      "imu_index": 3275,
+      "render_frames": [
+        1903,
+        1903,
+        1903,
+        1903
+      ],
+      "request_blocks_executed": 655,
+      "terminal": false
+    },
+    {
+      "frame": "frame_132.npz",
+      "sha256": "b31367978cdae1f7c557d2fbadb93d1a768829933a0ed3436e07a432bd292079",
+      "clock": [
+        65.99999852478504,
+        3300,
+        66.1999985203147,
+        3310
+      ],
+      "pair_error": 3.422854306933676e-08,
+      "imu_index": 3300,
+      "render_frames": [
+        1916,
+        1916,
+        1916,
+        1916
+      ],
+      "request_blocks_executed": 660,
+      "terminal": false
+    },
+    {
+      "frame": "frame_133.npz",
+      "sha256": "32b83a900b53c7bf877217040ed916008316b18637f98337530441f5c894a764",
+      "clock": [
+        66.49999851360917,
+        3325,
+        66.69999850913882,
+        3335
+      ],
+      "pair_error": 3.422854306386946e-08,
+      "imu_index": 3325,
+      "render_frames": [
+        1929,
+        1929,
+        1929,
+        1929
+      ],
+      "request_blocks_executed": 665,
+      "terminal": false
+    },
+    {
+      "frame": "frame_134.npz",
+      "sha256": "dfbe5d6400ddef0e3756df2a1c48138878ef0341d4147406aa668cc9bb991536",
+      "clock": [
+        66.9999985024333,
+        3350,
+        67.19999849796295,
+        3360
+      ],
+      "pair_error": 3.422854311591108e-08,
+      "imu_index": 3350,
+      "render_frames": [
+        1942,
+        1942,
+        1942,
+        1942
+      ],
+      "request_blocks_executed": 670,
+      "terminal": false
+    },
+    {
+      "frame": "frame_135.npz",
+      "sha256": "6e90730f09e51a241a7ab36ed36e6234b916629dcf35501e224a7ac9e4269f52",
+      "clock": [
+        67.49999849125743,
+        3375,
+        67.69999848678708,
+        3385
+      ],
+      "pair_error": 3.4228542972192244e-08,
+      "imu_index": 3375,
+      "render_frames": [
+        1955,
+        1955,
+        1955,
+        1955
+      ],
+      "request_blocks_executed": 675,
+      "terminal": false
+    },
+    {
+      "frame": "frame_136.npz",
+      "sha256": "6e1a3c114564f9f17002e93f477d75c1236e3a2539b609581791587ac9e02a72",
+      "clock": [
+        67.99999848008156,
+        3400,
+        68.19999847561121,
+        3410
+      ],
+      "pair_error": 3.422854295611585e-08,
+      "imu_index": 3400,
+      "render_frames": [
+        1968,
+        1968,
+        1968,
+        1968
+      ],
+      "request_blocks_executed": 680,
+      "terminal": false
+    },
+    {
+      "frame": "frame_137.npz",
+      "sha256": "e3258c38b5d597b3e5d6f3913fcdbf3110931a25c6afbce3802e3e09e449d11d",
+      "clock": [
+        68.49999846890569,
+        3425,
+        68.69999846443534,
+        3435
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 3425,
+      "render_frames": [
+        1981,
+        1981,
+        1981,
+        1981
+      ],
+      "request_blocks_executed": 685,
+      "terminal": false
+    },
+    {
+      "frame": "frame_138.npz",
+      "sha256": "07e0ec9c39058e598a1059976849ebfa00b983ebd4d7c1eb1c65bb13976d8fb5",
+      "clock": [
+        68.99999845772982,
+        3450,
+        69.19999845325947,
+        3460
+      ],
+      "pair_error": 3.4228543083214547e-08,
+      "imu_index": 3450,
+      "render_frames": [
+        1994,
+        1994,
+        1994,
+        1994
+      ],
+      "request_blocks_executed": 690,
+      "terminal": false
+    },
+    {
+      "frame": "frame_139.npz",
+      "sha256": "db59e18b5d117523e314828e41cc876535529323d89d35bdc1cc85c70d2bbc3c",
+      "clock": [
+        69.49999844655395,
+        3475,
+        69.6999984420836,
+        3485
+      ],
+      "pair_error": 3.42285431387257e-08,
+      "imu_index": 3475,
+      "render_frames": [
+        2007,
+        2007,
+        2007,
+        2007
+      ],
+      "request_blocks_executed": 695,
+      "terminal": false
+    },
+    {
+      "frame": "frame_140.npz",
+      "sha256": "dc8d54d2f305f261189f3855e008829d21d424928869116ff5ad42048b90c7ae",
+      "clock": [
+        69.99999843537807,
+        3500,
+        70.19999843090773,
+        3510
+      ],
+      "pair_error": 3.422854297271877e-08,
+      "imu_index": 3500,
+      "render_frames": [
+        2020,
+        2020,
+        2020,
+        2020
+      ],
+      "request_blocks_executed": 700,
+      "terminal": false
+    },
+    {
+      "frame": "frame_141.npz",
+      "sha256": "33351d37033922febee6212c825f52c37fbd510aac991fb7d910a90596a295cb",
+      "clock": [
+        70.4999984242022,
+        3525,
+        70.69999841973186,
+        3535
+      ],
+      "pair_error": 3.422854319488592e-08,
+      "imu_index": 3525,
+      "render_frames": [
+        2033,
+        2033,
+        2033,
+        2033
+      ],
+      "request_blocks_executed": 705,
+      "terminal": false
+    },
+    {
+      "frame": "frame_142.npz",
+      "sha256": "1210f30cfb3e2795efb7b671548f613c2696359c89bd7f48bd4e0fc934c9f26d",
+      "clock": [
+        70.99999841302633,
+        3550,
+        71.19999840855598,
+        3560
+      ],
+      "pair_error": 3.4228543152603486e-08,
+      "imu_index": 3550,
+      "render_frames": [
+        2046,
+        2046,
+        2046,
+        2046
+      ],
+      "request_blocks_executed": 710,
+      "terminal": false
+    },
+    {
+      "frame": "frame_143.npz",
+      "sha256": "2d69a3e65b522019edad8514b2073d8d63bcae37d5b6256104eab8616749ac29",
+      "clock": [
+        71.49999840185046,
+        3575,
+        71.69999839738011,
+        3585
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu_index": 3575,
+      "render_frames": [
+        2059,
+        2059,
+        2059,
+        2059
+      ],
+      "request_blocks_executed": 715,
+      "terminal": false
+    },
+    {
+      "frame": "frame_144.npz",
+      "sha256": "7fcb0a8fc17fa58ca66d80e8ed691fc50530a306f3972daca6287e1234618bef",
+      "clock": [
+        71.99999839067459,
+        3600,
+        72.19999838620424,
+        3610
+      ],
+      "pair_error": 3.422854311097012e-08,
+      "imu_index": 3600,
+      "render_frames": [
+        2072,
+        2072,
+        2072,
+        2072
+      ],
+      "request_blocks_executed": 720,
+      "terminal": false
+    },
+    {
+      "frame": "frame_145.npz",
+      "sha256": "7e007fa6cfa2609a3443b79876b36e311e7464c4aa9ec54b64259096bfe82050",
+      "clock": [
+        72.49999837949872,
+        3625,
+        72.69999837502837,
+        3635
+      ],
+      "pair_error": 3.4228543166481273e-08,
+      "imu_index": 3625,
+      "render_frames": [
+        2085,
+        2085,
+        2085,
+        2085
+      ],
+      "request_blocks_executed": 725,
+      "terminal": false
+    },
+    {
+      "frame": "frame_146.npz",
+      "sha256": "163e8a733e53ade98098642bb61696a194d112eef3b923533d554eaaa0ab20a9",
+      "clock": [
+        72.99999836832285,
+        3650,
+        73.1999983638525,
+        3660
+      ],
+      "pair_error": 3.422854294443667e-08,
+      "imu_index": 3650,
+      "render_frames": [
+        2098,
+        2098,
+        2098,
+        2098
+      ],
+      "request_blocks_executed": 730,
+      "terminal": false
+    },
+    {
+      "frame": "frame_147.npz",
+      "sha256": "60d566f3d43b6ab489495f56965fcd9cd894a27cae44b6ad85eea81017944fac",
+      "clock": [
+        73.49999835714698,
+        3675,
+        73.69999835267663,
+        3685
+      ],
+      "pair_error": 3.4228542972192244e-08,
+      "imu_index": 3675,
+      "render_frames": [
+        2111,
+        2111,
+        2111,
+        2111
+      ],
+      "request_blocks_executed": 735,
+      "terminal": false
+    },
+    {
+      "frame": "frame_148.npz",
+      "sha256": "584ee537f4ece26ef7df11532fbf3143ee4eb47ac5a4a28525b7385576f962b6",
+      "clock": [
+        73.99999834597111,
+        3700,
+        74.19999834150076,
+        3710
+      ],
+      "pair_error": 3.4228543249748e-08,
+      "imu_index": 3700,
+      "render_frames": [
+        2124,
+        2124,
+        2124,
+        2124
+      ],
+      "request_blocks_executed": 740,
+      "terminal": false
+    },
+    {
+      "frame": "frame_149.npz",
+      "sha256": "e838031c10cbf628ce8828790a62ec64e32d146e0ef155ca28ebf48dbc156336",
+      "clock": [
+        74.49999833479524,
+        3725,
+        74.69999833032489,
+        3735
+      ],
+      "pair_error": 3.422854323587021e-08,
+      "imu_index": 3725,
+      "render_frames": [
+        2137,
+        2137,
+        2137,
+        2137
+      ],
+      "request_blocks_executed": 745,
+      "terminal": false
+    },
+    {
+      "frame": "frame_150.npz",
+      "sha256": "053201c54731668fd7b6adcf2a3235f18e83c427d4d0f51d79131f6938a6b607",
+      "clock": [
+        74.99999832361937,
+        3750,
+        75.19999831914902,
+        3760
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 3750,
+      "render_frames": [
+        2150,
+        2150,
+        2150,
+        2150
+      ],
+      "request_blocks_executed": 750,
+      "terminal": false
+    },
+    {
+      "frame": "frame_151.npz",
+      "sha256": "f58ffadf9d0cf07b10f85a0afbb3b1886997645c06702a0a9b97e6e8223f1f2b",
+      "clock": [
+        75.4999983124435,
+        3775,
+        75.69999830797315,
+        3785
+      ],
+      "pair_error": 3.4228543037682774e-08,
+      "imu_index": 3775,
+      "render_frames": [
+        2163,
+        2163,
+        2163,
+        2163
+      ],
+      "request_blocks_executed": 755,
+      "terminal": false
+    },
+    {
+      "frame": "frame_152.npz",
+      "sha256": "4345114d309e8e6f545979c54df8d18ba1a52e8813df54ab6282f0cd9ed26c17",
+      "clock": [
+        75.99999830126762,
+        3800,
+        76.19999829679728,
+        3810
+      ],
+      "pair_error": 3.422854299994782e-08,
+      "imu_index": 3800,
+      "render_frames": [
+        2176,
+        2176,
+        2176,
+        2176
+      ],
+      "request_blocks_executed": 760,
+      "terminal": false
+    },
+    {
+      "frame": "frame_153.npz",
+      "sha256": "11fc83963ae164281e85601809d759c4d6fe965ff87cccc964061fe93c3fa083",
+      "clock": [
+        76.49999829009175,
+        3825,
+        76.6999982856214,
+        3835
+      ],
+      "pair_error": 3.422854294443667e-08,
+      "imu_index": 3825,
+      "render_frames": [
+        2189,
+        2189,
+        2189,
+        2189
+      ],
+      "request_blocks_executed": 765,
+      "terminal": false
+    },
+    {
+      "frame": "frame_154.npz",
+      "sha256": "aa9a92f4f5c9346d5b2846ae747e51bc4d2db8834bc0871479fa3601a09fc0e9",
+      "clock": [
+        76.99999827891588,
+        3850,
+        77.19999827444553,
+        3860
+      ],
+      "pair_error": 3.422854319423685e-08,
+      "imu_index": 3850,
+      "render_frames": [
+        2202,
+        2202,
+        2202,
+        2202
+      ],
+      "request_blocks_executed": 770,
+      "terminal": false
+    },
+    {
+      "frame": "frame_155.npz",
+      "sha256": "c20ef61f5dc956b9e10f76e51d457caaf4c2deef38cefe21e9eae278df6c1228",
+      "clock": [
+        77.49999826774001,
+        3875,
+        77.69999826326966,
+        3885
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu_index": 3875,
+      "render_frames": [
+        2215,
+        2215,
+        2215,
+        2215
+      ],
+      "request_blocks_executed": 775,
+      "terminal": false
+    },
+    {
+      "frame": "frame_156.npz",
+      "sha256": "bbd5264fb5031ce6d6e416d73d4f486d789eedc09b43e1d9f7425ede864583ee",
+      "clock": [
+        77.99999825656414,
+        3900,
+        78.19999825209379,
+        3910
+      ],
+      "pair_error": 3.422854279398394e-08,
+      "imu_index": 3900,
+      "render_frames": [
+        2228,
+        2228,
+        2228,
+        2228
+      ],
+      "request_blocks_executed": 780,
+      "terminal": false
+    },
+    {
+      "frame": "frame_157.npz",
+      "sha256": "cda20f935da45a86e43178fca33415b8e1f5f0aa676ce10f9f0793161b35fb4a",
+      "clock": [
+        78.49999824538827,
+        3925,
+        78.69999824091792,
+        3935
+      ],
+      "pair_error": 3.422854307627565e-08,
+      "imu_index": 3925,
+      "render_frames": [
+        2241,
+        2241,
+        2241,
+        2241
+      ],
+      "request_blocks_executed": 785,
+      "terminal": false
+    },
+    {
+      "frame": "frame_158.npz",
+      "sha256": "5967cc08fa86f63441b054119389cf4037d587ca2d14c670b16a691b0e9a306b",
+      "clock": [
+        78.9999982342124,
+        3950,
+        79.19999822974205,
+        3960
+      ],
+      "pair_error": 3.4228542902803305e-08,
+      "imu_index": 3950,
+      "render_frames": [
+        2254,
+        2254,
+        2254,
+        2254
+      ],
+      "request_blocks_executed": 790,
+      "terminal": false
+    },
+    {
+      "frame": "frame_159.npz",
+      "sha256": "a1aa1b56611dc59d2738a91fbc00f5abd34421606f635fc8a1163614883823b0",
+      "clock": [
+        79.49999822303653,
+        3975,
+        79.69999821856618,
+        3985
+      ],
+      "pair_error": 3.422854318035906e-08,
+      "imu_index": 3975,
+      "render_frames": [
+        2267,
+        2267,
+        2267,
+        2267
+      ],
+      "request_blocks_executed": 795,
+      "terminal": false
+    },
+    {
+      "frame": "frame_160.npz",
+      "sha256": "2441f71872d7417c1b1763067e50ec79e9d31e36681f4883a31f5dfdcc00fb9a",
+      "clock": [
+        79.99999821186066,
+        4000,
+        80.19999820739031,
+        4010
+      ],
+      "pair_error": 3.4228543166481273e-08,
+      "imu_index": 4000,
+      "render_frames": [
+        2280,
+        2280,
+        2280,
+        2280
+      ],
+      "request_blocks_executed": 800,
+      "terminal": false
+    },
+    {
+      "frame": "frame_161.npz",
+      "sha256": "6b1a2d8f018ece63894aecb099bc137c8f9ccad874382b09728fa5e25ed4e17c",
+      "clock": [
+        80.49999820068479,
+        4025,
+        80.69999819621444,
+        4035
+      ],
+      "pair_error": 3.4228542791781e-08,
+      "imu_index": 4025,
+      "render_frames": [
+        2293,
+        2293,
+        2293,
+        2293
+      ],
+      "request_blocks_executed": 805,
+      "terminal": false
+    },
+    {
+      "frame": "frame_162.npz",
+      "sha256": "5139e2e4d3f695fb5d6b061972fb39e2e3d31e62dee5ded3e9c295a5f6c1ddba",
+      "clock": [
+        80.99999818950891,
+        4050,
+        81.19999818503857,
+        4060
+      ],
+      "pair_error": 3.4228542958314456e-08,
+      "imu_index": 4050,
+      "render_frames": [
+        2306,
+        2306,
+        2306,
+        2306
+      ],
+      "request_blocks_executed": 810,
+      "terminal": false
+    },
+    {
+      "frame": "frame_163.npz",
+      "sha256": "c517e0ef86f46b5a8abe18dd95ccf376a58bef0851fb8001326d3743b07640bf",
+      "clock": [
+        81.49999817833304,
+        4075,
+        81.6999981738627,
+        4085
+      ],
+      "pair_error": 3.422854293055888e-08,
+      "imu_index": 4075,
+      "render_frames": [
+        2319,
+        2319,
+        2319,
+        2319
+      ],
+      "request_blocks_executed": 815,
+      "terminal": false
+    },
+    {
+      "frame": "frame_164.npz",
+      "sha256": "1ba07fe661efab8184a06b4777c7e7455cc3a387fecb96472519867ab9f42a1a",
+      "clock": [
+        81.99999816715717,
+        4100,
+        82.19999816268682,
+        4110
+      ],
+      "pair_error": 3.422854298607003e-08,
+      "imu_index": 4100,
+      "render_frames": [
+        2332,
+        2332,
+        2332,
+        2332
+      ],
+      "request_blocks_executed": 820,
+      "terminal": false
+    },
+    {
+      "frame": "frame_165.npz",
+      "sha256": "d301f88a52d9e6dcb77302f303a5113d53d590feaaa82b7f5ba5eb771760f807",
+      "clock": [
+        82.4999981559813,
+        4125,
+        82.69999815151095,
+        4135
+      ],
+      "pair_error": 3.422854317917519e-08,
+      "imu_index": 4125,
+      "render_frames": [
+        2345,
+        2345,
+        2345,
+        2345
+      ],
+      "request_blocks_executed": 825,
+      "terminal": false
+    },
+    {
+      "frame": "frame_166.npz",
+      "sha256": "0426ae3ad4cc65d4584c61f6da799f0a570a9e9c4d9960d278f2838287d952e0",
+      "clock": [
+        82.99999814480543,
+        4150,
+        83.19999814033508,
+        4160
+      ],
+      "pair_error": 3.422854302553065e-08,
+      "imu_index": 4150,
+      "render_frames": [
+        2358,
+        2358,
+        2358,
+        2358
+      ],
+      "request_blocks_executed": 830,
+      "terminal": false
+    },
+    {
+      "frame": "frame_167.npz",
+      "sha256": "e7a3f0d14da32014cf0b0f40734afc35b5a86949db1a55d1651ff282b642209e",
+      "clock": [
+        83.49999813362956,
+        4175,
+        83.69999812915921,
+        4185
+      ],
+      "pair_error": 3.422854319423685e-08,
+      "imu_index": 4175,
+      "render_frames": [
+        2371,
+        2371,
+        2371,
+        2371
+      ],
+      "request_blocks_executed": 835,
+      "terminal": false
+    },
+    {
+      "frame": "frame_168.npz",
+      "sha256": "b743ec1201da34386f7cee628dfa7600f8775b085521b0ed2c1f6b6cae84d5f0",
+      "clock": [
+        83.99999812245369,
+        4200,
+        84.19999811798334,
+        4210
+      ],
+      "pair_error": 3.422854330525915e-08,
+      "imu_index": 4200,
+      "render_frames": [
+        2384,
+        2384,
+        2384,
+        2384
+      ],
+      "request_blocks_executed": 840,
+      "terminal": false
+    },
+    {
+      "frame": "frame_169.npz",
+      "sha256": "6a75d41f6c4aad7d49e111416dd42e225cf78d815140cf2da7d8ffbd0800aabf",
+      "clock": [
+        84.49999811127782,
+        4225,
+        84.69999810680747,
+        4235
+      ],
+      "pair_error": 3.422854329215256e-08,
+      "imu_index": 4225,
+      "render_frames": [
+        2397,
+        2397,
+        2397,
+        2397
+      ],
+      "request_blocks_executed": 845,
+      "terminal": false
+    },
+    {
+      "frame": "frame_170.npz",
+      "sha256": "78c5530e84642f9d082dcfdb614076bf3a21b9c14abc77bbc8bdef035cd681b4",
+      "clock": [
+        84.99999810010195,
+        4250,
+        85.1999980956316,
+        4260
+      ],
+      "pair_error": 3.42285430701991e-08,
+      "imu_index": 4250,
+      "render_frames": [
+        2410,
+        2410,
+        2410,
+        2410
+      ],
+      "request_blocks_executed": 850,
+      "terminal": false
+    },
+    {
+      "frame": "frame_171.npz",
+      "sha256": "c077852dd6994942faff25b72a928073d4d0e9cdfa5a05e7ae4b01853dc4c340",
+      "clock": [
+        85.49999808892608,
+        4275,
+        85.69999808445573,
+        4285
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu_index": 4275,
+      "render_frames": [
+        2423,
+        2423,
+        2423,
+        2423
+      ],
+      "request_blocks_executed": 855,
+      "terminal": false
+    },
+    {
+      "frame": "frame_172.npz",
+      "sha256": "2757aea6fe3ca9e5866f46b22ff13cbe43d00e5621855486db28b9ddead8782e",
+      "clock": [
+        85.9999980777502,
+        4300,
+        86.19999807327986,
+        4310
+      ],
+      "pair_error": 3.422854312612919e-08,
+      "imu_index": 4300,
+      "render_frames": [
+        2436,
+        2436,
+        2436,
+        2436
+      ],
+      "request_blocks_executed": 860,
+      "terminal": false
+    },
+    {
+      "frame": "frame_173.npz",
+      "sha256": "813a689f7b837c11c7d05a172baacd23377bc2708e9e573492854869bb0fe89b",
+      "clock": [
+        86.49999806657434,
+        4325,
+        86.69999806210399,
+        4335
+      ],
+      "pair_error": 3.422854298607003e-08,
+      "imu_index": 4325,
+      "render_frames": [
+        2449,
+        2449,
+        2449,
+        2449
+      ],
+      "request_blocks_executed": 865,
+      "terminal": false
+    },
+    {
+      "frame": "frame_174.npz",
+      "sha256": "d8bb1cc77b9bdd29a0cd9e4e36bc17cdd1c05e2a13ed5ee158a25eb381ce9f05",
+      "clock": [
+        86.99999805539846,
+        4350,
+        87.19999805092812,
+        4360
+      ],
+      "pair_error": 3.42285433607703e-08,
+      "imu_index": 4350,
+      "render_frames": [
+        2462,
+        2462,
+        2462,
+        2462
+      ],
+      "request_blocks_executed": 870,
+      "terminal": false
+    },
+    {
+      "frame": "frame_175.npz",
+      "sha256": "a7152a4fb14870c9bcaa6b5dd97ff173549c6b952d661a3be040fdd65dae982f",
+      "clock": [
+        87.4999980442226,
+        4375,
+        87.69999803975224,
+        4385
+      ],
+      "pair_error": 3.4228543249748e-08,
+      "imu_index": 4375,
+      "render_frames": [
+        2475,
+        2475,
+        2475,
+        2475
+      ],
+      "request_blocks_executed": 875,
+      "terminal": false
+    },
+    {
+      "frame": "frame_176.npz",
+      "sha256": "4b32c7d23ffa6a89d785141655d723edb8686340b824421ceed5b2284972302f",
+      "clock": [
+        87.99999803304672,
+        4400,
+        88.19999802857637,
+        4410
+      ],
+      "pair_error": 3.422854320811464e-08,
+      "imu_index": 4400,
+      "render_frames": [
+        2488,
+        2488,
+        2488,
+        2488
+      ],
+      "request_blocks_executed": 880,
+      "terminal": false
+    },
+    {
+      "frame": "frame_177.npz",
+      "sha256": "72f3cfe4d5bea5e23ad72447add01a027ce7416fa95c11e868a388bd674e7097",
+      "clock": [
+        88.49999802187085,
+        4425,
+        88.6999980174005,
+        4435
+      ],
+      "pair_error": 3.4228542990163597e-08,
+      "imu_index": 4425,
+      "render_frames": [
+        2501,
+        2501,
+        2501,
+        2501
+      ],
+      "request_blocks_executed": 885,
+      "terminal": false
+    },
+    {
+      "frame": "frame_178.npz",
+      "sha256": "185a2e762be80db4c5b939f502d5b5ee62bcaffe389e3ba98e266ae0e9891653",
+      "clock": [
+        88.99999801069498,
+        4450,
+        89.19999800622463,
+        4460
+      ],
+      "pair_error": 3.4228542902803305e-08,
+      "imu_index": 4450,
+      "render_frames": [
+        2514,
+        2514,
+        2514,
+        2514
+      ],
+      "request_blocks_executed": 890,
+      "terminal": false
+    },
+    {
+      "frame": "frame_179.npz",
+      "sha256": "869aefb778bde79bedeeb7f42ec5c74e29dab1f9d27d9496f225520c030783fc",
+      "clock": [
+        89.49999799951911,
+        4475,
+        89.69999799504876,
+        4485
+      ],
+      "pair_error": 3.422854323587021e-08,
+      "imu_index": 4475,
+      "render_frames": [
+        2527,
+        2527,
+        2527,
+        2527
+      ],
+      "request_blocks_executed": 895,
+      "terminal": false
+    },
+    {
+      "frame": "frame_180.npz",
+      "sha256": "3e73579d3b13af9e732c3617102ce489ffe5ab9b51f1a57c5829923fd6e1d299",
+      "clock": [
+        89.99999798834324,
+        4500,
+        90.19999798387289,
+        4510
+      ],
+      "pair_error": 3.4228543249748e-08,
+      "imu_index": 4500,
+      "render_frames": [
+        2540,
+        2540,
+        2540,
+        2540
+      ],
+      "request_blocks_executed": 900,
+      "terminal": true
+    }
+  ],
+  "initial_local_identity": [
+    {
+      "name": "front_left",
+      "path": "/World/BallRobot/base_link/contact_data_front_left",
+      "local_matrix": [
+        [
+          -3.42285420007471e-08,
+          0.0,
+          -0.9999999999999993,
+          0.1819700002670288
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.32506000995635986
+        ],
+        [
+          0.9999999999999993,
+          0.0,
+          -3.42285420007471e-08,
+          0.11502999812364578
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "optics": [
+        8.290431022644043,
+        18.0,
+        13.5,
+        0.009999999776482582,
+        1000.0
+      ]
+    },
+    {
+      "name": "front_right",
+      "path": "/World/BallRobot/base_link/contact_data_front_right",
+      "local_matrix": [
+        [
+          -3.42285420007471e-08,
+          0.0,
+          -0.9999999999999993,
+          0.1819700002670288
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.32506000995635986
+        ],
+        [
+          0.9999999999999993,
+          0.0,
+          -3.42285420007471e-08,
+          0.11502999812364578
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "optics": [
+        8.290431022644043,
+        18.0,
+        13.5,
+        0.009999999776482582,
+        1000.0
+      ]
+    },
+    {
+      "name": "rear_left",
+      "path": "/World/BallRobot/base_link/contact_data_rear_left",
+      "local_matrix": [
+        [
+          -2.220446049250313e-16,
+          -1.478279469192841e-16,
+          1.0000000000000002,
+          -0.1819700002670288
+        ],
+        [
+          2.536326432781458e-17,
+          -1.0000000000000004,
+          -1.478279469192841e-16,
+          0.32506000995635986
+        ],
+        [
+          1.0000000000000002,
+          2.536326432781458e-17,
+          -2.220446049250313e-16,
+          0.11502999812364578
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "optics": [
+        8.290431022644043,
+        18.0,
+        13.5,
+        0.009999999776482582,
+        1000.0
+      ]
+    },
+    {
+      "name": "rear_right",
+      "path": "/World/BallRobot/base_link/contact_data_rear_right",
+      "local_matrix": [
+        [
+          -2.220446049250313e-16,
+          -1.478279469192841e-16,
+          1.0000000000000002,
+          -0.1819700002670288
+        ],
+        [
+          2.536326432781458e-17,
+          -1.0000000000000004,
+          -1.478279469192841e-16,
+          -0.32506000995635986
+        ],
+        [
+          1.0000000000000002,
+          2.536326432781458e-17,
+          -2.220446049250313e-16,
+          0.11502999812364578
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "optics": [
+        8.290431022644043,
+        18.0,
+        13.5,
+        0.009999999776482582,
+        1000.0
+      ]
+    }
+  ],
+  "native_imu_packets": 4501,
+  "condition": "e1_weak_baseline",
+  "role": "E1_development_weak_conditional_baseline90s",
+  "renderer_pose_depth_offline_labels": true,
+  "initial_gauge_privileged": true,
+  "flat_height_prior_m": 0.4000000059604645,
+  "no_learned_model": true,
+  "no_navigation": false,
+  "no_camera_mutation_after_initialize": true,
+  "original_project_modified": false,
+  "navigation_protocol_sha256": "0a96f0c10772c2e8cc1e8b1d98cc2063547ae0d72b232ceaa7fa2e1d82aa6120"
+}

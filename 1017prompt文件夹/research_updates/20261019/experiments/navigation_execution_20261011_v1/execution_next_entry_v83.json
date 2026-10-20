@@ -1,0 +1,15 @@
+{
+  "stage": "user_original_camera_layout_locked",
+  "parent_entry": "execution_next_entry_v82.json",
+  "summary": "用户最新明确纠正“你不能改我的相机位置啊”。此约束优先覆盖此前允许本地仿真改相机布局的授权及v78-v82所有前后/朝外/宽视角后续方向。研究回到用户原有两台同朝向相机，固定原位置、朝向、焦距/FOV、分辨率与标定，不得把原两路单目理解为前后一台，不得修改真实硬件或仿真安装布局；仅研究原双RGB各自单目推断与标定坐标下BEV融合。前后/朝外/宽视角实验停止接续，仅保留历史证据，不能作为当前方案或导航增量；不删除或改写历史结果。用户此前单次120秒授权已执行并关闭，不视为后续布局许可。下一沿用原安装域v77已封存预测进行有限米制误差归因，仅当独立在线输入与目标证据成立才另立算法候选；不重跑拒绝模型或改门槛救分。无新增实验/训练/物理，本次是范围纠正；可靠导航及学习增量仍未实现。原项目保持只读，automation原id/每小时/ACTIVE不变。",
+  "scope": {
+    "original_camera_positions_fixed": true,
+    "original_camera_orientations_fixed": true,
+    "original_optics_and_calibration_fixed": true,
+    "allow_sim_camera_relocation": false,
+    "allow_hardware_change": false,
+    "allow_original_rgb_algorithm_research": true
+  },
+  "running_experiments": [],
+  "whole_complete": false
+}

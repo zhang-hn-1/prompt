@@ -1,0 +1,90 @@
+{
+  "stage": "nearfield_camera_campaign_measured_closed",
+  "updated_utc": "2026-10-12T13:25:07.449488+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v34.json",
+  "authorization": "2026-10-12 direct user instruction: autonomously implement feasible ideas, verify, reject unsuccessful approaches and try new methods; no routine feasibility approval.",
+  "supersedes": [
+    "v31 waiting for camera geometry scope permission",
+    "routine per-candidate user approval stops",
+    "35-second limit for new navigation protocols; historical35 results unchanged"
+  ],
+  "next_action": "Start next implementation+validation loop at measured risk-to-plan blocking: forwardE2 had595/900zero-main requests,98reference versions and final observed_obstacle_blocks_route. Use saved source packets, risk maps and plan records to distinguish real obstruction from measurement/representation/route defects; choose one evidence-supported mechanism not previously rejected, implement and qualify it, then bounded same-source90s navigation comparison. Do not clear risk from unavailable/expired input, relax gates, reopen old candidates, rerun camera alternatives, or stop after diagnosis.",
+  "execution_contract": {
+    "outcome": "implementation plus measured validation and keep/reject conclusion; diagnosis alone is intermediate",
+    "default_max_physical_runs_per_new_candidate": 4,
+    "default_max_environment_recovery_attempts": 1,
+    "budget_rule": "predeclare and reserve before launch; all historical closed budgets remain closed; no identical rejected retries or renamed budget resets",
+    "autonomy_scope": "reversible local code, sensor geometry simulation, calibration, perception, memory, planning, control, necessary tests and bounded simulation",
+    "stop_rule": "substantive verdict, actual context/runtime/resource limit or genuine external blocker; continue next actionable step while capacity permits"
+  },
+  "historical_state_reference": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v31.json",
+  "navigation90": {
+    "assessment": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/visual_imu_navigation90_20261012_v1/assessment.json",
+    "arrival_count": 1,
+    "scenario_count": 3,
+    "e0": "arrival54.30s no contact",
+    "e1": "timeout90s remaining4.396183m no contact",
+    "e2": "contact19.64s",
+    "sealed_budget": {
+      "cap": 3,
+      "used": 3,
+      "remaining": 0,
+      "closed": true
+    }
+  },
+  "source_replay": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation90_source_filter_replay_20261012_v1/assessment.json",
+  "source_replay_limit": "No confirmed near1m measurement in five frames; does not establish true obstacle visibility or collision cause.",
+  "new_candidate_budget": {
+    "reserved": 0,
+    "used": 0,
+    "default_cap_for_distinct_new_candidate": 4,
+    "old_forward_budget": {
+      "cap": 4,
+      "used": 2,
+      "remaining": 0,
+      "unattempted_closed": 2
+    },
+    "old_compact_budget": {
+      "cap": 3,
+      "used": 1,
+      "remaining": 0,
+      "unattempted_closed": 2
+    }
+  },
+  "process_state": {
+    "active_experiment_processes": false,
+    "verified_host_pids_absent": [
+      719962,
+      719979,
+      722621,
+      735465,
+      735549
+    ],
+    "verification_utc": "2026-10-12T13:25:07.449488+00:00"
+  },
+  "completion": {
+    "research_evidence_package": "previously delivered; new campaign supplement verified",
+    "reliable_navigation": false,
+    "learning_navigation_increment": false,
+    "cross_machine_runtime": "unverified",
+    "whole_mission_complete": false
+  },
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "schedule_preserved": true,
+    "target_thread_id": "01a1247b-60d7-7f01-9f6a-07214463512d",
+    "saved_prompt_sha256": "85d1557ec94673f81b67a0d5ffaf8a095a026018bf12a4dfb7fff65bbd1190a6",
+    "updated_at": 1791809275998
+  },
+  "stop_reason": "Substantive bounded camera intervention stage completed: three actual navigation runs, both distinct candidates implemented, measured and independently rejected for failure to arrive; camera family closed. No running experiment or user approval blocker. Next phase is a distinct risk/planning implementation loop under existing autonomy.",
+  "candidate_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/nearfield_compact_navigation_20261012_v1",
+  "completed_current_stage": {
+    "forward_e2": "90s timeout no contacts, remaining8.212182336m; depthp90.102259m passed; navigation rejected",
+    "forward_ledger": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/nearfield_rig_navigation_20261012_v1/ledger.json"
+  },
+  "campaign_summary": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/nearfield_compact_navigation_20261012_v1/campaign_summary.json",
+  "campaign_report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/nearfield_navigation_campaign_20261012.md",
+  "compact_independent_closure": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/nearfield_compact_navigation_20261012_v1/candidate_e2_independent_closure.json",
+  "whole_mission_complete": false
+}

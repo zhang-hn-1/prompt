@@ -1,0 +1,196 @@
+{
+  "version": 123,
+  "utc": "2026-10-19T08:53:01.788969+00:00",
+  "previous_entry": "execution_next_entry_v122.json",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_supported_cost_repair_20261019_v1",
+  "cause_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/self_RGB_dependency_and_cost_support_results_20261019.md",
+  "report_sha256": "de7bdecedde270beaa1819fc2cba25610160520d8920695087371017eefdcef3",
+  "decision": "REJECT_FIXED_SELF_SUPPORT_REPAIR_BEFORE_FULL_SEQUENCE_OR_NAV",
+  "gates": {
+    "false_visible_cells_reduction_ge20pct": false,
+    "pooled_precision_loss_le1pp": true,
+    "pooled_recall_loss_le5pp": true,
+    "all_frames_recall_loss_le5pp": true,
+    "nonempty_all_target_frames": true
+  },
+  "aggregate": {
+    "original": {
+      "predicted_cells": 162,
+      "correct_cells": 152,
+      "false_visible_cells": 10,
+      "target_cells": 420,
+      "covered_cells": 128,
+      "target_pixels": 527344,
+      "valid_target_pixels": 48825,
+      "precision": 0.9382716049382716,
+      "recall": 0.3047619047619048,
+      "conditional_axial_error_m": {
+        "P50": 0.05622553825378418,
+        "P90": 0.14545631408691403,
+        "P95": 0.1840759277343743,
+        "max": 1.3170186281204224
+      },
+      "conditional_radial_error_m": {
+        "P50": 0.059597988112720136,
+        "P90": 0.15324066443641818,
+        "P95": 0.19885180553940754,
+        "max": 1.386939173890075
+      }
+    },
+    "baseline": {
+      "predicted_cells": 227,
+      "correct_cells": 148,
+      "false_visible_cells": 79,
+      "target_cells": 420,
+      "covered_cells": 139,
+      "target_pixels": 527344,
+      "valid_target_pixels": 9253,
+      "precision": 0.6519823788546255,
+      "recall": 0.33095238095238094,
+      "conditional_axial_error_m": {
+        "P50": 0.03993844985961914,
+        "P90": 0.16567468643188477,
+        "P95": 0.2466157436370849,
+        "max": 2.1643704175949097
+      },
+      "conditional_radial_error_m": {
+        "P50": 0.04221898230465452,
+        "P90": 0.17918618830950395,
+        "P95": 0.2666492496604928,
+        "max": 2.3481745355307173
+      }
+    },
+    "self_supported": {
+      "predicted_cells": 216,
+      "correct_cells": 143,
+      "false_visible_cells": 73,
+      "target_cells": 420,
+      "covered_cells": 131,
+      "target_pixels": 527344,
+      "valid_target_pixels": 8977,
+      "precision": 0.6620370370370371,
+      "recall": 0.3119047619047619,
+      "conditional_axial_error_m": {
+        "P50": 0.037473201751708984,
+        "P90": 0.15885677337646487,
+        "P95": 0.1814527034759521,
+        "max": 2.1556607484817505
+      },
+      "conditional_radial_error_m": {
+        "P50": 0.0388010085040375,
+        "P90": 0.1718189138036155,
+        "P95": 0.19157427677731584,
+        "max": 2.3400513957060936
+      }
+    }
+  },
+  "causal_witness": {
+    "protected_changed": 866,
+    "protected_denominator": 12052,
+    "all_changed": 980,
+    "all_denominator": 12267,
+    "depth_error_proven": false
+  },
+  "input_domain": {
+    "full_pixels": 4915200,
+    "finite_positive_GT": 2887203,
+    "invalid_GT_UNKNOWN": 2027997,
+    "target_pixels": 527344
+  },
+  "scope": "same4fixedseendevelopmentframes; diagnosticnativeoutputs vs controllednon-native referenceavailabilityrepair. No deployable/nativeequivalence/sourcequalification, actualmap/nav orlearningclaim.",
+  "budget": {
+    "dispatch_cap": 4,
+    "dispatch_used": 4,
+    "recovery_cap": 0,
+    "recovery_used": 0,
+    "inherited_cause": {
+      "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1",
+      "status_sha256": "0161260adf2c578c543d363b83e176b258a0fed8311ef4701f9f9adc022f25d3",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-19T08:39:43.894442+00:00",
+        "parent_pid": 2557541,
+        "child_pid": 2557545,
+        "process_group_id": 2557545,
+        "child_returncode": 0,
+        "timeout": false,
+        "parent_signal": null,
+        "forced_kill": false,
+        "no_retry": true,
+        "remaining_live_group_pids": [],
+        "remaining_zombie_group_pids": [],
+        "end_utc": "2026-10-19T08:39:59.671968+00:00"
+      }
+    },
+    "runs": [
+      {
+        "stage": "interfaces",
+        "status": "finished",
+        "parent_pid": 2561754,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-19T08:43:36.440254+00:00",
+          "parent_pid": 2561754,
+          "child_pid": 2561755,
+          "process_group_id": 2561755,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-19T08:43:36.590548+00:00"
+        }
+      },
+      {
+        "stage": "predict",
+        "status": "finished",
+        "parent_pid": 2562462,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-19T08:44:16.761993+00:00",
+          "parent_pid": 2562462,
+          "child_pid": 2562464,
+          "process_group_id": 2562464,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-19T08:49:24.618262+00:00"
+        }
+      },
+      {
+        "stage": "score",
+        "status": "finished",
+        "parent_pid": 2568312,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-19T08:49:57.972511+00:00",
+          "parent_pid": 2568312,
+          "child_pid": 2568313,
+          "process_group_id": 2568313,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-19T08:49:59.137341+00:00"
+        }
+      }
+    ]
+  },
+  "runtime": null,
+  "automation_status": "ACTIVE",
+  "whole_goal_complete": false,
+  "next_action": "FixedCADcostsupportrepair rejectedbeforefullsequence/nav. Do not invertselfRGBonline, inflateCAD, tuneavailability/decoder/cost/threshold, repeatfixedframes or reviveclosedv120. BodyRGBdependency isnotuniqueerrorcause. No currentnextadmittedrepair; onlynew specificonlinecause/consumercontract canopenminimalbudget. PreserveABC/v122andunfinishedreliable/learning goal.",
+  "cause_manifest_sha256": "33a6c6065d997d7c229f4fe7032678f5fca2051dacb7e7c058ac4d8071299a06",
+  "repair_manifest_sha256": "140a53289d387a0b5251aba5c6d8835a3bd822db5e0cae8cf68e3e275692e4df",
+  "independent_results_review_sha256": "eb341293131e51013da4af24e745adb7efde0dd23a85b6c5adc110ee83d8a198"
+}

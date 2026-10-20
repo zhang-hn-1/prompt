@@ -1,0 +1,24 @@
+{
+  "automation_id": "automation",
+  "before_status": "ACTIVE",
+  "after_status": "PAUSED",
+  "before_updated_at": 1792218521323,
+  "after_updated_at": 1792289543804,
+  "kind": "heartbeat",
+  "name": "球型机器人导航：基线与风险记忆研究",
+  "rrule": "FREQ=HOURLY;INTERVAL=1",
+  "target_thread_id": "01a1247b-60d7-7f01-9f6a-07214463512d",
+  "prompt_preserved_exactly": true,
+  "preserved_fields": [
+    "id",
+    "kind",
+    "name",
+    "prompt",
+    "rrule",
+    "target_thread_id",
+    "created_at"
+  ],
+  "reason": "User instruction: when prolonged userdecision isrequired, explain and stop repeated triggers. One explicit exception for closedoriginalC actual90s negativecontrol is nowpending. No researchcompletion claimed.",
+  "resume_condition": "Direct human reply explicitly authorizing exactproposedC exception; restore sameautomationACTIVE and continueapprovedminimalinterfaces/budget/durableadmission. Do not infer consent fromheartbeat/time/defaultselection.",
+  "goal_complete": false
+}

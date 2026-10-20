@@ -1,0 +1,420 @@
+{
+  "version": 102,
+  "created_utc": "2026-10-16T13:35:18.146233+00:00",
+  "status": "RGB_color_initialization_rejected_observed_wrong_geometry_has_lower_complete_RGB_objective",
+  "root": "experiments/radiance_rgb_initialization_20261016_v1",
+  "report": "reports/radiance_RGB_initialization_results_20261016.md",
+  "kind": "Engineering repair and bounded read-only failure diagnosis, not actual online source",
+  "data": "Same previously-seen syntheticfixture8fitviews/3diagnosticviews; knownbackground prior, no knowngeometry/depth/texturelabels used by newfit",
+  "full_target_pixels": 196248,
+  "background_pixels": 725352,
+  "accepted_target_pixels": 1299,
+  "accepted_background_pixels": 10,
+  "necessary_pass": false,
+  "final": [
+    {
+      "total_pixels": 307200,
+      "target_pixels": 65490,
+      "background_pixels": 241710,
+      "accepted_target_pixels": 325,
+      "accepted_target_coverage": 0.00496258970835242,
+      "accepted_target_error_quantiles_m": [
+        0.048247575759887695,
+        0.1895591974258423,
+        0.19267492294311522
+      ],
+      "raw_opacity_target_error_quantiles_m": [
+        0.18856573104858398,
+        0.23599886894226074,
+        0.25007040500640865
+      ],
+      "target_width_given_opacity_quantiles_m": [
+        0.37437498569488525,
+        0.43677079677581787,
+        0.4367709159851074
+      ],
+      "target_raw_depth_given_opacity_quantiles_m": [
+        1.812727689743042,
+        1.8801558494567872,
+        1.95846494436264
+      ],
+      "accepted_background_pixels": 8,
+      "background_confident_near_prediction_rate": 3.309751354929461e-05,
+      "cumulative_target_gate_counts": {
+        "finite": 65490,
+        "opacity": 65095,
+        "plus_width": 731,
+        "plus_RGB": 325,
+        "plus_range": 325
+      },
+      "raw_background_opacity_quantiles": [
+        0.0005048676393926144,
+        0.0030102428514510397,
+        0.006432082550600169
+      ],
+      "raw_target_RGB_L1_quantiles": [
+        0.009275391697883606,
+        0.02085604593157768,
+        0.03242452442646023
+      ],
+      "input": "diagnostic_00.npz",
+      "necessary_pass": false,
+      "geometry_only_target_coverage": 0.011162009467094213,
+      "geometry_only_target_error_quantiles_m": [
+        0.04374969005584717,
+        0.05240190029144287,
+        0.1877923607826233
+      ]
+    },
+    {
+      "total_pixels": 307200,
+      "target_pixels": 65268,
+      "background_pixels": 241932,
+      "accepted_target_pixels": 209,
+      "accepted_target_coverage": 0.003202181773610345,
+      "accepted_target_error_quantiles_m": [
+        0.061673521995544434,
+        0.06832172870635987,
+        0.19388997554779053
+      ],
+      "raw_opacity_target_error_quantiles_m": [
+        0.1864604949951172,
+        0.24057687520980833,
+        0.2564647495746612
+      ],
+      "target_width_given_opacity_quantiles_m": [
+        0.37437498569488525,
+        0.43677079677581787,
+        0.4991666078567505
+      ],
+      "target_raw_depth_given_opacity_quantiles_m": [
+        1.8151525855064392,
+        1.8831456542015075,
+        1.9395641028881072
+      ],
+      "accepted_background_pixels": 2,
+      "background_confident_near_prediction_rate": 8.266785708380868e-06,
+      "cumulative_target_gate_counts": {
+        "finite": 65268,
+        "opacity": 64930,
+        "plus_width": 246,
+        "plus_RGB": 209,
+        "plus_range": 209
+      },
+      "raw_background_opacity_quantiles": [
+        0.000508890429046005,
+        0.0014822213328443466,
+        0.002220620273146778
+      ],
+      "raw_target_RGB_L1_quantiles": [
+        0.007513570366427302,
+        0.015577016212046147,
+        0.022285386919975197
+      ],
+      "input": "diagnostic_01.npz",
+      "necessary_pass": false,
+      "geometry_only_target_coverage": 0.0037690751976466263,
+      "geometry_only_target_error_quantiles_m": [
+        0.061087191104888916,
+        0.06685197353363037,
+        0.0706358253955841
+      ]
+    },
+    {
+      "total_pixels": 307200,
+      "target_pixels": 65490,
+      "background_pixels": 241710,
+      "accepted_target_pixels": 765,
+      "accepted_target_coverage": 0.01168117269812185,
+      "accepted_target_error_quantiles_m": [
+        0.05900466442108154,
+        0.06589527130126953,
+        0.06676316261291504
+      ],
+      "raw_opacity_target_error_quantiles_m": [
+        0.1853393316268921,
+        0.25161826610565186,
+        0.2697252631187439
+      ],
+      "target_width_given_opacity_quantiles_m": [
+        0.37437498569488525,
+        0.4367709159851074,
+        0.4991666078567505
+      ],
+      "target_raw_depth_given_opacity_quantiles_m": [
+        1.8164783716201782,
+        1.8857347965240479,
+        1.9410620331764221
+      ],
+      "accepted_background_pixels": 0,
+      "background_confident_near_prediction_rate": 0.0,
+      "cumulative_target_gate_counts": {
+        "finite": 65490,
+        "opacity": 65051,
+        "plus_width": 788,
+        "plus_RGB": 765,
+        "plus_range": 765
+      },
+      "raw_background_opacity_quantiles": [
+        0.0005077241803519428,
+        0.0008022760739549996,
+        0.0011837435537017866
+      ],
+      "raw_target_RGB_L1_quantiles": [
+        0.0062416247092187405,
+        0.01311088828369975,
+        0.01979654282331466
+      ],
+      "input": "diagnostic_02.npz",
+      "necessary_pass": false,
+      "geometry_only_target_coverage": 0.012032371354405253,
+      "geometry_only_target_error_quantiles_m": [
+        0.05892026424407959,
+        0.06586686372756959,
+        0.06673187613487244
+      ]
+    }
+  ],
+  "initialization": {
+    "vertices": 2048000,
+    "visible_vertices": 257908,
+    "unseen_vertices": 1790092,
+    "view_count_histogram": [
+      1790092,
+      4568,
+      4712,
+      5056,
+      4696,
+      4740,
+      4800,
+      4928,
+      224408
+    ],
+    "color_initialization_sha256": "f4b6017b2d606ab34209ce5ed9e7b40d8104c83c515feca84278fe486032b447"
+  },
+  "initial_ray_gradient": {
+    "complete": true,
+    "selection": "Last fit RGB view, native pixel319,239,96samples; no labels",
+    "arms": {
+      "constant": {
+        "RGB_MSE": 0.25661909580230713,
+        "gradient_min": -0.3044072389602661,
+        "gradient_max": -0.3044070899486542,
+        "gradient_std": 2.323126757630689e-08,
+        "gradient_spread": 1.4901161193847656e-07
+      },
+      "projected_RGB": {
+        "RGB_MSE": 0.24792031943798065,
+        "gradient_min": -0.4937840700149536,
+        "gradient_max": -0.1972537338733673,
+        "gradient_std": 0.08083873987197876,
+        "gradient_spread": 0.2965303361415863
+      }
+    },
+    "autograd_evaluations": 2,
+    "optimizer_steps": 0,
+    "meaning": "RGB-only initial optical-thickness gradient localization; changed gradient is not geometry qualification.",
+    "sha256": "970f74eb42ed58513b59c32c8a72a52d3cda948c8421769dca1e684fa84b26e7"
+  },
+  "first_batch_gradient": {
+    "comparison": {
+      "gradient_cosine": 0.9308061598968396,
+      "functional_Adam_delta_cosine": 0.984466978313056,
+      "gradient_relative_L2_difference": 0.46302446793283386,
+      "functional_delta_relative_L2_difference": 0.188728720708887,
+      "common_active_vertices": 209857,
+      "union_active_vertices": 209857,
+      "gradient_sign_agreement_common": 0.9972600389789238
+    },
+    "parameters_unchanged": true,
+    "optimizer_steps": 0,
+    "conclusion": "Attenuation, not erasure; no optimizer change justified."
+  },
+  "objective": {
+    "equal_view": {
+      "RGB_init_failed": {
+        "RGB_MSE": 0.00028590430338226724,
+        "transmittance_entropy": 0.023040208034217358,
+        "distortion": 0.0047403479111380875,
+        "total": 0.0005637098511215299
+      },
+      "known_density_init_qualified": {
+        "RGB_MSE": 0.0006306645882432349,
+        "transmittance_entropy": 0.016600180533714592,
+        "distortion": 0.0008569877390982583,
+        "total": 0.0008052362754824571
+      }
+    },
+    "expected_sampler_view_weights": {
+      "complete": true,
+      "weights": [
+        0.0625,
+        0.0625,
+        0.0625,
+        0.0625,
+        0.0625,
+        0.0625,
+        0.0625,
+        0.5625
+      ],
+      "reason": "Parent sampler uses half last/currentfit view plus half uniform8history; same fixed per-view rays, expected training distribution supplemental arithmetic only, not new generation or changed frozen equal-ray result.",
+      "arms": {
+        "RGB_init_failed": {
+          "RGB_MSE": 0.0003104646466454142,
+          "transmittance_entropy": 0.02335191098973155,
+          "distortion": 0.0047901162470225245,
+          "total": 0.0005918849055888131
+        },
+        "known_density_init_qualified": {
+          "RGB_MSE": 0.0006913740689924452,
+          "transmittance_entropy": 0.017972352041397244,
+          "distortion": 0.0008506505182594992,
+          "total": 0.0008796041038294788
+        }
+      },
+      "failed_scores_lower": true
+    },
+    "conclusion": "Currentobjective ranks this observedfailingstate lower than this qualifiedstate on fixedraygrid; not global/fullimage/allgoodstates/actualE0solecause proof."
+  },
+  "budgets": {
+    "scene_fit": "1/1 closed,1024updates",
+    "first_batch_gradient": "dispatch1/1/backward2/optimizer0/fit0 closed",
+    "objective_forward": "dispatch1/1/fit0 closed",
+    "recovery": 0,
+    "physical": 0,
+    "actualE0_regeneration": 0,
+    "supervised_network_training": 0,
+    "navigation": 0
+  },
+  "execution": [
+    {
+      "status": "RGB_color_initialization_insufficient_for_basic_geometry",
+      "dispatch_used": 1,
+      "dispatch_cap": 1,
+      "scene_fit_used": 1,
+      "scene_fit_cap": 1,
+      "updates_cap": 1024,
+      "gradient_evaluations_cap": 2,
+      "recovery_used": 0,
+      "recovery_cap": 1,
+      "physical_used": 0,
+      "actualE0_regeneration_used": 0,
+      "supervised_network_training_used": 0,
+      "navigation_used": 0,
+      "old_budgets_remain_closed": true,
+      "budget_closed": true,
+      "stages": [
+        {
+          "stage": "predict",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T13:23:48.088184+00:00",
+            "parent_pid": 2629081,
+            "child_pid": 2629091,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T13:24:00.977299+00:00"
+          }
+        },
+        {
+          "stage": "score",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T13:24:00.978834+00:00",
+            "parent_pid": 2629081,
+            "child_pid": 2629519,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T13:24:03.048506+00:00"
+          }
+        }
+      ],
+      "wall_s": 14.96192524000071,
+      "source_admitted": false
+    },
+    {
+      "status": "finished",
+      "dispatch_used": 1,
+      "dispatch_cap": 1,
+      "backward_cap": 2,
+      "optimizer_steps": 0,
+      "fit_used": 0,
+      "fit_cap": 0,
+      "recovery_used": 0,
+      "recovery_cap": 1,
+      "budget_closed": true,
+      "terminal": {
+        "status": "finished",
+        "start_utc": "2026-10-16T13:27:00.183610+00:00",
+        "parent_pid": 2633463,
+        "child_pid": 2633464,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-16T13:27:03.103229+00:00"
+      }
+    },
+    {
+      "status": "finished",
+      "dispatch_used": 1,
+      "dispatch_cap": 1,
+      "forward_diagnostic_used": 1,
+      "forward_diagnostic_cap": 1,
+      "fit_used": 0,
+      "optimizer_steps": 0,
+      "recovery_used": 0,
+      "recovery_cap": 1,
+      "budget_closed": true,
+      "terminal": {
+        "status": "finished",
+        "start_utc": "2026-10-16T13:29:33.018530+00:00",
+        "parent_pid": 2636159,
+        "child_pid": 2636160,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-16T13:29:35.587299+00:00"
+      }
+    }
+  ],
+  "audit": {
+    "complete": true,
+    "saved_view_checks": 24,
+    "hash_checks": 164,
+    "counts_and_quantiles_exact": true,
+    "CPU_bilinear_vertices": 160,
+    "CPU_bilinear_view_counts_exact": true,
+    "CPU_bilinear_RGB_max_abs_difference": 2.1242639896001947e-06,
+    "unseen_colors_exact_half": true,
+    "only_color_initial_state_changed": true,
+    "density_uniform_exact": true,
+    "parent_completed_seal_unchanged": true,
+    "forward_calls": 0,
+    "optimizer_steps": 0
+  },
+  "review": "experiments/radiance_rgb_initialization_20261016_v1/review.json",
+  "cause_and_unknown": "Breaking initial symmetry alone insufficient. Optimization step differences remain. Complete objective misorders these two observed geometry states. Color-mixture explanation not yet verified; next perpoint diagnostic precedes fitting.",
+  "next_action": "Freeze a minimum fit0 forward diagnostic on SAME9600RGB rays/two frozen terminal states: compute official perpoint color consistency mean_rays sum_i stopgrad(w_i)*sum_RGB((c_i-targetRGB)^2), coefficient fixed.01 from officialDVGO fine default, and Jensen dispersion with terminalbackground included in full weights and channel scales explicit. Check necessary distinction/new fixedtotal ordering, no GT depth/labels or coefficient fitting. If fails, stop this repair beforefit. If supports distinction, freeze one only-add-term1024update engineering arm with currentRGBinit/grid/otherloss/Adam/seeds/gates unchanged, sealed control reused. Actualbackground/E0source/nav still unqualified.",
+  "next_arm_implemented": false,
+  "next_budget_opened": false,
+  "runtime": "none;3servicesinactive/MainPID0/ExecMainStatus0",
+  "source_admitted": false,
+  "reliable_navigation": false,
+  "learning_navigation_increment": false,
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "cadence": "hourly",
+    "every_run_brief_progress": true
+  }
+}

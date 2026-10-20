@@ -1,0 +1,36 @@
+{
+  "stage": "viewpoint_confirmation_actual_running",
+  "updated_utc": "2026-10-12T14:32:47.828763+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/execution_next_entry_v37.json",
+  "candidate_directory": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1",
+  "protocol": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/protocol.json",
+  "prelaunch_review": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/prelaunch_review.json",
+  "next_action": "Supervise existing host session68464 and durable parent/child status. Do not relaunch. E2actual90s then full source/native/execution/map audit and score; only retain\u2192E0/E1. After actual closure independent raw verification and keep/reject verdict.",
+  "budget": {
+    "cap": 3,
+    "used": 1,
+    "remaining_conditional": 2,
+    "retry_used": 0,
+    "recovery_cap": 1
+  },
+  "process_state": {
+    "status": "running",
+    "start_utc": "2026-10-12T14:32:16.844240+00:00",
+    "parent_pid": 828882,
+    "child_pid": 828900,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "comparison_control": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/candidate_e2_run",
+  "hypothesis": "Only persistent admission requires two capture epochs with >=one existing gridcell0.1m native-camera separation. Recent10s/current risk unchanged, confirmed permanent, unknown not free.",
+  "qualification": "5CPU+direct source transport independent;180 baseline maps exact and terminal saved-trajectory clearance1m. No actual benefit asserted.",
+  "completion": {
+    "reliable_navigation": false,
+    "learning_increment": false,
+    "whole_mission": false
+  },
+  "stop_reason": "No stop: existing actual experiment running."
+}

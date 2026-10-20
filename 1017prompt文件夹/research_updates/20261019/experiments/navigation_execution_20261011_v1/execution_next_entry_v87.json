@@ -1,0 +1,7 @@
+{
+  "stage": "sealed_monocular_error_shape_diagnostic_complete",
+  "parent_entry": "execution_next_entry_v86.json",
+  "summary": "v87在v86原装四相机采集完成后，完整7组1267对2534眼帧封存v77输出作一次尺度误差诊断，无模型重推理/拟合/物理。E0左/右85.29/89.59%评分像素低估>.15m，E1左/右53.14/53.35%高估>.15m；E1左帧中位预测/GT比值.579–2.810，不能据此采用固定倍率修复。未拟合最优倍率，不证明所有动态尺度均无效，也没有在线尺度资格。2534域/计数与旧评分exact，P90差<=2.38419e-7m，全部输入SHA核对，CPU57.40秒正常0，session80948/44513退出。报告reports/monocular_error_shape_results_20261015.md直接旧RGB/预测/GT/误差/BEV长期图和完整分母；旧两前眼数据不是新四路性能。下一保持原四相机，有限核对障碍接地边界+标定射线/IMU重力/已披露地面高度先验直接平面定位与旧ground-anchor/高度代理/像素距离学习区别；有实质区别才冻结新独立接触边界目标及GT-only完整域资格，落地/悬空/底部不可见分开，未知非自由，原门槛不放宽。无区别或oracle失败直接停止，不拟合或将v77旧模型换消费者；合格后才确定真实RGB边界来源及新整序列/留出资格和预算。该下一机制未实现，原四路完整序列与可靠米制源/导航尚未成立。所有旧预算关闭，automationACTIVE。",
+  "running_experiments": [],
+  "whole_complete": false
+}

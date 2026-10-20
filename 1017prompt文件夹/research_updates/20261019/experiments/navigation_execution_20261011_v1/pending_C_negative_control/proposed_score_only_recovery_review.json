@@ -1,0 +1,73 @@
+{
+  "artifact_type": "static_proposed_score_only_recovery_review",
+  "utc": "2026-10-19T00:47:02.095265+00:00",
+  "scope": "Static file/text/JSON/hash review only. Constructed proposed one-token replacement in memory solely to compute its text SHA; did not execute/import candidate or any project/scorer/source/simulator/replay/memory/test, and did not read numeric RGB/GT arrays or calculate performance. Only this separate audit artifact is written.",
+  "reviewed_SHA256": {
+    "proposed_score_only_recovery.json": "335f15bdf96b997bb524a2cf6f8e8ccadcf507f26a17e9949260f4df47df6df7",
+    "proposed_score_only_recovery.diff": "6d7747c9ca7d4f5949a3a8eba85105239185475d956a73d0b2238d6ae87f6196",
+    "raw_artifact_preservation_manifest.json": "fb68c1ec6d913b0e70666e1f2871b78d4dad0764b6bf8f7a967168c8164a85a6",
+    "bounded_failure_attribution.json": "ca437d0eceefba57306c0627fa06d3b240d05c6106a3351b6e1da164523504df",
+    "score_C.py": "33d2115df3bfe6a83281bbdaaec4a4c2517e2b75b2b5570d81b4881e703e9dd5",
+    "execution_protocol.json": "b16696fd2750731f60c8a87e9e1782bb80559f4839c65ccbc331c1b5b14ff424",
+    "execution_ledger.json": "b43958e0280b3ba87c2716b91b3fd6f71c008c024f989baec2f8e582d84a3daf",
+    "navigation_pending.py": "223287b6d9da0c5d140bd27134a7a84860fbbde6fab834e469eccd94c47231b1",
+    "metadata_adapter.py": "5e4dc961bbfebaacd5ad08d9436ceca12793aca4e35dc55a8008b69242f9c459",
+    "comparison_protocol.json": "b6d8504b0f677524f08d0a507630450d64c306eacf70bc37e61faca7b7137bbc"
+  },
+  "candidate_text_SHA256": "4cca3cf7b7873a5136b707a68e3ca308fc0a4670a4b0ec829fe7992bb66d0431",
+  "checks": {
+    "original_score_SHA_matches": true,
+    "one_target_occurrence": true,
+    "computed_candidate_SHA_matches": true,
+    "patch_SHA_matches": true,
+    "diff_exactly_one_added_one_removed_line": true,
+    "preservation_manifest_SHA_matches": true,
+    "manifest_lists_2185_saved_raw_files": true,
+    "original_ledger_closed_three_of_three_recovery0": true,
+    "original_execution_guard_still_binds_failed_original": true,
+    "proposal_explicitly_unapproved": true,
+    "proposed_saved_only_cap1_wall300": true,
+    "original_scoring_result_remains_absent": true
+  },
+  "findings": {
+    "critical": [],
+    "important": [
+      {
+        "id": "P1-separate-recovery-entry-and-identity",
+        "file": "proposed_score_only_recovery.json",
+        "finding": "The proposed source diff itself is exact and consistent with the frozen ten-component action block. However, the proposal does not specify a concrete independent recovery entry/deployment identity. Applying the diff in place would change score_C.py away from the original execution_protocol source SHA, so both supervisor guard and scorer line10 would reject before evaluation; the original stage ledger also correctly rejects a second score dispatch.",
+        "required_before_any_recovery": "Specify an independent candidate file in the same root (so __file__-derived D remains unchanged), or equivalent explicitly bound loader; preserve original score_C.py and execution_protocol. A future direct human exception must bind the recovery proposal, candidate text SHA, preservation manifest, one-dispatch wall300 supervisor and separate recovery ledger. This requirement must not be implemented by reopening or editing the original3/3,recovery0 ledger.",
+        "classification": "Execution packaging/identity requirement for the optional proposal; not a reason to change evaluation formulas or original C, and not an authorization to run."
+      }
+    ],
+    "minor": []
+  },
+  "carried_forward_unresolved_provenance_gap": "Original dynamically loaded C memory and archived navigation were absent from loaded_source_identity because they were not registered in sys.modules. Saved SHA guards/source seal and900 C-specific policy records support wiring but cannot retroactively make that manifest complete. The recovery must disclose this and preserve raw artifacts; do not relabel it repaired.",
+  "downstream_static_path_assessment": {
+    "root_resolution": "D derives from the executable file parent and W=D.parents[2]; a separate candidate must reside in this same pending-C root or explicitly preserve equivalent root semantics. No new wrong-root issue is visible in the existing scorer.",
+    "evaluator_override": "Archived B evaluator is imported only after structural completeness and full manifest. ev.D=D correctly routes its output/data accesses to C; source numerical constants remain archived B.",
+    "helpers": "Isolated paths module shim sets D=C before runpy execution of supported-memory and first-no-route helpers; they use the C manifest and postseal outputs. No directly visible additional field/path/import blocker was found in those reviewed downstream paths. This is static, not a guarantee they will complete.",
+    "schema": "Existing request operations beyond the faulty assertion use rows and even/odd interleaved components and do not assume four columns. Ten-column action requests are consistent with original A/B and frozen controls2*block5. Saved policy fields consumed by plan/tracker/source diagnostics exist in the previously inspected metadata.",
+    "metrics_and_gates": "The diff changes no GT domain, cost/source, thresholds, comparison logic, C model/parameters, physics or control. Frozen known-A/B identities and disclosure scopes remain unchanged.",
+    "preservation": "Original failure stays intact; the listed preservation manifest contains2185 raw files/761271993 bytes and declares no numeric GT scoring. This review verifies the manifest identity/structure, not a new full-file raw hash audit."
+  },
+  "assessment": {
+    "exact_single_change_verified": true,
+    "new_evaluation_formula_or_threshold_change": false,
+    "additional_directly_visible_downstream_schema_path_import_blocker_found": false,
+    "execution_packaging_identity_blocker_present": true,
+    "authorized_to_execute": false,
+    "old_recovery0_remains_closed": true,
+    "performance_conclusion_valid": false,
+    "next_action": "Make the distinct recovery entry/identity and one-run supervisor/ledger plan concrete without execution, then request the explicit score-only exception. Do not run the patched candidate under the original exhausted ledger or modify scientific outputs now."
+  },
+  "no_rerun": {
+    "candidate_execution": 0,
+    "project_imports": 0,
+    "scorer_GT_execution": 0,
+    "source_physics_navigation": 0,
+    "tests": 0,
+    "scientific_files_changed": 0,
+    "budget_reserved": false
+  }
+}

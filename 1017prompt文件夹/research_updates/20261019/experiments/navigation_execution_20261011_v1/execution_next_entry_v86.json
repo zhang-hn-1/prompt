@@ -1,0 +1,7 @@
+{
+  "stage": "original_four_camera_capture_and_geometry_complete",
+  "parent_entry": "execution_next_entry_v85.json",
+  "summary": "v86按用户原四相机前后对称配置完成实际4秒8曝光×4路采集；前置原camera_rig(.20,±.30,.05)及光学不变，后置(-.20,±.30,.05)为用户对称关系推导名义外参，非硬件实测标定。06:03:57–06:04:24UTC正常0，host659318/659350退出；8组原生IMU与32RGB/depth封存独立核验，相对矩阵最大差1.87904e-7。GT-only前联合331/后152/交0/四路483逐帧格实例，后新增31.47%；483/483距bodyband参照<=.15m、格P90 .1m，非模型精度/场景召回。CAD投影遮罩46.66/46.65/54.46/57.56%；2m环881–882/3600几何可用，非环视。初版评分XY轴错误保留并独立修正，原采集不变。physical1/2余1关闭recovery0，fit/model/nav0；预测误差、地面误报与长期地图N/A。报告reports/original_four_camera_results_20261015.md直接四路RGB/GT/BEV。下一仅既有v77封存输出有限尺度/空间形变诊断，旧.40m数据不冒称当前.20m四路；不复活旧模型或移相机。完整原四路序列/新源与可靠导航尚未成立，automationACTIVE。",
+  "running_experiments": [],
+  "whole_complete": false
+}

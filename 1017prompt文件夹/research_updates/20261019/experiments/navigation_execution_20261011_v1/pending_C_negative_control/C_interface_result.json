@@ -1,0 +1,24 @@
+{
+  "pass_required_C_interface": true,
+  "proposal_sha256": "09cc94faff624a26bd126129a5e8d809a69e8980a7dd0dd0e962b8843246c8b6",
+  "checks": {
+    "human_exception_alone_cannot_launch": true,
+    "no_simulator_import_by_guard": true,
+    "exact_C_class_import": true,
+    "four_eyes_paircentre_formula": true,
+    "source_world_and_UID_arrays_passthrough": true,
+    "input_records_unmodified": true,
+    "estimated_body_metadata_copy": true,
+    "actual_block_frame_ID_schema": true,
+    "stationary_repeats_not_confirmation": true,
+    "unconfirmed_expiry_UNKNOWN_not_free": true,
+    "original_geometric_confirmation_and_blind_retention": true,
+    "future_rejected_before_world_payload_and_no_map_mutation": true
+  },
+  "synthetic_only": true,
+  "source_calls": 0,
+  "RGB_GT_array_reads": 0,
+  "fit": 0,
+  "physics": 0,
+  "navigation": 0
+}

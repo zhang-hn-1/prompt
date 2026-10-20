@@ -1,0 +1,206 @@
+{
+  "updated_utc": "2026-10-16T17:33:10.909624+00:00",
+  "kind": "bounded_primary_source_preflight_only",
+  "mechanisms_examined": [
+    "Space Carving",
+    "Generalized Voxel Coloring"
+  ],
+  "sources": [
+    {
+      "title": "A Theory of Shape by Space Carving",
+      "url": "https://homes.cs.washington.edu/~seitz/papers/carve.pdf",
+      "locations": "sections2-4, Fig4, pp6-9; experiments pp10-11",
+      "findings": "A maximal photo-consistent shape contains all consistent shapes under the stated radiance/initial-volume assumptions. Fig4 shows private camera cavities that match images but have wrong scene geometry. Known background segmentation is optional; the gargoyle example does not use it. The practical sweeps use subsets of views; this is not identical to exact full-visibility GVC."
+    },
+    {
+      "title": "Generalized Voxel Coloring",
+      "url": "https://openaccess.city.ac.uk/id/eprint/4695/1/Generalized%20Voxel%20Coloring.pdf",
+      "locations": "sections2-3 pp3-9, section4 p12",
+      "findings": "Shared opaque voxel model, item buffers identify closest voxel per pixel, LDI updates visibility after carving. Check color only at currently visible pixels. Monotonic consistency is required for the conservative-carving argument; the authors empirical standard-deviation test is explicitly nonmonotonic. Exact visibility means visibility in the hypothesized voxel model, not ground-truth visibility."
+    }
+  ],
+  "candidate_outline_not_frozen_protocol": {
+    "inputs": "Per-eye causal current/past actual RGB, recorded K and encoder/IMU camera transforms; CAD only under its inherited scope. No GT silhouettes, object families, background RGB, render pose or depth.",
+    "metric_scale": "Existing native metric camera translations/K. No new sensor or metric reference created.",
+    "RGB_falsification": "For a surface voxel visible in two or more distinct causal cameras under a conservative common superset, incompatible observed colors can reject that voxel under an explicit radiance/noise model. Removing it changes visibility and requires reevaluation of newly exposed voxels. A voxel visible only in one camera or hidden does not provide multi-view exclusion.",
+    "visibility": "Render the shared remaining volume to item buffers or LDIs for only cameras already available. Must account for potential occluders along all tested camera-to-voxel segments; a .5m output lower limit does not certify nearer space empty.",
+    "background": "No black or known far-background color is needed for this color-comparison mechanism; background absence alone is NOT a reason to reject it. Cropped local volumes must not invent unoccluded sightlines across omitted possible foreground occluders.",
+    "outputs": "A photo-consistent possible-geometry outer volume/visibility history. Its first hit is not by itself a certified true obstacle surface, and a hull boundary is not automatically both bounds of a true first-surface interval.",
+    "implementation_location_if_contract_exists": "A separate causal voxel-set visibility/carving adapter using existing sanitized RGB/native pose loader and v96 projection interface; neither old density field nor per-pixel cost consumer is reused as qualified depth.",
+    "coverage_gaps": "Private-view shells, low/repeated texture, lack of multi-view visibility/parallax, shadows/view dependence, finite voxel/pixel footprint and native-pose error can leave ambiguity or wrongly reject a surface. Suspended/contact-invisible/boundary targets remain in the original full denominators. No E0 coverage has been computed for these papers.",
+    "necessary_stops": "No depth fit/source run until initial scene-domain/exclusion assumptions, causal visibility, finite surface interval extraction and radiance/pose robustness have an online-available falsifiable contract. Missing/occluded/inconsistent never becomes observed free or clears risk. Complete original source/per-frame gates remain unchanged."
+  },
+  "direct_history_comparison": {
+    "positive_cone": "Old positive masks and baseline support yield possible volume without RGB radiance checks or shared current occluder updates; not identical to GVC.",
+    "plane_sweep": "Old per-query inverse-depth ZNCC median/winner and confidence interval has depth-dependent view validity but no globally shared opaque-voxel visibility state; full visibility is a structural change, not a descriptor substitution. Its historical scores are not current four-camera performance.",
+    "radiance_grid": "Old RGB/density emission-absorption mixtures can match color by combining locations. Hard opaque-voxel consistency removes that mixing but does not eliminate all photo-consistent geometry ambiguity.",
+    "old_footprint": "Read provenance_grid/provenance_policy only: privileged depth+true-pose diagnostic; seed_body only sets a 2D geometry mask and does not feed floor labels. Its pose_sigma=0 is explicitly privileged, not a usable native 3D free-space error contract.",
+    "scope": "Focused source comparison only; not an exhaustive claim no previous implementation exists."
+  },
+  "actual_input_schema_check": {
+    "native_packet_keys": [
+      "time_s",
+      "begin_raw_s",
+      "end_raw_s",
+      "sensor_begin_stamp_s",
+      "qualified",
+      "reason",
+      "is_valid",
+      "gyro_body_rad_s",
+      "linear_acceleration_body_m_s2",
+      "body_basis",
+      "orientation_read",
+      "source_contract_version",
+      "main_encoder_rad_s",
+      "estimated_base_world",
+      "gravity_used",
+      "causal_before_next_action"
+    ],
+    "pose_error_bound_in_first_packet": false,
+    "initial_gauge_privileged": true,
+    "limitation": "This schema absence does not prove no usable bound can be derived elsewhere. No empirical pose error statistic was promoted to an online hard bound; no depth/image arrays or GT target scores were generated."
+  },
+  "decision": "NO_EXECUTABLE_METRIC_SURFACE_CONTRACT_YET; two research rounds without admitted new route; report stagnation. This is an adaptation preflight outcome, not a SpaceCarving/GVC performance failure or proof existing sensors cannot work.",
+  "new_run": false,
+  "fit": 0,
+  "physics": 0,
+  "navigation": 0,
+  "downloads_or_installs": false,
+  "old_budgets_unchanged": true,
+  "latest_scientific_entry_unchanged": "execution_next_entry_v105.json",
+  "next_action": "仅做一项有限只读适配前提核查：现有encoder/IMU估计器与旧机体footprint实现，能否给出不依赖GT的保守三维机体扫掠排除区？限定读取直接估计器及旧footprint合同，不扫描历史、不重做几何oracle。当前native_imu记录没有直接的pose误差界，不能把GT评分P90当在线硬界；旧privileged depth/pose或二维footprint mask也不能当三维观测自由。先说明姿态/位置误差、静态场景和机体内部保证如何影响排除区，确认是否已有旧机制覆盖。只有可用且非重复的合同成立才冻结新最小预算实现；否则结束此遮挡雕刻适配分支并保持停滞如实报告，不强跑、不改旧阈值、不重新询问硬件。",
+  "direct_evidence_sha256": {
+    "experiments/stereo_memory_navigation_20261004_v1/positive_cone_memory.py": "f25642556899677e752dcb05073efe9e19834705027b61a5e916f4ae1d4cccf2",
+    "reports/benchmark_causal_multiview_rgb_plane_sweep_20261004.md": "b72ad3d9646831466cecad131f2fba0b8c0d7bee4f42b7ce45bc1f093805d3d7",
+    "experiments/causal_radiance_grid_20261016_v1/protocol.json": "b738b9654e8213ce9a43f91e1d070fc1809a861bed0766af0c1de961301ba72a",
+    "experiments/stereo_memory_navigation_20261004_v1/provenance_policy.py": "b1a0ec94018f428ee4c5ec089963e5c6b02586433fd30874a8c679b078ab4c90",
+    "experiments/stereo_memory_navigation_20261004_v1/provenance_grid.py": "c380d8554e1b792cab558bdbe45a0a12cce5da10d6612892b3ca00b0c17dbe7d",
+    "experiments/contact_boundary_source_20261016_v1/e0_recovery_run/native_imu.json": "1d958ef4e5043a73b75744b3c5318f653f9a7aade7f739ef8a47c6efe5315938",
+    "experiments/contact_boundary_source_20261016_v1/e0_recovery_run/initial_gauge.json": "e00fe8239b2ba5ebbdb587e1f5d18d979eba53d5b56331e773496982b3ec71a7"
+  },
+  "swept_exclusion_followup": {
+    "updated_utc": "2026-10-16T18:28:21.905516+00:00",
+    "heartbeat_utc": "2026-10-16T18:24:58.447Z",
+    "scope": "Finite read-only estimator/footprint source audit. No sensor/pose/depth regeneration or performance experiment.",
+    "evidence": {
+      "GravityRolling.update": "Integrates previous velocity and gyro; optional acceleration normalization gravity correction at gain1 when abs(norm(acc)-9.81)<=.5; shellomega=R@(gyro+[0,encoder,0]); velocity=radius*cross(shellomega,normal). No slip-state estimate, uncertainty propagation, bias bound or error output.",
+      "interval_packet": "qualified validates finite data, is_valid and .02s timestamp interval alignment. It is NOT a position/slip accuracy certificate.",
+      "collector": "Uses privileged initial R0/p0 and flat z=.4000000059604645, then maps estimated rolling pose to world. This is a point estimate, not an enclosing pose set. Initial world gauge alone is not a reason local relative geometry is invalid; relative drift remains relevant.",
+      "old_footprint": "ProvenanceGrid.seed_body makes a 2D radius.4 mask only, does not update floor/hazard labels. pose_sigma=0 is expressly privileged depth/true-pose diagnostic. ExplorationGrid permits controlled unknown traversal and does not certify it free.",
+      "body_geometry": "Rolling radius constant is NOT by itself evidence of an obstacle-excluding solid ball of that radius or a closed collision envelope. No CAD asset changed/expanded; no watertight/inscribed-solid certificate established in this bounded reading.",
+      "missing_contract": "No conservative bounds on slip/integration/sensor/mount error are supplied by the inspected direct producer chain. This is not an exhaustive absence proof for every file, nor proof that RGB/IMU/encoder cannot estimate pose."
+    },
+    "conditional_geometry_contract_not_implemented": {
+      "notation": "Let S_t be a certified robot interior/occupied solid in body coordinates, and E_t an online set guaranteed to contain the true relative pose. For static external obstacles and valid noninterpenetration, F_t = intersection_{T in E_t} T(S_t) is an obstacle-excluded core at time t. Union of these cores over past t is swept exclusion. Merely unioning point-estimate transforms has no conservative guarantee.",
+      "erosion": "A sufficient erosion for a bounded solid with max body radius R is eps_position + 2*R*sin(eps_angle/2) for eps_angle in [0,pi], plus solid/mount/discretization uncertainty; to exclude a whole cubic voxel, include its half diagonal. For an exactly rotationally invariant certified sphere rotation has no effect; do not invent an angular penalty for it.",
+      "current_reference": "A global rigid initial gauge cancels in relative coordinates; old-to-current relative error does not. Current known CAD can exclude its own physical geometry only under its calibration/solid contract; it is not a past world-space free tube.",
+      "temporal_scope": "Requires static obstacles over the use interval; prior robot occupancy does not certify current freedom after dynamic objects enter. Absence of contact labels offline is not an online swept-volume accuracy observation.",
+      "limits": "No eroded tube calculated, voxel removed, posterior variance estimated or surface interval generated. No empirical GT P90 used as a hard bound. This is a conditional mathematical explanation, not a certified deployed algorithm."
+    },
+    "decision": "STOP_CURRENT_VISIBILITY_CARVING_SWEPT_EXCLUSION_ADAPTATION_BEFORE_IMPLEMENTATION. The direct estimator and old footprint do not supply its necessary conservative 3D exclusion contract. Not a measured failure of SpaceCarving/GVC or proof all current sensors fail.",
+    "fits": 0,
+    "new_dispatches": 0,
+    "physics": 0,
+    "navigation": 0,
+    "new_budget_opened": false,
+    "currently_running": false,
+    "consecutive_no_candidate_research_rounds": 3,
+    "scope_adjustment_proposal": {
+      "status": "Asked user via async scope question; not executed and not authorized by elapsed time.",
+      "reason": "Current direction is independent monocular per eye; old rejected sources are closed. Returning to historical jointly-stereo output diagnosis changes that direction and must not be silently treated as permission to rerun.",
+      "exact_readonly_work_if_allowed": [
+        "Reuse sealed seven-development-group FoundationStereo depth/masks/source-query outputs; trace losses through range/CAD/shared-support/query/paired projection/height steps using their original denominators.",
+        "Separate errors already in depth from losses introduced by the fixed consumer, preserve per-frame catastrophes and original precision/recall gates.",
+        "Use stored model timing to separate inference from existing projection/memory costs; no new timing claim for four cameras.",
+        "End with one evidence-supported repair decision or an explicit refusal if losses/timing do not support one; any implementation/new source budget requires a separate frozen contract."
+      ],
+      "evidence_basis": "v73 sealed summary: depth P90 .011853-.082576m in its historical paired domain, BEV recall51.25-74.64% below80%, H/C54precision below95%, inference P90~2.87-3.02s above.5s. These are OLD paired-domain numbers, not new measurements or four-camera results.",
+      "constraints": "No model inference/download/finetune, no change of optics/cameras/thresholds, no navigation or old-budget reopening. Permission for this diagnosis does not admit stereo as final solution or authorize subsequent model runs."
+    },
+    "next_action": "本遮挡雕刻/机体扫掠适配分支结束；不重复估计器/footprint/旧oracle，不派新拟合或雕刻实验。已向用户提出研究范围选择，等待是否允许一次历史FoundationStereo封存输出的只读覆盖/耗时归因；该诊断原属双目路线，而当前明确四路独立单目及旧源不复活，故未先执行。若明确允许，仅完成已拟定只读分层分母/丢失环节/耗时账目核对，不重推理、训练、调阈值或导航，不重开旧预算，不把旧双路结果冒称四路。若保持原范围，继续仅在现有四单目输入内有界研究非重复机制；若无具体可执行新机制如实记录停滞。未答前不执行依赖该范围变化的诊断，也不反复询问；原automation每小时ACTIVE。",
+    "direct_evidence_sha256": {
+      "experiments/contact_boundary_source_20261016_v1/collect.py": "ec18c660a3628c970cbeafc0825921fc19eb9871ec5bea86d2dc7da1b76f5857",
+      "experiments/stereo_memory_navigation_20261004_v1/imu_gravity_rolling.py": "ee495d9c7741e28416e11f131eaab4f01b3b363d0bed1d6607d24653ccafd5ce",
+      "experiments/stereo_memory_navigation_20261004_v1/rolling_odometry.py": "6f384b3658e171431fd8152f97e8c8d3af19e6d358985d05cf7f32ae255a83b8",
+      "experiments/stereo_memory_navigation_20261004_v1/imu_interval_packet.py": "38f862da3746e709240a216d7c5693774ea866475d35a8a3a67edd9c6ec47b55",
+      "experiments/stereo_memory_navigation_20261004_v1/provenance_grid.py": "c380d8554e1b792cab558bdbe45a0a12cce5da10d6612892b3ca00b0c17dbe7d",
+      "experiments/stereo_memory_navigation_20261004_v1/risk_grid.py": "f141a9df681cd5a97558330e9339af8f5c737b6d293bcc485536065479b928a3",
+      "experiments/navigation_execution_20261011_v1/execution_next_entry_v73.json": "72fcc7b6762e37146a9ed864cb39e4a5714bdde12980d00df692ce7d54f0d207"
+    }
+  },
+  "lightfield_sampling_followup": {
+    "protocol": {
+      "registered_utc": "2026-10-16T22:32:24.593299+00:00",
+      "question": "Can existing per-eye causal estimated camera matrices be naively stacked as the parallel-camera-plane view input assumed by the two papers? This is a finite input-adapter check, not a test of all possible ray-space resampling.",
+      "budget": {
+        "CPU_metadata_runs_cap": 1,
+        "wall_cap_s": 30,
+        "fit_cap": 0,
+        "RGB_load_cap": 0,
+        "GT_load_cap": 0,
+        "physics_cap": 0,
+        "recovery_cap": 0
+      },
+      "inputs": "All110 saved frame containers; only source_time_s and four *_camera_usd_world_estimated matrices. Past/current same eye within10seconds, no future. No RGB/depth/render-label arrays read.",
+      "computation": "For each eye/window >=3views, report count, centre spread, maximum axial centre displacement relative to current optical axis, and best-centre-plane SVD residual when>=4views. Axial displacement !=0 demonstrates that rotation-only normalization plus naive view stacking does not meet a fixed common camera plane perpendicular to current axis. A fitted plane alone is not a full EPI sampling certificate.",
+      "interpretation": "No tuned gate, no source performance/coverage score, no new depth hypothesis. Zero current-axis displacement and small plane residual would still require measured angular sampling/visibility and resampling qualification; nonzero does not rule out generalized light fields or other planes.",
+      "status": "failed_before_execution_no_retry"
+    },
+    "budget_terminal": {
+      "CPU_metadata_dispatches_used": 1,
+      "CPU_metadata_dispatches_cap": 1,
+      "metadata_computations_started": 0,
+      "fit": 0,
+      "physics": 0,
+      "recovery_used": 0,
+      "recovery_cap": 0,
+      "closed": true,
+      "returncode": 1,
+      "failure_type": "Author Python SyntaxError at f.update argument syntax, entire module parsing failed before imports/data reads. No runtime/geometry/source performance result."
+    },
+    "failure_evidence": {
+      "message": "SyntaxError: positional argument follows keyword argument",
+      "location": "Inline metadata script last f.update call used quoted mapping keys after result= keyword without a dict.",
+      "fix_not_executed": "Use one mapping argument or consistent keyword syntax. No corrected script run, source prediction, optimizer or second dispatch permitted under this frozen0recovery budget.",
+      "future_prevention": "Compile future diagnostic scripts before dispatch without executing data work; this does not reopen this closed probe."
+    },
+    "primary_source_inquiry": {
+      "mechanisms_examined": [
+        "EPI structure-tensor slope with joint visibility labeling",
+        "Fourier Disparity Layers"
+      ],
+      "primary_sources": [
+        {
+          "title": "Globally Consistent Depth Labeling of4DLight Fields",
+          "authors": "Wanner and Goldluecke",
+          "year": 2012,
+          "url": "https://publications.lightfield-analysis.net/WG12_cvpr.pdf",
+          "locations": "sections3-4 and introduction/constrained visibility",
+          "findings": "Two-plane light-field parameterization: EPI line slope links image displacement to camera-plane displacement through -f/Z. Dense angular sampling enables structure-tensor slope estimates; global labeling enforces cross-view visibility. Single moving camera gantry is allowed for static scenes, so special light-field hardware is not categorically required."
+        },
+        {
+          "title": "A Fourier Disparity Layer Representation for Light Fields",
+          "authors": "Le Pendu, Guillemot, Smolic",
+          "year": 2019,
+          "url": "https://arxiv.org/html/1901.06919v1",
+          "locations": "sectionsIII,IV-A andIV-B",
+          "findings": "Per-frequency linear regression decomposes sub-aperture images into additive disparity layers; layer pixels need not be nonnegative. Derivation uses nonoccluded Lambertian discrete-disparity regions; authors note transparent-looking occlusion artifacts. View synthesis works without a per-pixel disparity map; this does not yield a trustworthy first-surface map by itself."
+        }
+      ],
+      "online_scale": "Existing K and metric encoder/IMU camera displacement can set scale if ray-space sampling/rectification is established. Merely calling historical RGB a light field adds no new metric reference.",
+      "RGB_falsification": "EPI line coherence can reject slopes that do not follow observed spatio-angular structures; a joint labeling adds visibility relationships. Uniform/repeated texture, unresolved multiple slopes, sparse angular sampling and occlusions can remain ambiguous. FDL image fit alone does not identify a unique first opaque surface.",
+      "direct_old_comparison": "Old lk_surface_v1/protocol_v2 tracks sparse current-to-past points then triangulates, with no full EPI labeling; v99 positive density/transmittance color mixture differs from FDL signed additive Fourier layers. These are structural representation/constraint differences, not a claim these papers have passed novelty/source gates. A slope-only replacement for LK would still reuse temporal parallax and cannot be advertised as a new independent metric observation.",
+      "implementation_if_admitted": "A separate GT-free causal ray-space sampling adapter and full-view visibility/depth labeling, followed by existing v96 BEV consumer. Not implemented. No new weights/dependencies.",
+      "input_and_surface_contract_unresolved": "Naively stacking views after orientation correction assumes a common camera plane. Arbitrary calibrated rays can in principle be reparameterized; generating sufficiently sampled EPI slices from the current causal path without using unknown depth has not been established. Regularity/coverage were not measured because the metadata probe did not execute. FDL layer energies/signs are not probabilities or a first-surface depth distribution.",
+      "full_domain_requirement": "All110groups/440eyes and original11652target-cell instances including2535suspended would remain in any source gate. No current-domain depth, coverage, latency, RGB false-positive or navigation result exists for these adaptations.",
+      "decision": "No executable source contract frozen; no slope-threshold, Fourier-layer or per-frame model fit. This is incomplete input-adapter qualification with a failed diagnostic, not a measured EPI/FDL performance failure or proof all light-field adaptations impossible."
+    },
+    "direct_history_sha256": {
+      "experiments/stereo_memory_navigation_20261004_v1/lk_surface_v1.py": "2220547fdc2a91216f9b9b7a58a009c209fa31553f15c7f89a0c77fd099b439d",
+      "experiments/stereo_memory_navigation_20261004_v1/lk_surface_protocol_v2.json": "417c868e94091320474fb560680a2b7f6f5cc480cd278495945573705019088a",
+      "experiments/causal_radiance_grid_20261016_v1/field.py": "392bd86f2deef72904825f884a8e3c0adae6af5af3431d0f25c00a5b6456b293"
+    },
+    "updated_utc": "2026-10-16T22:33:50.007732+00:00",
+    "next_action": "本轮EPI/FDL原始论文核查已完成；元数据小检查因作者语法错误在读取前失败，dispatch1/1、recovery0关闭，不以新名字/预算重试该检查，不把未测采样写成不合格或算法失败。当前没有已准入EPI/FDL源，尚无因果光场重采样与第一表面合同，不启动拟合。历史FoundationStereo只读分层覆盖/耗时范围选择仍待用户回复，不重复问、不将heartbeat当同意；明确允许后按已准备提案执行，仍不推理/训练/导航/重开旧预算。未答或保留原范围时，仅在现有四路独立单目输入内对有具体依据的非重复机制做最多两个原始来源研究；没有新假设就如实记录无研究进展，不强跑或重复已闭合前提。以后新诊断派发前做非执行语法核验，不能据此重开本账本。"
+  }
+}

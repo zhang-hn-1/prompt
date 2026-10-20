@@ -1,0 +1,130 @@
+{
+  "utc": "2026-10-17T14:59:16.942316+00:00",
+  "status": "FOCUSED_RGB_VALIDITY_AND_SELF_SELECTION_PREFLIGHT_COMPLETE_NO_REPAIR_ADMITTED",
+  "scope": "Bounded direct currentcapture/source contract read, onefixedframe ZIPfieldnames only, and one frozen USDselfgeometry metadata inventory. No RGB/GT numeric pixel array read, source/mask/projection/regeneration, training or navigation.",
+  "direct_reference_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/user_fov_position_only_20261015_v1/four_camera.py": "5933e8ff37dc7375e3c19886f2d6adb214feb6aac4d580ed198af3ca114685f8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/camera_exposure_contract_20261015_v1/exposure_contract.py": "dfb0e0ff51d35a682b2ad4b16338f15fbb5a3e608eedda622692a2a5c9b2a421",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/source.py": "0f8918810cc2e9b3f6d6cb4bf4c64acb5ce3fe4bc882678c6a5ae9cfbeb38e8a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation.py": "8a07dd55ed917a492e7fc43da8500305688f6ed0dc5cad408d0b0856ffa7492e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/dynamic_self_mask.py": "86309cbcbc6cc4e07d73293cc512ce3a217c19929eb898f72a734b1c8b86ed06",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/bilateral_patch_confidence.py": "2282457cb013d6c6e6cc41407969f0853b53f6bedb46b7eceb8d324f21f3d10f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/bilateral_patch_confidence_v1/assessment_v1.json": "467f75892078465e1fbbb9c292dc49aa1314296cdc55403c67dc04908ba7adf9",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/learned_memory_risk_qualifier_design_v1.json": "72e948c45aa9ee1b39ecca8f76c35cd84b5591dada2ecaf4c0d0379df3a88e82"
+  },
+  "fixed_frame": {
+    "sequence": "E1B",
+    "frame": 90,
+    "path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/e1_run/frames/frame_090.npz",
+    "sha256": "bbdfa133264c7fceddc863b6277ba5d6332ca97bf96b692ee4d32acf155f8a97",
+    "access": "np.load.files ZIPnames only; no numeric array requested"
+  },
+  "findings": [
+    {
+      "item": "Explicit sensor crop/validity mask",
+      "evidence": "snapshot checks native480x640x4 rgba, then saves onlyrgb=rgba[:,:,:3], depthlabel and exposure metadata. Current source consumesRGB/currentjoints/CAD. No explicit image-validity mask was found in directly inspected interfaces or fixedsavedframe fields.",
+      "conclusion": "Black RGB cannot be relabelled invalidcrop/free or negativephysical truth. Alpha is not saved; its sensor-validity semantics were not established. No claim that globalrenderer has no implicit postprocessing, no blackthreshold/alphareconstruction/newcapture."
+    },
+    {
+      "item": "Known selfgeometry coverage",
+      "evidence": "Exact robot source layers match original E1runtimeidentity. Metadata8Gprims=4visibleMeshdefault +3Cylinder/1Sphereguide instanceproxies. Current fourbodyMesh selection covers all4 rendereligible meshes, no selectednonrenderpurpose meshes.",
+      "conclusion": "No omittedprimitive/instance coverage gap established for thismodelselection. Doesnot prove pixel/material/occlusion/rasterization correctness. Do not expand CAD masks fromGTerror or tune margins."
+    },
+    {
+      "item": "Legacy mask rig metadata",
+      "evidence": "mask_identity describes oldbase-only mask andoldrig, but current FourSGBM.masks directly reprojects dynamicallfourbody triangles withcurrent fixedrig; it doesnotcall legacy RobotSelfMask.project or ORthe frozenoldbase masks.",
+      "conclusion": "Do not treat oldidentity camera_rig fields as current opticalconfiguration or as evidence of a bug."
+    },
+    {
+      "item": "Repeated-patch ambiguity filter proposal",
+      "evidence": "Direct oldbilateral_patch_confidence uses9x9RGB,texturestd/NCC and alternative±2..4partnerpatch uniqueness; its fixedoriginaldomain assessment isREJECT_FIXED_PATCH_CONFIDENCE withnootherconfidencecandidate.",
+      "conclusion": "Changing windows/exactcolor/disparitysearch span alone doesnot establish a substantivelynewcause/consumer for thisproposal; no filterimplemented/no thresholdsweep. Originaltwo-eye performance is not currentfour-eye performance and doesnotprove allconfidence methods impossible."
+    },
+    {
+      "item": "OpenCV metadata",
+      "evidence": "Installedcv2.__version__=4.6.0 only; no nativecostvolume or upstreamuniqueness implementation inspected.",
+      "conclusion": "No OpenCVuniqueness bug orzerocost defect claim is established, no patch/dependency change."
+    }
+  ],
+  "inventory_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/self_geometry_inventory_followup",
+  "inventory_manifest_sha256": "0628b3e1a8a65f8ecf1fadf759e73f48ce78243abd9793e38bb18664e0fff41b",
+  "inventory_execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T14:56:34.999817+00:00",
+    "parent_pid": 27503,
+    "child_pid": 27504,
+    "process_group_id": 27504,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T14:56:35.551385+00:00"
+  },
+  "conclusion": "No concrete new interfacefix or nonrepeatfilter admitted. No new algorithmperformance result; learning/memoryimprovement remains stalled, oldclosedexperimentsunchanged. No newscientificentryversion; latest actual scientificresult remainsv116.",
+  "next_action": "ThisRGBvalidity/selfselection/patchoverlap branch isfinished. Do notrepeat itsfield/schema/robotinventory checks, inferblackasinvalid, changeFOV/crop/exposure/CADmargin, or revivepatchconfidence variants. There is no concrete next admitted candidate. Only a specific new causal signal/consumer with direct inputevidence can justify another boundedqualification; otherwise record actualstagnation without redundantreports or experiments.",
+  "actual_work": {
+    "metadata_inventory": 1,
+    "metadata_recovery": 0,
+    "new_algorithm_prediction": 0,
+    "new_source_mask": 0,
+    "RGB_source_calls": 0,
+    "new_GTscoring": 0,
+    "model_calls": 0,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "runtime": null,
+  "whole_research_complete": false,
+  "matcher_implementation_followup": {
+    "utc": "2026-10-17T15:50:36.674003+00:00",
+    "heartbeat_utc": "2026-10-17T15:48:29.708Z",
+    "status": "FOCUSED_READ_ONLY_NO_IMPLEMENTATION_REPAIR_ADMITTED",
+    "prior_followup_sha256": "3c9fdae5d4a20e4aa76d0ad52761b63dfea03f5b91b1bb06265cb297d413b241",
+    "question": "Can an invalid-disparity sentinel or rotated query/partner indexing directly explain admitted false near-risk points? Is a zero-cost uniqueness defect established for the actual matcher?",
+    "upstream_primary_source": {
+      "url": "https://raw.githubusercontent.com/opencv/opencv/4.6.0/modules/calib3d/src/stereosgbm.cpp",
+      "scope": "Read official 4.6.0 source, especially 3WAY dispatch and lines1884-2006/2063-2075. Not a checksum match to the locally linked binary and not a runtime branch trace."
+    },
+    "local_metadata": {
+      "cv2_version": "4.6.0",
+      "optimized": true,
+      "CPU_features": "SSE SSE2 SSE3 *SSE4.1 *SSE4.2 *FP16 *AVX *AVX2 *AVX512-SKX?",
+      "access": "metadata only, no StereoSGBM compute or scientific arrays"
+    },
+    "findings": [
+      {
+        "item": "Invalid sentinels",
+        "evidence": "Official invalid value is minDisparity-1 after dividing fixed-point output by16. Current two calls therefore use -1 and -449. Positive query rejects -1 by sign. Negative-query -449 has F*B/449 below the existing .5m minimum even if it reached points(); it cannot create an admitted risk point. No new output recomputed.",
+        "decision": "No sentinel repair justified; do not count invalid disparity as an observation or free."
+      },
+      {
+        "item": "Rotated partner indexing",
+        "evidence": "For counterclockwise np.rot90, rotated horizontal coordinate equals original row. Thus xp=x-disparity maps back to original partner row y-disparity, as saved by points(). The partner center is bounded before use; clipping only protects indexing and does not override that validity predicate.",
+        "decision": "No direction/indexing defect found in this direct formula trace; this is not proof of all calibration or pixel correctness."
+      },
+      {
+        "item": "Zero-cost uniqueness conjecture",
+        "evidence": "Official 3WAY SIMD check uses an integer threshold offset whereas its scalar remainder uses a strict relative comparison; zero-cost ties can consequently differ by path. Current D448, optimized flag and CPU features alone do not identify executed instructions or any actual aggregated matching costs.",
+        "decision": "No installed-binary zero-cost bug, current-frame tie, or contribution to false risk established. No patch, alternate threshold, backend switch, synthetic matcher run or dependency replacement."
+      }
+    ],
+    "actual_work": {
+      "official_implementation_read": 1,
+      "local_source_formula_trace": 1,
+      "numeric_saved_RGB_or_GT_reads": 0,
+      "source_calls": 0,
+      "native_cost_volume_extractions": 0,
+      "new_predictions": 0,
+      "scoring": 0,
+      "fit": 0,
+      "physics": 0,
+      "navigation": 0
+    },
+    "closure": "Source files and old scientific manifests unchanged. This narrow sentinel/indexing conjecture is not supported; zero-cost runtime attribution remains unmeasured, not failed. No next candidate admitted and no scientific version added. Do not repeat this read or rename an old patch-confidence filter.",
+    "next_action": "No executable next repair currently supported. Further dispatch requires a specific cause with online available evidence and a nonrepeat consumer; do not tune matching/TTL/learning or repeat closed CAD/metadata checks. Research stalled, whole goal incomplete."
+  }
+}

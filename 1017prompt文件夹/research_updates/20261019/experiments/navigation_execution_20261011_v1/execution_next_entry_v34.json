@@ -1,0 +1,70 @@
+{
+  "stage": "compact_baseline_actual_navigation_running",
+  "updated_utc": "2026-10-12T13:12:48.367617+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v33.json",
+  "authorization": "2026-10-12 direct user instruction: autonomously implement feasible ideas, verify, reject unsuccessful approaches and try new methods; no routine feasibility approval.",
+  "supersedes": [
+    "v31 waiting for camera geometry scope permission",
+    "routine per-candidate user approval stops",
+    "35-second limit for new navigation protocols; historical35 results unchanged"
+  ],
+  "next_action": "Supervise existing compact candidate E2 actual run; do not duplicate launch. Gate auto E0/E1 then independent raw closure. Close camera family after verdict; no additional rig tuning.",
+  "execution_contract": {
+    "outcome": "implementation plus measured validation and keep/reject conclusion; diagnosis alone is intermediate",
+    "default_max_physical_runs_per_new_candidate": 4,
+    "default_max_environment_recovery_attempts": 1,
+    "budget_rule": "predeclare and reserve before launch; all historical closed budgets remain closed; no identical rejected retries or renamed budget resets",
+    "autonomy_scope": "reversible local code, sensor geometry simulation, calibration, perception, memory, planning, control, necessary tests and bounded simulation",
+    "stop_rule": "substantive verdict, actual context/runtime/resource limit or genuine external blocker; continue next actionable step while capacity permits"
+  },
+  "historical_state_reference": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v31.json",
+  "navigation90": {
+    "assessment": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/visual_imu_navigation90_20261012_v1/assessment.json",
+    "arrival_count": 1,
+    "scenario_count": 3,
+    "e0": "arrival54.30s no contact",
+    "e1": "timeout90s remaining4.396183m no contact",
+    "e2": "contact19.64s",
+    "sealed_budget": {
+      "cap": 3,
+      "used": 3,
+      "remaining": 0,
+      "closed": true
+    }
+  },
+  "source_replay": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation90_source_filter_replay_20261012_v1/assessment.json",
+  "source_replay_limit": "No confirmed near1m measurement in five frames; does not establish true obstacle visibility or collision cause.",
+  "new_candidate_budget": {
+    "cap": 3,
+    "used": 1,
+    "retry": 0,
+    "recovery_cap": 1,
+    "ledger": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/nearfield_compact_navigation_20261012_v1/ledger.json"
+  },
+  "process_state": {
+    "ledger": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/nearfield_compact_navigation_20261012_v1/ledger.json",
+    "exec_session": 60338,
+    "parent_pid": 735465
+  },
+  "completion": {
+    "research_evidence_package": "delivered and independently read-only verified",
+    "reliable_navigation": false,
+    "learning_navigation_increment": false,
+    "cross_machine_runtime": "unverified",
+    "whole_mission_complete": false
+  },
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "schedule_preserved": true,
+    "target_thread_id": "01a1247b-60d7-7f01-9f6a-07214463512d",
+    "saved_prompt_sha256": "85d1557ec94673f81b67a0d5ffaf8a095a026018bf12a4dfb7fff65bbd1190a6",
+    "updated_at": 1791809275998
+  },
+  "stop_reason": null,
+  "candidate_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/nearfield_compact_navigation_20261012_v1",
+  "completed_current_stage": {
+    "forward_e2": "90s timeout no contacts, remaining8.212182336m; depthp90.102259m passed; navigation rejected",
+    "forward_ledger": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/nearfield_rig_navigation_20261012_v1/ledger.json"
+  }
+}

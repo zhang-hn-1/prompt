@@ -1,0 +1,151 @@
+{
+  "artifact_type": "independent_saved_score_recovery_results_review",
+  "utc": "2026-10-19T06:31:46.564993+00:00",
+  "scope": "Fresh independent audit of saved approved one-shot recovery results. Verified byte identities of raw preserved artifacts and whole-run manifest, saved NPZ array/schema and policy metadata, result scalar aggregate/ratio/quantile/gate arithmetic. Did not run evaluator, source, simulator, model, policy, memory, planner, tests or any new GT scoring. No RGB/depth-label pixel values or physics trajectory values loaded; frame/physics checks are NPY headers only. Only this audit JSON is new.",
+  "identities": {
+    "score_recovery_approval.json": "b01404592c8a3e9fe87e55844d9462ea026ef92def4f68a4789dcf70ca850a09",
+    "proposed_score_only_recovery.json": "1b0836725f973719bf7a45d84be25f914f6d38baf42678168c3a7b9b4336e1d7",
+    "score_saved_recovery.py": "46689ca4d5e22225e4652bec0865c31f6b1e2eabec973485f423e985b28a724d",
+    "supervise_score_saved_recovery.py": "5989301c404a92e54ae83fae8743f0c74428aa1315a37f9c2183fb255a4b6ad8",
+    "score_C.py": "33d2115df3bfe6a83281bbdaaec4a4c2517e2b75b2b5570d81b4881e703e9dd5",
+    "execution_protocol.json": "b16696fd2750731f60c8a87e9e1782bb80559f4839c65ccbc331c1b5b14ff424",
+    "execution_ledger.json": "b43958e0280b3ba87c2716b91b3fd6f71c008c024f989baec2f8e582d84a3daf",
+    "score_recovery_ledger.json": "530f0b653bbd64aca3f1604cdadd7d8b4a31cb47da6d0d75dae3d69f55ab2604",
+    "score_recovery_status.json": "2ba4f6e82033a116eee73e2ac2fc1f38dba09f083a7ec50c794666df1adc0c69",
+    "raw_artifact_preservation_manifest.json": "fb68c1ec6d913b0e70666e1f2871b78d4dad0764b6bf8f7a967168c8164a85a6",
+    "ABC_comparison.json": "951c1ebcbc5bcc5ab9b508549976d2e1a5f2c21177aa7cd447e17a7d245361e2",
+    "e1_result.json": "2651b0216b84140c7d793ca9b1c6363e8ed404fe5a416d82927f8864d4f97da8",
+    "supported_memory_result.json": "b5b2f9c1ea5f978f2b6f3ac02e706ca36369f5358ea79b31686f40ad64d23a38",
+    "no_route_diagnosis.json": "632ebe36652de8fede8ba72771bc4b414d5966696cb2e98550b258f75c0b97ae",
+    "evaluation_receipt.json": "95f221d026b3285ab1c61813aafee45b3f436ab485dbed533925b3904d6e886a",
+    "C_completeness_before_GT.json": "db4037bd1a011d8b4491aebf63cdd27b46ed8aae07534b12c0d4adf68bc95a24"
+  },
+  "whole_run_manifest_SHA256": "9c9f23f96460619bbc39db30f3c9f2478688a4e37940ee93ff03640832db5f88",
+  "check_counts": {
+    "named_checks": 28,
+    "passed": 28,
+    "preserved_raw_files": 2185,
+    "whole_run_files": 2185,
+    "unique_files_hashed": 2240,
+    "capture_and_prediction_pairs": 181,
+    "saved_prediction_eye_schemas": 724,
+    "saved_map_plan_pairs": 900,
+    "saved_requests_rows": 900,
+    "source_scalar_rows": 181,
+    "source_supported_blind_scalar_rows": 900,
+    "GT_scoring_or_policy_planner_reruns": 0
+  },
+  "checks": {
+    "recovery_direct_human_approval_binds_exact_proposal": true,
+    "all_19_recovery_execution_identity_SHA_unchanged": true,
+    "all_original_proposal_and_execution_SHA_match": true,
+    "old_score_unchanged_and_exact_one_line_patched_SHA_bound": true,
+    "old_ledger_still_3of3_recovery0_failure_preserved": true,
+    "new_one_shot_ledger_1of1_normal0_matches_approval_status": true,
+    "all_raw_preservation_file_SHA_match": true,
+    "all_whole_run_manifest_file_SHA_match": true,
+    "raw_and_scoring_whole_manifest_same_original_file_set_and_SHA": true,
+    "receipt_and_supported_manifest_and_result_identities_match": true,
+    "ordering_navigation_normal0_before_recovery_manifest_before_finish": true,
+    "fixed_comparator_11_JSON_SHA_and_original_AB_results_reused": true,
+    "181_capture_source_pairs_RGB_GT_header_shapes_no_pixel_decode": true,
+    "724_saved_prediction_eye_schema_and_world_UID_header_counts": true,
+    "requests_900x10_finite_exact_policy_float32": true,
+    "900_maps_plans_structurally_consistent_no_observed_free_label": true,
+    "physics_header_4501_native_packets_structural": true,
+    "saved_completeness_records_expected_actions_frames_IMU_video_counts": true,
+    "181_saved_source_rows_sum_to_aggregate_counts_and_ratios": true,
+    "900_saved_false_count_scalar_integral_and_max": true,
+    "900_saved_source_supported_blind_scalar_rows_sum1694of15480": true,
+    "goal_progress_from_saved_initial_final_scalar_distances": true,
+    "saved_policy_scalar_latency_generation_reverse_pending_arithmetic": true,
+    "ABC_C_scalars_equal_underlying_results_and_frozen_gates": true,
+    "fixed_first_no_route305_matches_saved_policy_and_map_metadata": true,
+    "saved_counterfactual_is_unknown_2D_only_consistent_flags": true,
+    "C_runtime_diagnostics_remain_with_original_dynamic_identity_gap": true,
+    "all_comparison_reliability_and_offline_rejection_limits_preserved": true
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": []
+  },
+  "carried_forward_provenance_limitation": {
+    "status": "UNRESOLVED_DISCLOSED",
+    "missing_dynamic_module_identity_paths": [
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/view_supported_memory_20261017_v1/memory.py",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation.py"
+    ],
+    "evidence": "Frozen proposal/launcher/source seals and all900 C-specific policy diagnostics support execution; exact dynamically loaded module objects were not in sys.modules and therefore omitted from runtime loaded identity. Recovery does not retroactively repair that manifest."
+  },
+  "verified_numeric_summary": {
+    "C_false_map_cellseconds": 4913.200000000008,
+    "B_false_map_cellseconds": 14501.299999999972,
+    "relative_false_map_cellseconds_reduction": 0.6611889968485571,
+    "C_source_supported_blind": {
+      "missing": 1694,
+      "denominator": 15480,
+      "fraction": 0.10943152454780362
+    },
+    "B_source_supported_blind": {
+      "missing": 634,
+      "denominator": 75700,
+      "fraction": 0.008375165125495377
+    },
+    "C_progress_m": 1.0597387264633502,
+    "required_progress_m": 1.64976528276972,
+    "C_historical_all_visible_gap_fraction_distinct": 0.623070821529745,
+    "C_frozen_gates": {
+      "minimum_visual_support": true,
+      "contact_noninferiority": true,
+      "net_progress_benefit": false,
+      "false_memory_benefit": true,
+      "blind_missing_noninferiority": false,
+      "latency_noninferiority": true
+    },
+    "all_C_gates_pass": false,
+    "C_full_chain_P50_P90_P95_s": [
+      0.07138703000964597,
+      3.7887830508640037,
+      3.8080693224503195
+    ],
+    "first_no_route_policy": 305,
+    "first_no_route_time_s": 30.499999318271875,
+    "event_hazard_cells": 216,
+    "event_scored_false_cells": 34,
+    "offline_saved_counterfactual": {
+      "actual_risk_grid": {
+        "status": "observed_obstacle_blocks_route",
+        "route_exists": false,
+        "path_length_m": null
+      },
+      "GT_remove_only_false_risk": {
+        "status": "unknown_exploration",
+        "route_exists": true,
+        "path_length_m": 7.8740115370177595
+      },
+      "GT_static_bodyband_grid": {
+        "status": "unknown_exploration",
+        "route_exists": true,
+        "path_length_m": 9.063961030678929
+      }
+    }
+  },
+  "metric_limitations": [
+    "False-map cellseconds use saved2D static bodyband GT proximity tolerance. They are not physical collision/safety counts or calibrated3D obstacle confidence.",
+    "Source-supported blindmissing1694/15480=10.943% differs from all-historical-visible coverage gap27493/44125=62.307%; denominators and C/B trajectories differ, so fractions are conditional descriptive metrics, not matched independent targets.",
+    "At first sustained no-route epoch305 (~30.5s), saved global-grid diagnosis marks34/216 hazard cells false. Turning those cells UNKNOWN restores a2D global route under fixed0.870711m clearance; it is not an executed deletion policy, local kinodynamic/control certificate or proof the real robot would navigate successfully.",
+    "No-route criterion is50 decision epochs of zero/no-success-plan after6s. This is a fixed proxy; offline counterfactual does not prove all15.4s no-route time has the same cause.",
+    "Full-chain P90 mixes900 decision/action ticks and2Hz source refreshes in frozen simulation time. This is not online/realtime throughput. Source/pose/camera priors and ideal bank feedback remain disclosed.",
+    "A/B reused known development runs; common-prefix RGB can differ, trajectories/visibility differ. No randomized causal, independent generalization, learning increment or reliable-navigation conclusion.",
+    "This audit uses saved already scored scalar classifications and aggregates; it does not independently re-score GT visible domains, false-cell classifications, source depth error quantiles or counterfactual paths."
+  ],
+  "assessment": "SAVED_APPROVED_RECOVERY_NORMAL0_IDENTITIES_AND_ARITHMETIC_CONSISTENT; ACTUAL_C_NEGATIVE_CONTROL_FAILS_PROGRESS_AND_SOURCE_SUPPORTED_BLIND_NONINFERIORITY; PRESERVE_ORIGINAL_OFFLINE_REJECTION_AND_CLOSE_ONE_SHOT_RECOVERY",
+  "no_rerun": {
+    "evaluator_source_physics_model_policy_planner": 0,
+    "tests": 0,
+    "new_GT_score_dispatch": 0,
+    "scientific_outputs_modified": 0,
+    "budget_restart": false
+  }
+}

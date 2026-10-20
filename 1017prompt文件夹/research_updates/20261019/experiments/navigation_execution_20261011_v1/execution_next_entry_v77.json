@@ -1,0 +1,14 @@
+{
+  "stage": "dual_monocular_pretrained_semantic_depth_rejected",
+  "parent_entry": "execution_next_entry_v76.json",
+  "updated_utc": "2026-10-14T20:21:16.212778+00:00",
+  "summary": "v77两路独立单目Metric Hypersim Small+SegFormer B0未微调完整7组1267对真实预测先seal后GT、6300记忆时钟结束。H/E0/E1/B54/C54/B65/C65融合precision21.88/21.31/14.74/14.44/13.65/15.96/13.80%，联合目标recall46.97/32.36/63.98/58.85/44.65/70.25/71.64%，格定位P90 1.304/1.334/1.442/1.500/1.552/1.432/1.300m全部失败。左/右depthP90 H1.465/1.779、E0.782/.876、E11.792/1.224、B541.625/1.266、C541.394/1.372、B651.676/1.211、C651.578/.901m。P90耗时.238–.274s过当前P90门槛，但C65max.533s、首次.748s，不能称每帧deadline均通过。有限真深度域输出100%覆盖非准确率；不按GT缩域或拟合尺度。B65融合recall单眼59.75/57.49→70.25但precision15.96%，最终risk212→2151/wrong57→1603/oldwrong7→643；七组记忆均变差。拒绝source/consumer组合fit0 physical0/4余4关闭 recovery0，不微调/扫阈值/替换模型救分，不宣称所有单目无效。原已封存FoundationStereo/SGBM不重推理；旧左眼/条件像素指标与新左右union分母不同不得直接称同分母导航增量。生成17:22:19–17:31:51UTC与评分17:31:51–17:35:18UTC均正常0，无运行任务；独立3801方法帧聚合、6300memorycounts/28labels+clock exact、14固定中帧深度分位复算通过。报告reports/dual_monocular_semantic_results_20261015.md直接同刻两RGB/真实单目深度/GT/误差/类别/左右融合/长期图完整分母。示例B65 47s沿用v75选择，不是本模型最差帧；当前9/247正确、11/14覆盖，47秒长期1446risk/969wrong/656old/326oldwrong。下一用户周围观测方向优先独立互补朝向双相机本地仿真几何资格：先有限核对旧forward/height安装候选，冻结一个实质不同的互补布局，保持场景/照明/安全距，标定、CAD静态与运动遮挡、完整当前和联合可见目标/盲区分母先明确；现有两眼同朝向非环视。相机几何只GT离线评分、在线IMU/真实标定可追踪，真实硬件不动，probe物理cap<=4恢复<=1派发前登记。布局覆盖改善不会修复本次测距/类别失败，不用拒绝模型直接导航、不改写旧预算或结论；有证据支持才独立新源/消费者方法和有界实际验证，不把换布局当模型救分。整体可靠导航/学习增量未完成，automationACTIVE。",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/dual_monocular_semantic_bev_20261015_v1",
+  "fit": 0,
+  "physical": 0,
+  "recovery": 0,
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false,
+  "running_experiments": []
+}

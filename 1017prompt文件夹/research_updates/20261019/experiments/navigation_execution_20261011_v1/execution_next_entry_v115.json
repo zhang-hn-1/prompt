@@ -1,0 +1,171 @@
+{
+  "version": 115,
+  "utc": "2026-10-17T12:32:16.431921+00:00",
+  "status": "privileged_consumer_feasible;causal_frontend_qualified;single_learned_policy_rejected;no_next_model_admitted",
+  "prior_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v114.json",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_action_learning_20261017_v1",
+  "supporting_roots": [
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/conservative_capture_admission_20261017_v1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_feature_frontend_20261017_v1"
+  ],
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/capture_admission_learning_results_20261017.md",
+  "candidate_identity": "Combination of existing static-cell actionteacher and NEWcapture/cell admission; not individual source authenticity/newmeasurement; originaloldheads/results/budgets not reopened.",
+  "privileged_control": {
+    "frames": 470,
+    "score_times": 1910,
+    "B_exact": 1010,
+    "decision": "necessarygatespassed_not_deployable",
+    "false_reduction": [
+      0.9599683365373742,
+      0.9061394495665906,
+      0.959187963485606
+    ],
+    "blind_missing_increase": [
+      0,
+      0,
+      0
+    ],
+    "execution": {
+      "status": "finished",
+      "start_utc": "2026-10-17T12:00:49.982655+00:00",
+      "parent_pid": 4042288,
+      "child_pid": 4042306,
+      "process_group_id": 4042306,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-17T12:01:07.230654+00:00"
+    }
+  },
+  "causal_frontend": {
+    "frames": 470,
+    "cell_rows": 40052,
+    "feature_channels": 24,
+    "feature_scalars": 961248,
+    "byte_exact_arrays": 3290,
+    "source_points": 2985832,
+    "execution": {
+      "status": "finished",
+      "start_utc": "2026-10-17T12:08:36.869576+00:00",
+      "parent_pid": 4050395,
+      "child_pid": 4050396,
+      "process_group_id": 4050396,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-17T12:09:38.287802+00:00"
+    }
+  },
+  "model": {
+    "type": {
+      "type": "SciPy fixed balanced logistic regression L-BFGS-B",
+      "objective": "sum_i n/(2*n_class_i)*logistic_crossentropy_i + .5*sum(nonintercept_coef^2); C=1 equivalent penalty family; no sklearn numerical-equivalence claim",
+      "initial_theta": "all25zero",
+      "optimizer": {
+        "method": "L-BFGS-B",
+        "maxiter": 200,
+        "gtol": 0.0001,
+        "ftol": 2.220446049250313e-09,
+        "maxls": 20,
+        "jac": "analytic"
+      },
+      "normalization": "E0only mean/std; std<1e-6->1",
+      "score": "WITHHOLDteacheraction imitation, not calibrated physical risk",
+      "threshold": 0.95
+    },
+    "fit_sequences": [
+      "E0"
+    ],
+    "fit_rows": 2038,
+    "development": [
+      "E1B",
+      "E1A"
+    ],
+    "E1_same_seen_scene": true,
+    "fit": 1,
+    "optimizer_iterations": 67,
+    "learned_score_rows": 42091,
+    "weight_sha256": "4c91477c2c28e4c62461b3d072460a83b27ef769f2090782d720528a052fe177",
+    "decision": "REJECT_FIXED_ACTION_LEARNER_NO_REFIT_NO_PHYSICAL",
+    "E0_UNKNOWN_rejected": "11/117=9.4017%>5%",
+    "E1B_false_reduction": 0.029121527035502637,
+    "E1A_false_reduction": 0.05798703700099006
+  },
+  "actual_execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T12:24:30.329300+00:00",
+    "parent_pid": 4066631,
+    "child_pid": 4066651,
+    "process_group_id": 4066651,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T12:24:47.717937+00:00"
+  },
+  "saved_array_diagnosis_execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T12:26:26.147946+00:00",
+    "parent_pid": 4068700,
+    "child_pid": 4068701,
+    "process_group_id": 4068701,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T12:26:26.699058+00:00"
+  },
+  "failure_cause": "Fixedmodel transfer failure with descriptive training supportgap and E0UNKNOWNmisrejection; not unique proof of featureincapacity. Consumer privilegedfeasibility and inputbyteequivalence passed.",
+  "manifests": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/conservative_capture_admission_20261017_v1": {
+      "sha256": "0fa9d3ffff6207b1a17c8a46c1dc0b32e586890b5421f8004c2a78b5ccebf8ad",
+      "files": 968
+    },
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_feature_frontend_20261017_v1": {
+      "sha256": "6e7c5d937df18e65c2ea00efb0aaccff9ee1a42285332c142c988ddc4e664ffb",
+      "files": 12
+    },
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_action_learning_20261017_v1": {
+      "sha256": "a8c4ba0002a9770014d6cda54c4077c6f28f8d6c8ce743ad831b81d9d0142f82",
+      "files": 985
+    }
+  },
+  "physics": 0,
+  "navigation": 0,
+  "source_calls": 0,
+  "new_depth": "N/A source unchanged",
+  "heldout": {
+    "reserved": 4,
+    "used": 0,
+    "status": "closedunused_afterdevfailure",
+    "scene_pixels_or_geometry_opened": false,
+    "certified_unseen": false
+  },
+  "runtime": null,
+  "online_default_changed": false,
+  "old_budgets_reopened": false,
+  "whole_research_complete": false,
+  "reliable_navigation": false,
+  "learning_increment": false,
+  "full3arm_complete": false,
+  "next_direct_action": "Before any different learning proposal, perform one bounded design review of train-support/teacher contract using already-seen E0/E1 evidence: coverage must include lowtexture and repeated erroneous support plus physicalUNKNOWN default. Specify honest scene roles and data availability; oldcurrentcandidate staysclosed. No data collection/refit/physics authorized merely by this note. If no independent new evidence and nonrepeat repair emerges, report learningroute stalled and keep baseline deliverable.",
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "cadence": "hourly"
+  }
+}

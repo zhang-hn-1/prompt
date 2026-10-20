@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-11T16:04:23.061066+00:00",
+  "original_failure_status": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/heading_rate_e1_b0_status_v1.json",
+  "original_failure_sha256": "b3dc87b907ceb86ab12b6164b29ab56958a845e166ceac5b78f06f96ee961333",
+  "startup_failure_only": true,
+  "actual_completed_physical_sequences": 0,
+  "original_startup_attempts": 1,
+  "original_no_retry_status_preserved": true,
+  "reason": "Sandbox has no NVIDIA/dri device nodes; read-only escalated host nvidia-smi succeeds RTX3060 driver580.178.04.",
+  "amendment": "Separate environment startup recovery, not repeat of scored or observed navigation. At most2 actual host sequences; no host retry; unchanged control geometry source inputs and35s gates.",
+  "host_readonly_check": {
+    "gpu": "NVIDIA GeForce RTX3060",
+    "driver": "580.178.04",
+    "returncode": 0
+  },
+  "new_versions": "Driver v2, protocols v3, durable status/run v2, host scorer; only output/protocol routing changes",
+  "no_old_bytes_overwritten": true,
+  "admission": "Independent recovery review required before launch"
+}

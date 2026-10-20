@@ -1,0 +1,36 @@
+{
+  "existing_12_condition_index": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/research_phase_reconciliation_assessment_v2.json",
+  "existing_index_sha256": "ffef7aed6d3664f6c6c063a42ffdcf2ecd50fb52b534ab0ea932d189657e5b1a",
+  "referenced_hashes_reverified": 55,
+  "success_counts": {
+    "frozen_classical": {
+      "known_pose": {
+        "arrived": 0,
+        "conditions": 3
+      },
+      "estimated_pose": {
+        "arrived": 0,
+        "conditions": 3
+      }
+    },
+    "rolling_endpoint": {
+      "known_pose": {
+        "arrived": 1,
+        "conditions": 3
+      },
+      "estimated_pose": {
+        "arrived": 0,
+        "conditions": 3
+      }
+    }
+  },
+  "not_new_experiments": true,
+  "not_new_pooled_sample": true,
+  "new_feedback_candidate_not_part_of_existing_matrix": true,
+  "memory_existing_report": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/\u8d44\u6599_\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a_2026-09-30/2026-10-09_\u7814\u7a76\u8fdb\u5c55\u66f4\u65b0/E1\u53cc\u76ee\u98ce\u9669\u8bb0\u5fc6\u6d88\u878d\u4e0e\u4e0b\u4e00\u9879\u5de5\u4f5c_2026-10-09.md",
+  "memory_scope": "History retains previously observed hazard and changes request eligibility; source imagery differs across arms so full causal navigation benefit unproven.",
+  "phase3_action": "Reuse sealed baseline matrix; extend retained candidate only if current E1 navigation gates pass.",
+  "phase4_action": "Inspect existing fixed risk-memory ablation before authorizing any new physical budget.",
+  "phase5_action": "Old learning budgets closed; a new learning goal/data design must be independent. No training or collection admitted by this index.",
+  "whole_mission_complete": false
+}

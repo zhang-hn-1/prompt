@@ -1,0 +1,25 @@
+{
+  "review_agent": "/root/heading_rate_review",
+  "utc": "2026-10-11T16:02:11.593549+00:00",
+  "verdict": "not_admitted_pending_review_corrections",
+  "findings": [
+    {
+      "priority": "P2",
+      "issue": "Scorer rejected valid singular geometry fallback"
+    },
+    {
+      "priority": "P2",
+      "issue": "Old driver and protocol identity metadata"
+    },
+    {
+      "priority": "P2",
+      "issue": "Missing complete source frame sequence assertion"
+    },
+    {
+      "priority": "P3",
+      "issue": "Top level handoff rejection classification"
+    }
+  ],
+  "design_findings": "No geometry, quaternion convention, actual BankMap feedback consumption or inherited main/state design issue found.",
+  "scope": "CPU/read-only; actual effect, trajectory, contacts, latency and source prefix require physical pair"
+}

@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-19T06:33:09.662886+00:00",
+  "decision": "C_COMPOSITE_REJECTED",
+  "execution": {
+    "status": "finished",
+    "start_utc": "2026-10-19T06:28:08.088571+00:00",
+    "parent_pid": 2423843,
+    "child_pid": 2423844,
+    "process_group_id": 2423844,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-19T06:28:57.649377+00:00"
+  },
+  "recovery_ledger": {
+    "cap": 1,
+    "used": 1,
+    "recovery_after_this": 0,
+    "status": "finished",
+    "parent_pid": 2423843,
+    "utc": "2026-10-19T06:28:08.081788+00:00",
+    "proposal_sha256": "1b0836725f973719bf7a45d84be25f914f6d38baf42678168c3a7b9b4336e1d7",
+    "approval_sha256": "b01404592c8a3e9fe87e55844d9462ea026ef92def4f68a4789dcf70ca850a09",
+    "execution": {
+      "status": "finished",
+      "start_utc": "2026-10-19T06:28:08.088571+00:00",
+      "parent_pid": 2423843,
+      "child_pid": 2423844,
+      "process_group_id": 2423844,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-19T06:28:57.649377+00:00"
+    }
+  },
+  "approval_sha256": "b01404592c8a3e9fe87e55844d9462ea026ef92def4f68a4789dcf70ca850a09",
+  "proposal_sha256": "1b0836725f973719bf7a45d84be25f914f6d38baf42678168c3a7b9b4336e1d7",
+  "original_failed_score_status_sha256": "a2cca170af9b1555e980e3d39e755c10c55b24ad11c53baed4f7a82b2bb4b188",
+  "original_closed_ledger_sha256": "b43958e0280b3ba87c2716b91b3fd6f71c008c024f989baec2f8e582d84a3daf",
+  "outputs_sha256": {
+    "ABC_comparison.json": "951c1ebcbc5bcc5ab9b508549976d2e1a5f2c21177aa7cd447e17a7d245361e2",
+    "e1_result.json": "2651b0216b84140c7d793ca9b1c6363e8ed404fe5a416d82927f8864d4f97da8",
+    "supported_memory_result.json": "b5b2f9c1ea5f978f2b6f3ac02e706ca36369f5358ea79b31686f40ad64d23a38",
+    "no_route_diagnosis.json": "632ebe36652de8fede8ba72771bc4b414d5966696cb2e98550b258f75c0b97ae",
+    "evaluation_receipt.json": "95f221d026b3285ab1c61813aafee45b3f436ab485dbed533925b3904d6e886a",
+    "C_completeness_before_GT.json": "db4037bd1a011d8b4491aebf63cdd27b46ed8aae07534b12c0d4adf68bc95a24",
+    "presentation_receipt.json": "b188d0c77e1db24af2ecf3b115ea25cd6e1ef011c08720399ec6de87cbddfeda",
+    "independent_score_recovery_results_review.json": "68e4dc8e6ef3774940aa19156ba03926806788e955e37d9e3bad2bdd2c950936"
+  },
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/ABC_memory_negative_control_results_20261019.md",
+  "report_sha256": "c178b35145cbfc33b1beaffccf92c245ddb9233a52c98df6eca1edea6b6ca2e0",
+  "original_files_unchanged": true,
+  "new_source_or_physics_or_fit": 0,
+  "provenance_limit_remains": true,
+  "whole_goal_complete": false,
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "same_prompt": true,
+    "target_thread_id": "01a1247b-60d7-7f01-9f6a-07214463512d"
+  },
+  "runtime": null
+}

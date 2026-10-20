@@ -1,0 +1,134 @@
+{
+  "version": 108,
+  "created_utc": "2026-10-17T07:21:53.138006+00:00",
+  "status": "P0_actual_weak_baseline_complete_P1_fixed_C_rejected",
+  "task_list": "/home/an/Documents/ChatGPT/球型机器人导航/docs/superpowers/plans/2026-10-17-navigation-memory-task-list.md",
+  "prior_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v107.json",
+  "roots": [
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/view_supported_memory_20261017_v1"
+  ],
+  "reports": [
+    "/home/an/Documents/ChatGPT/球型机器人导航/reports/current_four_camera_weak_baseline_results_20261017.md",
+    "/home/an/Documents/ChatGPT/球型机器人导航/reports/view_supported_memory_results_20261017.md"
+  ],
+  "P0": {
+    "complete": true,
+    "actual_navigation": true,
+    "termination": "timeout90",
+    "sim_s": 89.99999798834324,
+    "obstacle_contact": 0,
+    "actions": 900,
+    "four_camera_frames": 181,
+    "IMU_physics": 4501,
+    "net_goal_progress_m": 1.14976528276972,
+    "path_length_m": 6.776336669921875,
+    "end_to_end_P50_P90_P95_s": [
+      0.14765836851438507,
+      3.8008249707869255,
+      3.893386974360328
+    ],
+    "source_conditional_metrics": {
+      "target_cells": 17942,
+      "covered_cells": 10761,
+      "predicted_cells": 21319,
+      "correct_cells": 17248,
+      "precision": 0.8090435761527276,
+      "recall": 0.5997659123843496,
+      "valid_target_pixels": 5404827,
+      "conditional_depth_P50_P90_P95_m": [
+        0.04593515396118164,
+        0.1417606353759766,
+        0.16153701543807986
+      ],
+      "generation_P50_P90_P95_s": [
+        2.861619882984087,
+        3.14842393505387,
+        3.2624018519418314
+      ]
+    },
+    "source_supported_blind_missing_fraction": 0.008375165125495377,
+    "weak_baseline_not_old_strict_admission": true
+  },
+  "P1": {
+    "fixed_candidate": "view novelty gated persistent promotion, recent10s unchanged",
+    "same_input_E0_replay": true,
+    "false_cell_seconds_reduction": 0.1424290399185797,
+    "blind_missing_increase": 0.4555861776552894,
+    "decision": "REJECT_C_OFFLINE_NO_PHYSICAL_SWEEP",
+    "maps_changed": 88,
+    "physical": 0,
+    "remaining_recovery_closed": true
+  },
+  "cause": {
+    "first_sustained_no_route_s": 6.099999863654375,
+    "risk_cells": 127,
+    "GT_false_cells": 15,
+    "GT_remove_false_restores_global_grid_connectivity": true,
+    "no_online_GT_deletion": true,
+    "no_local_execution_success_claim": true
+  },
+  "runtime": {
+    "status": "none",
+    "former_parent": 3720822,
+    "former_child": 3720823,
+    "pid_namespace": "host systemd, no separate sandbox PID",
+    "actual_exit": {
+      "status": "finished",
+      "start_utc": "2026-10-17T06:51:40.172530+00:00",
+      "parent_pid": 3720822,
+      "child_pid": 3720823,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-17T07:05:25.517675+00:00"
+    },
+    "service": "inactive/MainPID0/ExecMainStatus0"
+  },
+  "budgets": {
+    "E0_compute": "1/1 closed",
+    "E1_physics": "1/1 closed",
+    "P1_replay": "1/1 closed",
+    "recovery_used": 0,
+    "all_remaining_recovery_closed": true,
+    "fit": 0,
+    "learned_inference": 0,
+    "old_budgets_reopened": false
+  },
+  "source_snapshot_files": 142,
+  "GT_scope": "Initial gauge/height/ideal bank feedback disclosed. Depth/semantic geometry only offline; truegoal/contact terminal only.",
+  "next_action": "P0 complete, fixed C rejected. First bounded check of real conflicting-observation evidence on SEALED E1: compare at most two directly related old conflict/clearance contracts; distinguish closer occluder, invalid/absent observation, and valid farther-depth inconsistency using current RGB-predicted depths and native poses. Freeze complete coverage/false-dispute teacher scoring before computing, no GT online, no map deletion or physics. Only a substantively different supported single-factor repair may receive new budget; do not tune/replay closed C, reduce TTL or revive source/literature chains. P2 actual three-arm remains unqualified.",
+  "overall_complete": false,
+  "reliable_navigation": false,
+  "learning_increment": false,
+  "P2_actual_complete": false,
+  "automation": "original id automation hourly ACTIVE verified, unchanged",
+  "notification": "Routine quiet; completed clear stage / necessary external block / unrecoverable failure only",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/protocol.json": "d38c914a7eb94ac4e9f4d1903530d63f924563342001c6a41a66bc00c08d8e59",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation_protocol.json": "014e9bba3c3e65a2199bdf08e504e837890fc9ac6c079279729908c6e263ef71",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/evaluation_receipt.json": "3c10c8fb55318e4357d48def18d118b3e25ec1853f05863c60725534e492eabb",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/e1_result.json": "8486298aa67083ae30ad7368a2e6d70a8fc909ab534447495bf695c92a1431e0",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/no_route_diagnosis.json": "9566308291d3a8934b069782b48d7b7dedd8d6166f1a412fe2db558d86abfeb7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/view_supported_memory_20261017_v1/protocol.json": "6e05bc11dffebf324661555ab0f34c517e218c7cd7b25075617365904db7bef8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/view_supported_memory_20261017_v1/result.json": "788304887885b20722f21e90fbd17cd629795fbcc431bea9195acc60c0e49f3f"
+  },
+  "closed_artifact_manifests": {
+    "four_camera_weak_baseline_20261017_v1": {
+      "manifest_sha256": "9c85dd9bfd9e7703b6dfe4112f38370566c968eca02461eeaa3a8879e5a4e341",
+      "files_verified": 2489
+    },
+    "view_supported_memory_20261017_v1": {
+      "manifest_sha256": "1f544193b201c7b6e86c1e125249bd5859fdb0390b89649cdb6bf00328e177df",
+      "files_verified": 123
+    }
+  },
+  "synchronized_delivery": "/home/an/Documents/ChatGPT/球型机器人导航/资料_球型机器人导航_2026-09-30/2026-10-17_四相机弱基线与记忆检查",
+  "administrative_metadata_recovery": {
+    "used": 1,
+    "cap": 1,
+    "source_prediction_physics_rerun": false
+  }
+}

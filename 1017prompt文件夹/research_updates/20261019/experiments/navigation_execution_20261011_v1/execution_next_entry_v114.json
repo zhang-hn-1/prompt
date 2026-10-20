@@ -1,0 +1,73 @@
+{
+  "version": 114,
+  "utc": "2026-10-17T11:00:05.166159+00:00",
+  "status": "query_depth_teacher_qualification_rejected_before_fit;learning_stalled",
+  "prior_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v113.json",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/query_depth_consistency_qualification_20261017_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/query_depth_consistency_qualification_results_20261017.md",
+  "frames": 470,
+  "source_point_instances": 2985832,
+  "groups": {
+    "E0": {
+      "points": 101084,
+      "positive": 16251,
+      "negative": 57985,
+      "unknown_invalid": 3407,
+      "unknown_margin": 23441,
+      "known_fraction": 0.734399113608484,
+      "static_negative_proxy_points": 751,
+      "static_negative_proxy_known": 474,
+      "static_negative_proxy_known_fraction": 0.6311584553928096,
+      "static_positive_proxy_negative": 56344
+    },
+    "E1": {
+      "points": 2884748,
+      "positive": 1954728,
+      "negative": 38812,
+      "unknown_invalid": 362619,
+      "unknown_margin": 528589,
+      "known_fraction": 0.6910620962385623,
+      "static_negative_proxy_points": 86560,
+      "static_negative_proxy_known": 17753,
+      "static_negative_proxy_known_fraction": 0.20509473197781886,
+      "static_positive_proxy_negative": 25510
+    }
+  },
+  "data_decision": "NOT_QUALIFIED_BEFORE_FIT",
+  "actual_execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T10:55:31.921939+00:00",
+    "parent_pid": 3976173,
+    "child_pid": 3976175,
+    "process_group_id": 3976175,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T10:55:56.568592+00:00"
+  },
+  "manifest_sha256": "1bcc251953667059a3845f5605c614388642626087c92fd6bbe8158df9fb0b16",
+  "manifest_files": 487,
+  "fit": 0,
+  "source_calls": 0,
+  "learned_inference": 0,
+  "map_replay": 0,
+  "physics": 0,
+  "navigation": 0,
+  "runtime": null,
+  "online_default_changed": false,
+  "old_budgets_reopened": false,
+  "whole_research_complete": false,
+  "reliable_navigation": false,
+  "learning_increment": false,
+  "full3arm_complete": false,
+  "next_direct_action": "Only one bounded target/consumer design check: source-specific current risk-cell support, aligned with existing cell-distance teacher while keeping boundary UNKNOWN and other same-cell/old sources. Compare against old global static-cell prior head explicitly; no new learner if identical. Determine whether a genuinely different consumer and complete uncertainty-aware teacher contract exist before any data computation/fit/collection. Existing v111 longterm-only and current query-depth target stay closed; no replay/source/nav or new oracle by default.",
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "cadence": "hourly"
+  }
+}

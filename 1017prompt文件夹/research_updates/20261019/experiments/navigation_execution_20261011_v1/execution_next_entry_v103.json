@@ -1,0 +1,149 @@
+{
+  "version": 103,
+  "created_utc": "2026-10-16T14:34:18.816498+00:00",
+  "status": "fixed_pointwise_RGB_repair_rejected_before_fit",
+  "root": "experiments/radiance_pointwise_qualification_20261016_v1",
+  "report": "reports/radiance_pointwise_qualification_results_20261016.md",
+  "kind": "Read-only engineering qualification plus bounded two-mechanism source inquiry",
+  "rays_per_state": 9600,
+  "views": 8,
+  "labels_read": false,
+  "qualified_comparator_privileged": true,
+  "known_background_fixture": true,
+  "gates": {
+    "equal_view": {
+      "P_distinguishes": true,
+      "fixed_augmented_order_reversed": false,
+      "failed_minus_qualified_P": 0.010028083343058825,
+      "failed_minus_qualified_augmented": -0.0001412455821991898
+    },
+    "training_expectation": {
+      "P_distinguishes": true,
+      "fixed_augmented_order_reversed": false,
+      "failed_minus_qualified_P": 0.008950087474659085,
+      "failed_minus_qualified_augmented": -0.00019821834939648397
+    }
+  },
+  "necessary_fit_gate_pass": false,
+  "aggregates": {
+    "RGB_init_failed": {
+      "equal_view": {
+        "RGB_MSE": 0.00028590430702024605,
+        "transmittance_entropy": 0.023040208034217358,
+        "distortion": 0.0047403479111380875,
+        "original_total": 0.0005637098620354664,
+        "P_RGB_SSE": 0.01975678838789463,
+        "P_RGB_MSE": 0.006585596245713532,
+        "full_expected_RGB_SSE": 0.019932305440306664,
+        "render_RGB_SSE": 0.0008577128901379183,
+        "Jensen_gap_RGB_SSE": 0.019074592739343643,
+        "direct_variance_RGB_SSE": 0.019074592972174287,
+        "augmented_total": 0.0007612777480972
+      },
+      "training_expectation": {
+        "RGB_MSE": 0.0003104646630163188,
+        "transmittance_entropy": 0.02335191098973155,
+        "distortion": 0.0047901162470225245,
+        "original_total": 0.0005918849401496118,
+        "P_RGB_SSE": 0.0195224080234766,
+        "P_RGB_MSE": 0.006507469399366528,
+        "full_expected_RGB_SSE": 0.019612970761954784,
+        "render_RGB_SSE": 0.0009313939735875465,
+        "Jensen_gap_RGB_SSE": 0.01868157647550106,
+        "direct_variance_RGB_SSE": 0.018681576591916382,
+        "augmented_total": 0.0007871090238040779
+      }
+    },
+    "known_density_init_qualified": {
+      "equal_view": {
+        "RGB_MSE": 0.0006306645882432349,
+        "transmittance_entropy": 0.016600180533714592,
+        "distortion": 0.0008569877390982583,
+        "original_total": 0.0008052362754824571,
+        "P_RGB_SSE": 0.009728705044835806,
+        "P_RGB_MSE": 0.00324290175922215,
+        "full_expected_RGB_SSE": 0.010136603377759457,
+        "render_RGB_SSE": 0.0018919937137980014,
+        "Jensen_gap_RGB_SSE": 0.008244609460234642,
+        "direct_variance_RGB_SSE": 0.008244609052781016,
+        "augmented_total": 0.0009025233302963898
+      },
+      "training_expectation": {
+        "RGB_MSE": 0.0006913741272001062,
+        "transmittance_entropy": 0.017972352041397244,
+        "distortion": 0.0008506505182594992,
+        "original_total": 0.0008796041620371398,
+        "P_RGB_SSE": 0.010572320548817515,
+        "P_RGB_MSE": 0.003524106927216053,
+        "full_expected_RGB_SSE": 0.010784787591546774,
+        "render_RGB_SSE": 0.0020741223270306364,
+        "Jensen_gap_RGB_SSE": 0.008710664696991444,
+        "direct_variance_RGB_SSE": 0.00871066449326463,
+        "augmented_total": 0.0009853273732005619
+      }
+    }
+  },
+  "audit": {
+    "complete": true,
+    "CPU_only": true,
+    "saved_view_checks": 16,
+    "rays_each_field": 9600,
+    "hash_checks": 86,
+    "max_scalar_abs_error": 1.420722153498699e-07,
+    "max_weight_sum_error": 5.458625431664643e-07,
+    "max_Jensen_identity_error": 1.0358557278600244e-07,
+    "both_aggregation_gate_failures_confirmed": true,
+    "forward_calls": 0,
+    "optimizer_steps": 0
+  },
+  "independent_review": "review.json; no important findings",
+  "runtime": {
+    "status": "finished",
+    "start_utc": "2026-10-16T14:23:14.769320+00:00",
+    "parent_pid": 2690992,
+    "child_pid": 2690997,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-16T14:23:19.291737+00:00"
+  },
+  "budget": {
+    "status": "finished",
+    "dispatch_used": 1,
+    "dispatch_cap": 1,
+    "forward_diagnostic_used": 1,
+    "forward_diagnostic_cap": 1,
+    "fit_used": 0,
+    "fit_cap": 0,
+    "optimizer_steps": 0,
+    "physical_used": 0,
+    "navigation_used": 0,
+    "recovery_used": 0,
+    "recovery_cap": 1,
+    "budget_closed": true,
+    "terminal": {
+      "status": "finished",
+      "start_utc": "2026-10-16T14:23:14.769320+00:00",
+      "parent_pid": 2690992,
+      "child_pid": 2690997,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-16T14:23:19.291737+00:00"
+    },
+    "new_fit_admissible": false
+  },
+  "source_research": "surface_mechanism_preflight.json; NeuS/Voxurf examined only; no source admitted",
+  "next_action": "Define one minimum forward-only SDF rendering contract on the unchanged syntheticfixture: analytic reference solely for sign/unit verification, generic initialization separate, original full target and output gates retained; freeze fit0 budget before implementation. If valid foreground crossings or metric depth cannot be maintained without GT target-dependent choices, reject adaptation before fit. If contract passes, separately freeze one structural RGB surface-fit probe, with no inherited GT initialization, no coefficient/iteration sweep and no actual E0/nav dispatch.",
+  "limitations": [
+    "Observed2state sampled ranking only; no universal training-failure or global optimum proof.",
+    "Actual fourRGB semantic/BEV/memory/nav outputs N/A; actualsource latest rejectionv99 unchanged."
+  ],
+  "reliable_navigation": false,
+  "learning_navigation_increment": false,
+  "overall_complete": false
+}

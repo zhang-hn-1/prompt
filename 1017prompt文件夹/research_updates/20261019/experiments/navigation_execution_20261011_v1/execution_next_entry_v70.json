@@ -1,0 +1,30 @@
+{
+  "stage": "pretrained_stereo_external_weight_unavailable",
+  "updated_utc": "2026-10-13T17:42:24.629066+00:00",
+  "parent_entry": "execution_next_entry_v69.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/pretrained_stereo_bev_20261013_v1",
+  "summary": "v70官方权重获取两次均被外部SIGTERM中断，非模型失败。第二durable16:39:10–16:45:16UTC interrupted parent_signal15/child-15，host2536188/2536191退出，exec52179已收回。完整model_best_bp2.pth不存在，仅673MiB部分文件保存；downloadused2/cap2关闭，fit0physical0science_recovery0。未推理/BEV评分/导航，不重开获取预算。",
+  "next_action": "外部条件：取得官方标准FoundationStereo23-51-11完整model_best_bp2.pth。可由用户放入当前root/weights/23-51-11/model_best_bp2.pth（配置已保存），或用户明确选择一次可持续不中断的新下载方式/获取预算。资源未变时仅检查完整权重是否出现，保持安静，不重复报告、不自动续传/替换模型/旧回放；完整后校验SHA/strict checkpoint架构身份，再既有BEV接口与完整序列验证。下载完整不等于模型通过或导航完成。",
+  "budget": {
+    "download_used": 2,
+    "download_cap": 2,
+    "status": "acquisition_closed_incomplete",
+    "fit": 0,
+    "physical": 0,
+    "science_recovery": 0
+  },
+  "processes": {
+    "running_experiments": [],
+    "exited_host": [
+      2536188,
+      2536191
+    ],
+    "collected_exec": [
+      52179
+    ]
+  },
+  "stop_reason": "完整官方外部权重缺失且两次获取均中断，已无当前预算内可执行模型路径；需要完整文件或明确外部获取方式。",
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

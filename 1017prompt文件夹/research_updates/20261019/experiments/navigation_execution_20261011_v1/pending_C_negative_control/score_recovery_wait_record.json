@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-19T05:34:53.496491+00:00",
+  "status": "WAITING_DIRECT_HUMAN_SCORE_ONLY_EXCEPTION",
+  "reason": "Original explicitly frozen recovery0, score already1failed. Concreteone-line saved-only recovery prepared and independently reviewed; no further experiment authorized.",
+  "question": "Allowone300s saved-only score recovery correcting4→10; no source/physics/fit/A-B rerun/thresholdchange. Or retain incompleteABC.",
+  "proposal_sha256": "1b0836725f973719bf7a45d84be25f914f6d38baf42678168c3a7b9b4336e1d7",
+  "independent_review_sha256": "909bbf197a9fb52ffddf1f8ec140ca92096768904a0f4f35528f257a980db581",
+  "automation": {
+    "id": "automation",
+    "status": "PAUSED",
+    "kind": "heartbeat",
+    "rrule": "FREQ=HOURLY;INTERVAL=1",
+    "target_thread_id": "01a1247b-60d7-7f01-9f6a-07214463512d",
+    "updated_at": 1792388075023,
+    "prompt_sha256": "2167900749f21e69595f44d3ae938d9a3096f7c7c5efbe0ff094930573ee0a4e"
+  },
+  "current_runtime": null,
+  "whole_goal_complete": false,
+  "proposed_recovery_authorized": false,
+  "resume": "Only direct user decision; heartbeat/time is not consent. If allowed restore sameid hourlyprompt ACTIVE then recordexact approval and one-shot recovery budget; no C/A/B navigation rerun."
+}

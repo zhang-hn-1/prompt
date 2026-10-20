@@ -1,0 +1,95 @@
+{
+  "version": 98,
+  "created_utc": "2026-10-16T06:23:50.837828+00:00",
+  "status": "ideal_contour_tangency_qualification_rejected_before_RGB",
+  "authority": "User updated four-camera roadmap and explicitly resumed/start now on2026-10-16",
+  "root": "experiments/contour_tangency_source_20261016_v1",
+  "fixed_camera_root": "experiments/user_fov_position_only_20261015_v1",
+  "mechanism": "Unknown sphere/vertical-cylinder centre/radius from calibrated 2D silhouette tangency planes; cap heights from rim rays; no input depth/known dimensions or point-patch correspondences.",
+  "distinct_from": [
+    "old positive-cone voxel voting",
+    "old 3D measured-point cylinder fit",
+    "old point triangulation/ZNCC plane sweep"
+  ],
+  "scope": "Complete110-frame necessary geometry qualification with privileged ideal contour/family/instance/rim/target-mask labels. Rendered-pose arm offline. Not real RGB perception; original E0 is development; not all silhouette methods impossible.",
+  "aggregate": {
+    "render": {
+      "predicted": 7171,
+      "target": 11652,
+      "correct": 7171,
+      "covered": 7741,
+      "precision": 1.0,
+      "recall": 0.664349467902506,
+      "position_p90_m": 0.0,
+      "conditional_depth_p50_p90_p95_m": [
+        0.0019373297691345215,
+        0.004846930503845215,
+        0.0064487457275390625
+      ],
+      "finite_depth_pixels": 3288829,
+      "all_target_pixels": 4476747,
+      "depth_pixel_coverage": 0.734647055104968
+    },
+    "native": {
+      "predicted": 4539,
+      "target": 11652,
+      "correct": 4347,
+      "covered": 5627,
+      "precision": 0.9576999339061467,
+      "recall": 0.48292138688637143,
+      "position_p90_m": 0.0,
+      "conditional_depth_p50_p90_p95_m": [
+        0.012663662433624268,
+        0.09684973955154419,
+        0.2240504026412964
+      ],
+      "finite_depth_pixels": 3059361,
+      "all_target_pixels": 4476747,
+      "depth_pixel_coverage": 0.6833893003111411
+    }
+  },
+  "gates": {
+    "render": {
+      "precision": true,
+      "recall": false,
+      "position": true,
+      "depth": true,
+      "every_frame_precision": true,
+      "every_frame_recall": false,
+      "every_frame_position": true
+    },
+    "native": {
+      "precision": true,
+      "recall": false,
+      "position": true,
+      "depth": true,
+      "every_frame_precision": false,
+      "every_frame_recall": false,
+      "every_frame_position": false
+    }
+  },
+  "independent_check": "all110 rows/two arms integer-grid brute-force counts and full depth quantiles exact;220 input/prediction SHA checked",
+  "new_physics": 0,
+  "new_ML_fit": 0,
+  "new_RGB_model_inference": 0,
+  "new_navigation": 0,
+  "geometric_parameter_estimation_performed": true,
+  "source_admitted": false,
+  "budget": {
+    "CPU_used": 1,
+    "CPU_cap": 1,
+    "recovery_used": 1,
+    "recovery_cap": 1,
+    "closed": true
+  },
+  "execution": "prepare0,predict0,score1 JSON write error; only recovery writes complete result then console JSON error1. Both retained. Independent saved-artifact check/plot0. No second recovery or generation rerun. Final logging fix not scientifically rerun.",
+  "runtime_active": false,
+  "old_budgets_closed": true,
+  "original_project_read_only": true,
+  "automation_status": "ACTIVE",
+  "hardware_answer_closed": "Only fourRGB,IMU,main encoder; do not ask again",
+  "overall_navigation_complete": false,
+  "learned_navigation_increment": false,
+  "next_executable": "This frozen contour mechanism is closed before actual RGB contour detector/ML/navigation. Do not tune visibility/baseline/conditioning/history/shape family or replay it. No next qualified online source is selected. Research a substantively different implementable measurement mechanism within confirmed inputs before independently freezing a new candidate; no new hardware request, no repeated v96/v97/this oracle or report growth without new evidence.",
+  "report": "reports/contour_tangency_qualification_results_20261016.md"
+}

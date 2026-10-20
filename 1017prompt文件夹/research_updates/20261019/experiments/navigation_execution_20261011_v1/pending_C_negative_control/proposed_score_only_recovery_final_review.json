@@ -1,0 +1,65 @@
+{
+  "artifact_type": "final_static_proposed_score_only_recovery_review",
+  "utc": "2026-10-19T05:34:06.494169+00:00",
+  "scope": "Static follow-up of prepared independent recovery supervisor/child entry. Original proposal review is preserved unchanged. Read text/JSON and source SHA only; no candidate compile/exec/import, project/scorer/source/physics/GT/test call, scientific array read or budget reservation.",
+  "reviewed_proposal_sha256": "1b0836725f973719bf7a45d84be25f914f6d38baf42678168c3a7b9b4336e1d7",
+  "earlier_review_sha256": "a1ead850d185fff6dfdff2fd3d7efca214f05623959fcc8dc8f17973605a4301",
+  "reviewed_SHA256": {
+    "score_saved_recovery.py": "46689ca4d5e22225e4652bec0865c31f6b1e2eabec973485f423e985b28a724d",
+    "supervise_score_saved_recovery.py": "5989301c404a92e54ae83fae8743f0c74428aa1315a37f9c2183fb255a4b6ad8",
+    "proposed_score_only_recovery.json": "1b0836725f973719bf7a45d84be25f914f6d38baf42678168c3a7b9b4336e1d7",
+    "proposed_score_only_recovery.diff": "6d7747c9ca7d4f5949a3a8eba85105239185475d956a73d0b2238d6ae87f6196",
+    "score_C.py": "33d2115df3bfe6a83281bbdaaec4a4c2517e2b75b2b5570d81b4881e703e9dd5",
+    "execution_protocol.json": "b16696fd2750731f60c8a87e9e1782bb80559f4839c65ccbc331c1b5b14ff424",
+    "execution_ledger.json": "b43958e0280b3ba87c2716b91b3fd6f71c008c024f989baec2f8e582d84a3daf",
+    "raw_artifact_preservation_manifest.json": "fb68c1ec6d913b0e70666e1f2871b78d4dad0764b6bf8f7a967168c8164a85a6",
+    "score_status.json": "a2cca170af9b1555e980e3d39e755c10c55b24ad11c53baed4f7a82b2bb4b188",
+    "navigation_status.json": "11b3eda5ddf6709ee50149adef429d48bdf745e35de5ad9984f5f487fd064a5f"
+  },
+  "checks": {
+    "proposal_identity_matches_requested": true,
+    "all_execution_identity_SHA_match": true,
+    "original_score_unchanged": true,
+    "single_exact_patch_and_candidate_SHA_match": true,
+    "old_ledger_still_three_of_three_recovery0": true,
+    "recovery_approval_ledger_status_outputs_absent": true,
+    "one_score_only_dispatch300s": true
+  },
+  "execution_identity_files_checked": 19,
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": []
+  },
+  "resolved_earlier_important": {
+    "id": "P1-separate-recovery-entry-and-identity",
+    "status": "RESOLVED_STATIC_ONLY_NOT_EXECUTED",
+    "resolution": "Concrete same-root child and supervisor are frozen by the recovery proposal. Child hashes and patches original source text in memory only, verifies exact candidate SHA and executes with original __file__; the original source file remains unchanged for its original execution-protocol hash guards. Independent recovery ledger/status names avoid the exhausted original ledger. No runtime behavior has been tested."
+  },
+  "static_guard_assessment": {
+    "human_exception_first": "Both supervisor and child require a separately present score_recovery_approval.json with user_explicit_authorization is True and current recovery proposal SHA before project/scorer execution. No approval currently exists.",
+    "one_shot": "Supervisor requires no prior recovery ledger/status and no prior score output/whole-run manifest. Exclusive creation reserves cap=used=1,recovery_after_this=0 before child launch; all outcomes consume this reservation, no retry branch. Original ledger is only hash-checked, never mutated.",
+    "durable_parent_child": "Child requires reserved recovery ledger with current parent PID, proposal hash, and run_group running status matching both current child and parent PIDs; bounded2s wait allows status registration. Supervisor uses frozen group_supervision with300s timeout/grace15 and records resulting status.",
+    "identity_and_raw_preservation": "Both entries verify all proposal execution identities including the two entries, frozen original scorer/source, old execution protocol/ledger/statuses and raw preservation manifest. Child verifies all2185 listed raw file hashes before patched scorer. The unchanged original scorer keeps its source guards and whole-run before/after raw artifact verification.",
+    "root_and_original_hash_compatibility": "Both entries are in the original pending-C root; exec globals preserve original __file__ so D/W and output root stay correct. The original score_C.py is not modified, so old execution_protocol SHA checks still match. Candidate text differs only requests width4→10.",
+    "downstream": "Previous static evaluator D override, paths shim, required saved structure, A/B raw requests/common-prefix frame identity checks and frozen metric gates remain unchanged. No further directly visible blocking implementation issue found; completion/runtime success remains unverified."
+  },
+  "carried_forward_scientific_provenance_limitation": "Original loaded_source_identity omits dynamically loaded C memory and navigation. This remains disclosed; neither the hypothetical recovery nor this static review fixes or replaces that runtime manifest. No C scientific performance result is available yet.",
+  "assessment": {
+    "ready_for_one_direct_human_score_only_exception_decision": true,
+    "execution_authorized": false,
+    "old_recovery0_closed": true,
+    "no_current_preparation_blocker": true,
+    "scope_if_approved": "At most one300s saved-only score dispatch, no physics/navigation/source/fit, no A/B rerun, no subsequent retry even on timeout/failure. Preserve original failure and original offline C rejection.",
+    "performance_or_goal_completion_claimed": false
+  },
+  "no_rerun": {
+    "project_imports": 0,
+    "candidate_scorer_exec": 0,
+    "GT_scoring": 0,
+    "tests": 0,
+    "scientific_arrays_read": 0,
+    "scientific_files_modified": 0,
+    "budget_reserved": false
+  }
+}

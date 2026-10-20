@@ -1,0 +1,7 @@
+{
+  "stage": "camera_occlusion_identity_audit_complete",
+  "parent_entry": "execution_next_entry_v87.json",
+  "summary": "v88优先处理用户对遮挡及x=24,z=8厘米更新图的质疑。完整8保存姿态×4相机CAD离线复查：旧|x|=.20,z=.05共32mask与封存exact；用户指定预览|x|=.24,z=.08、y=±.30、朝向光学不变，共32mask全0/307200，另独立保守视锥平面排除全部CAD三角形，通过此8姿态几何资格。没有新RGB、物理、模型或导航；不代表全运动/真实硬件无遮挡。核实旧forward_extrinsics确为x=.40,z=.05且左右保存mask均0，不能混同最近四路x=.20数据，也尚未确定用户所指之前是哪一张图。此前灰色仅旧遮罩的叠图易误解，已改为上下分排展示。CPU25.924秒正常0，session93202退出，无新增运行。用户参数作为明确几何预览保存，不自动升级为永久安装或重开旧预算。下一保持用户固定四相机约束，区分历史.40、采集.20和用户.24预览身份；若接续渲染需明确以用户指定参数为预览并新登记有界预算，不能称硬件实测。v87接地目标需先核对2026-10-08已有ground-contact闭合证据，不能换名重复。可靠导航/学习增量未成立，automationACTIVE。",
+  "running_experiments": [],
+  "whole_complete": false
+}

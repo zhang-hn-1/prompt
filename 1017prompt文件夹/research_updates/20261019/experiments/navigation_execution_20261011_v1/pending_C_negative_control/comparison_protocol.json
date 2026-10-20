@@ -1,0 +1,78 @@
+{
+  "status": "FROZEN_COMPARISON_PARAMETERS_NO_EXECUTION_AUTHORIZATION",
+  "comparators": {
+    "A": {
+      "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1",
+      "termination": "timeout90",
+      "actions": 900,
+      "frames": 181,
+      "net_goal_progress_m": 0.7260657262594457,
+      "source_supported_blind_missing_fraction": 0.9281129653401797,
+      "false_map_cell_seconds": 1109.000000000002,
+      "full_chain_P50_P90_P95_s": [
+        0.06423133501084521,
+        3.8110081350198017,
+        3.8351866538228934
+      ]
+    },
+    "B": {
+      "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1",
+      "termination": "timeout90",
+      "actions": 900,
+      "frames": 181,
+      "net_goal_progress_m": 1.14976528276972,
+      "source_supported_blind_missing_fraction": 0.008375165125495377,
+      "false_map_cell_seconds": 14501.299999999972,
+      "full_chain_P50_P90_P95_s": [
+        0.14765836851438507,
+        3.8008249707869255,
+        3.893386974360328
+      ]
+    }
+  },
+  "reference_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1/comparison.json": "127a823e124223a4892fa5c1d013437a37d6a5af98ba8b2e2cdd34f9d3af734d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1/e1_result.json": "c8d222dcf06c03eb90de52f566428f9a50842a6c1879c817a8f7b59c6e07d3f4",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1/supported_memory_result.json": "91061afe7ab8d09f1b49925f6c71845c220ad61692fd189ff39a2d9086dc4a03",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1/e1_run/capture_seal.json": "3439caf584c5b42f12dd5914236cfdae52e38e289c0a6d2878b23842d6b1881b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1/e1_run/source_seal.json": "e061a8fec8d7a175c8ab22c9d5717e0abb8ef5d69165b386d28f46b719b1ec5a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1/e1_run/terminal.json": "bd1b437e351b6003087dd3241234f37e1fc54ec9ebf547ef5a70ac161266956b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/e1_result.json": "8486298aa67083ae30ad7368a2e6d70a8fc909ab534447495bf695c92a1431e0",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/supported_memory_result.json": "15c02dc4d48a2d64889c6a0e76ec22f6a436c764d4298c712a7664d12ae5af68",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/e1_run/capture_seal.json": "52c6a7e2835f341def06f9c7a590a02f11e8d90c2c68920e9604b21c2e8c15e2",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/e1_run/source_seal.json": "88053a806dc81e7c7abbb42940ab333c8ac818167af65341bff7b464e5c5b0df",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/e1_run/terminal.json": "bd1b437e351b6003087dd3241234f37e1fc54ec9ebf547ef5a70ac161266956b"
+  },
+  "C_terminal_rule": {
+    "sim_seconds_max": 90,
+    "actions_max": 900,
+    "goal_distance_le_m": 0.2,
+    "obstacle_contact_max": 0,
+    "first_contact_stops": true
+  },
+  "C_interpretability": {
+    "nonempty_exposures_min": 11,
+    "risk_points_min": 100
+  },
+  "C_development_thresholds": {
+    "contact_count_max": 0,
+    "net_goal_progress_min_m": 1.64976528276972,
+    "false_map_cellseconds_max": 11601.039999999979,
+    "source_supported_blind_missing_fraction_max": 0.05837516512549538,
+    "full_chain_P90_max_s": 4.180907467865619
+  },
+  "metrics": [
+    "termination/contact/timeout",
+    "net_goal_progress",
+    "pathlength",
+    "reverse_and_pendingdirection_time",
+    "sourceandunknowncoverage",
+    "falsemapcellseconds",
+    "source_supportedblindmissing",
+    "firstsustainedfalseblock",
+    "fullchainlatency",
+    "source/pose/request/trajectory/video provenance"
+  ],
+  "failure_policy": "Report C actualnegative result andclose; no retry/tuning/extension. OriginalofflineE0C rejection staysunchanged evenifC reachesgoal.",
+  "scope": "C prospective vsalreadyknownA/B samefixedE1seed/nominalconditions; notsameRGB/trajectory, independentgeneralization, randomizedstatisticalcausality, learningincrement orreliablenavigation proof. Fullsource/map domains unchanged, missing/GTunknown notfree."
+}

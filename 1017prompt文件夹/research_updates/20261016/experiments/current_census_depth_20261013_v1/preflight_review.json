@@ -1,0 +1,100 @@
+{
+  "review": "independent_preflight_code_and_synthetic_CPU",
+  "utc": "2026-10-13T07:20:44.301831+00:00",
+  "candidate": "current_dense_census_depth_v1",
+  "reviewed_sha256": {
+    "protocol.json": "397d2ff7c2dc2839e1a89380bb63b679119c3a1b80c6dbe2d27e07b7059f5111",
+    "census.py": "76b6bd1db9ffff9de0e1c9dc2c1c0472d7f1cec7e20e0250ef09ba60a149a4ac",
+    "test_census.py": "57a53f6e2e2c798a97485743a922e5b009622ea4181a62692d3e813243d7b881",
+    "common.py": "fc8d1b5eb2a3e3c31e82d7dcfcf867b3a5e75a80d9e4a3ea59abc7a1d4cd3ab8",
+    "generate.py": "f38f1c544fd8a446103df5d9c77babaa69c6ccd9fd186f4390a4d97ed75825c5",
+    "launch.py": "1304636dc4ebff8e1ac2af5514dda58272f57e4a0792b349b613f93a4e84c339",
+    "score.py": "f690f8509069c81399178efa9686c6c28847ef56323d0bcafaa7e28804ad2fab"
+  },
+  "decision": "APPROVE_FROZEN_OFFLINE_GENERATION_ONLY",
+  "ready_for_full_generation": true,
+  "source_admitted": false,
+  "navigation_admitted": false,
+  "actual_dataset_loaded_by_reviewer": false,
+  "physics_runs": 0,
+  "strengths": [
+    "All integer disparities with complete bilateral image/CAD support are evaluated without SGBM seed, prior disparity, map, pose, GT or future input to CensusStereo.",
+    "48 strict ordinal bits and nine exact integer Hamming sums agree with an independent brute-force oracle; int16 maximum cost 432 cannot overflow; uniqueness products use int32.",
+    "Independent reverse winner is computed from the reindexed symmetric correspondence costs with its own uniqueness and subpixel fit; final LR check compares positive disparity magnitudes.",
+    "Native camera optical rotation gives v_right=v_left-focal*baseline/Z. CCW rotation gives x_right=x_left-d and inverse rotation restores native depth/confidence.",
+    "Static bilateral CAD support erodes nine-by-nine footprints, excluding every Census-plus-aggregation input from masked or padded pixels. Dynamic CAD remains in inherited downstream projection.",
+    "Five group config/driver definitions use the .4m forward, .6m baseline rig; H retains repeated exposure grid, E0/E1/B54/C54 retain viewpoint confirmation grid.",
+    "Generation uses archived native registration and measured joints, independently replays baseline packet/surface/map arrays with exact equality assertions, inserts candidate surfaces at acquisition time, and seals before separate GT scorer.",
+    "Scorer code implements all seven frozen gate families for every group; candidate depth error is explicitly conditional, full-image coverage and nohit count are reported, and all-group source_pass is conjunction."
+  ],
+  "checks": {
+    "existing_unittest": "8 / 8 passed on CPU",
+    "popcount48_vs_python_bit_count": {
+      "values": 10003,
+      "exact": true
+    },
+    "independent_oracle": {
+      "cases": [
+        "shift1_at_disparity_boundary",
+        "shift7_with_CAD_holes_and_occlusion",
+        "shift24",
+        "periodic_ambiguous",
+        "unrelated_random"
+      ],
+      "best_second_valid_exact": true,
+      "maximum_disparity_absolute_difference": 9.450826574664006e-07,
+      "valid_counts": [
+        432,
+        202,
+        128,
+        0,
+        1
+      ]
+    },
+    "author_CPU_GPU_evidence": "cpu_gpu_checks.json inspected: all four fields exact on RTX3060; not independently rerun by reviewer",
+    "implementation_matches_frozen_thresholds": true,
+    "synthetic_command": "PYTHONDONTWRITEBYTECODE=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 /home/an/miniconda3/envs/ball_wm/bin/python -m unittest -v test_census.py"
+  },
+  "issues": {
+    "critical": [],
+    "important": [],
+    "minor": [
+      {
+        "file": "generate.py",
+        "line": 55,
+        "issue": "Completion message says all 4500 maps are sealed, but only four map arrays per group/arm are saved. All 4500 replay label states are checked/count-recorded.",
+        "recommendation": "Describe this as 4500 replay/count states plus selected map arrays, or persist every candidate map if all arrays are intended."
+      },
+      {
+        "file": "generate.py",
+        "line": 13,
+        "issue": "181 source files are asserted, but their exact expected frame IDs and 0..90s clocks are not explicitly asserted before inference. Existing archived collection is relied upon.",
+        "recommendation": "Add exact frame sequence 0,5,...,900 and acquisition clock checks; this strengthens scope integrity without changing matching or gates."
+      }
+    ]
+  },
+  "declined_to_judge": [
+    {
+      "behavior": "Actual five-group source accuracy and retention",
+      "reason": "No real inputs or GT loaded and no candidate generation executed by reviewer; frozen scorer results are still required."
+    },
+    {
+      "behavior": "Navigation efficacy, task completion or physical safety",
+      "reason": "Offline counterfactual maps are not navigation; separate registered same-version comparison within physical cap remains required."
+    },
+    {
+      "behavior": "Full-scene obstacle recall and correctness over renderer nohit pixels",
+      "reason": "Frozen protocol gates conditional finite-depth error and original accepted obstacle query retention; nohit is reported but has no acceptance threshold. Passing these gates cannot establish either broader claim."
+    },
+    {
+      "behavior": "Runtime source/map equality and provenance seal validity",
+      "reason": "Exact assertions and hash checks are present, but actual collection replay has not run. Any assertion failure invalidates a complete generation claim."
+    }
+  ],
+  "generation_conditions": [
+    "Run the frozen generator under the registered 7200s supervision; any runtime failure is unresolved until documented under recovery cap.",
+    "Preserve the estimator, thresholds and all input/output identities; no output-driven tuning or candidate selection.",
+    "Require complete generation seal and exact original replay before invoking GT scoring.",
+    "Any frozen source gate failure closes the candidate and unused physical budget; this preflight does not override that stop rule."
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "all900_requests_exact_policy": true,
+  "all181_source_epochs_before_actions": true,
+  "native_imu_packets": 4501,
+  "physics_samples": 4501,
+  "native_intervals_qualified": true,
+  "decoded_video_frames": {
+    "front_left": 181,
+    "front_right": 181,
+    "rear_left": 181,
+    "rear_right": 181
+  },
+  "max_pair_matrix_error": 9.018981295128015e-08,
+  "contacts_available": 5401,
+  "contacts_first_sample": {
+    "simulation_time_s": 0.0,
+    "physics_step_index": 0,
+    "source": "capture",
+    "available": true,
+    "contact": false
+  },
+  "source_state_seal_verified": "evaluation_receipt.json whole manifest SHA before/after",
+  "source_prediction_regenerated": false,
+  "original_source_hash_checks_passed": true,
+  "obstacle_contact_positive_samples": 0,
+  "all_contacts_available": true
+}

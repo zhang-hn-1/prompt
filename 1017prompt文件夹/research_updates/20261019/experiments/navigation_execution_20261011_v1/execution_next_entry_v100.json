@@ -1,0 +1,613 @@
+{
+  "version": 100,
+  "created_utc": "2026-10-16T11:34:12.827045+00:00",
+  "status": "controlled_background_and_compaction_engineering_repairs_improve_but_basic_geometry_unqualified",
+  "root": "experiments/radiance_background_control_20261016_v1",
+  "report": "reports/radiance_surface_repair_controls_20261016.md",
+  "kind": "Engineering failure/repair diagnosis, NOT new online source or rewrite of v99",
+  "data": {
+    "synthetic": true,
+    "fit_views": 8,
+    "diagnostic_views": 3,
+    "diagnostic_target_pixels": 196248,
+    "diagnostic_background_pixels": 725352,
+    "privileged": "Known camera poses and far-background fixture. Depth/target labels post-seal only. Not actual fourRGB."
+  },
+  "arms": {
+    "black": {
+      "final": [
+        {
+          "total_pixels": 307200,
+          "target_pixels": 65490,
+          "background_pixels": 241710,
+          "accepted_target_pixels": 0,
+          "accepted_target_coverage": 0.0,
+          "accepted_target_error_quantiles_m": null,
+          "raw_opacity_target_error_quantiles_m": [
+            0.35586869716644287,
+            0.44649848937988285,
+            0.47174518704414353
+          ],
+          "target_width_given_opacity_quantiles_m": [
+            1.7470834255218506,
+            1.8718750476837158,
+            1.996666669845581
+          ],
+          "target_raw_depth_given_opacity_quantiles_m": [
+            1.6441313028335571,
+            1.7224377751350404,
+            1.7368549585342408
+          ],
+          "accepted_background_pixels": 0,
+          "background_confident_near_prediction_rate": 0.0,
+          "cumulative_target_gate_counts": {
+            "finite": 65490,
+            "opacity": 60378,
+            "plus_width": 0,
+            "plus_RGB": 0,
+            "plus_range": 0
+          },
+          "raw_background_opacity_quantiles": [
+            0.999919593334198,
+            0.9999866485595703,
+            0.9999951720237732
+          ],
+          "raw_target_RGB_L1_quantiles": [
+            0.015651526860892773,
+            0.03672731332480907,
+            0.0476602317765355
+          ],
+          "input": "diagnostic_00.npz",
+          "necessary_pass": false,
+          "RGB_MSE": 0.00033028200626557036
+        },
+        {
+          "total_pixels": 307200,
+          "target_pixels": 65268,
+          "background_pixels": 241932,
+          "accepted_target_pixels": 0,
+          "accepted_target_coverage": 0.0,
+          "accepted_target_error_quantiles_m": null,
+          "raw_opacity_target_error_quantiles_m": [
+            0.3690255880355835,
+            0.4658201217651367,
+            0.49760183095932004
+          ],
+          "target_width_given_opacity_quantiles_m": [
+            1.7470834255218506,
+            1.8718750476837158,
+            1.996666669845581
+          ],
+          "target_raw_depth_given_opacity_quantiles_m": [
+            1.6309744119644165,
+            1.7091198921203614,
+            1.728531217575073
+          ],
+          "accepted_background_pixels": 0,
+          "background_confident_near_prediction_rate": 0.0,
+          "cumulative_target_gate_counts": {
+            "finite": 65268,
+            "opacity": 60815,
+            "plus_width": 0,
+            "plus_RGB": 0,
+            "plus_range": 0
+          },
+          "raw_background_opacity_quantiles": [
+            0.999889612197876,
+            0.9999515414237976,
+            0.9999772310256958
+          ],
+          "raw_target_RGB_L1_quantiles": [
+            0.011255401186645031,
+            0.024172187969088554,
+            0.03136418145149946
+          ],
+          "input": "diagnostic_01.npz",
+          "necessary_pass": false,
+          "RGB_MSE": 0.0002176070626852744
+        },
+        {
+          "total_pixels": 307200,
+          "target_pixels": 65490,
+          "background_pixels": 241710,
+          "accepted_target_pixels": 0,
+          "accepted_target_coverage": 0.0,
+          "accepted_target_error_quantiles_m": null,
+          "raw_opacity_target_error_quantiles_m": [
+            0.3751916289329529,
+            0.4866381406784058,
+            0.522212153673172
+          ],
+          "target_width_given_opacity_quantiles_m": [
+            1.8094792366027832,
+            1.934270977973938,
+            2.1214582920074463
+          ],
+          "target_raw_depth_given_opacity_quantiles_m": [
+            1.6248083710670471,
+            1.7028366923332214,
+            1.7459639132022855
+          ],
+          "accepted_background_pixels": 0,
+          "background_confident_near_prediction_rate": 0.0,
+          "cumulative_target_gate_counts": {
+            "finite": 65490,
+            "opacity": 62640,
+            "plus_width": 0,
+            "plus_RGB": 0,
+            "plus_range": 0
+          },
+          "raw_background_opacity_quantiles": [
+            0.9999093413352966,
+            0.9999516665935516,
+            0.9999822378158569
+          ],
+          "raw_target_RGB_L1_quantiles": [
+            0.008950690738856792,
+            0.0194960068911314,
+            0.0270801288075745
+          ],
+          "input": "diagnostic_02.npz",
+          "necessary_pass": false,
+          "RGB_MSE": 0.00019275383829001647
+        }
+      ],
+      "necessary_pass": false
+    },
+    "explicit_far": {
+      "final": [
+        {
+          "total_pixels": 307200,
+          "target_pixels": 65490,
+          "background_pixels": 241710,
+          "accepted_target_pixels": 532,
+          "accepted_target_coverage": 0.00812337761490304,
+          "accepted_target_error_quantiles_m": [
+            0.04805725812911987,
+            0.19041460752487183,
+            0.1924434244632721
+          ],
+          "raw_opacity_target_error_quantiles_m": [
+            0.2509663701057434,
+            0.3066110968589783,
+            0.3335812151432037
+          ],
+          "target_width_given_opacity_quantiles_m": [
+            0.8735417127609253,
+            1.185520887374878,
+            1.2479166984558105
+          ],
+          "target_raw_depth_given_opacity_quantiles_m": [
+            1.7512064576148987,
+            1.8719128608703615,
+            1.9620182871818541
+          ],
+          "accepted_background_pixels": 0,
+          "background_confident_near_prediction_rate": 0.0,
+          "cumulative_target_gate_counts": {
+            "finite": 65490,
+            "opacity": 64398,
+            "plus_width": 925,
+            "plus_RGB": 532,
+            "plus_range": 532
+          },
+          "raw_background_opacity_quantiles": [
+            0.0005141848232597113,
+            0.003487888164818287,
+            0.006850259285420159
+          ],
+          "raw_target_RGB_L1_quantiles": [
+            0.005222986452281475,
+            0.016526326164603228,
+            0.030258673336356845
+          ],
+          "input": "diagnostic_00.npz",
+          "necessary_pass": false,
+          "RGB_MSE": 0.00026261727741112845
+        },
+        {
+          "total_pixels": 307200,
+          "target_pixels": 65268,
+          "background_pixels": 241932,
+          "accepted_target_pixels": 342,
+          "accepted_target_coverage": 0.005239933811362383,
+          "accepted_target_error_quantiles_m": [
+            0.052721381187438965,
+            0.0699575424194336,
+            0.19430168867111205
+          ],
+          "raw_opacity_target_error_quantiles_m": [
+            0.2522868514060974,
+            0.30525022745132446,
+            0.32012590765953064
+          ],
+          "target_width_given_opacity_quantiles_m": [
+            0.8735417127609253,
+            1.2479166984558105,
+            1.3103125095367432
+          ],
+          "target_raw_depth_given_opacity_quantiles_m": [
+            1.7506144046783447,
+            1.8763196468353271,
+            1.947336494922638
+          ],
+          "accepted_background_pixels": 0,
+          "background_confident_near_prediction_rate": 0.0,
+          "cumulative_target_gate_counts": {
+            "finite": 65268,
+            "opacity": 64156,
+            "plus_width": 406,
+            "plus_RGB": 342,
+            "plus_range": 342
+          },
+          "raw_background_opacity_quantiles": [
+            0.0005231447867117822,
+            0.001827658747788518,
+            0.0027900241082534187
+          ],
+          "raw_target_RGB_L1_quantiles": [
+            0.004864342510700226,
+            0.013107387628406289,
+            0.021464031375944614
+          ],
+          "input": "diagnostic_01.npz",
+          "necessary_pass": false,
+          "RGB_MSE": 0.00016172309997505385
+        },
+        {
+          "total_pixels": 307200,
+          "target_pixels": 65490,
+          "background_pixels": 241710,
+          "accepted_target_pixels": 891,
+          "accepted_target_coverage": 0.013605130554283097,
+          "accepted_target_error_quantiles_m": [
+            0.05798792839050293,
+            0.06678545475006104,
+            0.06932055950164795
+          ],
+          "raw_opacity_target_error_quantiles_m": [
+            0.2397518754005432,
+            0.356292188167572,
+            0.37900733351707455
+          ],
+          "target_width_given_opacity_quantiles_m": [
+            0.8735417127609253,
+            1.185520887374878,
+            1.2479166984558105
+          ],
+          "target_raw_depth_given_opacity_quantiles_m": [
+            1.7635281682014465,
+            1.8810141324996947,
+            1.9440455734729767
+          ],
+          "accepted_background_pixels": 0,
+          "background_confident_near_prediction_rate": 0.0,
+          "cumulative_target_gate_counts": {
+            "finite": 65490,
+            "opacity": 64242,
+            "plus_width": 891,
+            "plus_RGB": 891,
+            "plus_range": 891
+          },
+          "raw_background_opacity_quantiles": [
+            0.0005206511414144188,
+            0.0008409337955527007,
+            0.0012568421429023143
+          ],
+          "raw_target_RGB_L1_quantiles": [
+            0.004312681732699275,
+            0.011152541451156137,
+            0.019097628910094443
+          ],
+          "input": "diagnostic_02.npz",
+          "necessary_pass": false,
+          "RGB_MSE": 0.0002184395380277851
+        }
+      ],
+      "necessary_pass": false
+    }
+  },
+  "compaction": {
+    "single_factor": "Add .01 normalized-axial termination-weight distortion; reused sealed explicit_far baseline, no control refit",
+    "final": [
+      {
+        "total_pixels": 307200,
+        "target_pixels": 65490,
+        "background_pixels": 241710,
+        "accepted_target_pixels": 570,
+        "accepted_target_coverage": 0.008703618873110398,
+        "accepted_target_error_quantiles_m": [
+          0.04932886362075806,
+          0.1927971601486206,
+          0.19481847882270814
+        ],
+        "raw_opacity_target_error_quantiles_m": [
+          0.18825167417526245,
+          0.2346417307853699,
+          0.2522628366947174
+        ],
+        "target_width_given_opacity_quantiles_m": [
+          0.37437498569488525,
+          0.43677079677581787,
+          0.49916672706604004
+        ],
+        "target_raw_depth_given_opacity_quantiles_m": [
+          1.8126187920570374,
+          1.867277693748474,
+          1.9458138823509212
+        ],
+        "accepted_background_pixels": 0,
+        "background_confident_near_prediction_rate": 0.0,
+        "cumulative_target_gate_counts": {
+          "finite": 65490,
+          "opacity": 64318,
+          "plus_width": 987,
+          "plus_RGB": 570,
+          "plus_range": 570
+        },
+        "raw_background_opacity_quantiles": [
+          0.0005123591399751604,
+          0.0031917775515466935,
+          0.006059320643544194
+        ],
+        "raw_target_RGB_L1_quantiles": [
+          0.008949049282819033,
+          0.019221272692084304,
+          0.029872077703475875
+        ],
+        "input": "diagnostic_00.npz",
+        "necessary_pass": false
+      },
+      {
+        "total_pixels": 307200,
+        "target_pixels": 65268,
+        "background_pixels": 241932,
+        "accepted_target_pixels": 407,
+        "accepted_target_coverage": 0.006235827664399093,
+        "accepted_target_error_quantiles_m": [
+          0.057898759841918945,
+          0.11690313816070944,
+          0.19586756229400634
+        ],
+        "raw_opacity_target_error_quantiles_m": [
+          0.18593454360961914,
+          0.2411268472671509,
+          0.2574163436889648
+        ],
+        "target_width_given_opacity_quantiles_m": [
+          0.37437498569488525,
+          0.4367709159851074,
+          0.4991666078567505
+        ],
+        "target_raw_depth_given_opacity_quantiles_m": [
+          1.815142035484314,
+          1.8698862671852112,
+          1.9262512624263763
+        ],
+        "accepted_background_pixels": 0,
+        "background_confident_near_prediction_rate": 0.0,
+        "cumulative_target_gate_counts": {
+          "finite": 65268,
+          "opacity": 64082,
+          "plus_width": 489,
+          "plus_RGB": 407,
+          "plus_range": 407
+        },
+        "raw_background_opacity_quantiles": [
+          0.0005204390618018806,
+          0.0016737818135879933,
+          0.002551342395599926
+        ],
+        "raw_target_RGB_L1_quantiles": [
+          0.007366943173110485,
+          0.015146362781524661,
+          0.021335956081747987
+        ],
+        "input": "diagnostic_01.npz",
+        "necessary_pass": false
+      },
+      {
+        "total_pixels": 307200,
+        "target_pixels": 65490,
+        "background_pixels": 241710,
+        "accepted_target_pixels": 902,
+        "accepted_target_coverage": 0.013773095129027333,
+        "accepted_target_error_quantiles_m": [
+          0.05848771333694458,
+          0.06714041233062744,
+          0.06861904263496399
+        ],
+        "raw_opacity_target_error_quantiles_m": [
+          0.18459391593933105,
+          0.25239858627319334,
+          0.26892241239547726
+        ],
+        "target_width_given_opacity_quantiles_m": [
+          0.37437498569488525,
+          0.4991666078567505,
+          0.49916672706604004
+        ],
+        "target_raw_depth_given_opacity_quantiles_m": [
+          1.816786766052246,
+          1.8741524457931518,
+          1.9303464531898495
+        ],
+        "accepted_background_pixels": 0,
+        "background_confident_near_prediction_rate": 0.0,
+        "cumulative_target_gate_counts": {
+          "finite": 65490,
+          "opacity": 64210,
+          "plus_width": 902,
+          "plus_RGB": 902,
+          "plus_range": 902
+        },
+        "raw_background_opacity_quantiles": [
+          0.0005175239057280123,
+          0.0008202247670851649,
+          0.0011900736717507239
+        ],
+        "raw_target_RGB_L1_quantiles": [
+          0.006174802780151367,
+          0.012980538699775933,
+          0.019108024239540083
+        ],
+        "input": "diagnostic_02.npz",
+        "necessary_pass": false
+      }
+    ],
+    "necessary_pass": false
+  },
+  "cause_and_unknown": {
+    "confirmed": "Bright-background image-formation omission creates near opacity; controlled background term removes this pathology. Existing total-transmittance entropy has no direct mass-concentration preference. Fixed compaction improves thickness and depth.",
+    "unknown": "Remaining representation/renderer capacity vs insufficient RGB optimization/support; curves still improve, not convergence or impossibility proof. Actual online background source absent."
+  },
+  "budgets": {
+    "background_dispatch": "1/1 closed",
+    "background_scene_fits": "2/2 closed",
+    "compaction_dispatch": "1/1 closed",
+    "compaction_scene_fits": "1/1 closed",
+    "recovery": 0,
+    "actualE0_regeneration": 0,
+    "physical": 0,
+    "supervised_network_training": 0,
+    "navigation": 0,
+    "old_v99_unchanged": true
+  },
+  "execution": [
+    {
+      "status": "background_correction_insufficient_for_basic_geometry",
+      "diagnostic_dispatch_used": 1,
+      "diagnostic_dispatch_cap": 1,
+      "scene_parameter_fit_arms_used": 2,
+      "scene_parameter_fit_arms_cap": 2,
+      "recovery_used": 0,
+      "recovery_cap": 1,
+      "physical_used": 0,
+      "physical_cap": 0,
+      "actualE0_regeneration_used": 0,
+      "supervised_network_training_used": 0,
+      "navigation_used": 0,
+      "old_v99_budget_closed": true,
+      "budget_closed": true,
+      "stages": [
+        {
+          "stage": "prepare",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T11:27:08.947448+00:00",
+            "parent_pid": 2505928,
+            "child_pid": 2505933,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T11:27:09.763268+00:00"
+          }
+        },
+        {
+          "stage": "predict",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T11:27:09.767755+00:00",
+            "parent_pid": 2505928,
+            "child_pid": 2505934,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T11:27:30.923874+00:00"
+          }
+        },
+        {
+          "stage": "score",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T11:27:30.925056+00:00",
+            "parent_pid": 2505928,
+            "child_pid": 2506651,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T11:27:33.444320+00:00"
+          }
+        }
+      ],
+      "wall_s": 24.497908703051507,
+      "source_admitted": false,
+      "meaning": "Controlled engineering comparison finished. Known synthetic background does not establish actual online background or navigation."
+    },
+    {
+      "status": "distortion_insufficient_for_basic_geometry",
+      "diagnostic_dispatch_used": 1,
+      "diagnostic_dispatch_cap": 1,
+      "scene_fit_used": 1,
+      "scene_fit_cap": 1,
+      "recovery_used": 0,
+      "recovery_cap": 1,
+      "physical_used": 0,
+      "navigation_used": 0,
+      "prior_budgets_remain_closed": true,
+      "budget_closed": true,
+      "stages": [
+        {
+          "stage": "compaction_predict",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T11:30:26.299146+00:00",
+            "parent_pid": 2509928,
+            "child_pid": 2509929,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T11:30:38.686440+00:00"
+          }
+        },
+        {
+          "stage": "compaction_score",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T11:30:38.688882+00:00",
+            "parent_pid": 2509928,
+            "child_pid": 2510134,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T11:30:40.557764+00:00"
+          }
+        }
+      ],
+      "wall_s": 14.259933274937794,
+      "source_admitted": false
+    }
+  ],
+  "audit": {
+    "complete": true,
+    "array_metric_view_checks": 72,
+    "hash_checks": 93,
+    "all_three_initial_states_exact": true,
+    "reused_baseline_result_exact": true,
+    "counts_and_quantiles_exact": true,
+    "regeneration": false,
+    "model_import": false
+  },
+  "review": "experiments/radiance_background_control_20261016_v1/review.json",
+  "runtime": "none; both services inactive MainPID0 ExecMainStatus0; all stages normal0",
+  "next_action": "One no-optimization known-thin-surface reference-field forward diagnostic on this same fixture; freeze construction and minimum forward-only budget first. Preserve grid/sampling/output gates. Reference fail -> localize representation/interpolation/sampling; reference pass -> next isolate RGB optimization/support. No coefficient/iteration sweep, actualE0 rerun or navigation.",
+  "source_admitted": false,
+  "reliable_navigation": false,
+  "learning_navigation_increment": false,
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "cadence": "hourly",
+    "every_run_brief_progress": true
+  }
+}

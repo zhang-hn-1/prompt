@@ -1,0 +1,100 @@
+{
+  "stage": "source_confidence_independent_data_collection_running",
+  "updated_utc": "2026-10-12T16:06:40.601171+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v40.json",
+  "report": null,
+  "current_results": {
+    "viewpoint": {
+      "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1",
+      "actual90s": "timeout_no_contact",
+      "remaining_m": 5.560068218309853,
+      "net_progress_m": 3.339931590955283,
+      "extra_net_progress_vs_height_control_m": 2.6521141174723795,
+      "depth_p90_m": 0.19897825717926027,
+      "retain": false,
+      "budget": {
+        "cap": 3,
+        "used": 1,
+        "unattempted_closed": 2,
+        "remaining": 0,
+        "recovery_used": 0,
+        "fit": 0
+      },
+      "independent_closure": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1/independent_closure.json"
+    },
+    "ground_ambiguity": {
+      "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ground_ambiguity_source_20261012_v1",
+      "complete_saved_pairs": 181,
+      "removed_pixels": 1145,
+      "depth_p90_m": 0.19851109981536866,
+      "obstacle_retention": 0.9999745834407485,
+      "source_entry_qualified": false,
+      "actual_runs": 0,
+      "fit": 0,
+      "independent_review": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ground_ambiguity_source_20261012_v1/independent_review.json"
+    }
+  },
+  "sealed": {
+    "viewpoint_confirmation_navigation_20261012_v1": {
+      "verified_identities": 5759,
+      "seal_sha256": "f3bd6d47717a6b865415dd387f90a1babcfb87bba63d4ef2accf2a94a35c5bb4"
+    },
+    "ground_ambiguity_source_20261012_v1": {
+      "verified_identities": 200,
+      "seal_sha256": "abb85afcc8cb03fd900b707ed5ce1349ef2ede4830e9bcf8bbbe921ecd915680"
+    }
+  },
+  "process_state": {
+    "active_experiments": true,
+    "parent": 925422,
+    "child_e0": 925441
+  },
+  "next_action": "Continue existing collection supervisor session14782; do not relaunch collect or old candidate. After E0/E1 legal terminal, verify_collection.py exact execution/source/native/map audit and seals, then launch_fresh.py coverage on H train/fresh E0E1 heldout; fit exclusive only if all qualify. Source gate precedes conditional new navigation. Report new prediction/true depth and map figures. OriginalV/H qualification rejects missinglabels, no gate relaxation.",
+  "authority": "User2026-10-12 autonomy covers reversible local research/implementation/bounded checks and simulation; no routine design/feasibility approval pending.",
+  "limits": [
+    "Extra progress is same-scene development historical comparison with differing RGB; no fullcausal or independent generalization.",
+    "Viewpoint failed arrival and depth gates; ground source failed depth. Neither a reliable navigation solution.",
+    "Independent confidence objective is not command ranking; old153memory/30holdout coverage_unassessed and old2/30 data fit0 remain closed."
+  ],
+  "completion": {
+    "reliable_navigation": false,
+    "learning_navigation_increment": false,
+    "whole_mission_complete": false,
+    "research_evidence_package": "previously delivered plus current verified supplements",
+    "cross_machine_runtime": "unverified"
+  },
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "prompt_sha256": "2260c8c5106251c61d60135ee4a8703ca928b7a1b1b3277a738747a1a94e48ca",
+    "latest_entry_bound": false,
+    "schedule": "FREQ=HOURLY;INTERVAL=1",
+    "note": "Saved prompt references v39 minimum and instructs follow mission latest; mission now v40; no schedule change."
+  },
+  "stop_reason": null,
+  "map_truth_audit": {
+    "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_map_truth_audit_20261012_v1",
+    "final_hazards": 145,
+    "false_spatial_cells_over_010m": 16,
+    "accepted_point_error_p90_m": 0.2641646243264807,
+    "truth_pose_stereo_error_p90_m": 0.2435261842731262,
+    "native_registration_p90_m": 0.05443371009462157,
+    "physical_runs": 0,
+    "fit": 0
+  },
+  "calibration_stage": {
+    "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1",
+    "target": "current SGBM error>.15m confidence only",
+    "existing_H_label_fraction": 0.7727926958,
+    "existing_V_whole_label_fraction": 0.5576876289,
+    "existing_V_suffix_label_fraction": 0.6077,
+    "old_V_rejected": true,
+    "fit": 0,
+    "new_data_budget_cap": 4,
+    "used": 1,
+    "pending": "E0 running, then E1 same supervisor; remaining2 conditional nav only",
+    "supervisor_session": 14782,
+    "host_parent": 925422,
+    "host_child_e0": 925441
+  }
+}

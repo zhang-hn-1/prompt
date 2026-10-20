@@ -1,0 +1,31 @@
+{
+  "stage": "current_census_depth_generation_running",
+  "updated_utc": "2026-10-13T07:30:49.940516+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v54.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_census_depth_20261013_v1",
+  "protocol": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_census_depth_20261013_v1/protocol.json",
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-13T07:25:13.109950+00:00",
+    "parent_pid": 1925579,
+    "child_pid": 1925580,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "supervisor_exec_session": 80881,
+  "budget": {
+    "physical_cap": 4,
+    "physical_used": 0,
+    "fit": 0,
+    "recovery_used": 1
+  },
+  "summary": "独立当前Census匹配实现与8CPU/CPU-GPU相等/独立穷举预审完成。905对五开发组预测和4500地图回放在运行，GT尚未读取。旧90对前缀保留；时间检查接口失败保留，唯一恢复只修改十进制时刻合理性精度，算法不变。",
+  "next_action": "监督既有1925579/1925580和session80881；生成封存正常完成后运行launch_score.py，独立复核并作源准入/拒绝。不重复启动、不提前判性能。",
+  "stop_reason": null,
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

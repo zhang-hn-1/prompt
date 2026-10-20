@@ -1,0 +1,40 @@
+{
+  "frozen_utc": "2026-10-18T12:08:20.117778+00:00",
+  "name": "User-approved originalC once-only negativecontrol integration",
+  "proposal_sha256": "09cc94faff624a26bd126129a5e8d809a69e8980a7dd0dd0e962b8843246c8b6",
+  "approval_sha256": "2ac173cacc62b7aeb13fb887de29023741a54f23b618af3a51532bab3e87a2f5",
+  "sdk": "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/pending_C_negative_control/C_interface.py": "abb67a2c6dc310382ea41462843abf95abf50179e5b06986af710efbbe35b16b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/pending_C_negative_control/supervise_C.py": "f0479791523d43321c3aa0e0985fb7115f95c745d6b03b8a287098efc786874a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/pending_C_negative_control/score_C.py": "33d2115df3bfe6a83281bbdaaec4a4c2517e2b75b2b5570d81b4881e703e9dd5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/pending_C_negative_control/metadata_adapter.py": "5e4dc961bbfebaacd5ad08d9436ceca12793aca4e35dc55a8008b69242f9c459",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/pending_C_negative_control/navigation_pending.py": "223287b6d9da0c5d140bd27134a7a84860fbbde6fab834e469eccd94c47231b1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/evaluate_navigation.py": "2c90ae4851c5f772965557908b2870d7a62566304a41551b89b7e05d11543302",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/supported_memory_diagnostic.py": "7e383f953e455f9618cdfc9ef70faed180b055f03d8e83a11fe83836351822d3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/diagnose_no_route.py": "fc0896f5466153ec1f6420b3879c7ca56e677164c87512b4b95ca863753c7374",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/e1_run/artifact_manifest_post_close.json": "a6ec57293660666bcd82242225841136bd210e96fb0294f4645da0afc56c4be6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/artifact_manifest_post_close.json": "0787b89f01fa65d3b8bf117f5d55d43b2eb98a7ac4cf1d5f503c15b823471b54"
+  },
+  "timeouts_s": {
+    "interface": 90,
+    "navigation": 2400,
+    "score": 300
+  },
+  "stages": [
+    "interface",
+    "navigation",
+    "score"
+  ],
+  "dispatch_cap": 3,
+  "per_stage_cap": 1,
+  "recovery_cap": 0,
+  "physics_cap": 1,
+  "source_physical_cumulative_after": 3,
+  "GT_gate": "Complete actualC fullrun manifest andnormal0 source/capture seal before numeric GT scoring. No A/B rerun.",
+  "cause_diagnostic": "Exactlyfirst>=5s contiguous post6s zero/no-success-plan event usingarchived postsealB diagnose_no_route helper. GTdeletion onlyUNKNOWN, no policyfeedback. Same2Dclearance; fullGTreference usesitsarchived floor(x+.5) raster not onlinegridcertificate. No eventmeansN/A, no alternateselection.",
+  "comparison": "Frozen A/B11identities andnumericthresholds per comparison_protocol.json; knownA/B notfreshheldout, divergentRGB explicitlychecked",
+  "interface_scope": "Synthetic causalrecords andmetadataonly; no originalsource/matcher/GT/physics calls; no repeatfulloldreplay",
+  "completeness_before_GT": "Require terminal/policy/request count, nativequalified packets>=5actions, allframeprediction/map/plan files, physicsZIPfieldnames andfourvideoheaderframecounts. No numericGT arrays opened beforewholemanifest."
+}

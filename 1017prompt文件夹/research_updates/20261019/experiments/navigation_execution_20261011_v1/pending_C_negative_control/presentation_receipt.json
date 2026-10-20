@@ -1,0 +1,106 @@
+{
+  "scope": "Saved post-score visualization/denominator sums only; no source, model, policy, physics or scientific scorer rerun",
+  "fixed_C_exposure": 90,
+  "fixed_policy_frames": [
+    0,
+    450,
+    899
+  ],
+  "denominators": {
+    "A": {
+      "exposures": 181,
+      "full_RGB_pixels": 222412800,
+      "target_pixels": 32853285,
+      "per_eye": {
+        "front_left": {
+          "target_pixels": 7197757,
+          "valid_target_pixels": 1576729,
+          "risk_points": 426806
+        },
+        "front_right": {
+          "target_pixels": 11254797,
+          "valid_target_pixels": 1561884,
+          "risk_points": 420103
+        },
+        "rear_left": {
+          "target_pixels": 8874506,
+          "valid_target_pixels": 835001,
+          "risk_points": 251461
+        },
+        "rear_right": {
+          "target_pixels": 5526225,
+          "valid_target_pixels": 839198,
+          "risk_points": 254766
+        }
+      },
+      "target_cell_exposures": 14903,
+      "risk_cell_exposures": 16972
+    },
+    "B": {
+      "exposures": 181,
+      "full_RGB_pixels": 222412800,
+      "target_pixels": 46703520,
+      "per_eye": {
+        "front_left": {
+          "target_pixels": 8330521,
+          "valid_target_pixels": 1719676,
+          "risk_points": 485754
+        },
+        "front_right": {
+          "target_pixels": 10761890,
+          "valid_target_pixels": 1725174,
+          "risk_points": 483713
+        },
+        "rear_left": {
+          "target_pixels": 11744636,
+          "valid_target_pixels": 989864,
+          "risk_points": 296113
+        },
+        "rear_right": {
+          "target_pixels": 15866473,
+          "valid_target_pixels": 970113,
+          "risk_points": 288187
+        }
+      },
+      "target_cell_exposures": 17942,
+      "risk_cell_exposures": 21319
+    },
+    "C": {
+      "exposures": 181,
+      "full_RGB_pixels": 222412800,
+      "target_pixels": 42126169,
+      "per_eye": {
+        "front_left": {
+          "target_pixels": 11058784,
+          "valid_target_pixels": 2272007,
+          "risk_points": 601720
+        },
+        "front_right": {
+          "target_pixels": 8926021,
+          "valid_target_pixels": 2273979,
+          "risk_points": 603840
+        },
+        "rear_left": {
+          "target_pixels": 10610982,
+          "valid_target_pixels": 1669138,
+          "risk_points": 462281
+        },
+        "rear_right": {
+          "target_pixels": 11530382,
+          "valid_target_pixels": 1655335,
+          "risk_points": 458636
+        }
+      },
+      "target_cell_exposures": 17261,
+      "risk_cell_exposures": 17277
+    }
+  },
+  "images": {
+    "ABC_fixed_time_joint_and_long_memory.png": "e20e3589278f4b854bd6595f8e3db4d1c1619c0eeadba5a08d34952ea8f48d13",
+    "ABC_scored_development_comparison.png": "9bb268020f848389e19703434bf357e543d43b3f62bfb42e3ad37177baa3ca9a",
+    "C_fixed_midpoint_four_eyes.png": "f21dc0301df12309600430ca5487afa23eb54bb5d1fe87d6adcc0c72d0f6673a"
+  },
+  "unknown": "gray invalid; missing neverfree",
+  "semantics": "N/A, fixed height risk proxy only",
+  "repeated_experiment_dispatch": 0
+}

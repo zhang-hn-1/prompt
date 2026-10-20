@@ -1,0 +1,43 @@
+{
+  "version": 113,
+  "utc": "2026-10-17T10:19:43.401521+00:00",
+  "status": "same_output_source_engineering_complete;learning_route_unqualified",
+  "prior_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/execution_next_entry_v112.json",
+  "roots": [
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_static_base_cache_20261017_v1"
+  ],
+  "report": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/fixed_four_camera_same_output_acceleration_20261017.md",
+  "parallel_full_exposures": 470,
+  "parallel_output_arrays_exact": 7520,
+  "cache_full_exposures": 470,
+  "cache_mask_arrays_exact": 1880,
+  "parallel_paired_ratio_median": 0.5631235347133294,
+  "cache_paired_ratio_median": 0.7049311358552727,
+  "cache_source_4frame_range_s": [
+    1.0454563960665837,
+    1.0736433559795842
+  ],
+  "source_total_this_heartbeat": 488,
+  "neural_fit": 0,
+  "neural_inference": 0,
+  "physics": 0,
+  "navigation": 0,
+  "runtime": null,
+  "online_default_changed": false,
+  "whole_research_complete": false,
+  "reliable_navigation": false,
+  "learning_increment": false,
+  "full3arm_complete": false,
+  "manifests": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/artifact_manifest_post_close.json": "da4418e0de8b68cbdb9138feac9084703e6d42b7ba6dbc528d03b49cce648f27",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_static_base_cache_20261017_v1/artifact_manifest_post_close.json": "4cd6850497add67fccfbaadfdf1775d9c418168eab21d38d25bac3394c6f461f"
+  },
+  "source_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_static_base_cache_20261017_v1/source_entry.py",
+  "next_direct_action": "Source acceleration qualified offline; no current actualrun or navadmission. Longterm-only learningproposal closed by E0recenterrorfloor. Next only bounded NEW target/consumer prerequisite study anchored to existing v109 error-birth evidence, not rerun: can currentRGB/disparity/provenance distinguish unsupportednear-surface risk from invalid/unknown without treatingnoGThit asfree? Compare at most oldpoint-height andstatic-cell riskheads directly; if merelyrenamedfilter or no completecausallabel/input contract, recordlearningbottleneck and do notfit/collect. Keepsource/pose/planner/controller andoldbudgets; no actualA/Brerun, TTL/threshold/worker sweep.",
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "cadence": "hourly"
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "version": 120,
+  "utc": "2026-10-17T22:28:13.966371+00:00",
+  "heartbeat_utc": "2026-10-17T22:00:59.872Z",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/rgb_evidence_supported_reference_20261018_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/rgb_supported_evidence_reference_results_20261018.md",
+  "report_sha256": "bc99ae1589b9868fb2c3ee2ae70a619e46b7fb6988b15b0678a2ac4733433b55",
+  "previous_entry": "execution_next_entry_v119.json",
+  "decision": "REJECT_FIXED_RGB_REFERENCE_BEFORE_FULL_SEQUENCE_OR_NAV",
+  "input_domain": {
+    "seen_development_frames": [
+      "E0/0",
+      "E0/55",
+      "E1B/0",
+      "E1A/90"
+    ],
+    "four_eyes_each": true,
+    "fullpixels": 4915200,
+    "finite_positive_GT": 2887203,
+    "invalid_GT_UNKNOWN": 2027997,
+    "target_pixels": 527344,
+    "target_cell_exposures": 420
+  },
+  "gates": {
+    "false_visible_cells_reduction_ge20pct": false,
+    "pooled_precision_loss_le1pp": true,
+    "pooled_recall_loss_le5pp": true,
+    "all_frames_recall_loss_le5pp": true,
+    "nonempty_all_target_frames": true
+  },
+  "aggregate": {
+    "original": {
+      "predicted_cells": 162,
+      "correct_cells": 152,
+      "false_visible_cells": 10,
+      "target_cells": 420,
+      "covered_cells": 128,
+      "target_pixels": 527344,
+      "valid_target_pixels": 48825,
+      "precision": 0.9382716049382716,
+      "recall": 0.3047619047619048,
+      "conditional_axial_error_m": {
+        "P50": 0.05622553825378418,
+        "P90": 0.14545631408691403,
+        "P95": 0.1840759277343743,
+        "max": 1.3170186281204224
+      },
+      "conditional_radial_error_m": {
+        "P50": 0.059597988112720136,
+        "P90": 0.15324066443641818,
+        "P95": 0.19885180553940754,
+        "max": 1.386939173890075
+      }
+    },
+    "unmasked": {
+      "predicted_cells": 224,
+      "correct_cells": 146,
+      "false_visible_cells": 78,
+      "target_cells": 420,
+      "covered_cells": 138,
+      "target_pixels": 527344,
+      "valid_target_pixels": 9207,
+      "precision": 0.6517857142857143,
+      "recall": 0.32857142857142857,
+      "conditional_axial_error_m": {
+        "P50": 0.039975643157958984,
+        "P90": 0.16634654998779294,
+        "P95": 0.25745368003845204,
+        "max": 2.1643704175949097
+      },
+      "conditional_radial_error_m": {
+        "P50": 0.04251917704242526,
+        "P90": 0.1794313489858356,
+        "P95": 0.2810339112298241,
+        "max": 2.3481745355307173
+      }
+    },
+    "masked": {
+      "predicted_cells": 227,
+      "correct_cells": 148,
+      "false_visible_cells": 79,
+      "target_cells": 420,
+      "covered_cells": 139,
+      "target_pixels": 527344,
+      "valid_target_pixels": 9253,
+      "precision": 0.6519823788546255,
+      "recall": 0.33095238095238094,
+      "conditional_axial_error_m": {
+        "P50": 0.03993844985961914,
+        "P90": 0.16567468643188477,
+        "P95": 0.2466157436370849,
+        "max": 2.1643704175949097
+      },
+      "conditional_radial_error_m": {
+        "P50": 0.04221898230465452,
+        "P90": 0.17918618830950395,
+        "P95": 0.2666492496604928,
+        "max": 2.3481745355307173
+      }
+    }
+  },
+  "fixed_difference": {
+    "removed_cells": 0,
+    "added_cells": 3,
+    "added_near": 2,
+    "added_far": 1
+  },
+  "cause_assessment": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/rgb_evidence_supported_reference_20261018_v1/cause_assessment.json",
+  "budget": {
+    "dispatch_cap": 4,
+    "dispatch_used": 4,
+    "recovery_cap": 0,
+    "recovery_used": 0,
+    "inherited_dispatch": {
+      "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/rgb_observed_support_reference_20261018_v1",
+      "stage": "controlled_validity_repair_check",
+      "status_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/rgb_observed_support_reference_20261018_v1/repair_status.json",
+      "sha256": "35dd664bc7e04f536317b184bdad1c85c0d617f03d9da98736056cc96f177411",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-17T22:10:59.811361+00:00",
+        "parent_pid": 468341,
+        "child_pid": 468342,
+        "process_group_id": 468342,
+        "child_returncode": 0,
+        "timeout": false,
+        "parent_signal": null,
+        "forced_kill": false,
+        "no_retry": true,
+        "remaining_live_group_pids": [],
+        "remaining_zombie_group_pids": [],
+        "end_utc": "2026-10-17T22:10:59.963716+00:00"
+      }
+    },
+    "runs": [
+      {
+        "stage": "interfaces",
+        "status": "finished",
+        "parent_pid": 472835,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-17T22:15:24.664693+00:00",
+          "parent_pid": 472835,
+          "child_pid": 472837,
+          "process_group_id": 472837,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-17T22:15:24.815900+00:00"
+        }
+      },
+      {
+        "stage": "predict",
+        "status": "finished",
+        "parent_pid": 473939,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-17T22:16:28.168691+00:00",
+          "parent_pid": 473939,
+          "child_pid": 473940,
+          "process_group_id": 473940,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-17T22:25:06.646550+00:00"
+        }
+      },
+      {
+        "stage": "score",
+        "status": "finished",
+        "parent_pid": 483428,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-17T22:25:22.807675+00:00",
+          "parent_pid": 483428,
+          "child_pid": 483429,
+          "process_group_id": 483429,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-17T22:25:23.965041+00:00"
+        }
+      }
+    ],
+    "original_prerepair_ledger_closed": true,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0,
+    "closed": true,
+    "closed_utc": "2026-10-17T22:26:22.826961+00:00",
+    "close_reason": "REJECT_FIXED_RGB_REFERENCE_BEFORE_FULL_SEQUENCE_OR_NAV",
+    "full_sequence_allowed": false,
+    "navigation_allowed": false,
+    "repeat_or_sweep_allowed": false
+  },
+  "runtime": null,
+  "execution": {
+    "interfaces": {
+      "status": "finished",
+      "start_utc": "2026-10-17T22:15:24.664693+00:00",
+      "parent_pid": 472835,
+      "child_pid": 472837,
+      "process_group_id": 472837,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-17T22:15:24.815900+00:00"
+    },
+    "predict": {
+      "status": "finished",
+      "start_utc": "2026-10-17T22:16:28.168691+00:00",
+      "parent_pid": 473939,
+      "child_pid": 473940,
+      "process_group_id": 473940,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-17T22:25:06.646550+00:00"
+    },
+    "score": {
+      "status": "finished",
+      "start_utc": "2026-10-17T22:25:22.807675+00:00",
+      "parent_pid": 483428,
+      "child_pid": 483429,
+      "process_group_id": 483429,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-17T22:25:23.965041+00:00"
+    }
+  },
+  "actual_source_cost_volumes": 16,
+  "actual_full_aggregations": 32,
+  "actual_four_eye_outputs": 8,
+  "fit": 0,
+  "physics": 0,
+  "navigation": 0,
+  "semantics": null,
+  "long_term_map": null,
+  "independent_saved_audit_passed": 27,
+  "independent_audit_sha256": "173aa5c9a40e8316206116b68380386a8d498180c7112b91afb1cb07fb27cce9",
+  "manifest_count": 36,
+  "manifest_sha256": "688e7a78c11f0eb8651d4c37a3eb8cdd021a78ed6b8f0fe75e8ea954631e2a7d",
+  "source_default_changed": false,
+  "old_budget_reopened": false,
+  "full_sequence_admitted": false,
+  "old_strict_gate_pass": false,
+  "whole_research_complete": false,
+  "reliable_navigation": false,
+  "learning_navigation_increment": false,
+  "next_direct_action": "Fixed repairedRGBreference closed after actual4frame benefitfailure. Do not extend110/470, runnavigation, tuneparams/threshold/decoder, retryv117teacher, re-openoldbudgets or repeatclosedchecks. Retain reproducible weakbaseline and negativelearning/memory evidence. No next evidence-backed executable repair currently admitted; remainingwrongmatchcauses are not isolated. New boundedwork requires a specific new defect/signal and frozen independent test, not literature/parameter loop.",
+  "automation": {
+    "id": "automation",
+    "cadence": "hourly",
+    "status": "ACTIVE"
+  }
+}

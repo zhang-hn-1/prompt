@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-19T09:51:01.537617+00:00",
+  "before": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/资料_球型机器人导航_2026-09-30/2026-10-17_四相机弱基线与记忆检查": {
+      "count": 7639,
+      "sha256": "4115e37156cedefe7a6678df7be20135e81dee406d4ddaf7ad1a560429537e78"
+    },
+    "/home/an/Documents/ChatGPT/球型机器人导航/资料_球型机器人导航_2026-09-30": {
+      "count": 7766,
+      "sha256": "4fdaa857ce0352e66f6cbe412ecf5d96f61bba093b6978bbc859e15da357c834"
+    }
+  },
+  "after": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/资料_球型机器人导航_2026-09-30/2026-10-17_四相机弱基线与记忆检查": {
+      "count": 7672,
+      "sha256": "fae539c9bd0e0d36e39f1bb3395d5d882d0c26de390cbfad6f87d2bafbfbbcd1"
+    },
+    "/home/an/Documents/ChatGPT/球型机器人导航/资料_球型机器人导航_2026-09-30": {
+      "count": 7800,
+      "sha256": "8525d22cce67c719341eff22e6ee599ba4076a20739bbf3fb01a19dc857b59da"
+    }
+  },
+  "destination": "/home/an/Documents/ChatGPT/球型机器人导航/资料_球型机器人导航_2026-09-30/2026-10-17_四相机弱基线与记忆检查/已知机体RGB依赖的GT归因",
+  "manifest_sha256": "8e73d2662d65fa54d9cd568bbd3a4bec2e695f589c3a62e2bd5c43d7968823e5",
+  "report_sha256": "dbb28a2b7074d788febfca8c6b946b4cc50c48a724274161eb54a4f6fe8fc50b",
+  "protocol_inputs_code_manifest_exact": true,
+  "old_v123_budget_unchanged": true,
+  "runtime": null,
+  "automation_status": "ACTIVE",
+  "new_git_commit": false,
+  "packaging_note": "First packaging attempt exited before filesystem work because Python3.10 lacks tomllib; replaced metadata status read with standard-library regex; no scientific dispatch or rerun."
+}

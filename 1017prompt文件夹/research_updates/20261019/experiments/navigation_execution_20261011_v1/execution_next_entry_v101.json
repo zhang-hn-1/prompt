@@ -1,0 +1,518 @@
+{
+  "version": 101,
+  "created_utc": "2026-10-16T12:35:04.195823+00:00",
+  "status": "fixed_reference_and_privileged_initialization_pass_localizes_optimization_initial_condition_sensitivity",
+  "root": "experiments/radiance_surface_reference_20261016_v1",
+  "report": "reports/radiance_initialization_diagnosis_20261016.md",
+  "kind": "Strong known-geometry engineering diagnostics; NOT actual RGB-only source admission",
+  "full_target_pixels": 196248,
+  "background_pixels": 725352,
+  "reference": {
+    "necessary_pass": true,
+    "accepted_target_pixels": 170279,
+    "rows": [
+      {
+        "total_pixels": 307200,
+        "target_pixels": 65490,
+        "background_pixels": 241710,
+        "accepted_target_pixels": 56704,
+        "accepted_target_coverage": 0.8658421132997404,
+        "accepted_target_error_quantiles_m": [
+          0.024805784225463867,
+          0.024828076362609863,
+          0.0248335599899292
+        ],
+        "raw_opacity_target_error_quantiles_m": [
+          0.024805784225463867,
+          0.024828076362609863,
+          0.0248335599899292
+        ],
+        "target_width_given_opacity_quantiles_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_raw_depth_given_opacity_quantiles_m": [
+          1.9751942157745361,
+          1.9752039909362793,
+          1.9752051830291748
+        ],
+        "accepted_background_pixels": 0,
+        "background_confident_near_prediction_rate": 0.0,
+        "cumulative_target_gate_counts": {
+          "finite": 65490,
+          "opacity": 56826,
+          "plus_width": 56826,
+          "plus_RGB": 56704,
+          "plus_range": 56704
+        },
+        "raw_background_opacity_quantiles": [
+          7.655393119421205e-08,
+          8.888428482123345e-08,
+          9.219543528615759e-08
+        ],
+        "raw_target_RGB_L1_quantiles": [
+          0.018409217707812786,
+          0.26130099892616265,
+          0.48071549981832506
+        ],
+        "input": "diagnostic_00.npz",
+        "necessary_pass": true,
+        "geometry_only_target_pixels": 56826,
+        "geometry_only_target_coverage": 0.867704993128722,
+        "geometry_only_target_error_quantiles_m": [
+          0.024805784225463867,
+          0.024828076362609863,
+          0.0248335599899292
+        ],
+        "target_RGB_L1_quantiles": [
+          0.018409217707812786,
+          0.26130099892616265,
+          0.48071549981832506
+        ],
+        "geometry_pass_before_RGB": true
+      },
+      {
+        "total_pixels": 307200,
+        "target_pixels": 65268,
+        "background_pixels": 241932,
+        "accepted_target_pixels": 56887,
+        "accepted_target_coverage": 0.8715909787338358,
+        "accepted_target_error_quantiles_m": [
+          0.024805784225463867,
+          0.02482020854949951,
+          0.024823546409606934
+        ],
+        "raw_opacity_target_error_quantiles_m": [
+          0.024805784225463867,
+          0.02482020854949951,
+          0.02482343316078186
+        ],
+        "target_width_given_opacity_quantiles_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_raw_depth_given_opacity_quantiles_m": [
+          1.9751942157745361,
+          1.9752038717269897,
+          1.9752051830291748
+        ],
+        "accepted_background_pixels": 0,
+        "background_confident_near_prediction_rate": 0.0,
+        "cumulative_target_gate_counts": {
+          "finite": 65268,
+          "opacity": 57020,
+          "plus_width": 57020,
+          "plus_RGB": 56887,
+          "plus_range": 56887
+        },
+        "raw_background_opacity_quantiles": [
+          7.654476519292075e-08,
+          8.891865377336217e-08,
+          9.219312921970868e-08
+        ],
+        "raw_target_RGB_L1_quantiles": [
+          0.018137413077056408,
+          0.19919626712799104,
+          0.4780330449342728
+        ],
+        "input": "diagnostic_01.npz",
+        "necessary_pass": true,
+        "geometry_only_target_pixels": 57020,
+        "geometry_only_target_coverage": 0.8736287307715879,
+        "geometry_only_target_error_quantiles_m": [
+          0.024805784225463867,
+          0.02482020854949951,
+          0.02482343316078186
+        ],
+        "target_RGB_L1_quantiles": [
+          0.018137413077056408,
+          0.19919626712799104,
+          0.4780330449342728
+        ],
+        "geometry_pass_before_RGB": true
+      },
+      {
+        "total_pixels": 307200,
+        "target_pixels": 65490,
+        "background_pixels": 241710,
+        "accepted_target_pixels": 56688,
+        "accepted_target_coverage": 0.8655978011910215,
+        "accepted_target_error_quantiles_m": [
+          0.024805784225463867,
+          0.024828076362609863,
+          0.0248335599899292
+        ],
+        "raw_opacity_target_error_quantiles_m": [
+          0.024805784225463867,
+          0.024828076362609863,
+          0.0248335599899292
+        ],
+        "target_width_given_opacity_quantiles_m": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "target_raw_depth_given_opacity_quantiles_m": [
+          1.9751942157745361,
+          1.9752039909362793,
+          1.9752051830291748
+        ],
+        "accepted_background_pixels": 0,
+        "background_confident_near_prediction_rate": 0.0,
+        "cumulative_target_gate_counts": {
+          "finite": 65490,
+          "opacity": 56826,
+          "plus_width": 56826,
+          "plus_RGB": 56688,
+          "plus_range": 56688
+        },
+        "raw_background_opacity_quantiles": [
+          7.655393119421205e-08,
+          8.888427771580609e-08,
+          9.21954494970123e-08
+        ],
+        "raw_target_RGB_L1_quantiles": [
+          0.01830580923706293,
+          0.24710062444210049,
+          0.48162989169359205
+        ],
+        "input": "diagnostic_02.npz",
+        "necessary_pass": true,
+        "geometry_only_target_pixels": 56826,
+        "geometry_only_target_coverage": 0.867704993128722,
+        "geometry_only_target_error_quantiles_m": [
+          0.024805784225463867,
+          0.024828076362609863,
+          0.0248335599899292
+        ],
+        "target_RGB_L1_quantiles": [
+          0.01830580923706293,
+          0.24710062444210049,
+          0.48162989169359205
+        ],
+        "geometry_pass_before_RGB": true
+      }
+    ],
+    "fit_used": 0
+  },
+  "density_initialization": {
+    "necessary_pass": true,
+    "accepted_target_pixels": 188594,
+    "rows": [
+      {
+        "total_pixels": 307200,
+        "target_pixels": 65490,
+        "background_pixels": 241710,
+        "accepted_target_pixels": 62675,
+        "accepted_target_coverage": 0.9570163383722706,
+        "accepted_target_error_quantiles_m": [
+          0.029082298278808594,
+          0.08658497333526612,
+          0.08840786218643189
+        ],
+        "raw_opacity_target_error_quantiles_m": [
+          0.029129624366760254,
+          0.0867159128189087,
+          0.09191241264343261
+        ],
+        "target_width_given_opacity_quantiles_m": [
+          0.06239581108093262,
+          0.06239581108093262,
+          0.06239581108093262
+        ],
+        "target_raw_depth_given_opacity_quantiles_m": [
+          1.9708703756332397,
+          1.9750308752059937,
+          1.975326669216156
+        ],
+        "accepted_background_pixels": 0,
+        "background_confident_near_prediction_rate": 0.0,
+        "cumulative_target_gate_counts": {
+          "finite": 65490,
+          "opacity": 63179,
+          "plus_width": 63152,
+          "plus_RGB": 62675,
+          "plus_range": 62675
+        },
+        "raw_background_opacity_quantiles": [
+          7.748895569648084e-08,
+          9.134883995898236e-08,
+          1.0573640679467425e-06
+        ],
+        "raw_target_RGB_L1_quantiles": [
+          0.008358982857316732,
+          0.02261940464377403,
+          0.03431282136589284
+        ],
+        "input": "diagnostic_00.npz",
+        "necessary_pass": true,
+        "geometry_only_target_coverage": 0.9642998931134524,
+        "geometry_only_target_error_quantiles_m": [
+          0.02912670373916626,
+          0.08670603036880493,
+          0.09178323149681089
+        ]
+      },
+      {
+        "total_pixels": 307200,
+        "target_pixels": 65268,
+        "background_pixels": 241932,
+        "accepted_target_pixels": 62926,
+        "accepted_target_coverage": 0.9641171784028927,
+        "accepted_target_error_quantiles_m": [
+          0.029107630252838135,
+          0.08665406703948975,
+          0.08999791741371155
+        ],
+        "raw_opacity_target_error_quantiles_m": [
+          0.02913188934326172,
+          0.08668169975280762,
+          0.09131537675857543
+        ],
+        "target_width_given_opacity_quantiles_m": [
+          0.06239581108093262,
+          0.06239581108093262,
+          0.06239581108093262
+        ],
+        "target_raw_depth_given_opacity_quantiles_m": [
+          1.9708681106567383,
+          1.9750082969665528,
+          1.975316059589386
+        ],
+        "accepted_background_pixels": 0,
+        "background_confident_near_prediction_rate": 0.0,
+        "cumulative_target_gate_counts": {
+          "finite": 65268,
+          "opacity": 63179,
+          "plus_width": 63147,
+          "plus_RGB": 62926,
+          "plus_range": 62926
+        },
+        "raw_background_opacity_quantiles": [
+          7.759130582485341e-08,
+          9.139665380075712e-08,
+          1.1901900222710523e-06
+        ],
+        "raw_target_RGB_L1_quantiles": [
+          0.0063629052601754665,
+          0.017078897915780544,
+          0.026945478003472006
+        ],
+        "input": "diagnostic_01.npz",
+        "necessary_pass": true,
+        "geometry_only_target_coverage": 0.9675032175032175,
+        "geometry_only_target_error_quantiles_m": [
+          0.0291287899017334,
+          0.08667831420898438,
+          0.09112031459808345
+        ]
+      },
+      {
+        "total_pixels": 307200,
+        "target_pixels": 65490,
+        "background_pixels": 241710,
+        "accepted_target_pixels": 62993,
+        "accepted_target_coverage": 0.9618720415330585,
+        "accepted_target_error_quantiles_m": [
+          0.02916717529296875,
+          0.08668413162231445,
+          0.09036719799041737
+        ],
+        "raw_opacity_target_error_quantiles_m": [
+          0.029190421104431152,
+          0.08670763969421387,
+          0.09155626296997067
+        ],
+        "target_width_given_opacity_quantiles_m": [
+          0.06239581108093262,
+          0.06239581108093262,
+          0.06239581108093262
+        ],
+        "target_raw_depth_given_opacity_quantiles_m": [
+          1.9708095788955688,
+          1.9749864339828491,
+          1.9753101587295532
+        ],
+        "accepted_background_pixels": 0,
+        "background_confident_near_prediction_rate": 0.0,
+        "cumulative_target_gate_counts": {
+          "finite": 65490,
+          "opacity": 63209,
+          "plus_width": 63177,
+          "plus_RGB": 62993,
+          "plus_range": 62993
+        },
+        "raw_background_opacity_quantiles": [
+          7.745902053102327e-08,
+          9.137562386740684e-08,
+          1.0058653970190664e-06
+        ],
+        "raw_target_RGB_L1_quantiles": [
+          0.0060985214076936245,
+          0.016024736128747462,
+          0.025736281275749177
+        ],
+        "input": "diagnostic_02.npz",
+        "necessary_pass": true,
+        "geometry_only_target_coverage": 0.9646816307833257,
+        "geometry_only_target_error_quantiles_m": [
+          0.02918708324432373,
+          0.08670299053192139,
+          0.0913607358932495
+        ]
+      }
+    ],
+    "single_factor": "Only initial density copied from known reference; all other initial state tensors exact uniform baseline, color zero logits and fresh Adam. Same1024updates/seeds/inputs/loss.",
+    "fit_used": 1
+  },
+  "cause": {
+    "supported": "This fixed grid/renderer/gates can represent at least one qualified field in this fixture; same RGB optimization outcome depends on density initialization.",
+    "initial_gradient_diagnosis": "experiments/radiance_surface_reference_20261016_v1/initial_gradient_diagnosis.json",
+    "unknown": "RGB-only initialization absent; no sufficient convergence/global-optimality/actualE0 sole-cause proof. Known initial geometry drifts while remaining qualified. Online background remains absent."
+  },
+  "scope_limits": [
+    "Known geometry/texture/background injected only for engineering diagnosis.",
+    "No actualRGB new source/semantic/BEV/memory/nav output.",
+    "Reference width0 is discrete sample statistic.",
+    "Unchanged true scoring plane2m, no denominator shrink."
+  ],
+  "budgets": {
+    "reference_dispatch": "1/1 closed",
+    "reference_fit": "0/0",
+    "initialization_dispatch": "1/1 closed",
+    "initialization_fit": "1/1 closed",
+    "updates": 1024,
+    "recovery": 0,
+    "physical": 0,
+    "actualE0_regeneration": 0,
+    "supervised_network_training": 0,
+    "navigation": 0
+  },
+  "execution": [
+    {
+      "status": "fixed_reference_pass",
+      "dispatch_used": 1,
+      "dispatch_cap": 1,
+      "reference_construction_used": 1,
+      "reference_construction_cap": 1,
+      "fit_used": 0,
+      "fit_cap": 0,
+      "optimizer_steps": 0,
+      "recovery_used": 0,
+      "recovery_cap": 1,
+      "physical_used": 0,
+      "navigation_used": 0,
+      "budget_closed": true,
+      "stages": [
+        {
+          "stage": "reference",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T12:25:37.763940+00:00",
+            "parent_pid": 2569350,
+            "child_pid": 2569358,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T12:25:42.036762+00:00"
+          }
+        },
+        {
+          "stage": "score",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T12:25:42.037700+00:00",
+            "parent_pid": 2569350,
+            "child_pid": 2569440,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T12:25:43.103815+00:00"
+          }
+        }
+      ],
+      "wall_s": 5.340481776976958,
+      "source_admitted": false
+    },
+    {
+      "status": "known_density_initialization_qualified",
+      "dispatch_used": 1,
+      "dispatch_cap": 1,
+      "scene_fit_used": 1,
+      "scene_fit_cap": 1,
+      "updates_cap": 1024,
+      "recovery_used": 0,
+      "recovery_cap": 1,
+      "physical_used": 0,
+      "navigation_used": 0,
+      "reference_forward_budget_remains_closed": true,
+      "budget_closed": true,
+      "stages": [
+        {
+          "stage": "initialization_predict",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T12:28:52.659681+00:00",
+            "parent_pid": 2573088,
+            "child_pid": 2573091,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T12:29:04.094842+00:00"
+          }
+        },
+        {
+          "stage": "initialization_score",
+          "terminal": {
+            "status": "finished",
+            "start_utc": "2026-10-16T12:29:04.095921+00:00",
+            "parent_pid": 2573088,
+            "child_pid": 2573319,
+            "no_retry": true,
+            "timeout": false,
+            "forced_kill": false,
+            "parent_signal": null,
+            "child_returncode": 0,
+            "end_utc": "2026-10-16T12:29:06.013739+00:00"
+          }
+        }
+      ],
+      "wall_s": 13.3552873210283,
+      "source_admitted": false
+    }
+  ],
+  "audit": {
+    "complete": true,
+    "saved_view_checks": 27,
+    "hash_checks": 165,
+    "all_counts_and_quantiles_exact": true,
+    "only_initial_density_differs_from_control": true,
+    "initial_color_zero_logits": true,
+    "density_equals_known_reference": true,
+    "original_control_root_seal_unchanged": true,
+    "model_forward_calls": 0,
+    "optimizer_steps": 0
+  },
+  "review": "experiments/radiance_surface_reference_20261016_v1/review.json",
+  "runtime": "none; both services inactive/MainPID0/ExecMainStatus0",
+  "next_action": "Freeze and implement one RGB-projected mean-color initialization arm on SAME fixture, leaving density uniform and all grid/loss/seeds/rays/1024updates/gates fixed; reuse sealed uniform compaction baseline. For each voxel project into8fit RGB views, bilinearly sample only in-image and axial .01-6m; mean valid RGB, unseen .5. Do not read known geometry/analytic texture/labels/reference checkpoints. New minimum engineering fitcap1/physical0 before dispatch. Test whether input-derived spatial color breaks constant-color initial depth-gradient symmetry and restores basic geometry. No construction/iteration/weight sweep or actualE0/nav until necessary qualifications.",
+  "next_arm_implemented": false,
+  "next_budget_opened": false,
+  "source_admitted": false,
+  "reliable_navigation": false,
+  "learning_navigation_increment": false,
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "cadence": "hourly",
+    "every_run_brief_progress": true
+  }
+}

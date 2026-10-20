@@ -1,0 +1,36 @@
+{
+  "stage": "pretrained_stereo_full_generation_running",
+  "parent_entry": "execution_next_entry_v71.json",
+  "updated_utc": "2026-10-14T02:58:59.793181+00:00",
+  "summary": "v72完整权重已由用户取得并strict1360状态加载通过；GPU当前C65 22s双向原生480x640推理已完成，105123接受像素、disparity全部finite，首次同步3.681566s，峰值allocated2927155712/reserved3420454912bytes。单帧首次耗时非稳态统计、未GT评分，不能称源或实时导航通过。完整7组1267对/6300map生成已启动，首轮缺pxr路径退出1保留；唯一环境恢复仅加入既有Isaac USD路径，recovery1/1，无模型/算法/门槛变更。systemd用户服务ball-foundation-stereo-v71-recovery，durable parent3162608 child3162609，start02:56:53UTC timeout7200s，generation_recovery_status.json/log为准；首帧已生成。先核真实进程与终态，运行中接续监督绝不重复派发。完成后核prediction_seal再GT-only score.py/bev_score.py，补完整逐时地图阻塞/长期错误与16来源点对照及同步全序列耗时；未完成不得评分或物理，fit0physical0。若失败保留真实终态，不自动第二恢复/调参。旧v70缺权重停点已解除，不下载。当前阶段因完整GPU计算仍运行接续，整体未完成，ACTIVE。",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/pretrained_stereo_bev_20261013_v1",
+  "processes": {
+    "status": "running",
+    "start_utc": "2026-10-14T02:56:53.718453+00:00",
+    "parent_pid": 3162608,
+    "child_pid": 3162609,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "gpu_preflight": {
+    "pair": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/replanning_reserve_20261013_v1/candidate_e1_run/source_inputs/frame_220.npz",
+    "shape": [
+      480,
+      640
+    ],
+    "finite_depth": 105123,
+    "accepted": 105123,
+    "disparity_finite": true,
+    "paired_sync_seconds": 3.6815660819993354,
+    "peak_allocated_bytes": 2927155712,
+    "peak_reserved_bytes": 3420454912,
+    "truth_read": false
+  },
+  "fit": 0,
+  "physical": 0,
+  "recovery": 1,
+  "whole_complete": false
+}

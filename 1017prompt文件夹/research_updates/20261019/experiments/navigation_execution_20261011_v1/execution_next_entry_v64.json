@@ -1,0 +1,192 @@
+{
+  "stage": "replanning_reserve_actual_pair_running",
+  "updated_utc": "2026-10-13T13:15:46.599322+00:00",
+  "parent_entry": "execution_next_entry_v63.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/replanning_reserve_20261013_v1",
+  "summary": "原完整后缀检查已覆盖，不重复实现；独立未来重规划余量0.2m在原0.870711m之外。10原查询exact、167边界、147完整净空合格生成、138保留决定改变、8实际继承链检查和独立预审通过。",
+  "budget": {
+    "status": "running",
+    "cap": 2,
+    "used": 2,
+    "recovery_used": 0,
+    "fit": 0,
+    "parent_pid": 2301129,
+    "groups": [
+      {
+        "arm": "baseline_e1",
+        "state": "closed",
+        "utc": "2026-10-13T13:04:51.989255+00:00",
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-13T13:04:51.989496+00:00",
+          "parent_pid": 2301129,
+          "child_pid": 2301145,
+          "no_retry": true,
+          "timeout": false,
+          "forced_kill": false,
+          "parent_signal": null,
+          "child_returncode": 0,
+          "end_utc": "2026-10-13T13:13:35.441866+00:00"
+        },
+        "raw_audit": {
+          "pass_audit": true,
+          "map_audit": {
+            "actual_maps_exact": 900,
+            "known_native_camera_views": 181,
+            "recent10s_unchanged": true,
+            "viewpoint_separation_m": 0.1,
+            "truth_read": false
+          },
+          "captures": 901,
+          "requests": 900,
+          "verified_physical_commands": 4500,
+          "registration_pairs": 181,
+          "max_extrinsic_residual": 2.6917942730353417e-07,
+          "all_contacts_available": true,
+          "journal_lines": 1800,
+          "physics_fields": [
+            "raw_command_target",
+            "clipped_target",
+            "smoothed_target",
+            "applied_action",
+            "joint_position_rad",
+            "joint_velocity_rad_s",
+            "position_world_xy",
+            "root_position_world_m",
+            "root_quaternion_world_wxyz",
+            "linear_velocity_world_m_s",
+            "angular_velocity_world_rad_s",
+            "yaw_world_rad",
+            "roll_world_rad",
+            "simulation_time_s",
+            "physics_step_index",
+            "raw_simulation_time_s",
+            "raw_physics_step_index",
+            "action_block_index",
+            "physics_step_in_block"
+          ],
+          "interval_ambiguous_points_removed": 8135,
+          "accepted_points": 296346,
+          "source_and_input_hashes": 2226,
+          "scope": "clocks/current native registration/source identities, actual surface selection and executed journal/request/physical targets; not independent IMU dynamics reconstruction or causal replication"
+        },
+        "assessment": {
+          "termination": {
+            "termination": "timeout90",
+            "actions": 900,
+            "time_s": 89.99999798834324,
+            "budget_s": 90.0,
+            "true_goal_xy_threshold_m": 0.2,
+            "not_original35": true,
+            "not_causal_navigation_AB": true
+          },
+          "initial_distance_m": 6.600000673532486,
+          "remaining_m": 5.214377144368039,
+          "net_progress_m": 1.3856235291644472,
+          "captures": 901,
+          "contact_schema_example": {
+            "simulation_time_s": 0.0,
+            "physics_step_index": 0,
+            "source": "capture",
+            "available": true,
+            "contact": false
+          },
+          "contact_records": 5401,
+          "contacts_detected_by_named_fields": 0,
+          "unavailable_contacts": 0,
+          "depth_scoring": {
+            "pixels": 5189430,
+            "p90_absolute_error_m": 0.11362934112548828,
+            "outlier_fraction_above_0p3m": 0.009526479786797394,
+            "under1m_confident_pixels": 4627,
+            "source_points": 1761259,
+            "saved_pairs": 181,
+            "pass_gate": true,
+            "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+          },
+          "video_frames": {
+            "stereo_view.mp4": 901,
+            "third_person.mp4": 901
+          },
+          "raw_arrival_pass": false,
+          "first_contact_s": null,
+          "retain": false
+        }
+      },
+      {
+        "arm": "candidate_e1",
+        "state": "reserved",
+        "utc": "2026-10-13T13:14:40.747425+00:00"
+      }
+    ]
+  },
+  "baseline_status": {
+    "status": "running",
+    "start_utc": "2026-10-13T13:04:51.989496+00:00",
+    "parent_pid": 2301129,
+    "child_pid": 2301145,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "exec_session": 28457,
+  "next_action": "监督现有supervise.py，不重复启动。基线结束且原始评分准入后自动执行候选一次90秒；随后检查实际干预、原始导航终态、深度与地图并独立复核保留或拒绝。",
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false,
+  "candidate_status": {
+    "status": "running",
+    "start_utc": "2026-10-13T13:14:40.747729+00:00",
+    "parent_pid": 2301129,
+    "child_pid": 2313019,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "baseline_assessment": {
+    "termination": {
+      "termination": "timeout90",
+      "actions": 900,
+      "time_s": 89.99999798834324,
+      "budget_s": 90.0,
+      "true_goal_xy_threshold_m": 0.2,
+      "not_original35": true,
+      "not_causal_navigation_AB": true
+    },
+    "initial_distance_m": 6.600000673532486,
+    "remaining_m": 5.214377144368039,
+    "net_progress_m": 1.3856235291644472,
+    "captures": 901,
+    "contact_schema_example": {
+      "simulation_time_s": 0.0,
+      "physics_step_index": 0,
+      "source": "capture",
+      "available": true,
+      "contact": false
+    },
+    "contact_records": 5401,
+    "contacts_detected_by_named_fields": 0,
+    "unavailable_contacts": 0,
+    "depth_scoring": {
+      "pixels": 5189430,
+      "p90_absolute_error_m": 0.11362934112548828,
+      "outlier_fraction_above_0p3m": 0.009526479786797394,
+      "under1m_confident_pixels": 4627,
+      "source_points": 1761259,
+      "saved_pairs": 181,
+      "pass_gate": true,
+      "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+    },
+    "video_frames": {
+      "stereo_view.mp4": 901,
+      "third_person.mp4": 901
+    },
+    "raw_arrival_pass": false,
+    "first_contact_s": null,
+    "retain": false
+  }
+}

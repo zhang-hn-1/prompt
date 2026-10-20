@@ -1,0 +1,151 @@
+{
+  "stage": "ordered_scanline_joint_closed_rejected",
+  "updated_utc": "2026-10-13T09:43:56.883585+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v58.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/ordered_scanline_depth_results_20261013.md",
+  "result": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/result.json",
+  "independent_review": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/independent_closure.json",
+  "seal": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/artifact_manifest_post_close.json",
+  "seal_verification": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/ordered_scanline_seal_verification.json",
+  "budget": {
+    "candidate": "ordered_scanline_joint_depth_v1",
+    "status": "source_rejected",
+    "utc": "2026-10-13T08:39:25.404431+00:00",
+    "physical_cap": 4,
+    "physical_used": 0,
+    "fit": 0,
+    "recovery_used": 1,
+    "parent_pid": 2037979,
+    "source_hashes": {
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/protocol.json": "e5646f73e37e4795443ac5d9b565b801edf85214765c75c6911fdc5cb4ba6a26",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/joint.py": "730f1ca525ba42fda59c44e61db3f15db2e2e000d34d84aa848ba4b02860ddbc",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/frozen_cost.py": "76b6bd1db9ffff9de0e1c9dc2c1c0472d7f1cec7e20e0250ef09ba60a149a4ac",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/generate.py": "be5e3ed1127938fc81ac2b3e65f2f2b76ea626a1b82ddce67516cc5f78fee7be",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/common.py": "fc8d1b5eb2a3e3c31e82d7dcfcf867b3a5e75a80d9e4a3ea59abc7a1d4cd3ab8"
+    },
+    "physical_unattempted_closed": 4,
+    "closed_utc": "2026-10-13T09:39:44.010550+00:00"
+  },
+  "statuses": {
+    "preflight_status.json": {
+      "status": "finished",
+      "start_utc": "2026-10-13T08:26:55.638456+00:00",
+      "parent_pid": 1992651,
+      "child_pid": 1992652,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-13T08:26:58.657791+00:00"
+    },
+    "generation_status.json": {
+      "status": "runtime_failed",
+      "start_utc": "2026-10-13T08:39:25.404658+00:00",
+      "parent_pid": 2006792,
+      "child_pid": 2006793,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 1,
+      "end_utc": "2026-10-13T08:58:09.985579+00:00"
+    },
+    "generation_recovery_status.json": {
+      "status": "finished",
+      "start_utc": "2026-10-13T09:07:45.196992+00:00",
+      "parent_pid": 2037979,
+      "child_pid": 2037980,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-13T09:29:50.112322+00:00"
+    },
+    "score_status.json": {
+      "status": "finished",
+      "start_utc": "2026-10-13T09:33:38.126785+00:00",
+      "parent_pid": 2,
+      "child_pid": 3,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-13T09:34:13.056706+00:00"
+    },
+    "visuals_status.json": {
+      "status": "finished",
+      "start_utc": "2026-10-13T09:34:13.057643+00:00",
+      "parent_pid": 2,
+      "child_pid": 4,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-13T09:34:16.629491+00:00"
+    }
+  },
+  "process_check": {
+    "utc": "2026-10-13T09:39:43.891433+00:00",
+    "host_pid_namespace": true,
+    "processes": [
+      {
+        "pid": 1992651,
+        "present": false
+      },
+      {
+        "pid": 1992652,
+        "present": false
+      },
+      {
+        "pid": 2006792,
+        "present": false
+      },
+      {
+        "pid": 2006793,
+        "present": false
+      },
+      {
+        "pid": 2037979,
+        "present": false
+      },
+      {
+        "pid": 2037980,
+        "present": false
+      }
+    ],
+    "free_disk_bytes": 204129779712,
+    "scope": "known preflight and registered generation/supervisor processes",
+    "new_physical": 0
+  },
+  "active_processes": [],
+  "supervisor_sessions_collected": [
+    88437,
+    20112,
+    61326,
+    42589,
+    34650,
+    8285,
+    56375,
+    25148
+  ],
+  "summary": "v59整条扫描线顺序/一对一/显式缺口联合对应已完成905对五开发组预测先封存后GT评分、4500同轨迹地图更新，固定v56局部代价不变。H/E0/E1/B54/C54深度P90 .555362/1.018843/.486009/.500457/.533280m，全部失败；原真实障碍查询保留45.746/65.140/42.389/40.531/30.855%，非场景召回。C54原.133587→.533280m，最终风险/偏离>.15m/旧10s/旧偏离142/12/135/12→284/60/284/60；地面误报569/157644→1268/75414，入图位置P90 .146290→.160847m。旧46像素44未知、2有测量(1<=.15m，另1在.15–.3m)，新离线图未形成旧阻塞格，未在线清图/认证自由/执行导航。整体源拒绝physical0/4余4关闭fit0recovery1/1，不调缺口/歧义/视差域/窗口或描述子复跑。",
+  "verification": "独立905对/1810方法帧/40地图/25049字段复算最大浮点差4.44e-16，C54全部900步原标签时钟与两方法计数/8完整地图exact；全部905匹配顺序/整数/支撑/右眼唯一性/坐标恢复通过。14446输入/2755输出/16来源/1653前缀/5恢复科学源/908GT身份核验，全根2813文件SHA封存复核通过。初轮三组后ASCII读取UTF8配置退出保留，唯一恢复仅设PYTHONUTF8=1，算法/协议/生成代码未变，非性能失败。",
+  "next_action": "停止局部代价与扫描线方案派生，接续此前v50因规划优先级暂缓的像素表面类别与距离分开重建资格。先有限核对旧高度/地面竞争/BEV模型与新类别消费者区别及标签来源；冻结地面/障碍/未知类别、距离独立输出、固定标定投影消费者，以理想像素类别/深度和实际原生位姿完成完整分组序列的目标身份、地面误报、定位精度和可见障碍覆盖诊断。GT只离线监督/评分，不作实际在线语义，不用预测世界高度阈值代替语义。oracle资格通过才冻结一个新的像素级学习目标、完整因果数据/标签覆盖、一次拟合及fresh验证预算<=4含必要同版90秒对照；分别标记双眼测量与单眼先验。H/E0/E1/B54/C54均已见开发，不能冒称新泛化。不换网络救v49模型，不扩旧库，不恢复封闭预算；该目标尚未实现或准入，不能承诺导航增量。",
+  "stop_reason": "完成单一新机制的实际实现、905对/4500地图完整资格和独立否定阶段；源未准入因此没有物理派发。无资源或权限阻塞，不是局部检查停点，也不是整体完成。",
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false,
+  "benchmark_delivery": "existing research evidence package; this additional source negative result independently reviewed, cross-machine runtime still unproven",
+  "automation_status": "ACTIVE",
+  "artifact_identities": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/artifact_manifest_post_close.json": "9ba7c70747e1395748d9fb298e839bbcebe4632448921fa46a879d36416e2ab7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/reports/ordered_scanline_depth_results_20261013.md": "15ad42176d5d1633d94af5fa74c88d2a7f2a7e0693ed6bd5e9e4f9c2719b2e94",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/independent_closure.json": "4f08446015fa6949e17e9741f1f2593f109b68fac778ff3e581454bb70590f01",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/ordered_scanline_seal_verification.json": "1646f0e93b8bb9b389c20de9808bff9a7777fc0209b05224805addfd450722fa"
+  }
+}

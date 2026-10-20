@@ -1,0 +1,14 @@
+{
+  "stage": "complementary_outward_layout_rejected_before_render",
+  "parent_entry": "execution_next_entry_v77.json",
+  "updated_utc": "2026-10-14T20:35:14.240121+00:00",
+  "summary": "v78固定原.4m前置/±.3m侧置/.05m高度，仅两眼朝外yaw±20度的互补布局，区别旧同朝向forward/height候选。完整七组1267原始渲染GT帧校准重投影，未扣新CAD/场景遮挡的原可见目标格保留上界H/E0/E1/B54/C54/B65/C65为93.67/67.54/87.88/86.95/82.64/89.02/93.89%，全部低于新冻结95%原目标保留准入。2m等角3600样本几何视域519→684(51.9→68.4度)，但正前方失去覆盖；非实际场景新联合召回或环视。布局拒绝before-render，fit0physical0/2余2关闭recovery0；不调角度重跑。新布局RGB/深度/静态与运动CAD/长期地图未生成或准入，不能称已校准实用。21固定首中末帧独立投影exact及1267计数聚合通过；CPU session41777 finished0、272.74秒，无运行。报告reports/complementary_camera_geometry_results_20261015.md直接原两RGB/GT/潜在保留BEV/3600角分母；B65 47s沿用旧选择非最差，本帧14/14保留不代表全序列。下一独立前向保护与后向补充布局资格：先冻结前/后独立出向位置与标定，完整CAD静态/实际关节运动遮挡及近场前向盲区，准入后有界同场景render probe；不调整本候选yaw、不用拒绝单目模型导航。新实际联合可见目标需新渲染，旧RGB无法提供未见方向真值；场景/照明/安全间距不变，硬件不动。布局改善不修复v77模型失败，旧所有预算保持关闭。整体/可靠导航/学习增量未完成，automationACTIVE。",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/complementary_camera_geometry_20261015_v1",
+  "fit": 0,
+  "physical": 0,
+  "recovery": 0,
+  "running_experiments": [],
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

@@ -1,0 +1,19 @@
+{
+  "admitted": true,
+  "max_actual_arms": 2,
+  "no_retry": true,
+  "utc": "2026-10-11T16:02:37.106346+00:00",
+  "protocol_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/heading_rate_e1_b0_protocol_v2.json": "e926a84fae357fb727b7b6501f733dbbe44596daf4356bcefefa8050cdf567aa",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/heading_rate_e1_candidate_protocol_v2.json": "10b08085ccffab6528664e6e883b8f96d17618d2a740b257c8be18e6c8e36bc1"
+  },
+  "review_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/independent_review_fix_verdict_v1.json": "601779650532750510ddfb4c88d1e9b6db48abbc9e30aa072abbd2b111b20aa8"
+  },
+  "CPU_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/review_fix_GREEN_v2.log": "3505ab8d33dc38872964ca1967a6a768e7a90a56965ddf8775dbadfc5852f146",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/inherited_CPU_v1.log": "fb788e63b37c86f64a2f090a4bcf10d801197fb07d84e8cf7ae7c96354ded360"
+  },
+  "design_sha256": "818ca619cddfcbd4aa7f037d26f501473a2c8e4226988a6b6eaa3c929228bc91",
+  "scope": "knownpose TaskH E1 two arms each350requests35s; no estimatedpose or learning admission"
+}

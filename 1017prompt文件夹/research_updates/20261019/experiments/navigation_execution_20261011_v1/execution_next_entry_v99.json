@@ -1,0 +1,116 @@
+{
+  "version": 99,
+  "created_utc": "2026-10-16T10:40:27.603875+00:00",
+  "status": "actual_RGB_causal_radiance_grid_development_rejected",
+  "root": "experiments/causal_radiance_grid_20261016_v1",
+  "report": "reports/causal_radiance_grid_results_20261016.md",
+  "mechanism": "Four independent explicit metric density/RGB grids updated from same-eye causal RGB histories through emission-absorption image formation; no pretrained weights or input depth.",
+  "data": "Complete already-seen E0:110 groups440 eyes; no new capture/navigation/holdout.",
+  "aggregate": {
+    "predicted": 0,
+    "target": 11652,
+    "correct": 0,
+    "covered": 0,
+    "precision": null,
+    "recall": 0.0,
+    "position_p90_m": null,
+    "finite_target_depth_pixels": 0,
+    "all_target_pixels": 4476747,
+    "target_depth_coverage": 0.0,
+    "conditional_depth_p50_p90_p95_m": null
+  },
+  "full_domain_output_pixels": 549,
+  "full_domain_pixels": 135168000,
+  "full_domain_outputs_ideal_label_support": {
+    "hazard": 0,
+    "floor": 0,
+    "unknown": 549
+  },
+  "per_eye": {
+    "front_left": {
+      "finite_target_pixels": 0,
+      "all_target_pixels": 1087708,
+      "depth_coverage": 0.0,
+      "conditional_depth_p50_p90_p95_m": null
+    },
+    "front_right": {
+      "finite_target_pixels": 0,
+      "all_target_pixels": 676244,
+      "depth_coverage": 0.0,
+      "conditional_depth_p50_p90_p95_m": null
+    },
+    "rear_left": {
+      "finite_target_pixels": 0,
+      "all_target_pixels": 997331,
+      "depth_coverage": 0.0,
+      "conditional_depth_p50_p90_p95_m": null
+    },
+    "rear_right": {
+      "finite_target_pixels": 0,
+      "all_target_pixels": 1715464,
+      "depth_coverage": 0.0,
+      "conditional_depth_p50_p90_p95_m": null
+    }
+  },
+  "gates": {
+    "precision": false,
+    "recall": false,
+    "position": false,
+    "depth": false,
+    "every_frame_precision": true,
+    "every_frame_recall": false,
+    "every_frame_position": true,
+    "necessary_generation_latency": false
+  },
+  "subsets": {
+    "suspended": {
+      "target": 2535,
+      "covered": 0
+    },
+    "floor_intersecting": {
+      "target": 9117,
+      "covered": 0
+    },
+    "unidentified": {
+      "target": 0,
+      "covered": 0
+    }
+  },
+  "generation_four_eye_wall_p50_p90_max_s": [
+    1.2677143700420856,
+    1.3003728292998857,
+    1.364994058967568
+  ],
+  "timing_scope": "Includes input loading, CUDA upload, online scene fitting and full-resolution rendering; excludes prediction persistence, GT-only semantic projection/scoring. It is a necessary lower bound on deployable four-eye end-to-end time, not a complete online latency pass.",
+  "scene_parameter_fit_runs": 1,
+  "scene_grids": 4,
+  "scene_parameter_update_steps": 14080,
+  "RGB_ray_draws_including_repeats": 7208960,
+  "supervised_obstacle_network_training": 0,
+  "physics": 0,
+  "navigation": 0,
+  "source_admitted": false,
+  "execution": "prepare0; initial predictor1 before scene fitting: Module.half buffer-name collision. One administrative buffer-only rename recovery; predict0,score0; author saved-result audit0 and corrected-unknown visualization0. No second recovery/scientific rerun.",
+  "review": "Independent read-only review found one Important parent interpretation error (all-output0 vs target0), corrected to full549/target0; no Important implementation/scoring issue affecting rejection.",
+  "budget": {
+    "compute_used": 1,
+    "compute_cap": 1,
+    "recovery_used": 1,
+    "recovery_cap": 1,
+    "scene_fit_used": 1,
+    "scene_fit_cap": 1,
+    "physical_used": 0,
+    "unused_physical_cap4_closed": true,
+    "closed": true
+  },
+  "runtime": "All original/recovery scientific processes exited; initial failed service retained, recovery inactive0.",
+  "limitations": [
+    "Ideal offline semantic labels and inherited CAD aid; not real RGB semantic performance",
+    "World scale from existing native encoder/IMU and privileged initial gauge",
+    "Static view-independent explicit radiance model, fixed bounded optimization schedule, no general radiance-field impossibility proof",
+    "Target conditional error/precision/position N/A; full549 output pixels not counted as correct or free",
+    "Long-term map/RGB ground false-positive/navigation N/A"
+  ],
+  "next_action": "Bounded primary-source inquiry: can occlusion/disocclusion ordering yield metric distance intervals from existing causal RGB/native motion without repeating contour tangency, cone voting or point matching? No new candidate selected or run admitted; do not retune/rerun closed radiance-grid candidate.",
+  "automation": "Same id/hourly/ACTIVE. Every run brief actual-work/runtime/result/next update. Whole reliable navigation/learning increment incomplete."
+}

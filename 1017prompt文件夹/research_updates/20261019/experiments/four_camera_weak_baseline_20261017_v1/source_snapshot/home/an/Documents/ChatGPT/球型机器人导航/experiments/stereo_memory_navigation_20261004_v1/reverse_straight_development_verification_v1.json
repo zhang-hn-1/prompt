@@ -1,0 +1,47 @@
+{
+  "verified_utc": "2026-10-07T16:43:19.133199+00:00",
+  "source_checks": 181,
+  "input_checks": 14217,
+  "postclose_artifacts": 717,
+  "actual_requests": 320,
+  "physics_samples": 1601,
+  "captures": 321,
+  "rgb_samples": 65,
+  "complete_execution_snapshots": 321,
+  "feedback_execution_ticks_exact": 1600,
+  "measured_feedback_reconstruction_only": true,
+  "not_recursive_physical_prediction": true,
+  "camera_clock_markers_physics_alignment": true,
+  "decoded_videos": [
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_straight_development_run_v1/stereo_view.mp4",
+      "decoded_frames": 321,
+      "fps": 10.0
+    },
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_straight_development_run_v1/third_person.mp4",
+      "decoded_frames": 321,
+      "fps": 10.0
+    }
+  ],
+  "contact_samples": 1921,
+  "physical_contacts": 0,
+  "historical_target_reached_definition": "actualbank within2deg desired five consecutive10Hz duringactive",
+  "target_reached_time_s": [
+    {
+      "request_start_s": 6.0,
+      "target_bank_rad": 0.0,
+      "actual_bank_reached_s": 6.4
+    }
+  ],
+  "stop_qualified_time_s": 27.2,
+  "stop_rule": "five consecutive current10Hz XYspeeds<.05, resetcount onrebound",
+  "stop_tail_xy_peak_speed_m_s": 0.0946073979139328,
+  "stop_tail_radial_peak_m": 0.06825459748506546,
+  "assessment_sha256": "31f3afb09fc6fc3ae37eedc3185236038938bea4bcda2fcbf5f79301e00719bc",
+  "new_physical_sequences": 1,
+  "no_fit_or_control_candidate": true,
+  "navigation_admitted": false,
+  "whole_research_complete": false,
+  "automation": "ACTIVE"
+}

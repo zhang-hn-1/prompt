@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-08T09:45:01.056029+00:00",
+  "only_candidate": "advance incoming-cusp acquisition using observed zero-request coast radius; original direction handler still controls confirmation and active direction",
+  "baseline": "frozen rejected tube-retention T in both arms",
+  "geometry_primitive_length_m": 0.3,
+  "nearest_waypoint_half_edge_m": 0.15,
+  "observed_coast_radius_m": 0.22207621999361346,
+  "speed_domain_m_s": [
+    0.1603578971533796,
+    0.2240710136382541
+  ],
+  "main_joint_velocity_domain_rad_s": [
+    0.4275006055831909,
+    0.4622696340084076
+  ],
+  "bank_abs_max_rad": 0.43135416526899495,
+  "cross_track_domain_m": 0.2,
+  "source_rows": 6,
+  "independent_initial_states_not_proven": true,
+  "heuristic_not_certified_stopping_bound": true,
+  "all_data_development_not_fresh": true,
+  "activation": "same measuredreverse->acceptedforward event; only normal forward incoming cusp with finite current proprio and quaternion and observed marginal domain",
+  "no_future_values": true,
+  "no_direct_active_direction_assignment": true,
+  "no_stale_reference_execution": true,
+  "no_new_low_speed_wait_or_counter_rule": true,
+  "no_PID_speed_mapping_margin_light_source_changes": true,
+  "no_threshold_sweep": true,
+  "maximum_new_sequences": 1,
+  "physical_gate54_6": "unchanged goal<=4.182900500 ANDaxis>=2.427377623 ANDzero contact; failSTOP/passsamephysicalsequence<=120sim/1200wall",
+  "original35_NOTRUN": true,
+  "whole_research_complete": false,
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/E1_measured_zero_request_braking_domain_v2/events.json": "250e6ce757f2cbd7191c434ea3d0e2636ba1d1484afb226d5b702c0c60575af1"
+  },
+  "cusp_acquisition_arc_m": 0.37207621999361346
+}

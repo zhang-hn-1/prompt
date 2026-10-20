@@ -1,0 +1,115 @@
+{
+  "updated_utc": "2026-10-16T19:26:00.962016+00:00",
+  "heartbeat_utc": "2026-10-16T19:22:58.469Z",
+  "kind": "bounded_readonly_input_premise_research",
+  "mechanisms_examined": [
+    "Known-motion exposure-blur depth",
+    "Optical defocus depth"
+  ],
+  "sources": [
+    {
+      "title": "Depth from motion and defocus blur",
+      "authors": "Huei-Yung Lin and Chia-Hong Chang",
+      "year": 2006,
+      "doi": "10.1117/1.2403851",
+      "url": "https://www.researchgate.net/publication/250707630_Depth_from_motion_and_defocus_blur",
+      "source_identity": "Full original paper uploaded by author; sections2.2,2.3,3.1 and4.2 read. Publisher DOI fetch unavailable; not relying on a review summary.",
+      "findings": "Known finite exposure, lateral camera speed, focal calibration and estimated blur extent can constrain metric distance. Pinhole special case depth=focal*translation_during_exposure/blur_extent; thin-lens formulation differs. Defocus additionally needs focus/aperture/PSF calibration. Paper test-pattern results are not current robot performance."
+    },
+    {
+      "title": "Isaac Sim motion blur examples",
+      "url": "https://docs.isaacsim.omniverse.nvidia.com/latest/replicator_tutorials/tutorial_replicator_isaac_snippets.html",
+      "findings": "Real-time motion-blur effects have exposureFraction/maxBlurDiameterFraction/numSamples controls; path-tracing exposure uses motion sampling. Latest web docs are contextual, not proof of the installed4.5 runtime setting. Installed SDK/schema inspected separately."
+    }
+  ],
+  "mechanism_contract_not_admitted": {
+    "input": "Current same-eye RGB, causal gyro/encoder camera motion, K; would additionally require documented per-frame shutter response/integration interval and radiometric/optical PSF. For defocus fixed calibrated aperture/focus/PSF and adequate identifiable texture are necessary.",
+    "RGB_constraint": "Known exposure motion predicts range-dependent spatial blur/edge profiles. A measured profile can falsify some distance hypotheses only when latent sharp appearance, occlusion and non-depth blur are identifiable or jointly constrained. Gyro rotation blur alone is not generally metric depth; translational component and actual shutter integration matter.",
+    "scale": "Existing metric motion over actual exposure, focal pixels and optical calibration. Render-frame interval/capture cadence is not shutter duration.",
+    "difference": "Exposure-integrated image formation differs from old between-frame point tracking or per-pixel plane-sweep correspondence; defocus uses lens PSF. Not a new descriptor/model or addition of encoder. No exhaustive historical novelty claim because basic current input prerequisites already fail.",
+    "possible_implementation_location": "A separate same-eye calibrated exposure/PSF forward model and range-hypothesis adapter, only if existing recorded input supports it; no implementation created.",
+    "coverage_gaps": "Textureless/repeated/unknown latent patterns, occluding boundaries, moving objects, mixed motion+defocus+AA and tiny translational blur can remain ambiguous. All original suspended/contact-invisible/boundary targets and per-frame denominators would remain; no current-domain coverage computed.",
+    "stop": "Before any algorithm run, require actual nonzero relevant image formation with calibrated timing/PSF and causal camera-motion synchronization. Do not invent shutter timing, use GT scale or blur arrays synthesized from GT, alter optical/exposure contract, or recollect just to manufacture the measurement."
+  },
+  "local_evidence": {
+    "collector_lines151_169": "save_exposure performs eight world.render() calls without advancing physics clock, then stores a single render-time snapshot. This is not evidence of an actual calibrated exposure trajectory integral.",
+    "saved_frame_schema": "frame_055.npz zip-directory keys only inspected: per-eye render_frame/render_time and source/raw_time fields; no shutter duration, integration weights, fStop, focus-distance or PSF fields. No RGB/depth values loaded/scored.",
+    "snapshot_source": "Validates frame/time/format/focal/view transform, but no physical shutter interval or blur-PSF qualification.",
+    "stage_root_text": "No authored fStop/focusDistance/shutter/motionblur/exposureTime fields found in saved root text. This is not a claim that no composed layer or global renderer setting can affect appearance.",
+    "installed_USD_schema": "fStop=0.0 documented to turn off focusing; focusDistance=0.0, shutter:open=shutter:close=0.0 schema defaults. Schema defaults alone are NOT a runtime measurement or proof every stored pixel has zero blur; renderer postprocessing can differ.",
+    "installed_camera_API": "set_shutter_properties/get_shutter_properties manage shutter:open/close. Current direct collector does not set or record them.",
+    "limitations": "No actual blur kernel, focus calibration, image blur strength or camera shutter state was measured. No claim that real hardware lacks these effects; no hardware question asked. Native sensor config remains unchanged."
+  },
+  "decision": "NO_EXECUTABLE_CALIBRATED_BLUR_DEPTH_CONTRACT_FROM_CURRENT_RECORDS; stop this input-premise branch before implementation. Not a model performance failure, not proof blur methods cannot work.",
+  "fit": 0,
+  "new_dispatch": 0,
+  "physics": 0,
+  "navigation": 0,
+  "image_scoring": 0,
+  "model_download": false,
+  "scope_question_reply_received": false,
+  "old_budgets_unchanged": true,
+  "latest_scientific_entry_unchanged": "execution_next_entry_v105.json",
+  "direct_evidence_sha256": {
+    "experiments/camera_exposure_contract_20261015_v1/exposure_contract.py": "dfb0e0ff51d35a682b2ad4b16338f15fbb5a3e608eedda622692a2a5c9b2a421",
+    "experiments/user_fov_position_only_20261015_v1/four_camera.py": "5933e8ff37dc7375e3c19886f2d6adb214feb6aac4d580ed198af3ca114685f8",
+    "experiments/contact_boundary_source_20261016_v1/collect.py": "ec18c660a3628c970cbeafc0825921fc19eb9871ec5bea86d2dc7da1b76f5857",
+    "experiments/contact_boundary_source_20261016_v1/e0_recovery_run/stage_root_initial.usda": "d9b3064ae9b5ea98be7f07ca2ed510e9c257472c84c092380b3e2cda3119015d",
+    "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/exts/isaacsim.sensors.camera/isaacsim/sensors/camera/camera.py": "0780286d6882527500062200f986a97ea8c705fcd94211b9dae37dfac12023b4",
+    "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310/bin/usd/usdGeom/resources/usdGeom/schema.usda": "eb2dd0e2959127afe1d51af40aac2773acdda12c8f88199187c33efa49b63e01"
+  },
+  "near_light_followup": {
+    "updated_utc": "2026-10-16T20:26:16.725736+00:00",
+    "heartbeat_utc": "2026-10-16T20:23:58.519Z",
+    "kind": "bounded_readonly_near_light_input_preflight",
+    "mechanisms_examined": [
+      "Calibrated or semi-calibrated near-point-light photometric stereo"
+    ],
+    "primary_sources": [
+      {
+        "title": "LED-based Photometric Stereo: Modeling, Calibration and Numerical Solution",
+        "url": "https://cvg.cit.tum.de/_media/spezial/bib/jmiv_leds.pdf",
+        "authors": "Queau, Durix, Wu, Cremers, Lauze, Durou",
+        "locations": "sections1-2; equations1.3,2.1; lighting/calibration acquisition",
+        "finding": "Independent images under varying known near lights permit jointly constraining albedo/normal/depth through distance-dependent illumination. Unknown spatial albedo cannot simply be ignored when reading brightness as range."
+      },
+      {
+        "title": "Official near_ps implementation README",
+        "url": "https://github.com/yqueau/near_ps",
+        "locations": "Introduction, Datasets and Inputs",
+        "finding": "A still calibrated pinhole camera observes a still scene under8differentnearLEDs; required image stack and source positions. README explicitly says all8lights-on image is not used and JPG visualization images should not be used for PS; ambient image supports subtraction. Semi-calibration estimates light intensities, does not create absent per-light observations."
+      }
+    ],
+    "candidate_contract_not_admitted": {
+      "inputs": "Same-eye RGB under multiple independently identified illumination states, K and metric source geometry plus radiometric model; exposure/BRDF/shadows must satisfy the chosen model.",
+      "constraint_and_scale": "Near-light irradiance contains inverse-square attenuation and normal/source geometry. Distinct light-state intensity ratios can remove common albedo and constrain distance; scale comes from calibrated metric light positions, not from an uncalibrated RGB brightness magnitude. Existing encoder/K can transform coordinate frames but does not manufacture illumination diversity.",
+      "difference": "Physical intensity response under varied lights is distinct from stereo/temporal feature correspondence or unconstrained RGB-density blending. It is not achieved by substituting a network/descriptor.",
+      "implementation_if_supported": "Separate per-eye illumination-conditioned photometric image-formation and source adapter; none implemented. No dataset/GT light/material labels fed into prediction.",
+      "missing_current_input": "No separately exposed per-light states or ambient-only/reference stack; current source is a fixed combined illumination profile. Four camera views and RGBchannels are not independent light switches. Camera motion alone does not change incident illumination on a static Lambertian surface when world-fixed lights and scene remain fixed; viewpoint-dependent reflectance adds unknowns rather than supplying the required calibrated stack.",
+      "coverage_and_stop": "Unknown albedo/normal/BRDF, cast shadows, saturation, visibility changes and missing light states remain unqualified; all complete target categories/occlusion boundaries would remain in any future gate. Do not vary lights/scene/cameras to make the current-input route work; stop before implementation under the frozen conditions."
+    },
+    "local_evidence": {
+      "lighting_source": "install_fixed_camera_fill creates3SphereLights once in world coordinates computed from episode start/goal; each intensity10000 and radius.5. These are extended spherical lights, not the paper point-LED calibration.",
+      "runtime_source": "SunLightDistantLight intensity1000 plus fixed fill installed at initialization. No per-light acquisition switching in direct collector. The checked source traces fixed-profile authoring; not a calibrated radiometric model of full renderer shadows/interreflections/tonemapping.",
+      "saved_root": "Contains SunLight intensity1000 and3FixedCameraFill prims intensity10000 each; saved stage identity declares fixed_camera_fill_v1. No light-state image stack in the collector contract.",
+      "interpretation_limits": "No RGB values, material/albedo labels, depth, geometry scores, light-rank numbers or point-light approximations evaluated. Presence of fixed lights is not proof every pixel follows a simple Lambertian law. No assertion about physical robot lighting beyond supplied inputs."
+    },
+    "decision": "NO_EXECUTABLE_NEAR_LIGHT_PHOTOMETRIC_STEREO_CONTRACT_FOR_CURRENT_FIXED_ILLUMINATION_INPUTS; branch stopped before implementation, not a paper performance failure or all-monocular impossibility result.",
+    "fit": 0,
+    "physics": 0,
+    "new_prediction_or_scoring": 0,
+    "navigation": 0,
+    "downloads_or_installs": false,
+    "new_dispatch": 0,
+    "scope_reply_received": false,
+    "old_budgets_unchanged": true,
+    "next_action": "近场光度立体当前输入前提已核清并关闭，不重复检查固定灯光、模糊metadata、机体扫掠或旧oracle，不修改灯光/曝光或用GT材料生成新观测。范围选择问题仍待用户回答，不重复询问、不执行历史FoundationStereo诊断，也不将时间经过视为同意。若明确允许，则按已准备的封存输出分层覆盖/耗时只读提案完成有据修复决定；不推理/训练/导航/重开旧预算。未答或保留原范围时，仅对真实可用四路独立单目输入内的一个具体未重复测量缺口做有界原始来源研究，最多两个机制；没有真实输入或具体可反证合同就明确未形成新路线，不强跑、不宣布整体完成。",
+    "direct_evidence_sha256": {
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py": "e66fd32df6fc7bd2abe4e691bfd2d3eda51fd576c66e31468d3c30804c2a1898",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py": "72266e68bced65f81e41dbe96d99a806e4f674b13c9ae7db563016097d8a29f7",
+      "experiments/contact_boundary_source_20261016_v1/collect.py": "ec18c660a3628c970cbeafc0825921fc19eb9871ec5bea86d2dc7da1b76f5857",
+      "experiments/contact_boundary_source_20261016_v1/e0_recovery_run/stage_root_initial.usda": "d9b3064ae9b5ea98be7f07ca2ed510e9c257472c84c092380b3e2cda3119015d",
+      "experiments/contact_boundary_source_20261016_v1/e0_recovery_run/stage_identity.json": "fb355c9281aca5679e90a9c38942a1b0016edbd13039143b2de2e959da6d1513"
+    }
+  }
+}

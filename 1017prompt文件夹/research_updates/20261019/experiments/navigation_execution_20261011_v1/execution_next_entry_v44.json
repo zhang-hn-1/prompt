@@ -1,0 +1,32 @@
+{
+  "stage": "memory_conflict_rejected_current_speed_e1_pair_running",
+  "updated_utc": "2026-10-12T18:25:42.879590+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/execution_next_entry_v43.json",
+  "memory_result": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/dual_eye_memory_conflict_20261013_v1/final_result.json",
+  "memory_budget": {
+    "cap": 4,
+    "used": 0,
+    "unattempted_closed": 4,
+    "fit": 0
+  },
+  "experiment": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_speed_yaw_target_20261013_v1",
+  "ledger": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_speed_yaw_target_20261013_v1/ledger.json",
+  "current_budget": {
+    "status": "running",
+    "cap": 2,
+    "used": 1,
+    "recovery_used": 0,
+    "fit": 0,
+    "parent_pid": 1079769,
+    "groups": [
+      {
+        "arm": "baseline_e1",
+        "state": "reserved",
+        "utc": "2026-10-12T18:24:53.633561+00:00"
+      }
+    ]
+  },
+  "next": "Supervise existing baseline/candidate process; no duplicate dispatch. Audit effect and actual termination then show depth/maps.",
+  "reliable_navigation": false,
+  "learning_navigation_increment": false
+}

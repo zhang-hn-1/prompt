@@ -1,0 +1,66 @@
+{
+  "version": 94,
+  "created_utc": "2026-10-15T16:39:48.719349+00:00",
+  "root": "experiments/accepted_four_camera_geometry_20261016_v1",
+  "status": "eight_pose_geometry_complete_source_training_not_admitted",
+  "geometry": {
+    "CAD_fraction_ranges": {
+      "front_left": [
+        0.12354166666666666,
+        0.12430989583333334
+      ],
+      "front_right": [
+        0.12349934895833334,
+        0.12447591145833334
+      ],
+      "rear_left": [
+        0.12338216145833333,
+        0.12435546875
+      ],
+      "rear_right": [
+        0.12349934895833334,
+        0.12424479166666667
+      ]
+    },
+    "ring_usable": 1722,
+    "ring_denominator": 3600,
+    "GT_visible_grid_instances": {
+      "front_union": 519,
+      "rear_union": 252,
+      "overlap": 0,
+      "all_union": 771,
+      "rear_new": 252,
+      "union_near_reference": 771,
+      "union_far_reference": 0
+    }
+  },
+  "corrected_contact_target_oracle": {
+    "projection_correct": 693,
+    "projection_denominator": 693,
+    "target_recovered": 750,
+    "target_denominator": 771,
+    "recall": 0.9727626459143969,
+    "cell_position_p90_m": 0.1,
+    "pixel_position_p90_m": 0.011354581042342115,
+    "actual_RGB_detector": false,
+    "grounded_objects": 71,
+    "suspended_objects": 0,
+    "full_sequence": false,
+    "pose_source": "Renderer camera pose, oracle only",
+    "floor": "Disclosed true floor z=0 prior; current floor pixels only, no full floor asset certification"
+  },
+  "initial_oracle_invalid": "initial_missing_obstacle_witness/; original99.61% not qualified result",
+  "review": "P1 separate obstacle witness and P2 stale CAD metadata fixed; final independent bounded review clean",
+  "next_executable": "Implement the four-camera full-trajectory recording adapter using the existing native acquisition and supervision contract; freeze independent source target, actual RGB boundary model and grouped data coverage before any fit. Register at most four physical runs total for the independent source candidate including necessary later navigation controls; do not reuse closed preview or rejected model budgets. Start with the smallest complete acquisitions that can establish missing input and label domains.",
+  "physics": 0,
+  "fit": 0,
+  "model": 0,
+  "navigation": 0,
+  "all_CPU_sessions_finished": true,
+  "new_experiment_running": false,
+  "original_project_read_only": true,
+  "old_budgets_closed": true,
+  "automation_status": "ACTIVE",
+  "overall_navigation_complete": false,
+  "learned_navigation_increment": false
+}

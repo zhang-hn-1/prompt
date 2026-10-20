@@ -1,0 +1,52 @@
+{
+  "version": 107,
+  "created_utc": "2026-10-17T06:52:41.726830+00:00",
+  "status": "superseded_by_completed_P0_v108",
+  "task_list": "/home/an/Documents/ChatGPT/球型机器人导航/docs/superpowers/plans/2026-10-17-navigation-memory-task-list.md",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1",
+  "protocol": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/protocol.json",
+  "navigation_protocol": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation_protocol.json",
+  "result": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/e0_result.json",
+  "source_method": "archived SGBM parameters, current K/B, all4signed outputs; new weak conditional protocol",
+  "E0_complete_110": true,
+  "E0_union": {
+    "predicted": 2038,
+    "target": 11652,
+    "correct": 1800,
+    "covered": 2665,
+    "precision": 0.8832188420019627,
+    "recall": 0.2287161002403021
+  },
+  "E0_nonempty_frames": 104,
+  "E0_risk_points": 101084,
+  "E0_generation_P50_P90_max_s": [
+    2.7867029799963348,
+    2.835760197043419,
+    3.0524931349791586
+  ],
+  "old_strict_source_admitted": false,
+  "actual_navigation": {
+    "status": "running",
+    "start_utc": "2026-10-17T06:51:40.172530+00:00",
+    "parent_pid": 3720822,
+    "child_pid": 3720823,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "next_action": "Read execution_next_entry_v108.json; previous E1 process completed, do not relaunch.",
+  "next_action_if_failure": "Inspect exception and actual terminal; only1 reserved implementation/environment recovery, no science threshold tuning.",
+  "navigation_status_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation_status.json",
+  "navigation_ledger": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation_ledger.json",
+  "physics_used": 1,
+  "physics_cap": 1,
+  "recovery_used": 0,
+  "recovery_cap": 1,
+  "new_fit": 0,
+  "old_budgets_reopened": false,
+  "overall_complete": false,
+  "notification": "Latest task routine quiet; notify completed clear stage, necessary external blockers, or unrecoverable actual failure.",
+  "completed_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v108.json"
+}

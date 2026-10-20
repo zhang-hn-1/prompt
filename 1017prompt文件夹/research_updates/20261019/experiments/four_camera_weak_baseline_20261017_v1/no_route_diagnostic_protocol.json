@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-10-17T07:02:40.513484+00:00",
+  "dispatch_cap": 1,
+  "recovery_cap": 1,
+  "physics": 0,
+  "fit": 0,
+  "selection": "first contiguous50 controlrows after6s with zero request and no successful plan; no alternative event if none",
+  "three_maps": [
+    "actual risk",
+    "GT remove-only false risk to unknown",
+    "GT full static bodyband"
+  ],
+  "gates": "cause evidence only; no success/new controller/source admission",
+  "source_sha256": "fc0896f5466153ec1f6420b3879c7ca56e677164c87512b4b95ca863753c7374"
+}

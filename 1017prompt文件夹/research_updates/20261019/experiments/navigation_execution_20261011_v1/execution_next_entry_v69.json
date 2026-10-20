@@ -1,0 +1,38 @@
+{
+  "stage": "pretrained_stereo_official_weight_resume_running",
+  "updated_utc": "2026-10-13T16:44:36.219858+00:00",
+  "parent_entry": "execution_next_entry_v68.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/pretrained_stereo_bev_20261013_v1",
+  "summary": "v69原官方权重下载exec78210退出143，566MiB部分文件完整保留，不是模型性能失败/科学恢复。唯一续传由durable supervisor启动exec52179/host2536188parent2536191child，timeout3600s，获取尝试used2/cap2，不重复下载。官方源码和配置不换；模型与完整7组BEV生成/评分代码已准备，但权重未完整，尚未推理/GT评分/物理。",
+  "next_action": "首先核现有weight_download_resume_status.json和进程2536188/2536191，接续exec52179不重复派发；若中断/超时记录外部获取未完成，不当科学拒绝，不继续无限获取重试。正常完成weight_identity.json后SHA校验，严格完整checkpoint状态加载及torchhub本地官方DINO架构（无预训练初始化下载；timm initializer不加载最终会被strict checkpoint覆盖的额外权重），固定adapter源码。GPU一次完整双向推理接口核identity/shape/finite/显存/同步耗时；只有可运行才冻结最终source/inputs与完整BEV指标后启动generate.py。GT-only score.py和bev_score.py必须在prediction_seal之后，BEV左可见有限.5–3m/CAD未遮挡bodyband目标，空间地面错误排除真障碍重叠，像素真地面另报；原16阻塞来源/完整1267对及6300map、长期偏离/逐帧大错误完整检查。既有候选/门槛不救分。所有开发序列非泛化，无GT在线/未知free。fit0physical0/science_recovery0。",
+  "download_status": {
+    "status": "running",
+    "start_utc": "2026-10-13T16:39:10.377253+00:00",
+    "parent_pid": 2536188,
+    "child_pid": 2536191,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "partial_bytes": 696254464,
+  "budget": {
+    "download_used": 2,
+    "download_cap": 2,
+    "fit": 0,
+    "physical": 0,
+    "science_recovery": 0,
+    "launch_admitted": false
+  },
+  "processes": {
+    "weight_resume_exec": 52179,
+    "host_parent": 2536188,
+    "host_child": 2536191,
+    "no_running_physics": true
+  },
+  "stop_reason": "实际官方外部权重未完整，续传运行中；依赖执行与源码准备不算科学性能，等待现有获取条件，不重复旧回放。",
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

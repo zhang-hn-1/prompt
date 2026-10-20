@@ -1,0 +1,25 @@
+{
+  "cap": 1,
+  "used": 1,
+  "recovery_cap": 1,
+  "recovery_used": 0,
+  "status": "finished",
+  "parent_pid": 3713364,
+  "utc": "2026-10-17T06:45:51.175100+00:00",
+  "old_budgets_reopened": false,
+  "execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T06:45:51.175273+00:00",
+    "parent_pid": 3713364,
+    "child_pid": 3713366,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-17T06:51:12.716485+00:00"
+  },
+  "closed_utc": "2026-10-17T07:21:53.138006+00:00",
+  "remaining_recovery_closed": true,
+  "scientific_outcome": "complete_E0_prediction"
+}

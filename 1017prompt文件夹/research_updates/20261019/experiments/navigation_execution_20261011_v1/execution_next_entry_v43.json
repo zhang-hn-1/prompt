@@ -1,0 +1,160 @@
+{
+  "stage": "nohit_semantics_validity_model_and_anchor_closed",
+  "updated_utc": "2026-10-12T17:25:03.756398+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v42.json",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/nohit_validity_and_anchor_results_20261013.md",
+  "current_results": {
+    "viewpoint": {
+      "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1",
+      "actual90s": "timeout_no_contact",
+      "remaining_m": 5.560068218309853,
+      "net_progress_m": 3.339931590955283,
+      "extra_net_progress_vs_height_control_m": 2.6521141174723795,
+      "depth_p90_m": 0.19897825717926027,
+      "retain": false,
+      "budget": {
+        "cap": 3,
+        "used": 1,
+        "unattempted_closed": 2,
+        "remaining": 0,
+        "recovery_used": 0,
+        "fit": 0
+      },
+      "independent_closure": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1/independent_closure.json"
+    },
+    "ground_ambiguity": {
+      "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ground_ambiguity_source_20261012_v1",
+      "complete_saved_pairs": 181,
+      "removed_pixels": 1145,
+      "depth_p90_m": 0.19851109981536866,
+      "obstacle_retention": 0.9999745834407485,
+      "source_entry_qualified": false,
+      "actual_runs": 0,
+      "fit": 0,
+      "independent_review": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ground_ambiguity_source_20261012_v1/independent_review.json"
+    }
+  },
+  "sealed": {
+    "viewpoint_confirmation_navigation_20261012_v1": {
+      "verified_identities": 5759,
+      "seal_sha256": "f3bd6d47717a6b865415dd387f90a1babcfb87bba63d4ef2accf2a94a35c5bb4"
+    },
+    "ground_ambiguity_source_20261012_v1": {
+      "verified_identities": 200,
+      "seal_sha256": "abb85afcc8cb03fd900b707ed5ce1349ef2ede4830e9bcf8bbbe921ecd915680"
+    }
+  },
+  "process_state": {
+    "active_experiments": false,
+    "host_probe_pids_absent": [
+      989065,
+      989070
+    ],
+    "gpu_session7701": "exited0",
+    "cpu_sessions45519_34732_47959_28603": "exited0"
+  },
+  "next_action": "Implement a distinct measurement-conflict memory consumer in existing framework only after targeted comparison against old closed reobservation/ray/compatibility branches proves novelty. Use positive available current finite binocular surface ranges, native pose and current CAD to test stale persistent-point reprojection/range contradictions; keep current/recent10s risk and no available/nohit/compatible observations cannot clear. Any downgraded historical risk remains unknown, never free. Do not reuse rejected nohit/finite-error classifiers or alter2epoch/0.1m gates to rescue. Freeze one bounded protocol before implementation; saved same-input whole E1 replay with raw actual identity and scoring-only truth must show zero retraction of real supported risks, source+pose geometry available and actual false-risk correction before new cap<=4 actual same-version E1control/candidate90s. Fail replay→reject independently and choose distinct mechanism without rescanning closed knobs. Reliable whole3scenario navigation and learning increment remain required; report prediction/truth/maps/coverage and appropriate scope.",
+  "authority": "User2026-10-12 autonomy covers reversible local research/implementation/bounded checks and simulation; no routine design/feasibility approval pending.",
+  "limits": [
+    "Extra progress is same-scene development historical comparison with differing RGB; no fullcausal or independent generalization.",
+    "Viewpoint failed arrival and depth gates; ground source failed depth. Neither a reliable navigation solution.",
+    "Independent confidence objective is not command ranking; old153memory/30holdout coverage_unassessed and old2/30 data fit0 remain closed."
+  ],
+  "completion": {
+    "reliable_navigation": false,
+    "learning_navigation_increment": false,
+    "whole_mission_complete": false,
+    "research_evidence_package": "previously delivered plus current verified supplements",
+    "cross_machine_runtime": "unverified"
+  },
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "prompt_sha256": "fc231c1a56616ec352618cd9203ef2bb58e248b7658dbff98dcfe6981bac91af",
+    "latest_entry_bound": true,
+    "schedule": "FREQ=HOURLY;INTERVAL=1",
+    "note": "Existing hourly automation prompt updated and read back latestv43."
+  },
+  "stop_reason": "Substantive stage completed: installed GPU semantics probe, independently qualified single validity fit rejected for unsafe real-obstacle loss, full900-action E0/E1 map counterfactuals show little endpoint change, then different current-anchor calibration implemented/sealed and unavailable across543epochs. No active process or permission blocker. Further memory consumer remains next; whole project not complete.",
+  "map_truth_audit": {
+    "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_map_truth_audit_20261012_v1",
+    "final_hazards": 145,
+    "false_spatial_cells_over_010m": 16,
+    "accepted_point_error_p90_m": 0.2641646243264807,
+    "truth_pose_stereo_error_p90_m": 0.2435261842731262,
+    "native_registration_p90_m": 0.05443371009462157,
+    "physical_runs": 0,
+    "fit": 0
+  },
+  "calibration_stage": {
+    "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1",
+    "fresh_data_actual": 2,
+    "budget": {
+      "cap": 4,
+      "used": 2,
+      "remaining_closed": 2,
+      "remaining": 0,
+      "fit": 1,
+      "recovery": 0
+    },
+    "H_E0_E1_label_fraction": [
+      0.7727926958,
+      0.99162224797,
+      0.747025438
+    ],
+    "E0_source_p90_before_after_m": [
+      0.42673126459,
+      0.42665174007
+    ],
+    "heldout_gate": false,
+    "navigation_increment_run": 0
+  },
+  "competing_stage": {
+    "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_competing_depth_20261013_v1",
+    "fit": 0,
+    "physical": 0,
+    "unused4_closed": true,
+    "E0_p90_before_after_m": [
+      0.42673126459,
+      0.42633724213
+    ],
+    "gate": false,
+    "limitations": "Primary-right patch CAD/std missing; implemented variant negative, not strict variant certificate; no corrected rescoring to rescue"
+  },
+  "current_new_stages": {
+    "nohit": {
+      "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/nohit_surface_validity_20261013_v1",
+      "semantic_probe_pass": true,
+      "cube_depth_m": 1.7500001192,
+      "target": "renderer finite-surface validity not physical free",
+      "E1_nohit_exclusion": 0.9551906138312208,
+      "E1_obstacle_retention": 0.7556498665238648,
+      "E1_map_false_ref_before_after": [
+        30,
+        29
+      ],
+      "gate": false,
+      "budget": {
+        "cap": 4,
+        "used": 1,
+        "fit": 1,
+        "navigation": 0,
+        "unused3_closed": true,
+        "recovery": 0
+      }
+    },
+    "anchor": {
+      "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/safe_start_disparity_anchor_20261013_v1",
+      "calibration_available_all": false,
+      "H_max_anchors": 100,
+      "H_only_count_eligible_IQR_px": 2.2789320075560084,
+      "E0_E1_max_anchors": [
+        0,
+        0
+      ],
+      "fit": 0,
+      "physics": 0,
+      "unused4_closed": true
+    }
+  }
+}

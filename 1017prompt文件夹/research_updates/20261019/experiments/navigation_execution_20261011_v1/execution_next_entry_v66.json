@@ -1,0 +1,25 @@
+{
+  "stage": "no_route_execution_contract_rejected_before_fix",
+  "updated_utc": "2026-10-13T13:43:44.282734+00:00",
+  "parent_entry": "execution_next_entry_v65.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/no_route_execution_contract_20261013_v1",
+  "summary": "v66完整无路执行合同9000物理tick按冻结clip/BankPID/smoother和实际当前反馈逐步exact，否定零请求翻译错误beforephysics，physical0fit0recovery0。候选320无路块1600ticks原请求全部0，main仍非零49ticks至58.98s，59s起1551ticks main完全0但仍走.483246m；aux1600ticks持续补偿范围-.081239至.459332rad。完整物理采样走.626972m与10Hz轨迹.626826m分母不同。现有.5rad/s2主轴坡度导致约.98s消退，零期望bank保留姿态PID，不能当bug或安全停止证明。",
+  "next_action": "下一限定世界累计配准与源测距误差分离资格：v50只做局部中心/航向重置，未证明长期世界配准。先有限核对原native encoder/IMU pose与旧pose候选，完整当前E1两臂原生位姿/同刻渲染相机GT仅评分，分解入图点世界位置误差为相机测距、世界配准及量化；检查长记忆偏离是否来自可修复累计配准。不训练/派物理/在线GT；只有存在新机制和完整证据才冻结当前在线RGB+IMU修正消费者及有界验证，不复活旧ORB/时序/位姿候选或调整封闭门槛。",
+  "budget": {
+    "physical": 0,
+    "fit": 0,
+    "recovery": 0,
+    "status": "closed_before_fix"
+  },
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/no_route_execution_contract_results_20261013.md",
+  "processes": {
+    "running_experiments": [],
+    "collected_exec": [
+      85059
+    ]
+  },
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false,
+  "stop_reason": "完整执行错误假设资格否定，无改动可准入；非导航成功，无资源阻塞。"
+}

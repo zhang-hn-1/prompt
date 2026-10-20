@@ -1,0 +1,6456 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "frame": "frame_000.npz",
+      "time_s": 0.0,
+      "generation_s": 3.024230055976659,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6447,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8607,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 6876,
+          "target_valid": 1002,
+          "risk_points": 214,
+          "conditional_depth_P90_m": 0.19534275531768797
+        },
+        "rear_right": {
+          "target_pixels": 26669,
+          "target_valid": 1042,
+          "risk_points": 223,
+          "conditional_depth_P90_m": 0.38207237720489495
+        }
+      },
+      "union": {
+        "predicted": 23,
+        "target": 159,
+        "correct": 23,
+        "covered": 35,
+        "precision": 1.0,
+        "recall": 0.22012578616352202,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 23,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 23,
+        "target": 159,
+        "correct": 23,
+        "covered": 35,
+        "precision": 1.0,
+        "recall": 0.22012578616352202,
+        "grid_P90_m": 0.10000000000000142
+      }
+    },
+    {
+      "frame": "frame_001.npz",
+      "time_s": 0.4999999888241291,
+      "generation_s": 2.8012713950593024,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6520,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8440,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 8049,
+          "target_valid": 2001,
+          "risk_points": 550,
+          "conditional_depth_P90_m": 0.24183273315429688
+        },
+        "rear_right": {
+          "target_pixels": 27095,
+          "target_valid": 1987,
+          "risk_points": 554,
+          "conditional_depth_P90_m": 0.4250048637390137
+        }
+      },
+      "union": {
+        "predicted": 34,
+        "target": 147,
+        "correct": 26,
+        "covered": 30,
+        "precision": 0.7647058823529411,
+        "recall": 0.20408163265306123,
+        "grid_P90_m": 0.22360679774998024
+      },
+      "suspended": {
+        "predicted": 34,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 34,
+        "target": 147,
+        "correct": 26,
+        "covered": 30,
+        "precision": 0.7647058823529411,
+        "recall": 0.20408163265306123,
+        "grid_P90_m": 0.22360679774998024
+      }
+    },
+    {
+      "frame": "frame_002.npz",
+      "time_s": 0.9999999776482582,
+      "generation_s": 2.7904780299868435,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6471,
+          "target_valid": 0,
+          "risk_points": 1,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8368,
+          "target_valid": 0,
+          "risk_points": 3,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 8384,
+          "target_valid": 2328,
+          "risk_points": 553,
+          "conditional_depth_P90_m": 0.2826602458953858
+        },
+        "rear_right": {
+          "target_pixels": 27427,
+          "target_valid": 2362,
+          "risk_points": 564,
+          "conditional_depth_P90_m": 0.3898646831512452
+        }
+      },
+      "union": {
+        "predicted": 33,
+        "target": 148,
+        "correct": 21,
+        "covered": 31,
+        "precision": 0.6363636363636364,
+        "recall": 0.20945945945945946,
+        "grid_P90_m": 0.28284271247462206
+      },
+      "suspended": {
+        "predicted": 33,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 33,
+        "target": 148,
+        "correct": 21,
+        "covered": 31,
+        "precision": 0.6363636363636364,
+        "recall": 0.20945945945945946,
+        "grid_P90_m": 0.28284271247462206
+      }
+    },
+    {
+      "frame": "frame_003.npz",
+      "time_s": 1.4999999664723873,
+      "generation_s": 2.7938648760318756,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6401,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8384,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 8068,
+          "target_valid": 1828,
+          "risk_points": 426,
+          "conditional_depth_P90_m": 0.21617937088012693
+        },
+        "rear_right": {
+          "target_pixels": 27155,
+          "target_valid": 1838,
+          "risk_points": 427,
+          "conditional_depth_P90_m": 0.3749299764633178
+        }
+      },
+      "union": {
+        "predicted": 28,
+        "target": 148,
+        "correct": 23,
+        "covered": 31,
+        "precision": 0.8214285714285714,
+        "recall": 0.20945945945945946,
+        "grid_P90_m": 0.20708203932499378
+      },
+      "suspended": {
+        "predicted": 28,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 28,
+        "target": 148,
+        "correct": 23,
+        "covered": 31,
+        "precision": 0.8214285714285714,
+        "recall": 0.20945945945945946,
+        "grid_P90_m": 0.20708203932499378
+      }
+    },
+    {
+      "frame": "frame_004.npz",
+      "time_s": 1.9999999552965164,
+      "generation_s": 2.776108382968232,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6472,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8491,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7911,
+          "target_valid": 2089,
+          "risk_points": 515,
+          "conditional_depth_P90_m": 0.24616575241088867
+        },
+        "rear_right": {
+          "target_pixels": 26971,
+          "target_valid": 2007,
+          "risk_points": 491,
+          "conditional_depth_P90_m": 0.37259879112243655
+        }
+      },
+      "union": {
+        "predicted": 28,
+        "target": 150,
+        "correct": 23,
+        "covered": 34,
+        "precision": 0.8214285714285714,
+        "recall": 0.22666666666666666,
+        "grid_P90_m": 0.22360679774997358
+      },
+      "suspended": {
+        "predicted": 28,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 28,
+        "target": 150,
+        "correct": 23,
+        "covered": 34,
+        "precision": 0.8214285714285714,
+        "recall": 0.22666666666666666,
+        "grid_P90_m": 0.22360679774997358
+      }
+    },
+    {
+      "frame": "frame_005.npz",
+      "time_s": 2.4999999441206455,
+      "generation_s": 2.8139412100426853,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6537,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8574,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7845,
+          "target_valid": 1900,
+          "risk_points": 482,
+          "conditional_depth_P90_m": 0.24614131450653076
+        },
+        "rear_right": {
+          "target_pixels": 26886,
+          "target_valid": 2059,
+          "risk_points": 522,
+          "conditional_depth_P90_m": 0.3870433807373047
+        }
+      },
+      "union": {
+        "predicted": 27,
+        "target": 146,
+        "correct": 23,
+        "covered": 28,
+        "precision": 0.8518518518518519,
+        "recall": 0.1917808219178082,
+        "grid_P90_m": 0.19999999999999857
+      },
+      "suspended": {
+        "predicted": 27,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 27,
+        "target": 146,
+        "correct": 23,
+        "covered": 28,
+        "precision": 0.8518518518518519,
+        "recall": 0.1917808219178082,
+        "grid_P90_m": 0.19999999999999857
+      }
+    },
+    {
+      "frame": "frame_006.npz",
+      "time_s": 2.9999999329447746,
+      "generation_s": 2.7536338600330055,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6590,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8632,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7695,
+          "target_valid": 1265,
+          "risk_points": 328,
+          "conditional_depth_P90_m": 0.24886145591735842
+        },
+        "rear_right": {
+          "target_pixels": 26782,
+          "target_valid": 1309,
+          "risk_points": 341,
+          "conditional_depth_P90_m": 0.4345425605773926
+        }
+      },
+      "union": {
+        "predicted": 23,
+        "target": 145,
+        "correct": 20,
+        "covered": 27,
+        "precision": 0.8695652173913043,
+        "recall": 0.18620689655172415,
+        "grid_P90_m": 0.18828427124745895
+      },
+      "suspended": {
+        "predicted": 23,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 23,
+        "target": 145,
+        "correct": 20,
+        "covered": 27,
+        "precision": 0.8695652173913043,
+        "recall": 0.18620689655172415,
+        "grid_P90_m": 0.18828427124745895
+      }
+    },
+    {
+      "frame": "frame_007.npz",
+      "time_s": 3.4999999217689037,
+      "generation_s": 2.7769121499732137,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6642,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8707,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7567,
+          "target_valid": 1649,
+          "risk_points": 428,
+          "conditional_depth_P90_m": 0.2307133197784424
+        },
+        "rear_right": {
+          "target_pixels": 26581,
+          "target_valid": 1549,
+          "risk_points": 401,
+          "conditional_depth_P90_m": 0.38524622917175294
+        }
+      },
+      "union": {
+        "predicted": 21,
+        "target": 145,
+        "correct": 19,
+        "covered": 24,
+        "precision": 0.9047619047619048,
+        "recall": 0.16551724137931034,
+        "grid_P90_m": 0.14142135623731153
+      },
+      "suspended": {
+        "predicted": 21,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 21,
+        "target": 145,
+        "correct": 19,
+        "covered": 24,
+        "precision": 0.9047619047619048,
+        "recall": 0.16551724137931034,
+        "grid_P90_m": 0.14142135623731153
+      }
+    },
+    {
+      "frame": "frame_008.npz",
+      "time_s": 3.999999910593033,
+      "generation_s": 2.7988455819431692,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6703,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8778,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7566,
+          "target_valid": 1714,
+          "risk_points": 437,
+          "conditional_depth_P90_m": 0.22819793224334717
+        },
+        "rear_right": {
+          "target_pixels": 26465,
+          "target_valid": 1792,
+          "risk_points": 447,
+          "conditional_depth_P90_m": 0.3978048086166382
+        }
+      },
+      "union": {
+        "predicted": 26,
+        "target": 146,
+        "correct": 23,
+        "covered": 29,
+        "precision": 0.8846153846153846,
+        "recall": 0.19863013698630136,
+        "grid_P90_m": 0.17071067811865365
+      },
+      "suspended": {
+        "predicted": 26,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 26,
+        "target": 146,
+        "correct": 23,
+        "covered": 29,
+        "precision": 0.8846153846153846,
+        "recall": 0.19863013698630136,
+        "grid_P90_m": 0.17071067811865365
+      }
+    },
+    {
+      "frame": "frame_009.npz",
+      "time_s": 4.499999899417162,
+      "generation_s": 2.778810163959861,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6755,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8823,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7442,
+          "target_valid": 1542,
+          "risk_points": 403,
+          "conditional_depth_P90_m": 0.22456188201904298
+        },
+        "rear_right": {
+          "target_pixels": 26405,
+          "target_valid": 1443,
+          "risk_points": 379,
+          "conditional_depth_P90_m": 0.4070878982543945
+        }
+      },
+      "union": {
+        "predicted": 29,
+        "target": 147,
+        "correct": 26,
+        "covered": 29,
+        "precision": 0.896551724137931,
+        "recall": 0.19727891156462585,
+        "grid_P90_m": 0.15313708498984832
+      },
+      "suspended": {
+        "predicted": 29,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 29,
+        "target": 147,
+        "correct": 26,
+        "covered": 29,
+        "precision": 0.896551724137931,
+        "recall": 0.19727891156462585,
+        "grid_P90_m": 0.15313708498984832
+      }
+    },
+    {
+      "frame": "frame_010.npz",
+      "time_s": 4.999999888241291,
+      "generation_s": 2.7834627541014925,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6784,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8880,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7413,
+          "target_valid": 1234,
+          "risk_points": 316,
+          "conditional_depth_P90_m": 0.20066840648651124
+        },
+        "rear_right": {
+          "target_pixels": 26324,
+          "target_valid": 1147,
+          "risk_points": 288,
+          "conditional_depth_P90_m": 0.35649752616882324
+        }
+      },
+      "union": {
+        "predicted": 22,
+        "target": 148,
+        "correct": 21,
+        "covered": 25,
+        "precision": 0.9545454545454546,
+        "recall": 0.16891891891891891,
+        "grid_P90_m": 0.14142135623731103
+      },
+      "suspended": {
+        "predicted": 22,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 22,
+        "target": 148,
+        "correct": 21,
+        "covered": 25,
+        "precision": 0.9545454545454546,
+        "recall": 0.16891891891891891,
+        "grid_P90_m": 0.14142135623731103
+      }
+    },
+    {
+      "frame": "frame_011.npz",
+      "time_s": 5.49999987706542,
+      "generation_s": 2.7867998080328107,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6828,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8912,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7445,
+          "target_valid": 1453,
+          "risk_points": 373,
+          "conditional_depth_P90_m": 0.2701713562011719
+        },
+        "rear_right": {
+          "target_pixels": 26351,
+          "target_valid": 1432,
+          "risk_points": 350,
+          "conditional_depth_P90_m": 0.47600648403167745
+        }
+      },
+      "union": {
+        "predicted": 22,
+        "target": 145,
+        "correct": 20,
+        "covered": 25,
+        "precision": 0.9090909090909091,
+        "recall": 0.1724137931034483,
+        "grid_P90_m": 0.14142135623731128
+      },
+      "suspended": {
+        "predicted": 22,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 22,
+        "target": 145,
+        "correct": 20,
+        "covered": 25,
+        "precision": 0.9090909090909091,
+        "recall": 0.1724137931034483,
+        "grid_P90_m": 0.14142135623731128
+      }
+    },
+    {
+      "frame": "frame_012.npz",
+      "time_s": 5.999999865889549,
+      "generation_s": 2.772021709010005,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6841,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8913,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7374,
+          "target_valid": 1484,
+          "risk_points": 397,
+          "conditional_depth_P90_m": 0.22151567935943606
+        },
+        "rear_right": {
+          "target_pixels": 26359,
+          "target_valid": 1407,
+          "risk_points": 375,
+          "conditional_depth_P90_m": 0.4183372974395752
+        }
+      },
+      "union": {
+        "predicted": 22,
+        "target": 148,
+        "correct": 20,
+        "covered": 24,
+        "precision": 0.9090909090909091,
+        "recall": 0.16216216216216217,
+        "grid_P90_m": 0.14142135623731153
+      },
+      "suspended": {
+        "predicted": 22,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 22,
+        "target": 148,
+        "correct": 20,
+        "covered": 24,
+        "precision": 0.9090909090909091,
+        "recall": 0.16216216216216217,
+        "grid_P90_m": 0.14142135623731153
+      }
+    },
+    {
+      "frame": "frame_013.npz",
+      "time_s": 6.499999854713678,
+      "generation_s": 2.7828240169910714,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6925,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8927,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7665,
+          "target_valid": 1574,
+          "risk_points": 414,
+          "conditional_depth_P90_m": 0.23692240715026855
+        },
+        "rear_right": {
+          "target_pixels": 26526,
+          "target_valid": 1496,
+          "risk_points": 388,
+          "conditional_depth_P90_m": 0.4334373474121094
+        }
+      },
+      "union": {
+        "predicted": 23,
+        "target": 148,
+        "correct": 21,
+        "covered": 27,
+        "precision": 0.9130434782608695,
+        "recall": 0.18243243243243243,
+        "grid_P90_m": 0.14142135623731053
+      },
+      "suspended": {
+        "predicted": 23,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 23,
+        "target": 148,
+        "correct": 21,
+        "covered": 27,
+        "precision": 0.9130434782608695,
+        "recall": 0.18243243243243243,
+        "grid_P90_m": 0.14142135623731053
+      }
+    },
+    {
+      "frame": "frame_014.npz",
+      "time_s": 6.9999998435378075,
+      "generation_s": 2.7782791670178995,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 7295,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 9231,
+          "target_valid": 0,
+          "risk_points": 4,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 7872,
+          "target_valid": 1592,
+          "risk_points": 392,
+          "conditional_depth_P90_m": 0.373235559463501
+        },
+        "rear_right": {
+          "target_pixels": 26639,
+          "target_valid": 1555,
+          "risk_points": 378,
+          "conditional_depth_P90_m": 0.5609735488891602
+        }
+      },
+      "union": {
+        "predicted": 22,
+        "target": 148,
+        "correct": 16,
+        "covered": 20,
+        "precision": 0.7272727272727273,
+        "recall": 0.13513513513513514,
+        "grid_P90_m": 0.7984042962396722
+      },
+      "suspended": {
+        "predicted": 22,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 22,
+        "target": 148,
+        "correct": 16,
+        "covered": 20,
+        "precision": 0.7272727272727273,
+        "recall": 0.13513513513513514,
+        "grid_P90_m": 0.7984042962396722
+      }
+    },
+    {
+      "frame": "frame_015.npz",
+      "time_s": 7.499999832361937,
+      "generation_s": 2.8005529339425266,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 7906,
+          "target_valid": 0,
+          "risk_points": 30,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 9751,
+          "target_valid": 0,
+          "risk_points": 33,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 6360,
+          "target_valid": 1253,
+          "risk_points": 322,
+          "conditional_depth_P90_m": 0.26012420654296875
+        },
+        "rear_right": {
+          "target_pixels": 25263,
+          "target_valid": 1123,
+          "risk_points": 288,
+          "conditional_depth_P90_m": 0.4166069507598877
+        }
+      },
+      "union": {
+        "predicted": 20,
+        "target": 149,
+        "correct": 14,
+        "covered": 18,
+        "precision": 0.7,
+        "recall": 0.12080536912751678,
+        "grid_P90_m": 1.27443466274797
+      },
+      "suspended": {
+        "predicted": 20,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 20,
+        "target": 149,
+        "correct": 14,
+        "covered": 18,
+        "precision": 0.7,
+        "recall": 0.12080536912751678,
+        "grid_P90_m": 1.27443466274797
+      }
+    },
+    {
+      "frame": "frame_016.npz",
+      "time_s": 7.999999821186066,
+      "generation_s": 2.7826437280746177,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 8852,
+          "target_valid": 0,
+          "risk_points": 28,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 10253,
+          "target_valid": 0,
+          "risk_points": 29,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 2049,
+          "target_valid": 1062,
+          "risk_points": 282,
+          "conditional_depth_P90_m": 0.2631495714187622
+        },
+        "rear_right": {
+          "target_pixels": 20440,
+          "target_valid": 995,
+          "risk_points": 256,
+          "conditional_depth_P90_m": 0.4283188343048096
+        }
+      },
+      "union": {
+        "predicted": 26,
+        "target": 140,
+        "correct": 13,
+        "covered": 17,
+        "precision": 0.5,
+        "recall": 0.12142857142857143,
+        "grid_P90_m": 1.3349406395884875
+      },
+      "suspended": {
+        "predicted": 26,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 26,
+        "target": 140,
+        "correct": 13,
+        "covered": 17,
+        "precision": 0.5,
+        "recall": 0.12142857142857143,
+        "grid_P90_m": 1.3349406395884875
+      }
+    },
+    {
+      "frame": "frame_017.npz",
+      "time_s": 8.499999810010195,
+      "generation_s": 2.8009193170582876,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 9550,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 9361,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 2334,
+          "target_valid": 569,
+          "risk_points": 146,
+          "conditional_depth_P90_m": 0.2877377986907959
+        },
+        "rear_right": {
+          "target_pixels": 20317,
+          "target_valid": 535,
+          "risk_points": 135,
+          "conditional_depth_P90_m": 0.41833882331848155
+        }
+      },
+      "union": {
+        "predicted": 11,
+        "target": 145,
+        "correct": 11,
+        "covered": 18,
+        "precision": 1.0,
+        "recall": 0.12413793103448276,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 11,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 11,
+        "target": 145,
+        "correct": 11,
+        "covered": 18,
+        "precision": 1.0,
+        "recall": 0.12413793103448276,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_018.npz",
+      "time_s": 8.999999798834324,
+      "generation_s": 2.7629046010551974,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 10354,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8045,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 3078,
+          "target_valid": 692,
+          "risk_points": 171,
+          "conditional_depth_P90_m": 0.36772000789642334
+        },
+        "rear_right": {
+          "target_pixels": 20467,
+          "target_valid": 659,
+          "risk_points": 152,
+          "conditional_depth_P90_m": 0.49344701766967775
+        }
+      },
+      "union": {
+        "predicted": 13,
+        "target": 148,
+        "correct": 13,
+        "covered": 22,
+        "precision": 1.0,
+        "recall": 0.14864864864864866,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 13,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 13,
+        "target": 148,
+        "correct": 13,
+        "covered": 22,
+        "precision": 1.0,
+        "recall": 0.14864864864864866,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_019.npz",
+      "time_s": 9.499999787658453,
+      "generation_s": 2.7924496449995786,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 11488,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 6826,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 3893,
+          "target_valid": 616,
+          "risk_points": 153,
+          "conditional_depth_P90_m": 0.39455389976501465
+        },
+        "rear_right": {
+          "target_pixels": 20698,
+          "target_valid": 587,
+          "risk_points": 130,
+          "conditional_depth_P90_m": 0.47810635566711424
+        }
+      },
+      "union": {
+        "predicted": 15,
+        "target": 149,
+        "correct": 14,
+        "covered": 28,
+        "precision": 0.9333333333333333,
+        "recall": 0.18791946308724833,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 15,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 15,
+        "target": 149,
+        "correct": 14,
+        "covered": 28,
+        "precision": 0.9333333333333333,
+        "recall": 0.18791946308724833,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_020.npz",
+      "time_s": 9.999999776482582,
+      "generation_s": 2.79437272506766,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 12486,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 4071,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 4610,
+          "target_valid": 28,
+          "risk_points": 5,
+          "conditional_depth_P90_m": 0.38302648067474365
+        },
+        "rear_right": {
+          "target_pixels": 28363,
+          "target_valid": 14,
+          "risk_points": 0,
+          "conditional_depth_P90_m": 0.19284801483154299
+        }
+      },
+      "union": {
+        "predicted": 2,
+        "target": 148,
+        "correct": 2,
+        "covered": 10,
+        "precision": 1.0,
+        "recall": 0.06756756756756757,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 2,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 2,
+        "target": 148,
+        "correct": 2,
+        "covered": 10,
+        "precision": 1.0,
+        "recall": 0.06756756756756757,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_021.npz",
+      "time_s": 10.499999765306711,
+      "generation_s": 2.804057030007243,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 14068,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 1609,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 5096,
+          "target_valid": 251,
+          "risk_points": 57,
+          "conditional_depth_P90_m": 0.37180161476135254
+        },
+        "rear_right": {
+          "target_pixels": 33187,
+          "target_valid": 195,
+          "risk_points": 46,
+          "conditional_depth_P90_m": 0.4184542655944824
+        }
+      },
+      "union": {
+        "predicted": 9,
+        "target": 143,
+        "correct": 9,
+        "covered": 26,
+        "precision": 1.0,
+        "recall": 0.18181818181818182,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 9,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 9,
+        "target": 143,
+        "correct": 9,
+        "covered": 26,
+        "precision": 1.0,
+        "recall": 0.18181818181818182,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_022.npz",
+      "time_s": 10.99999975413084,
+      "generation_s": 2.7845993799855933,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 15650,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 275,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 5382,
+          "target_valid": 62,
+          "risk_points": 18,
+          "conditional_depth_P90_m": 0.2879339694976805
+        },
+        "rear_right": {
+          "target_pixels": 35998,
+          "target_valid": 51,
+          "risk_points": 8,
+          "conditional_depth_P90_m": 0.22922611236572266
+        }
+      },
+      "union": {
+        "predicted": 8,
+        "target": 121,
+        "correct": 7,
+        "covered": 23,
+        "precision": 0.875,
+        "recall": 0.19008264462809918,
+        "grid_P90_m": 0.40360872141221077
+      },
+      "suspended": {
+        "predicted": 8,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 8,
+        "target": 121,
+        "correct": 7,
+        "covered": 23,
+        "precision": 0.875,
+        "recall": 0.19008264462809918,
+        "grid_P90_m": 0.40360872141221077
+      }
+    },
+    {
+      "frame": "frame_023.npz",
+      "time_s": 11.49999974295497,
+      "generation_s": 2.806347678997554,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 17576,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 5360,
+          "target_valid": 89,
+          "risk_points": 17,
+          "conditional_depth_P90_m": 0.281076717376709
+        },
+        "rear_right": {
+          "target_pixels": 37192,
+          "target_valid": 78,
+          "risk_points": 17,
+          "conditional_depth_P90_m": 0.20090484619140622
+        }
+      },
+      "union": {
+        "predicted": 5,
+        "target": 99,
+        "correct": 5,
+        "covered": 23,
+        "precision": 1.0,
+        "recall": 0.23232323232323232,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 5,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 5,
+        "target": 99,
+        "correct": 5,
+        "covered": 23,
+        "precision": 1.0,
+        "recall": 0.23232323232323232,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_024.npz",
+      "time_s": 11.999999731779099,
+      "generation_s": 2.8352517129387707,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 19262,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 4373,
+          "target_valid": 5,
+          "risk_points": 0,
+          "conditional_depth_P90_m": 0.1048013210296631
+        },
+        "rear_right": {
+          "target_pixels": 36277,
+          "target_valid": 9,
+          "risk_points": 0,
+          "conditional_depth_P90_m": 0.10984082221984863
+        }
+      },
+      "union": {
+        "predicted": 0,
+        "target": 86,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      },
+      "suspended": {
+        "predicted": 0,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 0,
+        "target": 86,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      }
+    },
+    {
+      "frame": "frame_025.npz",
+      "time_s": 12.499999720603228,
+      "generation_s": 2.79532824002672,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 19946,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 3193,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 34178,
+          "target_valid": 8,
+          "risk_points": 0,
+          "conditional_depth_P90_m": 1.2565389037132264
+        }
+      },
+      "union": {
+        "predicted": 0,
+        "target": 64,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      },
+      "suspended": {
+        "predicted": 0,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 0,
+        "target": 64,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      }
+    },
+    {
+      "frame": "frame_026.npz",
+      "time_s": 12.999999709427357,
+      "generation_s": 2.770057252026163,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 20824,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 1265,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 32059,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 0,
+        "target": 57,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      },
+      "suspended": {
+        "predicted": 0,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 0,
+        "target": 57,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      }
+    },
+    {
+      "frame": "frame_027.npz",
+      "time_s": 13.499999698251486,
+      "generation_s": 2.855736137018539,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 21338,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 31469,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 0,
+        "target": 49,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      },
+      "suspended": {
+        "predicted": 0,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 0,
+        "target": 49,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      }
+    },
+    {
+      "frame": "frame_028.npz",
+      "time_s": 13.999999687075615,
+      "generation_s": 2.794014164013788,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 21355,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 30566,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 0,
+        "target": 45,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      },
+      "suspended": {
+        "predicted": 0,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 0,
+        "target": 45,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      }
+    },
+    {
+      "frame": "frame_029.npz",
+      "time_s": 14.499999675899744,
+      "generation_s": 2.775476129958406,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 21162,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 416,
+          "target_valid": 172,
+          "risk_points": 64,
+          "conditional_depth_P90_m": 0.057941973209381104
+        },
+        "rear_right": {
+          "target_pixels": 29396,
+          "target_valid": 171,
+          "risk_points": 57,
+          "conditional_depth_P90_m": 0.23660504817962646
+        }
+      },
+      "union": {
+        "predicted": 2,
+        "target": 51,
+        "correct": 2,
+        "covered": 7,
+        "precision": 1.0,
+        "recall": 0.13725490196078433,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 2,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 2,
+        "target": 51,
+        "correct": 2,
+        "covered": 7,
+        "precision": 1.0,
+        "recall": 0.13725490196078433,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_030.npz",
+      "time_s": 14.999999664723873,
+      "generation_s": 2.7821956439875066,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 20711,
+          "target_valid": 0,
+          "risk_points": 1,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 1583,
+          "target_valid": 920,
+          "risk_points": 252,
+          "conditional_depth_P90_m": 0.14997254610061644
+        },
+        "rear_right": {
+          "target_pixels": 27608,
+          "target_valid": 874,
+          "risk_points": 248,
+          "conditional_depth_P90_m": 0.3103292346000671
+        }
+      },
+      "union": {
+        "predicted": 5,
+        "target": 54,
+        "correct": 4,
+        "covered": 9,
+        "precision": 0.8,
+        "recall": 0.16666666666666666,
+        "grid_P90_m": 1.1272976536833532
+      },
+      "suspended": {
+        "predicted": 5,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 5,
+        "target": 54,
+        "correct": 4,
+        "covered": 9,
+        "precision": 0.8,
+        "recall": 0.16666666666666666,
+        "grid_P90_m": 1.1272976536833532
+      }
+    },
+    {
+      "frame": "frame_031.npz",
+      "time_s": 15.499999653548002,
+      "generation_s": 2.786330132978037,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 19861,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 2615,
+          "target_valid": 1281,
+          "risk_points": 336,
+          "conditional_depth_P90_m": 0.2145993709564209
+        },
+        "rear_right": {
+          "target_pixels": 24648,
+          "target_valid": 1205,
+          "risk_points": 321,
+          "conditional_depth_P90_m": 0.3742886543273926
+        }
+      },
+      "union": {
+        "predicted": 6,
+        "target": 55,
+        "correct": 6,
+        "covered": 10,
+        "precision": 1.0,
+        "recall": 0.18181818181818182,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 6,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 6,
+        "target": 55,
+        "correct": 6,
+        "covered": 10,
+        "precision": 1.0,
+        "recall": 0.18181818181818182,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_032.npz",
+      "time_s": 15.999999642372131,
+      "generation_s": 2.7831511419499293,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 17986,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 3856,
+          "target_valid": 1700,
+          "risk_points": 462,
+          "conditional_depth_P90_m": 0.23846455812454226
+        },
+        "rear_right": {
+          "target_pixels": 21360,
+          "target_valid": 1610,
+          "risk_points": 438,
+          "conditional_depth_P90_m": 0.35274158716201787
+        }
+      },
+      "union": {
+        "predicted": 7,
+        "target": 55,
+        "correct": 5,
+        "covered": 13,
+        "precision": 0.7142857142857143,
+        "recall": 0.23636363636363636,
+        "grid_P90_m": 1.9508645785123944
+      },
+      "suspended": {
+        "predicted": 7,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 7,
+        "target": 55,
+        "correct": 5,
+        "covered": 13,
+        "precision": 0.7142857142857143,
+        "recall": 0.23636363636363636,
+        "grid_P90_m": 1.9508645785123944
+      }
+    },
+    {
+      "frame": "frame_033.npz",
+      "time_s": 16.49999963119626,
+      "generation_s": 2.807111711939797,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 12526,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 2985,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 5269,
+          "target_valid": 2208,
+          "risk_points": 593,
+          "conditional_depth_P90_m": 0.2927730679512024
+        },
+        "rear_right": {
+          "target_pixels": 19267,
+          "target_valid": 2147,
+          "risk_points": 587,
+          "conditional_depth_P90_m": 0.3928091526031494
+        }
+      },
+      "union": {
+        "predicted": 12,
+        "target": 65,
+        "correct": 12,
+        "covered": 19,
+        "precision": 1.0,
+        "recall": 0.2923076923076923,
+        "grid_P90_m": 0.10000000000000071
+      },
+      "suspended": {
+        "predicted": 12,
+        "target": 12,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 5.4008332619006785
+      },
+      "ground_intersecting": {
+        "predicted": 12,
+        "target": 53,
+        "correct": 12,
+        "covered": 19,
+        "precision": 1.0,
+        "recall": 0.3584905660377358,
+        "grid_P90_m": 0.10000000000000071
+      }
+    },
+    {
+      "frame": "frame_034.npz",
+      "time_s": 16.99999962002039,
+      "generation_s": 2.788530307007022,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 6809,
+          "target_valid": 185,
+          "risk_points": 50,
+          "conditional_depth_P90_m": 0.13230576515197753
+        },
+        "front_right": {
+          "target_pixels": 6810,
+          "target_valid": 191,
+          "risk_points": 48,
+          "conditional_depth_P90_m": 0.12804865837097168
+        },
+        "rear_left": {
+          "target_pixels": 5367,
+          "target_valid": 1835,
+          "risk_points": 475,
+          "conditional_depth_P90_m": 0.22104547023773194
+        },
+        "rear_right": {
+          "target_pixels": 18176,
+          "target_valid": 1741,
+          "risk_points": 436,
+          "conditional_depth_P90_m": 0.31260788440704346
+        }
+      },
+      "union": {
+        "predicted": 24,
+        "target": 80,
+        "correct": 23,
+        "covered": 48,
+        "precision": 0.9583333333333334,
+        "recall": 0.6,
+        "grid_P90_m": 0.07000000000000092
+      },
+      "suspended": {
+        "predicted": 24,
+        "target": 30,
+        "correct": 11,
+        "covered": 29,
+        "precision": 0.4583333333333333,
+        "recall": 0.9666666666666667,
+        "grid_P90_m": 5.37177976533055
+      },
+      "ground_intersecting": {
+        "predicted": 24,
+        "target": 50,
+        "correct": 12,
+        "covered": 19,
+        "precision": 0.5,
+        "recall": 0.38,
+        "grid_P90_m": 5.01387971147983
+      }
+    },
+    {
+      "frame": "frame_035.npz",
+      "time_s": 17.49999960884452,
+      "generation_s": 2.7968818970257416,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 9384,
+          "target_valid": 1673,
+          "risk_points": 414,
+          "conditional_depth_P90_m": 0.2555081844329834
+        },
+        "front_right": {
+          "target_pixels": 9389,
+          "target_valid": 1475,
+          "risk_points": 377,
+          "conditional_depth_P90_m": 0.260258150100708
+        },
+        "rear_left": {
+          "target_pixels": 4030,
+          "target_valid": 1745,
+          "risk_points": 454,
+          "conditional_depth_P90_m": 0.2035532712936402
+        },
+        "rear_right": {
+          "target_pixels": 16761,
+          "target_valid": 1644,
+          "risk_points": 441,
+          "conditional_depth_P90_m": 0.30508625507354736
+        }
+      },
+      "union": {
+        "predicted": 33,
+        "target": 94,
+        "correct": 31,
+        "covered": 59,
+        "precision": 0.9393939393939394,
+        "recall": 0.6276595744680851,
+        "grid_P90_m": 0.08000000000000121
+      },
+      "suspended": {
+        "predicted": 33,
+        "target": 44,
+        "correct": 18,
+        "covered": 37,
+        "precision": 0.5454545454545454,
+        "recall": 0.8409090909090909,
+        "grid_P90_m": 5.299999999999997
+      },
+      "ground_intersecting": {
+        "predicted": 33,
+        "target": 50,
+        "correct": 13,
+        "covered": 22,
+        "precision": 0.3939393939393939,
+        "recall": 0.44,
+        "grid_P90_m": 5.145286622512216
+      }
+    },
+    {
+      "frame": "frame_036.npz",
+      "time_s": 17.999999597668648,
+      "generation_s": 2.788189212908037,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 11181,
+          "target_valid": 3059,
+          "risk_points": 775,
+          "conditional_depth_P90_m": 0.3161814212799072
+        },
+        "front_right": {
+          "target_pixels": 12095,
+          "target_valid": 3076,
+          "risk_points": 771,
+          "conditional_depth_P90_m": 0.3164029121398926
+        },
+        "rear_left": {
+          "target_pixels": 3511,
+          "target_valid": 1736,
+          "risk_points": 460,
+          "conditional_depth_P90_m": 0.25596654415130615
+        },
+        "rear_right": {
+          "target_pixels": 15003,
+          "target_valid": 1683,
+          "risk_points": 449,
+          "conditional_depth_P90_m": 0.3614291429519653
+        }
+      },
+      "union": {
+        "predicted": 38,
+        "target": 110,
+        "correct": 38,
+        "covered": 64,
+        "precision": 1.0,
+        "recall": 0.5818181818181818,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 38,
+        "target": 56,
+        "correct": 28,
+        "covered": 50,
+        "precision": 0.7368421052631579,
+        "recall": 0.8928571428571429,
+        "grid_P90_m": 5.299999999999997
+      },
+      "ground_intersecting": {
+        "predicted": 38,
+        "target": 54,
+        "correct": 10,
+        "covered": 14,
+        "precision": 0.2631578947368421,
+        "recall": 0.25925925925925924,
+        "grid_P90_m": 3.030998812603751
+      }
+    },
+    {
+      "frame": "frame_037.npz",
+      "time_s": 18.499999586492777,
+      "generation_s": 2.7785747019806877,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 12963,
+          "target_valid": 5528,
+          "risk_points": 1439,
+          "conditional_depth_P90_m": 0.34685711860656737
+        },
+        "front_right": {
+          "target_pixels": 14170,
+          "target_valid": 5464,
+          "risk_points": 1429,
+          "conditional_depth_P90_m": 0.3403838396072387
+        },
+        "rear_left": {
+          "target_pixels": 4145,
+          "target_valid": 1528,
+          "risk_points": 423,
+          "conditional_depth_P90_m": 0.27952092885971064
+        },
+        "rear_right": {
+          "target_pixels": 13852,
+          "target_valid": 1465,
+          "risk_points": 411,
+          "conditional_depth_P90_m": 0.3696003675460816
+        }
+      },
+      "union": {
+        "predicted": 58,
+        "target": 128,
+        "correct": 58,
+        "covered": 82,
+        "precision": 1.0,
+        "recall": 0.640625,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 58,
+        "target": 70,
+        "correct": 43,
+        "covered": 62,
+        "precision": 0.7413793103448276,
+        "recall": 0.8857142857142857,
+        "grid_P90_m": 5.299999999999997
+      },
+      "ground_intersecting": {
+        "predicted": 58,
+        "target": 58,
+        "correct": 15,
+        "covered": 20,
+        "precision": 0.25862068965517243,
+        "recall": 0.3448275862068966,
+        "grid_P90_m": 2.9483770294363523
+      }
+    },
+    {
+      "frame": "frame_038.npz",
+      "time_s": 18.999999575316906,
+      "generation_s": 2.7666251350892708,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 14859,
+          "target_valid": 5846,
+          "risk_points": 1503,
+          "conditional_depth_P90_m": 0.43010520935058594
+        },
+        "front_right": {
+          "target_pixels": 13280,
+          "target_valid": 6142,
+          "risk_points": 1581,
+          "conditional_depth_P90_m": 0.41259109973907476
+        },
+        "rear_left": {
+          "target_pixels": 4231,
+          "target_valid": 2307,
+          "risk_points": 584,
+          "conditional_depth_P90_m": 0.25366008281707764
+        },
+        "rear_right": {
+          "target_pixels": 13362,
+          "target_valid": 2209,
+          "risk_points": 558,
+          "conditional_depth_P90_m": 0.33971338272094725
+        }
+      },
+      "union": {
+        "predicted": 52,
+        "target": 138,
+        "correct": 52,
+        "covered": 79,
+        "precision": 1.0,
+        "recall": 0.572463768115942,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 52,
+        "target": 79,
+        "correct": 41,
+        "covered": 58,
+        "precision": 0.7884615384615384,
+        "recall": 0.7341772151898734,
+        "grid_P90_m": 5.203556404210604
+      },
+      "ground_intersecting": {
+        "predicted": 52,
+        "target": 59,
+        "correct": 11,
+        "covered": 21,
+        "precision": 0.21153846153846154,
+        "recall": 0.3559322033898305,
+        "grid_P90_m": 2.740573679551001
+      }
+    },
+    {
+      "frame": "frame_039.npz",
+      "time_s": 19.499999564141035,
+      "generation_s": 2.7772604109486565,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 16439,
+          "target_valid": 5751,
+          "risk_points": 1557,
+          "conditional_depth_P90_m": 0.46642565727233887
+        },
+        "front_right": {
+          "target_pixels": 12741,
+          "target_valid": 5811,
+          "risk_points": 1590,
+          "conditional_depth_P90_m": 0.4285006523132324
+        },
+        "rear_left": {
+          "target_pixels": 3118,
+          "target_valid": 1642,
+          "risk_points": 441,
+          "conditional_depth_P90_m": 0.22807013988494873
+        },
+        "rear_right": {
+          "target_pixels": 12788,
+          "target_valid": 1586,
+          "risk_points": 431,
+          "conditional_depth_P90_m": 0.31386029720306396
+        }
+      },
+      "union": {
+        "predicted": 55,
+        "target": 146,
+        "correct": 55,
+        "covered": 76,
+        "precision": 1.0,
+        "recall": 0.5205479452054794,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 55,
+        "target": 81,
+        "correct": 42,
+        "covered": 55,
+        "precision": 0.7636363636363637,
+        "recall": 0.6790123456790124,
+        "grid_P90_m": 5.299999999999997
+      },
+      "ground_intersecting": {
+        "predicted": 55,
+        "target": 65,
+        "correct": 13,
+        "covered": 21,
+        "precision": 0.23636363636363636,
+        "recall": 0.3230769230769231,
+        "grid_P90_m": 2.6088106782560603
+      }
+    },
+    {
+      "frame": "frame_040.npz",
+      "time_s": 19.999999552965164,
+      "generation_s": 2.780626079067588,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 17364,
+          "target_valid": 6284,
+          "risk_points": 1748,
+          "conditional_depth_P90_m": 0.469993257522583
+        },
+        "front_right": {
+          "target_pixels": 15036,
+          "target_valid": 6407,
+          "risk_points": 1782,
+          "conditional_depth_P90_m": 0.4170301914215088
+        },
+        "rear_left": {
+          "target_pixels": 2122,
+          "target_valid": 1304,
+          "risk_points": 356,
+          "conditional_depth_P90_m": 0.237046504020691
+        },
+        "rear_right": {
+          "target_pixels": 11647,
+          "target_valid": 1266,
+          "risk_points": 343,
+          "conditional_depth_P90_m": 0.3512883186340332
+        }
+      },
+      "union": {
+        "predicted": 69,
+        "target": 150,
+        "correct": 68,
+        "covered": 85,
+        "precision": 0.9855072463768116,
+        "recall": 0.5666666666666667,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 69,
+        "target": 82,
+        "correct": 58,
+        "covered": 71,
+        "precision": 0.8405797101449275,
+        "recall": 0.8658536585365854,
+        "grid_P90_m": 5.200000000000003
+      },
+      "ground_intersecting": {
+        "predicted": 69,
+        "target": 68,
+        "correct": 10,
+        "covered": 14,
+        "precision": 0.14492753623188406,
+        "recall": 0.20588235294117646,
+        "grid_P90_m": 2.7029604286042423
+      }
+    },
+    {
+      "frame": "frame_041.npz",
+      "time_s": 20.499999541789293,
+      "generation_s": 2.7686944120796397,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 18907,
+          "target_valid": 6542,
+          "risk_points": 1806,
+          "conditional_depth_P90_m": 0.46955642700195316
+        },
+        "front_right": {
+          "target_pixels": 15376,
+          "target_valid": 6730,
+          "risk_points": 1863,
+          "conditional_depth_P90_m": 0.4336413621902466
+        },
+        "rear_left": {
+          "target_pixels": 2221,
+          "target_valid": 1344,
+          "risk_points": 379,
+          "conditional_depth_P90_m": 0.231755542755127
+        },
+        "rear_right": {
+          "target_pixels": 10656,
+          "target_valid": 1304,
+          "risk_points": 362,
+          "conditional_depth_P90_m": 0.3450350046157837
+        }
+      },
+      "union": {
+        "predicted": 67,
+        "target": 159,
+        "correct": 62,
+        "covered": 79,
+        "precision": 0.9253731343283582,
+        "recall": 0.4968553459119497,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 67,
+        "target": 83,
+        "correct": 50,
+        "covered": 61,
+        "precision": 0.746268656716418,
+        "recall": 0.7349397590361446,
+        "grid_P90_m": 5.24
+      },
+      "ground_intersecting": {
+        "predicted": 67,
+        "target": 76,
+        "correct": 12,
+        "covered": 18,
+        "precision": 0.1791044776119403,
+        "recall": 0.23684210526315788,
+        "grid_P90_m": 2.6115087635128256
+      }
+    },
+    {
+      "frame": "frame_042.npz",
+      "time_s": 20.999999530613422,
+      "generation_s": 2.77912874892354,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 21866,
+          "target_valid": 5065,
+          "risk_points": 1413,
+          "conditional_depth_P90_m": 0.5054708957672119
+        },
+        "front_right": {
+          "target_pixels": 11596,
+          "target_valid": 5153,
+          "risk_points": 1433,
+          "conditional_depth_P90_m": 0.4355998992919922
+        },
+        "rear_left": {
+          "target_pixels": 3032,
+          "target_valid": 1816,
+          "risk_points": 488,
+          "conditional_depth_P90_m": 0.24281346797943115
+        },
+        "rear_right": {
+          "target_pixels": 10113,
+          "target_valid": 1695,
+          "risk_points": 453,
+          "conditional_depth_P90_m": 0.32763967514038084
+        }
+      },
+      "union": {
+        "predicted": 46,
+        "target": 163,
+        "correct": 41,
+        "covered": 60,
+        "precision": 0.8913043478260869,
+        "recall": 0.36809815950920244,
+        "grid_P90_m": 0.17071067811865365
+      },
+      "suspended": {
+        "predicted": 46,
+        "target": 83,
+        "correct": 28,
+        "covered": 40,
+        "precision": 0.6086956521739131,
+        "recall": 0.4819277108433735,
+        "grid_P90_m": 5.299999999999997
+      },
+      "ground_intersecting": {
+        "predicted": 46,
+        "target": 80,
+        "correct": 13,
+        "covered": 20,
+        "precision": 0.2826086956521739,
+        "recall": 0.25,
+        "grid_P90_m": 2.3861988918387627
+      }
+    },
+    {
+      "frame": "frame_043.npz",
+      "time_s": 21.49999951943755,
+      "generation_s": 2.735609314055182,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 25994,
+          "target_valid": 3366,
+          "risk_points": 946,
+          "conditional_depth_P90_m": 0.42852044105529785
+        },
+        "front_right": {
+          "target_pixels": 8640,
+          "target_valid": 3414,
+          "risk_points": 970,
+          "conditional_depth_P90_m": 0.32663938999176023
+        },
+        "rear_left": {
+          "target_pixels": 2777,
+          "target_valid": 1894,
+          "risk_points": 498,
+          "conditional_depth_P90_m": 0.2628949642181397
+        },
+        "rear_right": {
+          "target_pixels": 9748,
+          "target_valid": 1829,
+          "risk_points": 486,
+          "conditional_depth_P90_m": 0.3440268516540527
+        }
+      },
+      "union": {
+        "predicted": 39,
+        "target": 164,
+        "correct": 38,
+        "covered": 51,
+        "precision": 0.9743589743589743,
+        "recall": 0.31097560975609756,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 39,
+        "target": 81,
+        "correct": 21,
+        "covered": 31,
+        "precision": 0.5384615384615384,
+        "recall": 0.38271604938271603,
+        "grid_P90_m": 5.3267870207958365
+      },
+      "ground_intersecting": {
+        "predicted": 39,
+        "target": 83,
+        "correct": 17,
+        "covered": 20,
+        "precision": 0.4358974358974359,
+        "recall": 0.24096385542168675,
+        "grid_P90_m": 2.1506589770254605
+      }
+    },
+    {
+      "frame": "frame_044.npz",
+      "time_s": 21.99999950826168,
+      "generation_s": 3.0248564009089023,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 28298,
+          "target_valid": 4579,
+          "risk_points": 1307,
+          "conditional_depth_P90_m": 0.45030348300933837
+        },
+        "front_right": {
+          "target_pixels": 9942,
+          "target_valid": 4577,
+          "risk_points": 1309,
+          "conditional_depth_P90_m": 0.3584328174591065
+        },
+        "rear_left": {
+          "target_pixels": 1654,
+          "target_valid": 995,
+          "risk_points": 292,
+          "conditional_depth_P90_m": 0.20858621597290042
+        },
+        "rear_right": {
+          "target_pixels": 9157,
+          "target_valid": 942,
+          "risk_points": 285,
+          "conditional_depth_P90_m": 0.30925538539886477
+        }
+      },
+      "union": {
+        "predicted": 40,
+        "target": 173,
+        "correct": 40,
+        "covered": 57,
+        "precision": 1.0,
+        "recall": 0.32947976878612717,
+        "grid_P90_m": 0.09999999999999823
+      },
+      "suspended": {
+        "predicted": 40,
+        "target": 83,
+        "correct": 26,
+        "covered": 33,
+        "precision": 0.65,
+        "recall": 0.39759036144578314,
+        "grid_P90_m": 5.299999999999997
+      },
+      "ground_intersecting": {
+        "predicted": 40,
+        "target": 90,
+        "correct": 14,
+        "covered": 24,
+        "precision": 0.35,
+        "recall": 0.26666666666666666,
+        "grid_P90_m": 2.2029516194428167
+      }
+    },
+    {
+      "frame": "frame_045.npz",
+      "time_s": 22.49999949708581,
+      "generation_s": 3.0524931349791586,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 31542,
+          "target_valid": 3720,
+          "risk_points": 1041,
+          "conditional_depth_P90_m": 0.4334172487258911
+        },
+        "front_right": {
+          "target_pixels": 10217,
+          "target_valid": 3768,
+          "risk_points": 1073,
+          "conditional_depth_P90_m": 0.34290887117385865
+        },
+        "rear_left": {
+          "target_pixels": 1391,
+          "target_valid": 994,
+          "risk_points": 302,
+          "conditional_depth_P90_m": 0.2066599845886231
+        },
+        "rear_right": {
+          "target_pixels": 8538,
+          "target_valid": 937,
+          "risk_points": 289,
+          "conditional_depth_P90_m": 0.3070763111114502
+        }
+      },
+      "union": {
+        "predicted": 37,
+        "target": 173,
+        "correct": 35,
+        "covered": 51,
+        "precision": 0.9459459459459459,
+        "recall": 0.2947976878612717,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 37,
+        "target": 80,
+        "correct": 23,
+        "covered": 29,
+        "precision": 0.6216216216216216,
+        "recall": 0.3625,
+        "grid_P90_m": 5.24
+      },
+      "ground_intersecting": {
+        "predicted": 37,
+        "target": 93,
+        "correct": 12,
+        "covered": 22,
+        "precision": 0.32432432432432434,
+        "recall": 0.23655913978494625,
+        "grid_P90_m": 2.2049918141076947
+      }
+    },
+    {
+      "frame": "frame_046.npz",
+      "time_s": 22.99999948590994,
+      "generation_s": 2.933140178094618,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 32590,
+          "target_valid": 1136,
+          "risk_points": 370,
+          "conditional_depth_P90_m": 0.368294358253479
+        },
+        "front_right": {
+          "target_pixels": 4506,
+          "target_valid": 1174,
+          "risk_points": 386,
+          "conditional_depth_P90_m": 0.2434701919555664
+        },
+        "rear_left": {
+          "target_pixels": 1436,
+          "target_valid": 782,
+          "risk_points": 237,
+          "conditional_depth_P90_m": 0.18738198280334473
+        },
+        "rear_right": {
+          "target_pixels": 8487,
+          "target_valid": 740,
+          "risk_points": 215,
+          "conditional_depth_P90_m": 0.30612545013427733
+        }
+      },
+      "union": {
+        "predicted": 27,
+        "target": 165,
+        "correct": 26,
+        "covered": 48,
+        "precision": 0.9629629629629629,
+        "recall": 0.2909090909090909,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 27,
+        "target": 67,
+        "correct": 8,
+        "covered": 15,
+        "precision": 0.2962962962962963,
+        "recall": 0.22388059701492538,
+        "grid_P90_m": 5.299999999999997
+      },
+      "ground_intersecting": {
+        "predicted": 27,
+        "target": 98,
+        "correct": 18,
+        "covered": 33,
+        "precision": 0.6666666666666666,
+        "recall": 0.336734693877551,
+        "grid_P90_m": 1.9157137529394208
+      }
+    },
+    {
+      "frame": "frame_047.npz",
+      "time_s": 23.499999474734068,
+      "generation_s": 2.8139608870260417,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 31107,
+          "target_valid": 371,
+          "risk_points": 124,
+          "conditional_depth_P90_m": 0.09734845161437988
+        },
+        "front_right": {
+          "target_pixels": 2492,
+          "target_valid": 327,
+          "risk_points": 112,
+          "conditional_depth_P90_m": 0.14550585746765154
+        },
+        "rear_left": {
+          "target_pixels": 988,
+          "target_valid": 640,
+          "risk_points": 187,
+          "conditional_depth_P90_m": 0.1871092557907105
+        },
+        "rear_right": {
+          "target_pixels": 8400,
+          "target_valid": 572,
+          "risk_points": 167,
+          "conditional_depth_P90_m": 0.2782518148422241
+        }
+      },
+      "union": {
+        "predicted": 25,
+        "target": 152,
+        "correct": 22,
+        "covered": 39,
+        "precision": 0.88,
+        "recall": 0.2565789473684211,
+        "grid_P90_m": 0.19073262114490824
+      },
+      "suspended": {
+        "predicted": 25,
+        "target": 52,
+        "correct": 2,
+        "covered": 2,
+        "precision": 0.08,
+        "recall": 0.038461538461538464,
+        "grid_P90_m": 5.299999999999997
+      },
+      "ground_intersecting": {
+        "predicted": 25,
+        "target": 100,
+        "correct": 20,
+        "covered": 37,
+        "precision": 0.8,
+        "recall": 0.37,
+        "grid_P90_m": 1.738362011859662
+      }
+    },
+    {
+      "frame": "frame_048.npz",
+      "time_s": 23.999999463558197,
+      "generation_s": 2.840336553985253,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 33754,
+          "target_valid": 458,
+          "risk_points": 177,
+          "conditional_depth_P90_m": 0.25988451242446897
+        },
+        "front_right": {
+          "target_pixels": 3372,
+          "target_valid": 446,
+          "risk_points": 179,
+          "conditional_depth_P90_m": 0.14158356189727783
+        },
+        "rear_left": {
+          "target_pixels": 107,
+          "target_valid": 6,
+          "risk_points": 3,
+          "conditional_depth_P90_m": 0.10034644603729248
+        },
+        "rear_right": {
+          "target_pixels": 7933,
+          "target_valid": 1,
+          "risk_points": 1,
+          "conditional_depth_P90_m": 0.06216549873352051
+        }
+      },
+      "union": {
+        "predicted": 16,
+        "target": 150,
+        "correct": 16,
+        "covered": 36,
+        "precision": 1.0,
+        "recall": 0.24,
+        "grid_P90_m": 0.09999999999999609
+      },
+      "suspended": {
+        "predicted": 16,
+        "target": 53,
+        "correct": 4,
+        "covered": 9,
+        "precision": 0.25,
+        "recall": 0.16981132075471697,
+        "grid_P90_m": 3.611187420807836
+      },
+      "ground_intersecting": {
+        "predicted": 16,
+        "target": 97,
+        "correct": 12,
+        "covered": 27,
+        "precision": 0.75,
+        "recall": 0.27835051546391754,
+        "grid_P90_m": 1.7686723388953438
+      }
+    },
+    {
+      "frame": "frame_049.npz",
+      "time_s": 24.499999452382326,
+      "generation_s": 2.782416797010228,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 39587,
+          "target_valid": 724,
+          "risk_points": 250,
+          "conditional_depth_P90_m": 0.31117953062057496
+        },
+        "front_right": {
+          "target_pixels": 6720,
+          "target_valid": 747,
+          "risk_points": 244,
+          "conditional_depth_P90_m": 0.15968194007873535
+        },
+        "rear_left": {
+          "target_pixels": 5694,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 7026,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 10,
+        "target": 158,
+        "correct": 10,
+        "covered": 25,
+        "precision": 1.0,
+        "recall": 0.15822784810126583,
+        "grid_P90_m": 0.009999999999999752
+      },
+      "suspended": {
+        "predicted": 10,
+        "target": 58,
+        "correct": 7,
+        "covered": 14,
+        "precision": 0.7,
+        "recall": 0.2413793103448276,
+        "grid_P90_m": 1.8346997237972342
+      },
+      "ground_intersecting": {
+        "predicted": 10,
+        "target": 100,
+        "correct": 3,
+        "covered": 11,
+        "precision": 0.3,
+        "recall": 0.11,
+        "grid_P90_m": 1.9204450981312686
+      }
+    },
+    {
+      "frame": "frame_050.npz",
+      "time_s": 24.999999441206455,
+      "generation_s": 2.7761927660321817,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 35589,
+          "target_valid": 169,
+          "risk_points": 57,
+          "conditional_depth_P90_m": 0.10689849853515629
+        },
+        "front_right": {
+          "target_pixels": 3630,
+          "target_valid": 167,
+          "risk_points": 54,
+          "conditional_depth_P90_m": 0.19212703704833983
+        },
+        "rear_left": {
+          "target_pixels": 11483,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 6752,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 6,
+        "target": 146,
+        "correct": 5,
+        "covered": 14,
+        "precision": 0.8333333333333334,
+        "recall": 0.0958904109589041,
+        "grid_P90_m": 0.15811388300841783
+      },
+      "suspended": {
+        "predicted": 6,
+        "target": 47,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.1011357772772614
+      },
+      "ground_intersecting": {
+        "predicted": 6,
+        "target": 99,
+        "correct": 5,
+        "covered": 14,
+        "precision": 0.8333333333333334,
+        "recall": 0.1414141414141414,
+        "grid_P90_m": 0.15811388300841783
+      }
+    },
+    {
+      "frame": "frame_051.npz",
+      "time_s": 25.499999430030584,
+      "generation_s": 2.7865691600600258,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 30497,
+          "target_valid": 145,
+          "risk_points": 68,
+          "conditional_depth_P90_m": 0.1630456447601316
+        },
+        "front_right": {
+          "target_pixels": 3663,
+          "target_valid": 119,
+          "risk_points": 65,
+          "conditional_depth_P90_m": 0.14830007553100585
+        },
+        "rear_left": {
+          "target_pixels": 15074,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 6421,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 13,
+        "target": 135,
+        "correct": 5,
+        "covered": 14,
+        "precision": 0.38461538461538464,
+        "recall": 0.1037037037037037,
+        "grid_P90_m": 1.2175804351680626
+      },
+      "suspended": {
+        "predicted": 13,
+        "target": 36,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 1.902103807235234
+      },
+      "ground_intersecting": {
+        "predicted": 13,
+        "target": 99,
+        "correct": 5,
+        "covered": 14,
+        "precision": 0.38461538461538464,
+        "recall": 0.1414141414141414,
+        "grid_P90_m": 2.1074219654213784
+      }
+    },
+    {
+      "frame": "frame_052.npz",
+      "time_s": 25.999999418854713,
+      "generation_s": 2.798107726033777,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 36278,
+          "target_valid": 2,
+          "risk_points": 6,
+          "conditional_depth_P90_m": 1.3532973527908325
+        },
+        "front_right": {
+          "target_pixels": 4386,
+          "target_valid": 0,
+          "risk_points": 4,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 19760,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 5284,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 4,
+        "target": 132,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 1.4024973963531322
+      },
+      "suspended": {
+        "predicted": 4,
+        "target": 40,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 1.4024973963531322
+      },
+      "ground_intersecting": {
+        "predicted": 4,
+        "target": 92,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.241870555841708
+      }
+    },
+    {
+      "frame": "frame_053.npz",
+      "time_s": 26.499999407678843,
+      "generation_s": 2.79043804097455,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 47911,
+          "target_valid": 187,
+          "risk_points": 84,
+          "conditional_depth_P90_m": 0.2761666297912598
+        },
+        "front_right": {
+          "target_pixels": 7200,
+          "target_valid": 194,
+          "risk_points": 88,
+          "conditional_depth_P90_m": 0.08101940155029298
+        },
+        "rear_left": {
+          "target_pixels": 24733,
+          "target_valid": 7,
+          "risk_points": 14,
+          "conditional_depth_P90_m": 1.8203323364257813
+        },
+        "rear_right": {
+          "target_pixels": 3329,
+          "target_valid": 0,
+          "risk_points": 14,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 12,
+        "target": 126,
+        "correct": 4,
+        "covered": 9,
+        "precision": 0.3333333333333333,
+        "recall": 0.07142857142857142,
+        "grid_P90_m": 2.1010366471887734
+      },
+      "suspended": {
+        "predicted": 12,
+        "target": 49,
+        "correct": 4,
+        "covered": 9,
+        "precision": 0.3333333333333333,
+        "recall": 0.1836734693877551,
+        "grid_P90_m": 4.180506417344264
+      },
+      "ground_intersecting": {
+        "predicted": 12,
+        "target": 77,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.1010366471887734
+      }
+    },
+    {
+      "frame": "frame_054.npz",
+      "time_s": 26.99999939650297,
+      "generation_s": 2.829917608993128,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 43406,
+          "target_valid": 45,
+          "risk_points": 0,
+          "conditional_depth_P90_m": 1.8667577981948853
+        },
+        "front_right": {
+          "target_pixels": 6004,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 19566,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 1388,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 0,
+        "target": 104,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      },
+      "suspended": {
+        "predicted": 0,
+        "target": 39,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 0,
+        "target": 65,
+        "correct": 0,
+        "covered": 0,
+        "precision": null,
+        "recall": 0.0,
+        "grid_P90_m": null
+      }
+    },
+    {
+      "frame": "frame_055.npz",
+      "time_s": 27.4999993853271,
+      "generation_s": 2.886955120950006,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 29751,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 5875,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 16090,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 567,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 2,
+        "target": 89,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 0.5660167267922539
+      },
+      "suspended": {
+        "predicted": 2,
+        "target": 26,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.459725704973737
+      },
+      "ground_intersecting": {
+        "predicted": 2,
+        "target": 63,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 0.5660167267922539
+      }
+    },
+    {
+      "frame": "frame_056.npz",
+      "time_s": 27.99999937415123,
+      "generation_s": 2.8134047880303115,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 21923,
+          "target_valid": 0,
+          "risk_points": 3,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 6031,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 19140,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 95,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 1,
+        "target": 86,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 1.4317821063276397
+      },
+      "suspended": {
+        "predicted": 1,
+        "target": 23,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 1.5620499351813304
+      },
+      "ground_intersecting": {
+        "predicted": 1,
+        "target": 63,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 1.4317821063276397
+      }
+    },
+    {
+      "frame": "frame_057.npz",
+      "time_s": 28.49999936297536,
+      "generation_s": 2.7910939720459282,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 31432,
+          "target_valid": 0,
+          "risk_points": 7,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 7671,
+          "target_valid": 0,
+          "risk_points": 6,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 20851,
+          "target_valid": 0,
+          "risk_points": 5,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 5,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 4,
+        "target": 89,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 0.839947994621188
+      },
+      "suspended": {
+        "predicted": 4,
+        "target": 28,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 1.7674124325041296
+      },
+      "ground_intersecting": {
+        "predicted": 4,
+        "target": 61,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 1.622427011705225
+      }
+    },
+    {
+      "frame": "frame_058.npz",
+      "time_s": 28.999999351799488,
+      "generation_s": 2.7919203110504895,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 37732,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8933,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 19395,
+          "target_valid": 12,
+          "risk_points": 24,
+          "conditional_depth_P90_m": 0.9088562726974487
+        },
+        "rear_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 22,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 6,
+        "target": 94,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 0.8744137827658338
+      },
+      "suspended": {
+        "predicted": 6,
+        "target": 33,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 0.9842436003845356
+      },
+      "ground_intersecting": {
+        "predicted": 6,
+        "target": 61,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 0.9609772228646452
+      }
+    },
+    {
+      "frame": "frame_059.npz",
+      "time_s": 29.499999340623617,
+      "generation_s": 2.7832035269821063,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 17000,
+          "target_valid": 0,
+          "risk_points": 10,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 9049,
+          "target_valid": 0,
+          "risk_points": 10,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 15965,
+          "target_valid": 8,
+          "risk_points": 18,
+          "conditional_depth_P90_m": 1.2616687417030334
+        },
+        "rear_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 17,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 7,
+        "target": 83,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 0.8080262355239436
+      },
+      "suspended": {
+        "predicted": 7,
+        "target": 22,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 1.6400000000000006
+      },
+      "ground_intersecting": {
+        "predicted": 7,
+        "target": 61,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 1.3124337288413583
+      }
+    },
+    {
+      "frame": "frame_060.npz",
+      "time_s": 29.999999329447746,
+      "generation_s": 2.792109537986107,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 307,
+          "target_valid": 0,
+          "risk_points": 16,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 8258,
+          "target_valid": 1,
+          "risk_points": 15,
+          "conditional_depth_P90_m": 0.528789758682251
+        },
+        "rear_left": {
+          "target_pixels": 12267,
+          "target_valid": 46,
+          "risk_points": 22,
+          "conditional_depth_P90_m": 1.1303839683532715
+        },
+        "rear_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 24,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 14,
+        "target": 71,
+        "correct": 1,
+        "covered": 2,
+        "precision": 0.07142857142857142,
+        "recall": 0.028169014084507043,
+        "grid_P90_m": 0.8584828810525107
+      },
+      "suspended": {
+        "predicted": 14,
+        "target": 10,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.3760710940983785
+      },
+      "ground_intersecting": {
+        "predicted": 14,
+        "target": 61,
+        "correct": 1,
+        "covered": 2,
+        "precision": 0.07142857142857142,
+        "recall": 0.03278688524590164,
+        "grid_P90_m": 1.122622412361153
+      }
+    },
+    {
+      "frame": "frame_061.npz",
+      "time_s": 30.499999318271875,
+      "generation_s": 2.7888949050102383,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 10,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 9302,
+          "target_valid": 6,
+          "risk_points": 9,
+          "conditional_depth_P90_m": 0.4929324984550476
+        },
+        "rear_left": {
+          "target_pixels": 10166,
+          "target_valid": 22,
+          "risk_points": 22,
+          "conditional_depth_P90_m": 0.1790831208229065
+        },
+        "rear_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 17,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 5,
+        "target": 61,
+        "correct": 4,
+        "covered": 4,
+        "precision": 0.8,
+        "recall": 0.06557377049180328,
+        "grid_P90_m": 0.16000000000000228
+      },
+      "suspended": {
+        "predicted": 5,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 5,
+        "target": 61,
+        "correct": 4,
+        "covered": 4,
+        "precision": 0.8,
+        "recall": 0.06557377049180328,
+        "grid_P90_m": 0.16000000000000228
+      }
+    },
+    {
+      "frame": "frame_062.npz",
+      "time_s": 30.999999307096004,
+      "generation_s": 2.806916852016002,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 11827,
+          "target_valid": 4,
+          "risk_points": 1,
+          "conditional_depth_P90_m": 0.8918904781341553
+        },
+        "rear_left": {
+          "target_pixels": 9317,
+          "target_valid": 1264,
+          "risk_points": 357,
+          "conditional_depth_P90_m": 0.19413363933563232
+        },
+        "rear_right": {
+          "target_pixels": 2317,
+          "target_valid": 1280,
+          "risk_points": 372,
+          "conditional_depth_P90_m": 0.1285075902938843
+        }
+      },
+      "union": {
+        "predicted": 11,
+        "target": 63,
+        "correct": 6,
+        "covered": 7,
+        "precision": 0.5454545454545454,
+        "recall": 0.1111111111111111,
+        "grid_P90_m": 0.9486832980505115
+      },
+      "suspended": {
+        "predicted": 11,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 11,
+        "target": 63,
+        "correct": 6,
+        "covered": 7,
+        "precision": 0.5454545454545454,
+        "recall": 0.1111111111111111,
+        "grid_P90_m": 0.9486832980505115
+      }
+    },
+    {
+      "frame": "frame_063.npz",
+      "time_s": 31.499999295920134,
+      "generation_s": 2.780411505023949,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 7,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 12690,
+          "target_valid": 0,
+          "risk_points": 8,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 8092,
+          "target_valid": 1362,
+          "risk_points": 354,
+          "conditional_depth_P90_m": 0.234380304813385
+        },
+        "rear_right": {
+          "target_pixels": 4235,
+          "target_valid": 1320,
+          "risk_points": 363,
+          "conditional_depth_P90_m": 0.19471998214721692
+        }
+      },
+      "union": {
+        "predicted": 18,
+        "target": 62,
+        "correct": 7,
+        "covered": 7,
+        "precision": 0.3888888888888889,
+        "recall": 0.11290322580645161,
+        "grid_P90_m": 1.2754377448471486
+      },
+      "suspended": {
+        "predicted": 18,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 18,
+        "target": 62,
+        "correct": 7,
+        "covered": 7,
+        "precision": 0.3888888888888889,
+        "recall": 0.11290322580645161,
+        "grid_P90_m": 1.2754377448471486
+      }
+    },
+    {
+      "frame": "frame_064.npz",
+      "time_s": 31.999999284744263,
+      "generation_s": 2.7821498989360407,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 12,
+          "target_valid": 0,
+          "risk_points": 14,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 12040,
+          "target_valid": 1,
+          "risk_points": 14,
+          "conditional_depth_P90_m": 0.2846614122390747
+        },
+        "rear_left": {
+          "target_pixels": 6893,
+          "target_valid": 2743,
+          "risk_points": 671,
+          "conditional_depth_P90_m": 0.23216276168823244
+        },
+        "rear_right": {
+          "target_pixels": 5771,
+          "target_valid": 2732,
+          "risk_points": 680,
+          "conditional_depth_P90_m": 0.18553535938262944
+        }
+      },
+      "union": {
+        "predicted": 18,
+        "target": 69,
+        "correct": 16,
+        "covered": 19,
+        "precision": 0.8888888888888888,
+        "recall": 0.2753623188405797,
+        "grid_P90_m": 0.15899494936611508
+      },
+      "suspended": {
+        "predicted": 18,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 18,
+        "target": 69,
+        "correct": 16,
+        "covered": 19,
+        "precision": 0.8888888888888888,
+        "recall": 0.2753623188405797,
+        "grid_P90_m": 0.15899494936611508
+      }
+    },
+    {
+      "frame": "frame_065.npz",
+      "time_s": 32.49999927356839,
+      "generation_s": 2.7643565800972283,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 114,
+          "target_valid": 5,
+          "risk_points": 21,
+          "conditional_depth_P90_m": 0.0670335054397583
+        },
+        "front_right": {
+          "target_pixels": 13490,
+          "target_valid": 2,
+          "risk_points": 25,
+          "conditional_depth_P90_m": 0.22608461380004882
+        },
+        "rear_left": {
+          "target_pixels": 8856,
+          "target_valid": 3375,
+          "risk_points": 950,
+          "conditional_depth_P90_m": 0.18082456588745116
+        },
+        "rear_right": {
+          "target_pixels": 6428,
+          "target_valid": 3344,
+          "risk_points": 952,
+          "conditional_depth_P90_m": 0.15908551216125488
+        }
+      },
+      "union": {
+        "predicted": 28,
+        "target": 90,
+        "correct": 22,
+        "covered": 22,
+        "precision": 0.7857142857142857,
+        "recall": 0.24444444444444444,
+        "grid_P90_m": 1.3124922359499585
+      },
+      "suspended": {
+        "predicted": 28,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 28,
+        "target": 90,
+        "correct": 22,
+        "covered": 22,
+        "precision": 0.7857142857142857,
+        "recall": 0.24444444444444444,
+        "grid_P90_m": 1.3124922359499585
+      }
+    },
+    {
+      "frame": "frame_066.npz",
+      "time_s": 32.99999926239252,
+      "generation_s": 2.8903576069278643,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 1,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 17892,
+          "target_valid": 0,
+          "risk_points": 1,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 11312,
+          "target_valid": 3100,
+          "risk_points": 883,
+          "conditional_depth_P90_m": 0.1878765344619751
+        },
+        "rear_right": {
+          "target_pixels": 5828,
+          "target_valid": 3123,
+          "risk_points": 897,
+          "conditional_depth_P90_m": 0.16505460739135744
+        }
+      },
+      "union": {
+        "predicted": 19,
+        "target": 94,
+        "correct": 16,
+        "covered": 10,
+        "precision": 0.8421052631578947,
+        "recall": 0.10638297872340426,
+        "grid_P90_m": 0.19999999999999646
+      },
+      "suspended": {
+        "predicted": 19,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 19,
+        "target": 94,
+        "correct": 16,
+        "covered": 10,
+        "precision": 0.8421052631578947,
+        "recall": 0.10638297872340426,
+        "grid_P90_m": 0.19999999999999646
+      }
+    },
+    {
+      "frame": "frame_067.npz",
+      "time_s": 33.49999925121665,
+      "generation_s": 2.7768448260612786,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 7,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 24793,
+          "target_valid": 25,
+          "risk_points": 7,
+          "conditional_depth_P90_m": 0.5675654888153077
+        },
+        "rear_left": {
+          "target_pixels": 13837,
+          "target_valid": 3084,
+          "risk_points": 869,
+          "conditional_depth_P90_m": 0.15423777103424072
+        },
+        "rear_right": {
+          "target_pixels": 5357,
+          "target_valid": 3013,
+          "risk_points": 845,
+          "conditional_depth_P90_m": 0.13984842300415043
+        }
+      },
+      "union": {
+        "predicted": 19,
+        "target": 98,
+        "correct": 16,
+        "covered": 10,
+        "precision": 0.8421052631578947,
+        "recall": 0.10204081632653061,
+        "grid_P90_m": 1.1200000000000017
+      },
+      "suspended": {
+        "predicted": 19,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 19,
+        "target": 98,
+        "correct": 16,
+        "covered": 10,
+        "precision": 0.8421052631578947,
+        "recall": 0.10204081632653061,
+        "grid_P90_m": 1.1200000000000017
+      }
+    },
+    {
+      "frame": "frame_068.npz",
+      "time_s": 33.99999924004078,
+      "generation_s": 2.880258591962047,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 28015,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 13343,
+          "target_valid": 3473,
+          "risk_points": 956,
+          "conditional_depth_P90_m": 0.18854846954345705
+        },
+        "rear_right": {
+          "target_pixels": 4896,
+          "target_valid": 3586,
+          "risk_points": 978,
+          "conditional_depth_P90_m": 0.1830512285232544
+        }
+      },
+      "union": {
+        "predicted": 17,
+        "target": 100,
+        "correct": 15,
+        "covered": 9,
+        "precision": 0.8823529411764706,
+        "recall": 0.09,
+        "grid_P90_m": 0.16485281374238522
+      },
+      "suspended": {
+        "predicted": 17,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 17,
+        "target": 100,
+        "correct": 15,
+        "covered": 9,
+        "precision": 0.8823529411764706,
+        "recall": 0.09,
+        "grid_P90_m": 0.16485281374238522
+      }
+    },
+    {
+      "frame": "frame_069.npz",
+      "time_s": 34.49999922886491,
+      "generation_s": 2.7996853300137445,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 8,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 31701,
+          "target_valid": 1,
+          "risk_points": 8,
+          "conditional_depth_P90_m": 0.47323673963546753
+        },
+        "rear_left": {
+          "target_pixels": 12694,
+          "target_valid": 3411,
+          "risk_points": 920,
+          "conditional_depth_P90_m": 0.2047560214996338
+        },
+        "rear_right": {
+          "target_pixels": 4428,
+          "target_valid": 3432,
+          "risk_points": 945,
+          "conditional_depth_P90_m": 0.1825505018234253
+        }
+      },
+      "union": {
+        "predicted": 24,
+        "target": 96,
+        "correct": 18,
+        "covered": 10,
+        "precision": 0.75,
+        "recall": 0.10416666666666667,
+        "grid_P90_m": 0.21652475842498722
+      },
+      "suspended": {
+        "predicted": 24,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 24,
+        "target": 96,
+        "correct": 18,
+        "covered": 10,
+        "precision": 0.75,
+        "recall": 0.10416666666666667,
+        "grid_P90_m": 0.21652475842498722
+      }
+    },
+    {
+      "frame": "frame_070.npz",
+      "time_s": 34.99999921768904,
+      "generation_s": 2.7894958100514486,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 39158,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 13534,
+          "target_valid": 2890,
+          "risk_points": 812,
+          "conditional_depth_P90_m": 0.21859197616577147
+        },
+        "rear_right": {
+          "target_pixels": 4069,
+          "target_valid": 2781,
+          "risk_points": 788,
+          "conditional_depth_P90_m": 0.21203064918518066
+        }
+      },
+      "union": {
+        "predicted": 21,
+        "target": 95,
+        "correct": 16,
+        "covered": 10,
+        "precision": 0.7619047619047619,
+        "recall": 0.10526315789473684,
+        "grid_P90_m": 0.30000000000000426
+      },
+      "suspended": {
+        "predicted": 21,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 21,
+        "target": 95,
+        "correct": 16,
+        "covered": 10,
+        "precision": 0.7619047619047619,
+        "recall": 0.10526315789473684,
+        "grid_P90_m": 0.30000000000000426
+      }
+    },
+    {
+      "frame": "frame_071.npz",
+      "time_s": 35.499999206513166,
+      "generation_s": 2.787327638012357,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 28358,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 23404,
+          "target_valid": 1650,
+          "risk_points": 452,
+          "conditional_depth_P90_m": 0.16184740066528328
+        },
+        "rear_right": {
+          "target_pixels": 3629,
+          "target_valid": 1718,
+          "risk_points": 479,
+          "conditional_depth_P90_m": 0.16752662658691406
+        }
+      },
+      "union": {
+        "predicted": 14,
+        "target": 96,
+        "correct": 14,
+        "covered": 9,
+        "precision": 1.0,
+        "recall": 0.09375,
+        "grid_P90_m": 0.09999999999999928
+      },
+      "suspended": {
+        "predicted": 14,
+        "target": 8,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.2238825362528574
+      },
+      "ground_intersecting": {
+        "predicted": 14,
+        "target": 88,
+        "correct": 14,
+        "covered": 9,
+        "precision": 1.0,
+        "recall": 0.10227272727272728,
+        "grid_P90_m": 0.09999999999999928
+      }
+    },
+    {
+      "frame": "frame_072.npz",
+      "time_s": 35.999999195337296,
+      "generation_s": 2.798888116958551,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 4,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 21832,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 25756,
+          "target_valid": 892,
+          "risk_points": 237,
+          "conditional_depth_P90_m": 0.07820644378662107
+        },
+        "rear_right": {
+          "target_pixels": 4580,
+          "target_valid": 901,
+          "risk_points": 246,
+          "conditional_depth_P90_m": 0.07442045211791992
+        }
+      },
+      "union": {
+        "predicted": 21,
+        "target": 83,
+        "correct": 15,
+        "covered": 25,
+        "precision": 0.7142857142857143,
+        "recall": 0.30120481927710846,
+        "grid_P90_m": 0.6000000000000014
+      },
+      "suspended": {
+        "predicted": 21,
+        "target": 11,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.5495097567963922
+      },
+      "ground_intersecting": {
+        "predicted": 21,
+        "target": 72,
+        "correct": 15,
+        "covered": 25,
+        "precision": 0.7142857142857143,
+        "recall": 0.3472222222222222,
+        "grid_P90_m": 0.6000000000000014
+      }
+    },
+    {
+      "frame": "frame_073.npz",
+      "time_s": 36.499999184161425,
+      "generation_s": 2.8042705559637398,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 11764,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 23535,
+          "target_valid": 237,
+          "risk_points": 69,
+          "conditional_depth_P90_m": 0.10653963088989259
+        },
+        "rear_right": {
+          "target_pixels": 2284,
+          "target_valid": 244,
+          "risk_points": 72,
+          "conditional_depth_P90_m": 0.07871260643005372
+        }
+      },
+      "union": {
+        "predicted": 11,
+        "target": 70,
+        "correct": 11,
+        "covered": 22,
+        "precision": 1.0,
+        "recall": 0.3142857142857143,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 11,
+        "target": 13,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.4041630560342666
+      },
+      "ground_intersecting": {
+        "predicted": 11,
+        "target": 57,
+        "correct": 11,
+        "covered": 22,
+        "precision": 1.0,
+        "recall": 0.38596491228070173,
+        "grid_P90_m": 0.10000000000000142
+      }
+    },
+    {
+      "frame": "frame_074.npz",
+      "time_s": 36.999999172985554,
+      "generation_s": 2.77460958994925,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 2457,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 18300,
+          "target_valid": 60,
+          "risk_points": 40,
+          "conditional_depth_P90_m": 0.026750779151916506
+        },
+        "rear_right": {
+          "target_pixels": 528,
+          "target_valid": 69,
+          "risk_points": 43,
+          "conditional_depth_P90_m": 0.02704896926879883
+        }
+      },
+      "union": {
+        "predicted": 7,
+        "target": 51,
+        "correct": 7,
+        "covered": 3,
+        "precision": 1.0,
+        "recall": 0.058823529411764705,
+        "grid_P90_m": 0.11656854249492549
+      },
+      "suspended": {
+        "predicted": 7,
+        "target": 11,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.09232004719025
+      },
+      "ground_intersecting": {
+        "predicted": 7,
+        "target": 40,
+        "correct": 7,
+        "covered": 3,
+        "precision": 1.0,
+        "recall": 0.075,
+        "grid_P90_m": 0.11656854249492549
+      }
+    },
+    {
+      "frame": "frame_075.npz",
+      "time_s": 37.49999916180968,
+      "generation_s": 2.775027569034137,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 11777,
+          "target_valid": 97,
+          "risk_points": 30,
+          "conditional_depth_P90_m": 0.027944326400756836
+        },
+        "rear_right": {
+          "target_pixels": 609,
+          "target_valid": 90,
+          "risk_points": 23,
+          "conditional_depth_P90_m": 0.02681989669799805
+        }
+      },
+      "union": {
+        "predicted": 4,
+        "target": 29,
+        "correct": 3,
+        "covered": 4,
+        "precision": 0.75,
+        "recall": 0.13793103448275862,
+        "grid_P90_m": 1.2224974437601093
+      },
+      "suspended": {
+        "predicted": 4,
+        "target": 9,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.2121226774668576
+      },
+      "ground_intersecting": {
+        "predicted": 4,
+        "target": 20,
+        "correct": 3,
+        "covered": 4,
+        "precision": 0.75,
+        "recall": 0.2,
+        "grid_P90_m": 1.2224974437601093
+      }
+    },
+    {
+      "frame": "frame_076.npz",
+      "time_s": 37.99999915063381,
+      "generation_s": 2.8096231250092387,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 5809,
+          "target_valid": 273,
+          "risk_points": 84,
+          "conditional_depth_P90_m": 0.044591331481933595
+        },
+        "rear_right": {
+          "target_pixels": 6447,
+          "target_valid": 322,
+          "risk_points": 101,
+          "conditional_depth_P90_m": 0.03750150203704836
+        }
+      },
+      "union": {
+        "predicted": 6,
+        "target": 46,
+        "correct": 6,
+        "covered": 4,
+        "precision": 1.0,
+        "recall": 0.08695652173913043,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 6,
+        "target": 7,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.1247978834380845
+      },
+      "ground_intersecting": {
+        "predicted": 6,
+        "target": 39,
+        "correct": 6,
+        "covered": 4,
+        "precision": 1.0,
+        "recall": 0.10256410256410256,
+        "grid_P90_m": 0.10000000000000142
+      }
+    },
+    {
+      "frame": "frame_077.npz",
+      "time_s": 38.49999913945794,
+      "generation_s": 2.7677805069833994,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 3122,
+          "target_valid": 1710,
+          "risk_points": 472,
+          "conditional_depth_P90_m": 0.08531615734100342
+        },
+        "rear_right": {
+          "target_pixels": 13764,
+          "target_valid": 1701,
+          "risk_points": 478,
+          "conditional_depth_P90_m": 0.07558417320251465
+        }
+      },
+      "union": {
+        "predicted": 14,
+        "target": 46,
+        "correct": 11,
+        "covered": 7,
+        "precision": 0.7857142857142857,
+        "recall": 0.15217391304347827,
+        "grid_P90_m": 1.4734008119146504
+      },
+      "suspended": {
+        "predicted": 14,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 14,
+        "target": 46,
+        "correct": 11,
+        "covered": 7,
+        "precision": 0.7857142857142857,
+        "recall": 0.15217391304347827,
+        "grid_P90_m": 1.4734008119146504
+      }
+    },
+    {
+      "frame": "frame_078.npz",
+      "time_s": 38.99999912828207,
+      "generation_s": 2.759789017960429,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 3484,
+          "target_valid": 111,
+          "risk_points": 37,
+          "conditional_depth_P90_m": 0.07612133026123047
+        },
+        "rear_right": {
+          "target_pixels": 15533,
+          "target_valid": 111,
+          "risk_points": 39,
+          "conditional_depth_P90_m": 0.04685258865356445
+        }
+      },
+      "union": {
+        "predicted": 3,
+        "target": 62,
+        "correct": 3,
+        "covered": 6,
+        "precision": 1.0,
+        "recall": 0.0967741935483871,
+        "grid_P90_m": 0.1
+      },
+      "suspended": {
+        "predicted": 3,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 3,
+        "target": 62,
+        "correct": 3,
+        "covered": 6,
+        "precision": 1.0,
+        "recall": 0.0967741935483871,
+        "grid_P90_m": 0.1
+      }
+    },
+    {
+      "frame": "frame_079.npz",
+      "time_s": 39.4999991171062,
+      "generation_s": 2.7780730419326574,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 3845,
+          "target_valid": 0,
+          "risk_points": 3,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 17001,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 1,
+        "target": 73,
+        "correct": 1,
+        "covered": 4,
+        "precision": 1.0,
+        "recall": 0.0547945205479452,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 1,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 1,
+        "target": 73,
+        "correct": 1,
+        "covered": 4,
+        "precision": 1.0,
+        "recall": 0.0547945205479452,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_080.npz",
+      "time_s": 39.99999910593033,
+      "generation_s": 2.779546682955697,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 3,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 6334,
+          "target_valid": 33,
+          "risk_points": 8,
+          "conditional_depth_P90_m": 0.1867443561553955
+        },
+        "rear_right": {
+          "target_pixels": 19325,
+          "target_valid": 13,
+          "risk_points": 2,
+          "conditional_depth_P90_m": 0.22291245460510253
+        }
+      },
+      "union": {
+        "predicted": 2,
+        "target": 85,
+        "correct": 1,
+        "covered": 8,
+        "precision": 0.5,
+        "recall": 0.09411764705882353,
+        "grid_P90_m": 2.4449539872971053
+      },
+      "suspended": {
+        "predicted": 2,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 2,
+        "target": 85,
+        "correct": 1,
+        "covered": 8,
+        "precision": 0.5,
+        "recall": 0.09411764705882353,
+        "grid_P90_m": 2.4449539872971053
+      }
+    },
+    {
+      "frame": "frame_081.npz",
+      "time_s": 40.49999909475446,
+      "generation_s": 2.773627414018847,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 9174,
+          "target_valid": 396,
+          "risk_points": 100,
+          "conditional_depth_P90_m": 0.17199313640594482
+        },
+        "rear_right": {
+          "target_pixels": 25824,
+          "target_valid": 373,
+          "risk_points": 95,
+          "conditional_depth_P90_m": 0.19807209968566894
+        }
+      },
+      "union": {
+        "predicted": 13,
+        "target": 88,
+        "correct": 13,
+        "covered": 26,
+        "precision": 1.0,
+        "recall": 0.29545454545454547,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 13,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 13,
+        "target": 88,
+        "correct": 13,
+        "covered": 26,
+        "precision": 1.0,
+        "recall": 0.29545454545454547,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_082.npz",
+      "time_s": 40.99999908357859,
+      "generation_s": 2.767874426092021,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 8448,
+          "target_valid": 435,
+          "risk_points": 116,
+          "conditional_depth_P90_m": 0.3135678291320801
+        },
+        "rear_right": {
+          "target_pixels": 28741,
+          "target_valid": 434,
+          "risk_points": 111,
+          "conditional_depth_P90_m": 0.3283257246017456
+        }
+      },
+      "union": {
+        "predicted": 13,
+        "target": 82,
+        "correct": 13,
+        "covered": 27,
+        "precision": 1.0,
+        "recall": 0.32926829268292684,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 13,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 13,
+        "target": 82,
+        "correct": 13,
+        "covered": 27,
+        "precision": 1.0,
+        "recall": 0.32926829268292684,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_083.npz",
+      "time_s": 41.499999072402716,
+      "generation_s": 2.773496062029153,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 8365,
+          "target_valid": 5,
+          "risk_points": 1,
+          "conditional_depth_P90_m": 0.23273992538452148
+        },
+        "rear_right": {
+          "target_pixels": 27526,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        }
+      },
+      "union": {
+        "predicted": 1,
+        "target": 79,
+        "correct": 1,
+        "covered": 6,
+        "precision": 1.0,
+        "recall": 0.0759493670886076,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 1,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 1,
+        "target": 79,
+        "correct": 1,
+        "covered": 6,
+        "precision": 1.0,
+        "recall": 0.0759493670886076,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_084.npz",
+      "time_s": 41.999999061226845,
+      "generation_s": 2.7958409279817715,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 6421,
+          "target_valid": 123,
+          "risk_points": 31,
+          "conditional_depth_P90_m": 0.10951414108276367
+        },
+        "rear_right": {
+          "target_pixels": 30042,
+          "target_valid": 146,
+          "risk_points": 29,
+          "conditional_depth_P90_m": 0.6783876419067383
+        }
+      },
+      "union": {
+        "predicted": 5,
+        "target": 70,
+        "correct": 5,
+        "covered": 10,
+        "precision": 1.0,
+        "recall": 0.14285714285714285,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 5,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 5,
+        "target": 70,
+        "correct": 5,
+        "covered": 10,
+        "precision": 1.0,
+        "recall": 0.14285714285714285,
+        "grid_P90_m": 0.10000000000000142
+      }
+    },
+    {
+      "frame": "frame_085.npz",
+      "time_s": 42.499999050050974,
+      "generation_s": 2.802669389056973,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 4,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 3,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 1381,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 37745,
+          "target_valid": 3,
+          "risk_points": 0,
+          "conditional_depth_P90_m": 0.5469743728637695
+        }
+      },
+      "union": {
+        "predicted": 2,
+        "target": 60,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 3.3806674691087606
+      },
+      "suspended": {
+        "predicted": 2,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 2,
+        "target": 60,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 3.3806674691087606
+      }
+    },
+    {
+      "frame": "frame_086.npz",
+      "time_s": 42.9999990388751,
+      "generation_s": 2.765406226972118,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 6,
+          "conditional_depth_P90_m": null
+        },
+        "rear_right": {
+          "target_pixels": 30674,
+          "target_valid": 6,
+          "risk_points": 7,
+          "conditional_depth_P90_m": 1.5953447222709656
+        }
+      },
+      "union": {
+        "predicted": 1,
+        "target": 55,
+        "correct": 1,
+        "covered": 3,
+        "precision": 1.0,
+        "recall": 0.05454545454545454,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 1,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 1,
+        "target": 55,
+        "correct": 1,
+        "covered": 3,
+        "precision": 1.0,
+        "recall": 0.05454545454545454,
+        "grid_P90_m": 0.10000000000000142
+      }
+    },
+    {
+      "frame": "frame_087.npz",
+      "time_s": 43.49999902769923,
+      "generation_s": 2.8815192389301956,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 432,
+          "target_valid": 163,
+          "risk_points": 67,
+          "conditional_depth_P90_m": 0.0704915285110474
+        },
+        "rear_right": {
+          "target_pixels": 22494,
+          "target_valid": 176,
+          "risk_points": 69,
+          "conditional_depth_P90_m": 0.23107653856277466
+        }
+      },
+      "union": {
+        "predicted": 1,
+        "target": 54,
+        "correct": 1,
+        "covered": 6,
+        "precision": 1.0,
+        "recall": 0.1111111111111111,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 1,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 1,
+        "target": 54,
+        "correct": 1,
+        "covered": 6,
+        "precision": 1.0,
+        "recall": 0.1111111111111111,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_088.npz",
+      "time_s": 43.99999901652336,
+      "generation_s": 2.795013844035566,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 1113,
+          "target_valid": 182,
+          "risk_points": 68,
+          "conditional_depth_P90_m": 0.06614692211151123
+        },
+        "rear_right": {
+          "target_pixels": 18169,
+          "target_valid": 163,
+          "risk_points": 56,
+          "conditional_depth_P90_m": 0.21414425373077392
+        }
+      },
+      "union": {
+        "predicted": 3,
+        "target": 54,
+        "correct": 3,
+        "covered": 11,
+        "precision": 1.0,
+        "recall": 0.2037037037037037,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 3,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 3,
+        "target": 54,
+        "correct": 3,
+        "covered": 11,
+        "precision": 1.0,
+        "recall": 0.2037037037037037,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_089.npz",
+      "time_s": 44.49999900534749,
+      "generation_s": 2.786606151959859,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 1263,
+          "target_valid": 258,
+          "risk_points": 75,
+          "conditional_depth_P90_m": 0.061726200580596934
+        },
+        "rear_right": {
+          "target_pixels": 15429,
+          "target_valid": 319,
+          "risk_points": 74,
+          "conditional_depth_P90_m": 0.2197932243347168
+        }
+      },
+      "union": {
+        "predicted": 1,
+        "target": 54,
+        "correct": 1,
+        "covered": 6,
+        "precision": 1.0,
+        "recall": 0.1111111111111111,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 1,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 1,
+        "target": 54,
+        "correct": 1,
+        "covered": 6,
+        "precision": 1.0,
+        "recall": 0.1111111111111111,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_090.npz",
+      "time_s": 44.99999899417162,
+      "generation_s": 2.795908286003396,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 1679,
+          "target_valid": 626,
+          "risk_points": 124,
+          "conditional_depth_P90_m": 0.40206849575042725
+        },
+        "rear_right": {
+          "target_pixels": 13066,
+          "target_valid": 666,
+          "risk_points": 105,
+          "conditional_depth_P90_m": 0.5819401144981384
+        }
+      },
+      "union": {
+        "predicted": 4,
+        "target": 55,
+        "correct": 4,
+        "covered": 18,
+        "precision": 1.0,
+        "recall": 0.32727272727272727,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 4,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 4,
+        "target": 55,
+        "correct": 4,
+        "covered": 18,
+        "precision": 1.0,
+        "recall": 0.32727272727272727,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_091.npz",
+      "time_s": 45.49999898299575,
+      "generation_s": 2.7691767750075087,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 2262,
+          "target_valid": 536,
+          "risk_points": 120,
+          "conditional_depth_P90_m": 0.42466068267822266
+        },
+        "rear_right": {
+          "target_pixels": 10852,
+          "target_valid": 517,
+          "risk_points": 106,
+          "conditional_depth_P90_m": 0.6080195426940918
+        }
+      },
+      "union": {
+        "predicted": 4,
+        "target": 54,
+        "correct": 4,
+        "covered": 15,
+        "precision": 1.0,
+        "recall": 0.2777777777777778,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 4,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 4,
+        "target": 54,
+        "correct": 4,
+        "covered": 15,
+        "precision": 1.0,
+        "recall": 0.2777777777777778,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_092.npz",
+      "time_s": 45.99999897181988,
+      "generation_s": 2.771603920031339,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 3044,
+          "target_valid": 598,
+          "risk_points": 133,
+          "conditional_depth_P90_m": 0.4987685441970825
+        },
+        "rear_right": {
+          "target_pixels": 8951,
+          "target_valid": 592,
+          "risk_points": 139,
+          "conditional_depth_P90_m": 0.6199404001235962
+        }
+      },
+      "union": {
+        "predicted": 7,
+        "target": 54,
+        "correct": 7,
+        "covered": 22,
+        "precision": 1.0,
+        "recall": 0.4074074074074074,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 7,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 7,
+        "target": 54,
+        "correct": 7,
+        "covered": 22,
+        "precision": 1.0,
+        "recall": 0.4074074074074074,
+        "grid_P90_m": 0.0
+      }
+    },
+    {
+      "frame": "frame_093.npz",
+      "time_s": 46.49999896064401,
+      "generation_s": 2.795805806061253,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 2849,
+          "target_valid": 787,
+          "risk_points": 179,
+          "conditional_depth_P90_m": 0.41209175586700436
+        },
+        "rear_right": {
+          "target_pixels": 7847,
+          "target_valid": 823,
+          "risk_points": 180,
+          "conditional_depth_P90_m": 0.5938860893249512
+        }
+      },
+      "union": {
+        "predicted": 13,
+        "target": 54,
+        "correct": 11,
+        "covered": 25,
+        "precision": 0.8461538461538461,
+        "recall": 0.46296296296296297,
+        "grid_P90_m": 0.17999999999999552
+      },
+      "suspended": {
+        "predicted": 13,
+        "target": 0,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": null,
+        "grid_P90_m": null
+      },
+      "ground_intersecting": {
+        "predicted": 13,
+        "target": 54,
+        "correct": 11,
+        "covered": 25,
+        "precision": 0.8461538461538461,
+        "recall": 0.46296296296296297,
+        "grid_P90_m": 0.17999999999999552
+      }
+    },
+    {
+      "frame": "frame_094.npz",
+      "time_s": 46.999998949468136,
+      "generation_s": 2.789255267009139,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 4253,
+          "target_valid": 475,
+          "risk_points": 127,
+          "conditional_depth_P90_m": 0.4712486982345581
+        },
+        "rear_right": {
+          "target_pixels": 7134,
+          "target_valid": 474,
+          "risk_points": 126,
+          "conditional_depth_P90_m": 0.6369148135185242
+        }
+      },
+      "union": {
+        "predicted": 8,
+        "target": 64,
+        "correct": 8,
+        "covered": 17,
+        "precision": 1.0,
+        "recall": 0.265625,
+        "grid_P90_m": 0.09999999999999432
+      },
+      "suspended": {
+        "predicted": 8,
+        "target": 10,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.1168528012827212
+      },
+      "ground_intersecting": {
+        "predicted": 8,
+        "target": 54,
+        "correct": 8,
+        "covered": 17,
+        "precision": 1.0,
+        "recall": 0.3148148148148148,
+        "grid_P90_m": 0.09999999999999432
+      }
+    },
+    {
+      "frame": "frame_095.npz",
+      "time_s": 47.499998938292265,
+      "generation_s": 2.7846260289661586,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 9016,
+          "target_valid": 321,
+          "risk_points": 100,
+          "conditional_depth_P90_m": 0.5166188478469849
+        },
+        "rear_right": {
+          "target_pixels": 6581,
+          "target_valid": 293,
+          "risk_points": 96,
+          "conditional_depth_P90_m": 0.6900225162506104
+        }
+      },
+      "union": {
+        "predicted": 8,
+        "target": 73,
+        "correct": 8,
+        "covered": 19,
+        "precision": 1.0,
+        "recall": 0.2602739726027397,
+        "grid_P90_m": 0.09999999999999432
+      },
+      "suspended": {
+        "predicted": 8,
+        "target": 19,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.1168528012827212
+      },
+      "ground_intersecting": {
+        "predicted": 8,
+        "target": 54,
+        "correct": 8,
+        "covered": 19,
+        "precision": 1.0,
+        "recall": 0.35185185185185186,
+        "grid_P90_m": 0.09999999999999432
+      }
+    },
+    {
+      "frame": "frame_096.npz",
+      "time_s": 47.999998927116394,
+      "generation_s": 2.761547005036846,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 3,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 3,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 13668,
+          "target_valid": 444,
+          "risk_points": 130,
+          "conditional_depth_P90_m": 0.5155227661132813
+        },
+        "rear_right": {
+          "target_pixels": 6007,
+          "target_valid": 448,
+          "risk_points": 124,
+          "conditional_depth_P90_m": 0.695046889781952
+        }
+      },
+      "union": {
+        "predicted": 11,
+        "target": 84,
+        "correct": 10,
+        "covered": 18,
+        "precision": 0.9090909090909091,
+        "recall": 0.21428571428571427,
+        "grid_P90_m": 0.09999999999999787
+      },
+      "suspended": {
+        "predicted": 11,
+        "target": 30,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.280350850198274
+      },
+      "ground_intersecting": {
+        "predicted": 11,
+        "target": 54,
+        "correct": 10,
+        "covered": 18,
+        "precision": 0.9090909090909091,
+        "recall": 0.3333333333333333,
+        "grid_P90_m": 0.09999999999999787
+      }
+    },
+    {
+      "frame": "frame_097.npz",
+      "time_s": 48.49999891594052,
+      "generation_s": 2.772565240971744,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 1,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 19444,
+          "target_valid": 460,
+          "risk_points": 121,
+          "conditional_depth_P90_m": 0.5336266160011292
+        },
+        "rear_right": {
+          "target_pixels": 5655,
+          "target_valid": 499,
+          "risk_points": 124,
+          "conditional_depth_P90_m": 0.7146675109863281
+        }
+      },
+      "union": {
+        "predicted": 16,
+        "target": 98,
+        "correct": 8,
+        "covered": 14,
+        "precision": 0.5,
+        "recall": 0.14285714285714285,
+        "grid_P90_m": 0.5242092160363638
+      },
+      "suspended": {
+        "predicted": 16,
+        "target": 45,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.2611368191204497
+      },
+      "ground_intersecting": {
+        "predicted": 16,
+        "target": 53,
+        "correct": 8,
+        "covered": 14,
+        "precision": 0.5,
+        "recall": 0.2641509433962264,
+        "grid_P90_m": 0.5242092160363638
+      }
+    },
+    {
+      "frame": "frame_098.npz",
+      "time_s": 48.99999890476465,
+      "generation_s": 2.8006216280627996,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 24633,
+          "target_valid": 103,
+          "risk_points": 53,
+          "conditional_depth_P90_m": 0.184336519241333
+        },
+        "rear_right": {
+          "target_pixels": 5713,
+          "target_valid": 97,
+          "risk_points": 49,
+          "conditional_depth_P90_m": 0.13975918292999268
+        }
+      },
+      "union": {
+        "predicted": 6,
+        "target": 111,
+        "correct": 6,
+        "covered": 14,
+        "precision": 1.0,
+        "recall": 0.12612612612612611,
+        "grid_P90_m": 0.04999999999999716
+      },
+      "suspended": {
+        "predicted": 6,
+        "target": 59,
+        "correct": 4,
+        "covered": 7,
+        "precision": 0.6666666666666666,
+        "recall": 0.11864406779661017,
+        "grid_P90_m": 1.7873900761994643
+      },
+      "ground_intersecting": {
+        "predicted": 6,
+        "target": 52,
+        "correct": 2,
+        "covered": 7,
+        "precision": 0.3333333333333333,
+        "recall": 0.1346153846153846,
+        "grid_P90_m": 1.8999999999999986
+      }
+    },
+    {
+      "frame": "frame_099.npz",
+      "time_s": 49.49999889358878,
+      "generation_s": 2.781874588923529,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 29138,
+          "target_valid": 830,
+          "risk_points": 267,
+          "conditional_depth_P90_m": 0.30495532751083376
+        },
+        "rear_right": {
+          "target_pixels": 9661,
+          "target_valid": 883,
+          "risk_points": 274,
+          "conditional_depth_P90_m": 0.16802883148193368
+        }
+      },
+      "union": {
+        "predicted": 14,
+        "target": 124,
+        "correct": 14,
+        "covered": 24,
+        "precision": 1.0,
+        "recall": 0.1935483870967742,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 14,
+        "target": 69,
+        "correct": 14,
+        "covered": 24,
+        "precision": 1.0,
+        "recall": 0.34782608695652173,
+        "grid_P90_m": 0.0
+      },
+      "ground_intersecting": {
+        "predicted": 14,
+        "target": 55,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.018654926398222
+      }
+    },
+    {
+      "frame": "frame_100.npz",
+      "time_s": 49.99999888241291,
+      "generation_s": 2.7820628189947456,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 1,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 2,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 28107,
+          "target_valid": 1445,
+          "risk_points": 399,
+          "conditional_depth_P90_m": 0.37611293792724615
+        },
+        "rear_right": {
+          "target_pixels": 10285,
+          "target_valid": 1527,
+          "risk_points": 406,
+          "conditional_depth_P90_m": 0.256125545501709
+        }
+      },
+      "union": {
+        "predicted": 19,
+        "target": 129,
+        "correct": 17,
+        "covered": 31,
+        "precision": 0.8947368421052632,
+        "recall": 0.24031007751937986,
+        "grid_P90_m": 0.8421401308570896
+      },
+      "suspended": {
+        "predicted": 19,
+        "target": 79,
+        "correct": 17,
+        "covered": 31,
+        "precision": 0.8947368421052632,
+        "recall": 0.3924050632911392,
+        "grid_P90_m": 0.8809086218218074
+      },
+      "ground_intersecting": {
+        "predicted": 19,
+        "target": 50,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.6184283957510526
+      }
+    },
+    {
+      "frame": "frame_101.npz",
+      "time_s": 50.49999887123704,
+      "generation_s": 2.7804766189074144,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 1,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 25834,
+          "target_valid": 1500,
+          "risk_points": 425,
+          "conditional_depth_P90_m": 0.46234424114227296
+        },
+        "rear_right": {
+          "target_pixels": 10512,
+          "target_valid": 1598,
+          "risk_points": 433,
+          "conditional_depth_P90_m": 0.3360006093978882
+        }
+      },
+      "union": {
+        "predicted": 25,
+        "target": 139,
+        "correct": 22,
+        "covered": 33,
+        "precision": 0.88,
+        "recall": 0.23741007194244604,
+        "grid_P90_m": 0.28738633753706
+      },
+      "suspended": {
+        "predicted": 25,
+        "target": 86,
+        "correct": 22,
+        "covered": 33,
+        "precision": 0.88,
+        "recall": 0.38372093023255816,
+        "grid_P90_m": 0.8560882305241271
+      },
+      "ground_intersecting": {
+        "predicted": 25,
+        "target": 53,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.2013629327327138
+      }
+    },
+    {
+      "frame": "frame_102.npz",
+      "time_s": 50.99999886006117,
+      "generation_s": 2.7720294930040836,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 23738,
+          "target_valid": 3325,
+          "risk_points": 912,
+          "conditional_depth_P90_m": 0.4431911468505859
+        },
+        "rear_right": {
+          "target_pixels": 13503,
+          "target_valid": 3427,
+          "risk_points": 911,
+          "conditional_depth_P90_m": 0.3664080142974854
+        }
+      },
+      "union": {
+        "predicted": 34,
+        "target": 137,
+        "correct": 33,
+        "covered": 46,
+        "precision": 0.9705882352941176,
+        "recall": 0.3357664233576642,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 34,
+        "target": 86,
+        "correct": 33,
+        "covered": 46,
+        "precision": 0.9705882352941176,
+        "recall": 0.5348837209302325,
+        "grid_P90_m": 0.0
+      },
+      "ground_intersecting": {
+        "predicted": 34,
+        "target": 51,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.3004687410247553
+      }
+    },
+    {
+      "frame": "frame_103.npz",
+      "time_s": 51.4999988488853,
+      "generation_s": 2.8852749599609524,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 22613,
+          "target_valid": 4251,
+          "risk_points": 1123,
+          "conditional_depth_P90_m": 0.4457359313964844
+        },
+        "rear_right": {
+          "target_pixels": 16322,
+          "target_valid": 4338,
+          "risk_points": 1136,
+          "conditional_depth_P90_m": 0.3808472156524659
+        }
+      },
+      "union": {
+        "predicted": 48,
+        "target": 137,
+        "correct": 48,
+        "covered": 58,
+        "precision": 1.0,
+        "recall": 0.4233576642335766,
+        "grid_P90_m": 0.09999999999999538
+      },
+      "suspended": {
+        "predicted": 48,
+        "target": 85,
+        "correct": 48,
+        "covered": 58,
+        "precision": 1.0,
+        "recall": 0.6823529411764706,
+        "grid_P90_m": 0.09999999999999538
+      },
+      "ground_intersecting": {
+        "predicted": 48,
+        "target": 52,
+        "correct": 0,
+        "covered": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "grid_P90_m": 2.458230106709555
+      }
+    },
+    {
+      "frame": "frame_104.npz",
+      "time_s": 51.99999883770943,
+      "generation_s": 2.8028357280418277,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 20826,
+          "target_valid": 5548,
+          "risk_points": 1447,
+          "conditional_depth_P90_m": 0.46746897697448736
+        },
+        "rear_right": {
+          "target_pixels": 15040,
+          "target_valid": 5680,
+          "risk_points": 1471,
+          "conditional_depth_P90_m": 0.4066272974014283
+        }
+      },
+      "union": {
+        "predicted": 52,
+        "target": 137,
+        "correct": 51,
+        "covered": 62,
+        "precision": 0.9807692307692307,
+        "recall": 0.45255474452554745,
+        "grid_P90_m": 0.10000000000000106
+      },
+      "suspended": {
+        "predicted": 52,
+        "target": 84,
+        "correct": 49,
+        "covered": 55,
+        "precision": 0.9423076923076923,
+        "recall": 0.6547619047619048,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "ground_intersecting": {
+        "predicted": 52,
+        "target": 53,
+        "correct": 2,
+        "covered": 7,
+        "precision": 0.038461538461538464,
+        "recall": 0.1320754716981132,
+        "grid_P90_m": 2.4716300512761613
+      }
+    },
+    {
+      "frame": "frame_105.npz",
+      "time_s": 52.499998826533556,
+      "generation_s": 2.7738680719630793,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 18426,
+          "target_valid": 4662,
+          "risk_points": 1254,
+          "conditional_depth_P90_m": 0.5268929481506348
+        },
+        "rear_right": {
+          "target_pixels": 13145,
+          "target_valid": 4698,
+          "risk_points": 1268,
+          "conditional_depth_P90_m": 0.4666331052780152
+        }
+      },
+      "union": {
+        "predicted": 48,
+        "target": 132,
+        "correct": 45,
+        "covered": 60,
+        "precision": 0.9375,
+        "recall": 0.45454545454545453,
+        "grid_P90_m": 0.11242640687119312
+      },
+      "suspended": {
+        "predicted": 48,
+        "target": 80,
+        "correct": 42,
+        "covered": 49,
+        "precision": 0.875,
+        "recall": 0.6125,
+        "grid_P90_m": 0.20708203932499186
+      },
+      "ground_intersecting": {
+        "predicted": 48,
+        "target": 52,
+        "correct": 3,
+        "covered": 11,
+        "precision": 0.0625,
+        "recall": 0.21153846153846154,
+        "grid_P90_m": 2.438632548811377
+      }
+    },
+    {
+      "frame": "frame_106.npz",
+      "time_s": 52.999998815357685,
+      "generation_s": 2.7537021409953013,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 3,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 3,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 17002,
+          "target_valid": 4618,
+          "risk_points": 1214,
+          "conditional_depth_P90_m": 0.5368378400802613
+        },
+        "rear_right": {
+          "target_pixels": 13243,
+          "target_valid": 4676,
+          "risk_points": 1220,
+          "conditional_depth_P90_m": 0.4890049695968628
+        }
+      },
+      "union": {
+        "predicted": 49,
+        "target": 132,
+        "correct": 46,
+        "covered": 59,
+        "precision": 0.9387755102040817,
+        "recall": 0.44696969696969696,
+        "grid_P90_m": 0.10828427124746305
+      },
+      "suspended": {
+        "predicted": 49,
+        "target": 79,
+        "correct": 42,
+        "covered": 47,
+        "precision": 0.8571428571428571,
+        "recall": 0.5949367088607594,
+        "grid_P90_m": 1.7781587392799465
+      },
+      "ground_intersecting": {
+        "predicted": 49,
+        "target": 53,
+        "correct": 4,
+        "covered": 12,
+        "precision": 0.08163265306122448,
+        "recall": 0.22641509433962265,
+        "grid_P90_m": 2.5353401755468252
+      }
+    },
+    {
+      "frame": "frame_107.npz",
+      "time_s": 53.499998804181814,
+      "generation_s": 2.7778390089515597,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 16323,
+          "target_valid": 5691,
+          "risk_points": 1451,
+          "conditional_depth_P90_m": 0.46582555770874023
+        },
+        "rear_right": {
+          "target_pixels": 15110,
+          "target_valid": 5727,
+          "risk_points": 1441,
+          "conditional_depth_P90_m": 0.42900495529174815
+        }
+      },
+      "union": {
+        "predicted": 56,
+        "target": 131,
+        "correct": 56,
+        "covered": 68,
+        "precision": 1.0,
+        "recall": 0.5190839694656488,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 56,
+        "target": 79,
+        "correct": 54,
+        "covered": 61,
+        "precision": 0.9642857142857143,
+        "recall": 0.7721518987341772,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "ground_intersecting": {
+        "predicted": 56,
+        "target": 52,
+        "correct": 2,
+        "covered": 7,
+        "precision": 0.03571428571428571,
+        "recall": 0.1346153846153846,
+        "grid_P90_m": 2.583571511792962
+      }
+    },
+    {
+      "frame": "frame_108.npz",
+      "time_s": 53.99999879300594,
+      "generation_s": 2.783315885113552,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 14673,
+          "target_valid": 5046,
+          "risk_points": 1259,
+          "conditional_depth_P90_m": 0.38352906703948975
+        },
+        "rear_right": {
+          "target_pixels": 14707,
+          "target_valid": 5134,
+          "risk_points": 1295,
+          "conditional_depth_P90_m": 0.37313563823699947
+        }
+      },
+      "union": {
+        "predicted": 48,
+        "target": 123,
+        "correct": 48,
+        "covered": 66,
+        "precision": 1.0,
+        "recall": 0.5365853658536586,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "suspended": {
+        "predicted": 48,
+        "target": 71,
+        "correct": 46,
+        "covered": 59,
+        "precision": 0.9583333333333334,
+        "recall": 0.8309859154929577,
+        "grid_P90_m": 0.10000000000000142
+      },
+      "ground_intersecting": {
+        "predicted": 48,
+        "target": 52,
+        "correct": 2,
+        "covered": 7,
+        "precision": 0.041666666666666664,
+        "recall": 0.1346153846153846,
+        "grid_P90_m": 2.675607690047861
+      }
+    },
+    {
+      "frame": "frame_109.npz",
+      "time_s": 54.29999878630042,
+      "generation_s": 2.797839986043982,
+      "eyes": {
+        "front_left": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "front_right": {
+          "target_pixels": 0,
+          "target_valid": 0,
+          "risk_points": 0,
+          "conditional_depth_P90_m": null
+        },
+        "rear_left": {
+          "target_pixels": 13744,
+          "target_valid": 4007,
+          "risk_points": 1022,
+          "conditional_depth_P90_m": 0.3556227207183838
+        },
+        "rear_right": {
+          "target_pixels": 13586,
+          "target_valid": 4007,
+          "risk_points": 996,
+          "conditional_depth_P90_m": 0.3468527317047119
+        }
+      },
+      "union": {
+        "predicted": 36,
+        "target": 120,
+        "correct": 36,
+        "covered": 61,
+        "precision": 1.0,
+        "recall": 0.5083333333333333,
+        "grid_P90_m": 0.0
+      },
+      "suspended": {
+        "predicted": 36,
+        "target": 68,
+        "correct": 31,
+        "covered": 50,
+        "precision": 0.8611111111111112,
+        "recall": 0.7352941176470589,
+        "grid_P90_m": 1.7873900761994643
+      },
+      "ground_intersecting": {
+        "predicted": 36,
+        "target": 52,
+        "correct": 5,
+        "covered": 11,
+        "precision": 0.1388888888888889,
+        "recall": 0.21153846153846154,
+        "grid_P90_m": 2.583571511792962
+      }
+    }
+  ],
+  "aggregate": {
+    "predicted": 2038,
+    "target": 11652,
+    "correct": 1800,
+    "covered": 2665,
+    "precision": 0.8832188420019627,
+    "recall": 0.2287161002403021
+  },
+  "per_eye": {
+    "front_left": {
+      "target_pixels": 1087708,
+      "target_valid": 54840,
+      "floor_pixels": 9435719,
+      "floor_stride2_pixels": 2366178,
+      "floor_risk_proxy": 200,
+      "conditional_depth_P50_P90_P95_m": [
+        0.29226672649383545,
+        0.4402023196220398,
+        0.47678319215774523
+      ]
+    },
+    "front_right": {
+      "target_pixels": 676244,
+      "target_valid": 55422,
+      "floor_pixels": 9237096,
+      "floor_stride2_pixels": 2310604,
+      "floor_risk_proxy": 198,
+      "conditional_depth_P50_P90_P95_m": [
+        0.241196870803833,
+        0.38332476615905764,
+        0.42939507961273193
+      ]
+    },
+    "rear_left": {
+      "target_pixels": 997331,
+      "target_valid": 132826,
+      "floor_pixels": 10294289,
+      "floor_stride2_pixels": 2570752,
+      "floor_risk_proxy": 476,
+      "conditional_depth_P50_P90_P95_m": [
+        0.1672070026397705,
+        0.36116498708724976,
+        0.4343307614326477
+      ]
+    },
+    "rear_right": {
+      "target_pixels": 1715464,
+      "target_valid": 131804,
+      "floor_pixels": 9630936,
+      "floor_stride2_pixels": 2410843,
+      "floor_risk_proxy": 412,
+      "conditional_depth_P50_P90_P95_m": [
+        0.19727635383605957,
+        0.38081808090209956,
+        0.44819322824478147
+      ]
+    }
+  },
+  "generation_P50_P90_max_s": [
+    2.7867029799963348,
+    2.835760197043419,
+    3.0524931349791586
+  ],
+  "nonempty_risk_frames": 104,
+  "total_risk_points": 101084,
+  "minimum_observation_support_for_conditional_baseline": true,
+  "old_strict_source_admitted": false,
+  "scope": "Actual RGB SGBM current four camera E0 DEVELOPMENT. Height proxy not RGB semantics; missing depth unknown; pair geometry does not imply all targets overlap; source generation excludes planning/map/control.",
+  "physics": 0,
+  "fit": 0,
+  "evaluation_protocol_sha256": "9040725d2bcf57d571a4d4ca389b28d47b5aef22eb7ca9917cca3278524001a3"
+}

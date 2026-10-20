@@ -1,0 +1,133 @@
+{
+  "version": 105,
+  "created_utc": "2026-10-16T16:46:31.646250+00:00",
+  "status": "surface_uncertainty_continuation_ended_no_calibrated_metric_contract",
+  "root": "experiments/geometry_uncertainty_contract_20261017_v1",
+  "report": "reports/geometric_uncertainty_contract_results_20261017.md",
+  "source_inquiry": "mechanism_findings.json; BayesRays/GURecon only",
+  "diagnostic": "One global-X spatial direction on two frozen fields, observedRGB stationarity, not a fulluncertainty method",
+  "rays_per_field": 9600,
+  "views_per_field": 8,
+  "mode_centre_failures": 4,
+  "aggregates": {
+    "RGB_init_failed": {
+      "equal_view": {
+        "RGB_SSE": {
+          "minus": 0.0008197131974368615,
+          "0": 0.0008577128735621157,
+          "plus": 0.0009107353647619446
+        },
+        "derivative_RGB_SSE_per_m": 0.045883939135819674,
+        "central_difference_per_m": 0.04551108366254155,
+        "fixed_descent_direction": "minus",
+        "observed_loss_decrease": 3.799967612525424e-05,
+        "corroboration_threshold": 2e-08,
+        "nonstationary_gradient": true,
+        "descent_corroborates": true,
+        "stationary_centre_contradicted": true
+      },
+      "training_expectation": {
+        "RGB_SSE": {
+          "minus": 0.0008558708267505207,
+          "0": 0.0009313939430363252,
+          "plus": 0.0010238982023666131
+        },
+        "derivative_RGB_SSE_per_m": 0.0842731820885092,
+        "central_difference_per_m": 0.08401368780804622,
+        "fixed_descent_direction": "minus",
+        "observed_loss_decrease": 7.552311628580453e-05,
+        "corroboration_threshold": 2e-08,
+        "nonstationary_gradient": true,
+        "descent_corroborates": true,
+        "stationary_centre_contradicted": true
+      }
+    },
+    "known_density_init_qualified": {
+      "equal_view": {
+        "RGB_SSE": {
+          "minus": 0.0017863279957941961,
+          "0": 0.001891993687981124,
+          "plus": 0.0021073196759265832
+        },
+        "derivative_RGB_SSE_per_m": 0.15363953181076795,
+        "central_difference_per_m": 0.16049584006619355,
+        "fixed_descent_direction": "minus",
+        "observed_loss_decrease": 0.0001056656921869278,
+        "corroboration_threshold": 2e-08,
+        "nonstationary_gradient": true,
+        "descent_corroborates": true,
+        "stationary_centre_contradicted": true
+      },
+      "training_expectation": {
+        "RGB_SSE": {
+          "minus": 0.0020476117046050062,
+          "0": 0.0020741221478211974,
+          "plus": 0.0022147234756575837
+        },
+        "derivative_RGB_SSE_per_m": 0.07733446318889037,
+        "central_difference_per_m": 0.0835558855262887,
+        "fixed_descent_direction": "minus",
+        "observed_loss_decrease": 2.6510443216191167e-05,
+        "corroboration_threshold": 2.0741221478211976e-08,
+        "nonstationary_gradient": true,
+        "descent_corroborates": true,
+        "stationary_centre_contradicted": true
+      }
+    }
+  },
+  "scope": "Observed-RGB stationary-centre condition in one valid spatial direction. Not fullBayesRays or a test of its uncertainty-ranking performance; no Hessian/variance/error interval computed. Nonzero gradient violates stationarity even with a zero-centred quadratic deformationprior. A decrease in RGB loss is not a proven decrease in depth error.",
+  "known_comparator_GT_init": true,
+  "known_background_fixture": true,
+  "actual_source_performance": "N/A",
+  "fit": 0,
+  "physical": 0,
+  "navigation": 0,
+  "runtime": {
+    "status": "finished",
+    "dispatch_used": 1,
+    "dispatch_cap": 1,
+    "diagnostic_used": 1,
+    "diagnostic_cap": 1,
+    "fit_used": 0,
+    "fit_cap": 0,
+    "optimizer_steps": 0,
+    "physical": 0,
+    "navigation": 0,
+    "recovery_used": 0,
+    "recovery_cap": 1,
+    "budget_closed": true,
+    "terminal": {
+      "status": "finished",
+      "start_utc": "2026-10-16T16:38:24.231059+00:00",
+      "parent_pid": 2830527,
+      "child_pid": 2830561,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-16T16:38:27.952123+00:00"
+    }
+  },
+  "author_audit": {
+    "complete": true,
+    "CPU_only": true,
+    "view_checks": 16,
+    "rays_per_field": 9600,
+    "hash_checks": 48,
+    "delta0_RGB_matches_prior_exact": true,
+    "delta0_max_abs_RGB_error": 0.0,
+    "observed_samples_match_prior_exact": true,
+    "max_abs_loss_error": 6.505213034913027e-19,
+    "all4_aggregate_nonstationarity_decisions_confirmed": true,
+    "renderer_calls": 0,
+    "optimizer_steps": 0
+  },
+  "independent_review": "review.json; noimportantissues; pointwisezeroRGBidentity auditedexact",
+  "next_action": "当前表面/后验不确定性修复接续结束，不继续拟合、加置信头、改核宽/先验/噪声或用旧v99换消费者救分。下一轮回到测量生成，最多核查两个原始来源，具体问题为：因果3D可见性与遮挡顺序驱动的photo-consistency是否能在无已知背景/GT轮廓条件下生成有界米制表面约束？可优先读Space Carving及Generalized Voxel Coloring原始论文/官方实现，并仅对直接相关旧轮廓锥、逐像素平面扫描、v99颜色混合机制做有限区别核对。明确每一步真实RGB如何否证一个距离假设、可实现因果视点/位姿/遮挡来源和完整域缺口；不可见/缺失/不一致不能当自由。仅若形成实质非重复、可执行合同才同轮冻结独立最小预算并实现；否则如实记录无路/停滞，不派实验。本方向尚未研究成候选或准入，不是恢复旧预算的许可。",
+  "new_executable_source": null,
+  "currently_running": false,
+  "overall_complete": false,
+  "reliable_navigation": false,
+  "learning_increment": false
+}

@@ -1,0 +1,86 @@
+{
+  "version": 109,
+  "utc": "2026-10-17T07:55:33.159602+00:00",
+  "status": "counterevidence_and_birth_attribution_complete_A_actual_running",
+  "task_list": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-17-navigation-memory-task-list.md",
+  "prior_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/execution_next_entry_v108.json",
+  "completed_root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_counterevidence_input_20261017_v1",
+  "completed_report": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/current_risk_counterevidence_and_birth_results_20261017.md",
+  "counterevidence": {
+    "domain": "all180activeexposures,84301historicalcellqueries",
+    "strict_false_recall": 0.02022631392185467,
+    "strict_real_dispute_rate": 0.0005090094675760969,
+    "strict_false": 513,
+    "strict_real": 30,
+    "historical_false": 25363,
+    "historical_real": 58938,
+    "firstevent": "4/14historicalfalse,4/15allfalse; no mapchange/replan",
+    "decision": "Necessarycoveragefails; no clearingpolicy ornew algorithm"
+  },
+  "birth": {
+    "frames": 181,
+    "original_source_points": 1553767,
+    "original_false_points": 65095,
+    "GT_depth_excluded": 57752,
+    "GT_depth_relocated": 7164,
+    "GT_depth_still_false": 179,
+    "no_finite_teacher_depth": 55796,
+    "finite_false_depth_points": 9299,
+    "finite_false_depth_P90_m": 0.8620674133300786,
+    "depth_intervention_originalfalse_reduction": 0.9972501728243337,
+    "pose_intervention_originalfalse_reduction": 0.06210922497887705,
+    "limits": "Teacher-only replacement+eligibility attribution, not coordinatecorrection for99.7%, sourceclearance oronline performance"
+  },
+  "artifact_manifest": {
+    "sha256": "ce5edbae6a8f589c970fa7579c2625a85a6939d561f42b5951eb03f633bcb2f1",
+    "files": 210
+  },
+  "prior_roots_unchanged": {
+    "four_camera_weak_baseline_20261017_v1": {
+      "files": 2489,
+      "manifest_sha256": "9c85dd9bfd9e7703b6dfe4112f38370566c968eca02461eeaa3a8879e5a4e341"
+    },
+    "view_supported_memory_20261017_v1": {
+      "files": 123,
+      "manifest_sha256": "1f544193b201c7b6e86c1e125249bd5859fdb0390b89649cdb6bf00328e177df"
+    }
+  },
+  "runtime": {
+    "root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1",
+    "service": "ball-current-exposure-A-20261017",
+    "pid_namespace": "host systemd; sandboxPID not separate",
+    "durable_status": {
+      "status": "running",
+      "start_utc": "2026-10-17T07:52:18.574328+00:00",
+      "parent_pid": 3785925,
+      "child_pid": 3785926,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": null
+    },
+    "latest_source_progress": {
+      "frames": 172,
+      "blocks": 855,
+      "time_s": 85.49999808892608
+    },
+    "ledger": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/ledger.json",
+    "navigation_protocol": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/navigation_protocol.json",
+    "last_checked_utc": "2026-10-17T08:04:26.641902+00:00"
+  },
+  "A_scope": "ProspectiveactualAonly, exactoneimportchange to originalCurrentExposureRiskGrid; source/config/controlunchanged. KnownB prior developmentreference, noB rerun, C offlineclosed. Notfull3arm orindependentgeneralization.",
+  "budgets": {
+    "counterevidence": "dispatch1/1closed,recovery0 remainingclosed",
+    "birth": "dispatch1/1closed,recovery0 remainingclosed",
+    "A": "physical1/1reserved,recovery0/1; 90s900actions,2400wallcap",
+    "C": "closed,physical0",
+    "old_budgets_reopened": false
+  },
+  "next_action": "Supervise actual A only, never launchduplicate: service ball-current-exposure-A-20261017, status/current ledger in Aroot. On normal0 seal completee1_run BEFORE teacher score; use metadata-only A-labelled equivalent evaluator, evaluate fullsource/maps/supportblind and compare known B. C remains closed; P2 full3arm/learning incomplete. No oldconfidence/patch filter or conflict rule sweep.",
+  "overall_complete": false,
+  "reliable_navigation": false,
+  "learning_increment": false,
+  "P2_actual_three_arm_complete": false,
+  "automation": "originalautomation hourlyACTIVE unchanged"
+}

@@ -1,0 +1,140 @@
+{
+  "version": 116,
+  "utc": "2026-10-17T14:06:58.499106+00:00",
+  "status": "untrained_bodylocked_world_body_compatibility_qualification_rejected_closed",
+  "prior_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v115.json",
+  "prior_completed_design_followup": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/training_support_teacher_contract_followup.json",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/body_locked_support_qualification_results_20261017.md",
+  "candidate_identity": "D untrained dualframe pointsetcompatibility for NEWcapture/cell admission; not an oldC promotion or v115MLfeature/threshold retry. No newmetricdepth generated.",
+  "actual_execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T13:59:37.331836+00:00",
+    "parent_pid": 4163515,
+    "child_pid": 4163534,
+    "process_group_id": 4163534,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T14:00:02.693744+00:00"
+  },
+  "failure_analysis_execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T14:02:20.347477+00:00",
+    "parent_pid": 4166334,
+    "child_pid": 4166336,
+    "process_group_id": 4166336,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T14:02:21.311953+00:00"
+  },
+  "full_exposures": 470,
+  "source_point_rows": 2985832,
+  "cell_actions": 40052,
+  "full_score_times": 1910,
+  "B_original_maps_exact": 1010,
+  "false_reduction": {
+    "E0": 0.006389234422707224,
+    "E1B": 0.010095646597197971,
+    "E1A": 0.005157950055468485
+  },
+  "blind_missing_increase": {
+    "E0": 0.021411914352342576,
+    "E1B": 0.0,
+    "E1A": 0.0
+  },
+  "selector_timing": {
+    "E0": {
+      "P50_s": 0.0005096690147183836,
+      "P90_s": 0.004236896277870984,
+      "max_s": 0.007812023046426475
+    },
+    "E1B": {
+      "P50_s": 0.005875734495930374,
+      "P90_s": 0.02349070032360031,
+      "max_s": 0.06265996396541595
+    },
+    "E1A": {
+      "P50_s": 0.010096293524838984,
+      "P90_s": 0.03063333999598399,
+      "max_s": 0.06446140503976494
+    }
+  },
+  "negative_failure_layers": {
+    "E0": {
+      "total_cells": 156,
+      "allpoints_anchor_available": 85,
+      "missing_anchor_somepoint": 71,
+      "all_body_close": 1,
+      "all_world_far": 75,
+      "both_all_withheld": 1,
+      "some_world_compatible": 10,
+      "body_close_world_compatible": 0
+    },
+    "E1B": {
+      "total_cells": 3141,
+      "allpoints_anchor_available": 1417,
+      "missing_anchor_somepoint": 1724,
+      "all_body_close": 270,
+      "all_world_far": 846,
+      "both_all_withheld": 83,
+      "some_world_compatible": 571,
+      "body_close_world_compatible": 187
+    },
+    "E1A": {
+      "total_cells": 2099,
+      "allpoints_anchor_available": 1612,
+      "missing_anchor_somepoint": 487,
+      "all_body_close": 119,
+      "all_world_far": 1274,
+      "both_all_withheld": 24,
+      "some_world_compatible": 338,
+      "body_close_world_compatible": 95
+    }
+  },
+  "decision": "REJECT_FIXED_BODY_LOCK_COMPATIBILITY_NO_VARIANTS_OR_PHYSICAL",
+  "manifest_files": 986,
+  "manifest_sha256": "acca81b74dc2cdcf9d8d65f16224e4cfccb916cae0ea4526c997193007918181",
+  "qualifications": {
+    "independent_complete_saved_array_review": true,
+    "NN_independent_bruteforce_sample_points": 34,
+    "full_NN_recomputed_by_reviewer": false,
+    "initial_preflight_Important_guard_fixed_beforedispatch": true,
+    "actual_recovery": 0
+  },
+  "budget": {
+    "qualification_dispatch": 1,
+    "qualification_cap": 1,
+    "advisory_generation": 1,
+    "analysis_dispatch": 1,
+    "analysis_cap": 1,
+    "fit": 0,
+    "model_calls": 0,
+    "RGB_source_calls": 0,
+    "physics": 0,
+    "navigation": 0,
+    "closed": true
+  },
+  "runtime": null,
+  "online_default_changed": false,
+  "old_budgets_reopened": false,
+  "whole_research_complete": false,
+  "reliable_navigation": false,
+  "learning_increment": false,
+  "full3arm_complete": false,
+  "next_direct_action": "No next model or memory mechanism currently admitted. Do not repeat thisdualframe hypothesis/failurestatistics, v115teacher/OODreview, oldC/strictfarther or paused radiance chain. A future proposal must introduce a specific online-available causal signal or distinctconsumer with direct supporting evidence; only then freeze a separateboundedqualification. Absent suchproposal, report actualresearchstagnation without new reports/experiments merely to fill a wakeup.",
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "cadence": "hourly"
+  }
+}

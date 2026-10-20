@@ -1,0 +1,17 @@
+{
+  "stage": "front_rear_layout_rejected_geometry_bound_rendering_unqualified",
+  "parent_entry": "execution_next_entry_v78.json",
+  "updated_utc": "2026-10-14T21:47:33.237619+00:00",
+  "summary": "v79独立中心前(.45,0,.05)/后(-.45,0,.05)、yaw0/180且原内参固定的双相机布局完成七组1267已保存完整帧几何资格。CAD按原.01m近裁剪完整实际关节状态零遮挡证书通过，最前顶点.009897m，仅渲染裁剪资格非实体安装或硬件证明；21全XYZ顶点独立保守界核验通过。真实同E1保存姿态重渲染首轮和唯一同步恢复均在第二姿态失败，分别21:31:43–21:32:03与21:34:14–21:34:31UTC finished failure1，各仅首帧。恢复明确camera readback与物理root推算矩阵最大差.119732(矩阵口径非米制位置误差)，首帧前/后中央各1像素配置CAD场景圆柱射线与保存depth差.243368/2.043376m，未完整runtime stage身份封存，不能确认所有失败根因或冒称后视测量。两次原始数据不准入新视角评分/导航，physical2/2恢复1/1关闭，不再追加恢复。继续以已有合格保存相机GT和固定局部标定反推出base-link(左右最大矩阵差7.1e-15)，无新增遮挡的完整原目标格保留上界H/E0/E1/B54/C54/B65/C65=65.80/89.72/77.35/76.68/72.02/78.14/75.87%，全部低于冻结95%，独立21直角基坐标投影及1267格实例聚合exact，布局按几何负证据拒绝，不把渲染接口失败记成性能失败。原目标分母3681/8963/5553/5278/4775/5690/4923逐帧格实例；未生成完整新联合域、深度预测/误差分位/地面误报或长期图，不能记0。报告reports/front_rear_camera_geometry_results_20261015.md直接不合格首帧RGB/保存depth与完整上界BEV。host110905/110906/113883/113884均退出，两个systemd inactive，无运行。下一有限离线核对安装版Camera.set_local_pose/initialize与USD直接变换、原生root/base_link/渲染曝光时钟的合同，修正未来消费者接口资格而非重启本预算；同时仅用当前完整封存点分解当前固定窄视锥和.5–3m域的覆盖损失，决定是否有独立光学机制资格，不调本位置/角度/门槛换名重跑。旧v77模型/旧所有预算继续关闭，不用模型或GT在线，不自动微调。整体可靠导航/学习导航增量未实现，automationACTIVE。",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/front_rear_camera_geometry_20261015_v1",
+  "physical": 2,
+  "physical_cap": 2,
+  "recovery": 1,
+  "recovery_cap": 1,
+  "fit": 0,
+  "model_inference": 0,
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false,
+  "running_experiments": []
+}

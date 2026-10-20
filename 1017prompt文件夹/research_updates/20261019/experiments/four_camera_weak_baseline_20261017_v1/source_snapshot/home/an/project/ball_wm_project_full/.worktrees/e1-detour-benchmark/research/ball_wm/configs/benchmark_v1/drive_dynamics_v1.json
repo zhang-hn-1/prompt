@@ -1,0 +1,437 @@
+{
+  "schema_version": "drive_dynamics_v1",
+  "action_protocol_id": "ball_action_v2_aux30",
+  "measurement_timestamp_utc": "2026-09-12T13:30:39.622991+00:00",
+  "physics_hz": 50,
+  "controller": {
+    "main_acceleration_limit_rad_s2": 0.5,
+    "main_derivative_gain": 80.0,
+    "auxiliary_kp": 300.0,
+    "auxiliary_kd": 60.0,
+    "auxiliary_target_rate_limit_rad_s": 0.5235987755982988
+  },
+  "steering_samples": [
+    {
+      "main_command_rad_s": -1.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": -0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": -1.4407896995544434,
+      "speed_m_s": 0.576567869910213,
+      "curvature_1_m": 0.48916751509082057,
+      "signed_turning_radius_m": 2.0442894696601766
+    },
+    {
+      "main_command_rad_s": -1.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": -0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": -1.4584879279136658,
+      "speed_m_s": 0.58097705090496,
+      "curvature_1_m": 0.32858516687496275,
+      "signed_turning_radius_m": 3.043351011582736
+    },
+    {
+      "main_command_rad_s": -1.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": -0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": -1.449175477027893,
+      "speed_m_s": 0.5799415841143158,
+      "curvature_1_m": 0.14201463582907572,
+      "signed_turning_radius_m": 7.04152775636145
+    },
+    {
+      "main_command_rad_s": -1.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.0,
+      "measured_main_joint_velocity_rad_s": -1.4456485509872437,
+      "speed_m_s": 0.5784001176885543,
+      "curvature_1_m": -0.057630709659909164,
+      "signed_turning_radius_m": -17.351859900757923
+    },
+    {
+      "main_command_rad_s": -1.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": -1.448650062084198,
+      "speed_m_s": 0.5757696722858119,
+      "curvature_1_m": -0.27816996845220693,
+      "signed_turning_radius_m": -3.594924375065357
+    },
+    {
+      "main_command_rad_s": -1.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": -1.4555503726005554,
+      "speed_m_s": 0.5720619076486225,
+      "curvature_1_m": -0.4537840595862752,
+      "signed_turning_radius_m": -2.20369133484266
+    },
+    {
+      "main_command_rad_s": -1.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": -1.4420117139816284,
+      "speed_m_s": 0.5621583153764131,
+      "curvature_1_m": -0.5490251918048686,
+      "signed_turning_radius_m": -1.8214100462541511
+    },
+    {
+      "main_command_rad_s": -1.0,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": -0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": -0.918808788061142,
+      "speed_m_s": 0.3718913465545169,
+      "curvature_1_m": 0.6206027942733802,
+      "signed_turning_radius_m": 1.6113366056800134
+    },
+    {
+      "main_command_rad_s": -1.0,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": -0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": -0.9388300180435181,
+      "speed_m_s": 0.38890000581595746,
+      "curvature_1_m": 0.4087968778382846,
+      "signed_turning_radius_m": 2.4462026356169693
+    },
+    {
+      "main_command_rad_s": -1.0,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": -0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": -0.9721141755580902,
+      "speed_m_s": 0.39984546067331955,
+      "curvature_1_m": 0.13398071299785566,
+      "signed_turning_radius_m": 7.463760847548294
+    },
+    {
+      "main_command_rad_s": -1.0,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.0,
+      "measured_main_joint_velocity_rad_s": -0.9839827120304108,
+      "speed_m_s": 0.3980417927558397,
+      "curvature_1_m": -0.05682728334598315,
+      "signed_turning_radius_m": -17.597181162289104
+    },
+    {
+      "main_command_rad_s": -1.0,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": -0.9718100130558014,
+      "speed_m_s": 0.39658857932849556,
+      "curvature_1_m": -0.26108964944960905,
+      "signed_turning_radius_m": -3.8301020439073454
+    },
+    {
+      "main_command_rad_s": -1.0,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": -0.9412742853164673,
+      "speed_m_s": 0.3805707887654059,
+      "curvature_1_m": -0.5149816184097771,
+      "signed_turning_radius_m": -1.9418168809362977
+    },
+    {
+      "main_command_rad_s": -1.0,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": -0.9220085740089417,
+      "speed_m_s": 0.35796220280077595,
+      "curvature_1_m": -0.6822989936451282,
+      "signed_turning_radius_m": -1.4656331158537685
+    },
+    {
+      "main_command_rad_s": -0.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": -0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": -0.5089896619319916,
+      "speed_m_s": 0.20382789606663695,
+      "curvature_1_m": 1.2677343373204462,
+      "signed_turning_radius_m": 0.7888087989425732
+    },
+    {
+      "main_command_rad_s": -0.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": -0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": -0.48693297803401947,
+      "speed_m_s": 0.19910339859322854,
+      "curvature_1_m": 0.8820419342636057,
+      "signed_turning_radius_m": 1.133732945287771
+    },
+    {
+      "main_command_rad_s": -0.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": -0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": -0.479518324136734,
+      "speed_m_s": 0.1967853766630686,
+      "curvature_1_m": 0.4223775979196486,
+      "signed_turning_radius_m": 2.367549805968251
+    },
+    {
+      "main_command_rad_s": -0.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.0,
+      "measured_main_joint_velocity_rad_s": -0.4814585894346237,
+      "speed_m_s": 0.1920148636170791,
+      "curvature_1_m": -0.015347952667175152,
+      "signed_turning_radius_m": -65.15527000149746
+    },
+    {
+      "main_command_rad_s": -0.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": -0.4794302433729172,
+      "speed_m_s": 0.19268348854860584,
+      "curvature_1_m": -0.45864792720389735,
+      "signed_turning_radius_m": -2.1803216382038464
+    },
+    {
+      "main_command_rad_s": -0.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": -0.4875178337097168,
+      "speed_m_s": 0.19113425080011104,
+      "curvature_1_m": -0.9567813853376647,
+      "signed_turning_radius_m": -1.0451708356001124
+    },
+    {
+      "main_command_rad_s": -0.5,
+      "drive_direction": "reverse",
+      "auxiliary_angle_rad": 0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": -0.5125867426395416,
+      "speed_m_s": 0.1908475381907179,
+      "curvature_1_m": -1.350481758195855,
+      "signed_turning_radius_m": -0.7404764958365131
+    },
+    {
+      "main_command_rad_s": 0.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": -0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": 0.5425778031349182,
+      "speed_m_s": 0.21453669339685325,
+      "curvature_1_m": 0.8800519662098094,
+      "signed_turning_radius_m": 1.136296535199825
+    },
+    {
+      "main_command_rad_s": 0.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": -0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": 0.5273361206054688,
+      "speed_m_s": 0.2139550434317663,
+      "curvature_1_m": 0.5639254795663723,
+      "signed_turning_radius_m": 1.7732839466110755
+    },
+    {
+      "main_command_rad_s": 0.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": -0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": 0.5250696241855621,
+      "speed_m_s": 0.21594488277381993,
+      "curvature_1_m": 0.25582067295969063,
+      "signed_turning_radius_m": 3.9089882316022555
+    },
+    {
+      "main_command_rad_s": 0.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.0,
+      "measured_main_joint_velocity_rad_s": 0.5295334160327911,
+      "speed_m_s": 0.21323299353024988,
+      "curvature_1_m": -0.043420994541506296,
+      "signed_turning_radius_m": -23.030333841020067
+    },
+    {
+      "main_command_rad_s": 0.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": 0.5241678953170776,
+      "speed_m_s": 0.21211225981943774,
+      "curvature_1_m": -0.3436411657540545,
+      "signed_turning_radius_m": -2.910012244329611
+    },
+    {
+      "main_command_rad_s": 0.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": 0.5265615284442902,
+      "speed_m_s": 0.20630906796308573,
+      "curvature_1_m": -0.6745294386622155,
+      "signed_turning_radius_m": -1.4825149840506378
+    },
+    {
+      "main_command_rad_s": 0.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": 0.542425125837326,
+      "speed_m_s": 0.20158752375417885,
+      "curvature_1_m": -1.0267809231910197,
+      "signed_turning_radius_m": -0.9739175878844826
+    },
+    {
+      "main_command_rad_s": 1.0,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": -0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": 0.9365972280502319,
+      "speed_m_s": 0.3757872403444698,
+      "curvature_1_m": 0.45748548562557784,
+      "signed_turning_radius_m": 2.1858616970822
+    },
+    {
+      "main_command_rad_s": 1.0,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": -0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": 0.9588673412799835,
+      "speed_m_s": 0.39084459348329437,
+      "curvature_1_m": 0.33146889578522615,
+      "signed_turning_radius_m": 3.016874321287587
+    },
+    {
+      "main_command_rad_s": 1.0,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": -0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": 0.9820259213447571,
+      "speed_m_s": 0.39616742278176503,
+      "curvature_1_m": 0.1576629219363377,
+      "signed_turning_radius_m": 6.342645358328366
+    },
+    {
+      "main_command_rad_s": 1.0,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.0,
+      "measured_main_joint_velocity_rad_s": 0.9866119027137756,
+      "speed_m_s": 0.3959972743317595,
+      "curvature_1_m": -0.060383292320773566,
+      "signed_turning_radius_m": -16.5608724129799
+    },
+    {
+      "main_command_rad_s": 1.0,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": 0.9815439879894257,
+      "speed_m_s": 0.3927903072983505,
+      "curvature_1_m": -0.2738412300501118,
+      "signed_turning_radius_m": -3.651751052305032
+    },
+    {
+      "main_command_rad_s": 1.0,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": 0.9584758579730988,
+      "speed_m_s": 0.38401256695504343,
+      "curvature_1_m": -0.4223852455107259,
+      "signed_turning_radius_m": -2.3675069397626634
+    },
+    {
+      "main_command_rad_s": 1.0,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": 0.9341824054718018,
+      "speed_m_s": 0.3632531264119486,
+      "curvature_1_m": -0.5719146760285642,
+      "signed_turning_radius_m": -1.7485125699940165
+    },
+    {
+      "main_command_rad_s": 1.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": -0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": 1.4135501980781555,
+      "speed_m_s": 0.555336532413446,
+      "curvature_1_m": 0.6220227158511688,
+      "signed_turning_radius_m": 1.6076583290557347
+    },
+    {
+      "main_command_rad_s": 1.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": -0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": 1.4123463034629822,
+      "speed_m_s": 0.5595926535002561,
+      "curvature_1_m": 0.4032221122708683,
+      "signed_turning_radius_m": 2.4800227208974106
+    },
+    {
+      "main_command_rad_s": 1.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": -0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": 1.4017610549926758,
+      "speed_m_s": 0.5579184710119129,
+      "curvature_1_m": 0.19927861654525839,
+      "signed_turning_radius_m": 5.018099871106285
+    },
+    {
+      "main_command_rad_s": 1.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.0,
+      "measured_main_joint_velocity_rad_s": 1.3972283005714417,
+      "speed_m_s": 0.5555340361460084,
+      "curvature_1_m": -0.053693568733027705,
+      "signed_turning_radius_m": -18.62420441770497
+    },
+    {
+      "main_command_rad_s": 1.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.17453292519943295,
+      "measured_main_joint_velocity_rad_s": 1.4023574590682983,
+      "speed_m_s": 0.5535804873704491,
+      "curvature_1_m": -0.31804865283024253,
+      "signed_turning_radius_m": -3.1441730411408058
+    },
+    {
+      "main_command_rad_s": 1.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.3490658503988659,
+      "measured_main_joint_velocity_rad_s": 1.411619246006012,
+      "speed_m_s": 0.550785920593369,
+      "curvature_1_m": -0.5339950661173024,
+      "signed_turning_radius_m": -1.8726764785881571
+    },
+    {
+      "main_command_rad_s": 1.5,
+      "drive_direction": "forward",
+      "auxiliary_angle_rad": 0.5235987755982988,
+      "measured_main_joint_velocity_rad_s": 1.4156438112258911,
+      "speed_m_s": 0.5416459022688497,
+      "curvature_1_m": -0.6810146793751989,
+      "signed_turning_radius_m": -1.4683971289979478
+    }
+  ],
+  "braking_samples": [
+    {
+      "main_command_rad_s": -1.5,
+      "drive_direction": "reverse",
+      "speed_m_s": 0.5768914434753557,
+      "stopping_distance_m": 1.043870513750411,
+      "stop_time_s": 3.1399999999999997
+    },
+    {
+      "main_command_rad_s": -1.0,
+      "drive_direction": "reverse",
+      "speed_m_s": 0.398989762118167,
+      "stopping_distance_m": 0.5712541508775116,
+      "stop_time_s": 2.22
+    },
+    {
+      "main_command_rad_s": -0.5,
+      "drive_direction": "reverse",
+      "speed_m_s": 0.19045155348030218,
+      "stopping_distance_m": 0.1842990620218037,
+      "stop_time_s": 1.3000000000000003
+    },
+    {
+      "main_command_rad_s": 0.5,
+      "drive_direction": "forward",
+      "speed_m_s": 0.21085944682131527,
+      "stopping_distance_m": 0.20338120058041095,
+      "stop_time_s": 1.3399999999999999
+    },
+    {
+      "main_command_rad_s": 1.0,
+      "drive_direction": "forward",
+      "speed_m_s": 0.39040078249994153,
+      "stopping_distance_m": 0.5165229634564943,
+      "stop_time_s": 2.0800000000000005
+    },
+    {
+      "main_command_rad_s": 1.5,
+      "drive_direction": "forward",
+      "speed_m_s": 0.5496781915540693,
+      "stopping_distance_m": 1.0881320208656964,
+      "stop_time_s": 3.3
+    }
+  ]
+}

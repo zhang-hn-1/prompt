@@ -1,0 +1,100 @@
+{
+  "version": 124,
+  "utc": "2026-10-19T09:46:48.362965+00:00",
+  "previous_entry": "execution_next_entry_v123.json",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/self_RGB_dependency_GT_attribution_results_20261019.md",
+  "report_sha256": "dbb28a2b7074d788febfca8c6b946b4cc50c48a724274161eb54a4f6fe8fc50b",
+  "decision": "STOP_TREATING_SELF_RGB_DEPENDENCE_AS_UNIFORM_ERROR_SIGNAL",
+  "totals": {
+    "all_risk": 12267,
+    "protected": 12052,
+    "affected_all": 980,
+    "affected_protected": 866,
+    "full_pixels": 4915200,
+    "finite_positive_GT": 2887203,
+    "invalid_GT_UNKNOWN": 2027997,
+    "target_pixels": 527344
+  },
+  "groups": {
+    "all_finite_in_range": {
+      "scorable": 11621,
+      "old_good": 10597,
+      "old_bad": 1024,
+      "still_good": 9764,
+      "harmed": 833,
+      "corrected": 10,
+      "still_bad": 1014,
+      "old_good_lost_validity": 810,
+      "new_valid": 10665
+    },
+    "protected_finite_in_range": {
+      "scorable": 11420,
+      "old_good": 10486,
+      "old_bad": 934,
+      "still_good": 9712,
+      "harmed": 774,
+      "corrected": 10,
+      "still_bad": 924,
+      "old_good_lost_validity": 753,
+      "new_valid": 10566
+    },
+    "affected_protected_finite_in_range": {
+      "scorable": 854,
+      "old_good": 753,
+      "old_bad": 101,
+      "still_good": 0,
+      "harmed": 753,
+      "corrected": 0,
+      "still_bad": 101,
+      "old_good_lost_validity": 753,
+      "new_valid": 0
+    },
+    "affected_protected_target": {
+      "scorable": 854,
+      "old_good": 753,
+      "old_bad": 101,
+      "still_good": 0,
+      "harmed": 753,
+      "corrected": 0,
+      "still_bad": 101,
+      "old_good_lost_validity": 753,
+      "new_valid": 0
+    }
+  },
+  "gates": {
+    "affected_target_nonempty": true,
+    "original_error_majority": false,
+    "corrections_exceed_harm": false
+  },
+  "independent_review_sha256": "7f12fd34150431b565ed29c15f226ad9dcd2e1c159d19def7092d7b53be28934",
+  "budget": {
+    "cap": 1,
+    "used": 1,
+    "recovery_cap": 0,
+    "recovery_used": 0,
+    "parent_pid": 2619342,
+    "purpose": "One independent saved-output postfailure GT attribution; no old budget reopened",
+    "status": "finished",
+    "execution": {
+      "status": "finished",
+      "start_utc": "2026-10-19T09:40:48.425670+00:00",
+      "parent_pid": 2619342,
+      "child_pid": 2619343,
+      "process_group_id": 2619343,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-19T09:40:50.883897+00:00"
+    }
+  },
+  "runtime": null,
+  "automation_status": "ACTIVE",
+  "old_v123_budget_unchanged": true,
+  "whole_goal_complete": false,
+  "next_action": "Close selfRGBdependence-as-uniformerror hypothesis; no furtherGTdecomposition, repeatmatching/intervention, CAD/decoder/costtuning orv123repairrevival. Majorityscoreddependentqueries wereoriginallyaccurate; thisdoesnot provebodyRGBalwaysbeneficial,native/reference equivalence,unique7.6%failurecause orallmethods impossible. Need specificselective onlineerror linkage beforeanynewconsumer/learningbudget. No currentnewcandidateadmitted; researchstalled, preserveunfinishedreliable/learning goals."
+}

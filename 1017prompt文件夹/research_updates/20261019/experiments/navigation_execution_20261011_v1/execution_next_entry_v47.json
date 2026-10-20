@@ -1,0 +1,193 @@
+{
+  "stage": "tangent_field_e1_pair_closed_navigation_reject",
+  "updated_utc": "2026-10-13T02:47:12.647956+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/execution_next_entry_v46.json",
+  "report": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/tangent_field_navigation_results_20261013.md",
+  "experiment": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tangent_field_navigation_20261013_v1",
+  "resource_block_resolved": true,
+  "results": {
+    "baseline": {
+      "termination": {
+        "termination": "timeout90",
+        "actions": 900,
+        "time_s": 89.99999798834324,
+        "budget_s": 90.0,
+        "true_goal_xy_threshold_m": 0.2,
+        "not_original35": true,
+        "not_causal_navigation_AB": true
+      },
+      "initial_distance_m": 6.600000673532486,
+      "remaining_m": 5.347276390467599,
+      "net_progress_m": 1.2527242830648877,
+      "captures": 901,
+      "contact_schema_example": {
+        "simulation_time_s": 0.0,
+        "physics_step_index": 0,
+        "source": "capture",
+        "available": true,
+        "contact": false
+      },
+      "contact_records": 5401,
+      "contacts_detected_by_named_fields": 0,
+      "unavailable_contacts": 0,
+      "depth_scoring": {
+        "pixels": 4789024,
+        "p90_absolute_error_m": 0.11696184873580939,
+        "outlier_fraction_above_0p3m": 0.008353894238157921,
+        "under1m_confident_pixels": 5304,
+        "source_points": 1614722,
+        "saved_pairs": 181,
+        "pass_gate": true,
+        "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+      },
+      "video_frames": {
+        "stereo_view.mp4": 901,
+        "third_person.mp4": 901
+      },
+      "raw_arrival_pass": false,
+      "first_contact_s": null,
+      "retain": false
+    },
+    "candidate": {
+      "termination": {
+        "termination": "timeout90",
+        "actions": 900,
+        "time_s": 89.99999798834324,
+        "budget_s": 90.0,
+        "true_goal_xy_threshold_m": 0.2,
+        "not_original35": true,
+        "not_causal_navigation_AB": true
+      },
+      "initial_distance_m": 6.600000673532486,
+      "remaining_m": 6.054107846460264,
+      "net_progress_m": 0.5458928270722225,
+      "captures": 901,
+      "contact_schema_example": {
+        "simulation_time_s": 0.0,
+        "physics_step_index": 0,
+        "source": "capture",
+        "available": true,
+        "contact": false
+      },
+      "contact_records": 5401,
+      "contacts_detected_by_named_fields": 0,
+      "unavailable_contacts": 0,
+      "depth_scoring": {
+        "pixels": 4865295,
+        "p90_absolute_error_m": 0.12169368267059333,
+        "outlier_fraction_above_0p3m": 0.013352736062253163,
+        "under1m_confident_pixels": 2803,
+        "source_points": 1563785,
+        "saved_pairs": 181,
+        "pass_gate": true,
+        "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+      },
+      "video_frames": {
+        "stereo_view.mp4": 901,
+        "third_person.mp4": 901
+      },
+      "raw_arrival_pass": false,
+      "first_contact_s": null,
+      "retain": false
+    }
+  },
+  "source_map_metrics": {
+    "baseline_e1": {
+      "depth": {
+        "total_source_image_pixels": 55603200,
+        "predicted_confident_range_pixels": 6461971,
+        "finite_scored_pixels": 4789024,
+        "conditional_scoring_coverage": 0.7411088660100765,
+        "full_image_scored_fraction": 0.08612856813996317,
+        "predicted_on_renderer_nohit_pixels": 1672947,
+        "p50": 0.02793508768081665,
+        "p90": 0.11696184873580939,
+        "p95": 0.14602895975112906,
+        "scope": "181 source images; confident0.5-3m predictions; renderer nohit not physical free; instance counts not unique coverage or recall"
+      },
+      "map": {
+        "scene": "baseline_e1",
+        "terminal": {
+          "termination": "timeout90",
+          "actions": 900,
+          "time_s": 89.99999798834324,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "accepted_point_instances": 275861,
+        "truth_valid_instances": 238187,
+        "truth_valid_fraction": 0.8634312207959806,
+        "floor_false_instances": 1370,
+        "floor_false_fraction": 0.005751783262730544,
+        "position_error_p50_m": 0.025374439557169053,
+        "position_error_p90_m": 0.07388974685838362,
+        "final_risk_cells": 179,
+        "older10s_cells": 118,
+        "farther015m_reference_cells": 22,
+        "limits": "Map reference is existing vertical_max_body_band occupancy (not exact 3D surface). 0.15m cell-centre tolerance only evaluation; no online change. No full-image recall. Accepted-point metrics exclude invalid truth.",
+        "older10s_far_reference_cells": 13,
+        "recent_far_reference_cells": 9
+      }
+    },
+    "candidate_e1": {
+      "depth": {
+        "total_source_image_pixels": 55603200,
+        "predicted_confident_range_pixels": 6254227,
+        "finite_scored_pixels": 4865295,
+        "conditional_scoring_coverage": 0.7779210764175972,
+        "full_image_scored_fraction": 0.0875002697686464,
+        "predicted_on_renderer_nohit_pixels": 1388932,
+        "p50": 0.029607057571411133,
+        "p90": 0.12169368267059333,
+        "p95": 0.14885528087615962,
+        "scope": "181 source images; confident0.5-3m predictions; renderer nohit not physical free; instance counts not unique coverage or recall"
+      },
+      "map": {
+        "scene": "candidate_e1",
+        "terminal": {
+          "termination": "timeout90",
+          "actions": 900,
+          "time_s": 89.99999798834324,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "accepted_point_instances": 290346,
+        "truth_valid_instances": 253229,
+        "truth_valid_fraction": 0.8721628677508904,
+        "floor_false_instances": 1047,
+        "floor_false_fraction": 0.0041345975381966524,
+        "position_error_p50_m": 0.02362536010141155,
+        "position_error_p90_m": 0.05930565830840121,
+        "final_risk_cells": 184,
+        "older10s_cells": 114,
+        "farther015m_reference_cells": 30,
+        "limits": "Map reference is existing vertical_max_body_band occupancy (not exact 3D surface). 0.15m cell-centre tolerance only evaluation; no online change. No full-image recall. Accepted-point metrics exclude invalid truth.",
+        "older10s_far_reference_cells": 19,
+        "recent_far_reference_cells": 11
+      }
+    }
+  },
+  "raw_and_independent_pass": true,
+  "processes": {
+    "parent": 1570097,
+    "baseline": 1570113,
+    "candidate": 1582048,
+    "all_exited": true
+  },
+  "budget": {
+    "cap": 2,
+    "used": 2,
+    "remaining": 0,
+    "recovery": 0,
+    "fit": 0
+  },
+  "next": "Finite novelty check current paired/LR source one-to-one correspondence ownership. If absent implement distinct current right-partner collision validity consumer with unknown/no free, complete grouped sequence qualification/output sealed before GT. No threshold scan or old classifier/closed budget rescue; physics only after source gate qualifies, newcap<=4 including baseline/fresh validation.",
+  "stop_reason": "Completed real bounded single-candidate keep/reject stage and independent closure; no running experiment or user approval pending.",
+  "reliable_navigation": false,
+  "learning_navigation_increment": false,
+  "whole_project_complete": false
+}

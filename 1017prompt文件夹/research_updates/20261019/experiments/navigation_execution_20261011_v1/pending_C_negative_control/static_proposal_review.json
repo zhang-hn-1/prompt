@@ -1,0 +1,130 @@
+{
+  "artifact_type": "static_independent_proposal_review",
+  "utc": "2026-10-18T02:12:05.841658+00:00",
+  "reviewed_proposal_sha256": "09cc94faff624a26bd126129a5e8d809a69e8980a7dd0dd0e962b8843246c8b6",
+  "review_scope": "Static text and SHA review only of pending proposal, pending launcher, metadata adapter, navigation protocol and archived source/admission configuration. Compared C memory class and metadata formula to original C replay, and archived A/B navigation text. No execution/import of proposal/source/simulation/test code; no numeric RGB/GT containers read; no budget reserved.",
+  "reviewed_local_sha256": {
+    "proposal.json": "09cc94faff624a26bd126129a5e8d809a69e8980a7dd0dd0e962b8843246c8b6",
+    "navigation_pending.py": "223287b6d9da0c5d140bd27134a7a84860fbbde6fab834e469eccd94c47231b1",
+    "metadata_adapter.py": "5e4dc961bbfebaacd5ad08d9436ceca12793aca4e35dc55a8008b69242f9c459",
+    "navigation_protocol.json": "0a96f0c10772c2e8cc1e8b1d98cc2063547ae0d72b232ceaa7fa2e1d82aa6120",
+    "protocol.json": "d38c914a7eb94ac4e9f4d1903530d63f924563342001c6a41a66bc00c08d8e59",
+    "preparation_record.json": "873c3016ed4cd55a4f7a431fecb32a742411911bdc23bba55e474941997cb200",
+    "interface_result.json": "f5fe793829ea019a91f07ee420391f0541307778a48a42013fb42edc19f50234",
+    "e0_result.json": "8a07d32460e29ae77ca12b50215b1ecb40c9c0f154390c089357369879406e64",
+    "comparison_protocol.json": "b6d8504b0f677524f08d0a507630450d64c306eacf70bc37e61faca7b7137bbc"
+  },
+  "identity_checks": {
+    "proposal_identity_matches_requested": true,
+    "frozen_identity_count": 27,
+    "frozen_identity_mismatches": [],
+    "navigation_source_identity_count": 112,
+    "navigation_source_identity_mismatches": [],
+    "navigation_numeric_input_artifacts_not_opened": true
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": []
+  },
+  "static_positive_checks": {
+    "direct_human_exception_precedes_project_imports": "Before metadata_adapter, archived navigation, C memory or source imports, launcher requires approval file, user_explicit_authorization is True, exact proposal SHA equality, and frozen identity hashes.",
+    "no_present_approval_or_allocated_budget": "All five required grant/status files absent; no e1_run directory or supervisor present; proposed budget remains unallocated. New navigation protocol status explicitly separates frozen parameters from user/interface/budget execution admission.",
+    "exact_original_C": "Launcher loads the frozen original memory.py and assigns memory.ViewSupportMemoryGrid to archived navigation.RepeatedExposureMemoryGrid. No C class or parameters edited.",
+    "metadata_formula": "Adapter copies each record and adds body_center=body[:3,3] and pair_center=body[:3,3]+body[:3,:3]@mean(LOCAL pair translations), choosing front(0,1)/rear(2,3), exactly matching original replay.py:43-44. Source world/pixel arrays are passed through.",
+    "archived_A_B_navigation_scope": "Static A/B navigation text differs only in current-exposure versus repeated-exposure memory import. C wrapper otherwise reuses the archived B source/pose/planner/controller/cameras and acquisition clocks.",
+    "bounded_request": "Proposed one original-C negative control, 90 simulation seconds/900 actions, obstacle-contact stop, wall2400, recovery0, interface+navigation+score cap3; all are proposed and unallocated.",
+    "honest_negative_control": "Proposal retains offline benefit14.24% below20% and blindmissing11.45% to57.01%, requests an explicit exception to the no-C-physics closure, and does not require C to improve. Numeric noninferiority/benefit thresholds are prospective development descriptions.",
+    "scope_limits": "Known A/B comparisons, possibly diverging trajectories/RGB, seen development scene and no independent generalization are disclosed. Original offline gate stays failed regardless of any future C run.",
+    "second_fail_closed_execution_admission": "navigation_pending.py:14-37 now statically enforces the separately bound interface, budget/ledger and durable parent/child prerequisites before project imports. This is not a claim that any C interface passed or supervision exists.",
+    "archived_A_B_comparator_binding": "11 concrete JSON result/support/capture/source/terminal artifacts match frozen hashes; scalar summaries and complete seal/terminal metadata checked without reading any arrays. Comparison protocol is also proposal-bound.",
+    "historical_budget_warning": "Copied historical budgets explicitly inert in proposal; no prior ledger or recovery permission is inherited."
+  },
+  "assessment": {
+    "authorized_to_launch": false,
+    "ready_to_launch": false,
+    "static_proposal_is_concrete_and_reviewable": true,
+    "current_critical_or_important_findings": 0,
+    "ready_to_present_narrow_human_scope_budget_exception": true,
+    "recommended_next_action": "Present this exact proposal SHA for the single narrow direct human scope/budget exception. This static review grants no permission; if approved, only the separately approved minimal interface/effective execution admission/durable supervision may proceed before physics."
+  },
+  "no_rerun": {
+    "project_runtime_imports": 0,
+    "source_or_simulator_calls": 0,
+    "tests": 0,
+    "numeric_RGB_GT_reads": 0,
+    "experiments": 0,
+    "budget_reserved": false,
+    "approval_created": false
+  },
+  "limits": "Static review cannot establish runtime C schema compatibility, guard execution behavior, source/pose/planner behavior, actual C performance, full ABC evidence or research-goal completion. No human exception has been granted. Original C closure and all old budgets remain closed. Earlier Important was corrected by static code changes only; C interface has not been checked.",
+  "prior_static_review_sha256": "8f036bb5696dd8a5e0410999a1da8507f09ed08cebace756abd490049dadacaa",
+  "resolved_findings": [
+    {
+      "id": "P1-runtime-admission-incomplete",
+      "file": "navigation_pending.py",
+      "lines": [
+        13,
+        29
+      ],
+      "finding": "Once approval.json has the authorization boolean and matching proposal SHA, the launcher immediately imports the project runtime and calls nav.main(). It does not independently require the proposal-listed C metadata/schema interface pass, an approved effective budget and durable ledger, or a registered supervisor/child PID. The copied old baseline interface/E0 admission files satisfy the archived navigation guards but are not the proposed new C interface gate.",
+      "impact": "Current absence of approval correctly blocks all project runtime imports. If a direct human exception is later recorded, approval alone would make this file capable of starting an unsupervised C physics run before its own declared launch prerequisites. Proposed recovery0/wall2400/contact bounds are not fully enforced by the pending wrapper alone.",
+      "required_resolution": "Keep the pending launcher fail-closed after scope approval until separately bound effective execution admission verifies the completed approved minimal interface, approved protocol/budget, and active registered durable supervisor/ledger. Do not create approval, allocate budget, or run an interface as part of this static proposal review.",
+      "classification": "Future launch blocker, not evidence that an unauthorized run has occurred.",
+      "resolution_status": "RESOLVED_STATIC_ONLY_NOT_EXECUTED",
+      "resolved_by_reviewed_launcher_sha256": "223287b6d9da0c5d140bd27134a7a84860fbbde6fab834e469eccd94c47231b1",
+      "resolution": "Before any project runtime import, updated launcher now requires identity-bound execution admission; C-specific interface result binding proposal and result SHA; one-run reserved ledger cap=used=1/recovery_cap=0 binding proposal/current durable parent and admitted ledger SHA; and running child/parent PID registration, with only a bounded two-second metadata wait. All project imports remain after these checks. No grant files, interface runtime or supervisor were executed or created by this review."
+    },
+    {
+      "id": "P2-archived-comparator-binding",
+      "file": "proposal.json",
+      "lines": [
+        19,
+        20
+      ],
+      "finding": "The proposal explicitly discloses prospective C against known archived A/B and freezes their navigation protocols, but does not yet bind the exact archived A/B result/capture-seal/terminal identities used for numerical comparison. Bind those concrete comparator artifacts in the later effective evaluation protocol before any approved experiment; do not imply a same-stream or independent three-arm study.",
+      "resolution_status": "RESOLVED_STATIC_COMPARATOR_BINDING",
+      "resolution": "Exact 11 comparator result/support/capture/source/terminal JSON identities and comparison_protocol.json are now proposal-bound; archived scalar values and prospective gates match."
+    },
+    {
+      "id": "P2-archived-config-budget-fields",
+      "file": "protocol.json",
+      "lines": [
+        62,
+        73
+      ],
+      "finding": "The copied baseline config still contains historical budget and recovery1 fields and the B memory description. The proposal and pending navigation protocol correctly state proposed recovery0/original C. Label the copy as archived source configuration and make the later effective execution protocol/ledger authoritative; never use the copied historical budget as permission.",
+      "resolution_status": "RESOLVED_STATIC_EXPLICIT_INERT_COPY_WARNING",
+      "resolution": "Proposal explicitly declares inherited historical budget fields inert and not grants; separate human exception, C interface, one-run ledger and durable admission remain required."
+    }
+  ],
+  "grant_file_presence_at_final_review": {
+    "approval.json": false,
+    "execution_admission.json": false,
+    "C_interface_result.json": false,
+    "navigation_ledger.json": false,
+    "navigation_status.json": false
+  },
+  "runtime_output_directory_exists": false,
+  "comparison_static_checks": {
+    "all_11_reference_file_SHA_match": true,
+    "all_comparator_references_bound_by_proposal": true,
+    "comparison_protocol_SHA_bound_by_proposal": true,
+    "A_known_scalar_fields_match_archived_JSON": true,
+    "A_complete_capture_source_terminal_metadata": true,
+    "B_known_scalar_fields_match_archived_JSON": true,
+    "B_complete_capture_source_terminal_metadata": true,
+    "four_numeric_thresholds_exact_known_B_arithmetic": true,
+    "contact_max_zero_and_terminal_caps": true,
+    "proposal_warning_archived_budgets_inert": true,
+    "project_code_unchanged_from_prior_review": true
+  },
+  "comparison_thresholds_verified": {
+    "contact_count_max": 0,
+    "net_goal_progress_min_m": 1.64976528276972,
+    "false_map_cellseconds_max": 11601.039999999979,
+    "source_supported_blind_missing_fraction_max": 0.05837516512549538,
+    "full_chain_P90_max_s": 4.180907467865619
+  },
+  "comparison_scope_note": "The E1 source-supported blindmissing bound uses the archived supported_memory_result denominator (previously source-supported visible targets absent now). It is not the original E0 offline historical-gap metric; old offline14.24% benefit and11.45%→57.01% remain failed and are not replaced by these prospective known-B-derived thresholds. No same-RGB, randomized causal, statistical or independent generalization claim."
+}

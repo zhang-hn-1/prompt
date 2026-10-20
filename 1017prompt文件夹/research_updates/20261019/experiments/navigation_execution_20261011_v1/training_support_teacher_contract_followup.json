@@ -1,0 +1,92 @@
+{
+  "utc": "2026-10-17T12:52:28.296865+00:00",
+  "status": "BOUNDED_TRAIN_SUPPORT_AND_TEACHER_CONTRACT_REVIEW_COMPLETE_NO_REPAIR_ADMITTED",
+  "scope": "Read direct metadata, teacher/frontend code, saved aggregate diagnosis and closed protocol only. No array reprocessing/new numericalexperiment/model/feature/source/teacher generation. Original v115 science and closed budgets unchanged.",
+  "evidence_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v115.json": "4d53051a516fadd948adee44159bc376b76338624398643c35dd011dbd0d5a01",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_action_learning_20261017_v1/protocol.json": "932bbc724da0f9db758031bc4eb78f90bc7d4b5785304273d0ab119149cb1766",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_action_learning_20261017_v1/closure.json": "385996d052e56b37403506acd9a8d4b87c6258a66b282ae1502561e51a2f6cdf",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_action_learning_20261017_v1/cause_assessment.json": "5e3c2970207cebca83591fb92494ac897d40e5ce7ee2849b94f85ab9865c3643",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_action_learning_20261017_v1/diagnosis/result.json": "2fcd90ea0588076265625207f69e5c8bf7dc15735046f3c5c982dd901162d3ce",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json": "038b9fbee4fe89d7f14221df397ab71f669cd483e77ab42e621acc8060b8e439",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/persistent_entry_data_qualification_20261017_v1/labels.py": "889bc8af00af0fe3aa2804e07450f205b829ed6dc4c9cc874d8ed93ef71f6749",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_feature_frontend_20261017_v1/frontend.py": "0211218b96e07be051a09bad4917cdd5d6304a779094ce97d395c46698d7c49b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/monocular_error_shape_20261015_v1/protocol.json": "ff742133e4708a23841c80ad319227fd001f6c39f547d7c06ae896671d9db471"
+  },
+  "data_identity": {
+    "sequences": {
+      "E0": 110,
+      "E1B": 180,
+      "E1A": 180
+    },
+    "scene_groups": {
+      "E0": [
+        "E0"
+      ],
+      "E1": [
+        "E1B",
+        "E1A"
+      ]
+    },
+    "feature_channels": 24,
+    "source_points": 2985832,
+    "all_seen": true,
+    "independent_scene_groups": 2,
+    "oldseven": "Historical seven seen sequences have different old camera installation; cannot silently append as currentrig featuretraining.",
+    "hard8_9": "No acquired currentrig captures/labels in this declared corpus; old v115 physicalreservation closedunused; not reallocated or opened."
+  },
+  "teacher_contract": {
+    "physicalUNKNOWN": "offline coarse staticbodyband distance .10–.20m margin/outside; not RGBavailability flag",
+    "action_default": "HOLD physicalUNKNOWN in teacher doesnotmake learned classifier obey it",
+    "runtime_missing": "Only unavailable/nonfinite score or invalidinput can trigger runtime fallback; all current24 savedfeatures finite. This differs from physicalUNKNOWN.",
+    "no_GT_leak": "Runtimefrontend schema accepts only fourRGB/source/currentestimatedpose; GTcellclass/staticmap/sceneID excluded."
+  },
+  "considered_repairs": [
+    {
+      "name": "Same frozen learner plus E0 marginal-envelope OOD->HOLD fallback",
+      "decision": "NOT_SUFFICIENT_AS_A_REPAIR_CONTRACT; NOT_IMPLEMENTED",
+      "reason": "Let B_j=[min_i X_E0_ij,max_i X_E0_ij]. Every E0 training row is in product_j B_j by construction. All117 E0physicalUNKNOWN rows are trainingrows and saved diagnosis outsidecount0. Hence a rule changing scores/actions ONLY outside thisenvelope changes none of the11 original in-domain UNKNOWN mistakes;11/117=9.4017% remains >5%. No threshold/variant evaluation required.",
+      "limitation": "Only this enclosing-box unchanged-in-domain fallback is ruled out as sole fix. This is not a claim about all OOD/selective methods, interior rejection rules, calibration or future features."
+    },
+    {
+      "name": "Move E1A/B into E0 fit or append oldseven camera data",
+      "decision": "NOT_ADMITTED_FOR_CLOSED_CANDIDATE",
+      "reason": "Would adapt fit to already-revealed E1 failure and violate noE1pool/refit freeze. A/B shareone scene and cannot become independent dev/heldout. Oldseven rig identity differs. No resplit/relabel/resampling/retraining done.",
+      "future_scope": "A future distinct justified study may honestly designate seen data astraining, but must have a nonrepeat premise and separately frozen qualified development/heldout roles; this note authorizes neither newfit nor acquisition."
+    },
+    {
+      "name": "Protect physicalUNKNOWN at runtime by reading teacher class",
+      "decision": "INVALID_ONLINE_INPUT; NOT_IMPLEMENTED",
+      "reason": "Teacherclass depends offline occupiedproxy; unavailable to source-onlyruntime. Hardcoding teacherunknown/cells would leak evaluation information, not solve unknownhandling."
+    }
+  ],
+  "prospective_data_contract": {
+    "not_a_frozen_newexperiment": true,
+    "required_evidence": [
+      "Declare training/dev/heldout by whole scene/trajectory before a new model; exposurecounts and two E1trajectories are not independentgroups.",
+      "Demonstrate currentrig training support for lowtexture and repeatedly erroneous source observations; physicalUNKNOWN and both known classes retain full denominators. Counts alone do not imply feature support or independence.",
+      "Separate runtime missing/unsupported observations from offline physicalUNKNOWN; any selective action must use available causalinputs and still meet complete pergroup false-risk/positive/UNKNOWN/blind-risk criteria.",
+      "Any claimed calibration needs declared disjoint calibration inputs; no such guarantee inferred from sigmoid or balancedlogistic score. No mandatory calibration stage imposed for an uncalibrated action model.",
+      "Do not refill oldcandidate fit/physics budgets, relax labels/gates or call E1training an independent pass."
+    ]
+  },
+  "conclusion": "No deployable UNKNOWN protection or independently justified data repair for v115 emerged. These design alternatives do not admit a secondfit or navigation. Learningrepair route currently stalled; not proof that all current-input methods are impossible.",
+  "completed_next_task_from_v115": true,
+  "new_candidate_admitted": false,
+  "new_scientific_version_created": false,
+  "actual_work": {
+    "readonly_design_review": 1,
+    "new_model_fit": 0,
+    "model_score_calls": 0,
+    "feature_calls": 0,
+    "source_calls": 0,
+    "new_scoring": 0,
+    "GT_array_reads": 0,
+    "collection": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "runtime": null,
+  "whole_research_complete": false,
+  "next_action": "The v115 support/teacher design review is finished; do not repeat it or reopen OOD/E1pool/GTunknown variants. No concrete nextmodel or experiment currently admitted. Future work must first identify a specific causal signal/consumer repair absent from these closed proposals with direct evidence and original input availability; only then freeze a new bounded qualification. Do not reuse idlewakeups for repeated metadata/report creation, or restart the paused radiance/measurement literature chain."
+}

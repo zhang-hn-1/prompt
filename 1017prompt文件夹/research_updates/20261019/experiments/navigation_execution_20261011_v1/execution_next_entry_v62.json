@@ -1,0 +1,47 @@
+{
+  "stage": "pixel_surface_oracle_and_once_fit_closed_reject",
+  "updated_utc": "2026-10-13T11:24:40.249860+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v61.json",
+  "oracle_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/pixel_surface_projection_20261013_v1",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/learned_pixel_surfaces_20261013_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/pixel_surface_learning_results_20261013.md",
+  "summary": "v62像素表面类别/距离分离oracle五条905对资格通过，唯一30epoch新像素模型完成905对先预测封存后GT评分，五组源均拒绝。H/E0/E1/B54/C54测距P90 .172540/.143076/.500646/.518578/.535006m，地图精确率80.72/84.63/36.06/35.71/34.59%，格定位P90 .223607/.223607/.806226/.806226/.948683m。E1地面目标格误报17022/39412=43.19%，原风险175/偏离30/旧115/旧偏离20→学习1125/698/787/542。fit1/1 physical0/4余4关闭recovery0；oracle初始USD元数据接口失败保留，唯一恢复1/1，与学习预算独立。",
+  "validation": "独立905地图/20记忆/完整测距保留及逐帧门槛复算通过，train-only均值/权重计数exact、标准差差3.34e-14披露；一次拟合/30epoch/无物理和全身份核验通过。完整E1因素诊断181指标及4帧×3分支独立回放：同GT支持域学习双输出precision41.21%/P90.583095m；真类别+学习距离41.75%/.583095；学习类别+真距离95.75%/0，支持该域主要距离问题。含GT支持限制，不能在线混合或救回模型。原SGBM显示超范围raw口径已仅修图/条件统计，初版保留，科学输出/门槛未变。",
+  "source_qualified": false,
+  "oracle_qualified": true,
+  "budget": {
+    "fit_used": 1,
+    "fit_cap": 1,
+    "physical_used": 0,
+    "physical_cap": 4,
+    "recovery_used": 0,
+    "recovery_cap": 1,
+    "status": "source_rejected_physical_budget_closed",
+    "physical_remaining_closed": 4
+  },
+  "processes": {
+    "host_exited": [
+      2153156,
+      2153157,
+      2155134,
+      2162423
+    ],
+    "collected_exec": [
+      3993,
+      2372,
+      37236,
+      81511,
+      68355
+    ],
+    "running_experiments": [],
+    "cpu_namespace_note": "oracle/postprocess p2/p20 namespace, not host IDs"
+  },
+  "storage_free_bytes": 199657689088,
+  "sealed_files": 3776,
+  "readonly_verify_command": "PYTHONUTF8=1 PYTHONDONTWRITEBYTECODE=1 /home/an/miniconda3/envs/ball_wm/bin/python /home/an/Documents/ChatGPT/球型机器人导航/experiments/learned_pixel_surfaces_20261013_v1/verify_readonly.py",
+  "next_action": "下一优先当前度量双目测距的独立逆深度残差/保守区间学习资格：先有限核对旧误差>0.15置信分类、地面锚点/竞争测距及旧预测目标，确认校正当前测量值与分类过滤/自由RGB距离先验有实质区别；冻结独立目标、当前双RGB/原SGBM视差与置信/原生IMU/固定标定和CAD输入、消费者及完整分组覆盖。先用离线理想当前残差校正检验原测量域与固定投影的可见障碍/地图精度资格，区分测量空洞、无命中与未知；GT仅诊断/监督，不将oracle混合接在线。若oracle域/消费者不合格或无实质区别直接关闭不拟合；资格通过才另立一次冻结拟合及fresh<=4验证预算。不能加载/微调本次或v49拒绝模型，不能用旧分类器换消费者救分、不扩旧库、不调门槛、不派生Census/扫描线成本方案。所有五组仍已见开发，可靠导航/学习导航增量未成立。该下一目标未实现/未准入，不承诺增量。",
+  "stop_reason": "完成新类别消费者完整oracle资格后继续唯一实际拟合、905预测/地图资格及独立负结果阶段验收；源拒绝所以未派发物理，非小诊断/静态报告停点。无外部资源/权限阻塞。",
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

@@ -1,0 +1,21 @@
+{
+  "review_agent": "/root/heading_rate_review",
+  "verdict": "closure_pass_no_important_findings",
+  "classification": "measured_navigation_reject",
+  "raw_metrics_independently_recomputed": true,
+  "verified_source_per_arm": 2136,
+  "verified_inputs_per_arm": 99,
+  "verified_artifacts_per_arm": 2284,
+  "video_decode": "Each4videos351frames10Hz",
+  "actual_interventions": 235,
+  "first_request_fork": 68,
+  "nonraw_physics_prefix_exact": true,
+  "source_RGB_prefix_exact": false,
+  "source_RGB_comparisons_mismatch": 14,
+  "full_causal_claim": false,
+  "no_estimated_pose_admission": true,
+  "no_strict_visual_admission": true,
+  "actual_budget_consumed": 2,
+  "no_retry": true,
+  "original_startup_failure_preserved": true
+}

@@ -1,0 +1,11 @@
+{
+  "kind": "administrative_metadata_only",
+  "first_attempt": "TypeError duplicate whole_research_complete supplied both by caller and existing seal_existing helper",
+  "failed_before_manifest_write": true,
+  "repair": "Remove caller duplicate; helper already setsFalse",
+  "administrative_recovery_used": 1,
+  "administrative_recovery_cap": 1,
+  "source_or_prediction_changed": false,
+  "science_fit_or_physics_repeated": false,
+  "scientific_stage_recovery_used": 0
+}

@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-19T00:45:43.418956+00:00",
+  "status": "SCORER_INTERFACE_BUG_CONFIRMED_NO_RETRY",
+  "identities": {
+    "proposal_identities": 27,
+    "execution_identities": 11
+  },
+  "requests_shape": [
+    900,
+    10
+  ],
+  "policy_requests_exact_float32": true,
+  "required_action_contract": "2 controls x 5 samples per block =10",
+  "incorrect_score_shape": [
+    900,
+    4
+  ],
+  "actions": 900,
+  "exposures": 181,
+  "native_packets": 4501,
+  "native_interval_checks_qualified": true,
+  "map_plan_pairs": 900,
+  "video_header_frames": {
+    "front_left": 181,
+    "front_right": 181,
+    "rear_left": 181,
+    "rear_right": 181
+  },
+  "physics_fields_header_only": [
+    "raw_command_target",
+    "clipped_target",
+    "smoothed_target",
+    "applied_action",
+    "joint_position_rad",
+    "joint_velocity_rad_s",
+    "position_world_xy",
+    "root_position_world_m",
+    "root_quaternion_world_wxyz",
+    "linear_velocity_world_m_s",
+    "angular_velocity_world_rad_s",
+    "yaw_world_rad",
+    "roll_world_rad",
+    "simulation_time_s",
+    "physics_step_index",
+    "raw_simulation_time_s",
+    "raw_physics_step_index",
+    "action_block_index",
+    "physics_step_in_block"
+  ],
+  "numeric_GT_array_reads": 0,
+  "source_capture_prediction_identity_pairs": 181,
+  "loaded_identity_count": 107,
+  "dynamic_modules_missing_from_loaded_identity": [
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/view_supported_memory_20261017_v1/memory.py",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation.py"
+  ],
+  "C_specific_rule": [
+    "body_translation>=.2m AND anchor_ray_angle>=5deg; duplicate exposure/pair not independent"
+  ],
+  "C_diagnostics_all_900_present": true,
+  "geometry_confirmed_cells_last": 264,
+  "C_performance_metrics": null,
+  "ABC_comparison_complete": false,
+  "author_prior_KeyError": "post-run read-only lookup assumed C module present; failed before GT; not simulator failure",
+  "provenance_limit": "static SHA and runtime C-specific diagnostics support wiring; dynamic import registry gap cannot be retroactively filled",
+  "recovery_used": 0,
+  "scientific_files_modified": false
+}

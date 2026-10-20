@@ -1,0 +1,851 @@
+{
+  "summary": {
+    "total": 46,
+    "inside": 46,
+    "GT_right_compatible": 45,
+    "left_current_CAD_clear": 46,
+    "right_current_CAD_clear": 46,
+    "true_cost_above_chosen": 46
+  },
+  "rows": [
+    {
+      "frame": 495,
+      "pixel": 280546,
+      "true_depth_m": 2.1419506072998047,
+      "true_partner_uv": [
+        225.999996898316,
+        274.1617928851503
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.048464290666407894,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 85,
+      "chosen_integer_cost": 41,
+      "new_depth_m": 1.1955145597457886
+    },
+    {
+      "frame": 495,
+      "pixel": 280548,
+      "true_depth_m": 2.1303553581237793,
+      "true_partner_uv": [
+        227.99999696654686,
+        273.270042647066
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.07653927021986329,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 95,
+      "chosen_integer_cost": 25,
+      "new_depth_m": 1.1922633647918701
+    },
+    {
+      "frame": 495,
+      "pixel": 280550,
+      "true_depth_m": 2.118885040283203,
+      "true_partner_uv": [
+        229.99999703427113,
+        272.3782976994174
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.08870481641091388,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 140,
+      "chosen_integer_cost": 54,
+      "new_depth_m": 1.1939631700515747
+    },
+    {
+      "frame": 495,
+      "pixel": 280552,
+      "true_depth_m": 2.1075377464294434,
+      "true_partner_uv": [
+        231.99999710148865,
+        271.48656601525533
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.10074733861757368,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 228,
+      "chosen_integer_cost": 75,
+      "new_depth_m": null
+    },
+    {
+      "frame": 495,
+      "pixel": 281822,
+      "true_depth_m": 2.1402385234832764,
+      "true_partner_uv": [
+        221.99999677007588,
+        276.0307305474157
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.009033433954285908,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 99,
+      "chosen_integer_cost": 67,
+      "new_depth_m": null
+    },
+    {
+      "frame": 495,
+      "pixel": 281824,
+      "true_depth_m": 2.128661870956421,
+      "true_partner_uv": [
+        223.9999968388002,
+        275.1389894277646
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.040984145929840565,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 100,
+      "chosen_integer_cost": 53,
+      "new_depth_m": null
+    },
+    {
+      "frame": 495,
+      "pixel": 281826,
+      "true_depth_m": 2.1172099113464355,
+      "true_partner_uv": [
+        225.99999690701782,
+        274.24725843515233
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.0732049861579771,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 148,
+      "chosen_integer_cost": 45,
+      "new_depth_m": 1.192555546760559
+    },
+    {
+      "frame": 495,
+      "pixel": 281828,
+      "true_depth_m": 2.1058807373046875,
+      "true_partner_uv": [
+        227.99999697472845,
+        273.35554520364445
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.10101389058226218,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 241,
+      "chosen_integer_cost": 42,
+      "new_depth_m": 1.1936074495315552
+    },
+    {
+      "frame": 495,
+      "pixel": 281830,
+      "true_depth_m": 2.0946712493896484,
+      "true_partner_uv": [
+        229.99999704193516,
+        272.46375893316457
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.11291860685278188,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 326,
+      "chosen_integer_cost": 55,
+      "new_depth_m": 1.1947029829025269
+    },
+    {
+      "frame": 495,
+      "pixel": 281832,
+      "true_depth_m": 2.0835816860198975,
+      "true_partner_uv": [
+        231.99999710863213,
+        271.57207139691764
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.035219678049260406,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 276,
+      "chosen_integer_cost": 48,
+      "new_depth_m": null
+    },
+    {
+      "frame": 495,
+      "pixel": 283098,
+      "true_depth_m": 2.1385281085968018,
+      "true_partner_uv": [
+        217.99999664188903,
+        277.89958642089886
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.028890617337921753,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 91,
+      "chosen_integer_cost": 57,
+      "new_depth_m": null
+    },
+    {
+      "frame": 495,
+      "pixel": 283100,
+      "true_depth_m": 2.1269707679748535,
+      "true_partner_uv": [
+        219.99999671110476,
+        277.0079124646822
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.0022809427213670297,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 83,
+      "chosen_integer_cost": 58,
+      "new_depth_m": 1.189371943473816
+    },
+    {
+      "frame": 495,
+      "pixel": 283102,
+      "true_depth_m": 2.11553692817688,
+      "true_partner_uv": [
+        221.99999677981612,
+        276.11617990543334
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.03373502879932966,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 109,
+      "chosen_integer_cost": 57,
+      "new_depth_m": 1.189371943473816
+    },
+    {
+      "frame": 495,
+      "pixel": 283104,
+      "true_depth_m": 2.1042251586914062,
+      "true_partner_uv": [
+        223.9999968480218,
+        275.2244314213309
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.06542085773858952,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 194,
+      "chosen_integer_cost": 66,
+      "new_depth_m": 1.1906253099441528
+    },
+    {
+      "frame": 495,
+      "pixel": 283106,
+      "true_depth_m": 2.093034029006958,
+      "true_partner_uv": [
+        225.99999691572015,
+        274.33270818589006
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.09738086804619783,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 319,
+      "chosen_integer_cost": 58,
+      "new_depth_m": 1.1929476261138916
+    },
+    {
+      "frame": 495,
+      "pixel": 283108,
+      "true_depth_m": 2.0819602012634277,
+      "true_partner_uv": [
+        227.99999698291523,
+        273.4408953810117
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.12493442617716832,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 371,
+      "chosen_integer_cost": 44,
+      "new_depth_m": 1.1939408779144287
+    },
+    {
+      "frame": 495,
+      "pixel": 283110,
+      "true_depth_m": 2.071004867553711,
+      "true_partner_uv": [
+        229.99999704959845,
+        272.5492406448369
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.02363444267621828,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 350,
+      "chosen_integer_cost": 44,
+      "new_depth_m": null
+    },
+    {
+      "frame": 495,
+      "pixel": 284372,
+      "true_depth_m": 2.1484878063201904,
+      "true_partner_uv": [
+        211.99999644353002,
+        280.6603031699769
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.09562898419551491,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 163,
+      "chosen_integer_cost": 61,
+      "new_depth_m": null
+    },
+    {
+      "frame": 495,
+      "pixel": 284374,
+      "true_depth_m": 2.136821985244751,
+      "true_partner_uv": [
+        213.99999651374827,
+        279.7685621843255
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.06538272664400413,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 133,
+      "chosen_integer_cost": 40,
+      "new_depth_m": 1.1904581785202026
+    },
+    {
+      "frame": 495,
+      "pixel": 284376,
+      "true_depth_m": 2.1252827644348145,
+      "true_partner_uv": [
+        215.99999658345848,
+        278.8768677138461
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.03493548222781051,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 126,
+      "chosen_integer_cost": 45,
+      "new_depth_m": 1.1885132789611816
+    },
+    {
+      "frame": 495,
+      "pixel": 284378,
+      "true_depth_m": 2.1138668060302734,
+      "true_partner_uv": [
+        217.99999665266427,
+        277.985118589625
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.004229315232276765,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 78,
+      "chosen_integer_cost": 53,
+      "new_depth_m": 1.1893525123596191
+    },
+    {
+      "frame": 495,
+      "pixel": 284380,
+      "true_depth_m": 2.1025733947753906,
+      "true_partner_uv": [
+        219.9999967213621,
+        277.0934139780757
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.026678315465018976,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 147,
+      "chosen_integer_cost": 43,
+      "new_depth_m": 1.1898316144943237
+    },
+    {
+      "frame": 495,
+      "pixel": 284382,
+      "true_depth_m": 2.091399669647217,
+      "true_partner_uv": [
+        221.99999678955453,
+        276.20168180355734
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.05787228687818047,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 259,
+      "chosen_integer_cost": 38,
+      "new_depth_m": 1.1899813413619995
+    },
+    {
+      "frame": 495,
+      "pixel": 284384,
+      "true_depth_m": 2.080343246459961,
+      "true_partner_uv": [
+        223.99999685724305,
+        275.3098822031602
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.08930276952412797,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 361,
+      "chosen_integer_cost": 52,
+      "new_depth_m": 1.190597414970398
+    },
+    {
+      "frame": 495,
+      "pixel": 285652,
+      "true_depth_m": 2.1235973834991455,
+      "true_partner_uv": [
+        211.99999645586269,
+        280.745818719337
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.07073856184006333,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 127,
+      "chosen_integer_cost": 23,
+      "new_depth_m": 1.1889477968215942
+    },
+    {
+      "frame": 495,
+      "pixel": 285654,
+      "true_depth_m": 2.1121985912323,
+      "true_partner_uv": [
+        213.99999652556482,
+        279.854000044945
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.04075933309201041,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 74,
+      "chosen_integer_cost": 34,
+      "new_depth_m": 1.1892781257629395
+    },
+    {
+      "frame": 495,
+      "pixel": 285656,
+      "true_depth_m": 2.1009230613708496,
+      "true_partner_uv": [
+        215.9999965947561,
+        278.9623042559898
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.010575779619232506,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 112,
+      "chosen_integer_cost": 35,
+      "new_depth_m": 1.1897538900375366
+    },
+    {
+      "frame": 495,
+      "pixel": 285658,
+      "true_depth_m": 2.0897674560546875,
+      "true_partner_uv": [
+        217.99999666344053,
+        278.0706229050369
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.019870034292928107,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 232,
+      "chosen_integer_cost": 29,
+      "new_depth_m": 1.190003514289856
+    },
+    {
+      "frame": 495,
+      "pixel": 286934,
+      "true_depth_m": 2.08813738822937,
+      "true_partner_uv": [
+        213.99999653737794,
+        279.93953181810673
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.016698130539024802,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 236,
+      "chosen_integer_cost": 30,
+      "new_depth_m": 1.190064549446106
+    },
+    {
+      "frame": 500,
+      "pixel": 251082,
+      "true_depth_m": 2.064232587814331,
+      "true_partner_uv": [
+        202.00000854945768,
+        221.99332852574923
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.09357677408722154,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 76,
+      "chosen_integer_cost": 18,
+      "new_depth_m": 1.1507357358932495
+    },
+    {
+      "frame": 500,
+      "pixel": 251084,
+      "true_depth_m": 2.0535237789154053,
+      "true_partner_uv": [
+        204.0000085741259,
+        221.1067700892035
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.0755689290820265,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 76,
+      "chosen_integer_cost": 20,
+      "new_depth_m": 1.1481809616088867
+    },
+    {
+      "frame": 500,
+      "pixel": 251086,
+      "true_depth_m": 2.042926549911499,
+      "true_partner_uv": [
+        206.00000859864963,
+        220.2202993698696
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.08681584856903868,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 121,
+      "chosen_integer_cost": 44,
+      "new_depth_m": null
+    },
+    {
+      "frame": 500,
+      "pixel": 252360,
+      "true_depth_m": 2.0506083965301514,
+      "true_partner_uv": [
+        200.00000875072342,
+        222.8638084191509
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.081174836107762,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 55,
+      "chosen_integer_cost": 25,
+      "new_depth_m": 1.1472299098968506
+    },
+    {
+      "frame": 500,
+      "pixel": 252362,
+      "true_depth_m": 2.0400404930114746,
+      "true_partner_uv": [
+        202.00000877510396,
+        221.97728158676023
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.06938467988647012,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 112,
+      "chosen_integer_cost": 48,
+      "new_depth_m": 2.0501420497894287
+    },
+    {
+      "frame": 500,
+      "pixel": 252364,
+      "true_depth_m": 2.0295815467834473,
+      "true_partner_uv": [
+        204.00000879934385,
+        221.09080513995957
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.09951116061670096,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 202,
+      "chosen_integer_cost": 83,
+      "new_depth_m": null
+    },
+    {
+      "frame": 500,
+      "pixel": 252366,
+      "true_depth_m": 2.019228458404541,
+      "true_partner_uv": [
+        206.00000882345535,
+        220.2042565942526
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.11051393948341648,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 299,
+      "chosen_integer_cost": 96,
+      "new_depth_m": null
+    },
+    {
+      "frame": 500,
+      "pixel": 253642,
+      "true_depth_m": 2.0164098739624023,
+      "true_partner_uv": [
+        202.00000900074158,
+        221.96132081417733
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.045754061425526515,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 313,
+      "chosen_integer_cost": 76,
+      "new_depth_m": 1.1498219966888428
+    },
+    {
+      "frame": 500,
+      "pixel": 253644,
+      "true_depth_m": 2.006190061569214,
+      "true_partner_uv": [
+        204.00000902457154,
+        221.0747435340088
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.12290264524738781,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 352,
+      "chosen_integer_cost": 83,
+      "new_depth_m": 1.149423360824585
+    },
+    {
+      "frame": 500,
+      "pixel": 253646,
+      "true_depth_m": 1.9960743188858032,
+      "true_partner_uv": [
+        206.00000904825706,
+        220.18825411552055
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.13366807842317652,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 345,
+      "chosen_integer_cost": 67,
+      "new_depth_m": null
+    },
+    {
+      "frame": 500,
+      "pixel": 254920,
+      "true_depth_m": 2.0034070014953613,
+      "true_partner_uv": [
+        200.0000092028532,
+        222.8317436722433
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.03397344224498333,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 346,
+      "chosen_integer_cost": 61,
+      "new_depth_m": 1.1487178802490234
+    },
+    {
+      "frame": 500,
+      "pixel": 254922,
+      "true_depth_m": 1.9933189153671265,
+      "true_partner_uv": [
+        202.0000092263927,
+        221.94522605506506
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.02266310340495048,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 357,
+      "chosen_integer_cost": 33,
+      "new_depth_m": 1.1477930545806885
+    },
+    {
+      "frame": 500,
+      "pixel": 254924,
+      "true_depth_m": 1.9833323955535889,
+      "true_partner_uv": [
+        204.0000092497923,
+        221.0587511647875
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.14576031069278517,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 341,
+      "chosen_integer_cost": 22,
+      "new_depth_m": 1.1475679874420166
+    },
+    {
+      "frame": 500,
+      "pixel": 254926,
+      "true_depth_m": 1.9734454154968262,
+      "true_partner_uv": [
+        206.00000927305655,
+        220.17227390767098
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": 0.1562969812463102,
+      "right_depth_compatible_with015m": false,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 327,
+      "chosen_integer_cost": 28,
+      "new_depth_m": null
+    },
+    {
+      "frame": 500,
+      "pixel": 256198,
+      "true_depth_m": 1.9905718564987183,
+      "true_partner_uv": [
+        198.00000940565945,
+        223.70226423793736
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.02235864318052827,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 374,
+      "chosen_integer_cost": 55,
+      "new_depth_m": null
+    },
+    {
+      "frame": 500,
+      "pixel": 256200,
+      "true_depth_m": 1.9806121587753296,
+      "true_partner_uv": [
+        200.00000942891575,
+        222.8157342686125
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.011178600090947288,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 337,
+      "chosen_integer_cost": 37,
+      "new_depth_m": null
+    },
+    {
+      "frame": 500,
+      "pixel": 256202,
+      "true_depth_m": 1.970888376235962,
+      "true_partner_uv": [
+        202.00000945079424,
+        221.9415593680499
+      ],
+      "inside": true,
+      "right_GT_finite": true,
+      "right_depth_gap_m": -0.00023256483180467136,
+      "right_depth_compatible_with015m": true,
+      "left_9x9_current_CAD_clear": true,
+      "right_9x9_current_CAD_clear": true,
+      "true_integer_cost": 299,
+      "chosen_integer_cost": 26,
+      "new_depth_m": null
+    }
+  ],
+  "input_sha": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/frames/frame_495.npz": "5bb333b97b6da46bb61e8a40ccea1521180aa4f9c2999d91cd75215a325118b7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/history/frame_495.npz": "fcfd4954b2b142e9d8255c72069bb3e1db188716d29368b570f437b1beeb78ed",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/source_predictions/frame_495.npz": "098cc74f2428300f0cdb7840fa611ad38f61d851e3a8bd0613de1d91029d011c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_census_depth_20261013_v1/predictions/C54/frame_495.npz": "62067a23ae624ccbf4f3a0fd67a6ca9626611182b57a6845de4a69131aa7ee8c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/frames/frame_500.npz": "fd6f0d7355ec6e0110f154b6ac0df3d56a71e1ef270e6ae33cd423135dd5e699",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/history/frame_500.npz": "3cf2add0788ec5a2d5ed3a0fa549f0e4f26497f636fe38573c2d337d60b22a6f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/source_predictions/frame_500.npz": "f3efb4399c325a0545812a5901960c86e5dcc7f5c824cdc98a811b63f09948fb",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_census_depth_20261013_v1/predictions/C54/frame_500.npz": "f287be54af52ff1bfcaf85aaa9c4da4358d646bc153a62331493d4e6305756cd"
+  },
+  "scope": "46 previously chosen prior-failure queries only; posthoc GT-right nearest-pixel .15m consistency diagnostic, not a source gate or proof across sequence; native grayscale window Hamming permutation-equivalent; no parameter/model change; no GT online"
+}

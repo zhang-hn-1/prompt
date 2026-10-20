@@ -1,0 +1,141 @@
+{
+  "version": 119,
+  "utc": "2026-10-17T22:14:08.582087+00:00",
+  "status": "RGBcost_interface_pre_REALRGB_gate_failed_controlled_validity_repair_sanity_passed",
+  "prior_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v118.json",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/rgb_observed_support_reference_20261018_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/rgb_cost_support_interface_and_repair_results_20261018.md",
+  "actual_execution": {
+    "utc": "2026-10-17T22:12:52.476634+00:00",
+    "status": "RGBcost_interface_implemented_original_validityfailed_controlled_decoder_sanity_passed_REALRGB_NOT_STARTED",
+    "runs": [
+      {
+        "stage": "red",
+        "parent_pid": 461770,
+        "status": "runtime_failed",
+        "execution": {
+          "status": "runtime_failed",
+          "start_utc": "2026-10-17T22:04:38.989000+00:00",
+          "parent_pid": 461770,
+          "child_pid": 461773,
+          "process_group_id": 461773,
+          "child_returncode": 1,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-17T22:04:39.191691+00:00"
+        },
+        "expected_red": true
+      },
+      {
+        "stage": "fixtures",
+        "parent_pid": 464827,
+        "status": "runtime_failed",
+        "execution": {
+          "status": "runtime_failed",
+          "start_utc": "2026-10-17T22:07:37.841411+00:00",
+          "parent_pid": 464827,
+          "child_pid": 464829,
+          "process_group_id": 464829,
+          "child_returncode": 1,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-17T22:07:38.052445+00:00"
+        },
+        "expected_red": false
+      },
+      {
+        "stage": "failure_analysis",
+        "parent_pid": 466928,
+        "status": "finished",
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-17T22:09:40.234461+00:00",
+          "parent_pid": 466928,
+          "child_pid": 466929,
+          "process_group_id": 466929,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-17T22:09:40.386136+00:00"
+        }
+      },
+      {
+        "stage": "controlled_validity_repair_check",
+        "parent_pid": 468341,
+        "status": "finished",
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-17T22:10:59.811361+00:00",
+          "parent_pid": 468341,
+          "child_pid": 468342,
+          "process_group_id": 468342,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-17T22:10:59.963716+00:00"
+        }
+      }
+    ],
+    "dispatch_used": 4,
+    "dispatch_cap": 4,
+    "recovery_used": 0,
+    "original_fixture_failed": true,
+    "real_prediction_seal_exists": false,
+    "real_RGB_or_GT_calls": 0,
+    "new_sourceperformance_results": null,
+    "controlled_repair_small_checks": 8,
+    "old_v118_kernel_recurrence_not_falsified": true,
+    "source_default_changed": false,
+    "old_budgets_reopened": false,
+    "whole_complete": false,
+    "service_readback": "MainPID=0\nExecMainStatus=0\nId=ball-rgb-support-red-20261018.service\nActiveState=inactive\n\nMainPID=0\nExecMainStatus=1\nId=ball-rgb-support-fixtures-20261018.service\nActiveState=failed\n\nMainPID=0\nExecMainStatus=0\nId=ball-rgb-support-failure-analysis-20261018.service\nActiveState=inactive\n\nMainPID=0\nExecMainStatus=0\nId=ball-rgb-support-validity-repair-20261018.service\nActiveState=inactive\n"
+  },
+  "original_checks_passed": 7,
+  "original_checks_failed": 1,
+  "original_failed_check": "flat_valid_tie_UNKNOWN",
+  "controlled_repair_checks_passed": 8,
+  "original_validity_contract_pass": false,
+  "repaired_small_validity_contract_pass": true,
+  "real_RGB_calls": 0,
+  "GT_reads": 0,
+  "actual_source_accuracy": null,
+  "actual_source_latency": null,
+  "BEV": null,
+  "navigation": null,
+  "learning_increment": false,
+  "reliable_navigation": false,
+  "whole_research_complete": false,
+  "manifest_files": 34,
+  "manifest_sha256": "06d17f02d7c7f381772a6934bcc5cf464a064fefec81563f7313f2aa0708ec75",
+  "old_budgets_reopened": false,
+  "source_default_changed": false,
+  "runtime": null,
+  "next_direct_action": "In separateworkingcopy integrate evidence_decode into completeactualRGB four-eye signed reference; first correct unexecuted timing scope, sealedprotocolSHA gate and enforce resource limits. Do not run old4/4 scripts. Freeze fullinput/difference/gates/GT-afterseal and bounded qualification for evidence-backed repairedversion; inherit this existingrepair sanitydispatch into its totalbudget (not reset0). No threshold/paramsweep, v117teacher retry, navigation or training. Current repairedconsumer only smallsanitypassed, no actualsource admission.",
+  "repair_budget_accounting_constraint": {
+    "new_actual_RGB_budget_allocated": false,
+    "existing_repair_sanity_dispatch_must_be_inherited": 1,
+    "total_repair_candidate_cap_upper": 4,
+    "old_original_4dispatch_budget_closed": true
+  },
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "cadence": "hourly"
+  }
+}

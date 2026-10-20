@@ -1,0 +1,44 @@
+{
+  "complete": true,
+  "event": {
+    "policy_frame": 305,
+    "time_s": 30.499999318271875,
+    "actual_plan_status": "observed_obstacle_blocks_route",
+    "duration_at_least_s": 5,
+    "estimated_start": [
+      -2.4420109698701102,
+      0.04928185294051727
+    ],
+    "task_goal": [
+      3.300000005960465,
+      5.960465010446114e-09
+    ],
+    "hazard_cells": 216,
+    "false_cells": 34
+  },
+  "counterfactual": {
+    "actual_risk_grid": {
+      "status": "observed_obstacle_blocks_route",
+      "route_exists": false,
+      "path_length_m": null
+    },
+    "GT_remove_only_false_risk": {
+      "status": "unknown_exploration",
+      "route_exists": true,
+      "path_length_m": 7.8740115370177595
+    },
+    "GT_static_bodyband_grid": {
+      "status": "unknown_exploration",
+      "route_exists": true,
+      "path_length_m": 9.063961030678929
+    }
+  },
+  "clearance_m": 0.8707106781186548,
+  "physics": 0,
+  "fit": 0,
+  "source_modified": false,
+  "GT_used_only_offline": true,
+  "scope": "First sustained5s zero/no-success-plan event. Identical .1m grid, unknown traversal and .870711m global clearance. GT-remove arm turns false risk UNKNOWN, never observed free. FullGT arm scene reference raster only. Does not verify local kinodynamic primitives, control, 3D clearance or an online deletion rule.",
+  "original_grid_failure_reproduced": true,
+  "false_risk_removal_sufficient_for_global_grid_connectivity": true
+}

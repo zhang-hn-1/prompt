@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "old": "run_heading_rate_e1_v1.py",
+      "new": "run_heading_rate_e1_v2.py",
+      "AST_equal_after_routing_normalization": true
+    },
+    {
+      "old": "assess_heading_rate_e1.py",
+      "new": "assess_heading_rate_e1_host_v1.py",
+      "AST_equal_after_routing_normalization": true
+    },
+    {
+      "old": "run_heading_rate_stage.py",
+      "new": "run_heading_rate_host_stage_v1.py",
+      "AST_equal_after_routing_normalization": true
+    }
+  ],
+  "scorer_import": true,
+  "all_protocol_SHA_match": true,
+  "original_failed_outputs_preserved": true
+}
