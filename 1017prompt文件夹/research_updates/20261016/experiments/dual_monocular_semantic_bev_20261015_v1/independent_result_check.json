@@ -1,0 +1,458 @@
+{
+  "pass_check": true,
+  "bev_arm_frames": 3801,
+  "memory_ticks": 6300,
+  "depth_quantile_checks": [
+    [
+      "H",
+      "left",
+      0.3699406504631042
+    ],
+    [
+      "H",
+      "right",
+      0.36816455125808717
+    ],
+    [
+      "E0",
+      "left",
+      0.24055790901184082
+    ],
+    [
+      "E0",
+      "right",
+      0.3836141586303712
+    ],
+    [
+      "E1",
+      "left",
+      0.5942894816398621
+    ],
+    [
+      "E1",
+      "right",
+      0.6524507284164429
+    ],
+    [
+      "B54",
+      "left",
+      0.5380673885345459
+    ],
+    [
+      "B54",
+      "right",
+      0.6569300889968872
+    ],
+    [
+      "C54",
+      "left",
+      0.21425848007202147
+    ],
+    [
+      "C54",
+      "right",
+      0.42586374282836914
+    ],
+    [
+      "B65",
+      "left",
+      0.5165324449539185
+    ],
+    [
+      "B65",
+      "right",
+      0.7316150665283203
+    ],
+    [
+      "C65",
+      "left",
+      0.20978349447250366
+    ],
+    [
+      "C65",
+      "right",
+      0.41627984046936034
+    ]
+  ],
+  "memory_comparisons": {
+    "H": [
+      {
+        "frame": 450,
+        "original_risk": 175,
+        "original_wrong": 56,
+        "original_old_wrong": 6,
+        "candidate": {
+          "frame": 450,
+          "risk": 1311,
+          "wrong": 978,
+          "old": 354,
+          "old_wrong": 209
+        }
+      },
+      {
+        "frame": 495,
+        "original_risk": 144,
+        "original_wrong": 25,
+        "original_old_wrong": 21,
+        "candidate": {
+          "frame": 495,
+          "risk": 1287,
+          "wrong": 954,
+          "old": 619,
+          "old_wrong": 411
+        }
+      },
+      {
+        "frame": 500,
+        "original_risk": 142,
+        "original_wrong": 25,
+        "original_old_wrong": 21,
+        "candidate": {
+          "frame": 500,
+          "risk": 1288,
+          "wrong": 955,
+          "old": 634,
+          "old_wrong": 417
+        }
+      },
+      {
+        "frame": 899,
+        "original_risk": 138,
+        "original_wrong": 21,
+        "original_old_wrong": 21,
+        "candidate": {
+          "frame": 899,
+          "risk": 1189,
+          "wrong": 856,
+          "old": 1132,
+          "old_wrong": 817
+        }
+      }
+    ],
+    "E0": [
+      {
+        "frame": 450,
+        "original_risk": 123,
+        "original_wrong": 6,
+        "original_old_wrong": 0,
+        "candidate": {
+          "frame": 450,
+          "risk": 553,
+          "wrong": 334,
+          "old": 222,
+          "old_wrong": 186
+        }
+      },
+      {
+        "frame": 495,
+        "original_risk": 122,
+        "original_wrong": 2,
+        "original_old_wrong": 1,
+        "candidate": {
+          "frame": 495,
+          "risk": 564,
+          "wrong": 353,
+          "old": 436,
+          "old_wrong": 268
+        }
+      },
+      {
+        "frame": 500,
+        "original_risk": 123,
+        "original_wrong": 2,
+        "original_old_wrong": 1,
+        "candidate": {
+          "frame": 500,
+          "risk": 564,
+          "wrong": 353,
+          "old": 444,
+          "old_wrong": 273
+        }
+      },
+      {
+        "frame": 899,
+        "original_risk": 127,
+        "original_wrong": 8,
+        "original_old_wrong": 2,
+        "candidate": {
+          "frame": 899,
+          "risk": 700,
+          "wrong": 503,
+          "old": 493,
+          "old_wrong": 305
+        }
+      }
+    ],
+    "E1": [
+      {
+        "frame": 450,
+        "original_risk": 114,
+        "original_wrong": 13,
+        "original_old_wrong": 4,
+        "candidate": {
+          "frame": 450,
+          "risk": 1437,
+          "wrong": 963,
+          "old": 645,
+          "old_wrong": 303
+        }
+      },
+      {
+        "frame": 495,
+        "original_risk": 144,
+        "original_wrong": 43,
+        "original_old_wrong": 5,
+        "candidate": {
+          "frame": 495,
+          "risk": 1480,
+          "wrong": 1006,
+          "old": 613,
+          "old_wrong": 295
+        }
+      },
+      {
+        "frame": 500,
+        "original_risk": 142,
+        "original_wrong": 41,
+        "original_old_wrong": 6,
+        "candidate": {
+          "frame": 500,
+          "risk": 1496,
+          "wrong": 1021,
+          "old": 588,
+          "old_wrong": 293
+        }
+      },
+      {
+        "frame": 899,
+        "original_risk": 175,
+        "original_wrong": 30,
+        "original_old_wrong": 20,
+        "candidate": {
+          "frame": 899,
+          "risk": 1932,
+          "wrong": 1385,
+          "old": 1250,
+          "old_wrong": 936
+        }
+      }
+    ],
+    "B54": [
+      {
+        "frame": 450,
+        "original_risk": 113,
+        "original_wrong": 13,
+        "original_old_wrong": 4,
+        "candidate": {
+          "frame": 450,
+          "risk": 1430,
+          "wrong": 951,
+          "old": 639,
+          "old_wrong": 293
+        }
+      },
+      {
+        "frame": 495,
+        "original_risk": 152,
+        "original_wrong": 49,
+        "original_old_wrong": 4,
+        "candidate": {
+          "frame": 495,
+          "risk": 1475,
+          "wrong": 996,
+          "old": 603,
+          "old_wrong": 290
+        }
+      },
+      {
+        "frame": 500,
+        "original_risk": 149,
+        "original_wrong": 46,
+        "original_old_wrong": 5,
+        "candidate": {
+          "frame": 500,
+          "risk": 1488,
+          "wrong": 1007,
+          "old": 579,
+          "old_wrong": 283
+        }
+      },
+      {
+        "frame": 899,
+        "original_risk": 181,
+        "original_wrong": 24,
+        "original_old_wrong": 15,
+        "candidate": {
+          "frame": 899,
+          "risk": 2000,
+          "wrong": 1450,
+          "old": 1250,
+          "old_wrong": 969
+        }
+      }
+    ],
+    "C54": [
+      {
+        "frame": 450,
+        "original_risk": 122,
+        "original_wrong": 8,
+        "original_old_wrong": 4,
+        "candidate": {
+          "frame": 450,
+          "risk": 1440,
+          "wrong": 969,
+          "old": 684,
+          "old_wrong": 346
+        }
+      },
+      {
+        "frame": 495,
+        "original_risk": 151,
+        "original_wrong": 35,
+        "original_old_wrong": 5,
+        "candidate": {
+          "frame": 495,
+          "risk": 1514,
+          "wrong": 1043,
+          "old": 639,
+          "old_wrong": 340
+        }
+      },
+      {
+        "frame": 500,
+        "original_risk": 151,
+        "original_wrong": 35,
+        "original_old_wrong": 5,
+        "candidate": {
+          "frame": 500,
+          "risk": 1530,
+          "wrong": 1055,
+          "old": 604,
+          "old_wrong": 327
+        }
+      },
+      {
+        "frame": 899,
+        "original_risk": 142,
+        "original_wrong": 12,
+        "original_old_wrong": 12,
+        "candidate": {
+          "frame": 899,
+          "risk": 1612,
+          "wrong": 1087,
+          "old": 1480,
+          "old_wrong": 1039
+        }
+      }
+    ],
+    "B65": [
+      {
+        "frame": 450,
+        "original_risk": 110,
+        "original_wrong": 9,
+        "original_old_wrong": 4,
+        "candidate": {
+          "frame": 450,
+          "risk": 1437,
+          "wrong": 960,
+          "old": 635,
+          "old_wrong": 299
+        }
+      },
+      {
+        "frame": 495,
+        "original_risk": 146,
+        "original_wrong": 44,
+        "original_old_wrong": 4,
+        "candidate": {
+          "frame": 495,
+          "risk": 1480,
+          "wrong": 1003,
+          "old": 620,
+          "old_wrong": 299
+        }
+      },
+      {
+        "frame": 500,
+        "original_risk": 146,
+        "original_wrong": 44,
+        "original_old_wrong": 5,
+        "candidate": {
+          "frame": 500,
+          "risk": 1493,
+          "wrong": 1015,
+          "old": 594,
+          "old_wrong": 289
+        }
+      },
+      {
+        "frame": 899,
+        "original_risk": 212,
+        "original_wrong": 57,
+        "original_old_wrong": 7,
+        "candidate": {
+          "frame": 899,
+          "risk": 2151,
+          "wrong": 1603,
+          "old": 921,
+          "old_wrong": 643
+        }
+      }
+    ],
+    "C65": [
+      {
+        "frame": 450,
+        "original_risk": 100,
+        "original_wrong": 7,
+        "original_old_wrong": 1,
+        "candidate": {
+          "frame": 450,
+          "risk": 1075,
+          "wrong": 681,
+          "old": 162,
+          "old_wrong": 97
+        }
+      },
+      {
+        "frame": 495,
+        "original_risk": 96,
+        "original_wrong": 4,
+        "original_old_wrong": 3,
+        "candidate": {
+          "frame": 495,
+          "risk": 1094,
+          "wrong": 699,
+          "old": 249,
+          "old_wrong": 164
+        }
+      },
+      {
+        "frame": 500,
+        "original_risk": 96,
+        "original_wrong": 4,
+        "original_old_wrong": 3,
+        "candidate": {
+          "frame": 500,
+          "risk": 1094,
+          "wrong": 699,
+          "old": 210,
+          "old_wrong": 132
+        }
+      },
+      {
+        "frame": 899,
+        "original_risk": 103,
+        "original_wrong": 3,
+        "original_old_wrong": 3,
+        "candidate": {
+          "frame": 899,
+          "risk": 1470,
+          "wrong": 1075,
+          "old": 1133,
+          "old_wrong": 799
+        }
+      }
+    ]
+  },
+  "scope": "Independent full count aggregation; complete same implementation memory replay exact 6300 counts/28 labels+clock snapshots; independent14 current-depth quantiles. Not second model inference or all BEV geometry independent implementation."
+}

@@ -1,0 +1,115 @@
+{
+  "utc": "2026-10-13T06:41:19.778269+00:00",
+  "disposition": "measured_navigation_reject",
+  "frozen_gate": "90s arrival<=.2m, no contact, source gate, original/raw evidence; candidate did not arrive",
+  "baseline": {
+    "termination": {
+      "termination": "timeout90",
+      "actions": 900,
+      "time_s": 89.99999798834324,
+      "budget_s": 90.0,
+      "true_goal_xy_threshold_m": 0.2,
+      "not_original35": true,
+      "not_causal_navigation_AB": true
+    },
+    "initial_distance_m": 6.600000673532486,
+    "remaining_m": 5.837364610679035,
+    "net_progress_m": 0.762636062853451,
+    "captures": 901,
+    "contact_schema_example": {
+      "simulation_time_s": 0.0,
+      "physics_step_index": 0,
+      "source": "capture",
+      "available": true,
+      "contact": false
+    },
+    "contact_records": 5401,
+    "contacts_detected_by_named_fields": 0,
+    "unavailable_contacts": 0,
+    "depth_scoring": {
+      "pixels": 4404338,
+      "p90_absolute_error_m": 0.11812925338745117,
+      "outlier_fraction_above_0p3m": 0.008265714393400325,
+      "under1m_confident_pixels": 10176,
+      "source_points": 1428695,
+      "saved_pairs": 181,
+      "pass_gate": true,
+      "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+    },
+    "video_frames": {
+      "stereo_view.mp4": 901,
+      "third_person.mp4": 901
+    },
+    "raw_arrival_pass": false,
+    "first_contact_s": null,
+    "retain": false
+  },
+  "candidate": {
+    "termination": {
+      "termination": "timeout90",
+      "actions": 900,
+      "time_s": 89.99999798834324,
+      "budget_s": 90.0,
+      "true_goal_xy_threshold_m": 0.2,
+      "not_original35": true,
+      "not_causal_navigation_AB": true
+    },
+    "initial_distance_m": 6.600000673532486,
+    "remaining_m": 5.013316472383927,
+    "net_progress_m": 1.5866842011485591,
+    "captures": 901,
+    "contact_schema_example": {
+      "simulation_time_s": 0.0,
+      "physics_step_index": 0,
+      "source": "capture",
+      "available": true,
+      "contact": false
+    },
+    "contact_records": 5401,
+    "contacts_detected_by_named_fields": 0,
+    "unavailable_contacts": 0,
+    "depth_scoring": {
+      "pixels": 3047249,
+      "p90_absolute_error_m": 0.13358716964721684,
+      "outlier_fraction_above_0p3m": 0.014008044633044428,
+      "under1m_confident_pixels": 1811,
+      "source_points": 1031409,
+      "saved_pairs": 181,
+      "pass_gate": true,
+      "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+    },
+    "video_frames": {
+      "stereo_view.mp4": 901,
+      "third_person.mp4": 901
+    },
+    "raw_arrival_pass": false,
+    "first_contact_s": null,
+    "retain": false
+  },
+  "actual_effect_summary": {
+    "baseline_e1": {
+      "attempted_queries": 11,
+      "successful_installations": 11,
+      "failed_queries": 0,
+      "changed_plan_count": 0
+    },
+    "candidate_e1": {
+      "attempted_queries": 76,
+      "successful_installations": 4,
+      "failed_queries": 72,
+      "changed_plan_count": 2
+    }
+  },
+  "budget": {
+    "cap": 2,
+    "used": 2,
+    "remaining": 0,
+    "closed": true,
+    "fit": 0,
+    "recovery_used": 0
+  },
+  "do_not_repeat": "No threshold, lookahead, end-offset or PCA sweep; no migration to E0/E2; old candidate failures unchanged",
+  "whole_research_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

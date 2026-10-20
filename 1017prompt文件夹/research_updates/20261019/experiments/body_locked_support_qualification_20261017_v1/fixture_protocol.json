@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-17T13:53:53.759310+00:00",
+  "scope": "Necessary handderived coordinate/causal fixtures only, currentuser authorized interfacechecks; not projecttest suite",
+  "budget": {
+    "expected_red_cap": 1,
+    "green_cap": 1,
+    "implementation_recovery_cap": 1,
+    "archiveddata_reads": 0,
+    "source_calls": 0,
+    "fit": 0,
+    "physics": 0
+  },
+  "expected_red": "NotImplementedError from newselector update, before any actualdata",
+  "fixture_sha256": "73fc6dcf8d811eb777aa3984e04acedfbc38d37e5d8d4e56a3aaf62bac869ae7",
+  "stub_sha256": "1bdd645e97d77428c217d91da99b86352101d953ff8763e0fe933a430609f321",
+  "numeric_contract": {
+    "history_s": 10,
+    "translation_anchor_min_m": 0.2,
+    "body_NN_max_m": 0.1,
+    "world_NN_min_m": 0.2,
+    "joint_allpoints_required": true
+  }
+}

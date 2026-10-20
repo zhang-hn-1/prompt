@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-17T14:02:20.286395+00:00",
+  "question": "One bounded attribution of fixed dualframe hypothesis failure: unavailable anchor versus bodyclose/worldfar conditions, withoutpolicyvariants.",
+  "feature_seal": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json",
+  "action_seal": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/action_seal.json",
+  "prediction_seal": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/body_locked_support_qualification_20261017_v1/prediction_seal.json",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json": "038b9fbee4fe89d7f14221df397ab71f669cd483e77ab42e621acc8060b8e439",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/action_seal.json": "f7760628d2764c877839409a686e22e650b0cee571d199cb9c3c12f398e58ce2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/body_locked_support_qualification_20261017_v1/prediction_seal.json": "f7e2c9ef4404108686cfdacd559284bdfa60166a4fdaea903efa39ea321afbcc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/body_locked_support_qualification_20261017_v1/result.json": "9d24e7d724e530dbed95b070ed90c292e4ff9c881bb7e6adfbbd16505bf0fec9"
+  },
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/body_locked_support_qualification_20261017_v1/analysis/analyze.py": "561220b014f4e72de8cbcd58fa6e703a66b5916e612b5b9b68cce8172536f65a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/body_locked_support_qualification_20261017_v1/analysis/supervise.py": "1cd1b720009146443f30ac217246740eae5e22da1bf50a0d062c8b8e3cff3baf",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c"
+  },
+  "budget": {
+    "dispatch_cap": 1,
+    "recovery_cap": 0,
+    "wall_cap_s": 120,
+    "exposures": 470,
+    "sourcepoint_rows": 2985832,
+    "cell_rows": 40052,
+    "geometry_nearest_queries": 0,
+    "model_calls": 0,
+    "source_calls": 0,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "stop": "No alternativethreshold/history/aggregation/pose or model/source regeneration; full originalphysicalclasses and denominator retained."
+}

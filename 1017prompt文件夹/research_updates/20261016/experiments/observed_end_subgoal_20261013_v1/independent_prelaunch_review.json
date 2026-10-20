@@ -1,0 +1,218 @@
+{
+  "reviewer": "independent subagent observed_end_review",
+  "launch_admitted": true,
+  "verdict": "ADMIT_BOUNDED_E1_BASELINE_CANDIDATE_PAIR_ONLY",
+  "physical_launches_by_reviewer": 0,
+  "basis": "Frozen protocol and code review, independent CPU full-path reconstruction, fresh key710 planner rerun, readonly rerun of geometry and real policy MRO checks; no Isaac runtime launched.",
+  "scope": {
+    "physical_cap": 2,
+    "arm_sim_budget_s": 90,
+    "episode": "golden_e1_0001",
+    "fit": 0,
+    "no_threshold_relaxation": true,
+    "no_v52_candidate_reopening": true
+  },
+  "blockers": [],
+  "checks": {
+    "protocol_predeclaration": {
+      "file": "protocol.json",
+      "predeclared_effect_frames": [
+        510,
+        660,
+        710,
+        815
+      ],
+      "qualifying_frame": 710,
+      "required_axis_advance_m": 0.3,
+      "actual_axis_advance_m": 1.1239771856170848,
+      "target_and_waypoint_change": true,
+      "rule_unchanged": true,
+      "meaning": "Non-vacuous mechanism activation and geometrically feasible observed-end-directed local reference on a predeclared development input. Not a performance or future visibility certificate."
+    },
+    "input_coverage": {
+      "frames": [
+        60,
+        175,
+        505,
+        510,
+        660,
+        665,
+        670,
+        710,
+        815,
+        855
+      ],
+      "independently_reconstructed_earliest_positive_reference_versions": true,
+      "replay_input_hashes_verified": true,
+      "saved_baseline_waypoints_and_nodes_exact_all10": true,
+      "author_replay_reran_original_all10": true,
+      "independent_fresh_planner_rerun_frames": [
+        60,
+        710
+      ]
+    },
+    "geometry": {
+      "full_paths_checked": 20,
+      "motion_primitive_spacing_m": 0.05,
+      "baseline_sample_count": 805,
+      "candidate_sample_count": 777,
+      "all_segment_endpoints_reconstructed": true,
+      "allowed_four_primitive_requests_verified": true,
+      "first_direction_two_primitive_requirement_verified": true,
+      "planning_clearance_m": 0.8707106781186548,
+      "minimum_baseline_clearance_m": 0.894427190999916,
+      "minimum_candidate_clearance_m": 0.894427190999916,
+      "full_current_map_before_crop": true,
+      "limitation": "Sampled nominal center clearance against the currently represented risk map, not a physical safety guarantee or unknown-space proof."
+    },
+    "target_and_fallback": {
+      "successful_target_changes": [
+        60,
+        175,
+        710,
+        855
+      ],
+      "exact_plan_fallback_frames": [
+        505,
+        510,
+        660,
+        665,
+        670,
+        815
+      ],
+      "map_labels_unchanged": true,
+      "no_route_and_degenerate_geometry_fallback": true,
+      "forced_failed_query_exact_same_plan_object": true,
+      "alternative_searches_after_failure": 0
+    },
+    "policy_integration": {
+      "readonly_geometry_checks_passed": 5,
+      "readonly_actual_MRO_checks_passed": 6,
+      "observed_end_wrapper_only_overrides_plan_boundary": true,
+      "retention_transaction_inherited": true,
+      "single_install_verified": true,
+      "first_direction_constraints_reach_candidate_search": true,
+      "source_map_rig_PID_and_command_cap_unchanged": true,
+      "MRO": [
+        "CommandDomainCap",
+        "CuspCoastAcquisition",
+        "ObservedEnd",
+        "FirstPrimitiveDirection",
+        "TubeViability",
+        "TrackingTube",
+        "PriorRGBPolicy",
+        "EndpointLookaheadPolicy",
+        "CuspProjectionPolicy",
+        "RootDirectionPolicy",
+        "GuardedReferencePolicy",
+        "DepthLocalCurvePolicy",
+        "object"
+      ]
+    },
+    "unknown_and_truth": {
+      "grid_preserves_labels_negative1_or1": true,
+      "no_unknown_to_free_relabeling": true,
+      "current_global_route_unknown_fraction_retained": true,
+      "inherited_unknown_command_cap_active": true,
+      "observed_end_tags": {
+        "exploratory_unknown": true,
+        "observed_free": false,
+        "completed_obstacle": false
+      },
+      "no_future_visibility_claim": true,
+      "no_truth_input_in_end_subgoal": true,
+      "current_native_pose_for_source_registration_and_policy": true,
+      "GT_depth_post_output_scoring_only": true,
+      "permitted_privileges": "Initial pose gauge, low-level ideal IMU feedback, and GT/contact task termination/scoring remain disclosed and identical between arms."
+    },
+    "driver_protocol_identity": {
+      "driver_AST_valid_after_prelaunch_syntax_fix": true,
+      "behavior_diff_only_observed_end_wrapper": true,
+      "source_manifest_difference_only_arm_driver": true,
+      "input_manifests_exactly_equal": true,
+      "all_declared_input_and_source_hashes_verified": true
+    },
+    "supervision": {
+      "exclusive_new_ledger": true,
+      "fixed_baseline_then_candidate": true,
+      "physical_cap": 2,
+      "automatic_retries": false,
+      "bounded_wall_timeout_s_per_arm": 1800,
+      "cleanup_grace_s": 45,
+      "abort_on_execution_failure": true,
+      "abort_before_candidate_if_baseline_source_unavailable_or_fails": true,
+      "actual_command_and_map_reconstruction_audits_present": true,
+      "arrival_contact_source_scoring_present": true,
+      "review_must_be_in_final_admission_hashes": true
+    }
+  },
+  "observed_tradeoffs": [
+    "frame175: nominal full length 5.1 -> 4.2 m; initial reverse 2.7 -> 2.4 m; one direction change both.",
+    "frame710: nominal full length 3.3 -> 2.7 m; initial reverse 0.6 m and one direction change both.",
+    "frame855: nominal full length worsens 3.9 -> 4.2 m; initial reverse 0.9 m and one direction change both.",
+    "The qualification gate does not require or establish improvement over baseline in observed-axis advance, length, reverse, switching, or navigation success."
+  ],
+  "remaining_limitations": [
+    "All qualification inputs are known development E1 inputs; no held-out/generalization claim.",
+    "Observed elongated inflated-risk components can combine partial surfaces; selected extremes are not certified physical obstacle ends.",
+    "Unknown cells remain exploratory. Map clearance, nominal primitives, and inherited empirical tracking error do not certify unknown-space safety, future visibility, or tracking under every state.",
+    "The per-run source gate is conditional on confident 0.5-3 m pixels and includes robot surfaces; it does not certify full obstacle or nearfield coverage.",
+    "Real behavior still requires the authorized two-arm 90 s E1 run, raw identity/command/map audits, arrival <=0.2 m, no contact, and unchanged source gates; no outcome is established by this admission.",
+    "A single pair with differing rendered RGB after trajectories diverge is descriptive development evidence, not complete causal replication.",
+    "No E0/E2 migration or threshold retuning is admitted; failed navigation must close the candidate under the frozen protocol."
+  ],
+  "utc": "2026-10-13T06:02:50.996575+00:00",
+  "reviewed_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/protocol.json": "967ad317bfdf01770ea8d676582d8038bf6691cce763fc012f4b2639fc8a1e1f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/end_subgoal.py": "1f192d56f0c222876ed262978edb5697ae62d4e9ecf56ef42b829f30a69f2a85",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/bootstrap.py": "bd69af151d60824e8c07c0848ca8d06b910917f272c8acf9f16951528a7967a1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/check.py": "b3884b993f012f942a3683639459fa972de99185f45b0fd290eb62aaf188a602",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/check_red.log": "c1ecffd676a4b76f20aca1e40a5611afeb8387f2b95703283defaa701b9bdead",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/check_green.log": "ad78bf3919859fe90010e871fa0d999c37df29a34224aff16aea99cada57567c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/replay.py": "db05d3f91a2a9a00b002dc12054edc4151361887bdc9836df0a2aec7a09f10e6",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/replay.json": "89fd7e102267c799b6bb20bfefbb4c4d6877cd693b6dd485d6681a893c18e087",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/replay.log": "86c87964ecdd2a184f1b4b9f9d7f35b88e7f1c272e9d637d19eb99bfcdd5a111",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/mro_check.py": "e531c339b457df2a47ea265cef042faef0ec3077cc5038eb92985cca41e1fe4c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/mro_check.log": "2b90b876005a7098da1765e8feef92a326a5a609d61e2394906015933f45344d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/mro_checks.json": "5bc3fe0746ac9848745a4e3ceb23ca57f3ad9347d40a0b4c8b0804d7f8615794",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/baseline_e1_driver.py": "2b2801a0e3d4eaca5b04702fb541e28b6357c2466f6bec202283a7ec541b14d1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_driver.py": "f7719c55f1563ea4a66fb6bfe6c1a9279c76e1cd789888116814f4f0483f6cca",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/baseline_e1_protocol.json": "1d5759c389020290ab73f6b27e5e6d903999a052c58e3d191bd8e0d0d23c6411",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_protocol.json": "b657da0871e6c060dbd2f6d0396d97ff16eb4fbdbac5af46ab8bc1f11a47d51e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/supervise.py": "f87a40321ea2654b511a512bd2f6e582c448d23628d59ba6e2ca79afe7180bc1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/prelaunch_syntax_fix.json": "cd8195d861204e32bc40b0afd7171b008dac81606927422f111ec4fc2ee362c1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_driver_syntax_before.txt": "ce8fa9c4dbd6dab0e5fd454a31d04c80e9a8bf81b0887a75419401f49caf8f16",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/baseline_e1_protocol_identity_before.json": "594b98627cc54026bd8c0784c2aa5d3e8c8539e73a53fed0b57a7a64f84deb24",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_protocol_identity_before.json": "8ecdb7b4dc47403bbba87738b106405d1cbd2289067c71587496c528f02dfe3f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_consumer_v1.py": "18d0213d94c0ae27f37cd17f8162bce443e584e82d20027d4f34d9b4cc53d531",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_planning_v1.py": "638d2a84575f947f0fd26cdcaba29ca7af9cd91c6713035bbcf6ec8e1e3156c8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_consumer_v2.py": "e600483866f5494233962f847cb4fa5a864bc27ff607722da18107ee227ef720",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_source_v2.py": "4e428f280bd5ec84a7ff606face9592abef9a21d4eb0c9f9ee4122543c9d9125",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/continuous_cell_tube_consumer_v1.py": "9d6f11b1e2278b9fb85eb10a8f2c8f5cbe2df601a1cfb189cf87ced1f424a5f2",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/prior_rgb_navigation.py": "3fa919d113f902bd431a89c5ff00e0446e0a2f55f8f2b5a290ca48e9b9b8928d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/risk_grid.py": "f141a9df681cd5a97558330e9339af8f5c737b6d293bcc485536065479b928a3",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/estimated_navigation_observation.py": "8420edda579aadca703cd4a1e533d0b794165e17792a2379529fdaa0ebefe4a7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/durable_stage_supervision_v1.py": "7189f8ae002db7866c9a36f29f5fcf24c9506c2144d0b3b362e2ce1ee18119f2",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/command_domain_cap.py": "afa374d1ec32c472496a718d26be6204a36c8d60f42dab8006b09f5d23d15239",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/cusp_coast_acquisition_v1.py": "da7a3c3b979fdebb3b0c4e5ec4d0a5aa894f5dfc5db513b26fa6c09254dd424f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1/viewpoint_confirmation.py": "1e3c581b61ccf8668bbdcb9ef855ef1e13fa3e68fe34ce02a6295fc6367b137e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1/score.py": "aa49b5adf95c2c5d0602f35e5e6640fca6be3641d0596bde435558b975b6da6a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1/audit_actual.py": "e8ba17b6ed7e5a8079f914511cc44bb807183763160c7bcc7a4f3191e137327b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1/verify_actual_maps.py": "2570cbcf7977278d1905811554c0686007cddd0cbcdbe32ba01b817b88e3dd8e"
+  },
+  "source_manifest_entries_per_arm": 2132,
+  "input_manifest_entries_per_arm": 92,
+  "resolved_prelaunch_findings": [
+    {
+      "severity": "important",
+      "finding": "Generated candidate driver initially had one extra closing parenthesis.",
+      "resolution": "Fixed before any launch; original retained in candidate_driver_syntax_before.txt; final driver parses and hash is reviewed. Scientific definition unchanged."
+    },
+    {
+      "severity": "minor",
+      "finding": "Two run protocols retained stale speedfloor/tangent experiment identity and source-gate prose.",
+      "resolution": "Both identity fields and source gate description corrected to this observed-end E1 comparison; previous protocol copies retained. Existing score.py thresholds unchanged."
+    }
+  ]
+}
+

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-17T13:54:31.661913+00:00",
+  "expected_red_returncode": 1,
+  "red_expected_NotImplementedError": true,
+  "green_returncode": 0,
+  "implementation_recovery_used": 0,
+  "archived_source_calls": 0,
+  "archiveddata_reads": 0,
+  "fit": 0,
+  "physics": 0,
+  "fixture_sha256": "73fc6dcf8d811eb777aa3984e04acedfbc38d37e5d8d4e56a3aaf62bac869ae7",
+  "selector_sha256": "ed9f86fd50970df6f7098f183b771b4fb6f5cee2401a57c2caeebe77fccbcc48",
+  "checks": {
+    "sensor_lock_flagged": true,
+    "world_static_kept": true,
+    "baseline_empty_and_expiry_HOLD": true,
+    "new_surface_HOLD": true,
+    "joint_all_required": true,
+    "gauge_invariance": true,
+    "duplicate_future_before_payload": true
+  }
+}

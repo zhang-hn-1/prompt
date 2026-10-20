@@ -1,0 +1,31 @@
+{
+  "candidate_e1": {
+    "selection": "post-hoc first contributing frame of the identified blocking cell; not representative or a worst-frame search",
+    "time_s": 49.49999889358878,
+    "scored_pixels": 30903,
+    "predicted_confident_pixels": 60015,
+    "full_image_pixels": 307200,
+    "p50_p90_p95_m": [
+      0.01927042007446289,
+      0.9176815986633298,
+      1.2083601236343375
+    ],
+    "accepted_point_instances": 2406,
+    "truth_valid_point_instances": 2013,
+    "ground_false_point_instances": 0,
+    "snapshot_map": {
+      "time_s": 49.49999889358878,
+      "risk_cells": 151,
+      "farther015m_cells": 35,
+      "old10s_cells": 77,
+      "old10s_farther015m_cells": 5
+    },
+    "final_map": {
+      "time_s": 89.89999799057841,
+      "risk_cells": 142,
+      "farther015m_cells": 12,
+      "old10s_cells": 135,
+      "old10s_farther015m_cells": 12
+    }
+  }
+}

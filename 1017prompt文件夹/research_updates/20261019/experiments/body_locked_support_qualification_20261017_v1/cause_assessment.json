@@ -1,0 +1,57 @@
+{
+  "utc": "2026-10-17T14:06:58.499106+00:00",
+  "question": "Does source error dominantly provide a bodylocked rather than world-static pointset signature?",
+  "result": "Fixed hypothesis necessaryqualification rejected; all3 false-risk reduction<20%.",
+  "evidence": {
+    "anchor_exposures": {
+      "E0": "94/110",
+      "E1B": "103/180",
+      "E1A": "165/180"
+    },
+    "negative_rows": {
+      "E0": {
+        "total_cells": 156,
+        "allpoints_anchor_available": 85,
+        "missing_anchor_somepoint": 71,
+        "all_body_close": 1,
+        "all_world_far": 75,
+        "both_all_withheld": 1,
+        "some_world_compatible": 10,
+        "body_close_world_compatible": 0
+      },
+      "E1B": {
+        "total_cells": 3141,
+        "allpoints_anchor_available": 1417,
+        "missing_anchor_somepoint": 1724,
+        "all_body_close": 270,
+        "all_world_far": 846,
+        "both_all_withheld": 83,
+        "some_world_compatible": 571,
+        "body_close_world_compatible": 187
+      },
+      "E1A": {
+        "total_cells": 2099,
+        "allpoints_anchor_available": 1612,
+        "missing_anchor_somepoint": 487,
+        "all_body_close": 119,
+        "all_world_far": 1274,
+        "both_all_withheld": 24,
+        "some_world_compatible": 338,
+        "body_close_world_compatible": 95
+      }
+    },
+    "withheld_total": 424,
+    "withheld_negative": 108,
+    "withheld_positive": 236,
+    "withheld_UNKNOWN": 80
+  },
+  "cause_supported": "Insufficient discrimination/coverage of fixed sensor-lock signature. E1B has unavailablehistory support for1724/3141negativecellrows. But E1A1612negativecellrows have fullanchor support,1274allworldfar,only24alsoallbodyclose. Missinganchors alone cannot explain failure; lowtexture doesnotestablish bodylockedgeometry.",
+  "still_unknown": "Nearest sets are not physicalpoint correspondence. Newvisibility/occlusion/source sampling/density, estimateerror and variable mismatch can allaffect residuals; this doesnot prove a single cause or alltemporal methods impossible.",
+  "repair_decision": "Close D; no changes to .10/.20 residuals/.20translation/10s history/latestanchor/allpoint rule or newname rerun. No fit/collection/navigation. Already admitted history and alloriginalsource/oldresults unchanged.",
+  "next_action": "No next model or memory mechanism currently admitted. Do not repeat thisdualframe hypothesis/failurestatistics, v115teacher/OODreview, oldC/strictfarther or paused radiance chain. A future proposal must introduce a specific online-available causal signal or distinctconsumer with direct supporting evidence; only then freeze a separateboundedqualification. Absent suchproposal, report actualresearchstagnation without new reports/experiments merely to fill a wakeup.",
+  "source_calls": 0,
+  "model_calls": 0,
+  "fit": 0,
+  "physics": 0,
+  "navigation": 0
+}

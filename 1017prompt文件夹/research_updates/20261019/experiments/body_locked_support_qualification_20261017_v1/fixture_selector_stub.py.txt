@@ -1,0 +1,3 @@
+class MotionCompatibility:
+    def update(self,*a,**k):raise NotImplementedError('coordinate compatibility selector not implemented yet')
+def joint_actions(*a,**k):raise NotImplementedError('joint allpoint policy not implemented yet')

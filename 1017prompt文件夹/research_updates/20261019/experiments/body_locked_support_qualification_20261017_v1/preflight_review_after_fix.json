@@ -1,0 +1,56 @@
+{
+  "utc": "2026-10-17T13:59:09.737713+00:00",
+  "review_kind": "independent_read_only_static_pre_dispatch_after_fix",
+  "supersedes_assessment_only": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1/preflight_review.json",
+  "original_review_preserved": true,
+  "original_review_sha256": "89a5df636f9325fcbb3122e83d7f7370e365e227686ffa6a649173279f80d94f",
+  "protocol_sha256": "0f710ca68fe1553633896219299aa15c2a8cf2ae6ce0b77cb878841115a0e4d5",
+  "reviewed_changes": [
+    "stage.py",
+    "score.py",
+    "protocol.json",
+    "protocol_preflight_revision0.json",
+    "stage.py.preflight_revision0.txt",
+    "score.py.preflight_revision0.txt"
+  ],
+  "code_files_changed_from_revision0": [
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1/stage.py",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1/score.py"
+  ],
+  "resolved_important": [
+    {
+      "id": "I1",
+      "status": "resolved_before_actual_dispatch",
+      "evidence": [
+        "stage.py waits for successful predict.py completion, confirms prediction seal complete, then verifies every protocol.input_sha256 entry before entering replay.py.",
+        "score.py confirms replay seal complete, then verifies every protocol.input_sha256 entry before action_seal or any numeric scoring input is loaded.",
+        "Hash verification reads bytes without decoding teacher arrays; prediction-first and map-before-teacher-scoring order remain preserved."
+      ]
+    }
+  ],
+  "verification": {
+    "all_current_11_code_hashes_match": true,
+    "input_sha256_3024_unchanged": true,
+    "generation_input_sha256_942_unchanged": true,
+    "selector_sha256_unchanged": true,
+    "mechanism_gates_domain_budget_stop_unchanged": true,
+    "ledger_status_prediction_replay_result_absent": true,
+    "candidate_selector_model_source_physics_executions_by_reviewer": 0,
+    "archived_npz_data_reads_by_reviewer": 0,
+    "actual_runtime_hash_guard_not_executed_by_reviewer": true
+  },
+  "critical": [],
+  "important": [],
+  "minor_carried_forward": [
+    "M1: Existing seven single-eye synthetic fixtures do not explicitly exercise multi-eye anchor isolation or latest eligible anchor choice; current source inspection confirms both. Nonblocking."
+  ],
+  "declined_to_judge": [
+    "Actual candidate offline efficacy, data-dependent rejection/denominator gates, runtime P90 and 300s completion require the fixed dispatch.",
+    "True correspondence, source authenticity, hard pose bounds and navigation/deployment validity are outside this heuristic qualification."
+  ],
+  "assessment": {
+    "ready_for_actual_dispatch": true,
+    "verdict": "READY_FOR_FIXED_OFFLINE_DISPATCH",
+    "reason": "The sole Important preflight issue is repaired with frozen scoring/replay input validation placed after prediction sealing and before relevant input use. No mechanism, thresholds, input identities, denominators or budget changed. This approves only the specified offline dispatch, not candidate efficacy or navigation."
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "utc": "2026-10-17T13:58:06.525921+00:00",
+  "review_kind": "independent_read_only_static_pre_dispatch",
+  "scope": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1",
+  "reviewed_files": [
+    "protocol.json",
+    "mechanism_preflight.json",
+    "common.py",
+    "selector.py",
+    "fixture_checks.py",
+    "fixture_result.json",
+    "fixture_red.log",
+    "fixture_green.log",
+    "predict.py",
+    "replay.py",
+    "score.py",
+    "stage.py",
+    "supervise.py"
+  ],
+  "direct_dependency_code_reviewed": [
+    "conservative_capture_admission_20261017_v1/consumer.py",
+    "persistent_entry_data_qualification_20261017_v1/consumer_repaired.py",
+    "fixed_source_parallel_compute_20261017_v1/group_supervision.py"
+  ],
+  "git_head": "unavailable/unborn; reviewed current source pinned by protocol SHA256",
+  "protocol_sha256": "2507a0df03c07191dd4e1cd9fb0f0d18ea5fae66f4423516edb1756b3c7b5d1e",
+  "source_sha256": {
+    "common.py": "0dbfc7bb2e90a379f581a7637ad481ca02fc70c24d3f9508c7dd87ac6ff5907a",
+    "replay.py": "e9d3bf4bbe3c84cf4d54cef21053c0bee3390d03a857f25a8905c5a546ec6d87",
+    "selector.py": "ed9f86fd50970df6f7098f183b771b4fb6f5cee2401a57c2caeebe77fccbcc48",
+    "predict.py": "a56534dfa347d53c42cf4793ab58e88e9e2a7f6a23ee9a11c817257ac76830d4",
+    "supervise.py": "6f787cc9e5a86c6ee118d81ae62409ca3deb481ecaf36002f33149b6c1130e6d",
+    "stage.py": "ebdebdbef7e734cba5c8d4f8032b209512eef26812e9239d1db51e8fc7fa560f",
+    "score.py": "267cb658da6ef367583f4c825ab4734c4273defcab3d2c2e6eb054b9474fa331",
+    "fixture_checks.py": "73fc6dcf8d811eb777aa3984e04acedfbc38d37e5d8d4e56a3aaf62bac869ae7"
+  },
+  "verification": {
+    "code_sha256_all_11_match": true,
+    "fixture_and_selector_hash_match_receipt": true,
+    "existing_red_expected_NotImplementedError": true,
+    "existing_green_seven_checks_reported_passed": true,
+    "candidate_executed_by_reviewer": false,
+    "selector_executed_by_reviewer": false,
+    "model_calls": 0,
+    "fit": 0,
+    "source_calls": 0,
+    "physics": 0,
+    "navigation": 0,
+    "archived_npz_data_reads": 0
+  },
+  "strengths": [
+    "Dual-frame nearest-set distances use same-eye anchor world coordinates and each capture own estimated body coordinates; current selector code matches the frozen equations.",
+    "Anchor is the latest strictly prior retained capture within 10 seconds satisfying at least 0.2m estimated translation; missing/empty compatible support yields HOLD.",
+    "Joint action requires every original sourcepoint in each nonempty cell to witness body<=0.1m and world>=0.2m; original point mapping, eye and source identity metadata are checked.",
+    "All advisory generation seals before replay; full replay seals before physical action teacher reads. Geometry generation uses only source cloud/pose and original cell metadata; no learned feature/weight inference is present.",
+    "Unchanged immutable CaptureAdmission consumes rejected original capture identities, protects old history, creates no free cells, and does not resurrect rejected risk.",
+    "Scoring uses original unfiltered source support for both B and Q, all 40052 action rows, 1910 times and 1010 B map matches with per-sequence gates.",
+    "Supervision records one dispatch, no automatic retries, and bounded process-group cleanup; heuristic limitations and closed historical budgets are stated explicitly."
+  ],
+  "critical": [],
+  "important": [
+    {
+      "id": "I1",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1/score.py",
+      "line": 7,
+      "related_locations": [
+        "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1/score.py:30",
+        "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1/score.py:47",
+        "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1/replay.py:18",
+        "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1/stage.py:4"
+      ],
+      "title": "Enforce the frozen scoring/replay input hashes before dispatch",
+      "issue": "protocol.input_sha256 contains 3024 pinned inputs, including action_seal, occupancy, target/prior/policy records and old B maps, but no execution stage checks that dictionary. Code hashes and generation inputs are checked, while score loads the teacher seal and occupancy/target inputs without their protocol pins. Per-row teacher SHA checks are only anchored to the unpinned action_seal itself.",
+      "impact": "Changed scoring inputs can silently change teacher classes, physical truth or the original denominators while producing an apparently complete result under the frozen protocol. This violates the immutable-input preflight contract.",
+      "fix": "After the full prediction seal exists, verify the original protocol input_sha256 hashes before the replay/scoring stages use them, or verify each respective frozen hash immediately before read. Hashing bytes does not decode teacher labels; preserve prediction-first and replay-before-teacher-scoring order. Refresh only code SHA pins for this implementation repair before actual dispatch.",
+      "blocking": true
+    }
+  ],
+  "minor": [
+    {
+      "id": "M1",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/body_locked_support_qualification_20261017_v1/fixture_checks.py",
+      "line": 7,
+      "title": "Seven fixtures do not explicitly cover multi-eye anchor isolation",
+      "issue": "All coordinate fixtures use one eye. Code inspection confirms same-eye queries, but the fixtures would not catch a future cross-eye mix or wrong latest eligible anchor.",
+      "recommendation": "A later purely synthetic fixture can use two eyes with deliberately conflicting anchor clouds and several eligible/ineligible prior captures. This is not a reason to reopen fixed data candidate budgets.",
+      "blocking": false
+    }
+  ],
+  "declined_to_judge": [
+    {
+      "behavior": "Actual offline improvement, rejection fractions, selector P90 and full 300s completion",
+      "reason": "No actual candidate/data execution authorized for this reviewer; these remain dispatch acceptance gates."
+    },
+    {
+      "behavior": "Source authenticity, true point correspondence, hard pose error bound, navigation or deployment validity",
+      "reason": "Explicitly outside this offline compatibility hypothesis and not claimed."
+    },
+    {
+      "behavior": "Broad historical experiments and closed learner budgets",
+      "reason": "Review limited to the new root and directly imported/cited source; no broad historical scan."
+    }
+  ],
+  "assessment": {
+    "ready_for_actual_dispatch": false,
+    "verdict": "WITH_FIXES",
+    "reason": "The fixed geometric mechanism, causal ordering, immutable capture semantics and denominator construction align with the specified design. Enforce the preregistered replay/scoring input hashes before spending the single actual dispatch; no candidate-quality conclusion is possible pre-dispatch."
+  }
+}

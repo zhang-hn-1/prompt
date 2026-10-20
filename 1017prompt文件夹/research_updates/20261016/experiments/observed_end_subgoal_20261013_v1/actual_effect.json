@@ -1,0 +1,1714 @@
+{
+  "pass_gate": true,
+  "arms": {
+    "baseline_e1": {
+      "queries": [
+        {
+          "frame": 60,
+          "time_s": 5.999999865889549,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 2.4,
+          "actual_length_m": 2.4,
+          "baseline_cusps": 0,
+          "actual_cusps": 0,
+          "subgoal": null
+        },
+        {
+          "frame": 175,
+          "time_s": 17.49999960884452,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 5.1,
+          "actual_length_m": 5.1,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": null
+        },
+        {
+          "frame": 515,
+          "time_s": 51.4999988488853,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.0,
+          "actual_length_m": 3.0,
+          "baseline_cusps": 2,
+          "actual_cusps": 2,
+          "subgoal": null
+        },
+        {
+          "frame": 520,
+          "time_s": 51.99999883770943,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.0,
+          "actual_length_m": 3.0,
+          "baseline_cusps": 2,
+          "actual_cusps": 2,
+          "subgoal": null
+        },
+        {
+          "frame": 525,
+          "time_s": 52.499998826533556,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.5999999999999996,
+          "actual_length_m": 3.5999999999999996,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": null
+        },
+        {
+          "frame": 570,
+          "time_s": 56.99999872595072,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.0,
+          "actual_length_m": 3.0,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": null
+        },
+        {
+          "frame": 650,
+          "time_s": 64.99999854713678,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.3,
+          "actual_length_m": 3.3,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": null
+        },
+        {
+          "frame": 655,
+          "time_s": 65.49999853596091,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.3,
+          "actual_length_m": 3.3,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": null
+        },
+        {
+          "frame": 695,
+          "time_s": 69.49999844655395,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.3,
+          "actual_length_m": 3.3,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": null
+        },
+        {
+          "frame": 750,
+          "time_s": 74.99999832361937,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.5999999999999996,
+          "actual_length_m": 3.5999999999999996,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": null
+        },
+        {
+          "frame": 790,
+          "time_s": 78.9999982342124,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.3,
+          "actual_length_m": 3.3,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": null
+        }
+      ],
+      "attempted_queries": 11,
+      "successful_installations": 11,
+      "failed_queries": 0,
+      "changed_plan_count": 0,
+      "input_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_060.json": "c9a2768909be3425918858bb72d92e0cb577eb86e37bb7b87f4aaca1d1340223",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_060.npz": "b53d8888cb62b9bae8ae0d9ffe7369e742e868242d43b33c81a7c003d22f519a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_175.json": "01451312df025469b7ead8c80d2a0493b6bc11d8f793169f734da4873b311b1e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_175.npz": "67b9021d61433bbc1bc3264171515a294215f364e822d59baba9c1f06e3e77dc",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_515.json": "fff24f920895ee7b2389152d0a0695de726ebb4994dd0f1ed9698925bb7b47ca",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_515.npz": "6da0fa8dd2d5a3f3145c3fd0d8328e11b558eadac6f423cd18f074f2f41b95ef",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_520.json": "d542f3eb4cb187fb7005e39d423643fa8bcea67245f1668ca95230c37174b758",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_520.npz": "cb1529b0a944ab8d62d0400b4e2b731689858c5c519f450b9a22f4458ba604cc",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_525.json": "6eca17f1bd0c87026a6d131d67c17df35a51a1b5df0eddbcab2c93ec83a6088c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_525.npz": "2e6af1c3bc598717831d23aa363fed66e36a243006863c264a784091b8bc34a8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_570.json": "eb861159b61991ae3e0f202822b025559015d848ebc36849fe01073eb41308ff",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_570.npz": "e8b3afb73c10fb2d8a43527a8b0a2ace63fbcec20f2634acfe16ce8e960fd334",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_650.json": "b3a88e0380167412f488c37b078281de5b4b5155cd568804661de9946512da88",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_650.npz": "8161324908564e238516f7a991cbad6bd5bbfdf340e7ede0dc5f0bca4b7ca122",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_655.json": "40dfe2ed3b08a88520a69bc66d76a878ab49846cb28d2ed771bacd574df99c2d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_655.npz": "5c3cfe71275e959805a1cc70979b245508d8752003978acf5232fbfa7d69f2b0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_695.json": "498cf2c18113bbdeccbcd67729d837f80cb43f52a0b5a025f7bae7e553b9f5dd",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_695.npz": "9decacd91060c69fb5ca90a2c9644668854aeaed6d7771a032af8aa8b6933d25",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_750.json": "fa0183b3f4d428a269587e6e012ce5ed43a386b004d62fce64642a90cd84acdc",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_750.npz": "f920d629676b7342d36c27cbbf370a293442f4b7f94530bcd23862fda19e7652",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/local_plans/frame_790.json": "4834b143dfbd85e3f71546f1a176006fd61bd34d4b49fb971aaeda6428b44ebd",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/maps/frame_790.npz": "40e2a1ec1076d91d978f8385dcb90a705eae8294149a3239a967354b7f18bf05"
+      }
+    },
+    "candidate_e1": {
+      "queries": [
+        {
+          "frame": 60,
+          "time_s": 5.999999865889549,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": true,
+          "baseline_length_m": 2.4,
+          "actual_length_m": 2.4,
+          "baseline_cusps": 0,
+          "actual_cusps": 0,
+          "subgoal": {
+            "exploratory_unknown": true,
+            "observed_free": false,
+            "completed_obstacle": false,
+            "axis": [
+              0.01566905875162946,
+              0.9998772327630217
+            ],
+            "end_sign": 1,
+            "observed_end": [
+              -0.2999999940395348,
+              0.8000000059604666
+            ],
+            "normal": [
+              -0.9998772327630217,
+              0.01566905875162946
+            ],
+            "desired_target": [
+              -1.1659030597885405,
+              1.1136063925604853
+            ],
+            "support_cells": 37,
+            "eigenvalues": [
+              0.006901095734278288,
+              0.22230270265870927
+            ],
+            "planning_clearance_m": 0.8707106781186548,
+            "reason": "observed_end_exploration",
+            "target_cell": [
+              221,
+              211
+            ],
+            "baseline_target": [
+              -1.2999999940395348,
+              1.2000000059604687
+            ],
+            "fallback": false,
+            "search_status": "success",
+            "seconds": 0.07655207597417757,
+            "target": [
+              -1.1999999940395334,
+              1.1000000059604673
+            ]
+          }
+        },
+        {
+          "frame": 175,
+          "time_s": 17.49999960884452,
+          "status": "unreachable",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 180,
+          "time_s": 17.999999597668648,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": true,
+          "baseline_length_m": 5.1,
+          "actual_length_m": 4.8,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": {
+            "exploratory_unknown": true,
+            "observed_free": false,
+            "completed_obstacle": false,
+            "axis": [
+              -0.00858459041829098,
+              0.9999631517247773
+            ],
+            "end_sign": -1,
+            "observed_end": [
+              -0.2999999940395348,
+              -0.6999999940395334
+            ],
+            "normal": [
+              -0.9999631517247773,
+              -0.00858459041829098
+            ],
+            "desired_target": [
+              -1.1681032108459957,
+              -1.0074636341014476
+            ],
+            "support_cells": 124,
+            "eigenvalues": [
+              0.02370377890717216,
+              1.6834281149533896
+            ],
+            "planning_clearance_m": 0.8707106781186548,
+            "reason": "observed_end_exploration",
+            "target_cell": [
+              221,
+              190
+            ],
+            "baseline_target": [
+              -0.9999999940395341,
+              -1.3999999940395327
+            ],
+            "fallback": false,
+            "search_status": "success",
+            "seconds": 0.12946432502940297,
+            "target": [
+              -1.1999999940395334,
+              -0.9999999940395341
+            ]
+          }
+        },
+        {
+          "frame": 530,
+          "time_s": 52.999998815357685,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.3,
+          "actual_length_m": 3.3,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": {
+            "exploratory_unknown": true,
+            "observed_free": false,
+            "completed_obstacle": false,
+            "axis": [
+              -0.01206683384909942,
+              0.9999271931100076
+            ],
+            "end_sign": -1,
+            "observed_end": [
+              0.40000000596046803,
+              -1.1999999940395334
+            ],
+            "normal": [
+              -0.9999271931100076,
+              -0.01206683384909942
+            ],
+            "desired_target": [
+              -0.46702722826689985,
+              -1.5104848730560303
+            ],
+            "support_cells": 167,
+            "eigenvalues": [
+              0.15191510729234395,
+              1.7376750537030303
+            ],
+            "planning_clearance_m": 0.8707106781186548,
+            "reason": "no_clear_target_rounding",
+            "baseline_target": [
+              -0.09999999403953197,
+              -2.099999994039532
+            ],
+            "fallback": true
+          }
+        },
+        {
+          "frame": 535,
+          "time_s": 53.499998804181814,
+          "status": "success",
+          "successful_installation": true,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": 3.3,
+          "actual_length_m": 3.3,
+          "baseline_cusps": 1,
+          "actual_cusps": 1,
+          "subgoal": {
+            "exploratory_unknown": true,
+            "observed_free": false,
+            "completed_obstacle": false,
+            "axis": [
+              -0.02163818409788609,
+              0.9997658670853622
+            ],
+            "end_sign": -1,
+            "observed_end": [
+              0.40000000596046803,
+              -1.1999999940395334
+            ],
+            "normal": [
+              -0.9997658670853622,
+              -0.02163818409788609
+            ],
+            "desired_target": [
+              -0.46401535489994666,
+              -1.5187703521142686
+            ],
+            "support_cells": 172,
+            "eigenvalues": [
+              0.14930514484322038,
+              1.8557269671091858
+            ],
+            "planning_clearance_m": 0.8707106781186548,
+            "reason": "no_clear_target_rounding",
+            "baseline_target": [
+              -0.1999999940395334,
+              -2.099999994039532
+            ],
+            "fallback": true
+          }
+        },
+        {
+          "frame": 545,
+          "time_s": 54.49999878183007,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 550,
+          "time_s": 54.9999987706542,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 555,
+          "time_s": 55.49999875947833,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 560,
+          "time_s": 55.99999874830246,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 565,
+          "time_s": 56.49999873712659,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 570,
+          "time_s": 56.99999872595072,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 575,
+          "time_s": 57.49999871477485,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 580,
+          "time_s": 57.999998703598976,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 585,
+          "time_s": 58.499998692423105,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 590,
+          "time_s": 58.999998681247234,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 595,
+          "time_s": 59.49999867007136,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 600,
+          "time_s": 59.99999865889549,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 605,
+          "time_s": 60.49999864771962,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 610,
+          "time_s": 60.99999863654375,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 615,
+          "time_s": 61.49999862536788,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 620,
+          "time_s": 61.99999861419201,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 625,
+          "time_s": 62.49999860301614,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 630,
+          "time_s": 62.99999859184027,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 635,
+          "time_s": 63.499998580664396,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 640,
+          "time_s": 63.999998569488525,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 645,
+          "time_s": 64.49999855831265,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 650,
+          "time_s": 64.99999854713678,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 655,
+          "time_s": 65.49999853596091,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 660,
+          "time_s": 65.99999852478504,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 665,
+          "time_s": 66.49999851360917,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 670,
+          "time_s": 66.9999985024333,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 675,
+          "time_s": 67.49999849125743,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 680,
+          "time_s": 67.99999848008156,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 685,
+          "time_s": 68.49999846890569,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 690,
+          "time_s": 68.99999845772982,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 695,
+          "time_s": 69.49999844655395,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 700,
+          "time_s": 69.99999843537807,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 705,
+          "time_s": 70.4999984242022,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 710,
+          "time_s": 70.99999841302633,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 715,
+          "time_s": 71.49999840185046,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 720,
+          "time_s": 71.99999839067459,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 725,
+          "time_s": 72.49999837949872,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 730,
+          "time_s": 72.99999836832285,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 735,
+          "time_s": 73.49999835714698,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 740,
+          "time_s": 73.99999834597111,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 745,
+          "time_s": 74.49999833479524,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 750,
+          "time_s": 74.99999832361937,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 755,
+          "time_s": 75.4999983124435,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 760,
+          "time_s": 75.99999830126762,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 765,
+          "time_s": 76.49999829009175,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 770,
+          "time_s": 76.99999827891588,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 775,
+          "time_s": 77.49999826774001,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 780,
+          "time_s": 77.99999825656414,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 785,
+          "time_s": 78.49999824538827,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 790,
+          "time_s": 78.9999982342124,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 795,
+          "time_s": 79.49999822303653,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 800,
+          "time_s": 79.99999821186066,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 805,
+          "time_s": 80.49999820068479,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 810,
+          "time_s": 80.99999818950891,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 815,
+          "time_s": 81.49999817833304,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 820,
+          "time_s": 81.99999816715717,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 825,
+          "time_s": 82.4999981559813,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 830,
+          "time_s": 82.99999814480543,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 835,
+          "time_s": 83.49999813362956,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 840,
+          "time_s": 83.99999812245369,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 845,
+          "time_s": 84.49999811127782,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 850,
+          "time_s": 84.99999810010195,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 855,
+          "time_s": 85.49999808892608,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 860,
+          "time_s": 85.9999980777502,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 865,
+          "time_s": 86.49999806657434,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 870,
+          "time_s": 86.99999805539846,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 875,
+          "time_s": 87.4999980442226,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 880,
+          "time_s": 87.99999803304672,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 885,
+          "time_s": 88.49999802187085,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 890,
+          "time_s": 88.99999801069498,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        },
+        {
+          "frame": 895,
+          "time_s": 89.49999799951911,
+          "status": "observed_obstacle_blocks_route",
+          "successful_installation": false,
+          "native_pose_exact": true,
+          "actual_plan_exact": true,
+          "changed_from_same_input_original": false,
+          "baseline_length_m": null,
+          "actual_length_m": null,
+          "baseline_cusps": null,
+          "actual_cusps": null,
+          "subgoal": {
+            "fallback": true,
+            "reason": "baseline_no_plan"
+          }
+        }
+      ],
+      "attempted_queries": 76,
+      "successful_installations": 4,
+      "failed_queries": 72,
+      "changed_plan_count": 2,
+      "input_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/local_plans/frame_060.json": "566e88bc42c166eea42d60561ded172465658b72fb6c39d7029e35b248f44007",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_060.npz": "e27dfe233212b9ba05b145a019c6e2f4d975d0772dccc5b084aab48e2fb924fe",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_175.npz": "7389b373124f020cc03a42d783957abbb10019098cf3fb6daf085785ecb3273e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/local_plans/frame_180.json": "887fd5e1909aa3526dc4d80f93bff59cf2ad266d0eb0e0d7ddbfd6a44396bc18",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_180.npz": "e95490c122d2786edc5783dc53a2e365aee48e97df146a56ca00feb8fa74a5a7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/local_plans/frame_530.json": "6225d21d5bb9038e5591d86cbebb8a353a5bb3968637237acaf9987a92f98b07",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_530.npz": "e79a6e5c8999c1a536097193756e008975af92eb006a4b622c97be0d9498ecd3",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/local_plans/frame_535.json": "0f42b21ffe4cbe5f28f95a1407b1b23a4b85da9a4ec9443ca38234f96863b2d8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_535.npz": "26743a1a806568159ca9fbf6ba55cc62c5ca5110b7cfd8cde80197e223db1839",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_545.npz": "a43c0075601cb9c7a7f33d9077e7bbea8790b5ef82ee5bc34ee808b0be7a8d19",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_550.npz": "996be0ce3281c0e71b1c03cf57c4039cea44957b0d210d3f0fd814eb2a1d9c68",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_555.npz": "ba4a214d87b777adfebd0e4563dcc41b6e20c17b4aad2d44cfe28d7fbe0db90a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_560.npz": "db1b1f713eb9a129454b39b098cfc44bd589b1ff7889b4db90651d098943dd80",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_565.npz": "7870d06baa5d0b2fe5bca0dcefb63dda44386e564e7716c8819079c01606b496",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_570.npz": "6f06c66dfd987cb69f94991b3691f2833d55b4207b5f25e3f0a0ed47db0328ed",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_575.npz": "e68735a09225a6979646346244cc7e8edb3bd8d6f18a82d772efc9adc9907d56",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_580.npz": "30f5f2852a72746a08bf539092b9ba7c671f83a4e4e5faba5035e8309ab773e6",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_585.npz": "60e91f0f133433315ddb64718dbe12201a0427aded20371b6771ee25f089aab4",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_590.npz": "0aba732500c1b1bdf5e3ec0a474e3151e180e57d05fe673cdfef8bb3fc83b177",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_595.npz": "0a91447065ff53556f381d9949ea55a1fa111cd318295412685a502aed0dc72e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_600.npz": "bb52b774d6c4572426e3d4da44d0fa589c0f3809318fb5729f4adfc816eeb7f4",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_605.npz": "f294859878eb3246be23e31ed622b0d0c16b437da5cfc934c6dc5e4fd4648da3",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_610.npz": "2e3195a28f70ec2a73565de6316e284c44ab1f6e1be054e2f5ea1ccf165b7c43",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_615.npz": "36f11cd00e6caef770f4a04b2d5bb84cdc3a3db15ea5ae76d3180133f889228e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_620.npz": "c273a84794213623ee425f94973505613ce461d8fef7e269babddcbe54cd768b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_625.npz": "ef15fc96ee165c905e5b864e31d7e5337f825a17000dffc3bb95cdfbde47903e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_630.npz": "e0154e01c7e060048c153b530f28a3089b21425e9f0e9f3e8e8ef2e24d5b44d0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_635.npz": "9837725c0f6dcb1d9e28cc1624cf35041315a0f0abc239e7418dfb0b38ef7dcd",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_640.npz": "51b56ff2061b9c3a148395da53f1494fa098d2fd9fe155042c49b5ed008019c7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_645.npz": "be0adddda96e77e492906d23412977400cc3aa6954f5cb14adbdcb4720653f1a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_650.npz": "ba1bf682308c8fd701719f75b3655d32b762aa9297f9b65122267a404319c670",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_655.npz": "b8afe85e816bb5e1318b6de9f81a20f864750950ab3b7916af8543b685bcbe4e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_660.npz": "d57c7d5ffcba2b178de4f8df5ffce498c2be34a63272cf3dbb22dbf25b86b597",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_665.npz": "c99601210295bf8333f32c417d22bc2359cb202a587f1fbf5ff4c7b9c135a8d2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_670.npz": "522392d9832f485232d9d50efc6d333fb30f950a3f4479dbdc7c346b394bc465",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_675.npz": "9c27ba3f70bb1df86b53b186b711dcb7e9ffaccf085097273f3bd42ba914e988",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_680.npz": "b4ae178b513cad309dcc52f9370de6edc688b44f533baf7c224cb7cf2dd1efb4",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_685.npz": "29970ce05ad79eb7d6ed55abbbe04c9a11127ee72678b31115842bcb32adc27b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_690.npz": "efc52964a6d67264f36d9632e71a12d843de19051e0e01a00c8f6e4b61470659",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_695.npz": "1f162f301ca801c72b6646afe3d0ff44e5a5f60707e7f68075276f1f5449776f",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_700.npz": "a012e947b6abd02bc07bccf023750e78dff3ad33cc9b0782df956c2167b5c85f",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_705.npz": "bbd231d9d9e5d157e0767c1f13afc38a77200eb63381d3bda005f86dda4b33ce",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_710.npz": "4a68f04cd7656870854d6ce6a0eaa8aae2226624f37e1f683f6c50b0049518e8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_715.npz": "b88e7ab047413ac324852696f9e1b0489e794c28599a3b179aaf88f549484156",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_720.npz": "b8a95050edcc08aa3594b2a8c2dccf8f31767338e332012cf99cd26888897197",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_725.npz": "06ebf7ccfd2d3cd2ef7468a1c960b106676c49197a2645b227264705fa3047a4",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_730.npz": "4e4cc33a67b69ed98e3c9a5068fee6dc8ad46193ae8c80e962575004dc6ce383",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_735.npz": "fa3844f2a4e4c6fa41d8e213e25c1214f9b9fd70e3662822e9fdb1f1b54b3dea",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_740.npz": "b23ac48fe7a6940047bdf0af6144b03b018fc18511f16d7a6aa67c4b7d47d91d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_745.npz": "f971435bd4ce01884e90078f414c23f75edb16c67a162159bf8278348156dd4d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_750.npz": "09a94e563970a156a9940752e7d7ef206bc536bdfbd2e9901bd0f4f83d4af212",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_755.npz": "0a4d40b3fdb325f18bfd237e91dc6dbd4d7414ee4ef641db64f48b1adf73be1d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_760.npz": "affaaa66750fdc06180fb32a1e0c6eb81ea55c747185f9aedf507304ca648281",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_765.npz": "21d1bd4ae61283401f602b1fdd759fc27f6ebd726bcc18189b8b4e5ab08f76d5",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_770.npz": "b2693f4d9bad869ae740e4f938a7179f5c4894f23346ecfe29cfe22231adedd5",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_775.npz": "b0219530d45c29c1ff6b7006b923bff4e33c2442caa3e484f57823b32660b945",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_780.npz": "efd8c121f4d6bac8678a492a17fad78d9678d69559dd998ca6c9a10e748d6e0c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_785.npz": "98716b80adb9ceb55f1d0bb053493bb2ed48157e3ccce6ec744bc6eaf18e839e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_790.npz": "19c166917b36b5a57ea131af2eed3f50da5a034e8574caf3f5f1a7f56eb87d62",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_795.npz": "826fba41c034f749b49971e2c3ce88c4ece889a4c09963b5762dd9485c67ac3e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_800.npz": "380206af120a420bf7fd8f00939f525f07f56211d82176b8aea7fbdceda6e062",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_805.npz": "169bcf33b34096c86dbd102aecd21d7b0663680f65256ebe7fc2714202b55fc2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_810.npz": "56062db6d32f8676533ced8085e481cbbbae6d7c4f1289a4e5fcceeca9696ca7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_815.npz": "6f866e162fd202ef671a0a12e25b279a5d2fd80022d8fd774f9f09c9a48cccf4",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_820.npz": "5dd1bbb85b72ef20e0023e16861792e7f4bc3544b52f2637ead67df2a8ad8c8d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_825.npz": "cd4d3dfab332996e765bef5f7f3cfa5a473012f7e5b1a4eea8d316f81d94c64f",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_830.npz": "d58660b6001fe741637b5c861b43318a6b200bf8434a4ed21083a60c8c87984e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_835.npz": "e527cae938a30f5c9fc134512ad742ce8a10586cd43bf7b2802ff6071ae1f19c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_840.npz": "3395a31a6d5f971a3f138baee5e2b191cf60dc04453c4ac1c01d995430042d4a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_845.npz": "30f88cbac15bfeaf08a3a0c73e596c88ab7bb6aa5f16f4a823246dc760755171",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_850.npz": "3d973b1747fdb7cc481d283b3723c03290cb402cf11b99499132040513417904",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_855.npz": "a3712426d5f4ac099821b3b398c02bffebf9d44819f6c0085c5e873852dd306b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_860.npz": "2b478ed0b5974ca7a266894aa81436b958100e417aa9c5b6b178addae62064a6",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_865.npz": "e3c711eb9b6db30860a29ed6d85d25a71b149506676138f8f1aab5f11f06818e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_870.npz": "1e8014cd25f803045dca83846f1c794f0a0b56755733563c0417400b6c402516",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_875.npz": "057f494c880abb2ff41c5409b1046f6733bb8e9b792333a07f4b7e9fc3f96495",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_880.npz": "55ea7e04a9bd31196aa4bb8db0d490348a42c96c7bb5c786e0c33642ee30f3f7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_885.npz": "6a055589d70f1090611405143ad28e2955e1e4638b200e393f698c50f0b88def",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_890.npz": "4c0c406bbfcc63b50b2835fcfea3dd8cc721c790097f8c5aeb085e6965c6ebde",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/maps/frame_895.npz": "466602fa3bbc047dc773bc0e8161f8a510389d77fcf30f02a5ed09f75f30c0d8"
+      }
+    }
+  },
+  "scope": "factual current native inputs and actual installed plan identity; counterfactual baseline query only, not a counterfactual trajectory"
+}

@@ -1,0 +1,732 @@
+{
+  "utc": "2026-10-17T14:03:27.456035+00:00",
+  "review_kind": "independent_postdispatch_saved_artifact_audit",
+  "protocol_sha256": "0f710ca68fe1553633896219299aa15c2a8cf2ae6ce0b77cb878841115a0e4d5",
+  "prediction_seal_sha256": "f7e2c9ef4404108686cfdacd559284bdfa60166a4fdaea903efa39ea321afbcc",
+  "replay_seal_sha256": "20a9f6d06f146f0a5b2dc452a9a33cdf7f60ad9a894753324a284c111adab6a4",
+  "result_sha256": "9d24e7d724e530dbed95b070ed90c292e4ff9c881bb7e6adfbbd16505bf0fec9",
+  "scope": {
+    "saved_prediction_action_map_groups": 470,
+    "sourcepoint_equations_and_original_metadata": 2985832,
+    "original_joint_actions": 40052,
+    "independent_admission_state_reconstruction": "All 470 exposures, both B/Q last+epochs+persistent+labels; no production consumer call",
+    "all_score_times_recomputed": 1910,
+    "original_policy_B_maps_checked": 1010,
+    "original_exposure_B_maps_checked": 290,
+    "all_saved_anchor_choices_recomputed": 470,
+    "sha_checks": {
+      "code_entries": 11,
+      "generation_entries": 942,
+      "input_entries": 3024,
+      "unique_pinned_paths": 3034,
+      "prediction_and_map_artifacts": 940,
+      "teacher_action_artifacts": 470,
+      "mismatch_paths": []
+    },
+    "full_source_NN_recomputed": false,
+    "source_NN_brute_force_sample_count": 34,
+    "source_NN_sample_rule": "For each sequence, first/middle/last anchored capture; first/middle/last concatenated sourcepoint plus first witnessed point if present. Same-eye minima by NumPy brute force in world and each capture own body frame.",
+    "map_metric_distance_method": "Independent score reconstruction uses SciPy cKDTree for original occupancy/target-support distances only. Source dual-frame NN sample uses NumPy brute force."
+  },
+  "independent_totals": {
+    "exposures": 470,
+    "source_points": 2985832,
+    "cell_actions": 40052,
+    "withheld_cells": 424,
+    "witnessed_points": 67685
+  },
+  "sequences": {
+    "E0": {
+      "metrics": {
+        "B": {
+          "false_cell_seconds": 1768.5999604687095,
+          "active_cell_seconds": 10246.699770968407,
+          "blind_supported_queries": 18868,
+          "blind_missing": 2161,
+          "blind_missing_fraction": 0.11453254186983253
+        },
+        "Q": {
+          "false_cell_seconds": 1757.2999607212842,
+          "active_cell_seconds": 10022.999775968492,
+          "blind_supported_queries": 18868,
+          "blind_missing": 2565,
+          "blind_missing_fraction": 0.1359444562221751
+        }
+      },
+      "action_metrics": {
+        "rows": 2038,
+        "WITHHOLD_NEW": 35,
+        "HOLD_teacher": 1882,
+        "HOLD_rejected": 34,
+        "physical_positive": 1765,
+        "positive_rejected": 31,
+        "physical_UNKNOWN": 117,
+        "UNKNOWN_rejected": 3,
+        "physical_negative": 156,
+        "negative_rejected": 1,
+        "positive_rejected_fraction": 0.017563739376770537,
+        "UNKNOWN_rejected_fraction": 0.02564102564102564,
+        "negative_rejected_fraction": 0.00641025641025641,
+        "HOLD_retained_fraction": 0.9819341126461212
+      },
+      "false_reduction": 0.006389234422707224,
+      "blind_missing_increase": 0.021411914352342576,
+      "gates": {
+        "false_reduction_ge20pct": false,
+        "blind_missing_increase_le5pp": true,
+        "HOLD_teacher_retained_ge95pct": true,
+        "physical_positive_rejection_le5pct": true,
+        "physical_UNKNOWN_rejection_le5pct": true,
+        "interface_invariants": true,
+        "selector_P90_le100ms": true
+      },
+      "score_rows": 110,
+      "anchored_captures": 94
+    },
+    "E1B": {
+      "metrics": {
+        "B": {
+          "false_cell_seconds": 14501.299999999972,
+          "active_cell_seconds": 52609.10000000013,
+          "blind_supported_queries": 75700,
+          "blind_missing": 634,
+          "blind_missing_fraction": 0.008375165125495377
+        },
+        "Q": {
+          "false_cell_seconds": 14354.900000000025,
+          "active_cell_seconds": 52409.19999999991,
+          "blind_supported_queries": 75700,
+          "blind_missing": 634,
+          "blind_missing_fraction": 0.008375165125495377
+        }
+      },
+      "action_metrics": {
+        "rows": 21162,
+        "WITHHOLD_NEW": 251,
+        "HOLD_teacher": 18021,
+        "HOLD_rejected": 168,
+        "physical_positive": 14349,
+        "positive_rejected": 118,
+        "physical_UNKNOWN": 3672,
+        "UNKNOWN_rejected": 50,
+        "physical_negative": 3141,
+        "negative_rejected": 83,
+        "positive_rejected_fraction": 0.008223569586730782,
+        "UNKNOWN_rejected_fraction": 0.013616557734204794,
+        "negative_rejected_fraction": 0.026424705507800062,
+        "HOLD_retained_fraction": 0.9906775428666555
+      },
+      "false_reduction": 0.010095646597197971,
+      "blind_missing_increase": 0.0,
+      "gates": {
+        "false_reduction_ge20pct": false,
+        "blind_missing_increase_le5pp": true,
+        "HOLD_teacher_retained_ge95pct": true,
+        "physical_positive_rejection_le5pct": true,
+        "physical_UNKNOWN_rejection_le5pct": true,
+        "interface_invariants": true,
+        "selector_P90_le100ms": true
+      },
+      "score_rows": 900,
+      "anchored_captures": 103
+    },
+    "E1A": {
+      "metrics": {
+        "B": {
+          "false_cell_seconds": 25688.49999999992,
+          "active_cell_seconds": 60443.49999999988,
+          "blind_supported_queries": 66215,
+          "blind_missing": 708,
+          "blind_missing_fraction": 0.010692441289737975
+        },
+        "Q": {
+          "false_cell_seconds": 25556.00000000002,
+          "active_cell_seconds": 60131.599999999904,
+          "blind_supported_queries": 66215,
+          "blind_missing": 708,
+          "blind_missing_fraction": 0.010692441289737975
+        }
+      },
+      "action_metrics": {
+        "rows": 16852,
+        "WITHHOLD_NEW": 138,
+        "HOLD_teacher": 14753,
+        "HOLD_rejected": 114,
+        "physical_positive": 12073,
+        "positive_rejected": 87,
+        "physical_UNKNOWN": 2680,
+        "UNKNOWN_rejected": 27,
+        "physical_negative": 2099,
+        "negative_rejected": 24,
+        "positive_rejected_fraction": 0.00720616251138905,
+        "UNKNOWN_rejected_fraction": 0.010074626865671642,
+        "negative_rejected_fraction": 0.011434016198189614,
+        "HOLD_retained_fraction": 0.9922727580831018
+      },
+      "false_reduction": 0.005157950055468485,
+      "blind_missing_increase": 0.0,
+      "gates": {
+        "false_reduction_ge20pct": false,
+        "blind_missing_increase_le5pp": true,
+        "HOLD_teacher_retained_ge95pct": true,
+        "physical_positive_rejection_le5pct": true,
+        "physical_UNKNOWN_rejection_le5pct": true,
+        "interface_invariants": true,
+        "selector_P90_le100ms": true
+      },
+      "score_rows": 900,
+      "anchored_captures": 165
+    }
+  },
+  "timing_quantiles_recounted_from_saved_durations": {
+    "E0": {
+      "P50_s": 0.0005096690147183836,
+      "P90_s": 0.004236896277870984,
+      "max_s": 0.007812023046426475
+    },
+    "E1B": {
+      "P50_s": 0.005875734495930374,
+      "P90_s": 0.02349070032360031,
+      "max_s": 0.06265996396541595
+    },
+    "E1A": {
+      "P50_s": 0.010096293524838984,
+      "P90_s": 0.03063333999598399,
+      "max_s": 0.06446140503976494
+    }
+  },
+  "NN_sample_checks": [
+    {
+      "sequence": "E0",
+      "frame": 16,
+      "anchor_frame": 13,
+      "point_index": 0,
+      "eye": 0,
+      "world_distance_numpy": null,
+      "body_distance_numpy": null,
+      "matched": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 16,
+      "anchor_frame": 13,
+      "point_index": 297,
+      "eye": 2,
+      "world_distance_numpy": 0.06858126609002939,
+      "body_distance_numpy": 0.1773075562658118,
+      "matched": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 16,
+      "anchor_frame": 13,
+      "point_index": 594,
+      "eye": 3,
+      "world_distance_numpy": 0.03279786344035129,
+      "body_distance_numpy": 0.1811263326625316,
+      "matched": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 63,
+      "anchor_frame": 60,
+      "point_index": 0,
+      "eye": 0,
+      "world_distance_numpy": 0.4454717382584328,
+      "body_distance_numpy": 0.4534040025079839,
+      "matched": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 63,
+      "anchor_frame": 60,
+      "point_index": 366,
+      "eye": 2,
+      "world_distance_numpy": 0.9899827929735023,
+      "body_distance_numpy": 0.7977149639729675,
+      "matched": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 63,
+      "anchor_frame": 60,
+      "point_index": 731,
+      "eye": 3,
+      "world_distance_numpy": 0.9646444032784947,
+      "body_distance_numpy": 0.7719736885563948,
+      "matched": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 109,
+      "anchor_frame": 106,
+      "point_index": 0,
+      "eye": 2,
+      "world_distance_numpy": 0.021078494897530612,
+      "body_distance_numpy": 0.3311697722030469,
+      "matched": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 109,
+      "anchor_frame": 106,
+      "point_index": 845,
+      "eye": 2,
+      "world_distance_numpy": 0.20466337432473938,
+      "body_distance_numpy": 0.08123178090752609,
+      "matched": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 109,
+      "anchor_frame": 106,
+      "point_index": 1009,
+      "eye": 2,
+      "world_distance_numpy": 0.35569963880149646,
+      "body_distance_numpy": 0.12090840395310162,
+      "matched": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 109,
+      "anchor_frame": 106,
+      "point_index": 2017,
+      "eye": 3,
+      "world_distance_numpy": 0.3053101287130876,
+      "body_distance_numpy": 0.019435313506480277,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 31,
+      "anchor_frame": 20,
+      "point_index": 0,
+      "eye": 0,
+      "world_distance_numpy": 0.32802807882892554,
+      "body_distance_numpy": 0.18730814463057222,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 31,
+      "anchor_frame": 20,
+      "point_index": 6,
+      "eye": 0,
+      "world_distance_numpy": 0.2929008662887166,
+      "body_distance_numpy": 0.04131425325589201,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 31,
+      "anchor_frame": 20,
+      "point_index": 7222,
+      "eye": 1,
+      "world_distance_numpy": 0.020938725739380853,
+      "body_distance_numpy": 0.2168839591040308,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 31,
+      "anchor_frame": 20,
+      "point_index": 14444,
+      "eye": 3,
+      "world_distance_numpy": 0.37588265018784495,
+      "body_distance_numpy": 0.30745677517711917,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 82,
+      "anchor_frame": 78,
+      "point_index": 0,
+      "eye": 0,
+      "world_distance_numpy": 0.4361640288259552,
+      "body_distance_numpy": 0.40554550489551555,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 82,
+      "anchor_frame": 78,
+      "point_index": 3730,
+      "eye": 2,
+      "world_distance_numpy": 0.04857614492658143,
+      "body_distance_numpy": 0.17234690933707694,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 82,
+      "anchor_frame": 78,
+      "point_index": 7346,
+      "eye": 3,
+      "world_distance_numpy": 0.21203725517816457,
+      "body_distance_numpy": 0.0899297385037248,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 82,
+      "anchor_frame": 78,
+      "point_index": 7459,
+      "eye": 3,
+      "world_distance_numpy": 0.3456510252779545,
+      "body_distance_numpy": 0.3882298037238485,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 139,
+      "anchor_frame": 119,
+      "point_index": 0,
+      "eye": 0,
+      "world_distance_numpy": 0.6418058460819623,
+      "body_distance_numpy": 0.10316054045417275,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 139,
+      "anchor_frame": 119,
+      "point_index": 1,
+      "eye": 0,
+      "world_distance_numpy": 0.6093892276028054,
+      "body_distance_numpy": 0.09131369220910548,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 139,
+      "anchor_frame": 119,
+      "point_index": 4109,
+      "eye": 1,
+      "world_distance_numpy": 0.05058982053525599,
+      "body_distance_numpy": 0.08376604500789163,
+      "matched": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 139,
+      "anchor_frame": 119,
+      "point_index": 8217,
+      "eye": 3,
+      "world_distance_numpy": 0.008500882531684892,
+      "body_distance_numpy": 0.3307185472020157,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 15,
+      "anchor_frame": 2,
+      "point_index": 0,
+      "eye": 0,
+      "world_distance_numpy": 0.31463507480908576,
+      "body_distance_numpy": 0.3191890243222469,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 15,
+      "anchor_frame": 2,
+      "point_index": 6065,
+      "eye": 1,
+      "world_distance_numpy": 0.2080312473360125,
+      "body_distance_numpy": 0.06426469569014964,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 15,
+      "anchor_frame": 2,
+      "point_index": 8302,
+      "eye": 1,
+      "world_distance_numpy": 0.0179226052441739,
+      "body_distance_numpy": 0.1982128288192306,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 15,
+      "anchor_frame": 2,
+      "point_index": 16603,
+      "eye": 3,
+      "world_distance_numpy": 0.6453402295818038,
+      "body_distance_numpy": 0.6052594221281831,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 97,
+      "anchor_frame": 92,
+      "point_index": 0,
+      "eye": 0,
+      "world_distance_numpy": 0.029098988519565196,
+      "body_distance_numpy": 0.24780613864458503,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 97,
+      "anchor_frame": 92,
+      "point_index": 1670,
+      "eye": 1,
+      "world_distance_numpy": 0.018025458199330307,
+      "body_distance_numpy": 0.20290121447760961,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 97,
+      "anchor_frame": 92,
+      "point_index": 1963,
+      "eye": 2,
+      "world_distance_numpy": 0.20723414302414533,
+      "body_distance_numpy": 0.043621936634768224,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 97,
+      "anchor_frame": 92,
+      "point_index": 3339,
+      "eye": 3,
+      "world_distance_numpy": 0.02240505080129898,
+      "body_distance_numpy": 0.23654348632454533,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 179,
+      "anchor_frame": 169,
+      "point_index": 0,
+      "eye": 0,
+      "world_distance_numpy": 0.13328713235889014,
+      "body_distance_numpy": 0.6727334371465711,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 179,
+      "anchor_frame": 169,
+      "point_index": 3554,
+      "eye": 0,
+      "world_distance_numpy": 0.3264971331845847,
+      "body_distance_numpy": 0.0691132419534483,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 179,
+      "anchor_frame": 169,
+      "point_index": 6104,
+      "eye": 1,
+      "world_distance_numpy": 0.1053353780446295,
+      "body_distance_numpy": 0.3524905600771053,
+      "matched": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 179,
+      "anchor_frame": 169,
+      "point_index": 12208,
+      "eye": 3,
+      "world_distance_numpy": 0.8777329283082534,
+      "body_distance_numpy": 0.24423812777599857,
+      "matched": true
+    }
+  ],
+  "causality": {
+    "seal_UTC_order": [
+      "2026-10-17T13:59:45.912338+00:00",
+      "2026-10-17T13:59:46.325078+00:00",
+      "2026-10-17T13:59:55.707236+00:00",
+      "2026-10-17T14:00:02.554670+00:00"
+    ],
+    "all_crossseal_SHA_links_verified": true,
+    "evidence": "Source control flow reviewed preflight: full prediction seal precedes byte guard and replay; full replay seal precedes numeric teacher scoring. Saved timestamps and hash links corroborate this order; artifacts are not an external tamper-proof event log."
+  },
+  "budget": {
+    "dispatch_used": 1,
+    "recovery_used": 0,
+    "wall_seconds": 25.361908,
+    "wall_cap_seconds": 300,
+    "parent_pid": 4163515,
+    "child_pid": 4163534,
+    "stage_children": {
+      "predict": {
+        "pid": 4163535,
+        "parent_pid": 4163534,
+        "state": "finished",
+        "returncode": 0
+      },
+      "replay": {
+        "pid": 4163656,
+        "parent_pid": 4163534,
+        "state": "finished",
+        "returncode": 0
+      },
+      "score": {
+        "pid": 4163861,
+        "parent_pid": 4163534,
+        "state": "finished",
+        "returncode": 0
+      }
+    },
+    "recorded_fit_model_source_physics_navigation_zero": true,
+    "recorded_remaining_live_or_zombie_group_pids": [],
+    "reviewer_candidate_selector_model_source_physics_executions": 0,
+    "old_budgets_reopened": false,
+    "review_duration_s": 12.024809735943563
+  },
+  "critical": [],
+  "important": [],
+  "errors": [],
+  "declined_to_judge": [
+    "Wall timing was not rerun; 470 saved selector durations only support independent quantile recount.",
+    "Numeric NN minima were not recomputed for all 2,985,832 sourcepoints. All stored distances were checked against witness equations; only the disclosed small sample was recomputed from original clouds.",
+    "No claim of source authenticity, true correspondence, hard pose error bounds, held-out generalization or navigation validity.",
+    "No alternative threshold, anchor/history or aggregation variant was evaluated; fixed-condition failure-layer counts are descriptive."
+  ],
+  "assessment": {
+    "audit_passed": true,
+    "candidate_passed": false,
+    "verdict": "INDEPENDENTLY_CONFIRMED_REJECT_FIXED_CANDIDATE",
+    "reason": "All three sequences miss the fixed 20% false-cell-second improvement gate; support/class and recorded latency gates pass. This closes the fixed mechanism and does not authorize variants or physical work."
+  },
+  "fixed_failure_layer_analysis_review": {
+    "utc": "2026-10-17T14:03:57.324417+00:00",
+    "protocol_sha256": "fce4a9c941c2a819f33bf72576fc8c663bcb8663c7f8b3e9effa5658915284ce",
+    "result_sha256": "95ab1947990f87b1243f2d0cfc371363de7441a741fca962422a5b6066881b3e",
+    "code_and_input_pins_verified": true,
+    "scope": "Static analyze.py/supervise.py review plus independent logical_and.at recount on all 470 saved feature/prediction/action arrays. No new NN, selector, map replay or alternate gate was called.",
+    "all_original_cells": 40052,
+    "all_original_sourcepoints": 2985832,
+    "all_470_index_hash_links_verified": true,
+    "all_class_condition_counts_match": true,
+    "sequences": {
+      "E0": {
+        "frames": 110,
+        "frames_with_anchor": 94,
+        "sourcepoints": 101084,
+        "point_witness": 3183,
+        "classes": {
+          "positive": {
+            "total_cells": 1765,
+            "allpoints_anchor_available": 1321,
+            "missing_anchor_somepoint": 444,
+            "all_body_close": 119,
+            "all_world_far": 262,
+            "both_all_withheld": 31,
+            "some_world_compatible": 1059,
+            "body_close_world_compatible": 88
+          },
+          "negative": {
+            "total_cells": 156,
+            "allpoints_anchor_available": 85,
+            "missing_anchor_somepoint": 71,
+            "all_body_close": 1,
+            "all_world_far": 75,
+            "both_all_withheld": 1,
+            "some_world_compatible": 10,
+            "body_close_world_compatible": 0
+          },
+          "UNKNOWN": {
+            "total_cells": 117,
+            "allpoints_anchor_available": 85,
+            "missing_anchor_somepoint": 32,
+            "all_body_close": 8,
+            "all_world_far": 29,
+            "both_all_withheld": 3,
+            "some_world_compatible": 56,
+            "body_close_world_compatible": 5
+          }
+        }
+      },
+      "E1B": {
+        "frames": 180,
+        "frames_with_anchor": 103,
+        "sourcepoints": 1545749,
+        "point_witness": 30477,
+        "classes": {
+          "positive": {
+            "total_cells": 14349,
+            "allpoints_anchor_available": 8397,
+            "missing_anchor_somepoint": 5952,
+            "all_body_close": 689,
+            "all_world_far": 1322,
+            "both_all_withheld": 118,
+            "some_world_compatible": 7075,
+            "body_close_world_compatible": 571
+          },
+          "negative": {
+            "total_cells": 3141,
+            "allpoints_anchor_available": 1417,
+            "missing_anchor_somepoint": 1724,
+            "all_body_close": 270,
+            "all_world_far": 846,
+            "both_all_withheld": 83,
+            "some_world_compatible": 571,
+            "body_close_world_compatible": 187
+          },
+          "UNKNOWN": {
+            "total_cells": 3672,
+            "allpoints_anchor_available": 2099,
+            "missing_anchor_somepoint": 1573,
+            "all_body_close": 264,
+            "all_world_far": 380,
+            "both_all_withheld": 50,
+            "some_world_compatible": 1719,
+            "body_close_world_compatible": 214
+          }
+        }
+      },
+      "E1A": {
+        "frames": 180,
+        "frames_with_anchor": 165,
+        "sourcepoints": 1338999,
+        "point_witness": 34025,
+        "classes": {
+          "positive": {
+            "total_cells": 12073,
+            "allpoints_anchor_available": 11088,
+            "missing_anchor_somepoint": 985,
+            "all_body_close": 784,
+            "all_world_far": 1437,
+            "both_all_withheld": 87,
+            "some_world_compatible": 9651,
+            "body_close_world_compatible": 697
+          },
+          "negative": {
+            "total_cells": 2099,
+            "allpoints_anchor_available": 1612,
+            "missing_anchor_somepoint": 487,
+            "all_body_close": 119,
+            "all_world_far": 1274,
+            "both_all_withheld": 24,
+            "some_world_compatible": 338,
+            "body_close_world_compatible": 95
+          },
+          "UNKNOWN": {
+            "total_cells": 2680,
+            "allpoints_anchor_available": 2450,
+            "missing_anchor_somepoint": 230,
+            "all_body_close": 279,
+            "all_world_far": 285,
+            "both_all_withheld": 27,
+            "some_world_compatible": 2165,
+            "body_close_world_compatible": 252
+          }
+        }
+      }
+    },
+    "dispatch_used": 1,
+    "recovery_used": 0,
+    "wall_seconds": 0.964476,
+    "parent_pid": 4166334,
+    "child_pid": 4166336,
+    "errors": [],
+    "interpretation_limit": "Counts are conditional descriptions under the original fixed policy; overlapping body/world conditions do not partition causes or prove that relaxing a condition would improve map utility."
+  }
+}

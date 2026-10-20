@@ -1,0 +1,2570 @@
+[
+  {
+    "frame": 60,
+    "baseline": {
+      "length": 2.4,
+      "cusps": 0,
+      "initial_reverse_m": 0.0,
+      "waypoints": [
+        {
+          "x_m": -3.267393924435695,
+          "y_m": -0.005798321415516309,
+          "yaw_rad": -0.00249827572498873,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.967403456075091,
+          "y_m": -0.008031132397262962,
+          "yaw_rad": -0.01238732890580252,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -2.669831776928182,
+          "y_m": 0.023962163866020646,
+          "yaw_rad": 0.22659366770293143,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -2.38829039681193,
+          "y_m": 0.12548519828844812,
+          "yaw_rad": 0.4655746643116654,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -2.138782302164784,
+          "y_m": 0.29076733870795013,
+          "yaw_rad": 0.7045556609203993,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.9092554443483054,
+          "y_m": 0.4839426168700092,
+          "yaw_rad": 0.6946666077395856,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.677829520080154,
+          "y_m": 0.6748386831697806,
+          "yaw_rad": 0.6847775545587718,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.4445271610975834,
+          "y_m": 0.8634368693892204,
+          "yaw_rad": 0.674888501377958,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.2348086708866313,
+          "y_m": 1.0769564940136096,
+          "yaw_rad": 0.9138694979866919,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 122
+    },
+    "candidate": {
+      "length": 2.4,
+      "cusps": 0,
+      "initial_reverse_m": 0.0,
+      "waypoints": [
+        {
+          "x_m": -3.267393924435695,
+          "y_m": -0.005798321415516309,
+          "yaw_rad": -0.00249827572498873,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -2.970153173690791,
+          "y_m": 0.029136064691968937,
+          "yaw_rad": 0.23648272088374522,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.678159992620607,
+          "y_m": 0.0979782665786731,
+          "yaw_rad": 0.22659366770293143,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -2.396618612504355,
+          "y_m": 0.19950130100110058,
+          "yaw_rad": 0.4655746643116654,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -2.1471105178572087,
+          "y_m": 0.3647834414206026,
+          "yaw_rad": 0.7045556609203993,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.9175836600407303,
+          "y_m": 0.5579587195826616,
+          "yaw_rad": 0.6946666077395856,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.7121289251793481,
+          "y_m": 0.775584148150052,
+          "yaw_rad": 0.9336476043483195,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.5324677218673108,
+          "y_m": 1.0158363460100623,
+          "yaw_rad": 0.9237585511675057,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.323921843553472,
+          "y_m": 1.2304235314720398,
+          "yaw_rad": 0.6755909529199777,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 135
+    },
+    "end_result": {
+      "exploratory_unknown": true,
+      "observed_free": false,
+      "completed_obstacle": false,
+      "axis": [
+        0.001018921266214025,
+        0.9999994808995919
+      ],
+      "end_sign": 1,
+      "observed_end": [
+        -0.2999999940395348,
+        0.8000000059604666
+      ],
+      "normal": [
+        -0.9999994808995919,
+        0.001018921266214025
+      ],
+      "desired_target": [
+        -1.1704045437920572,
+        1.100887035856999
+      ],
+      "support_cells": 36,
+      "eigenvalues": [
+        0.006265211961340626,
+        0.21830268927322719
+      ],
+      "planning_clearance_m": 0.8707106781186548,
+      "reason": "observed_end_exploration",
+      "target_cell": [
+        221,
+        211
+      ],
+      "baseline_target": [
+        -1.2999999940395348,
+        1.2000000059604687
+      ],
+      "fallback": false,
+      "search_status": "success",
+      "seconds": 0.07706953503657132,
+      "target": [
+        -1.1999999940395334,
+        1.1000000059604673
+      ]
+    },
+    "minimum_sample_clearance_m": 1.0770329614269007,
+    "map_unchanged": true,
+    "baseline_exact": true
+  },
+  {
+    "frame": 175,
+    "baseline": {
+      "length": 5.1,
+      "cusps": 1,
+      "initial_reverse_m": 2.6999999999999997,
+      "waypoints": [
+        {
+          "x_m": -1.472633433000878,
+          "y_m": 0.6873321410294718,
+          "yaw_rad": 0.8885964765202647,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.6619199700514342,
+          "y_m": 0.45458636413340775,
+          "yaw_rad": 0.8874286605267248,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.8514781822069724,
+          "y_m": 0.2220617977410799,
+          "yaw_rad": 0.8862608445331848,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.041307810949132,
+          "y_m": -0.010241241031893967,
+          "yaw_rad": 0.8850930285396448,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.2314085973893976,
+          "y_m": -0.24232243537201414,
+          "yaw_rad": 0.8839252125461048,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.4217802822694487,
+          "y_m": -0.47418146876833106,
+          "yaw_rad": 0.8827573965525648,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.612422605961517,
+          "y_m": -0.7058180250128769,
+          "yaw_rad": 0.8815895805590248,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.8033353084687374,
+          "y_m": -0.9372317882010969,
+          "yaw_rad": 0.8804217645654848,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.994518129425504,
+          "y_m": -1.16842244273228,
+          "yaw_rad": 0.8792539485719448,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -3.1859708080978253,
+          "y_m": -1.3993896733099898,
+          "yaw_rad": 0.8780861325784048,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.9678450933999816,
+          "y_m": -1.194547743730769,
+          "yaw_rad": 0.6299185343308769,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.7060869123249516,
+          "y_m": -1.049559129810656,
+          "yaw_rad": 0.38175093608334887,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.416734639767879,
+          "y_m": -0.973307533812662,
+          "yaw_rad": 0.13358333783582088,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.1175173881674763,
+          "y_m": -0.9704650224433414,
+          "yaw_rad": -0.1145842604117071,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.8196591211879054,
+          "y_m": -1.0062381875817727,
+          "yaw_rad": -0.1244733135925209,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.5296242113084104,
+          "y_m": -1.079850649688245,
+          "yaw_rad": -0.3726409118400489,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.2665560606288628,
+          "y_m": -1.2224486567718869,
+          "yaw_rad": -0.6208085100875769,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.023400364452188,
+          "y_m": -1.398160278382216,
+          "yaw_rad": -0.6306975632683907,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 976
+    },
+    "candidate": {
+      "length": 4.2,
+      "cusps": 1,
+      "initial_reverse_m": 2.4,
+      "waypoints": [
+        {
+          "x_m": -1.472633433000878,
+          "y_m": 0.6873321410294718,
+          "yaw_rad": 0.8885964765202647,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.6619199700514342,
+          "y_m": 0.45458636413340775,
+          "yaw_rad": 0.8874286605267248,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.8514781822069724,
+          "y_m": 0.2220617977410799,
+          "yaw_rad": 0.8862608445331848,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.041307810949132,
+          "y_m": -0.010241241031893967,
+          "yaw_rad": 0.8850930285396448,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.2314085973893976,
+          "y_m": -0.24232243537201414,
+          "yaw_rad": 0.8839252125461048,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.4217802822694487,
+          "y_m": -0.47418146876833106,
+          "yaw_rad": 0.8827573965525648,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.612422605961517,
+          "y_m": -0.7058180250128769,
+          "yaw_rad": 0.8815895805590248,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.8033353084687374,
+          "y_m": -0.9372317882010969,
+          "yaw_rad": 0.8804217645654848,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.994518129425504,
+          "y_m": -1.16842244273228,
+          "yaw_rad": 0.8792539485719448,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.7766317810940713,
+          "y_m": -0.9633259221938341,
+          "yaw_rad": 0.6310863503244168,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.5150430984948957,
+          "y_m": -0.8180317218202074,
+          "yaw_rad": 0.38291875207688886,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.2257800710593747,
+          "y_m": -0.741442267683097,
+          "yaw_rad": 0.13475115382936087,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.9265663430238082,
+          "y_m": -0.7382503276395396,
+          "yaw_rad": -0.11341644441816712,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.6357352552003115,
+          "y_m": -0.8086514773573182,
+          "yaw_rad": -0.3615840426656951,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.3451763792924065,
+          "y_m": -0.8804011454209124,
+          "yaw_rad": -0.12260304605696115,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 583
+    },
+    "end_result": {
+      "exploratory_unknown": true,
+      "observed_free": false,
+      "completed_obstacle": false,
+      "axis": [
+        0.022363196781116406,
+        0.9997499124429715
+      ],
+      "end_sign": -1,
+      "observed_end": [
+        -0.2999999940395348,
+        -0.6999999940395334
+      ],
+      "normal": [
+        -0.9997499124429715,
+        0.022363196781116406
+      ],
+      "desired_target": [
+        -1.1772018772861552,
+        -0.9804530935382381
+      ],
+      "support_cells": 116,
+      "eigenvalues": [
+        0.04247174491900591,
+        1.4883710018110774
+      ],
+      "planning_clearance_m": 0.8707106781186548,
+      "reason": "observed_end_exploration",
+      "target_cell": [
+        221,
+        190
+      ],
+      "baseline_target": [
+        -0.8999999940395327,
+        -1.499999994039534
+      ],
+      "fallback": false,
+      "search_status": "success",
+      "seconds": 0.11974247102625668,
+      "target": [
+        -1.1999999940395334,
+        -0.9999999940395341
+      ]
+    },
+    "minimum_sample_clearance_m": 0.9433981132056604,
+    "map_unchanged": true,
+    "baseline_exact": true
+  },
+  {
+    "frame": 505,
+    "baseline": {
+      "length": 3.0,
+      "cusps": 1,
+      "initial_reverse_m": 0.3,
+      "waypoints": [
+        {
+          "x_m": -2.51548669453216,
+          "y_m": -1.0418418006732997,
+          "yaw_rad": 0.4121968350065939,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.790429689623746,
+          "y_m": -1.1618682111903686,
+          "yaw_rad": 0.4110290190130539,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.5034336070928562,
+          "y_m": -1.0771788249716325,
+          "yaw_rad": 0.1628614207655259,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.2044278031584805,
+          "y_m": -1.0655782758578585,
+          "yaw_rad": -0.08530617748200209,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.9117328787646959,
+          "y_m": -1.127777349486814,
+          "yaw_rad": -0.3334737757295301,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.6432827563893162,
+          "y_m": -1.2599650014170425,
+          "yaw_rad": -0.5816413739770581,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.3934331831060383,
+          "y_m": -1.4260205863344393,
+          "yaw_rad": -0.5915304271578719,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.1268757847553093,
+          "y_m": -1.562107428536733,
+          "yaw_rad": -0.3525494305491379,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.8356805454850497,
+          "y_m": -1.6312291173358175,
+          "yaw_rad": -0.11356843394040395,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.5377860928640876,
+          "y_m": -1.666699691756768,
+          "yaw_rad": -0.12345748712121773,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.24025697085571346,
+          "y_m": -1.7051143778679518,
+          "yaw_rad": -0.13334654030203152,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 60
+    },
+    "candidate": {
+      "length": 3.0,
+      "cusps": 1,
+      "initial_reverse_m": 0.3,
+      "waypoints": [
+        {
+          "x_m": -2.51548669453216,
+          "y_m": -1.0418418006732997,
+          "yaw_rad": 0.4121968350065939,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.790429689623746,
+          "y_m": -1.1618682111903686,
+          "yaw_rad": 0.4110290190130539,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.5034336070928562,
+          "y_m": -1.0771788249716325,
+          "yaw_rad": 0.1628614207655259,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.2044278031584805,
+          "y_m": -1.0655782758578585,
+          "yaw_rad": -0.08530617748200209,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.9117328787646959,
+          "y_m": -1.127777349486814,
+          "yaw_rad": -0.3334737757295301,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.6432827563893162,
+          "y_m": -1.2599650014170425,
+          "yaw_rad": -0.5816413739770581,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.3934331831060383,
+          "y_m": -1.4260205863344393,
+          "yaw_rad": -0.5915304271578719,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.1268757847553093,
+          "y_m": -1.562107428536733,
+          "yaw_rad": -0.3525494305491379,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.8356805454850497,
+          "y_m": -1.6312291173358175,
+          "yaw_rad": -0.11356843394040395,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.5377860928640876,
+          "y_m": -1.666699691756768,
+          "yaw_rad": -0.12345748712121773,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.24025697085571346,
+          "y_m": -1.7051143778679518,
+          "yaw_rad": -0.13334654030203152,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 60
+    },
+    "end_result": {
+      "exploratory_unknown": true,
+      "observed_free": false,
+      "completed_obstacle": false,
+      "axis": [
+        0.06875503712093224,
+        0.9976335724455644
+      ],
+      "end_sign": -1,
+      "observed_end": [
+        -0.2999999940395348,
+        -0.7999999940395313
+      ],
+      "normal": [
+        -0.9976335724455644,
+        0.06875503712093224
+      ],
+      "desired_target": [
+        -1.189276709553828,
+        -1.0394243207775604
+      ],
+      "support_cells": 146,
+      "eigenvalues": [
+        0.15413113307436627,
+        1.113488495373748
+      ],
+      "planning_clearance_m": 0.8707106781186548,
+      "reason": "no_clear_target_rounding",
+      "baseline_target": [
+        -0.2999999940395348,
+        -1.6999999940395334
+      ],
+      "fallback": true
+    },
+    "minimum_sample_clearance_m": null,
+    "map_unchanged": true,
+    "baseline_exact": true
+  },
+  {
+    "frame": 510,
+    "baseline": {
+      "length": 3.3,
+      "cusps": 1,
+      "initial_reverse_m": 0.6,
+      "waypoints": [
+        {
+          "x_m": -2.432388964450274,
+          "y_m": -0.9984309637556951,
+          "yaw_rad": 0.3360414123431541,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.715666887595975,
+          "y_m": -1.0971913203255352,
+          "yaw_rad": 0.3348735963496141,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.99905995147302,
+          "y_m": -1.1956207931369107,
+          "yaw_rad": 0.3337057803560741,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.7063794654292743,
+          "y_m": -1.1333538146059072,
+          "yaw_rad": 0.08553818210854613,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.407354457220137,
+          "y_m": -1.1092019820124948,
+          "yaw_rad": 0.07564912892773235,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.1084746209315726,
+          "y_m": -1.1236894588909707,
+          "yaw_rad": -0.17251846931979564,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.822309757524105,
+          "y_m": -1.2111463881600055,
+          "yaw_rad": -0.42068606756732363,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.5490773074465536,
+          "y_m": -1.3350144420589554,
+          "yaw_rad": -0.4305751207481374,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.2770831352289276,
+          "y_m": -1.4615784054598508,
+          "yaw_rad": -0.4404641739289512,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.0063538398819454,
+          "y_m": -1.5908259013467008,
+          "yaw_rad": -0.450353227109765,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.736915896720758,
+          "y_m": -1.7227442902739598,
+          "yaw_rad": -0.4602422802905788,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.45483716207278047,
+          "y_m": -1.8227646016886776,
+          "yaw_rad": -0.22126128368184483,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 42
+    },
+    "candidate": {
+      "length": 3.3,
+      "cusps": 1,
+      "initial_reverse_m": 0.6,
+      "waypoints": [
+        {
+          "x_m": -2.432388964450274,
+          "y_m": -0.9984309637556951,
+          "yaw_rad": 0.3360414123431541,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.715666887595975,
+          "y_m": -1.0971913203255352,
+          "yaw_rad": 0.3348735963496141,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.99905995147302,
+          "y_m": -1.1956207931369107,
+          "yaw_rad": 0.3337057803560741,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.7063794654292743,
+          "y_m": -1.1333538146059072,
+          "yaw_rad": 0.08553818210854613,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.407354457220137,
+          "y_m": -1.1092019820124948,
+          "yaw_rad": 0.07564912892773235,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.1084746209315726,
+          "y_m": -1.1236894588909707,
+          "yaw_rad": -0.17251846931979564,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.822309757524105,
+          "y_m": -1.2111463881600055,
+          "yaw_rad": -0.42068606756732363,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.5490773074465536,
+          "y_m": -1.3350144420589554,
+          "yaw_rad": -0.4305751207481374,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.2770831352289276,
+          "y_m": -1.4615784054598508,
+          "yaw_rad": -0.4404641739289512,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.0063538398819454,
+          "y_m": -1.5908259013467008,
+          "yaw_rad": -0.450353227109765,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.736915896720758,
+          "y_m": -1.7227442902739598,
+          "yaw_rad": -0.4602422802905788,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.45483716207278047,
+          "y_m": -1.8227646016886776,
+          "yaw_rad": -0.22126128368184483,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 42
+    },
+    "end_result": {
+      "exploratory_unknown": true,
+      "observed_free": false,
+      "completed_obstacle": false,
+      "axis": [
+        0.05302133211601473,
+        0.9985933798802411
+      ],
+      "end_sign": -1,
+      "observed_end": [
+        -0.2999999940395348,
+        -0.8999999940395327
+      ],
+      "normal": [
+        -0.9985933798802411,
+        0.05302133211601473
+      ],
+      "desired_target": [
+        -1.1853923126346633,
+        -1.1534117679621154
+      ],
+      "support_cells": 149,
+      "eigenvalues": [
+        0.15391460881667723,
+        1.1752075027999167
+      ],
+      "planning_clearance_m": 0.8707106781186548,
+      "reason": "no_clear_target_rounding",
+      "baseline_target": [
+        -0.2999999940395348,
+        -1.7999999940395348
+      ],
+      "fallback": true
+    },
+    "minimum_sample_clearance_m": null,
+    "map_unchanged": true,
+    "baseline_exact": true
+  },
+  {
+    "frame": 660,
+    "baseline": {
+      "length": 3.0,
+      "cusps": 1,
+      "initial_reverse_m": 0.0,
+      "waypoints": [
+        {
+          "x_m": -2.446348193491281,
+          "y_m": -0.9704131813117891,
+          "yaw_rad": 0.23384823572715518,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.148918232095055,
+          "y_m": -0.937634200393786,
+          "yaw_rad": -0.014319362520372803,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.8525488548092115,
+          "y_m": -0.978916590506097,
+          "yaw_rad": -0.2624869607679008,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.5753991241731875,
+          "y_m": -1.0917309084562705,
+          "yaw_rad": -0.5106545590154288,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.33445048185109,
+          "y_m": -1.269164826547828,
+          "yaw_rad": -0.7588221572629568,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.1444662664333944,
+          "y_m": -1.500346662811636,
+          "yaw_rad": -1.0069897555104848,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.9854003998590779,
+          "y_m": -1.7547033349141319,
+          "yaw_rad": -1.0168788086912985,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.7987492119976871,
+          "y_m": -1.9886559140963953,
+          "yaw_rad": -0.7778978120825646,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.5620231604930528,
+          "y_m": -2.171776780671252,
+          "yaw_rad": -0.5389168154738306,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -0.32618475658931684,
+          "y_m": -2.3559486861571917,
+          "yaw_rad": -0.7870844137213586,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.537834659405512,
+          "y_m": -2.14333563761727,
+          "yaw_rad": -0.7882522297148986,
+          "drive_direction": "reverse",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 117
+    },
+    "candidate": {
+      "length": 3.0,
+      "cusps": 1,
+      "initial_reverse_m": 0.0,
+      "waypoints": [
+        {
+          "x_m": -2.446348193491281,
+          "y_m": -0.9704131813117891,
+          "yaw_rad": 0.23384823572715518,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.148918232095055,
+          "y_m": -0.937634200393786,
+          "yaw_rad": -0.014319362520372803,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.8525488548092115,
+          "y_m": -0.978916590506097,
+          "yaw_rad": -0.2624869607679008,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.5753991241731875,
+          "y_m": -1.0917309084562705,
+          "yaw_rad": -0.5106545590154288,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.33445048185109,
+          "y_m": -1.269164826547828,
+          "yaw_rad": -0.7588221572629568,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.1444662664333944,
+          "y_m": -1.500346662811636,
+          "yaw_rad": -1.0069897555104848,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.9854003998590779,
+          "y_m": -1.7547033349141319,
+          "yaw_rad": -1.0168788086912985,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.7987492119976871,
+          "y_m": -1.9886559140963953,
+          "yaw_rad": -0.7778978120825646,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.5620231604930528,
+          "y_m": -2.171776780671252,
+          "yaw_rad": -0.5389168154738306,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -0.32618475658931684,
+          "y_m": -2.3559486861571917,
+          "yaw_rad": -0.7870844137213586,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.537834659405512,
+          "y_m": -2.14333563761727,
+          "yaw_rad": -0.7882522297148986,
+          "drive_direction": "reverse",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 117
+    },
+    "end_result": {
+      "exploratory_unknown": true,
+      "observed_free": false,
+      "completed_obstacle": false,
+      "axis": [
+        0.006361719576225287,
+        0.99997976405727
+      ],
+      "end_sign": -1,
+      "observed_end": [
+        0.10000000596046732,
+        -1.1999999940395334
+      ],
+      "normal": [
+        -0.99997976405727,
+        0.006361719576225287
+      ],
+      "desired_target": [
+        -0.7726015683796381,
+        -1.4944547060904985
+      ],
+      "support_cells": 147,
+      "eigenvalues": [
+        0.05654194543339025,
+        1.457380957060941
+      ],
+      "planning_clearance_m": 0.8707106781186548,
+      "reason": "no_clear_target_rounding",
+      "baseline_target": [
+        -0.3999999940395327,
+        -1.999999994039534
+      ],
+      "fallback": true
+    },
+    "minimum_sample_clearance_m": null,
+    "map_unchanged": true,
+    "baseline_exact": true
+  },
+  {
+    "frame": 665,
+    "baseline": {
+      "length": 3.3,
+      "cusps": 1,
+      "initial_reverse_m": 0.6,
+      "waypoints": [
+        {
+          "x_m": -2.352858385488291,
+          "y_m": -0.9480770225781687,
+          "yaw_rad": 0.15820630270833913,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.649139355180989,
+          "y_m": -0.9951681764130297,
+          "yaw_rad": 0.15703848671479914,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.9454751166306794,
+          "y_m": -1.0419132965602302,
+          "yaw_rad": 0.15587067072125915,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.64639552308231,
+          "y_m": -1.0324032887197585,
+          "yaw_rad": -0.09229692752626883,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.354142565380759,
+          "y_m": -1.0966469828918637,
+          "yaw_rad": -0.3404645257737968,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.0866230859428763,
+          "y_m": -1.2307080572105034,
+          "yaw_rad": -0.5886321240213248,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.83794046141466,
+          "y_m": -1.3985062062165428,
+          "yaw_rad": -0.5985211772021386,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.613491812817352,
+          "y_m": -1.5963997323082917,
+          "yaw_rad": -0.8466887754496666,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.3899127854584172,
+          "y_m": -1.7953592602563997,
+          "yaw_rad": -0.6077077788409326,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.12559169495791,
+          "y_m": -1.935740300118355,
+          "yaw_rad": -0.3687267822321987,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.8462947939753059,
+          "y_m": -2.045250608553718,
+          "yaw_rad": -0.37861583541301247,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.5570000263891327,
+          "y_m": -2.1219383695287477,
+          "yaw_rad": -0.13963483880427852,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 45
+    },
+    "candidate": {
+      "length": 3.3,
+      "cusps": 1,
+      "initial_reverse_m": 0.6,
+      "waypoints": [
+        {
+          "x_m": -2.352858385488291,
+          "y_m": -0.9480770225781687,
+          "yaw_rad": 0.15820630270833913,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.649139355180989,
+          "y_m": -0.9951681764130297,
+          "yaw_rad": 0.15703848671479914,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.9454751166306794,
+          "y_m": -1.0419132965602302,
+          "yaw_rad": 0.15587067072125915,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.64639552308231,
+          "y_m": -1.0324032887197585,
+          "yaw_rad": -0.09229692752626883,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.354142565380759,
+          "y_m": -1.0966469828918637,
+          "yaw_rad": -0.3404645257737968,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.0866230859428763,
+          "y_m": -1.2307080572105034,
+          "yaw_rad": -0.5886321240213248,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.83794046141466,
+          "y_m": -1.3985062062165428,
+          "yaw_rad": -0.5985211772021386,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.613491812817352,
+          "y_m": -1.5963997323082917,
+          "yaw_rad": -0.8466887754496666,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.3899127854584172,
+          "y_m": -1.7953592602563997,
+          "yaw_rad": -0.6077077788409326,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.12559169495791,
+          "y_m": -1.935740300118355,
+          "yaw_rad": -0.3687267822321987,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.8462947939753059,
+          "y_m": -2.045250608553718,
+          "yaw_rad": -0.37861583541301247,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.5570000263891327,
+          "y_m": -2.1219383695287477,
+          "yaw_rad": -0.13963483880427852,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 45
+    },
+    "end_result": {
+      "exploratory_unknown": true,
+      "observed_free": false,
+      "completed_obstacle": false,
+      "axis": [
+        0.003936968963336452,
+        0.9999922501076606
+      ],
+      "end_sign": -1,
+      "observed_end": [
+        -0.3999999940395327,
+        -1.1999999940395334
+      ],
+      "normal": [
+        -0.9999922501076606,
+        0.003936968963336452
+      ],
+      "desired_target": [
+        -1.2718850149331742,
+        -1.4965697081560327
+      ],
+      "support_cells": 154,
+      "eigenvalues": [
+        0.05850916625966752,
+        1.5727254432866307
+      ],
+      "planning_clearance_m": 0.8707106781186548,
+      "reason": "no_clear_target_rounding",
+      "baseline_target": [
+        -0.3999999940395327,
+        -2.099999994039532
+      ],
+      "fallback": true
+    },
+    "minimum_sample_clearance_m": null,
+    "map_unchanged": true,
+    "baseline_exact": true
+  },
+  {
+    "frame": 670,
+    "baseline": {
+      "length": 3.3,
+      "cusps": 1,
+      "initial_reverse_m": 0.6,
+      "waypoints": [
+        {
+          "x_m": -2.2615113256055386,
+          "y_m": -0.9241273994423976,
+          "yaw_rad": 0.08426086590220194,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.560461646302967,
+          "y_m": -0.9492012010378619,
+          "yaw_rad": 0.08309304990866195,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.859441044726929,
+          "y_m": -0.9739258666491456,
+          "yaw_rad": 0.08192523391512196,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.5604761704527954,
+          "y_m": -0.9865372692846593,
+          "yaw_rad": -0.16624236433240602,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.2737680577048214,
+          "y_m": -1.0721964871813836,
+          "yaw_rad": -0.414409962579934,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.0168838066930013,
+          "y_m": -1.2256550324249762,
+          "yaw_rad": -0.662577560827462,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.8055631582172789,
+          "y_m": -1.4375102354622953,
+          "yaw_rad": -0.91074515907499,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.595178585002049,
+          "y_m": -1.6503735873788403,
+          "yaw_rad": -0.671764162466256,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.3403857463698006,
+          "y_m": -1.8073865951769912,
+          "yaw_rad": -0.4327831658575221,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.0863642193530114,
+          "y_m": -1.9655387603162713,
+          "yaw_rad": -0.6809507641050501,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.8330245277603097,
+          "y_m": -2.1248857900966094,
+          "yaw_rad": -0.4419697674963161,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.549165361973134,
+          "y_m": -2.2197354038792176,
+          "yaw_rad": -0.20298877088758216,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 38
+    },
+    "candidate": {
+      "length": 3.3,
+      "cusps": 1,
+      "initial_reverse_m": 0.6,
+      "waypoints": [
+        {
+          "x_m": -2.2615113256055386,
+          "y_m": -0.9241273994423976,
+          "yaw_rad": 0.08426086590220194,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.560461646302967,
+          "y_m": -0.9492012010378619,
+          "yaw_rad": 0.08309304990866195,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.859441044726929,
+          "y_m": -0.9739258666491456,
+          "yaw_rad": 0.08192523391512196,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.5604761704527954,
+          "y_m": -0.9865372692846593,
+          "yaw_rad": -0.16624236433240602,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.2737680577048214,
+          "y_m": -1.0721964871813836,
+          "yaw_rad": -0.414409962579934,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.0168838066930013,
+          "y_m": -1.2256550324249762,
+          "yaw_rad": -0.662577560827462,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.8055631582172789,
+          "y_m": -1.4375102354622953,
+          "yaw_rad": -0.91074515907499,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.595178585002049,
+          "y_m": -1.6503735873788403,
+          "yaw_rad": -0.671764162466256,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.3403857463698006,
+          "y_m": -1.8073865951769912,
+          "yaw_rad": -0.4327831658575221,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.0863642193530114,
+          "y_m": -1.9655387603162713,
+          "yaw_rad": -0.6809507641050501,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.8330245277603097,
+          "y_m": -2.1248857900966094,
+          "yaw_rad": -0.4419697674963161,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.549165361973134,
+          "y_m": -2.2197354038792176,
+          "yaw_rad": -0.20298877088758216,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 38
+    },
+    "end_result": {
+      "exploratory_unknown": true,
+      "observed_free": false,
+      "completed_obstacle": false,
+      "axis": [
+        0.0011703306496890938,
+        0.9999993151628508
+      ],
+      "end_sign": -1,
+      "observed_end": [
+        -0.2999999940395348,
+        -1.2999999940395348
+      ],
+      "normal": [
+        -0.9999993151628508,
+        0.0011703306496890938
+      ],
+      "desired_target": [
+        -1.1710611750580777,
+        -1.5989807691947762
+      ],
+      "support_cells": 157,
+      "eigenvalues": [
+        0.05780141639505543,
+        1.624317127967799
+      ],
+      "planning_clearance_m": 0.8707106781186548,
+      "reason": "no_clear_target_rounding",
+      "baseline_target": [
+        -0.3999999940395327,
+        -2.1999999940395334
+      ],
+      "fallback": true
+    },
+    "minimum_sample_clearance_m": null,
+    "map_unchanged": true,
+    "baseline_exact": true
+  },
+  {
+    "frame": 710,
+    "baseline": {
+      "length": 3.3,
+      "cusps": 1,
+      "initial_reverse_m": 0.6,
+      "waypoints": [
+        {
+          "x_m": -2.2659872667123864,
+          "y_m": -0.8824270223580308,
+          "yaw_rad": -0.0027965503990863283,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.565985535541844,
+          "y_m": -0.8814128868284197,
+          "yaw_rad": -0.003964366392626317,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.8659824154799542,
+          "y_m": -0.8800484092936036,
+          "yaw_rad": -0.005132182386166306,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.5692462821088773,
+          "y_m": -0.9186062966600824,
+          "yaw_rad": -0.2532997806336943,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.2910718168214395,
+          "y_m": -1.0288696649572258,
+          "yaw_rad": -0.5014673788812223,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.048503248539972,
+          "y_m": -1.2040824875703624,
+          "yaw_rad": -0.7496349771287503,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.8564031715104254,
+          "y_m": -1.4335091728783838,
+          "yaw_rad": -0.9978025753762783,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.6653232807415501,
+          "y_m": -1.6638587997065075,
+          "yaw_rad": -0.7588215787675443,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.448653265886274,
+          "y_m": -1.8713518627585268,
+          "yaw_rad": -0.7687106319483581,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.2102548639360022,
+          "y_m": -2.052290187012008,
+          "yaw_rad": -0.5297296353396241,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -0.9358014179606413,
+          "y_m": -2.171654257101591,
+          "yaw_rad": -0.2907486387308902,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.6488224728156533,
+          "y_m": -2.2590748015723543,
+          "yaw_rad": -0.300637691911704,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 38
+    },
+    "candidate": {
+      "length": 2.6999999999999997,
+      "cusps": 1,
+      "initial_reverse_m": 0.6,
+      "waypoints": [
+        {
+          "x_m": -2.2659872667123864,
+          "y_m": -0.8824270223580308,
+          "yaw_rad": -0.0027965503990863283,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.565985535541844,
+          "y_m": -0.8814128868284197,
+          "yaw_rad": -0.003964366392626317,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.8659824154799542,
+          "y_m": -0.8800484092936036,
+          "yaw_rad": -0.005132182386166306,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.5692462821088773,
+          "y_m": -0.9186062966600824,
+          "yaw_rad": -0.2532997806336943,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.2910718168214395,
+          "y_m": -1.0288696649572258,
+          "yaw_rad": -0.5014673788812223,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.048503248539972,
+          "y_m": -1.2040824875703624,
+          "yaw_rad": -0.7496349771287503,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.8564031715104254,
+          "y_m": -1.4335091728783838,
+          "yaw_rad": -0.9978025753762783,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.6653232807415501,
+          "y_m": -1.6638587997065075,
+          "yaw_rad": -0.7588215787675443,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.4251472560408043,
+          "y_m": -1.8424307806975015,
+          "yaw_rad": -0.5198405821588103,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.1655188255783775,
+          "y_m": -1.9927382810017498,
+          "yaw_rad": -0.5297296353396241,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 46
+    },
+    "end_result": {
+      "exploratory_unknown": true,
+      "observed_free": false,
+      "completed_obstacle": false,
+      "axis": [
+        -0.012497071494499166,
+        0.9999219085528936
+      ],
+      "end_sign": -1,
+      "observed_end": [
+        -0.2999999940395348,
+        -1.3999999940395327
+      ],
+      "normal": [
+        -0.9999219085528936,
+        -0.012497071494499166
+      ],
+      "desired_target": [
+        -1.1668935556529745,
+        -1.7108579002008735
+      ],
+      "support_cells": 163,
+      "eigenvalues": [
+        0.061029321830050845,
+        1.6833961364107566
+      ],
+      "planning_clearance_m": 0.8707106781186548,
+      "reason": "observed_end_exploration",
+      "target_cell": [
+        221,
+        182
+      ],
+      "baseline_target": [
+        -0.4999999940395341,
+        -2.299999994039535
+      ],
+      "fallback": false,
+      "search_status": "success",
+      "seconds": 0.05185806000372395,
+      "target": [
+        -1.1999999940395334,
+        -1.7999999940395348
+      ]
+    },
+    "minimum_sample_clearance_m": 0.9848857801796105,
+    "map_unchanged": true,
+    "baseline_exact": true
+  },
+  {
+    "frame": 815,
+    "baseline": {
+      "length": 3.9,
+      "cusps": 1,
+      "initial_reverse_m": 0.8999999999999999,
+      "waypoints": [
+        {
+          "x_m": -2.2306014905989766,
+          "y_m": -0.9014645634735918,
+          "yaw_rad": -0.09245355012297951,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.529304014635489,
+          "y_m": -0.8735935766636342,
+          "yaw_rad": -0.0936213661165195,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.827973786810886,
+          "y_m": -0.8453737793532276,
+          "yaw_rad": -0.09478918211005949,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -3.1266103998011125,
+          "y_m": -0.816805210028363,
+          "yaw_rad": -0.09595699810359948,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.8345945355545625,
+          "y_m": -0.8821181379563321,
+          "yaw_rad": -0.34412459635112747,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.552688233796566,
+          "y_m": -0.9847246854142025,
+          "yaw_rad": -0.35401364953194125,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.287009663941352,
+          "y_m": -1.1223979981726009,
+          "yaw_rad": -0.6021812477794692,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.0632868213676527,
+          "y_m": -1.3211116948241586,
+          "yaw_rad": -0.8503488460269972,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.895227590226663,
+          "y_m": -1.5686902446916358,
+          "yaw_rad": -1.0985164442745252,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.7282761716486301,
+          "y_m": -1.817084485910879,
+          "yaw_rad": -0.8595354476657913,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.5072714909760123,
+          "y_m": -2.0188997637193133,
+          "yaw_rad": -0.6205544510570573,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.2447755911531795,
+          "y_m": -2.1626647727176875,
+          "yaw_rad": -0.38157345444832336,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -0.9829916813846824,
+          "y_m": -2.3076069270845347,
+          "yaw_rad": -0.6297410526958513,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.7414152165529835,
+          "y_m": -2.485483508431023,
+          "yaw_rad": -0.6396301058766651,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 51
+    },
+    "candidate": {
+      "length": 3.9,
+      "cusps": 1,
+      "initial_reverse_m": 0.8999999999999999,
+      "waypoints": [
+        {
+          "x_m": -2.2306014905989766,
+          "y_m": -0.9014645634735918,
+          "yaw_rad": -0.09245355012297951,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.529304014635489,
+          "y_m": -0.8735935766636342,
+          "yaw_rad": -0.0936213661165195,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.827973786810886,
+          "y_m": -0.8453737793532276,
+          "yaw_rad": -0.09478918211005949,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -3.1266103998011125,
+          "y_m": -0.816805210028363,
+          "yaw_rad": -0.09595699810359948,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.8345945355545625,
+          "y_m": -0.8821181379563321,
+          "yaw_rad": -0.34412459635112747,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.552688233796566,
+          "y_m": -0.9847246854142025,
+          "yaw_rad": -0.35401364953194125,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.287009663941352,
+          "y_m": -1.1223979981726009,
+          "yaw_rad": -0.6021812477794692,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.0632868213676527,
+          "y_m": -1.3211116948241586,
+          "yaw_rad": -0.8503488460269972,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.895227590226663,
+          "y_m": -1.5686902446916358,
+          "yaw_rad": -1.0985164442745252,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.7282761716486301,
+          "y_m": -1.817084485910879,
+          "yaw_rad": -0.8595354476657913,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.5072714909760123,
+          "y_m": -2.0188997637193133,
+          "yaw_rad": -0.6205544510570573,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.2447755911531795,
+          "y_m": -2.1626647727176875,
+          "yaw_rad": -0.38157345444832336,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -0.9829916813846824,
+          "y_m": -2.3076069270845347,
+          "yaw_rad": -0.6297410526958513,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.7414152165529835,
+          "y_m": -2.485483508431023,
+          "yaw_rad": -0.6396301058766651,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 51
+    },
+    "end_result": {
+      "exploratory_unknown": true,
+      "observed_free": false,
+      "completed_obstacle": false,
+      "axis": [
+        -0.007145403998861787,
+        0.9999744712749885
+      ],
+      "end_sign": -1,
+      "observed_end": [
+        5.960465898624534e-09,
+        -1.7999999940395348
+      ],
+      "normal": [
+        -0.9999744712749885,
+        -0.007145403998861787
+      ],
+      "desired_target": [
+        -0.8685448228250641,
+        -2.106213914983312
+      ],
+      "support_cells": 157,
+      "eigenvalues": [
+        0.046083916453956805,
+        1.9193816196732694
+      ],
+      "planning_clearance_m": 0.8707106781186548,
+      "reason": "no_clear_target_rounding",
+      "baseline_target": [
+        -0.599999994039532,
+        -2.599999994039532
+      ],
+      "fallback": true
+    },
+    "minimum_sample_clearance_m": null,
+    "map_unchanged": true,
+    "baseline_exact": true
+  },
+  {
+    "frame": 855,
+    "baseline": {
+      "length": 3.9,
+      "cusps": 1,
+      "initial_reverse_m": 0.8999999999999999,
+      "waypoints": [
+        {
+          "x_m": -2.0847494971337825,
+          "y_m": -0.8395790945989249,
+          "yaw_rad": -0.26397865858693814,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.3743115736022933,
+          "y_m": -0.7611329752380009,
+          "yaw_rad": -0.26514647458047813,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.6637818420072894,
+          "y_m": -0.6823487542220918,
+          "yaw_rad": -0.2663142905740181,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.9531599075709436,
+          "y_m": -0.6032265389966485,
+          "yaw_rad": -0.2674821065675581,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.67657715619892,
+          "y_m": -0.717423847063279,
+          "yaw_rad": -0.5156497048150861,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.4365178244882677,
+          "y_m": -0.8960591201333487,
+          "yaw_rad": -0.7638173030626141,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.2208870871969104,
+          "y_m": -1.1046320131163068,
+          "yaw_rad": -0.7737063562434279,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.034364745285084,
+          "y_m": -1.3386159003690645,
+          "yaw_rad": -1.0218739544909559,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.8488845084140846,
+          "y_m": -1.5734979068454635,
+          "yaw_rad": -0.7828929578822219,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.6372714250773792,
+          "y_m": -1.7861459012230907,
+          "yaw_rad": -0.7927820110630357,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.4277715418855463,
+          "y_m": -2.000876116830264,
+          "yaw_rad": -0.8026710642438495,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.2204053463718045,
+          "y_m": -2.2176675546460856,
+          "yaw_rad": -0.8125601174246633,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -1.0431126420810217,
+          "y_m": -2.4587201226295954,
+          "yaw_rad": -1.0607277156721913,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.8979384239632304,
+          "y_m": -2.721253383276666,
+          "yaw_rad": -1.070616768853005,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 65
+    },
+    "candidate": {
+      "length": 4.2,
+      "cusps": 1,
+      "initial_reverse_m": 0.8999999999999999,
+      "waypoints": [
+        {
+          "x_m": -2.0847494971337825,
+          "y_m": -0.8395790945989249,
+          "yaw_rad": -0.26397865858693814,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.3743115736022933,
+          "y_m": -0.7611329752380009,
+          "yaw_rad": -0.26514647458047813,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.6637818420072894,
+          "y_m": -0.6823487542220918,
+          "yaw_rad": -0.2663142905740181,
+          "drive_direction": "reverse",
+          "main_command_rad_s": -0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.9531599075709436,
+          "y_m": -0.6032265389966485,
+          "yaw_rad": -0.2674821065675581,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.67657715619892,
+          "y_m": -0.717423847063279,
+          "yaw_rad": -0.5156497048150861,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.4365178244882677,
+          "y_m": -0.8960591201333487,
+          "yaw_rad": -0.7638173030626141,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -2.2208870871969104,
+          "y_m": -1.1046320131163068,
+          "yaw_rad": -0.7737063562434279,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.5235987755982988
+        },
+        {
+          "x_m": -2.034364745285084,
+          "y_m": -1.3386159003690645,
+          "yaw_rad": -1.0218739544909559,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": -0.5235987755982988
+        },
+        {
+          "x_m": -1.8488845084140846,
+          "y_m": -1.5734979068454635,
+          "yaw_rad": -0.7828929578822219,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.6372714250773792,
+          "y_m": -1.7861459012230907,
+          "yaw_rad": -0.7927820110630357,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.4277715418855463,
+          "y_m": -2.000876116830264,
+          "yaw_rad": -0.8026710642438495,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.2204053463718045,
+          "y_m": -2.2176675546460856,
+          "yaw_rad": -0.8125601174246633,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -1.0151931174105577,
+          "y_m": -2.436499014077429,
+          "yaw_rad": -0.8224491706054771,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.812154923234273,
+          "y_m": -2.657349095032198,
+          "yaw_rad": -0.8323382237862909,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.5,
+          "auxiliary_angle_rad": 0.0
+        },
+        {
+          "x_m": -0.6113106194709552,
+          "y_m": -2.8801962000120986,
+          "yaw_rad": -0.8422272769671046,
+          "drive_direction": "forward",
+          "main_command_rad_s": 0.0,
+          "auxiliary_angle_rad": 0.0
+        }
+      ],
+      "nodes": 101
+    },
+    "end_result": {
+      "exploratory_unknown": true,
+      "observed_free": false,
+      "completed_obstacle": false,
+      "axis": [
+        -0.04353414463611877,
+        0.9990519397162498
+      ],
+      "end_sign": -1,
+      "observed_end": [
+        0.40000000596046803,
+        -2.3999999940395327
+      ],
+      "normal": [
+        -0.9990519397162498,
+        -0.04353414463611877
+      ],
+      "desired_target": [
+        -0.4568249425547896,
+        -2.737621220551838
+      ],
+      "support_cells": 172,
+      "eigenvalues": [
+        0.072116628322569,
+        2.1991972575616936
+      ],
+      "planning_clearance_m": 0.8707106781186548,
+      "reason": "observed_end_exploration",
+      "target_cell": [
+        228,
+        172
+      ],
+      "baseline_target": [
+        -0.6999999940395334,
+        -2.6999999940395334
+      ],
+      "fallback": false,
+      "search_status": "success",
+      "seconds": 0.06011617201147601,
+      "target": [
+        -0.4999999940395341,
+        -2.799999994039535
+      ]
+    },
+    "minimum_sample_clearance_m": 0.9219544457292888,
+    "map_unchanged": true,
+    "baseline_exact": true
+  }
+]

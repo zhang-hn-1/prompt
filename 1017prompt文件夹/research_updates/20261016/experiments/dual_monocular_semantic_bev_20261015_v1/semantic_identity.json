@@ -1,0 +1,20 @@
+{
+  "repo": "nvidia/segformer-b0-finetuned-ade-512-512",
+  "revision": "489d5cd81a0b59fab9b7ea758d3548ebe99677da",
+  "files": {
+    "config.json": {
+      "bytes": 6884,
+      "sha256": "209caa9091e4632f7c8883c11170cd08ad29af68b23c09590aa4a5befb1a2a7f"
+    },
+    "preprocessor_config.json": {
+      "bytes": 271,
+      "sha256": "8039d1d210abaa7117ad78e58cdfd6141a2ec72c03dae891b3cd76737e422c6c"
+    },
+    "pytorch_model.bin": {
+      "bytes": 15092257,
+      "sha256": "0f4df97633cbedd558ecffa3ad228ace5af37e082678390b45a9d22745787c61"
+    }
+  },
+  "licence": "NVIDIA SegFormer non-commercial research/evaluation",
+  "fit": 0
+}

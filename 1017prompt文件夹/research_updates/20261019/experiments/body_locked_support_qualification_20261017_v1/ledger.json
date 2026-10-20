@@ -1,0 +1,32 @@
+{
+  "dispatch_cap": 1,
+  "dispatch_used": 1,
+  "recovery_cap": 1,
+  "recovery_used": 0,
+  "advisory_generation_cap": 1,
+  "advisory_sourcepoint_rows_cap": 2985832,
+  "advisory_cell_rows_cap": 40052,
+  "fit": 0,
+  "model_calls": 0,
+  "source_calls": 0,
+  "physics": 0,
+  "navigation": 0,
+  "parent_pid": 4163515,
+  "old_budgets_reopened": false,
+  "status": "finished",
+  "execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T13:59:37.331836+00:00",
+    "parent_pid": 4163515,
+    "child_pid": 4163534,
+    "process_group_id": 4163534,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T14:00:02.693744+00:00"
+  }
+}

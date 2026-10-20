@@ -1,0 +1,38 @@
+{
+  "hypothesis": "Current pixel obstacle/ground/unknown category before estimated-world projection prevents ground misclassification that two-view agreement did not detect. Distance remains a separate metric monocular prior.",
+  "distinct": "New complete left/right union domain consumer qualification; reuse v62 geometry concepts, no v62 model/load/fit/budget reopening. No inferred world height reclassification.",
+  "oracle": "GT pixel category and depth only diagnostic; online category must come from current RGB, no GT or future online.",
+  "target": "same v75 complete all-pixel union CAD/range .5\u20133/root exclusion .55/GT bodyband .05\u20131.5, no denominator shrink. Prediction even2pixel, cell .1/tolerance .15, original conflict .15 unchanged.",
+  "gates": {
+    "precision_min": 0.95,
+    "recall_min": 0.8,
+    "position_p90_max_m": 0.15,
+    "ground_false_max": 0.01,
+    "depth_p90_max_m": 0.15,
+    "pair_deadline_s": 0.5
+  },
+  "budget": {
+    "fit": 0,
+    "physical_cap": 4,
+    "physical_used": 0,
+    "recovery_cap": 1,
+    "recovery_used": 0
+  },
+  "stop": "oracle fails -> close before inference; passes -> freeze one current-RGB pretrained category source and existing unique metric depth weights, run complete predictions before GT. No threshold sweep or tuning.",
+  "metric_model": "DepthAnything V2 Metric Hypersim Small vits, existing strict official frozen checkpoint; RGB rotate90 CCW, BGR official infer_image518 then inverse, maxdepth20 float32 no rescale",
+  "semantic_model": "nvidia/segformer-b0-finetuned-ade-512-512; official 512 processor, float32, bilinear align_cornersFalse restoration, top prob>=.8; ground IDs3,6,9,11,13,28,29,46,52,54,91,94; unknown2,5,21,26,27,60; others obstacle; missing/conflict unknown",
+  "memory": "Reuse v62 CategoryMemory implementation unchanged: current/recent10s plus two exposure persistent; viewpoint .1m for nonH, no negative clearing. Fused hazard cell centres use one frame identity so two eyes alone do not count as two exposures.",
+  "preflight": {
+    "pair_cap": 1,
+    "group": "B65",
+    "frame": 470,
+    "choice": "prior oracle failure illustration, not random or new holdout"
+  },
+  "generation": {
+    "groups": 7,
+    "pairs": 1267,
+    "GT_read": false,
+    "timing": "torch.cuda sync complete two semantic+metric heads plus projection; .5s deadline before online admission"
+  },
+  "data_role": "all already seen development, no heldout claim; no physical until source/BEV qualification."
+}

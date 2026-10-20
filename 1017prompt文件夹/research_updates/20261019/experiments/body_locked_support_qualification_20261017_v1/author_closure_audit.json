@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-17T14:06:58.499106+00:00",
+  "input_sha256_exact": 3024,
+  "generation_sha256_exact": 942,
+  "code_sha256_exact": 11,
+  "sealed_prediction_maps_exact": 940,
+  "seal_order": [
+    "prediction_seal.json",
+    "postprediction_input_identity_guard.json",
+    "replay_seal.json",
+    "result.json"
+  ],
+  "seal_times": [
+    "2026-10-17T13:59:45.912338+00:00",
+    "2026-10-17T13:59:46.325078+00:00",
+    "2026-10-17T13:59:55.707236+00:00",
+    "2026-10-17T14:00:02.554670+00:00"
+  ],
+  "result_sha256": "9d24e7d724e530dbed95b070ed90c292e4ff9c881bb7e6adfbbd16505bf0fec9",
+  "review_sha256": "4b0f34012de5175c479e949f8cb0d949e1390efe5b23279059de3867497c0139",
+  "fixture_stub_restored_bytes_exact": true,
+  "geometry_generation_rerun": false,
+  "model_or_source_calls": 0
+}

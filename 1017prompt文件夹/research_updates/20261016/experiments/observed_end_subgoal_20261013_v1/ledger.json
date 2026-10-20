@@ -1,0 +1,216 @@
+{
+  "status": "closed_rejected",
+  "cap": 2,
+  "used": 2,
+  "recovery_used": 0,
+  "fit": 0,
+  "parent_pid": 1835880,
+  "groups": [
+    {
+      "arm": "baseline_e1",
+      "state": "closed",
+      "utc": "2026-10-13T06:04:14.902194+00:00",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-13T06:04:14.902482+00:00",
+        "parent_pid": 1835880,
+        "child_pid": 1835881,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-13T06:12:34.493069+00:00"
+      },
+      "raw_audit": {
+        "pass_audit": true,
+        "map_audit": {
+          "actual_maps_exact": 900,
+          "known_native_camera_views": 181,
+          "recent10s_unchanged": true,
+          "viewpoint_separation_m": 0.1,
+          "truth_read": false
+        },
+        "captures": 901,
+        "requests": 900,
+        "verified_physical_commands": 4500,
+        "registration_pairs": 181,
+        "max_extrinsic_residual": 2.6793927576651555e-07,
+        "all_contacts_available": true,
+        "journal_lines": 1800,
+        "physics_fields": [
+          "raw_command_target",
+          "clipped_target",
+          "smoothed_target",
+          "applied_action",
+          "joint_position_rad",
+          "joint_velocity_rad_s",
+          "position_world_xy",
+          "root_position_world_m",
+          "root_quaternion_world_wxyz",
+          "linear_velocity_world_m_s",
+          "angular_velocity_world_rad_s",
+          "yaw_world_rad",
+          "roll_world_rad",
+          "simulation_time_s",
+          "physics_step_index",
+          "raw_simulation_time_s",
+          "raw_physics_step_index",
+          "action_block_index",
+          "physics_step_in_block"
+        ],
+        "interval_ambiguous_points_removed": 5037,
+        "accepted_points": 262072,
+        "source_and_input_hashes": 2224,
+        "scope": "clocks/current native registration/source identities, actual surface selection and executed journal/request/physical targets; not independent IMU dynamics reconstruction or causal replication"
+      },
+      "assessment": {
+        "termination": {
+          "termination": "timeout90",
+          "actions": 900,
+          "time_s": 89.99999798834324,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "initial_distance_m": 6.600000673532486,
+        "remaining_m": 5.837364610679035,
+        "net_progress_m": 0.762636062853451,
+        "captures": 901,
+        "contact_schema_example": {
+          "simulation_time_s": 0.0,
+          "physics_step_index": 0,
+          "source": "capture",
+          "available": true,
+          "contact": false
+        },
+        "contact_records": 5401,
+        "contacts_detected_by_named_fields": 0,
+        "unavailable_contacts": 0,
+        "depth_scoring": {
+          "pixels": 4404338,
+          "p90_absolute_error_m": 0.11812925338745117,
+          "outlier_fraction_above_0p3m": 0.008265714393400325,
+          "under1m_confident_pixels": 10176,
+          "source_points": 1428695,
+          "saved_pairs": 181,
+          "pass_gate": true,
+          "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+        },
+        "video_frames": {
+          "stereo_view.mp4": 901,
+          "third_person.mp4": 901
+        },
+        "raw_arrival_pass": false,
+        "first_contact_s": null,
+        "retain": false
+      }
+    },
+    {
+      "arm": "candidate_e1",
+      "state": "closed",
+      "utc": "2026-10-13T06:13:35.926538+00:00",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-13T06:13:35.926742+00:00",
+        "parent_pid": 1835880,
+        "child_pid": 1846895,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-13T06:21:50.426367+00:00"
+      },
+      "raw_audit": {
+        "pass_audit": true,
+        "map_audit": {
+          "actual_maps_exact": 900,
+          "known_native_camera_views": 181,
+          "recent10s_unchanged": true,
+          "viewpoint_separation_m": 0.1,
+          "truth_read": false
+        },
+        "captures": 901,
+        "requests": 900,
+        "verified_physical_commands": 4500,
+        "registration_pairs": 181,
+        "max_extrinsic_residual": 2.5941457126865686e-07,
+        "all_contacts_available": true,
+        "journal_lines": 1800,
+        "physics_fields": [
+          "raw_command_target",
+          "clipped_target",
+          "smoothed_target",
+          "applied_action",
+          "joint_position_rad",
+          "joint_velocity_rad_s",
+          "position_world_xy",
+          "root_position_world_m",
+          "root_quaternion_world_wxyz",
+          "linear_velocity_world_m_s",
+          "angular_velocity_world_rad_s",
+          "yaw_world_rad",
+          "roll_world_rad",
+          "simulation_time_s",
+          "physics_step_index",
+          "raw_simulation_time_s",
+          "raw_physics_step_index",
+          "action_block_index",
+          "physics_step_in_block"
+        ],
+        "interval_ambiguous_points_removed": 3755,
+        "accepted_points": 183060,
+        "source_and_input_hashes": 2224,
+        "scope": "clocks/current native registration/source identities, actual surface selection and executed journal/request/physical targets; not independent IMU dynamics reconstruction or causal replication"
+      },
+      "assessment": {
+        "termination": {
+          "termination": "timeout90",
+          "actions": 900,
+          "time_s": 89.99999798834324,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "initial_distance_m": 6.600000673532486,
+        "remaining_m": 5.013316472383927,
+        "net_progress_m": 1.5866842011485591,
+        "captures": 901,
+        "contact_schema_example": {
+          "simulation_time_s": 0.0,
+          "physics_step_index": 0,
+          "source": "capture",
+          "available": true,
+          "contact": false
+        },
+        "contact_records": 5401,
+        "contacts_detected_by_named_fields": 0,
+        "unavailable_contacts": 0,
+        "depth_scoring": {
+          "pixels": 3047249,
+          "p90_absolute_error_m": 0.13358716964721684,
+          "outlier_fraction_above_0p3m": 0.014008044633044428,
+          "under1m_confident_pixels": 1811,
+          "source_points": 1031409,
+          "saved_pairs": 181,
+          "pass_gate": true,
+          "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+        },
+        "video_frames": {
+          "stereo_view.mp4": 901,
+          "third_person.mp4": 901
+        },
+        "raw_arrival_pass": false,
+        "first_contact_s": null,
+        "retain": false
+      }
+    }
+  ],
+  "decision": "decision.json",
+  "closed_utc": "2026-10-13T06:41:19.778269+00:00",
+  "remaining": 0,
+  "budget_closed": true
+}

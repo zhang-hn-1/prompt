@@ -1,0 +1,154 @@
+{
+  "utc": "2026-10-13T06:20:02.420078+00:00",
+  "reviewer": "independent observed_end_review subagent",
+  "arm": "baseline_e1",
+  "closure_evidence_pass": true,
+  "navigation_pass": false,
+  "retain": false,
+  "whole_pair_pass": false,
+  "candidate_closure_status": "pending; candidate execution and outcome not assessed by this baseline review",
+  "physical_launches_by_reviewer": 0,
+  "run_modified_by_reviewer": false,
+  "scope": "Only sealed baseline_e1_run and its fixed protocol/code identities; no root-wide seal, no intervention in candidate process.",
+  "direct_independent_checks": {
+    "manifest": {
+      "complete_inventory_match": true,
+      "sha256_files_verified": 5732,
+      "bytes_hashed": 2461868584,
+      "manifest_sha256": "7470acad429800f0b7ff5789429cb1d89241e5c7fae637993d1e309c9d07467e",
+      "all_paths_within_baseline_run": true
+    },
+    "identity": {
+      "status_finished_zero": true,
+      "reset_count": 1,
+      "original_prelaunch_driver_protocol_hashes_match": true,
+      "source_manifest_entries": 2132,
+      "input_manifest_entries": 92,
+      "all_declared_source_and_input_hashes_current": true,
+      "baseline_has_no_ObservedEnd_wrapper_or_plan_metadata": true
+    },
+    "termination": {
+      "termination": "timeout90",
+      "time_s": 89.99999798834324,
+      "remaining_m": 5.837364610679035,
+      "net_progress_m": 0.762636062853451,
+      "minimum_recorded_goal_distance_m": 4.6966577546175765,
+      "arrival_le_0p2m": false
+    },
+    "trajectory": {
+      "captures": 901,
+      "physical_samples": 4501,
+      "capture_positions_and_times_match_physics": true,
+      "finite_all": true
+    },
+    "contacts": {
+      "records": 5401,
+      "available_all": true,
+      "contact_count": 0
+    },
+    "execution": {
+      "requests": 900,
+      "physical_command_targets": 4500,
+      "journal_lines": 1800,
+      "all_planned_executed_exported_requests_match": true,
+      "physical_block_and_step_indices_exact": true,
+      "no_pending_or_incomplete_tail": true
+    },
+    "artifacts": {
+      "known_poses": 181,
+      "frames": 181,
+      "source_predictions": 181,
+      "source_inputs": 181,
+      "sensor_packets": 181,
+      "partial_observations": 181,
+      "maps": 900
+    },
+    "video_full_decode_frames": {
+      "stereo_view.mp4": 901,
+      "third_person.mp4": 901
+    },
+    "source_arithmetic": {
+      "pixels": 4404338,
+      "p90_absolute_error_m": 0.11812925338745117,
+      "outlier_fraction_above_0p3m": 0.008265714393400325,
+      "under1m_confident_pixels": 10176,
+      "source_points": 1428695,
+      "pass_gate": true,
+      "scope": "Same frozen confidence/range/finite-groundtruth denominator as existing score.py; includes robot surfaces and is not obstacle recall."
+    },
+    "process_exit": {
+      "baseline_supervisor_pid": 1835880,
+      "baseline_child_pid": 1835881,
+      "both_absent_from_process_table": true,
+      "candidate_process_not_queried_or_signaled": true
+    }
+  },
+  "fresh_rerun_of_shared_validation": {
+    "module": "experiments/viewpoint_confirmation_navigation_20261012_v1/audit_actual.py",
+    "function": "audit_actual.audit",
+    "result_exactly_matches_saved_raw_audit": true,
+    "result": {
+      "pass_audit": true,
+      "map_audit": {
+        "actual_maps_exact": 900,
+        "known_native_camera_views": 181,
+        "recent10s_unchanged": true,
+        "viewpoint_separation_m": 0.1,
+        "truth_read": false
+      },
+      "captures": 901,
+      "requests": 900,
+      "verified_physical_commands": 4500,
+      "registration_pairs": 181,
+      "max_extrinsic_residual": 2.6793927576651555e-07,
+      "all_contacts_available": true,
+      "journal_lines": 1800,
+      "physics_fields": [
+        "raw_command_target",
+        "clipped_target",
+        "smoothed_target",
+        "applied_action",
+        "joint_position_rad",
+        "joint_velocity_rad_s",
+        "position_world_xy",
+        "root_position_world_m",
+        "root_quaternion_world_wxyz",
+        "linear_velocity_world_m_s",
+        "angular_velocity_world_rad_s",
+        "yaw_world_rad",
+        "roll_world_rad",
+        "simulation_time_s",
+        "physics_step_index",
+        "raw_simulation_time_s",
+        "raw_physics_step_index",
+        "action_block_index",
+        "physics_step_in_block"
+      ],
+      "interval_ambiguous_points_removed": 5037,
+      "accepted_points": 262072,
+      "source_and_input_hashes": 2224,
+      "scope": "clocks/current native registration/source identities, actual surface selection and executed journal/request/physical targets; not independent IMU dynamics reconstruction or causal replication"
+    },
+    "distinction": "Reviewer executed the existing audited validator again. Native registration reconstruction and 900 map reconstructions use its shared implementation; this is not an independent estimator or mapper implementation."
+  },
+  "referenced_existing_evidence": {
+    "saved_assessment": "baseline_e1_assessment.json",
+    "saved_raw_audit": "baseline_e1_raw_audit.json",
+    "baseline_status": "baseline_e1_status.json",
+    "note": "Saved labels alone were not accepted as verification; direct arithmetic and fresh shared-validator rerun are identified above."
+  },
+  "limitations": [
+    "No navigation arrival at 90 seconds; baseline retain remains false despite valid artifacts and passing conditional source gate.",
+    "No candidate or pair-level success claim. Candidate needs its own sealed-run closure and action-effect assessment.",
+    "Native pose registration equality does not independently certify IMU dynamics or pose accuracy.",
+    "No extra rollout, fit, recovery, or change to frozen experimental thresholds was performed."
+  ],
+  "reviewed_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_protocol.json": "1d5759c389020290ab73f6b27e5e6d903999a052c58e3d191bd8e0d0d23c6411",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_driver.py": "2b2801a0e3d4eaca5b04702fb541e28b6357c2466f6bec202283a7ec541b14d1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_status.json": "a2f3c6afd0d2ef719121a34270d5c9905adeda16b586349a6c58593f9e5dbe13",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_raw_audit.json": "8267a12242660a1c484adce568c2379afce3296fcd65c837ef63d0ee4546082e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_assessment.json": "76ce11d43a8f6c4c06dac64ff98fce014373c16ef7b8835dd7a7ff5ffd309949",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_end_subgoal_20261013_v1/baseline_e1_run/artifact_manifest_post_close.json": "7470acad429800f0b7ff5789429cb1d89241e5c7fae637993d1e309c9d07467e"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "pair": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/baseline_e1_run/source_inputs/frame_470.npz",
+  "sync_seconds": 0.7314865819644183,
+  "pair_projection_seconds": 0.7479218179942109,
+  "peak_gpu_bytes": 495607296,
+  "cells": [
+    166,
+    125,
+    247
+  ],
+  "conflicts": [
+    {
+      "overlap_queries": 4025,
+      "conflict_queries": 102
+    },
+    {
+      "overlap_queries": 1301,
+      "conflict_queries": 28
+    }
+  ],
+  "shape": [
+    [
+      480,
+      640
+    ],
+    [
+      480,
+      640
+    ]
+  ],
+  "finite_depth": [
+    307200,
+    307200
+  ],
+  "truth_read": false
+}

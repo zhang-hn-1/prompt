@@ -1,0 +1,127 @@
+{
+  "utc": "2026-10-13T06:43:14.139220+00:00",
+  "fact_chain_verified": true,
+  "blocked_queries": 71,
+  "scope_frames": [
+    545,
+    895,
+    5
+  ],
+  "required_clearance_m": 0.8707106781186548,
+  "all_start_clearances_m": [
+    0.7810249675906655
+  ],
+  "goal_blocked_count": 0,
+  "unique_blocker_per_query": true,
+  "blocker_xy": [
+    -1.099999994039532,
+    -0.09999999403953197
+  ],
+  "blocker_bodyband_reference_distance_m": 0.8,
+  "source_pairs_scanned": 181,
+  "source_epochs": [
+    {
+      "frame": "frame_495",
+      "instances": 29,
+      "finite_gt": 29,
+      "ground_with_abs_z_le_0p03_m": 0
+    },
+    {
+      "frame": "frame_500",
+      "instances": 17,
+      "finite_gt": 17,
+      "ground_with_abs_z_le_0p03_m": 0
+    }
+  ],
+  "point_instances": 46,
+  "finite_gt": 46,
+  "ground_under_stated_height_test": 0,
+  "truth_world_height_range_m": [
+    0.13460444616773848,
+    0.2440219171471134
+  ],
+  "position_error_range_m": [
+    0.8774690411247553,
+    1.0419404340661098
+  ],
+  "predicted_depth_range_m": [
+    1.1466068029403687,
+    1.195175290107727
+  ],
+  "truth_depth_range_m": [
+    1.970888376235962,
+    2.1484878063201904
+  ],
+  "absolute_depth_error_range_m": [
+    0.8207587003707886,
+    0.9593871831893921
+  ],
+  "risk_age_first_last_s": [
+    4.499999899417162,
+    39.4999991171062
+  ],
+  "selected_source_frame": {
+    "frame": 495,
+    "time_s": 49.49999889358878,
+    "confident_in_range_pixels": 60015,
+    "finite_truth_scored_pixels": 30903,
+    "p90_absolute_error_m": 0.9176815986633298,
+    "selection": "Post hoc source-contributing frame, not claimed representative or worst."
+  },
+  "presentation": {
+    "script_sha256": "27ddd21e9801d87b1f70352ed7a655fb9d59067bc72bf62b48149dfd98ac30cc",
+    "script_matches_recorded_closure_sha": true,
+    "numeric_summary_sha256": "2e238417d0b8ee2cc47ec80b5f13406a10a8b908473ca5ab6ccd0bad8cd89643",
+    "numeric_summary_unchanged": true,
+    "note": "Current script and numerical JSON already match the hashes in the existing candidate closure; no old closure edit is needed."
+  },
+  "raw_files_individually_checked_against_seal": 261,
+  "reviewer": "independent observed_end_review subagent",
+  "decision": "FACT_CHAIN_CONFIRMED_POST_RUN_ONLY",
+  "validation_method": "Independent CPU recomputation: all 71 failed-query start/goal distances calculated directly against current risk-cell centers; all 181 partial source files scanned; query pixels reconstructed with saved planar GT depth and USD camera transform; predicted world points separately reconstructed from prediction depth and saved native camera pose. All compared values match the two diagnosis JSONs to numerical precision.",
+  "raw_seal_validation": {
+    "files_checked": 261,
+    "partial_observation_files": 181,
+    "failed_query_maps": 71,
+    "records_native_task_files": 3,
+    "source_epoch_frame_prediction_pose_files": 6,
+    "each_compared_against_existing_candidate_manifest": true,
+    "scope": "Relevant raw files only. The earlier candidate closure independently verified the entire 5372-file sealed run."
+  },
+  "conclusion": [
+    "For frames 545 through 895 at stride 5, the frozen planner rejects the start cell because its clearance is 0.7810249675906655 m below the unchanged 0.8707106781186548 m requirement. Every query has exactly one risk cell inside that start margin; the goal cell is not blocked.",
+    "That risk cell quantizes to approximately (-1.1, -0.1) m. Its nearest post-run 2D body-band reference cell is 0.8 m away. All saved source contributions to that cell are 29 points from frame495 and 17 from frame500.",
+    "All 46 contributing pixels have finite positive rendered GT depth. Their reconstructed GT world heights are 0.13460444616773848 to 0.2440219171471134 m, so zero meet the stated |z| <= 0.03 m ground test. This evidence does not support describing this blocking cell as ground false positives.",
+    "The same pixels show substantial depth underestimation and misplaced predicted 3D points. The conditional aggregate source gate can pass while this source-contributing frame has large errors.",
+    "The candidate remains rejected for no arrival. Its shorter executed trajectory cannot be presented as improved navigation."
+  ],
+  "limitations": [
+    "This diagnoses the 71 observed_obstacle_blocks_route events in the latter part of the candidate run. It does not explain the separate frame175 unreachable result or claim a single cause for the entire navigation failure.",
+    "The 0.8 m statistic is distance to a 2D body-band reference discretization. It does not certify that any particular unknown grid cell is free or provide a complete 3D surface label.",
+    "Ground count zero refers only to these 46 rendered pixel targets and the explicit 0.03 m world-height criterion. It does not classify every source error in the run.",
+    "The 3D position discrepancy includes the source's native-pose registration versus the rendered true camera pose. Same-pixel depth errors independently establish a depth discrepancy, but this review does not decompose every 3D error component.",
+    "Frame495 is selected after the run because it contributed to this blocker. Its P90 is not claimed to represent every frame or to be the worst frame, and does not retroactively alter the frozen aggregate scoring denominator or threshold.",
+    "No GT-driven deletion, source adjustment, map edit, counterfactual rerun, new physics, fit, threshold change, or claim of success after blocker removal was performed or authorized by this review."
+  ],
+  "original_closure_reports_modified": false,
+  "raw_runs_modified": false,
+  "physical_launches": 0,
+  "reviewed_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/blocked_queries.py": "87f8f2c2aafe65bbae39830c0a4974cc96997e3dfb80dbd807223d35b32e9133",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/blocked_queries.json": "bda1b2fc533f6bc74f2df8ebaa95eb4de2df7dcddc160606b8eae15d49f972ba",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/blocker_provenance.py": "00da22c645a9036a6b48a7af7c8985c49325b882f6041eb746b6fb0238f59099",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/blocker_provenance.json": "97cb4e562873b2ce4e0e0f7957e9e143bc4ccd7f6c954cc3bdfbbdd1dc492ec1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_independent_closure.json": "cabb5e1c7c142b6de4bb902292041d2c3d6e76bfa121bdca12fe5565881b6d96",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_protocol.json": "b657da0871e6c060dbd2f6d0396d97ff16eb4fbdbac5af46ab8bc1f11a47d51e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/protocol.json": "967ad317bfdf01770ea8d676582d8038bf6691cce763fc012f4b2639fc8a1e1f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/navigation_summary.py": "27ddd21e9801d87b1f70352ed7a655fb9d59067bc72bf62b48149dfd98ac30cc",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/navigation_summary.json": "2e238417d0b8ee2cc47ec80b5f13406a10a8b908473ca5ab6ccd0bad8cd89643",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/artifact_manifest_post_close.json": "d0a489d3cd0a8eac3348bb15150791d353fbe2087f4ad469cc642ea17df23afa",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/stereo_geometry.py": "cb178ce523c12c63b6d265cebfc2f367e8a64dbfc692b350e88ebc4ad9c2ae4d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/dense_source_points.py": "268cc63591d6894f5deb4d9950d963e930b325f875966ab5162cbf8e2c978b8d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_consumer_v2.py": "e600483866f5494233962f847cb4fa5a864bc27ff607722da18107ee227ef720",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py": "818e7c5cf2fc64081861dae3b173e68c5765cae8fd18859eb618aa8be63f8a67",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7"
+  }
+}
+

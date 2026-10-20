@@ -1,0 +1,319 @@
+{
+  "utc": "2026-10-13T06:30:50.768338+00:00",
+  "reviewer": "independent observed_end_review subagent",
+  "arm": "candidate_e1",
+  "closure_evidence_pass": true,
+  "navigation_pass": false,
+  "retain": false,
+  "physical_launches_by_reviewer": 0,
+  "raw_runs_modified": false,
+  "direct_independent_checks": {
+    "manifest": {
+      "complete_inventory_match": true,
+      "sha256_files_verified": 5372,
+      "bytes_hashed": 1993173888,
+      "manifest_sha256": "d0a489d3cd0a8eac3348bb15150791d353fbe2087f4ad469cc642ea17df23afa"
+    },
+    "baseline_previous_review_and_locked_identities_still_match": true,
+    "identity": {
+      "prelaunch_candidate_driver_protocol_and_scientific_code_hashes_match": true,
+      "source_manifest_entries": 2132,
+      "input_manifest_entries": 92,
+      "all_declared_hashes_current": true,
+      "ObservedEnd_wrapper_count": 1,
+      "reset_count": 1
+    },
+    "termination": {
+      "termination": "timeout90",
+      "time_s": 89.99999798834324,
+      "remaining_m": 5.013316472383927,
+      "net_progress_m": 1.5866842011485591,
+      "minimum_recorded_goal_distance_m": 4.783807627050073,
+      "arrival_le_0p2m": false
+    },
+    "trajectory": {
+      "captures": 901,
+      "physical_samples": 4501,
+      "capture_positions_and_times_match_physics": true
+    },
+    "contacts": {
+      "records": 5401,
+      "available_all": true,
+      "contact_count": 0
+    },
+    "execution": {
+      "requests": 900,
+      "physical_command_targets": 4500,
+      "journal_lines": 1800,
+      "all_planned_executed_exported_requests_match": true,
+      "physical_block_and_step_indices_exact": true,
+      "no_pending_or_incomplete_tail": true
+    },
+    "artifacts": {
+      "known_poses": 181,
+      "frames": 181,
+      "source_predictions": 181,
+      "source_inputs": 181,
+      "sensor_packets": 181,
+      "partial_observations": 181,
+      "maps": 900
+    },
+    "video_full_decode_frames": {
+      "stereo_view.mp4": 901,
+      "third_person.mp4": 901
+    },
+    "source_arithmetic": {
+      "pixels": 3047249,
+      "p90_absolute_error_m": 0.13358716964721684,
+      "outlier_fraction_above_0p3m": 0.014008044633044428,
+      "under1m_confident_pixels": 1811,
+      "source_points": 1031409,
+      "pass_gate": true,
+      "scope": "Same frozen confident depth0.5-3m finite-groundtruth denominator; includes robot surfaces and is not obstacle recall."
+    },
+    "actual_planning_boundaries": {
+      "rebuild_versions": 76,
+      "successful_plan_frames": [
+        60,
+        180,
+        530,
+        535
+      ],
+      "failed_query_frames": [
+        175,
+        545,
+        550,
+        555,
+        560,
+        565,
+        570,
+        575,
+        580,
+        585,
+        590,
+        595,
+        600,
+        605,
+        610,
+        615,
+        620,
+        625,
+        630,
+        635,
+        640,
+        645,
+        650,
+        655,
+        660,
+        665,
+        670,
+        675,
+        680,
+        685,
+        690,
+        695,
+        700,
+        705,
+        710,
+        715,
+        720,
+        725,
+        730,
+        735,
+        740,
+        745,
+        750,
+        755,
+        760,
+        765,
+        770,
+        775,
+        780,
+        785,
+        790,
+        795,
+        800,
+        805,
+        810,
+        815,
+        820,
+        825,
+        830,
+        835,
+        840,
+        845,
+        850,
+        855,
+        860,
+        865,
+        870,
+        875,
+        880,
+        885,
+        890,
+        895
+      ],
+      "successful_subgoal_change_frames": [
+        60,
+        180
+      ],
+      "successful_exact_fallback_frames": [
+        530,
+        535
+      ],
+      "failure_mode": "frame175 unreachable; frame545..895 every5 observed_obstacle_blocks_route; failed queries correctly have no local_plans file"
+    },
+    "process_and_budget": {
+      "supervisor_and_both_children_absent": true,
+      "physical_used": 2,
+      "cap": 2,
+      "recovery_used": 0,
+      "fit": 0
+    },
+    "pair_rgb_identity": {
+      "compared_pairs": 181,
+      "identical_pairs": 0,
+      "identical_prefix_pairs": 0,
+      "initial_inputs_already_differ": true,
+      "full_paired_causal_replication": false,
+      "verification": "Reviewer independently compared every left/right RGB array across the two saved source_inputs directories."
+    }
+  },
+  "fresh_rerun_of_shared_validation": {
+    "module": "experiments/viewpoint_confirmation_navigation_20261012_v1/audit_actual.py",
+    "function": "audit_actual.audit",
+    "result_exactly_matches_saved_raw_audit": true,
+    "result": {
+      "pass_audit": true,
+      "map_audit": {
+        "actual_maps_exact": 900,
+        "known_native_camera_views": 181,
+        "recent10s_unchanged": true,
+        "viewpoint_separation_m": 0.1,
+        "truth_read": false
+      },
+      "captures": 901,
+      "requests": 900,
+      "verified_physical_commands": 4500,
+      "registration_pairs": 181,
+      "max_extrinsic_residual": 2.5941457126865686e-7,
+      "all_contacts_available": true,
+      "journal_lines": 1800,
+      "physics_fields": [
+        "raw_command_target",
+        "clipped_target",
+        "smoothed_target",
+        "applied_action",
+        "joint_position_rad",
+        "joint_velocity_rad_s",
+        "position_world_xy",
+        "root_position_world_m",
+        "root_quaternion_world_wxyz",
+        "linear_velocity_world_m_s",
+        "angular_velocity_world_rad_s",
+        "yaw_world_rad",
+        "roll_world_rad",
+        "simulation_time_s",
+        "physics_step_index",
+        "raw_simulation_time_s",
+        "raw_physics_step_index",
+        "action_block_index",
+        "physics_step_in_block"
+      ],
+      "interval_ambiguous_points_removed": 3755,
+      "accepted_points": 183060,
+      "source_and_input_hashes": 2224,
+      "scope": "clocks/current native registration/source identities, actual surface selection and executed journal/request/physical targets; not independent IMU dynamics reconstruction or causal replication"
+    },
+    "distinction": "Reviewer freshly executed the existing validator; 181 native registrations and 900 map reconstructions use its shared implementation, not an independent IMU estimator or mapper."
+  },
+  "pair_numeric_comparison": {
+    "baseline_remaining_m": 5.837364610679035,
+    "candidate_remaining_m": 5.013316472383927,
+    "additional_net_progress_m": 0.8240481382951081,
+    "both_timeout90": true,
+    "both_no_contact": true,
+    "both_conditional_source_gate_pass": true,
+    "both_arrival_fail": true,
+    "required_decision": "REJECT_AND_CLOSE_UNDER_FROZEN_PROTOCOL"
+  },
+  "reviewed_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_protocol.json": "b657da0871e6c060dbd2f6d0396d97ff16eb4fbdbac5af46ab8bc1f11a47d51e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_driver.py": "f7719c55f1563ea4a66fb6bfe6c1a9279c76e1cd789888116814f4f0483f6cca",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_status.json": "7b3896d09a460bb2ed989459a9ed067602ac0c8c3f02079e77ca18c0243c208c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_raw_audit.json": "8d458df2ada98b1e62381bdd5616f3f1d3d727d366b23dd0f630d9d8fff4452e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_assessment.json": "e32a8f781fb5d09ef0b7c10b1d7e23de93c3e215c8e736f51e8e819627251a7e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/baseline_independent_closure.json": "d426bf78ade22c21f246aadd670336e7535b2ac88515f3ba15183593f8957c4b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/protocol.json": "967ad317bfdf01770ea8d676582d8038bf6691cce763fc012f4b2639fc8a1e1f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_e1_run/artifact_manifest_post_close.json": "d0a489d3cd0a8eac3348bb15150791d353fbe2087f4ad469cc642ea17df23afa",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/actual_effect.py": "508773e0fdd0112dde48fa892b1c86f1e304157e46de386771e6987b9df6abd0",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/actual_effect.json": "24615d0b48d08325130491a6e09cfc11510eb4af502ef0dec8b37e83713a669e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/actual_effect_complete.log": "e54159b2dc9617539a772e124a2fb9c9840e3d1bb1d522b3d1bba7315bcd0a26",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/pair_identity.py": "67496a0a38bd4235353df5790a6e0b123eac8fa0dc838a97f965b61e2031be49",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/pair_identity.json": "842ec095ee6abee537f0824d895b181ecd1b17ec9a1e3b882ddb729bd89ae2ca",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/navigation_summary.py": "27ddd21e9801d87b1f70352ed7a655fb9d59067bc72bf62b48149dfd98ac30cc",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/navigation_summary.json": "2e238417d0b8ee2cc47ec80b5f13406a10a8b908473ca5ab6ccd0bad8cd89643"
+  },
+  "finalized_utc": "2026-10-13T06:34:21.350Z",
+  "pair_evidence_complete": true,
+  "pair_navigation_pass": false,
+  "candidate_rejected": true,
+  "disposition": "CLOSE_REJECTED_NAVIGATION_NOT_ARRIVED",
+  "actual_effect_review": {
+    "shared_effect_rerun_all_queries_match": true,
+    "baseline_attempted_queries": 11,
+    "candidate_attempted_queries": 76,
+    "candidate_successful_installations": 4,
+    "candidate_failed_queries": 72,
+    "candidate_changed_plan_frames": [
+      60,
+      180
+    ],
+    "all_failed_queries_none_status_route_and_zero_request_match": true,
+    "all_actual_successful_path_geometry": [
+      {
+        "frame": 60,
+        "minimum_sample_clearance_m": 1.0770329614269007,
+        "samples": 56
+      },
+      {
+        "frame": 180,
+        "minimum_sample_clearance_m": 0.9848857801796105,
+        "samples": 112
+      },
+      {
+        "frame": 530,
+        "minimum_sample_clearance_m": 0.894427190999916,
+        "samples": 77
+      },
+      {
+        "frame": 535,
+        "minimum_sample_clearance_m": 0.9219544457292888,
+        "samples": 77
+      }
+    ],
+    "effect_sha256": "24615d0b48d08325130491a6e09cfc11510eb4af502ef0dec8b37e83713a669e",
+    "script_sha256": "508773e0fdd0112dde48fa892b1c86f1e304157e46de386771e6987b9df6abd0",
+    "validation_method": "Fresh readonly rerun of the repaired actual_effect.py validator across all 87 current native queries, including recomputed global A* and local planners. Artifact write removed in memory; results matched final JSON after removing only runtime seconds. Separate reviewer arithmetic checked complete successful candidate paths with original 0.05 m sampling and 0.8707106781186548 m clearance.",
+    "no_plan_queries_are_not_installations": true,
+    "no_counterfactual_trajectory_claim": true,
+    "map_clearance_not_unknown_free_or_physical_safety_proof": true
+  },
+  "discrepancies": [
+    {
+      "resolved": true,
+      "kind": "postprocessing_only",
+      "finding": "Initial actual_effect script treated every positive reference version as a successful installation and stopped at missing candidate frame175 local-plan file. The earlier JSON covered only baseline and had pass_gate=false.",
+      "resolution": "Author preserved earlier evaluator/log/output and corrected analysis to cover all attempts; reviewer freshly reran the final evaluator and verified all 11 baseline plus 76 candidate attempts. Raw runs and scientific definition were not changed."
+    }
+  ],
+  "limitations": [
+    "Candidate times out at 90 s; remaining distance 5.013316472383927 m, with no recorded capture inside 0.2 m. This fails the frozen arrival requirement and retain remains false despite no contact and conditional source gate passing.",
+    "The additional 0.8240481382951081 m net progress is descriptive. All 181 paired RGB samples differ, including the initial sample, so this pair does not establish a causal navigation improvement.",
+    "Candidate has 76 planning attempts, only four successful installations, two changed subgoals, two successful exact fallbacks, and 72 no-plan fallbacks. Failed attempts must not be reported as installed routes.",
+    "The known raw auditor was rerun for native registration and map reconstruction; this does not independently validate IMU dynamics or native pose accuracy.",
+    "Source accuracy is conditional on confident finite depth in 0.5-3 m and includes robot surfaces. Passing it does not demonstrate full obstacle coverage.",
+    "No future visibility, unknown-space safety, held-out generalization, or full research success is established. Both authorized physical arms are consumed; this review permits no extra run or threshold change."
+  ]
+}
+

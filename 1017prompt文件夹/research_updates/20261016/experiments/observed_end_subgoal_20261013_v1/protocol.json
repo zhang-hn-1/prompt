@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-13T05:51:59.315634+00:00",
+  "hypothesis": "Current local target crosses a partly seen obstacle tip too early. Use the currently observed elongated component end as an exploratory subgoal, offset toward the robot by unchanged clearance and along its observed axis by one existing 0.3m primitive. This may approach the end while obtaining more observations; future visibility is not guaranteed.",
+  "online_inputs": "unchanged current risk map/IMU-encoder XY-yaw/current global grid route/current accepted direction; no truth, learned predictor or invented occupied/free cells",
+  "single_change": "local subgoal selection only on original rebuild; existing retention, primitive search, source, map, rig and control unchanged",
+  "mechanism": {
+    "component": "first inflated-risk component intersecting straight current XY to fixed goal; 8 connectivity; actual risk cells only PCA",
+    "eligibility": ">=3 actual cells, PCA principal variance >=4 times other variance; fixed geometric conditioning, not learned",
+    "end_choice": "sign of original local target along PCA principal axis; no permanent side commitment; PCA sign canonical largest absolute component positive",
+    "target": "observed extreme actual risk cell + signed axis * original primitive0.3m + near-side normal*planning_clearance; nearest currently nonblocked crop cell within sqrt(2)*resolution; distance to current XY <=2.6m (2.4 horizon+original .2 goal tolerance)",
+    "fallback": "any missing/degenerate support, too far, rounded target unavailable, original no route, or failed single constrained query returns exact original plan; no alternative search",
+    "unknown": "all labels unchanged; target remains controlled unknown exploration, no free certificate; nohit not used"
+  },
+  "qualification": {
+    "scope": "all10 original reference installation inputs in saved complete E1; same-input factual development only",
+    "required": "exact original plans; unchanged map; unchanged allowed primitives/first direction and sampled clearance; exact fallback and full policy inheritance; >=1 changed successful subgoal at predeclared 510,660,710,815 and full reference path moves at least .3m along chosen observed-end direction; report full length, reverse and switches without improvement requirement invented after seeing outputs",
+    "physical": "only after independent admission: same-version E1 baseline/candidate 90s; arrival<=.2m and no contact plus existing source gate; actual command and input identity evidence; failure closes"
+  },
+  "budget": {
+    "physical_cap": 2,
+    "physical_used": 0,
+    "recovery_cap": 1,
+    "fit": 0
+  },
+  "novelty": "Old route-side commitment/nonbinding/soft weight alter entire global route using remembered side. This changes current local target from actual observed extent only, no prior side persistence or global exclusion. Old future reobservation predicts future teacher availability, old ray clears risk; neither is used. v52 full-route/prefix, terminal-motion gate and cursor projection remain closed.",
+  "stop": "qualification fails close without threshold changes; real pair no arrival reject; no migration to E0/E2 without retained result"
+}

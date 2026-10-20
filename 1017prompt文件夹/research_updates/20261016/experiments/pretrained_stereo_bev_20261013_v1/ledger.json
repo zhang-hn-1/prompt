@@ -1,0 +1,21 @@
+{
+  "status": "fixed_source_consumer_rejected",
+  "model": "standard FoundationStereo 23-51-11",
+  "groups": 7,
+  "pairs": 1267,
+  "map_ticks": 6300,
+  "fit": 0,
+  "physical_used": 0,
+  "physical_cap": 4,
+  "recovery_used": 1,
+  "recovery_cap": 1,
+  "generation_timeout_s": 7200,
+  "preflight": "gpu_preflight_result.json",
+  "no_GT_until_prediction_seal": true,
+  "recovery_reason": "Missing installed Isaac USD dependency path; add existing usd PYTHONPATH/LD_LIBRARY_PATH only. Model/protocol/generate unchanged.",
+  "physical_unattempted_closed": 4,
+  "bev_pass": false,
+  "source_pass": false,
+  "route_blockage_gate": "unassessed_early_rejection",
+  "next": "Bounded consumer coverage attrition qualification, no pretrained tuning or navigation admission."
+}

@@ -1,0 +1,51 @@
+{
+  "model": "NVlabs/FoundationStereo standard ViT-large 23-51-11",
+  "source_commit": "6e8806816b533e4d13ddbb95ffa907b797060a62",
+  "input": "Only current paired lossless RGB, native fixed vertical rig rotate90 rectification and bilateral CAD masks; no GT to prediction",
+  "configuration": {
+    "iters": 32,
+    "scale": 1,
+    "max_disp": 416,
+    "mixed_precision": true,
+    "low_memory": 0,
+    "right_pass": "swap+horizontal flip; negative disparity restored",
+    "LR_px": 1.5
+  },
+  "weights": "Official GoogleDrive 1Yh_2o9QCUrVqZrnAXZ7RUr0zTp3JrMKe; SHA freeze after completed download before inference",
+  "consumer": "Original paired projection/height interval/texture+native pose/TentativePointMemory/ViewpointConfirmationGrid unchanged, no new free/risk clearing semantics",
+  "BEV_primary_gate": {
+    "same_visible_target_precision_min": 0.95,
+    "same_visible_target_recall_min": 0.8,
+    "grid_location_p90_max_m": 0.15,
+    "ground_false_fraction_max": 0.01,
+    "final_wrong_risk_no_increase": true,
+    "final_old_wrong_risk_no_increase": true,
+    "source_obstacle_query_retention_min": 0.95,
+    "measurement_count_ratio_min": 0.7,
+    "per_frame_measurement_count_ratio_min": 0.5,
+    "blocked_reference_count_no_increase": true
+  },
+  "depth_aux_gate": {
+    "P90_max_m": 0.15,
+    "outlier_above030_max": 0.1,
+    "per_frame_P90_above030_with_atleast1000_scored_allowed": 0
+  },
+  "latency": "report synchronized complete paired inference median/P90/max plus peak GPU memory; source frame .5s interval .5s deadline before actual online admission",
+  "groups": [
+    "H",
+    "E0",
+    "E1",
+    "B54",
+    "C54",
+    "B65",
+    "C65"
+  ],
+  "data_role": "all development; full sequences before GT scoring, not new heldout",
+  "physical_cap": 4,
+  "physical_used": 0,
+  "recovery_cap": 1,
+  "fit": 0,
+  "stop": "source/BEV gate failure close no sweep/no fine tuning/no old Fast model rerun; weights/resource failure is unavailable not performance rejection",
+  "licence": "NVIDIA research non-commercial; downloaded third-party code/weights not republished",
+  "status": "official_weight_download_running_no_inference"
+}

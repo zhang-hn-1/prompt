@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-13T06:34:28.764690+00:00",
+  "initial_failure": "actual_effect incorrectly treated every incremented reference version as installed successful path; candidate frame175 legitimately has no local_plan file.",
+  "correction": "Cover all actual query boundaries using current native pose and re-solved actual global route; require no plan and zero request on failed queries, exact complete path on successful queries. Navigation summary explicitly separates attempted versions from successful installations.",
+  "preserved": [
+    "actual_effect.py.before_no_plan_fix",
+    "actual_effect.json.before_no_plan_fix",
+    "actual_effect_final.log.before_no_plan_fix",
+    "navigation_summary.py.before_no_plan_fix",
+    "navigation_summary.json.before_no_plan_fix"
+  ],
+  "physical_run_changed": false,
+  "final_effect_pass": true
+}
