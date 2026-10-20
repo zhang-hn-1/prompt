@@ -1,0 +1,23 @@
+{
+  "cap": 1,
+  "used": 1,
+  "recovery_cap": 0,
+  "recovery_used": 0,
+  "fit": 0,
+  "physics": 0,
+  "parent_pid": 3805989,
+  "status": "closed",
+  "execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T08:09:48.962893+00:00",
+    "parent_pid": 3805989,
+    "child_pid": 3805990,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-17T08:09:49.227261+00:00"
+  },
+  "remaining_recovery_closed": true
+}

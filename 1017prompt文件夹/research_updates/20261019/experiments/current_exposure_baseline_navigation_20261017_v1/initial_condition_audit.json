@@ -1,0 +1,25 @@
+{
+  "initial_gauge.json": true,
+  "initial_execution.json": true,
+  "episode.json": true,
+  "scene_primitives.json": true,
+  "native_pose_max_first6s": 1.8406839481441284e-09,
+  "frame0_depth_GT_and_render_pose_exact": true,
+  "complete": true,
+  "shared_real_stage_layers": 6,
+  "all_real_stage_layer_hashes_equal": true,
+  "RGB_prefix": "NOT byteequal; frame0 RGB MAE.864-.950 of255; cause not fullyisolated, do not claim pixelpaired treatment",
+  "first_action_divergence_policy": 60,
+  "contact_samples": {
+    "A": {
+      "samples": 5401,
+      "available": 5401,
+      "positive": 0
+    },
+    "B": {
+      "samples": 5401,
+      "available": 5401,
+      "positive": 0
+    }
+  }
+}

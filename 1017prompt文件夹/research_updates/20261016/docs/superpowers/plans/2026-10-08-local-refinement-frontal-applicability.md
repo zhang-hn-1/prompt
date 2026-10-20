@@ -1,0 +1,7 @@
+# One historical frontal-view applicability comparison
+
+Frozen local binocular refinement is rejected on the reverse yaw20 sequence:451 repeated point records/99.33%10cm but no100point exposure. Do not tune or rescue this result. One cause question remains: is insufficient patch coverage specific to this constrained view, or present in the already archived yaw0 startup too?
+
+Use exactly native_flat_pose_navigation_R1_run_v1's original0..14s prefix, all29 saved2Hz source epochs; no selection by episode success, new inference, new physics or later navigation frames. It is old seen/historical data, not fresh. Current raw packet→same frozen partial appearance Lab model/current CAD masks→same exact partial selection→unchanged local_binocular_refinement.py. The additional input adapter may only convert archived filenames into the old preflight schema, with original exposure times, current estimated poses and provenance; raw bytes unchanged. Actor files and posthoc truth files remain separate.
+
+Same frozen source gates and original pose numerics checked; do not reuse reverse pose assessment for frontal data. Seal all predictions before labels. Regardless of result preserve yaw20 precision/coverage rejection and native full-reference timeout; frontal diagnostic pass alone cannot trigger online navigation, source generalization, formal35 or learning. Only one alternate historical view domain; no yaw/threshold/patch/network/motion matrix.

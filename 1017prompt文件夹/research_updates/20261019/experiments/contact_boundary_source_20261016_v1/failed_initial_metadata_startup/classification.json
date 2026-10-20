@@ -1,0 +1,9 @@
+{
+  "status": "runtime_interface_failure_before_science",
+  "effective_exposures": 0,
+  "executed_request_blocks": 0,
+  "failure": "Strict CameraParams renderProductResolution check at zero-time exposure",
+  "initial_status_file": "../e0_status.json",
+  "initial_log": "../e0.log",
+  "next": "One already-budgeted environment/interface recovery; attach CameraParams before reset priming and use bounded render-only warm-up, retaining strict resolution/clock checks. No camera/layout/model/gate change."
+}

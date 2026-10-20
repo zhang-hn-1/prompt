@@ -1,0 +1,102 @@
+{
+  "scene_root": "/home/an/project/NavDP/assets/scenes",
+  "episode_manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+  "episode_id": "golden_e1_0001",
+  "occupancy": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+  "requests_max": 900,
+  "sim_budget_s": 90.0,
+  "goal_threshold_m": 0.2,
+  "pid_config": {
+    "kp": 0.4,
+    "ki": 0.1,
+    "kd": 0.7,
+    "dt": 0.02
+  },
+  "inner_config": {
+    "dt_s": 0.02,
+    "max_main_acceleration_rad_s2": 0.5,
+    "max_auxiliary_rate_rad_s": 0.5235987755982988,
+    "max_auxiliary_velocity_rad_s": 0.3
+  },
+  "created_utc": "2026-10-17T07:52:14.503647+00:00",
+  "name": "current_four_camera_A_current_exposure90s_development",
+  "data_root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/contact_boundary_source_20261016_v1/e0_recovery_run",
+  "focal_mm": 8.290430948305513,
+  "focal_px": 294.77087816197377,
+  "baseline_m": 0.65012,
+  "lighting_profile": "fixed_camera_fill_v1",
+  "pairs": [
+    [
+      "front_left",
+      "front_right"
+    ],
+    [
+      "rear_right",
+      "rear_left"
+    ]
+  ],
+  "query_outputs": "Both signed directions for all four eyes; same SGBM parameters as archived implementation, current calibration only.",
+  "scope": "A baseline memory ablation, same P0source/config/control. B prior result known development reference. C rejected offline, noC physics; not full3arm completion.",
+  "source_range_m": [
+    0.5,
+    3.0
+  ],
+  "LR_tolerance_px": 1.5,
+  "stride": 2,
+  "height_proxy_m": [
+    0.05,
+    1.5
+  ],
+  "root_exclusion_m": 0.55,
+  "source_period_s": 0.5,
+  "policy_period_s": 0.1,
+  "weak_acceptance": {
+    "interface_unit_clock_required": true,
+    "minimum_E0_frames_with_nonempty_risk": 11,
+    "minimum_E0_total_risk_points": 100,
+    "actual_success": "terminal GT distance <=0.2m and zero obstacle contact before90s; GT only terminal evaluation",
+    "no_route": "unchanged policy zero request; retain until90s or collision",
+    "no_visual_support": "report unqualified memory comparison, do not call prior motion visual navigation",
+    "source_accuracy": "report all original visible targets; no source accuracy pass claimed"
+  },
+  "budget": {
+    "E0_offline": {
+      "cap": 1,
+      "timeout_wall_s": 900,
+      "recovery": 1
+    },
+    "E1_navigation": {
+      "cap": 1,
+      "sim_s": 90,
+      "wall_s": 2400,
+      "recovery": 1
+    },
+    "fit": 0,
+    "model_download": 0
+  },
+  "priors": [
+    "privileged initial gauge",
+    "flat base height 0.4m",
+    "known robot CAD measured joints",
+    "task ground prior and safe-start prior are not measured free",
+    "static scene",
+    "ideal lowlevel bank feedback",
+    "controlled unknown exploration"
+  ],
+  "memory": "existing RepeatedExposureMemoryGrid recent10s or two epochs persistent; no independence claim",
+  "controller": "existing roll PID and fixed local planning wrappers, no tuning",
+  "no_camera_lighting_exposure_mutation": true,
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/source.py": "0f8918810cc2e9b3f6d6cb4bf4c64acb5ce3fe4bc882678c6a5ae9cfbeb38e8a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/interface_check.py": "0d6fa0618be1bba3a02eb1c73eba7e24baa3d04f394eb28e3d1bb5b98a2f7369",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/offline.py": "0db1877e549e56c6591f650ef39109516e66af754c21bd743c06daabf7b3e222",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/supervise.py": "2920d1ab6854d80b16358d66c52069eb55e093d253493f68a0a286a2bc393534",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/paths.py": "aefffb4d9fef97bc861d25c94e0e9d6430717196222d33ce160d0ed9ad7fc3a5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/stereo_geometry.py": "cb178ce523c12c63b6d265cebfc2f367e8a64dbfc692b350e88ebc4ad9c2ae4d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/dynamic_self_mask.py": "86309cbcbc6cc4e07d73293cc512ce3a217c19929eb898f72a734b1c8b86ed06",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/four_camera.py": "5933e8ff37dc7375e3c19886f2d6adb214feb6aac4d580ed198af3ca114685f8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/camera_exposure_contract_20261015_v1/exposure_contract.py": "dfb0e0ff51d35a682b2ad4b16338f15fbb5a3e608eedda622692a2a5c9b2a421"
+  },
+  "prior_B_root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1",
+  "one_behavior_change": "Only replace B grid class by original CurrentExposureRiskGrid. No history discarded is free."
+}

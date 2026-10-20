@@ -1,0 +1,954 @@
+{
+  "complete": true,
+  "arms": {
+    "A": {
+      "counts": {
+        "initial_or_no_route": 1,
+        "geometry_guard_rejected": 3,
+        "geometry_pass_tube_rejected": 22,
+        "full_guard_pass_unexplained": 0
+      },
+      "events": [
+        {
+          "policy": 60,
+          "time_s": 5.999999865889549,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 175,
+          "time_s": 17.49999960884452,
+          "reason": "geometry_guard_rejected",
+          "tube_screen": null
+        },
+        {
+          "policy": 200,
+          "time_s": 19.999999552965164,
+          "reason": "geometry_guard_rejected",
+          "tube_screen": null
+        },
+        {
+          "policy": 215,
+          "time_s": 21.49999951943755,
+          "reason": "geometry_guard_rejected",
+          "tube_screen": null
+        },
+        {
+          "policy": 335,
+          "time_s": 33.49999925121665,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7211160000362457,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 67,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 370,
+          "time_s": 36.999999172985554,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7138976753298625,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 118,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 405,
+          "time_s": 40.49999909475446,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.8354111648007767,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 78,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 440,
+          "time_s": 43.99999901652336,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7643935372419914,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 90,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 455,
+          "time_s": 45.49999898299575,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7944500125328099,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 74,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 475,
+          "time_s": 47.499998938292265,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7015166031952941,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 99,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 495,
+          "time_s": 49.49999889358878,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7453562489661012,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 68,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 500,
+          "time_s": 49.99999888241291,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7215563496976645,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 70,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 560,
+          "time_s": 55.99999874830246,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.8029393076984562,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 85,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 565,
+          "time_s": 56.49999873712659,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.677938912963461,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 85,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 605,
+          "time_s": 60.49999864771962,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.8356250420842783,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 95,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 675,
+          "time_s": 67.49999849125743,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.79940296958649,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 126,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 705,
+          "time_s": 70.4999984242022,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7010709565081603,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 109,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 710,
+          "time_s": 70.99999841302633,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7915274206998407,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 114,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 725,
+          "time_s": 72.49999837949872,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.8584827707023905,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 134,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 730,
+          "time_s": 72.99999836832285,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7265418614368886,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 117,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 750,
+          "time_s": 74.99999832361937,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7855170710175994,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 132,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 775,
+          "time_s": 77.49999826774001,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.6276524111620773,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 131,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 835,
+          "time_s": 83.49999813362956,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.7789640662680222,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 142,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 840,
+          "time_s": 83.99999812245369,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.6571748391723335,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 149,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 845,
+          "time_s": 84.49999811127782,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.8002197583213471,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 124,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 865,
+          "time_s": 86.49999806657434,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.73327816118869,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 142,
+            "boundary_ring_preserved": true
+          }
+        }
+      ]
+    },
+    "B": {
+      "counts": {
+        "initial_or_no_route": 77,
+        "geometry_guard_rejected": 4,
+        "geometry_pass_tube_rejected": 1,
+        "full_guard_pass_unexplained": 0
+      },
+      "events": [
+        {
+          "policy": 60,
+          "time_s": 5.999999865889549,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 65,
+          "time_s": 6.499999854713678,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 70,
+          "time_s": 6.9999998435378075,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 75,
+          "time_s": 7.499999832361937,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 80,
+          "time_s": 7.999999821186066,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 85,
+          "time_s": 8.499999810010195,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 90,
+          "time_s": 8.999999798834324,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 95,
+          "time_s": 9.499999787658453,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 100,
+          "time_s": 9.999999776482582,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 105,
+          "time_s": 10.499999765306711,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 110,
+          "time_s": 10.99999975413084,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 115,
+          "time_s": 11.49999974295497,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 120,
+          "time_s": 11.999999731779099,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 125,
+          "time_s": 12.499999720603228,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 130,
+          "time_s": 12.999999709427357,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 135,
+          "time_s": 13.499999698251486,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 140,
+          "time_s": 13.999999687075615,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 260,
+          "time_s": 25.999999418854713,
+          "reason": "geometry_guard_rejected",
+          "tube_screen": null
+        },
+        {
+          "policy": 265,
+          "time_s": 26.499999407678843,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 320,
+          "time_s": 31.999999284744263,
+          "reason": "geometry_guard_rejected",
+          "tube_screen": null
+        },
+        {
+          "policy": 340,
+          "time_s": 33.99999924004078,
+          "reason": "geometry_guard_rejected",
+          "tube_screen": null
+        },
+        {
+          "policy": 420,
+          "time_s": 41.999999061226845,
+          "reason": "geometry_pass_tube_rejected",
+          "tube_screen": {
+            "pass": false,
+            "minimum_continuous_cell_clearance_m": 0.8671495099265103,
+            "existing_planning_clearance_m": 0.8707106781186548,
+            "outside": 0,
+            "necessary_nominal_partial_screen_only": true,
+            "no_free_or_completed_volume": true,
+            "certified_safe": false,
+            "risk_cell_geometry_unchanged": true,
+            "path_quantization_removed_only": true,
+            "occupied_grid_cells": 654,
+            "boundary_ring_preserved": true
+          }
+        },
+        {
+          "policy": 600,
+          "time_s": 59.99999865889549,
+          "reason": "geometry_guard_rejected",
+          "tube_screen": null
+        },
+        {
+          "policy": 605,
+          "time_s": 60.49999864771962,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 610,
+          "time_s": 60.99999863654375,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 615,
+          "time_s": 61.49999862536788,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 620,
+          "time_s": 61.99999861419201,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 625,
+          "time_s": 62.49999860301614,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 630,
+          "time_s": 62.99999859184027,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 635,
+          "time_s": 63.499998580664396,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 640,
+          "time_s": 63.999998569488525,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 645,
+          "time_s": 64.49999855831265,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 650,
+          "time_s": 64.99999854713678,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 655,
+          "time_s": 65.49999853596091,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 660,
+          "time_s": 65.99999852478504,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 665,
+          "time_s": 66.49999851360917,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 670,
+          "time_s": 66.9999985024333,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 675,
+          "time_s": 67.49999849125743,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 680,
+          "time_s": 67.99999848008156,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 685,
+          "time_s": 68.49999846890569,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 690,
+          "time_s": 68.99999845772982,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 695,
+          "time_s": 69.49999844655395,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 700,
+          "time_s": 69.99999843537807,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 705,
+          "time_s": 70.4999984242022,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 710,
+          "time_s": 70.99999841302633,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 715,
+          "time_s": 71.49999840185046,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 720,
+          "time_s": 71.99999839067459,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 725,
+          "time_s": 72.49999837949872,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 730,
+          "time_s": 72.99999836832285,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 735,
+          "time_s": 73.49999835714698,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 740,
+          "time_s": 73.99999834597111,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 745,
+          "time_s": 74.49999833479524,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 750,
+          "time_s": 74.99999832361937,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 755,
+          "time_s": 75.4999983124435,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 760,
+          "time_s": 75.99999830126762,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 765,
+          "time_s": 76.49999829009175,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 770,
+          "time_s": 76.99999827891588,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 775,
+          "time_s": 77.49999826774001,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 780,
+          "time_s": 77.99999825656414,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 785,
+          "time_s": 78.49999824538827,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 790,
+          "time_s": 78.9999982342124,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 795,
+          "time_s": 79.49999822303653,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 800,
+          "time_s": 79.99999821186066,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 805,
+          "time_s": 80.49999820068479,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 810,
+          "time_s": 80.99999818950891,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 815,
+          "time_s": 81.49999817833304,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 820,
+          "time_s": 81.99999816715717,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 825,
+          "time_s": 82.4999981559813,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 830,
+          "time_s": 82.99999814480543,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 835,
+          "time_s": 83.49999813362956,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 840,
+          "time_s": 83.99999812245369,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 845,
+          "time_s": 84.49999811127782,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 850,
+          "time_s": 84.99999810010195,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 855,
+          "time_s": 85.49999808892608,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 860,
+          "time_s": 85.9999980777502,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 865,
+          "time_s": 86.49999806657434,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 870,
+          "time_s": 86.99999805539846,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 875,
+          "time_s": 87.4999980442226,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 880,
+          "time_s": 87.99999803304672,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 885,
+          "time_s": 88.49999802187085,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 890,
+          "time_s": 88.99999801069498,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        },
+        {
+          "policy": 895,
+          "time_s": 89.49999799951911,
+          "reason": "initial_or_no_route",
+          "tube_screen": null
+        }
+      ]
+    }
+  },
+  "correction": "trace_result field unguarded_rebuild_example_present used only necessary geometry guard. It must NOT be interpreted as an unguarded or premature reset. Existing additional armed continuous tube gate rejects all22A and1B geometry-pass rebuilds. Raw trace/code/protocol preserved; no rerun or controller change.",
+  "source": "continuous_cell_tube_consumer_v1.py plan_boundary: keep = geometry_guard AND (notarmed OR tube_screen_pass)",
+  "source_sha256": "9d6f11b1e2278b9fb85eb10a8f2c8f5cbe2df601a1cfb189cf87ced1f424a5f2",
+  "corrected_unguarded_rebuild_present": false,
+  "no_new_consumer_admitted": true
+}

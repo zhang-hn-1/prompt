@@ -1,0 +1,7 @@
+# Bounded source-gap diagnostic after the sealed sequence
+
+The frozen source currently produces no bilateral partial points; finish the ONE whole run first, never change thresholds mid-run. If whole source rejects, use its sealed 121 saved RGB/depth predictions, native poses and AFTER-output truth labels for ONE causal-layer diagnosis. This is seen/development, not new held-out or online evidence. No GPU rerun, fit, classifier change or alternate model.
+
+Reuse the original dense metric audit's all-query body and binocular overlap masks and missing-as-failure denominator. Separately count actual visible cylinder query pixels, physically right-overlap-visible pixels, finite predicted points, and current RGB-class support. Compare total/all-epoch counts, no cherry-picking. Test whether the gap enters before depth (FOV/self-occlusion/no binocular overlap), at confidence/matching (visible overlap but no finite depth), or at appearance restriction (metric points but no bilateral class). Preserve floor prior, MODEL vs measured distinctions, old gates and navigation rejects. Save definitions/code/input hashes before labels. Do not assume frozen colour transfer is the only cause, or call no positive measurements observed free.
+
+The output must name the blocking layer and concrete admissible next interface. Do not launch another known-command sequence, alter camera/light or widen thresholds to save this candidate. This diagnostic closes coverage-cause evidence; it does not admit navigation.

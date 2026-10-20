@@ -1,0 +1,9 @@
+# Contingent ONE whole-sequence validation, precommitted before current navigation close
+
+This precommit freezes an independent actual full motion/input sequence ONLY IF the current native-flat-pose navigation passes every unchanged pose/source/actual goal/progress/contact/nominal/guard gate. If any fails, do NOT run this validation as another retry. Read-only known-command native pass alone cannot trigger.
+
+If triggered: same cylinder/task-H priors/rig/light/rollPID/gains/source-memory/planner/caps/60 including14prefix, same start(-2.2,.15,.45)/goal(2.2,.15,.45), initial world yaw +20 degrees (wxyz cos10,0,0,sin10). MaxONE actual. No training/tuning/output inspection of this whole RGB-native stream before freeze; new actual whole stream is fresh for current frozen consumer, environment/command/point families are previously known so no unseen-environment/generalization claim. Prior reverseyaw20 physical point data were used for earlier domainvalidation and remain historical, notthisnewRGB/source/consumerheldout.
+
+Original gates unchanged. Primary actualXYZgoal<=.2 within60/realaxis>=4/obstaclepassed/contact0, source95/class95/area6, nativepose.05/.1/2 t>=1, original nominal.8/retainedguard.6/bodyoverlap0, blind-source labels/latency/independentreferenceprogress/error. No strictAB/RGBphysics equality claim; mapMODEL andfloor/safeprior distinct frommeasuredfree. Oldstrictcoldstart/original35 gate notrescored. A failed validation rejects transfer, no yaw/time/thresholds retry. No source refit/network/PIDscan.
+
+Only combinedcurrent+thisvalidation pass gives adequate explicitconditional-memory baseline evidence to consider ONE next bounded learningincrement/data split; must still preseal whole fit/validation and do not call current model-barrier prior a metricdepth or full3Dsafety certificate. Original35E0E1E2 remain separate task entry. This plan authorizes nothing before all currentrun gates close.

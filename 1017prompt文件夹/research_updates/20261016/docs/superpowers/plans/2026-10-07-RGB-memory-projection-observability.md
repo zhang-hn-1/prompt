@@ -1,0 +1,9 @@
+# Bounded current-RGB memory pose observability audit
+
+Known-pose appearance memory passed only a local readonly domain. Frozen ideal-sensor pose stress failed spatial coverage, preserved. Three gyro quadratures did not establish a fix. Do not continue integration scans or implement a guessed gyro contract change.
+
+One readonly CPU audit on the already-closed sequence, source frames185/190/195 only, no new physics, no network/threshold/rig/PID change. Read only frozen estimated poses, old source geometry and frozen current appearance proofs. For each CURRENT accepted subset, compute the two-eye pixel projection Jacobian with respect to world translation and body rotation (including actual camera lever arms). Central difference step1e-5m/rad, exactly six axes; this is a numerical derivative, not an optimization or parameter scan.
+
+Report rotation-only and full6DOF singular values/rank/condition, translation-rotation column coupling, current accepted point extent, per-axis optimistic uncertainty assuming independent1px measurements. Translation units metres, rotation radians: combined condition depends on this convention. Repeated pixels/texture/depth errors make the1px independent-noise uncertainty optimistic, not a covariance certificate or real sensor noise estimate. Do not use a numerical full rank result to certify accurate pose, or compare a truth-derived residual to choose corrective actions.
+
+Separately, AFTER source-only outputs are sealed, the already-existing true-position/true-orientation diagnostics can be cited but no new truepose correction is fitted. No alignment candidate is admitted here. A candidate, if justified, needs a separate bounded causal objective and fresh whole-sequence validation; otherwise proceed to known-pose provenance-memory consumption while preserving the estimated-pose limitation. Preserve old reports/seals; append ledger with exact continuation and unfinished layers.

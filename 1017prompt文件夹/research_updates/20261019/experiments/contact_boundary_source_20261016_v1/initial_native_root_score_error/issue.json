@@ -1,0 +1,6 @@
+{
+  "issue": "Native root exclusion incorrectly rotated local mount offset by camera rotation; correct B=N@inverse(local). Per-frame .3m position gate also omitted.",
+  "scope": "Offline native score only; acquiredRGB/IMU, oracle target labels, full target denominator, independent rendered-pose oracle unchanged.",
+  "repair": "Reproject existing contact pixels only, no CAD/label regeneration or physics; apply frozen per-frame gate.",
+  "initial_qualification_unfit_for_final_native_claim": true
+}

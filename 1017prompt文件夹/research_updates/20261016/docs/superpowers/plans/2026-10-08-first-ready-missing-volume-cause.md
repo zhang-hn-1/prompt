@@ -1,0 +1,3 @@
+# FIRST2s missing footprint visibility cause only
+
+Firstreadyseed covers174/185<95,REJECT/no laterdatecandidate. Diagnoseexact11missingXYcells atpreselected2s,three fixedfixture-labelheights .05/.5/.95m OFFLINEONLY. Project with archivedtruecamera/depth andcurrentCAD; distinguishoutside,bodyblocked,renderer occluded/geometricallyvisible. .05depthdifference is existinggridwidth diagnostic,notnewacceptancegate. Neitherposthocheightmesh nortruthpointsenterproducer/model. This diagnoseswhethermissedfootprintcouldbeexpectedmeasuredpoints versusunseeninterior/backvolume; cannot proveallgeometry/priorcoverage impossible,fitshape,repairpoints/reclassifyfree oradvancehandoff. No secondtime/source/threshold/network/physics. Preservefirstseedreject.

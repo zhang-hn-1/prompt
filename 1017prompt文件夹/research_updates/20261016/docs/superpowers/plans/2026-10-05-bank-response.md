@@ -1,0 +1,11 @@
+# Current bank response implementation and measurement plan
+
+Required superpowers:executing-plans inline. Spec2026-10-05-bank-response-design.md binding. User autonomous approval supersedes repeatedapproval; keep H isolated/sourcearchives.
+
+Task1: exact source/parameter identity and coverageaudit (oldPIDbyteidentity vs currentgain/rate/supervisor); helpers testcallableRED→GREEN/fullH. Freeze strict32s sequence/.5main/-22.5desiredbank/oneoldproducer window80..84.5/new21..25.5/gatesbeforedata. No parameter alternatives/model/planner changes.
+Task2: mechanical run_large_bank clone with same capturetransaction but explicitcurrentconfig plus completeexec snapshots; preseal wholedeps/inputs, oneactual32sdata. Save raw requests/physics/joints/PID/smoother/applied/bilateralRGBvideos/no tail/allsource identities, inspectpostclosefeedback. Only existinglegacyonewindow remeasure + newfixedwindow; reportsteady/BankMap/V1errors/events separately, no fit.
+Task3: author source/input/count/time/sensor/execution/video verification, PNG; report identity/gap/oldnewconfiguration/measurement/passrejectlimits; ONE freshreadonlyfinal reviewer (capacityfailure disclosedfallback), no science rerun. Appendmission/mainplan/progress while stageplan/spec frozen; oldinputarchives and currentdocSHA separate; finalcheckerPASS before stageclosure, wholeunfinishedACTIVE.
+
+Review focus: control gains/rate/supervisor match actualcurrentendpoint, no hiddenPIDtuning; onlyoneactual sequence and oneoldwindow, exact source/inputs timebeforephysics; raw/encodedbank/smoother/applied layering, measuredXY notyawratio; no futuremeasurement in prediction/no dynamicclaims; legacy steadygates preserved/crossgainprovenance limited; knownstartupGPU requirement isolateenvironmentonly; no formalnav/rates/worldmodel claim.
+
+Pre-data clarification: current formal aux-rate config None falls back to effective smoother30deg/s; actual endpoint snapshot confirms .5235987756. Producer and current effective rates therefore match, not a measuredrate difference. Currenteffective inner(.02dt,.5mainaccel,.5235987756auxrate,.3auxvel) andPID(.4,.1,.7,.02) frozen; oldgain differs, currentpreviouslarge_bankauxvelNone. No causalrole assigned toconfigNone.

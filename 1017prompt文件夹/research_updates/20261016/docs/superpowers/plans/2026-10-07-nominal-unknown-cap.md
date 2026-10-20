@@ -1,0 +1,4 @@
+1. TDD maincap1 helper input/zero/aux/observed equivalence and inheritedact exactlyonce finaldiagnostic. Readonly slowhistory wrapper current-sourcecopy/futureguard. Derivedrunner scientificdiff finalcap+readonlyrole only; staticsymbolaudit. NoPID/mapping/plannerchanges.
+2. Preseal one2m35shistorycandidate protocol, sourceSHA, frozenlocal gates. Actual afterclosedmemoryreviewnoC/I. Source/runtime/firstbranch/smootherphysicalprefix identity, nofullalternativefuturelabels or RGBresetuniformityclaim.
+3. Authorfullphysical/video/SHA/source/mapcausality, newactualprogress/checkpoints/movement-onlyerrors/first-applieddelta/slowshadow prefix. If localpasses then actualONEoriginal6.6mgoal35 SAMEcandidate noothercontrolchange. No capretry.
+4. Report/review/closure eachindependentbranch, appendmission/progress; continueadmissible research ratherthan report-stop.

@@ -1,0 +1,4 @@
+1. Twofixture TDD same-current-shadow label/isolation/future-skip, inheritedmask tests unchanged; exactsource-derivedrunner changes onlyarmconfig/readonlysourcepoint diagnostics, globalsaudit. No new network/controller.
+2. Freezeprotocol/source and runONEhistorylocal2m35s aftercurrent-mask finalreview noC/I. Checkstatus preventduplicate. Nointernalreset/retry.
+3. Authorverifypackets/newcurrentCADmask/sourceprovenance/history-map TTL/removal, readonlycurrentmapdiagnostics, wholevideo/physics/identity, request/APPLIED prefixwithcurrentactual andsourceRGBnuisance separate. Localgoal/noreg/improvementgates unchanged, do notacceptalternativefuturelabels.
+4. ONEfinalreadonlyreview, rulings/closure/appendrecords. Continueappropriate nextwhole-goal or budgetconsumer basedevidence, no endlesssourcecalibration.

@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-17T08:09:48.903633+00:00",
+  "question": "One currentA/B failure attribution: actual reference rebuild/retain guard reasons, request direction changes and pending transition time. Is unguarded replacement visible? No new planner or forced direction implementation.",
+  "domain": "ALL900A+900B sealed policy records, all reference version intervals and all nonzero mean-main-request signchanges ignoringzeros. No cherry-picked oscillation segment.",
+  "budget": {
+    "dispatch": 1,
+    "recovery": 0,
+    "timeout_s": 30,
+    "fit": 0,
+    "physics": 0,
+    "source_regeneration": 0,
+    "replay": 0
+  },
+  "numeric_checks": {
+    "all1800_rows_required": true,
+    "all_identity_checks_pass": true,
+    "unguarded_example_definition": "Any noninitial new-version rebuild with logged retention_necessary_screen_pass exactlyTrue. If0, reject simple unguarded-reset explanation; no held-reference fix. Not a proof of no consumer issue.",
+    "association_window_s": 1
+  },
+  "interpretation": "Exploratory cause analysis after known A/B outcomes. Logged guard and temporal association do not prove unique cause. No new candidate admission or numerical tuning.",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/e1_run/artifact_manifest_post_close.json": "a6ec57293660666bcd82242225841136bd210e96fb0294f4645da0afc56c4be6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/e1_run/policy_records.json": "82cca57644aac65199f6fbabe5bf54edf62bde52b30cbf5f7dc94fdff17dd069",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/artifact_manifest_post_close.json": "0787b89f01fa65d3b8bf117f5d55d43b2eb98a7ac4cf1d5f503c15b823471b54",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/policy_records.json": "29006ee8f15d888c393a5e9ed4fd7c5f2d876d18bf436702b261139bd81b0d5f"
+  },
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/trace_diagnosis.py": "e2d66ee9f695a9a70725e45b6d57d2b6be656e75e91658fd6e152d0e6a742fe0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/trace_supervise.py": "ac72305254a26359ba428942adb570eef93e8a71e32b832ef4d6c0bbc1e228c5"
+  }
+}

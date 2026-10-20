@@ -1,0 +1,5 @@
+# One current-sequence gyro integration diagnostic
+
+Use sealed interface-repaired60s sensors and oneinitialgauge only; no physics/new fit/gravity correction/matrix. Previous full navigation and pose gates remain REJECT. Current measured all-angle error dominatedworldY ratherthan yaw; audit one possible numerical integration source.
+
+Predict original previous-endpoint Euler and ONE trapezoidal angular-velocity alternative (average previous/current in available body frame, explicit approximation), same timestamps/initialgauge/radius unchanged. Rotations only; no world poses/quaternions/velocities or future sensor rows as inputs. Save both prediction series and exact inputs/source hash before reading physical quaternion labels. Truncate at501/poisonfuture test must yield identical first501 outputs. No current-endpoint fallback, threshold, dt scan, gravity intervention, model or benchmark rerun. Original angularp90<=2 evaluated identically on t>=1; pass is only historical numerical consistency, not full pose/navigation model or fresh heldout. If rejected do not choose another quadrature/network; concrete measurement/frame identity audit next if evidence warrants.

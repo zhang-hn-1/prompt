@@ -1,0 +1,11 @@
+# Outgoing endpoint query: sole original35s physical comparison
+
+User autonomous authorization; existing isolated H evidence workspace retained. One EndpointLookaheadPolicy golden_e1_0001, same initial condition, unchanged6s settling prefix and original35s budget. Causal comparator archived cusp_navigation_run, stronger guarded_reference_run and rejected root_direction_run also reported; no rerun or matrix.
+
+Only frozen outgoing_lookahead.py query installation changes. Cusp projection, legitimate reference replacement, five current10HzXY<.05 qualifications/rebound, planner/rootcost/reversecost/nodebudget, gains/speed/BankMap/PID/smoother/supervisor, source memory/unknownrisk, rig/light remain identical. No future truth, full map/reference online, footprint prior, estimated pose or RGB admission.
+
+Same original limited gates independently for all three archived comparators: actual independent reference progress gain>=.05m AND final goal distance decrease>=.05m AND lateral RMS/peak nonregression tolerance1e-5m AND zero physical contact. Real navigation requires goal<=.2m within35s with no physical contact. Checkpoints2/4/6/8m radius.3 descriptive only. CPU pass not navigation admission.
+
+Verify exact physical17nonraw/joint, full execution PID/smoother state, source/history prefix until first REAL raw action divergence (may175, not assumed197). Report raw origin separately. After divergence only candidate own actual successor data can label outcomes. Separate requested/protocol/smoothed/applied signs, joint/root motion, direction qualifications, known primitive endpoint geometry. No threshold inferred from index or accepted latch.
+
+Capture actual bilateral images/depth/knownpose/source map/history, references, physics/contact, PID, both videos without extra tail and full SHA. Full causal reconstruction of policy/map/requests using saved current observations, finite-past future trap and execution with actual measured feedback, explicitly not recursive physical prediction. No control AB beyond this sole query candidate, no postfailure tune/run. One readonly final reviewer, append-only closure/fresh hashcheck. Whole RGB/pose/learning/formalE0E1E2 research stays unfinished/ACTIVE.

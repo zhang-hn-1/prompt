@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-17T07:56:14.433943+00:00",
+  "scope": "All actually completed Aframes/maps/actions before frozen90s/collision/goal terminal. Same fullP0 source teacher metrics and source-supported blind metric. Never skip failed/sparse frames. Known B reference.",
+  "same_equations_and_denominators_as_B": true,
+  "metadata_only_derivations": [
+    {
+      "original": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/evaluate_navigation.py",
+      "original_sha256": "2c90ae4851c5f772965557908b2870d7a62566304a41551b89b7e05d11543302",
+      "derived": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/A_evaluate_navigation.py",
+      "derived_sha256": "0e2d605d09ed7dfa5b61154e7a850d11c46768642db90dcc46cc66d4b04d6ad6",
+      "only_metadata_string_changed": true
+    },
+    {
+      "original": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/supported_memory_diagnostic.py",
+      "original_sha256": "7e383f953e455f9618cdfc9ef70faed180b055f03d8e83a11fe83836351822d3",
+      "derived": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/A_supported_memory_diagnostic.py",
+      "derived_sha256": "d2853045c5487decbf7b5adfdd0dda2f8a1b3ca7fcf40f2148ffb2e36ebfd511",
+      "only_metadata_string_changed": true
+    }
+  ],
+  "B_result_sha256": "8486298aa67083ae30ad7368a2e6d70a8fc909ab534447495bf695c92a1431e0",
+  "B_supported_result_sha256": "15c02dc4d48a2d64889c6a0e76ec22f6a436c764d4298c712a7664d12ae5af68",
+  "GT_postseal_only": true,
+  "main_prediction_source_and_navigation_unchanged": true,
+  "run_outcome_success": "Same<=.2m goal andcontact0 before90s",
+  "numeric_comparison_gates": "Exactly navigation_protocol.json; no postrun threshold change",
+  "evaluation_cap": 1,
+  "recovery_cap": 1,
+  "evaluation_code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/A_evaluate_navigation.py": "0e2d605d09ed7dfa5b61154e7a850d11c46768642db90dcc46cc66d4b04d6ad6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/A_supported_memory_diagnostic.py": "d2853045c5487decbf7b5adfdd0dda2f8a1b3ca7fcf40f2148ffb2e36ebfd511",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/evaluate_A_sealed.py": "a4488e35a9749fbf913d179209c1b66f92da956a10004c319244ed6c7b1719c5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/compare.py": "befa2e4953c4c21aa38b5a20371572a613fea9de44a7a3acc9f3addf9529be58",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/evaluation_supervise.py": "60fe6c5267a137d4c94a53092b4629894d9f50e2acce97ac09366f48888ddb1e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/evaluation_stage.py": "0389c9e5691890c3248ce20837d614c3a4fe391aa96bec020e4c597814f71670"
+  }
+}

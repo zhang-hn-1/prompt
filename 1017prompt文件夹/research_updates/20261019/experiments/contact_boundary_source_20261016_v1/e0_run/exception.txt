@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contact_boundary_source_20261016_v1/collect.py", line 174, in main
+    save_exposure(0)
+  File "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contact_boundary_source_20261016_v1/collect.py", line 152, in save_exposure
+    packets,error=capture(cams,previous,float(clock[2]),cfg['focal_px'],transforms)
+  File "/home/an/Documents/ChatGPT/球型机器人导航/experiments/user_fov_position_only_20261015_v1/four_camera.py", line 21, in capture
+    packets=[snapshot(c,p,time,focal) for c,p in zip(cameras,previous)]
+  File "/home/an/Documents/ChatGPT/球型机器人导航/experiments/user_fov_position_only_20261015_v1/four_camera.py", line 21, in <listcomp>
+    packets=[snapshot(c,p,time,focal) for c,p in zip(cameras,previous)]
+  File "/home/an/Documents/ChatGPT/球型机器人导航/experiments/camera_exposure_contract_20261015_v1/exposure_contract.py", line 38, in snapshot
+    if not np.array_equal(np.asarray(p['renderProductResolution']),[640,480]):raise ValueError('Render product resolution differs')
+ValueError: Render product resolution differs

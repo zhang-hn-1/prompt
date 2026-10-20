@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-17T08:10:14.635646+00:00",
+  "complete": true,
+  "reason": "Independent review found frozen arrival gate omitted from comparison dictionary. Preserve original comparison/code/protocol bytes; report its already-declared false A/B arrival gates here. No source/score/run repeat or thresholds changed.",
+  "original_comparison_sha256": "127a823e124223a4892fa5c1d013437a37d6a5af98ba8b2e2cdd34f9d3af734d",
+  "complete_declared_gate_results": {
+    "minimum_visual_observation_support": true,
+    "collision_noninferiority": true,
+    "blind_missing_noninferiority": false,
+    "latency_noninferiority": true,
+    "net_progress_benefit": false,
+    "false_memory_benefit": true,
+    "arrival_A": false,
+    "arrival_B": false
+  },
+  "all_declared_gates_pass": false,
+  "A_final_goal_distance_m": 5.873934947273041,
+  "B_final_goal_distance_m": 5.450235390762766,
+  "original_rejection_unchanged": true
+}

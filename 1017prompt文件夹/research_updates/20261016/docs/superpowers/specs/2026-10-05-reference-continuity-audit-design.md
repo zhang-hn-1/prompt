@@ -1,0 +1,11 @@
+# Observed-map reference continuity causal audit
+
+Intent: determine whether retaining installed references is a justified single consumer change for the failed local depth navigation. Autonomous user permission supersedes repeated design approval. Existing H is authorized isolation/unborn master, unrelated Git artifacts retained; no old source/model/gate edits or unrelated commits.
+
+Alternatives: blindly keep a world-y side risks invalid paths; change PID/speed/mapping confounds cause. Select independent suffix/bridge geometry plus2x2 observed-map/XY intervention on frozen grid A*. NO simulation/control/GPU inference/Hybrid rerun/model fit this stage; old actual videos reused.
+
+At all58 saved .5s replan events, measure the PREVIOUS installed nominal curve from CURRENT measuredXY against CURRENT observed hazards. Nearest continuous-segment projection starts the suffix, explicit current-to-projection bridge retained. Exact continuous hazard-centre clearance versus original.6; independently sample <=.05m spacing on suffix+bridge against original padded EDT/.6 raster. Unknown remains unknown/explicitrisk; neither check certifies dynamic stopping/full3D. Empty hazards returns null clearance, not observedfree. Duplicate/nonfinite/missing geometry rejects, not empty-safe. Reads current/past only, no future actual feedback.
+
+At historical side switches75/160, max8 frozen grid A* calls: prior/current map × prior/current measured XY, fixed same known goal. Save routes/targets/length/status/hazard additions/witnesses. These are geometry counterfactuals, not alternate physical labels. All58 previous-reference checks firstN/A. Preseal schema/budget/source/input identities BEFORE outputs, old2798SHA/5docs verified first (new ledger append originalprefix checked exactly).
+
+Recommend retention only if BOTH switch suffix+bridge pass original raster and continuous proxy, remainingarc>=oldlookahead.5m and projectionerror<=.5m. This is a necessary diagnostic screen, not new navigation gate. Otherwise reject blanket retention, explain actual source consumer and no extra arm/threshold. No claims of general model/nav success/freshheldout. Output actual rows/routes/JSON/plot/tests/report benchmark_reference_continuity_causal_audit_20261005.md; ONE fresh readonly review, author identity/doc sync. Whole mission ACTIVE.

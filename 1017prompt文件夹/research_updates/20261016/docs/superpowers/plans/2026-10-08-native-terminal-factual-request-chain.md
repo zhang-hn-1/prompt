@@ -1,0 +1,5 @@
+# ONE native-current terminal factual chain audit
+
+Native full60 closed source+pose PASS, goal REJECT. No furthermodel/GPU/terminaltolerance retry; contingentyaw20 nottriggered. Reconstruct identical current native consumer on sealedRGB+estimatedpose+history+source emptygeometry/frozenMODELmemory chronologically; oneact perframe140..599 on an independent clonedpolicy, never twicecallingactualstatefulpolicy. Actual raw requests mustmatchall460 exactly before drawing conclusions. Currentpastonly inputs, no dynamic GT/model future. Capture valid flags/geometry/purepursuit/raw curvature/BankMap/remainingpath/currentgoal/referenceendpoint/direction/state, not stale olddiagnostics. Actortrace sealed before GTfeedback labels.
+
+Postseal quantify normal/terminal curvature supportclipping, currentbodyheading-vs-motion/rolltarget settling/actualrolltracking, lastreference/goalreach/stopbranch. This audit identifies ONE concrete consumptionlayer to target; it doesnotpredictcounterfactualactions ormarkclosedloop/navsuccess. Old .03precisionreject(extra2switches/2.7mvs1.8m) preserved; do not removegateafterdata. No newthreshold/lookahead/PID/NN matrix.

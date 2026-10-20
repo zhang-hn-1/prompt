@@ -1,0 +1,13 @@
+# First primitive measured-motion domain: one candidate
+
+2026-10-08. Existing cost-only root direction has been traced. Frame211, main actual +.4458557 rad/s and XY .1644535 m/s, accepted F, no pending, tracking. Two past/current-only queries preserve target, grid and .870710678 margin: B0 R/R/F…, candidate F/R/R/F…; both 3.6m, cusps1 versus2. This is necessary geometric feasibility, not predicted physical improvement; added cusp is a material risk.
+
+One candidate restricts FIRST expansion to forward only when CURRENT installed normal accepted F, no pending, main >.1, XY >.05 and positive body-longitudinal velocity. Those numerical qualifications reuse existing measured-reversal and stop thresholds; no PID/latch rules change. All other states use original search. Later R remains legal. Root opposite seed omitted to avoid incorrectly making later return-to-root unsearchable. Default None exactly original search.
+
+One fresh knownpose TaskH sequence; fixed acquisition prefix and unchanged repeated-exposure map, source, rig, light, four primitives, cap, planning margin, gains and original combined tube screen. Do not combine rejected observed-tube exception. Same online read-only full-prefix B0, first actual request fork and current physical/smoother/policy state saved; after fork shadow requests are counterfactual requests, never alternate trajectory labels. No actual reset inside. Existing native driver collision/goal precommand checks and54.6 gate remain. No retry or120 continuation unless unchanged gate passes. Both source and geometry are partial, not3D certificate.
+
+Before launch: six search tests plus current-domain and inheritance/prefix tests; one independent first review. Passage requires actual intervention, no contact, unchanged54.6 true progress/goal gate and selected source/causal/runtime interface checks. No reaching gate means no120, no formal35; source pass not navigation pass. Against old actual B0 report RGB variation and no fully paired postfork causal performance claim. No gain/threshold sweep, no second candidate. Old all-forward-only rejection and observed-tube nonintervention preserved. If query or native identity invalid, stop before launch and document.
+
+
+## Minimum-prefix stage final preregistration
+Only current measured inherited coast domain speed.160357897–.224071014, main.427500606–.462269634 andabsbank<=.431354165; normalF/no pending and positive bodylongitudinal required. Out of domain original search. Two .3m primitives=.6 nominal, chosen by ceiling existing .372076/.3, no scan. Firstmask rejected and never physicallyrun. Independent reviewC0I0;4authorCPUtestsPASS/sourceidentitycheckpendingfinal. One1200wall actual stage, unchanged54.6gate/no retry.

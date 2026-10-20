@@ -1,0 +1,34 @@
+{
+  "pass_required_interface": true,
+  "pairs": [
+    {
+      "query": "front_left",
+      "partner": "front_right",
+      "baseline_optical_m": [
+        0.0,
+        0.65012,
+        0.0
+      ],
+      "two_m_disparity_px": 95.8182216553312
+    },
+    {
+      "query": "rear_right",
+      "partner": "rear_left",
+      "baseline_optical_m": [
+        0.0,
+        0.65012,
+        7.961673770616773e-17
+      ],
+      "two_m_disparity_px": 95.8182216553312
+    }
+  ],
+  "focal_px": 294.77087816197377,
+  "baseline_m": 0.65012,
+  "known_fixture_not_performance": true,
+  "CAD_zero_joint_pixels": {
+    "front_left": 37960,
+    "front_right": 38272,
+    "rear_left": 38089,
+    "rear_right": 38067
+  }
+}

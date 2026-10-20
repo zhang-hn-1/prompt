@@ -1,0 +1,397 @@
+{
+  "generated_at_utc": "2026-10-13T05:15:17.100915+00:00",
+  "purpose": "Offline obstacle backgrounds for historical navigation plots",
+  "data_root": "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828",
+  "original_data_read_only": true,
+  "simulation_started": false,
+  "rendering_started": false,
+  "scan_z_m": 0.4,
+  "scan_z_scope": "A section reproducing all saved local labels; not a claim to recover the exact original warmup height.",
+  "mapping": {
+    "npz_keys": [
+      "grid",
+      "origin_xy",
+      "resolution_m"
+    ],
+    "grid_axis_0": "world X",
+    "grid_axis_1": "world Y",
+    "origin_xy": "world XY center of grid[0,0], not a cell corner",
+    "world_cell_center": "origin_xy + [i,j] * resolution_m",
+    "labels": {
+      "free": 0,
+      "occupied": 1,
+      "unknown": 2
+    },
+    "teacher": "Visible collidable Cylinder/Sphere analytic cross-section",
+    "frame_state_alignment": "state index = stereo_physics_step - 1",
+    "quaternion": "wxyz; yaw atan2(2*(w*z+x*y),1-2*(y*y+z*z))"
+  },
+  "software": {
+    "python": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+    "python_executable": "/home/an/miniconda3/envs/ball_wm/bin/python",
+    "numpy": "1.26.4",
+    "pillow": "10.3.0",
+    "openusd": [
+      0,
+      22,
+      11
+    ],
+    "openusd_python_module": "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310/pxr/Usd/__init__.py",
+    "PYTHONPATH": "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310",
+    "LD_LIBRARY_PATH": "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310/bin:/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310/bin/deps"
+  },
+  "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONPATH=/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310 LD_LIBRARY_PATH=/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310/bin:/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310/bin/deps /home/an/miniconda3/envs/ball_wm/bin/python /tmp/export_wm_obstacle_maps_20261013.py",
+  "source_sha256": {
+    "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/scripts/bev_ground_truth.py": "53c1ca3ee2a931f4f153ab31ac4ffb301c0d6e4dd88ceadbef4a4b1299ca6940",
+    "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/scripts/collect_data_dubins.py": "294c4d39716df80cf279e3bc5ef2c23f83f0d234e43deb9633c18b7c84c29dd6",
+    "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/training/evaluate_navigation.py": "4d8e5f1de89e028d782ab05bf5ac1389cb9009b90d24ea12aa0cb8a1dd134ae4",
+    "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/configs/data_contract.yaml": "72b039ac68b829bd714da28e8b69d44c0359de546bef07abade220b313ad462d"
+  },
+  "dataset_manifest_sha256": "7e60a70c1496010d06cd403bbc835aae6b40397d6d676f294138be5e08ebd3ac",
+  "scenes": [
+    {
+      "scene": "scene_easy_0",
+      "usd_path": "/home/an/project/NavDP/assets/scenes/cluttered_easy/easy_0/cluttered-0.usd",
+      "usd_sha256": "8086e4a490ec4088edbbce7f8c19762a52b9428fd7774b8665a1581a189d45fe",
+      "export": "/tmp/wm_obstacle_maps_20261013/scene_easy_0.npz",
+      "export_sha256": "71b20c875b888c2cc4660a15dde76a4d5c9c31272e384d473f20f21b7b86bcc5",
+      "grid_sha256": "0f88b602b8336e8d549729e3511eb99e5cbdaf5d41e7ba8f906598a4c3d6c048",
+      "shape": [
+        620,
+        620
+      ],
+      "origin_xy": [
+        -30.95,
+        -30.95
+      ],
+      "resolution_m": 0.1,
+      "analytic_obstacles": 200,
+      "frames_checked": 300,
+      "pixels_checked": 1920000,
+      "pixel_mismatch": 0,
+      "input_sha256": {
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_0/ep0000/states.npz": "6f3c74eabcff607010c868bb2afaf5cc299d190db97bb9597bbaf608414f38c6",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_0/ep0000/metadata.json": "a975563a30bb517b2acbb6f1d0b10d02217a49b45ac22ed9041e7e938dcd5e81",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_0/ep0001/states.npz": "8840777aaa3f8f16a2de2c1a2b30ba9ff2bdaccc136e1bf72ccbdb0b0e26effd",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_0/ep0001/metadata.json": "e473831d773d260f181b726045831a83cba63097e99650b6a329d3e8245b6a87",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_0/ep0002/states.npz": "9bc0879ae023d7537209100493500f2cb63429ad8627f6ced75194006849e8cd",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_0/ep0002/metadata.json": "d3d0f3ea5c33651c880830362491f70e7189ba23e8ad67ea556d503bc2be05f4",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_0/ep0003/states.npz": "04d8a76f6ba552573a349124af746682774fd9a527de5302817ce3ee82e003fb",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_0/ep0003/metadata.json": "37d0a3c3546f95b3bd8db7284c725f08e83319bb8a5fdbeed863e2007b87697e",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_0/ep0004/states.npz": "9413ebc8227bfe8c9c9ba7b8bc2f8302780994591ff775c066151e7b36cf3d5e",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_0/ep0004/metadata.json": "e7a615e0fcc219fcc22b638af459214bd831f37766319308d69dbe092ec9b284"
+      }
+    },
+    {
+      "scene": "scene_easy_1",
+      "usd_path": "/home/an/project/NavDP/assets/scenes/cluttered_easy/easy_1/cluttered-1.usd",
+      "usd_sha256": "9e0766dfa96b8b769dca9afe772fd6eed5c3811c67aff90c7424fdd83e92917b",
+      "export": "/tmp/wm_obstacle_maps_20261013/scene_easy_1.npz",
+      "export_sha256": "2a28229d8287bf7a6919b204eb91d1c85ba3a01de2a8602881916b32e1c85c36",
+      "grid_sha256": "b0d0bd68997c39aac27680a977d2a21a27245c078ab46df0f4792e929f842c3f",
+      "shape": [
+        620,
+        620
+      ],
+      "origin_xy": [
+        -30.95,
+        -30.95
+      ],
+      "resolution_m": 0.1,
+      "analytic_obstacles": 200,
+      "frames_checked": 300,
+      "pixels_checked": 1920000,
+      "pixel_mismatch": 0,
+      "input_sha256": {
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_1/ep0000/states.npz": "81d40fdd52a072c805b3f9535ef145b8454aa04acd543222d34a93f3b0f8a99c",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_1/ep0000/metadata.json": "1d7ce885305d093a3216211cce7c00600b5e4b6e7694672e3e88b80b576a718b",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_1/ep0001/states.npz": "c0559dc0bf7cecf21f4f9686febe6ca83cb92e938d4c069940ea734800810047",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_1/ep0001/metadata.json": "3c9de8ee700e69dd1054c208d7ddb90ca9aab940ea2480ab96a5f64445925d53",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_1/ep0002/states.npz": "4344e41f1424a00faa34b22c136090498aae8caaae43e8d69bab49c35d475f0d",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_1/ep0002/metadata.json": "23a7030de0424a61b20c0ef1a36b5495a0bbdd24369b2ebab89dbf5045fb432d",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_1/ep0003/states.npz": "9bcef9a1d550377dd7d9eb7498b8cdff92871a402f3e5bf6b3781547d0604686",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_1/ep0003/metadata.json": "3394fff988c7dfbc6341a56486eb4ec5a73e49ab477f80cb4dd58d07f56b2970",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_1/ep0004/states.npz": "48c5e90d97cf783dd2f69ae5373366314dddd5a4cd82d60a5d384e1037065a9c",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_1/ep0004/metadata.json": "b6713d4b052d53df09dfa7f16359288c9cc6ed0679c7cefc91f779f09f7b8de1"
+      }
+    },
+    {
+      "scene": "scene_easy_2",
+      "usd_path": "/home/an/project/NavDP/assets/scenes/cluttered_easy/easy_2/cluttered-2.usd",
+      "usd_sha256": "e35772d903dcdd140096ef3e7b6da27b439205bf511e4f0d18b3a3d31f9459ee",
+      "export": "/tmp/wm_obstacle_maps_20261013/scene_easy_2.npz",
+      "export_sha256": "f3d5f3ef289fe4fdcb919b49ead2f1870dc72fc355680fea6cad0036648811cb",
+      "grid_sha256": "f13a2871a8181fcfdfa28d706a622fc172f0e4f0049c2b5bbeff29855f4b2134",
+      "shape": [
+        620,
+        620
+      ],
+      "origin_xy": [
+        -30.95,
+        -30.95
+      ],
+      "resolution_m": 0.1,
+      "analytic_obstacles": 200,
+      "frames_checked": 300,
+      "pixels_checked": 1920000,
+      "pixel_mismatch": 0,
+      "input_sha256": {
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_2/ep0000/states.npz": "87f38f53614d466be10bfa12329a8f163255c0212bcd80e01acf3c3ac5e87ce1",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_2/ep0000/metadata.json": "cdb9842db08460fa9eee51f023b18368bae46849e367caec473b792a9bdd6c27",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_2/ep0001/states.npz": "45fbc14191ba19324d01e91bca6e6ca87906b2a35e784f0f09ee301933afac30",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_2/ep0001/metadata.json": "a035b43dc968d836328c03e44f63375eef5f52a7948d276b3fa80ced2a71d839",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_2/ep0002/states.npz": "6601671084ade55accdf3f40c8dd43578984886bd3f3758342b0f7a8665ab8eb",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_2/ep0002/metadata.json": "2ae662bce0696915b565a61047f9cc90ed9c4f206097e918b919bae0729e5efe",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_2/ep0003/states.npz": "52e6cd52dbb1a265dbc4de5045fc552e443d36f73ac71df6c86ac0f6a0195891",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_2/ep0003/metadata.json": "d799fad3005597037a6a9db5a29e268b511861dda3dd21963e96220f10d56407",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_2/ep0004/states.npz": "1c0f79a71207f996a787ea344098ea6c67f7cf485e052b08bc5e348d6794596d",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_2/ep0004/metadata.json": "1cffeaea51304d3e7c10b81e7f5767c27d08490b7881fe21d5fbb51d8c27e196"
+      }
+    },
+    {
+      "scene": "scene_easy_3",
+      "usd_path": "/home/an/project/NavDP/assets/scenes/cluttered_easy/easy_3/cluttered-3.usd",
+      "usd_sha256": "0c7543b09b190f65852ee0247d5226d5ac79f1613b0e9ea1467a34456cf30fe7",
+      "export": "/tmp/wm_obstacle_maps_20261013/scene_easy_3.npz",
+      "export_sha256": "6ece76f66fc20ee62dc3fe28eb7be383e24477f3872b82b5a8a65c7c0a2f61c8",
+      "grid_sha256": "d0b398c76313e7e74c629254a0cf6d91754f8936d35692266988ba6b1d8091c5",
+      "shape": [
+        620,
+        620
+      ],
+      "origin_xy": [
+        -30.95,
+        -30.95
+      ],
+      "resolution_m": 0.1,
+      "analytic_obstacles": 200,
+      "frames_checked": 300,
+      "pixels_checked": 1920000,
+      "pixel_mismatch": 0,
+      "input_sha256": {
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_3/ep0000/states.npz": "6792b114215e14c0fd18479f46197c35b467c20fc6d5603065e1c8a1125c0b4b",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_3/ep0000/metadata.json": "0dc32a0fb842b00fd8c8b0e5ef54a2e323c3223679042c1504425bbd1a5c6cec",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_3/ep0001/states.npz": "74f76ba4e9b0465aa1d73a006d154d56e8878f3ffd5f44378757c73d63868e37",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_3/ep0001/metadata.json": "ada119bc721143527aa2ae1f2f42277670d3cbd7eb8d64146c83fb1ab9d62283",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_3/ep0002/states.npz": "13225050104dea2d497772063fbd94f6da6c27bab120988f0dd1628f7b63cc74",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_3/ep0002/metadata.json": "bed6d21e65800cdabf857d206608c12d3e357a023d11f20ac83239f479da2bf6",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_3/ep0003/states.npz": "0979de62cc0616cddf3c12ea5f5e509149993b77022930f9c208892d99fc8036",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_3/ep0003/metadata.json": "be16b0e12ff7c2157d3e2c56c4a82e68b617f1a70324fc5f433d74651b39b723",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_3/ep0004/states.npz": "2dc67bf7026b2132636f6c4f99834ab3de4667fb0b84d8dc20abf29ae4124f7c",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_3/ep0004/metadata.json": "d7a7f26b14de22ebedc8b7f39d487f1646f08a59c584ee694c6fcbb3040577b2"
+      }
+    },
+    {
+      "scene": "scene_easy_4",
+      "usd_path": "/home/an/project/NavDP/assets/scenes/cluttered_easy/easy_4/cluttered-4.usd",
+      "usd_sha256": "f138a86858cd7314dd3242611d7c570899b7fc39512ff63a0924713b14d2b55e",
+      "export": "/tmp/wm_obstacle_maps_20261013/scene_easy_4.npz",
+      "export_sha256": "c7588e8a8324faea8482c25bdbc2c3772b26b29455bb9db855add622539352c0",
+      "grid_sha256": "a4adb0ba277c173683837a5164be0a17181ed36098d1ac8f87ff56887ce1f79e",
+      "shape": [
+        620,
+        620
+      ],
+      "origin_xy": [
+        -30.95,
+        -30.95
+      ],
+      "resolution_m": 0.1,
+      "analytic_obstacles": 200,
+      "frames_checked": 300,
+      "pixels_checked": 1920000,
+      "pixel_mismatch": 0,
+      "input_sha256": {
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_4/ep0000/states.npz": "be5d184c9f852f56e0fa2f664f9d35340a08afeb547ae714b892a52faa8549d0",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_4/ep0000/metadata.json": "78e20115814b2a46412956d3df186ca9658916a3dbbf8857b1abc0f4076704c2",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_4/ep0001/states.npz": "edffa59d7d9d240145b5f036a273e363c343eca9ebf44a69f0ab1831c85bfa33",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_4/ep0001/metadata.json": "47461a7684385fea99ccb2ce44bfd590daee3878000e3f302b968867e0285c2c",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_4/ep0002/states.npz": "6892f57faf0d54776bbb7e140b038475a52ba85eaa91128aff23e92a1786f3be",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_4/ep0002/metadata.json": "4fff33caa763c43d4c5eb02d3dd6a9e86a90d8bc98d39717692a6ec3059bef5f",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_4/ep0003/states.npz": "57ed5a3094d9b597d8a027758981bb8d4ae77d959f33d36da356639c117933e5",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_4/ep0003/metadata.json": "cfd774a36d673a95ab7057038e79dfdef2dc47095740b00586e789594246752b",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_4/ep0004/states.npz": "082252af7d2a84694acd961f4aeacc651ece2e3eba7df72fe88feed800ad8f71",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_4/ep0004/metadata.json": "bca8426befc5369470a47f5665c5d8ba9ee3b9def83dc79652822a0ef494301d"
+      }
+    },
+    {
+      "scene": "scene_easy_5",
+      "usd_path": "/home/an/project/NavDP/assets/scenes/cluttered_easy/easy_5/cluttered-5.usd",
+      "usd_sha256": "ed92710e648bfd52b6ec24e0565559ab7f42c4c4ed2f34e4fe26e13683d25985",
+      "export": "/tmp/wm_obstacle_maps_20261013/scene_easy_5.npz",
+      "export_sha256": "12e282f4c0fa4c3be403db97b5eea016f586ea79522633152d396e830dfca57a",
+      "grid_sha256": "d5476fe292247296fdc4bd8149d4abff4a6a78201dcba2fa084d44ebbda9c566",
+      "shape": [
+        620,
+        620
+      ],
+      "origin_xy": [
+        -30.95,
+        -30.95
+      ],
+      "resolution_m": 0.1,
+      "analytic_obstacles": 200,
+      "frames_checked": 300,
+      "pixels_checked": 1920000,
+      "pixel_mismatch": 0,
+      "input_sha256": {
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_5/ep0000/states.npz": "5789c257ea3476caa24678d3721f934fb7aecc69927b2790ef4b06e2146b660a",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_5/ep0000/metadata.json": "97a1fd48958d67da53bcda50a9c3820f15f5e3854ab7bc20e3c9c0d18a7ed88f",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_5/ep0001/states.npz": "b1e925a4c7afa5d43094dcd7f43c3f3c98d51e88f229e19959f73d1daa7233f6",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_5/ep0001/metadata.json": "7315addc602cdd2b0b9ede3754e2f9924e6ddcd77bd82e69d93067c48b8a1a70",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_5/ep0002/states.npz": "2d33d1c86af0b6f6e6b00955978e2d83038dc02095793400d6a8e00c52d06d30",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_5/ep0002/metadata.json": "70cb84b389e8a93b26937e495df9d120a2957386c85ecf43bd277402dc7d80eb",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_5/ep0003/states.npz": "acaa4566fccf38c0ef1a38d32d6ce2c63303a8e7d946a299b99dc7f6146b4a42",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_5/ep0003/metadata.json": "2aba3c19a350e914977783ed2d90befeda28b20ce4e545da7ab8fcbafec8f1ff",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_5/ep0004/states.npz": "f2c0c6b96ffa80f9ca81c665ccfd22d8a9247f610dd5d6ccca8607b565c406e5",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_5/ep0004/metadata.json": "c077432c5ba742980e0c71865284016829b53334edb24327365c8e047f609c1e"
+      }
+    },
+    {
+      "scene": "scene_easy_6",
+      "usd_path": "/home/an/project/NavDP/assets/scenes/cluttered_easy/easy_6/cluttered-6.usd",
+      "usd_sha256": "74a26159bfa92bf2f768b89aff4a9193994199cc14e13f4b8fad238fc7e5e8e4",
+      "export": "/tmp/wm_obstacle_maps_20261013/scene_easy_6.npz",
+      "export_sha256": "7c08ab90a63e8e37aa8aaf82a6e779fe12d3c170e9ae5abf53b6bf1b68824957",
+      "grid_sha256": "2dc4bd65983228ce45df03e62f4a5e83843ad7ac5521109663aafcebe63447c1",
+      "shape": [
+        620,
+        620
+      ],
+      "origin_xy": [
+        -30.95,
+        -30.95
+      ],
+      "resolution_m": 0.1,
+      "analytic_obstacles": 200,
+      "frames_checked": 300,
+      "pixels_checked": 1920000,
+      "pixel_mismatch": 0,
+      "input_sha256": {
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_6/ep0000/states.npz": "d5e59a901417ef9dd2f5795f592b4659e19bdf7e787bfff4f6d70d8306c5c63c",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_6/ep0000/metadata.json": "4f6597cc46011ea81057e666847cd2256bafad485012bca170aa9c44ca1827bf",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_6/ep0001/states.npz": "5be793c105f4ba097629a0d888ca45d73b44f28ef4da55e3d1069c3dcd2e0e4c",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_6/ep0001/metadata.json": "d6f3ee200d0d923645c65fdc688079b5033ebdf43417fab34b5085ff1d9158e3",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_6/ep0002/states.npz": "0b55074ce1c9f704ce7bd19c434d2ad7af85cb408843838656d5cc7941b0193a",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_6/ep0002/metadata.json": "ae9d934ab719f5483500e3cad3b04bef7a9e27541a2d108d50943c81b16add06",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_6/ep0003/states.npz": "38719f605fb3c2e3503675f7a5999dbd3509786bde02686abcd2f337f094591c",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_6/ep0003/metadata.json": "66036acce4852ea56f1fc5e42167a776aa1f6537928fe0876833ea15f56d4bac",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_6/ep0004/states.npz": "7a4ee226e1045d2b9495ecdafc6ba2e3ee7fe54b9872ed1554fe02b893a508f5",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_6/ep0004/metadata.json": "2c10fd6404e2d90d0e53814426da5a78f114ce1a69c6016478cdcd027c32b391"
+      }
+    },
+    {
+      "scene": "scene_easy_7",
+      "usd_path": "/home/an/project/NavDP/assets/scenes/cluttered_easy/easy_7/cluttered-7.usd",
+      "usd_sha256": "5f56ea043005c42ff147c6627e7c920f6259f8c49f4d239c7c7aef3218c32db6",
+      "export": "/tmp/wm_obstacle_maps_20261013/scene_easy_7.npz",
+      "export_sha256": "8cbe376928001ffaec75ca20242a8c37ca3f1d14dfec7895773b964eba1a5799",
+      "grid_sha256": "50c4ff3272517c7124c53f489141ac1f2f616e47b31539561ff24f10f066b25c",
+      "shape": [
+        620,
+        620
+      ],
+      "origin_xy": [
+        -30.95,
+        -30.95
+      ],
+      "resolution_m": 0.1,
+      "analytic_obstacles": 200,
+      "frames_checked": 300,
+      "pixels_checked": 1920000,
+      "pixel_mismatch": 0,
+      "input_sha256": {
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_7/ep0000/states.npz": "d0ad9f9c499ac0e75f0705a8e70ba0d9bf7dfc09a2df0df8834cbe0a4926223e",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_7/ep0000/metadata.json": "93ead94d91e9c70f83563d342f3a72c1e459ae07ecb948695f7d20c8bbd670f8",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_7/ep0001/states.npz": "b9703aef51ddb5e93e09fce6f2d57e5434df133e55b103b94f9dbab1deeaf53e",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_7/ep0001/metadata.json": "31db31ea745aa647aaf1100c8f1e3f14d9b6c98b7a37efaad1df5c629d868d09",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_7/ep0002/states.npz": "da78efa17b1c12e8f5e2961d48d7cabe71d42385d750ad976496c8cb20b07d9e",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_7/ep0002/metadata.json": "7da4cf7b146a2b1a274db80cbe0ee9bf969a2a34c0a30c1ec8078c2a32d0688b",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_7/ep0003/states.npz": "24429ab3cb040ac1a20b0c99dd5eb2e84b284543decd90029664a12920d2c6b4",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_7/ep0003/metadata.json": "5e5804378719ea69af4e95ef822f742b7520f05baaad082199c9266e8d5b1671",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_7/ep0004/states.npz": "fddecb6cd4f989d0eb3cd9701a7557003e4ce6ec84f4877725676facb2150210",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_7/ep0004/metadata.json": "45fde0336eccd0034b10e40025e5d3c934b730f855207b3dee38c9ecfae433e5"
+      }
+    },
+    {
+      "scene": "scene_easy_8",
+      "usd_path": "/home/an/project/NavDP/assets/scenes/cluttered_easy/easy_8/cluttered-8.usd",
+      "usd_sha256": "7371a7cc818bef7a8319fb7b35c909faa51fff2bd6771cb9fe65a25a22cdccab",
+      "export": "/tmp/wm_obstacle_maps_20261013/scene_easy_8.npz",
+      "export_sha256": "3dd21fdf0f933061a46d954b952e2e02208c53a2db480234fca10f5a23909bdb",
+      "grid_sha256": "8a800d8ed485836d2da89055e0a16c9257a13f7b0c68784e1eb1ecc48fd3f816",
+      "shape": [
+        620,
+        620
+      ],
+      "origin_xy": [
+        -30.95,
+        -30.95
+      ],
+      "resolution_m": 0.1,
+      "analytic_obstacles": 200,
+      "frames_checked": 300,
+      "pixels_checked": 1920000,
+      "pixel_mismatch": 0,
+      "input_sha256": {
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_8/ep0000/states.npz": "847f65b7de91b48e237123790ef75289d875173ecf25eec8fdaa937c8e310185",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_8/ep0000/metadata.json": "29e9198b1990e2a76f7666667925da02671ac30f4a7282ac678dc12d9dd7024a",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_8/ep0001/states.npz": "dad818e571e84b98b030b2c52b5f2889e38ca44c8a92c171f85e00ac8ab5c4cc",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_8/ep0001/metadata.json": "a8df3944939f984e250e9cd24b6559be10f4586fc03e230b94fc8276f1d36220",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_8/ep0002/states.npz": "0ba807fdb87a3551aa0e9ab3b9cde0d8c434fa71a87138e999a918db22f8e3fb",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_8/ep0002/metadata.json": "cf5143c211fcc1d9c5cceb9cfafa61d61d9aa642e5850cb72710d907e6cab6ea",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_8/ep0003/states.npz": "a9c104ca8cd0d2be253b12b9246c66ae83177199b92b7abdf672827ab33b75e7",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_8/ep0003/metadata.json": "983872adde9927cae8f5d1449d6750010811a82c9a21f23bdd151061a995649a",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_8/ep0004/states.npz": "32bf3a1671244f79299ff37e578ae9ad34daa41b95d93b26ff2567b718c2911a",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_8/ep0004/metadata.json": "b66b11566ac9793ab8a237fac71575e4f1f17acaf0606a284708bded8dcf6df0"
+      }
+    },
+    {
+      "scene": "scene_easy_9",
+      "usd_path": "/home/an/project/NavDP/assets/scenes/cluttered_easy/easy_9/cluttered-9.usd",
+      "usd_sha256": "75c00c32df0e02b5c5d52cbee4d1cc27c1d1a4425edabbd9575a3ce467b96b90",
+      "export": "/tmp/wm_obstacle_maps_20261013/scene_easy_9.npz",
+      "export_sha256": "e7426228b6a909d3252671f23656fdb8c948a32f1d9e2f4f6faf6850b6a12f2f",
+      "grid_sha256": "9d606d215fc0e342f4f1b03d6bdf1dba961c18583c58b8777bd1a90bea90ad12",
+      "shape": [
+        620,
+        620
+      ],
+      "origin_xy": [
+        -30.95,
+        -30.95
+      ],
+      "resolution_m": 0.1,
+      "analytic_obstacles": 200,
+      "frames_checked": 300,
+      "pixels_checked": 1920000,
+      "pixel_mismatch": 0,
+      "input_sha256": {
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_9/ep0000/states.npz": "87bd665a55530fff347572f0e0efab6403b67bb85d4f17626eab48c20d58aaf1",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_9/ep0000/metadata.json": "4f3581fb6bd113084c5ceb1e734b7f876563721ee3e8f923edc7f318fb021ac4",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_9/ep0001/states.npz": "b3769c5770ed4fb590f5941f64f3462af6f17309ac0a6f77a79b2e946ed34c79",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_9/ep0001/metadata.json": "be8d207faafb14fd6656f4a8bc26e0306cee63dd31260fc9ebd9fc29f59e5c31",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_9/ep0002/states.npz": "91e323a32e21be382d9cb92eccf29b714f1afc5407b24fc9cab173b164cf8e98",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_9/ep0002/metadata.json": "6c00de63ef760837a2171c7c75f9f5ead067148926ba372f738bdcac8ee7af59",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_9/ep0003/states.npz": "d98f35daf4e518c230c6aead720cff16b1093bd8a8d02ef46e757070dd1a9ce1",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_9/ep0003/metadata.json": "2bea553761bb6b70190dcec839c1e00337123c765a092ddeda00ede6b6111d48",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_9/ep0004/states.npz": "1fa3dea5c77b2b00f8d7b1b882ae81ffe57a0fc46db1ab3fe8c719b4ec376fed",
+        "/home/an/project/ball_wm_project_full/.worktrees/isaacsim-bev-collector/research/ball_wm/data/trajectories_dubins_2p5d_20260828/scene_easy_9/ep0004/metadata.json": "3f626a34e16b4b17a29b0abbf807a65e7723116076b0d3f184876f57cc3063ff"
+      }
+    }
+  ],
+  "limitations": [
+    "Historical metadata has no USD hash or persisted global map.",
+    "Exact agreement covers saved sampled local cells; it does not prove historical identity of unsampled regions or every dependent asset.",
+    "The map is the analytic BEV teacher section, not a full 3D robot envelope or a physical-contact detector.",
+    "Collection trajectory_map.png is not a historical navigation trajectory."
+  ],
+  "verification": {
+    "scenes": 10,
+    "episodes": 50,
+    "frames_checked": 3000,
+    "pixels_checked": 19200000,
+    "pixel_mismatch": 0,
+    "all_export_reload_checks_passed": true
+  }
+}

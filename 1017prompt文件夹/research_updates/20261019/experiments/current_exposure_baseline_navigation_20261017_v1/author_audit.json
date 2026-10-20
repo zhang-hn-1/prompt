@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "manifest_files": 2185,
+  "manifest_sha256": "a6ec57293660666bcd82242225841136bd210e96fb0294f4645da0afc56c4be6",
+  "source_frames": 181,
+  "source_points": 1353136,
+  "policy_maps": 900,
+  "all_A_map_risk_equals_latest_actual_source_risk": true,
+  "all_unknown_never_observed_free": true,
+  "all_risk_acquisition_clock_matches_latest_source": true,
+  "map_risk_cell_queries": 84260,
+  "decoded_video_frames": {
+    "front_left": 181,
+    "front_right": 181,
+    "rear_left": 181,
+    "rear_right": 181
+  },
+  "native_IMU_physics_samples": 4501,
+  "shared_A_B_loaded_module_bytes_equal": 103,
+  "source_copy_bitwise": true,
+  "no_GT_decision_or_new_inference_run": true
+}

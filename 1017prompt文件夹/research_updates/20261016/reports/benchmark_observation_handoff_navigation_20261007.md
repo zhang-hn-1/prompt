@@ -1,0 +1,34 @@
+# Observation-to-navigation handoff, actual closed-loop A/B
+
+**Interface passed, navigation improvement REJECTED.** B0collision10.6s/goalremaining2.049676118m/5physics contact samples; observationcandidate35sTIMEOUT/2.834362620m/contact0. Neither crossedX=0 nor reachedactualgoal. Avoidingcontact while retreating/oscillating is not success. Original35s budget includes18s observation; same .3cap/currentRGB knownpose/groundprior/controlledunknown/PID/planner/source/rig/light, declared2.6m near task atbodyyaw−20. It is not formalE1 or full6.6m navigation/SPL. No learned model installed; Mmem1/source/M1/M2/oldnavigation refusals remain.
+
+Candidate action source only: B0called once per actualstep for nominal diagnostics, fixedzero0–6/main−.3aux0at6–12/zero until≥18 plusfivecurrentXYspeed<.05 and≥100currentprovisionalhazardqueries/sourceage≤.5s; latchedhandoff tosameB0. Duringoverride nominaltrackingfields are explicitlynotapplied. No internalphysics/PID/smoother/policy reset, no forcedfutureactions. Provisionalquerycount is not measureddepthcorrectness or safety. Actualhandoff17.999999598s(frozen1e−6float32tickalignment),2017provisionalhazardpoints/currentXY .016725804. Subsequent measured request/source branch followsB0, not a known future schedule.
+
+## Actual execution and reproducibility
+
+B0exit0,106requests/107captures/531physics/22inferences; candidateexit0,350/351/1751/71. Author2070/3975source+closedartifact identities, all pairedCAD/source fields/maps/readonlyoppositememory diagnostics/currenttime/futuretrap andactualrawcommands reconstructed. Eachstereo/thirdpersonvideo fullydecodes107/351frames10fps. Same initial6s: first60requests/301physics samples,16nonrawfields plusrawcommand targets and61completeexecutionsnapshots exactlysame. Rawclockdifference0. Realappliedactions differ thereafter (seecomparison_v2), so not equivalent preprocessing. Prebranch0of12RGBexposure pairs are exactlyequal: all0/5/.../55frames differ acrossrendererresets. Thus there is an RGBreset confound despite the exactphysics/requests prefix; this is a task/interface A/B, not a pure isolated action-source causal effect. SharedB0horizon230appliedticks reallydiffer.
+
+Runtime interruption: firstdriverexit143externallySIGTERM duringcandidatebeforefinalphysics/metrics; exactexternalcauseunestablished,hostPythonprocesscheckempty. B0hadcompletedexit0 andwasnotrerun. Originalpartialcandidate/logs/sourceprotocol preserved; no scientificresult/freshclaim frompartial. ExactlyONEadministrative recovery samecandidate/newoutputnamespace usingbackgroundexecution, sameconditions/controller/gates;35sclosed resultabove. Thus twocompletedscientificarms plusoneexplicitinterruptedattempt, nottwoindependentcandidatevalidationruns. No furtherretry/parametersearch. Prelaunchdraftclockfiles preserved; schedulehelperreusedfrozenretreat1e−6boundary. Three literalREDmissingmodule→firstGREENfailedfloat32expectation→correctdtypefixtureGREENv2; full453PASS22.04s. Originalfailedlogs andbyteidentitiesretained.
+
+## Progress and control failure are distinct
+
+Same frozen old .6m point-grid diagnostic reference, evaluated from actualXY withoutcontrollerindex. B0endprogress .027808564m/RMS .207386916/peak .550512534; candidate0m/RMS .501742625/peak .780763939. Reference takeslowerdetour; RGBnominalplans canchooseotherbranches, so thisdifference alone doesnotprovewronglocalpath. Bothactualmidplane/goalFAIL independently. Candidateactualgoal-lineprogress−.232716757m, actualpath2.521453327m; moving2.52m isnotforwardmissionprogress. Goalremainingincreased .234m fromdeclared2.6start. There is no navgainadmission.
+
+Afterhandoff170blocks:113normaltracking,57direction-changebraking (5.7s); correct low-speedconfirm/rebound semantics retained. No no-route branch observed inthisclassification; a successfulnominalplan canstillinduce repeatedreversals. The21srebuild actualguard rejectsoldroutecontinuousclearance .518897m<.6andraster .5<.6; returnedreference startsreverse, thenB0brakes. Do notforce-retainorforce-forward; newlyreportedhazardvalidity mustbe checked separately.
+
+## Bounded source and heading audit
+
+Exactlyfiveclosedsourceevents selectedbyfrozenrule18/19/20 plusfirstthree≥20rebuildsourceevents(20duplicate,21,31.5), maxsix. Predictedhazardcorrect≤.10m/total:18s2016/2017,19s1899/1902,20s448/452,21s1/361,31.5s88/356. At21s onlyONEhazardqueryhasfiniteGT; remaining360are**insufficientrenderer endpoint labels**, cannotbe reclassified as360provenwrong withoutmoreevidence. They are unsupportedandremaininunconditionaldenominator. Theconsumerstillturns theseprovisionalpoints intohazardcells, invalidatingreference/choosingreverse. Stable18saccuratesnapshot clearlydoesnot certifylatermovingmeasurements. No labelgaterescoring/truthfilteredruntime.
+
+On87validnormaltrackingrowswithmeasuredcourseavailable(XYspeedminimum .0515971), medianabsvelocitycourse-versus-bodymotionangle31.238617deg; course-versusreference28.900939deg, whilebodyheadingerror2.633204deg. Theseareactualfreshintermediates, notearlyreturnstalediagnostics. This supports a separate tracking-feedbacksignal mismatch hypothesis, not a proven gain/sign/mappingbug. Bothsource/routeupdatesandactualmotionalignment maycontribute; do notblameonlyobservationdelayoronlytracking.
+
+Authorviewedobservation_handoff_actual.png: candidate oscillatesbehindwall withrepeatedstops; independentfrozen-reference overlay andactualspeedtrace show failure. Nextboundedwork should first comparecurrentpacketinnovations againstpastqualifiedgeometry in a deterministicprovenance-preservingtemporalconsumer (old10s lifetime, noGT/sourcefreepromotion), thenchooseonecontrolconsumer usingthat source evidence. Do notfit anothernetwork,extendTTLindefinitelyorchangePID/speed/planner together. TrackingcoursefeedbackcanbetestedtraditionallywithoutM2/Mmem1acceptance onceitsinterfacegeometrysignsareverified. Formal35sE0/E1/E2 and fullreliableRGB+estimatedposenavigation remain unfinished.
+
+Evidence: observation_handoff_navigation_protocol/derivation/prelaunchchecks, actualB0run, interruptedobservev1, runtime_interruption_v1, recovery_protocol/status/driver/source/newactualrun, twoassessments, comparison_v2, causepreanalysis/diagnostic, fullvideos/rawRGB/physics/maps/executions/requests, actualfigure. Atcreationauthor-only; oneindependentreview will separatelyrecord personaland inheritedchecks. WholeprojectNOTcomplete, automaticcontinuationremainsactive.
+
+
+## 独立首次审查追加（旧报告字节保留）
+
+0 Critical /0 Important /1 Minor；亲查453项测试、5277唯一文件哈希、456实际请求、93来源包、1824地图数组、五事件和87有效跟踪行。支持接口通过、导航拒绝，未把21秒360个无标签端点当作已证实错误。Minor是接口允许重复同一时间戳累计低速计数；本轮实际请求时间严格递增，不影响结果。冻结本轮源码和结果，未来接口复用时须独立防重复，不能倒改本次运行。审查不覆盖下一阶段过滤器。
+
+详见 `../experiments/stereo_memory_navigation_20261004_v1/observation_handoff_review_final.md` 和 `observation_handoff_review_personal_checks.json`。旧字节SHA256：2546446c55cf0d900bb8b21ebd573213cb5d2f80c366e0629c9f4efc048d25ee

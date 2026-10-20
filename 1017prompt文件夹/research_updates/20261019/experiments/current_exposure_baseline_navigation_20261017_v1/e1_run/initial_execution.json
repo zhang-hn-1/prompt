@@ -1,0 +1,44 @@
+{
+  "schema": "frozen_bank_pid_execution_snapshot_v1",
+  "protocol": {
+    "protocol_id": "ball_action_v2_aux30",
+    "minimum": [
+      -2.0,
+      -0.5235987756
+    ],
+    "maximum": [
+      2.0,
+      0.5235987756
+    ],
+    "controls_per_block": 5
+  },
+  "inner_config": {
+    "dt_s": 0.02,
+    "max_main_acceleration_rad_s2": 0.5,
+    "max_auxiliary_rate_rad_s": 0.5235987755982988,
+    "max_auxiliary_velocity_rad_s": 0.3
+  },
+  "inner": {
+    "current_action": [
+      0.0,
+      0.0
+    ],
+    "last_smoothed_target": [
+      0.0,
+      0.0
+    ]
+  },
+  "pid_config": {
+    "kp": 0.4,
+    "ki": 0.1,
+    "kd": 0.7,
+    "dt": 0.02
+  },
+  "pid": {
+    "integral_output": 0.0,
+    "previous_bank": null,
+    "rate": 0.0,
+    "last": {}
+  },
+  "blocked": false
+}
