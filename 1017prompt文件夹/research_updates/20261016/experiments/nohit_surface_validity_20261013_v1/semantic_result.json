@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "label": "cube2m",
+      "centre_depth": 1.7500001192092896,
+      "positive_inf": 7100,
+      "zero": 0,
+      "nan": 0,
+      "finite_positive": 12100,
+      "pixels": 19200
+    },
+    {
+      "label": "clipped15m",
+      "centre_depth": "inf",
+      "positive_inf": 19200,
+      "zero": 0,
+      "nan": 0,
+      "finite_positive": 0,
+      "pixels": 19200
+    }
+  ],
+  "gate": true,
+  "no_hit_output": "positive_inf",
+  "probe_physical_run": 1,
+  "not_navigation": true,
+  "fit": 0
+}

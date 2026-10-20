@@ -1,0 +1,62 @@
+
+==================================== ERRORS ====================================
+_ ERROR collecting research_additions/experiments/stereo_memory_navigation_20261004_v1/test_nonbinding_side_hypothesis_v1.py _
+research_additions/experiments/stereo_memory_navigation_20261004_v1/test_nonbinding_side_hypothesis_v1.py:4: in <module>
+    from route_side_commitment_grid_v1 import RouteSideCommitmentGrid
+research_additions/experiments/stereo_memory_navigation_20261004_v1/route_side_commitment_grid_v1.py:4: in <module>
+    from static_sparse_point_risk_grid_v1 import StaticSparsePointRiskGrid
+research_additions/experiments/stereo_memory_navigation_20261004_v1/static_sparse_point_risk_grid_v1.py:6: in <module>
+    from partial_point_risk_grid import PartialPointRiskGrid
+research_additions/experiments/stereo_memory_navigation_20261004_v1/partial_point_risk_grid.py:6: in <module>
+    from execution_domain_four_point_consumer_v2 import TrackingTubeGrid
+research_additions/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_consumer_v2.py:11: in <module>
+    from execution_domain_four_point_source_v2 import supported_curvature,supported_requests
+research_additions/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_source_v2.py:12: in <module>
+    assert sha(H/('reverse_straight_'+arm+'_assessment_v1.json'))==row['assessment_sha256']
+research_additions/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_source_v2.py:6: in <lambda>
+    sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+/home/an/miniconda3/envs/ball_wm/lib/python3.10/pathlib.py:1126: in read_bytes
+    with self.open(mode='rb') as f:
+/home/an/miniconda3/envs/ball_wm/lib/python3.10/pathlib.py:1119: in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/an/Documents/ChatGPT/球型机器人导航/git_publication_core_20261008/research_additions/experiments/stereo_memory_navigation_20261004_v1/reverse_straight_development_assessment_v1.json'
+_ ERROR collecting research_additions/experiments/stereo_memory_navigation_20261004_v1/test_static_sparse_point_risk_grid_v1.py _
+research_additions/experiments/stereo_memory_navigation_20261004_v1/test_static_sparse_point_risk_grid_v1.py:2: in <module>
+    from static_sparse_point_risk_grid_v1 import StaticSparsePointRiskGrid
+research_additions/experiments/stereo_memory_navigation_20261004_v1/static_sparse_point_risk_grid_v1.py:6: in <module>
+    from partial_point_risk_grid import PartialPointRiskGrid
+research_additions/experiments/stereo_memory_navigation_20261004_v1/partial_point_risk_grid.py:6: in <module>
+    from execution_domain_four_point_consumer_v2 import TrackingTubeGrid
+research_additions/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_consumer_v2.py:11: in <module>
+    from execution_domain_four_point_source_v2 import supported_curvature,supported_requests
+research_additions/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_source_v2.py:12: in <module>
+    assert sha(H/('reverse_straight_'+arm+'_assessment_v1.json'))==row['assessment_sha256']
+research_additions/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_source_v2.py:6: in <lambda>
+    sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+/home/an/miniconda3/envs/ball_wm/lib/python3.10/pathlib.py:1126: in read_bytes
+    with self.open(mode='rb') as f:
+/home/an/miniconda3/envs/ball_wm/lib/python3.10/pathlib.py:1119: in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/an/Documents/ChatGPT/球型机器人导航/git_publication_core_20261008/research_additions/experiments/stereo_memory_navigation_20261004_v1/reverse_straight_development_assessment_v1.json'
+_ ERROR collecting research_additions/experiments/stereo_memory_navigation_20261004_v1/test_partial_point_risk_grid.py _
+research_additions/experiments/stereo_memory_navigation_20261004_v1/test_partial_point_risk_grid.py:2: in <module>
+    from partial_point_risk_grid import PartialPointRiskGrid
+research_additions/experiments/stereo_memory_navigation_20261004_v1/partial_point_risk_grid.py:6: in <module>
+    from execution_domain_four_point_consumer_v2 import TrackingTubeGrid
+research_additions/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_consumer_v2.py:11: in <module>
+    from execution_domain_four_point_source_v2 import supported_curvature,supported_requests
+research_additions/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_source_v2.py:12: in <module>
+    assert sha(H/('reverse_straight_'+arm+'_assessment_v1.json'))==row['assessment_sha256']
+research_additions/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_source_v2.py:6: in <lambda>
+    sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+/home/an/miniconda3/envs/ball_wm/lib/python3.10/pathlib.py:1126: in read_bytes
+    with self.open(mode='rb') as f:
+/home/an/miniconda3/envs/ball_wm/lib/python3.10/pathlib.py:1119: in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+E   FileNotFoundError: [Errno 2] No such file or directory: '/home/an/Documents/ChatGPT/球型机器人导航/git_publication_core_20261008/research_additions/experiments/stereo_memory_navigation_20261004_v1/reverse_straight_development_assessment_v1.json'
+=========================== short test summary info ============================
+ERROR research_additions/experiments/stereo_memory_navigation_20261004_v1/test_nonbinding_side_hypothesis_v1.py
+ERROR research_additions/experiments/stereo_memory_navigation_20261004_v1/test_static_sparse_point_risk_grid_v1.py
+ERROR research_additions/experiments/stereo_memory_navigation_20261004_v1/test_partial_point_risk_grid.py
+!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
+3 errors in 1.12s

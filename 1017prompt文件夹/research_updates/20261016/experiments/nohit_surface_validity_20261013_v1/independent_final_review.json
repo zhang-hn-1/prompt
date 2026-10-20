@@ -1,0 +1,20 @@
+{
+  "scope": "final independent source/result/image review; no launch/edits to closed stages",
+  "identities": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nohit_surface_validity_20261013_v1/result.json": "cf62089699c289c4e07b173a10c5d443c9391a36c798d201f71fa82c848f8c85",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nohit_surface_validity_20261013_v1/replay_maps.py": "bb01ab5ad186945eeedbb61d415e088edcb8153a4328cae7b95450a840bf48df",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nohit_surface_validity_20261013_v1/map_replay_results.json": "a66e806c0ff43731bd083e6ada69489b12fd608a58fb800693dd77f7afd0d8e4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nohit_surface_validity_20261013_v1/visualize_filter.py": "9feddabb63b95ffc573f5e508b34b586b0f31714c70ba1d90913d11762b935dc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nohit_surface_validity_20261013_v1/visual_selection.json": "2edb7d84f536bcee6fd9e83a51b9a14e493d2a9cd9c8fd03911e664bb6323f61",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/safe_start_disparity_anchor_20261013_v1/run.py": "1e74b3188b4d02769d1cb7dba9b9e009646f824fc3eb873c54eab3f76cf209f3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/safe_start_disparity_anchor_20261013_v1/protocol.json": "e34ad024aa24f2df9d0f436f251c7628c71ae7dedf7c84f19ab482950671d840",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/safe_start_disparity_anchor_20261013_v1/result.json": "0698865548101351e955e294b0d205e2d648f86b07fb061654593fa6e9f76f69",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/safe_start_disparity_anchor_20261013_v1/prediction_seal.json": "0f52808d316fce9a5975659afcdd480c5ee1fa14c29a90873e9e36c5f4e13229"
+  },
+  "nohit_result": "Single fitted model rejected: all H/E0/E1 development gates false; removal improves some nohit scores while discarding real obstacles. No navigation admission.",
+  "replay": "Query identity and aligned source fields filtered in same saved actual trajectory; truth occupancy consulted only after replay. E1 cells175\u2192173 and farreference30\u219229; E0 cells127\u2192121 and8\u21928. Supports small final-map difference on these histories only, no new navigation or full-recall claim.",
+  "visual_inspection": "Viewed E1 direct-depth and map images. Worst-epoch selection disclosed (47s11.4% obstacle retention), not representative average. Sparse sources and clipped depth colors labelled; map image labels same-trajectory counterfactual and unknown background. Plot would benefit from explicit color legend in caption.",
+  "anchor": "Current optical rays intersect privileged z0 floor initialnative safe disk .7m; first qualifying current epoch latches bias, causal onwards; vertical disparity restore and fB formula correct. Predictions sealed before renderer truth reads. No eligible anchor epoch; all unavailable and rejected fit0physics0.",
+  "anchor_receipt_limit": "prediction_seal binds raw input/output but omits run/protocol source hashes; final manifest should bind sources",
+  "claims_limit": "No physical free-space, independent heldout generalization or navigation improvement supported. Baseline fallback depth with calibrated=false is descriptive only when anchors unavailable."
+}

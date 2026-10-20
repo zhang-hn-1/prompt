@@ -1,0 +1,66 @@
+{
+  "utc": "2026-10-17T16:47:52.319519+00:00",
+  "outputs": [
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_000_constant.npz",
+      "sha256": "9c950a40e5e0cddbcdf0d6b71c0003aa84c0f51fd03389fb2b20a8cbd8ad975e",
+      "arm": "constant",
+      "sequence": "E0",
+      "frame": 0
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_000_replicate.npz",
+      "sha256": "36273c72d2e0f962bfeea76dfe3bd31ac5bc772c797af0d8d5244c82607b7696",
+      "arm": "replicate",
+      "sequence": "E0",
+      "frame": 0
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_055_constant.npz",
+      "sha256": "cf7a328a2b3df5144a97ce1b0afe007846ceaa05840b9ad1a2e935895bdaca50",
+      "arm": "constant",
+      "sequence": "E0",
+      "frame": 55
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_055_replicate.npz",
+      "sha256": "b6f776e0567cc8b974314e901626765a13eb99cd5764771018c016de638ebd8f",
+      "arm": "replicate",
+      "sequence": "E0",
+      "frame": 55
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1B_000_constant.npz",
+      "sha256": "2941afb5084ebec8c804372b1ae47bb73f243e267aa86769817bf626ed3e238b",
+      "arm": "constant",
+      "sequence": "E1B",
+      "frame": 0
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1B_000_replicate.npz",
+      "sha256": "cdb8f17cd4f9d246e96cb3759101086f217b471ef6d2736061a42f9cc3f87131",
+      "arm": "replicate",
+      "sequence": "E1B",
+      "frame": 0
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1A_090_constant.npz",
+      "sha256": "2d1f2d7d48b69f56652b0a29495dc027dd6d82a70155df5fdd9985963e32f52c",
+      "arm": "constant",
+      "sequence": "E1A",
+      "frame": 90
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1A_090_replicate.npz",
+      "sha256": "d39a4b654189559a9e452f5c4354d99fbfba245b0bd69e6a6d5802a544d9f1ee",
+      "arm": "replicate",
+      "sequence": "E1A",
+      "frame": 90
+    }
+  ],
+  "baseline_16arrays_exact": 64,
+  "baseline_sourcepoint_arrays_exact": 48,
+  "GT_read": false,
+  "matcher_calls": 32,
+  "point_projection_calls": 8
+}

@@ -1,0 +1,33 @@
+{
+  "dispatch_used": 1,
+  "dispatch_cap": 1,
+  "recovery_used": 0,
+  "recovery_cap": 0,
+  "matcher_calls": 0,
+  "source_calls": 0,
+  "map_calls": 0,
+  "fit": 0,
+  "physics": 0,
+  "navigation": 0,
+  "parent_pid": 143070,
+  "status": "runtime_failed",
+  "execution": {
+    "status": "runtime_failed",
+    "start_utc": "2026-10-17T16:49:16.179983+00:00",
+    "parent_pid": 143070,
+    "child_pid": 143071,
+    "process_group_id": 143071,
+    "child_returncode": 1,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T16:49:16.345583+00:00"
+  },
+  "closed": true,
+  "remaining_dispatch": 0,
+  "remaining_recovery": 0,
+  "closure_reason": "Author floor/rint interface error, frozen recovery0; no teacher attribution results/no retry"
+}

@@ -1,0 +1,184 @@
+{
+  "complete": true,
+  "utc": "2026-10-19T08:49:24.537376+00:00",
+  "rows": [
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "arm": "baseline",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E0_000_masked.npz",
+      "sha256": "dbc3c3b7a820a498ab0bbda47e101110ebf74b1770534a6354325417136a378c",
+      "reused_closed_reference": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "arm": "self_supported",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_supported_cost_repair_20261019_v1/E0_000_self_supported.npz",
+      "sha256": "59ab5f417c9e492e8f72522c6fe76cc8caa4018d15fbba4772fee41903a938b0",
+      "seconds": 82.00397130602505,
+      "components": [
+        {
+          "eye": "front_left",
+          "supported_before": 70581952,
+          "supported_after": 41359749,
+          "seconds": 24.37240357196424
+        },
+        {
+          "eye": "front_right",
+          "supported_before": 70297920,
+          "supported_after": 41139552,
+          "seconds": 20.078210884006694
+        },
+        {
+          "eye": "rear_right",
+          "supported_before": 70581952,
+          "supported_after": 41395730,
+          "seconds": 18.550154677941464
+        },
+        {
+          "eye": "rear_left",
+          "supported_before": 70297920,
+          "supported_after": 41175510,
+          "seconds": 18.65609589999076
+        }
+      ],
+      "GT_read": false
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "arm": "baseline",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E0_055_masked.npz",
+      "sha256": "7b0a1b284d1f16cf64f3b6f3a5aad5f6c5f8ab6049bd17785d47ee289e0dde8e",
+      "reused_closed_reference": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "arm": "self_supported",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_supported_cost_repair_20261019_v1/E0_055_self_supported.npz",
+      "sha256": "a743d1c2c1b88dfa72c1e02303af11f0af340066d0084e1904489587dc44180b",
+      "seconds": 75.92024353099987,
+      "components": [
+        {
+          "eye": "front_left",
+          "supported_before": 70581952,
+          "supported_after": 41419959,
+          "seconds": 19.206652562017553
+        },
+        {
+          "eye": "front_right",
+          "supported_before": 70297920,
+          "supported_after": 41199645,
+          "seconds": 18.86320847598836
+        },
+        {
+          "eye": "rear_right",
+          "supported_before": 70581952,
+          "supported_after": 41427591,
+          "seconds": 18.813266512937844
+        },
+        {
+          "eye": "rear_left",
+          "supported_before": 70297920,
+          "supported_after": 41207354,
+          "seconds": 18.745049088960513
+        }
+      ],
+      "GT_read": false
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "arm": "baseline",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E1B_000_masked.npz",
+      "sha256": "6f583a73b4e4207758d9537d2444e69f37877cf61debc645ec5dafd2986d4c1a",
+      "reused_closed_reference": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "arm": "self_supported",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_supported_cost_repair_20261019_v1/E1B_000_self_supported.npz",
+      "sha256": "f9ef0bbc932dd59a89dbe6d01ba267398b286606ab8cbdd1eb49f912af37c31d",
+      "seconds": 74.7230628200341,
+      "components": [
+        {
+          "eye": "front_left",
+          "supported_before": 70581952,
+          "supported_after": 41359749,
+          "seconds": 18.505599191994406
+        },
+        {
+          "eye": "front_right",
+          "supported_before": 70297920,
+          "supported_after": 41139552,
+          "seconds": 18.70875095098745
+        },
+        {
+          "eye": "rear_right",
+          "supported_before": 70581952,
+          "supported_after": 41395730,
+          "seconds": 18.614508797996677
+        },
+        {
+          "eye": "rear_left",
+          "supported_before": 70297920,
+          "supported_after": 41175510,
+          "seconds": 18.628646128927357
+        }
+      ],
+      "GT_read": false
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "arm": "baseline",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E1A_090_masked.npz",
+      "sha256": "946f36a372e731e5f49ce2049777e7ce776864ffc5024ad1febc54d60375229a",
+      "reused_closed_reference": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "arm": "self_supported",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_supported_cost_repair_20261019_v1/E1A_090_self_supported.npz",
+      "sha256": "64585ee5d765b1c9ebeab2aca8c48bdce6b115bd20c230b7babeac9762668c87",
+      "seconds": 74.86775007599499,
+      "components": [
+        {
+          "eye": "front_left",
+          "supported_before": 70581952,
+          "supported_after": 41504478,
+          "seconds": 18.62734583998099
+        },
+        {
+          "eye": "front_right",
+          "supported_before": 70297920,
+          "supported_after": 41284024,
+          "seconds": 18.52531519997865
+        },
+        {
+          "eye": "rear_right",
+          "supported_before": 70581952,
+          "supported_after": 41473116,
+          "seconds": 18.916818969068117
+        },
+        {
+          "eye": "rear_left",
+          "supported_before": 70297920,
+          "supported_after": 41252766,
+          "seconds": 18.524989579920657
+        }
+      ],
+      "GT_read": false
+    }
+  ],
+  "protocol_sha256": "93cebe5fb894f5cb38bd5406163e123d8ef2b27d8273ce0b716686a33bf81e50",
+  "GT_read": false,
+  "new_reference_predictions": 4,
+  "reused_reference_predictions": 4,
+  "actual_RGB_cost_volumes": 16,
+  "full_aggregations": 16
+}

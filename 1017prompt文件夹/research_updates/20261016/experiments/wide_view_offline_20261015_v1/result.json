@@ -1,0 +1,749 @@
+{
+  "frames": [
+    {
+      "frame": "frame_000.npz",
+      "time_s": 0.4999999888241291,
+      "arms": [
+        {
+          "eye": 0,
+          "pixels": 307200,
+          "finite_pixels": 158820,
+          "range_pixels": 106438,
+          "range_root_bodyband_pixels": 28283,
+          "cylinder_supported_bodyband_pixels": 24404,
+          "unidentified_bodyband_pixels": 3879,
+          "near_ground_height_band_pixels": 78155,
+          "analytic_cylinder_inrange_rays": 30117,
+          "analytic_rays_finite_render": 30017,
+          "analytic_ray_errors_m": {
+            "p50": 0.012852235897679698,
+            "p90": 0.022251014283577238,
+            "p99": 0.07403343084334102,
+            "max": 2.9970685569083573
+          },
+          "analytic_rays_within_02m": 25853,
+          "visible_cylinder_cells": 66
+        },
+        {
+          "eye": 1,
+          "pixels": 307200,
+          "finite_pixels": 252398,
+          "range_pixels": 162132,
+          "range_root_bodyband_pixels": 129623,
+          "cylinder_supported_bodyband_pixels": 113432,
+          "unidentified_bodyband_pixels": 16191,
+          "near_ground_height_band_pixels": 32509,
+          "analytic_cylinder_inrange_rays": 138110,
+          "analytic_rays_finite_render": 136159,
+          "analytic_ray_errors_m": {
+            "p50": 0.012343346675781852,
+            "p90": 0.02276959066179156,
+            "p99": 0.050099984022669644,
+            "max": 0.10872404761327426
+          },
+          "analytic_rays_within_02m": 119086,
+          "visible_cylinder_cells": 27
+        }
+      ],
+      "front_cells": 66,
+      "rear_cells": 27,
+      "overlap_cells": 0,
+      "union_cells": 93,
+      "rear_unique_cells": 27,
+      "old_analytic_cells": 42,
+      "old_analytic_exact_retained": 37,
+      "old_analytic_within_15cm": 42,
+      "old_analytic_grid_distance_m": {
+        "p50": 0.0,
+        "p90": 0.09000000000000033,
+        "p99": 0.10000000000000053,
+        "max": 0.10000000000000053
+      },
+      "equal_angle_geometry": {
+        "equal_angle_samples": 3600,
+        "new_front": 817,
+        "new_rear": 817,
+        "new_union": 1634,
+        "new_overlap": 0,
+        "new_blind": 1966,
+        "old_union": 519
+      }
+    },
+    {
+      "frame": "frame_001.npz",
+      "time_s": 0.9999999776482582,
+      "arms": [
+        {
+          "eye": 0,
+          "pixels": 307200,
+          "finite_pixels": 156898,
+          "range_pixels": 107664,
+          "range_root_bodyband_pixels": 28178,
+          "cylinder_supported_bodyband_pixels": 24357,
+          "unidentified_bodyband_pixels": 3821,
+          "near_ground_height_band_pixels": 79486,
+          "analytic_cylinder_inrange_rays": 30031,
+          "analytic_rays_finite_render": 29930,
+          "analytic_ray_errors_m": {
+            "p50": 0.012847586303692093,
+            "p90": 0.02214061661762484,
+            "p99": 0.07393396238833536,
+            "max": 3.007087637963564
+          },
+          "analytic_rays_within_02m": 25828,
+          "visible_cylinder_cells": 66
+        },
+        {
+          "eye": 1,
+          "pixels": 307200,
+          "finite_pixels": 259254,
+          "range_pixels": 166138,
+          "range_root_bodyband_pixels": 134631,
+          "cylinder_supported_bodyband_pixels": 117927,
+          "unidentified_bodyband_pixels": 16704,
+          "near_ground_height_band_pixels": 31507,
+          "analytic_cylinder_inrange_rays": 143279,
+          "analytic_rays_finite_render": 141213,
+          "analytic_ray_errors_m": {
+            "p50": 0.01231222593539616,
+            "p90": 0.02266848149075676,
+            "p99": 0.049758248159148505,
+            "max": 0.10733613215782856
+          },
+          "analytic_rays_within_02m": 123525,
+          "visible_cylinder_cells": 28
+        }
+      ],
+      "front_cells": 66,
+      "rear_cells": 28,
+      "overlap_cells": 0,
+      "union_cells": 94,
+      "rear_unique_cells": 28,
+      "old_analytic_cells": 44,
+      "old_analytic_exact_retained": 38,
+      "old_analytic_within_15cm": 44,
+      "old_analytic_grid_distance_m": {
+        "p50": 0.0,
+        "p90": 0.10000000000000027,
+        "p99": 0.10000000000000053,
+        "max": 0.10000000000000053
+      },
+      "equal_angle_geometry": {
+        "equal_angle_samples": 3600,
+        "new_front": 817,
+        "new_rear": 817,
+        "new_union": 1634,
+        "new_overlap": 0,
+        "new_blind": 1966,
+        "old_union": 519
+      }
+    },
+    {
+      "frame": "frame_002.npz",
+      "time_s": 1.4999999664723873,
+      "arms": [
+        {
+          "eye": 0,
+          "pixels": 307200,
+          "finite_pixels": 162061,
+          "range_pixels": 104058,
+          "range_root_bodyband_pixels": 27960,
+          "cylinder_supported_bodyband_pixels": 24179,
+          "unidentified_bodyband_pixels": 3781,
+          "near_ground_height_band_pixels": 76098,
+          "analytic_cylinder_inrange_rays": 29730,
+          "analytic_rays_finite_render": 29651,
+          "analytic_ray_errors_m": {
+            "p50": 0.012898561804316255,
+            "p90": 0.02189136531260072,
+            "p99": 0.07140016758109935,
+            "max": 3.0189717913784033
+          },
+          "analytic_rays_within_02m": 25588,
+          "visible_cylinder_cells": 63
+        },
+        {
+          "eye": 1,
+          "pixels": 307200,
+          "finite_pixels": 244988,
+          "range_pixels": 159896,
+          "range_root_bodyband_pixels": 127178,
+          "cylinder_supported_bodyband_pixels": 111119,
+          "unidentified_bodyband_pixels": 16059,
+          "near_ground_height_band_pixels": 32718,
+          "analytic_cylinder_inrange_rays": 135699,
+          "analytic_rays_finite_render": 133938,
+          "analytic_ray_errors_m": {
+            "p50": 0.012456679026097539,
+            "p90": 0.02305601637518502,
+            "p99": 0.05040839137226347,
+            "max": 0.1076093278198802
+          },
+          "analytic_rays_within_02m": 116971,
+          "visible_cylinder_cells": 27
+        }
+      ],
+      "front_cells": 63,
+      "rear_cells": 27,
+      "overlap_cells": 0,
+      "union_cells": 90,
+      "rear_unique_cells": 27,
+      "old_analytic_cells": 43,
+      "old_analytic_exact_retained": 36,
+      "old_analytic_within_15cm": 43,
+      "old_analytic_grid_distance_m": {
+        "p50": 0.0,
+        "p90": 0.10000000000000035,
+        "p99": 0.10000000000000053,
+        "max": 0.10000000000000053
+      },
+      "equal_angle_geometry": {
+        "equal_angle_samples": 3600,
+        "new_front": 817,
+        "new_rear": 817,
+        "new_union": 1634,
+        "new_overlap": 0,
+        "new_blind": 1966,
+        "old_union": 519
+      }
+    },
+    {
+      "frame": "frame_003.npz",
+      "time_s": 1.9999999552965164,
+      "arms": [
+        {
+          "eye": 0,
+          "pixels": 307200,
+          "finite_pixels": 162646,
+          "range_pixels": 103720,
+          "range_root_bodyband_pixels": 28013,
+          "cylinder_supported_bodyband_pixels": 24281,
+          "unidentified_bodyband_pixels": 3732,
+          "near_ground_height_band_pixels": 75707,
+          "analytic_cylinder_inrange_rays": 29794,
+          "analytic_rays_finite_render": 29699,
+          "analytic_ray_errors_m": {
+            "p50": 0.012853696403773096,
+            "p90": 0.021929997001041552,
+            "p99": 0.07453441316586283,
+            "max": 3.011978430682156
+          },
+          "analytic_rays_within_02m": 25691,
+          "visible_cylinder_cells": 63
+        },
+        {
+          "eye": 1,
+          "pixels": 307200,
+          "finite_pixels": 242535,
+          "range_pixels": 158295,
+          "range_root_bodyband_pixels": 125037,
+          "cylinder_supported_bodyband_pixels": 109355,
+          "unidentified_bodyband_pixels": 15682,
+          "near_ground_height_band_pixels": 33258,
+          "analytic_cylinder_inrange_rays": 133399,
+          "analytic_rays_finite_render": 131719,
+          "analytic_ray_errors_m": {
+            "p50": 0.012409696518067448,
+            "p90": 0.02296691434508082,
+            "p99": 0.050369986565601876,
+            "max": 0.10839790044502362
+          },
+          "analytic_rays_within_02m": 115174,
+          "visible_cylinder_cells": 27
+        }
+      ],
+      "front_cells": 63,
+      "rear_cells": 27,
+      "overlap_cells": 0,
+      "union_cells": 90,
+      "rear_unique_cells": 27,
+      "old_analytic_cells": 43,
+      "old_analytic_exact_retained": 36,
+      "old_analytic_within_15cm": 43,
+      "old_analytic_grid_distance_m": {
+        "p50": 0.0,
+        "p90": 0.10000000000000035,
+        "p99": 0.10000000000000053,
+        "max": 0.10000000000000053
+      },
+      "equal_angle_geometry": {
+        "equal_angle_samples": 3600,
+        "new_front": 817,
+        "new_rear": 817,
+        "new_union": 1634,
+        "new_overlap": 0,
+        "new_blind": 1966,
+        "old_union": 519
+      }
+    },
+    {
+      "frame": "frame_004.npz",
+      "time_s": 2.4999999441206455,
+      "arms": [
+        {
+          "eye": 0,
+          "pixels": 307200,
+          "finite_pixels": 161683,
+          "range_pixels": 104469,
+          "range_root_bodyband_pixels": 28208,
+          "cylinder_supported_bodyband_pixels": 24469,
+          "unidentified_bodyband_pixels": 3739,
+          "near_ground_height_band_pixels": 76261,
+          "analytic_cylinder_inrange_rays": 30009,
+          "analytic_rays_finite_render": 29910,
+          "analytic_ray_errors_m": {
+            "p50": 0.01286088796871776,
+            "p90": 0.02193161877251604,
+            "p99": 0.07357459319872293,
+            "max": 3.0087705394144435
+          },
+          "analytic_rays_within_02m": 25889,
+          "visible_cylinder_cells": 63
+        },
+        {
+          "eye": 1,
+          "pixels": 307200,
+          "finite_pixels": 243966,
+          "range_pixels": 158106,
+          "range_root_bodyband_pixels": 124594,
+          "cylinder_supported_bodyband_pixels": 109107,
+          "unidentified_bodyband_pixels": 15487,
+          "near_ground_height_band_pixels": 33512,
+          "analytic_cylinder_inrange_rays": 132869,
+          "analytic_rays_finite_render": 131172,
+          "analytic_ray_errors_m": {
+            "p50": 0.012328667611333166,
+            "p90": 0.02280136455380586,
+            "p99": 0.05032684693775058,
+            "max": 0.10858569163345999
+          },
+          "analytic_rays_within_02m": 114853,
+          "visible_cylinder_cells": 27
+        }
+      ],
+      "front_cells": 63,
+      "rear_cells": 27,
+      "overlap_cells": 0,
+      "union_cells": 90,
+      "rear_unique_cells": 27,
+      "old_analytic_cells": 42,
+      "old_analytic_exact_retained": 35,
+      "old_analytic_within_15cm": 42,
+      "old_analytic_grid_distance_m": {
+        "p50": 0.0,
+        "p90": 0.10000000000000045,
+        "p99": 0.10000000000000053,
+        "max": 0.10000000000000053
+      },
+      "equal_angle_geometry": {
+        "equal_angle_samples": 3600,
+        "new_front": 817,
+        "new_rear": 817,
+        "new_union": 1634,
+        "new_overlap": 0,
+        "new_blind": 1966,
+        "old_union": 519
+      }
+    },
+    {
+      "frame": "frame_005.npz",
+      "time_s": 2.9999999329447746,
+      "arms": [
+        {
+          "eye": 0,
+          "pixels": 307200,
+          "finite_pixels": 161613,
+          "range_pixels": 104565,
+          "range_root_bodyband_pixels": 28274,
+          "cylinder_supported_bodyband_pixels": 24506,
+          "unidentified_bodyband_pixels": 3768,
+          "near_ground_height_band_pixels": 76291,
+          "analytic_cylinder_inrange_rays": 30085,
+          "analytic_rays_finite_render": 29986,
+          "analytic_ray_errors_m": {
+            "p50": 0.012828305100712756,
+            "p90": 0.02185859259047085,
+            "p99": 0.07440629033957179,
+            "max": 2.867515415500737
+          },
+          "analytic_rays_within_02m": 25948,
+          "visible_cylinder_cells": 64
+        },
+        {
+          "eye": 1,
+          "pixels": 307200,
+          "finite_pixels": 243647,
+          "range_pixels": 157623,
+          "range_root_bodyband_pixels": 123892,
+          "cylinder_supported_bodyband_pixels": 108541,
+          "unidentified_bodyband_pixels": 15351,
+          "near_ground_height_band_pixels": 33731,
+          "analytic_cylinder_inrange_rays": 132090,
+          "analytic_rays_finite_render": 130424,
+          "analytic_ray_errors_m": {
+            "p50": 0.0122974099691881,
+            "p90": 0.02274599510108851,
+            "p99": 0.05031582517429744,
+            "max": 0.10935920122053167
+          },
+          "analytic_rays_within_02m": 114256,
+          "visible_cylinder_cells": 28
+        }
+      ],
+      "front_cells": 64,
+      "rear_cells": 28,
+      "overlap_cells": 0,
+      "union_cells": 92,
+      "rear_unique_cells": 28,
+      "old_analytic_cells": 41,
+      "old_analytic_exact_retained": 36,
+      "old_analytic_within_15cm": 41,
+      "old_analytic_grid_distance_m": {
+        "p50": 0.0,
+        "p90": 0.10000000000000053,
+        "p99": 0.10000000000000053,
+        "max": 0.10000000000000053
+      },
+      "equal_angle_geometry": {
+        "equal_angle_samples": 3600,
+        "new_front": 817,
+        "new_rear": 817,
+        "new_union": 1634,
+        "new_overlap": 0,
+        "new_blind": 1966,
+        "old_union": 519
+      }
+    },
+    {
+      "frame": "frame_006.npz",
+      "time_s": 3.4999999217689037,
+      "arms": [
+        {
+          "eye": 0,
+          "pixels": 307200,
+          "finite_pixels": 161898,
+          "range_pixels": 104419,
+          "range_root_bodyband_pixels": 28306,
+          "cylinder_supported_bodyband_pixels": 24581,
+          "unidentified_bodyband_pixels": 3725,
+          "near_ground_height_band_pixels": 76113,
+          "analytic_cylinder_inrange_rays": 30139,
+          "analytic_rays_finite_render": 30039,
+          "analytic_ray_errors_m": {
+            "p50": 0.012834957188664564,
+            "p90": 0.021844643272680656,
+            "p99": 0.07324337583517318,
+            "max": 2.8057544863526345
+          },
+          "analytic_rays_within_02m": 26035,
+          "visible_cylinder_cells": 63
+        },
+        {
+          "eye": 1,
+          "pixels": 307200,
+          "finite_pixels": 242123,
+          "range_pixels": 156480,
+          "range_root_bodyband_pixels": 122310,
+          "cylinder_supported_bodyband_pixels": 107272,
+          "unidentified_bodyband_pixels": 15038,
+          "near_ground_height_band_pixels": 34170,
+          "analytic_cylinder_inrange_rays": 130394,
+          "analytic_rays_finite_render": 128771,
+          "analytic_ray_errors_m": {
+            "p50": 0.012240333357175115,
+            "p90": 0.0226249742877358,
+            "p99": 0.05019446822568294,
+            "max": 0.1101564732969268
+          },
+          "analytic_rays_within_02m": 112921,
+          "visible_cylinder_cells": 27
+        }
+      ],
+      "front_cells": 63,
+      "rear_cells": 27,
+      "overlap_cells": 0,
+      "union_cells": 90,
+      "rear_unique_cells": 27,
+      "old_analytic_cells": 42,
+      "old_analytic_exact_retained": 35,
+      "old_analytic_within_15cm": 42,
+      "old_analytic_grid_distance_m": {
+        "p50": 0.0,
+        "p90": 0.10000000000000045,
+        "p99": 0.10000000000000053,
+        "max": 0.10000000000000053
+      },
+      "equal_angle_geometry": {
+        "equal_angle_samples": 3600,
+        "new_front": 817,
+        "new_rear": 817,
+        "new_union": 1634,
+        "new_overlap": 0,
+        "new_blind": 1966,
+        "old_union": 519
+      }
+    },
+    {
+      "frame": "frame_007.npz",
+      "time_s": 3.999999910593033,
+      "arms": [
+        {
+          "eye": 0,
+          "pixels": 307200,
+          "finite_pixels": 161967,
+          "range_pixels": 104419,
+          "range_root_bodyband_pixels": 28362,
+          "cylinder_supported_bodyband_pixels": 24591,
+          "unidentified_bodyband_pixels": 3771,
+          "near_ground_height_band_pixels": 76057,
+          "analytic_cylinder_inrange_rays": 30172,
+          "analytic_rays_finite_render": 30078,
+          "analytic_ray_errors_m": {
+            "p50": 0.01282584878765114,
+            "p90": 0.021889733084283103,
+            "p99": 0.07324243910813619,
+            "max": 2.819876720913865
+          },
+          "analytic_rays_within_02m": 26027,
+          "visible_cylinder_cells": 63
+        },
+        {
+          "eye": 1,
+          "pixels": 307200,
+          "finite_pixels": 241417,
+          "range_pixels": 155839,
+          "range_root_bodyband_pixels": 121372,
+          "cylinder_supported_bodyband_pixels": 106484,
+          "unidentified_bodyband_pixels": 14888,
+          "near_ground_height_band_pixels": 34467,
+          "analytic_cylinder_inrange_rays": 129405,
+          "analytic_rays_finite_render": 127796,
+          "analytic_ray_errors_m": {
+            "p50": 0.01220357458153376,
+            "p90": 0.022498705803717933,
+            "p99": 0.04998667932158168,
+            "max": 0.10976696422814902
+          },
+          "analytic_rays_within_02m": 112084,
+          "visible_cylinder_cells": 26
+        }
+      ],
+      "front_cells": 63,
+      "rear_cells": 26,
+      "overlap_cells": 0,
+      "union_cells": 89,
+      "rear_unique_cells": 26,
+      "old_analytic_cells": 43,
+      "old_analytic_exact_retained": 37,
+      "old_analytic_within_15cm": 43,
+      "old_analytic_grid_distance_m": {
+        "p50": 0.0,
+        "p90": 0.10000000000000035,
+        "p99": 0.10000000000000053,
+        "max": 0.10000000000000053
+      },
+      "equal_angle_geometry": {
+        "equal_angle_samples": 3600,
+        "new_front": 817,
+        "new_rear": 817,
+        "new_union": 1634,
+        "new_overlap": 0,
+        "new_blind": 1966,
+        "old_union": 519
+      }
+    }
+  ],
+  "aggregate_grid_instances": {
+    "front_cells": 511,
+    "rear_cells": 217,
+    "overlap_cells": 0,
+    "union_cells": 728,
+    "rear_unique_cells": 217,
+    "old_analytic_cells": 340,
+    "old_analytic_exact_retained": 290,
+    "old_analytic_within_15cm": 340,
+    "old_analytic_exact_retention": 0.8529411764705882,
+    "old_analytic_within_15cm_retention": 1.0
+  },
+  "analytic_cylinder_ray_errors_m": {
+    "p50": 0.012439040831773274,
+    "p90": 0.022616692510988714,
+    "p99": 0.05125146514069207,
+    "max": 3.0189717913784033
+  },
+  "CAD": [
+    {
+      "frame": "frame_000.npz",
+      "front_max_z": -0.05063259272016751,
+      "rear_max_z": -0.05063259272016751,
+      "all_triangles_behind_near_clip": true
+    },
+    {
+      "frame": "frame_001.npz",
+      "front_max_z": -0.05031489650091159,
+      "rear_max_z": -0.05031489650091159,
+      "all_triangles_behind_near_clip": true
+    },
+    {
+      "frame": "frame_002.npz",
+      "front_max_z": -0.050123510260953186,
+      "rear_max_z": -0.050123510260953186,
+      "all_triangles_behind_near_clip": true
+    },
+    {
+      "frame": "frame_003.npz",
+      "front_max_z": -0.05041659633665424,
+      "rear_max_z": -0.05041659633665424,
+      "all_triangles_behind_near_clip": true
+    },
+    {
+      "frame": "frame_004.npz",
+      "front_max_z": -0.050593102065419226,
+      "rear_max_z": -0.050593102065419226,
+      "all_triangles_behind_near_clip": true
+    },
+    {
+      "frame": "frame_005.npz",
+      "front_max_z": -0.05033176477647644,
+      "rear_max_z": -0.05033176477647644,
+      "all_triangles_behind_near_clip": true
+    },
+    {
+      "frame": "frame_006.npz",
+      "front_max_z": -0.050142508227923155,
+      "rear_max_z": -0.050142508227923155,
+      "all_triangles_behind_near_clip": true
+    },
+    {
+      "frame": "frame_007.npz",
+      "front_max_z": -0.0500230635046619,
+      "rear_max_z": -0.0500230635046619,
+      "all_triangles_behind_near_clip": true
+    }
+  ],
+  "clock": [
+    {
+      "frame": "frame_000.npz",
+      "logical": 0.4999999888241291,
+      "exposure_raw": 0.7199999839067459,
+      "raw_logical_offset_s": 0.2199999950826168,
+      "IMU_interval_begin_raw": 0.6999999843537807,
+      "IMU_interval_end_raw": 0.7199999839067459,
+      "exposure_minus_interval_end_s": 0.0,
+      "exposure_minus_sensor_stamp_s": 0.019999995827674866,
+      "interval_duration_s": 0.019999999552965164,
+      "gyro_norm_times_interval_rad": 0.0037784013245190733
+    },
+    {
+      "frame": "frame_001.npz",
+      "logical": 0.9999999776482582,
+      "exposure_raw": 1.219999972730875,
+      "raw_logical_offset_s": 0.2199999950826168,
+      "IMU_interval_begin_raw": 1.1999999731779099,
+      "IMU_interval_end_raw": 1.219999972730875,
+      "exposure_minus_interval_end_s": 0.0,
+      "exposure_minus_sensor_stamp_s": 0.020000044256448746,
+      "interval_duration_s": 0.019999999552965164,
+      "gyro_norm_times_interval_rad": 0.0017238563886079943
+    },
+    {
+      "frame": "frame_002.npz",
+      "logical": 1.4999999664723873,
+      "exposure_raw": 1.7199999615550041,
+      "raw_logical_offset_s": 0.2199999950826168,
+      "IMU_interval_begin_raw": 1.699999962002039,
+      "IMU_interval_end_raw": 1.7199999615550041,
+      "exposure_minus_interval_end_s": 0.0,
+      "exposure_minus_sensor_stamp_s": 0.02000003308057785,
+      "interval_duration_s": 0.019999999552965164,
+      "gyro_norm_times_interval_rad": 0.0009369055093066489
+    },
+    {
+      "frame": "frame_003.npz",
+      "logical": 1.9999999552965164,
+      "exposure_raw": 2.2199999503791332,
+      "raw_logical_offset_s": 0.2199999950826168,
+      "IMU_interval_begin_raw": 2.199999950826168,
+      "IMU_interval_end_raw": 2.2199999503791332,
+      "exposure_minus_interval_end_s": 0.0,
+      "exposure_minus_sensor_stamp_s": 0.019999902695417404,
+      "interval_duration_s": 0.019999999552965164,
+      "gyro_norm_times_interval_rad": 0.0005682641604034332
+    },
+    {
+      "frame": "frame_004.npz",
+      "logical": 2.4999999441206455,
+      "exposure_raw": 2.7199999392032623,
+      "raw_logical_offset_s": 0.2199999950826168,
+      "IMU_interval_begin_raw": 2.699999939650297,
+      "IMU_interval_end_raw": 2.7199999392032623,
+      "exposure_minus_interval_end_s": 0.0,
+      "exposure_minus_sensor_stamp_s": 0.01999989151954651,
+      "interval_duration_s": 0.019999999552965164,
+      "gyro_norm_times_interval_rad": 0.0005146507432656869
+    },
+    {
+      "frame": "frame_005.npz",
+      "logical": 2.9999999329447746,
+      "exposure_raw": 3.2199999280273914,
+      "raw_logical_offset_s": 0.2199999950826168,
+      "IMU_interval_begin_raw": 3.1999999284744263,
+      "IMU_interval_end_raw": 3.2199999280273914,
+      "exposure_minus_interval_end_s": 0.0,
+      "exposure_minus_sensor_stamp_s": 0.020000118762254715,
+      "interval_duration_s": 0.019999999552965164,
+      "gyro_norm_times_interval_rad": 0.00015158168527185583
+    },
+    {
+      "frame": "frame_006.npz",
+      "logical": 3.4999999217689037,
+      "exposure_raw": 3.7199999168515205,
+      "raw_logical_offset_s": 0.2199999950826168,
+      "IMU_interval_begin_raw": 3.6999999172985554,
+      "IMU_interval_end_raw": 3.7199999168515205,
+      "exposure_minus_interval_end_s": 0.0,
+      "exposure_minus_sensor_stamp_s": 0.02000010758638382,
+      "interval_duration_s": 0.019999999552965164,
+      "gyro_norm_times_interval_rad": 0.0003107787569822249
+    },
+    {
+      "frame": "frame_007.npz",
+      "logical": 3.999999910593033,
+      "exposure_raw": 4.21999990567565,
+      "raw_logical_offset_s": 0.2199999950826168,
+      "IMU_interval_begin_raw": 4.1999999061226845,
+      "IMU_interval_end_raw": 4.21999990567565,
+      "exposure_minus_interval_end_s": 0.0,
+      "exposure_minus_sensor_stamp_s": 0.020000096410512924,
+      "interval_duration_s": 0.019999999552965164,
+      "gyro_norm_times_interval_rad": 0.00032483120006801265
+    }
+  ],
+  "objects": 71,
+  "wall_s": 67.93288883403875,
+  "physical": 0,
+  "fit": 0,
+  "model": 0,
+  "source_navigation_admitted": false,
+  "limitations": [
+    "All geometry uses renderer labels and actual scene cylinders offline, no learned prediction",
+    "Remote default environment cannot be resolved from export in offline USD; full-scene nearest-hit and full-scene ground semantics NOT certified",
+    "Old narrow reference is hypothetical same-pose analytic cylinder-only reference, not same-time original RGB/depth or actual original visible denominator",
+    "Visible grids require saved depth agreement <=.02m with exported analytic cylinder; unmatched finite bodyband points unknown and counted",
+    "Only 8 frames/4 seconds native zero-request motion, no scene/trajectory generalization; clipped CAD certificate does not certify hardware mount",
+    "No learned ground false-positive rate, BEV accuracy, memory or navigation metrics generated"
+  ],
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run/capture_seal.json": "d67efa465a04a8c19409558334d1862636d8827f3ff4896f423db816e2e90852",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run/stage_root_initial.usda": "03cf1232a2da76ba5d7b7ce08c9f8b249ad5d6da1dde7a3499600506e874e16d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_view_offline_20261015_v1/protocol.json": "e0ab93c14e70c9b00e01dd698c630571ce9bcd9e3748c6e98598bc509bb917a8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run/frames/frame_000.npz": "4e6c0260e684aac8c81150d85defaa816c45e8dac699c8df46d06fd24e0f93f7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run/frames/frame_001.npz": "d484d26b69ac719a1adc3c39a05bbb7dbeb517296be5010281f67f5608e711b0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run/frames/frame_002.npz": "5b7dfbf2ecddc7b0df7ca2c5c534df9f4c492ee32a0ea92507481298895d0a14",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run/frames/frame_003.npz": "0ef684eb3767e46aca1db128b2f01850b63bfe12709e8682f1beada471727ce2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run/frames/frame_004.npz": "9807fbb9f8cf0b0386fa8dd0ef970f9624188b799fa3ce4f28e95ae6cdc1701f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run/frames/frame_005.npz": "b8d6454b9bcb6e1ac8931455016a1a9818d83c2286d97bd30ff3297b6402737c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run/frames/frame_006.npz": "746f02d5723eace8ef052e72ada1dc0eca1e336703fef3e1eeac39b12104dab3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run/frames/frame_007.npz": "e629ecd5fcb9641dbfcd0068be51c82cc80e86051df1c2437be29e815e5e4b02"
+  }
+}

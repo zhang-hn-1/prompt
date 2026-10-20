@@ -1,0 +1,22 @@
+{
+  "question": "May a separate binocular installation geometry qualification be designed?",
+  "reason": "Current same-rig90s collision samples have no valid near1m support; sourcefilter exactlyreproduces. Consumer changes cannot conjure absent binocular observation",
+  "retain": [
+    "SGBM method",
+    "native IMU/encoder",
+    "riskmemory",
+    "planning",
+    "PID",
+    "90s protocol"
+  ],
+  "change_under_design_only": "one mounting geometry candidate, selected for bilateral nearfield overlap and no robot self-occlusion; no candidate geometry yet admitted",
+  "prephysical_gate": [
+    "valid extrinsics and actualCAD mounting outsidebody",
+    "current binocular overlap with selfmask at measured relevant states",
+    "depth precision tradeoff atfarfield",
+    "independent review"
+  ],
+  "physical_budget": 0,
+  "requires_user_scope_decision": "existing camera/lighting frozen; user90s approval didnot authorize changingcamera",
+  "old_facts_preserved": true
+}

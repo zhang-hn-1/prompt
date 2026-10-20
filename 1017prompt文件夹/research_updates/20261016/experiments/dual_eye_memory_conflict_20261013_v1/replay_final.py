@@ -1,0 +1,19 @@
+from pathlib import Path
+import sys,json,hashlib,numpy as np
+from scipy.spatial import cKDTree
+D=Path(__file__).resolve().parent;W=D.parents[1];C=W/'experiments/source_confidence_calibration_20261012_v1';V=W/'experiments/viewpoint_confirmation_navigation_20261012_v1';R=C/'data_e1_run';sys.path[:0]=[str(D),str(V),str(W/'experiments/stereo_memory_navigation_20261004_v1'),'/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm'];from viewpoint_confirmation import ViewpointConfirmationGrid
+from conflict import DualEyeConflictGrid
+m=np.load(R/'maps/frame_000.npz');base=ViewpointConfirmationGrid(m['origin'],10,static_scene_assumption=True);new=DualEyeConflictGrid(m['origin'],10,static_scene_assumption=True);views={int(p.stem.split('_')[1]):dict(time_s=float(np.load(p)['time_s']),position_world=np.load(p)['left_camera_usd_world'][:3,3]) for p in (R/'known_poses').glob('*.npz')};native=json.loads((R/'native_predictions.json').read_text());poses={round(a['time_s'],7):a['position_world'] for a in native if a.get('available')};rows=[];recentchanges=0;observations={int(p.stem.split('_')[1]):dict(np.load(p)) for p in (R/'partial_observations').glob('*.npz')}
+for i in range(900):
+ a=np.load(R/'maps'/f'frame_{i:03d}.npz');t=float(a['time_s']);rs=json.loads((R/'raw_point_memory_snapshots'/f'frame_{i:03d}.json').read_text())['records'];f=i-i%5;packet=dict(np.load(R/'sensor_packets'/f'source_{f:03d}.npz'));pose=dict(np.load(R/'known_poses'/f'frame_{f:03d}.npz'));root=np.array(poses[round(t,7)]);base.consume_records(rs,t,root,views);np.testing.assert_array_equal(base.labels,a['labels']);np.testing.assert_array_equal(base.codes,a['codes']);aug=[]
+ for r in rs:
+  obs=observations[int(r['frame'])];np.testing.assert_array_equal(obs['query_pixel_id'],r['query_pixel_id']);np.testing.assert_array_equal(obs['world'],np.asarray(r['world']).reshape(-1,3));aug.append({**r,'sigma_m':obs['sigma_m']})
+ dem=new.consume_with_current(aug,t,root,views,packet,pose);recent=(base.labels==1)&(t-base.hazard_acquisition_time<=10);recentchanges+=int((new.labels[recent]!=base.labels[recent]).sum());rows.append(dict(frame=i,demotions=len(dem),base=int((base.labels==1).sum()),candidate=int((new.labels==1).sum())))
+np.savez_compressed(D/'final_verified_maps.npz',baseline=base.labels,candidate=new.labels,origin=base.origin,resolution=base.resolution)
+(D/'final_prediction_seal.json').write_text(json.dumps(dict(output_sha256={str(D/'final_verified_maps.npz'):hashlib.sha256((D/'final_verified_maps.npz').read_bytes()).hexdigest()},source_sha256={str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in [D/'protocol.json',D/'conflict.py',Path(__file__)]},truth_read=False,original_data_seal_sha256=hashlib.sha256((R/'artifact_manifest_post_close.json').read_bytes()).hexdigest(),native_and_partial_source_binding='original full run seal; exact oldpoint/q/sigma verified perrecord'),indent=2)+'\n')
+cfg=json.loads((C/'data_e1_protocol.json').read_text());occ=np.load(cfg['occupancy']);truth=occ['global_origin_xy']+np.argwhere(occ['grid']>0)*float(occ['resolution_m']);tree=cKDTree(truth);bad=0;good=0
+for r in new.demotions:
+ xy=new.origin+np.array(r['cell'])*new.resolution
+ if tree.query(xy)[0]>.15:bad+=1
+ else:good+=1
+result=dict(actual_maps_exact=900,current_recent_risk_changes=recentchanges,demotions=new.demotions,false_reference_demotions=bad,true_reference_demotions=good,gate=bool(recentchanges==0 and bad>=1 and good==0),baseline_final_cells=int((base.labels==1).sum()),candidate_final_cells=int((new.labels==1).sum()),physical=0,fit=0,rows=rows,scope='same-input wholeE1 map replay; bodybandreference only scorer; new source support envelope not completedshape');(D/'final_result.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k not in ['rows','demotions']},indent=2))

@@ -1,0 +1,9 @@
+{
+  "hypothesis": "Accumulated world registration may dominate retained erroneous risk",
+  "input": "Complete two v65 E1 sequences, native camera transforms and original accepted points; rendering poses/depth for offline scoring only",
+  "method": "Freeze camera coordinates of each original point; GT-pose-only reprojection separates vector contributions; complete finite label coverage and clocks; no online oracle",
+  "decision": "If pose-only P90<=.15m and perfect pose does not remove large source distance errors, reject pose-dominance premise before correction implementation; source gate .15m unchanged",
+  "physical": 0,
+  "fit": 0,
+  "recovery": 0
+}

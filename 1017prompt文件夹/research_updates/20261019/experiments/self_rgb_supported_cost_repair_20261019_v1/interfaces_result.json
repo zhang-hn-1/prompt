@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "empty_CAD_exact": true,
+    "query_full_BT_block_rectangle_excluded": true,
+    "positive_partner_x_minus_d": true,
+    "negative_partner_x_minus_d": true,
+    "supported_costs_self_RGB_invariant": true,
+    "aggregated_costs_self_RGB_invariant": true,
+    "decoded_self_RGB_invariant": true,
+    "all_self_UNKNOWN": true
+  },
+  "GT_reads": 0,
+  "real_RGB_calls": 0
+}

@@ -1,0 +1,14 @@
+{
+  "all110_prediction_seals_valid": true,
+  "C_positive_subset_B": true,
+  "changed_frames": 88,
+  "current_positive_discarded": 0,
+  "performance_gates_unchanged": {
+    "false_risk_reduction_ge20pct": false,
+    "blind_missing_increase_le5pp": false,
+    "map_difference": true,
+    "no_current_positive_discarded": true,
+    "all_logical_checks": true
+  },
+  "not_replayed_optimizer": true
+}

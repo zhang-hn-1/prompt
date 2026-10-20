@@ -1,0 +1,33 @@
+{
+  "question": "Do the sealed eight native front/rear wide-view exposures add actually rendered cylinder obstacle coverage and preserve a same-pose analytic old-rig reference, with bounded CAD and IMU/exposure identity?",
+  "scope": "Offline diagnostic only, no source/model/nav admission. All 8 exposures, all pixels. Fixed first frame illustrated; no selection search.",
+  "input_root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_validation_run",
+  "physical_cap": 0,
+  "fit_cap": 0,
+  "model_cap": 0,
+  "recovery_cap": 0,
+  "freeze": {
+    "depth_z_m": [
+      0.5,
+      3
+    ],
+    "bodyband_world_z_m": [
+      0.05,
+      1.5
+    ],
+    "minimum_root_distance_m": 0.55,
+    "grid_m": 0.1,
+    "matching_distance_m": 0.15,
+    "cylinder_surface_identity_tolerance_m": 0.02,
+    "original_target_retention_gate": 0.95
+  },
+  "denominators": [
+    "307200 pixels per eye per exposure; finite/range/bodyband/cylinder-supported separated",
+    "actual rendered cylinder-supported grid instances, front/rear/intersection/union",
+    "same-pose old narrow camera analytic finite-cylinder nearest-hit bodyband grid instances; excludes unavailable floor and unknown CAD/occluders so NOT original rendered target recall",
+    "3600 equal azimuth points at body-plane radius 2m, optical FOV/range only, not scene visibility"
+  ],
+  "unknown": "unidentified finite surfaces and no-hit remain unknown; height-near-ground is only a diagnostic band, not online semantic/free",
+  "clock": "report raw/logical epoch offset and exposure-to-native interval beginning; gyro norm*dt is a first order rotation magnitude proxy, not independently verified full attitude",
+  "stopping": "No threshold/optic tuning, no GPU/physics or rejected model. New full-scene certification blocked if exported environment assets unavailable. Old 1267-frame upper-bound result not rerun or upgraded."
+}

@@ -1,0 +1,67 @@
+{
+  "utc": "2026-10-19T08:39:59.571107+00:00",
+  "complete": true,
+  "outputs": [
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_dependency_20261019_v1/E0_000_original.npz",
+      "sha256": "9c950a40e5e0cddbcdf0d6b71c0003aa84c0f51fd03389fb2b20a8cbd8ad975e",
+      "sequence": "E0",
+      "frame": 0,
+      "arm": "original"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_dependency_20261019_v1/E0_000_self_inverted.npz",
+      "sha256": "343f956d11c965fb4671ed29839b7d6c4050a18f8640eac0b122bf444caf6870",
+      "sequence": "E0",
+      "frame": 0,
+      "arm": "self_inverted"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_dependency_20261019_v1/E0_055_original.npz",
+      "sha256": "cf7a328a2b3df5144a97ce1b0afe007846ceaa05840b9ad1a2e935895bdaca50",
+      "sequence": "E0",
+      "frame": 55,
+      "arm": "original"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_dependency_20261019_v1/E0_055_self_inverted.npz",
+      "sha256": "d541c064b4b403f3c26c68eba726259caac7bbc7a0ac3fa9751b12a9e1f9567f",
+      "sequence": "E0",
+      "frame": 55,
+      "arm": "self_inverted"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_dependency_20261019_v1/E1B_000_original.npz",
+      "sha256": "2941afb5084ebec8c804372b1ae47bb73f243e267aa86769817bf626ed3e238b",
+      "sequence": "E1B",
+      "frame": 0,
+      "arm": "original"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_dependency_20261019_v1/E1B_000_self_inverted.npz",
+      "sha256": "397612875625067e5114e7d9bf5455ac1ffded6b692a61dc4671e173cdc4b490",
+      "sequence": "E1B",
+      "frame": 0,
+      "arm": "self_inverted"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_dependency_20261019_v1/E1A_090_original.npz",
+      "sha256": "2d1f2d7d48b69f56652b0a29495dc027dd6d82a70155df5fdd9985963e32f52c",
+      "sequence": "E1A",
+      "frame": 90,
+      "arm": "original"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/self_rgb_dependency_20261019_v1/E1A_090_self_inverted.npz",
+      "sha256": "a440d29ca7215147565482ee72148a796be2290c857c17e58278c259c19cd7a6",
+      "sequence": "E1A",
+      "frame": 90,
+      "arm": "self_inverted"
+    }
+  ],
+  "baseline_arrays_exact": 64,
+  "baseline_point_arrays_exact": 48,
+  "matcher_calls": 32,
+  "GT_read": false,
+  "new_CAD": 0
+}

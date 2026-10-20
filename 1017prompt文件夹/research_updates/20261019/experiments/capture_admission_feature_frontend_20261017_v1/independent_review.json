@@ -1,0 +1,63 @@
+{
+  "complete": true,
+  "review_utc": "2026-10-17T12:20:47.203057+00:00",
+  "review_kind": "independent_postexecution_read_only_audit",
+  "reviewer": "persistent_entry_qualification_review",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_feature_frontend_20261017_v1",
+  "verdict": "NO_IMPORTANT_ISSUES_FOUND_WITHIN_REVIEWED_SCOPE",
+  "reviewed_protocol_sha256": "45526fd39183823786416aa5ae02c725b7b49ba4c453fd6a6e4109266a0b698b",
+  "reviewed_result_sha256": "e6b630eb2e73a4e7a039b203f24d72a395a0787f203693a8fb24475dad7cc445",
+  "reviewed_status_sha256": "65d0c528dbc9e8cddf7f8b2bcb975f9b81d9208b19b891c56cc69b8d37c2b15d",
+  "new_experiments": 0,
+  "source_calls_during_review": 0,
+  "model_calls_during_review": 0,
+  "physics_during_review": 0,
+  "navigation_during_review": 0,
+  "experimental_output_regeneration_during_review": 0,
+  "original_files_changed_during_review": false,
+  "identity_audit": {
+    "exposures": 470,
+    "sequence_counts": {
+      "E0": 110,
+      "E1B": 180,
+      "E1A": 180
+    },
+    "unique_sequence_frame_keys": true,
+    "all470_original_RGB_frame_prediction_and_canonical_reference_SHA_verified": true,
+    "all_protocol_metadata_and_code_SHA_verified": true,
+    "all470_result_rows_matched_original_feature_seal": true
+  },
+  "producer_evidence": {
+    "normal_exit0": true,
+    "successful_feature_extraction_calls": 470,
+    "canonical_cell_rows": 40052,
+    "channels": 24,
+    "feature_scalars": 961248,
+    "arrays_byte_exact_asserted": 3290,
+    "original_source_points": 2985832,
+    "outside_points": 0,
+    "comparison": "Producer compares dtype, shape and raw bytes for features/cells/origin/source_eye/source_query_uid/source_partner_uid/source_cell_row, seven arrays per exposure; normal completion confirms all assertions ran."
+  },
+  "independent_code_review": {
+    "raw_frame_value_access": "Only four <eye>_rgb members; no GT depth/pose/static-label value members accessed",
+    "frontend_payload": "Exactly four RGB images, source-only eye fields and estimated body; no labels, static maps, file paths or scene-ID model fields",
+    "strict_future_duplicate_clock_checks_precede_payload": true,
+    "history_and_lifetime_staged_until_complete_finite_X": true,
+    "feature_history_independent_of_risk_admission": true,
+    "original24_equations_and_order_preserved": true
+  },
+  "process_cleanup": {
+    "finished0": true,
+    "independently_observed_parent_child_absent": true,
+    "independently_observed_no_live_or_zombie_process_group_members": true
+  },
+  "frontend_calls_during_independent_review": 0,
+  "independent470_function_rerun": false,
+  "limits": [
+    "Numerical byte equivalence is evidenced by the actual producer invocation assertions, frozen producer code, complete records, original-reference identities and normal exit; the reviewer did not independently regenerate the470 feature outputs.",
+    "No duplicate candidate X arrays were saved; only the canonical references and producer records were available for the independent postexecution audit.",
+    "Feature generation timing measures only the feature function, not full source or online end-to-end latency.",
+    "All captures are previously seen development inputs; interface qualification is not learning, generalization, fit, physical or navigation admission.",
+    "Hashing archived files does not mean teacher value members were read by the feature producer."
+  ]
+}

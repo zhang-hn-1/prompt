@@ -1,0 +1,514 @@
+{
+  "artifact_type": "independent_saved_self_supported_cost_repair_results_review",
+  "utc": "2026-10-19T08:52:24.786675+00:00",
+  "scope": "Fresh read-only audit of sealed candidate predictions and saved score results, preserving preflight_orfinalreview.json. Independently checked saved output identities, 16-eye candidate CAD-free support rectangles, depth/LR/source point mapping and projection, predicted-cell sets/counts, saved scalar aggregate/gate arithmetic. No matcher/reference/decoder/self_support/source/scorer/planner/model/test execution and no new GT evaluation or depth-label pixel reads. Only this new audit artifact is written.",
+  "identities": {
+    "protocol.json": "93cebe5fb894f5cb38bd5406163e123d8ef2b27d8273ce0b716686a33bf81e50",
+    "prediction_seal.json": "22eff5399ba92aa5a311de2dadd7652ad6ddf6bd3effc228d0ceccda46703526",
+    "result.json": "46a6545a8018aced09495c3ccdd135542010f05d22defbcfbc7be2bfce995bff",
+    "ledger.json": "3964d9224b7a6d182ce8448f87b6f13b6f67b6b3dc966879f33db71304832fad",
+    "interfaces_status.json": "3208833d35c30b53795691f8808ac542ac84c05a57024e68704d44cfe2b38b38",
+    "predict_status.json": "8f12b83e85838efc2ced94732ce418cfc7c343a5e9398d156795f686c639b9a5",
+    "score_status.json": "f35f3fba4e6344e09121dc21761ceb90bc9a1b5f2bab468e67d1acadfd642755",
+    "preflight_orfinalreview.json": "57dc503728e0a1987400381be7063cb2ff978153a5f3d5a8b29c44d1620ff9f5",
+    "dispatch_resource_receipt.json": "8f16ac03016562c3b1279d913a8675543e1e81f2aa70c09cc32212fa9a0c45b6"
+  },
+  "preserved_preflight_review_SHA256": "57dc503728e0a1987400381be7063cb2ff978153a5f3d5a8b29c44d1620ff9f5",
+  "checks": {
+    "prediction_normal0_no_residual_group": true,
+    "seal_protocol_and_exact8keys": true,
+    "all8_output_SHA_match": true,
+    "four_archived_baselines_not_recomputed": true,
+    "declared4new16cost16aggregate_count": true,
+    "all16eye_shapes_dtypes": true,
+    "all16eye_depths_integer_disparity": true,
+    "all16CAD_byteexact_archived": true,
+    "all_finite_disparities_two_complete_CADfree_windows": true,
+    "all16_exact_LR_valid_masks": true,
+    "all16_point_query_partner_selection": true,
+    "all16_world_projection": true,
+    "body_time_origin_byteexact_archived": true,
+    "all_frozen_code_input_SHA_still_match": true,
+    "result_binds_complete8prediction_seal_protocol": true,
+    "all8sealed_output_SHA_still_match": true,
+    "predict_finish_before_score_before_result_finish": true,
+    "all_three_stage_status_normal0_empty_group_and_match_ledger": true,
+    "budget4of4_inherits_diagnostic_no_recovery_physics_nav": true,
+    "aggregate_original_and_reused_baseline_equal_archived_v120": true,
+    "48saved_eye_and12union_predicted_cells_count_from_world_arrays": true,
+    "saved_eye_union_metric_count_ratio_arithmetic": true,
+    "same_GT_count_domain_and_original_baseline_row_metrics_as_frozen_v120": true,
+    "four_predicted_cell_difference_sets_and_near_far_arithmetic": true,
+    "four_candidate_component_support_counts_strict_subset_image_support": true,
+    "all_three_pooled_counts_equal_frame_union_sums": true,
+    "pooled_precision_recall_and_frozen_gate_rejection_arithmetic": true,
+    "full_fixed_domain527344targetpixels_420cellexposures4915200pixels": true,
+    "no_strict_gate_learning_physics_nav_claim": true,
+    "resource_receipt_8GiB_swap0_matches_prediction_PIDs": true
+  },
+  "check_counts": {
+    "named_checks": 30,
+    "passed": 30,
+    "sealed_outputs": 8,
+    "new_candidate_predictions": 4,
+    "reused_closed_baseline_predictions": 4,
+    "new_eye_schemas_support_LR_point_mappings": 16,
+    "frame_arm_union_metric_records": 12,
+    "eye_metric_records": 48,
+    "predicted_cell_difference_pairs": 4,
+    "new_GT_score_computations": 0,
+    "source_reference_decoder_reruns": 0
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": []
+  },
+  "saved_output_evidence": {
+    "output_SHA256": {
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/rgb_evidence_supported_reference_20261018_v1/E0_000_masked.npz": "dbc3c3b7a820a498ab0bbda47e101110ebf74b1770534a6354325417136a378c",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_supported_cost_repair_20261019_v1/E0_000_self_supported.npz": "59ab5f417c9e492e8f72522c6fe76cc8caa4018d15fbba4772fee41903a938b0",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/rgb_evidence_supported_reference_20261018_v1/E0_055_masked.npz": "7b0a1b284d1f16cf64f3b6f3a5aad5f6c5f8ab6049bd17785d47ee289e0dde8e",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_supported_cost_repair_20261019_v1/E0_055_self_supported.npz": "a743d1c2c1b88dfa72c1e02303af11f0af340066d0084e1904489587dc44180b",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/rgb_evidence_supported_reference_20261018_v1/E1B_000_masked.npz": "6f583a73b4e4207758d9537d2444e69f37877cf61debc645ec5dafd2986d4c1a",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_supported_cost_repair_20261019_v1/E1B_000_self_supported.npz": "f9ef0bbc932dd59a89dbe6d01ba267398b286606ab8cbdd1eb49f912af37c31d",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/rgb_evidence_supported_reference_20261018_v1/E1A_090_masked.npz": "946f36a372e731e5f49ce2049777e7ce776864ffc5024ad1febc54d60375229a",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_supported_cost_repair_20261019_v1/E1A_090_self_supported.npz": "64585ee5d765b1c9ebeab2aca8c48bdce6b115bd20c230b7babeac9762668c87"
+    },
+    "candidate_eye_rows": [
+      {
+        "sequence": "E0",
+        "frame": 0,
+        "eye": "front_left",
+        "finite_disparities": 150234,
+        "valid_depths": 6526,
+        "risk_points": 21
+      },
+      {
+        "sequence": "E0",
+        "frame": 0,
+        "eye": "front_right",
+        "finite_disparities": 113369,
+        "valid_depths": 6512,
+        "risk_points": 21
+      },
+      {
+        "sequence": "E0",
+        "frame": 0,
+        "eye": "rear_left",
+        "finite_disparities": 115831,
+        "valid_depths": 7991,
+        "risk_points": 116
+      },
+      {
+        "sequence": "E0",
+        "frame": 0,
+        "eye": "rear_right",
+        "finite_disparities": 150745,
+        "valid_depths": 7952,
+        "risk_points": 138
+      },
+      {
+        "sequence": "E0",
+        "frame": 55,
+        "eye": "front_left",
+        "finite_disparities": 157246,
+        "valid_depths": 4977,
+        "risk_points": 8
+      },
+      {
+        "sequence": "E0",
+        "frame": 55,
+        "eye": "front_right",
+        "finite_disparities": 113617,
+        "valid_depths": 4720,
+        "risk_points": 10
+      },
+      {
+        "sequence": "E0",
+        "frame": 55,
+        "eye": "rear_left",
+        "finite_disparities": 105098,
+        "valid_depths": 9692,
+        "risk_points": 14
+      },
+      {
+        "sequence": "E0",
+        "frame": 55,
+        "eye": "rear_right",
+        "finite_disparities": 137419,
+        "valid_depths": 9948,
+        "risk_points": 7
+      },
+      {
+        "sequence": "E1B",
+        "frame": 0,
+        "eye": "front_left",
+        "finite_disparities": 18320,
+        "valid_depths": 6464,
+        "risk_points": 544
+      },
+      {
+        "sequence": "E1B",
+        "frame": 0,
+        "eye": "front_right",
+        "finite_disparities": 17913,
+        "valid_depths": 6451,
+        "risk_points": 584
+      },
+      {
+        "sequence": "E1B",
+        "frame": 0,
+        "eye": "rear_left",
+        "finite_disparities": 23316,
+        "valid_depths": 6923,
+        "risk_points": 119
+      },
+      {
+        "sequence": "E1B",
+        "frame": 0,
+        "eye": "rear_right",
+        "finite_disparities": 23686,
+        "valid_depths": 6999,
+        "risk_points": 123
+      },
+      {
+        "sequence": "E1A",
+        "frame": 90,
+        "eye": "front_left",
+        "finite_disparities": 20779,
+        "valid_depths": 8440,
+        "risk_points": 230
+      },
+      {
+        "sequence": "E1A",
+        "frame": 90,
+        "eye": "front_right",
+        "finite_disparities": 20001,
+        "valid_depths": 8458,
+        "risk_points": 228
+      },
+      {
+        "sequence": "E1A",
+        "frame": 90,
+        "eye": "rear_left",
+        "finite_disparities": 22321,
+        "valid_depths": 8632,
+        "risk_points": 199
+      },
+      {
+        "sequence": "E1A",
+        "frame": 90,
+        "eye": "rear_right",
+        "finite_disparities": 23973,
+        "valid_depths": 8672,
+        "risk_points": 208
+      }
+    ],
+    "mapping_world_max_abs_error_m": 0,
+    "pooled_verified_counts": {
+      "original": {
+        "predicted_cells": 162,
+        "correct_cells": 152,
+        "false_visible_cells": 10,
+        "target_cells": 420,
+        "covered_cells": 128,
+        "target_pixels": 527344,
+        "valid_target_pixels": 48825
+      },
+      "baseline": {
+        "predicted_cells": 227,
+        "correct_cells": 148,
+        "false_visible_cells": 79,
+        "target_cells": 420,
+        "covered_cells": 139,
+        "target_pixels": 527344,
+        "valid_target_pixels": 9253
+      },
+      "self_supported": {
+        "predicted_cells": 216,
+        "correct_cells": 143,
+        "false_visible_cells": 73,
+        "target_cells": 420,
+        "covered_cells": 131,
+        "target_pixels": 527344,
+        "valid_target_pixels": 8977
+      }
+    },
+    "pooled_precision_recall": {
+      "original": {
+        "precision": 0.9382716049382716,
+        "recall": 0.3047619047619048
+      },
+      "baseline": {
+        "precision": 0.6519823788546255,
+        "recall": 0.33095238095238094
+      },
+      "self_supported": {
+        "precision": 0.6620370370370371,
+        "recall": 0.3119047619047619
+      }
+    },
+    "frame_predicted_difference_counts": [
+      {
+        "sequence": "E0",
+        "frame": 0,
+        "lost_cells": 6,
+        "lost_near": 3,
+        "lost_far": 3,
+        "added_cells": 3,
+        "added_near": 1,
+        "added_far": 2
+      },
+      {
+        "sequence": "E0",
+        "frame": 55,
+        "lost_cells": 1,
+        "lost_near": 0,
+        "lost_far": 1,
+        "added_cells": 1,
+        "added_near": 0,
+        "added_far": 1
+      },
+      {
+        "sequence": "E1B",
+        "frame": 0,
+        "lost_cells": 7,
+        "lost_near": 4,
+        "lost_far": 3,
+        "added_cells": 1,
+        "added_near": 1,
+        "added_far": 0
+      },
+      {
+        "sequence": "E1A",
+        "frame": 90,
+        "lost_cells": 5,
+        "lost_near": 2,
+        "lost_far": 3,
+        "added_cells": 3,
+        "added_near": 2,
+        "added_far": 1
+      }
+    ],
+    "full_domain": {
+      "full_pixels": 4915200,
+      "target_pixels": 527344,
+      "target_frame_cell_exposures": 420
+    },
+    "native_original_context": {
+      "predicted_cells": 162,
+      "correct_cells": 152,
+      "false_visible_cells": 10
+    }
+  },
+  "verified_outcome": {
+    "decision": "REJECT_FIXED_SELF_SUPPORT_REPAIR_BEFORE_FULL_SEQUENCE_OR_NAV",
+    "baseline_false_visible_cells": 79,
+    "candidate_false_visible_cells": 73,
+    "false_visible_cell_reduction": 0.07594936708860756,
+    "required_reduction": 0.2,
+    "baseline_precision": 0.6519823788546255,
+    "candidate_precision": 0.6620370370370371,
+    "baseline_recall": 0.33095238095238094,
+    "candidate_recall": 0.3119047619047619,
+    "recall_change": -0.019047619047619035,
+    "frozen_gates": {
+      "false_visible_cells_reduction_ge20pct": false,
+      "pooled_precision_loss_le1pp": true,
+      "pooled_recall_loss_le5pp": true,
+      "all_frames_recall_loss_le5pp": true,
+      "nonempty_all_target_frames": true
+    }
+  },
+  "implementation_scope": {
+    "availability": "Rotated 7x9 CAD dilation corresponds to query/partner x±4,y±3, using X-d for either signed disparity. Independent saved-array audit checked all finite candidate disparity outputs against complete original row±4/column±3 query and original partner CAD-free windows plus image borders.",
+    "joint_consumers": "The changed hypothesis-availability boolean is passed to both aggregate and unchanged evidence_decode. It changes regularization eligibility and the local unary argmin/uniqueness/at-least-two-supported-candidates acceptance domain. This is one controlled availability change across the pipeline, not an aggregation-only causal isolation.",
+    "unchanged": "reference.py and evidence_decode.py are byte-exact frozen v120 copies; original RGB/CAD/body/time/source/camera/P1/P2/paths/LR/points and fixed GT formulas/gates are unchanged. Four baseline files are reused by sealed SHA, never recomputed.",
+    "GT_boundary": "Four candidate outputs plus four archived baseline identities sealed before the fixed scorer. GT full-pixel counts and original/baseline scored rows match frozen v120; this audit did not independently recompute GT target coordinates, error quantiles or near/far classifications.",
+    "non_equivalence": "The underlying float64 reference remains numerically different from original OpenCV. Native original results are context; this does not repair or re-admit the old native/reference/C models or budgets."
+  },
+  "timing": {
+    "candidate_saved_rows": [
+      {
+        "sequence": "E0",
+        "frame": 0,
+        "seconds_including_output_IO": 82.00397130602505,
+        "component_sum_s": 81.65686503390316,
+        "candidate_hypothesis_counts": [
+          {
+            "eye": "front_left",
+            "before": 70581952,
+            "after": 41359749
+          },
+          {
+            "eye": "front_right",
+            "before": 70297920,
+            "after": 41139552
+          },
+          {
+            "eye": "rear_right",
+            "before": 70581952,
+            "after": 41395730
+          },
+          {
+            "eye": "rear_left",
+            "before": 70297920,
+            "after": 41175510
+          }
+        ]
+      },
+      {
+        "sequence": "E0",
+        "frame": 55,
+        "seconds_including_output_IO": 75.92024353099987,
+        "component_sum_s": 75.62817663990427,
+        "candidate_hypothesis_counts": [
+          {
+            "eye": "front_left",
+            "before": 70581952,
+            "after": 41419959
+          },
+          {
+            "eye": "front_right",
+            "before": 70297920,
+            "after": 41199645
+          },
+          {
+            "eye": "rear_right",
+            "before": 70581952,
+            "after": 41427591
+          },
+          {
+            "eye": "rear_left",
+            "before": 70297920,
+            "after": 41207354
+          }
+        ]
+      },
+      {
+        "sequence": "E1B",
+        "frame": 0,
+        "seconds_including_output_IO": 74.7230628200341,
+        "component_sum_s": 74.45750506990589,
+        "candidate_hypothesis_counts": [
+          {
+            "eye": "front_left",
+            "before": 70581952,
+            "after": 41359749
+          },
+          {
+            "eye": "front_right",
+            "before": 70297920,
+            "after": 41139552
+          },
+          {
+            "eye": "rear_right",
+            "before": 70581952,
+            "after": 41395730
+          },
+          {
+            "eye": "rear_left",
+            "before": 70297920,
+            "after": 41175510
+          }
+        ]
+      },
+      {
+        "sequence": "E1A",
+        "frame": 90,
+        "seconds_including_output_IO": 74.86775007599499,
+        "component_sum_s": 74.59446958894841,
+        "candidate_hypothesis_counts": [
+          {
+            "eye": "front_left",
+            "before": 70581952,
+            "after": 41504478
+          },
+          {
+            "eye": "front_right",
+            "before": 70297920,
+            "after": 41284024
+          },
+          {
+            "eye": "rear_right",
+            "before": 70581952,
+            "after": 41473116
+          },
+          {
+            "eye": "rear_left",
+            "before": 70297920,
+            "after": 41252766
+          }
+        ]
+      }
+    ],
+    "scope": "One new four-eye reference arm per frame, including cost/support/aggregation/decode/LR/points/output NPZ saving/bookkeeping, excluding initial RGB/mask/body load. Prior baseline timing was combined-twoarm, so these cannot be directly compared as a latency improvement. No online/end-to-end timing qualification."
+  },
+  "resource": {
+    "saved_receipt": {
+      "live_service_readback": {
+        "MemoryMax": 8589934592,
+        "MemorySwapMax": 0,
+        "MainPID": 2562462,
+        "ActiveState": "active"
+      },
+      "durable_child_pid": 2562464,
+      "note": "Directlive memory constraint readback; no peak yet, no sandboxPIDtranslation"
+    },
+    "scope": "Saved active-systemd readback shows MemoryMax8GiB,swap0 and the prediction parent/child IDs. No memory peak is available in this receipt."
+  },
+  "budget_and_status": {
+    "total_dispatch_cap": 4,
+    "total_used": 4,
+    "inherited_diagnosis": 1,
+    "interfaces": 1,
+    "new_predict": 1,
+    "GT_score": 1,
+    "recovery": 0,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0,
+    "prediction_status": {
+      "status": "finished",
+      "start_utc": "2026-10-19T08:44:16.761993+00:00",
+      "parent_pid": 2562462,
+      "child_pid": 2562464,
+      "process_group_id": 2562464,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-19T08:49:24.618262+00:00"
+    },
+    "score_status": {
+      "status": "finished",
+      "start_utc": "2026-10-19T08:49:57.972511+00:00",
+      "parent_pid": 2568312,
+      "child_pid": 2568313,
+      "process_group_id": 2568313,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-19T08:49:59.137341+00:00"
+    },
+    "closure": "Fixed candidate fails its predeclared20% false-visible reduction; close before full-sequence/navigation. No tuning, repeat, recovery or new budget authorized by this audit."
+  },
+  "limits": [
+    "Protected self-RGB diagnostic dependence is not proof of wrong original depth or a unique cause inside SGM.",
+    "Predicted cells and target proximity are finite visible-height-risk engineering metrics, not semantic obstacles, complete static occupancy, calibrated3D confidence, observed free space or collision safety.",
+    "Counts pool frame-cell exposures and seen development frames. Four target domains/trajectories are fixed for this comparison but do not establish independent generalization.",
+    "Removal of known-self candidate support improves one descriptive false-cell count by6 while losing8 covered target-cell exposures. All other frozen gates pass, but the required benefit gate fails.",
+    "Supported cost volumes were not retained for this audit; no BT/SGM/local unary/evidence decoder was recomputed. Saved near/far correctness and conditional error quantiles were not newly scored against GT.",
+    "No source installation, deployable repair, model learning, full-sequence success or navigation qualification follows."
+  ],
+  "assessment": "SAVED_IDENTITIES_STRUCTURES_AND_COUNTS_CONSISTENT_FIXED_FOUR_FRAME_REPAIR_REJECTED",
+  "no_rerun": true
+}

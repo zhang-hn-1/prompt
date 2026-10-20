@@ -1,0 +1,44 @@
+{
+  "results": [
+    {
+      "sequence": "H",
+      "calibration_available": false,
+      "bias_px": null,
+      "first_calibration_frame": null,
+      "max_anchor_points": 100,
+      "depth_p90_m": 0.10052614212036126,
+      "above030_fraction": 0.012124617902244728,
+      "obstacle_retention": 1.0,
+      "candidate_retention": 1.0,
+      "gate": false
+    },
+    {
+      "sequence": "E0",
+      "calibration_available": false,
+      "bias_px": null,
+      "first_calibration_frame": null,
+      "max_anchor_points": 0,
+      "depth_p90_m": 0.4267312645912175,
+      "above030_fraction": 0.18342934822830123,
+      "obstacle_retention": 1.0,
+      "candidate_retention": 1.0,
+      "gate": false
+    },
+    {
+      "sequence": "E1",
+      "calibration_available": false,
+      "bias_px": null,
+      "first_calibration_frame": null,
+      "max_anchor_points": 0,
+      "depth_p90_m": 0.11759066581726074,
+      "above030_fraction": 0.011009369993204399,
+      "obstacle_retention": 1.0,
+      "candidate_retention": 1.0,
+      "gate": false
+    }
+  ],
+  "gate": false,
+  "fit": 0,
+  "physics": 0,
+  "development_only": true
+}

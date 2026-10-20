@@ -1,0 +1,47 @@
+{
+  "results": [
+    {
+      "sequence": "H",
+      "candidates": 1047726,
+      "retained": 1047205,
+      "before_p90_m": 0.10052614212036126,
+      "after_p90_m": 0.10031008720397949,
+      "above030_fraction": 0.012048282109493661,
+      "obstacle_retention": 0.9991249555322028,
+      "candidate_retention": 0.9995027325846643,
+      "infinite_truth_candidates": 238051,
+      "infinite_truth_retained": 238044,
+      "source_gate": true
+    },
+    {
+      "sequence": "E0",
+      "candidates": 517800,
+      "retained": 514801,
+      "before_p90_m": 0.4267312645912175,
+      "after_p90_m": 0.42633724212646507,
+      "above030_fraction": 0.1833351290464763,
+      "obstacle_retention": 0.9962800210043391,
+      "candidate_retention": 0.9942081884897643,
+      "infinite_truth_candidates": 4338,
+      "infinite_truth_retained": 4326,
+      "source_gate": false
+    },
+    {
+      "sequence": "E1",
+      "candidates": 1619230,
+      "retained": 1618461,
+      "before_p90_m": 0.11759066581726074,
+      "after_p90_m": 0.11756026744842535,
+      "above030_fraction": 0.011012144543392631,
+      "obstacle_retention": 0.9998490965154649,
+      "candidate_retention": 0.9995250829097782,
+      "infinite_truth_candidates": 409624,
+      "infinite_truth_retained": 409523,
+      "source_gate": true
+    }
+  ],
+  "pass_gate": false,
+  "fit": 0,
+  "physics": 0,
+  "scope": "current paired competitor mechanism development source-only; no navigation increment"
+}

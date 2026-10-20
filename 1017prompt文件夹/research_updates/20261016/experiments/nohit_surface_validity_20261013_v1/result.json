@@ -1,0 +1,47 @@
+{
+  "fit": 1,
+  "iterations": 16,
+  "results": [
+    {
+      "sequence": "H",
+      "finite_retention": 0.9593664124494395,
+      "obstacle_retention": 0.8666620324747811,
+      "nohit_exclusion": 0.9770595376620976,
+      "candidate_retention": 0.7466035967418962,
+      "before_p90_m": 0.10052614212036126,
+      "after_p90_m": 0.10127773284912103,
+      "above030_fraction": 0.012298284574040102,
+      "validity_gate": false,
+      "eligible_scene_navigation_source_gate": false
+    },
+    {
+      "sequence": "E0",
+      "finite_retention": 0.8904826452590454,
+      "obstacle_retention": 0.8448193903214216,
+      "nohit_exclusion": 0.1772706316274781,
+      "candidate_retention": 0.8899150251062187,
+      "before_p90_m": 0.4267312645912175,
+      "after_p90_m": 0.3079999923706055,
+      "above030_fraction": 0.11123528910021017,
+      "validity_gate": false,
+      "eligible_scene_navigation_source_gate": false
+    },
+    {
+      "sequence": "E1",
+      "finite_retention": 0.8486540245336085,
+      "obstacle_retention": 0.7556498665238648,
+      "nohit_exclusion": 0.9551906138312208,
+      "candidate_retention": 0.6453017792407503,
+      "before_p90_m": 0.11759066581726074,
+      "after_p90_m": 0.11181325912475587,
+      "above030_fraction": 0.01281980094239175,
+      "validity_gate": false,
+      "eligible_scene_navigation_source_gate": false
+    }
+  ],
+  "gate": false,
+  "physics_probe_used": 1,
+  "navigation_used": 0,
+  "development_only": true,
+  "not_physical_free_space": true
+}

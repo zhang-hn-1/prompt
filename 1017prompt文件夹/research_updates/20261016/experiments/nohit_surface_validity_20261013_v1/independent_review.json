@@ -1,0 +1,30 @@
+{
+  "scope": "independent static + observed prefit failure review; no GPU or CPU launches",
+  "identity": {
+    "fit.py": "4c534a065bba511f3bd5816237f737c80cff72d44b5d48d6d008e69b6962b139",
+    "fit_protocol.json": "9d0cebf6286088e2509fa3db2ead73081ade059ff334703a918ad0feabe0272e",
+    "protocol.json": "3b76e602982b49a1ccad6a3340de41957a0f4aa8b996d247cadc7215a7b2562c",
+    "probe.py": "31041ee723bb8797a60960a13cdefdd59c1bb2ee7b68a470c4c0ec3acbe8ba35",
+    "semantic_result.json": "448cb806b272e486de30641d9f39409044e3f07871a5ad10b6cbb43a62487516",
+    "cube2m.npz": "98fdcc143affbe9da569e11464da4e4f86960e4d439de7de18487f74275ac152",
+    "clipped15m.npz": "ab80b4cb9f46ef46f01a95cb6b704f14ab2faa91d55d7aab9c7ec8a18cb05c66",
+    "fit_status.json": "af76a2c87e7a225833b2163f522e27dfd390678728966e1dad42f92ee16ed01d",
+    "fit.log": "b26a131a8c962442ce71dc1894c8fd4d9452953f735f4bcca1b2b87a4bb39834"
+  },
+  "semantic_assessment": "Installed probe confirms positive infinity as no rendered hit, including far clipping. Runtime clipping encompasses .5-3m predictions. This is renderer surface validity only, never physical free-space. Finite-depth historical rejection remains closed.",
+  "training_assessment": "Labels finitepositive vs positive infinity; unavailable other values excluded. Twelve causal features current-only; H training and train-only statistics/balancing; E0/E1 alreadyseen development only. No fitted truth/frame/time/position feature found.",
+  "gate_assessment": "qualification and finite/obstacle/nohit/allpoint/nonworse depth gates match new distinct protocol. Navigation entry additionally .15 p90/.10 gross fraction.",
+  "receipt_limitations": [
+    "semantic result hashed but probe artifacts/code/status/clipping receipt not bound in fit qualification",
+    "states termination seal manifests checked/read but not bound in qualification identities",
+    "balanced logistic score should not be described as calibrated natural-prevalence nohit probability"
+  ],
+  "observed_failure": {
+    "status": "runtime_failed",
+    "returncode": 1,
+    "cause": "numpy.bool_ qualification gate JSON serialization before fit_started",
+    "fit_started_exists": false,
+    "model_exists": false,
+    "assessment": "No optimizer started; native bool serialization correction is interface repair, not model tuning"
+  }
+}

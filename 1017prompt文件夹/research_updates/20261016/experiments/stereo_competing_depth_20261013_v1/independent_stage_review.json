@@ -1,0 +1,44 @@
+{
+  "scope": "static stage review, CPU run ongoing, no launch or rerun",
+  "reviewed_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_competing_depth_20261013_v1/competing.py": "85f962be7728a14361f8ecacc300169eeda5b1069d642f9f61632b4424394692",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_competing_depth_20261013_v1/run.py": "78babcc7be49d8775b54fd1cae888901421dc702959fc9685fa89fc4d14ec261",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_competing_depth_20261013_v1/protocol.json": "5cf63ea0527d82aa084f759cc30aec1e9eb024a2f0c8188a9747e44fde98e201",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/source_confidence_calibration_20261012_v1/fresh_result.json": "a0576632af399504a6cb3dda544711d1ac6d7f684c9173852e168735b74a9ae3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/source_confidence_calibration_20261012_v1/confidence.py": "822048e78de257d0cd0714fa9c5749e8d1a9f10b1fab5d666192204ccc0cccb3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/source_confidence_calibration_20261012_v1/interface_checks.json": "8c319057926cdd03a85ce27e186d925d5e4a1284c0e1be5ebb3cd0de65077de0"
+  },
+  "calibration": {
+    "fit": 1,
+    "optimizer_iterations": 15,
+    "heldout_gate": false,
+    "rejection_reason": "E0 p90 .426652m >.15m and >.3 fraction .183413 >.10",
+    "navigation_admission": false,
+    "interface": "six synthetic fixture checks support alignment/current identity/unknown semantics/source immutability; not six training fits or learned generalization validation"
+  },
+  "competing_confirmed": [
+    "native vertical mate y-disparity and baseline focal divided by rival optical depth correct",
+    "whole prediction seal produced before frame truth load",
+    "CAD only current joint geometry; no scene truth read for predictions",
+    "excluded outputs unknown and certified_free false",
+    "H E0 E1 labelled development, fit0 physics0"
+  ],
+  "definition_issues": [
+    {
+      "issue": "CAD from states diagnostic joints not saved public proprio",
+      "action": "Verify equality against current public joints or flag narrower privileged source claim"
+    },
+    {
+      "issue": "Primary right patch current CAD clear not checked; only rival-right patch",
+      "action": "Record protocol implementation mismatch; do not tune following scored outcome"
+    },
+    {
+      "issue": "primary right texture std2 not required",
+      "action": "Clarify whether std2 only applies left and rival; primary flat support costs otherwise admissible"
+    },
+    {
+      "issue": "prior per-epoch retention gate absent",
+      "action": "State explicit distinct preregistered gate scope; do not characterize as identical full old gates"
+    }
+  ]
+}

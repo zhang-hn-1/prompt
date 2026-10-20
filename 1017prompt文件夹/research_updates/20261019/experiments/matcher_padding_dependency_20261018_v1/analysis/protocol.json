@@ -1,0 +1,77 @@
+{
+  "utc": "2026-10-17T16:49:16.132668+00:00",
+  "question": "Do fixed padding-affected originalpoints cover false risk-cell admissions, rather than mostly positiveproxy cells?",
+  "rows": [
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "action": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/actions/E0_frame_000.npz",
+      "feature": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/features/E0/frame_000.npz",
+      "constant": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_000_constant.npz",
+      "replicate": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_000_replicate.npz"
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "action": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/actions/E0_frame_055.npz",
+      "feature": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/features/E0/frame_055.npz",
+      "constant": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_055_constant.npz",
+      "replicate": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_055_replicate.npz"
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "action": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/actions/E1B_frame_000.npz",
+      "feature": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/features/E1B/frame_000.npz",
+      "constant": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1B_000_constant.npz",
+      "replicate": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1B_000_replicate.npz"
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "action": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/actions/E1A_frame_090.npz",
+      "feature": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/features/E1A/frame_090.npz",
+      "constant": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1A_090_constant.npz",
+      "replicate": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1A_090_replicate.npz"
+    }
+  ],
+  "inputs": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/action_seal.json": "f7760628d2764c877839409a686e22e650b0cee571d199cb9c3c12f398e58ce2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/prediction_seal.json": "0922685a0f8c1caf859195c59c8c9f5116172bd2f531400e408ef361e744e98e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/result.json": "123fe4308722a24691d312a648379c7754d3970686bf810cd48a39075c3a87fd",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/protocol.json": "249a4553bf7883464686b3e04f19c4317d5ed1c2514e51394398b4c85c6bd016",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/actions/E0_frame_000.npz": "ea7dc378e22974d55bc2c710532eaf7682b3247ea1ce4704ee2095db0b874018",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/features/E0/frame_000.npz": "e6e5d10a4ee6137a7500f7f9c7dd3d3b7b984bb935dadc4e899bfec11740527a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_000_constant.npz": "9c950a40e5e0cddbcdf0d6b71c0003aa84c0f51fd03389fb2b20a8cbd8ad975e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_000_replicate.npz": "36273c72d2e0f962bfeea76dfe3bd31ac5bc772c797af0d8d5244c82607b7696",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/actions/E0_frame_055.npz": "cce410c3f9e220755165a28f02a89919e30ec47d5d1213090fa211c2109e5ce4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/features/E0/frame_055.npz": "553331c6a111c3969537a7e730168990e6fbc5e4ae15b6875047faa62411d16b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_055_constant.npz": "cf7a328a2b3df5144a97ce1b0afe007846ceaa05840b9ad1a2e935895bdaca50",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E0_055_replicate.npz": "b6f776e0567cc8b974314e901626765a13eb99cd5764771018c016de638ebd8f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/actions/E1B_frame_000.npz": "9c049f6897093f8c7fab3f56eb1e266c5d1d4280d1d5e8ca427a59d52840ffcb",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/features/E1B/frame_000.npz": "9995252fb009fbae470886f988f52723a765f200aeffb990e02e9379c424f874",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1B_000_constant.npz": "2941afb5084ebec8c804372b1ae47bb73f243e267aa86769817bf626ed3e238b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1B_000_replicate.npz": "cdb8f17cd4f9d246e96cb3759101086f217b471ef6d2736061a42f9cc3f87131",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/actions/E1A_frame_090.npz": "281aa0ee2e70846ed0e3c3eb84b33fb937ad8e771f1845238a4e37faa09ec306",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/features/E1A/frame_090.npz": "c19840b0f69a82a28d88316a8b5b17b18f448610e3f7ac71efed8cf9cc712fee",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1A_090_constant.npz": "2d1f2d7d48b69f56652b0a29495dc027dd6d82a70155df5fdd9985963e32f52c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/E1A_090_replicate.npz": "d39a4b654189559a9e452f5c4354d99fbfba245b0bd69e6a6d5802a544d9f1ee"
+  },
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/analysis/analyze.py": "cf8b50376bc80236fcf95151742d264b8a808a3b998941bcde0073dbca782894",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/matcher_padding_dependency_20261018_v1/analysis/supervise.py": "4cb5f1b409706460066866a827cf4929170ae83672af4cee25fba55ddaf8653e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c"
+  },
+  "budget": {
+    "dispatch_cap": 1,
+    "recovery_cap": 0,
+    "wall_cap_s": 60,
+    "source_calls": 0,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "fixed_rule": "Original point affected if replicateinvalid or samequery depthdelta>.15m; cell fullyaffected iff ALL its originalpoints affected. No anypoint/threshold/padding variants.",
+  "gate": "Local necessary before even proposing fullpadding-stability admission: at least20% of originalnegative cells fullyaffected in four fixedframes pooled. If not, stop this fixed repair beforefullrun; not a universalerror/benefit bound. Positive/UNKNOWN losses fully reported, allframes and margins retained.",
+  "seal_before_teacher": true
+}

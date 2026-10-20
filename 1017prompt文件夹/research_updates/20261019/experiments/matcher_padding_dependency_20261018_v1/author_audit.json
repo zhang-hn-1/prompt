@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-17T16:50:35.856472+00:00",
+  "author_saved_array_audit": true,
+  "independent_review": false,
+  "baseline_exact_16arrays": 64,
+  "baseline_sourcepoint_exact_arrays": 48,
+  "output_SHA_exact": 8,
+  "all_bound_inputs_and_code_SHA_exact": true,
+  "full_fourframe_counts": [
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "den": 437,
+      "changed": 1
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "den": 4,
+      "changed": 1
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "den": 7847,
+      "changed": 149
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "den": 3979,
+      "changed": 75
+    }
+  ],
+  "depth_GT_or_teacher_metrics_available": false,
+  "analysis_failure": {
+    "type": "KeyError",
+    "cause": "Attribution used floor world-to-cell but archived feature/consumer uses np.rint; implementation coordinate-contract mismatch. It did read first teacher-array data before failing; no classification result or metric was written.",
+    "failed_dispatch": 1,
+    "recovery_cap": 0,
+    "recovery_used": 0,
+    "stopped_without_retry": true,
+    "not_algorithm_performance_failure": true
+  }
+}

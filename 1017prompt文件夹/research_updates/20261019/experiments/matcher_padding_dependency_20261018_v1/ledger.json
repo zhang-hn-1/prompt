@@ -1,0 +1,32 @@
+{
+  "dispatch_cap": 1,
+  "dispatch_used": 1,
+  "recovery_cap": 1,
+  "recovery_used": 0,
+  "source_compute_replays_cap": 8,
+  "matcher_calls_cap": 32,
+  "fit": 0,
+  "physics": 0,
+  "navigation": 0,
+  "parent_pid": 141277,
+  "status": "finished",
+  "execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T16:47:36.673949+00:00",
+    "parent_pid": 141277,
+    "child_pid": 141278,
+    "process_group_id": 141278,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T16:47:52.461575+00:00"
+  },
+  "closed": true,
+  "remaining_dispatch": 0,
+  "remaining_recovery": 0,
+  "closure_reason": "Completed fixed counterfactual"
+}

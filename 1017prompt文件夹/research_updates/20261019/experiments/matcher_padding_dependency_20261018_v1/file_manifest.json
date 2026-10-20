@@ -1,0 +1,141 @@
+{
+  "utc": "2026-10-17T16:51:15.429979+00:00",
+  "count": 27,
+  "files": [
+    {
+      "path": "E0_000_constant.npz",
+      "sha256": "9c950a40e5e0cddbcdf0d6b71c0003aa84c0f51fd03389fb2b20a8cbd8ad975e",
+      "bytes": 444087
+    },
+    {
+      "path": "E0_000_replicate.npz",
+      "sha256": "36273c72d2e0f962bfeea76dfe3bd31ac5bc772c797af0d8d5244c82607b7696",
+      "bytes": 404096
+    },
+    {
+      "path": "E0_055_constant.npz",
+      "sha256": "cf7a328a2b3df5144a97ce1b0afe007846ceaa05840b9ad1a2e935895bdaca50",
+      "bytes": 417393
+    },
+    {
+      "path": "E0_055_replicate.npz",
+      "sha256": "b6f776e0567cc8b974314e901626765a13eb99cd5764771018c016de638ebd8f",
+      "bytes": 390390
+    },
+    {
+      "path": "E1A_090_constant.npz",
+      "sha256": "2d1f2d7d48b69f56652b0a29495dc027dd6d82a70155df5fdd9985963e32f52c",
+      "bytes": 598784
+    },
+    {
+      "path": "E1A_090_replicate.npz",
+      "sha256": "d39a4b654189559a9e452f5c4354d99fbfba245b0bd69e6a6d5802a544d9f1ee",
+      "bytes": 633319
+    },
+    {
+      "path": "E1B_000_constant.npz",
+      "sha256": "2941afb5084ebec8c804372b1ae47bb73f243e267aa86769817bf626ed3e238b",
+      "bytes": 729761
+    },
+    {
+      "path": "E1B_000_replicate.npz",
+      "sha256": "cdb8f17cd4f9d246e96cb3759101086f217b471ef6d2736061a42f9cc3f87131",
+      "bytes": 679324
+    },
+    {
+      "path": "analysis/analyze.py",
+      "sha256": "cf8b50376bc80236fcf95151742d264b8a808a3b998941bcde0073dbca782894",
+      "bytes": 3250
+    },
+    {
+      "path": "analysis/ledger.json",
+      "sha256": "84e08f24874a67ac6681a704f2f80d851d17318e1b2cd7e07b8b8144274d6ecd",
+      "bytes": 879
+    },
+    {
+      "path": "analysis/protocol.json",
+      "sha256": "065b3ffae4bdb865395ed459b638b850624ba56168d482504477d5f6caec6e3e",
+      "bytes": 8919
+    },
+    {
+      "path": "analysis/run.log",
+      "sha256": "df28b6e7fa0f409caa6794087d9e87c29863f2aceaead562543d3f8424c09656",
+      "bytes": 816
+    },
+    {
+      "path": "analysis/status.json",
+      "sha256": "ea1c3e00f4b358f1ac1f08f0004af06c92bd904cc70289ea06af72b6e9e89d25",
+      "bytes": 396
+    },
+    {
+      "path": "analysis/supervise.py",
+      "sha256": "4cb5f1b409706460066866a827cf4929170ae83672af4cee25fba55ddaf8653e",
+      "bytes": 958
+    },
+    {
+      "path": "author_audit.json",
+      "sha256": "2d1cd48c0b61dd70175b86d69a5bc5fae7dfe6f7252fe2028990637ce23a05fb",
+      "bytes": 1171
+    },
+    {
+      "path": "closure.json",
+      "sha256": "780a096b771074051cb569b0bfc010921797f01b87d174ed74fb0599428bb610",
+      "bytes": 1953
+    },
+    {
+      "path": "complete_four_frame_dependency.png",
+      "sha256": "231bd5dd6fb881ba23716161286ce911012b4693b6c4947c0f86ac5e3e55d582",
+      "bytes": 46121
+    },
+    {
+      "path": "diagnose.py",
+      "sha256": "5fba405827d6512c00e0b74619d040592a1d65620dce0bf0a508f2597d71a335",
+      "bytes": 6027
+    },
+    {
+      "path": "fixed_padding_dependency.png",
+      "sha256": "c39a430cf36d70b7af1b297f489c87ad7eb9ec56e1b3c5d8fd292b4fb090c82d",
+      "bytes": 676757
+    },
+    {
+      "path": "ledger.json",
+      "sha256": "218006913edb9fa1e9330b5f3daf25bca770b768be8cb2899e3f6fdb452c4971",
+      "bytes": 806
+    },
+    {
+      "path": "prediction_seal.json",
+      "sha256": "0922685a0f8c1caf859195c59c8c9f5116172bd2f531400e408ef361e744e98e",
+      "bytes": 2805
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "249a4553bf7883464686b3e04f19c4317d5ed1c2514e51394398b4c85c6bd016",
+      "bytes": 10114
+    },
+    {
+      "path": "render.py",
+      "sha256": "39d69eaa33971ea6325f35271f090978da1870bbf9b3d3e72bc43fcaff9632a3",
+      "bytes": 3692
+    },
+    {
+      "path": "result.json",
+      "sha256": "123fe4308722a24691d312a648379c7754d3970686bf810cd48a39075c3a87fd",
+      "bytes": 11874
+    },
+    {
+      "path": "run.log",
+      "sha256": "fee33256faf77dc6925c896c94c5843184da482ad82b4a75c1ea27446ae0649b",
+      "bytes": 44
+    },
+    {
+      "path": "status.json",
+      "sha256": "7517cf1c27ab90ed10c369ee4d0ed9befb8c15059ac7695bfee2715d5d3c522e",
+      "bytes": 390
+    },
+    {
+      "path": "supervise.py",
+      "sha256": "e6d2024b7371a1ac99ab4c862c96739c420448bbef213121018bfa9c7bf08c03",
+      "bytes": 1147
+    }
+  ]
+}

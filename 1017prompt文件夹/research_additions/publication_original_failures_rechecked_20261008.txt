@@ -1,0 +1,54 @@
+FF                                                                       [100%]
+=================================== FAILURES ===================================
+___ test_reference_rollout_solves_hash_verified_hard_0_e1_0002_static_input ____
+
+    def test_reference_rollout_solves_hash_verified_hard_0_e1_0002_static_input() -> None:
+        request = _hard_0_e1_0002_request()
+    
+        first = dynamic.plan_dynamic_lattice(request, _model())
+        second = dynamic.plan_dynamic_lattice(request, _model())
+    
+>       assert first.status == second.status == "success"
+E       AssertionError: assert 'timeout' == 'success'
+E         
+E         - success
+E         + timeout
+
+research/ball_wm/tests/test_dynamic_lattice_planning.py:285: AssertionError
+_____ test_harness_writes_required_artifacts_and_detects_config_tampering ______
+
+tmp_path = PosixPath('/tmp/pytest-of-an/pytest-228/test_harness_writes_required_a0')
+
+    def test_harness_writes_required_artifacts_and_detects_config_tampering(tmp_path: Path):
+        (
+            reference,
+            result,
+            episode,
+            runtime,
+            config,
+            world,
+>       ) = _producer_artifact_case(tmp_path)
+
+research/ball_wm/tests/test_tracking_acceptance_harness.py:792: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+research/ball_wm/tests/test_tracking_acceptance_harness.py:559: in _producer_artifact_case
+    runtime.execute(np.asarray([0.4, -0.2] * 5, dtype=np.float32))
+research/ball_wm/benchmark/isaac_runtime.py:1250: in execute
+    self._sample_collision_contact("physics")
+research/ball_wm/benchmark/isaac_runtime.py:1295: in _sample_collision_contact
+    contact = self._physical_contact()
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <benchmark.isaac_runtime.IsaacBenchmarkRuntime object at 0x75eff74d02e0>
+
+    def _physical_contact(self) -> bool:
+        """Return contact with filtered scene obstacles, excluding the ground."""
+    
+>       if self._contacts is None:
+E       AttributeError: 'IsaacBenchmarkRuntime' object has no attribute '_contacts'
+
+research/ball_wm/benchmark/isaac_runtime.py:1316: AttributeError
+=========================== short test summary info ============================
+FAILED research/ball_wm/tests/test_dynamic_lattice_planning.py::test_reference_rollout_solves_hash_verified_hard_0_e1_0002_static_input
+FAILED research/ball_wm/tests/test_tracking_acceptance_harness.py::test_harness_writes_required_artifacts_and_detects_config_tampering
+2 failed in 121.39s (0:02:01)

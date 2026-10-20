@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-10-17T06:57:49.920215+00:00",
+  "question": "Can replacing timestamp-only persistent promotion with geometric view novelty reduce repeated correlated false-risk memory while retaining real blind obstacles?",
+  "only_change": "B persistent promotion rule; recent10s positive risk, source/pose/grid/planning contracts unchanged",
+  "newmechanism": "Source body/pair-center and anchor ray witness, not a new distance source or shorter TTL; no assumption of calibrated independence.",
+  "parameters": {
+    "min_body_translation_m": 0.2,
+    "min_anchor_ray_angle_deg": 5.0,
+    "recent_risk_s": 10,
+    "voxel_m": 0.1,
+    "source_same_exposure_counts_once": true
+  },
+  "states": {
+    "current": "latest positive measurements, unchanged",
+    "recent_history": "positive<=10s, unchanged",
+    "confirmed_history": "two geometry-separated witnesses; persists asB",
+    "unconfirmed_expired": "unknown not free; reobservation flag only",
+    "conflict": "source LR rejects remain unknown; no new negative-ray clearance or confirmed-risk deletion; not every type of conflict resolved"
+  },
+  "failure_boundary": "Stationary or single-view real hazards can be forgotten after10s; changed-view correlated errors can still confirm. Native pose no hard error bounds, novelty is heuristic.",
+  "old_difference": {
+    "risk_lifetime": "existing age10/current-only and two timestamp promotion do not require changed camera/body viewpoint",
+    "point_support": "query ID dedup/sigma/endpoint floor-hazard conflict keeps hazard, no view-promotion test",
+    "RGB_corroboration": "old limited appearance-only check does not refresh geometry/age or authorize navigation",
+    "temporal_ray_teacher": "old GT retrospective visibility diagnostic, not runtime view-evidence state"
+  },
+  "old_conclusions_unchanged": true,
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/view_supported_memory_20261017_v1/memory.py": "1f70e4a17ab1a4d7bfb392193776bc9b9f36d26789b0df1a88d2e5d0b72a671c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/view_supported_memory_20261017_v1/replay.py": "986fca3c1c030c5747eeeeaf74c963e8e9c3ef77fe64d5c669f776fd056075d6",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/repeated_exposure_memory_v1.py": "4e05ad9398292962ce6bebd4c4d5c4753380ada2c0f7618d54ec55755842a971",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/current_exposure_risk_grid_v1.py": "0cf9345a1265b97d4c00d6ace63efc1f7151b59a1166cf87dd023a09079dc73f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/partial_point_risk_grid.py": "d485b51d1d5440476e734c0f5b47ac47039e518b22cea5ac514f0033643e3886",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/point_support_shadow.py": "548d6319373581ae393938754d868a6a444ed587d7029a43b88ddec0f10e7e9d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/provenance_grid.py": "c380d8554e1b792cab558bdbe45a0a12cce5da10d6612892b3ca00b0c17dbe7d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/memory_temporal_ray_label_probe_design_v1.json": "a14336e03856d97217e7e8b4c1a9d78292a97872f01c396dcf7b7a05062e8673",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/past_point_RGB_corroboration_assessment_v1.json": "6270e62a847459a879d6c6c9ba06ee102fe017594101b7bb716d40d80d0385f6",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_risk_lifetime_assessment_v1.json": "017815852c5a84fdd27cf1c6d406883989da8c7719e44dc1157a779b2ff92f8d"
+  },
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/prediction_seal.json": "19844937fd5329fc658cd5a00d9226809c55f09926cc106dc843921276710210"
+  },
+  "diagnostic_cap": 1,
+  "recovery_cap": 1,
+  "physics_cap": 0,
+  "fit_cap": 0,
+  "domain": "all110 sealed E0 source epochs; same exact four-camera source/estimated poses; development only",
+  "interface_acceptance": [
+    "no free labels",
+    "no current positive discarded",
+    "stationary repetition not persistent independent confirmation",
+    "same exposure no duplicate promotion",
+    "future reject beforepayload",
+    "synthetic10s blind retention vs unknown correct",
+    "full110 sealed A/B/C output"
+  ],
+  "offline_performance_acceptance": {
+    "false_cell_seconds_reduction_vs_B_min": 0.2,
+    "blind_true_retention_drop_vs_B_max": 0.05,
+    "same_input_map_changed_frames_min": 1
+  },
+  "performance_failure": "Report tradeoff/negative; no parameter sweep, no P2 claim. Actual three-arm numerical protocol still not frozen/authorized by this CPU diagnostic.",
+  "source_metadata": "camera eye/pair, original exposure/frame/time, query+partner pixel IDs, rawdistance NPZ + sourceSHA, native body/pair center retained"
+}

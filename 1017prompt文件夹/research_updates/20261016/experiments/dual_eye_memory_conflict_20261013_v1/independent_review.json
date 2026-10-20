@@ -1,0 +1,41 @@
+{
+  "scope": "independent static corrected consumer review before scientific admission; no GPU/CPU launch",
+  "sha256": {
+    "protocol.json": "1e9a0103a41024ea8e158d1e10edaed897f52cb8a6d0ab7521afa5b5ac91991d",
+    "conflict.py": "d85380eba391b5053713ab279f8dc3d1fd8146b09fd9467ee12d21ff4a0fba81",
+    "replay_corrected.py": "58d1f82a39ba8017a8177bd415f1cf800186784386306341371b9b3114d7bffa"
+  },
+  "confirmed": [
+    "current matching native binocular pose/endpoints only; no renderer truth in consumer",
+    "correct optical projection both eyes actual query/partner memberships",
+    "all8 envelope corners current finite matched and behind conservative margin oldsigma+currentsigma",
+    "min duplicatepartner range/max sigma conservative",
+    "expired confirmed clock>10s only; demotion unknown and no free code",
+    "different current capture IDs and onecell native camera translation",
+    "baseline all900 actualmap labels/codes exact checks before scorer",
+    "old record world/query identity exact plus matched partial sigma in corrected replay"
+  ],
+  "admission_findings": [
+    {
+      "severity": "important",
+      "issue": "contradiction epochs persist through intervening fresh positive support",
+      "implication": "later expired cell can demote using pre-hit contradiction plus one post-hit contradiction; not two after newest support",
+      "resolution": "Define evidence lifetime explicitly and reset if intended; changes require separate pre-score admission receipt"
+    },
+    {
+      "severity": "important",
+      "issue": "corrected prediction seal hashes replay.py instead replay_corrected.py and lacks raw replay input identity",
+      "resolution": "bind corrected code and actual source inputs before result admission"
+    },
+    {
+      "severity": "minor",
+      "issue": "bounds union all seen supports vs protocol latest observed envelope",
+      "implication": "conservative union can make rule harder to satisfy; describe as union envelope"
+    }
+  ],
+  "limits": [
+    "8 corner visibility checks do not certify entire shape or volume",
+    "native pose_sigma default0 is inherited privileged estimate assumption, not calibrated uncertainty",
+    "same saved E1 map replay and bodyband reference only; no independent actual navigation claim"
+  ]
+}

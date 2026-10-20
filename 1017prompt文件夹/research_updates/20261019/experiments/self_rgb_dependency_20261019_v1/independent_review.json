@@ -1,0 +1,237 @@
+{
+  "artifact_type": "independent_saved_self_RGB_dependency_review",
+  "utc": "2026-10-19T08:44:04.737483+00:00",
+  "scope": "Read-only independent saved-array and source review. No matcher, source prediction, mask generation, GT evaluation, simulator, navigation or tests executed. Loaded only saved prediction arrays/masks/body/time; no renderer depth-label/GT pixels loaded. Computed pointwise count/window arithmetic only. Only this independent_review.json is written.",
+  "reviewed_SHA256": {
+    "protocol.json": "8f0eb91909041cea49e855b03159392efffcc1191fe7193d47b9d18724d22294",
+    "diagnose.py": "2abb0e687735447a459c00466c946f0e3c93c87ccf36c57171c618719723ace6",
+    "supervise.py": "0fcfc3da547ae37039b63e2b3b60023f5bef9671f23399e59d2bcdb59df9dd48",
+    "prediction_seal.json": "d4b130bb7aa09c95a92c19e67201020be696949a98918e1568f722ea96771162",
+    "result.json": "888f49b040a6e7ea68e309e4ea971e04d5510f40b6d61c598ca87f7e6026e64e",
+    "ledger.json": "f27314816fccf1eff6a103fd22d16ac97b985971841e6d15f96a33abac2eb8c3",
+    "status.json": "0161260adf2c578c543d363b83e176b258a0fed8311ef4701f9f9adc022f25d3",
+    "dispatch_resource_receipt.json": "855005a356dc0b479d0e22508a8371c3489d569363863d80405400cd734a3908"
+  },
+  "checks": {
+    "all_protocol_code_input_SHA_match": true,
+    "one_dispatch_recovery0_normal0_empty_saved_process_group": true,
+    "all_eight_saved_output_SHA_match": true,
+    "four_frame_keys_match_preselected_v113": true,
+    "exact_expected_eight_output_keys": true,
+    "64_baseline_depth_valid_disparity_CAD_arrays_byteexact": true,
+    "48_baseline_world_query_partner_arrays_byteexact": true,
+    "16_masks_body_and_time_identical_between_arms_and_archive": true,
+    "all_saved_depth_valid_shapes_and_finiteness_consistent": true,
+    "all_original_risk_query_and_original_partner_index_mappings_consistent": true,
+    "all_16_eye_result_rows_recomputed_from_saved_arrays_direct_windows": true,
+    "all_result_totals_match_independent_sums": true,
+    "protected866of12052_and_full980of12267_witness": true,
+    "saved_budget_counts_and_no_GT_CAD_physics_fit_claim_consistent": true,
+    "saved_seal_precedes_result_and_normal_finish": true
+  },
+  "check_counts": {
+    "named_checks": 15,
+    "passed": 15,
+    "frozen_code_input_files": 17,
+    "saved_output_files": 8,
+    "baseline_arrays_byte_compared": 64,
+    "baseline_point_arrays_byte_compared": 48,
+    "eye_result_rows_independently_recomputed": 16,
+    "original_risk_queries_checked": 12267,
+    "matcher_or_source_reruns": 0,
+    "GT_scoring": 0
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": []
+  },
+  "verified_totals": {
+    "full_pixels": 4915200,
+    "edited_known_self_pixels": 608773,
+    "original_valid": 347616,
+    "inverted_valid": 348213,
+    "validity_changes": 32373,
+    "old_risk_points": 12267,
+    "old_risk_points_lost_or_shift_gt15cm": 980,
+    "protected_risk_points": 12052,
+    "protected_risk_points_lost_or_shift_gt15cm": 866,
+    "inverted_risk_points": 11966
+  },
+  "independent_frame_eye_counts": [
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "eye": "front_left",
+      "old_risk_points": 0,
+      "protected_points": 0,
+      "changed_all": 0,
+      "changed_protected": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "eye": "front_right",
+      "old_risk_points": 0,
+      "protected_points": 0,
+      "changed_all": 0,
+      "changed_protected": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "eye": "rear_left",
+      "old_risk_points": 214,
+      "protected_points": 155,
+      "changed_all": 48,
+      "changed_protected": 24
+    },
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "eye": "rear_right",
+      "old_risk_points": 223,
+      "protected_points": 161,
+      "changed_all": 51,
+      "changed_protected": 23
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "eye": "front_left",
+      "old_risk_points": 2,
+      "protected_points": 0,
+      "changed_all": 2,
+      "changed_protected": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "eye": "front_right",
+      "old_risk_points": 2,
+      "protected_points": 1,
+      "changed_all": 1,
+      "changed_protected": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "eye": "rear_left",
+      "old_risk_points": 0,
+      "protected_points": 0,
+      "changed_all": 0,
+      "changed_protected": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "eye": "rear_right",
+      "old_risk_points": 0,
+      "protected_points": 0,
+      "changed_all": 0,
+      "changed_protected": 0
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "eye": "front_left",
+      "old_risk_points": 3522,
+      "protected_points": 3509,
+      "changed_all": 186,
+      "changed_protected": 183
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "eye": "front_right",
+      "old_risk_points": 3529,
+      "protected_points": 3515,
+      "changed_all": 172,
+      "changed_protected": 169
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "eye": "rear_left",
+      "old_risk_points": 402,
+      "protected_points": 402,
+      "changed_all": 64,
+      "changed_protected": 64
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "eye": "rear_right",
+      "old_risk_points": 394,
+      "protected_points": 394,
+      "changed_all": 66,
+      "changed_protected": 66
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "eye": "front_left",
+      "old_risk_points": 1371,
+      "protected_points": 1356,
+      "changed_all": 158,
+      "changed_protected": 147
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "eye": "front_right",
+      "old_risk_points": 1310,
+      "protected_points": 1297,
+      "changed_all": 133,
+      "changed_protected": 125
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "eye": "rear_left",
+      "old_risk_points": 645,
+      "protected_points": 628,
+      "changed_all": 51,
+      "changed_protected": 35
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "eye": "rear_right",
+      "old_risk_points": 653,
+      "protected_points": 634,
+      "changed_all": 48,
+      "changed_protected": 30
+    }
+  ],
+  "verified_fractions": {
+    "protected_dependency_fraction": 0.0718552937271822,
+    "all_original_risk_dependency_fraction": 0.07988913344746067
+  },
+  "intervention_control_static_review": {
+    "single_intervention": "diagnose.py:47-54 copies archived uint8 RGB, applies255-RGB only at each frozen CADtrue pixel and asserts all outside-CAD bytes unchanged. RGB color inversion has no alternate colors/threshold sweep. Perturbed RGB is not separately saved, so the input intervention scope is supported by frozen code/runtime assertions and input SHA, rather than an independently stored perturbed-image audit.",
+    "native_source": "diag predict uses same old.CONFIG/positive+negative disparities, rotations, black448 padding, old.depths LR and old.points/body as frozen native source. It creates only OpenCV matcher objects, never FourSGBM/RobotSelfMask; no fresh CAD generation. Eight two-arm/frame predict calls times four matcher calls gives32; normal0 guard enforces count.",
+    "baseline": "All64 scalar image arrays and48 world/query/partner point arrays independently compare dtype/shape/raw bytes against archived original predictions. All16 CAD arrays and body/time are unchanged across saved arms."
+  },
+  "local_support_rectangle_review": {
+    "mapping": "np.rot90 maps rotated x±4/y±3 into original row±4/column±3, a9×7 rectangle. This conservatively includes blockradius2, halfsample BT horizontalneighbor1 and horizontal-gradientneighbor1/verticalneighbor1.",
+    "independent_method": "For each saved original query UID and original rounded partner UID, explicitly inspected both9×7 CAD windows by direct slices; did not call cv2.dilate or reuse diagnose helper. Image bounds row4..475 andcol3..636 ensure complete windows inside native image.",
+    "limitation": "This protects the original selected/rounded query-partner unary rectangles only. It does not prove that all competing disparity hypotheses, LR partner inference, subpixel neighbor costs, median/speckle postprocessing or whole-SGM paths are independent of CAD-interior RGB. Altered accepted depth/validity cannot be assigned uniquely to the SGM recurrence from this diagnostic."
+  },
+  "conceptual_nonrepeat_and_followon_review": {
+    "new_signal": "Prior padding diagnosis changed fabricated off-image pixels while measured RGB stayed fixed. This experiment keeps padding fixed and changes actual measured pixels marked by frozen known-self CAD. It is a distinct nuisance-dependency intervention on the same preselected four frames, not another padding/color sweep or evidence that old v120 benefit gates passed.",
+    "followon_scope": "A copied reference that excludes CAD-touching hypothesis-local cost support is conceptually motivated by this dependency signal. Keep exact cost values, decoder/evidence consumer, image domain, camera/source parameters and fixed accuracy gates otherwise frozen; explicitly state which support boolean is changed and where it is consumed. It remains a controlled numerical reference, not an OpenCV-equivalent single-factor native-source repair.",
+    "budget_boundary": "The proposed follow-on cap4 may explicitly inherit this completed diagnostic as1 plus one interface/predict/GT-score each, with recovery0/physics0. This audit allocates no budget, admits no implementation and grants no repeat of old closed native/reference/C experiments.",
+    "no_admission": "No CAD-support repair code, synthetic interface, actual four-frame repair prediction or GT benefit qualification is assessed as completed here."
+  },
+  "valid_conclusion": "On these fixed four frames, frozen native output has a witnessed dependency on CAD-known-self RGB:866 of12052 original risk queries whose original two local unary rectangles are CAD-free lost valid depth or shifted by>.15m under the single known-self inversion. This is nuisance-dependency evidence, not proof of which original/perturbed depth is wrong.",
+  "limits": [
+    "Frozen CAD is a known-self proxy, not verified per-pixel ground truth of actual robot/scene boundaries.",
+    "No inference of wrong metric depth, calibrated uncertainty, semantics, observed free space, physical false obstacles, performance benefit or safe navigation.",
+    ".15m is a predeclared diagnostic change criterion, not a calibrated error/safety threshold or estimated confidence.",
+    "Four development frames and the original-selected risk population are a conditional finite scope, not independent generalization or a complete population of possible detections.",
+    "Proposed local CAD-support exclusion could alter regularization context and support coverage; full fixed-domain evidence is needed before any repair benefit claim."
+  ],
+  "assessment": "SAVED_SINGLE_INTERVENTION_DEPENDENCY_WITNESS_CONSISTENT_NO_NEW_CRITICAL_IMPORTANT; FOLLOWON_REPAIR_REQUIRES_ITS_OWN_FROZEN_SINGLE_CHANGE_AND_QUALIFICATION",
+  "no_rerun": true
+}

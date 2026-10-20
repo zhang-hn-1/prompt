@@ -1,0 +1,40 @@
+{
+  "hypothesis": "At unchanged forward .4m, side +/- .3m and up .05m mounting, yaw left +20deg/right -20deg broadens side access while preserving original visible obstacle targets.",
+  "layout": {
+    "yaw_degrees": [
+      20,
+      -20
+    ],
+    "positions_m": [
+      [
+        0.4,
+        0.3,
+        0.05
+      ],
+      [
+        0.4,
+        -0.3,
+        0.05
+      ]
+    ],
+    "focal_px": 584.8888888888889,
+    "width": 640,
+    "height": 480
+  },
+  "novelty": "Old forward/compact/height proposals changed translations with identical eye rotation; this changes two eye headings only. No model or scene change.",
+  "inputs": "Seven existing complete seen development trajectories; actual renderer calibration/GT depth offline only; current native pose is not GT online. No altered image synthesized.",
+  "domain": "Original full-pixel finite .5-3m static-CAD unmasked bodyband .05<worldz<=1.5 and root-distance>=.55m union target cells; fixed .1m cell grid. New-view potential assessed separately on 3600 angle samples at radii .55/1/2/3m, height relative root=0; not scene visibility.",
+  "gates": {
+    "each_group_original_target_cell_retention_min": 0.95,
+    "potential_ring_gain_min": 1.25
+  },
+  "stopping": "First complete no-new-occlusion upper bound fails retention => reject layout before rendering. Added scene/CAD occlusion cannot restore targets failing calibrated frustum/depth-range. Static/moving CAD and rendered new domains are required only if upper bound passes, and remain unqualified otherwise.",
+  "budgets": {
+    "physical_cap": 2,
+    "physical_used": 0,
+    "environment_recovery_cap": 1,
+    "fit": 0
+  },
+  "model": "No inference or rejected model reuse. Existing v77 stays closed.",
+  "no_gt_online": true
+}

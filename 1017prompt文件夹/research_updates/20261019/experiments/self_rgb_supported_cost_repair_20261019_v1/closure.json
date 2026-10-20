@@ -1,0 +1,105 @@
+{
+  "utc": "2026-10-19T08:54:47.188366+00:00",
+  "decision": "REJECT_FIXED_SELF_SUPPORT_REPAIR_BEFORE_FULL_SEQUENCE_OR_NAV",
+  "budget": {
+    "dispatch_cap": 4,
+    "dispatch_used": 4,
+    "recovery_cap": 0,
+    "recovery_used": 0,
+    "inherited_cause": {
+      "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1",
+      "status_sha256": "0161260adf2c578c543d363b83e176b258a0fed8311ef4701f9f9adc022f25d3",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-19T08:39:43.894442+00:00",
+        "parent_pid": 2557541,
+        "child_pid": 2557545,
+        "process_group_id": 2557545,
+        "child_returncode": 0,
+        "timeout": false,
+        "parent_signal": null,
+        "forced_kill": false,
+        "no_retry": true,
+        "remaining_live_group_pids": [],
+        "remaining_zombie_group_pids": [],
+        "end_utc": "2026-10-19T08:39:59.671968+00:00"
+      }
+    },
+    "runs": [
+      {
+        "stage": "interfaces",
+        "status": "finished",
+        "parent_pid": 2561754,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-19T08:43:36.440254+00:00",
+          "parent_pid": 2561754,
+          "child_pid": 2561755,
+          "process_group_id": 2561755,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-19T08:43:36.590548+00:00"
+        }
+      },
+      {
+        "stage": "predict",
+        "status": "finished",
+        "parent_pid": 2562462,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-19T08:44:16.761993+00:00",
+          "parent_pid": 2562462,
+          "child_pid": 2562464,
+          "process_group_id": 2562464,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-19T08:49:24.618262+00:00"
+        }
+      },
+      {
+        "stage": "score",
+        "status": "finished",
+        "parent_pid": 2568312,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-19T08:49:57.972511+00:00",
+          "parent_pid": 2568312,
+          "child_pid": 2568313,
+          "process_group_id": 2568313,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-19T08:49:59.137341+00:00"
+        }
+      }
+    ]
+  },
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/self_RGB_dependency_and_cost_support_results_20261019.md",
+  "report_sha256": "de7bdecedde270beaa1819fc2cba25610160520d8920695087371017eefdcef3",
+  "cause_result_sha256": "888f49b040a6e7ea68e309e4ea971e04d5510f40b6d61c598ca87f7e6026e64e",
+  "independent_cause_review_sha256": "5e9fbda39544e051a39315c9282ab7ee36b7d9522bd3d9c7b0b348c48df81558",
+  "independent_repair_review_sha256": "eb341293131e51013da4af24e745adb7efde0dd23a85b6c5adc110ee83d8a198",
+  "all_stages_normal0": true,
+  "current_runtime": null,
+  "old_closed_budgets_unchanged": true,
+  "source_original_native_unchanged": true,
+  "whole_goal_complete": false,
+  "learning_increment": false,
+  "physics": 0,
+  "navigation": 0,
+  "fit": 0
+}

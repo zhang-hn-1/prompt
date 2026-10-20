@@ -1,0 +1,32 @@
+{
+  "public_joints": [
+    {
+      "sequence": "H",
+      "public_joint_capture_pairs": 181,
+      "diagnostic_equals_public_exact": true,
+      "max_residual": 0
+    },
+    {
+      "sequence": "E0",
+      "public_joint_capture_pairs": 181,
+      "diagnostic_equals_public_exact": true,
+      "max_residual": 0
+    },
+    {
+      "sequence": "E1",
+      "public_joint_capture_pairs": 181,
+      "diagnostic_equals_public_exact": true,
+      "max_residual": 0
+    }
+  ],
+  "decision": "implemented_competing_variant_rejected",
+  "protocol_limitations": [
+    "Primary right patch mask and std were not enforced; evaluation not full proof of intended strictly-supported variant.",
+    "No corrected candidate rescoring after seeing results; primary-support implementation stays archived and rejected.",
+    "New distinct protocol specified aggregate retention; former learned-model per-epoch gate not claimed here."
+  ],
+  "result_gate": false,
+  "physical_runs": 0,
+  "fit": 0,
+  "remaining_physical_budget_closed": 4
+}

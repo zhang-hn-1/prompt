@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-17T12:07:10.546349+00:00",
+  "status": "frozen_before_dispatch",
+  "question": "Can a pure current/past runtime RGB/source interface reproduce the exact24 model channels already sealed, independently of risk admission?",
+  "reason": "Privileged admission-action policy and CURRENT data support passed. Before choosing/fitting a learner, actual RGB-only feature consumption must exist and match the archived causal data.",
+  "prerequisite_result": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/conservative_capture_admission_20261017_v1/result.json",
+  "feature_seal": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json",
+  "single_change": "Refactor exact existing24 source feature equations to pure FeatureTracker.update; no feature/normalization/geometry/history definition changes.",
+  "input_schema": "frame/source_time/now and payload exactly fourRGB, estimatedbody, four source-only eye fields. Current/previous REALsource feature observations persist independently of admitted risk; no label/staticmap/sceneID/files accepted.",
+  "checks": {
+    "complete_exposures": 470,
+    "complete_cell_rows": 40052,
+    "channels": 24,
+    "complete_feature_scalars": 961248,
+    "seven_arrays_per_capture_byte_exact": 3290,
+    "original_points": 2985832,
+    "outside_points": 0,
+    "all_finite": true,
+    "future_and_duplicate_before_payload": true,
+    "teacher_keys_rejected": true,
+    "invalid_no_state_mutation": true
+  },
+  "budget": {
+    "dispatch_cap": 1,
+    "recovery_cap": 1,
+    "feature_extraction_calls_cap": 470,
+    "fit_cap": 0,
+    "source_prediction_calls_cap": 0,
+    "physics_cap": 0,
+    "navigation_cap": 0,
+    "wall_cap_s": 300
+  },
+  "stop": "Any mismatch stops thisfixed frontend beforemodel fit; recoveryonlyimplementation/environment at most1, no feature/threshold change. Passing is interface qualification, not fit or navigation admission.",
+  "scope": "470 archived original current4rig captures only, allseen. Purefrontend numerical equivalence, no model/prediction/source generation, physical world or GT. Time measures featurefunction only including currentCAD distance transform/localaggregation, not originalsource or end-to-end; repeated frame rejection not additional feature call. Lifetime counts persist beyond10s; recent summary window10s doesnotmean strict10s memory.",
+  "metadata_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/conservative_capture_admission_20261017_v1/result.json": "62f7932fb25c3065f7cb3bc9838457e40abe52d946ab42689f217ffd984f5f2a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/conservative_capture_admission_20261017_v1/action_data_prerequisite.json": "453a7aadf91ce9bdd512a62f618311da4d74a5855133f3310daf48d5969a559c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/conservative_capture_admission_20261017_v1/protocol.json": "195e345c8ffc65766246287ee4e46170e938a31d50601ab0f90d2e8ce2c5343f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json": "038b9fbee4fe89d7f14221df397ab71f669cd483e77ab42e621acc8060b8e439",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/persistent_entry_data_qualification_20261017_v1/features.py": "d5235b2ce93a649484c1994dce77624a5e8d68ca68217a9267788b1d1a6b5639"
+  },
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_feature_frontend_20261017_v1/frontend.py": "0211218b96e07be051a09bad4917cdd5d6304a779094ce97d395c46698d7c49b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_feature_frontend_20261017_v1/qualify.py": "a1b14054c5e47fd5767f0bd1482b5957a9ba3cb4a25d655b770f8aa657fbb9fb",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_feature_frontend_20261017_v1/supervise.py": "c97efd5e7be652dfd00aabdb5f329a5b9125ca57dbc0ae5989dd8b475f700614",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c"
+  },
+  "online_default_changed": false,
+  "old_budgets_reopened": false
+}
