@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-09T14:29:08.199168+00:00",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_learned_memory_risk_cpu_stage_v1.py": "e63461b073e5d81ca1a5679ec46871e0049d8a458f5146d56f738b8c1c2b3468",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/durable_stage_supervision_v1.py": "7189f8ae002db7866c9a36f29f5fcf24c9506c2144d0b3b362e2ce1ee18119f2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/learned_memory_risk_prefit_identity_v1.json": "3af2ba40b16c1aad4988d7a9fe1051673d6816323d98db2e33b26e312d63c0e9"
+  },
+  "fit_budget": 1,
+  "no_automatic_retry": true,
+  "per_stage_timeout_wall_s": 900,
+  "failed_fit_not_performance_reject": true,
+  "fresh_teacher_not_inspected": true
+}

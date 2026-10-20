@@ -1,0 +1,25 @@
+{
+  "qualified": false,
+  "first_attempt": {
+    "raw_status": "runtime_failed",
+    "exit_code": 1,
+    "reason": "SDK import before lazy SimulationApp startup"
+  },
+  "sole_recovery": {
+    "raw_status": "finished",
+    "exit_code": 0,
+    "recorded_exception": "collect_data_dubins missing before original _initialize inserts scripts path",
+    "complete_capture_seal": false,
+    "actual_exposures": 0
+  },
+  "score": {
+    "status": "runtime_failed",
+    "exit_code": 1,
+    "reason": "No capture seal; not a model/geometry score"
+  },
+  "gates_unchanged": true,
+  "physics_scene_results": null,
+  "model_inference": 0,
+  "navigation": 0,
+  "no_automatic_additional_startup": true
+}

@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-08T21:08:32.818318+00:00",
+  "whole_research_complete": false,
+  "automation_status": "ACTIVE",
+  "external_user_block": false,
+  "current_process_running": false,
+  "active": [],
+  "latest_report": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/benchmark_current_paired_evidence_and_fresh_source_20261009.md",
+  "actual_session": 93735,
+  "actual_exit_code": 0,
+  "stage_decision": "REJECT_UNIQUE_PAIRED_CURRENT_EVIDENCE_RULE",
+  "source_scope": "freshwhole4s zero bootstrap; historical now after labels",
+  "memory_scope": "dormant read-only;5unit and prefixreplay;notactor/online",
+  "append_receipts": [
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/research_mission.md",
+      "old_bytes": 416158,
+      "old_sha256": "ca86f16db3770a09ba321f7408b2f29efe5e588f9380222d9191416998498b3e",
+      "new_sha256": "614b86ddff464b56433d020cddf12d8b6419127cb4c5498f86cdd633ee5333fe"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+      "old_bytes": 510957,
+      "old_sha256": "2610f7846ee7163400c98aa6cbc032f42e2ba166cd93e5d9cdb50b350efbc915",
+      "new_sha256": "ed044758a2b814b03544f3bdfa0a9bfed50202ef4a2aad1bebe476b90bdfa354"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md",
+      "old_bytes": 224818,
+      "old_sha256": "2679bcbb8e2e43fa2a6b94135b2709f501abcc7f5d75c84026e7f489282850b1",
+      "new_sha256": "49383301870adc81b797c0744c00e341e4acd9b131118c540f0ddb1c983c4a61"
+    }
+  ],
+  "start_append_receipt": {
+    "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+    "old_bytes": 510635,
+    "old_sha256": "fe1808ace2c6f1d61397076553cc2d6ae5fb936a9cee944f22b1248b15b1d644",
+    "current_prefix_matches_v56": true,
+    "description": "start append retained; final append separately sealed"
+  },
+  "original35_NOTRUN": true,
+  "no_Git_push": true,
+  "next": "Read report and paired_current_A2_run_v1/fresh_failure_layer_diagnosis_v1.json. Current paired nonblack/CAD rule rejected in fresh sequence, do not repeat/retune/drop floor to claim pass. Continue a bounded explicit flat-ground-prior physical-consistency\u2192UNKNOWN role/consumer interface on current raw NN packet, independently frozen as prior diagnosis, not observed free or source admission; retain early plane violations and temporal errors, input provenance and current smoother state. Need predeclared separate task-level candidate/control acceptance before new actual navigation. Do not refit networks or sourceheld, raise voxel/black thresholds, repeat oldOracle/retreat/sourcequota1; original35 remains NOTRUN.",
+  "stop_reason": "Execution checkpoint after actual fresh GPU run, sealed evaluation, bounded pose/correspondence attribution, additional tested provenance memory implementation and replay; no user approval wait. Next interface has not been implemented; existing physical sequence closed so do not relaunch."
+}

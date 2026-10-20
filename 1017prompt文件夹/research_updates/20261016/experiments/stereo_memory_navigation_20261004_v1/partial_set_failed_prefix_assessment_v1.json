@@ -1,0 +1,252 @@
+{
+  "utc": "2026-10-07T10:03:47.914211+00:00",
+  "decision": "REJECT_INCOMPLETE_RUNTIME_VALIDATION",
+  "available_prefix_scientific_checks_pass": true,
+  "incomplete_sequence_not_fresh_pass": true,
+  "runtime_error": "float32 frame-time tolerance at epoch45",
+  "no_actual_retry": true,
+  "rows": [
+    {
+      "frame": 15,
+      "containment": 1.0,
+      "area_m2": 1.62,
+      "cells": 162,
+      "unexecuted_route_length_m": 5.345584412271575,
+      "unexecuted_true_clearance_m": 0.15817358021386985,
+      "route_reason": "unknown_exploration",
+      "checks": {
+        "nonempty": true,
+        "containment_ge95": true,
+        "area_le6": true,
+        "route_le7": true,
+        "continuous_body_clearance_ge0": true
+      }
+    },
+    {
+      "frame": 20,
+      "containment": 1.0,
+      "area_m2": 1.6400000000000001,
+      "cells": 164,
+      "unexecuted_route_length_m": 5.428427124746191,
+      "unexecuted_true_clearance_m": 0.3058452585416478,
+      "route_reason": "unknown_exploration",
+      "checks": {
+        "nonempty": true,
+        "containment_ge95": true,
+        "area_le6": true,
+        "route_le7": true,
+        "continuous_body_clearance_ge0": true
+      }
+    },
+    {
+      "frame": 25,
+      "containment": 1.0,
+      "area_m2": 1.6500000000000001,
+      "cells": 165,
+      "unexecuted_route_length_m": 5.42842712474619,
+      "unexecuted_true_clearance_m": 0.33839454130078805,
+      "route_reason": "unknown_exploration",
+      "checks": {
+        "nonempty": true,
+        "containment_ge95": true,
+        "area_le6": true,
+        "route_le7": true,
+        "continuous_body_clearance_ge0": true
+      }
+    },
+    {
+      "frame": 30,
+      "containment": 1.0,
+      "area_m2": 1.6,
+      "cells": 160,
+      "unexecuted_route_length_m": 5.428427124746189,
+      "unexecuted_true_clearance_m": 0.3028121866928295,
+      "route_reason": "unknown_exploration",
+      "checks": {
+        "nonempty": true,
+        "containment_ge95": true,
+        "area_le6": true,
+        "route_le7": true,
+        "continuous_body_clearance_ge0": true
+      }
+    },
+    {
+      "frame": 35,
+      "containment": 1.0,
+      "area_m2": 1.59,
+      "cells": 159,
+      "unexecuted_route_length_m": 5.428427124746189,
+      "unexecuted_true_clearance_m": 0.30061861787694877,
+      "route_reason": "unknown_exploration",
+      "checks": {
+        "nonempty": true,
+        "containment_ge95": true,
+        "area_le6": true,
+        "route_le7": true,
+        "continuous_body_clearance_ge0": true
+      }
+    },
+    {
+      "frame": 40,
+      "containment": 0.9945945945945946,
+      "area_m2": 1.58,
+      "cells": 158,
+      "unexecuted_route_length_m": 5.428427124746189,
+      "unexecuted_true_clearance_m": 0.2987000457633606,
+      "route_reason": "unknown_exploration",
+      "checks": {
+        "nonempty": true,
+        "containment_ge95": true,
+        "area_le6": true,
+        "route_le7": true,
+        "continuous_body_clearance_ge0": true
+      }
+    }
+  ],
+  "class_rows": [
+    {
+      "frame": 0,
+      "eye": "left",
+      "pixels": 28625,
+      "precision": 0.9993711790393013,
+      "pass_ge95": true
+    },
+    {
+      "frame": 0,
+      "eye": "right",
+      "pixels": 28639,
+      "precision": 0.994273543070638,
+      "pass_ge95": true
+    },
+    {
+      "frame": 5,
+      "eye": "left",
+      "pixels": 24302,
+      "precision": 0.9960497078429759,
+      "pass_ge95": true
+    },
+    {
+      "frame": 5,
+      "eye": "right",
+      "pixels": 22822,
+      "precision": 0.991981421435457,
+      "pass_ge95": true
+    },
+    {
+      "frame": 10,
+      "eye": "left",
+      "pixels": 24596,
+      "precision": 0.9978451780777362,
+      "pass_ge95": true
+    },
+    {
+      "frame": 10,
+      "eye": "right",
+      "pixels": 22394,
+      "precision": 0.9954898633562561,
+      "pass_ge95": true
+    },
+    {
+      "frame": 15,
+      "eye": "left",
+      "pixels": 29026,
+      "precision": 0.9973816578240199,
+      "pass_ge95": true
+    },
+    {
+      "frame": 15,
+      "eye": "right",
+      "pixels": 27594,
+      "precision": 0.9955787490034065,
+      "pass_ge95": true
+    },
+    {
+      "frame": 20,
+      "eye": "left",
+      "pixels": 29907,
+      "precision": 0.9977597218042599,
+      "pass_ge95": true
+    },
+    {
+      "frame": 20,
+      "eye": "right",
+      "pixels": 28568,
+      "precision": 0.9964995799495939,
+      "pass_ge95": true
+    },
+    {
+      "frame": 25,
+      "eye": "left",
+      "pixels": 29641,
+      "precision": 0.9975371951013798,
+      "pass_ge95": true
+    },
+    {
+      "frame": 25,
+      "eye": "right",
+      "pixels": 27928,
+      "precision": 0.9967058149527356,
+      "pass_ge95": true
+    },
+    {
+      "frame": 30,
+      "eye": "left",
+      "pixels": 29752,
+      "precision": 0.9970422156493681,
+      "pass_ge95": true
+    },
+    {
+      "frame": 30,
+      "eye": "right",
+      "pixels": 28230,
+      "precision": 0.9963513992206872,
+      "pass_ge95": true
+    },
+    {
+      "frame": 35,
+      "eye": "left",
+      "pixels": 30340,
+      "precision": 0.9982201713909031,
+      "pass_ge95": true
+    },
+    {
+      "frame": 35,
+      "eye": "right",
+      "pixels": 28261,
+      "precision": 0.9978769328756945,
+      "pass_ge95": true
+    },
+    {
+      "frame": 40,
+      "eye": "left",
+      "pixels": 30731,
+      "precision": 0.9974293059125964,
+      "pass_ge95": true
+    },
+    {
+      "frame": 40,
+      "eye": "right",
+      "pixels": 28531,
+      "precision": 0.9962847429112194,
+      "pass_ge95": true
+    }
+  ],
+  "exact_reconstructed_fields": 123,
+  "prefix_source_epochs": 7,
+  "future_payload_rejections": 9,
+  "immutable_birth_exact": true,
+  "requests_zero": 45,
+  "exposure_error_max_s": 0.0,
+  "decoded_video_frames": {
+    "stereo_view": 46,
+    "third_person": 46
+  },
+  "renderer_GT_used_post_close_only": true,
+  "knownpose_privileged": true,
+  "not_observed_free_or_occupied": true,
+  "not_navigation_or_formal_success": true,
+  "old_source_and_class_completeness_REJECT_preserved": true,
+  "whole_research_complete": false,
+  "manifest_sha256": "24a3ecde62aed16482ed071e1d1864eb20697634d92c136c3b4bf5a30cf61f30",
+  "script_sha256": "115d39791d573592ee0084e1c79d1bca37b75bce05691b9efa23d0328b9a3bb6"
+}

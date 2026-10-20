@@ -1,0 +1,9 @@
+{
+  "runtime_path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+  "sha256": "72266e68bced65f81e41dbe96d99a806e4f674b13c9ae7db563016097d8a29f7",
+  "execute_lines": "1195-1271",
+  "runtime_contract": "execute(action_block) clips/reshapes controls, applies unchanged smoother/PID then exactly one non-rendering physics tick per raw target. Renders/captures after complete existing block. Raw/clipped/smoothed/applied are distinct in diagnostic trace.",
+  "bridge_gap": "New Bridge.step callback expects one20ms request feedback; existing runtime execute accepts an entire controls_per_block action block. Do not directly call execute with one pair or alter camera cadence.",
+  "next_implementation": "Use five existing5-control blocks for25 committed targets, preserving captures .1s and cameras/lighting/PID. Bind committed program before first block; obtain25 raw target/timestamp/pose supervision records from verified diagnostics. Preserve anchor supervision separately. New block-level adapter must handle early contact/interruption and time zero offsets without fabricated continuation.",
+  "physics_admitted": false
+}

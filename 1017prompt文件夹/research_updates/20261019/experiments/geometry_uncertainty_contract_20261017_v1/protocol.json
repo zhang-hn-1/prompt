@@ -1,0 +1,55 @@
+{
+  "question": "Before interpreting a local deformation Laplace/Fisher quantity as an observed-data geometry posterior, does theta=0 satisfy a necessary stationarity condition on the two existing frozen fields?",
+  "kind": "One read-only assumption diagnostic; no BayesRays uncertainty implementation, scene updates, actual source predictions or depth filtering",
+  "parent": "experiments/radiance_background_control_20261016_v1",
+  "checkpoints": {
+    "RGB_init_failed": "experiments/radiance_rgb_initialization_20261016_v1/predictions/step_1024.pt",
+    "known_density_init_qualified": "experiments/radiance_surface_reference_20261016_v1/initialization_predictions/step_1024.pt"
+  },
+  "checkpoint_sha256": {
+    "experiments/radiance_rgb_initialization_20261016_v1/predictions/step_1024.pt": "7cfaa2adc6a191ebc420cb4f7417c7b203142d364fd99457ff4f29f2f13be121",
+    "experiments/radiance_surface_reference_20261016_v1/initialization_predictions/step_1024.pt": "900f2605c72abb6b70f91cbf9e27997fae3fb1854ac82b0f8232d16bc060781c"
+  },
+  "prior_objective": "experiments/radiance_rgb_initialization_20261016_v1/analysis/objective_result.json",
+  "prior_objective_sha256": "293795197073f9ea86b3e5625df3554d20f860d308ddee4919a337ceab61132f",
+  "prior_objective_arrays_sha256": "effb8a35d8457affd5eead6154c34526d7471a3547d6c96be16f7c75234f0a46",
+  "model": "Deform BOTH frozen density and color lookup coordinates by a global world-X offset delta_m; same field values/state, same rendering/bounds/background. This constant translation is a valid low-dimensional spatial deformation direction. Inputdelta is ephemeral for differentiation and fixed validation, not an updated scene parameter.",
+  "likelihood": "Observed syntheticfitRGB. Mean over9600rays of sum_RGB((renderRGB(delta)-observedRGB)^2). No entropy/distortion/width terms. No labels/GTdepth. A zero-centred quadratic deformation prior has exactlyzero first derivative atdelta0, so nonzero likelihoodgradient also violates posterior stationarity in this direction, irrespective of positive finite priorstrength.",
+  "rays": "SAME8fitviews×1200native stride16 pixels,9600perfield, no selection by depth/label/error. AllfitRGB current/available together in engineeringfixture; no claim of onlinecausal timing.",
+  "evaluations": {
+    "delta_m": [
+      -0.001,
+      0.0,
+      0.001
+    ],
+    "autograd_at_delta0": true,
+    "selected_descent_not_applied": "The sign of aggregategradient identifies which of the two fixed validation offsets is a first-order descent direction; report actual observedRGB loss there. Never write changes/checkpoints or infer correcteddepth."
+  },
+  "aggregations": {
+    "equal_view": "8equalviews and equalrays",
+    "training_expectation": [
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625,
+      0.5625
+    ]
+  },
+  "decision": "For each aggregation and field, record stationarycondition violation abs(dL/ddelta)>1e-6 RGB_SSE/m. Corroborate with fixed1mm descent reducing loss by >max(2e-8,1e-5*L0). Both present => counterexample to treating this frozenstate as an observed-data stationary centre. A pass in this one direction would NOT establish a true mode, calibration, globalerror bound or sourceadmission. A failure does NOT imply BayesRays algorithm cannot compute a heuristic Fisherfield or universally fails; we stop the proposed calibrated-error interpretation, not evaluate fullBayesRays performance.",
+  "numerical": "At delta0, renderedRGB and perviewMSE must match saved prior objective arrays within2e-6 RGB /2e-7loss. Save all3offsetRGB plus observedRGB and perviewgradients. Parameter tensors/hash exact unchanged, optimizer stateempty. Directional finite-difference slope is descriptive because piecewise trilinear samples can crossknots, not a tunable acceptance rule.",
+  "scope": "Known syntheticbackground and privileged GT-density-initialized qualifiedcomparator remain. Not realfourcamera performance. No intervals/accepted depth/BEV/free or nav produced. GURecon separately examined read-only, no training/repo/model downloads.",
+  "budget": {
+    "dispatch_cap": 1,
+    "diagnostic_cap": 1,
+    "fit_cap": 0,
+    "optimizer_steps_cap": 0,
+    "physical_cap": 0,
+    "navigation_cap": 0,
+    "recovery_cap": 1,
+    "wall_cap_s": 120
+  },
+  "stopping": "After one registered pass close. If stationarycentre is contradicted, no localposterior calibration or Bayesian confidence filter used to rescue v99/v102. Do not optimise delta, changeprior/noise/coefficient, converge/refitclosedfields or infer allRGB methods impossible."
+}

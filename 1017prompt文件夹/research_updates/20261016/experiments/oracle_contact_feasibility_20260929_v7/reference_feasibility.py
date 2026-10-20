@@ -1,0 +1,9 @@
+from pathlib import Path
+import json,numpy as np
+h=Path(__file__).resolve().parent;mapping=json.loads((h/'bank_mapping.json').read_text());out=[]
+for case in ['0002','0004']:
+ p=h.parent/f'oracle_pid_validation_20260929_v4/navigation_hard_0/episode_hard_0_e1_{case}/states.npz';z=np.load(p);ref=z['kinodynamic_reference_pose'];direction=z['kinodynamic_reference_drive_direction'];ds=np.linalg.norm(np.diff(ref[:,:2],axis=0),axis=1);dyaw=np.arctan2(np.sin(np.diff(ref[:,2])),np.cos(np.diff(ref[:,2])));k=np.divide(dyaw*direction[:-1],ds,out=np.zeros_like(ds),where=ds>1e-8);rows=[]
+ for i,curvature in enumerate(k):
+  direct='forward' if direction[i]>0 else 'reverse';levels=mapping['directions'][direct];mins=[min(levels[l]['curvature_body_1_m']) for l in ['low','high']];maxs=[max(levels[l]['curvature_body_1_m']) for l in ['low','high']];envelope=(min(mins),max(maxs));outside=curvature<envelope[0] or curvature>envelope[1];rows.append(dict(segment=i,direction=direct,length_m=float(ds[i]),geometry_body_curvature_1_m=float(curvature),support_union_min=float(envelope[0]),support_union_max=float(envelope[1]),outside_all_measured_steady_support=bool(outside)))
+ out.append(dict(case=case,segments=rows,segment_count=len(rows),outside_union_count=sum(r['outside_all_measured_steady_support'] for r in rows),outside_union_length_m=sum(r['length_m'] for r in rows if r['outside_all_measured_steady_support']),total_length_m=float(ds.sum()),max_abs_curvature=float(abs(k).max()),minimum_turn_radius_m=float(1/abs(k).max()),measurement='wrapped reference body yaw increment divided by signed waypoint chord length; not a hard physical bound'))
+(h/'reference_feasibility.json').write_text(json.dumps(out,indent=2));print(json.dumps([{k:v for k,v in r.items() if k!='segments'} for r in out],indent=2));print('steady support',mapping['directions'])

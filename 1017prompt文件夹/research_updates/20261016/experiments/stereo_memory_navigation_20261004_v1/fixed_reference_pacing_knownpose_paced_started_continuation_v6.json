@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-09T09:55:29.874466+00:00",
+  "stage": "knownpose_b0_closed_paced_running",
+  "b0": {
+    "status": "finished",
+    "start_utc": "2026-10-09T09:51:12.112974+00:00",
+    "parent_pid": 200251,
+    "child_pid": 200252,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T09:55:07.429208+00:00"
+  },
+  "paced": {
+    "status": "running",
+    "start_utc": "2026-10-09T09:55:19.581176+00:00",
+    "parent_pid": 205219,
+    "child_pid": 205253,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session": 96720,
+  "whole_mission_complete": false,
+  "remaining_complete_sequence_budget": 0,
+  "next": "supervise same paced child; frozenassessor_knownpose_v3; independentevaluate; no retry/no gate change; knownposepass not native/visual"
+}

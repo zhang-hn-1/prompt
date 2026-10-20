@@ -1,0 +1,62 @@
+{
+  "utc": "2026-10-09T16:43:21.802518+00:00",
+  "events": [
+    {
+      "frame": 60,
+      "current_time_s": 5.999999865889549,
+      "local_target": [
+        -1.1999999940395334,
+        -0.8999999940395327
+      ],
+      "nominal_terminal": {
+        "x_m": -1.3284339904754112,
+        "y_m": -0.7575060295204072,
+        "yaw_rad": -0.5366256521093971,
+        "drive_direction": "forward",
+        "main_command_rad_s": 0.0,
+        "auxiliary_angle_rad": 0.0
+      },
+      "known_global_goal": [
+        3.300000005960465,
+        5.960465010446114e-09
+      ],
+      "forward_component_m": 3.5905886282464397,
+      "nominal_pursuit_curvature_1_m": 0.27434402546536374,
+      "existing_terminal_predicate": true,
+      "future_measurements_consumed": false,
+      "current_reference_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/qualified_start_navigation_e1_b0_run_v1/local_plans/frame_060.json",
+      "current_reference_sha256": "cd2f5461e675dfb802f9871d99638b506f617d68da77e1568e7a1191a7aa9666"
+    },
+    {
+      "frame": 120,
+      "current_time_s": 11.999999731779099,
+      "local_target": [
+        -0.4999999940395341,
+        1.3000000059604666
+      ],
+      "nominal_terminal": {
+        "x_m": -0.5615162794117746,
+        "y_m": 1.4433046801991882,
+        "yaw_rad": 0.6061352269462046,
+        "drive_direction": "forward",
+        "main_command_rad_s": 0.0,
+        "auxiliary_angle_rad": 0.0
+      },
+      "known_global_goal": [
+        3.300000005960465,
+        5.960465010446114e-09
+      ],
+      "forward_component_m": 2.3513658320782165,
+      "nominal_pursuit_curvature_1_m": -0.3984923743931404,
+      "existing_terminal_predicate": true,
+      "future_measurements_consumed": false,
+      "current_reference_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/qualified_start_navigation_e1_b0_run_v1/local_plans/frame_120.json",
+      "current_reference_sha256": "38b099ba02edf031d0bda484cab2cdc5f328b06b32c1598e43a95f75e69cece2"
+    }
+  ],
+  "contexts": 2,
+  "new_queries": 0,
+  "new_physics": 0,
+  "not_a_navigation_or_dynamic_model_result": true,
+  "all_endpoints_already_pass": true
+}

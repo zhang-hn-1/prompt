@@ -1,0 +1,34 @@
+{
+  "sealed_utc": "2026-10-05T19:25:57.134871+00:00",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_event_witness.py": "2e987e9ceb1a1b19a0b723fced3b5b4a67abf908cc4b7e3fa11feb1c7f6c7b44",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/test_imu_event_witness.py": "624b173686cb00b3d02895d521ea503be63c373c8a095ec75eddd796686a4f62",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_imu_event_witness.py": "20447d451dccc7f44aa84cacb6b7f5e2ad85a5348e034285acdf0083276541a4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_imu_event_witness_stage.py": "cf79a4cffca7a03c7a68dfb09f54fe5e595baa5cb79c81783f8f9292c7f5b046",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/specs/2026-10-06-native-imu-event-time-witness-design.md": "03e3930b5a154512cc556c26608fec8630e4e5132ebba21f16153f31c18d8f0b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-06-native-imu-event-time-witness.md": "4d4020aa4ce1ec7822e0fd146d0d489547ec95788557dac27611a84bee38d03d",
+    "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/exts/isaacsim.core.api/isaacsim/core/api/simulation_context/simulation_context.py": "0be3b0eaa44e6110cec520be9ac2c08cea17ba97db14b1b0aa60d87824deceb3",
+    "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/exts/isaacsim.core.api/isaacsim/core/api/physics_context/physics_context.py": "e88e30c5959964443dfbd9a69a43eaf264c89bcaae8f116c2953dc8bd5516a03",
+    "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/exts/isaacsim.sensors.physics/include/IsaacSensor.h": "4569123d76e0bb8841d06dbc697c8a447ae7bb114687f6abca85ec045788f7f2",
+    "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/exts/isaacsim.sensors.physics/include/IsaacSensorTypes.h": "aacd1293378123ba4577f7fe666b4a8dbc3fbfe5a96b95688f6d61f05a2a3479",
+    "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/exts/isaacsim.sensors.physics/isaacsim/sensors/physics/scripts/imu_sensor.py": "0a812541d2eb7fcb645c666190d700b89181cd04467026f335034bd2be9d8cf5"
+  },
+  "maximum_runs": 1,
+  "steps": 50,
+  "physics_dt_s": 0.02,
+  "rates_rad_s": [
+    0.0,
+    0.3,
+    -0.4,
+    0.7,
+    -0.8,
+    0.1
+  ],
+  "evaluation_start_index": 2,
+  "rate_tolerance_rad_s": 1e-05,
+  "stamp_tolerance_s": 1e-05,
+  "step_tolerance_s": 1e-06,
+  "robot_run": false,
+  "predictor_call": false,
+  "old_robot_gate_rejection_preserved": true
+}

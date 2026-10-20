@@ -1,0 +1,37 @@
+{
+  "frozen_at_utc": "2026-10-04T09:25:33.540056+00:00",
+  "role": "two targeted whole open-plane large-bank turn-stop coverage measurements, no fitting/navigation/model-acceptance",
+  "names": [
+    "positive",
+    "negative"
+  ],
+  "max_sequences": 2,
+  "duration_s": 18,
+  "reset": "complete once at start, no internal physics/PID/smoother reset",
+  "request": "0\u20136s zero;6\u201312s main+.3rad/s and encodedaux +/-30deg(desiredbank +/-22.5deg);12\u201318s rawzero",
+  "frozen_pid": {
+    "kp": 0.4,
+    "ki": 0.1,
+    "kd": 0.7
+  },
+  "rig": "ball_stereo_front020_up005_v2 unchanged",
+  "lighting": "fixed_camera_fill_v1",
+  "seed": 3072,
+  "acquisition": "accepted complete transaction,181captures/901physics/37archivedstereopairs/181video frames expected, no legacy scoredtail",
+  "gaps": "currentB0bank24deg exceeds old14deg; .3main/largebank curvature and stop not covered by steady map lowmain .5",
+  "stop": "from12s zero request, physical cumulativeXY/radial to+1.5s,+3s,end and first5consecutive10Hzspeed<.05 with reboundreset; raw/clip/smooth/applied separate",
+  "geometry": "actualworldXY course=atan2(vy,vx), XY geometriccurvature=cross(v,a)/speed^3; central finite derivatives offline at aligned10Hz; include only speed>=.05. Geometric3point curvature separately; never substitute rootyawrate/speed as XY curvature",
+  "window_s": [
+    10.5,
+    12.0
+  ],
+  "steady": "measuredbankstd<=2deg andabsbanklineartrend<=1deg/s, actualspeedCV<=.2, actualmainjointstd<=.03rad/s; targetangleachievement alone separate",
+  "target_reached": "actualbank within2deg desired for5consecutive10Hzsamples during active request",
+  "stop_tail_gate": "old .140884 finite stoppingtail NOT changed; report actual exceedance, no new universal bound from two samples",
+  "model": "no oldM1/M2fit,newnetwork,unboundedscan or firstnavcandidate; measuredtable first; these design-targeted sequences not fresh heldout",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/large_bank_schedule.py": "0742617f3e4708a6dca3d9addd0b711dd142ae5d6fb23ee8a33cae91d0db9424",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_large_bank.py": "4dc69acb0a6429f74ae070a53f06479e625abf5e8a8abaef1fdf0f9a0c0e86fc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/test_large_bank_schedule.py": "14a2bb6d02e98808bbe868a4232205e638a05d7c4a0e486a940d4126e6bc72ba"
+  }
+}

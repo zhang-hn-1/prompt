@@ -1,0 +1,1670 @@
+{
+  "scope": "offline current-input ordinary retention audit, not fixed harness nor new online validation",
+  "hypothesis": "ordinary baseline retains measured completed local endpoint",
+  "arms": {
+    "native_pose_baseline35_e0_run_v1": {
+      "boundaries_exact": 57,
+      "boundaries": [
+        {
+          "frame": 65,
+          "time_s": 6.499999854713678,
+          "remaining_arc_m": 2.090271359815559,
+          "endpoint_distance_m": 2.081401339121673,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 70,
+          "time_s": 6.9999998435378075,
+          "remaining_arc_m": 2.059298918655568,
+          "endpoint_distance_m": 2.0507984119591525,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 75,
+          "time_s": 7.499999832361937,
+          "remaining_arc_m": 1.983191266872633,
+          "endpoint_distance_m": 1.9752273126490503,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 80,
+          "time_s": 7.999999821186066,
+          "remaining_arc_m": 1.8755390609428322,
+          "endpoint_distance_m": 1.8671354124347685,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 85,
+          "time_s": 8.499999810010195,
+          "remaining_arc_m": 1.7670224337659903,
+          "endpoint_distance_m": 1.7561179314986728,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 90,
+          "time_s": 8.999999798834324,
+          "remaining_arc_m": 1.6636051825899778,
+          "endpoint_distance_m": 1.6524850913689313,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 95,
+          "time_s": 9.499999787658453,
+          "remaining_arc_m": 1.5611293328062503,
+          "endpoint_distance_m": 1.5521742178578108,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 100,
+          "time_s": 9.999999776482582,
+          "remaining_arc_m": 1.4543381937784046,
+          "endpoint_distance_m": 1.4502761053742823,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 105,
+          "time_s": 10.499999765306711,
+          "remaining_arc_m": 1.3530158876930525,
+          "endpoint_distance_m": 1.3491135803866317,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 110,
+          "time_s": 10.99999975413084,
+          "remaining_arc_m": 1.2552615536552367,
+          "endpoint_distance_m": 1.2523047023543432,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 115,
+          "time_s": 11.49999974295497,
+          "remaining_arc_m": 1.156207315624704,
+          "endpoint_distance_m": 1.1568095922865207,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 120,
+          "time_s": 11.999999731779099,
+          "remaining_arc_m": 1.062419004036507,
+          "endpoint_distance_m": 1.062855596560228,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 125,
+          "time_s": 12.499999720603228,
+          "remaining_arc_m": 0.9710839906911755,
+          "endpoint_distance_m": 0.9712382341675707,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 130,
+          "time_s": 12.999999709427357,
+          "remaining_arc_m": 0.8819986719674162,
+          "endpoint_distance_m": 0.8819958156296391,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 135,
+          "time_s": 13.499999698251486,
+          "remaining_arc_m": 0.7939028419693037,
+          "endpoint_distance_m": 0.7938721979994922,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 140,
+          "time_s": 13.999999687075615,
+          "remaining_arc_m": 0.707435809616977,
+          "endpoint_distance_m": 0.7073671534572047,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 145,
+          "time_s": 14.499999675899744,
+          "remaining_arc_m": 0.6220838161055728,
+          "endpoint_distance_m": 0.6220296403202601,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 150,
+          "time_s": 14.999999664723873,
+          "remaining_arc_m": 0.536671566381747,
+          "endpoint_distance_m": 0.5368420686941867,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 155,
+          "time_s": 15.499999653548002,
+          "remaining_arc_m": 0.4517363518679105,
+          "endpoint_distance_m": 0.4518689609458896,
+          "decision": "rebuild",
+          "reject_reasons": [
+            "remaining_arc_under_lookahead"
+          ],
+          "reference_version": 2
+        },
+        {
+          "frame": 160,
+          "time_s": 15.999999642372131,
+          "remaining_arc_m": 2.010383103550456,
+          "endpoint_distance_m": 1.9915798226091823,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 165,
+          "time_s": 16.49999963119626,
+          "remaining_arc_m": 1.9202846928502073,
+          "endpoint_distance_m": 1.8996085112995447,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 170,
+          "time_s": 16.99999962002039,
+          "remaining_arc_m": 1.830042388024073,
+          "endpoint_distance_m": 1.8081348046409964,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 175,
+          "time_s": 17.49999960884452,
+          "remaining_arc_m": 1.7452937002658129,
+          "endpoint_distance_m": 1.727211772268447,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 180,
+          "time_s": 17.999999597668648,
+          "remaining_arc_m": 1.6596771042160947,
+          "endpoint_distance_m": 1.6478934158439797,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 185,
+          "time_s": 18.499999586492777,
+          "remaining_arc_m": 1.5654810236257286,
+          "endpoint_distance_m": 1.5522134295670913,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 190,
+          "time_s": 18.999999575316906,
+          "remaining_arc_m": 1.4690841812405644,
+          "endpoint_distance_m": 1.4478927877942172,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 195,
+          "time_s": 19.499999564141035,
+          "remaining_arc_m": 1.3715069553813866,
+          "endpoint_distance_m": 1.3528002796462797,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 200,
+          "time_s": 19.999999552965164,
+          "remaining_arc_m": 1.26843518283873,
+          "endpoint_distance_m": 1.2656444975139653,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 205,
+          "time_s": 20.499999541789293,
+          "remaining_arc_m": 1.1707030845333386,
+          "endpoint_distance_m": 1.1675782354580468,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 210,
+          "time_s": 20.999999530613422,
+          "remaining_arc_m": 1.068367280477079,
+          "endpoint_distance_m": 1.056069727810296,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 215,
+          "time_s": 21.49999951943755,
+          "remaining_arc_m": 0.9644449236794721,
+          "endpoint_distance_m": 0.9493842568038963,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 220,
+          "time_s": 21.99999950826168,
+          "remaining_arc_m": 0.8528085414156421,
+          "endpoint_distance_m": 0.852679019602613,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 225,
+          "time_s": 22.49999949708581,
+          "remaining_arc_m": 0.7557293716996747,
+          "endpoint_distance_m": 0.7540619839873477,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 230,
+          "time_s": 22.99999948590994,
+          "remaining_arc_m": 0.6461320120759266,
+          "endpoint_distance_m": 0.6465969499402272,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 235,
+          "time_s": 23.499999474734068,
+          "remaining_arc_m": 0.5405009441468147,
+          "endpoint_distance_m": 0.5429139407343954,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 240,
+          "time_s": 23.999999463558197,
+          "remaining_arc_m": 0.448112351059903,
+          "endpoint_distance_m": 0.4461525820302789,
+          "decision": "rebuild",
+          "reject_reasons": [
+            "remaining_arc_under_lookahead"
+          ],
+          "reference_version": 3
+        },
+        {
+          "frame": 245,
+          "time_s": 24.499999452382326,
+          "remaining_arc_m": 2.300327729597519,
+          "endpoint_distance_m": 2.2676415750942343,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 250,
+          "time_s": 24.999999441206455,
+          "remaining_arc_m": 2.2045911306506345,
+          "endpoint_distance_m": 2.1688499736545688,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 255,
+          "time_s": 25.499999430030584,
+          "remaining_arc_m": 2.110104274622225,
+          "endpoint_distance_m": 2.070240549560137,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 260,
+          "time_s": 25.999999418854713,
+          "remaining_arc_m": 2.016515744122571,
+          "endpoint_distance_m": 1.9859720592426107,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 265,
+          "time_s": 26.499999407678843,
+          "remaining_arc_m": 1.9210873863406768,
+          "endpoint_distance_m": 1.905868670667302,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 270,
+          "time_s": 26.99999939650297,
+          "remaining_arc_m": 1.837340736215691,
+          "endpoint_distance_m": 1.8140592498725412,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 275,
+          "time_s": 27.4999993853271,
+          "remaining_arc_m": 1.7586165379268937,
+          "endpoint_distance_m": 1.7139546608575595,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 280,
+          "time_s": 27.99999937415123,
+          "remaining_arc_m": 1.6743123379331393,
+          "endpoint_distance_m": 1.6258039209249129,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 285,
+          "time_s": 28.49999936297536,
+          "remaining_arc_m": 1.5843553610894525,
+          "endpoint_distance_m": 1.5552539058754073,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 290,
+          "time_s": 28.999999351799488,
+          "remaining_arc_m": 1.4950437073100513,
+          "endpoint_distance_m": 1.4792646926827815,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 295,
+          "time_s": 29.499999340623617,
+          "remaining_arc_m": 1.4008828467521082,
+          "endpoint_distance_m": 1.3818797505552793,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 300,
+          "time_s": 29.999999329447746,
+          "remaining_arc_m": 1.303118704643466,
+          "endpoint_distance_m": 1.282937419082098,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 305,
+          "time_s": 30.499999318271875,
+          "remaining_arc_m": 1.2187945879170743,
+          "endpoint_distance_m": 1.19864955461755,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 310,
+          "time_s": 30.999999307096004,
+          "remaining_arc_m": 1.130929148960433,
+          "endpoint_distance_m": 1.121379283702888,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 315,
+          "time_s": 31.499999295920134,
+          "remaining_arc_m": 1.043490470337361,
+          "endpoint_distance_m": 1.032682621272907,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 320,
+          "time_s": 31.999999284744263,
+          "remaining_arc_m": 0.9350305272833954,
+          "endpoint_distance_m": 0.9349702923046136,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 325,
+          "time_s": 32.49999927356839,
+          "remaining_arc_m": 0.8394798534421621,
+          "endpoint_distance_m": 0.8389552474944094,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 330,
+          "time_s": 32.99999926239252,
+          "remaining_arc_m": 0.7608225670963327,
+          "endpoint_distance_m": 0.7432078240494188,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 335,
+          "time_s": 33.49999925121665,
+          "remaining_arc_m": 0.6738638681086315,
+          "endpoint_distance_m": 0.6480200652256628,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 340,
+          "time_s": 33.99999924004078,
+          "remaining_arc_m": 0.541592743903412,
+          "endpoint_distance_m": 0.5452955972832663,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 3
+        },
+        {
+          "frame": 345,
+          "time_s": 34.49999922886491,
+          "remaining_arc_m": 0.44515317293156853,
+          "endpoint_distance_m": 0.4432421701648245,
+          "decision": "rebuild",
+          "reject_reasons": [
+            "remaining_arc_under_lookahead"
+          ],
+          "reference_version": 4
+        }
+      ],
+      "near_endpoint_retained": [],
+      "rebuild_under_lookahead": [
+        {
+          "frame": 155,
+          "time_s": 15.499999653548002,
+          "remaining_arc_m": 0.4517363518679105,
+          "endpoint_distance_m": 0.4518689609458896,
+          "decision": "rebuild",
+          "reject_reasons": [
+            "remaining_arc_under_lookahead"
+          ],
+          "reference_version": 2
+        },
+        {
+          "frame": 240,
+          "time_s": 23.999999463558197,
+          "remaining_arc_m": 0.448112351059903,
+          "endpoint_distance_m": 0.4461525820302789,
+          "decision": "rebuild",
+          "reject_reasons": [
+            "remaining_arc_under_lookahead"
+          ],
+          "reference_version": 3
+        },
+        {
+          "frame": 345,
+          "time_s": 34.49999922886491,
+          "remaining_arc_m": 0.44515317293156853,
+          "endpoint_distance_m": 0.4432421701648245,
+          "decision": "rebuild",
+          "reject_reasons": [
+            "remaining_arc_under_lookahead"
+          ],
+          "reference_version": 4
+        }
+      ],
+      "input_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/policy_records.json": "85c147f2b62b016121f7b8e021288054d3db8b6c9f60870ad53b1c91cdb5262b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/native_predictions.json": "08c6fbbb55aa0e8f907cc6e332fd3e62252f66ec1908199194a37c009392b7f5",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/artifact_manifest_post_close.json": "91b4aa876dac3a664e10b4502f7d7b80c3b7430604497a2272037e435e6be615",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_065.npz": "dbe28cf629149859eeb5a67b078ada84030c9f076850518ceddd6c2dce2ccff5",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_064.json": "901de77ddee324b9020cc8f98e8932f8c4c5514202dcb7ac9232ae0da4a5894e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_070.npz": "e53882e58a161c8dfe06a3189a646f911faee3f985f711c83976c033b40e47c7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_069.json": "ee4788ca5d8048ea43dc8a0bc28a93bf2521c9b19be34c7fd1988f44509254f7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_075.npz": "533a78c07f14399d291897620f87374f2bafd21ca295489307a517d087799734",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_074.json": "f013ef73cbdf20fa5823bece5a4d718f4ad4bc677f8f3b7f3351e00ec165fb9e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_080.npz": "85d49239fa318bb4e19ed45ff45fba8270586238d760ef5bb5ef0f6c2afee21b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_079.json": "52e238523135cd64aef29eac22b0cfe75a958c1e904bea8ec7e48a8c732147e0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_085.npz": "63de9cecba4fc0fefaee8226bd91e98a95954c7dd2cbf35032dca6288e06c7ed",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_084.json": "369be5a00d60da9d0af653cc89408e07a3ec9d0117af661b6f8f056308dcf2e9",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_090.npz": "00f67c273f2618177530da1db891974523f67d881c095427d5b0f4b81ca4e191",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_089.json": "bdff4677c10e02b7124bbf53e28cda15225f33f3132b8c0b77fbd98a866ffa1e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_095.npz": "a109231c0a4685e90c8cc93563172055eaa55cc4ee3ed79f32152c01811b8a86",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_094.json": "80a1679a17526925d7802f7535656386821640958c82299ab9aa5f99c7ca8d50",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_100.npz": "d2e3d35a0622b93c7de5a667d9f15a4cd808860e11cd8b508c434185c420cf51",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_099.json": "5ef85ca9653aea3dafa8903de457a0bffbc6a43bb13deaf67fa4915c0dfd3f13",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_105.npz": "fbcfbf775d5f9375da0d04044715d2ef90e24b4f8e87fc8fa5c1fd3989955d61",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_104.json": "57c03058533e31dc339e1f6377fcbdec858bbcc2a82436a5e1c5b5189f7d4ffb",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_110.npz": "56ec061d50009f936f81b8b6e193564621e63aff089b2bc25510d3b805c8d8ab",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_109.json": "5ad21129a7bbd79461906bfa540293dd350896edb4e5eefc27b07057c7fefe52",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_115.npz": "12417b0804f58352cdf7b71d5cd7b70f34b8afd6fd6f4261bc9782876c0ceda8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_114.json": "892e573d5a069d8b9cd212698a7fd30ef4b82eb909e7a5f79162a7c81cec2377",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_120.npz": "dee64c12369252b2374c039c9b393e45d43914b11cf9dd75edf459c46965dbdf",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_119.json": "6ee74562d786dc8f95606a19d31a638ec5c9842603400c0264ae68a0798fef89",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_125.npz": "f28b51c29d319d05c34573422fe4db894dffb4a136aafe5bb9fa6ea05d3733ac",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_124.json": "cb259b419574400fb85807c701614093a91e56564e5940de285995be54e0bed2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_130.npz": "15409933cfd2f6febe1ee6a8db9a0ed5d01e6d08a074760b31d75256fd1d2dc3",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_129.json": "4b28479d1d9a2e75ee675c0d543859433822e4f57a261950cd3344681bdda6c4",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_135.npz": "21ead6fc4e53a230087f744b11605f072e95e2382da2c2ca266f8202846ec800",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_134.json": "d76a7f364ad2d1d4d0f03f381ac407f6956bd0e3165dc5ae6a43819ca37490e0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_140.npz": "82c794bfd5ba20032c75ceb32d846eb470ae5dfd77c7541ad3b20557cd393556",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_139.json": "43ab8481a4938c07c985516761f750908c4d95ffb1a5f2ca35c0d129fe93c1b0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_145.npz": "3389d299c57e257a143d1c34e1a8b7e2e4b3ad01ff7d314cee98efbd3d3520c6",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_144.json": "730dbd61505de837fb8ba1dff2ca7b26504bcc476620cb25bbe10e6645b6dfa0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_150.npz": "35410571c0903b8ce1a7c78b45d484d02501b059d8f83cee1672e6d922301aa3",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_149.json": "d2b636d3d72a3f13a051a433ab48f1ccf4cdfe4e9ac79d3e4ad52c6d0c0d6f04",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_155.npz": "0677c6570c82e38ec233d96ac958ab4bd918cf2fe99e02ab231ba6477c5c3143",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_154.json": "44e151317cd3ff954724265ed596f0af75cd2760bc2947a7adcf328533e4bff0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_160.npz": "6349bd7cc3015ff1cdf8d645a0f73ebc612b5a08029366918542ea09ca1e099a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_159.json": "8d5961cf8a5b06f265555c519967505501cc43e15f49705ffc6046728f93bafc",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_165.npz": "27c06fb3e2d14782aee333b07798468915a1634be4f91a00a5aa3253f3d31b94",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_164.json": "7c5e04e43f80372d84a4827ccdfd21807deea56986051e7e4b738f3c011bd363",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_170.npz": "2dc2353a719af1430def4603217225ead01f3e20850a9ed3e16f85cec8e1c5ad",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_169.json": "14ece709ec93b4f9a20af479a0357268491b786b60efcf46c50bb2d711c9f298",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_175.npz": "407570cde32c31f1e4e69ae45c03b9ecfc3a26bf1c6cb553601da09405ee20e8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_174.json": "9446a4cb9c3f6aa5fd0a0b9143433daed76ffbb1369d9b693a6148f41defbddf",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_180.npz": "1e4156051b677a338d13648d39f13dd991677285e9a7f0028a96a3323321ec9a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_179.json": "257203c02e17df5ffa7f768866734f8c54adeef66442b61368b28bfae0ec0ac1",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_185.npz": "e9e0427542b1f3da33bbdf73e2de1a15e2c15e7e67df61b358a47a4c6b7b232b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_184.json": "0b43dd85e8e4c78cc1ca895a6791f7871bc6f24fe2fc100ec9abd05909b6f9eb",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_190.npz": "095cf4ace7942d9848a9d5f5601a941e888a22cac43ebab7d51188590989a4df",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_189.json": "54e40cd7792fc98678978ea86b5765231576d0f2ee47367cdd72141068aa27e2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_195.npz": "7f593674ae5acb5713d0ef72d92100e2405736898e6019ea1a7bc4c65fc83674",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_194.json": "f6ab46188957377a8bcdcc298168869ed8984a47ae99a7a4cb403d871a435e32",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_200.npz": "8c315d23e998a67de592dd77b1c1e61c37ec036d3413ff2901eedc705e7dd92b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_199.json": "5e65da8acae0798c0204995daedf1265fdd5675e17d2915c83a6293a19b38b55",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_205.npz": "d6e1b470ff42aa64977ee8fa446ec35127e2129b41b6c012ddcdf6cf3353d105",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_204.json": "13de97e81fbd53ca30bc4aff240b3582c1760e3fa1b2217f6caddb2408cbd928",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_210.npz": "3dd8f01d50cf76ea4b53b07511ee9fb1db565e33c8f3b31157ee56406e00665b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_209.json": "53c5b3f49495cebe4850fd57915f1cf38947299536a673b18ecf593c94446190",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_215.npz": "e4627df9994e6d392d471b9e09cc98e22eb9af751bfaf2786b3bc1a748eb89f2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_214.json": "45f363bdcb8c3511d431f803443817e256daaaf955e1913dc7176c1767d0a950",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_220.npz": "ad8a2e7a341530d9b9ca31f6484ebf1ed35661735b5896c5f7bc5ddaa3ee68c3",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_219.json": "d343206279df373a93d46e7345551b756b72941603999579539c817b5f763449",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_225.npz": "7aa63d51e08159f29092e3202a5562c32b1efe396f6988cb8046c613193da388",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_224.json": "c5d10a556194396a0ba8421403209d562be401d78b766bc34b415466c51840bb",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_230.npz": "2483e0dde80c994ef0921b3f6e01618a632df906d3a491cebfa15da5acd5f577",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_229.json": "16ca35710a0c06bec6a481fb3e3203ad3cce27d8b97d68a150ea72d76955c8ca",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_235.npz": "7563e020cae7fc4aaf00541559aa4a6b5ad4fcd2a3f2f5cad42a4f48b8a7fded",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_234.json": "8c1a6a01ed64aab90eabdc2acb6859709b89d9aed11895c491842d8bf4a85644",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_240.npz": "1a58aba60e0a807572bd88828ca48eb265ef353d177cb805e2ba468977b1311f",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_239.json": "9493e79906b5cca004dc09b780204657e53d08b25e19323497063a0f637f63c9",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_245.npz": "8d94ab10a149b06776f238db9c6d375e4c28a2f3bcee05d52437a60109047bf5",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_244.json": "326672b5e23247a0fac518a29d5cae39e03818a69d0df46d93cdae047199bb76",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_250.npz": "9080776b8c14210f36d487e895aafbefe9c13a06d0865be995246a985a72ddf4",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_249.json": "05e0bed56340d11191aebdd5afa97b5ab6107f13c68a81fb0d7917387b5ea778",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_255.npz": "816233aa067dc9cc88eda90897c4c48c0dbfb9e5be098605ff6e934233f5200a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_254.json": "541b28368a9db86eb96ca02ea5dba2bb644fa7b5f07913765b551b8fbb62f459",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_260.npz": "ed8fcc98f73be91b7cb1e317b93e19326bfe9cc44c1878ccdf141cee2a9e73e5",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_259.json": "9b1dd0210c3afdb48d27ac479b92a689a748f1bb5f7eb88f28891c3e731bc32e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_265.npz": "81d048e4580066aea660a51e860d2bb4a55f04fd19bcbe06d01dca9d03ac7134",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_264.json": "9ecde20820d30f441257cf099f9fdcff3e714456bda6af041a77843f0fd99910",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_270.npz": "3cbe3a22c446ff018e532dad6dac37a02c0643c08cbd289ece2cb7c8dc96678c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_269.json": "9caace1a48374cf37f8d59aac4b7259dad682519d60ff93cc7f4a153974821da",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_275.npz": "b0ad68e38f7bb0197a689dddfefba53a3268269793511937d60bc0e17ecfca67",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_274.json": "714fa5e4811720dc713fa8f69368da88dd05a649f742ea93219f57d3f66f8f68",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_280.npz": "3e52e4fdb7fb950fc8c40992649c8e8ede857b3ee39ed90cbb45cb6420c0f28f",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_279.json": "40bb0b87545c58021e60bfca59fbb1d36433cf6fdc6a363d323d8f9ffbe13033",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_285.npz": "7f1f1949ce80f46f9a700e7eabe2c443b22f530f65833aeae67319050bb3301d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_284.json": "8b8fb475a42eaeae6823219f82cb70d79ea8f93dd81b1f565b423dac2a6e8bad",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_290.npz": "650e866ff416f6d7ec1e6dc6dc0c0a5d95a289453a8bf48f1a440e6608f6f644",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_289.json": "82709038c8118b3554248f7c4141c8251ca0ad26668780db86470cd7cfa4d85e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_295.npz": "a22f8b598aef3458078c8d1e24c3206a5cb4a9fc565875e6526e58f6c340f87c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_294.json": "ca5ef9a98b6898c2b4a51b94e7b0be81849c0df6ab0109d484949d24e2e8075c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_300.npz": "73d43075559246fea7ee299b87c4fdd034949d7d70e1d1f10ddb350be9a41a7d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_299.json": "9f819fb3a83f0bc73d532bd2dab8dc0d1f3c55f0696385ffa82fbc7fdb62e265",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_305.npz": "256ccdbbcfbf6e8669a6d465b647aac78e6e05cff12855234fc38724e7b44808",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_304.json": "33712baf8b9033ee333b942cfe494973db2bfcd3d2c7129c99ebb972c75a7155",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_310.npz": "3183e52f4b2474677d5aeeab6f030443f645dece1a2db4c2e4b1d4f0539fcf90",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_309.json": "e8f9590627990553cdaff266f99eb9a1c9acd29f9952fdb80bfaf5ce95623186",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_315.npz": "3ccb307e1a31c48323564ac7f019e74b7c8ab7d86eec515c5e560a576b3333be",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_314.json": "f0d0492247a179b3324636da6c65ccab5913d7dac706b7e5f122a8199bab2f8c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_320.npz": "f1b79ef3447774588ef736092be3bfb0507d0c83554dfb2a59864b64c479dee2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_319.json": "6d3f5483b5024f4996355b6da805810f232c0434b11970f7f0000087c05f07a0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_325.npz": "8183f567f112f671f675e44df9f95eb624b95852320b99072b50cfef6acdb89b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_324.json": "4d34263cdb931b19691acb5d6944b218187f181daa6b9bf29cbe2c9888ad67f9",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_330.npz": "282fec8d61db3fe37082e4def355f525ed14445b55270f41ccde12b4ba859902",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_329.json": "4be5874af42cdc28112394fe25b40a601bf7523800e4825cbc9d153ebf280bc1",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_335.npz": "d95292de8347bd958346d702a492f12061ce3682f88922e63c608d081e4dde3c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_334.json": "6522fa46b73e2c59707f768206ab3da6caad890a0196297eeb420014cfa4e148",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_340.npz": "ffbaead0bee96fbeffd49c199619eafbb7bbb620e408f88ce4461e867d5989e1",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_339.json": "e7bda73a69556efe6aba4b868242725a597199ba7d68c4553a1d9d862da18eef",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/maps/frame_345.npz": "c387c4b4997170a20c71384aa8fbfb39e981f5ff07242e073e0738065b1e80bd",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/local_plans/frame_344.json": "24f8ab87d70635dfec333974030ab5441255781dcaf6aff7c48a9e39a49d2378"
+      }
+    },
+    "native_pose_baseline35_e1_coverage_run_v1": {
+      "boundaries_exact": 57,
+      "boundaries": [
+        {
+          "frame": 65,
+          "time_s": 6.499999854713678,
+          "remaining_arc_m": 2.0870425339320255,
+          "endpoint_distance_m": 2.067929760093592,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 70,
+          "time_s": 6.9999998435378075,
+          "remaining_arc_m": 2.0522652458730466,
+          "endpoint_distance_m": 2.027602956175793,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 75,
+          "time_s": 7.499999832361937,
+          "remaining_arc_m": 1.9704492726443814,
+          "endpoint_distance_m": 1.9386119089727594,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 80,
+          "time_s": 7.999999821186066,
+          "remaining_arc_m": 1.8623716090674678,
+          "endpoint_distance_m": 1.8317742152233194,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 85,
+          "time_s": 8.499999810010195,
+          "remaining_arc_m": 1.750684656279852,
+          "endpoint_distance_m": 1.7421653377419724,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 90,
+          "time_s": 8.999999798834324,
+          "remaining_arc_m": 1.6590696640991283,
+          "endpoint_distance_m": 1.651835617863578,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 95,
+          "time_s": 9.499999787658453,
+          "remaining_arc_m": 1.5523944895361215,
+          "endpoint_distance_m": 1.544697041181698,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 100,
+          "time_s": 9.999999776482582,
+          "remaining_arc_m": 1.4504302496949144,
+          "endpoint_distance_m": 1.4434667529374388,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 105,
+          "time_s": 10.499999765306711,
+          "remaining_arc_m": 1.36057542902428,
+          "endpoint_distance_m": 1.3579428593787903,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 110,
+          "time_s": 10.99999975413084,
+          "remaining_arc_m": 1.2670118022787877,
+          "endpoint_distance_m": 1.266799455425044,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 115,
+          "time_s": 11.49999974295497,
+          "remaining_arc_m": 1.1615769194031844,
+          "endpoint_distance_m": 1.165638021236593,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 120,
+          "time_s": 11.999999731779099,
+          "remaining_arc_m": 1.066909466215574,
+          "endpoint_distance_m": 1.0725161224087305,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 125,
+          "time_s": 12.499999720603228,
+          "remaining_arc_m": 0.9747149007993969,
+          "endpoint_distance_m": 0.9881387401030088,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 130,
+          "time_s": 12.999999709427357,
+          "remaining_arc_m": 0.8952060194639153,
+          "endpoint_distance_m": 0.8982898488520826,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 135,
+          "time_s": 13.499999698251486,
+          "remaining_arc_m": 0.8071869277968156,
+          "endpoint_distance_m": 0.8061927845407423,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 140,
+          "time_s": 13.999999687075615,
+          "remaining_arc_m": 0.7196107068603717,
+          "endpoint_distance_m": 0.7214413367910888,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 145,
+          "time_s": 14.499999675899744,
+          "remaining_arc_m": 0.6319036931172652,
+          "endpoint_distance_m": 0.6437892926210265,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 150,
+          "time_s": 14.999999664723873,
+          "remaining_arc_m": 0.5562193813980727,
+          "endpoint_distance_m": 0.559566611080052,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 155,
+          "time_s": 15.499999653548002,
+          "remaining_arc_m": 0.4696378867654065,
+          "endpoint_distance_m": 0.46966940291372355,
+          "decision": "rebuild",
+          "reject_reasons": [
+            "remaining_arc_under_lookahead"
+          ],
+          "reference_version": 2
+        },
+        {
+          "frame": 160,
+          "time_s": 15.999999642372131,
+          "remaining_arc_m": 4.49346647193261,
+          "endpoint_distance_m": 2.2697171097976003,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 165,
+          "time_s": 16.49999963119626,
+          "remaining_arc_m": 4.49346647193261,
+          "endpoint_distance_m": 2.2138137604161257,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 170,
+          "time_s": 16.99999962002039,
+          "remaining_arc_m": 4.49346647193261,
+          "endpoint_distance_m": 2.161509095920612,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 175,
+          "time_s": 17.49999960884452,
+          "remaining_arc_m": 4.49346647193261,
+          "endpoint_distance_m": 2.1623205885363164,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 180,
+          "time_s": 17.999999597668648,
+          "remaining_arc_m": 4.49346647193261,
+          "endpoint_distance_m": 2.1781911673980634,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 185,
+          "time_s": 18.499999586492777,
+          "remaining_arc_m": 4.49346647193261,
+          "endpoint_distance_m": 2.1990242931887307,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 190,
+          "time_s": 18.999999575316906,
+          "remaining_arc_m": 4.49346647193261,
+          "endpoint_distance_m": 2.2261804224272033,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 195,
+          "time_s": 19.499999564141035,
+          "remaining_arc_m": 4.447186110923576,
+          "endpoint_distance_m": 2.229808772596302,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 200,
+          "time_s": 19.999999552965164,
+          "remaining_arc_m": 4.383096987794172,
+          "endpoint_distance_m": 2.2152052154639343,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 205,
+          "time_s": 20.499999541789293,
+          "remaining_arc_m": 4.318964710465723,
+          "endpoint_distance_m": 2.218676583935414,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 210,
+          "time_s": 20.999999530613422,
+          "remaining_arc_m": 4.254204717659132,
+          "endpoint_distance_m": 2.2269067804029286,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 215,
+          "time_s": 21.49999951943755,
+          "remaining_arc_m": 4.190290985504181,
+          "endpoint_distance_m": 2.207313823707543,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 220,
+          "time_s": 21.99999950826168,
+          "remaining_arc_m": 4.126499618075673,
+          "endpoint_distance_m": 2.197877639592882,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 225,
+          "time_s": 22.49999949708581,
+          "remaining_arc_m": 4.063466614112222,
+          "endpoint_distance_m": 2.2279004160019786,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 230,
+          "time_s": 22.99999948590994,
+          "remaining_arc_m": 4.001788780349549,
+          "endpoint_distance_m": 2.250049870355283,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 235,
+          "time_s": 23.499999474734068,
+          "remaining_arc_m": 3.9391834876194975,
+          "endpoint_distance_m": 2.234017769070397,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 240,
+          "time_s": 23.999999463558197,
+          "remaining_arc_m": 3.878372311546026,
+          "endpoint_distance_m": 2.2339575874880406,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 245,
+          "time_s": 24.499999452382326,
+          "remaining_arc_m": 3.8215119026878184,
+          "endpoint_distance_m": 2.2737367112839086,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 250,
+          "time_s": 24.999999441206455,
+          "remaining_arc_m": 3.7651478650111714,
+          "endpoint_distance_m": 2.3024697726543084,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 255,
+          "time_s": 25.499999430030584,
+          "remaining_arc_m": 3.707867791598775,
+          "endpoint_distance_m": 2.308065124205717,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 260,
+          "time_s": 25.999999418854713,
+          "remaining_arc_m": 3.6519333009098744,
+          "endpoint_distance_m": 2.3155480202694183,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 265,
+          "time_s": 26.499999407678843,
+          "remaining_arc_m": 3.5988122997850756,
+          "endpoint_distance_m": 2.3388364385655986,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 270,
+          "time_s": 26.99999939650297,
+          "remaining_arc_m": 3.5474920476678644,
+          "endpoint_distance_m": 2.369132992320805,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 275,
+          "time_s": 27.4999993853271,
+          "remaining_arc_m": 3.4964529443004517,
+          "endpoint_distance_m": 2.3924734503885414,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 280,
+          "time_s": 27.99999937415123,
+          "remaining_arc_m": 2.5438854188013615,
+          "endpoint_distance_m": 2.4148334795001696,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 285,
+          "time_s": 28.49999936297536,
+          "remaining_arc_m": 2.5924731763112443,
+          "endpoint_distance_m": 2.4430777617684543,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 290,
+          "time_s": 28.999999351799488,
+          "remaining_arc_m": 2.639909587051614,
+          "endpoint_distance_m": 2.4697666061938053,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 295,
+          "time_s": 29.499999340623617,
+          "remaining_arc_m": 2.6857774249588293,
+          "endpoint_distance_m": 2.493382113331494,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 300,
+          "time_s": 29.999999329447746,
+          "remaining_arc_m": 2.7320745710758616,
+          "endpoint_distance_m": 2.5220896225733522,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 305,
+          "time_s": 30.499999318271875,
+          "remaining_arc_m": 2.779412440251734,
+          "endpoint_distance_m": 2.5485333426189514,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 310,
+          "time_s": 30.999999307096004,
+          "remaining_arc_m": 2.8266147379008846,
+          "endpoint_distance_m": 2.574330146127534,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 315,
+          "time_s": 31.499999295920134,
+          "remaining_arc_m": 3.11376307464552,
+          "endpoint_distance_m": 2.6093363930688898,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 320,
+          "time_s": 31.999999284744263,
+          "remaining_arc_m": 3.0778482436093695,
+          "endpoint_distance_m": 2.629474008397359,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 325,
+          "time_s": 32.49999927356839,
+          "remaining_arc_m": 2.9138686170856696,
+          "endpoint_distance_m": 2.626351404384071,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 330,
+          "time_s": 32.99999926239252,
+          "remaining_arc_m": 2.8953227859243205,
+          "endpoint_distance_m": 2.6101112548042593,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 335,
+          "time_s": 33.49999925121665,
+          "remaining_arc_m": 2.851148306493919,
+          "endpoint_distance_m": 2.5619777777539903,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 340,
+          "time_s": 33.99999924004078,
+          "remaining_arc_m": 2.7650162308758817,
+          "endpoint_distance_m": 2.4719113525555683,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 345,
+          "time_s": 34.49999922886491,
+          "remaining_arc_m": 2.6280998583383033,
+          "endpoint_distance_m": 2.369855076861825,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        }
+      ],
+      "near_endpoint_retained": [],
+      "rebuild_under_lookahead": [
+        {
+          "frame": 155,
+          "time_s": 15.499999653548002,
+          "remaining_arc_m": 0.4696378867654065,
+          "endpoint_distance_m": 0.46966940291372355,
+          "decision": "rebuild",
+          "reject_reasons": [
+            "remaining_arc_under_lookahead"
+          ],
+          "reference_version": 2
+        }
+      ],
+      "input_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/policy_records.json": "3dd315d89d15c266afd705b5223352d43a2758147baa55e860c8eb6bc912e1a6",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/native_predictions.json": "0f94ba1121c0c35e3128e01f3933f81dad2c8b15b4b76c7d0e160928511f1a5b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/artifact_manifest_post_close.json": "d24a5d8f5b73945395de03d1ac7986cee7d4f6fbc8197abdff8538f44057983d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_065.npz": "fc4560cb1fa3663cd0b09c4627c07cb779d704c177eda83808e48fbb54608c5c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_064.json": "83da1571e71eabc61d8b3be65d283799a2e3a737f0aa767fbb7f19fbafda1ae4",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_070.npz": "c74489e5792dc956a403fa028038a5fd58ddd6fe3daa7d075b0b1a8cbff9d783",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_069.json": "aca339aeb60eb246d0298347454d91bbdf168d0c3ffd307d092e09908d48cf56",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_075.npz": "486ebb9b3306b49b5f09112878be0fccdd2d30b2c500badc9b7f4aadb411932d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_074.json": "a0608762394c32a28a4a59cf9a3b3938421ff250cd8cdebf15d95f9991109beb",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_080.npz": "09ec3969f7b10e7d5a3cffb5791aadfc9d24d795a224085b2997171c0e7da32d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_079.json": "8caf5712c9f4ed938d1234992a58b6de0c8b04aae46bc8556b54e940e51de6b0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_085.npz": "f7f1969c656e041b060a54d344a43abd35c1871675d948f837b88cebb14758bf",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_084.json": "f537db36af29ce00f09b79f951c097cef17301e32aad495fba56c3e85e6691f4",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_090.npz": "ea118666f09b094d1e22773e9539d82aec6390b3ac8f673cb8b90e1283bbc4ef",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_089.json": "36c40fd576840410cd37972bc469b0e69730dba84aa6ce9b5ebe606f2e1f28b9",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_095.npz": "33de579644d786ceb49be5c7423109042c3ae7879343ff395d27b541c5afbf82",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_094.json": "89116ef63fcdc71b3da110e406a475ce5d9092d113a477beebcdd96b3314da97",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_100.npz": "9d81c0da338ba2769d0d124513647005cfdb2bf4fc94a51baa261247d1926aa6",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_099.json": "1f8690d4b3e24f0ab029117a64b7d85f8633387f532d60bb8d57ccd773ebb3e6",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_105.npz": "09c936c01cd476a2463db4469cd3d336348ae453741a7768a71e2e05714697c8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_104.json": "9b2c5d41cd4c1a7dddf8473df357d5b2621b519cbf3f873f09ecff094e24e907",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_110.npz": "f6f31e9c860981bf56167c2655a51c0470f88d2d12ba69510487c9461726b92d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_109.json": "764588011e58073512b90cf3f15175a76b7c3d0bb6e2422cd9e8af9f427479d8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_115.npz": "8c23c910f2056248099f7a563c2eaffe120bb74c40eadae1e371644df5c8ac05",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_114.json": "3c7bef49469f529a399d15a900d4746019a4ef1747803067d4828d271f651e45",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_120.npz": "4978691b6810680637fa623124d5a2a4596ace5f55931a411523283cf398d487",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_119.json": "71e416aaf36d06591284098d24cc695f64fdc1d025fb18753440a52a6af2cec0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_125.npz": "e8bb7c9072946ac6d7256e9d35ab68bb7106e5a25a98a6e3e96a0c269235f890",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_124.json": "b0c5fceba0b1124928e1373ff23d17c2baa7103db99fb4ba45e89cf48b9a3f17",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_130.npz": "79b274e840e0ea702e428061adaf3073f0cd3bcbc882adb25cb838bd0f908332",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_129.json": "2b066f02726b44ff39ebff1545f72fa8f035f3c0e046fb2a8b6c7f97945ca894",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_135.npz": "f656ecb6a22cab05d1979dbbd1987ae2dd341414cf4239f0dd3bae4a378ca125",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_134.json": "7d8c9997f76a6138594ca42582f0562599f2e9e2fefc56140d4ce17238d24ba2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_140.npz": "6c73c9cd494d4275db993dfad707febc3df25b20dbd60d09a69055b559d0b49c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_139.json": "8473c774c38294ca3e69742c601b50bee5dd9a67d8dce5bbb102bb367dd90d29",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_145.npz": "4d22fbe8532828efcaf44e520556ed6d172e45d594661a739b828e0e46cb29e1",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_144.json": "e0bf0bab672b892ce9a7516b1fbc2520137fd536725d25623e0b720dca5a16a8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_150.npz": "ca96bd3212592b7b19162d03651ecc4da17ecd6e7c9b0d9d7298a58cafaee368",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_149.json": "388373f2379f8286bfa11f6335b3d570ced5dbdb26d34e9a0f5e4c431f381a9d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_155.npz": "b386d2a8ccd3f53286cd67ae0272fdc1ac96aaf04efb4961a5a1a63a7354dd4e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_154.json": "44bd2ee8b57a3c5de1aeca62bea00ae58620d4b5ff8b6cc85835b5c6705c9f4e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_160.npz": "30c246a96080a85636d35a8d34ee7488e154782adb346f5996785cc9e2fabd0c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_159.json": "35fc77947407e1ef190fc6d7267364618edc3e926b9e92f6a494852ca23ccdb2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_165.npz": "e355d145669199b8cda063ad884eb53afa73e5aad3bd6ab6e66e09c3122f01e9",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_164.json": "4ca5c4ec19a2c38193a78af694ac21b088b2026cf2ecc1884ddc8e1d275a9658",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_170.npz": "2a34b65725b15855d0deaecd5bf7924ffad300e5168165e6a76adf5695159388",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_169.json": "1ac4725b84f331313288015d69fa46dd2b4a5eea40e10c75a9988be70b9c52ad",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_175.npz": "b41f0b075b02211a5a83381a4c99bb71701068b3f718db12f96854982430431d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_174.json": "8d10095f25a79c9d4869bda6943c72c81680c844fc63a666269d1f94b5d97f38",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_180.npz": "ef6cc54c58bc0eea318123b7b0735d280fa6b1f14365035f90b5a17fc946bff3",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_179.json": "eae6f2726ed1274bbab64e5b4f9eaf0856cad4b0c22b2660955427be445bd1f0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_185.npz": "945f51b891df554f980c411efe8bc430b2c47c07ea46e2d39137535674f74f8b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_184.json": "16f3b059763740382911abe3e4667c786ed1b2716d894eeedc67b2aa0bb7f66d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_190.npz": "3893261ff894b7a4df0bf2a02ea9e0917d75835292b1b71a866ac01644d3ae67",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_189.json": "e92f7f03ce9f3d7e7ea70172e05cda8c7c3683b9f1e74a8e1ec1d165ef9d6a63",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_195.npz": "05aade05a14a3454d9a0155ade412cd89abef9a1d6bdbe3df5ecb79334054d80",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_194.json": "9b17585ecdb9d9c3c20ea665707975d782e406e2f44b75fdd1b073507a1c3b44",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_200.npz": "2bf9b3fed14c2224871fed7114b83f87eb13995ccd195969ac8cc18305077e7f",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_199.json": "e6a7dab2fba636d7cccc8f73f52663388003f6fa8c8d356d1e6a6939b211b484",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_205.npz": "d32fadb4fd74822a40576e17676f80a8761799c635a9333f939cd2cc8f50ce61",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_204.json": "19c0136210ae5843989586d57dfda5f7361a5ef8ddb3b2d740f7bfffabec932b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_210.npz": "3c7e2f7135cdc87c6d812df68e7cd37d424930685dffa66f952ae66ca49f1f5a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_209.json": "cd15663d33bf273ecd8d701a8bb1b61a0c84f6e7b02bf561d9004248d8ddc175",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_215.npz": "fe28885058aec1756af81dd031964f3ed9a275519ee9d47a7324cc7812b8327e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_214.json": "74a7e171e73bbbb52d4bc0174da5cc5ee8fe36630fe8037a6fb793a9b396ca0b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_220.npz": "6af2518132b858e0f2e153843cbe3b13fe4f0cf0a013f29ffb581fa9c43dcc81",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_219.json": "c668095b77f7bf835a1c17e992fbff6d86e64d3f9288ba3d7cc95ece833cc276",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_225.npz": "afb0c9031d4acd782d44ec97a6432bc2b11a123b1df8b8679b061891039d2b67",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_224.json": "754627ccb2f6f8e2f0a492cc75fcf1f93c742040c9001bd780c222ea7e3fa23a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_230.npz": "6accad58101f61a2cd318dd2af9d0952df7c0f002dfd0b4e7274447bfe9130e0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_229.json": "44eaf088c885a15b93a0bdb2e9ab427bf2a0b14e9461381fe59563d0ec9c6a0b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_235.npz": "a5b0729e1bd4732416fbf63eb20265d60e65d2bda0cc7d5566fe88a8eb79ee02",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_234.json": "ff4b4b5e0c12e168e644287899c64cac064b24f979b9081b4a4773c20bbeb55c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_240.npz": "311f49aee3782cbcb467ed972ae4a837bc54e1fb8334c4a1c57c37908f3a8caf",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_239.json": "7fb102075273a2a837a89e4675046800134214e640283e456f36ff395e4d5ec2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_245.npz": "b744fdb6564cadaefbcf759f4c38e99400416def49293a88ac65ab1d3b51270d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_244.json": "febd0d57bbf9413f6da6da61c025d07377bc345dc4924c015f9bd359bb2ed8b8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_250.npz": "e2fe1b656f1026bba1f323db953e0820fc1d2341e75f5e2c533abe1cec3c7a3c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_249.json": "b16d729bc83fab0d16796043d8196e522eeaca2f9cf66277adeede876c934f27",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_255.npz": "577585409c4d9e44a8ed35a9fb1e483ff71bbe68b5eb63efdbe6e51470ba539a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_254.json": "e89ad936ff01ae7732a9eacf174581842040ce1343f62e744145d200f04b0661",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_260.npz": "86e497a8358d4a1331af9926b2a03865efb0649ce04223c4c68ee62a9612faac",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_259.json": "5ddf0d37b86f51e27ef4f050aef8360442495bdab034ec726f665c3f67ade572",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_265.npz": "2612f305f3a490c162b2483d98ce30e96d36326a9ad8019f24413c5756877975",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_264.json": "46c4531147a25013fc1bcd22df6a58a9a1ccab17da45144ae030aad22296c0a1",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_270.npz": "3d77906dec0294eff7034daa0c9fca1b1e190468dd237e3afb14b633cfdf7d8b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_269.json": "403e20ab0d0db19cd79197995d1906121d095d1822575e2a036b46364b059e86",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_275.npz": "66df3e3ae840c9803387e9870e363388fce352b5dd3d5807e71359124daaf1e7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_274.json": "42a48d8350252da835d47e8e39ec8fcf375ef895388dc5c12ec923cfcab0760b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_280.npz": "3a4c2686d4232d895d50d5975fbd3bf431065a36e60ab1a7a1577abd2fa4e1cb",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_279.json": "f3cde0bf70e5784288f075417129aff7a6dbc0cd1e235a5c53e28116d626ff2b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_285.npz": "77c82484469b313c56a50d35902628dec6e16545d18a8880d31b0aa5cfc77798",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_284.json": "dd61525385de85626ccaf0ac77353a7eddb6b75bfe5d5616e0be08db24867325",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_290.npz": "4e692a5a6c9076e44eb2458ddfd315d8a51711f7987c82dd14b7df53ff73cf57",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_289.json": "7db99e8711ded65552e0bd1d01880b1042e68b4fafadc72f78f39e494fd3a3c9",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_295.npz": "26d8d6ac8a31c1f2ad30c2fdf103b3cf447aaf9e25142114daf6e29c7caacc3a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_294.json": "5fe6cd6e8160aa04e5111cb065f9cd731820eb77b98a8eae41c10a362a5c68c4",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_300.npz": "02af282307f4f89036c828173a8a4b8582a7278a4f2c8b85a7d6faf3c2a6424b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_299.json": "6418d755ef6ff7dca5dd6792740ded896ba475f439a8beed6bfb9d28920e79f2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_305.npz": "e617be11030281b7487e24a90c403fc79c5f40f6b32159d8ea6591d01d3f0462",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_304.json": "4c627c1b46278517f50091cad65aec0343110bf67f3e8d6b4e9dbb3fdd9425f0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_310.npz": "df97022f6ffef4349ba625ee574d9720ebce0626cc3c5d4352d0624008232073",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_309.json": "eb78b3636cebc6f36eed0fab4c9400830c112ab583d4b22063314b44200d6c46",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_315.npz": "0dace7849796fa39969276fcf5ef0f81e604cbd850199dc6ba1d520f491d3b8c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_314.json": "c188b1eb2aa542882e7bd322c2d2de6df2cf0ccfa23466e3b605e88549008e9d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_320.npz": "d2fee06b9ca5614d0e6e091e4294baf957c2b1b2c6abc3c26111bea6b0f1c575",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_319.json": "2a2b2a34eab9948a58b4d04652549b2c61af08a5df3c28a78130d0859b8e9d1f",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_325.npz": "b9a7e4f04d5d100c0509df9f28fde40410f3dae6f8d5d527280a1c6f3e08d458",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_324.json": "d37a40195d566607ef5f7623de42a67fb3869936736822b45cabc46105f71fe7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_330.npz": "a9718d643a7e704c13d8034fe40ef604d056d663813f2fdea03c5fa2e49a7e2b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_329.json": "e3dcbfe49833605d001ab1107059d8879ce20741f632172f08975f222d631c60",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_335.npz": "141c2e62e3f602442bc1824f286a650da2b28a171e3c1da9522b9a326b006b97",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_334.json": "8f5fb9b4a2a5745848d9faa043ec310cb45fd8700019a37cc55b29c66b89df00",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_340.npz": "862f798c91cbe1156095b07588b50e0e8ed408252754dd2f1565e90ed8629c1b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_339.json": "94da1c3d17760d621426520cfaabf6a039a2ed4aa9c83482eba910141522ce98",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/maps/frame_345.npz": "bde9b0453e53504a13926197983b8c56cfd8af36031a34906354dafd1e336bba",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/local_plans/frame_344.json": "c4ba5ebb07ebc877f9b24d6c681dbe04ff2294e68ae8a3a9fe8ff598133b8bd5"
+      }
+    },
+    "native_pose_baseline35_e2_coverage_run_v1": {
+      "boundaries_exact": 27,
+      "boundaries": [
+        {
+          "frame": 65,
+          "time_s": 6.499999854713678,
+          "remaining_arc_m": 2.390151067469513,
+          "endpoint_distance_m": 2.3808891076836898,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 70,
+          "time_s": 6.9999998435378075,
+          "remaining_arc_m": 2.3592276381598927,
+          "endpoint_distance_m": 2.350017822073145,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 75,
+          "time_s": 7.499999832361937,
+          "remaining_arc_m": 2.28312105485896,
+          "endpoint_distance_m": 2.273980091996609,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 80,
+          "time_s": 7.999999821186066,
+          "remaining_arc_m": 2.1757473738832163,
+          "endpoint_distance_m": 2.1666757048399536,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 85,
+          "time_s": 8.499999810010195,
+          "remaining_arc_m": 2.0670570811799363,
+          "endpoint_distance_m": 2.0581137015045625,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 90,
+          "time_s": 8.999999798834324,
+          "remaining_arc_m": 1.9635318368307264,
+          "endpoint_distance_m": 1.954756528785608,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 95,
+          "time_s": 9.499999787658453,
+          "remaining_arc_m": 1.8607020796867382,
+          "endpoint_distance_m": 1.852067505765992,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 100,
+          "time_s": 9.999999776482582,
+          "remaining_arc_m": 1.7579612735736543,
+          "endpoint_distance_m": 1.7495063092003298,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 105,
+          "time_s": 10.499999765306711,
+          "remaining_arc_m": 1.6569486872880348,
+          "endpoint_distance_m": 1.64884336894453,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 110,
+          "time_s": 10.99999975413084,
+          "remaining_arc_m": 1.558324731610563,
+          "endpoint_distance_m": 1.5503358964867622,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 115,
+          "time_s": 11.49999974295497,
+          "remaining_arc_m": 1.4621876333320043,
+          "endpoint_distance_m": 1.4535285083625156,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 120,
+          "time_s": 11.999999731779099,
+          "remaining_arc_m": 1.3680884515917624,
+          "endpoint_distance_m": 1.3596979600070398,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 125,
+          "time_s": 12.499999720603228,
+          "remaining_arc_m": 1.2759166613074626,
+          "endpoint_distance_m": 1.270265354887409,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 130,
+          "time_s": 12.999999709427357,
+          "remaining_arc_m": 1.1855982894221464,
+          "endpoint_distance_m": 1.183047694288026,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 135,
+          "time_s": 13.499999698251486,
+          "remaining_arc_m": 1.097881679558666,
+          "endpoint_distance_m": 1.0918294488962403,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 140,
+          "time_s": 13.999999687075615,
+          "remaining_arc_m": 1.0114058036562423,
+          "endpoint_distance_m": 0.9997301865440581,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 145,
+          "time_s": 14.499999675899744,
+          "remaining_arc_m": 0.9253748696942998,
+          "endpoint_distance_m": 0.9145449126664198,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 150,
+          "time_s": 14.999999664723873,
+          "remaining_arc_m": 0.8375789285162083,
+          "endpoint_distance_m": 0.8354129851471448,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 155,
+          "time_s": 15.499999653548002,
+          "remaining_arc_m": 0.7526904380810748,
+          "endpoint_distance_m": 0.7504274822892749,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 160,
+          "time_s": 15.999999642372131,
+          "remaining_arc_m": 0.6625209280289011,
+          "endpoint_distance_m": 0.6589926131526139,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 165,
+          "time_s": 16.49999963119626,
+          "remaining_arc_m": 0.5643320490794144,
+          "endpoint_distance_m": 0.5715211192882276,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 1
+        },
+        {
+          "frame": 170,
+          "time_s": 16.99999962002039,
+          "remaining_arc_m": 0.48869495502986693,
+          "endpoint_distance_m": 0.48899195010908303,
+          "decision": "rebuild",
+          "reject_reasons": [
+            "remaining_arc_under_lookahead"
+          ],
+          "reference_version": 2
+        },
+        {
+          "frame": 175,
+          "time_s": 17.49999960884452,
+          "remaining_arc_m": 2.30137369636965,
+          "endpoint_distance_m": 2.142395553931658,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 180,
+          "time_s": 17.999999597668648,
+          "remaining_arc_m": 2.2095190127924225,
+          "endpoint_distance_m": 2.0641595407076445,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 185,
+          "time_s": 18.499999586492777,
+          "remaining_arc_m": 2.116337986082546,
+          "endpoint_distance_m": 1.9910579858383601,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 190,
+          "time_s": 18.999999575316906,
+          "remaining_arc_m": 1.9994722232316962,
+          "endpoint_distance_m": 1.9011668780676205,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        },
+        {
+          "frame": 195,
+          "time_s": 19.499999564141035,
+          "remaining_arc_m": 1.8939651211391162,
+          "endpoint_distance_m": 1.800731457025696,
+          "decision": "retain",
+          "reject_reasons": [],
+          "reference_version": 2
+        }
+      ],
+      "near_endpoint_retained": [],
+      "rebuild_under_lookahead": [
+        {
+          "frame": 170,
+          "time_s": 16.99999962002039,
+          "remaining_arc_m": 0.48869495502986693,
+          "endpoint_distance_m": 0.48899195010908303,
+          "decision": "rebuild",
+          "reject_reasons": [
+            "remaining_arc_under_lookahead"
+          ],
+          "reference_version": 2
+        }
+      ],
+      "input_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/policy_records.json": "98f7eebdf073014c0ba26626c607adc391ea7d4a43380cb6545ade107dbfc16b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/native_predictions.json": "20f2d4dd150e649b403d1572099c6991af1fb77a1d008385d0b819639f50f782",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/artifact_manifest_post_close.json": "1d3e0705f4d6bc41181026dbf87702c9fab738e0803adf82199013cf2c09d27b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_065.npz": "aecfcbece92325c6b82952b85739446ad053c33837437556e90b8b4c9006d834",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_064.json": "b42a0717d9fa85a61de804451323c7baeac6da011d0aa09d07752f4a352ba9ef",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_070.npz": "8ae5597c6d9b00e61ddcf4745f83ad9aab8705dbdc75b3b9d4bf5abcc4f7e91f",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_069.json": "73dab317df43d481f3b44b0445439d23c7c43e7eac45f81896d058bea598c6f8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_075.npz": "0e4807a50407a77cb1d17568636ac603fb8111b0e9285391db49cd291e1c2304",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_074.json": "c843bc82756ac3b499b73dc683ebe82c4bb0a748d3ac7d068671b9d9a51d2e89",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_080.npz": "1e296251aa39e456fb39496e3c83e19c5d1cccfe32b7587a1d6226751316e678",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_079.json": "20f8e7afdad7fdeaddfabd0014d945ff416b159d26300d318982fea0864ccbaa",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_085.npz": "55b5e90b08d96ead257f4e67df0c142733680997b0f5792b969418ecbe4c3d3b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_084.json": "b6fe4440aacb75bae9fb7d1c49dfa79c651a137b25f34e698663c19c446857fc",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_090.npz": "6d09d7f8dbe13a0ec1c2a707421da530a6353f776b19bcbdabaa2bd1a20e9b50",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_089.json": "cc2b83148f1f9d2e7658eba01ef792be5762ef4eaf8803878b8a91362031d962",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_095.npz": "1ef2f8ad7efb183d8ff3cf1b0f1b424c83da5c63984154e8591bf4379aabe926",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_094.json": "e1a0ba2de29b8bce6583741a1a732745b05c8c6877e7aae0288a91ffeeb50bfa",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_100.npz": "7a0eac68fcfaeef6dd95048e8a8e66e845ebf9cef5deaab58e31c17bbf82e006",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_099.json": "46a12396646973ad031019b754318fc698cbbbad4fdf1806d21c165a6f570de0",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_105.npz": "1105b95584e2baa6d102d98c3ff6ac49df52b989a94f94d6bda33e2d88ebfc0a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_104.json": "8846b10deab58fcf6b6aa4bb0509571312198dd04beaa7615aec328b9320844c",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_110.npz": "c240d6a06e9ecb1e2d4029b07113d92965846a889fe2117b6c0a9df263a988dd",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_109.json": "e883bc43f309d15d53885b2f6a7b5b8eafcf4c92487f995076f8c8db5a8546e1",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_115.npz": "3ce1051fc48791f64c30a961d38004ecccfc08d6fdbf05615af9bbc3d0cec042",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_114.json": "564edd2dda8d037874b3693e8935d0e23739712f96d99aeec701d2a2648e3ea2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_120.npz": "371793ce22b91daefc737f8d774044919456c0806edc0f339fbc00514620eb59",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_119.json": "eb722168eab24b34451f6ca67e723e79ab0650593167baa1aa1753f46b9f9c25",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_125.npz": "71320bb7632827a681752c76f0d9f8f76ab5871736593897c1166ef6f672979b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_124.json": "d00458361010e196852c07acbcb635b3f4d0dec645cbfc77a3d148bada8d90cc",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_130.npz": "04ff0bab51e2c980aa4815dc866db3f31a39147f5826d8428b7059242e3b7f8d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_129.json": "fad57e209dfbf9108b793901a9e4bf6286cbb45dcdbe075e5a17cd4dd50c257b",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_135.npz": "6a688d1e82fbc67cecf7cae90b568362966fc00395610a23dfcee6b97cc68696",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_134.json": "63baa9f00b84b28d92524d553ee3376a95ece8668e8387b036323b6c01ed6f03",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_140.npz": "002f6c1ac4caaaff6ad5446b1d2b497cd543dbe4520dae0447f6e558dec79acb",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_139.json": "ba68717c3f21fb28e76803d8228eeb02ee0d90615f25d8de3068c91602758707",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_145.npz": "bb321e75cc89566e024233b6f0aff21c9d33241901d3bd94dada307b79f41c3f",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_144.json": "71e6e4aaef4956a4cbb32ed72481e2ff49ec938bda8b0454a757b9cf2859bc4e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_150.npz": "19ca11f752873cd1d5b2ae0f7076c5c24046d3caed97986766be6b17ada30981",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_149.json": "9c79ad33fc0323ab6099c705ed90c58f31af1f5402a835f1bd4b2d1d657e81b1",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_155.npz": "e3fd250e0a6f4e7fbaee79d6e957aa4f3ccfed7f8c7a8018be1ebe62bcff3059",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_154.json": "58df8574fb1faf84367162145f97a74668071175d77ed98ab1f173d04ff22792",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_160.npz": "5398aa9b8d694d4f5f11ecb8d3c3b233651fadc3c53c2bca27074f6340c1d866",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_159.json": "5fe3d35da0f786cfb75e95d7709fcd77de12d1b4e56251d78e7ff7fbe93d45c7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_165.npz": "b07de66da1d874edbbad15fa6a5f45f16f2002de6016f6ade2266f79145c1992",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_164.json": "be92d43b0e62fab8e1893b67d46a19871c5e1267ff6f3e31aa723756984293c7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_170.npz": "8cd2444017421463da92f52e8dc5c01d9d9ee91205adf7fbe8a82101d7d3b731",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_169.json": "c1d265bfcc67e69b46089d3f75e77333907d9458eddfae5032868fbdbb99c34a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_175.npz": "8c7940a98600b5887735b3d52bed458cd1becc7e3b222dc42540fb751c0d3d34",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_174.json": "a658213156f3d3f908732f827c783a075aa98e89052fe4c770d1726b41396056",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_180.npz": "2dc77d2de23c0bf43c5d3883f54e53e773ba7cd3b1d365b5fb85a79905e4ea8e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_179.json": "5677e46d77ca3045cf3078c8d8713dba4d1a958c7fc26d405a541d44f8a5d8e2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_185.npz": "e4f5f7d69af75caab312692eb35ce938725882ffb889deb165403802a4337ba6",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_184.json": "35e2e86939d8b641a7c30ff17e3307f9a938f44f9d0d0747ccf36bc66cd9c1ca",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_190.npz": "82c752fe3c6e7316ad0dee02ef88440cf491c96ec5291072776bd9a27f6e6d9a",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_189.json": "0ff72fcad492cc47bfcf4878fb43474b041ac1ccb7e8e41176c45152728fc93e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/maps/frame_195.npz": "3f9d5e5540c0da70f727ef9dfd49efe84a1e6255eda3866ff2c9ad2c36e4674d",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/local_plans/frame_194.json": "c9e4148173239537d4893e4d2063001c50e1a4246b8440e4d2c52d5e8f6c9f79"
+      }
+    }
+  },
+  "physics_added": 0,
+  "hypothesis_supported_on_closed_boundary_calls": false,
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/audit_regular_endpoint_consumption_v1.py": "d1f3e0f945bfc0568304fc4ba4c60925576879967f04c1e7d7d6cb096a069fa4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reference_continuity_audit.py": "6595d2b725dec80af64fe508558462567eaaf7b7e00182e74be05dc5766fb6c4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/continuous_cell_tube_consumer_v1.py": "9d6f11b1e2278b9fb85eb10a8f2c8f5cbe2df601a1cfb189cf87ced1f424a5f2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_consumer_v1.py": "18d0213d94c0ae27f37cd17f8162bce443e584e82d20027d4f34d9b4cc53d531",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fixed_reference_pacing_harness_v1.py": "910a8c14aa28d4301cce8e822274c812cf0a1228950330c65a8a2b287a28d742"
+  }
+}

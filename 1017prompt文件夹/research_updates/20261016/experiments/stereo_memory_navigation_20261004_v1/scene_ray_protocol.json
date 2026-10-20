@@ -1,0 +1,67 @@
+{
+  "sealed_utc": "2026-10-04T17:41:14.665013+00:00",
+  "role": "one independent offline static scene geometric label audit; historical4pairs/twoeyes, no simulation/model input/control",
+  "sequence": "hard_0_e1_0004",
+  "frames": [
+    0,
+    10,
+    20,
+    23
+  ],
+  "eyes": [
+    "left",
+    "right"
+  ],
+  "focal_px": 584.8888888888889,
+  "principal_xy": [
+    319.5,
+    239.5
+  ],
+  "pixel_stride": 2,
+  "expected_axis_depth_range_m": [
+    0.5,
+    3.0
+  ],
+  "world_height_range_m": [
+    0.05,
+    1.5
+  ],
+  "distance_from_root_min_m": 0.55,
+  "sphere_core_incidence_min": 0.2,
+  "geometric_gate": {
+    "min_labels_per_supported_eye_frame": 100,
+    "unconditional_within_0p01m_fraction": 0.9,
+    "finite_ray_error_p90_max_m": 0.01
+  },
+  "scene_geometry": "authored visible primary spheres/finite cylinders + planar ground; mesh dimensions/visibility/transforms checked; analytic primary may not equal subdivided renderer surface exactly",
+  "pose_tests": [
+    "current archived USD pose",
+    "previous0.1s physical root pose with frozen rig (retrospective diagnostic only)"
+  ],
+  "depth_versions": [
+    "current transaction",
+    "pretransaction"
+  ],
+  "gate_scoring": "current pose/current transaction only; no fitted offset, best-pose substitution, or old RGB gate change",
+  "silhouette": "fixed frame010 RGB overlay of independently predicted sphere contour; descriptive visual, no automatic RGB semantic guarantee",
+  "constraints": "no camera/light/model/threshold/control change; ground/body exclusions explicit; only known static-scene label scope, not all surfaces/exposure",
+  "input_sha256": {
+    "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd": "7125024056f83009e74f1b5c959d3cefdc7190157ec67b9d43818c613fced9f0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/transaction_development_manifest.json": "4601f4ae5270410584a94e2ac9b1732cdbb6efa0d076ad1717d8fa2f2263ba8c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/capture_summary.json": "390a66f96a5d44feb2b6f9985b4a04fb7cb486baf100ca35546f077b07891082",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/physics.npz": "a659a72f576465be083cc995d7e24219578aeef37df4a613d3e303eec8b741d6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/camera_clocks.json": "08e248cc172a6a9c8812a86e81acae5c9d28988a1accdad5b22b049f1e72c00f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visible_surface_connectivity_20261004_v1/base_link_masks.npz": "7769b6ab47292ae6517489f2992fd241b94f54c5022dd401efac3c4bae2d2a19",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py": "72266e68bced65f81e41dbe96d99a806e4f674b13c9ae7db563016097d8a29f7",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/collect_data_dubins.py": "9a0ccec4dddb6fd1372f85a83fb09c6678e2a5059eb44e5716cc4d0dc8afa934",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/benchmark_stereo_visibility_and_matching_audit_20261004.md": "5876a5335762d14b2754c23c81787061b94c374efff1cd0ad938923aec373177",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/online_inputs/frame_000.npz": "9427df68dd074773521a6cd7c44bc1f1f1502406a23b97dd1cd9db5b46fb9b12",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_000.npz": "cb30a5067253a45b4c2b88e5ab3fd503020588dfa705137b0d620cbf59bf6eb7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/online_inputs/frame_010.npz": "1e8024b1f4ee406a47ee171093de36e60aebdf61b0fa2c5901bd02801d82fdf9",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_010.npz": "b9ae957ac74d1c8afcd0c226c12398c47cab38ffa331cdda6cdb60233f9bc2d2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/online_inputs/frame_020.npz": "be31453d6203532be9051c23a982333cc9316f44edf85bd413d4399c7835ad21",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_020.npz": "d5dd21cd3216710d89d80b1caa822f321c9caa37db5d6633d2428b02aa3f918b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/online_inputs/frame_023.npz": "a4d678b9df262a9b730a0a335ae1c75126b81eef3157c58bbec3f59f54b7405b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_023.npz": "846b8538305d364ea0a99b1de30afab73175367c2394c15b7d43e076e851d353"
+  }
+}

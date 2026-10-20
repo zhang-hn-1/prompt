@@ -1,0 +1,24 @@
+{
+  "recorded_utc": "2026-10-05T17:44:10.333543+00:00",
+  "source_stage": "spatial_vo_final_check PASS",
+  "next_stage": "rolling_odometry",
+  "history_predictions": "2complete andideal-only gatePASS",
+  "online_status": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_status.json",
+  "online_log": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run.log",
+  "online_process_session": 7363,
+  "maximum_actual_new_episodes": 1,
+  "actual_online_started": true,
+  "actual_online_completed": false,
+  "remaining_tasks": [
+    "wait existing process, never startduplicate",
+    "after exit0 audit_rolling_online.py withpostclosehashes",
+    "verify frozen B0 full17nonraw/request/physics identity, raw originseparate",
+    "decode videos/measure poses/post-exitno leakage, saveplot/report",
+    "rollingstage final readonlyreview is NOT coveredby prior spatial reviewer; if no furtheragent allowed describe authoronly limitation",
+    "if onlineidealposefails no tuning; causalanalyze earlycontact/gyro/integration or initialbias withoutusingGTprediction",
+    "retainRGB rejection; nextposeconsumer noGTposition/estimatedcameraposes needsseparateknown initialextrinsics"
+  ],
+  "whole_research_complete": false,
+  "automation": "ACTIVE",
+  "user_action_required": false
+}

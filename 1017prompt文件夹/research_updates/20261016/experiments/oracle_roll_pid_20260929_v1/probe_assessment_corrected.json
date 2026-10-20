@@ -1,0 +1,233 @@
+{
+  "correction": "Initial diagnostic sample is t=0, not .02. Original analysis/selection preserved. No gains changed. Four runs form two pairs.",
+  "rows": [
+    {
+      "case": "probe_initial_b0_0.5",
+      "main": 0.5,
+      "mode": "b0",
+      "all_physics_fields_finite": true,
+      "samples": 1751,
+      "start_time_s": 0.0,
+      "end_time_s": 34.99999921768904,
+      "time_step_ok": true,
+      "max_abs_bank_deg": 21.992067263692437,
+      "windows": [
+        {
+          "start_s": 12,
+          "end_s": 15,
+          "n": 150,
+          "rms_error_deg": 2.796216306615018,
+          "peak_error_deg": 3.570104656868903,
+          "span_deg": 1.967693217819832,
+          "mean_bank_deg": 17.72634627618931,
+          "actual_speed_mean_m_s": 0.18499155342578888,
+          "rate_rms_deg_s": 1.327566164442888
+        },
+        {
+          "start_s": 22,
+          "end_s": 25,
+          "n": 150,
+          "rms_error_deg": 0.6054045372163385,
+          "peak_error_deg": 1.0369337179762557,
+          "span_deg": 1.2819038265030809,
+          "mean_bank_deg": -14.58223636600386,
+          "actual_speed_mean_m_s": 0.16844432055950165,
+          "rate_rms_deg_s": 0.9267955013981131
+        },
+        {
+          "start_s": 32,
+          "end_s": 35,
+          "n": 150,
+          "rms_error_deg": 1.7221150226362143,
+          "peak_error_deg": 2.6770177393046404,
+          "span_deg": 2.8569593023629425,
+          "mean_bank_deg": 1.5135568971329132,
+          "actual_speed_mean_m_s": 0.18312658369541168,
+          "rate_rms_deg_s": 1.8961227488122347
+        }
+      ],
+      "tail_rms_deg": 1.9279540484021906,
+      "supervisor_fraction": 0.0074285714285714285,
+      "original_protocol_clip_fraction": 0.0,
+      "pid_clip_fraction": null
+    },
+    {
+      "case": "probe_initial_b0_1.5",
+      "main": 1.5,
+      "mode": "b0",
+      "all_physics_fields_finite": true,
+      "samples": 1751,
+      "start_time_s": 0.0,
+      "end_time_s": 34.99999921768904,
+      "time_step_ok": true,
+      "max_abs_bank_deg": 15.738666247958516,
+      "windows": [
+        {
+          "start_s": 12,
+          "end_s": 15,
+          "n": 150,
+          "rms_error_deg": 3.0649061038576653,
+          "peak_error_deg": 4.55643996210417,
+          "span_deg": 2.4081523571483725,
+          "mean_bank_deg": 11.995007510448783,
+          "actual_speed_mean_m_s": 0.5487596392631531,
+          "rate_rms_deg_s": 2.042072124120702
+        },
+        {
+          "start_s": 22,
+          "end_s": 25,
+          "n": 150,
+          "rms_error_deg": 5.203093348876889,
+          "peak_error_deg": 6.567579575517229,
+          "span_deg": 2.2892985311247234,
+          "mean_bank_deg": -9.832158873713897,
+          "actual_speed_mean_m_s": 0.5605329275131226,
+          "rate_rms_deg_s": 1.5646022343672463
+        },
+        {
+          "start_s": 32,
+          "end_s": 35,
+          "n": 150,
+          "rms_error_deg": 2.682494470049867,
+          "peak_error_deg": 4.58689733799503,
+          "span_deg": 6.661877925868497,
+          "mean_bank_deg": 1.3680721594978127,
+          "actual_speed_mean_m_s": 0.5766623616218567,
+          "rate_rms_deg_s": 4.921219081355791
+        }
+      ],
+      "tail_rms_deg": 3.814953315766743,
+      "supervisor_fraction": 0.006857142857142857,
+      "original_protocol_clip_fraction": 0.0,
+      "pid_clip_fraction": null
+    },
+    {
+      "case": "probe_initial_pid_0.5",
+      "main": 0.5,
+      "mode": "pid",
+      "all_physics_fields_finite": true,
+      "samples": 1751,
+      "start_time_s": 0.0,
+      "end_time_s": 34.99999921768904,
+      "time_step_ok": true,
+      "max_abs_bank_deg": 18.925812896722082,
+      "windows": [
+        {
+          "start_s": 12,
+          "end_s": 15,
+          "n": 150,
+          "rms_error_deg": 1.387728278934879,
+          "peak_error_deg": 1.5397009888698854,
+          "span_deg": 0.4183288910912424,
+          "mean_bank_deg": 16.382246505384842,
+          "actual_speed_mean_m_s": 0.185825914144516,
+          "rate_rms_deg_s": 0.18856424441538225
+        },
+        {
+          "start_s": 22,
+          "end_s": 25,
+          "n": 150,
+          "rms_error_deg": 0.6264185973591433,
+          "peak_error_deg": 0.7399504431418755,
+          "span_deg": 0.41213673143639795,
+          "mean_bank_deg": -15.617907158107647,
+          "actual_speed_mean_m_s": 0.16790054738521576,
+          "rate_rms_deg_s": 0.22041619930453699
+        },
+        {
+          "start_s": 32,
+          "end_s": 35,
+          "n": 150,
+          "rms_error_deg": 0.5436629518739404,
+          "peak_error_deg": 0.6555407053674726,
+          "span_deg": 0.21154542354979855,
+          "mean_bank_deg": 0.539618312420222,
+          "actual_speed_mean_m_s": 0.18275102972984314,
+          "rate_rms_deg_s": 0.19131168418961297
+        }
+      ],
+      "tail_rms_deg": 0.9334094207997625,
+      "supervisor_fraction": 0.0074285714285714285,
+      "original_protocol_clip_fraction": 0.0,
+      "pid_clip_fraction": 0.04742857142857143
+    },
+    {
+      "case": "probe_initial_pid_1.5",
+      "main": 1.5,
+      "mode": "pid",
+      "all_physics_fields_finite": true,
+      "samples": 1751,
+      "start_time_s": 0.0,
+      "end_time_s": 34.99999921768904,
+      "time_step_ok": true,
+      "max_abs_bank_deg": 15.178246738063638,
+      "windows": [
+        {
+          "start_s": 12,
+          "end_s": 15,
+          "n": 150,
+          "rms_error_deg": 1.5043229407309564,
+          "peak_error_deg": 2.008488946999046,
+          "span_deg": 1.389615845501023,
+          "mean_bank_deg": 13.580774074134808,
+          "actual_speed_mean_m_s": 0.5446147322654724,
+          "rate_rms_deg_s": 0.9271387657720181
+        },
+        {
+          "start_s": 22,
+          "end_s": 25,
+          "n": 150,
+          "rms_error_deg": 3.0470054364797936,
+          "peak_error_deg": 3.6695266963224267,
+          "span_deg": 1.4149034948807184,
+          "mean_bank_deg": -11.991871725932882,
+          "actual_speed_mean_m_s": 0.5585879683494568,
+          "rate_rms_deg_s": 1.1217281981610219
+        },
+        {
+          "start_s": 32,
+          "end_s": 35,
+          "n": 150,
+          "rms_error_deg": 0.2045449751258367,
+          "peak_error_deg": 0.3812748170795194,
+          "span_deg": 0.5228326558861667,
+          "mean_bank_deg": 0.15419566219945774,
+          "actual_speed_mean_m_s": 0.5770353674888611,
+          "rate_rms_deg_s": 0.4518291222843166
+        }
+      ],
+      "tail_rms_deg": 1.9654573926354546,
+      "supervisor_fraction": 0.009714285714285713,
+      "original_protocol_clip_fraction": 0.0,
+      "pid_clip_fraction": 0.036
+    }
+  ],
+  "gates": [
+    {
+      "main": 0.5,
+      "checks": {
+        "finite": true,
+        "valid_time": true,
+        "bank_below_35_deg": true,
+        "all_tail_spans_below_10_deg": true,
+        "tail_rms_not_worse": true,
+        "upright_rms_not_2deg_worse": true
+      },
+      "pass_all": true,
+      "rms_reduction_fraction": 0.5158549439633512
+    },
+    {
+      "main": 1.5,
+      "checks": {
+        "finite": true,
+        "valid_time": true,
+        "bank_below_35_deg": true,
+        "all_tail_spans_below_10_deg": true,
+        "tail_rms_not_worse": true,
+        "upright_rms_not_2deg_worse": true
+      },
+      "pass_all": true,
+      "rms_reduction_fraction": 0.48480171840833397
+    }
+  ]
+}

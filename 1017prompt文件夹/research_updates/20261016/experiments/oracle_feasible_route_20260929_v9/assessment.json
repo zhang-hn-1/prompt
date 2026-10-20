@@ -1,0 +1,150 @@
+{
+  "old_reference_0002": {
+    "termination": "timeout",
+    "duration_s": 34.99999921768904,
+    "final_distance_m": 6.409602633831019,
+    "actual_path_length_m": 6.3220886286152815,
+    "reference_length_m": 12.575481035182563,
+    "nearest_reference_progress_m": 5.673657207436795,
+    "cross_track_rms_m": 0.2025545702403616,
+    "cross_track_peak_m": 0.3686871206724361,
+    "minimum_map_clearance_m": -0.09999999999999998,
+    "map_nonpositive_samples": 38,
+    "contact_count_states": 0,
+    "first_contact": null,
+    "action_blocks": 350,
+    "initial_pose_xy": [
+      -9.850000381469727,
+      4.0500006675720215
+    ],
+    "reference_sha256": "9752886fba9068026ab9327274428997b01ce7fb71d5266bdb7a9943b2854503",
+    "main_requests": [
+      -1.5,
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      1.5
+    ]
+  },
+  "time_reference_0002": {
+    "termination": "timeout",
+    "duration_s": 34.99999921768904,
+    "final_distance_m": 3.048070766338433,
+    "actual_path_length_m": 11.533590841158922,
+    "reference_length_m": 13.48499966970636,
+    "nearest_reference_progress_m": 10.252178467742592,
+    "cross_track_rms_m": 0.2210258171291362,
+    "cross_track_peak_m": 0.6695276616015902,
+    "minimum_map_clearance_m": 0.012310562561766047,
+    "map_nonpositive_samples": 0,
+    "contact_count_states": 0,
+    "first_contact": null,
+    "action_blocks": 350,
+    "initial_pose_xy": [
+      -9.850000381469727,
+      4.0500006675720215
+    ],
+    "reference_sha256": "f92873c47cbf7499d7aa897bde4b3a5fade9f1364d97bfe659b8b99e73716153",
+    "main_requests": [
+      -1.5,
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      1.5
+    ]
+  },
+  "speed_change_0002": {
+    "termination": "collision",
+    "duration_s": 28.899999354034662,
+    "final_distance_m": 4.165289098648536,
+    "actual_path_length_m": 10.85851411351329,
+    "reference_length_m": 13.48499966970636,
+    "nearest_reference_progress_m": 9.04946098468857,
+    "cross_track_rms_m": 0.2904628509515002,
+    "cross_track_peak_m": 0.721009432733929,
+    "minimum_map_clearance_m": 0.024264068711928544,
+    "map_nonpositive_samples": 0,
+    "contact_count_states": 1,
+    "first_contact": {
+      "available": true,
+      "contact": true,
+      "physics_step_index": 1444,
+      "simulation_time_s": 28.879999354481697,
+      "source": "physics"
+    },
+    "action_blocks": 289,
+    "initial_pose_xy": [
+      -9.850000381469727,
+      4.0500006675720215
+    ],
+    "reference_sha256": "f92873c47cbf7499d7aa897bde4b3a5fade9f1364d97bfe659b8b99e73716153",
+    "main_requests": [
+      -1.5,
+      -1.0,
+      0.0,
+      1.0,
+      1.5
+    ]
+  },
+  "lookahead_change_0002": {
+    "termination": "timeout",
+    "duration_s": 34.99999921768904,
+    "final_distance_m": 3.3032288995541808,
+    "actual_path_length_m": 11.244883114273998,
+    "reference_length_m": 13.48499966970636,
+    "nearest_reference_progress_m": 9.963670989669742,
+    "cross_track_rms_m": 0.241314307596941,
+    "cross_track_peak_m": 0.7255664524546367,
+    "minimum_map_clearance_m": 0.0,
+    "map_nonpositive_samples": 2,
+    "contact_count_states": 0,
+    "first_contact": null,
+    "action_blocks": 350,
+    "initial_pose_xy": [
+      -9.850000381469727,
+      4.0500006675720215
+    ],
+    "reference_sha256": "f92873c47cbf7499d7aa897bde4b3a5fade9f1364d97bfe659b8b99e73716153",
+    "main_requests": [
+      -1.5,
+      -1.0,
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      1.5
+    ]
+  },
+  "time_reference_fresh_0001": {
+    "termination": "timeout",
+    "duration_s": 34.99999921768904,
+    "final_distance_m": 1.3858044322285494,
+    "actual_path_length_m": 11.796148286798783,
+    "reference_length_m": 12.91298996735862,
+    "nearest_reference_progress_m": 11.617937645895138,
+    "cross_track_rms_m": 0.035566619957334226,
+    "cross_track_peak_m": 0.09626053366787449,
+    "minimum_map_clearance_m": 0.09999999999999998,
+    "map_nonpositive_samples": 0,
+    "contact_count_states": 0,
+    "first_contact": null,
+    "action_blocks": 350,
+    "initial_pose_xy": [
+      -0.8500003814697266,
+      7.5500006675720215
+    ],
+    "reference_sha256": "9b0dbd0ea131e3aefdf87024ab02c2f733c8157e4a3f17116fdf025056a28356",
+    "main_requests": [
+      -1.5,
+      -0.5,
+      0.0,
+      0.5,
+      1.0,
+      1.5
+    ]
+  }
+}

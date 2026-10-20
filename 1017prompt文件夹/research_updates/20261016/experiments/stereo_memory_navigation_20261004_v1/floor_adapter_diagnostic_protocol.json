@@ -1,0 +1,12 @@
+{
+  "role": "Post-rejection causal label diagnostic only, not a new source candidate or gate revision",
+  "scope": "All 130 saved predictions; fixed snapshots0/50/100/150/200/250/320 both eyes",
+  "questions": ["How much of original all-floor query coverage is lost to unchanged plane geometry/ray mismatch versus7pixel selfmask footprint versus classifier?", "Do wrong projected outputs hit non-ground surfaces or unavailable truth?", "Does old fitted training-set accuracy transfer to the complete fresh sequence?"],
+  "candidate_parameters_changed": false,
+  "new_fits": 0,
+  "new_backbone_inference": 0,
+  "new_physics": 0,
+  "input_rules": "Only after all130 predictions immutable and original fresh audit rejected; GT diagnostic never submitted to classifier/map/control",
+  "oracle_ceiling": "Ground truth floor-label support through unchanged geometric projection is a diagnostic ceiling, not prediction or navigation evidence",
+  "actual_video": "Decode whole321frame dual videos and personally inspect7frozen snapshots; no selection of frames to rescue gate"
+}

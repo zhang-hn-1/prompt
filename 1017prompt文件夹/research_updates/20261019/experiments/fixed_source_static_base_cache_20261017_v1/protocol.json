@@ -1,0 +1,64 @@
+{
+  "utc": "2026-10-17T10:13:30.052684+00:00",
+  "question": "After proven same-output compute scheduling, can exact joint-independent base CAD memoization remove repeated fixed geometrywork?",
+  "single_change": "Reuse existing staticbasecache principle with accepted4rig LOCAL/F640x480 and exact triangles. Cache ONLY base_link whose bodytransform is identity for everyjoint. Everydynamicbody recomputed from currentmeasuredjoints. Raster union by OR, no mask dilations/optics/CAD geometry changes.",
+  "prerequisite_result": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/result.json",
+  "feature_seal": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json",
+  "latency_frames": [
+    [
+      "E0",
+      0
+    ],
+    [
+      "E0",
+      55
+    ],
+    [
+      "E1B",
+      0
+    ],
+    [
+      "E1A",
+      90
+    ]
+  ],
+  "gates": "Fourframes alternatingcurrentparallel vsbasecachedparallel onceeach, all16arrays byteexact; medianratio<=.8/each<=1.1. Then all470maskinvocations1880CADarrays byteexact. No adjusted subset/threshold.",
+  "budget": {
+    "dispatch_cap": 1,
+    "recovery_cap": 1,
+    "wall_cap_s": 300,
+    "full_source_invocations_cap": 8,
+    "full_mask_invocations_cap": 470,
+    "constructor_static_mask_projections": 4,
+    "CPU_compute_threads": 4,
+    "fit": 0,
+    "learned_inference": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "stop": "Do notstart until previous full470 sourceequivalence complete. Any gatefailure closes, no parameter/parts/raster rule sweep. No actualB rerun, deploy or oldbudgetreopening.",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json": "038b9fbee4fe89d7f14221df397ab71f669cd483e77ab42e621acc8060b8e439",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/protocol.json": "48b00f7d7145f2b61475a1891e09b34cbecb6917713e2e78d80bed2b56bfd523",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/parallel_source.py": "4d84dc3c8468a489217193819d98b23123a01e87faf9438aa4440e1dbf0fb661",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/static_base_cached_self_mask_v2.py": "9242ac23a6509cd26a1f0894ae92dd3eec44b68975d07f856095628e9c75928a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/dynamic_self_mask.py": "86309cbcbc6cc4e07d73293cc512ce3a217c19929eb898f72a734b1c8b86ed06",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/source.py": "0f8918810cc2e9b3f6d6cb4bf4c64acb5ce3fe4bc882678c6a5ae9cfbeb38e8a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visible_surface_connectivity_20261004_v1/mask_identity.json": "5ca5051c656756329ebb3abfa841cd189e9c3dc2f7350ae34eecff8b730fd9bd",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visible_surface_connectivity_20261004_v1/base_link_masks.npz": "7769b6ab47292ae6517489f2992fd241b94f54c5022dd401efac3c4bae2d2a19",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/Rotunbot_wheel.usd": "8f1bf378d65daca8d94948b8481f90260c34fe950a4bfb693cba531c47f4f231",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/configuration/Rotunbot_wheel_physics.usd": "f249a3d7fe02de79f2823430cc273794ad6552d646c01e396d6f807627207bf9",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/configuration/Rotunbot_wheel_base.usd": "a5589963afc6d3d96767cbbfa95188d3f90b9b34e8d6d68e18494050eddd67c5",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/configuration/Rotunbot_wheel_sensor.usd": "bdf36ddf09ab90299d27dabd98fe09d81f3e573d2213371606a858c9ee000f98"
+  },
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_static_base_cache_20261017_v1/cached_source.py": "6366b77688381fec3ba00dd8db5dc1fa9e553a1143ac99109bfccf46c95331c2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_static_base_cache_20261017_v1/supervise.py": "7dd98a023f8bab06c00d34d36e9b7afde833466e7b9d6e1765d5698fd6450eee",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_static_base_cache_20261017_v1/qualify.py": "adea82f5cccf942d5c1c8d90adfd85813bf42aee0c6811c921a9b573493ba30d"
+  },
+  "engineering_reuse_not_new_scientific_mechanism": true,
+  "old_budgets_reopened": false,
+  "preflight_revision": 1,
+  "preflight_change": "Pin existing known-CAD identity and referenced layer bytes before first dispatch; scientific contract unchanged"
+}

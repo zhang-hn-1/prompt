@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-08T04:13:02.916672+00:00",
+  "whole_complete": false,
+  "active_session": 16927,
+  "stage": {
+    "start_utc": "2026-10-08T04:12:00.879088+00:00",
+    "pid": 2772978,
+    "stage": "RUNNING",
+    "maximum_actual_sequences": 1,
+    "not_original35": true,
+    "whole_research_complete": false,
+    "child_pid": 2772980
+  },
+  "next_entry": [
+    "verify_live_async_stereo_navigation_runtime_v1.py",
+    "assess_live_async_stereo_navigation_pose_v1.py",
+    "assess_live_async_stereo_navigation_source_v1.py",
+    "verify_live_async_memory_consumption_v1.py",
+    "replay_live_async_stereo_policy_causal_v1.py",
+    "assess_live_async_stereo_navigation_trajectory_v1.py"
+  ],
+  "original35_notrun": true,
+  "learned_head_rejected": true,
+  "external_block": false,
+  "no_duplicate": true
+}

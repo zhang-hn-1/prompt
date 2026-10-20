@@ -1,0 +1,52 @@
+{
+  "utc": "2026-10-09T11:51:07.607771+00:00",
+  "stage": "reserve_two_actual35_closed_independent_C0I0_candidate_rejected",
+  "whole_mission_complete": false,
+  "physics_running": false,
+  "remaining_reserve_sequence_budget": 0,
+  "no_reserve_or_bank_threshold_scan": true,
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reserve_paced_started_continuation_v15.json",
+  "superseded_sha256": "fae7a7c25b739c0aec9fbf5bc9906e2f210f8e5248ceb396697376899a9c32e0",
+  "statuses": {
+    "b0": {
+      "status": "finished",
+      "start_utc": "2026-10-09T11:36:11.300844+00:00",
+      "parent_pid": 319318,
+      "child_pid": 319319,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-09T11:40:12.625792+00:00"
+    },
+    "paced": {
+      "status": "finished",
+      "start_utc": "2026-10-09T11:40:43.291204+00:00",
+      "parent_pid": 324769,
+      "child_pid": 324770,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-09T11:44:42.953213+00:00"
+    }
+  },
+  "next": {
+    "concrete_steps": [
+      "Read high-main transient audit and bounded existing archived command schedules/closed seals; determine if any current-PID same-rig held nonzero-aux high-main interval exists, without re-running old matrix. Use structuredJSON selection, do not dump giant bank_response_protocol source mapping.",
+      "Existing new16rows are only1.6s changing corrective aux, not a steady turn model. If coverage absent, explicitly freeze a single missing-domain finite response question and independent budget before physical work; do not simply widen old3degree screen or retune rejected reserve.",
+      "Only a distinct supported one-consumer local candidate can proceed to fixed-reference then ordinary SGBM-memory control; original failures and strict35 restrictions retained. No additional learner/refit hidden as new increment."
+    ],
+    "entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_high_main_response_domain_audit_v1.json"
+  },
+  "stop_reason": "Long actual execution continuation boundary after prelaunch classifier implementation/testing/reviews, two supervised physical35 sequences, closed independent validation, two bounded causal/domain audits and verified plots/documents. Not completion or user-dependent blocker; exact next evidence entry retained.",
+  "evidence_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_fixed_reference_assessment_v1.json": "f1e737b503ce313b34b3a107e9b6185a35e73c84434549be7459d2e5fc70e883",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_fixed_reference_closed_review_v1.json": "e4e1329556fc27eb3335a21ccb7c40f3fd20e2eba4f938291c3431e1165a6df8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_qualification_cause_audit_v1.json": "bfb6464455474f1778546cba8db9ec92f1be287acfc91d640d75cca758e6698b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_high_main_response_domain_audit_v1.json": "fd33dd7934572499186a41b3c621b9584010b8bd7d3b0f26b715def58148516c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/benchmark_local_reserve_qualification_20261009.md": "40619516aa2c9df4b8e5f22cc4217fa6ef1ac1ea4f608bf86dfc738954db2f2e"
+  }
+}

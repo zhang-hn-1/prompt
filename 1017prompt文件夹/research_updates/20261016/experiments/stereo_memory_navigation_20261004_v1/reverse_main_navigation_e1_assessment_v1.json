@@ -1,0 +1,148 @@
+{
+  "intervention": {
+    "count": 114,
+    "first_override": 145,
+    "first_pair_fork": 145,
+    "consumer_fork_isolated": true,
+    "earlier_nonconsumer_fork": false
+  },
+  "arms": {
+    "b0": {
+      "outcome": "timeout",
+      "success": false,
+      "budget_s": 35.0,
+      "scored_end_s": 34.99999921768904,
+      "metric_state_time_s": 34.99999921768904,
+      "goal_threshold_m": 0.2,
+      "goal_remaining_m": 5.626473311000725,
+      "goal_distance_reduction_m": 0.9735266889992751,
+      "along_start_goal_axis_m": 0.9757793366909024,
+      "path_length_m": 4.769824627730203,
+      "contact_time_s": null,
+      "arrival_time_s": null,
+      "contacts_all_available": true,
+      "contact_checks": 2101,
+      "measured_states": 351,
+      "not_based_on_path_index": true,
+      "not_strict_visual_admission": true,
+      "cross_axis_all_capture": {
+        "rms_m": 0.33521788762033966,
+        "peak_m": 0.7211842000484472,
+        "samples": 351,
+        "scope": "0..scored_end"
+      },
+      "actual_handoff_time_s": 5.999999865889549,
+      "requests": 350,
+      "captures": 351,
+      "physics_samples": 1751,
+      "contact_samples": 2101,
+      "raw_contacts_zero": true,
+      "sealed_items": 2211,
+      "videos": {
+        "stereo_view": {
+          "frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "frames": 351,
+          "fps": 10.0
+        }
+      },
+      "wall_median_s": 0.31639680649823276,
+      "wall_p90_s": 1.3995470005989774,
+      "source_gaps": {
+        "source_epochs": 71,
+        "empty_source_epochs": 0,
+        "empty_epoch_fraction": 0.0,
+        "maximum_sampled_empty_span_s": 0.0,
+        "empty_sample_times_s": [],
+        "footprint_unknown_cells_median": 186.0,
+        "footprint_unknown_cells_max": 190,
+        "absence_is_observed_free": false,
+        "full_3d_blindzone_measured": false,
+        "interpretation": "Sampled point-source gaps and map unknown footprint only; cannot distinguish occlusion from matching/selection failure or certify unseen space. Task ground/safe-start priors remain separate; no source accuracy admission."
+      }
+    },
+    "candidate": {
+      "outcome": "timeout",
+      "success": false,
+      "budget_s": 35.0,
+      "scored_end_s": 34.99999921768904,
+      "metric_state_time_s": 34.99999921768904,
+      "goal_threshold_m": 0.2,
+      "goal_remaining_m": 4.6284721341916555,
+      "goal_distance_reduction_m": 1.9715278658083442,
+      "along_start_goal_axis_m": 1.9743285596370694,
+      "path_length_m": 6.0904523938372765,
+      "contact_time_s": null,
+      "arrival_time_s": null,
+      "contacts_all_available": true,
+      "contact_checks": 2101,
+      "measured_states": 351,
+      "not_based_on_path_index": true,
+      "not_strict_visual_admission": true,
+      "cross_axis_all_capture": {
+        "rms_m": 0.31634921369995084,
+        "peak_m": 0.7211842000484472,
+        "samples": 351,
+        "scope": "0..scored_end"
+      },
+      "actual_handoff_time_s": 5.999999865889549,
+      "requests": 350,
+      "captures": 351,
+      "physics_samples": 1751,
+      "contact_samples": 2101,
+      "raw_contacts_zero": true,
+      "sealed_items": 2211,
+      "videos": {
+        "stereo_view": {
+          "frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "frames": 351,
+          "fps": 10.0
+        }
+      },
+      "wall_median_s": 0.31936940849845996,
+      "wall_p90_s": 1.3756730790963048,
+      "source_gaps": {
+        "source_epochs": 71,
+        "empty_source_epochs": 1,
+        "empty_epoch_fraction": 0.014084507042253521,
+        "maximum_sampled_empty_span_s": 0.0,
+        "empty_sample_times_s": [
+          32.99999926239252
+        ],
+        "footprint_unknown_cells_median": 186.0,
+        "footprint_unknown_cells_max": 190,
+        "absence_is_observed_free": false,
+        "full_3d_blindzone_measured": false,
+        "interpretation": "Sampled point-source gaps and map unknown footprint only; cannot distinguish occlusion from matching/selection failure or certify unseen space. Task ground/safe-start priors remain separate; no source accuracy admission."
+      }
+    }
+  },
+  "gates": {
+    "actual_request_change": true,
+    "consumer_fork_isolated": true,
+    "prefix_physics_execution_requests_exact": true,
+    "no_contact": true,
+    "arrival": false,
+    "net_progress": true,
+    "cross_rms": true,
+    "cross_peak": true,
+    "latency": true
+  },
+  "first_actual_request_fork": 145,
+  "different_request_rows": 199,
+  "taskH_candidate_accept": false,
+  "classification": "measured_navigation_reject",
+  "not_online_shadow_validation": true,
+  "full_causal_claim": false,
+  "source_pixel_prefix_not_proven": true,
+  "nonzeroaux_model_admitted": false,
+  "reverse_main_is_empirical_trial": true,
+  "strict_visual_admission": false,
+  "estimated_pose_result": null,
+  "whole_mission_complete": false
+}

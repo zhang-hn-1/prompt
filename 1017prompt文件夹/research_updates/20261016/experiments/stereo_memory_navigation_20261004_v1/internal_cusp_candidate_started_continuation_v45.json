@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-09T15:32:49.904651+00:00",
+  "supersedes_sha256": "060fc905191dff06045ed7e5c112fdf91686713fccb88622efa17037ace53733",
+  "running_process": true,
+  "actual_status": {
+    "status": "running",
+    "start_utc": "2026-10-09T15:32:10.602269+00:00",
+    "parent_pid": 596445,
+    "child_pid": 596446,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session_id": 66419,
+  "physical_budget_consumed": 2,
+  "candidate_budget_remaining": 0,
+  "no_retry": true,
+  "b0_closed_metrics": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/internal_cusp_navigation_e1_b0_closed_metrics_v1.json",
+  "next_step": "supervise existing candidate PID/log; once normalclose0+seal run assess_internal_cusp_navigation_e1_v1.py once, independentclosedreview; no newphysics/retry in thisbudget",
+  "whole_mission_complete": false
+}

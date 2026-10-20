@@ -1,0 +1,1 @@
+Exploratory fixed-radius2m arc-then-line rejoin. Two circle signs and forward tangents only; no radius/parameter scan. Uses actual20s entry state from failed localdetour. Both cases no collision-clear member of this family; no physical follow-up. This does not prove no feasible path exists. CPU geometric tests2pass. Not deployed.

@@ -1,0 +1,90 @@
+{
+  "results": {
+    "LR": {
+      "previous": {
+        "first_goal_s": 31.25999930128455,
+        "min_distance_m": 0.19895736919905768,
+        "final_distance_m": 0.29551245996924036,
+        "final_speed_m_s": 0.02097938396036625,
+        "last1s_max_distance_m": 0.3159002938624969,
+        "last1s_max_speed_m_s": 0.05475268140435219,
+        "stable_goal": false,
+        "contacts": 0,
+        "contact_valid": true,
+        "body_clearance_m": 0.2027989453188831,
+        "passed_obstacle": true,
+        "prefix_to_terminal_matches": true,
+        "strict_success": false,
+        "terminal_start": null
+      },
+      "candidate": {
+        "first_goal_s": null,
+        "min_distance_m": 0.30257222792786886,
+        "final_distance_m": 0.30257222792786886,
+        "final_speed_m_s": 0.007821132428944111,
+        "last1s_max_distance_m": 0.3099202146712007,
+        "last1s_max_speed_m_s": 0.008583764545619488,
+        "stable_goal": false,
+        "contacts": 0,
+        "contact_valid": true,
+        "body_clearance_m": 0.2027989453188831,
+        "passed_obstacle": true,
+        "prefix_to_terminal_matches": true,
+        "strict_success": false,
+        "terminal_start": {
+          "block": 292,
+          "distance": 0.4890757034169892,
+          "speed": 0.19399292767047882,
+          "target": [
+            0.0,
+            -0.5235987901687622
+          ]
+        }
+      }
+    },
+    "RL": {
+      "previous": {
+        "first_goal_s": 32.53999927267432,
+        "min_distance_m": 0.11766348757784179,
+        "final_distance_m": 0.24837080919265844,
+        "final_speed_m_s": 0.019815891981124878,
+        "last1s_max_distance_m": 0.24837080919265844,
+        "last1s_max_speed_m_s": 0.11442127823829651,
+        "stable_goal": false,
+        "contacts": 0,
+        "contact_valid": true,
+        "body_clearance_m": 0.18516628280605674,
+        "passed_obstacle": true,
+        "prefix_to_terminal_matches": true,
+        "strict_success": false,
+        "terminal_start": null
+      },
+      "candidate": {
+        "first_goal_s": null,
+        "min_distance_m": 0.26267070513853674,
+        "final_distance_m": 0.2913985741603732,
+        "final_speed_m_s": 0.02090797759592533,
+        "last1s_max_distance_m": 0.29260162839647474,
+        "last1s_max_speed_m_s": 0.02090797759592533,
+        "stable_goal": false,
+        "contacts": 0,
+        "contact_valid": true,
+        "body_clearance_m": 0.18516628280605674,
+        "passed_obstacle": true,
+        "prefix_to_terminal_matches": true,
+        "strict_success": false,
+        "terminal_start": {
+          "block": 312,
+          "distance": 0.4379354700113649,
+          "speed": 0.17291191220283508,
+          "target": [
+            0.0,
+            0.5235987901687622
+          ]
+        }
+      }
+    }
+  },
+  "accepted": false,
+  "formal_benchmark": false
+}

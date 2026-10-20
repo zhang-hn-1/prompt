@@ -1,0 +1,18 @@
+"""Only post-seal historical labels. Same query denominators, no selection/refit."""
+from pathlib import Path
+import json,hashlib,datetime,numpy as np
+from audit_stereo import summarize
+from scalar_disparity_residual import F
+H=Path(__file__).resolve().parent;D=H/'native_flat_pose_navigation_R1_run_v1';O=H/'scalar_disparity_residual_historical_v1';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();sealpath=O/'pretruth_seal.json';seal=json.loads(sealpath.read_text())
+for group in ['input_sha256','output_sha256','source_sha256']:
+ for f,s in seal[group].items():assert sha(f)==s,f
+supplementpath=O/'dependency_seal_supplement_v1.json';supplement=json.loads(supplementpath.read_text());
+for f,h in supplement['dependencies_sha256'].items():assert sha(f)==h,f
+assert seal['no_validation_truth_label_reads'];rows=json.loads((O/'rows.json').read_text());errors=[];rawerrors=[];classes=[];metrics=[];labelhash={}
+for row in rows:
+ i=row['frame'];name=f'frame_{i:03d}.npz';s=np.load(O/'predictions'/name);f=D/'offline_truth'/name;labelhash[str(f)]=sha(f);gt=np.load(f);y,x=np.divmod(s['query_pixel_id'],640);z=gt['left_depth_m'][y,x];rays=np.column_stack([(x-319.5)/F,(y-239.5)/F,np.ones(len(x))]);T=gt['left_camera_usd_world'];truth=T[:3,3]+(rays*z[:,None])@(T[:3,:3]@np.diag([1,-1,-1])).T;gtvalid=np.isfinite(z)&(z>0)&np.isfinite(truth).all(1);e=np.linalg.norm(s['world']-truth,axis=1);raw=np.linalg.norm(s['raw_world']-truth,axis=1);e[~gtvalid|~s['valid']]=np.inf;raw[~gtvalid|~s['raw_valid']]=np.inf;c=gtvalid&s['valid']&(np.linalg.norm(truth[:,:2],axis=1)<=.351)&(truth[:,2]>.001)&(truth[:,2]<=1.001);errors.append(e);rawerrors.append(raw);classes.append(c);metrics.append(dict(frame=i,n=len(e),metric=summarize(e),raw_metric=summarize(raw),invalid_corrected=int((~s['valid']).sum())))
+e=np.concatenate(errors);raw=np.concatenate(rawerrors);c=np.concatenate(classes);m=summarize(e);precision=float(c.mean()) if len(c) else 0.;gates=dict(n=len(e)>=100,metric95=m['within_0p10m'] is not None and m['within_0p10m']>=.95,p90=m['finite_p90_m'] is not None and m['finite_p90_m']<=.1,class95=precision>=.95,two100point_exposures=sum(r['n']>=100 for r in metrics)>=2)
+# Pose gate already established on same complete native R1 sequence, not reverse fit.
+posepath=H/'frontal_local_refinement_pose_scope_v1.json';pose=json.loads(posepath.read_text());gates['native_pose']=all(pose['gates'].values());assert sha(H/pose['source_file'])==pose['source_sha256']
+a=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),decision='PASS_HISTORICAL_METRIC_DEVELOPMENT_ONLY_NEEDS_FRESH_VALIDATION' if all(gates.values()) else 'REJECT_SINGLE_SCALAR_DISPARITY_RESIDUAL',gates=gates,n=len(e),model=json.loads((H/'scalar_disparity_residual_fit_v1/frozen_model.json').read_text())['delta_disparity_px'],world_metric=m,raw_world_metric=summarize(raw),corrected_obstacle_precision=precision,total_invalid_corrected=sum(r['invalid_corrected'] for r in metrics),frames=metrics,pretruth_seal_sha256=sha(sealpath),dependency_supplement_sha256=sha(supplementpath),original_seal_omission_not_hidden=True,validation_label_sha256=labelhash,pose_scope_sha256=sha(posepath),pose_scope=pose,whole_historical_not_fresh=True,no_new_observed_pair_or_LR_certificate=True,no_runtime_or_memory_free_or_navigation_admission=True,old_rejects_preserved=True,no_second_candidate_or_refit_or_band_or_threshold_scan=True,whole_research_complete=False)
+(O/'assessment.json').write_text(json.dumps(a,indent=2,allow_nan=False)+'\n');print(json.dumps({k:v for k,v in a.items() if k not in ['frames','validation_label_sha256','pose_scope']},indent=2))

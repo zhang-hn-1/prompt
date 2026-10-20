@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-08T13:38:10.343068+00:00",
+  "question": "Can the same planner represent a CURRENT first forward run longer than its frozen .372076m incoming-cusp acquisition window?",
+  "previous_first_mask": "REJECT_REQUEST_NONINTERVENTION preserved",
+  "maximum_current_queries": 1,
+  "frame": 211,
+  "minimum_prefix_primitives": 2,
+  "derivation": "ceil(.37207621999361346/.3)=2, no parameter scan",
+  "first_run_nominal_arc_m": 0.6,
+  "only_change": "initial search phase enforces two F primitives before reverse; after that fully original domain",
+  "no_gain_speed_margin_source_light_cusp_rule_change": true,
+  "not_physical_stopping_certificate": true,
+  "necessary": "same target/margin + feasible + current request nonzero + original five-confirm state preserved",
+  "fresh_physics": "NOT STARTED; independent review and full admission required"
+}

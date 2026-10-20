@@ -1,0 +1,4 @@
+# Scope wording correction (no runtime/protocol threshold mutation)
+The base PROTOCOL retains inherited wording 'unseen THIRD-transition histories'. For THIS clockfix rerun they have already been seen in oracle_turn_envelope_validation_20260928_v1. These two processes validate repeatability and clock comparison implementation only, NOT fresh dynamics generalization. The protocol's appended clockfix clause and README have this narrower scope. Frozen file remains unchanged for provenance.
+The inherited output key prefix_all_arrays_identical means physical/action/relative-clock exact match plus raw clocks equal AFTER removing absolute origin, not byte-identical raw clocks. This wording correction does not change results or thresholds.
+Independent reviewer confirmed run_one unchanged; assess only prefix comparator changed, and all3 tests pass. Old strict failed assessment remains preserved.

@@ -1,0 +1,35 @@
+{
+  "status": "finished",
+  "start_utc": "2026-10-09T04:55:36.798740+00:00",
+  "maximum_actual_sequences": 2,
+  "role": "remaining fixed estimated-pose baseline coverage, not accepted navigation candidate migration",
+  "prior_knownpose_navigation_rejections_preserved": true,
+  "sequences": [
+    {
+      "condition": "e1",
+      "child_execution": {
+        "pid": 178387,
+        "timeout": false,
+        "forced_kill": false,
+        "returncode": 0
+      },
+      "normal_close_confirmed": true,
+      "exit_code": 0,
+      "end_utc": "2026-10-09T04:59:24.217288+00:00"
+    },
+    {
+      "condition": "e2",
+      "child_execution": {
+        "pid": 183385,
+        "timeout": false,
+        "forced_kill": false,
+        "returncode": 0
+      },
+      "normal_close_confirmed": true,
+      "exit_code": 0,
+      "end_utc": "2026-10-09T05:01:33.020139+00:00"
+    }
+  ],
+  "exit_code": 0,
+  "end_utc": "2026-10-09T05:01:33.020267+00:00"
+}

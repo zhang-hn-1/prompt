@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-08T03:36:20.395529+00:00",
+  "decision": "PASS_PHYSICAL_OBSERVER_PREFIX_IDENTITY_ONLY",
+  "all140_requests_exact": true,
+  "all701_physical_fields_exact": {
+    "root_position_world_m": true,
+    "root_quaternion_world_wxyz": true,
+    "joint_position_rad": true,
+    "joint_velocity_rad_s": true,
+    "smoothed_target": true,
+    "applied_action": true,
+    "position_world_xy": true,
+    "simulation_time_s": true
+  },
+  "no_navigation_policy_act": true,
+  "source29_CAD_wall_p50_p90_max_s": [
+    0.6307321451604366,
+    0.7955602701287716,
+    0.8556254990398884
+  ],
+  "source29_CAD_wall_total_s": 19.489283793605864,
+  "NOT_identical_RGB_or_NN_claim": true,
+  "stage_wall118s_NOT_statistical_AB_speed_claim": true,
+  "not_realtime_or_new_navigation": true,
+  "whole_complete": false
+}

@@ -1,0 +1,48 @@
+{
+  "stage": "baseline reproduction and read-only actual-request interface",
+  "physical_budget": {
+    "total_new_sequences": 1,
+    "episode": "golden_e0_0001",
+    "duration_s": 35,
+    "layer": "native estimate control and registration; privileged initial gauge/ideal lowlevel IMU",
+    "no_retry": true
+  },
+  "not_new_control_candidate": true,
+  "not_old_pacing_or_short_backing_retry": true,
+  "unchanged": [
+    "camera",
+    "lighting",
+    "scene",
+    "SGBM",
+    "memory",
+    "planner",
+    "roll PID",
+    "protocol",
+    "request producer",
+    "main cap .5",
+    "reference consumer"
+  ],
+  "gates": [
+    "normal finished350requests351captures1751physics2101availablecontact0",
+    "one immutable context per actual planner act, initial prefix explicitly not tracker context",
+    "raw/protocol/outer issued semantics separately exact; geometry invalid on early return",
+    "ordinary record list reset at initial install supported; subsequent geometry replacement does not reset",
+    "single original act, returned action unchanged by context construction, no future executed target",
+    "at least two ordinary local reference installations during complete sequence"
+  ],
+  "not_navigation_admission": true,
+  "old_baseline_scores_preserved": true,
+  "source_and_input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_classical_baseline_repro_v1.py": "423a8a3adbc21e9f07fd1d12ca3181b09eac36298cf01dc7222fa4d718aad6aa",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_classical_baseline_context_stage_v1.py": "0800c9762923268b189d73f6eae1ece6cae811b83db3634eae471f953733400f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/current_request_context_v1.py": "5f1f21763d00e68c24454e2521d363d662b1460f134e74b8c9d0e8b22bac77e9",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/durable_stage_supervision_v1.py": "7189f8ae002db7866c9a36f29f5fcf24c9506c2144d0b3b362e2ce1ee18119f2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/test_current_request_context_v1.py": "0a698765d5b7250381a14f67d1b7d6fcd7ca883c9a632d8403ffed34c0861ec1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/test_current_request_real_composition_v1.py": "2a219b69ebf040bf2dac3506bce6b87bdeb400647b43ff942ba3ac0320ff9d04",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json": "c9fe12669adbaed743952836d76d58c849353c747259a5da39776901a80450b0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json": "ce7fda529c494f2e467887f2233b159365f1b3dd483529feb078e75dab24577d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json": "40578039acb054b295a3cad683502543aa8d76b46d9d9cbee42a2073ca3589e1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/assess_classical_baseline_context_v1.py": "79b532645e52516ce46dbbc25a19b7fa9419a97c76fe7cfff43a340d251c475f"
+  },
+  "prelaunch_minor_identity_only_old_envelope_sha256": "2e462525dadc5e7599e83c619186580f2935f70cf959b91cc62c4e71308d6621"
+}

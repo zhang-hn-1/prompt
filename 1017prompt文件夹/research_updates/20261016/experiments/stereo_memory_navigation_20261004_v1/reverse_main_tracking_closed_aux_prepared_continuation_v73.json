@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-09T18:42:06.329316+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_tracking_running_continuation_v72.json",
+  "supersedes_sha256": "590d9e44bd9e68c7924e51136c63a4f6a306cee7963b2ef625bfae12628c003d",
+  "whole_mission_complete": false,
+  "status": "readonly_chain_closed_next_aux_ablation_prepared",
+  "running": false,
+  "assessment": "current_tracking_chain_e1_assessment_v1.json",
+  "closed_review": "current_tracking_chain_e1_closed_review_v1.json",
+  "next_design": "forward_outer_yaw_ablation_design_v1.json",
+  "next_module": "forward_outer_yaw_ablation_v1.py",
+  "next_tests": "test_forward_outer_yaw_factory_v1.py",
+  "next_physical_budget": 2,
+  "next_physical_used": 0,
+  "next": "independent scope review, then freeze driver/scorer identity and genuine fallback tests; no runtime before prelaunch",
+  "old_telemetry_budget_closed": true
+}

@@ -1,0 +1,58 @@
+{
+  "frozen_at_utc": "2026-10-04T11:27:46.733657+00:00",
+  "max_new_sequences": 2,
+  "development_duration_s": 13.5,
+  "fresh_duration_s": 21.0,
+  "prefix_s": 6.0,
+  "active_request_duration_s": 1.5,
+  "matched_zero_tail_s": 6.0,
+  "fresh_start_xy_offset_m": [
+    0.4,
+    0.2
+  ],
+  "goal_in_current_yaw_frame_m": [
+    0.8,
+    -0.3
+  ],
+  "development": "whole reset ->zero6s ->main.3 encodedaux+30 1.5s ->rawzero6s; no internal reset",
+  "fresh": "one complete translated-start21s; samezero6sprefix, guarded first7.5s plan. At wholeplan completion AND fiveactual10Hz XYspeed<.05, evaluate exactly one further selection against same frozenworldlocalgoal. Unsupported/hazard ->zero7.5s terminalfallback; no waitingloop/internalreset. If completionnotqualified, do not start another plan.",
+  "candidate": "one short_positive measured family only; preserve priorcurrentstate/completeexecution guard and all gains/limits/map/rig",
+  "tolerances": {
+    "linear_local": 0.015,
+    "angular_local": 0.04,
+    "joint_position": 0.05,
+    "joint_velocity": 0.05,
+    "tilt_angle_rad": 0.03490658503988659,
+    "pid_integral": 0.01,
+    "pid_previous_bank": 0.03490658503988659,
+    "pid_rate": 0.04,
+    "inner_action": 0.005
+  },
+  "prediction_gate": {
+    "horizons_s": [
+      1.5,
+      3.0,
+      4.5,
+      6.0,
+      7.5
+    ],
+    "max_xy_error_m": 0.1,
+    "max_yaw_error_rad": 0.15,
+    "max_bank_error_deg": 5.0,
+    "max_stop_qualification_difference_s": 0.3
+  },
+  "repeat_gate": "second boundary must really occur after wholematchedplan, firstqualifiedactualstop; then SAME initialstate gate and knownobservedhazard test must pass. Physical secondmotion and positiveprogress required to call repeat execution passed; hold/rejection not success.",
+  "measurement": "actualXY path/radial and speedrebound after7.5s, fiveactualXYsamples<.05 resetonrebound; old .140884 gate stays frozen. No earlytail stitching.",
+  "fresh_isolation": "entire21s fresh definition sealed before development acquisition/library construction; no reading/fitting newfresh data, no tolerance tweak or extra run",
+  "unknown": "explicit unknownrisk diagnostic, no priorfreewrites/full3Dcertificate; privileged depth+truepose not RGB",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/short_branch.py": "44fc6eec60bd25858611b51539ec2d238a39541ef4c143fb34a550811a1e93ef",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_short_branch.py": "d3eb2f4ed85c5f2c97f99de512fb70bd3b61ee3aaa84cb57c5fde625b406f948",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_short_branch_phase.py": "a61e175806892852df0de62356ca7b8425f4ad7e4c594c50d12315ed75891f03",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/build_short_response_library.py": "9fdf47f4293099f25427f32cdd46eb943352748c8a34173dcb05a13e3ba84f7a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/guarded_response.py": "ef3488017630f762a2843924ba23984154cc0b308f4a0ca45df291ffde11177e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/execution_snapshot.py": "bdc3086978ed78de259ef8e24b32b1a11d79461327ecee8a8c2ec937c66fc54e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/spatial_memory.py": "9ec85f2deb0561e05113b45d6f49e74d1890bdcc3d43927e5dfc751fb9b27f17",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/primitive_planner.py": "0a7cf9ef1f7dfc76f3ea1ebc6a95f91b78dca015e7b08581c809437fd32f29f5"
+  }
+}

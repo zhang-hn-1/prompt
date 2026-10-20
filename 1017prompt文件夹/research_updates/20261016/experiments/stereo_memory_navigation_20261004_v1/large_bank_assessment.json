@@ -1,0 +1,283 @@
+{
+  "role": "two new targeted development turn-stop measurements; no navigation/fresh model validation",
+  "arms": {
+    "positive": {
+      "duration_s": 17.999999597668648,
+      "captures": 181,
+      "physics_samples": 901,
+      "raw_request_blocks": 180,
+      "archived_pairs": 37,
+      "physical_path_active6to12_m": 0.7246251564107333,
+      "actual_speed_peak_m_s": 0.19978549633702491,
+      "actual_bank_range_deg": [
+        -1.2886034405404545,
+        25.88763721058415
+      ],
+      "target_bank_reached5times_s": 8.899999801069498,
+      "measured_steady_tail": true,
+      "bank_tail_mean_deg": 24.414304719313392,
+      "bank_tail_std_deg": 0.08818919254177819,
+      "bank_tail_slope_deg_s": -0.18431379371549592,
+      "speed_tail_mean_m_s": 0.11556949521584142,
+      "speed_tail_cv": 0.007659148998207765,
+      "main_actual_tail_std_rad_s": 0.003139619017019868,
+      "velocity_course_curvature_tail": {
+        "n": 16,
+        "median": -0.6962007209405766,
+        "p10": -1.1433395280938305,
+        "p90": -0.4411885731600348
+      },
+      "three_position_curvature_tail": {
+        "n": 16,
+        "median": -0.699615221783834,
+        "p10": -1.1387994093102676,
+        "p90": -0.42072418603294215
+      },
+      "root_yaw_over_signed_forward_speed_curvature_tail": {
+        "n": 16,
+        "median": -0.7390139539837808,
+        "p10": -0.7739089711325144,
+        "p90": -0.7252693681600371
+      },
+      "world_z_angular_velocity_tail_rad_s": {
+        "n": 16,
+        "median": -0.08386187255382538,
+        "p10": -0.08879764005541801,
+        "p90": -0.0829051174223423
+      },
+      "actual_speed_at_stop_request_m_s": 0.11350890525193966,
+      "actual_bank_at_stop_request_deg": 24.246172087709176,
+      "first_main_smoothed_zero_after12_s": 12.599999718368053,
+      "first_five_10hz_actual_stop_s": 14.199999682605267,
+      "stopping": {
+        "1p5": {
+          "time_s": 13.499999698251486,
+          "path_m": 0.2068137675523758,
+          "net_m": 0.17845311760902405,
+          "radial_peak_m": 0.17845311760902405
+        },
+        "3": {
+          "time_s": 14.999999664723873,
+          "path_m": 0.2513176202774048,
+          "net_m": 0.1992592066526413,
+          "radial_peak_m": 0.2009330540895462
+        },
+        "end": {
+          "time_s": 17.999999597668648,
+          "path_m": 0.27422186732292175,
+          "net_m": 0.20863156020641327,
+          "radial_peak_m": 0.20863156020641327
+        },
+        "qualified": {
+          "time_s": 14.199999682605267,
+          "path_m": 0.23759160935878754,
+          "net_m": 0.19749143719673157,
+          "radial_peak_m": 0.2009330540895462
+        }
+      },
+      "finite_transitions": [
+        {
+          "horizon_s": 1.5,
+          "displacement_initial_yaw_frame_m": [
+            0.10336239783554016,
+            -0.14742487954032496
+          ],
+          "terminal_speed_m_s": 0.18208330291842625,
+          "terminal_bank_deg": 22.186640346237493,
+          "delta_root_yaw_rad": -0.06107176336207577
+        },
+        {
+          "horizon_s": 3,
+          "displacement_initial_yaw_frame_m": [
+            0.2846205661468098,
+            -0.17502260881286502
+          ],
+          "terminal_speed_m_s": 0.11585717797258928,
+          "terminal_bank_deg": 24.30140906644994,
+          "delta_root_yaw_rad": -0.18430492506155818
+        },
+        {
+          "horizon_s": 6,
+          "displacement_initial_yaw_frame_m": [
+            0.6246672895399115,
+            -0.267991561554948
+          ],
+          "terminal_speed_m_s": 0.11350890525193966,
+          "terminal_bank_deg": 24.246172087709176,
+          "delta_root_yaw_rad": -0.4450859622540256
+        }
+      ],
+      "history_insertions_once": {
+        "proprio_history": 180,
+        "action_history": 180,
+        "quaternion_world_wxyz_history": 180
+      },
+      "source_identity_verified": true,
+      "video_metadata": {
+        "third_person": {
+          "r_frame_rate": "10/1",
+          "duration": "18.100000",
+          "nb_frames": "181"
+        },
+        "stereo_view": {
+          "r_frame_rate": "10/1",
+          "duration": "18.100000",
+          "nb_frames": "181"
+        }
+      }
+    },
+    "negative": {
+      "duration_s": 17.999999597668648,
+      "captures": 181,
+      "physics_samples": 901,
+      "raw_request_blocks": 180,
+      "archived_pairs": 37,
+      "physical_path_active6to12_m": 0.734832837268515,
+      "actual_speed_peak_m_s": 0.2022055602506112,
+      "actual_bank_range_deg": [
+        -24.31458359826557,
+        2.3022011685666657
+      ],
+      "target_bank_reached5times_s": 7.999999821186066,
+      "measured_steady_tail": false,
+      "bank_tail_mean_deg": -22.65175084693807,
+      "bank_tail_std_deg": 0.4936769834863664,
+      "bank_tail_slope_deg_s": 1.0602862637063417,
+      "speed_tail_mean_m_s": 0.11829813128998884,
+      "speed_tail_cv": 0.008880574189234505,
+      "main_actual_tail_std_rad_s": 0.005470209289342165,
+      "velocity_course_curvature_tail": {
+        "n": 16,
+        "median": 0.422068409425985,
+        "p10": -0.755704262618818,
+        "p90": 1.5251815109040152
+      },
+      "three_position_curvature_tail": {
+        "n": 16,
+        "median": 0.5657989601240314,
+        "p10": -0.8808318882985924,
+        "p90": 1.6239455003644507
+      },
+      "root_yaw_over_signed_forward_speed_curvature_tail": {
+        "n": 16,
+        "median": 0.6848789431460841,
+        "p10": 0.6597352444741855,
+        "p90": 0.725474508112008
+      },
+      "world_z_angular_velocity_tail_rad_s": {
+        "n": 16,
+        "median": 0.08117013424634933,
+        "p10": 0.07642078772187233,
+        "p90": 0.08541050553321838
+      },
+      "actual_speed_at_stop_request_m_s": 0.11672098506643358,
+      "actual_bank_at_stop_request_deg": -21.9023672858836,
+      "first_main_smoothed_zero_after12_s": 12.599999718368053,
+      "first_five_10hz_actual_stop_s": 14.199999682605267,
+      "stopping": {
+        "1p5": {
+          "time_s": 13.499999698251486,
+          "path_m": 0.20250378549098969,
+          "net_m": 0.17366918921470642,
+          "radial_peak_m": 0.17366918921470642
+        },
+        "3": {
+          "time_s": 14.999999664723873,
+          "path_m": 0.24486249685287476,
+          "net_m": 0.19158510863780975,
+          "radial_peak_m": 0.1934318244457245
+        },
+        "end": {
+          "time_s": 17.999999597668648,
+          "path_m": 0.26706764101982117,
+          "net_m": 0.20091113448143005,
+          "radial_peak_m": 0.20091113448143005
+        },
+        "qualified": {
+          "time_s": 14.199999682605267,
+          "path_m": 0.231290802359581,
+          "net_m": 0.18968261778354645,
+          "radial_peak_m": 0.1934318244457245
+        }
+      },
+      "finite_transitions": [
+        {
+          "horizon_s": 1.5,
+          "displacement_initial_yaw_frame_m": [
+            0.10264062871552179,
+            0.14822774007075293
+          ],
+          "terminal_speed_m_s": 0.18506226013922525,
+          "terminal_bank_deg": -20.4786852323495,
+          "delta_root_yaw_rad": 0.06245878208298747
+        },
+        {
+          "horizon_s": 3,
+          "displacement_initial_yaw_frame_m": [
+            0.2870229404471921,
+            0.16872779119694084
+          ],
+          "terminal_speed_m_s": 0.1183305574507842,
+          "terminal_bank_deg": -21.61811436432022,
+          "delta_root_yaw_rad": 0.16789547975385272
+        },
+        {
+          "horizon_s": 6,
+          "displacement_initial_yaw_frame_m": [
+            0.635491171619091,
+            0.25764057567185655
+          ],
+          "terminal_speed_m_s": 0.11672098506643358,
+          "terminal_bank_deg": -21.9023672858836,
+          "delta_root_yaw_rad": 0.41051485277640537
+        }
+      ],
+      "history_insertions_once": {
+        "proprio_history": 180,
+        "action_history": 180,
+        "quaternion_world_wxyz_history": 180
+      },
+      "source_identity_verified": true,
+      "video_metadata": {
+        "third_person": {
+          "r_frame_rate": "10/1",
+          "duration": "18.100000",
+          "nb_frames": "181"
+        },
+        "stereo_view": {
+          "r_frame_rate": "10/1",
+          "duration": "18.100000",
+          "nb_frames": "181"
+        }
+      }
+    }
+  },
+  "identical_6s_prefix_nonraw": {
+    "raw_command_target": true,
+    "clipped_target": true,
+    "smoothed_target": true,
+    "applied_action": true,
+    "joint_position_rad": true,
+    "joint_velocity_rad_s": true,
+    "position_world_xy": true,
+    "root_position_world_m": true,
+    "root_quaternion_world_wxyz": true,
+    "linear_velocity_world_m_s": true,
+    "angular_velocity_world_rad_s": true,
+    "yaw_world_rad": true,
+    "roll_world_rad": true,
+    "simulation_time_s": true,
+    "physics_step_index": true,
+    "action_block_index": true,
+    "physics_step_in_block": true
+  },
+  "raw_origin_negative_minus_positive_s": 0.019999999552965164,
+  "frozen_old_stop_tail_m": 0.14088407559444638,
+  "universal_bound_accepted": false,
+  "navigation_tested": false,
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/assess_large_bank.py": "9754cfc41c12c715438439c21426eef0d50b9a9c44eb5968e96c667d9fd462ee",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/motion_measurement.py": "7ec635d91d94112e6c921a7e707674f4145c1cbc224b3d9b6439a40ac805eb25",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/large_bank_protocol.json": "9bcd6eefa157296d69fe01661b2098f2c805bd5fd0ecb202aef733c04ec0ba67"
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_stateful_replan_20260928_v1/probe.py",
+      "--case",
+      "0002",
+      "--condition",
+      "real",
+      "--out",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_stateful_replan_20260928_v1/0002_real"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_stateful_replan_20260928_v1/probe.py",
+      "--case",
+      "0002",
+      "--condition",
+      "candidate",
+      "--out",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_stateful_replan_20260928_v1/0002_candidate_source_map"
+    ],
+    "returncode": 1
+  }
+]

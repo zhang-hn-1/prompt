@@ -1,0 +1,12 @@
+{
+  "reviewer": "/root/heading_rate_review",
+  "P2_closed": "reentrant dispatch duplicates",
+  "verdict": "single_owner_durable_dispatch_record_protocol",
+  "synthetic_tests": 6,
+  "independent_checks": [
+    "swallowed reentry closes without acknowledgement",
+    "cross-thread callback operation closes without duplicate dispatch"
+  ],
+  "physics_proven": false,
+  "recovery_admitted": false
+}

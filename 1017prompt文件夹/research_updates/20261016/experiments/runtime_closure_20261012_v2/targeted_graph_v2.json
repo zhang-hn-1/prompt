@@ -1,0 +1,4561 @@
+{
+  "files_sha256": {
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/camera_rig.py": "5177063575b6dabde0822eb0c2472bd5f9ddf5e253a41be1feb42b4eacb2800a",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py": "06367cad4b944386568514887f73d348ee7390b07fb87a0d1c8223ac761dd1fc",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py": "8c1ffa146cd31f6fcb006133051a24a32c5a1f7a764dee7e0d143b5d8550a8be",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py": "85b9f6889ed2ec37791d7c3776cf6653f6e1a80552bd370b30930865b80c05c2",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py": "da989bf520e04a4a847e49ca68e528d11b57b556f1b2b240d4877f15e7d5631b",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py": "79a4aca53ce16440d160ad2f7d0783033a93e1a1d953f6eddfce328095de56f7",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py": "818e7c5cf2fc64081861dae3b173e68c5765cae8fd18859eb618aa8be63f8a67",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py": "72266e68bced65f81e41dbe96d99a806e4f674b13c9ae7db563016097d8a29f7",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py": "975e4182837eb74249da3d917ff916e9a0186ecb313d7a2b104a80559037e7cf",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py": "468f240318f817fca7e6fc28852c94914896084798384b88b228f3cbe6a7380e",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py": "5eefdaf7bed14b5aedb7499d389b9695cb1ae5964e8e1c2b1023c37909e1a887",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py": "51c1209902b8d1de2e679faee769c1eb828b0c73df32c7fb6647519e7ba53fe7",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py": "dd44f48750fd79a9406fb3727e0748b808ffbf628ff4c36ac4f2a9f9a54306a6",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py": "4eeca716f35e89690a46d538591e4182402e080348d5635c7fb83516f627d771",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/action_layers.py": "8d5a7c82f91f9b833bd374375430257721b30b033bc4cfdc4d52d50877f26c77",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py": "c3059088c598a4fb78ac7b00210a44674c7c82f9df0f22543c38f2a5260c28fc",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py": "e66fd32df6fc7bd2abe4e691bfd2d3eda51fd576c66e31468d3c30804c2a1898",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/lewm_modules.py": "8dfde1e8728c71ab529012f426fc4c1af5fbbf0a826a5e9201e4ec8d0a609c21",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py": "25620c8522c492b638ab5d4a6a16391a5933a4087dac37f64268fdbd1084fe1d",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/proprioception.py": "914a843bd9a855033d79b4cf3944b3882c5cf483464c0783e577310293250433",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py": "a63219bccba11b52182926c5a8c89330a8551340d61b55089424c7bc0dc4213d",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py": "6a6b462614732bfcd70dbe471b010b6364607e072468bf327f7396f3dd14a538",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py": "fe5b0fc6610216903b14ee4421b1cee529986a90b86ae2f3e6a0223c6bd3a4a5",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py": "de4542339132ace4e0fa3bc92b146cd088a97191cfc4eafc563229bacc0d9e72",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry.py": "6f384b3658e171431fd8152f97e8c8d3af19e6d358985d05cf7f32ae255a83b8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_gravity_rolling.py": "ee495d9c7741e28416e11f131eaab4f01b3b363d0bed1d6607d24653ccafd5ce",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_rolling_shadow.py": "54d441aadedbbac258a6cfdc42fd39d74cf09bc8f64cbec1cd362ddb80f0ffe9",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_interval_packet.py": "38f862da3746e709240a216d7c5693774ea866475d35a8a3a67edd9c6ec47b55",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/bilateral_temporal_geometry_navigation_20261003_v1/render_boundary.py": "56dde19cf4cfcbe594e73c539bb42f2a85093366a727b12c2af85123a3941e1c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction.py": "316bb0ac02ee39e0220f3ed46b9abc16179e74c8014c404ab0aa5eba1f63ed15",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/complete_capture.py": "b8dc45b04fed7e895e38c016e8fd8550fc3c1a822c47e68d9b92905136647004",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/render_flush.py": "f1c2c64c398ac49c109ad7068ff680bcce4c3db6e393ebcde864c003c5d2be60",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/clock_sync.py": "8ca9dbcf9c1e6dbfd3eb9c4d5b1b1c0f68a331d8ce484d4d61b369b6a7ef50de",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/roll_pid.py": "e205d303a8f9cb066349f8eae20e12f947596cca9603d7bac8dfb0b1b3379f47",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py": "14a10b8076e3184051d0f50353d31c47924768f800877d6936535bce53791117",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/block_bridge.py": "1507665eee9cf6fbf9a27b0e11aa2dc08744224bf959cbf34ae906091880dd54",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_pose_bridge.py": "5853da0c4002a3fc60bf480b84e59facddeeb5f39a53ade984699495761a12d9",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/flat_ground_pose_bridge.py": "14d35a3883fceeff7067d16f62f51514d06b62c89f3b77cb8cb3bd97f5edeb37",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py": "8e2fcb5b90d33183ed135797e221446c9e8824bf66cda63fb5287b36e1d04fcc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/probe_cleanup.py": "d00f8e7cf1dae8fa0ebf6cee6cf042f6a60b6a28a677b6cf89ac39a5cbc5161a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py": "b46ec9ed7aff86f0e1c7078a93ad0227804ca7424d368ef80b8b90b352d54575"
+  },
+  "edges": [
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 6,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 6,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 8,
+      "name": "heapq",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 9,
+      "name": "itertools",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 10,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 11,
+      "name": "collections.abc",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 11,
+      "name": "collections.abc.Iterator",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 11,
+      "name": "collections.abc.Sequence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 13,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 14,
+      "name": "scipy.ndimage",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py",
+      "line": 14,
+      "name": "scipy.ndimage.distance_transform_edt",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 5,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 6,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 6,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 7,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 7,
+      "name": "typing.Literal",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 7,
+      "name": "typing.Sequence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 9,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 10,
+      "name": "scipy.ndimage",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 10,
+      "name": "scipy.ndimage.distance_transform_edt",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 10,
+      "name": "scipy.ndimage.label",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 12,
+      "name": "grid_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 12,
+      "name": "grid_planning.astar_path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 12,
+      "name": "grid_planning.inflate_obstacles",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 12,
+      "name": "grid_planning.line_is_free",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py",
+      "line": 12,
+      "name": "grid_planning.path_length_cells",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 5,
+      "name": "json",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 6,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 7,
+      "name": "os",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 8,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 8,
+      "name": "dataclasses.asdict",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 8,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 8,
+      "name": "dataclasses.replace",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 9,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 9,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 10,
+      "name": "types",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 10,
+      "name": "types.MappingProxyType",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 11,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 11,
+      "name": "typing.Literal",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 11,
+      "name": "typing.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 11,
+      "name": "typing.Sequence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 13,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 15,
+      "name": "scripts.bev_ground_truth",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 15,
+      "name": "scripts.bev_ground_truth.GlobalOccupancy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 16,
+      "name": "scripts.trajectory_map",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 16,
+      "name": "scripts.trajectory_map.TASK_CARD_LAYERS",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 16,
+      "name": "scripts.trajectory_map.NavigationTaskOverlay",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 16,
+      "name": "scripts.trajectory_map.render_navigation_task_map",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 22,
+      "name": "grid_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 22,
+      "name": "grid_planning.astar_path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 22,
+      "name": "grid_planning.inflate_obstacles",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 23,
+      "name": "manifest",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 23,
+      "name": "manifest.BenchmarkEpisode",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 23,
+      "name": "manifest.BenchmarkManifest",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 23,
+      "name": "manifest.HumanReview",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 23,
+      "name": "manifest.freeze_manifest",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 29,
+      "name": "task_generation",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 29,
+      "name": "task_generation.Difficulty",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 29,
+      "name": "task_generation.TaskEvidence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py",
+      "line": 29,
+      "name": "task_generation.validate_task",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 5,
+      "name": "hashlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 6,
+      "name": "json",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 7,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 8,
+      "name": "re",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 9,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 9,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 9,
+      "name": "dataclasses.replace",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 10,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 10,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 10,
+      "name": "pathlib.PurePosixPath",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 11,
+      "name": "types",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 11,
+      "name": "types.MappingProxyType",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 12,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 12,
+      "name": "typing.Any",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 12,
+      "name": "typing.Literal",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py",
+      "line": 12,
+      "name": "typing.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 9,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 9,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 11,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 11,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 11,
+      "name": "dataclasses.field",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 12,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 13,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 13,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 14,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 14,
+      "name": "typing.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 14,
+      "name": "typing.Sequence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 16,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 17,
+      "name": "PIL",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 17,
+      "name": "PIL.Image",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 17,
+      "name": "PIL.ImageDraw",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 17,
+      "name": "PIL.ImageFont",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 20,
+      "name": "bev_ground_truth",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 20,
+      "name": "bev_ground_truth.GlobalOccupancy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 22,
+      "name": "bev_ground_truth",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py",
+      "line": 22,
+      "name": "bev_ground_truth.GlobalOccupancy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 9,
+      "name": "contextlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 9,
+      "name": "contextlib.contextmanager",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 10,
+      "name": "collections",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 10,
+      "name": "collections.deque",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 11,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 11,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 12,
+      "name": "functools",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 12,
+      "name": "functools.lru_cache",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 13,
+      "name": "importlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 14,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 15,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 15,
+      "name": "typing.Any",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 15,
+      "name": "typing.Iterator",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 15,
+      "name": "typing.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 15,
+      "name": "typing.Sequence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 17,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 880,
+      "name": "numba",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 880,
+      "name": "numba.njit",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1093,
+      "name": "carb",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1177,
+      "name": "omni.physx",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1178,
+      "name": "pxr",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1178,
+      "name": "pxr.Usd",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1178,
+      "name": "pxr.UsdGeom",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1178,
+      "name": "pxr.UsdPhysics",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1264,
+      "name": "omni.kit.app",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1268,
+      "name": "omni.physx",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1269,
+      "name": "omni.usd",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1270,
+      "name": "pxr",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1270,
+      "name": "pxr.Usd",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1270,
+      "name": "pxr.UsdGeom",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py",
+      "line": 1270,
+      "name": "pxr.UsdPhysics",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 5,
+      "name": "scripts.camera_rig",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/camera_rig.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 5,
+      "name": "scripts.camera_rig.CAMERA_HALF_BASELINE_M",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 5,
+      "name": "scripts.camera_rig.camera_translation_base_link",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 9,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 9,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 10,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 11,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 11,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 12,
+      "name": "sys",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 13,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 13,
+      "name": "typing.Any",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 15,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 17,
+      "name": "training.action_protocol",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 17,
+      "name": "training.action_protocol.ActionProtocol",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 19,
+      "name": "grid_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 19,
+      "name": "grid_planning.astar_path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 19,
+      "name": "grid_planning.inflate_obstacles",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 20,
+      "name": "drive_model",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 20,
+      "name": "drive_model.DriveModel",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 21,
+      "name": "dynamic_lattice_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 21,
+      "name": "dynamic_lattice_planning.DynamicPlanRequest",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 21,
+      "name": "dynamic_lattice_planning.DynamicPlanResult",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 21,
+      "name": "dynamic_lattice_planning.DynamicState",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 21,
+      "name": "dynamic_lattice_planning.plan_dynamic_lattice",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 27,
+      "name": "kinodynamic_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 27,
+      "name": "kinodynamic_planning.KinodynamicPlanRequest",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 27,
+      "name": "kinodynamic_planning.KinodynamicPlanResult",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 27,
+      "name": "kinodynamic_planning.plan_kinodynamic_path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 32,
+      "name": "lighting",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 32,
+      "name": "lighting.FIXED_CAMERA_FILL_V1",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 32,
+      "name": "lighting.LEGACY_SUN_V1",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 32,
+      "name": "lighting.LIGHTING_PROFILES",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 32,
+      "name": "lighting.install_fixed_camera_fill",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 38,
+      "name": "manifest",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 38,
+      "name": "manifest.BenchmarkEpisode",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 39,
+      "name": "policies",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 39,
+      "name": "policies.PolicyObservation",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 40,
+      "name": "runner",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 40,
+      "name": "runner.RuntimeStep",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 543,
+      "name": "action_smoothing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 543,
+      "name": "action_smoothing.default_articulation_gains",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 870,
+      "name": "isaacsim",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 870,
+      "name": "isaacsim.SimulationApp",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 875,
+      "name": "carb",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 876,
+      "name": "omni.usd",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 877,
+      "name": "isaacsim.core.prims",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 877,
+      "name": "isaacsim.core.prims.RigidPrim",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 878,
+      "name": "omni.isaac.core",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 878,
+      "name": "omni.isaac.core.World",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 879,
+      "name": "omni.isaac.core.articulations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 879,
+      "name": "omni.isaac.core.articulations.Articulation",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 880,
+      "name": "omni.isaac.core.prims",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 880,
+      "name": "omni.isaac.core.prims.XFormPrim",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 881,
+      "name": "omni.isaac.core.utils.stage",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 881,
+      "name": "omni.isaac.core.utils.stage.add_reference_to_stage",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 882,
+      "name": "omni.isaac.core.utils.types",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 882,
+      "name": "omni.isaac.core.utils.types.ArticulationAction",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 883,
+      "name": "omni.isaac.sensor",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 883,
+      "name": "omni.isaac.sensor.Camera",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 884,
+      "name": "pxr",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 884,
+      "name": "pxr.Gf",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 884,
+      "name": "pxr.Usd",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 884,
+      "name": "pxr.UsdGeom",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 884,
+      "name": "pxr.UsdLux",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 884,
+      "name": "pxr.UsdPhysics",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 889,
+      "name": "action_smoothing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 889,
+      "name": "action_smoothing.ActionSmoother",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 890,
+      "name": "bev_ground_truth",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 890,
+      "name": "bev_ground_truth.crop_global_occupancy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 890,
+      "name": "bev_ground_truth.enable_camera_depth",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 890,
+      "name": "bev_ground_truth.obstacle_clearance",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins.BASE_ROOT",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins.LEFT_CAMERA_PATH",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins.RIGHT_CAMERA_PATH",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins.ROBOT_ROOT",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins.ROBOT_USD",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins._camera_optical_to_base",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins._get_rgb",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins._load_collection_scene",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins._prime_stereo_cameras",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins._reset_articulation_after_occupancy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 895,
+      "name": "collect_data_dubins._warmup_physics_scene",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 908,
+      "name": "collection_schema",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 908,
+      "name": "collection_schema.load_contract",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 909,
+      "name": "benchmark.task_cards",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 909,
+      "name": "benchmark.task_cards.load_occupancy_npz",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 5,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 6,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 6,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 6,
+      "name": "dataclasses.field",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 7,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 7,
+      "name": "pathlib.PurePosixPath",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 8,
+      "name": "types",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 8,
+      "name": "types.MappingProxyType",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 9,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 9,
+      "name": "typing.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 9,
+      "name": "typing.Protocol",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 11,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 13,
+      "name": "training.action_protocol",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 13,
+      "name": "training.action_protocol.ActionProtocol",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 14,
+      "name": "training.navigation_metrics",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 14,
+      "name": "training.navigation_metrics.episode_termination",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 14,
+      "name": "training.navigation_metrics.path_length",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 14,
+      "name": "training.navigation_metrics.success_weighted_path_length",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 20,
+      "name": "manifest",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 20,
+      "name": "manifest.BenchmarkEpisode",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 21,
+      "name": "kinodynamic_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 21,
+      "name": "kinodynamic_planning.KinodynamicPlanResult",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 22,
+      "name": "dynamic_lattice_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 22,
+      "name": "dynamic_lattice_planning.DynamicPlanResult",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 23,
+      "name": "policies",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 23,
+      "name": "policies.DynamicOraclePolicy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 23,
+      "name": "policies.EpisodeContext",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py",
+      "line": 23,
+      "name": "policies.PolicyObservation",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 5,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 6,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 6,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 7,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 7,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 8,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 8,
+      "name": "typing.ClassVar",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 10,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 12,
+      "name": "action_layers",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/action_layers.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 12,
+      "name": "action_layers.normalize_action_request",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 14,
+      "name": "benchmark.drive_model",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 14,
+      "name": "benchmark.drive_model.DriveModel",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 15,
+      "name": "benchmark.dynamic_lattice_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 15,
+      "name": "benchmark.dynamic_lattice_planning.DynamicWaypoint",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 16,
+      "name": "benchmark.kinodynamic_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 16,
+      "name": "benchmark.kinodynamic_planning.KinodynamicWaypoint",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 17,
+      "name": "benchmark.trajectory_tracking",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 17,
+      "name": "benchmark.trajectory_tracking.SpatialReferenceProfile",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 17,
+      "name": "benchmark.trajectory_tracking.blend_tracking_curvature",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 17,
+      "name": "benchmark.trajectory_tracking.curvature_blend_weight",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 17,
+      "name": "benchmark.trajectory_tracking.query_delay_aware_reference",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 23,
+      "name": "training.action_protocol",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "line": 23,
+      "name": "training.action_protocol.ActionProtocol",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 5,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 5,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 6,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 6,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 7,
+      "name": "sys",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 8,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 8,
+      "name": "typing.Any",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 8,
+      "name": "typing.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 10,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 11,
+      "name": "torch",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 96,
+      "name": "collection_schema",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 96,
+      "name": "collection_schema.load_contract",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py",
+      "line": 8,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py",
+      "line": 8,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py",
+      "line": 10,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py",
+      "line": 10,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py",
+      "line": 11,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py",
+      "line": 12,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py",
+      "line": 12,
+      "name": "typing.Iterable",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py",
+      "line": 14,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py",
+      "line": 16,
+      "name": "kinodynamic_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/trajectory_tracking.py",
+      "line": 16,
+      "name": "kinodynamic_planning.KinodynamicWaypoint",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 5,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 5,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 6,
+      "name": "heapq",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 7,
+      "name": "itertools",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 8,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 9,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 9,
+      "name": "typing.Literal",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 11,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 13,
+      "name": "drive_model",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py",
+      "line": 13,
+      "name": "drive_model.DriveModel",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 5,
+      "name": "collections",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 5,
+      "name": "collections.OrderedDict",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 6,
+      "name": "collections.abc",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 6,
+      "name": "collections.abc.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 6,
+      "name": "collections.abc.Sequence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 7,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 7,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 7,
+      "name": "dataclasses.field",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 8,
+      "name": "json",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 9,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 10,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 10,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py",
+      "line": 12,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 5,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 5,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 5,
+      "name": "dataclasses.replace",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 6,
+      "name": "heapq",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 7,
+      "name": "itertools",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 8,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 9,
+      "name": "time",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 10,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 10,
+      "name": "typing.Callable",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 10,
+      "name": "typing.Literal",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 12,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 13,
+      "name": "scipy.ndimage",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 13,
+      "name": "scipy.ndimage.distance_transform_edt",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 13,
+      "name": "scipy.ndimage.maximum_filter",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 15,
+      "name": "drive_model",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/drive_model.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 15,
+      "name": "drive_model.DriveModel",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 16,
+      "name": "kinodynamic_planning",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/kinodynamic_planning.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 16,
+      "name": "kinodynamic_planning._finite_vector",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 16,
+      "name": "kinodynamic_planning._grid_distance_to_goal",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 16,
+      "name": "kinodynamic_planning._positive_float",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 16,
+      "name": "kinodynamic_planning.world_to_cell",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/dynamic_lattice_planning.py",
+      "line": 16,
+      "name": "kinodynamic_planning.yaw_to_bin",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/action_layers.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/action_layers.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/action_layers.py",
+      "line": 5,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/action_layers.py",
+      "line": 5,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/action_layers.py",
+      "line": 6,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/action_layers.py",
+      "line": 8,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/action_layers.py",
+      "line": 10,
+      "name": "training.action_protocol",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/action_layers.py",
+      "line": 10,
+      "name": "training.action_protocol.ActionProtocol",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py",
+      "line": 5,
+      "name": "collections.abc",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py",
+      "line": 5,
+      "name": "collections.abc.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py",
+      "line": 5,
+      "name": "collections.abc.Sequence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py",
+      "line": 6,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py",
+      "line": 7,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py",
+      "line": 7,
+      "name": "typing.Callable",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py",
+      "line": 9,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py",
+      "line": 5,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py",
+      "line": 6,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py",
+      "line": 6,
+      "name": "typing.Sequence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py",
+      "line": 42,
+      "name": "pxr",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py",
+      "line": 42,
+      "name": "pxr.Gf",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py",
+      "line": 42,
+      "name": "pxr.UsdGeom",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py",
+      "line": 42,
+      "name": "pxr.UsdLux",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/lewm_modules.py",
+      "line": 9,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/lewm_modules.py",
+      "line": 9,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/lewm_modules.py",
+      "line": 11,
+      "name": "torch",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/lewm_modules.py",
+      "line": 12,
+      "name": "torch",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/lewm_modules.py",
+      "line": 12,
+      "name": "torch.nn",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/lewm_modules.py",
+      "line": 13,
+      "name": "torch.nn.functional",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/lewm_modules.py",
+      "line": 14,
+      "name": "einops",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/lewm_modules.py",
+      "line": 14,
+      "name": "einops.rearrange",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 5,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 5,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 7,
+      "name": "timm",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 8,
+      "name": "torch",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 9,
+      "name": "torch",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 9,
+      "name": "torch.nn",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 10,
+      "name": "torch.nn.functional",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 11,
+      "name": "einops",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 11,
+      "name": "einops.rearrange",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 13,
+      "name": "lewm_modules",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/lewm_modules.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 13,
+      "name": "lewm_modules.ARPredictor",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 13,
+      "name": "lewm_modules.Embedder",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 13,
+      "name": "lewm_modules.MLP",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 13,
+      "name": "lewm_modules.SIGReg",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 14,
+      "name": "proprioception",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/proprioception.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py",
+      "line": 14,
+      "name": "proprioception.validate_velocity_frame",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/proprioception.py",
+      "line": 2,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/proprioception.py",
+      "line": 2,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/proprioception.py",
+      "line": 4,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/proprioception.py",
+      "line": 4,
+      "name": "typing.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/proprioception.py",
+      "line": 5,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py",
+      "line": 5,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py",
+      "line": 5,
+      "name": "dataclasses.dataclass",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py",
+      "line": 6,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py",
+      "line": 8,
+      "name": "torch",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py",
+      "line": 9,
+      "name": "torch.nn.functional",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py",
+      "line": 11,
+      "name": "action_protocol",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py",
+      "line": 11,
+      "name": "action_protocol.ActionProtocol",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 10,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 10,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 12,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 12,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 13,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 13,
+      "name": "typing.Any",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 13,
+      "name": "typing.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 15,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 16,
+      "name": "torch",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 17,
+      "name": "torch.nn.functional",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 19,
+      "name": "training.action_protocol",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 19,
+      "name": "training.action_protocol.ActionProtocol",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 19,
+      "name": "training.action_protocol.declared_action_protocol_id",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 20,
+      "name": "training.joint_jepa",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/joint_jepa.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 20,
+      "name": "training.joint_jepa.JointModelConfig",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 20,
+      "name": "training.joint_jepa.build_joint_model",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 21,
+      "name": "training.planner",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/planner.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 21,
+      "name": "training.planner.plan",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 22,
+      "name": "training.proprioception",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/proprioception.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 22,
+      "name": "training.proprioception.checkpoint_velocity_frame",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 22,
+      "name": "training.proprioception.transform_proprio_velocities",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 24,
+      "name": "policies",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 24,
+      "name": "policies.PolicyObservation",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py",
+      "line": 24,
+      "name": "policies._PolicyBase",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 4,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 4,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 6,
+      "name": "argparse",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 7,
+      "name": "hashlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 8,
+      "name": "json",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 9,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 10,
+      "name": "os",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 11,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 11,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 12,
+      "name": "platform",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 13,
+      "name": "subprocess",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 14,
+      "name": "sys",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 15,
+      "name": "time",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 16,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 16,
+      "name": "typing.Any",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 16,
+      "name": "typing.Sequence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 18,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 23,
+      "name": "scripts.camera_rig",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/camera_rig.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 23,
+      "name": "scripts.camera_rig.camera_rig_metadata",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 25,
+      "name": "benchmark.artifacts",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 25,
+      "name": "benchmark.artifacts.REQUIRED_TRAJECTORY_LAYERS",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 25,
+      "name": "benchmark.artifacts.AuditBundleWriter",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 25,
+      "name": "benchmark.artifacts.write_rgb_video",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 30,
+      "name": "benchmark.isaac_runtime",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 30,
+      "name": "benchmark.isaac_runtime.DEFAULT_DRIVE_PROFILE",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 30,
+      "name": "benchmark.isaac_runtime.IsaacBenchmarkRuntime",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 30,
+      "name": "benchmark.isaac_runtime.IsaacRuntimeConfig",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 35,
+      "name": "benchmark.lighting",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/lighting.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 35,
+      "name": "benchmark.lighting.LEGACY_SUN_V1",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 35,
+      "name": "benchmark.lighting.LIGHTING_PROFILES",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 36,
+      "name": "benchmark.manifest",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 36,
+      "name": "benchmark.manifest.BenchmarkEpisode",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 36,
+      "name": "benchmark.manifest.load_manifest",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 37,
+      "name": "benchmark.policies",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 37,
+      "name": "benchmark.policies.AngleAwareConstraintOraclePolicy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 37,
+      "name": "benchmark.policies.ConstraintAwareTrajectoryOraclePolicy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 37,
+      "name": "benchmark.policies.DynamicOraclePolicy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 37,
+      "name": "benchmark.policies.GoalGreedyPolicy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 37,
+      "name": "benchmark.policies.OraclePathPolicy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 37,
+      "name": "benchmark.policies.RandomPolicy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 37,
+      "name": "benchmark.policies.StopPolicy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 46,
+      "name": "benchmark.world_model_policy",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/world_model_policy.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 46,
+      "name": "benchmark.world_model_policy.WorldModelPolicy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 47,
+      "name": "benchmark.runner",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 47,
+      "name": "benchmark.runner.RunnerConfig",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 47,
+      "name": "benchmark.runner.run_episode",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 48,
+      "name": "scripts.trajectory_map",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/trajectory_map.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 48,
+      "name": "scripts.trajectory_map.NavigationTaskOverlay",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 48,
+      "name": "scripts.trajectory_map.TrajectoryRecord",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 48,
+      "name": "scripts.trajectory_map.render_navigation_task_map",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 48,
+      "name": "scripts.trajectory_map.render_trajectory_map",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 54,
+      "name": "training.action_protocol",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 54,
+      "name": "training.action_protocol.load_action_protocol",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 55,
+      "name": "training.navigation_metrics",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/navigation_metrics.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 55,
+      "name": "training.navigation_metrics.cluster_bootstrap_interval",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 55,
+      "name": "training.navigation_metrics.summarize_navigation",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 491,
+      "name": "cv2",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 675,
+      "name": "cv2",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 681,
+      "name": "torch",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 3,
+      "name": "__future__",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 3,
+      "name": "__future__.annotations",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 5,
+      "name": "hashlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 6,
+      "name": "json",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 7,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 8,
+      "name": "os",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 9,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 9,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 10,
+      "name": "typing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 10,
+      "name": "typing.Any",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 10,
+      "name": "typing.Mapping",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 10,
+      "name": "typing.Sequence",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 12,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 13,
+      "name": "PIL",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 13,
+      "name": "PIL.Image",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py",
+      "line": 130,
+      "name": "cv2",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry.py",
+      "line": 2,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_gravity_rolling.py",
+      "line": 2,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_gravity_rolling.py",
+      "line": 3,
+      "name": "rolling_odometry",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_gravity_rolling.py",
+      "line": 3,
+      "name": "rolling_odometry.exponential",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_rolling_shadow.py",
+      "line": 2,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_rolling_shadow.py",
+      "line": 3,
+      "name": "imu_gravity_rolling",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_gravity_rolling.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_rolling_shadow.py",
+      "line": 3,
+      "name": "imu_gravity_rolling.GravityRolling",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_interval_packet.py",
+      "line": 2,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/bilateral_temporal_geometry_navigation_20261003_v1/render_boundary.py",
+      "line": 3,
+      "name": "pxr",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/bilateral_temporal_geometry_navigation_20261003_v1/render_boundary.py",
+      "line": 3,
+      "name": "pxr.Usd",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction.py",
+      "line": 2,
+      "name": "dataclasses",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction.py",
+      "line": 2,
+      "name": "dataclasses.replace",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction.py",
+      "line": 3,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/complete_capture.py",
+      "line": 2,
+      "name": "render_flush",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/render_flush.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/complete_capture.py",
+      "line": 2,
+      "name": "render_flush.fixed_render_flush",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/complete_capture.py",
+      "line": 3,
+      "name": "capture_transaction",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/complete_capture.py",
+      "line": 3,
+      "name": "capture_transaction.replace_step_images",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/render_flush.py",
+      "line": 7,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/clock_sync.py",
+      "line": 2,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/roll_pid.py",
+      "line": 2,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/roll_pid.py",
+      "line": 3,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/roll_pid.py",
+      "line": 55,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/roll_pid.py",
+      "line": 55,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/roll_pid.py",
+      "line": 56,
+      "name": "json",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py",
+      "line": 2,
+      "name": "sys",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py",
+      "line": 2,
+      "name": "json",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py",
+      "line": 3,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py",
+      "line": 3,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py",
+      "line": 6,
+      "name": "collector",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py",
+      "line": 6,
+      "name": "collector.Collector",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py",
+      "line": 7,
+      "name": "journal",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py",
+      "line": 7,
+      "name": "journal.Journal",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/block_bridge.py",
+      "line": 2,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/block_bridge.py",
+      "line": 2,
+      "name": "json",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/block_bridge.py",
+      "line": 3,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/block_bridge.py",
+      "line": 4,
+      "name": "bridge",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/block_bridge.py",
+      "line": 4,
+      "name": "bridge.Bridge",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_pose_bridge.py",
+      "line": 2,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/flat_ground_pose_bridge.py",
+      "line": 2,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/flat_ground_pose_bridge.py",
+      "line": 3,
+      "name": "rolling_pose_bridge",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_pose_bridge.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/flat_ground_pose_bridge.py",
+      "line": 3,
+      "name": "rolling_pose_bridge.RollingPoseBridge",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py",
+      "line": 2,
+      "name": "sys",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py",
+      "line": 2,
+      "name": "math",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py",
+      "line": 2,
+      "name": "hashlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py",
+      "line": 3,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py",
+      "line": 3,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py",
+      "line": 4,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py",
+      "line": 6,
+      "name": "flat_ground_pose_bridge",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/flat_ground_pose_bridge.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py",
+      "line": 6,
+      "name": "flat_ground_pose_bridge.FlatGroundPoseBridge",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/probe_cleanup.py",
+      "line": 2,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/probe_cleanup.py",
+      "line": 2,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/probe_cleanup.py",
+      "line": 3,
+      "name": "signal",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/probe_cleanup.py",
+      "line": 3,
+      "name": "json",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/probe_cleanup.py",
+      "line": 3,
+      "name": "hashlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/probe_cleanup.py",
+      "line": 3,
+      "name": "datetime",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 2,
+      "name": "pathlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 2,
+      "name": "pathlib.Path",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 3,
+      "name": "json",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 3,
+      "name": "hashlib",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 3,
+      "name": "sys",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 3,
+      "name": "argparse",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 3,
+      "name": "os",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 3,
+      "name": "datetime",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 44,
+      "name": "numpy",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 45,
+      "name": "scipy.spatial.transform",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 45,
+      "name": "scipy.spatial.transform.Rotation",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 46,
+      "name": "scripts.run_pointgoal_benchmark",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 47,
+      "name": "native_rolling_shadow",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_rolling_shadow.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 47,
+      "name": "native_rolling_shadow.NativeRollingShadow",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 48,
+      "name": "flat_ground_pose_bridge",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/flat_ground_pose_bridge.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 48,
+      "name": "flat_ground_pose_bridge.FlatGroundPoseBridge",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 49,
+      "name": "imu_interval_packet",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_interval_packet.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 49,
+      "name": "imu_interval_packet.interval_packet",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 50,
+      "name": "render_boundary",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/bilateral_temporal_geometry_navigation_20261003_v1/render_boundary.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 50,
+      "name": "render_boundary.hide_diagnostic_markers",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 51,
+      "name": "complete_capture",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/complete_capture.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 51,
+      "name": "complete_capture.complete_capture",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 52,
+      "name": "render_flush",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/render_flush.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 52,
+      "name": "render_flush.fixed_render_flush",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 53,
+      "name": "clock_sync",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/clock_sync.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 53,
+      "name": "clock_sync.ensure_current_frames",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 54,
+      "name": "roll_pid",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/roll_pid.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 54,
+      "name": "roll_pid.install_runtime",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 55,
+      "name": "block_bridge",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/block_bridge.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 55,
+      "name": "block_bridge.BlockBridge",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 56,
+      "name": "provider",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 56,
+      "name": "provider.provide_clocked",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 57,
+      "name": "probe_cleanup",
+      "candidate_paths": [
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/probe_cleanup.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 57,
+      "name": "probe_cleanup.install_sigterm_cleanup",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 57,
+      "name": "probe_cleanup.seal_existing",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 116,
+      "name": "collect_data_dubins",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 116,
+      "name": "collect_data_dubins._get_rgb",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 73,
+      "name": "omni.kit.commands",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 74,
+      "name": "isaacsim.sensors.physics",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 74,
+      "name": "isaacsim.sensors.physics._sensor",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 75,
+      "name": "collect_data_dubins",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 75,
+      "name": "collect_data_dubins.BASE_ROOT",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 93,
+      "name": "collect_data_dubins",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 93,
+      "name": "collect_data_dubins._get_rgb",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 135,
+      "name": "benchmark.artifacts",
+      "candidate_paths": [
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/artifacts.py"
+      ],
+      "kind": "module_or_from_attribute_probe"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 135,
+      "name": "benchmark.artifacts.write_rgb_video",
+      "candidate_paths": [],
+      "kind": "module_or_from_attribute_probe"
+    }
+  ],
+  "path_and_loader_calls": [
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 542,
+      "call": "sys.path.insert(0, str(scripts_dir))"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "line": 888,
+      "call": "sys.path.insert(0, str(scripts_dir))"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/training/action_protocol.py",
+      "line": 95,
+      "call": "sys.path.insert(0, str(scripts_dir))"
+    },
+    {
+      "source": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/run_pointgoal_benchmark.py",
+      "line": 21,
+      "call": "sys.path.insert(0, str(Path(__file__).resolve().parents[1]))"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_bridge_20261012_v1/bridge.py",
+      "line": 5,
+      "call": "sys.path.insert(0, str(ROOT / directory))"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_anchor_provider_20261012_v1/provider.py",
+      "line": 5,
+      "call": "sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'stereo_memory_navigation_20261004_v1'))"
+    },
+    {
+      "source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/driver.py",
+      "line": 43,
+      "call": "sys.path.insert(0, str(directory))"
+    }
+  ],
+  "scope": "Conservative static probes, not dynamic execution closure; from attribute probes may not be imports, path mutations inventoried not simulated",
+  "runtime_closure_complete": false
+}

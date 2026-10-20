@@ -1,0 +1,6 @@
+from pathlib import Path
+import json,datetime,time,subprocess,sys,hashlib
+H=Path(__file__).resolve().parent;p=H/'forward_turn_domain_status_v1.json';assert not p.exists();stamp=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat();s=dict(stage='RUNNING_ONE72S_SEQUENCE',utc=stamp(),maximum_sequences=1,whole_research_complete=False,not_navigation=True);p.write_text(json.dumps(s,indent=2)+'\n');t=time.monotonic()
+with (H/'forward_turn_domain_run_v1.log').open('x') as log:
+ child=subprocess.Popen([sys.executable,str(H/'run_forward_turn_domain_v1.py')],stdout=log,stderr=subprocess.STDOUT,cwd=H);s['child_pid']=child.pid;p.write_text(json.dumps(s,indent=2)+'\n');code=child.wait(timeout=900)
+s.update(stage='ACTUAL_CLOSED_NEEDS_VERIFICATION' if code==0 else 'FAILED_NO_RETRY',complete=code==0,returncode=code,end_utc=stamp(),wall_s=time.monotonic()-t);D=H/'forward_turn_domain_run_v1';files={str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in D.rglob('*') if f.is_file()};man=D/'post_close_manifest.json';man.write_text(json.dumps(dict(artifact_sha256=files),indent=2)+'\n');s['manifest_sha256']=hashlib.sha256(man.read_bytes()).hexdigest();p.write_text(json.dumps(s,indent=2)+'\n');sys.exit(code)

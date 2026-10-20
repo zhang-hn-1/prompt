@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-07T10:06:58.070897+00:00",
+  "original_closed_status": {
+    "utc": "2026-10-07T10:01:02.399437+00:00",
+    "stage": "FAILED_PRESERVED_NO_RETRY",
+    "pid": 1547364,
+    "maximum_actual_sequences": 1,
+    "budget_s": 8.0,
+    "wall_limit_s": 400,
+    "source_only": true,
+    "formal_triggered": false,
+    "whole_research_complete": false,
+    "child_pid": 1547365,
+    "returncode": 1,
+    "end_utc": "2026-10-07T10:02:10.900644+00:00",
+    "wall_s": 68.5006160249468
+  },
+  "repair_running_status": {
+    "utc": "2026-10-07T10:06:31.684011+00:00",
+    "stage": "RUNNING",
+    "pid": 1553889,
+    "maximum_actual_sequences": 1,
+    "budget_s": 8.0,
+    "wall_limit_s": 400,
+    "source_only": true,
+    "formal_triggered": false,
+    "whole_research_complete": false,
+    "child_pid": 1553890
+  },
+  "session": 87664,
+  "append_trace": [
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/research_mission.md",
+      "old_bytes": 238351,
+      "old_sha256": "36e3ce7930c67d13f131d8200e1224242313730923b98a44f61df20995ac6dcf",
+      "new_sha256": "46fa37b802a8cf3749af1d061837f05aad19c079377369c1e7d0da0a31fc017a",
+      "prefix_preserved": true
+    },
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+      "old_bytes": 334219,
+      "old_sha256": "ebc9d1e7ada63b3054750e27f7ad44a9762abba6af619dd68fbecbeb9610415c",
+      "new_sha256": "3561212ac09267a51f3547568ff191d09e1b3681cdb09db18516bf513c9e56ae",
+      "prefix_preserved": true
+    },
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md",
+      "old_bytes": 166742,
+      "old_sha256": "d4546c550a51af506af620503d8971f5580d5c574504d47ec453f223b9d7c32e",
+      "new_sha256": "68f64bff855c36936043033c61267f2df430b086dfb166ebb7b1610cc2c09ebd",
+      "prefix_preserved": true
+    }
+  ],
+  "whole_research_complete": false
+}

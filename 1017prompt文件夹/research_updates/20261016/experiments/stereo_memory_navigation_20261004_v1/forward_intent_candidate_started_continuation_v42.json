@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-09T15:01:37.838230+00:00",
+  "supersedes_sha256": "00c8d4bd208f9a71705d2ffa5066ad15f1915045efe434c119047a0d2b6b5d35",
+  "b0_closed0": true,
+  "b0_sealed_items": 2213,
+  "b0_outcome": "timeout",
+  "b0_goal_m": 5.626473311000725,
+  "candidate_status": {
+    "status": "running",
+    "start_utc": "2026-10-09T15:01:20.491447+00:00",
+    "parent_pid": 550252,
+    "child_pid": 550253,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session_id": 80735,
+  "physical_budget_consumed": 2,
+  "no_retry": true,
+  "running_process": true,
+  "next_step": "supervise candidate; both normal-close seals -> frozen composite scorer -> independent actual review; do not count launch as improvement",
+  "whole_mission_complete": false
+}

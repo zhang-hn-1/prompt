@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-09T13:33:06.817675+00:00",
+  "stage": "rolling_endpoint_candidate_actual_started",
+  "whole_mission_complete": false,
+  "physics_running": true,
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_b0_started_continuation_v27.json",
+  "superseded_sha256": "5a8722a187d0fff381beecf42027f833f803a34c3f9987ec7d4eb814a76ca9f8",
+  "session_id": 1658,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T13:32:51.336451+00:00",
+    "parent_pid": 450169,
+    "child_pid": 450170,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "baseline_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T13:28:33.518640+00:00",
+    "parent_pid": 445264,
+    "child_pid": 445265,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T13:32:23.185162+00:00"
+  },
+  "baseline_all_2213_seals_verified": true,
+  "budget_remaining": {
+    "b0": 0,
+    "paced": 0,
+    "retry": 0
+  },
+  "next": "Supervise session1658 no duplicate; frozen assess_rolling_endpoint_navigation_e0_v1.py after close/seal, independent review. Only conditional E0 actual arrival permits next-layer/scene protocol preparation; previous rejects keep."
+}

@@ -1,0 +1,8 @@
+"""Prespecified stamp/content hypotheses for isolated SDK witness, no model input."""
+import math
+def assess(rows):
+ complete=len(rows)==50;selected=rows[2:];finite=bool(selected) and all(all(math.isfinite(float(r[k])) for k in ['begin_s','end_s','sensor_time_s','native_z_rad_s','current_rate_rad_s','current_body_error_rad_s']) for r in selected);valid=all(r['valid'] for r in selected) and bool(selected)
+ if not finite:return dict(begin_current_pass=False,end_current_pass=False,complete=complete,evaluation_rows=len(selected),finite=False)
+ clock=all(abs(r['end_s']-r['begin_s']-.02)<=1e-6 for r in selected);current=[abs(r['native_z_rad_s']-r['current_rate_rad_s']) for r in selected];previous=[abs(rows[i]['native_z_rad_s']-rows[i-1]['current_rate_rad_s']) for i in range(2,len(rows))];begin=[abs(r['sensor_time_s']-r['begin_s']) for r in selected];end=[abs(r['sensor_time_s']-r['end_s']) for r in selected];content=all(x<=1e-5 for x in current) and all(r['current_body_error_rad_s']<=1e-5 for r in selected);previous_worse=sum(previous)>sum(current)
+ common=complete and finite and valid and clock and content and previous_worse
+ return dict(begin_current_pass=common and all(x<=1e-5 for x in begin),end_current_pass=common and all(x<=1e-5 for x in end),complete=complete,finite=finite,evaluation_rows=len(selected),all_valid=valid,clock_step_pass=clock,current_content_pass=content,previous_fit_worse=previous_worse,begin_stamp_peak_s=max(begin),end_stamp_peak_s=max(end),current_command_peak_rad_s=max(current),previous_command_mean_abs_rad_s=sum(previous)/len(previous),all_current_body_peak_rad_s=max(r['current_body_error_rad_s'] for r in selected))

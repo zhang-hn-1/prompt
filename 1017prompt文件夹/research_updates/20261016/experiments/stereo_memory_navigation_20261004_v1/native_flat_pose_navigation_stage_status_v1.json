@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-07T18:15:07.058059+00:00",
+  "pid": 2104890,
+  "stage": "ACTUAL_SINGLE_CLOSED_NEEDS_VERIFICATION",
+  "arms": {
+    "R1": {
+      "stage": "ACTUAL_CLOSED_NEEDS_VERIFICATION",
+      "utc": "2026-10-07T18:15:07.058223+00:00",
+      "complete": true,
+      "child_pid": 2104892,
+      "returncode": 0,
+      "wall_s": 506.1355663840659,
+      "end_utc": "2026-10-07T18:23:33.194490+00:00",
+      "forced_kill": false,
+      "wall_timeout": false,
+      "post_close_manifest_sha256": "dfdde5c855828ed603e6ebe3be7d192fecb0a90e543b5eb198db9bf067e3bbde"
+    }
+  },
+  "maximum_actual_sequences": 1,
+  "not_fresh_heldout": true,
+  "whole_research_complete": false,
+  "formal_triggered": false,
+  "end_utc": "2026-10-07T18:23:33.823369+00:00"
+}

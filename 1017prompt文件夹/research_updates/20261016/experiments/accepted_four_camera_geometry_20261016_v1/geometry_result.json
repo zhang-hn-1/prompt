@@ -1,0 +1,825 @@
+{
+  "complete": true,
+  "frames": [
+    {
+      "frame": "frame_000.npz",
+      "time_s": 0.4999999888241291,
+      "arms": [
+        {
+          "name": "front_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38048,
+          "finite_pixels": 172387,
+          "range_pixels": 134643,
+          "range_nonCAD_pixels": 134371,
+          "root_excluded_points": 0,
+          "bodyband_points": 40266,
+          "ground_height_band_points": 94105,
+          "visible_bodyband_cells": 55,
+          "near_reference_cells": 55,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "front_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 38221,
+          "finite_pixels": 171191,
+          "range_pixels": 128329,
+          "range_nonCAD_pixels": 128015,
+          "root_excluded_points": 0,
+          "bodyband_points": 33727,
+          "ground_height_band_points": 94288,
+          "visible_bodyband_cells": 48,
+          "near_reference_cells": 48,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38108,
+          "finite_pixels": 235559,
+          "range_pixels": 181924,
+          "range_nonCAD_pixels": 181667,
+          "root_excluded_points": 0,
+          "bodyband_points": 117997,
+          "ground_height_band_points": 63670,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 38078,
+          "finite_pixels": 236151,
+          "range_pixels": 181575,
+          "range_nonCAD_pixels": 181359,
+          "root_excluded_points": 0,
+          "bodyband_points": 118092,
+          "ground_height_band_points": 63267,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        }
+      ],
+      "front_union": 65,
+      "rear_union": 31,
+      "overlap": 0,
+      "all_union": 96,
+      "rear_new": 31,
+      "union_near_reference": 96,
+      "union_far_reference": 0,
+      "body_transform_agreement": 6.828749275766821e-08,
+      "ring_FOV_range": 1722,
+      "ring_after_CAD": 1722,
+      "ring_total": 3600
+    },
+    {
+      "frame": "frame_001.npz",
+      "time_s": 0.9999999776482582,
+      "arms": [
+        {
+          "name": "front_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38052,
+          "finite_pixels": 162324,
+          "range_pixels": 123820,
+          "range_nonCAD_pixels": 123599,
+          "root_excluded_points": 0,
+          "bodyband_points": 39313,
+          "ground_height_band_points": 84286,
+          "visible_bodyband_cells": 56,
+          "near_reference_cells": 56,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "front_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 38239,
+          "finite_pixels": 162270,
+          "range_pixels": 118602,
+          "range_nonCAD_pixels": 118380,
+          "root_excluded_points": 0,
+          "bodyband_points": 32441,
+          "ground_height_band_points": 85939,
+          "visible_bodyband_cells": 47,
+          "near_reference_cells": 47,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38006,
+          "finite_pixels": 252949,
+          "range_pixels": 191314,
+          "range_nonCAD_pixels": 191036,
+          "root_excluded_points": 0,
+          "bodyband_points": 127411,
+          "ground_height_band_points": 63625,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 37945,
+          "finite_pixels": 256090,
+          "range_pixels": 189354,
+          "range_nonCAD_pixels": 189112,
+          "root_excluded_points": 0,
+          "bodyband_points": 127776,
+          "ground_height_band_points": 61336,
+          "visible_bodyband_cells": 23,
+          "near_reference_cells": 23,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        }
+      ],
+      "front_union": 65,
+      "rear_union": 32,
+      "overlap": 0,
+      "all_union": 97,
+      "rear_new": 32,
+      "union_near_reference": 97,
+      "union_far_reference": 0,
+      "body_transform_agreement": 6.777601260776756e-08,
+      "ring_FOV_range": 1722,
+      "ring_after_CAD": 1722,
+      "ring_total": 3600
+    },
+    {
+      "frame": "frame_002.npz",
+      "time_s": 1.4999999664723873,
+      "arms": [
+        {
+          "name": "front_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 37952,
+          "finite_pixels": 166966,
+          "range_pixels": 128586,
+          "range_nonCAD_pixels": 128453,
+          "root_excluded_points": 0,
+          "bodyband_points": 39547,
+          "ground_height_band_points": 88906,
+          "visible_bodyband_cells": 56,
+          "near_reference_cells": 56,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "front_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 38138,
+          "finite_pixels": 167734,
+          "range_pixels": 123998,
+          "range_nonCAD_pixels": 123868,
+          "root_excluded_points": 0,
+          "bodyband_points": 32403,
+          "ground_height_band_points": 91465,
+          "visible_bodyband_cells": 47,
+          "near_reference_cells": 47,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38118,
+          "finite_pixels": 242560,
+          "range_pixels": 187878,
+          "range_nonCAD_pixels": 187570,
+          "root_excluded_points": 0,
+          "bodyband_points": 123243,
+          "ground_height_band_points": 64327,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 38006,
+          "finite_pixels": 247375,
+          "range_pixels": 184692,
+          "range_nonCAD_pixels": 184472,
+          "root_excluded_points": 0,
+          "bodyband_points": 123661,
+          "ground_height_band_points": 60811,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        }
+      ],
+      "front_union": 65,
+      "rear_union": 31,
+      "overlap": 0,
+      "all_union": 96,
+      "rear_new": 31,
+      "union_near_reference": 96,
+      "union_far_reference": 0,
+      "body_transform_agreement": 6.809587696499086e-08,
+      "ring_FOV_range": 1722,
+      "ring_after_CAD": 1722,
+      "ring_total": 3600
+    },
+    {
+      "frame": "frame_003.npz",
+      "time_s": 1.9999999552965164,
+      "arms": [
+        {
+          "name": "front_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 37975,
+          "finite_pixels": 169496,
+          "range_pixels": 131516,
+          "range_nonCAD_pixels": 131317,
+          "root_excluded_points": 0,
+          "bodyband_points": 40114,
+          "ground_height_band_points": 91203,
+          "visible_bodyband_cells": 56,
+          "near_reference_cells": 56,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "front_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 38116,
+          "finite_pixels": 170133,
+          "range_pixels": 126764,
+          "range_nonCAD_pixels": 126597,
+          "root_excluded_points": 0,
+          "bodyband_points": 32866,
+          "ground_height_band_points": 93731,
+          "visible_bodyband_cells": 47,
+          "near_reference_cells": 47,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 37903,
+          "finite_pixels": 237575,
+          "range_pixels": 185390,
+          "range_nonCAD_pixels": 185170,
+          "root_excluded_points": 0,
+          "bodyband_points": 120328,
+          "ground_height_band_points": 64842,
+          "visible_bodyband_cells": 23,
+          "near_reference_cells": 23,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 37969,
+          "finite_pixels": 242138,
+          "range_pixels": 182192,
+          "range_nonCAD_pixels": 181916,
+          "root_excluded_points": 0,
+          "bodyband_points": 120516,
+          "ground_height_band_points": 61400,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        }
+      ],
+      "front_union": 65,
+      "rear_union": 31,
+      "overlap": 0,
+      "all_union": 96,
+      "rear_new": 31,
+      "union_near_reference": 96,
+      "union_far_reference": 0,
+      "body_transform_agreement": 6.8211286521902e-08,
+      "ring_FOV_range": 1722,
+      "ring_after_CAD": 1722,
+      "ring_total": 3600
+    },
+    {
+      "frame": "frame_004.npz",
+      "time_s": 2.4999999441206455,
+      "arms": [
+        {
+          "name": "front_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38038,
+          "finite_pixels": 168861,
+          "range_pixels": 130992,
+          "range_nonCAD_pixels": 130777,
+          "root_excluded_points": 0,
+          "bodyband_points": 40191,
+          "ground_height_band_points": 90586,
+          "visible_bodyband_cells": 56,
+          "near_reference_cells": 56,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "front_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 38170,
+          "finite_pixels": 168841,
+          "range_pixels": 125683,
+          "range_nonCAD_pixels": 125474,
+          "root_excluded_points": 0,
+          "bodyband_points": 33162,
+          "ground_height_band_points": 92312,
+          "visible_bodyband_cells": 47,
+          "near_reference_cells": 47,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38071,
+          "finite_pixels": 239357,
+          "range_pixels": 184844,
+          "range_nonCAD_pixels": 184616,
+          "root_excluded_points": 0,
+          "bodyband_points": 120018,
+          "ground_height_band_points": 64598,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 38168,
+          "finite_pixels": 242671,
+          "range_pixels": 182731,
+          "range_nonCAD_pixels": 182419,
+          "root_excluded_points": 0,
+          "bodyband_points": 120276,
+          "ground_height_band_points": 62143,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        }
+      ],
+      "front_union": 65,
+      "rear_union": 31,
+      "overlap": 0,
+      "all_union": 96,
+      "rear_new": 31,
+      "union_near_reference": 96,
+      "union_far_reference": 0,
+      "body_transform_agreement": 6.816692395272828e-08,
+      "ring_FOV_range": 1722,
+      "ring_after_CAD": 1722,
+      "ring_total": 3600
+    },
+    {
+      "frame": "frame_005.npz",
+      "time_s": 2.9999999329447746,
+      "arms": [
+        {
+          "name": "front_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 37965,
+          "finite_pixels": 168733,
+          "range_pixels": 130877,
+          "range_nonCAD_pixels": 130697,
+          "root_excluded_points": 0,
+          "bodyband_points": 40270,
+          "ground_height_band_points": 90427,
+          "visible_bodyband_cells": 56,
+          "near_reference_cells": 56,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "front_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 37939,
+          "finite_pixels": 168059,
+          "range_pixels": 125036,
+          "range_nonCAD_pixels": 124931,
+          "root_excluded_points": 0,
+          "bodyband_points": 33368,
+          "ground_height_band_points": 91563,
+          "visible_bodyband_cells": 48,
+          "near_reference_cells": 48,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38202,
+          "finite_pixels": 240349,
+          "range_pixels": 184296,
+          "range_nonCAD_pixels": 183950,
+          "root_excluded_points": 0,
+          "bodyband_points": 119552,
+          "ground_height_band_points": 64398,
+          "visible_bodyband_cells": 23,
+          "near_reference_cells": 23,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 37980,
+          "finite_pixels": 242558,
+          "range_pixels": 183100,
+          "range_nonCAD_pixels": 182946,
+          "root_excluded_points": 0,
+          "bodyband_points": 120094,
+          "ground_height_band_points": 62852,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        }
+      ],
+      "front_union": 65,
+      "rear_union": 32,
+      "overlap": 0,
+      "all_union": 97,
+      "rear_new": 32,
+      "union_near_reference": 97,
+      "union_far_reference": 0,
+      "body_transform_agreement": 6.814367460583615e-08,
+      "ring_FOV_range": 1722,
+      "ring_after_CAD": 1722,
+      "ring_total": 3600
+    },
+    {
+      "frame": "frame_006.npz",
+      "time_s": 3.4999999217689037,
+      "arms": [
+        {
+          "name": "front_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38068,
+          "finite_pixels": 169094,
+          "range_pixels": 131268,
+          "range_nonCAD_pixels": 131055,
+          "root_excluded_points": 0,
+          "bodyband_points": 40413,
+          "ground_height_band_points": 90642,
+          "visible_bodyband_cells": 56,
+          "near_reference_cells": 56,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "front_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 38098,
+          "finite_pixels": 168282,
+          "range_pixels": 125340,
+          "range_nonCAD_pixels": 125095,
+          "root_excluded_points": 0,
+          "bodyband_points": 33452,
+          "ground_height_band_points": 91643,
+          "visible_bodyband_cells": 48,
+          "near_reference_cells": 48,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38144,
+          "finite_pixels": 239500,
+          "range_pixels": 183662,
+          "range_nonCAD_pixels": 183326,
+          "root_excluded_points": 0,
+          "bodyband_points": 118643,
+          "ground_height_band_points": 64683,
+          "visible_bodyband_cells": 23,
+          "near_reference_cells": 23,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 37980,
+          "finite_pixels": 241701,
+          "range_pixels": 182602,
+          "range_nonCAD_pixels": 182396,
+          "root_excluded_points": 0,
+          "bodyband_points": 119250,
+          "ground_height_band_points": 63146,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        }
+      ],
+      "front_union": 65,
+      "rear_union": 32,
+      "overlap": 0,
+      "all_union": 97,
+      "rear_new": 32,
+      "union_near_reference": 97,
+      "union_far_reference": 0,
+      "body_transform_agreement": 6.81544421871072e-08,
+      "ring_FOV_range": 1722,
+      "ring_after_CAD": 1722,
+      "ring_total": 3600
+    },
+    {
+      "frame": "frame_007.npz",
+      "time_s": 3.999999910593033,
+      "arms": [
+        {
+          "name": "front_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38188,
+          "finite_pixels": 169091,
+          "range_pixels": 131269,
+          "range_nonCAD_pixels": 130969,
+          "root_excluded_points": 0,
+          "bodyband_points": 40559,
+          "ground_height_band_points": 90410,
+          "visible_bodyband_cells": 55,
+          "near_reference_cells": 55,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "front_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 37964,
+          "finite_pixels": 168610,
+          "range_pixels": 125694,
+          "range_nonCAD_pixels": 125465,
+          "root_excluded_points": 0,
+          "bodyband_points": 33485,
+          "ground_height_band_points": 91980,
+          "visible_bodyband_cells": 47,
+          "near_reference_cells": 47,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_left",
+          "all_pixels": 307200,
+          "CAD_pixels": 38009,
+          "finite_pixels": 238418,
+          "range_pixels": 183444,
+          "range_nonCAD_pixels": 183214,
+          "root_excluded_points": 0,
+          "bodyband_points": 117864,
+          "ground_height_band_points": 65350,
+          "visible_bodyband_cells": 23,
+          "near_reference_cells": 23,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        },
+        {
+          "name": "rear_right",
+          "all_pixels": 307200,
+          "CAD_pixels": 37939,
+          "finite_pixels": 241458,
+          "range_pixels": 181855,
+          "range_nonCAD_pixels": 181639,
+          "root_excluded_points": 0,
+          "bodyband_points": 118532,
+          "ground_height_band_points": 63107,
+          "visible_bodyband_cells": 22,
+          "near_reference_cells": 22,
+          "far_reference_cells": 0,
+          "reference_distance_p90_m": 0.09999999999999964
+        }
+      ],
+      "front_union": 64,
+      "rear_union": 32,
+      "overlap": 0,
+      "all_union": 96,
+      "rear_new": 32,
+      "union_near_reference": 96,
+      "union_far_reference": 0,
+      "body_transform_agreement": 6.815940917226371e-08,
+      "ring_FOV_range": 1722,
+      "ring_after_CAD": 1722,
+      "ring_total": 3600
+    }
+  ],
+  "aggregate_grid_instances": {
+    "front_union": 519,
+    "rear_union": 252,
+    "overlap": 0,
+    "all_union": 771,
+    "rear_new": 252,
+    "union_near_reference": 771,
+    "union_far_reference": 0
+  },
+  "CAD_fraction_ranges": {
+    "front_left": [
+      0.12354166666666666,
+      0.12430989583333334
+    ],
+    "front_right": [
+      0.12349934895833334,
+      0.12447591145833334
+    ],
+    "rear_left": [
+      0.12338216145833333,
+      0.12435546875
+    ],
+    "rear_right": [
+      0.12349934895833334,
+      0.12424479166666667
+    ]
+  },
+  "union_reference_distance_p90_m": 0.09999999999999964,
+  "maximum_inverse_pixel_error": 5.684341886080801e-13,
+  "maximum_body_matrix_difference": 6.828749275766821e-08,
+  "wall_s": 10.339867695933208,
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/protocol.json": "7da5245c8d6553e0e52602006fa3ee0d075363d741a6a72c8a3becccd3f291bc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/four_camera.py": "5933e8ff37dc7375e3c19886f2d6adb214feb6aac4d580ed198af3ca114685f8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/recovery_run_status.json": "f457cfc8deec611f9e1e009567406da86b58e2774f3fe4c0b4fa3b01758fb8ee",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/recovery_run/capture_seal.json": "e6efc40c942b2853bc81a5cd513d42300070a2049e0e549eaad654a8a1fce392",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/recovery_run/frames/frame_000.npz": "88eb253477be23618ba222ac8910600b4e430133132b5a30857006b820cb4fb4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/recovery_run/frames/frame_001.npz": "9cecf096c67c13fee7fdcf1a354e3601bd1bdc46b38b9a2ca2d5d94e96b06ebc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/recovery_run/frames/frame_002.npz": "081153da252d3ef9acdf264a6e3ef36b6275a473f615a6024ffbb0722abdaa35",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/recovery_run/frames/frame_003.npz": "1139b1feda08db053d12cc7bce7b6cc1f59d250894695fe62e0f982906a30fc0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/recovery_run/frames/frame_004.npz": "3416fabcd3ff9d438a5110bcc3924cd11ae308ee10c48f8be85055496526bc8c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/recovery_run/frames/frame_005.npz": "3ad44903862f165f850bbd508deb8a818887089df59ae286740e546f46d7cb84",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/recovery_run/frames/frame_006.npz": "7ab5f8b13120f8a1d4d73733e3b1cfb926d1b0a0ba2eb04d05c074881603387e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/recovery_run/frames/frame_007.npz": "7c289ea536c535c871cfeed56464ca292506742db7b37e3604b240b8122beaa7"
+  },
+  "cad_asset_identity": {
+    "asset": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/Rotunbot_wheel.usd",
+    "source_layers_sha256": {
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/Rotunbot_wheel.usd": "8f1bf378d65daca8d94948b8481f90260c34fe950a4bfb693cba531c47f4f231",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/configuration/Rotunbot_wheel_physics.usd": "f249a3d7fe02de79f2823430cc273794ad6552d646c01e396d6f807627207bf9",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/configuration/Rotunbot_wheel_base.usd": "a5589963afc6d3d96767cbbfa95188d3f90b9b34e8d6d68e18494050eddd67c5",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/configuration/Rotunbot_wheel_sensor.usd": "bdf36ddf09ab90299d27dabd98fe09d81f3e573d2213371606a858c9ee000f98"
+    }
+  },
+  "cad_projection": {
+    "parts": [
+      "base_link",
+      "link1",
+      "link2",
+      "link3"
+    ],
+    "joint_names": [
+      "joint1",
+      "joint2",
+      "joint3"
+    ],
+    "transforms_source": "Actual sealed initial_local_identity matrices",
+    "camera_names": [
+      "front_left",
+      "front_right",
+      "rear_left",
+      "rear_right"
+    ],
+    "local_matrices": [
+      [
+        [
+          -3.42285420007471e-08,
+          0.0,
+          -0.9999999999999993,
+          0.1819700002670288
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.32506000995635986
+        ],
+        [
+          0.9999999999999993,
+          0.0,
+          -3.42285420007471e-08,
+          0.11502999812364578
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          -3.42285420007471e-08,
+          0.0,
+          -0.9999999999999993,
+          0.1819700002670288
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.32506000995635986
+        ],
+        [
+          0.9999999999999993,
+          0.0,
+          -3.42285420007471e-08,
+          0.11502999812364578
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          -2.220446049250313e-16,
+          -1.478279469192841e-16,
+          1.0000000000000002,
+          -0.1819700002670288
+        ],
+        [
+          2.536326432781458e-17,
+          -1.0000000000000004,
+          -1.478279469192841e-16,
+          0.32506000995635986
+        ],
+        [
+          1.0000000000000002,
+          2.536326432781458e-17,
+          -2.220446049250313e-16,
+          0.11502999812364578
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          -2.220446049250313e-16,
+          -1.478279469192841e-16,
+          1.0000000000000002,
+          -0.1819700002670288
+        ],
+        [
+          2.536326432781458e-17,
+          -1.0000000000000004,
+          -1.478279469192841e-16,
+          -0.32506000995635986
+        ],
+        [
+          1.0000000000000002,
+          2.536326432781458e-17,
+          -2.220446049250313e-16,
+          0.11502999812364578
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    ],
+    "focal_px": 294.7708808051215,
+    "principal_point": [
+      319.5,
+      239.5
+    ],
+    "resolution": [
+      640,
+      480
+    ],
+    "near_clip_m": 0.01,
+    "dilation_pixels": 0,
+    "method": "All visible CAD triangles from all four articulated bodies; exact current measured joints; conservative clipped raster silhouette"
+  },
+  "physical": 0,
+  "model": 0,
+  "fit": 0,
+  "navigation": 0,
+  "scope": "GT-only geometry over eight saved poses. Reference proximity is not model precision or scene recall. CAD mask is conservative raster silhouette. No predicted ground error or long-term map exists.",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/accepted_four_camera_geometry_20261016_v1/qualify.py": "08782d81b4c6afa5e03f0729f390eac015719c4548ff506411a9dcbdd69cb331",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/accepted_four_camera_geometry_20261016_v1/protocol.json": "fd9a8aa742561bf5710cd154e35ba71bdfc1165500dc40ccc117e8261d58719b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/dynamic_self_mask.py": "86309cbcbc6cc4e07d73293cc512ce3a217c19929eb898f72a734b1c8b86ed06",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_rig_self_mask_and_curve_qualification_20261003_v1/self_mask.py": "9540767f23482a8442f7120b17dd6b4496e81f1a412a699f67c5d7c69432b065"
+  }
+}

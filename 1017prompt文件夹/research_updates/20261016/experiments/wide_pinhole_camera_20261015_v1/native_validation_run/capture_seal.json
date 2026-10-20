@@ -1,0 +1,318 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "frame": "frame_000.npz",
+      "sha256": "4e6c0260e684aac8c81150d85defaa816c45e8dac699c8df46d06fd24e0f93f7",
+      "clock": [
+        0.4999999888241291,
+        25,
+        0.7199999839067459,
+        36
+      ],
+      "pair_error": 3.422854299994782e-08,
+      "imu": {
+        "time_s": 0.4999999888241291,
+        "begin_raw_s": 0.6999999843537807,
+        "end_raw_s": 0.7199999839067459,
+        "sensor_begin_stamp_s": 0.699999988079071,
+        "qualified": true,
+        "reason": null,
+        "is_valid": true,
+        "gyro_body_rad_s": [
+          0.04536040127277374,
+          -0.18333351612091064,
+          -0.0046956236474215984
+        ],
+        "linear_acceleration_body_m_s2": [
+          1.1836371421813965,
+          0.11314757168292999,
+          9.757341384887695
+        ],
+        "body_basis": "native body axes at interval begin",
+        "orientation_read": false,
+        "source_contract_version": "actual_interval_v2"
+      },
+      "render_frames": [
+        218,
+        218
+      ]
+    },
+    {
+      "frame": "frame_001.npz",
+      "sha256": "d484d26b69ac719a1adc3c39a05bbb7dbeb517296be5010281f67f5608e711b0",
+      "clock": [
+        0.9999999776482582,
+        50,
+        1.219999972730875,
+        61
+      ],
+      "pair_error": 3.422854299994782e-08,
+      "imu": {
+        "time_s": 0.9999999776482582,
+        "begin_raw_s": 1.1999999731779099,
+        "end_raw_s": 1.219999972730875,
+        "sensor_begin_stamp_s": 1.1999999284744263,
+        "qualified": true,
+        "reason": null,
+        "is_valid": true,
+        "gyro_body_rad_s": [
+          0.03565068915486336,
+          0.07821746915578842,
+          -0.006344945635646582
+        ],
+        "linear_acceleration_body_m_s2": [
+          1.3837449550628662,
+          0.3661034405231476,
+          9.709214210510254
+        ],
+        "body_basis": "native body axes at interval begin",
+        "orientation_read": false,
+        "source_contract_version": "actual_interval_v2"
+      },
+      "render_frames": [
+        224,
+        224
+      ]
+    },
+    {
+      "frame": "frame_002.npz",
+      "sha256": "5b7dfbf2ecddc7b0df7ca2c5c534df9f4c492ee32a0ea92507481298895d0a14",
+      "clock": [
+        1.4999999664723873,
+        75,
+        1.7199999615550041,
+        86
+      ],
+      "pair_error": 3.422854304158118e-08,
+      "imu": {
+        "time_s": 1.4999999664723873,
+        "begin_raw_s": 1.699999962002039,
+        "end_raw_s": 1.7199999615550041,
+        "sensor_begin_stamp_s": 1.6999999284744263,
+        "qualified": true,
+        "reason": null,
+        "is_valid": true,
+        "gyro_body_rad_s": [
+          0.0008246679790318012,
+          0.04669535905122757,
+          -0.0036528478376567364
+        ],
+        "linear_acceleration_body_m_s2": [
+          0.889449417591095,
+          0.47071200609207153,
+          9.758186340332031
+        ],
+        "body_basis": "native body axes at interval begin",
+        "orientation_read": false,
+        "source_contract_version": "actual_interval_v2"
+      },
+      "render_frames": [
+        232,
+        232
+      ]
+    },
+    {
+      "frame": "frame_003.npz",
+      "sha256": "0ef684eb3767e46aca1db128b2f01850b63bfe12709e8682f1beada471727ce2",
+      "clock": [
+        1.9999999552965164,
+        100,
+        2.2199999503791332,
+        111
+      ],
+      "pair_error": 3.422854291668109e-08,
+      "imu": {
+        "time_s": 1.9999999552965164,
+        "begin_raw_s": 2.199999950826168,
+        "end_raw_s": 2.2199999503791332,
+        "sensor_begin_stamp_s": 2.200000047683716,
+        "qualified": true,
+        "reason": null,
+        "is_valid": true,
+        "gyro_body_rad_s": [
+          -0.02534116618335247,
+          -0.012806814163923264,
+          0.0010588831501081586
+        ],
+        "linear_acceleration_body_m_s2": [
+          0.8268086910247803,
+          0.38948604464530945,
+          9.767085075378418
+        ],
+        "body_basis": "native body axes at interval begin",
+        "orientation_read": false,
+        "source_contract_version": "actual_interval_v2"
+      },
+      "render_frames": [
+        238,
+        238
+      ]
+    },
+    {
+      "frame": "frame_004.npz",
+      "sha256": "9807fbb9f8cf0b0386fa8dd0ef970f9624188b799fa3ce4f28e95ae6cdc1701f",
+      "clock": [
+        2.4999999441206455,
+        125,
+        2.7199999392032623,
+        136
+      ],
+      "pair_error": 3.422854301382561e-08,
+      "imu": {
+        "time_s": 2.4999999441206455,
+        "begin_raw_s": 2.699999939650297,
+        "end_raw_s": 2.7199999392032623,
+        "sensor_begin_stamp_s": 2.700000047683716,
+        "qualified": true,
+        "reason": null,
+        "is_valid": true,
+        "gyro_body_rad_s": [
+          -0.024666517972946167,
+          -0.007329227868467569,
+          9.385309385834262e-05
+        ],
+        "linear_acceleration_body_m_s2": [
+          0.9241891503334045,
+          0.2357335090637207,
+          9.763919830322266
+        ],
+        "body_basis": "native body axes at interval begin",
+        "orientation_read": false,
+        "source_contract_version": "actual_interval_v2"
+      },
+      "render_frames": [
+        246,
+        246
+      ]
+    },
+    {
+      "frame": "frame_005.npz",
+      "sha256": "b8d6454b9bcb6e1ac8931455016a1a9818d83c2286d97bd30ff3297b6402737c",
+      "clock": [
+        2.9999999329447746,
+        150,
+        3.2199999280273914,
+        161
+      ],
+      "pair_error": 3.4228543027703395e-08,
+      "imu": {
+        "time_s": 2.9999999329447746,
+        "begin_raw_s": 3.1999999284744263,
+        "end_raw_s": 3.2199999280273914,
+        "sensor_begin_stamp_s": 3.1999998092651367,
+        "qualified": true,
+        "reason": null,
+        "is_valid": true,
+        "gyro_body_rad_s": [
+          -0.004427974112331867,
+          0.005328678525984287,
+          -0.0030725805554538965
+        ],
+        "linear_acceleration_body_m_s2": [
+          0.9350147247314453,
+          0.15198487043380737,
+          9.76363468170166
+        ],
+        "body_basis": "native body axes at interval begin",
+        "orientation_read": false,
+        "source_contract_version": "actual_interval_v2"
+      },
+      "render_frames": [
+        252,
+        252
+      ]
+    },
+    {
+      "frame": "frame_006.npz",
+      "sha256": "746f02d5723eace8ef052e72ada1dc0eca1e336703fef3e1eeac39b12104dab3",
+      "clock": [
+        3.4999999217689037,
+        175,
+        3.7199999168515205,
+        186
+      ],
+      "pair_error": 3.422854294443667e-08,
+      "imu": {
+        "time_s": 3.4999999217689037,
+        "begin_raw_s": 3.6999999172985554,
+        "end_raw_s": 3.7199999168515205,
+        "sensor_begin_stamp_s": 3.6999998092651367,
+        "qualified": true,
+        "reason": null,
+        "is_valid": true,
+        "gyro_body_rad_s": [
+          0.014364490285515785,
+          0.0041542453691363335,
+          -0.004226377233862877
+        ],
+        "linear_acceleration_body_m_s2": [
+          0.9126529693603516,
+          0.18990777432918549,
+          9.766644477844238
+        ],
+        "body_basis": "native body axes at interval begin",
+        "orientation_read": false,
+        "source_contract_version": "actual_interval_v2"
+      },
+      "render_frames": [
+        260,
+        260
+      ]
+    },
+    {
+      "frame": "frame_007.npz",
+      "sha256": "e629ecd5fcb9641dbfcd0068be51c82cc80e86051df1c2437be29e815e5e4b02",
+      "clock": [
+        3.999999910593033,
+        200,
+        4.21999990567565,
+        211
+      ],
+      "pair_error": 3.422854304158118e-08,
+      "imu": {
+        "time_s": 3.999999910593033,
+        "begin_raw_s": 4.1999999061226845,
+        "end_raw_s": 4.21999990567565,
+        "sensor_begin_stamp_s": 4.199999809265137,
+        "qualified": true,
+        "reason": null,
+        "is_valid": true,
+        "gyro_body_rad_s": [
+          0.015805432572960854,
+          0.0013281069695949554,
+          -0.003494669683277607
+        ],
+        "linear_acceleration_body_m_s2": [
+          0.9076359272003174,
+          0.28757092356681824,
+          9.762609481811523
+        ],
+        "body_basis": "native body axes at interval begin",
+        "orientation_read": false,
+        "source_contract_version": "actual_interval_v2"
+      },
+      "render_frames": [
+        266,
+        266
+      ]
+    }
+  ],
+  "physics_motion_native": true,
+  "no_teleport": true,
+  "no_initialized_camera_pose_changes": true,
+  "no_model": true,
+  "no_navigation": true,
+  "renderer_pose_depth_offline_labels": true,
+  "IMU": {
+    "orientation_read": false,
+    "read_gravity": true,
+    "filter_sizes": [
+      1,
+      1,
+      1
+    ],
+    "period_s": 0.02,
+    "native_sensor": true
+  }
+}

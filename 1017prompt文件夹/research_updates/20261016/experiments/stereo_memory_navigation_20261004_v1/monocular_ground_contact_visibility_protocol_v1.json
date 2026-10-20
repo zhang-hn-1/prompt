@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-08T14:50:42.571924+00:00",
+  "frames": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "target": "divider_06",
+  "role": "Postseal GT necessary visibility bound for possible future RGB ground-contact inference; no actor/model/source changes",
+  "ground_contact_band_m": [
+    0.0,
+    0.05
+  ],
+  "frozen_floor_prior_z_m": 0.0,
+  "hypothesis": "A floor-contact based monocular range method needs a visible low surface/contact boundary; elevated isolated appearance cannot be treated as ground contact.",
+  "metrics": "Current true target surface minimum height, target pixels <=.05, their raw left/right coordinates and CAD-masked counts",
+  "no_GT_to_future_detector_or_action": true,
+  "no_network_or_fit": true,
+  "no_physical_run": true,
+  "prior_is_not_observation": true,
+  "no_3D_safety_certificate": true
+}

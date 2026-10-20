@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-17T19:55:42.732060+00:00",
+  "scope": "Small synthetic cost-volume numerical reference only, not RGBcost, installedOpenCV, stereo reconstruction or navigation.",
+  "question": "Can unavailable candidate costs be excluded within threepath min-plus aggregation without erasing supported alternatives or producing observedfree?",
+  "recurrence": "Invalid current hypothesis -> +inf. For valid current d, C(p,d)+min(Lprev(d),Lprev(d\u00b11)+600,minvalid(Lprev)+2400)-minvalid(Lprev). If predecessor has no finite supported hypotheses restart at current C; no free ray declaration. Sum left,right,top paths. Decoder returns UNIQUE finite minimizer index, otherwise -1UNKNOWN. No calibrated geometric uncertainty implied.",
+  "fixtures": "Handcost C1=20/otherobserved>=1000, invalidcandidate fills0 vs100000, crossing maskon/off; allmissing, tie, unsupported gap restart; eight seeded2x4x3 support/cost volumes. Independent exhaustive discrete path enumeration, not same min-plus implementation.",
+  "gates": "All invariants and exhaustive normalized finitepath/aggregate agreement atol1e-12; invalidfills bitwiseinvariance in maskedarm; invalidneverwins, allmissing/tieUNKNOWN, original inputarrays immutable, geometryonehypothesis witness128px permits1.497m despite fullsearchROI shortcut empty. Anyfailure stops before realRGB.",
+  "budget": {
+    "dispatch_cap": 2,
+    "red_expected_cap": 1,
+    "qualification_cap": 1,
+    "recovery_cap": 1,
+    "wall_cap_each_s": 30,
+    "RGB_source_calls": 0,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "frozen_parameters": {
+    "P1": 600,
+    "P2": 2400,
+    "paths": [
+      "left",
+      "right",
+      "top"
+    ],
+    "seed": 20261018
+  },
+  "native_environment": "Common system paths and activecondabin inspected; c++/cmake/OpenCVpkgconfig headers/devlibrary not found there. Not exhaustive allhost availability or GPU/storage fault. No install/download/build attempted.",
+  "stop": "No realRGB/GT/inputsource scored, no source rerun or padding/cost/regularizer sweep. Reference success not sourcequalification; no oldclosed budget reopened. No learned model.",
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_support_aggregation_reference_20261018_v1/kernel.py": "dfa28d0597e9def78c6256946dd22ec57ec96a783e92548289071edad7d93382",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_support_aggregation_reference_20261018_v1/qualify.py": "3b8bf498470bea2485c8b5952aa2a3659e2639d890eac5ffc328eee6b1ee3f25",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/observed_support_aggregation_reference_20261018_v1/supervise.py": "1fc9e1cea5805a1e829e453a36cb1b779f53f5b017667c48768120a2e26cb877",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c"
+  },
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/source.py": "0f8918810cc2e9b3f6d6cb4bf4c64acb5ce3fe4bc882678c6a5ae9cfbeb38e8a"
+  },
+  "utc_final_code": "2026-10-17T19:56:27.414179+00:00",
+  "syntax_checked_before_dispatch": true,
+  "valid_numeric_reference_calls_cap": 15,
+  "total_aggregate_entry_calls_cap": 16,
+  "rejected_interface_calls_cap": 1,
+  "comparison_scope": "Exhaustive enumeration verifies finite support, normalized relative path/aggregate costs and selected indices. It does not constrain pernode path additive constants or imply calibrated metric uncertainty.",
+  "preflight_clarification": "Before qualification dispatch, clarify15valid numerical +1invalidinput rejection=16total entries; no scientific computation/dispatch added."
+}

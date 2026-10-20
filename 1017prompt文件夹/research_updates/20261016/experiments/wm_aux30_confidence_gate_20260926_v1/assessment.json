@@ -1,0 +1,247 @@
+{
+  "checks": [
+    {
+      "split": "val",
+      "gate": "original",
+      "check": "overall_0.5_xy",
+      "limit": 0.9,
+      "ratio": 0.7083185784147066,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "original",
+      "check": "overall_0.5_yaw",
+      "limit": 1.0,
+      "ratio": 0.6626397845567723,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "original",
+      "check": "sequence_0.5_xy",
+      "episode": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_4/mixed_braking/ep0000",
+      "limit": 1.0,
+      "ratio": 0.5509020263457084,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "original",
+      "check": "sequence_0.5_xy",
+      "episode": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_4/reverse_curve_exchange/ep0000",
+      "limit": 1.0,
+      "ratio": 0.8724396431488038,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "original",
+      "check": "request_change_count",
+      "minimum": 10,
+      "count": 11,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "original",
+      "check": "request_change_0.5_xy",
+      "limit": 1.0,
+      "ratio": 1.4227225209714451,
+      "passed": false
+    },
+    {
+      "split": "val",
+      "gate": "original",
+      "check": "prefix_causality",
+      "delta": 0.0,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "new",
+      "check": "overall_0.1_xy",
+      "limit": 1.0,
+      "ratio": 0.9531539392092986,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "new",
+      "check": "preserve_parent_0.5_xy",
+      "limit": 1.05,
+      "ratio": 1.0041920233372237,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "new",
+      "check": "overall_0.1_yaw",
+      "limit": 1.0,
+      "ratio": 0.8325977300791184,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "new",
+      "check": "preserve_parent_0.5_yaw",
+      "limit": 1.05,
+      "ratio": 0.9898243174642396,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "new",
+      "check": "request_change_0.1_xy",
+      "limit": 1.0,
+      "ratio": 1.5533883973859355,
+      "passed": false
+    },
+    {
+      "split": "test",
+      "gate": "original",
+      "check": "overall_0.5_xy",
+      "limit": 0.9,
+      "ratio": 0.5749392032867172,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "original",
+      "check": "overall_0.5_yaw",
+      "limit": 1.0,
+      "ratio": 0.5418861294789397,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "original",
+      "check": "sequence_0.5_xy",
+      "episode": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_5/reverse_brake_sweep/ep0000",
+      "limit": 1.0,
+      "ratio": 0.5482576335824602,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "original",
+      "check": "sequence_0.5_xy",
+      "episode": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_5/stop_curve_restart/ep0000",
+      "limit": 1.0,
+      "ratio": 0.6092863303276845,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "original",
+      "check": "request_change_count",
+      "minimum": 10,
+      "count": 10,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "original",
+      "check": "request_change_0.5_xy",
+      "limit": 1.0,
+      "ratio": 0.7890538774187774,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "original",
+      "check": "prefix_causality",
+      "delta": 0.0,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "new",
+      "check": "overall_0.1_xy",
+      "limit": 1.0,
+      "ratio": 0.8216786241990489,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "new",
+      "check": "preserve_parent_0.5_xy",
+      "limit": 1.05,
+      "ratio": 0.9733028719993554,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "new",
+      "check": "overall_0.1_yaw",
+      "limit": 1.0,
+      "ratio": 0.7596474530126668,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "new",
+      "check": "preserve_parent_0.5_yaw",
+      "limit": 1.05,
+      "ratio": 0.8809967352878832,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "new",
+      "check": "request_change_0.1_xy",
+      "limit": 1.0,
+      "ratio": 1.1586062188438726,
+      "passed": false
+    },
+    {
+      "split": "val",
+      "gate": "confidence_preservation",
+      "check": "preserve_acceleration_0.5_xy",
+      "ratio": 0.955037950631749,
+      "limit": 1.05,
+      "passed": true
+    },
+    {
+      "split": "val",
+      "gate": "confidence_preservation",
+      "check": "preserve_acceleration_0.5_yaw",
+      "ratio": 1.0318231385196233,
+      "limit": 1.05,
+      "passed": true
+    },
+    {
+      "split": "test",
+      "gate": "confidence_preservation",
+      "check": "preserve_acceleration_0.5_xy",
+      "ratio": 1.0522076704833678,
+      "limit": 1.05,
+      "passed": false
+    },
+    {
+      "split": "test",
+      "gate": "confidence_preservation",
+      "check": "preserve_acceleration_0.5_yaw",
+      "ratio": 0.9880967539337998,
+      "limit": 1.05,
+      "passed": true
+    }
+  ],
+  "all_passed": false,
+  "original_checks": 24,
+  "additional_checks": 4,
+  "passed": 24,
+  "future_target_invariance": true,
+  "base_weights_unchanged": true,
+  "training_sequences": [
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_1/curvature_sweep/ep0000",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_1/forward_history/ep0000",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_1/reverse_history/ep0000",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_1/stop_history/ep0000",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_2/double_reversal/ep0000",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_2/forward_speed_steps/ep0000",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_2/low_speed_history/ep0000",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/wm_aux30_diverse_20260922_v1/scene_easy_2/reverse_speed_steps/ep0000"
+  ],
+  "gate_parameter_count": 175
+}

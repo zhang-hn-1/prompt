@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-07T13:16:13.325687+00:00",
+  "historical_D3_not_fresh": true,
+  "designer_has_seen_nav_source_pose_labels": true,
+  "no_refit": true,
+  "model_not_direct_actor_grid": true,
+  "criteria": {
+    "precision_min": 0.95,
+    "recall_min": 0.8,
+    "TP_min": 25,
+    "no_worse_FP": true,
+    "no_worse_FN": true
+  },
+  "old_model_rejection_preserved": true,
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-07-frozen-learned-memory-new-domain-preflight.md": "cb80b8b28f63893a736eec9634b26b2f2dbed7621ffee88a8468f743a38b185d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/build_frozen_learned_memory_D3_features_v1.py": "727875578e3ba8b911d5b99258313e5ce84ae54a480c72dd9c8aa81fba31e2a9",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/predict_frozen_learned_memory_D3_v1.py": "b7880b3627db9954a2f46b3842c52c991e21431741071b25761530b34d2f35b4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/assess_frozen_learned_memory_D3_v1.py": "332c74d92ac7940a8637cf0cdaea896393aaf517368392024a24113edc1785be",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/learned_memory_fit/Mmem1.pt": "7dbffaecc56147fc30cc648569f29eb2cb4c6da5aca204f43fc5fd5a816d55eb"
+  },
+  "whole_research_complete": false
+}

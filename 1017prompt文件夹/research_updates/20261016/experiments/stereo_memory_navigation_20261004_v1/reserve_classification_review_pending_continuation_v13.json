@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-09T11:34:06.037813+00:00",
+  "stage": "reserve_execution_classifier_10CPU_pass_prelaunch_review_pending",
+  "whole_mission_complete": false,
+  "physics_running": false,
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/risk_memory_closed_reserve_stage_prepared_continuation_v12.json",
+  "superseded_sha256": "9cb2ee81eea691c7d87f1c9c80b3e6dc90d4f7f36934ddd9181aedb02417afd6",
+  "next": "Await independent review v2 of classifier shared unequal prefix; if clear launch run_local_reserve_fixed_reference_stage_v1.py b0 once thenpaced once after baseline normal close. No historical matrix rerun.",
+  "budget_remaining": {
+    "b0": 1,
+    "paced": 1,
+    "retries": 0
+  },
+  "prepared_design_sha256": "428283346eb33e26d2c545e4ba2df1beca89ebc3686815e0a1d23d884b4ccacc",
+  "original_rejections_preserved": true
+}

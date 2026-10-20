@@ -1,0 +1,37 @@
+"""After selector seal, assess saved subsets without changing the original gate."""
+from pathlib import Path
+import datetime,hashlib,json
+import numpy as np
+H=Path(__file__).resolve().parent;D=H/'bilateral_hero_consistency_v1';O=H/'qualified_hazard_navigation_run_v1'
+sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+seal=json.loads((D/'prediction_seal.json').read_text());assert all(sha(p)==s for p,s in seal['output_sha256'].items())
+seed=np.load(O/'sensor_packets/source_180.npz')['world'];seed=seed[(seed[:,2]>.05)&(seed[:,2]<=1.5)]
+sb=set(map(tuple,np.floor(seed[:,:2]/.1).astype(int)));rows=[];correct_by_frame={};bad_current={}
+for r in json.loads((D/'records.json').read_text()):
+    f=np.load(D/r['file']);w=f['world'];errors=[]
+    for i,uv in zip([r['frame'],*f['source_frames']],[f['current_uv'],*f['past_uv']]):
+        t=np.load(O/'offline_truth'/f'frame_{i:03d}.npz');x,y=np.rint(uv).astype(int).T
+        T=t[r['eye']+'_camera_usd_world'];z=t[r['eye']+'_depth_m'][y,x]
+        ray=np.c_[(x-319.5)/584.8888888888889,(y-239.5)/584.8888888888889,np.ones(len(x))]
+        with np.errstate(invalid='ignore'):
+            world=T[:3,3]+(ray*z[:,None])@(T[:3,:3]@np.diag([1,-1,-1])).T
+            errors.append(np.linalg.norm(world-w,axis=1))
+    e=np.asarray(errors).T;finite=np.isfinite(e).all(1);ok=finite&(e<=.1).all(1)
+    b=np.floor(w[:,:2]/.1).astype(int);nov=np.array([tuple(v) not in sb for v in b],bool);cn=nov&ok
+    bins=len(set(map(tuple,b[cn])))
+    rows.append(dict(frame=r['frame'],eye=r['eye'],time_s=r['time_s'],n=len(w),correct=int(ok.sum()),
+                      insufficient=int((~finite).sum()),finite_wrong=int((finite&~ok).sum()),
+                      precision=float(ok.mean()) if len(w) else None,correct_novel_points=int(cn.sum()),
+                      correct_novel_bins=bins,strict_coverage=bool(r['time_s']>23.5 and cn.sum()>=20 and bins>=2)))
+    bad_current[(r['frame'],r['eye'])]=np.isfinite(e[:,0])&(e[:,0]>.1)
+valid=[r for r in rows if r['n']]
+precision=bool(valid) and all(r['precision']>=.95 for r in valid)
+size=any(r['n']>=100 for r in rows)
+coverage=any(all(next(r for r in rows if r['frame']==i and r['eye']==eye)['strict_coverage'] for eye in ('left','right')) for i in (245,255))
+result=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),rows=rows,
+            decision='PASS_LIMITED_DEVELOPMENT_FEASIBILITY_ONLY' if precision and size and coverage else 'REJECT_CONSENSUS_CONSUMER',
+            original_all_query_Hero_REJECT_unchanged=True,no_production_or_observation_admission=True,
+            every_nonempty_geometry_ge95=precision,at_least_one_100_points=size,strict_bilateral_newcoverage=coverage,
+            both_current_endpoints_wrong_despite_agreement={str(i):int((bad_current[(i,'left')]&bad_current[(i,'right')]).sum()) for i in (235,245,255)},
+            source_shared_network_not_independent_modality=True,development_not_fresh=True)
+target=D/'assessment_v1.json';assert not target.exists();target.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

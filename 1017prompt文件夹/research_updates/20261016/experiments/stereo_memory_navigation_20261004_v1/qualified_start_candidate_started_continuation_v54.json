@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-09T16:34:31.312491+00:00",
+  "supersedes_sha256": "431a5e2bb55cdcc734aa97c9f680ee124950eab8f0c02daa917f9b8173d93417",
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T16:34:16.988752+00:00",
+    "parent_pid": 666031,
+    "child_pid": 666032,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session_id": 10509,
+  "physical_budget_consumed": 2,
+  "maximum_physical_sequences": 2,
+  "no_retry": true,
+  "b0_closed_normal": true,
+  "next_step": "supervise candidate without relaunch, normalclose then independently scoreallcapture and review actualpair; bothphysicalbudgets exhausted",
+  "next_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/assess_qualified_start_navigation_e1_v1.py",
+  "whole_mission_complete": false
+}

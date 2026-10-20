@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-08T18:21:42.111941+00:00",
+  "question": "Can frozen triangulate sigma8 be treated as joint +/-1pixel UNKNOWN risk sphere radius? necessary condition only",
+  "frames": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "inputs": "all frozen LK geometrically nonnull correspondences, no target filtering; current+past LEFT knownGTpose diagnostic only",
+  "one_hypothesis": "old separate-eight-axis radius contains all sixteen joint +/-1pixel corners",
+  "rejection": "any finite positive nominal pair outside radius, or corner nonpositive/unbounded, rejects promotion to joint uncertainty envelope",
+  "passed_necessary_not_sufficient": true,
+  "no_GT_depth_instances_or_future": true,
+  "old_sigma_measurement_gate_unchanged": true,
+  "no_network_physics_or_control": true,
+  "source_sha256": {
+    "experiments/stereo_memory_navigation_20261004_v1/joint_pixel_screen_v1.py": "edcacb9a96dfe199bb43e9e1aacc6d8bf2231b5eb9759aa17652c44673097ea4",
+    "experiments/stereo_memory_navigation_20261004_v1/feature_tracks.py": "26432b42101ca47550af9efb99b1a02b813f6d934bf5fb2ec0a05d3b2c76e3b1"
+  },
+  "no_corner_scan_or_resize": true
+}

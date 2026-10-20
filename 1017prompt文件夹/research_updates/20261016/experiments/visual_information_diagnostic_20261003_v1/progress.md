@@ -1,0 +1,18 @@
+# Execution ledger — plan: research proposal 2026-10-03, authorized first stage
+- Setup: original project is existing e1-detour-benchmark worktree; experiment code/output are independent writable artifacts in the user workspace.
+- Ruling: do not mutate the artifact repository's master branch or original project. No branch integration or commit requested; new experiment directory is the isolation boundary.
+- Pre-flight: no existing online metric depth or shared local action selector is validated. Perception gate precedes the 12-run matrix; runnable instrumentation alone does not certify action selection.
+- Ruling: the approved response narrowed this stage to first-stage diagnostics (up to 12 runs); E-D 24 runs and X-NavDP adaptation remain later work, not this turn.
+- Task 1: official models/code identity and offline evaluation in progress.
+- Task 1: official sources DA3 3d835ec1a5802d64a8b8b15f817a1ab54809bfe4; UniDepth 8d8cfe4c7ee15297099983607febf0d4f32eb3d6. Checkpoints frozen to protocol revisions; download in progress.
+- Measurement tests: watched 8 missing-function failures, then 8/8 pass; rotation/rays, original-depth recovery, invalid denominator and body/floor separation covered.
+- Local-map tests: watched 8 missing-function failures, then 8/8 pass; unknown blocking, obstacle priority, causality, history and low-speed latch/rebound covered.
+- Ruling: DA3 high-level API imports unnecessary export packages. Use unmodified official core, official InputProcessor and official metric focal conversion; strict checkpoint load. No numerical model changes.
+- Ruling: O-visible is a conservative observed-floor footprint baseline; it must not ray-clear unseen body height. Failure cannot prove every possible active perception policy is impossible. Shared controller is a diagnostic, not a validated deployment candidate.
+- Shared selector tests: 4 intended missing-class failures followed by4/4 pass. Controller specification frozen in CONTROL_DIAGNOSTIC.md before simulator launch.
+- UniDepth transfer stayed at0bytes for10min; one transport retry disables HF Xet, same frozen revision. No model change.
+- UniDepth HTTP stream broke after214MB. Verified official206 range support; bounded4-connection byte recovery, at most3 retries per range, final official SHA256 required. This is transport recovery, not extra model configuration.
+- Completed: both official models66/66 pairs, all critical near-obstacle groups fail, neither entersRGB navigation. Full-map2/4 arrivals and2 contacts; visible0/4 arrivals,4 timeouts withzero main requests. Eight actual complete runs,4RGB runs gated out.
+- Completed:22 CPU tests pass; camera ages0, initial observed states/action histories exactlyequal across4 pairs. Independent frozen-reference evaluation saved. No controller tuning applied.
+- Final fresh review: no P1/P2; two P3 wording/layout corrections accepted. Describe single-use packet and unrelated-file independence narrowly, fix latency Markdown table whitespace. Final record follows.
+- Final verification completed: both official SHA256 match,66/66 pairs each,8 actual runs,16 videos first/last frames decode,22 tests,4 paired initial states bit-equal,8 runtime source identities equal and unchanged,all camera ages0,all report links exist. Stage complete; new RGB/navigation candidate remains rejected.

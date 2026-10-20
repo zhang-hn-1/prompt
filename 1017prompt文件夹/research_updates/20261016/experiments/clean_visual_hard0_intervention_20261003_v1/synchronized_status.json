@@ -1,0 +1,56 @@
+[
+  {
+    "mode": "every_render",
+    "episode": "golden_e0_0001",
+    "exit_code": 0,
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/run_acquisition.py",
+      "--manifest",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1/golden_v1_manifest.json",
+      "--split",
+      "golden",
+      "--episode-id",
+      "golden_e0_0001",
+      "--policy",
+      "goal_greedy",
+      "--scene-root",
+      "/home/an/project/NavDP/assets/scenes",
+      "--data-root",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data",
+      "--run-root",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/synchronized_baseline/e0",
+      "--lighting-profile",
+      "fixed_camera_fill_v1",
+      "--headless",
+      "--record-video"
+    ]
+  },
+  {
+    "mode": "every_render",
+    "episode": "golden_e1_0001",
+    "exit_code": 1,
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/run_acquisition.py",
+      "--manifest",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1/golden_v1_manifest.json",
+      "--split",
+      "golden",
+      "--episode-id",
+      "golden_e1_0001",
+      "--policy",
+      "goal_greedy",
+      "--scene-root",
+      "/home/an/project/NavDP/assets/scenes",
+      "--data-root",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data",
+      "--run-root",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/synchronized_baseline/e1",
+      "--lighting-profile",
+      "fixed_camera_fill_v1",
+      "--headless",
+      "--record-video"
+    ]
+  }
+]

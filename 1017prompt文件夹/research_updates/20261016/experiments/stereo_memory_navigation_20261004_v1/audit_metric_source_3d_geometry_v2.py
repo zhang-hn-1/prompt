@@ -1,0 +1,11 @@
+"""Independent post-seal physical geometry diagnostic, never filters actor cores."""
+from pathlib import Path
+import json,hashlib,datetime,numpy as np
+from scipy.spatial import cKDTree
+H=Path(__file__).resolve().parent;D=H/'bank_rock_observation_run_v1';S=H/'metric_support_source_preflight_v1';O=H/'metric_source_3d_geometry_audit_v2.json';assert not O.exists();sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+seal=json.loads((S/'outputs_pretruth_seal.json').read_text());assert all(sha(f)==s for f,s in seal.items());w=np.load(S/'pool.npz')['raw_world_voxel_centres'];r=np.linalg.norm(w[:,:2],axis=1)
+# Frozen offline fixture only; true cylinder radius .35, Z extent [0,1].
+radial=np.maximum(r-.35,0);height=np.maximum(np.maximum(-w[:,2],w[:,2]-1),0);volume_distance=np.hypot(radial,height);surface_distance=volume_distance.copy();inside=(r<=.35)&(w[:,2]>=0)&(w[:,2]<=1);surface_distance[inside]=np.minimum.reduce([.35-r[inside],w[inside,2],1-w[inside,2]])
+gt=np.load(D/'offline_occupancy_label.npz');xy=gt['origin']+np.argwhere(gt['labels']>0)*float(gt['resolution']);possible=np.load(S/'pool.npz')['possible_xy'];missing=xy[cKDTree(possible).query(xy)[0]>np.sqrt(2)*.05+1e-9]
+out=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),raw_core_count=len(w),offline_true_volume_distance_m=dict(maximum=float(volume_distance.max()),rms=float(np.sqrt(np.mean(volume_distance**2))),p90=float(np.percentile(volume_distance,90))),offline_true_surface_distance_m=dict(maximum=float(surface_distance.max()),rms=float(np.sqrt(np.mean(surface_distance**2)))),cores_inside_actual_volume=int(inside.sum()),missed_footprint_cells=len(missing),missed_xy=missing.tolist(),missing_x_extent=[float(missing[:,0].min()),float(missing[:,0].max())],missing_y_extent=[float(missing[:,1].min()),float(missing[:,1].max())],volume_or_surface_not_identical=True,no_per_point_GT_filter=True,old_candidate_REJECT_unchanged=True,no_new_acceptance_gate=True,historical_not_fresh=True,whole_research_complete=False,prediction_seal_sha256=sha(S/'outputs_pretruth_seal.json'),offline_fixture_sha256=sha(H/'controlled_obstacle_fixture_v1/single_cylinder.usda'),code_sha256=sha(__file__))
+O.write_text(json.dumps(out,indent=2)+'\n');print(json.dumps({k:v for k,v in out.items() if k!='missed_xy'},indent=2))

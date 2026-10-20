@@ -1,0 +1,13 @@
+# 依赖注入采集桥
+
+联合Collector与Journal：commit快照包含序列、估计状态、RGB字节和来源声明；监督单独保存，actual_raw_pair来自回调返回而非自动复制请求值。合成CPU资格可以拒绝执行命令错配。
+
+这不是实际Isaac桥，来源字符串仍由调用者提供，不证明传感器身份。当前step接口按单20ms请求；真实runtime.execute按原5控制块执行并在块末捕获。两者尚未连接，不能直接把单pair传给runtime或改变相机节拍。下一实现应按原5块执行25预提交请求并核对原始诊断与终止，见runtime_interface_mapping.json。
+
+无物理采集/预测/训练准入。未来位置只进监督；commit前落盘，不授恢复重派。
+
+## 原动作块适配
+
+block_bridge.py现已按原controls_per_block=5接口实施：五个原execute动作块消费25已提交请求；检查运行时起始时钟和每块新增5条raw请求/末状态诊断。命令时间由核对过的块起始时间及20ms tick推导，不是额外测得的前置时钟。接触/碰撞后停止后续块并标记censored。不能提前在原execute内部停止，最迟块末获知接触；这不保证不发生接触后剩余块内动作。
+
+原render/capture仍由runtime.execute负责；未运行Isaac，所以相机行为只能由未修改的方法语义支持，未实测认证。9合成检查通过；尚未实现审计过的native/RGB anchor调用者，未采集或训练。

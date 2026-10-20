@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-09T13:08:09.062366+00:00",
+  "stage": "measured_speed_ordinary_E0_baseline_actual_started",
+  "whole_mission_complete": false,
+  "physics_running": true,
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/measured_speed_local_closed_navigation_prepared_continuation_v23.json",
+  "superseded_sha256": "82a34013e18d9a6dec9a2ff865c4139cebc314f1eecc5b4b9f41fbc1b2cf80db",
+  "session_id": 90921,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T13:07:53.067832+00:00",
+    "parent_pid": 421741,
+    "child_pid": 421742,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "budget_remaining": {
+    "b0": 0,
+    "paced": 1,
+    "retry": 0
+  },
+  "next": "Supervise session90921 without duplicate; after normal valid seal start pacedonce, then frozen scorer. CurrentGTpose/velocity TaskH not strictvisual; all previous rejects preserve."
+}

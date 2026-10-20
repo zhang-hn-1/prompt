@@ -1,0 +1,22 @@
+{
+  "decision": "REJECT_LEGACY_METADATA_INTERNAL_CONSISTENCY_NOT_RUNTIME_BUDGET",
+  "frozen_protocol_sha256": "392551617b7c0c26ad4a40843c0601d4e5d2104ad1104e65ac39f1f580a4f185",
+  "stale_legacy_keys": {
+    "requests_max": 600,
+    "sim_budget_s": 60,
+    "not_control_AB": true
+  },
+  "explicit_new_keys": {
+    "maximum_actual_requests": 546,
+    "simulation_budget_s": 54.6,
+    "comparison": "verified_B0_completed54.6prefix_only_not_full60"
+  },
+  "runtime_actual_loop_requests": 546,
+  "runtime_termination_budget_s": 54.6,
+  "independent_prelaunch_plan": "docs/superpowers/plans/2026-10-08-original-E1-static-sparse-memory.md",
+  "runtime_does_not_read_stale_keys": true,
+  "protocol_old_bytes_not_changed": true,
+  "no_gate_or_action_change": true,
+  "not_entire_metadata_interface_pass": true,
+  "whole_research_complete": false
+}

@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-08T14:44:12.539239+00:00",
+  "scope": "Read-only causal bearing/conditional-observability interface; not planner/action implementation",
+  "queries": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "inputs": "Frozen current ORB query_xy/current known-pose camera calibration; no GT depth/instances, future images/actions or future actual camera poses",
+  "range_hypotheses_optical_depth_m": [
+    0.5,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "hypotheses_are_not_estimated_depth": true,
+  "comparison": "Current optical forward translation .3m vs optical transverse .3m; ideal diagnostic only, not executable spherical robot motions",
+  "same_triangulator": "feature_tracks.triangulate: pixel perturbation \u00b11px; original sigma<=.1; existing parallax/reprojection gates",
+  "acceptance": "Only tests validate interface; real per-pixel conditional scores descriptive, not source/nav admission. No decision may mark free or observed occupancy.",
+  "no_Gt_labels_before_output_seal": true,
+  "no_actual_run": true,
+  "no_new_network_or_fit": true,
+  "old_rejections_preserved": true,
+  "next": "If transverse geometry useful, must establish an actually executable/currently supportable motion and coverage before actor install; ideal lateral capability must not be presumed"
+}

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-06T22:44:59.594041+00:00",
+  "status": "actual_twoarm_running",
+  "entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_short_obstacle_navigation_stage.py",
+  "status_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/short_obstacle_navigation_status.json",
+  "protocol": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/short_obstacle_navigation_protocol.json",
+  "maximum_sequences": 2,
+  "budget_each_s": 35,
+  "controller": "frozenPriorRGBPolicy/CAD/current-history/.3main",
+  "whole_research_complete": false,
+  "duplicate_launch_forbidden": true,
+  "terminal_consumer_not_used": true,
+  "source_causal_audit_finished": true,
+  "exec_session_id": 18984,
+  "assessment_entry": "experiments/stereo_memory_navigation_20261004_v1/assess_short_obstacle_navigation.py",
+  "assessment_args": [
+    "current",
+    "history"
+  ],
+  "author_preflight": "410PASS21.62",
+  "source_count": 1272
+}

@@ -1,0 +1,150 @@
+[
+  {
+    "case": "probe_initial_b0_0.5",
+    "main": 0.5,
+    "mode": "b0",
+    "gains": ".8,.1,.35",
+    "max_abs_bank_deg": 21.992067263692437,
+    "windows": [
+      {
+        "start_s": 12,
+        "end_s": 15,
+        "rms_error_deg": 2.794851994349046,
+        "peak_error_deg": 3.570104656868903,
+        "span_deg": 1.9761514654996333,
+        "mean_bank_deg": 17.72417526781364,
+        "rate_rms_deg_s": 1.3275619882233158
+      },
+      {
+        "start_s": 22,
+        "end_s": 25,
+        "rms_error_deg": 0.6055650900175366,
+        "peak_error_deg": 1.0369337179762557,
+        "span_deg": 1.2819038265030809,
+        "mean_bank_deg": -14.582705668512038,
+        "rate_rms_deg_s": 0.9267239606916783
+      },
+      {
+        "start_s": 32,
+        "end_s": 35,
+        "rms_error_deg": 1.7255731345463723,
+        "peak_error_deg": 2.6770177393046404,
+        "span_deg": 2.8907477828559762,
+        "mean_bank_deg": 1.5117334547543486,
+        "rate_rms_deg_s": 1.9063932442852953
+      }
+    ],
+    "tail_rms_deg": 1.9283420677906173
+  },
+  {
+    "case": "probe_initial_b0_1.5",
+    "main": 1.5,
+    "mode": "b0",
+    "gains": ".8,.1,.35",
+    "max_abs_bank_deg": 15.738666247958516,
+    "windows": [
+      {
+        "start_s": 12,
+        "end_s": 15,
+        "rms_error_deg": 3.0830565352138426,
+        "peak_error_deg": 4.620970213356557,
+        "span_deg": 2.4684076390034786,
+        "mean_bank_deg": 11.978522959726112,
+        "rate_rms_deg_s": 2.059033774489659
+      },
+      {
+        "start_s": 22,
+        "end_s": 25,
+        "rms_error_deg": 5.191500496740298,
+        "peak_error_deg": 6.5491023311574,
+        "span_deg": 2.2708212867648943,
+        "mean_bank_deg": -9.842570990977714,
+        "rate_rms_deg_s": 1.564746128193542
+      },
+      {
+        "start_s": 32,
+        "end_s": 35,
+        "rms_error_deg": 2.6777729708877795,
+        "peak_error_deg": 4.58689733799503,
+        "span_deg": 6.661877925868497,
+        "mean_bank_deg": 1.3548798953832308,
+        "rate_rms_deg_s": 4.953985715265441
+      }
+    ],
+    "tail_rms_deg": 3.813457883627261
+  },
+  {
+    "case": "probe_initial_pid_0.5",
+    "main": 0.5,
+    "mode": "pid",
+    "gains": ".8,.1,.35",
+    "max_abs_bank_deg": 18.925812896722082,
+    "windows": [
+      {
+        "start_s": 12,
+        "end_s": 15,
+        "rms_error_deg": 1.3904504215505338,
+        "peak_error_deg": 1.5465656070308818,
+        "span_deg": 0.42165239552155853,
+        "mean_bank_deg": 16.385081128779856,
+        "rate_rms_deg_s": 0.1900966403784183
+      },
+      {
+        "start_s": 22,
+        "end_s": 25,
+        "rms_error_deg": 0.6240589127087574,
+        "peak_error_deg": 0.7380390951929918,
+        "span_deg": 0.4141305118213019,
+        "mean_bank_deg": -15.615133545709178,
+        "rate_rms_deg_s": 0.22085713827706563
+      },
+      {
+        "start_s": 32,
+        "end_s": 35,
+        "rms_error_deg": 0.5437451752892136,
+        "peak_error_deg": 0.6555407053674726,
+        "span_deg": 0.21154542354979855,
+        "mean_bank_deg": 0.539673333340788,
+        "rate_rms_deg_s": 0.19521055986933053
+      }
+    ],
+    "tail_rms_deg": 0.9342484888885453
+  },
+  {
+    "case": "probe_initial_pid_1.5",
+    "main": 1.5,
+    "mode": "pid",
+    "gains": ".8,.1,.35",
+    "max_abs_bank_deg": 15.178246738063638,
+    "windows": [
+      {
+        "start_s": 12,
+        "end_s": 15,
+        "rms_error_deg": 1.5096586552869664,
+        "peak_error_deg": 2.008488946999046,
+        "span_deg": 1.389615845501023,
+        "mean_bank_deg": 13.575210899693612,
+        "rate_rms_deg_s": 0.9229631214815055
+      },
+      {
+        "start_s": 22,
+        "end_s": 25,
+        "rms_error_deg": 3.0498144198265953,
+        "peak_error_deg": 3.6723532247391564,
+        "span_deg": 1.4177300232974481,
+        "mean_bank_deg": -11.989416927974471,
+        "rate_rms_deg_s": 1.1175524339433436
+      },
+      {
+        "start_s": 32,
+        "end_s": 35,
+        "rms_error_deg": 0.20433967421161894,
+        "peak_error_deg": 0.3812748170795194,
+        "span_deg": 0.5313407174417565,
+        "mean_bank_deg": 0.15159202397644034,
+        "rate_rms_deg_s": 0.45439020936172986
+      }
+    ],
+    "tail_rms_deg": 1.9682642059542377
+  }
+]

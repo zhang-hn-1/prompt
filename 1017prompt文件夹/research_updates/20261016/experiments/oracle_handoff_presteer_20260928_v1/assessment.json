@@ -1,0 +1,130 @@
+{
+  "results": {
+    "0002": {
+      "baseline": {
+        "event_block": 34,
+        "anchor": 2,
+        "segment": [
+          2,
+          42
+        ],
+        "rms_m": 0.21749314164602274,
+        "peak_m": 0.39191054853124013,
+        "entry_error_m": 0.060408471955654935,
+        "exit_error_m": 0.39191054853124013,
+        "progress_m": 1.1905003805822651,
+        "start_s_m": 0.157302964199694,
+        "end_s_m": 1.347803344781959,
+        "reference_segment_length_m": 11.977554936123976,
+        "entry_root_heading_error_rad": 0.515701733943728,
+        "protocol_clip_count": 94,
+        "checkpoint_1m_reached": false,
+        "checkpoint_2m_reached": false
+      },
+      "candidate": {
+        "event_block": 34,
+        "anchor": 2,
+        "segment": [
+          2,
+          42
+        ],
+        "rms_m": 0.23274409566900953,
+        "peak_m": 0.3809801120866046,
+        "entry_error_m": 0.060408471955654935,
+        "exit_error_m": 0.3809801120866046,
+        "progress_m": 1.1610023087627672,
+        "start_s_m": 0.157302964199694,
+        "end_s_m": 1.3183052729624611,
+        "reference_segment_length_m": 11.977554936123976,
+        "entry_root_heading_error_rad": 0.515701733943728,
+        "protocol_clip_count": 78,
+        "checkpoint_1m_reached": false,
+        "checkpoint_2m_reached": false
+      },
+      "parity": {
+        "position": true,
+        "quaternion": true,
+        "proprio": true,
+        "action": true,
+        "physical_entry": true,
+        "policy_entry": true,
+        "reference": true,
+        "event": true
+      },
+      "gates": {
+        "identical_prefix_reference_event": true,
+        "rms": false,
+        "peak": true,
+        "progress": true,
+        "changed_applied": true
+      },
+      "accepted": false,
+      "changed_request_blocks": 42,
+      "changed_applied_samples": 47
+    },
+    "0004": {
+      "baseline": {
+        "event_block": 41,
+        "anchor": 3,
+        "segment": [
+          3,
+          47
+        ],
+        "rms_m": 0.24476728549839985,
+        "peak_m": 0.5557015961973586,
+        "entry_error_m": 0.07313448158123537,
+        "exit_error_m": 0.5557015961973586,
+        "progress_m": 0.9639162099662053,
+        "start_s_m": 0.12845806211988292,
+        "end_s_m": 1.0923742720860883,
+        "reference_segment_length_m": 13.178910623653794,
+        "entry_root_heading_error_rad": 0.6377988983473344,
+        "protocol_clip_count": 88,
+        "checkpoint_1m_reached": false,
+        "checkpoint_2m_reached": false
+      },
+      "candidate": {
+        "event_block": 41,
+        "anchor": 3,
+        "segment": [
+          3,
+          47
+        ],
+        "rms_m": 0.30468675777359505,
+        "peak_m": 0.600507856459888,
+        "entry_error_m": 0.07313448158123537,
+        "exit_error_m": 0.600507856459888,
+        "progress_m": 1.206559112769891,
+        "start_s_m": 0.12845806211988292,
+        "end_s_m": 1.335017174889774,
+        "reference_segment_length_m": 13.178910623653794,
+        "entry_root_heading_error_rad": 0.6377988983473344,
+        "protocol_clip_count": 100,
+        "checkpoint_1m_reached": false,
+        "checkpoint_2m_reached": false
+      },
+      "parity": {
+        "position": true,
+        "quaternion": true,
+        "proprio": true,
+        "action": true,
+        "physical_entry": true,
+        "policy_entry": true,
+        "reference": true,
+        "event": true
+      },
+      "gates": {
+        "identical_prefix_reference_event": true,
+        "rms": false,
+        "peak": true,
+        "progress": true,
+        "changed_applied": true
+      },
+      "accepted": false,
+      "changed_request_blocks": 32,
+      "changed_applied_samples": 55
+    }
+  },
+  "accepted": false,
+  "formal_benchmark": false
+}

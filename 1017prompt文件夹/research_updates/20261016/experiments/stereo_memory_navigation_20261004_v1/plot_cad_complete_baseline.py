@@ -1,0 +1,10 @@
+from pathlib import Path
+import json,numpy as np,matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+H=Path(__file__).resolve().parent;O=H/'cad_complete_baseline_current_run';a=json.loads((H/'cad_complete_baseline_assessment.json').read_text());r=json.loads((O/'policy_records.json').read_text());sh=json.loads((O/'shadow_records.json').read_text());st=json.loads((O/'states.json').read_text());task=json.loads((O/'task_episode.json').read_text())['actual_episode'];goal=np.array(task['goal_position_world_m'][:2]);start=np.array(task['start_position_world_m'][:2]);u=(goal-start)/np.linalg.norm(goal-start);fig,ax=plt.subplots(2,2,figsize=(12,8))
+for folder,label in [('cad_complete_baseline_current_run','actual CAD current cap0.3'),('rgb_complete_goal_current_run','actual old-mask current cap0.3')]:
+ s=json.loads((H/folder/'states.json').read_text());t=np.array([x['time_s'] for x in s]);xy=np.array([x['position'][:2] for x in s]);ax[0,0].plot(xy[:,0],xy[:,1],label=label);ax[0,1].plot(t,(xy-start)@u,label=label)
+ax[0,0].scatter(*goal,c='black',marker='x',label='original6.6mgoal');ax[0,0].axis('equal');ax[0,0].set_xlabel('worldX m');ax[0,0].set_ylabel('worldY m');ax[0,0].set_title('Actual independent restarted trajectories');ax[0,1].set_title('Independent goal-line progress');tt=np.array([x['time_s'] for x in st[:-1]]);ax[1,0].plot(tt,[x['local']['request'][0] for x in r],label='actual policy main request');ax[1,0].plot(tt,[x['request'][0] for x in sh],ls='--',label='history shadow NEVERexecuted');ax[1,0].set_title('Same-source plans; no alternative future truth');ax[1,1].plot(tt,[x['local']['current_occupied']+x['local']['historical_occupied'] for x in r],label='current baseline hazard');ax[1,1].plot(tt,[x['local']['current_occupied']+x['local']['historical_occupied'] for x in sh],label='history shadow hazard');ax[1,1].set_title('Provisional source hazard counts, not GT-certified');
+for z in ax.flat:z.legend(fontsize=8);z.grid(alpha=.2)
+fig.suptitle('35s timeout / distance4.74997m / zero contact; knownpose, notformal success');fig.tight_layout();fig.savefig(H/'cad_complete_baseline_actual_and_shadow.png',dpi=140)

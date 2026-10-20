@@ -1,0 +1,92 @@
+{
+  "question": "Render user requested x=24cm z=8cm four-camera preview; verify native exposures and visible self-occlusion",
+  "camera_names": [
+    "front_left",
+    "front_right",
+    "rear_left",
+    "rear_right"
+  ],
+  "positions_m": [
+    [
+      0.18197,
+      0.32506,
+      0.11503
+    ],
+    [
+      0.18197,
+      -0.32506,
+      0.11503
+    ],
+    [
+      -0.18197,
+      0.32506,
+      0.11503
+    ],
+    [
+      -0.18197,
+      -0.32506,
+      0.11503
+    ]
+  ],
+  "yaw_degrees": [
+    0,
+    0,
+    180,
+    180
+  ],
+  "focal_mm": 8.29040432945669,
+  "focal_px": 471.631890742425,
+  "resolution": [
+    1024,
+    768
+  ],
+  "aperture_mm": [
+    18,
+    13.5
+  ],
+  "clipping_range_m": [
+    0.02,
+    145
+  ],
+  "measurement_range_m": [
+    0.5,
+    3
+  ],
+  "bodyband_m": [
+    0.05,
+    1.5
+  ],
+  "mount_source": "User supplied XYZ/K; rotation assumed camera-body XYZ RPY with +X optical axis; user says convention unknown. Rear follows user front/rear symmetry. Preview only, not measured calibration.",
+  "front_mutation_allowed": false,
+  "physics_frames": 8,
+  "exposure_interval_s": 1,
+  "timeout_s": 120,
+  "physical_cap": 1,
+  "recovery_cap": 0,
+  "fit": 0,
+  "model": 0,
+  "navigation": 0,
+  "gates": {
+    "all_8_four_exposures": true,
+    "all_8_native_imu_intervals": true,
+    "pair_matrix_max": 2e-05,
+    "clock_tolerance_s": 1e-05,
+    "front_local_transform_tolerance": 2e-06,
+    "front_focal_aperture_clip_unchanged": false
+  },
+  "stop": "One attempt, 120 seconds, eight exposures. No recovery, model, training or navigation. Original files and closed budgets unchanged.",
+  "scene_root": "/home/an/project/NavDP/assets/scenes",
+  "episode_manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+  "occupancy": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+  "lighting_profile": "fixed_camera_fill_v1",
+  "source_sha256": {
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/camera_rig.py": "5177063575b6dabde0822eb0c2472bd5f9ddf5e253a41be1feb42b4eacb2800a",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/collect_data_dubins.py": "9a0ccec4dddb6fd1372f85a83fb09c6678e2a5059eb44e5716cc4d0dc8afa934",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py": "72266e68bced65f81e41dbe96d99a806e4f674b13c9ae7db563016097d8a29f7"
+  },
+  "hz": 1,
+  "principal_point": [
+    512.5,
+    384.5
+  ]
+}

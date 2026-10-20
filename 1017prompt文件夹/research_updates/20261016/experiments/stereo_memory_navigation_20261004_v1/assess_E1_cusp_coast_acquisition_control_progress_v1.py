@@ -1,0 +1,23 @@
+"""Postseal physical progress; no candidate path index as success proxy."""
+from pathlib import Path
+import json,hashlib,numpy as np
+H=Path(__file__).resolve().parent;D=H/'original_E1_cusp_coast_acquisition_navigation_run_v1'
+sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+status=json.loads((H/'original_E1_cusp_coast_acquisition_navigation_stage_status_v1.json').read_text());assert status['stage']=='ACTUAL_CLOSED_NEEDS_VERIFICATION'
+seal=json.loads((D/'artifact_manifest_post_close.json').read_text())
+for p,s in seal['artifact_sha256'].items():assert sha(p)==s,p
+z=np.load(D/'physics.npz');t=z['simulation_time_s'];xy=z['position_world_xy'].astype(np.float64);goal=np.array([3.300000005960465,5.960465010446114e-9]);axis=xy[:,0]-(-3.2999999940395353);e=np.linalg.norm(xy-goal,axis=1);term=json.loads((D/'termination.json').read_text());N=len(np.load(D/'requests.npz')['requests']);assert len(t)==5*N+1
+contacts=json.loads((D/'physics_contacts.json').read_text());assert all(r['available'] for r in contacts);contact_count=sum(r['contact'] for r in contacts)
+source=json.loads((H/'original_E1_cusp_coast_acquisition_sparse_memory_navigation_assessment_v1/assessment.json').read_text());member=json.loads((H/'original_E1_cusp_coast_acquisition_sparse_membership_v1/assessment.json').read_text());runtime=json.loads((H/'original_E1_cusp_coast_acquisition_sparse_memory_navigation_runtime_verification_v1.json').read_text());maps=json.loads((H/'original_E1_cusp_coast_acquisition_memory_consumption_assessment_v1.json').read_text());causal=json.loads((H/'original_E1_cusp_coast_acquisition_policy_causal_assessment_v1.json').read_text());shadow=json.loads((H/'original_E1_cusp_coast_acquisition_online_shadow_assessment_v1.json').read_text())
+if N>=546:
+ k=2730;frozen_gate=dict(goal_remaining_m=float(e[k]),axis_progress_m=float(axis[k]),goal_pass=e[k]<=4.182900500,axis_pass=axis[k]>=2.427377623,no_contact=contact_count==0)
+ actual=json.loads((D/'local54_6_gate.json').read_text());assert abs(actual['goal_remaining_m']-e[k])<1e-10 and abs(actual['axis_progress_m']-axis[k])<1e-10 and actual['passed']==bool(frozen_gate['goal_pass'] and frozen_gate['axis_pass']);scope='MEASURED_54_6'
+else:
+ k=len(t)-1;frozen_gate=dict(goal_remaining_m=float(e[k]),axis_progress_m=float(axis[k]),goal_pass=e[k]<=4.182900500,axis_pass=axis[k]>=2.427377623,no_contact=contact_count==0);scope='EARLY_TERMINAL_NO_54_6_CLAIM'
+physical_local_pass=all(frozen_gate[v] for v in ['goal_pass','axis_pass','no_contact'])
+source_pass=all(source['checks'].values()) and all(source['prefix54_6_source_checks'].values()) and member['semantic_subset95'] and member['prefix54_6_semantic_subset95']
+interface_pass=runtime['execution_ticks_exact']==N*5 and maps['maps_exact']==N and causal['requests_exact']==N and shadow['actual_shadow_rows_and_candidate_requests_exact']
+conditional_goal=term['termination']=='success' and e[-1]<=.2 and contact_count==0
+rows=json.loads((D/'policy_records.json').read_text());commits=[r for r in rows if r.get('route_side_commitment') is not None];released=next((r['time_s'] for r in rows if r.get('route_side_commitment_released')),None)
+a=dict(decision='PASS_ONE_CONDITIONAL_KNOWNPOSE_TASKH_NAVIGATION' if physical_local_pass and source_pass and interface_pass and conditional_goal else 'REJECT_OR_INCOMPLETE_UNIQUE_CUSP_ACQUISITION_CANDIDATE',physical_local_pass=physical_local_pass,source_pass=source_pass,interface_pass=interface_pass,conditional_goal=conditional_goal,local_scope=scope,local_gate=frozen_gate,termination=term,true_goal_remaining_final_m=float(e[-1]),true_axis_progress_final_m=float(axis[-1]),physical_path_m=float(np.linalg.norm(np.diff(xy,axis=0),axis=1).sum()),contact_samples=len(contacts),physical_contacts=int(contact_count),commitment_first=commits[0]['route_side_commitment'] if commits else None,commitment_released_time_s=released,fixed_T_baseline_at54_6=dict(goal_remaining_m=4.465515238224151,axis_progress_m=2.282826346158981),original_C_gate_preserved=True,not_single_cause_crossrun_AB=True,RGB_noise_source_equivalence_old_REJECT=True,not_aggregate_success_rate=True,known_GT_pose_not_estimated_RGB_pose=True,formal_original35_NOTRUN=True,whole_research_complete=False)
+(H/'original_E1_cusp_coast_acquisition_control_progress_assessment_v1.json').write_text(json.dumps(a,indent=2,default=lambda v:v.item() if isinstance(v,np.generic) else (_ for _ in ()).throw(TypeError(type(v).__name__)))+'\n');print(json.dumps(a,indent=2,default=lambda v:v.item() if isinstance(v,np.generic) else (_ for _ in ()).throw(TypeError(type(v).__name__))))

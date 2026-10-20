@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-09T17:25:01.765786+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_closed_continuation_v62.json",
+  "supersedes_sha256": "12e6098934641ff34ff6f3cb4558a95a008f11c3718baf946312dfdf7f553a84",
+  "whole_mission_complete": false,
+  "running_process": false,
+  "next_entry": "audit_soft_route_side_preference_v1.py",
+  "review_pending": "soft_route_side_preference_prequery_review_v2.json",
+  "CPU_budget_consumed": 0,
+  "maximum_candidate_queries": 2,
+  "baseline_queries": 0,
+  "new_physics_budget": 0,
+  "no_retry": true,
+  "next_steps": [
+    "v2 C0I0 then frozen2 CPUcandidate queries once",
+    "score feasibility/actualgeometry/unchangedhazards vsarchived contemporaneousstate",
+    "if fail reject no weightscan; if pass separate physicalscope review first"
+  ]
+}

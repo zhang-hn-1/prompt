@@ -1,0 +1,349 @@
+{
+  "utc": "2026-10-07T00:25:42.604479+00:00",
+  "prediction_seal_SHA256": "20750c878f0d41483bcafe88ae6ebb93425c7f4dac144a9f06018ef43eecc8fa",
+  "gate": {
+    "precision": 0.95,
+    "correct_retention": 0.8
+  },
+  "metrics": {
+    "baseline_hazards": 17978,
+    "baseline_correct": 16778,
+    "retained": 14582,
+    "retained_correct": 14576,
+    "retained_insufficient": 6,
+    "retained_proven_error": 0,
+    "precision": 0.9995885338088054,
+    "correct_retention": 0.8687567052092026
+  },
+  "without_seed": {
+    "baseline_hazards": 15961,
+    "baseline_correct": 14762,
+    "retained": 12565,
+    "retained_correct": 12560,
+    "retained_insufficient": 5,
+    "retained_proven_error": 0,
+    "precision": 0.9996020692399522,
+    "correct_retention": 0.850833220430836
+  },
+  "rows": [
+    {
+      "frame": 180,
+      "baseline_hazards": 2017,
+      "baseline_correct": 2016,
+      "retained": 2017,
+      "retained_correct": 2016,
+      "retained_insufficient": 1,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 185,
+      "baseline_hazards": 2573,
+      "baseline_correct": 2572,
+      "retained": 2573,
+      "retained_correct": 2572,
+      "retained_insufficient": 1,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 190,
+      "baseline_hazards": 1902,
+      "baseline_correct": 1899,
+      "retained": 1901,
+      "retained_correct": 1898,
+      "retained_insufficient": 3,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 195,
+      "baseline_hazards": 300,
+      "baseline_correct": 300,
+      "retained": 46,
+      "retained_correct": 46,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 200,
+      "baseline_hazards": 452,
+      "baseline_correct": 448,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 205,
+      "baseline_hazards": 93,
+      "baseline_correct": 92,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 210,
+      "baseline_hazards": 361,
+      "baseline_correct": 1,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 215,
+      "baseline_hazards": 21,
+      "baseline_correct": 21,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 220,
+      "baseline_hazards": 0,
+      "baseline_correct": 0,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 225,
+      "baseline_hazards": 29,
+      "baseline_correct": 29,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 230,
+      "baseline_hazards": 0,
+      "baseline_correct": 0,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 235,
+      "baseline_hazards": 11,
+      "baseline_correct": 11,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 240,
+      "baseline_hazards": 1,
+      "baseline_correct": 1,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 245,
+      "baseline_hazards": 124,
+      "baseline_correct": 124,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 250,
+      "baseline_hazards": 125,
+      "baseline_correct": 125,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 255,
+      "baseline_hazards": 3,
+      "baseline_correct": 3,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 260,
+      "baseline_hazards": 33,
+      "baseline_correct": 17,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 265,
+      "baseline_hazards": 322,
+      "baseline_correct": 322,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 270,
+      "baseline_hazards": 1982,
+      "baseline_correct": 1982,
+      "retained": 1982,
+      "retained_correct": 1982,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 275,
+      "baseline_hazards": 992,
+      "baseline_correct": 992,
+      "retained": 989,
+      "retained_correct": 989,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 280,
+      "baseline_hazards": 1164,
+      "baseline_correct": 1128,
+      "retained": 1128,
+      "retained_correct": 1128,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 285,
+      "baseline_hazards": 1476,
+      "baseline_correct": 1475,
+      "retained": 1476,
+      "retained_correct": 1475,
+      "retained_insufficient": 1,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 290,
+      "baseline_hazards": 1421,
+      "baseline_correct": 1421,
+      "retained": 1421,
+      "retained_correct": 1421,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 295,
+      "baseline_hazards": 1248,
+      "baseline_correct": 1247,
+      "retained": 1049,
+      "retained_correct": 1049,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 300,
+      "baseline_hazards": 305,
+      "baseline_correct": 305,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 305,
+      "baseline_hazards": 51,
+      "baseline_correct": 51,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 310,
+      "baseline_hazards": 19,
+      "baseline_correct": 19,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 315,
+      "baseline_hazards": 356,
+      "baseline_correct": 88,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 320,
+      "baseline_hazards": 89,
+      "baseline_correct": 89,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 325,
+      "baseline_hazards": 0,
+      "baseline_correct": 0,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 330,
+      "baseline_hazards": 220,
+      "baseline_correct": 0,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 335,
+      "baseline_hazards": 51,
+      "baseline_correct": 0,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 340,
+      "baseline_hazards": 140,
+      "baseline_correct": 0,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 345,
+      "baseline_hazards": 0,
+      "baseline_correct": 0,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    },
+    {
+      "frame": 350,
+      "baseline_hazards": 97,
+      "baseline_correct": 0,
+      "retained": 0,
+      "retained_correct": 0,
+      "retained_insufficient": 0,
+      "retained_proven_error": 0
+    }
+  ],
+  "decision": "DEVELOPMENT_PASS_ONLY",
+  "not_fresh": true,
+  "no_navigation_result": true,
+  "insufficient_is_not_proven_error": true
+}

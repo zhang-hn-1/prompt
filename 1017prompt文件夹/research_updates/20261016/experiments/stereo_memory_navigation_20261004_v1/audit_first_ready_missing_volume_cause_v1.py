@@ -1,0 +1,12 @@
+from pathlib import Path
+import json,hashlib,datetime,numpy as np
+from scipy.spatial import cKDTree
+H=Path(__file__).resolve().parent;D=H/'native_flat_pose_navigation_R1_run_v1';P=H/'first_ready_core_handoff_preflight_v1';O=H/'first_ready_missing_volume_cause_v1';O.mkdir(exist_ok=False);sha=lambda f:hashlib.sha256(Path(f).read_bytes()).hexdigest();s=json.loads((P/'pretruth_seal.json').read_text())
+for f,digest in s['outputs'].items():assert sha(f)==digest
+selected=json.loads((P/'selected_actor_context.json').read_text());i=selected['frame'];seed=np.load(P/'first_seed_pretruth.npz');gt=np.load(D/'offline_occupancy_label.npz');xy=gt['origin']+np.argwhere(gt['labels']>0)*float(gt['resolution']);covered=cKDTree(seed['possible_xy']).query(xy)[0]<=np.sqrt(2)*.05+1e-9;missing=xy[~covered];truth=np.load(D/'offline_truth'/f'frame_{i:03d}.npz');mask=np.load(D/'masks'/f'frame_{i:03d}.npz');rows=[]
+for z in (.05,.5,.95):
+ points=np.column_stack([missing,np.full(len(missing),z)]);eyes={}
+ for eye in ('left','right'):
+  T=truth[eye+'_camera_usd_world'];R=T[:3,:3]@np.diag([1,-1,-1]);local=(points-T[:3,3])@R;front=local[:,2]>0;uv=np.full((len(points),2),-1.);uv[front]=local[front,:2]/local[front,2,None]*584.8888888888889+[319.5,239.5];inside=front&(uv[:,0]>=0)&(uv[:,0]<640)&(uv[:,1]>=0)&(uv[:,1]<480);pix=np.floor(uv[inside]).astype(int);body=np.zeros(len(points),bool);occluded=np.zeros(len(points),bool);insufficient=np.zeros(len(points),bool);depth=truth[eye+'_depth_m'][pix[:,1],pix[:,0]];body[inside]=mask[eye][pix[:,1],pix[:,0]];valid=np.isfinite(depth)&(depth>0);insufficient[inside]=~valid;occluded[inside]=valid&(depth<local[inside,2]-.05);visible=inside&~body&~occluded&~insufficient;eyes[eye]=dict(total=len(points),outside=int((~inside).sum()),bodyblocked=int((inside&body).sum()),renderer_occluded=int((inside&~body&occluded).sum()),insufficient=int((inside&~body&insufficient).sum()),geometrically_visible=int(visible.sum()))
+ rows.append(dict(label_height_m=z,eyes=eyes))
+r=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),selected=selected,missing_physical_XY_cells=len(missing),missing_xy=missing.tolist(),height_visibility_diagnostic=rows,GT_OFFLINE_ONLY=True,no_seed_or_point_repair=True,first_ready_source_reject_preserved=True,no_other_time_evaluated=True,not_full3D_safety_or_unreachability_proof=True,whole_research_complete=False);(O/'assessment.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r,indent=2))

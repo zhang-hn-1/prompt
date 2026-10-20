@@ -1,0 +1,45 @@
+{
+  "result": "mistranslation_hypothesis_rejected_before_physics",
+  "arms": {
+    "baseline_e1": {
+      "full_execution_exact_ticks": 4500,
+      "no_route": null,
+      "input_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/baseline_e1_run/physics.npz": "9de7c78171f8b8f65696c258a6fb8caf1dd9924e0e8792c550e3d77106db5588",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/baseline_e1_run/policy_records.json": "5fe9c6d6314eabf7ab895f108392abf573eba581aaae5bdbb842575590eaaef7",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/baseline_e1_run/initial_execution_after_reset.json": "e84ab92a109e1792770c41fc2414b68448e397300760817273a3ba985a095d28"
+      }
+    },
+    "candidate_e1": {
+      "full_execution_exact_ticks": 4500,
+      "no_route": {
+        "blocks": 320,
+        "ticks": 1600,
+        "nonzero_applied_main_ticks": 49,
+        "last_nonzero_main_time_s": 58.97999868169427,
+        "nonzero_aux_ticks": 1600,
+        "aux_min_max_rad": [
+          -0.08123916387557983,
+          0.4593318700790405
+        ],
+        "actual_tick_travel_m": 0.6269723176956177
+      },
+      "input_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/candidate_e1_run/physics.npz": "16f9b4b16bcc7a450c36e34c6bfd94da3534cfc93f3d0c53365ddb5835c7378e",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/candidate_e1_run/policy_records.json": "d4dcf3d78cc4474fe7bfa4c405b0d6fc62557def403da7a856849d35c64f0c51",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/candidate_e1_run/initial_execution_after_reset.json": "e84ab92a109e1792770c41fc2414b68448e397300760817273a3ba985a095d28"
+      }
+    }
+  },
+  "physical": 0,
+  "fit": 0,
+  "recovery": 0,
+  "limits": "Recorded actual measured feedback replay, not predicted future dynamics. Quaternion here is privileged runtime feedback used by installed lowlevel controller, not claimed deployable IMU estimator. Zero desired bank retains active PID compensation; no braking guarantee or proof of cause.",
+  "candidate_post_main_zero": {
+    "first_time_s": 58.999998681247234,
+    "ticks": 1551,
+    "actual_tick_travel_m": 0.4832459092140198,
+    "main_all_zero": true,
+    "not_a_dynamic_or_safety_guarantee": true
+  }
+}

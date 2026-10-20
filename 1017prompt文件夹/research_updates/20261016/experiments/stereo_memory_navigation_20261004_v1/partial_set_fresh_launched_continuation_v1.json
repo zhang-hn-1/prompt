@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-07T10:01:18.743867+00:00",
+  "managed_session": 72337,
+  "status": {
+    "utc": "2026-10-07T10:01:02.399437+00:00",
+    "stage": "RUNNING",
+    "pid": 1547364,
+    "maximum_actual_sequences": 1,
+    "budget_s": 8.0,
+    "wall_limit_s": 400,
+    "source_only": true,
+    "formal_triggered": false,
+    "whole_research_complete": false,
+    "child_pid": 1547365
+  },
+  "append_trace": [
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/research_mission.md",
+      "old_bytes": 237431,
+      "old_sha256": "58372bbc7e5d0945909dffd38d0bbd4c7a4745a6e13deaba15aef70028983edc",
+      "new_sha256": "36e3ce7930c67d13f131d8200e1224242313730923b98a44f61df20995ac6dcf",
+      "prefix_preserved": true
+    },
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+      "old_bytes": 333299,
+      "old_sha256": "0c7529eaa8939bb970276c8f7c0c05d95a6288f9c82be27a2077763b44d6fd0b",
+      "new_sha256": "ebc9d1e7ada63b3054750e27f7ad44a9762abba6af619dd68fbecbeb9610415c",
+      "prefix_preserved": true
+    },
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md",
+      "old_bytes": 165822,
+      "old_sha256": "6112fee7a941f28ce76e0153ada342d2a6732e3104e48cfe8dd461cd05cc775a",
+      "new_sha256": "d4546c550a51af506af620503d8971f5580d5c574504d47ec453f223b9d7c32e",
+      "prefix_preserved": true
+    }
+  ],
+  "whole_research_complete": false,
+  "next_entry_after_close": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/verify_partial_set_fresh_v1.py"
+}

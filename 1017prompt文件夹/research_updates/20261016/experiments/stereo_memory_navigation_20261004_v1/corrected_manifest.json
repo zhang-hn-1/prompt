@@ -1,0 +1,468 @@
+{
+  "role": "same6 complete development request sequences with fixed3render correction; not fresh held-out; no model fit",
+  "rig_id": "ball_stereo_front020_up005_v2",
+  "samples": [
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_000.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_000.npz",
+      "rgb_sha256": "11b0ca7e6f35564ca7477d0f67e8fa57fc6b71d3d9de5b89a504172a4870ed52",
+      "truth_sha256": "f6c9d6184bc54f8056ff8626bf76ead1255e165dbf1cd9c274b1a8bfff3601b8"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_010.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_010.npz",
+      "rgb_sha256": "a403473b49cb96ec2ae5aa5fdc2a86f90df89088fb1a118e1a962833b2cca4a1",
+      "truth_sha256": "ee374e22bdd21159738083968419e890c61849322e3960ad72ea0005fc3fb3e5"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_020.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_020.npz",
+      "rgb_sha256": "1f33a47dfd30c4a6454b4a5737feb613a5c69efee5f49f37a5a43944c0106b65",
+      "truth_sha256": "19d21c5a39fe74fb8999ed067e38793150b249d1a91217e821a86b277cca55f8"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_030.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_030.npz",
+      "rgb_sha256": "10300b5cd0eca655b3f4d8388d4e678648046f9d1237cf174495a566e4bd1be9",
+      "truth_sha256": "746e01b1754b7d80e2ab12a5473af6cf56c325009318d0402c9482be5eacd6fd"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_040.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_040.npz",
+      "rgb_sha256": "2e532b920b557dc1877cb7f54bdfae0a91ececdb002a80febd6ed8e428cc8adb",
+      "truth_sha256": "d84e3dc302688fae87115b28820963cd252f420d61baf6a68ed62cf537936226"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_050.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_050.npz",
+      "rgb_sha256": "2bbab5d0c1060858919fe9ade1f7fa8945b5a5226e178d4da168e805ba2cbff1",
+      "truth_sha256": "306c2f0a90c12c32dd707061e8f9e959c0c4b0bb11201c92066f9a2a37d2b784"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_060.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_060.npz",
+      "rgb_sha256": "05b1ff3748c346685a1114326e7e1eea6ad38e533b90b0fefb42b5ef980a2b62",
+      "truth_sha256": "10a26c579feb149cfb8b09df6f011b028e028d9929906d2419df4d63222aa414"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_070.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_070.npz",
+      "rgb_sha256": "9d5e30d56432b28cb0d31cb73cc0dff562d5b3870e7498644c06d7685cb2ee2e",
+      "truth_sha256": "54451b41ad8924b5975b7324acc01b6fec634d7d1161356170f919eca0635acb"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_080.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_080.npz",
+      "rgb_sha256": "91a472fc004ed7c1584c9263a644d55fbc4f664f213d60d3fe412cc80b273d44",
+      "truth_sha256": "e5ebcc14d8498254874400996936cd2510dd46674b2f27903e647d24594b6fb3"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_090.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_090.npz",
+      "rgb_sha256": "d092e7dc7be4f50d8bab795e669c96f5c6d9302e520e23e3250dc1030842df53",
+      "truth_sha256": "74143a8a8ee798a79a02fe03127966e6580bea60b748c58d800650b4b105982d"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_100.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_100.npz",
+      "rgb_sha256": "1b8d7a7434517b99b5d8285ce6655621fd98b790a5f65377eb9fd61c9228cd55",
+      "truth_sha256": "689fd5579d429abc63ab7ba634a6606dd87dae0bd7326cef04d982a23ba7a114"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_110.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_110.npz",
+      "rgb_sha256": "38faf30fccb0491526785f589d660c33765140ed868748301a4013d230282c12",
+      "truth_sha256": "96658c6f22966cfb53f02dd702ab16bde1018295c84b7d1348f268ca13e4bf1a"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_120.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_120.npz",
+      "rgb_sha256": "961c738aa86d23701c493c35eb9e06e7584d58a3ea8cdb3574ebc74d72f60c47",
+      "truth_sha256": "7517038e2d335fbdaadaf9a919abda43bc4f1cc7982cbaa03b3538dc4aa7ac35"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_130.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_130.npz",
+      "rgb_sha256": "9e3cc55e2b4ce65745926744c6ee3fbddf826bc03fb09c229bc2b4f59feaef87",
+      "truth_sha256": "06935f872cc6cee933f21f73c97c3fab7f413465ad792655b5d41a473bfcd2dc"
+    },
+    {
+      "sequence": "e0",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/online_inputs/frame_138.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e0/offline_truth/frame_138.npz",
+      "rgb_sha256": "403dcf45edce276faa5d29b88021d6a4d3f82f746f876f7a2e3c72fb07919e7a",
+      "truth_sha256": "e00200d94f5d2db04b9324ee6335f06b4b561adc96bdcff0dc1b62bab8d07d61"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_000.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_000.npz",
+      "rgb_sha256": "33f8117b848c6caf690649476d1d5a026c192e72447021826c25d7cb297bc87f",
+      "truth_sha256": "836f5a6491de4b96078226337d2428cac37ca65c454ad2d486674a615321afba"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_010.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_010.npz",
+      "rgb_sha256": "61bd08f0789bd15cfc559c52e5720b1c0c8333be83f6fb0a470484cfb899d131",
+      "truth_sha256": "e7bd5ac0f2bc41b0a7cf17c381d7161899a8a2b4c461ffbf6de30472d4093614"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_020.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_020.npz",
+      "rgb_sha256": "c115155c809a010829c16101e02f02f006775c89e39e782e70d2430f5a08c807",
+      "truth_sha256": "07e38b5ce3f8b85eb7b10f0c9780aaa9d0947290744bb1c21530bb9b5c534d1a"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_030.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_030.npz",
+      "rgb_sha256": "323a2aaa5a49be0c3efae4f28c5c4856ac66455393e82c88a8f5a00592179aed",
+      "truth_sha256": "793e8d3a648e3aba483086852dc3c420bef91e8b55e1e5a2ffb28c47d19296e0"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_040.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_040.npz",
+      "rgb_sha256": "5a85f988e1f5a2d0e656d2c60f53528564d0d74934b300970d711a93ff840544",
+      "truth_sha256": "db84e640bac11f0a5468f12543155a96332ce709dbe8e537789ef1dd3a5297a0"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_050.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_050.npz",
+      "rgb_sha256": "cb5f72255225f4c7433012c68d57f41a6175501f8e73e943b1612a1c8efc83f2",
+      "truth_sha256": "bbc624af522fb9348942758efd377786f6d3e17a6bf02252583723076431fb3d"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_060.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_060.npz",
+      "rgb_sha256": "b2db8e3b59c82cab120f0af3206eaf601030ecf313f9574dd57971a98db59546",
+      "truth_sha256": "0d3f6fabd86dadffa3c5ccf0c7c07278d9b717f3eb3cd7bdbf07fb242118a0e8"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_070.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_070.npz",
+      "rgb_sha256": "3fe5eb51bc16c373e68a170b9902f5b21af83c6f5baae86541b342d29b092460",
+      "truth_sha256": "8f81aeb9b3b4c75e76bb0da81d0e62e14f2a83b2cebbb8911953cae6ff442e2d"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_080.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_080.npz",
+      "rgb_sha256": "bb8e38c1e6692a2267aa5564822322b99503e23e056215ba7fcf45b540e3a392",
+      "truth_sha256": "2f0330209b6f0da9b85cc2d450b3713d1d5bc75c583815d0d1067a09faddb486"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_090.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_090.npz",
+      "rgb_sha256": "1d37264c683ce37dce5e273449c8b1bd9e3304677d44e0dfa00f8c18db1a1d0f",
+      "truth_sha256": "798c31f3ff3b161e592c511a65704a5cba843a9420c45d358526f768edba0098"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_100.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_100.npz",
+      "rgb_sha256": "d82bf472a9712b33a0339e0c67d6afbf06c40121118f5c17eb9386f1d8297d8b",
+      "truth_sha256": "b2eaac7a9aa3ec58be9d0b36307b4bc8e3f365bf0d1ec77c38b39a58ffadb6db"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_110.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_110.npz",
+      "rgb_sha256": "c8203f8e376383d67783794938092782f951353880ad03815be546148f4604e3",
+      "truth_sha256": "23134d0db6ee0b86dd53708cf79928d858fe9cf0e06b5f66edfe6c5ac58e7881"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_120.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_120.npz",
+      "rgb_sha256": "fb7005f9558b2baca4ebdf301d29deaa7c672592604967e299ea9b6056b3f34d",
+      "truth_sha256": "2bad1bc059f16fbd23c6d8685ccb886881abdaa8f9cd89ab04819a18dcd1abbc"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_130.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_130.npz",
+      "rgb_sha256": "b8450b1b613a6b8a08fb8088305368686eb8335910fde41b4c3487da287d5ba7",
+      "truth_sha256": "ecaf9f2029b74a88d6f899a0f7e545e18da46f24dd8b7109887f9ec15f87c38f"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_140.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_140.npz",
+      "rgb_sha256": "d14cf542881c8539f15bb95cfba20c139bcc9071743810b8cc920a9f8060bc5d",
+      "truth_sha256": "5dd91a2c118e69476f29a50b271ebe2924a2026ce90f57d7d8952688890ea917"
+    },
+    {
+      "sequence": "e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/online_inputs/frame_147.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e1/offline_truth/frame_147.npz",
+      "rgb_sha256": "e930ec0927de5198c899e2a2655a57cacba16b0a685d9cc8b052b45e81637394",
+      "truth_sha256": "1c997f91b1b5b134ee5b625f837a0fda8afcb129137e95c46afd237d474b6973"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_000.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_000.npz",
+      "rgb_sha256": "d1d8b1622ad4f522f9c22031e19885275b1a2be58ca32f840056bab9d41e79ab",
+      "truth_sha256": "e14621cf01dab4911c4eef759f5b5c93d5af8333c06ee83687ea5b863a0036c9"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_010.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_010.npz",
+      "rgb_sha256": "d3fe4a6427b89d1869c2ca0b89c19e7ce592280a387843d55cd02e82419fcb83",
+      "truth_sha256": "3027c51206f0d652666f782e6378c5185f3e207f0c8cbde95a709a976383d26d"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_020.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_020.npz",
+      "rgb_sha256": "a4ac44ebe8895485adcb69b2b3a31e6d715d345931bd67fcb6a078ef35c74ba0",
+      "truth_sha256": "5564db96a6d558a81b559786dbb6b3808cc0dd87be021892829d4e86d93aaaf0"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_030.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_030.npz",
+      "rgb_sha256": "d343a93bbf257be86162fd82498cd4d4061b23ae641eb9862408a6730ba90604",
+      "truth_sha256": "405b77f7271eaf2f2f3ced30fccbe76b888923350a201196812792b015172c3e"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_040.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_040.npz",
+      "rgb_sha256": "ec4e2c9f09468dbaef9dfc220805454a530ce908688f367bbaf57b88f528de59",
+      "truth_sha256": "9ad0ffdb684e50b28740a31f3cb427942f20d1c61905b69173240bf7581f7fe4"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_050.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_050.npz",
+      "rgb_sha256": "9b7a181b89160eb9d10e72b501f501c8b90379148362882edb7ff5626d8a3c48",
+      "truth_sha256": "c5b09159eb38e94d09998c51cc8784e555492999295f69f68682cf6b91a25c19"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_060.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_060.npz",
+      "rgb_sha256": "faa510f38700f4cc0af5de4638f3ca2f711732beba4048e60bb4ef023cd785ca",
+      "truth_sha256": "1edc30ad5b4ccdbe8d9922788adf5f8b8338151c91f8c79cf097761e66e17d78"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_070.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_070.npz",
+      "rgb_sha256": "92df21381e31324d53dad2e1e396ab4249d7b0c4bae42e4e8db5fca22ec02865",
+      "truth_sha256": "74dc3a05f0cc4054e0a7c1a0f27883a880f76427b6003abe4be97373d5046326"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_080.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_080.npz",
+      "rgb_sha256": "458b2672598aae0e666c73442f210c708c845effc337ee3dd0482e7bca696c2d",
+      "truth_sha256": "94db4703e9f7f4b0a9ec2f49931f388240ec90d76a407c053f1401242376d110"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_090.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_090.npz",
+      "rgb_sha256": "64a00ae33e290d51b13f310ccb881cc8a5ba75700865629c4cd0696c9d5198a9",
+      "truth_sha256": "c89ce61b860020cf2c9a4d290a8a67841d92e772549fd6366ad74b525903596e"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_100.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_100.npz",
+      "rgb_sha256": "774cd8a446f6b546c19127addf39b02854d012c8065258df96ff4941dc645e86",
+      "truth_sha256": "6abf4bc40de40831a9b6599d64eae4152a8535d05c77769a72a5a75950ea33b0"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_110.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_110.npz",
+      "rgb_sha256": "d4e0e1df63bc98bcc9cfc8cb9045617e629b1a0a49ac88809888d4a4dd2f0103",
+      "truth_sha256": "138691309c435db00c9f9bea4c70a074984c5fab6f799bb4db207e680df2d735"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_120.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_120.npz",
+      "rgb_sha256": "d91f466b02d0881b2dd592f7ac89616831fe336a8fa17c773a46fae90bd5e7f4",
+      "truth_sha256": "cca5a3553cba4980d62d786e42a3fb8ea051030be2f8cb3f17062ed081765e25"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_130.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_130.npz",
+      "rgb_sha256": "6ea5c99cea49ba36e4fd6fb3111e46729d8f80072d63b6b8ad803561e58d7772",
+      "truth_sha256": "28b3400b2cb89d556918bf2c9bd5b1b2b10fdc83534da2d46188919874801e48"
+    },
+    {
+      "sequence": "e2",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/online_inputs/frame_139.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/e2/offline_truth/frame_139.npz",
+      "rgb_sha256": "59976670740609cc70d381c523966442d1883ed3fe42d6e7b17c5095b72d5d15",
+      "truth_sha256": "aa912f93968721b283d683a7e7db37d40c763b2adc0717a8e55155308ba7835a"
+    },
+    {
+      "sequence": "hard_0_e1_0003",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/online_inputs/frame_000.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/offline_truth/frame_000.npz",
+      "rgb_sha256": "a7860d1166ebc8e9b22cbd2d43ea199bb756e72c85b1cae84bdc9055b9171d90",
+      "truth_sha256": "923592e9b354525ff2b56efdbc7be0867463da9b5afd526f2796e8167f3375ae"
+    },
+    {
+      "sequence": "hard_0_e1_0003",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/online_inputs/frame_010.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/offline_truth/frame_010.npz",
+      "rgb_sha256": "a06e5d0406d990644476e453e026d7d73394af6669ee0d7511137a1748225ef8",
+      "truth_sha256": "9ab911c6defa098323277966958be00d2b1140bd20604d818d0d9942479b59e4"
+    },
+    {
+      "sequence": "hard_0_e1_0003",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/online_inputs/frame_020.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/offline_truth/frame_020.npz",
+      "rgb_sha256": "75aadb4037a4a400541c33645aba8304a18757d40c09f56bbd40f59b2c46f240",
+      "truth_sha256": "625aecdd759952f4696bd14ff655c8812bd89b44ad42babcd38f9781a65c4cdf"
+    },
+    {
+      "sequence": "hard_0_e1_0003",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/online_inputs/frame_030.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/offline_truth/frame_030.npz",
+      "rgb_sha256": "75d2f3fc251eca2b44c83a285a0ed0aadfd3356125f6b9cc3405eb8c2c1537de",
+      "truth_sha256": "f5ccfe8911629d360a168a4be5c6366698a4cb2faa4b34a9c1a792cfb36cc9bf"
+    },
+    {
+      "sequence": "hard_0_e1_0003",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/online_inputs/frame_040.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/offline_truth/frame_040.npz",
+      "rgb_sha256": "5ebe63f4823ca08d58ddef37d7b5dfd6679f04da6843bb7ccf5ad9c98f4ab391",
+      "truth_sha256": "625b85239cfeaf0648da656c793f77a88c78aa54162dc36e77878bba8575dd47"
+    },
+    {
+      "sequence": "hard_0_e1_0003",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/online_inputs/frame_050.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/offline_truth/frame_050.npz",
+      "rgb_sha256": "31763604a8e265af445065770c400c4fbc56196055007d155e269acfcadb47d8",
+      "truth_sha256": "f8d2a010db5f881cf18f2d401739c04b217c75f1ae1a6a97c6c37c1639fac05b"
+    },
+    {
+      "sequence": "hard_0_e1_0003",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/online_inputs/frame_060.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/offline_truth/frame_060.npz",
+      "rgb_sha256": "a95169e37c86360b2dba7e75af87938180cf42e822c36fd0f065eadd6441b3da",
+      "truth_sha256": "f8075e58c4d378a7b5eb1f367114d4746c07c930d8fcca8302ed50ede8986546"
+    },
+    {
+      "sequence": "hard_0_e1_0003",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/online_inputs/frame_070.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/offline_truth/frame_070.npz",
+      "rgb_sha256": "abf56d5b93a2349113e6a59b670134d50e0ff48c994b69c157b5765a903644b4",
+      "truth_sha256": "b583c1ce78c703e3118eded8e3913ee8a3cc179f61d03f1cf14aae029a03fb52"
+    },
+    {
+      "sequence": "hard_0_e1_0003",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/online_inputs/frame_079.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0003/offline_truth/frame_079.npz",
+      "rgb_sha256": "4e439877740ef4b1996b76487016c25f61110dddc59f47bbdc57a3a2bc4d7612",
+      "truth_sha256": "ded7cb3a393f10bbe4d85076f35fe60a92f54f4648792bcac8d2d37beb526adf"
+    },
+    {
+      "sequence": "hard_0_e1_0004",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0004/online_inputs/frame_000.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0004/offline_truth/frame_000.npz",
+      "rgb_sha256": "5b958ee8b49e319bae2e708236fdeccd8af262ae794c55f18c370df48198c086",
+      "truth_sha256": "7e8da36d9d1cae568706ea73328474ec66aef172c777b83f2415c8db6c69d747"
+    },
+    {
+      "sequence": "hard_0_e1_0004",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0004/online_inputs/frame_010.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0004/offline_truth/frame_010.npz",
+      "rgb_sha256": "d2cb5b33b4739065e278012832eb10f89667e19a138b4bc1a9186197050a3dab",
+      "truth_sha256": "3178898957e7cbd15751131b07b7ba0a302c850448fbd18206051293753758f3"
+    },
+    {
+      "sequence": "hard_0_e1_0004",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0004/online_inputs/frame_020.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0004/offline_truth/frame_020.npz",
+      "rgb_sha256": "06d07ae32ac0c795d715e57e0e8eede40b6d1d0bae711743361fcffc488897d6",
+      "truth_sha256": "8cdee3461c3af8e311f281d65b8c90312b711e4355e96d5770f2a06b77e86888"
+    },
+    {
+      "sequence": "hard_0_e1_0004",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0004/online_inputs/frame_023.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/hard_0_e1_0004/offline_truth/frame_023.npz",
+      "rgb_sha256": "218ca91f76e42102fad483cd8391fd907c11efa58adf6833e48b004eb0da05b5",
+      "truth_sha256": "8c04b930a7f8a9025b017124d1b1c4a10cfba6ebd16eb27b2051333cea55427b"
+    },
+    {
+      "sequence": "direct_e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/online_inputs/frame_000.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/offline_truth/frame_000.npz",
+      "rgb_sha256": "679649948d5c8ade43be92fa7731142e6eaf9be60eaa69a1981c129107d729f1",
+      "truth_sha256": "a94b7a58d123a68d419efc09f134e04141a64b4c676b326a8cedec304e988166"
+    },
+    {
+      "sequence": "direct_e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/online_inputs/frame_010.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/offline_truth/frame_010.npz",
+      "rgb_sha256": "f6f0ebf6f8244322bde8b360d69965f465a34f866667a67e589dbd86eae88016",
+      "truth_sha256": "b45874a03761970d63d444dd15bd4294f9a6be4a46dfde1de4e3480d7ebc83bd"
+    },
+    {
+      "sequence": "direct_e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/online_inputs/frame_020.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/offline_truth/frame_020.npz",
+      "rgb_sha256": "c964d9dc83df360509a3d3d083b12d04295f2951d79f4653a5cfeaa1c51a2f8a",
+      "truth_sha256": "dc6c19ec44d493dcc81f2e09038b73166829cd38a1b47cb2dfc0466cba42adc0"
+    },
+    {
+      "sequence": "direct_e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/online_inputs/frame_030.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/offline_truth/frame_030.npz",
+      "rgb_sha256": "a1a6c16b1d03d55d48b7524d59156554200c5f1bdea1f8c9f885a45a2ffeef95",
+      "truth_sha256": "4d7461e3b4bb37acf1141ecfe91e53e15dead68c3e967a5db6243aa208a08b12"
+    },
+    {
+      "sequence": "direct_e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/online_inputs/frame_040.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/offline_truth/frame_040.npz",
+      "rgb_sha256": "ac88d3367cddd529639f7b04de310f43e21f56f8d348e10b1eaf83b92128982f",
+      "truth_sha256": "a1bb3a882b20eee9207e785869c444a8eacbad806ce1e9686b0bd2752c426df4"
+    },
+    {
+      "sequence": "direct_e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/online_inputs/frame_050.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/offline_truth/frame_050.npz",
+      "rgb_sha256": "6ef02368cc416499fc930f923499d3991672efd97eff467cf5ff1b43bd1f1d40",
+      "truth_sha256": "52e421a344cc0723869e363bdbce799d8505bfbacd5e24fa66c720270ecdfc05"
+    },
+    {
+      "sequence": "direct_e1",
+      "rgb_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/online_inputs/frame_058.npz",
+      "truth_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_corrected/direct_e1/offline_truth/frame_058.npz",
+      "rgb_sha256": "e905bdf6480d37eca894e421ba4cd6f8bfa9e258252794ae97886f859e3164bf",
+      "truth_sha256": "18cbf3e0fe200564f64b596e4cfb86c8d25a17aa3a883c2f55c764d4c13d3799"
+    }
+  ]
+}

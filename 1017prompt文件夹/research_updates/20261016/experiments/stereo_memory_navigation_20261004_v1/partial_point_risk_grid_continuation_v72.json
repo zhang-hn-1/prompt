@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-09T03:18:56.591547+00:00",
+  "whole_research_complete": false,
+  "automation_status": "ACTIVE",
+  "external_user_block": false,
+  "actual_CPU": "v1 exit1 typeadapter preserved; v2/v3/v4 exit0",
+  "physics": "NO_NEW_PHYSICAL_SEQUENCE",
+  "formal35": "NOTRUN",
+  "control_candidate": "REJECT_NOT_EXECUTED",
+  "predictions": [
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/E1_continuous_tube_navigation_run_v1/controller_prefix_clone_predictions_v3.json",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/E1_continuous_tube_navigation_run_v1/controller_prefix_clone_predictions_v4.json"
+  ],
+  "next_entry": "Check fixed221371 known current five-request block against existing measured response initial-state/request/protocol support domains. No extended B0 future feedback, no nominal carrier substituted for request, no second candidate or calibration/network scan.",
+  "scope": "fixed reference tracker clone only, historical measured feedback, not full policy/online/recursive physical model"
+}

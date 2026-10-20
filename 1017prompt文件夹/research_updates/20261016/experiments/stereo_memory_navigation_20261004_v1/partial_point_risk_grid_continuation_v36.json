@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-08T12:18:29.792388+00:00",
+  "overall_complete": false,
+  "external_user_block": false,
+  "automation_status": "ACTIVE",
+  "active": [
+    "reference_view_alignment_acquisition_stage_v1"
+  ],
+  "latest_closed_actual": [
+    "complete_exact_reference_B0_run_v2",
+    "complete_exact_reference_exact_run_v2",
+    "frontal_obstacle_acquisition_run_v1"
+  ],
+  "latest_report": "reports/benchmark_complete_reference_exact_target_and_missing_obstacle_20261008.md",
+  "latest_assessment": "complete_exact_reference_assessment_v3/assessment.json",
+  "control_candidate": "REJECT_COMPLETE_REFERENCE_CANDIDATE, applied667diffs but worse/error/contact",
+  "current": "ONEfinal20s curvedacquisition, onlymovingaux+pi/6 vsfrontal0, same+.5main/halt/rig/source/PID/gates; no thirdacquisition iffail",
+  "next": "Check status/log, no duplicate. Afterclosed seal run assess_reference_view_alignment_acquisition_v1.py nativeUSD. Ifpassed, freeze ONEinitialviewhandoff consumer forfresh fullnavigation withoriginal54.6gate; ifrejected, rejectprefixinstallation, no third probe/network/thresholdscan; tracewhichcoverage/latencyconditions remain.",
+  "stage": "run_reference_view_alignment_acquisition_stage_v1.py",
+  "protocol": "reference_view_alignment_acquisition_protocol_v1.json",
+  "session_id": 39356,
+  "current_process_running": true,
+  "frontal_result": "REJECTtarget0;sourcegatePASS30089/114bad/contact0;firstdrive60firststop92;actualtranslation.803389 NOT a.5m travelbound",
+  "right_temporal": "REJECTexistingfrozenORB currentright12queries10points60%10cm/p90.357387 target9, no network/refit/newphysics"
+}

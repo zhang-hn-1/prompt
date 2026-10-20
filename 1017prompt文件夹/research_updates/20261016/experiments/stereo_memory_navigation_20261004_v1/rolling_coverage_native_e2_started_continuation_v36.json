@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-09T14:18:18.828893+00:00",
+  "stage": "unchanged_candidate_nativeE2_last_coverage_actual_started",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_coverage_native_e1_started_continuation_v35.json",
+  "superseded_sha256": "3362e1c6479fac1ee101571aaf01aaac0dcfcae960119745c94db1535aa4d281",
+  "physics_running": true,
+  "whole_mission_complete": false,
+  "session_id": 54040,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T14:17:42.329826+00:00",
+    "parent_pid": 501567,
+    "child_pid": 501568,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "nativeE1": "CLOSED0 35timeout5.951325m contact0 14qualificationchanges",
+  "all_four_coverage_budgets_consumed": true,
+  "retry": 0,
+  "learned_memory_risk": {
+    "design_review": "C0I0M0 scopeonly",
+    "feature_tests": "3stubRED ->3GREEN",
+    "fit_started": false,
+    "heldout_teacher_inspected": false
+  },
+  "next": "Supervise54040 no duplicate; frozen-score nativee2. Fourclosure independentreview + baseline table/plots. Then exactfeature/loader/fit/predict/evaluate independentprelaunch before sole logistic fit. Seal two fresh feature-only predictions before reading heldout teachers. No oldflow/net/controlretuning."
+}

@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-09T05:11:40.599683+00:00",
+  "script_sha256": "17ba63f8d178da0747adf740e382e4625acd4cceea12abd56e0135580a12d1d0",
+  "sequences": [
+    "sgbm_baseline35_e0_coverage_run_v1",
+    "sgbm_baseline35_e1_coverage_run_v1",
+    "sgbm_baseline35_e2_run_v1",
+    "native_pose_baseline35_e0_run_v1"
+  ],
+  "output": "action_conditioned_video_pair_feasibility_v1",
+  "role": "bounded historical data feasibility, no model fit, no heldout usage",
+  "pairs_horizon_s": 0.1,
+  "grid": "24pixel spacing fixed20x27",
+  "LK": "same existing21/3/30/.01/fwdback1px/error20; no scan",
+  "inputs": "current nativeIMU encoder measured joints current issued request and previousrequest; original videos current/past only for later imageencoder; no GT depth or currentGT pose",
+  "labels": "offline next recorded compressed image LK, validity unknown not obstacle/free truth",
+  "complete_sequences_max": 4,
+  "heldout": "none; old four historical only; new nativeE1/E2 labels not accessed here",
+  "no_random_adjacent_split": true,
+  "no_network_training": true
+}

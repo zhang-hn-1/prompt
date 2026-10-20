@@ -1,0 +1,19 @@
+{
+  "role": "Four actual open-plane observation diagnostics; no navigation scoring or unknown-space authorization",
+  "frozen_before_first_run": true,
+  "names": ["zero", "bank", "forward", "reverse"],
+  "duration_s": 12,
+  "settle_s": 6,
+  "main_rad_s": 0.3,
+  "bank_encoded_aux_deg": 15,
+  "bank_target_deg": 11.25,
+  "bank_positive_interval_s": [6,8],
+  "bank_negative_interval_s": [8,10],
+  "translation_interval_s": [6,9],
+  "smoother_and_physics_reset_only_at_sequence_start": true,
+  "pose_and_depth": "privileged measurement, not RGB autonomous inputs",
+  "safe_start": "known open-plane diagnostic fixture; cannot transfer certification to unknown benchmark starts",
+  "stop_qualification": "world XY speed <.05m/s for five consecutive 10Hz samples; clear counter on rebound",
+  "rig_id": "ball_stereo_front020_up005_v2",
+  "formal_navigation_budget_s": 35
+}

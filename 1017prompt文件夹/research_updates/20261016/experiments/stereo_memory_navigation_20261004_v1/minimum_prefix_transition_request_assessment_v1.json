@@ -1,0 +1,408 @@
+{
+  "decision": "PASS_NECESSARY_MINIMUM_PREFIX_CURRENT_REQUEST_ONLY",
+  "prefix_exact": 211,
+  "first_fork": 211,
+  "B0_request": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "candidate_request": [
+    0.5,
+    -0.3892391324043274,
+    0.5,
+    -0.3892391324043274,
+    0.5,
+    -0.3892391324043274,
+    0.5,
+    -0.3892391324043274,
+    0.5,
+    -0.3892391324043274
+  ],
+  "current_query": {
+    "direction": "forward",
+    "measured_state": {
+      "path_index": 4,
+      "active_direction": "forward",
+      "pending_direction": null,
+      "stopped_cycles": 0,
+      "off_reference_cycles": 0,
+      "failure": null,
+      "braking_state": "tracking",
+      "mapping_count": 95
+    },
+    "first_expansion_only": false,
+    "minimum_initial_run_primitives": 2,
+    "minimum_nominal_initial_arc_m": 0.6,
+    "physical_stopping_bound_certified": false,
+    "later_reverse_allowed": true,
+    "current_and_past_only": true,
+    "status": "success",
+    "expanded_nodes": 285,
+    "first_installed_direction": "forward"
+  },
+  "request_diagnostics": null,
+  "installed_plan": {
+    "status": "success",
+    "certified_safe": false,
+    "unknown_fraction": 1.0,
+    "local_target": [
+      -0.09999999403953197,
+      1.3000000059604666
+    ],
+    "nominal_geometry_only": true,
+    "initial_direction": "forward",
+    "planning_clearance_m": 0.8707106781186548,
+    "empirical_tracking_error_m": 0.2,
+    "empirical_tracking_error_certified": false,
+    "route_xy": [
+      [
+        -1.8999999940395327,
+        5.960465898624534e-09
+      ],
+      [
+        -1.7999999940395348,
+        0.10000000596046732
+      ],
+      [
+        -1.6999999940395334,
+        0.20000000596046874
+      ],
+      [
+        -1.599999994039532,
+        0.3000000059604666
+      ],
+      [
+        -1.499999994039534,
+        0.40000000596046803
+      ],
+      [
+        -1.3999999940395327,
+        0.5000000059604659
+      ],
+      [
+        -1.2999999940395348,
+        0.6000000059604673
+      ],
+      [
+        -1.1999999940395334,
+        0.7000000059604687
+      ],
+      [
+        -1.1999999940395334,
+        0.8000000059604666
+      ],
+      [
+        -1.099999994039532,
+        0.900000005960468
+      ],
+      [
+        -1.099999994039532,
+        1.000000005960466
+      ],
+      [
+        -0.9999999940395341,
+        1.1000000059604673
+      ],
+      [
+        -0.8999999940395327,
+        1.2000000059604687
+      ],
+      [
+        -0.7999999940395348,
+        1.2000000059604687
+      ],
+      [
+        -0.6999999940395334,
+        1.3000000059604666
+      ],
+      [
+        -0.599999994039532,
+        1.3000000059604666
+      ],
+      [
+        -0.4999999940395341,
+        1.3000000059604666
+      ],
+      [
+        -0.3999999940395327,
+        1.3000000059604666
+      ],
+      [
+        -0.2999999940395348,
+        1.3000000059604666
+      ],
+      [
+        -0.1999999940395334,
+        1.3000000059604666
+      ],
+      [
+        -0.09999999403953197,
+        1.3000000059604666
+      ],
+      [
+        5.960465898624534e-09,
+        1.3000000059604666
+      ],
+      [
+        0.10000000596046732,
+        1.3000000059604666
+      ],
+      [
+        0.2000000059604652,
+        1.3000000059604666
+      ],
+      [
+        0.3000000059604666,
+        1.3000000059604666
+      ],
+      [
+        0.40000000596046803,
+        1.3000000059604666
+      ],
+      [
+        0.5000000059604659,
+        1.3000000059604666
+      ],
+      [
+        0.6000000059604673,
+        1.2000000059604687
+      ],
+      [
+        0.7000000059604652,
+        1.2000000059604687
+      ],
+      [
+        0.8000000059604666,
+        1.1000000059604673
+      ],
+      [
+        0.900000005960468,
+        1.1000000059604673
+      ],
+      [
+        1.000000005960466,
+        1.000000005960466
+      ],
+      [
+        1.1000000059604673,
+        1.000000005960466
+      ],
+      [
+        1.2000000059604652,
+        1.000000005960466
+      ],
+      [
+        1.3000000059604666,
+        0.900000005960468
+      ],
+      [
+        1.400000005960468,
+        0.900000005960468
+      ],
+      [
+        1.500000005960466,
+        0.8000000059604666
+      ],
+      [
+        1.6000000059604673,
+        0.8000000059604666
+      ],
+      [
+        1.7000000059604652,
+        0.7000000059604687
+      ],
+      [
+        1.8000000059604666,
+        0.7000000059604687
+      ],
+      [
+        1.900000005960468,
+        0.6000000059604673
+      ],
+      [
+        2.000000005960466,
+        0.6000000059604673
+      ],
+      [
+        2.1000000059604673,
+        0.5000000059604659
+      ],
+      [
+        2.200000005960465,
+        0.5000000059604659
+      ],
+      [
+        2.3000000059604666,
+        0.5000000059604659
+      ],
+      [
+        2.400000005960468,
+        0.40000000596046803
+      ],
+      [
+        2.500000005960466,
+        0.40000000596046803
+      ],
+      [
+        2.6000000059604673,
+        0.3000000059604666
+      ],
+      [
+        2.700000005960465,
+        0.3000000059604666
+      ],
+      [
+        2.8000000059604666,
+        0.20000000596046874
+      ],
+      [
+        2.900000005960468,
+        0.20000000596046874
+      ],
+      [
+        3.000000005960466,
+        0.10000000596046732
+      ],
+      [
+        3.1000000059604673,
+        0.10000000596046732
+      ],
+      [
+        3.200000005960465,
+        0.10000000596046732
+      ],
+      [
+        3.3000000059604666,
+        5.960465898624534e-09
+      ]
+    ],
+    "expanded_nodes": 285,
+    "local_path_length_m": 4.2,
+    "direction_changes": 2,
+    "crop_origin": [
+      -5.899999994039533,
+      -3.999999994039534
+    ],
+    "crop_shape": [
+      81,
+      81
+    ],
+    "seconds": 0.09574271994642913
+  },
+  "reference_decision": {
+    "decision": "rebuild",
+    "measured_time_s": 21.099999528378248,
+    "guard": {
+      "projected_arc_m": 1.3119320012211713,
+      "projection_distance_m": 0.06004206430210123,
+      "remaining_arc_m": 1.6837839775999042,
+      "suffix_xy": [
+        [
+          -1.8826684341104356,
+          0.006204667413217721
+        ],
+        [
+          -1.7119543493723675,
+          0.07804535267388246
+        ],
+        [
+          -1.4714178586641429,
+          0.2561314887818721
+        ],
+        [
+          -1.2798727407861679,
+          0.486094405473268
+        ],
+        [
+          -1.1154763600307895,
+          0.7370388147487636
+        ],
+        [
+          -0.9486064554866093,
+          0.9863452557195316
+        ],
+        [
+          -0.7792793457914248,
+          1.233989348066532
+        ]
+      ],
+      "bridge_xy": [
+        [
+          -1.8593794107437134,
+          -0.04913673549890518
+        ],
+        [
+          -1.8826684341104356,
+          0.006204667413217721
+        ]
+      ],
+      "suffix_clearance_m": 0.8651540064301765,
+      "bridge_clearance_m": 1.460206389953516,
+      "continuous_clearance_pass": true,
+      "raster_clearance_pass": true,
+      "minimum_raster_clearance_m": 0.848528137423857,
+      "raster_sample_count": 38,
+      "raster_outside_count": 0,
+      "observed_hazard_count": 57,
+      "retention_necessary_screen_pass": true,
+      "reject_reasons": [],
+      "nominal_geometry_only": true,
+      "certified_safe": false
+    },
+    "initial_or_no_route": false,
+    "state_before": {
+      "path_index": 4,
+      "active_direction": "forward",
+      "pending_direction": null,
+      "stopped_cycles": 0,
+      "off_reference_cycles": 0,
+      "failure": null,
+      "braking_state": "tracking",
+      "mapping_count": 95
+    },
+    "state_after": {
+      "path_index": 0,
+      "active_direction": "forward",
+      "pending_direction": null,
+      "stopped_cycles": 0,
+      "off_reference_cycles": 0,
+      "failure": null,
+      "braking_state": "tracking",
+      "mapping_count": 95
+    },
+    "certified_safe": false,
+    "direction_cost_input": "forward",
+    "tube_viability_armed_at_boundary": true,
+    "tube_viability_screen": {
+      "pass": false,
+      "minimum_raster_clearance_m": 0.848528137423857,
+      "existing_planning_clearance_m": 0.8707106781186548,
+      "samples": 43,
+      "outside": 0,
+      "sample_step_m": 0.05,
+      "necessary_nominal_partial_screen_only": true,
+      "no_free_or_completed_volume": true
+    }
+  },
+  "future_poison_exact": true,
+  "old_latch_after_act": {
+    "path_index": 0,
+    "active_direction": "forward",
+    "pending_direction": null,
+    "stopped_cycles": 0,
+    "off_reference_cycles": 0,
+    "failure": null,
+    "braking_state": "tracking",
+    "mapping_count": 96
+  },
+  "not_new_physics": true,
+  "not_navigation_admission": true
+}

@@ -1,0 +1,180 @@
+{
+  "protocol": {
+    "utc": "2026-10-08T14:50:42.571924+00:00",
+    "frames": [
+      215,
+      220,
+      225,
+      325,
+      330,
+      335
+    ],
+    "target": "divider_06",
+    "role": "Postseal GT necessary visibility bound for possible future RGB ground-contact inference; no actor/model/source changes",
+    "ground_contact_band_m": [
+      0.0,
+      0.05
+    ],
+    "frozen_floor_prior_z_m": 0.0,
+    "hypothesis": "A floor-contact based monocular range method needs a visible low surface/contact boundary; elevated isolated appearance cannot be treated as ground contact.",
+    "metrics": "Current true target surface minimum height, target pixels <=.05, their raw left/right coordinates and CAD-masked counts",
+    "no_GT_to_future_detector_or_action": true,
+    "no_network_or_fit": true,
+    "no_physical_run": true,
+    "prior_is_not_observation": true,
+    "no_3D_safety_certificate": true
+  },
+  "rows": [
+    {
+      "frame": 215,
+      "eyes": [
+        {
+          "eye": "left",
+          "visible_target_pixels": 2437,
+          "minimum_visible_target_height_m": 0.7117077949767484,
+          "ground_contact_band_pixels": 0,
+          "contact_band_pixel_bbox_xy": null
+        },
+        {
+          "eye": "right",
+          "visible_target_pixels": 0,
+          "minimum_visible_target_height_m": null,
+          "ground_contact_band_pixels": 0,
+          "contact_band_pixel_bbox_xy": null
+        }
+      ]
+    },
+    {
+      "frame": 220,
+      "eyes": [
+        {
+          "eye": "left",
+          "visible_target_pixels": 7692,
+          "minimum_visible_target_height_m": 0.48339182411804393,
+          "ground_contact_band_pixels": 0,
+          "contact_band_pixel_bbox_xy": null
+        },
+        {
+          "eye": "right",
+          "visible_target_pixels": 0,
+          "minimum_visible_target_height_m": null,
+          "ground_contact_band_pixels": 0,
+          "contact_band_pixel_bbox_xy": null
+        }
+      ]
+    },
+    {
+      "frame": 225,
+      "eyes": [
+        {
+          "eye": "left",
+          "visible_target_pixels": 15054,
+          "minimum_visible_target_height_m": 0.2561480708567731,
+          "ground_contact_band_pixels": 0,
+          "contact_band_pixel_bbox_xy": null
+        },
+        {
+          "eye": "right",
+          "visible_target_pixels": 0,
+          "minimum_visible_target_height_m": null,
+          "ground_contact_band_pixels": 0,
+          "contact_band_pixel_bbox_xy": null
+        }
+      ]
+    },
+    {
+      "frame": 325,
+      "eyes": [
+        {
+          "eye": "left",
+          "visible_target_pixels": 22252,
+          "minimum_visible_target_height_m": 0.0005667782971323643,
+          "ground_contact_band_pixels": 69,
+          "contact_band_pixel_bbox_xy": [
+            217,
+            0,
+            233,
+            6
+          ]
+        },
+        {
+          "eye": "right",
+          "visible_target_pixels": 0,
+          "minimum_visible_target_height_m": null,
+          "ground_contact_band_pixels": 0,
+          "contact_band_pixel_bbox_xy": null
+        }
+      ]
+    },
+    {
+      "frame": 330,
+      "eyes": [
+        {
+          "eye": "left",
+          "visible_target_pixels": 31674,
+          "minimum_visible_target_height_m": 0.011540528595254118,
+          "ground_contact_band_pixels": 205,
+          "contact_band_pixel_bbox_xy": [
+            211,
+            0,
+            224,
+            26
+          ]
+        },
+        {
+          "eye": "right",
+          "visible_target_pixels": 0,
+          "minimum_visible_target_height_m": null,
+          "ground_contact_band_pixels": 0,
+          "contact_band_pixel_bbox_xy": null
+        }
+      ]
+    },
+    {
+      "frame": 335,
+      "eyes": [
+        {
+          "eye": "left",
+          "visible_target_pixels": 38630,
+          "minimum_visible_target_height_m": 1.0150978302370106e-07,
+          "ground_contact_band_pixels": 357,
+          "contact_band_pixel_bbox_xy": [
+            211,
+            0,
+            231,
+            33
+          ]
+        },
+        {
+          "eye": "right",
+          "visible_target_pixels": 0,
+          "minimum_visible_target_height_m": null,
+          "ground_contact_band_pixels": 0,
+          "contact_band_pixel_bbox_xy": null
+        }
+      ]
+    }
+  ],
+  "raw_before_CAD": true,
+  "CAD_removed_pixels_not_computed": true,
+  "not_RGB_detector": true,
+  "no_current_or_future_action": true,
+  "no_full_3D_claim": true,
+  "whole_research_complete": false,
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_sparse_membership_v2/scene_collision_shapes.json": "7da557d721072ab29bfc5b6c97a36362a2d8fd9d0a2228951ad1b8db89b2a512",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/frames/frame_215.npz": "ef842cf56db722ae5cafbeb3f80326c0f36dfb64c27d665bbbb1dc39cf6b3643",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/known_poses/frame_215.npz": "2ce4b48c9cae11c467aca13805267e3c1a71d2a6b82c383f4c87b45325cfeb21",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/frames/frame_220.npz": "a0a2b9359cc271fbf0332b3e331aac6f48c01cc2c59cbe891ce8061ed84e2ebb",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/known_poses/frame_220.npz": "ef76341e32a666f216a96c785274f39f1d8fa166d3caa73517a7b4829866b4d5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/frames/frame_225.npz": "53ef41045ab2ab6b709ba8458b61af1cc347dc6dbcc7fe7f5a896ebe3d4d20a8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/known_poses/frame_225.npz": "7d4ed6f4d0f1da0a784d4bc6f2093bab0577125d2387434a4acebc400cc50544",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/frames/frame_325.npz": "c88c4f4b6611f22228bd89d6e266218b7b526cbd0d1c273f2021faf99513281c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/known_poses/frame_325.npz": "d53ad85cfb8ff115b3e74ecd9b84332524f02e0427ff3c756156d1e607d2824c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/frames/frame_330.npz": "4e32e1fa3be00d3bd620dfb754cce6d6a3c1bc0e0c8a6adbaddce22a1156a887",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/known_poses/frame_330.npz": "e6e8844b47b374d38e190d54585423120c04a5fcf931d120a73f44671ba682b2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/frames/frame_335.npz": "ba11d85a1a5eaec07440d65dc378690444bc0913245f507fdaf74889b98bdfda",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/minimum_prefix_transition_navigation_run_v1/known_poses/frame_335.npz": "7172536e15f4e7611b9ed0e6211c6879fb4d1e41de6d61b54c7141994b0c264b"
+  },
+  "source_sha256": "e73412fe69a37cecaa325ec318ab1f6d3127e976c2980d52a1eccfcea0e74361"
+}

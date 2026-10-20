@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-09T11:21:19.966081+00:00",
+  "stage": "risk_memory_actual_closed_reserve_CPU5pass_and_next_controlled_stage_prepared_not_started",
+  "whole_mission_complete": false,
+  "physics_running": false,
+  "external_process_check": "pgrep exact new runners exit1 none",
+  "context_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T10:41:33.577108+00:00",
+    "parent_pid": 257165,
+    "child_pid": 257166,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T10:45:32.136655+00:00"
+  },
+  "history_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T10:53:32.174721+00:00",
+    "parent_pid": 271414,
+    "child_pid": 271415,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T10:56:58.334821+00:00"
+  },
+  "current_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T10:57:07.012173+00:00",
+    "parent_pid": 275740,
+    "child_pid": 275741,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T10:59:18.288855+00:00"
+  },
+  "remaining_risk_lifetime_sequence_budget": 0,
+  "old_short_backing_retry_allowed": false,
+  "old_pacing_rejection_preserved": true,
+  "next": {
+    "preparation_review": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_pacing_independent_preparation_review_v2.json",
+    "prelaunch_design": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_fixed_reference_design_v1.json",
+    "runner": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_local_reserve_fixed_reference_stage_v1.py",
+    "assessor": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/assess_local_reserve_fixed_reference_v1.py",
+    "current_status": "CPU5PASS/C0I0 ordinary rebuild test included; new empirical hypothesis only, NO physics admission yet; both new budget arms unstarted",
+    "concrete_steps": [
+      "Read final design/source and preserve source identity; fix prelaunch assessor treatment for early actual contact/goal stop and runtime interruption (declared limitation), then targeted tests and independent prelaunch review before data",
+      "Run B0 via Py run_local_reserve_fixed_reference_stage_v1.py b0 exactly once and supervise PID; then paced once only if baseline normal close. Same2.1m complete fixed reference, original .8 passage ratio/.2 endpoint/.1RMS/.2peak/fiveactualspeed<.05/contact0 gates unchanged; no threshold scan",
+      "Actual small-correcting-steering main1 remains empirical validation domain; do not assume old four-point/highmainaux0 measurement admits it or call reserve a stop upper bound",
+      "Only local pass supports separate ordinary complete E0 source-memory replan A/B; then native separately if admissible. Neither local nor conditionedE0 equals strict35 E0/E1/E2 pass",
+      "If local fails reject one candidate, no reserve steering scan or original budget repeats. Keep explicit memory baseline and consider distinct learning-memory increment target/data budget; no old action-video re-fit"
+    ],
+    "prohibited": [
+      "repeat closed memory pair or old pacing versions",
+      "relabel current-arm contact progress assuccess",
+      "skip local controlled gate for formalnavigation",
+      "future actual feedback as another plan label"
+    ]
+  },
+  "stop_reason": "Long actual execution continuation boundary after three full/real-contact sequences, multiple independent reviews, one bounded failure audit and next CPU implementation. No user-dependent block; next entry exists.",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/sgbm_risk_lifetime_closed_continuation_v11.json",
+  "superseded_sha256": "bc92359a486e72452ce9d7c9fd87af1e48ca04736c778c87857828f784dda6db",
+  "evidence_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_assessment_v1.json": "c53abc3e66585f1f2acc2eb0466f4eecc3442148fde46e1a8131cfdca6ee3d9a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_independent_review_v1.json": "881908cb7511e0308e3c8daeb5e904f4e7c799138f8a86afcd1406b24a751610",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/sgbm_risk_lifetime_assessment_v1.json": "017815852c5a84fdd27cf1c6d406883989da8c7719e44dc1157a779b2ff92f8d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/sgbm_risk_lifetime_independent_closed_review_v1.json": "0ab37ece024519c3568e6206672761a0f6a68829cd064d5fcfee7968e9f1238a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/same_exposure_retention_assessment_v1.json": "9e4fa5906120755031bc36dd4f1eb384d28e8e7b4fa4110aa2b3dc0adb31a8d6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_pacing_preparation_v1.json": "bde99a7e7ff27962565bc0ec3bc8567ade0d259ddec1a198eb180942f10b71f5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/sgbm_risk_lifetime_closed_append_receipts_v1.json": "f8d6ea7f30cbb56af0826c66709d6052dd9e2109f607ac264f8bae35f9638df6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_pacing_independent_preparation_review_v2.json": "b47d1353d1711e607acc003424859042ac971a4840683f25db8a1900e7068f11",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_fixed_reference_design_v1.json": "d5d358e247ebf5df0025d8b6c1d088043e3770fdb772bc46f872e41ccf66b770",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/test_local_reserve_ordinary_rebuild_v1.py": "07de1bcc1bad15ce36b6669e43efa5443ce6f180dae9140f760778baabb15fd9"
+  }
+}

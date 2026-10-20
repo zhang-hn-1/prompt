@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-09T12:52:22.035687+00:00",
+  "stage": "measured_speed_fixed_reference_b0_actual_started",
+  "whole_mission_complete": false,
+  "physics_running": true,
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/highturn_closed_speed_prepared_continuation_v20.json",
+  "superseded_sha256": "2fc126101fb4429db6be83d49ca5e8efe06c08687061dabb67031fb561e9be9f",
+  "session_id": 97155,
+  "actual_status": {
+    "status": "running",
+    "start_utc": "2026-10-09T12:52:06.239474+00:00",
+    "parent_pid": 402901,
+    "child_pid": 402902,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "budget_remaining": {
+    "b0": 0,
+    "paced": 1,
+    "retry": 0
+  },
+  "next": "Supervise session97155 without restart; complete and sealed baseline before paced once; frozen scorer then independent close review."
+}

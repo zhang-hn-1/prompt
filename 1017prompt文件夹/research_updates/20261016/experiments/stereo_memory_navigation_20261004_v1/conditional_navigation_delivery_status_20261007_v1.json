@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-07T13:31:42.624936+00:00",
+  "whole_research_complete": false,
+  "original35_benchmark_triggered": false,
+  "known_pose_conditional": {
+    "pass_verified": true,
+    "time_s": 43.3,
+    "no_contact": true,
+    "report": "reports/benchmark_forward_request_domain_navigation_20261007.md"
+  },
+  "estimated_pose_conditional": {
+    "pass_verified": true,
+    "time_s": 42.9,
+    "no_contact": true,
+    "ideal_bodygyro": true,
+    "initial_gauge_privileged": true,
+    "flat_ground_prior": true,
+    "report": "reports/benchmark_flat_ground_estimated_pose_navigation_20261007.md"
+  },
+  "learning_increment": {
+    "pass_verified": false,
+    "frozen_old_head_rejected": true,
+    "precision": 0.9097320169252469,
+    "recall": 0.5210016155088854,
+    "not_action_conditioned_world_model": true,
+    "report": "reports/benchmark_frozen_learned_memory_new_domain_20261007.md"
+  },
+  "current_actual": {
+    "entry": "run_offset_replication_stage_v1.py",
+    "managed_session": 66805,
+    "status_file": "offset_replication_stage_status_v1.json",
+    "run_directory": "offset_replication_D4_run_v1",
+    "maximum_sequences": 1,
+    "no_duplicate": true
+  },
+  "next_after_actual": "Seal completed data, run four offset named postclose verifiers/scorer, report independently verified result; no gate/offset/model scan.",
+  "scope": "fixed camera/single static cylinder/explicit floor+safe-start+static hypothesis priors; cached reference also memory; original source full-depth/global/moving/native-IMU rejections preserved"
+}

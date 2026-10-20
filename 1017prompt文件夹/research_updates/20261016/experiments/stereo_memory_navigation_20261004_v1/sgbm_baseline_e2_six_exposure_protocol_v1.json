@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-09T04:23:39.824487+00:00",
+  "scope": "bounded frozen classical matcher development probe, no source accuracy admission",
+  "frames": [
+    0,
+    60,
+    130,
+    210,
+    240,
+    255
+  ],
+  "source_run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/standby_handoff_e2_transfer_run_v1",
+  "source_method": "existing stereo_geometry.SGBMStereo fixed448/block5/LR1p5",
+  "changes": "matcher only",
+  "new_physics": 0,
+  "future_or_GT_depth_inputs": false,
+  "current_knownpose_and_current_joints": true,
+  "no_parameter_sweep": true,
+  "outputs": "sgbm_baseline_e2_six_exposure_probe_v1",
+  "question": "does a fixed classical baseline give different positive obstacle risk source in these actual exposures?",
+  "continue_actual_if": "different nonempty risk source, coordinate and clock invariants intact; not an accuracy or navigation acceptance",
+  "baseline_is_not_deliberately_weakened": true
+}

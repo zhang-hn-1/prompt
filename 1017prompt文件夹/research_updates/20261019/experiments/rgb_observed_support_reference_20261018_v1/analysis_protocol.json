@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-17T22:09:40.181228+00:00",
+  "question": "One fixed failingflatfixture: distinguish tiedlocalRGBcosts from support-boundary-induced pathconfidence.",
+  "budget": {
+    "candidate_total_dispatch_cap": 4,
+    "already_used": 2,
+    "this_failureanalysis_cap": 1,
+    "recovery_cap": 0,
+    "wall_cap_s": 30,
+    "syntheticcost_calls": 1,
+    "aggregate_calls": 1,
+    "decode_calls": 1,
+    "realRGB_calls": 0,
+    "GT_reads": 0,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "scope": "Same frozen zero11x15RGB/disparities[0,1]/pixel5,6/P1=600/P2=2400. No alternativethreshold/support/pad/regularizer/shift. Do not dispatch originallyplannedpredict/score afterfixturefailure. This dispatch uses one remaining ORIGINALcandidate slot, nobudgetincrease.",
+  "sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/protocol.json": "4c79a5b5c4deb0d620ddf717769c60f3d97a7a19b4442f646c5054763a90045c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/fixtures_status.json": "e4f54c0026be2ccc23fc4bb41afce807af3439125f4d7807e1c3dddc6fb3a0d5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/fixtures.log": "6a16f418712f501533351b960a422ac7e0aa88eee26c885c67f6c94393490c62",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/reference.py": "94a51d7e6470ac9d5bdb22298ddccbc54f620b1abfc38830b2282d296405d362",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/failure_analysis.py": "ab6f34ff1b9965764f1e5bb50999510d119adcad39ecf602fe7d427638ab9c16",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/analysis_supervise.py": "382c5f01bb3d15d066ef40decff77c7ac3150f1f40b9429b1fd995a25892b65d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c"
+  },
+  "expected": "Both localcosts0/supported. left[0,600],right/top[0,0]=>aggregate[0,600],decoded0 ratherthanrequiredUNKNOWN. If different recordimplementationcause, do notfitexplanation. Candidate0notmetricdistance/actualfalseobstacle."
+}

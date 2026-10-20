@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-09T19:04:09.116537+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_aux_closed_suffix_actual_continuation_v77.json",
+  "supersedes_sha256": "addfdb8762d82aafaf409754dc7a98c35e5668042f1cc98e3ae268295da0bbb2",
+  "whole_mission_complete": false,
+  "stage": "suffix_CPU_duplicate_no_physics_handoff",
+  "physics_running": false,
+  "fit_running": false,
+  "external_blocker": false,
+  "stop_reason": "current_context_execution_limit_after_actual_pair_and_CPU_work; not_phase_or_mission_completion",
+  "pending_review": "suffix_completion_semantics_review_v1.json",
+  "next_entry": "Close suffix clock review; register duplicate endpoint-tail hypothesis as no new physical budget. Read current_forward_only_feasibility and current_forward_root_geometry saved assessment/source to trace existing primitive/state-key semantics without solver rerun; determine whether there is a concrete code mismatch before any new candidate.",
+  "next_inputs": [
+    "suffix_completion_semantics_assessment_v2.json",
+    "endpoint_tail_e1_run_v1/endpoint_tail_assessment_v1.json",
+    "current_forward_root_geometry_assessment_v1.json"
+  ],
+  "physical_budget_remaining_current_candidate": 0,
+  "do_not_rerun_endpoint_tail": true
+}

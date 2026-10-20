@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-10T00:17:46.519659+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_forward_course_b0_running_continuation_v97.json",
+  "supersedes_sha256": "34bf07a3ce316a4e434be7dc0831b03829968e578e4d4e4a949d78965677bced",
+  "whole_mission_complete": false,
+  "state": "CANDIDATE_DURABLE_RUNNING",
+  "session_id": 34102,
+  "status_file": "forward_course_geometry_e1_candidate_status_v1.json",
+  "scorer": "assess_forward_course_geometry_e1_v5.py",
+  "runtime_envelope": "forward_course_geometry_e1_protocol_v3.json",
+  "scorer_supplement": "forward_course_postlaunch_scorer_correction_identity_v1.json",
+  "review": "forward_course_postlaunch_scorer_review_v1.json",
+  "b0_finished": true,
+  "physical_budget_started": 2,
+  "physical_budget_max": 2,
+  "retry": 0,
+  "stop_reason": "Not stopped: supervising actual candidate, do not duplicate launch."
+}

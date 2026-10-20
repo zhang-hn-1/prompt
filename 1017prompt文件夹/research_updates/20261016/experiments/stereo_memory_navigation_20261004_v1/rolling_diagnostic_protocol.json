@@ -1,0 +1,9 @@
+{
+  "question": "Does standard temporal quadrature explain rejected online gyro drift, and how much translation error is vertical settling versus XY?",
+  "role": "Post-rejection causal diagnosis, used validation data, not candidate admission or fresh evaluation",
+  "fixed_methods": ["previous-rate", "current-end-rate", "endpoint-average"],
+  "measurement_checks": ["root orientation/velocity API identity", "3D versus XY error", "measured attitude shell kinematic residual", "finite attitude increment versus angular velocity"],
+  "budget": {"new_physics": 0, "new_fits": 0, "control_changes": 0, "quadratures": 3},
+  "old_gates_unchanged": true,
+  "forbidden": ["fit bias or scale", "future values in online estimator", "call diagnostic scores a new accepted candidate", "new parameter sweep"]
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-09T22:06:57.698272+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_runtime_geometry_closed_continuation_v93.json",
+  "supersedes_sha256": "9907df143ef5a5b7221450b0066bb0fa97f88fafa874f4c56dd4cb2472fab365",
+  "whole_mission_complete": false,
+  "actual_process_running": false,
+  "pending_review": "forward_course_geometry_first_review_v1.json",
+  "next_entry": "forward_course_geometry_consumer_design_v1.json",
+  "implementation": "forward_course_geometry_adapter_v1.py",
+  "completed_cpu_tests": 3,
+  "physical_budget_current": 0,
+  "new_fit": 0,
+  "next_steps": [
+    "Close first independent reviewer findings without repeating old matrices",
+    "Add genuine runtime factory and history clock/early-return stale payload tests",
+    "Establish actual protocol and applied behavior difference before any separately frozen physical experiment"
+  ],
+  "stop_reason": "execution context handoff with actual implementation and reviewer pending; no external user approval needed"
+}

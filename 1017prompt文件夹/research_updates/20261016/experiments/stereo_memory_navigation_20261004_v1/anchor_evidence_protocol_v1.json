@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-08T18:48:43.502270+00:00",
+  "one_rule": "current AND matched past nearest native pixel nonzero RGB and unoccluded by frozen CAD; no intensity threshold scan",
+  "frames": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "fixed_parent_pairs": 355,
+  "domain": "all frozen LK nonnull geometries and exact existing pixelboxv2 envelopes; only evidence qualifier changes",
+  "gate_scope": "historical development necessaryscreen, not source/actor admission; independently keep old point and pixelbox rejections",
+  "gates": {
+    "GT_label_availability_eligible_min": 0.95,
+    "GT_valid_sample_retention_of_all_original_valid_min": 0.95,
+    "conditional_GT_polytope_containment_eligible_valid_min": 0.95,
+    "bounded_fraction_eligible_min": 0.95,
+    "epochs_nonempty": 6
+  },
+  "black_is_unknown_never_free": true,
+  "nonblack_is_not_physical_surface_certificate": true,
+  "knownGTpose_diagnostic_not_estimated": true,
+  "historical_GT_seen_not_fresh": true,
+  "no_network_geometry_or_controller_changes": true,
+  "all_original_pairs_and_exclusion_reasons_retained": true,
+  "teacher": "same GT depth/currentpixel definition after independent producerseal; denominator before/after always reported",
+  "on_failure": "reject ONE qualification; no RGB thresholds, feature reselection or pixelbox resizing",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/anchor_evidence_v1.py": "6303016fc5ceb66d9246485c4e76df6c9061fe674202b4624b9eecaf818005a9",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/unknown_surface_pixel_box_development_v2_checked/predictions.json": "7d3a7d27d584cac4bf1425beb658568027619b17895f8143a51fa4932be91b7e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/timed_static_base_self_mask.py": "702e6efb53510f14e03f2fe84fa12d46f870f684afe62bf620dba2cedb8a6158",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/static_base_cached_self_mask_v2.py": "9242ac23a6509cd26a1f0894ae92dd3eec44b68975d07f856095628e9c75928a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/dynamic_self_mask.py": "86309cbcbc6cc4e07d73293cc512ce3a217c19929eb898f72a734b1c8b86ed06"
+  }
+}

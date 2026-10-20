@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-09T18:30:33.422402+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_tracking_prepared_continuation_v71.json",
+  "supersedes_sha256": "547b03fbb2412a1b6d73445a7f1026402207e094e64a4144a633741abd9e4fd5",
+  "whole_mission_complete": false,
+  "status": "readonly_tracking_chain_actual_running",
+  "running": true,
+  "session_id": 45724,
+  "durable_status": "current_tracking_chain_e1_b0_status_v1.json",
+  "log": "current_tracking_chain_e1_b0_v1.log",
+  "run_dir": "current_tracking_chain_e1_b0_run_v1",
+  "physical_budget": 1,
+  "physical_used": 1,
+  "no_retry": true,
+  "next": "supervise actual PID/log until close; then verify seals/videos/current-chain validity and actual mapping/outer-feedback contributions; no control candidate until evidence"
+}

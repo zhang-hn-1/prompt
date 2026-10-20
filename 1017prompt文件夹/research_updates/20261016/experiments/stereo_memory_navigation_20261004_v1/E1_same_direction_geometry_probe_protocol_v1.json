@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-08T09:24:02.119520+00:00",
+  "question": "Can existing forward-only supported primitives produce a cusp-free nominal path at actual postarm230 while preserving frozen target/grid/model/node budget? No rollout/no calibration.",
+  "maximum_geometry_queries": 6,
+  "frames": [
+    230,
+    275,
+    280
+  ],
+  "only_candidate": "filter existing primitive request domain to currently accepted forward; no mapped/speed/clearance/target/model changes",
+  "controls": "existing bidirectional local planner at each same saved state/map;280 blocked negative control",
+  "entry_pass": "frame230 candidate success and0direction_changes; same target and no map mutation;280 no route inbotharms",
+  "no_gate_after_results_changes": true,
+  "no_alternate_future_physical_labels": true,
+  "not_new_online_run": true,
+  "frame275_diagnostic_domain_only_not_candidate_future_state": true,
+  "not_dynamic_or_safety_admission": true,
+  "actual_controller_NOTMODIFIED": true,
+  "old_tube_candidate_REJECT_preserved": true,
+  "formal35_NOTRUN": true,
+  "whole_research_complete": false,
+  "sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/original_E1_tube_viability_navigation_run_v1/artifact_manifest_post_close.json": "59054867fdbff1b8764789f140eaae9701b16c96efd56fb4b19d020f8dae8ea0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_consumer_v2.py": "e600483866f5494233962f847cb4fa5a864bc27ff607722da18107ee227ef720",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_source_v2.py": "4e428f280bd5ec84a7ff606face9592abef9a21d4eb0c9f9ee4122543c9d9125",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/supported_four_point_planning.py": "4ed85cc3a0d49fbb03110486f83cc78f3da3aeca786ccad53490371a12f66a31",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/route_side_commitment_grid_v1.py": "0fbb7e66b151c2145e5c658485d089503aaa95292db89576f46b29b8c28494c0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/E1_tube_viability_braking_margin_factors_v1/assessment.json": "ca0741d7628fdbeecb0ed407470632b044b8e456b8d6976369ad5c39834c2939",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/original_E1_tube_viability_control_progress_assessment_v1.json": "f9b939ded71cca9bd8e5c579fc0b4bc1259f6d99c25009564ca9630033d443a5"
+  }
+}

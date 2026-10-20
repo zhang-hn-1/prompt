@@ -1,0 +1,119 @@
+{
+  "arms": {
+    "b0": {
+      "reference_samples": 291,
+      "real_arc_max_m": 2.0992792760252605,
+      "real_arc_final_m": 2.058730266145655,
+      "real_arc_gain_m": 2.0579498320811993,
+      "cross_track_RMS_m": 0.019740985009293454,
+      "cross_track_peak_m": 0.046808175373807215,
+      "endpoint_min_m": 0.00023371702638406245,
+      "endpoint_final_m": 0.040549136571194924,
+      "first_endpoint_passage_from_install_s": 10.99999975413084,
+      "terminal_stop": {
+        "first_qualified_s": 6.3999998569488525,
+        "last_count": 164,
+        "rebound_after_qualification": true,
+        "actual_worldXY_not_requested_target": true
+      },
+      "actual_reference_install_s": 5.999999865889549,
+      "available_contacts_zero": true,
+      "sealed_items": 2213,
+      "videos": {
+        "stereo_view": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        }
+      },
+      "policy_identity": [
+        "<class 'fixed_reference_pacing_harness_v1.with_frozen_reference.<locals>.FrozenReference'>",
+        "<class 'command_domain_cap.with_command_domain_cap.<locals>.CommandDomainCap'>",
+        "<class 'cusp_coast_acquisition_v1.with_cusp_coast_acquisition.<locals>.CuspCoastAcquisition'>",
+        "<class 'minimum_prefix_transition_consumer_v1.with_first_primitive_direction.<locals>.FirstPrimitiveDirection'>",
+        "<class 'continuous_cell_tube_consumer_v1.with_continuous_cell_tube_after_measured_reversal.<locals>.TubeViability'>",
+        "<class 'execution_domain_four_point_consumer_v2.with_supported_four_points.<locals>.TrackingTube'>",
+        "<class 'prior_rgb_navigation.PriorRGBPolicy'>",
+        "<class 'outgoing_lookahead.EndpointLookaheadPolicy'>",
+        "<class 'cusp_projection.CuspProjectionPolicy'>",
+        "<class 'root_direction_consumer.RootDirectionPolicy'>",
+        "<class 'guarded_reference.GuardedReferencePolicy'>",
+        "<class 'depth_local_curve.DepthLocalCurvePolicy'>",
+        "<class 'object'>"
+      ],
+      "all_fixed_reference": true
+    },
+    "paced": {
+      "reference_samples": 291,
+      "real_arc_max_m": 2.0992792760252605,
+      "real_arc_final_m": 2.058986397504382,
+      "real_arc_gain_m": 2.058205963439926,
+      "cross_track_RMS_m": 0.023131616305661996,
+      "cross_track_peak_m": 0.04998675632515569,
+      "endpoint_min_m": 0.015158614670088236,
+      "endpoint_final_m": 0.04340474771777068,
+      "first_endpoint_passage_from_install_s": 10.99999975413084,
+      "terminal_stop": {
+        "first_qualified_s": 6.3999998569488525,
+        "last_count": 165,
+        "rebound_after_qualification": true,
+        "actual_worldXY_not_requested_target": true
+      },
+      "actual_reference_install_s": 5.999999865889549,
+      "available_contacts_zero": true,
+      "sealed_items": 2213,
+      "videos": {
+        "stereo_view": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        }
+      },
+      "policy_identity": [
+        "<class 'straight_pacing_consumer_v1.with_straight_pacing.<locals>.StraightPacing'>",
+        "<class 'fixed_reference_pacing_harness_v1.with_frozen_reference.<locals>.FrozenReference'>",
+        "<class 'command_domain_cap.with_command_domain_cap.<locals>.CommandDomainCap'>",
+        "<class 'cusp_coast_acquisition_v1.with_cusp_coast_acquisition.<locals>.CuspCoastAcquisition'>",
+        "<class 'minimum_prefix_transition_consumer_v1.with_first_primitive_direction.<locals>.FirstPrimitiveDirection'>",
+        "<class 'continuous_cell_tube_consumer_v1.with_continuous_cell_tube_after_measured_reversal.<locals>.TubeViability'>",
+        "<class 'execution_domain_four_point_consumer_v2.with_supported_four_points.<locals>.TrackingTube'>",
+        "<class 'prior_rgb_navigation.PriorRGBPolicy'>",
+        "<class 'outgoing_lookahead.EndpointLookaheadPolicy'>",
+        "<class 'cusp_projection.CuspProjectionPolicy'>",
+        "<class 'root_direction_consumer.RootDirectionPolicy'>",
+        "<class 'guarded_reference.GuardedReferencePolicy'>",
+        "<class 'depth_local_curve.DepthLocalCurvePolicy'>",
+        "<class 'object'>"
+      ],
+      "all_fixed_reference": true
+    }
+  },
+  "gates": {
+    "complete_two_sequences": true,
+    "available_contacts_zero": true,
+    "prefix_match": false,
+    "request_changed": false,
+    "final_endpoint": true,
+    "terminal_stop": true,
+    "cross_RMS": true,
+    "cross_peak": true,
+    "first_endpoint_passage_20percent_faster": false
+  },
+  "local_candidate_accept": false,
+  "first_intervention_frame": null,
+  "intervention_count": 0,
+  "prefix_details": {
+    "actions_match": false,
+    "all_nonraw_physics_match": false,
+    "execution_states_match": false
+  },
+  "no_formal_visual_navigation_admission": true,
+  "formal_navigation_result": null,
+  "whole_mission_complete": false
+}

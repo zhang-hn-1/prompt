@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-09T05:08:16.113312+00:00",
+  "script_sha256": "4dd03ea82e055fa98719816cc987dc4919f0ab91ff316cfda9dcea6926f1c8fb",
+  "run": "sgbm_baseline35_e2_run_v1",
+  "old_source_frame": 5,
+  "current_frames": [
+    65,
+    70,
+    75,
+    80,
+    100,
+    130
+  ],
+  "output": "temporal_first_risk_support_v1",
+  "question": "does retained earliest wrong near-risk agree with subsequent current RGB under measured static projection?",
+  "LK": "same existing fixed21/3/30/.01/fwdback1px/grayerr20; no sweep",
+  "scope": "historical knownpose diagnostic; each calculation uses .5s past source and designated current exposure only; no future used relative query",
+  "gate": "none; descriptive residual/track availability only, unavailable remains unknown; cannot clear actor risk or claim fullvolume/true matching",
+  "cases_max": 6,
+  "no_network_or_physics": true
+}

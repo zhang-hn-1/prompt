@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-09T14:58:56.512536+00:00",
+  "supersedes_sha256": "16838c0da8c20ef725634715eee60ddbbca78d25ad2016c83fe13671d09b2a24",
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T14:56:53.082115+00:00",
+    "parent_pid": 545195,
+    "child_pid": 545196,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session_id": 51583,
+  "physical_pair_budget": 2,
+  "launched_budget_consumed": 1,
+  "candidate_not_launched": true,
+  "prelaunch_review": "forward_intent_navigation_e1_prelaunch_review_v1.json C0I0M1(docstring only)",
+  "next_step": "supervise B0 seal; launch candidate once only after B0 normalclose; assess fixed gate independentprefix",
+  "running_process": true,
+  "no_retry": true,
+  "whole_mission_complete": false
+}

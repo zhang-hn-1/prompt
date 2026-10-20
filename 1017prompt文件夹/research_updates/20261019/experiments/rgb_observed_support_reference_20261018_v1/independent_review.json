@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-17T22:12:52.476634+00:00",
+  "reviewer": "/root/observed_cost_reference_review",
+  "preflight_Important": [
+    "flat UNKNOWN fixture failed, do not dispatch source",
+    "unexecuted predict timer excludesLR/points despiteprotocol wording",
+    "unexecuted score misses sealedprotocolSHA guard",
+    "8GiB/swap0 needs externalenforcement, not presentinpythonwrapper"
+  ],
+  "critical": 0,
+  "disposition": "Originalsourcepredict/score neverdispatched; originalfilesunchanged, Important findings retained. Only fixedfailureanalysis andcontrolledconsumerrepair inremainingoriginalslots.",
+  "fixed_failure_saved_arrays_verified": {
+    "unary": [
+      0,
+      0
+    ],
+    "left": [
+      0,
+      600
+    ],
+    "right": [
+      0,
+      0
+    ],
+    "top": [
+      0,
+      0
+    ],
+    "total": [
+      0,
+      600
+    ],
+    "original_disparity": 0,
+    "not_metric_distance": true
+  },
+  "repair_saved_arrays_verified": {
+    "flat_all_UNKNOWN": true,
+    "literal_cases": [
+      1,
+      null,
+      null,
+      null,
+      null
+    ],
+    "checks_true": 8,
+    "normal_exit0": true
+  },
+  "scope": "Read-only code/SHA/savedarray audit. No kernel/decoder/source/GT rerun. Noactualimage performance or calibration claim.",
+  "identities": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/reference.py": "94a51d7e6470ac9d5bdb22298ddccbc54f620b1abfc38830b2282d296405d362",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/protocol.json": "4c79a5b5c4deb0d620ddf717769c60f3d97a7a19b4442f646c5054763a90045c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/failure_analysis_result.json": "edddadeb98f11329217c7463f19c15a1e358672603817e6916ab83c5fa9a34f1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/failure_analysis_arrays.npz": "13ad0f69fc5496c8023b76f9ad6cdc320cda681f3fda918ab43a4b6c0a84f25b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/evidence_decode.py": "e4bd4a83cf4af1546262350e7891dd49cb7d84f5ca28636a12d5ab61c9b1a823",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/repair_protocol.json": "0246fc07ce41baea75e55bd0c6d2530baa46bf9f7f9060311540892377e017ae",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/repair_result.json": "60be69c2996e0aeeab4a23298b0939aaef0018340468c98dee38bd98387945f4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/repair_arrays.npz": "549a977bbad5c391d212f6c3b19aac9bdafe72cbcbab74c641455ac6f9a0e95b"
+  }
+}

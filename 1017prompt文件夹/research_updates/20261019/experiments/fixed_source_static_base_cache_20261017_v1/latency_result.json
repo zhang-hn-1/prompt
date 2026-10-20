@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "uncached": 1.5299683529883623,
+      "cached": 1.0736433559795842,
+      "ratio": 0.7017421987079172,
+      "all16_arrays_byte_exact": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "cached": 1.0454563960665837,
+      "uncached": 1.5164992719655856,
+      "ratio": 0.6893879973391168,
+      "all16_arrays_byte_exact": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "uncached": 1.507214522920549,
+      "cached": 1.0672888580011204,
+      "ratio": 0.7081200730026281,
+      "all16_arrays_byte_exact": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "cached": 1.049785366980359,
+      "uncached": 1.4775047090370208,
+      "ratio": 0.7105123662614704,
+      "all16_arrays_byte_exact": true
+    }
+  ],
+  "gates": {
+    "median_cached_ratio_le80pct": true,
+    "each_cached_ratio_le110pct": true,
+    "all4_source_outputs_exact": true
+  },
+  "uncached_initialization_s": 0.2392967150080949,
+  "cached_initialization_s": 0.5571120259119198,
+  "full_source_invocations": 8,
+  "scope": "Four declared knownframes onceperimplementation, alternatingorder, no statisticalendtoendclaim; coldinitialization separately reported."
+}

@@ -1,0 +1,20 @@
+{
+  "scope": "recorded snapshot/commit/consumption event consistency only",
+  "alternatives": [
+    "hash-only rejected because time and sequence unbound",
+    "recorded trace validator chosen for bounded CPU checks",
+    "trusted runtime capture requires separate implementation"
+  ],
+  "online_payload": "Future typed adapter restricted to current/past RGB-derived state and fixed privileges. Opaque bytes here are not audited for future GT fields.",
+  "clock": "Event numbers are within one monotonic collector log; simulation20ms clock must independently match tube_contract. No wall-clock substitution.",
+  "program": "25 ordered consumption events do not prove consumed command contents; future integration must combine exact float32 programs and immutable commitment identity with this event check.",
+  "future_gate": "No acquisition until actual collector produces snapshot bytes/typed fields and append-before-execution commitments; synthetic passes do not suffice.",
+  "budget": {
+    "physics": 0,
+    "teacher": 0,
+    "predictions": 0,
+    "training": 0
+  },
+  "whole_mission_complete": false,
+  "event_semantics": "Future observation events are actual sampling events, may interleave with consumption after commit. Each group strictly increasing and globally unique; recorded numbers are not attested runtime evidence."
+}

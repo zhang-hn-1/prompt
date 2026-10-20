@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-09T13:47:57.295910+00:00",
+  "stage": "native_rolling_E0_baseline_actual_started",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_closed_native_prepared_continuation_v29.json",
+  "superseded_sha256": "03c210643f85e7ac0ab77f43880494757171abce6cbbe8c4fc750bf1d669f7e8",
+  "physics_running": true,
+  "whole_mission_complete": false,
+  "session_id": 27921,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T13:47:38.676337+00:00",
+    "parent_pid": 466978,
+    "child_pid": 466979,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "budget_remaining": {
+    "b0": 0,
+    "paced": 1,
+    "retry": 0
+  },
+  "next": "Supervise27921 once; complete normal sealed baseline then paced one35s. Exact currentnative only; frozen native scorer and gates. No knownpose rerun."
+}

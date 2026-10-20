@@ -1,0 +1,34 @@
+{
+  "contact_samples": 215,
+  "first_contact_s": 13.599999696016312,
+  "last_contact_s": 34.99999921768904,
+  "first_contact_pair": [
+    {
+      "sensor_index": 1,
+      "filter_index": 435,
+      "sensor": "/World/BallRobot/link1",
+      "obstacle": "/World/Scene/Sphere_67/collision",
+      "force_N": [
+        2.0570976734161377,
+        -10.070710182189941,
+        1.3153433799743652
+      ],
+      "norm_N": 10.36247955939507
+    }
+  ],
+  "obstacle_center": [
+    2.072678244702213,
+    -17.83445655567934,
+    0.2403920446689809
+  ],
+  "obstacle_radius": 0.8574296236038208,
+  "approx_first_sphere_surface_gap_m": -9.747602393028743e-07,
+  "first_pair_force_N": 10.36247955939507,
+  "all_sensor_paths": [
+    "/World/BallRobot/link1"
+  ],
+  "all_filter_paths": [
+    "/World/Scene/Sphere_67",
+    "/World/Scene/Sphere_67/collision"
+  ]
+}

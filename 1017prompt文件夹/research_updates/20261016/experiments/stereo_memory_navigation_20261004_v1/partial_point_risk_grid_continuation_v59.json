@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-08T21:10:31.503032+00:00",
+  "whole_research_complete": false,
+  "automation_status": "ACTIVE",
+  "external_user_block": false,
+  "current_process_running": false,
+  "active": [],
+  "latest_report": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/benchmark_current_paired_evidence_and_fresh_source_20261009.md",
+  "actual_session": 93735,
+  "actual_exit_code": 0,
+  "stage_decision": "REJECT_UNIQUE_PAIRED_CURRENT_EVIDENCE_RULE",
+  "source_scope": "freshwhole4s zero bootstrap; historical now after labels",
+  "memory_scope": "dormant read-only;5unit and prefixreplay;notactor/online",
+  "append_receipts": [
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/research_mission.md",
+      "old_bytes": 417437,
+      "old_sha256": "614b86ddff464b56433d020cddf12d8b6419127cb4c5498f86cdd633ee5333fe",
+      "new_sha256": "3262411cbde92bd57ac7f6fb07312db9261992f5abef8c788735626b9874849c"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+      "old_bytes": 512236,
+      "old_sha256": "ed044758a2b814b03544f3bdfa0a9bfed50202ef4a2aad1bebe476b90bdfa354",
+      "new_sha256": "4b6e3edf45bc56fd045074b611762cfc881326c51eeb523baeed15cbcf1812c4"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md",
+      "old_bytes": 226097,
+      "old_sha256": "49383301870adc81b797c0744c00e341e4acd9b131118c540f0ddb1c983c4a61",
+      "new_sha256": "04f745f536bd2fffabb3193ed53df1714eab4733ea1bc24abfbb7ed4ec5358e7"
+    }
+  ],
+  "start_append_receipt": {
+    "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+    "old_bytes": 510635,
+    "old_sha256": "fe1808ace2c6f1d61397076553cc2d6ae5fb936a9cee944f22b1248b15b1d644",
+    "current_prefix_matches_v56": true,
+    "description": "start append retained; final append separately sealed"
+  },
+  "original35_NOTRUN": true,
+  "no_Git_push": true,
+  "next": "Read report supplemental groundprior section, ground_prior_consistency_protocol_v1.json and ground_prior_consistency_historical_v1/annotation_summary.json. Extend standalone dual provisional/UNKNOWN memory to retain per-point declared-plane signed distances/flags and immutable source acquisition provenance; atomic malformed/future rejection; sign is prior not calibrated/observed free. Do not mutate/relabel rawNN, drop prior-negative points, recompute source PASS, change threshold/NN/PID or repeat actual4s. Then freeze task-level consumer experiment only if evidence supports, separate from rejected source/fullE1 gates. Current source/memory actor bridge remains NOT implemented; no formal35 trigger.",
+  "stop_reason": "Execution/context checkpoint after actual GPU sequence closure, failed fresh evaluation, bounded pose/matching diagnosis, tested dualmemory and subsequent tested prior-annotation implementation across26historical source packets. No external block or user approval wait; next prior-annotation-to-memory consumption interface is concrete and unimplemented, not a repeat of completed experiments.",
+  "prior_consistency_implemented": true,
+  "prior_consistency_actor_or_memory_consumed": false,
+  "report_append_receipt": {
+    "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/benchmark_current_paired_evidence_and_fresh_source_20261009.md",
+    "old_bytes": 7485,
+    "old_sha256": "5d2a92d67436f3ad7c9fde466069147970dac71c943bcf714af79f89f279b652",
+    "new_sha256": "fd701e81a9d2474e815b370c724824ab8460a570e1868429c63efc73af982c25"
+  }
+}

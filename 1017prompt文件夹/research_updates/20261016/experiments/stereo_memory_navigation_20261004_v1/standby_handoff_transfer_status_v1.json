@@ -1,0 +1,36 @@
+{
+  "status": "finished",
+  "utc": "2026-10-09T04:13:59.186390+00:00",
+  "maximum_actual_sequences": 2,
+  "knownpose_task_prior": true,
+  "strict_visual_admission": false,
+  "same_single_control_candidate": true,
+  "sequences": [
+    {
+      "condition": "e2",
+      "child_execution": {
+        "pid": 127891,
+        "timeout": false,
+        "forced_kill": false,
+        "returncode": 0
+      },
+      "normal_close_confirmed": true,
+      "exit_code": 0,
+      "end_utc": "2026-10-09T04:17:05.650409+00:00"
+    },
+    {
+      "condition": "e1",
+      "child_execution": {
+        "pid": 131926,
+        "timeout": false,
+        "forced_kill": false,
+        "returncode": 0
+      },
+      "normal_close_confirmed": true,
+      "exit_code": 0,
+      "end_utc": "2026-10-09T04:21:19.267267+00:00"
+    }
+  ],
+  "exit_code": 0,
+  "end_utc": "2026-10-09T04:21:19.267394+00:00"
+}

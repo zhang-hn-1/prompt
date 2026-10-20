@@ -1,0 +1,61 @@
+{
+  "decision": "REJECT_OR_INCOMPLETE_UNIQUE_ROUTE_SIDE_CANDIDATE",
+  "physical_local_pass": false,
+  "source_pass": true,
+  "interface_pass": true,
+  "conditional_goal": false,
+  "local_scope": "MEASURED_54_6",
+  "local_gate": {
+    "goal_remaining_m": 4.9182693222431855,
+    "axis_progress_m": 2.211453479528427,
+    "goal_pass": false,
+    "axis_pass": false,
+    "no_contact": true
+  },
+  "termination": {
+    "termination": "REJECT_LOCAL54_6_PROGRESS_STOP",
+    "actions": 546,
+    "time_s": 54.5999987795949,
+    "budget_s": 120,
+    "true_goal_xy_threshold_m": 0.2,
+    "not_original35": true,
+    "not_causal_navigation_AB": true
+  },
+  "true_goal_remaining_final_m": 4.9182693222431855,
+  "true_axis_progress_final_m": 2.211453479528427,
+  "physical_path_m": 5.2586678804892575,
+  "contact_samples": 3277,
+  "physical_contacts": 0,
+  "commitment_first": {
+    "side": 1,
+    "longitudinal_span_m": [
+      2.0663962723064913,
+      3.9672966769305513
+    ],
+    "axis_start": [
+      -3.266752243041992,
+      -0.005917796865105629
+    ],
+    "axis": [
+      0.9999995939407029,
+      0.0009011761367258445
+    ],
+    "decision_time_s": 5.999999865889549,
+    "observed_risk_birth_min_s": 0.0,
+    "observed_risk_birth_max_s": 5.999999865889549,
+    "inflated_component_cells": 426,
+    "planning_prior_not_observation": true,
+    "not_completed_obstacle_volume": true
+  },
+  "commitment_released_time_s": null,
+  "static_C_baseline_at54_6": {
+    "goal_remaining_m": 4.6829005,
+    "axis_progress_m": 1.927377623
+  },
+  "not_single_cause_crossrun_AB": true,
+  "RGB_noise_source_equivalence_old_REJECT": true,
+  "not_aggregate_success_rate": true,
+  "known_GT_pose_not_estimated_RGB_pose": true,
+  "formal_original35_NOTRUN": true,
+  "whole_research_complete": false
+}

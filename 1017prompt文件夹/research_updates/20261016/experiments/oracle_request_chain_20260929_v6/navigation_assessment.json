@@ -1,0 +1,102 @@
+[
+  {
+    "case": "0002",
+    "baseline": {
+      "success": 0.0,
+      "collision": 1.0,
+      "timeout": 0.0,
+      "runtime_error": 0.0,
+      "elapsed_s": 15.7,
+      "final_distance_m": 8.237994830759055,
+      "path_length_m": 2.6203079598057872,
+      "minimum_clearance_m": -0.039444872453601065,
+      "termination_reason": "collision"
+    },
+    "candidate": {
+      "success": 0.0,
+      "collision": 1.0,
+      "timeout": 0.0,
+      "runtime_error": 0.0,
+      "elapsed_s": 16.2,
+      "final_distance_m": 8.175483407142362,
+      "path_length_m": 2.6695752352362767,
+      "minimum_clearance_m": -0.039444872453601065,
+      "termination_reason": "collision"
+    },
+    "same_reference": true,
+    "prefix": {
+      "position_world_xy": true,
+      "yaw_world_rad": true,
+      "linear_velocity_world_m_s": true,
+      "angular_velocity_world_rad_s": true,
+      "joint_position_rad": true,
+      "joint_velocity_rad_s": true,
+      "applied_action": true,
+      "roll_world_rad": true
+    },
+    "prefix_action_equal": true,
+    "first_active_block": 63,
+    "first_active_s": 6.299999859184027,
+    "active_blocks": 99,
+    "first_changed_request_block": 63,
+    "first_changed_applied_s": 6.3999998569488525,
+    "pid_ticks": 810,
+    "pid_max_error": 0.0,
+    "physical_contact_samples": 0,
+    "contact_available_all": true,
+    "baseline_cross_rms": 0.13451246651592164,
+    "candidate_cross_rms": 0.19345906913121563,
+    "baseline_cross_peak": 0.23975889825171304,
+    "candidate_cross_peak": 0.34611858881480906
+  },
+  {
+    "case": "0004",
+    "baseline": {
+      "success": 0.0,
+      "collision": 1.0,
+      "timeout": 0.0,
+      "runtime_error": 0.0,
+      "elapsed_s": 13.6,
+      "final_distance_m": 9.38242587540197,
+      "path_length_m": 2.1974371077245416,
+      "minimum_clearance_m": -0.039444872453601065,
+      "termination_reason": "collision"
+    },
+    "candidate": {
+      "success": 0.0,
+      "collision": 0.0,
+      "timeout": 1.0,
+      "runtime_error": 0.0,
+      "elapsed_s": 35.0,
+      "final_distance_m": 9.365623917729256,
+      "path_length_m": 2.2500956732590733,
+      "minimum_clearance_m": 0.012310562561766047,
+      "termination_reason": "timeout"
+    },
+    "same_reference": true,
+    "prefix": {
+      "position_world_xy": true,
+      "yaw_world_rad": true,
+      "linear_velocity_world_m_s": true,
+      "angular_velocity_world_rad_s": true,
+      "joint_position_rad": true,
+      "joint_velocity_rad_s": true,
+      "applied_action": true,
+      "roll_world_rad": true
+    },
+    "prefix_action_equal": true,
+    "first_active_block": 73,
+    "first_active_s": 7.299999836832285,
+    "active_blocks": 63,
+    "first_changed_request_block": 73,
+    "first_changed_applied_s": 7.399999834597111,
+    "pid_ticks": 1750,
+    "pid_max_error": 0.0,
+    "physical_contact_samples": 215,
+    "contact_available_all": true,
+    "baseline_cross_rms": 0.1448258906810619,
+    "candidate_cross_rms": 0.2615718365920905,
+    "baseline_cross_peak": 0.29582923446329784,
+    "candidate_cross_peak": 0.3375959499619353
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-17T22:10:59.901640+00:00",
+  "decision": "CONTROLLED_PHOTOMETRIC_EVIDENCE_VALIDITY_REPAIR_SMALL_CHECK_PASSED_NOT_REALRGB",
+  "checks": {
+    "fixed_prior_boundary_false_confidence_unknown": true,
+    "all_flat_fixture_decoded_UNKNOWN": true,
+    "saved_arrays_unmodified": true,
+    "keeps_agreeing_unique_photometric_choice": true,
+    "rejects_regularizer_unary_disagreement": true,
+    "rejects_photometric_minimum_tie": true,
+    "singleton_support_UNKNOWN": true,
+    "allmissing_UNKNOWN": true
+  },
+  "decoder_calls": 2,
+  "new_RGB_cost_calls": 0,
+  "new_aggregate_calls": 0,
+  "real_RGB_calls": 0,
+  "GT_reads": 0,
+  "fit": 0,
+  "physics": 0,
+  "navigation": 0,
+  "array_sha256": "549a977bbad5c391d212f6c3b19aac9bdafe72cbcbab74c641455ac6f9a0e95b",
+  "original_failed_gate_unchanged": true,
+  "scope": "Only newconsumer sanity check. Same originalfailingflatfield savedarrays and five literal interfacecases, no newthreshold. Exactunique localmin and agreement are necessary evidenceconditions, not calibratedconfidence/geometry correctness. No realfourRGB qualification reopened."
+}

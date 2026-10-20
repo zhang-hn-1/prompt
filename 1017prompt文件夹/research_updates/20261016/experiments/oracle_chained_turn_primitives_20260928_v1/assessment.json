@@ -1,0 +1,114 @@
+{
+  "LR": {
+    "prefix_all_arrays_identical": true,
+    "prefix_per_array": {
+      "raw_command_target": true,
+      "clipped_target": true,
+      "smoothed_target": true,
+      "applied_action": true,
+      "joint_position_rad": true,
+      "joint_velocity_rad_s": true,
+      "position_world_xy": true,
+      "root_position_world_m": true,
+      "root_quaternion_world_wxyz": true,
+      "linear_velocity_world_m_s": true,
+      "angular_velocity_world_rad_s": true,
+      "yaw_world_rad": true,
+      "roll_world_rad": true,
+      "simulation_time_s": true,
+      "physics_step_index": true,
+      "raw_simulation_time_s": true,
+      "raw_physics_step_index": true,
+      "action_block_index": true,
+      "physics_step_in_block": true
+    },
+    "start_differences": {
+      "aux_angle_deg": -0.5903366650587871,
+      "joint_velocity_delta_rad_s": [
+        0.00584864616394043,
+        0.036907488480210304,
+        -1.7423087358474731
+      ],
+      "body_level_linear_velocity_delta_m_s": [
+        0.0011717541164927292,
+        -0.03179201049507815,
+        -0.0011274856806267053
+      ],
+      "body_level_angular_velocity_delta_rad_s": [
+        0.09536566160573459,
+        0.00046208610393737304,
+        -0.008002638816833496
+      ],
+      "roll_pitch_delta_deg": [
+        -0.9699196294901595,
+        0.2850892333915939
+      ],
+      "smoother_identical": true,
+      "previous_action_identical": true,
+      "full_recorded_state_identical": false
+    },
+    "max_xy_error_m": 0.06960134477829104,
+    "final_xy_error_m": 0.06960134477829104,
+    "max_heading_error_deg": 2.670313449306734,
+    "max_aux_error_deg": 0.6139408946037292,
+    "max_main_velocity_error_rad_s": 0.03082895278930664,
+    "accepted_naive_composition": false,
+    "hypothesis_scope": "two tested histories only; no arbitrary-state validity"
+  },
+  "RL": {
+    "prefix_all_arrays_identical": true,
+    "prefix_per_array": {
+      "raw_command_target": true,
+      "clipped_target": true,
+      "smoothed_target": true,
+      "applied_action": true,
+      "joint_position_rad": true,
+      "joint_velocity_rad_s": true,
+      "position_world_xy": true,
+      "root_position_world_m": true,
+      "root_quaternion_world_wxyz": true,
+      "linear_velocity_world_m_s": true,
+      "angular_velocity_world_rad_s": true,
+      "yaw_world_rad": true,
+      "roll_world_rad": true,
+      "simulation_time_s": true,
+      "physics_step_index": true,
+      "raw_simulation_time_s": true,
+      "raw_physics_step_index": true,
+      "action_block_index": true,
+      "physics_step_in_block": true
+    },
+    "start_differences": {
+      "aux_angle_deg": -0.126145056233673,
+      "joint_velocity_delta_rad_s": [
+        -0.010259032249450684,
+        -0.035270653665065765,
+        -1.5588178038597107
+      ],
+      "body_level_linear_velocity_delta_m_s": [
+        0.003474556587110489,
+        0.026286300904637683,
+        0.00045390622108243406
+      ],
+      "body_level_angular_velocity_delta_rad_s": [
+        -0.07657725897741208,
+        0.013144223339046836,
+        0.03892424702644348
+      ],
+      "roll_pitch_delta_deg": [
+        -1.2364470804037029,
+        -0.24477429103049142
+      ],
+      "smoother_identical": true,
+      "previous_action_identical": true,
+      "full_recorded_state_identical": false
+    },
+    "max_xy_error_m": 0.0723504283905404,
+    "final_xy_error_m": 0.0723504283905404,
+    "max_heading_error_deg": 3.3495704034366693,
+    "max_aux_error_deg": 1.9679276943206787,
+    "max_main_velocity_error_rad_s": 0.03883838653564453,
+    "accepted_naive_composition": false,
+    "hypothesis_scope": "two tested histories only; no arbitrary-state validity"
+  }
+}

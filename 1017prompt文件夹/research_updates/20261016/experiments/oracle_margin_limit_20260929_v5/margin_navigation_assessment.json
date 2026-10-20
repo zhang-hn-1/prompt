@@ -1,0 +1,172 @@
+[
+  {
+    "case": "0002",
+    "baseline": {
+      "success": 0.0,
+      "collision": 1.0,
+      "timeout": 0.0,
+      "runtime_error": 0.0,
+      "elapsed_s": 15.7,
+      "final_distance_m": 8.237994830759055,
+      "path_length_m": 2.6203079598057872,
+      "minimum_clearance_m": -0.039444872453601065,
+      "termination_reason": "collision"
+    },
+    "candidate": {
+      "success": 0.0,
+      "collision": 1.0,
+      "timeout": 0.0,
+      "runtime_error": 0.0,
+      "elapsed_s": 15.7,
+      "final_distance_m": 8.313818809052243,
+      "path_length_m": 2.6501268902650024,
+      "minimum_clearance_m": 0.0,
+      "termination_reason": "collision"
+    },
+    "same_initial": {
+      "position_world_xy": true,
+      "yaw_world_rad": true,
+      "linear_velocity_world_m_s": true,
+      "angular_velocity_world_rad_s": true,
+      "joint_position_rad": true,
+      "joint_velocity_rad_s": true,
+      "applied_action": true,
+      "roll_world_rad": true
+    },
+    "reference_matches_precomputed_margin20": true,
+    "reference_changed": true,
+    "audit": [
+      {
+        "group": "old",
+        "geometric_error_rms_m": 0.13451246651592164,
+        "error_peak_m": 0.23975889825171304,
+        "error_final_m": 0.23975889825171304,
+        "reference_length_m": 12.575481035182563,
+        "reference_global_cell_min_clearance_m": 0.14485789734226562,
+        "final_goal_distance_m": 8.237994830759055,
+        "actual_path_length_m": 2.6203079598057872,
+        "physical_contacts": 0,
+        "final_formal_clearance_m": -0.039444872453601065
+      },
+      {
+        "group": "new",
+        "geometric_error_rms_m": 0.14490240548023406,
+        "error_peak_m": 0.2746910090848512,
+        "error_final_m": 0.2746910090848512,
+        "reference_length_m": 14.675793262771718,
+        "reference_global_cell_min_clearance_m": 0.23095981689228406,
+        "final_goal_distance_m": 8.313818809052243,
+        "actual_path_length_m": 2.6501268902650024,
+        "physical_contacts": 0,
+        "final_formal_clearance_m": 0.0
+      }
+    ],
+    "pid_ticks": 785,
+    "pid_max_error": 0.0,
+    "effective_config": {
+      "scene_root": "/home/an/project/NavDP/assets/scenes",
+      "contract_path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/data_contract.yaml",
+      "gui": false,
+      "record_video": true,
+      "ball_radius_m": 0.4,
+      "safety_margin_m": 0.2,
+      "occupancy_path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+      "drive_profile_path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1/drive_dynamics_v1.json",
+      "diagnostic_open_plane": false,
+      "diagnostic_physics_trace": false,
+      "diagnostic_auxiliary_kp": null,
+      "diagnostic_auxiliary_kd": null,
+      "diagnostic_auxiliary_target_rate_rad_s": null,
+      "diagnostic_auxiliary_velocity_limit_rad_s": null,
+      "auxiliary_target_rate_rad_s": null,
+      "auxiliary_velocity_limit_rad_s": 0.3
+    },
+    "contact_available_all": true,
+    "contact_available_sample_count": 158
+  },
+  {
+    "case": "0004",
+    "baseline": {
+      "success": 0.0,
+      "collision": 1.0,
+      "timeout": 0.0,
+      "runtime_error": 0.0,
+      "elapsed_s": 13.6,
+      "final_distance_m": 9.38242587540197,
+      "path_length_m": 2.1974371077245416,
+      "minimum_clearance_m": -0.039444872453601065,
+      "termination_reason": "collision"
+    },
+    "candidate": {
+      "success": 0.0,
+      "collision": 0.0,
+      "timeout": 1.0,
+      "runtime_error": 0.0,
+      "elapsed_s": 35.0,
+      "final_distance_m": 8.546120403088558,
+      "path_length_m": 6.349011257932179,
+      "minimum_clearance_m": 0.04721359549995796,
+      "termination_reason": "timeout"
+    },
+    "same_initial": {
+      "position_world_xy": true,
+      "yaw_world_rad": true,
+      "linear_velocity_world_m_s": true,
+      "angular_velocity_world_rad_s": true,
+      "joint_position_rad": true,
+      "joint_velocity_rad_s": true,
+      "applied_action": true,
+      "roll_world_rad": true
+    },
+    "reference_matches_precomputed_margin20": true,
+    "reference_changed": true,
+    "audit": [
+      {
+        "group": "old",
+        "geometric_error_rms_m": 0.1448258906810619,
+        "error_peak_m": 0.29582923446329784,
+        "error_final_m": 0.29582923446329784,
+        "reference_length_m": 14.076227627292287,
+        "reference_global_cell_min_clearance_m": 0.14136964213743763,
+        "final_goal_distance_m": 9.38242587540197,
+        "actual_path_length_m": 2.1974371077245416,
+        "physical_contacts": 0,
+        "final_formal_clearance_m": -0.039444872453601065
+      },
+      {
+        "group": "new",
+        "geometric_error_rms_m": 0.21164680025149968,
+        "error_peak_m": 0.4138264466174123,
+        "error_final_m": 0.08033345379624852,
+        "reference_length_m": 14.679412598243994,
+        "reference_global_cell_min_clearance_m": 0.23217730097150613,
+        "final_goal_distance_m": 8.546120403088558,
+        "actual_path_length_m": 6.349011257932179,
+        "physical_contacts": 0,
+        "final_formal_clearance_m": 0.3810249675906655
+      }
+    ],
+    "pid_ticks": 1750,
+    "pid_max_error": 0.0,
+    "effective_config": {
+      "scene_root": "/home/an/project/NavDP/assets/scenes",
+      "contract_path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/data_contract.yaml",
+      "gui": false,
+      "record_video": true,
+      "ball_radius_m": 0.4,
+      "safety_margin_m": 0.2,
+      "occupancy_path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+      "drive_profile_path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1/drive_dynamics_v1.json",
+      "diagnostic_open_plane": false,
+      "diagnostic_physics_trace": false,
+      "diagnostic_auxiliary_kp": null,
+      "diagnostic_auxiliary_kd": null,
+      "diagnostic_auxiliary_target_rate_rad_s": null,
+      "diagnostic_auxiliary_velocity_limit_rad_s": null,
+      "auxiliary_target_rate_rad_s": null,
+      "auxiliary_velocity_limit_rad_s": 0.3
+    },
+    "contact_available_all": true,
+    "contact_available_sample_count": 351
+  }
+]

@@ -1,0 +1,19 @@
+from pathlib import Path
+import json,hashlib,datetime
+H=Path(__file__).resolve().parent;sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();now=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat()
+native=json.loads((H/'original_E1_cusp_coast_acquisition_native_identity_preflight_v1.json').read_text());assert native['decision']=='PASS_NATIVE_IMPORT_CLASS_IDENTITY_AND_RESET_ONLY';assert native['driver_sha256']==sha(H/'run_original_E1_cusp_coast_acquisition_navigation_v1.py')
+review=H/'original_E1_cusp_coast_acquisition_first_review_v1.md';assert 'Critical: **0**' in review.read_text() and 'Important: **0**' in review.read_text()
+closure=dict(utc=now(),unresolved_critical=0,unresolved_important=0,first_review_sha256=sha(review),driver_sha256=sha(H/'run_original_E1_cusp_coast_acquisition_navigation_v1.py'),reviewed_driver_sha256='0ad48fd69e828880739654e288612a93f1a0ec63ebf267b9a525ff3efe1d61c6',reviewed_stage_sha256='faa2e2479da6d8b55b933bca8a1cf64c23e8f54ac69b586b4635bbb4b8a8ed1c',CPU_sha256=sha(H/'E1_cusp_coast_acquisition_shadow_CPU_v1/assessment.json'))
+assert closure['driver_sha256']==closure['reviewed_driver_sha256'] and sha(H/'run_original_E1_cusp_coast_acquisition_navigation_stage_v1.py')==closure['reviewed_stage_sha256']
+cp=json.loads((H/'E1_cusp_coast_acquisition_shadow_CPU_v1/assessment.json').read_text());assert cp['decision']=='PASS_ONE_CUSP_COAST_ACQUISITION_CPU_NECESSARY_INTERFACE_ONLY'
+(H/'original_E1_cusp_coast_acquisition_navigation_author_review_closed_v1.json').write_text(json.dumps(closure,indent=2)+'\n')
+p=json.loads((H/'original_E1_tube_viability_navigation_protocol_v1.json').read_text())
+for group in ['source_sha256','input_sha256']:
+ for f,s in p[group].items():assert sha(f)==s,f
+p.update(schema='original_E1_cusp_coast_acquisition_navigation_v1',utc=now(),only_control_change='empirical_coast_aware_incoming_cusp_acquisition',comparison_baseline='closed_rejected_T_tube_retention_fixed_in_both_arms',previous_T_control_REJECT_preserved=True,heuristic_not_certified_stopping_bound=True,full_initial_state_coverage_not_proven=True,not_new_control_candidate=False,resource_resumption=False,actual_startup_attempt_number=1)
+for n in ['cusp_coast_acquisition_v1.py','test_cusp_coast_acquisition_v1.py','precommand_stop_qualification_v2.py','test_precommand_stop_qualification_v2.py','qualify_E1_cusp_coast_acquisition_shadow_v1.py','run_original_E1_cusp_coast_acquisition_navigation_v1.py','run_original_E1_cusp_coast_acquisition_navigation_stage_v1.py','freeze_original_E1_cusp_coast_acquisition_navigation_v1.py','freeze_E1_cusp_coast_acquisition_v1.py','audit_E1_measured_zero_request_braking_domain_v2.py']:
+ f=H/n;p['source_sha256'][str(f)]=sha(f)
+for n in ['E1_cusp_coast_acquisition_design_v1.json','E1_measured_zero_request_braking_domain_v2/events.json','E1_measured_zero_request_braking_domain_v2/assessment.json','E1_cusp_coast_acquisition_shadow_CPU_v1/assessment.json','original_E1_cusp_coast_acquisition_first_review_v1.md','original_E1_cusp_coast_acquisition_navigation_author_review_closed_v1.json','original_E1_cusp_coast_acquisition_native_identity_preflight_v1.json','original_E1_tube_viability_control_progress_assessment_v1.json','original_E1_tube_viability_sparse_memory_navigation_assessment_v1/assessment.json','original_E1_tube_viability_sparse_membership_v1/assessment.json','cusp_coast_acquisition_GREEN_v1.log','precommand_stop_qualification_GREEN_v2.log']:
+ f=H/n;p['input_sha256'][str(f)]=sha(f)
+f=H.parent.parent/'docs/superpowers/plans/2026-10-08-E1-cusp-coast-acquisition.md';p['input_sha256'][str(f)]=sha(f)
+out=H/'original_E1_cusp_coast_acquisition_navigation_protocol_v1.json';assert not out.exists();out.write_text(json.dumps(p,indent=2)+'\n');print('Frozen',len(p['source_sha256']),'sources',len(p['input_sha256']),'inputs',sha(out))

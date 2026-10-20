@@ -1,0 +1,101 @@
+{
+  "utc": "2026-10-17T22:12:52.476634+00:00",
+  "status": "RGBcost_interface_implemented_original_validityfailed_controlled_decoder_sanity_passed_REALRGB_NOT_STARTED",
+  "runs": [
+    {
+      "stage": "red",
+      "parent_pid": 461770,
+      "status": "runtime_failed",
+      "execution": {
+        "status": "runtime_failed",
+        "start_utc": "2026-10-17T22:04:38.989000+00:00",
+        "parent_pid": 461770,
+        "child_pid": 461773,
+        "process_group_id": 461773,
+        "child_returncode": 1,
+        "timeout": false,
+        "parent_signal": null,
+        "forced_kill": false,
+        "no_retry": true,
+        "remaining_live_group_pids": [],
+        "remaining_zombie_group_pids": [],
+        "end_utc": "2026-10-17T22:04:39.191691+00:00"
+      },
+      "expected_red": true
+    },
+    {
+      "stage": "fixtures",
+      "parent_pid": 464827,
+      "status": "runtime_failed",
+      "execution": {
+        "status": "runtime_failed",
+        "start_utc": "2026-10-17T22:07:37.841411+00:00",
+        "parent_pid": 464827,
+        "child_pid": 464829,
+        "process_group_id": 464829,
+        "child_returncode": 1,
+        "timeout": false,
+        "parent_signal": null,
+        "forced_kill": false,
+        "no_retry": true,
+        "remaining_live_group_pids": [],
+        "remaining_zombie_group_pids": [],
+        "end_utc": "2026-10-17T22:07:38.052445+00:00"
+      },
+      "expected_red": false
+    },
+    {
+      "stage": "failure_analysis",
+      "parent_pid": 466928,
+      "status": "finished",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-17T22:09:40.234461+00:00",
+        "parent_pid": 466928,
+        "child_pid": 466929,
+        "process_group_id": 466929,
+        "child_returncode": 0,
+        "timeout": false,
+        "parent_signal": null,
+        "forced_kill": false,
+        "no_retry": true,
+        "remaining_live_group_pids": [],
+        "remaining_zombie_group_pids": [],
+        "end_utc": "2026-10-17T22:09:40.386136+00:00"
+      }
+    },
+    {
+      "stage": "controlled_validity_repair_check",
+      "parent_pid": 468341,
+      "status": "finished",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-17T22:10:59.811361+00:00",
+        "parent_pid": 468341,
+        "child_pid": 468342,
+        "process_group_id": 468342,
+        "child_returncode": 0,
+        "timeout": false,
+        "parent_signal": null,
+        "forced_kill": false,
+        "no_retry": true,
+        "remaining_live_group_pids": [],
+        "remaining_zombie_group_pids": [],
+        "end_utc": "2026-10-17T22:10:59.963716+00:00"
+      }
+    }
+  ],
+  "dispatch_used": 4,
+  "dispatch_cap": 4,
+  "recovery_used": 0,
+  "original_fixture_failed": true,
+  "real_prediction_seal_exists": false,
+  "real_RGB_or_GT_calls": 0,
+  "new_sourceperformance_results": null,
+  "controlled_repair_small_checks": 8,
+  "old_v118_kernel_recurrence_not_falsified": true,
+  "source_default_changed": false,
+  "old_budgets_reopened": false,
+  "whole_complete": false,
+  "service_readback": "MainPID=0\nExecMainStatus=0\nId=ball-rgb-support-red-20261018.service\nActiveState=inactive\n\nMainPID=0\nExecMainStatus=1\nId=ball-rgb-support-fixtures-20261018.service\nActiveState=failed\n\nMainPID=0\nExecMainStatus=0\nId=ball-rgb-support-failure-analysis-20261018.service\nActiveState=inactive\n\nMainPID=0\nExecMainStatus=0\nId=ball-rgb-support-validity-repair-20261018.service\nActiveState=inactive\n"
+}

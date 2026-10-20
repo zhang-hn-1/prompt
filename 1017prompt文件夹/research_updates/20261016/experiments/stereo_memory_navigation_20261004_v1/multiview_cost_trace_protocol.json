@@ -1,0 +1,441 @@
+{
+  "sealed_utc": "2026-10-04T20:36:19.440098+00:00",
+  "role": "ONE read-only sparse cost/support diagnosis of frozen V1, not a new candidate/navigation gate",
+  "sampling": "4 raster-uniform full-source queries +4 raster-uniform saved-confident queries perframe, excluding duplicates; uses saved outputs but NEVER GT error/correctness/source visibility/cost; deliberately stratified, NOT population-weighted",
+  "budget": {
+    "anchors": 32,
+    "max_per_frame": 8,
+    "depth_bins": 128,
+    "source_depth_anchor_scores": 16384,
+    "new_dense_predictions": 0,
+    "new_configs": 0,
+    "new_simulations": 0,
+    "new_control_runs": 0
+  },
+  "rows": [
+    {
+      "frame": 0,
+      "time_s": 0.0,
+      "sources": [
+        {
+          "frame": 0,
+          "time_s": 0.0,
+          "eye": "right",
+          "bit": 1
+        }
+      ],
+      "full_original_query_n": 29792,
+      "anchors": [
+        {
+          "query_index": 0,
+          "pixel_yx": [
+            4,
+            394
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 9930,
+          "pixel_yx": [
+            146,
+            260
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 19861,
+          "pixel_yx": [
+            250,
+            506
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 29791,
+          "pixel_yx": [
+            392,
+            426
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 17224,
+          "pixel_yx": [
+            222,
+            486
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 20809,
+          "pixel_yx": [
+            260,
+            548
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 24862,
+          "pixel_yx": [
+            306,
+            554
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 29787,
+          "pixel_yx": [
+            392,
+            418
+          ],
+          "stratum": "retained_output"
+        }
+      ]
+    },
+    {
+      "frame": 10,
+      "time_s": 0.9999999776482582,
+      "sources": [
+        {
+          "frame": 10,
+          "time_s": 0.9999999776482582,
+          "eye": "right",
+          "bit": 1
+        },
+        {
+          "frame": 0,
+          "time_s": 0.0,
+          "eye": "left",
+          "bit": 2
+        },
+        {
+          "frame": 0,
+          "time_s": 0.0,
+          "eye": "right",
+          "bit": 4
+        }
+      ],
+      "full_original_query_n": 17273,
+      "anchors": [
+        {
+          "query_index": 0,
+          "pixel_yx": [
+            0,
+            216
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 5757,
+          "pixel_yx": [
+            122,
+            390
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 11515,
+          "pixel_yx": [
+            226,
+            394
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 17272,
+          "pixel_yx": [
+            364,
+            262
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 1478,
+          "pixel_yx": [
+            36,
+            382
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 7644,
+          "pixel_yx": [
+            156,
+            422
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 11536,
+          "pixel_yx": [
+            226,
+            436
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 17271,
+          "pixel_yx": [
+            362,
+            288
+          ],
+          "stratum": "retained_output"
+        }
+      ]
+    },
+    {
+      "frame": 20,
+      "time_s": 1.9999999552965164,
+      "sources": [
+        {
+          "frame": 20,
+          "time_s": 1.9999999552965164,
+          "eye": "right",
+          "bit": 1
+        },
+        {
+          "frame": 0,
+          "time_s": 0.0,
+          "eye": "left",
+          "bit": 2
+        },
+        {
+          "frame": 0,
+          "time_s": 0.0,
+          "eye": "right",
+          "bit": 4
+        },
+        {
+          "frame": 10,
+          "time_s": 0.9999999776482582,
+          "eye": "left",
+          "bit": 8
+        },
+        {
+          "frame": 10,
+          "time_s": 0.9999999776482582,
+          "eye": "right",
+          "bit": 16
+        }
+      ],
+      "full_original_query_n": 12742,
+      "anchors": [
+        {
+          "query_index": 0,
+          "pixel_yx": [
+            0,
+            216
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 4247,
+          "pixel_yx": [
+            68,
+            326
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 8494,
+          "pixel_yx": [
+            144,
+            290
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 12741,
+          "pixel_yx": [
+            254,
+            262
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 203,
+          "pixel_yx": [
+            2,
+            370
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 2977,
+          "pixel_yx": [
+            46,
+            446
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 6617,
+          "pixel_yx": [
+            108,
+            438
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 12632,
+          "pixel_yx": [
+            246,
+            308
+          ],
+          "stratum": "retained_output"
+        }
+      ]
+    },
+    {
+      "frame": 23,
+      "time_s": 2.299999948590994,
+      "sources": [
+        {
+          "frame": 23,
+          "time_s": 2.299999948590994,
+          "eye": "right",
+          "bit": 1
+        },
+        {
+          "frame": 0,
+          "time_s": 0.0,
+          "eye": "left",
+          "bit": 2
+        },
+        {
+          "frame": 0,
+          "time_s": 0.0,
+          "eye": "right",
+          "bit": 4
+        },
+        {
+          "frame": 10,
+          "time_s": 0.9999999776482582,
+          "eye": "left",
+          "bit": 8
+        },
+        {
+          "frame": 10,
+          "time_s": 0.9999999776482582,
+          "eye": "right",
+          "bit": 16
+        },
+        {
+          "frame": 20,
+          "time_s": 1.9999999552965164,
+          "eye": "left",
+          "bit": 32
+        },
+        {
+          "frame": 20,
+          "time_s": 1.9999999552965164,
+          "eye": "right",
+          "bit": 64
+        }
+      ],
+      "full_original_query_n": 13576,
+      "anchors": [
+        {
+          "query_index": 0,
+          "pixel_yx": [
+            0,
+            216
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 4525,
+          "pixel_yx": [
+            66,
+            418
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 9050,
+          "pixel_yx": [
+            142,
+            288
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 13575,
+          "pixel_yx": [
+            250,
+            280
+          ],
+          "stratum": "spatial"
+        },
+        {
+          "query_index": 239,
+          "pixel_yx": [
+            2,
+            418
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 3381,
+          "pixel_yx": [
+            48,
+            482
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 6438,
+          "pixel_yx": [
+            96,
+            470
+          ],
+          "stratum": "retained_output"
+        },
+        {
+          "query_index": 13473,
+          "pixel_yx": [
+            244,
+            298
+          ],
+          "stratum": "retained_output"
+        }
+      ]
+    }
+  ],
+  "structure": "same frozen optical projection/remap5x5/float32 box moments/ZNCC/validity/median/128inverse-depthbins/.5..3/confidence; no sparse tuning",
+  "inputs": "sanitized actualRGB, known past/current poses,K,masks,currentmetadata only; metadata futureexcludedbeforepayload; knownpose privilegeddiagnostic, not estimatedpose",
+  "fidelity": {
+    "raw_winner_depth_exact": true,
+    "winner_view_bits_exact": true,
+    "confidence_exact": true,
+    "best_cost_atol": 1e-05,
+    "interval_ray_width_atol": 1e-06
+  },
+  "labels": "only AFTER all4 sparse curve NPZs and manifest saved and fidelity passes; sourceworld/renderer labels NEVER fed trace",
+  "hypothesis": "depth-dependent source-set/validity switching may create falsely narrow or low-cost minima, but cannot assume sole cause; single-source000 and same-bitmap wrong matches are counterevidence",
+  "measurements": "winner adjacent source-bit changes; invalid adjacent aggregate; competitive and full-finite interval raywidth; nearest true-depth-bin cost/validity/rankgap; fixed selected patches/source correspondence; no source selection based on truth",
+  "ruling": "source-switch adjacency is association, NOT actual repaired counterfactual; gridlabels can miss exact curved correspondence. If no causal repair identified, reject source-switch-as-sole-cause and stop this audit branch; next decide bounded observation intervention, not another diagnosis loop",
+  "source_and_input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb.py": "7ea629faf1725caf9d211f8c331502b206bb17fa159582355fd010d9cb451b41",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_protocol.json": "9c575d373e4fb994573349a12b40ed427316065d353f8dd1cb7bee6d5ed1d620",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_verification.json": "d863a701d76358fa6dc07d27170b81c3e5417ea156d4ded705e09a2669604d34",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_audit.json": "0907327d2e49f197a2d02edff89feeebdea939d2da31ea6ede17f88f358f0397",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/past_multiview.py": "d03d60bd940e4eeae4a4cbac1c9baa5db7e10f0feff5aaf69132be9adcb2c4aa",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/past_multiview_measurements.npz": "9197124c46965248d23068f0d289f7c09ae740c0cd4036d53a1d6f5291ef4fab",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_inputs/manifest.json": "438614c41838dc19346eca473c0b3bb50b3e7591156fc9c275ccd483ef7f97f0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_predictions/manifest.json": "4f7977a99b1b99313c3eba32d63f1b22068c8efcb83436a034d1d395676b7a6e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visible_surface_connectivity_20261004_v1/base_link_masks.npz": "7769b6ab47292ae6517489f2992fd241b94f54c5022dd401efac3c4bae2d2a19",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_inputs/frame_000.npz": "61fcbbb2e4b3d0d31269d7e07274c52724ac5c5509290caff04cc587b0fa68dc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_inputs/frame_010.npz": "cb1e4757b285b4f6e6a78700f1b855907514dccc664965551e963e55b98bb23e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_inputs/frame_020.npz": "31c0c4af4e2e0ba4e08a37fad17f4a0ce9c1a19dc6cec19422bfc584cbbda094",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_inputs/frame_023.npz": "ca13555394e5f2ad4ed316d74c526d4323ee7939d5cda39ce33a4b21d23d18c8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_predictions/frame_000.npz": "fb96eff177830da0a9235e3604c0863d46561fc15c235bc926c29bdc6c529df0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_predictions/frame_010.npz": "dc4fe6f2b203ed2b9bbcdb9118b68bab5df7b737868e16c41f149e9a2bade306",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_predictions/frame_020.npz": "4f284a1841f089e5256a89e13dc8002071e3228efa7833ee9a20a070517534e7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb_predictions/frame_023.npz": "5568ba13e2e74d0b6a3c540f9f3c7ac98c5c5c09c887bfb1bd53c3d1c9db175a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_000.npz": "cb30a5067253a45b4c2b88e5ab3fd503020588dfa705137b0d620cbf59bf6eb7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_010.npz": "b9ae957ac74d1c8afcd0c226c12398c47cab38ffa331cdda6cdb60233f9bc2d2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_020.npz": "d5dd21cd3216710d89d80b1caa822f321c9caa37db5d6633d2428b02aa3f918b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_023.npz": "846b8538305d364ea0a99b1de30afab73175367c2394c15b7d43e076e851d353"
+  }
+}

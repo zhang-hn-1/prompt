@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-08T17:59:33.303934+00:00",
+  "role": "ONE learnedMODEL hypothesis reliability candidate, not new depth network or dynamics worldmodel",
+  "fit_complete_historical_sequences": [
+    "flat_ground_pose_D3_run_v1",
+    "offset_replication_D4_run_v1"
+  ],
+  "fit_teacher": "offline static2D fixture proxy occupancy; never claim MODELgrid is measured teacher",
+  "fresh_validation_whole_acquisitions": [
+    "hypothesis_learning_H1_run_v1",
+    "hypothesis_learning_H2_run_v1"
+  ],
+  "fresh_task": "each6seconds sourceonly samefrozenD3zero-bootstrap prefix; H1 y0 H2 y+.15; sameoriginalstaticfixture family not independentnewenvironment",
+  "isolate_before_fit": true,
+  "held_labels_not_fit_or_tune": true,
+  "only_one_candidate": "L2-regularized logistic MODEL voxel reliability; mean/scale fitonly; balanced logistic loss, ridge1, maxiter200, seed7, fixedprobabilitythreshold.5; no hyperparameter search",
+  "features": [
+    "leftpositive_fraction",
+    "rightpositive_fraction",
+    "leftunobservable_fraction",
+    "rightunobservable_fraction",
+    "positive_epoch_fraction",
+    "usable_negative_fraction",
+    "maxcamera_baseline_div_point6",
+    "XYdistance_to_seed_median_div_point5",
+    "nearest_seed_XY_distance_div_point5",
+    "seed_sigma_median_div_point1",
+    "voxelheight_div1point5",
+    "medianpositive_optical_depth_div3",
+    "maximumpositive_ray_parallax_div2degrees",
+    "currentroot_XY_range_div3"
+  ],
+  "geometry_input": "causal current/past RGB class/CAD/estimatedposes and source seed; model voxels not measuredpoints; no absolutecellID/fixtureID or GT geometryfeatures",
+  "output": "score current retained MODELhypotheses, no measuredgeometry/free upgrade; staticpersistence prior remains explicit; predictionnotactionconditionedphysicalworldmodel",
+  "memory": "existingstaticMODELpersistence unchanged; fit only maps reliability, never allocate false query/pixel IDs to voxel predictions",
+  "gates": {
+    "source_positive_geometry_proxy_precision_min": 0.95,
+    "XYfixture_coverage_min": 0.95,
+    "possible_area_max_m2": 6.0,
+    "birth_partialclass_precision_min": 0.95,
+    "planner_clearance_min_m": 0.8707106781186548
+  },
+  "on_failure": "REJECT one structure; no thresholds/model/TTL/radius/fixture scan",
+  "model_gate_not_control_gate": true,
+  "actual_navigation_only_after_source_and_consumption_pass": true,
+  "old_Mmem1_D3_far_near_and_E1_rejections_preserved": true,
+  "original35_not_triggered": true
+}

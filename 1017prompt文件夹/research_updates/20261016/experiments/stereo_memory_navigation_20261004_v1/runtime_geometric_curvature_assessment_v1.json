@@ -1,0 +1,2798 @@
+{
+  "arms": {
+    "b0": {
+      "windows": [
+        {
+          "start_frame": 60,
+          "end_frame_exclusive": 86,
+          "start_time_s": 5.999999865889549,
+          "end_time_s": 8.59999980777502,
+          "duration_s": 2.5999999418854713,
+          "reference_sha256": "2faf2c3f53da120a967c92858d3e52574be98be78e9f8a8a6bc7fa7025ad4387",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": 0.5235987755982988,
+          "nominal_body_curvature_1_m": -0.8272253274917603,
+          "nominal_course_curvature_1_m": -0.8272253274917603,
+          "actual_issued_main": {
+            "count": 26,
+            "median": 1.0,
+            "p10": 0.90696781873703,
+            "p90": 1.0,
+            "min": 0.87747722864151,
+            "max": 1.0
+          },
+          "actual_issued_aux": {
+            "count": 26,
+            "median": 0.37354494631290436,
+            "p10": 0.15553683787584305,
+            "p90": 0.5235987901687622,
+            "min": 0.14739324152469635,
+            "max": 0.5235987901687622
+          },
+          "measured_course_curvature": {
+            "count": 104,
+            "median": 2.2282590509964995,
+            "p10": -1.4094056148289855,
+            "p90": 4.110149377203162,
+            "min": -7.34501579439085,
+            "max": 10.809351121998903
+          },
+          "measured_threepoint_curvature": {
+            "count": 103,
+            "median": 2.6015801964901013,
+            "p10": -1.050364092461889,
+            "p90": 4.427799234321204,
+            "min": -5.342360286586002,
+            "max": 10.291898326992847
+          },
+          "kinematic_curvature": {
+            "count": 104,
+            "median": 2.2222447248816497,
+            "p10": -1.4090246766675525,
+            "p90": 4.108100773944644,
+            "min": -7.801221839596493,
+            "max": 10.805127455403674
+          },
+          "actual_bank": {
+            "count": 130,
+            "median": 0.16788006883931356,
+            "p10": 0.018651780843870133,
+            "p90": 0.27824083209342226,
+            "min": 0.014985139697825911,
+            "max": 0.2845651073600354
+          },
+          "desired_bank": {
+            "count": 130,
+            "median": 0.28015870973467827,
+            "p10": 0.11404936015605927,
+            "p90": 0.39269908169872414,
+            "min": 0.11054493114352226,
+            "max": 0.39269908169872414
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 130,
+            "median": 0.1699251066033703,
+            "p10": 0.039084703286149804,
+            "p90": 0.37404730085485405,
+            "min": 0.00026332314876376106,
+            "max": 0.37771394200089825
+          },
+          "world_z_rate": {
+            "count": 131,
+            "median": -0.053516287356615067,
+            "p10": -0.1368575245141983,
+            "p90": 0.02147829160094261,
+            "min": -0.1663401573896408,
+            "max": 0.041249968111515045
+          },
+          "root_yaw_derivative": {
+            "count": 131,
+            "median": -0.06080559459226103,
+            "p10": -0.15125801358956548,
+            "p90": 0.013387655635157036,
+            "min": -0.17099749584439966,
+            "max": 0.03333510359590708
+          },
+          "path_length_m": 0.5035818219184875,
+          "low_speed_samples": 27,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": false,
+          "auxiliary_joint_target_error_median_rad": 0.05360756069421768,
+          "auxiliary_velocity_abs_p95_rad_s": 0.2954530119895935,
+          "speed_cv": 0.6281031285366618,
+          "world_z_rate_trend_rad_s2": -0.07114459099790393,
+          "course_rate_peak_to_peak": 1.6593223098344025,
+          "threepoint_curvature_interdecile_range": 5.4781633267830925,
+          "finite_course_threepoint_samples": 103,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.2308636556046859,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.027608606995637476,
+          "median_geometric_minus_nominal_course_1_m": 3.4288055239818616,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 86,
+          "end_frame_exclusive": 94,
+          "start_time_s": 8.59999980777502,
+          "end_time_s": 9.399999789893627,
+          "duration_s": 0.7999999821186066,
+          "reference_sha256": "2faf2c3f53da120a967c92858d3e52574be98be78e9f8a8a6bc7fa7025ad4387",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": -0.5235987755982988,
+          "nominal_body_curvature_1_m": 0.7966033220291138,
+          "nominal_course_curvature_1_m": 0.7966033220291138,
+          "actual_issued_main": {
+            "count": 8,
+            "median": 0.8945723474025726,
+            "p10": 0.8801577687263489,
+            "p90": 0.9032182395458221,
+            "min": 0.8769776225090027,
+            "max": 0.9050801396369934
+          },
+          "actual_issued_aux": {
+            "count": 8,
+            "median": 0.25087589025497437,
+            "p10": 0.22771662324666977,
+            "p90": 0.26420406699180604,
+            "min": 0.22475461661815643,
+            "max": 0.26538583636283875
+          },
+          "measured_course_curvature": {
+            "count": 41,
+            "median": -1.8220752719839988,
+            "p10": -2.2945429806397133,
+            "p90": -0.7044439180459039,
+            "min": -2.3587890819487156,
+            "max": -0.12423868700421828
+          },
+          "measured_threepoint_curvature": {
+            "count": 39,
+            "median": -1.9348840814559085,
+            "p10": -2.453952131407959,
+            "p90": -0.7384444184691664,
+            "min": -2.5165022960863004,
+            "max": -0.22459265901898218
+          },
+          "kinematic_curvature": {
+            "count": 41,
+            "median": -1.8224148829328908,
+            "p10": -2.2942172532286857,
+            "p90": -0.7045280434086778,
+            "min": -2.358801958955412,
+            "max": -0.12399813398911146
+          },
+          "actual_bank": {
+            "count": 40,
+            "median": 0.12697432944359788,
+            "p10": 0.1146225976585037,
+            "p90": 0.15472747123209946,
+            "min": 0.11397909703025161,
+            "max": 0.16700407295262928
+          },
+          "desired_bank": {
+            "count": 40,
+            "median": 0.18815691769123077,
+            "p10": 0.16856596246361732,
+            "p90": 0.19903937727212906,
+            "min": 0.16856596246361732,
+            "max": 0.19903937727212906
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 40,
+            "median": 0.06049139145871582,
+            "p10": 0.01701206976206789,
+            "p90": 0.08162776851385503,
+            "min": 0.0047354680415380435,
+            "max": 0.08379409877291383
+          },
+          "world_z_rate": {
+            "count": 41,
+            "median": -0.13053441047668457,
+            "p10": -0.1722489893436432,
+            "p90": -0.10827813297510147,
+            "min": -0.17450383305549622,
+            "max": -0.10699228942394257
+          },
+          "root_yaw_derivative": {
+            "count": 41,
+            "median": -0.13966334222985388,
+            "p10": -0.1881843433070629,
+            "p90": -0.09924927353845833,
+            "min": -0.1900253153385905,
+            "max": -0.09516800899911182
+          },
+          "path_length_m": 0.2904288172721863,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": false,
+          "auxiliary_joint_target_error_median_rad": 0.040093809366226196,
+          "auxiliary_velocity_abs_p95_rad_s": 0.2895395755767822,
+          "speed_cv": 0.01739142005376161,
+          "world_z_rate_trend_rad_s2": -0.1008226767080671,
+          "course_rate_peak_to_peak": 0.8268091712394734,
+          "threepoint_curvature_interdecile_range": 1.7155077129387926,
+          "finite_course_threepoint_samples": 39,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.11082660082138629,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.01268866723052565,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 94,
+          "end_frame_exclusive": 103,
+          "start_time_s": 9.399999789893627,
+          "end_time_s": 10.29999976977706,
+          "duration_s": 0.8999999798834324,
+          "reference_sha256": "2faf2c3f53da120a967c92858d3e52574be98be78e9f8a8a6bc7fa7025ad4387",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": -0.03296351060271263,
+          "nominal_course_curvature_1_m": -0.03296351060271263,
+          "actual_issued_main": {
+            "count": 9,
+            "median": 0.9261353611946106,
+            "p10": 0.9113761782646179,
+            "p90": 0.9275450706481934,
+            "min": 0.9075571894645691,
+            "max": 0.9277808666229248
+          },
+          "actual_issued_aux": {
+            "count": 9,
+            "median": 0.14511187374591827,
+            "p10": 0.12755935788154601,
+            "p90": 0.17346298694610596,
+            "min": 0.12617477774620056,
+            "max": 0.17484450340270996
+          },
+          "measured_course_curvature": {
+            "count": 46,
+            "median": 0.834611407675532,
+            "p10": -0.08313984692829134,
+            "p90": 1.4568383996077872,
+            "min": -0.6784118249158826,
+            "max": 1.5213050702186015
+          },
+          "measured_threepoint_curvature": {
+            "count": 44,
+            "median": 1.0011358981159555,
+            "p10": -0.0017790147510025264,
+            "p90": 1.628826506692925,
+            "min": -0.560957225195552,
+            "max": 1.7645831736970168
+          },
+          "kinematic_curvature": {
+            "count": 46,
+            "median": 0.834557037403336,
+            "p10": -0.08303716330172338,
+            "p90": 1.4568334808324606,
+            "min": -0.6785067920994391,
+            "max": 1.521164744176362
+          },
+          "actual_bank": {
+            "count": 45,
+            "median": 0.1848571910189639,
+            "p10": 0.15001115718854469,
+            "p90": 0.19938719404957234,
+            "min": 0.13480789195774096,
+            "max": 0.20014028544506487
+          },
+          "desired_bank": {
+            "count": 45,
+            "median": 0.1088339053094387,
+            "p10": 0.09515030086040496,
+            "p90": 0.13061530888080597,
+            "min": 0.09463108330965042,
+            "max": 0.13113337755203247
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 45,
+            "median": 0.07346068413559229,
+            "p10": 0.02595222661269706,
+            "p90": 0.10087600612491832,
+            "min": 0.004969686083774738,
+            "max": 0.10386047176587343
+          },
+          "world_z_rate": {
+            "count": 46,
+            "median": -0.14490102976560593,
+            "p10": -0.17185402661561966,
+            "p90": -0.09162041917443275,
+            "min": -0.1742144227027893,
+            "max": -0.08402281999588013
+          },
+          "root_yaw_derivative": {
+            "count": 46,
+            "median": -0.13437778030594724,
+            "p10": -0.1813377262422443,
+            "p90": -0.0709204770103184,
+            "min": -0.18434252540081086,
+            "max": -0.06511082610879024
+          },
+          "path_length_m": 0.3080100417137146,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": false,
+          "auxiliary_joint_target_error_median_rad": 0.042726781219244,
+          "auxiliary_velocity_abs_p95_rad_s": 0.2772451862692833,
+          "speed_cv": 0.012717760287492686,
+          "world_z_rate_trend_rad_s2": 0.11524132853792105,
+          "course_rate_peak_to_peak": 0.7506819981399812,
+          "threepoint_curvature_interdecile_range": 1.6306055214439277,
+          "finite_course_threepoint_samples": 44,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.12016243415193209,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.015029728347806331,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 103,
+          "end_frame_exclusive": 112,
+          "start_time_s": 10.29999976977706,
+          "end_time_s": 11.199999749660492,
+          "duration_s": 0.8999999798834324,
+          "reference_sha256": "2faf2c3f53da120a967c92858d3e52574be98be78e9f8a8a6bc7fa7025ad4387",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": 0.5235987755982988,
+          "nominal_body_curvature_1_m": -0.8272253274917603,
+          "nominal_course_curvature_1_m": -0.8272253274917603,
+          "actual_issued_main": {
+            "count": 9,
+            "median": 0.9320672154426575,
+            "p10": 0.9291050553321838,
+            "p90": 0.9338522911071777,
+            "min": 0.9274488091468811,
+            "max": 0.934149980545044
+          },
+          "actual_issued_aux": {
+            "count": 9,
+            "median": 0.14229604601860046,
+            "p10": 0.12758225500583648,
+            "p90": 0.15339580178260803,
+            "min": 0.11789841949939728,
+            "max": 0.15356704592704773
+          },
+          "measured_course_curvature": {
+            "count": 46,
+            "median": -1.297793549554013,
+            "p10": -1.68537756496051,
+            "p90": -0.2762098995706182,
+            "min": -1.7338213059064098,
+            "max": -0.061425522370097616
+          },
+          "measured_threepoint_curvature": {
+            "count": 44,
+            "median": -1.3859904145004829,
+            "p10": -1.801583216244325,
+            "p90": -0.3283209636392824,
+            "min": -1.8503268553587338,
+            "max": 0.011841444319241862
+          },
+          "kinematic_curvature": {
+            "count": 46,
+            "median": -1.2977839838910943,
+            "p10": -1.6853857782958466,
+            "p90": -0.2761755623793566,
+            "min": -1.733793284656813,
+            "max": -0.06143067565276422
+          },
+          "actual_bank": {
+            "count": 45,
+            "median": 0.09695310761893425,
+            "p10": 0.08892851887978326,
+            "p90": 0.11722391275429539,
+            "min": 0.08851134834737806,
+            "max": 0.13138486847739217
+          },
+          "desired_bank": {
+            "count": 45,
+            "median": 0.10672203451395035,
+            "p10": 0.09205525293946266,
+            "p90": 0.11511106789112091,
+            "min": 0.08842381462454796,
+            "max": 0.1151752844452858
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 45,
+            "median": 0.0165085581464932,
+            "p10": 0.001745145166409398,
+            "p90": 0.026259403771806866,
+            "min": 0.0005467185582204159,
+            "max": 0.031171839986848804
+          },
+          "world_z_rate": {
+            "count": 46,
+            "median": -0.11896967887878418,
+            "p10": -0.12937892228364944,
+            "p90": -0.10281192883849144,
+            "min": -0.1305033415555954,
+            "max": -0.10167340189218521
+          },
+          "root_yaw_derivative": {
+            "count": 46,
+            "median": -0.12157503316326566,
+            "p10": -0.1357693609755942,
+            "p90": -0.08415341318416826,
+            "min": -0.1367305693542153,
+            "max": -0.08209312870814145
+          },
+          "path_length_m": 0.3033609688282013,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.028839778155088425,
+          "auxiliary_velocity_abs_p95_rad_s": 0.22982363030314445,
+          "speed_cv": 0.003985638101728393,
+          "world_z_rate_trend_rad_s2": -0.033047414039921987,
+          "course_rate_peak_to_peak": 0.5601984572817309,
+          "threepoint_curvature_interdecile_range": 1.4732622526050427,
+          "finite_course_threepoint_samples": 44,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.07791118795981651,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.010397630428667244,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 112,
+          "end_frame_exclusive": 120,
+          "start_time_s": 11.199999749660492,
+          "end_time_s": 11.999999731779099,
+          "duration_s": 0.7999999821186066,
+          "reference_sha256": "2faf2c3f53da120a967c92858d3e52574be98be78e9f8a8a6bc7fa7025ad4387",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": -0.03296351060271263,
+          "nominal_course_curvature_1_m": -0.03296351060271263,
+          "actual_issued_main": {
+            "count": 8,
+            "median": 0.9351466298103333,
+            "p10": 0.9303223431110382,
+            "p90": 0.9388352990150451,
+            "min": 0.929599404335022,
+            "max": 0.9393777847290039
+          },
+          "actual_issued_aux": {
+            "count": 8,
+            "median": 0.09806548058986664,
+            "p10": 0.08762205839157104,
+            "p90": 0.12497518807649612,
+            "min": 0.08596351742744446,
+            "max": 0.1411295235157013
+          },
+          "measured_course_curvature": {
+            "count": 41,
+            "median": 0.2696757970678597,
+            "p10": -0.5659791211899423,
+            "p90": 0.5630942975824768,
+            "min": -0.8306590830513242,
+            "max": 0.5870812050053087
+          },
+          "measured_threepoint_curvature": {
+            "count": 39,
+            "median": 0.3559549070837675,
+            "p10": -0.5004090330614855,
+            "p90": 0.6610184841953707,
+            "min": -0.8994683720820921,
+            "max": 0.692292677811399
+          },
+          "kinematic_curvature": {
+            "count": 41,
+            "median": 0.2696368742440203,
+            "p10": -0.5660277187359212,
+            "p90": 0.5631578084837152,
+            "min": -0.8304091170986135,
+            "max": 0.5870872968559759
+          },
+          "actual_bank": {
+            "count": 40,
+            "median": 0.10853815980041244,
+            "p10": 0.09291291405485788,
+            "p90": 0.11309272215670152,
+            "min": 0.08889234835673401,
+            "max": 0.11336476174536925
+          },
+          "desired_bank": {
+            "count": 40,
+            "median": 0.07354911044239998,
+            "p10": 0.06447263807058334,
+            "p90": 0.10584714263677597,
+            "min": 0.06447263807058334,
+            "max": 0.10584714263677597
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 40,
+            "median": 0.034920889296806666,
+            "p10": 0.010452865796166088,
+            "p90": 0.04709501786961257,
+            "min": 0.00565624265876935,
+            "max": 0.04832595467172979
+          },
+          "world_z_rate": {
+            "count": 41,
+            "median": -0.0718931034207344,
+            "p10": -0.10862976312637329,
+            "p90": -0.04781021922826767,
+            "min": -0.11667367070913315,
+            "max": -0.04572083428502083
+          },
+          "root_yaw_derivative": {
+            "count": 41,
+            "median": -0.0648986484577728,
+            "p10": -0.11199522798772872,
+            "p90": -0.03974051451388598,
+            "min": -0.1216138024457436,
+            "max": -0.039179896702010726
+          },
+          "path_length_m": 0.2671368718147278,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.025090448558330536,
+          "auxiliary_velocity_abs_p95_rad_s": 0.20924529433250427,
+          "speed_cv": 0.006941792491139054,
+          "world_z_rate_trend_rad_s2": 0.09707762778204684,
+          "course_rate_peak_to_peak": 0.4723331315733723,
+          "threepoint_curvature_interdecile_range": 1.1614275172568562,
+          "finite_course_threepoint_samples": 39,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.06175470979593767,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.0065133583061822466,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 145,
+          "end_frame_exclusive": 175,
+          "start_time_s": 14.499999675899744,
+          "end_time_s": 17.49999960884452,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "bb26a5a7723bd036c5b3858ec1578c4a0bc249c0854514239719579b027c0a50",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": 0.08537256345152855,
+            "p10": 0.07556974142789841,
+            "p90": 0.10095468983054162,
+            "min": 0.07430966198444366,
+            "max": 0.110956110060215
+          },
+          "measured_course_curvature": {
+            "count": 121,
+            "median": -0.8361524888886877,
+            "p10": -10.049708271711813,
+            "p90": 2.369794139330649,
+            "min": -11.002299628785718,
+            "max": 2.6518524619816204
+          },
+          "measured_threepoint_curvature": {
+            "count": 120,
+            "median": -0.9435581206201591,
+            "p10": -11.385770913272841,
+            "p90": 2.5387660495810964,
+            "min": -12.283428397193436,
+            "max": 2.9606974591970707
+          },
+          "kinematic_curvature": {
+            "count": 121,
+            "median": -0.8358310803081087,
+            "p10": -10.061005173471349,
+            "p90": 2.370205231750952,
+            "min": -11.00388557070938,
+            "max": 2.6520284475459555
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": 0.06789962470765684,
+            "p10": 0.014297394541789795,
+            "p90": 0.08629486414021595,
+            "min": 0.010634214571539936,
+            "max": 0.08864510759870826
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": 0.06402942258864641,
+            "p10": 0.056677306070923805,
+            "p90": 0.07571601737290619,
+            "min": 0.05573224648833275,
+            "max": 0.08321708254516125
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.018492093742879696,
+            "p10": 0.003585306727342998,
+            "p90": 0.06141862283111639,
+            "min": 3.735886421912804e-06,
+            "max": 0.07258286797362132
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": 0.011547691188752651,
+            "p10": -0.0057350266724824905,
+            "p90": 0.029721099883317947,
+            "min": -0.011281467042863369,
+            "max": 0.03184689208865166
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": 0.009763675075989678,
+            "p10": -0.011872754852684938,
+            "p90": 0.032496137942798674,
+            "min": -0.018033513433968286,
+            "max": 0.035942253702284814
+          },
+          "path_length_m": 0.2938131093978882,
+          "low_speed_samples": 30,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.00538075715303421,
+          "auxiliary_velocity_abs_p95_rad_s": 0.24193013459444046,
+          "speed_cv": 0.33294861504381523,
+          "world_z_rate_trend_rad_s2": 0.001670919294086159,
+          "course_rate_peak_to_peak": 1.3308392813154475,
+          "threepoint_curvature_interdecile_range": 13.924536962853939,
+          "finite_course_threepoint_samples": 120,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.15385220510709274,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.003962997891440334,
+          "median_geometric_minus_nominal_course_1_m": -0.9396654006416925,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 175,
+          "end_frame_exclusive": 205,
+          "start_time_s": 17.49999960884452,
+          "end_time_s": 20.499999541789293,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "bb26a5a7723bd036c5b3858ec1578c4a0bc249c0854514239719579b027c0a50",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": 0.09015869349241257,
+            "p10": 0.03953152187168598,
+            "p90": 0.09335904940962791,
+            "min": 0.03276067227125168,
+            "max": 0.09469953924417496
+          },
+          "measured_course_curvature": {
+            "count": 151,
+            "median": -0.14878540957645855,
+            "p10": -1.2597123675336854,
+            "p90": 0.7099164395141214,
+            "min": -3.256507871349505,
+            "max": 0.9057440654604969
+          },
+          "measured_threepoint_curvature": {
+            "count": 149,
+            "median": -0.16063832542490467,
+            "p10": -1.339137858919733,
+            "p90": 0.7581102316742674,
+            "min": -3.509762509099953,
+            "max": 1.0070735651049778
+          },
+          "kinematic_curvature": {
+            "count": 151,
+            "median": -0.1487859649141539,
+            "p10": -1.2594468896022522,
+            "p90": 0.7098034203166993,
+            "min": -3.2563111972649743,
+            "max": 0.905880633448298
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": 0.07728381788550562,
+            "p10": 0.07338987769001241,
+            "p90": 0.08046387244831035,
+            "min": 0.07108335718537635,
+            "max": 0.08071211191669733
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": 0.06761902011930943,
+            "p10": 0.029648641403764487,
+            "p90": 0.07001928705722094,
+            "min": 0.02457050420343876,
+            "max": 0.07102465443313122
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.010625941011060541,
+            "p10": 0.005702362863774667,
+            "p90": 0.04437084446040315,
+            "min": 0.0048234594465209335,
+            "max": 0.054689330376953074
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": 0.015223740600049496,
+            "p10": 0.011573645286262035,
+            "p90": 0.01830730214715004,
+            "min": 0.0002854709164239466,
+            "max": 0.01897096261382103
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": 0.01547885352943588,
+            "p10": 0.010579595129240208,
+            "p90": 0.01891579905717348,
+            "min": 0.004171260495384816,
+            "max": 0.019377020582554364
+          },
+          "path_length_m": 0.39480990171432495,
+          "low_speed_samples": 0,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.0017866231501102448,
+          "auxiliary_velocity_abs_p95_rad_s": 0.1363307386636734,
+          "speed_cv": 0.01130880973889083,
+          "world_z_rate_trend_rad_s2": -0.0016873144222887225,
+          "course_rate_peak_to_peak": 0.549705731910797,
+          "threepoint_curvature_interdecile_range": 2.0972480905940003,
+          "finite_course_threepoint_samples": 149,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.05548983456404755,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.0014488417943334974,
+          "median_geometric_minus_nominal_course_1_m": -0.15674560544643804,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 205,
+          "end_frame_exclusive": 235,
+          "start_time_s": 20.499999541789293,
+          "end_time_s": 23.499999474734068,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "bb26a5a7723bd036c5b3858ec1578c4a0bc249c0854514239719579b027c0a50",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": 0.044623838737607,
+            "p10": -0.004196693841367959,
+            "p90": 0.0613684918731451,
+            "min": -0.009459556080400944,
+            "max": 0.06285248696804047
+          },
+          "measured_course_curvature": {
+            "count": 151,
+            "median": 0.061318969456888216,
+            "p10": -2.112177094490623,
+            "p90": 3.1704748235170874,
+            "min": -4.85696863627965,
+            "max": 4.364925837491711
+          },
+          "measured_threepoint_curvature": {
+            "count": 149,
+            "median": 0.17164853870967128,
+            "p10": -2.336247783660072,
+            "p90": 3.423399147116752,
+            "min": -5.114207348163761,
+            "max": 4.726246416887014
+          },
+          "kinematic_curvature": {
+            "count": 151,
+            "median": 0.061291951652022295,
+            "p10": -2.1119586885114754,
+            "p90": 3.170424744460238,
+            "min": -4.856900330814477,
+            "max": 4.364912280187308
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": 0.04273502208226482,
+            "p10": 0.011212903886140768,
+            "p90": 0.05598096681422738,
+            "min": 0.0016203125174105882,
+            "max": 0.07030192461053789
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": 0.03346787905320525,
+            "p10": -0.003147520381025969,
+            "p90": 0.046026368904858825,
+            "min": -0.007094667060300708,
+            "max": 0.04713936522603035
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.012134535031181818,
+            "p10": 0.0027735687239372323,
+            "p90": 0.04398254897128261,
+            "min": 7.994442893156234e-05,
+            "max": 0.05865331282981042
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": 0.0121756074950099,
+            "p10": 0.0015029681380838156,
+            "p90": 0.027045775204896927,
+            "min": -0.004298491403460503,
+            "max": 0.03138093277812004
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": 0.015252088027872913,
+            "p10": -0.0012403941076071588,
+            "p90": 0.032903206938863006,
+            "min": -0.004457843413604223,
+            "max": 0.03786640316621891
+          },
+          "path_length_m": 0.3829483389854431,
+          "low_speed_samples": 0,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.009843090549111366,
+          "auxiliary_velocity_abs_p95_rad_s": 0.09391943737864494,
+          "speed_cv": 0.026868992968486546,
+          "world_z_rate_trend_rad_s2": -0.003930510572836733,
+          "course_rate_peak_to_peak": 1.1345151321079676,
+          "threepoint_curvature_interdecile_range": 5.7596469307768245,
+          "finite_course_threepoint_samples": 149,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.1984055465218706,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.004488478169760783,
+          "median_geometric_minus_nominal_course_1_m": 0.1755412586881379,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 235,
+          "end_frame_exclusive": 265,
+          "start_time_s": 23.499999474734068,
+          "end_time_s": 26.499999407678843,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "bb26a5a7723bd036c5b3858ec1578c4a0bc249c0854514239719579b027c0a50",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": -0.008051392156630754,
+            "p10": -0.021325739845633504,
+            "p90": 0.02608508709818125,
+            "min": -0.028956415131688118,
+            "max": 0.028571298345923424
+          },
+          "measured_course_curvature": {
+            "count": 151,
+            "median": 0.6550292504674188,
+            "p10": -2.7332819259735013,
+            "p90": 2.3804264709624205,
+            "min": -3.2153516460979366,
+            "max": 4.711604975635445
+          },
+          "measured_threepoint_curvature": {
+            "count": 149,
+            "median": 0.5950780580386593,
+            "p10": -3.0137497669136404,
+            "p90": 2.6144024259954994,
+            "min": -3.6291386889129926,
+            "max": 4.679169953669696
+          },
+          "kinematic_curvature": {
+            "count": 151,
+            "median": 0.6550410923593031,
+            "p10": -2.7332825191291317,
+            "p90": 2.3798138302952396,
+            "min": -3.2151544721111573,
+            "max": 4.712605577786198
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": 0.005194066901531184,
+            "p10": -0.01204698631221954,
+            "p90": 0.023834603953083334,
+            "min": -0.012847957811999797,
+            "max": 0.02518212685115468
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": -0.006038544117473066,
+            "p10": -0.015994304884225128,
+            "p90": 0.01956381532363593,
+            "min": -0.02171731134876609,
+            "max": 0.021428473759442568
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.010456566618183408,
+            "p10": 0.0025763679009958716,
+            "p90": 0.023408958961213838,
+            "min": 0.00014747157307331074,
+            "max": 0.03906846161272149
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": -0.0006143306964077055,
+            "p10": -0.01106643583625555,
+            "p90": 0.011296330019831657,
+            "min": -0.01272567454725504,
+            "max": 0.013270062394440174
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": 0.00090204773536342,
+            "p10": -0.014472869249384894,
+            "p90": 0.013354359364244079,
+            "min": -0.01659181683490151,
+            "max": 0.015965806838857007
+          },
+          "path_length_m": 0.33624693751335144,
+          "low_speed_samples": 0,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.008209959603846073,
+          "auxiliary_velocity_abs_p95_rad_s": 0.08717400208115578,
+          "speed_cv": 0.042042701409050066,
+          "world_z_rate_trend_rad_s2": 0.002356244875398332,
+          "course_rate_peak_to_peak": 0.93444902852049,
+          "threepoint_curvature_interdecile_range": 5.628152192909139,
+          "finite_course_threepoint_samples": 149,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.16011344410081518,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.0025541079587971965,
+          "median_geometric_minus_nominal_course_1_m": 0.598970778017126,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 265,
+          "end_frame_exclusive": 295,
+          "start_time_s": 26.499999407678843,
+          "end_time_s": 29.499999340623617,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "bb26a5a7723bd036c5b3858ec1578c4a0bc249c0854514239719579b027c0a50",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": -0.008794426452368498,
+            "p10": -0.012864078488200903,
+            "p90": -0.0006330233961307375,
+            "min": -0.013601833023130894,
+            "max": 0.0010661109117791057
+          },
+          "measured_course_curvature": {
+            "count": 151,
+            "median": -0.028887853848180885,
+            "p10": -1.2649725859680165,
+            "p90": 1.1937131228237552,
+            "min": -1.6153724396317992,
+            "max": 1.4105112418429062
+          },
+          "measured_threepoint_curvature": {
+            "count": 149,
+            "median": -0.11994274065871095,
+            "p10": -1.4156501355617748,
+            "p90": 1.3488900155538182,
+            "min": -1.8219611144862673,
+            "max": 1.5273578261162672
+          },
+          "kinematic_curvature": {
+            "count": 151,
+            "median": -0.028997642875410408,
+            "p10": -1.2649692238878236,
+            "p90": 1.193762131046179,
+            "min": -1.6151735704507861,
+            "max": 1.4105512592441853
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": -0.005595284489034523,
+            "p10": -0.00906939253189438,
+            "p90": -0.0039635434464571065,
+            "min": -0.009466797082632686,
+            "max": -0.0036210208210559823
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": -0.006595819839276373,
+            "p10": -0.009648058866150677,
+            "p90": -0.00047476754709805687,
+            "min": -0.01020137476734817,
+            "max": 0.0007995831838343292
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.0034576998553489282,
+            "p10": 0.0008648246659907919,
+            "p90": 0.005079537222443977,
+            "min": 5.7879251916552986e-05,
+            "max": 0.0062455301965382
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": -0.001185484929010272,
+            "p10": -0.004414560738950968,
+            "p90": 0.0016094057355076075,
+            "min": -0.005052004940807819,
+            "max": 0.0019779102876782417
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": -0.001123300371094786,
+            "p10": -0.005096767553485187,
+            "p90": 0.002459519738966712,
+            "min": -0.0057329673767451995,
+            "max": 0.00300231891235088
+          },
+          "path_length_m": 0.2968994379043579,
+          "low_speed_samples": 0,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": true,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.0071464404463768005,
+          "auxiliary_velocity_abs_p95_rad_s": 0.024488850496709347,
+          "speed_cv": 0.02639170452277377,
+          "world_z_rate_trend_rad_s2": -0.0004282883614241414,
+          "course_rate_peak_to_peak": 0.30264552242117343,
+          "threepoint_curvature_interdecile_range": 2.764540151115593,
+          "finite_course_threepoint_samples": 149,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.11684658427336103,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.0005881497095940413,
+          "median_geometric_minus_nominal_course_1_m": -0.11605002068024432,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 295,
+          "end_frame_exclusive": 309,
+          "start_time_s": 29.499999340623617,
+          "end_time_s": 30.89999930933118,
+          "duration_s": 1.3999999687075615,
+          "reference_sha256": "bb26a5a7723bd036c5b3858ec1578c4a0bc249c0854514239719579b027c0a50",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 14,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 14,
+            "median": -0.004808809841051698,
+            "p10": -0.013544006366282701,
+            "p90": 0.013311123102903371,
+            "min": -0.02151784673333168,
+            "max": 0.01618725061416626
+          },
+          "measured_course_curvature": {
+            "count": 71,
+            "median": -0.1645346576451283,
+            "p10": -1.730214733710857,
+            "p90": 2.235400721919484,
+            "min": -1.8606640159763137,
+            "max": 2.5484430444412007
+          },
+          "measured_threepoint_curvature": {
+            "count": 69,
+            "median": -0.19847530286788614,
+            "p10": -1.9368601093063484,
+            "p90": 2.565378748456343,
+            "min": -2.3187502127045962,
+            "max": 3.025165639762333
+          },
+          "kinematic_curvature": {
+            "count": 71,
+            "median": -0.16452818162160374,
+            "p10": -1.7295599839191336,
+            "p90": 2.235248628612919,
+            "min": -1.8610794918694562,
+            "max": 2.5486645989753636
+          },
+          "actual_bank": {
+            "count": 70,
+            "median": -0.0024151917047584657,
+            "p10": -0.0039411420659913885,
+            "p90": -0.0010309733590225104,
+            "min": -0.004118212547803181,
+            "max": -0.0008307776572961262
+          },
+          "desired_bank": {
+            "count": 70,
+            "median": -0.0036066073807887733,
+            "p10": -0.010458291275426745,
+            "p90": 0.011110500432550907,
+            "min": -0.01613838504999876,
+            "max": 0.012140437960624695
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 70,
+            "median": 0.008253070635165059,
+            "p10": 0.0014849296747126315,
+            "p90": 0.01514469335110908,
+            "min": 7.652417722644892e-05,
+            "max": 0.016206806621311843
+          },
+          "world_z_rate": {
+            "count": 71,
+            "median": -0.0024193767458200455,
+            "p10": -0.00571325421333313,
+            "p90": 0.0064661502838134766,
+            "min": -0.012395447120070457,
+            "max": 0.007262434810400009
+          },
+          "root_yaw_derivative": {
+            "count": 71,
+            "median": -0.0022340766703686835,
+            "p10": -0.006755567803587486,
+            "p90": 0.006894283178396636,
+            "min": -0.013157164698924362,
+            "max": 0.007632953244206704
+          },
+          "path_length_m": 0.13254117965698242,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.013914812356233597,
+          "auxiliary_velocity_abs_p95_rad_s": 0.08461596816778183,
+          "speed_cv": 0.0036240606672626485,
+          "world_z_rate_trend_rad_s2": 0.0024958794046436162,
+          "course_rate_peak_to_peak": 0.41788522629409114,
+          "threepoint_curvature_interdecile_range": 4.502238857762691,
+          "finite_course_threepoint_samples": 69,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.1564113426763083,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.0007567599130502062,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 321,
+          "end_frame_exclusive": 350,
+          "start_time_s": 32.09999928250909,
+          "end_time_s": 34.99999921768904,
+          "duration_s": 2.899999935179949,
+          "reference_sha256": "bb26a5a7723bd036c5b3858ec1578c4a0bc249c0854514239719579b027c0a50",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": -0.5235987755982988,
+          "nominal_body_curvature_1_m": 0.7966033220291138,
+          "nominal_course_curvature_1_m": 0.7966033220291138,
+          "actual_issued_main": {
+            "count": 29,
+            "median": 1.0,
+            "p10": 0.8994160890579224,
+            "p90": 1.0,
+            "min": 0.8935744166374207,
+            "max": 1.0
+          },
+          "actual_issued_aux": {
+            "count": 29,
+            "median": -0.5235987901687622,
+            "p10": -0.5235987901687622,
+            "p90": -0.5235987901687622,
+            "min": -0.5235987901687622,
+            "max": -0.4680499732494354
+          },
+          "measured_course_curvature": {
+            "count": 123,
+            "median": -0.48833131504941935,
+            "p10": -2.826793902902131,
+            "p90": 6.564541788187687,
+            "min": -9.385538361053776,
+            "max": 16.844663677318916
+          },
+          "measured_threepoint_curvature": {
+            "count": 122,
+            "median": -0.7589090790564454,
+            "p10": -2.814397748477364,
+            "p90": 6.202020379327329,
+            "min": -8.313320976430395,
+            "max": 17.74491534469286
+          },
+          "kinematic_curvature": {
+            "count": 123,
+            "median": -0.4860881963469574,
+            "p10": -2.8254665308135065,
+            "p90": 6.5584972332009706,
+            "min": -9.37481143808401,
+            "max": 16.871502059860727
+          },
+          "actual_bank": {
+            "count": 145,
+            "median": -0.19384978757137114,
+            "p10": -0.363390446992259,
+            "p90": -0.005263761075754554,
+            "min": -0.3721072445715064,
+            "max": -0.0008521623142857581
+          },
+          "desired_bank": {
+            "count": 145,
+            "median": -0.39269908169872414,
+            "p10": -0.39269908169872414,
+            "p90": -0.39269908169872414,
+            "min": -0.39269908169872414,
+            "max": -0.35103747993707657
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 145,
+            "median": 0.198849294127353,
+            "p10": 0.029308634706465175,
+            "p90": 0.3874353206229696,
+            "min": 0.020591837127217738,
+            "max": 0.3918469193844384
+          },
+          "world_z_rate": {
+            "count": 146,
+            "median": 0.04928400740027428,
+            "p10": -0.012568405829370022,
+            "p90": 0.2058807909488678,
+            "min": -0.031531281769275665,
+            "max": 0.2625792324542999
+          },
+          "root_yaw_derivative": {
+            "count": 146,
+            "median": 0.08698883439930588,
+            "p10": -0.005652730049330576,
+            "p90": 0.21134699499774315,
+            "min": -0.024561961236968625,
+            "max": 0.2653434816447664
+          },
+          "path_length_m": 0.6116478443145752,
+          "low_speed_samples": 23,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": false,
+          "auxiliary_joint_target_error_median_rad": 0.06376504898071289,
+          "auxiliary_velocity_abs_p95_rad_s": 0.2870400696992874,
+          "speed_cv": 0.5546021780282255,
+          "world_z_rate_trend_rad_s2": 0.09756496473098046,
+          "course_rate_peak_to_peak": 1.9001321736354284,
+          "threepoint_curvature_interdecile_range": 9.016418127804693,
+          "finite_course_threepoint_samples": 122,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.1630268207401705,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.022949212241332628,
+          "median_geometric_minus_nominal_course_1_m": -1.5555124010855592,
+          "not_model_prediction_error": true
+        }
+      ],
+      "alignment_verified": {
+        "current_request_to_posttick": true,
+        "bank_feedback_to_prestate": true,
+        "desired_bank_to_current_normalized_request": true
+      },
+      "normal_request_rows": 253,
+      "geometry_identifiable_windows": 7,
+      "oscillatory_windows": 12,
+      "joint_stationary_windows": 1
+    },
+    "candidate": {
+      "windows": [
+        {
+          "start_frame": 60,
+          "end_frame_exclusive": 86,
+          "start_time_s": 5.999999865889549,
+          "end_time_s": 8.59999980777502,
+          "duration_s": 2.5999999418854713,
+          "reference_sha256": "2faf2c3f53da120a967c92858d3e52574be98be78e9f8a8a6bc7fa7025ad4387",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": 0.5235987755982988,
+          "nominal_body_curvature_1_m": -0.8272253274917603,
+          "nominal_course_curvature_1_m": -0.8272253274917603,
+          "actual_issued_main": {
+            "count": 26,
+            "median": 1.0,
+            "p10": 0.90696781873703,
+            "p90": 1.0,
+            "min": 0.87747722864151,
+            "max": 1.0
+          },
+          "actual_issued_aux": {
+            "count": 26,
+            "median": 0.37354494631290436,
+            "p10": 0.15553683787584305,
+            "p90": 0.5235987901687622,
+            "min": 0.14739324152469635,
+            "max": 0.5235987901687622
+          },
+          "measured_course_curvature": {
+            "count": 104,
+            "median": 2.2282590509964995,
+            "p10": -1.4094056148289855,
+            "p90": 4.110149377203162,
+            "min": -7.34501579439085,
+            "max": 10.809351121998903
+          },
+          "measured_threepoint_curvature": {
+            "count": 103,
+            "median": 2.6015801964901013,
+            "p10": -1.050364092461889,
+            "p90": 4.427799234321204,
+            "min": -5.342360286586002,
+            "max": 10.291898326992847
+          },
+          "kinematic_curvature": {
+            "count": 104,
+            "median": 2.2222447248816497,
+            "p10": -1.4090246766675525,
+            "p90": 4.108100773944644,
+            "min": -7.801221839596493,
+            "max": 10.805127455403674
+          },
+          "actual_bank": {
+            "count": 130,
+            "median": 0.16788006883931356,
+            "p10": 0.018651780843870133,
+            "p90": 0.27824083209342226,
+            "min": 0.014985139697825911,
+            "max": 0.2845651073600354
+          },
+          "desired_bank": {
+            "count": 130,
+            "median": 0.28015870973467827,
+            "p10": 0.11404936015605927,
+            "p90": 0.39269908169872414,
+            "min": 0.11054493114352226,
+            "max": 0.39269908169872414
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 130,
+            "median": 0.1699251066033703,
+            "p10": 0.039084703286149804,
+            "p90": 0.37404730085485405,
+            "min": 0.00026332314876376106,
+            "max": 0.37771394200089825
+          },
+          "world_z_rate": {
+            "count": 131,
+            "median": -0.053516287356615067,
+            "p10": -0.1368575245141983,
+            "p90": 0.02147829160094261,
+            "min": -0.1663401573896408,
+            "max": 0.041249968111515045
+          },
+          "root_yaw_derivative": {
+            "count": 131,
+            "median": -0.06080559459226103,
+            "p10": -0.15125801358956548,
+            "p90": 0.013387655635157036,
+            "min": -0.17099749584439966,
+            "max": 0.03333510359590708
+          },
+          "path_length_m": 0.5035818219184875,
+          "low_speed_samples": 27,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": false,
+          "auxiliary_joint_target_error_median_rad": 0.05360756069421768,
+          "auxiliary_velocity_abs_p95_rad_s": 0.2954530119895935,
+          "speed_cv": 0.6281031285366618,
+          "world_z_rate_trend_rad_s2": -0.07114459099790393,
+          "course_rate_peak_to_peak": 1.6593223098344025,
+          "threepoint_curvature_interdecile_range": 5.4781633267830925,
+          "finite_course_threepoint_samples": 103,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.2308636556046859,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.027608606995637476,
+          "median_geometric_minus_nominal_course_1_m": 3.4288055239818616,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 86,
+          "end_frame_exclusive": 94,
+          "start_time_s": 8.59999980777502,
+          "end_time_s": 9.399999789893627,
+          "duration_s": 0.7999999821186066,
+          "reference_sha256": "2faf2c3f53da120a967c92858d3e52574be98be78e9f8a8a6bc7fa7025ad4387",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": -0.5235987755982988,
+          "nominal_body_curvature_1_m": 0.7966033220291138,
+          "nominal_course_curvature_1_m": 0.7966033220291138,
+          "actual_issued_main": {
+            "count": 8,
+            "median": 0.8945723474025726,
+            "p10": 0.8801577687263489,
+            "p90": 0.9032182395458221,
+            "min": 0.8769776225090027,
+            "max": 0.9050801396369934
+          },
+          "actual_issued_aux": {
+            "count": 8,
+            "median": 0.25087589025497437,
+            "p10": 0.22771662324666977,
+            "p90": 0.26420406699180604,
+            "min": 0.22475461661815643,
+            "max": 0.26538583636283875
+          },
+          "measured_course_curvature": {
+            "count": 41,
+            "median": -1.8220752719839988,
+            "p10": -2.2945429806397133,
+            "p90": -0.7044439180459039,
+            "min": -2.3587890819487156,
+            "max": -0.12423868700421828
+          },
+          "measured_threepoint_curvature": {
+            "count": 39,
+            "median": -1.9348840814559085,
+            "p10": -2.453952131407959,
+            "p90": -0.7384444184691664,
+            "min": -2.5165022960863004,
+            "max": -0.22459265901898218
+          },
+          "kinematic_curvature": {
+            "count": 41,
+            "median": -1.8224148829328908,
+            "p10": -2.2942172532286857,
+            "p90": -0.7045280434086778,
+            "min": -2.358801958955412,
+            "max": -0.12399813398911146
+          },
+          "actual_bank": {
+            "count": 40,
+            "median": 0.12697432944359788,
+            "p10": 0.1146225976585037,
+            "p90": 0.15472747123209946,
+            "min": 0.11397909703025161,
+            "max": 0.16700407295262928
+          },
+          "desired_bank": {
+            "count": 40,
+            "median": 0.18815691769123077,
+            "p10": 0.16856596246361732,
+            "p90": 0.19903937727212906,
+            "min": 0.16856596246361732,
+            "max": 0.19903937727212906
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 40,
+            "median": 0.06049139145871582,
+            "p10": 0.01701206976206789,
+            "p90": 0.08162776851385503,
+            "min": 0.0047354680415380435,
+            "max": 0.08379409877291383
+          },
+          "world_z_rate": {
+            "count": 41,
+            "median": -0.13053441047668457,
+            "p10": -0.1722489893436432,
+            "p90": -0.10827813297510147,
+            "min": -0.17450383305549622,
+            "max": -0.10699228942394257
+          },
+          "root_yaw_derivative": {
+            "count": 41,
+            "median": -0.13966334222985388,
+            "p10": -0.1881843433070629,
+            "p90": -0.09924927353845833,
+            "min": -0.1900253153385905,
+            "max": -0.09516800899911182
+          },
+          "path_length_m": 0.2904288172721863,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": false,
+          "auxiliary_joint_target_error_median_rad": 0.040093809366226196,
+          "auxiliary_velocity_abs_p95_rad_s": 0.2895395755767822,
+          "speed_cv": 0.01739142005376161,
+          "world_z_rate_trend_rad_s2": -0.1008226767080671,
+          "course_rate_peak_to_peak": 0.8268091712394734,
+          "threepoint_curvature_interdecile_range": 1.7155077129387926,
+          "finite_course_threepoint_samples": 39,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.11082660082138629,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.01268866723052565,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 94,
+          "end_frame_exclusive": 103,
+          "start_time_s": 9.399999789893627,
+          "end_time_s": 10.29999976977706,
+          "duration_s": 0.8999999798834324,
+          "reference_sha256": "2faf2c3f53da120a967c92858d3e52574be98be78e9f8a8a6bc7fa7025ad4387",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": -0.03296351060271263,
+          "nominal_course_curvature_1_m": -0.03296351060271263,
+          "actual_issued_main": {
+            "count": 9,
+            "median": 0.9261353611946106,
+            "p10": 0.9113761782646179,
+            "p90": 0.9275450706481934,
+            "min": 0.9075571894645691,
+            "max": 0.9277808666229248
+          },
+          "actual_issued_aux": {
+            "count": 9,
+            "median": 0.14511187374591827,
+            "p10": 0.12755935788154601,
+            "p90": 0.17346298694610596,
+            "min": 0.12617477774620056,
+            "max": 0.17484450340270996
+          },
+          "measured_course_curvature": {
+            "count": 46,
+            "median": 0.834611407675532,
+            "p10": -0.08313984692829134,
+            "p90": 1.4568383996077872,
+            "min": -0.6784118249158826,
+            "max": 1.5213050702186015
+          },
+          "measured_threepoint_curvature": {
+            "count": 44,
+            "median": 1.0011358981159555,
+            "p10": -0.0017790147510025264,
+            "p90": 1.628826506692925,
+            "min": -0.560957225195552,
+            "max": 1.7645831736970168
+          },
+          "kinematic_curvature": {
+            "count": 46,
+            "median": 0.834557037403336,
+            "p10": -0.08303716330172338,
+            "p90": 1.4568334808324606,
+            "min": -0.6785067920994391,
+            "max": 1.521164744176362
+          },
+          "actual_bank": {
+            "count": 45,
+            "median": 0.1848571910189639,
+            "p10": 0.15001115718854469,
+            "p90": 0.19938719404957234,
+            "min": 0.13480789195774096,
+            "max": 0.20014028544506487
+          },
+          "desired_bank": {
+            "count": 45,
+            "median": 0.1088339053094387,
+            "p10": 0.09515030086040496,
+            "p90": 0.13061530888080597,
+            "min": 0.09463108330965042,
+            "max": 0.13113337755203247
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 45,
+            "median": 0.07346068413559229,
+            "p10": 0.02595222661269706,
+            "p90": 0.10087600612491832,
+            "min": 0.004969686083774738,
+            "max": 0.10386047176587343
+          },
+          "world_z_rate": {
+            "count": 46,
+            "median": -0.14490102976560593,
+            "p10": -0.17185402661561966,
+            "p90": -0.09162041917443275,
+            "min": -0.1742144227027893,
+            "max": -0.08402281999588013
+          },
+          "root_yaw_derivative": {
+            "count": 46,
+            "median": -0.13437778030594724,
+            "p10": -0.1813377262422443,
+            "p90": -0.0709204770103184,
+            "min": -0.18434252540081086,
+            "max": -0.06511082610879024
+          },
+          "path_length_m": 0.3080100417137146,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": false,
+          "auxiliary_joint_target_error_median_rad": 0.042726781219244,
+          "auxiliary_velocity_abs_p95_rad_s": 0.2772451862692833,
+          "speed_cv": 0.012717760287492686,
+          "world_z_rate_trend_rad_s2": 0.11524132853792105,
+          "course_rate_peak_to_peak": 0.7506819981399812,
+          "threepoint_curvature_interdecile_range": 1.6306055214439277,
+          "finite_course_threepoint_samples": 44,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.12016243415193209,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.015029728347806331,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 103,
+          "end_frame_exclusive": 112,
+          "start_time_s": 10.29999976977706,
+          "end_time_s": 11.199999749660492,
+          "duration_s": 0.8999999798834324,
+          "reference_sha256": "2faf2c3f53da120a967c92858d3e52574be98be78e9f8a8a6bc7fa7025ad4387",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": 0.5235987755982988,
+          "nominal_body_curvature_1_m": -0.8272253274917603,
+          "nominal_course_curvature_1_m": -0.8272253274917603,
+          "actual_issued_main": {
+            "count": 9,
+            "median": 0.9320672154426575,
+            "p10": 0.9291050553321838,
+            "p90": 0.9338522911071777,
+            "min": 0.9274488091468811,
+            "max": 0.934149980545044
+          },
+          "actual_issued_aux": {
+            "count": 9,
+            "median": 0.14229604601860046,
+            "p10": 0.12758225500583648,
+            "p90": 0.15339580178260803,
+            "min": 0.11789841949939728,
+            "max": 0.15356704592704773
+          },
+          "measured_course_curvature": {
+            "count": 46,
+            "median": -1.297793549554013,
+            "p10": -1.68537756496051,
+            "p90": -0.2762098995706182,
+            "min": -1.7338213059064098,
+            "max": -0.061425522370097616
+          },
+          "measured_threepoint_curvature": {
+            "count": 44,
+            "median": -1.3859904145004829,
+            "p10": -1.801583216244325,
+            "p90": -0.3283209636392824,
+            "min": -1.8503268553587338,
+            "max": 0.011841444319241862
+          },
+          "kinematic_curvature": {
+            "count": 46,
+            "median": -1.2977839838910943,
+            "p10": -1.6853857782958466,
+            "p90": -0.2761755623793566,
+            "min": -1.733793284656813,
+            "max": -0.06143067565276422
+          },
+          "actual_bank": {
+            "count": 45,
+            "median": 0.09695310761893425,
+            "p10": 0.08892851887978326,
+            "p90": 0.11722391275429539,
+            "min": 0.08851134834737806,
+            "max": 0.13138486847739217
+          },
+          "desired_bank": {
+            "count": 45,
+            "median": 0.10672203451395035,
+            "p10": 0.09205525293946266,
+            "p90": 0.11511106789112091,
+            "min": 0.08842381462454796,
+            "max": 0.1151752844452858
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 45,
+            "median": 0.0165085581464932,
+            "p10": 0.001745145166409398,
+            "p90": 0.026259403771806866,
+            "min": 0.0005467185582204159,
+            "max": 0.031171839986848804
+          },
+          "world_z_rate": {
+            "count": 46,
+            "median": -0.11896967887878418,
+            "p10": -0.12937892228364944,
+            "p90": -0.10281192883849144,
+            "min": -0.1305033415555954,
+            "max": -0.10167340189218521
+          },
+          "root_yaw_derivative": {
+            "count": 46,
+            "median": -0.12157503316326566,
+            "p10": -0.1357693609755942,
+            "p90": -0.08415341318416826,
+            "min": -0.1367305693542153,
+            "max": -0.08209312870814145
+          },
+          "path_length_m": 0.3033609688282013,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.028839778155088425,
+          "auxiliary_velocity_abs_p95_rad_s": 0.22982363030314445,
+          "speed_cv": 0.003985638101728393,
+          "world_z_rate_trend_rad_s2": -0.033047414039921987,
+          "course_rate_peak_to_peak": 0.5601984572817309,
+          "threepoint_curvature_interdecile_range": 1.4732622526050427,
+          "finite_course_threepoint_samples": 44,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.07791118795981651,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.010397630428667244,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 112,
+          "end_frame_exclusive": 120,
+          "start_time_s": 11.199999749660492,
+          "end_time_s": 11.999999731779099,
+          "duration_s": 0.7999999821186066,
+          "reference_sha256": "2faf2c3f53da120a967c92858d3e52574be98be78e9f8a8a6bc7fa7025ad4387",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": -0.03296351060271263,
+          "nominal_course_curvature_1_m": -0.03296351060271263,
+          "actual_issued_main": {
+            "count": 8,
+            "median": 0.9351466298103333,
+            "p10": 0.9303223431110382,
+            "p90": 0.9388352990150451,
+            "min": 0.929599404335022,
+            "max": 0.9393777847290039
+          },
+          "actual_issued_aux": {
+            "count": 8,
+            "median": 0.09806548058986664,
+            "p10": 0.08762205839157104,
+            "p90": 0.12497518807649612,
+            "min": 0.08596351742744446,
+            "max": 0.1411295235157013
+          },
+          "measured_course_curvature": {
+            "count": 41,
+            "median": 0.2696757970678597,
+            "p10": -0.5659791211899423,
+            "p90": 0.5630942975824768,
+            "min": -0.8306590830513242,
+            "max": 0.5870812050053087
+          },
+          "measured_threepoint_curvature": {
+            "count": 39,
+            "median": 0.3559549070837675,
+            "p10": -0.5004090330614855,
+            "p90": 0.6610184841953707,
+            "min": -0.8994683720820921,
+            "max": 0.692292677811399
+          },
+          "kinematic_curvature": {
+            "count": 41,
+            "median": 0.2696368742440203,
+            "p10": -0.5660277187359212,
+            "p90": 0.5631578084837152,
+            "min": -0.8304091170986135,
+            "max": 0.5870872968559759
+          },
+          "actual_bank": {
+            "count": 40,
+            "median": 0.10853815980041244,
+            "p10": 0.09291291405485788,
+            "p90": 0.11309272215670152,
+            "min": 0.08889234835673401,
+            "max": 0.11336476174536925
+          },
+          "desired_bank": {
+            "count": 40,
+            "median": 0.07354911044239998,
+            "p10": 0.06447263807058334,
+            "p90": 0.10584714263677597,
+            "min": 0.06447263807058334,
+            "max": 0.10584714263677597
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 40,
+            "median": 0.034920889296806666,
+            "p10": 0.010452865796166088,
+            "p90": 0.04709501786961257,
+            "min": 0.00565624265876935,
+            "max": 0.04832595467172979
+          },
+          "world_z_rate": {
+            "count": 41,
+            "median": -0.0718931034207344,
+            "p10": -0.10862976312637329,
+            "p90": -0.04781021922826767,
+            "min": -0.11667367070913315,
+            "max": -0.04572083428502083
+          },
+          "root_yaw_derivative": {
+            "count": 41,
+            "median": -0.0648986484577728,
+            "p10": -0.11199522798772872,
+            "p90": -0.03974051451388598,
+            "min": -0.1216138024457436,
+            "max": -0.039179896702010726
+          },
+          "path_length_m": 0.2671368718147278,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.025090448558330536,
+          "auxiliary_velocity_abs_p95_rad_s": 0.20924529433250427,
+          "speed_cv": 0.006941792491139054,
+          "world_z_rate_trend_rad_s2": 0.09707762778204684,
+          "course_rate_peak_to_peak": 0.4723331315733723,
+          "threepoint_curvature_interdecile_range": 1.1614275172568562,
+          "finite_course_threepoint_samples": 39,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.06175470979593767,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.0065133583061822466,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 120,
+          "end_frame_exclusive": 125,
+          "start_time_s": 11.999999731779099,
+          "end_time_s": 12.499999720603228,
+          "duration_s": 0.4999999888241291,
+          "reference_sha256": "6acba6d9df6de6f9db8781dc2b15381275ab0fe2a346ed3a14fbdf26328b0396",
+          "direction": "forward",
+          "nominal_main": 0.5,
+          "nominal_aux": 0.5235987755982988,
+          "nominal_body_curvature_1_m": -0.8272253274917603,
+          "nominal_course_curvature_1_m": -0.8272253274917603,
+          "actual_issued_main": {
+            "count": 5,
+            "median": 0.9381919503211975,
+            "p10": 0.9340492486953735,
+            "p90": 0.9397666573524475,
+            "min": 0.9329119920730591,
+            "max": 0.9398148655891418
+          },
+          "actual_issued_aux": {
+            "count": 5,
+            "median": 0.4802396595478058,
+            "p10": 0.40234461426734924,
+            "p90": 0.5235987901687622,
+            "min": 0.38643088936805725,
+            "max": 0.5235987901687622
+          },
+          "measured_course_curvature": {
+            "count": 26,
+            "median": -1.5121257675128326,
+            "p10": -1.8173914851130242,
+            "p90": -0.9435204287026236,
+            "min": -1.9903726916112354,
+            "max": -0.6596781698013149
+          },
+          "measured_threepoint_curvature": {
+            "count": 24,
+            "median": -1.6031327875727261,
+            "p10": -1.9449386095017935,
+            "p90": -1.0619673771427618,
+            "min": -2.128917799309619,
+            "max": -0.8879002359983091
+          },
+          "kinematic_curvature": {
+            "count": 26,
+            "median": -1.5122365282946237,
+            "p10": -1.8174545130321431,
+            "p90": -0.9435331026955887,
+            "min": -1.9904364934669907,
+            "max": -0.6599568912055249
+          },
+          "actual_bank": {
+            "count": 25,
+            "median": 0.08823581931279573,
+            "p10": 0.08537662908729679,
+            "p90": 0.10496426979412692,
+            "min": 0.08519450132929691,
+            "max": 0.11126423792500045
+          },
+          "desired_bank": {
+            "count": 25,
+            "median": 0.36017974466085434,
+            "p10": 0.28982316702604294,
+            "p90": 0.39269908169872414,
+            "min": 0.28982316702604294,
+            "max": 0.39269908169872414
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 25,
+            "median": 0.2719439253480586,
+            "p10": 0.20344698129033578,
+            "p90": 0.296462099859022,
+            "min": 0.20179299584437183,
+            "max": 0.30038312286581714
+          },
+          "world_z_rate": {
+            "count": 26,
+            "median": -0.04645880497992039,
+            "p10": -0.09445637464523315,
+            "p90": -0.04191450588405132,
+            "min": -0.09489540010690689,
+            "max": -0.0409616194665432
+          },
+          "root_yaw_derivative": {
+            "count": 26,
+            "median": -0.052554774317856004,
+            "p10": -0.11372702986678088,
+            "p90": -0.04255841747098961,
+            "min": -0.11699070429190783,
+            "max": -0.03997363832770873
+          },
+          "path_length_m": 0.16689516603946686,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": false,
+          "auxiliary_joint_target_error_median_rad": 0.07793578505516052,
+          "auxiliary_velocity_abs_p95_rad_s": 0.2937597706913948,
+          "speed_cv": 0.007599367905825181,
+          "world_z_rate_trend_rad_s2": -0.12581230771083862,
+          "course_rate_peak_to_peak": 0.44278455201990136,
+          "threepoint_curvature_interdecile_range": 0.8829712323590317,
+          "finite_course_threepoint_samples": 24,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.10262311529924573,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.012090611265807774,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 150,
+          "end_frame_exclusive": 180,
+          "start_time_s": 14.999999664723873,
+          "end_time_s": 17.999999597668648,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "5ae4fbd7a2ca0f322baa7ec00137c99f23336047aa22f14f6c9dbcf347519f3f",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": 0.20482409745454788,
+            "p10": 0.1835453689098358,
+            "p90": 0.23170565217733383,
+            "min": 0.18164972960948944,
+            "max": 0.24510137736797333
+          },
+          "measured_course_curvature": {
+            "count": 118,
+            "median": -2.8245862965224444,
+            "p10": -7.66043197411362,
+            "p90": 3.785501806890754,
+            "min": -15.369138443483761,
+            "max": 16.218760475768892
+          },
+          "measured_threepoint_curvature": {
+            "count": 117,
+            "median": -3.3803629482471926,
+            "p10": -8.072513321393885,
+            "p90": 4.078044854324425,
+            "min": -15.513007234105329,
+            "max": 12.828319297750102
+          },
+          "kinematic_curvature": {
+            "count": 118,
+            "median": -2.8280509844074677,
+            "p10": -7.65848152064802,
+            "p90": 3.785710344208733,
+            "min": -15.33852042096483,
+            "max": 16.084744767207564
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": 0.15163909825797406,
+            "p10": 0.014680905274547322,
+            "p90": 0.17792938595582428,
+            "min": 0.004653976815183729,
+            "max": 0.1811515303644905
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": 0.1536180730909109,
+            "p10": 0.13765902668237687,
+            "p90": 0.17377923913300036,
+            "min": 0.13623729720711708,
+            "max": 0.18382603302598
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.03815393939182255,
+            "p10": 0.007326705446057913,
+            "p90": 0.159098333858453,
+            "min": 2.6842287939254916e-05,
+            "max": 0.17917205621079627
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": 0.02069002389907837,
+            "p10": -0.0076359352096915245,
+            "p90": 0.05417146906256676,
+            "min": -0.011975235305726528,
+            "max": 0.058662720024585724
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": 0.016524423756045892,
+            "p10": -0.018318338381567004,
+            "p90": 0.05819374016690608,
+            "min": -0.024633003155297546,
+            "max": 0.06310910666763496
+          },
+          "path_length_m": 0.28218263387680054,
+          "low_speed_samples": 33,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.012591764330863953,
+          "auxiliary_velocity_abs_p95_rad_s": 0.2665358632802963,
+          "speed_cv": 0.3518512572277521,
+          "world_z_rate_trend_rad_s2": 0.010639592888868446,
+          "course_rate_peak_to_peak": 1.8199131124825658,
+          "threepoint_curvature_interdecile_range": 12.15055817571831,
+          "finite_course_threepoint_samples": 117,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.2774672739688562,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.006657688671773865,
+          "median_geometric_minus_nominal_course_1_m": -3.376470228268726,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 180,
+          "end_frame_exclusive": 210,
+          "start_time_s": 17.999999597668648,
+          "end_time_s": 20.999999530613422,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "5ae4fbd7a2ca0f322baa7ec00137c99f23336047aa22f14f6c9dbcf347519f3f",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": 0.20819209516048431,
+            "p10": 0.20108506232500076,
+            "p90": 0.21134483069181442,
+            "min": 0.19893676042556763,
+            "max": 0.21161919832229614
+          },
+          "measured_course_curvature": {
+            "count": 151,
+            "median": 0.08641478610834184,
+            "p10": -0.9049619087238979,
+            "p90": 0.7664971590861107,
+            "min": -1.1846030104950034,
+            "max": 1.8054665063828572
+          },
+          "measured_threepoint_curvature": {
+            "count": 149,
+            "median": 0.05953590176381142,
+            "p10": -1.0453788956579093,
+            "p90": 0.7887067081798282,
+            "min": -1.4156249138183712,
+            "max": 1.679173761522198
+          },
+          "kinematic_curvature": {
+            "count": 151,
+            "median": 0.086319810333695,
+            "p10": -0.9049185541388015,
+            "p90": 0.7664009921294915,
+            "min": -1.1846336436589382,
+            "max": 1.8066907768752138
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": 0.16938468453562477,
+            "p10": 0.16284385613634916,
+            "p90": 0.17382966458897997,
+            "min": 0.15493963853083223,
+            "max": 0.1740395524137504
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": 0.15614407137036324,
+            "p10": 0.15081379674375056,
+            "p90": 0.15850862301886082,
+            "min": 0.14920257031917572,
+            "max": 0.1587143987417221
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.01462525042561004,
+            "p10": 0.010871089937178913,
+            "p90": 0.018098410206067277,
+            "min": 0.00573706821165651,
+            "max": 0.018856840582372303
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": 0.033381033688783646,
+            "p10": 0.022416194900870323,
+            "p90": 0.039144694805145264,
+            "min": 0.017482994124293327,
+            "max": 0.04021730646491051
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": 0.03285743227711134,
+            "p10": 0.019625170630060276,
+            "p90": 0.039313506992358846,
+            "min": 0.014484504636758544,
+            "max": 0.040469837392529344
+          },
+          "path_length_m": 0.3771940767765045,
+          "low_speed_samples": 0,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": true,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.007609471678733826,
+          "auxiliary_velocity_abs_p95_rad_s": 0.02676492929458618,
+          "speed_cv": 0.02601464026765365,
+          "world_z_rate_trend_rad_s2": 0.00556335281407673,
+          "course_rate_peak_to_peak": 0.35724178239892357,
+          "threepoint_curvature_interdecile_range": 1.8340856038377376,
+          "finite_course_threepoint_samples": 149,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.07431603117573414,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.0013206817528017606,
+          "median_geometric_minus_nominal_course_1_m": 0.06342862174227805,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 210,
+          "end_frame_exclusive": 240,
+          "start_time_s": 20.999999530613422,
+          "end_time_s": 23.999999463558197,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "5ae4fbd7a2ca0f322baa7ec00137c99f23336047aa22f14f6c9dbcf347519f3f",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": 0.12029638141393661,
+            "p10": 0.028555319271981718,
+            "p90": 0.1564176380634308,
+            "min": 0.019139254465699196,
+            "max": 0.16027739644050598
+          },
+          "measured_course_curvature": {
+            "count": 151,
+            "median": -1.332485507956437,
+            "p10": -4.737433940446963,
+            "p90": 5.012517018995417,
+            "min": -7.0589540120478995,
+            "max": 6.336348558364091
+          },
+          "measured_threepoint_curvature": {
+            "count": 149,
+            "median": -1.3885545637427021,
+            "p10": -5.006321852106264,
+            "p90": 5.461234057626661,
+            "min": -7.646965383417632,
+            "max": 6.788791526095342
+          },
+          "kinematic_curvature": {
+            "count": 151,
+            "median": -1.3326452635348276,
+            "p10": -4.737748223319986,
+            "p90": 5.012881826805462,
+            "min": -7.06116565288153,
+            "max": 6.336343836739903
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": 0.11714742082842852,
+            "p10": 0.09163265625953905,
+            "p90": 0.16583331946757893,
+            "min": 0.06322985172847309,
+            "max": 0.17276747098425727
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": 0.09022228606045246,
+            "p10": 0.02141648945398629,
+            "p90": 0.11731322854757308,
+            "min": 0.014354440849274397,
+            "max": 0.12020804733037949
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.03114363216351406,
+            "p10": 0.009200093025591534,
+            "p90": 0.09721281744888016,
+            "min": 2.957343569756632e-05,
+            "max": 0.11017784565801494
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": 0.025131411850452423,
+            "p10": 0.007204015739262104,
+            "p90": 0.051534250378608704,
+            "min": 0.004236397333443165,
+            "max": 0.06010331213474274
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": 0.030391354453256116,
+            "p10": 0.0008287311315852824,
+            "p90": 0.06264961235191802,
+            "min": -0.003183700106414277,
+            "max": 0.07214603233448745
+          },
+          "path_length_m": 0.39948922395706177,
+          "low_speed_samples": 0,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.020689353346824646,
+          "auxiliary_velocity_abs_p95_rad_s": 0.22567753493785858,
+          "speed_cv": 0.012198379043257932,
+          "world_z_rate_trend_rad_s2": -0.003490353915746843,
+          "course_rate_peak_to_peak": 1.7566611453848637,
+          "threepoint_curvature_interdecile_range": 10.467555909732924,
+          "finite_course_threepoint_samples": 149,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.2892224494803095,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.008448038991838071,
+          "median_geometric_minus_nominal_course_1_m": -1.3846618437642355,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 240,
+          "end_frame_exclusive": 270,
+          "start_time_s": 23.999999463558197,
+          "end_time_s": 26.99999939650297,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "5ae4fbd7a2ca0f322baa7ec00137c99f23336047aa22f14f6c9dbcf347519f3f",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": 0.05577555112540722,
+            "p10": -0.024889029562473294,
+            "p90": 0.08874106034636497,
+            "min": -0.0348084531724453,
+            "max": 0.0931532084941864
+          },
+          "measured_course_curvature": {
+            "count": 151,
+            "median": 1.8498151962276692,
+            "p10": -4.696700339927395,
+            "p90": 6.096155605323435,
+            "min": -5.47396899181163,
+            "max": 7.572854801055618
+          },
+          "measured_threepoint_curvature": {
+            "count": 149,
+            "median": 1.7222741721460744,
+            "p10": -5.076641027492739,
+            "p90": 6.730632644561827,
+            "min": -5.893306139798479,
+            "max": 8.149056507022424
+          },
+          "kinematic_curvature": {
+            "count": 151,
+            "median": 1.8497697863015867,
+            "p10": -4.695903982610389,
+            "p90": 6.096454569037967,
+            "min": -5.474620116678322,
+            "max": 7.574072748021298
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": 0.038317278880739145,
+            "p10": -0.01292010129441958,
+            "p90": 0.06832607641404022,
+            "min": -0.015989079064514668,
+            "max": 0.0708672515721148
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": 0.041831663344055414,
+            "p10": -0.018666772171854973,
+            "p90": 0.06655579525977372,
+            "min": -0.026106339879333973,
+            "max": 0.0698649063706398
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.02390149714952489,
+            "p10": 0.0058297750357461315,
+            "p90": 0.05874365909679114,
+            "min": 0.00017452092521232088,
+            "max": 0.08731413493180976
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": 0.010066822171211243,
+            "p10": -0.012555507943034172,
+            "p90": 0.031790975481271744,
+            "min": -0.015180854126811028,
+            "max": 0.045437972992658615
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": 0.015974527959946836,
+            "p10": -0.017891212960744134,
+            "p90": 0.037560013098964444,
+            "min": -0.022797607150744588,
+            "max": 0.0585537169855872
+          },
+          "path_length_m": 0.368161678314209,
+          "low_speed_samples": 0,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.015022343024611473,
+          "auxiliary_velocity_abs_p95_rad_s": 0.15334344655275345,
+          "speed_cv": 0.040051080326706234,
+          "world_z_rate_trend_rad_s2": -0.0012954879677145412,
+          "course_rate_peak_to_peak": 1.619953203549702,
+          "threepoint_curvature_interdecile_range": 11.807273672054567,
+          "finite_course_threepoint_samples": 149,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.3542229361947342,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.006633726788874055,
+          "median_geometric_minus_nominal_course_1_m": 1.726166892124541,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 270,
+          "end_frame_exclusive": 300,
+          "start_time_s": 26.99999939650297,
+          "end_time_s": 29.999999329447746,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "5ae4fbd7a2ca0f322baa7ec00137c99f23336047aa22f14f6c9dbcf347519f3f",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": -0.02717390563338995,
+            "p10": -0.05263396650552749,
+            "p90": 0.01434317231178284,
+            "min": -0.06230173259973526,
+            "max": 0.017758818343281746
+          },
+          "measured_course_curvature": {
+            "count": 151,
+            "median": -0.5133058355318052,
+            "p10": -3.442786174862782,
+            "p90": 4.0903059086825655,
+            "min": -4.280859873769535,
+            "max": 4.758488912846152
+          },
+          "measured_threepoint_curvature": {
+            "count": 149,
+            "median": -0.5646176032340962,
+            "p10": -3.8380822103688508,
+            "p90": 4.302233371046476,
+            "min": -4.744169256830845,
+            "max": 5.273100403476234
+          },
+          "kinematic_curvature": {
+            "count": 151,
+            "median": -0.5135619414209924,
+            "p10": -3.441935565760625,
+            "p90": 4.089364512848194,
+            "min": -4.282790620961372,
+            "max": 4.759487218710662
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": -0.008200873381968895,
+            "p10": -0.040272995229152585,
+            "p90": 0.009225313008315476,
+            "min": -0.041768762599586534,
+            "max": 0.010831204996893554
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": -0.020380429225042462,
+            "p10": -0.03947547487914562,
+            "p90": 0.010757379233837117,
+            "min": -0.046726299449801445,
+            "max": 0.01331911375746131
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.012426103555038901,
+            "p10": 0.003253402431649323,
+            "p90": 0.03032938627518696,
+            "min": 0.00021490692682502813,
+            "max": 0.043435751265512086
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": -0.002422875724732876,
+            "p10": -0.01543425489217043,
+            "p90": 0.009810005314648151,
+            "min": -0.02085411734879017,
+            "max": 0.011465529911220074
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": -0.0014643679963528798,
+            "p10": -0.017808731155188457,
+            "p90": 0.013401410804124199,
+            "min": -0.020165912438408977,
+            "max": 0.014458802690941071
+          },
+          "path_length_m": 0.3175199329853058,
+          "low_speed_samples": 0,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.009266863577067852,
+          "auxiliary_velocity_abs_p95_rad_s": 0.18239828199148178,
+          "speed_cv": 0.03793933102156673,
+          "world_z_rate_trend_rad_s2": 0.00039209161824733653,
+          "course_rate_peak_to_peak": 0.9790705227257972,
+          "threepoint_curvature_interdecile_range": 8.140315581415328,
+          "finite_course_threepoint_samples": 149,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.2411303421278319,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.0029199368352646614,
+          "median_geometric_minus_nominal_course_1_m": -0.5607248832556295,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 300,
+          "end_frame_exclusive": 330,
+          "start_time_s": 29.999999329447746,
+          "end_time_s": 32.99999926239252,
+          "duration_s": 2.9999999329447746,
+          "reference_sha256": "5ae4fbd7a2ca0f322baa7ec00137c99f23336047aa22f14f6c9dbcf347519f3f",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 30,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 30,
+            "median": -0.03331633098423481,
+            "p10": -0.03989450708031654,
+            "p90": -0.027252892591059206,
+            "min": -0.04172609746456146,
+            "max": -0.020239099860191345
+          },
+          "measured_course_curvature": {
+            "count": 151,
+            "median": -0.3849710004245413,
+            "p10": -2.777596512040396,
+            "p90": 2.438424704003673,
+            "min": -3.4901816205820055,
+            "max": 2.916176473769479
+          },
+          "measured_threepoint_curvature": {
+            "count": 149,
+            "median": -0.44471361821661,
+            "p10": -3.0462279959853102,
+            "p90": 2.7656352579853776,
+            "min": -3.760647538157204,
+            "max": 3.3385677423148743
+          },
+          "kinematic_curvature": {
+            "count": 151,
+            "median": -0.3849556225513986,
+            "p10": -2.7779329017296694,
+            "p90": 2.439354154843472,
+            "min": -3.4914058966799866,
+            "max": 2.9157048191069515
+          },
+          "actual_bank": {
+            "count": 150,
+            "median": -0.03068095922626809,
+            "p10": -0.03518492207589992,
+            "p90": -0.026554631505972898,
+            "min": -0.03741919146752972,
+            "max": -0.02554360288170708
+          },
+          "desired_bank": {
+            "count": 150,
+            "median": -0.024987248238176107,
+            "p10": -0.02992088031023741,
+            "p90": -0.02043966944329441,
+            "min": -0.0312945730984211,
+            "max": -0.015179324895143509
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 150,
+            "median": 0.00586518555184092,
+            "p10": 0.001162097409940341,
+            "p90": 0.014969431165222171,
+            "min": 1.3144275507331882e-06,
+            "max": 0.018664010614478872
+          },
+          "world_z_rate": {
+            "count": 151,
+            "median": -0.002786508994176984,
+            "p10": -0.009457731619477272,
+            "p90": 0.001644886564463377,
+            "min": -0.013643358834087849,
+            "max": 0.0025844380725175142
+          },
+          "root_yaw_derivative": {
+            "count": 151,
+            "median": -0.002390625295017484,
+            "p10": -0.010932599670024138,
+            "p90": 0.003370111420610616,
+            "min": -0.015827938693385946,
+            "max": 0.004559894306930044
+          },
+          "path_length_m": 0.2881494462490082,
+          "low_speed_samples": 0,
+          "geometry_identifiable": true,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.010349147021770477,
+          "auxiliary_velocity_abs_p95_rad_s": 0.048771023750305176,
+          "speed_cv": 0.01568993681655476,
+          "world_z_rate_trend_rad_s2": 0.0019677765077959976,
+          "course_rate_peak_to_peak": 0.6172008499202901,
+          "threepoint_curvature_interdecile_range": 5.811863253970688,
+          "finite_course_threepoint_samples": 149,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.2133390276916507,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.0012470334759958047,
+          "median_geometric_minus_nominal_course_1_m": -0.44082089823814335,
+          "not_model_prediction_error": true
+        },
+        {
+          "start_frame": 330,
+          "end_frame_exclusive": 345,
+          "start_time_s": 32.99999926239252,
+          "end_time_s": 34.49999922886491,
+          "duration_s": 1.4999999664723873,
+          "reference_sha256": "5ae4fbd7a2ca0f322baa7ec00137c99f23336047aa22f14f6c9dbcf347519f3f",
+          "direction": "reverse",
+          "nominal_main": -0.5,
+          "nominal_aux": 0.0,
+          "nominal_body_curvature_1_m": 0.00389271997846663,
+          "nominal_course_curvature_1_m": -0.00389271997846663,
+          "actual_issued_main": {
+            "count": 15,
+            "median": -0.30000001192092896,
+            "p10": -0.30000001192092896,
+            "p90": -0.30000001192092896,
+            "min": -0.30000001192092896,
+            "max": -0.30000001192092896
+          },
+          "actual_issued_aux": {
+            "count": 15,
+            "median": -0.027359934523701668,
+            "p10": -0.05018754079937935,
+            "p90": 0.005876696931954936,
+            "min": -0.053019534796476364,
+            "max": 0.014595363289117813
+          },
+          "measured_course_curvature": {
+            "count": 76,
+            "median": 0.7926528577852563,
+            "p10": -3.403894672782438,
+            "p90": 4.876040447762216,
+            "min": -3.967844367978181,
+            "max": 5.510259942442529
+          },
+          "measured_threepoint_curvature": {
+            "count": 74,
+            "median": 0.7800436398064163,
+            "p10": -3.822553567308474,
+            "p90": 5.605642575662543,
+            "min": -4.324261648792894,
+            "max": 6.361241229324497
+          },
+          "kinematic_curvature": {
+            "count": 76,
+            "median": 0.7926677650858536,
+            "p10": -3.4032584181293712,
+            "p90": 4.876593836240778,
+            "min": -3.9673573371701347,
+            "max": 5.507456203378495
+          },
+          "actual_bank": {
+            "count": 75,
+            "median": -0.02959936741770387,
+            "p10": -0.03230015558634416,
+            "p90": -0.02570125818672394,
+            "min": -0.033689405419157985,
+            "max": -0.025410577565419125
+          },
+          "desired_bank": {
+            "count": 75,
+            "median": -0.02051995089277625,
+            "p10": -0.03771840501576662,
+            "p90": 0.007375492947176099,
+            "min": -0.03976465109735727,
+            "max": 0.01094652246683836
+          },
+          "bank_tracking_abs_error_rad": {
+            "count": 75,
+            "median": 0.011915068380408955,
+            "p10": 0.0034146475815325953,
+            "p90": 0.03925653163937218,
+            "min": 0.0019879343687569384,
+            "max": 0.04314832305209654
+          },
+          "world_z_rate": {
+            "count": 76,
+            "median": -0.00648249895311892,
+            "p10": -0.01412313524633646,
+            "p90": 0.010126423556357622,
+            "min": -0.020701933652162552,
+            "max": 0.012094476260244846
+          },
+          "root_yaw_derivative": {
+            "count": 76,
+            "median": -0.006721570107551899,
+            "p10": -0.015023034269136124,
+            "p90": 0.01082448406315789,
+            "min": -0.023539522706819582,
+            "max": 0.012696319525541037
+          },
+          "path_length_m": 0.1424383819103241,
+          "low_speed_samples": 0,
+          "geometry_identifiable": false,
+          "oscillatory": true,
+          "joint_motion_stationarity": false,
+          "applied_joint_target_reached": true,
+          "auxiliary_joint_target_error_median_rad": 0.024309935048222542,
+          "auxiliary_velocity_abs_p95_rad_s": 0.17387811094522476,
+          "speed_cv": 0.005045649116260903,
+          "world_z_rate_trend_rad_s2": 0.010059431565464912,
+          "course_rate_peak_to_peak": 0.902712207787101,
+          "threepoint_curvature_interdecile_range": 9.428196142971018,
+          "finite_course_threepoint_samples": 74,
+          "course_vs_threepoint_median_abs_difference_1_m": 0.31744969226327113,
+          "world_z_minus_root_yaw_rate_rms_rad_s": 0.0015609614880121594,
+          "median_geometric_minus_nominal_course_1_m": null,
+          "not_model_prediction_error": true
+        }
+      ],
+      "alignment_verified": {
+        "current_request_to_posttick": true,
+        "bank_feedback_to_prestate": true,
+        "desired_bank_to_current_normalized_request": true
+      },
+      "normal_request_rows": 260,
+      "geometry_identifiable_windows": 7,
+      "oscillatory_windows": 13,
+      "joint_stationary_windows": 1
+    }
+  },
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_b0_run_v1/physics.npz": "a5ecd5cd2feac61b9f59c6d57e0de7f1c5538e33488c898ad770c2d6fb7398c0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_b0_run_v1/policy_records.json": "b3615248f4acff0bc7e271146774e8ca265ac5f5807c66cc2f50016adcc61fc6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_b0_run_v1/requests.npz": "0ee02a5c30b8f725fc66a05daacda9c1455f8864845bf68860edba8f40c11e08",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_b0_run_v1/feedback/bank_feedback_golden_e1_0001.json": "a571344f4ab7a8fbe2ca294047a7ec69befae6dba0a61bdb8de50de926c500f1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_candidate_run_v1/physics.npz": "c36b372845d3fdc30a94594d4ffadd922615bd1e2bb5374562ce43d731eead3a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_candidate_run_v1/policy_records.json": "9029bad46048e346c0b942850c80de6882d4fce55f9fe499f0c95ef854f4c87b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_candidate_run_v1/requests.npz": "be6308e948f0de886e4dad8c8baa59aee5014771299a43f104f32d57a6f4a8dd",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_candidate_run_v1/feedback/bank_feedback_golden_e1_0001.json": "37e97c58181b9dc711f3989e236e0f3c392226396d54acaf87c42e6d8dc639a0"
+  },
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/audit_runtime_geometric_curvature_v1.py": "8ca6240d5fe46d15dd6dc6bb8181ca4089546d381e55d578d6f6f9aaa2a06fd5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/runtime_geometric_curvature_v1.py": "875f50e6b2dcf4f5d18461f923290c64c9334155e3eded4cc4d4a25c1dc56473",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/runtime_geometric_curvature_scope_v1.json": "c24f329e3609ce024fdb18fcf20b766571cf8860901c1267f765f9876f83e936",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/analyze_round5_motion_transitions.py": "fb2dd194abcc04c6bee689bff4b021caac67cb6385215fa7467d3085f6168ada"
+  },
+  "scope": "Retrospective per-window numerical derivatives may use later samples within the same observed window; no predictions/online actions use them. World-z/Euler-yaw/course curvature/bank remain distinct. No repeated calibration, fit, fresh-heldout admission or safety claim; short/transient windows retained as unestimable. Per-window nominal point differences are descriptive and not isolated dynamic model errors.",
+  "whole_mission_complete": false
+}

@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-08T20:04:13.944398+00:00",
+  "whole_research_complete": false,
+  "automation_status": "ACTIVE",
+  "external_user_block": false,
+  "current_process_running": false,
+  "active": [],
+  "latest_report": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/benchmark_moving_surface_observation_and_stop_layers_20261009.md",
+  "append_receipts": [
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/research_mission.md",
+      "old_bytes": 415055,
+      "old_sha256": "34322c53ca58a4bf7a13aafb252bec169348136a79db76a109c7d07a92aadbc2",
+      "new_sha256": "ca86f16db3770a09ba321f7408b2f29efe5e588f9380222d9191416998498b3e"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+      "old_bytes": 509532,
+      "old_sha256": "7ff0c44fca803edd5b1251f2e21983ea91b133c5309aacd7b45dc72e9b6c5d44",
+      "new_sha256": "fe1808ace2c6f1d61397076553cc2d6ae5fb936a9cee944f22b1248b15b1d644"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md",
+      "old_bytes": 223715,
+      "old_sha256": "b1b724c8d3be15b0a147713d66d8c108048c85496dd86745a6b2fc20e2745e09",
+      "new_sha256": "2679bcbb8e2e43fa2a6b94135b2709f501abcc7f5d75c84026e7f489282850b1"
+    }
+  ],
+  "actual_physics_this_wake": "ONE actual8s source sequence CLOSED1 observation-budget REJECT; all80/81/401/17 preserved",
+  "videos_actual_verified": true,
+  "no_Git_push": true,
+  "original35_NOTRUN": true,
+  "stage_decision": "REJECT_FIXED_SAFE_START_OBSERVATION_PROGRAM",
+  "next": "Read new report and moving_surface_A1_run_v1/{postseal_moving_source_assessment_v2_serialization,moving_source_layer_diagnosis_v1,moving_execution_stop_layers_v1}.json. Do not repeat F0 pulse or relax .35/.7 budgets. Original program budget failed after drive ended at4.8s; fullsequence and final5low complete. Most new wrong source labels are current black centres (566/581 noGT), GT pose replacement gains15/13641 only. Freeze ONE source-specific current paired-eye evidence qualification interface keeping rawNN and UNKNOWN provenance, BEFORE historical necessaryscreen; retain all old/source/geometry/nav gates and GT-valid retention/per-epoch/coverage checks. This A1 teacher now historical, no fresh claim. If necessaryscreen supports separately frozen fresh whole source validation, only then actual read-only/live-source run and eventual same-version closedloop. No oldNN/Oracle/IMU/PID matrices or threshold/model rescue; original35 not triggered. Stop-request planning interface must include current formal smoother state; deterministic ramp known, not new globalphysicalmodel.",
+  "stop_reason": "Accumulated execution-context checkpoint after realGPU collection, first-review3fixes, fullclosure/seals/video+postseal source/pose/stop causal validation. No user approval waiting; next checkpoint is executable source evidence boundary, not repeat acquisitions."
+}

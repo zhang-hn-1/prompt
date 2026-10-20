@@ -1,0 +1,37 @@
+{
+  "saved_utc": "2026-10-05T03:52:11.000319+00:00",
+  "outer_class": "<class 'depth_local_curve.DepthLocalCurvePolicy'>",
+  "outer_runner_global_privilege": false,
+  "sensor_layer_privileged": true,
+  "inner_mro": [
+    {
+      "name": "with_confident_speed.<locals>.ConfidentSpeed",
+      "module": "gated_speed",
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/gated_speed.py",
+      "sha256": "152f25764480542f32ad2f3f28119e1ab4b20bc4f9ca794bb04a57115901c55b"
+    },
+    {
+      "name": "make_policy.<locals>.MappedBankOracle",
+      "module": "bank_mapping",
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/bank_mapping.py",
+      "sha256": "0a008cd0875e7f1979e3c2107f4573d6d237e65a91757fd90365260d907216ff"
+    },
+    {
+      "name": "OraclePathPolicy",
+      "module": "benchmark.policies",
+      "file": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "sha256": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f"
+    },
+    {
+      "name": "_PolicyBase",
+      "module": "benchmark.policies",
+      "file": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "sha256": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f"
+    }
+  ],
+  "inner_act": "<function OraclePathPolicy.act at 0x7a0a4e55a9e0>",
+  "old_information_main_cap_retained": false,
+  "nominal_geometric_planner": "existing plan_kinodynamic_path, not learned arbitrary-state predictor",
+  "prior_artifact_checks": 2513,
+  "prior_documents_checks": 5
+}

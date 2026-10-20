@@ -1,0 +1,79 @@
+{
+  "results": {
+    "e0": {
+      "success": true,
+      "time_s": 13.899999689310789,
+      "final_distance_m": 0.15336551254251024,
+      "path_length_m": 8.736269972000562,
+      "physical_contact": false,
+      "complete_contact_coverage": true,
+      "all_marker_capture_checks": 140,
+      "source_model_sha_match": true,
+      "actions_exact_to_old": true,
+      "states_exact_to_old": {
+        "position_world_xy": true,
+        "yaw_world_rad": true,
+        "linear_velocity_world_m_s": true,
+        "angular_velocity_world_rad_s": true,
+        "joint_position_rad": true,
+        "joint_velocity_rad_s": true,
+        "applied_action": true
+      },
+      "trigger_time_s": null,
+      "e1_actual_crossing_y_m": null,
+      "final_xy_speed_m_s": 0.7353565692901611,
+      "strict_stop_hold_tested": false
+    },
+    "e1": {
+      "success": true,
+      "time_s": 14.799999669194221,
+      "final_distance_m": 0.16350917895708864,
+      "path_length_m": 8.789204402902325,
+      "physical_contact": false,
+      "complete_contact_coverage": true,
+      "all_marker_capture_checks": 149,
+      "source_model_sha_match": true,
+      "actions_exact_to_old": true,
+      "states_exact_to_old": {
+        "position_world_xy": true,
+        "yaw_world_rad": true,
+        "linear_velocity_world_m_s": true,
+        "angular_velocity_world_rad_s": true,
+        "joint_position_rad": true,
+        "joint_velocity_rad_s": true,
+        "applied_action": true
+      },
+      "trigger_time_s": 0.1,
+      "e1_actual_crossing_y_m": -2.6232359409332275,
+      "final_xy_speed_m_s": 0.6676141619682312,
+      "strict_stop_hold_tested": false
+    },
+    "e2": {
+      "success": true,
+      "time_s": 13.999999687075615,
+      "final_distance_m": 0.13928671628225459,
+      "path_length_m": 8.811085432418537,
+      "physical_contact": false,
+      "complete_contact_coverage": true,
+      "all_marker_capture_checks": 141,
+      "source_model_sha_match": true,
+      "actions_exact_to_old": true,
+      "states_exact_to_old": {
+        "position_world_xy": true,
+        "yaw_world_rad": true,
+        "linear_velocity_world_m_s": true,
+        "angular_velocity_world_rad_s": true,
+        "joint_position_rad": true,
+        "joint_velocity_rad_s": true,
+        "applied_action": true
+      },
+      "trigger_time_s": null,
+      "e1_actual_crossing_y_m": null,
+      "final_xy_speed_m_s": 0.7252175211906433,
+      "strict_stop_hold_tested": false
+    }
+  },
+  "golden_complete_sequences_success": 3,
+  "whole_scene_generalization_claim": false,
+  "scope": "unchanged left RGB controller; not masked binocular candidate"
+}

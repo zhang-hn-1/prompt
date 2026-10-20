@@ -1,0 +1,16 @@
+"""Postseal teacher, without upgrading UNKNOWN or modifying candidate."""
+from pathlib import Path
+import numpy as np,json,hashlib,datetime
+H=Path(__file__).resolve().parent;D=H/'minimum_prefix_transition_navigation_run_v1';O=H/'unknown_surface_pixel_box_development_v2_checked';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();seal=json.loads((O/'prediction_pretruth_seal.json').read_text());assert all(sha(f)==s for f,s in seal['output_sha256'].items());assert all(sha(f)==s for f,s in seal['code_sha256'].items());rows=json.loads((O/'predictions.json').read_text());protocol=json.loads((H/'unknown_surface_pixel_box_protocol_v2_checked.json').read_text());out=[];total=bounded=valid=contained=0;labels={}
+for row in rows:
+ f=row['frame'];path=D/'offline_truth'/f'frame_{f:03d}.npz';labels[str(path)]=sha(path);gt=dict(np.load(path));T=gt['left_camera_usd_world'];known=np.load(D/'known_poses'/f'frame_{f:03d}.npz')['left_camera_usd_world'];np.testing.assert_allclose(T,known,atol=1e-10);depth=gt['left_depth_m'];n=len(row['geometries']);b=v=c=0;diameters=[]
+ for r in row['geometries']:
+  isbounded=r['status']=='bounded';b+=int(isbounded)
+  if isbounded:diameters.append(float(np.linalg.norm(np.asarray(r['hi_world_m'])-r['lo_world_m'])))
+  q=np.asarray(r['query_xy']);x,y=np.rint(q).astype(int);z=float(depth[y,x]);available=np.isfinite(z) and z>0;v+=int(available)
+  if not available:continue
+  ray=np.array([(q[0]-319.5)/584.8888888888889,(q[1]-239.5)/584.8888888888889,1.]);point=T[:3,3]+(T[:3,:3]@np.diag([1,-1,-1]))@(ray*z)
+  inside=isbounded and np.all(np.asarray(r['constraint_A'])@point<=np.asarray(r['constraint_b'])+1e-7);c+=int(inside)
+ out.append(dict(frame=f,nominal_correspondences=n,bounded=b,GT_label_available=v,GT_polytope_contained=c,bounded_fraction=b/n if n else 0.,label_available_fraction=v/n if n else 0.,GT_containment_fraction=c/v if v else 0.,envelope_diagonal_median_m=float(np.median(diameters)) if diameters else None,envelope_diagonal_peak_m=max(diameters) if diameters else None));total+=n;bounded+=b;valid+=v;contained+=c
+ checks=dict(bounded_fraction_ge95=bounded/total>=.95,GT_label_available_fraction_ge95=valid/total>=.95,valid_GT_containment_ge95=contained/valid>=.95 if valid else False)
+result=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),decision='PASS_HISTORICAL_CONDITIONAL_GEOMETRY_ONLY' if all(checks.values()) else 'REJECT_UNIQUE_CONDITIONAL_PIXEL_BOX_SOURCE_ENVELOPE',checks=checks,totals=dict(correspondences=total,bounded=bounded,GT_label_available=valid,GT_polytope_contained=contained,bounded_fraction=bounded/total,label_available_fraction=valid/total,GT_containment_fraction=contained/valid if valid else 0.),rows=out,source_GT_pose_diagnostic_only=True,correspondences_not_independent_samples=True,historical_already_seen_not_fresh=True,no_actor_or_estimatedpose_or_statistics_or_3D_safety=True,no_GT_selected_points_or_parameter_scan=True,old_point_sigma8_and_unknownbearing_rejects_preserved=True,original35_NOTRUN=True,whole_research_complete=False,prediction_pretruth_seal_sha256=sha(O/'prediction_pretruth_seal.json'),teacher_sha256=labels,code_sha256=sha(__file__));p=O/'assessment.json';assert not p.exists();p.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

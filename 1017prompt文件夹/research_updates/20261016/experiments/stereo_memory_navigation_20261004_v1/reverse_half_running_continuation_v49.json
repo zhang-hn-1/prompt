@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-09T16:06:28.951101+00:00",
+  "supersedes_sha256": "02497d6319398867f28c39cec356ec0a274981e19c270ddf89f46ea3d547c6dd",
+  "running_process": {
+    "status": "running",
+    "start_utc": "2026-10-09T16:06:10.761423+00:00",
+    "parent_pid": 633902,
+    "child_pid": 633903,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session_id": 18440,
+  "consumed_sequences": 1,
+  "maximum_sequences": 2,
+  "no_retry": true,
+  "review": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_half_prelaunch_review_v2.json",
+  "protocol_sha256": "ea2e4055ade857dad55f64b920200350d944d6a1af19a4f491c6f14da87ebf57",
+  "next_step": "supervise existing18440/PID only; after closed0 run frozen assessor+execution verifier; no duplicate development; validation after gated pointseal only",
+  "whole_mission_complete": false
+}

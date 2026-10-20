@@ -1,0 +1,69 @@
+{
+  "sealed_utc": "2026-10-04T18:35:51.390965+00:00",
+  "role": "one offline causal-past multiview support diagnostic, not online memory/admission",
+  "sequence": "hard_0_e1_0004",
+  "frames": [
+    0,
+    10,
+    20,
+    23
+  ],
+  "query_eyes": [
+    "left"
+  ],
+  "history_eyes": [
+    "left",
+    "right"
+  ],
+  "pixel_stride": 2,
+  "anchors": "every full prior independently ideal-selected left sphere core; world point from same-source authored raw mesh; retain all current label failures; no model-dependent removal",
+  "history": "only archived pair with actual simulation_time_s strictly earlier than query; no extrapolation/intermediate inferred captures; current eyes scored separately",
+  "visibility": "project native optical coords, entire2x2 footprint inside image/unmasked/finite positive renderer depth; every footprint axial label differs from anchor axial depth by <=.01m Euclidean along anchor ray",
+  "visibility_tolerance_ray_m": 0.01,
+  "rgb_label_tolerance_ray_m": 0.1,
+  "rgb": "frozen existing left final depth + confidence, entire2x2 valid confident finite positive, every footprint within .10m Euclidean along anchor ray; only count true depth-reliable when BOTH eyes visible at that past pair; right-only visibility is not metric RGB depth",
+  "units": "USD saved transposed column pose, optical z axial; Euclidean norm sqrt(1+(x-cx)^2/f^2+(y-cy)^2/f^2)",
+  "focal_px": 584.8888888888889,
+  "principal_xy": [
+    319.5,
+    239.5
+  ],
+  "denominators": "all73383 source surface queries, per current frame counts29792/17273/12742/13576; repeated surface queries across frames are not deduplicated unique map area",
+  "outputs": [
+    "current left/right status",
+    "strict earlier any-eye visibility",
+    "strict earlier simultaneous stereo visibility",
+    "strict earlier frozenRGB-reliable source",
+    "current and past support union",
+    "current-R-unavailable partitions and recoverable fractions",
+    "first earlier timestamp/frame/eye source"
+  ],
+  "budget": "4query frames x at most3earlier pairs x2eyes; no sim/inference/newnetwork/texture/control",
+  "scoring": "descriptive only; no new memory or navigation gate; retain old RGB and analytic gate rejections",
+  "limitations": "short2.3s sparse historical development, known sphere query selection omits globally blind surfaces;2x2 tolerance may reject grazing surface, not full scene ray occlusion proof; truth only offline labels, no GT reconstruction fed to algorithm",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/transaction_development_manifest.json": "4601f4ae5270410584a94e2ac9b1732cdbb6efa0d076ad1717d8fa2f2263ba8c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/static_scene_geometry.json": "e9196517524f160ad5ff524d9fbaa1b76fe13b19900cfd83c812bb6bcf773234",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/static_scene_ray_measurements.npz": "4b6db2ebdc803c4286e15b817c464246ee5803bf2dd5b056ff99b432d4752f34",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/static_scene_mesh_measurements.npz": "d8401e108b19dbff63f67164640b92872295d8df85aa3dc1efe8ab6490ff6ce7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/static_scene_label_audit.json": "18792b13eba7d196c2c56cc609e6dee525f8061e9bf50b8a04d153a73e2ce310",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/static_scene_mesh_decomposition.json": "5f6f8eebc508af5be2d7cec128ccb549e9b0e76176f7aa1159221629c6138c54",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/stereo_geometry.py": "cb178ce523c12c63b6d265cebfc2f367e8a64dbfc692b350e88ebc4ad9c2ae4d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/scene_ray_geometry.py": "c8d88506fd14a907fbfb236a8d8822c571ac8713f00e70530a6f45c981bac97d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visible_surface_connectivity_20261004_v1/base_link_masks.npz": "7769b6ab47292ae6517489f2992fd241b94f54c5022dd401efac3c4bae2d2a19",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/benchmark_static_scene_geometry_and_depth_labels_20261004.md": "2c21eaece8ac7cb4f11dceea7a0af1e3d4e9f2a3dd4b7e74a55ffc0da647e481",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fast_audit_transaction_development.json": "20b7e1b7fdea398aadcee4a713bd7306d357c0cda262e4d8da372aace812a366",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/online_inputs/frame_000.npz": "9427df68dd074773521a6cd7c44bc1f1f1502406a23b97dd1cd9db5b46fb9b12",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_000.npz": "cb30a5067253a45b4c2b88e5ab3fd503020588dfa705137b0d620cbf59bf6eb7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/predictions_transaction_development/fast/hard_0_e1_0004/frame_000.npz": "c9b10a2a574fcfc7b3d65976dcadc3ae32ae3a695ae4c12d690aa084edb2f3e5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/online_inputs/frame_010.npz": "1e8024b1f4ee406a47ee171093de36e60aebdf61b0fa2c5901bd02801d82fdf9",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_010.npz": "b9ae957ac74d1c8afcd0c226c12398c47cab38ffa331cdda6cdb60233f9bc2d2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/predictions_transaction_development/fast/hard_0_e1_0004/frame_010.npz": "455555ed8fc30468a502e9477202530f754a0421733beb06d28efbe0763a1de3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/online_inputs/frame_020.npz": "be31453d6203532be9051c23a982333cc9316f44edf85bd413d4399c7835ad21",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_020.npz": "d5dd21cd3216710d89d80b1caa822f321c9caa37db5d6633d2428b02aa3f918b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/predictions_transaction_development/fast/hard_0_e1_0004/frame_020.npz": "655e97a6d7508d51605413c5d40a5dc911b45c8b425c09dd8377a67cc3cdd6f2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/online_inputs/frame_023.npz": "a4d678b9df262a9b730a0a335ae1c75126b81eef3157c58bbec3f59f54b7405b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development/hard_0_e1_0004/offline_truth/frame_023.npz": "846b8538305d364ea0a99b1de30afab73175367c2394c15b7d43e076e851d353",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/predictions_transaction_development/fast/hard_0_e1_0004/frame_023.npz": "bef964b46b6499482015af43269c774fa63f5ff3c7182350b4e14c91af1421bc"
+  }
+}

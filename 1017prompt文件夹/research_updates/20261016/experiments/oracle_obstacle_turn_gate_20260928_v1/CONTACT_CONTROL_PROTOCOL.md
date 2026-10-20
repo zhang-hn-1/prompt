@@ -1,0 +1,3 @@
+# Positive physical-contact controls, frozen before their execution
+Two additional20s runs LR/RL blocked cylinder, identical first16s and same blocked geometry. The causal gate still computes rejection, but an explicitly labeled test override executes the proposed turn. This is only a simulated positive control, not deployed policy.
+Purpose: demonstrate obstacle relevance and that filtered contacts actually detect collision. Require initial prefix match and at least one valid50Hz contact sample>1N per existing runtime method; don't count this run as a success. Compare to blocked gated trials; post-contact open-plane template error is meaningless for prediction validation. Do not fit/tune or alter originalfour-trial thresholds from these results.

@@ -1,0 +1,183 @@
+{
+  "started_utc": "2026-10-05T08:53:58.904760+00:00",
+  "assessed_utc": "2026-10-05T08:53:58.951319+00:00",
+  "source_checks": 109,
+  "input_checks": 8487,
+  "independent_arm_calls": 4,
+  "archived_tracker_requests_exact": 2,
+  "first_current_request_divergence_frame": 182,
+  "same_prefix_call_181": true,
+  "consumed_initial_policy_gating_state_equal": true,
+  "rows": [
+    {
+      "frame": 181,
+      "current_position_xy": [
+        -0.7936302423477173,
+        -2.543933629989624
+      ],
+      "world_xy_speed_m_s": 0.24759137630462646,
+      "arms": [
+        {
+          "arm": "archived_tracker",
+          "protocol_request": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diagnostics": {
+            "reference_index": 1,
+            "active_drive_direction": "forward",
+            "pending_drive_direction": "reverse",
+            "stopped_cycles": 0,
+            "off_reference_cycles": 0,
+            "failure_subreason": null,
+            "cross_track_error_m": 0.12822548965349734,
+            "desired_drive_direction": "reverse",
+            "braking_state": "direction_change"
+          },
+          "request_layers": {
+            "policy_raw_main_command_rad_s": 0.0,
+            "policy_raw_auxiliary_target_rad": 0.0,
+            "policy_protocol_main_command_rad_s": 0.0,
+            "policy_protocol_auxiliary_target_rad": 0.0,
+            "policy_request_clipped": false,
+            "policy_request_clip_reason": null,
+            "request_source": "direction_change_braking"
+          }
+        },
+        {
+          "arm": "cusp_candidate",
+          "protocol_request": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diagnostics": {
+            "reference_index": 1,
+            "active_drive_direction": "forward",
+            "pending_drive_direction": "reverse",
+            "stopped_cycles": 0,
+            "off_reference_cycles": 0,
+            "failure_subreason": null,
+            "cross_track_error_m": 0.12822548965349734,
+            "desired_drive_direction": "reverse",
+            "braking_state": "direction_change"
+          },
+          "request_layers": {
+            "policy_raw_main_command_rad_s": 0.0,
+            "policy_raw_auxiliary_target_rad": 0.0,
+            "policy_protocol_main_command_rad_s": 0.0,
+            "policy_protocol_auxiliary_target_rad": 0.0,
+            "policy_request_clipped": false,
+            "policy_request_clip_reason": null,
+            "request_source": "direction_change_braking"
+          }
+        }
+      ]
+    },
+    {
+      "frame": 182,
+      "current_position_xy": [
+        -0.7802140116691589,
+        -2.563795328140259
+      ],
+      "world_xy_speed_m_s": 0.2317502647638321,
+      "arms": [
+        {
+          "arm": "archived_tracker",
+          "protocol_request": [
+            0.5,
+            -0.5235987901687622,
+            0.5,
+            -0.5235987901687622,
+            0.5,
+            -0.5235987901687622,
+            0.5,
+            -0.5235987901687622,
+            0.5,
+            -0.5235987901687622
+          ],
+          "diagnostics": {
+            "reference_index": 3,
+            "active_drive_direction": "forward",
+            "pending_drive_direction": null,
+            "stopped_cycles": 0,
+            "off_reference_cycles": 0,
+            "failure_subreason": null,
+            "cross_track_error_m": 0.09608459420393708,
+            "desired_drive_direction": "forward",
+            "braking_state": "tracking"
+          },
+          "request_layers": {
+            "policy_raw_main_command_rad_s": 0.5,
+            "policy_raw_auxiliary_target_rad": -0.5822039842605591,
+            "policy_protocol_main_command_rad_s": 0.5,
+            "policy_protocol_auxiliary_target_rad": -0.5235987901687622,
+            "policy_request_clipped": true,
+            "policy_request_clip_reason": "auxiliary_below_minimum",
+            "request_source": "tracking"
+          }
+        },
+        {
+          "arm": "cusp_candidate",
+          "protocol_request": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "diagnostics": {
+            "reference_index": 1,
+            "active_drive_direction": "forward",
+            "pending_drive_direction": "reverse",
+            "stopped_cycles": 0,
+            "off_reference_cycles": 0,
+            "failure_subreason": null,
+            "cross_track_error_m": 0.10505972246497204,
+            "desired_drive_direction": "reverse",
+            "braking_state": "direction_change"
+          },
+          "request_layers": {
+            "policy_raw_main_command_rad_s": 0.0,
+            "policy_raw_auxiliary_target_rad": 0.0,
+            "policy_protocol_main_command_rad_s": 0.0,
+            "policy_protocol_auxiliary_target_rad": 0.0,
+            "policy_request_clipped": false,
+            "policy_request_clip_reason": null,
+            "request_source": "direction_change_braking"
+          }
+        }
+      ]
+    }
+  ],
+  "projection_cusp_regression_pass": true,
+  "real_reverse_completion_demonstrated": false,
+  "new_simulations": 0,
+  "new_planner_searches": 0,
+  "navigation_gate_unchanged_rejected": true,
+  "future_physics_or_request_labels_used_as_inputs": false,
+  "later_archived_trajectory_not_a_candidate_label": true,
+  "actual_navigation_candidate_tested": false,
+  "whole_research_complete": false,
+  "scope": "CPU current-action reconstruction stops at first divergence; no physical successor state or success prediction."
+}

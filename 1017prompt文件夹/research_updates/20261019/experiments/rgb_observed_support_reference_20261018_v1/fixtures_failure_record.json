@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-17T22:12:52.476634+00:00",
+  "from_saved_log_sha256": "6a16f418712f501533351b960a422ac7e0aa88eee26c885c67f6c94393490c62",
+  "status": "original_fixture_failed1_not_rewritten",
+  "checks": {
+    "vectorized_scalar_fourvolumes_all3paths_byteexact": true,
+    "RGB_BT_and_window_48scalarcosts_exact": true,
+    "per_hypothesis_support_48points_exact": true,
+    "RGB_inputs_immutable": true,
+    "flat_valid_tie_UNKNOWN": false,
+    "decoder_tie_ratio_and_integer_sign": true,
+    "known_positive_shift_zero_supported_cost": true,
+    "known_reverse_shift_zero_supported_cost": true
+  },
+  "checks_true": 7,
+  "checks_false": 1,
+  "actual_RGB_dispatched": false,
+  "GT_scoring_dispatched": false
+}

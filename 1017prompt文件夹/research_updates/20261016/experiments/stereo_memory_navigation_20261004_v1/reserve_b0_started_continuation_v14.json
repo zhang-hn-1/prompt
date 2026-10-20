@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-09T11:36:33.641838+00:00",
+  "stage": "reserve_B0_actual_running_prelaunch_review_C0I0",
+  "whole_mission_complete": false,
+  "physics_running": true,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T11:36:11.300844+00:00",
+    "parent_pid": 319318,
+    "child_pid": 319319,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session_id": 33554,
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reserve_classification_review_pending_continuation_v13.json",
+  "superseded_sha256": "c2e1901aedcb80f9c85dfcf44d24c40c05b604d201392d0807327d954528de1c",
+  "prelaunch_review": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_reserve_fixed_reference_prelaunch_review_v2.json",
+  "next": "Supervise existing baseline PID/session, never restart; if normal complete close launch paced once, then assess both sealed artifacts. Existing old candidate rejections unchanged.",
+  "budget_remaining": {
+    "b0": 0,
+    "paced": 1,
+    "retries": 0
+  }
+}

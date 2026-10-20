@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-09T17:05:44.743494+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_prepared_continuation_v59.json",
+  "supersedes_sha256": "e3ddf10db3ae63585777ebf69585f35a0c558fad4d5fb1d61cd081872fa41f41",
+  "whole_mission_complete": false,
+  "running_process": true,
+  "actual_session": 10134,
+  "status_path": "reverse_main_navigation_e1_b0_status_v1.json",
+  "physical_budget_consumed": 1,
+  "maximum_physical_sequences": 2,
+  "no_retry": true,
+  "next_entry": "run_reverse_main_navigation_e1_stage_v1.py candidate",
+  "next_steps": [
+    "supervise existing b0 PID; no duplicate",
+    "complete b0 sealed assessment",
+    "candidate once only then pair score"
+  ]
+}

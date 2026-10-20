@@ -1,0 +1,71 @@
+{
+  "saved_utc": "2026-10-05T11:06:34.226510+00:00",
+  "outer_mro": [
+    {
+      "name": "EndpointLookaheadPolicy",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/outgoing_lookahead.py",
+      "sha256": "f0abeb4cd5d335be472fe43fefb4ee9e96bb21b9b3d8b1fca5495881e3e469c7"
+    },
+    {
+      "name": "CuspProjectionPolicy",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/cusp_projection.py",
+      "sha256": "c6baa43536bc5ba871b336fe0907d2a3abca676650c40fb8978e17a99a7a1d8d"
+    },
+    {
+      "name": "RootDirectionPolicy",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/root_direction_consumer.py",
+      "sha256": "748ac9f81bc09477b47409d460db715e446f17289a972f8f202ceb5d6be3c5d3"
+    },
+    {
+      "name": "GuardedReferencePolicy",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/guarded_reference.py",
+      "sha256": "30c8b79fef8bb097f2306f6579f51fe932288a6a320bc41604d725f56cec41bf"
+    },
+    {
+      "name": "DepthLocalCurvePolicy",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/depth_local_curve.py",
+      "sha256": "c0617a764b1b21a7b972a50a6fad86456cbcf98b947085f40dbdc28c086d37c7"
+    }
+  ],
+  "inner_mro": [
+    {
+      "name": "with_outgoing_endpoint.<locals>.OutgoingEndpoint",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/outgoing_lookahead.py",
+      "sha256": "f0abeb4cd5d335be472fe43fefb4ee9e96bb21b9b3d8b1fca5495881e3e469c7"
+    },
+    {
+      "name": "with_confident_speed.<locals>.ConfidentSpeed",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/oracle_feasible_route_20260929_v9/hybrid/gated_speed.py",
+      "sha256": "152f25764480542f32ad2f3f28119e1ab4b20bc4f9ca794bb04a57115901c55b"
+    },
+    {
+      "name": "make_policy.<locals>.MappedBankOracle",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/oracle_feasible_route_20260929_v9/hybrid/bank_mapping.py",
+      "sha256": "0a008cd0875e7f1979e3c2107f4573d6d237e65a91757fd90365260d907216ff"
+    },
+    {
+      "name": "with_cusp_boundary.<locals>.CuspBoundary",
+      "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/cusp_projection.py",
+      "sha256": "c6baa43536bc5ba871b336fe0907d2a3abca676650c40fb8978e17a99a7a1d8d"
+    },
+    {
+      "name": "OraclePathPolicy",
+      "file": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "sha256": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f"
+    },
+    {
+      "name": "_PolicyBase",
+      "file": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "sha256": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f"
+    }
+  ],
+  "act_and_root_boundary_inherited": true,
+  "inner_act_original": true,
+  "direction_handler_original": true,
+  "bank_measurement_callable": {
+    "name": "bank_from_quaternion",
+    "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/oracle_feasible_route_20260929_v9/gated_speed_012/roll_pid.py",
+    "sha256": "e205d303a8f9cb066349f8eae20e12f947596cca9603d7bac8dfb0b1b3379f47"
+  },
+  "no_reset_or_control_or_plan_executed": true
+}

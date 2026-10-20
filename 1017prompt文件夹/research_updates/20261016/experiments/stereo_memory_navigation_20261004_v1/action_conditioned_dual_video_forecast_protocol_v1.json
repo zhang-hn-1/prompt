@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-09T05:18:47.511063+00:00",
+  "role": "ONE bounded action-conditioned dual-eye visual motion forecast increment, not M3 physics fit, depth estimator or full navigation worldmodel",
+  "old_static_MODEL_reliability_rejection_frozen": true,
+  "fit_whole_sequences": [
+    "sgbm_baseline35_e0_coverage_run_v1",
+    "sgbm_baseline35_e1_coverage_run_v1",
+    "sgbm_baseline35_e2_run_v1",
+    "native_pose_baseline35_e0_run_v1"
+  ],
+  "fresh_whole_sequences": [
+    "action_video_fresh_e0_run_v1",
+    "action_video_fresh_e1_run_v1"
+  ],
+  "fresh_sealed_before_fit": true,
+  "horizon_s": 0.1,
+  "input": "current/past compressed binocular image-derived flow, current native IMU/encoder measured joints, current known issued request and previous request; no future feedback/applied/GTdepth/GTpose",
+  "features": "14 current sensor/request features + normalized queryXY(2) + XY products(3) + current/past image flow(2) + prior-flow-valid(1) + eyeID(1); no absolute scene/world coordinates",
+  "candidate": "one train-only scaled L2 ridge residual next image-flow predictor alpha1, no hyperparameter scan, no alternate model after failure",
+  "feature_scale_floor": 1.0,
+  "baseline": "last available image flow continued, otherwise zero; same teacher queries and whole sequence coverage",
+  "teacher": "offline current->next recorded image LK21/3/30/.01/FB1/error20; inside image and fixedCAD excluded, unavailable unknown; approximate 2D correspondence not true3D/occupied/free",
+  "fit_weight": "per-frame total1 shared eyes, train only; evaluate moving and all frames separately",
+  "moving_definition": "current abs(main_encoder)>.05rad/s OR current native gyro norm>.05rad/s, defined before fresh",
+  "gates": {
+    "each_whole_sequence_each_eye_min_usable_moving_queries": 100,
+    "each_whole_sequence_each_eye_min_moving_frames": 10,
+    "moving_mean_EPE_ratio_max": 0.85,
+    "moving_p90_EPE_max_px": 5
+  },
+  "on_failure": "reject sole forecast candidate; no extra network/refit/threshold scan, preserve all old and fresh results",
+  "on_pass": "forecast layer only; no navigation admission; at most two readonly online shadow sequences with predictions sealed before next feedback/teacher, no controller change",
+  "coverage_not_success": true,
+  "no_future_truth_or_random_frame_split": true,
+  "no_map_prior_as_observation": true,
+  "formal_original35_not_triggered": true
+}

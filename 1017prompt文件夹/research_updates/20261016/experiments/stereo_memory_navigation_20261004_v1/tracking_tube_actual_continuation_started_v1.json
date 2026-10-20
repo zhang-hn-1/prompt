@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-07T11:42:10.412302+00:00",
+  "actual_managed_session": 35806,
+  "status": {
+    "utc": "2026-10-07T11:41:21.713919+00:00",
+    "pid": 1664210,
+    "stage": "RUNNING",
+    "maximum_fresh_actual_sequences": 1,
+    "old_C1_not_fresh": true,
+    "model_retention_s": 60,
+    "only_planner_clearance_changed": true,
+    "formal_triggered": false,
+    "whole_research_complete": false,
+    "child_pid": 1664211
+  },
+  "next_executable_entries": [
+    "verify_tracking_tube_causal_v1.py",
+    "assess_tracking_tube_actual_v1.py"
+  ],
+  "actual_not_closed": true,
+  "no_duplicate_launch": true,
+  "maximum_fresh_actual_sequences": 1,
+  "whole_research_complete": false,
+  "formal_triggered": false,
+  "append_trace": [
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/research_mission.md",
+      "old_bytes": 246228,
+      "old_sha256": "839fe8b9389a968a3577268602ea465f31295132a935b1999f0d5ace968e8f51",
+      "new_sha256": "abce68f32b7b58e3ae50dc7516a9659b796e96367ca76768c3c37738f2284408",
+      "old_bytes_preserved": true
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+      "old_bytes": 342096,
+      "old_sha256": "4aa4cc7962f0fce8dea92c47c3d006bdc27760fc4f2876a412e494ca3391e762",
+      "new_sha256": "74e1ea0deca5e5c6338cc2d4a00b89009f6dddac5752854407a60727e7c5a158",
+      "old_bytes_preserved": true
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md",
+      "old_bytes": 174619,
+      "old_sha256": "2d3648e309d54864f8862b243c99b052275648ddb66b96f0da69ab91ba0caa96",
+      "new_sha256": "3393dfa04a3e52934aacf4f7ada5167f5a3c5ee54456dd5cbdf89c673f5b3af3",
+      "old_bytes_preserved": true
+    }
+  ]
+}

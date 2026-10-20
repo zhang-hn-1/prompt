@@ -1,0 +1,27 @@
+{
+  "frozen_at_utc": "2026-10-04T08:29:34.347944+00:00",
+  "episode_id": "golden_e1_0001",
+  "arms": [
+    "history_stopping"
+  ],
+  "budget_s": 35,
+  "baseline": "existing online_provenance_runs/history; exact same6s prefix/source and runtime state required",
+  "change": "one post-act local radial observed-hazard stopping veto; no planner/reference/PID/gain/cap/mapping/latch/rig/label change",
+  "radius_m": 0.7115947537131011,
+  "empirical_tail_source": "max bank/forward/reverse existing12s finite observation stopping path, not universal bound",
+  "empirical_speed_peak_m_s": 0.1637726750910607,
+  "unknown": "never free; counted, permitted under exact old exploration cap. No full3D collision certificate",
+  "higher_speed": "mark empirical scope exceeded; do not infer validated stopping bound. No extra speed threshold/scan",
+  "veto": "nonzero proposed block and at least one observed occupied cell within radial envelope; final raw block zero, existing rollPID/smoother unchanged; zero request not actual stopped",
+  "stop_qualification": "diagnostic only: five consecutive10Hz actual XY samples<.05, rebound resets count; does not change original direction latch",
+  "evaluation": "same frozen independent E1reference, physical contact,actual path/goal/ref progress/cross RMS peak; log proposed/final action. Parking or delayedfailure not navigation success",
+  "acceptance": "component: observed hazards actually veto final requests, causal exact pre-divergence physical/action/observer histories, no hidden inputs/map writes. Navigation: goal reached withoutcontact in35s; otherwise reject reliable navigation. Safety signal separately if contact prevented; no claim improvement merely from stalled progress",
+  "budget": "one actual candidate E1run, no threshold sweep and no formal E0/E1/E2 admission",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/stopping_consumer.py": "832196963ecab41decf30f16abf62351d7f028861610cdf87d2fb17c5fbbde35",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/stopping_policy.py": "7c6cddbc5b3089d31f07cdae1ce9345dbab4fb26b5e03a87f0509d0bc0cbc250",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_stopping_navigation.py": "a82d95d4277061f7ce459139f6fbbc7e986f279b75e53363fe01282c9c9d81e7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/primitive_planner.py": "0a7cf9ef1f7dfc76f3ea1ebc6a95f91b78dca015e7b08581c809437fd32f29f5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_execution_gap.json": "afd37b1d0ef020a756fc5c506b1e66ffee94600ac3c1b408b2b1537af5059264"
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "protocol_before_run": true,
+  "actual_runs": 1,
+  "status": {
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_route_clearance_navigation.py",
+      "--manifest",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1/golden_v1_manifest.json",
+      "--split",
+      "golden",
+      "--episode-id",
+      "golden_e1_0001",
+      "--policy",
+      "goal_greedy",
+      "--scene-root",
+      "/home/an/project/NavDP/assets/scenes",
+      "--data-root",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data",
+      "--run-root",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/route_clearance_navigation_run",
+      "--lighting-profile",
+      "fixed_camera_fill_v1",
+      "--collision-mode",
+      "physical_contact_v2",
+      "--headless",
+      "--record-video"
+    ],
+    "start_utc": "2026-10-04T15:37:11.106150+00:00",
+    "status": "finished",
+    "exit_code": 0,
+    "end_utc": "2026-10-04T15:40:50.633318+00:00"
+  },
+  "baseline": {
+    "success": 0.0,
+    "collision": 0.0,
+    "termination_reason": "timeout",
+    "elapsed_s": 35.0,
+    "path_length_m": 2.949698359666719,
+    "final_distance_m": 4.23038494916378,
+    "goal_progress_m": 2.369615724368706,
+    "policy_calls": 350,
+    "physical_samples": 1751,
+    "nonzero_blocks": 290,
+    "last_nonzero_s": 34.89999921992421,
+    "independent_reference_progress_final_m": 2.130168942957449,
+    "independent_reference_progress_peak_m": 2.130168942957449,
+    "cross_track_rms_m": 0.8081480016762129,
+    "cross_track_peak_m": 1.1848434332586963,
+    "peak_actual_xy_speed_m_s": 0.31633076071739197,
+    "first_scored_contact": null,
+    "source_identity_verified": true,
+    "videos": {
+      "third_person": {
+        "r_frame_rate": "10/1",
+        "duration": "35.600000",
+        "nb_frames": "356"
+      },
+      "stereo_view": {
+        "r_frame_rate": "10/1",
+        "duration": "35.600000",
+        "nb_frames": "356"
+      }
+    },
+    "main_motion_blocks": 224,
+    "veto_blocks": 66,
+    "first_veto_s": 28.399999365210533,
+    "no_route_blocks": 0,
+    "first_no_route_s": null
+  },
+  "candidate": {
+    "success": 0.0,
+    "collision": 0.0,
+    "termination_reason": "timeout",
+    "elapsed_s": 35.0,
+    "path_length_m": 2.901738892643591,
+    "final_distance_m": 4.259648730491846,
+    "goal_progress_m": 2.3403519430406403,
+    "policy_calls": 350,
+    "physical_samples": 1751,
+    "nonzero_blocks": 290,
+    "last_nonzero_s": 34.89999921992421,
+    "independent_reference_progress_final_m": 2.0806553732358815,
+    "independent_reference_progress_peak_m": 2.0806553732358815,
+    "cross_track_rms_m": 0.8080773685689963,
+    "cross_track_peak_m": 1.186397893325475,
+    "peak_actual_xy_speed_m_s": 0.31633076071739197,
+    "first_scored_contact": null,
+    "source_identity_verified": true,
+    "videos": {
+      "third_person": {
+        "r_frame_rate": "10/1",
+        "duration": "35.600000",
+        "nb_frames": "356"
+      },
+      "stereo_view": {
+        "r_frame_rate": "10/1",
+        "duration": "35.600000",
+        "nb_frames": "356"
+      }
+    },
+    "main_motion_blocks": 220,
+    "veto_blocks": 0,
+    "first_veto_s": null,
+    "no_route_blocks": 70,
+    "first_no_route_s": 27.99999937415123
+  },
+  "baseline_local6s": {
+    "data_sufficient": true,
+    "path_m": 0.5532224774360657,
+    "original_goal_distance_reduction_m": 0.5122954124893075,
+    "event_reference_progress_m": 0.4603826533485972,
+    "event_reference_lateral_rms_m": 0.12990407817346988,
+    "event_reference_lateral_peak_m": 0.21693830936319897,
+    "veto_blocks": 0,
+    "moving_main_blocks": 60,
+    "final_original_goal_distance_m": 4.529244991070282
+  },
+  "candidate_local6s": {
+    "data_sufficient": true,
+    "path_m": 0.5531827807426453,
+    "original_goal_distance_reduction_m": 0.5123005440560418,
+    "event_reference_progress_m": 0.460377195331715,
+    "event_reference_lateral_rms_m": 0.12982654740401028,
+    "event_reference_lateral_peak_m": 0.21695000511366078,
+    "veto_blocks": 0,
+    "moving_main_blocks": 60,
+    "final_original_goal_distance_m": 4.529239859503548
+  },
+  "prefix": {
+    "planning_event_frame": 200,
+    "time_s": 19.999999552965164,
+    "physical_samples": 1001,
+    "all17_nonraw_physics_exact": true,
+    "direct_complete_execution_states_exact": 201,
+    "requests_and_common_states_before_event_exact": 200,
+    "source_packets_through_event_exact": 201,
+    "raw_time_origin_delta_s": 0.0,
+    "raw_step_origin_delta": 0
+  },
+  "interface": {
+    "first_changed_request_frame": 225,
+    "changed_request_blocks": 9,
+    "first_changed_applied_tick": 1126,
+    "changed_applied_ticks": 625,
+    "changed_applied_main_ticks": 50,
+    "changed_applied_aux_ticks": 625,
+    "all_actual_requests_replayed": true,
+    "complete_policy_current_past_replay_exact": true,
+    "all_maps_replayed_exact": 35,
+    "measured_feedback_execution_clone_exact": true,
+    "history_shifts_once": 349,
+    "future_truncate_poison_event_unchanged": true,
+    "shared_source_sha_count": 37
+  },
+  "event_record": {
+    "time_s": 19.999999552965164,
+    "position_world_xy": [
+      -1.7406986951828003,
+      -0.09215764701366425
+    ],
+    "route_reason": "unknown_exploration",
+    "representation": "points",
+    "target_base_xy": [
+      0.7957579155010329,
+      -0.6556466587961424
+    ],
+    "request": [
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622
+    ],
+    "speed_xy": 0.08795065432786942,
+    "direction": 1,
+    "low_speed_count": 0,
+    "known_free": 134,
+    "known_occupied": 56,
+    "unknown": 159810,
+    "points_received": 12504,
+    "memory_mode": "history",
+    "current_floor": 2,
+    "historical_floor": 132,
+    "current_occupied": 28,
+    "historical_occupied": 28,
+    "footprint_unknown": 39,
+    "body_prior_observed_free": 0,
+    "pose_sigma_assumption_m": 0.0,
+    "full_3d_certified": false,
+    "unknown_swept_support_fraction": 0.8628318584070797,
+    "action_class": "explicit_risk_exploration",
+    "proposed_request": [
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622
+    ],
+    "stopping_consumer": {
+      "support_passed": false,
+      "unknown_cells": 131,
+      "occupied_cells": 0,
+      "checked_cells": 162,
+      "full_3d_certified": false,
+      "scope": "2.5D observed floor support and recorded hazards only",
+      "stop_veto": false,
+      "empirical_tail_m": 0.14088407559444638,
+      "certified_stopping_bound": false,
+      "support_status": "unknown_risk",
+      "raw_zero_is_actual_stop": false,
+      "actual_stop_qualified": false,
+      "low_speed_count": 0,
+      "beyond_empirical_speed": false
+    },
+    "baseline_final_request": [
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622,
+      0.30000001192092896,
+      0.5235987901687622
+    ],
+    "bank_stop_hold": {
+      "active": false,
+      "entered": false,
+      "source": "unchanged_parent_request",
+      "state": {
+        "active": false,
+        "previous_motion_aux": [
+          0.5235987901687622,
+          0.5235987901687622,
+          0.5235987901687622,
+          0.5235987901687622,
+          0.5235987901687622
+        ]
+      }
+    },
+    "bank_stop_state_before": {
+      "active": false,
+      "previous_motion_aux": [
+        0.5235987901687622,
+        0.5235987901687622,
+        0.5235987901687622,
+        0.5235987901687622,
+        0.5235987901687622
+      ]
+    },
+    "route_clearance": {
+      "active": true,
+      "event_time_s": 19.999999552965164,
+      "current_hazard_clearance_m": 1.4407193720445381,
+      "old_local_path_clearance_m": 0.6929296638306794,
+      "required_point_clearance_m": 0.7115947537131011,
+      "certified_stopping_bound": false,
+      "start_grid_clearance_m": 1.4000000000000001,
+      "goal_grid_clearance_m": 3.505709628591621,
+      "entered_this_call": true,
+      "entered_this_plan": true,
+      "geometry_measured_at_plan_time_s": 19.999999552965164,
+      "geometry_current_for_this_call": true
+    }
+  },
+  "local_gate_checks": {
+    "data_sufficient": true,
+    "no_contact": true,
+    "actual_path_nonregression": false,
+    "original_goal_progress_nonregression": true,
+    "fewer_veto_blocks": false,
+    "meaningful": false
+  },
+  "local_gate_passed": false,
+  "whole_gate_checks": {
+    "no_contact": true,
+    "reference_progress_nonregression": false,
+    "lateral_rms_nonregression": true,
+    "lateral_peak_nonregression": false,
+    "original_goal_distance_nonregression": false
+  },
+  "whole_reference_gate_passed": false,
+  "navigation_accepted": false,
+  "RGB_estimatedpose_learning_formalbenchmarks_not_admitted": true,
+  "checkpoint_scope": "actual progress along same event-time B0 full reference; no policy index or oldB0 future label for candidate",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/assess_route_clearance_navigation.py": "aaf9faa6726f54748ed7c63c1f07c2c7f2ba345c7a8151929f0407494a793505",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/route_clearance_navigation_protocol.json": "38ca466fc5469c11baae29dc22bf9b6190f6d19663aa03b91fbdf1414a960eec",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/online_bank_hold_navigation_run/physics.npz": "4d108edde02f297b4367aee93264923153a69ae76ee245b9a56c03f98d7b78d0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/route_clearance_navigation_run/physics.npz": "ca665e2b3b6bd96383ed675e996e52e156b49825cc385a7144167ee92b35b152"
+  }
+}

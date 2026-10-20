@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-09T16:30:00.887476+00:00",
+  "supersedes_sha256": "073d44a4f13b3b9dffd98a729c93f859b038c2d8055075784296da26b16b23ec",
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T16:29:40.317951+00:00",
+    "parent_pid": 660653,
+    "child_pid": 660654,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session_id": 92303,
+  "physical_budget_consumed": 1,
+  "maximum_physical_sequences": 2,
+  "no_retry": true,
+  "next_step": "supervise actual b0 parent/child without relaunch; normalclose seal then run candidate exactlyonce and fixedallcapture scoring; errors unassessedexecution notscientificreject",
+  "next_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_qualified_start_navigation_e1_stage_v1.py",
+  "whole_mission_complete": false
+}

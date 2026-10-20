@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-08T14:48:09.201571+00:00",
+  "queries": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "candidate": {
+    "main": 0.5,
+    "aux_rad": 0.5235987755982988,
+    "signed_arc_m": 0.6
+  },
+  "baseline": {
+    "main": 0.5,
+    "aux_rad": 0.0,
+    "signed_arc_m": 0.6
+  },
+  "only_difference": "steady measured nominal curvature command .5,+30 versus .5,0; no real controls changed",
+  "range_hypotheses_m": [
+    0.5,
+    1.0,
+    2.0,
+    3.0
+  ],
+  "camera_assumption": "Rigid camera current root-relative transform carried by nominal root XY/yaw arc; current roll/pitch held. NOT roll-PID transient/camera physical response prediction.",
+  "current_state": "Current known-pose diagnostic root position/root quaternion/camera pose and sealed query pixels; no later poses/actions/RGB/GT depth",
+  "no_actor_install": true,
+  "no_new_physics": true,
+  "no_network_or_fit": true,
+  "no_safety_certificate": true,
+  "gate": "Necessary per-pixel in-image and original feature triangulator sigma<=.1 only. No assumed real tracking, CAD visibility, future correspondences or navigation admission; failures not repaired by sign/length scanning."
+}

@@ -1,0 +1,21 @@
+from pathlib import Path
+import json,hashlib,datetime,sys
+import numpy as np
+H=Path(__file__).resolve().parent;W=H.parents[1];P=Path('/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm');sys.path.insert(0,str(P));sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+from bank_response_measurement import summarize
+from benchmark.drive_model import DriveModel
+assert not (H/'bank_response_assessment.json').exists()
+p=json.loads((H/'bank_response_protocol.json').read_text());status=json.loads((H/'bank_response_status.json').read_text());assert status['status']=='finished' and status['exit_code']==0 and p['sealed_utc']<status['start_utc']<status['end_utc']
+for group in ['source_sha256','input_sha256']:
+ for f,d in p[group].items():assert sha(f)==d,f
+producer=W/'experiments/oracle_bank_mapping_20260929_v2';old=np.load(producer/'calibration_0.5/physics.npz');new=np.load(H/'bank_response_run/physics.npz')
+def measured(z,window):return summarize(z['simulation_time_s'],z['position_world_xy'],z['root_quaternion_world_wxyz'],z['linear_velocity_world_m_s'][:,:2],z['yaw_world_rad'],.5,*window)
+b=measured(old,p['historical_one_window_s']);c=measured(new,p['fresh_window_s'])
+oldrow=next(r for r in json.loads((producer/'calibration_assessment.json').read_text()) if r['case']=='calibration_0.5' and r['requested_bank_deg']==-22.5)
+for field in ['actual_speed_m_s','actual_bank_deg','curvature_body_1_m','curvature_iqr','bank_span_95_5_deg','valid_fraction','direction_match_fraction','accepted']:assert b[field]==oldrow[field],field
+model=DriveModel.from_json(P/'configs/benchmark_v1/drive_dynamics_v1.json');v1k=model.curvature(.5,-np.pi/6);v1speed=model.speed(.5,-np.pi/6);maptable=json.loads((producer/'bank_mapping.json').read_text())['directions']['forward']['low'];assert abs(maptable['bank_rad'][0]+np.pi/8)<1e-12
+expected_k=float(maptable['curvature_body_1_m'][0]);error=abs(c['curvature_body_1_m']-expected_k);speederror=abs(c['actual_speed_m_s']-b['actual_speed_m_s']);limit=max(.2,.3*abs(expected_k))
+identity=json.loads((producer/'calibration_source_identity.json').read_text());source_checks=[dict(path=f,historical_sha256=d,current_sha256=sha(f),same=d==sha(f)) for f,d in identity.items()]
+newid=json.loads((H/'bank_response_run/identity.json').read_text());assert newid['pid_config']==p['pid_config'] and newid['inner_config']==p['inner_config'];assert newid['actions']==320 and newid['captures']==321 and newid['saved_frames']==65
+results=dict(measured_utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),protocol_sha256=sha(H/'bank_response_protocol.json'),historical_one_window=b,new_current_window=c,historical_row_exact=True,historical_source_checks=source_checks,historical_old_gains=[.8,.1,.35],current_gains=[.4,.1,.7],same_pid_implementation_bytes=(producer/'roll_pid.py').read_bytes()==(W/'experiments/oracle_feasible_route_20260929_v9/gated_speed_012/roll_pid.py').read_bytes(),effective_smoother_config=p['inner_config'],requested_main_rad_s=.5,requested_encoded_aux_rad=-np.pi/6,desired_bank_rad=-np.pi/8,bank_map_frozen_point=dict(body_curvature_1_m=expected_k,speed_point_m_s=b['actual_speed_m_s'],level_median_speed_m_s=maptable['speed_m_s'],not_future_speed_input=True),v1_nominal=dict(curvature_1_m=v1k,speed_m_s=v1speed,historical_producer_definition_certified=False),map_curvature_absolute_error_1_m=error,map_original_legacy_error_limit_1_m=limit,map_speed_absolute_error_m_s=speederror,v1_curvature_absolute_error_1_m=abs(c['curvature_body_1_m']-v1k),v1_speed_absolute_error_m_s=abs(c['actual_speed_m_s']-v1speed),gates=dict(current_steady_pass=c['accepted'],legacy_map_curvature_consistency=error<=limit,current_speed_consistency=speederror<=.03,actual_current_configuration_exact=True),bounded_case_consistency_pass=c['accepted'] and error<=limit and speederror<=.03,actual_new_sequences=1,historical_windows_remeasured=1,historical_matrix_or_refit_repeated=False,new_control_candidates=0,new_planner_searches=0,new_model_fits=0,causal_gain_effect_isolated=False,full_bank_mapping_admitted=False,physical_dynamic_model_admitted=False,navigation_admitted=False,formal_success_rate=None,whole_research_complete=False,automation='ACTIVE')
+(H/'bank_response_assessment.json').write_text(json.dumps(results,indent=2)+'\n');print(json.dumps(results,indent=2))

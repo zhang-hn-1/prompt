@@ -1,0 +1,1404 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "frame": "frame_000.npz",
+      "time_s": 0.4999999888241291,
+      "arms": [
+        {
+          "camera": "front_left",
+          "projected_rim_samples": 4502,
+          "nonCAD_rim_samples": 3778,
+          "render_contact_supported_samples": 2590,
+          "floor_supported_rim_samples": 2585,
+          "obstacle_supported_rim_samples": 2590,
+          "two_surface_supported_rim_samples": 2585,
+          "unique_contact_pixels": 380,
+          "visible_grounded_objects": 7,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 64,
+          "suspended_objects_total": 0,
+          "prediction_cells": 55,
+          "target_cells": 55,
+          "contact_position_error_p90_m": 0.012290740199913405
+        },
+        {
+          "camera": "front_right",
+          "projected_rim_samples": 3991,
+          "nonCAD_rim_samples": 3225,
+          "render_contact_supported_samples": 2341,
+          "floor_supported_rim_samples": 2341,
+          "obstacle_supported_rim_samples": 2277,
+          "two_surface_supported_rim_samples": 2277,
+          "unique_contact_pixels": 329,
+          "visible_grounded_objects": 6,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 65,
+          "suspended_objects_total": 0,
+          "prediction_cells": 47,
+          "target_cells": 48,
+          "contact_position_error_p90_m": 0.012871831408599144
+        },
+        {
+          "camera": "rear_left",
+          "projected_rim_samples": 5017,
+          "nonCAD_rim_samples": 4279,
+          "render_contact_supported_samples": 1101,
+          "floor_supported_rim_samples": 1087,
+          "obstacle_supported_rim_samples": 85,
+          "two_surface_supported_rim_samples": 75,
+          "unique_contact_pixels": 29,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 8,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.005252728896855592
+        },
+        {
+          "camera": "rear_right",
+          "projected_rim_samples": 5030,
+          "nonCAD_rim_samples": 4269,
+          "render_contact_supported_samples": 1104,
+          "floor_supported_rim_samples": 1092,
+          "obstacle_supported_rim_samples": 74,
+          "two_surface_supported_rim_samples": 65,
+          "unique_contact_pixels": 21,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 6,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.005595287736826657
+        }
+      ],
+      "prediction_cells": 83,
+      "target_cells": 96,
+      "prediction_correct": 83,
+      "target_recovered": 93,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.96875,
+      "cell_position_p90_m": 0.09999999999999964
+    },
+    {
+      "frame": "frame_001.npz",
+      "time_s": 0.9999999776482582,
+      "arms": [
+        {
+          "camera": "front_left",
+          "projected_rim_samples": 4720,
+          "nonCAD_rim_samples": 3940,
+          "render_contact_supported_samples": 2677,
+          "floor_supported_rim_samples": 2677,
+          "obstacle_supported_rim_samples": 2663,
+          "two_surface_supported_rim_samples": 2663,
+          "unique_contact_pixels": 390,
+          "visible_grounded_objects": 7,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 64,
+          "suspended_objects_total": 0,
+          "prediction_cells": 57,
+          "target_cells": 56,
+          "contact_position_error_p90_m": 0.010438438233657496
+        },
+        {
+          "camera": "front_right",
+          "projected_rim_samples": 4220,
+          "nonCAD_rim_samples": 3394,
+          "render_contact_supported_samples": 2262,
+          "floor_supported_rim_samples": 2262,
+          "obstacle_supported_rim_samples": 2176,
+          "two_surface_supported_rim_samples": 2176,
+          "unique_contact_pixels": 326,
+          "visible_grounded_objects": 6,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 65,
+          "suspended_objects_total": 0,
+          "prediction_cells": 50,
+          "target_cells": 47,
+          "contact_position_error_p90_m": 0.01193634589133406
+        },
+        {
+          "camera": "rear_left",
+          "projected_rim_samples": 4932,
+          "nonCAD_rim_samples": 4362,
+          "render_contact_supported_samples": 1129,
+          "floor_supported_rim_samples": 1105,
+          "obstacle_supported_rim_samples": 102,
+          "two_surface_supported_rim_samples": 83,
+          "unique_contact_pixels": 32,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 9,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.002547183968629509
+        },
+        {
+          "camera": "rear_right",
+          "projected_rim_samples": 4969,
+          "nonCAD_rim_samples": 4299,
+          "render_contact_supported_samples": 1122,
+          "floor_supported_rim_samples": 1098,
+          "obstacle_supported_rim_samples": 108,
+          "two_surface_supported_rim_samples": 91,
+          "unique_contact_pixels": 37,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 10,
+          "target_cells": 23,
+          "contact_position_error_p90_m": 0.003660218535057384
+        }
+      ],
+      "prediction_cells": 88,
+      "target_cells": 97,
+      "prediction_correct": 88,
+      "target_recovered": 95,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.979381443298969,
+      "cell_position_p90_m": 0.10000000000000053
+    },
+    {
+      "frame": "frame_002.npz",
+      "time_s": 1.4999999664723873,
+      "arms": [
+        {
+          "camera": "front_left",
+          "projected_rim_samples": 4516,
+          "nonCAD_rim_samples": 3780,
+          "render_contact_supported_samples": 2561,
+          "floor_supported_rim_samples": 2561,
+          "obstacle_supported_rim_samples": 2561,
+          "two_surface_supported_rim_samples": 2561,
+          "unique_contact_pixels": 387,
+          "visible_grounded_objects": 7,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 64,
+          "suspended_objects_total": 0,
+          "prediction_cells": 63,
+          "target_cells": 56,
+          "contact_position_error_p90_m": 0.012761279389705638
+        },
+        {
+          "camera": "front_right",
+          "projected_rim_samples": 3988,
+          "nonCAD_rim_samples": 3210,
+          "render_contact_supported_samples": 2249,
+          "floor_supported_rim_samples": 2249,
+          "obstacle_supported_rim_samples": 2184,
+          "two_surface_supported_rim_samples": 2184,
+          "unique_contact_pixels": 326,
+          "visible_grounded_objects": 6,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 65,
+          "suspended_objects_total": 0,
+          "prediction_cells": 51,
+          "target_cells": 47,
+          "contact_position_error_p90_m": 0.011305211927181265
+        },
+        {
+          "camera": "rear_left",
+          "projected_rim_samples": 4926,
+          "nonCAD_rim_samples": 4298,
+          "render_contact_supported_samples": 1107,
+          "floor_supported_rim_samples": 1082,
+          "obstacle_supported_rim_samples": 80,
+          "two_surface_supported_rim_samples": 65,
+          "unique_contact_pixels": 24,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 7,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.0025479721502343817
+        },
+        {
+          "camera": "rear_right",
+          "projected_rim_samples": 4945,
+          "nonCAD_rim_samples": 4211,
+          "render_contact_supported_samples": 1099,
+          "floor_supported_rim_samples": 1083,
+          "obstacle_supported_rim_samples": 92,
+          "two_surface_supported_rim_samples": 79,
+          "unique_contact_pixels": 29,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 8,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.0035324549410067152
+        }
+      ],
+      "prediction_cells": 90,
+      "target_cells": 96,
+      "prediction_correct": 90,
+      "target_recovered": 94,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.9791666666666666,
+      "cell_position_p90_m": 0.10000000000000053
+    },
+    {
+      "frame": "frame_003.npz",
+      "time_s": 1.9999999552965164,
+      "arms": [
+        {
+          "camera": "front_left",
+          "projected_rim_samples": 4499,
+          "nonCAD_rim_samples": 3773,
+          "render_contact_supported_samples": 2632,
+          "floor_supported_rim_samples": 2626,
+          "obstacle_supported_rim_samples": 2632,
+          "two_surface_supported_rim_samples": 2626,
+          "unique_contact_pixels": 393,
+          "visible_grounded_objects": 7,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 64,
+          "suspended_objects_total": 0,
+          "prediction_cells": 60,
+          "target_cells": 56,
+          "contact_position_error_p90_m": 0.00990872652644409
+        },
+        {
+          "camera": "front_right",
+          "projected_rim_samples": 3970,
+          "nonCAD_rim_samples": 3196,
+          "render_contact_supported_samples": 2322,
+          "floor_supported_rim_samples": 2322,
+          "obstacle_supported_rim_samples": 2269,
+          "two_surface_supported_rim_samples": 2269,
+          "unique_contact_pixels": 331,
+          "visible_grounded_objects": 6,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 65,
+          "suspended_objects_total": 0,
+          "prediction_cells": 51,
+          "target_cells": 47,
+          "contact_position_error_p90_m": 0.011857143240054822
+        },
+        {
+          "camera": "rear_left",
+          "projected_rim_samples": 4955,
+          "nonCAD_rim_samples": 4315,
+          "render_contact_supported_samples": 1107,
+          "floor_supported_rim_samples": 1081,
+          "obstacle_supported_rim_samples": 78,
+          "two_surface_supported_rim_samples": 59,
+          "unique_contact_pixels": 24,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 8,
+          "target_cells": 23,
+          "contact_position_error_p90_m": 0.002363039356441074
+        },
+        {
+          "camera": "rear_right",
+          "projected_rim_samples": 5005,
+          "nonCAD_rim_samples": 4240,
+          "render_contact_supported_samples": 1104,
+          "floor_supported_rim_samples": 1084,
+          "obstacle_supported_rim_samples": 85,
+          "two_surface_supported_rim_samples": 71,
+          "unique_contact_pixels": 31,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 8,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.003901222334268069
+        }
+      ],
+      "prediction_cells": 92,
+      "target_cells": 96,
+      "prediction_correct": 92,
+      "target_recovered": 96,
+      "oracle_precision": 1.0,
+      "oracle_recall": 1.0,
+      "cell_position_p90_m": 0.10000000000000053
+    },
+    {
+      "frame": "frame_004.npz",
+      "time_s": 2.4999999441206455,
+      "arms": [
+        {
+          "camera": "front_left",
+          "projected_rim_samples": 4575,
+          "nonCAD_rim_samples": 3835,
+          "render_contact_supported_samples": 2683,
+          "floor_supported_rim_samples": 2683,
+          "obstacle_supported_rim_samples": 2683,
+          "two_surface_supported_rim_samples": 2683,
+          "unique_contact_pixels": 403,
+          "visible_grounded_objects": 7,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 64,
+          "suspended_objects_total": 0,
+          "prediction_cells": 58,
+          "target_cells": 56,
+          "contact_position_error_p90_m": 0.013952674559976907
+        },
+        {
+          "camera": "front_right",
+          "projected_rim_samples": 4064,
+          "nonCAD_rim_samples": 3275,
+          "render_contact_supported_samples": 2364,
+          "floor_supported_rim_samples": 2362,
+          "obstacle_supported_rim_samples": 2289,
+          "two_surface_supported_rim_samples": 2287,
+          "unique_contact_pixels": 333,
+          "visible_grounded_objects": 6,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 65,
+          "suspended_objects_total": 0,
+          "prediction_cells": 48,
+          "target_cells": 47,
+          "contact_position_error_p90_m": 0.012781683971647067
+        },
+        {
+          "camera": "rear_left",
+          "projected_rim_samples": 5000,
+          "nonCAD_rim_samples": 4343,
+          "render_contact_supported_samples": 1114,
+          "floor_supported_rim_samples": 1094,
+          "obstacle_supported_rim_samples": 87,
+          "two_surface_supported_rim_samples": 74,
+          "unique_contact_pixels": 30,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 7,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.0034240614178554806
+        },
+        {
+          "camera": "rear_right",
+          "projected_rim_samples": 5058,
+          "nonCAD_rim_samples": 4283,
+          "render_contact_supported_samples": 1113,
+          "floor_supported_rim_samples": 1097,
+          "obstacle_supported_rim_samples": 80,
+          "two_surface_supported_rim_samples": 67,
+          "unique_contact_pixels": 24,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 7,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.0037727882566346393
+        }
+      ],
+      "prediction_cells": 84,
+      "target_cells": 96,
+      "prediction_correct": 84,
+      "target_recovered": 93,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.96875,
+      "cell_position_p90_m": 0.09999999999999964
+    },
+    {
+      "frame": "frame_005.npz",
+      "time_s": 2.9999999329447746,
+      "arms": [
+        {
+          "camera": "front_left",
+          "projected_rim_samples": 4624,
+          "nonCAD_rim_samples": 3871,
+          "render_contact_supported_samples": 2602,
+          "floor_supported_rim_samples": 2602,
+          "obstacle_supported_rim_samples": 2581,
+          "two_surface_supported_rim_samples": 2581,
+          "unique_contact_pixels": 385,
+          "visible_grounded_objects": 7,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 64,
+          "suspended_objects_total": 0,
+          "prediction_cells": 56,
+          "target_cells": 56,
+          "contact_position_error_p90_m": 0.010757390423259575
+        },
+        {
+          "camera": "front_right",
+          "projected_rim_samples": 4119,
+          "nonCAD_rim_samples": 3324,
+          "render_contact_supported_samples": 2281,
+          "floor_supported_rim_samples": 2281,
+          "obstacle_supported_rim_samples": 2196,
+          "two_surface_supported_rim_samples": 2196,
+          "unique_contact_pixels": 326,
+          "visible_grounded_objects": 6,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 65,
+          "suspended_objects_total": 0,
+          "prediction_cells": 50,
+          "target_cells": 48,
+          "contact_position_error_p90_m": 0.010417614660818074
+        },
+        {
+          "camera": "rear_left",
+          "projected_rim_samples": 5053,
+          "nonCAD_rim_samples": 4356,
+          "render_contact_supported_samples": 1116,
+          "floor_supported_rim_samples": 1105,
+          "obstacle_supported_rim_samples": 92,
+          "two_surface_supported_rim_samples": 84,
+          "unique_contact_pixels": 35,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 8,
+          "target_cells": 23,
+          "contact_position_error_p90_m": 0.0028696988697387575
+        },
+        {
+          "camera": "rear_right",
+          "projected_rim_samples": 5095,
+          "nonCAD_rim_samples": 4331,
+          "render_contact_supported_samples": 1128,
+          "floor_supported_rim_samples": 1111,
+          "obstacle_supported_rim_samples": 92,
+          "two_surface_supported_rim_samples": 81,
+          "unique_contact_pixels": 29,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 9,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.003495611286712504
+        }
+      ],
+      "prediction_cells": 86,
+      "target_cells": 97,
+      "prediction_correct": 86,
+      "target_recovered": 93,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.9587628865979382,
+      "cell_position_p90_m": 0.10000000000000053
+    },
+    {
+      "frame": "frame_006.npz",
+      "time_s": 3.4999999217689037,
+      "arms": [
+        {
+          "camera": "front_left",
+          "projected_rim_samples": 4658,
+          "nonCAD_rim_samples": 3900,
+          "render_contact_supported_samples": 2649,
+          "floor_supported_rim_samples": 2649,
+          "obstacle_supported_rim_samples": 2649,
+          "two_surface_supported_rim_samples": 2649,
+          "unique_contact_pixels": 395,
+          "visible_grounded_objects": 7,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 64,
+          "suspended_objects_total": 0,
+          "prediction_cells": 55,
+          "target_cells": 56,
+          "contact_position_error_p90_m": 0.0105704930244137
+        },
+        {
+          "camera": "front_right",
+          "projected_rim_samples": 4147,
+          "nonCAD_rim_samples": 3343,
+          "render_contact_supported_samples": 2301,
+          "floor_supported_rim_samples": 2301,
+          "obstacle_supported_rim_samples": 2222,
+          "two_surface_supported_rim_samples": 2222,
+          "unique_contact_pixels": 326,
+          "visible_grounded_objects": 6,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 65,
+          "suspended_objects_total": 0,
+          "prediction_cells": 47,
+          "target_cells": 48,
+          "contact_position_error_p90_m": 0.011709909193413998
+        },
+        {
+          "camera": "rear_left",
+          "projected_rim_samples": 5085,
+          "nonCAD_rim_samples": 4383,
+          "render_contact_supported_samples": 1127,
+          "floor_supported_rim_samples": 1105,
+          "obstacle_supported_rim_samples": 93,
+          "two_surface_supported_rim_samples": 78,
+          "unique_contact_pixels": 31,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 9,
+          "target_cells": 23,
+          "contact_position_error_p90_m": 0.002777179335721539
+        },
+        {
+          "camera": "rear_right",
+          "projected_rim_samples": 5126,
+          "nonCAD_rim_samples": 4349,
+          "render_contact_supported_samples": 1133,
+          "floor_supported_rim_samples": 1117,
+          "obstacle_supported_rim_samples": 103,
+          "two_surface_supported_rim_samples": 93,
+          "unique_contact_pixels": 34,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 8,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.0029297824972487944
+        }
+      ],
+      "prediction_cells": 84,
+      "target_cells": 97,
+      "prediction_correct": 84,
+      "target_recovered": 92,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.9484536082474226,
+      "cell_position_p90_m": 0.10000000000000053
+    },
+    {
+      "frame": "frame_007.npz",
+      "time_s": 3.999999910593033,
+      "arms": [
+        {
+          "camera": "front_left",
+          "projected_rim_samples": 4712,
+          "nonCAD_rim_samples": 3948,
+          "render_contact_supported_samples": 2638,
+          "floor_supported_rim_samples": 2638,
+          "obstacle_supported_rim_samples": 2619,
+          "two_surface_supported_rim_samples": 2619,
+          "unique_contact_pixels": 404,
+          "visible_grounded_objects": 7,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 64,
+          "suspended_objects_total": 0,
+          "prediction_cells": 58,
+          "target_cells": 55,
+          "contact_position_error_p90_m": 0.01143953046589568
+        },
+        {
+          "camera": "front_right",
+          "projected_rim_samples": 4186,
+          "nonCAD_rim_samples": 3380,
+          "render_contact_supported_samples": 2303,
+          "floor_supported_rim_samples": 2303,
+          "obstacle_supported_rim_samples": 2222,
+          "two_surface_supported_rim_samples": 2222,
+          "unique_contact_pixels": 326,
+          "visible_grounded_objects": 6,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 65,
+          "suspended_objects_total": 0,
+          "prediction_cells": 48,
+          "target_cells": 47,
+          "contact_position_error_p90_m": 0.011629643302054286
+        },
+        {
+          "camera": "rear_left",
+          "projected_rim_samples": 5128,
+          "nonCAD_rim_samples": 4420,
+          "render_contact_supported_samples": 1136,
+          "floor_supported_rim_samples": 1113,
+          "obstacle_supported_rim_samples": 112,
+          "two_surface_supported_rim_samples": 94,
+          "unique_contact_pixels": 36,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 8,
+          "target_cells": 23,
+          "contact_position_error_p90_m": 0.003577345279444836
+        },
+        {
+          "camera": "rear_right",
+          "projected_rim_samples": 5160,
+          "nonCAD_rim_samples": 4378,
+          "render_contact_supported_samples": 1140,
+          "floor_supported_rim_samples": 1130,
+          "obstacle_supported_rim_samples": 97,
+          "two_surface_supported_rim_samples": 90,
+          "unique_contact_pixels": 31,
+          "visible_grounded_objects": 3,
+          "grounded_objects_total": 71,
+          "no_qualified_contact_objects": 68,
+          "suspended_objects_total": 0,
+          "prediction_cells": 8,
+          "target_cells": 22,
+          "contact_position_error_p90_m": 0.004479694183193765
+        }
+      ],
+      "prediction_cells": 86,
+      "target_cells": 96,
+      "prediction_correct": 86,
+      "target_recovered": 94,
+      "oracle_precision": 1.0,
+      "oracle_recall": 0.9791666666666666,
+      "cell_position_p90_m": 0.10000000000000053
+    }
+  ],
+  "aggregate": {
+    "prediction_cells": 693,
+    "target_cells": 771,
+    "prediction_correct": 693,
+    "target_recovered": 750
+  },
+  "oracle_precision": 1.0,
+  "oracle_recall": 0.9727626459143969,
+  "oracle_cell_position_p90_m": 0.10000000000000053,
+  "contact_pixel_position_p90_m": 0.011354581042342115,
+  "gates": {
+    "precision": true,
+    "recall": true,
+    "position": true,
+    "every_frame_recall": true
+  },
+  "necessary_eight_pose_geometry_pass": true,
+  "decision": "PASS_EIGHT_POSE_NECESSARY_GEOMETRY_ONLY",
+  "training_admitted": false,
+  "online_source_admitted": false,
+  "full_sequence_coverage": false,
+  "missing": [
+    "Current four-camera full trajectories and independent held-out inputs/labels",
+    "Actual RGB visible-contact detector",
+    "Suspended/unknown-object and bottom-occlusion whole-domain qualification",
+    "Causal IMU/pose consumer qualification; current oracle uses renderer pose and true floor"
+  ],
+  "physical": 0,
+  "fit": 0,
+  "model": 0,
+  "navigation": 0,
+  "wall_s": 0.9296155100455508,
+  "objects": [
+    {
+      "path": "/E1Detour/BoundaryLeft/left_00",
+      "center": [
+        -4.8,
+        -4.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_01",
+      "center": [
+        -4.8,
+        -3.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_02",
+      "center": [
+        -4.8,
+        -3.0,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_03",
+      "center": [
+        -4.8,
+        -2.4,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_04",
+      "center": [
+        -4.8,
+        -1.8,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_05",
+      "center": [
+        -4.8,
+        -1.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_06",
+      "center": [
+        -4.8,
+        -0.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_07",
+      "center": [
+        -4.8,
+        0.0,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_08",
+      "center": [
+        -4.8,
+        0.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_09",
+      "center": [
+        -4.8,
+        1.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_10",
+      "center": [
+        -4.8,
+        1.8,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_11",
+      "center": [
+        -4.8,
+        2.4,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_12",
+      "center": [
+        -4.8,
+        3.0,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_13",
+      "center": [
+        -4.8,
+        3.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryLeft/left_14",
+      "center": [
+        -4.8,
+        4.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_00",
+      "center": [
+        4.8,
+        -4.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_01",
+      "center": [
+        4.8,
+        -3.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_02",
+      "center": [
+        4.8,
+        -3.0,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_03",
+      "center": [
+        4.8,
+        -2.4,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_04",
+      "center": [
+        4.8,
+        -1.8,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_05",
+      "center": [
+        4.8,
+        -1.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_06",
+      "center": [
+        4.8,
+        -0.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_07",
+      "center": [
+        4.8,
+        0.0,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_08",
+      "center": [
+        4.8,
+        0.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_09",
+      "center": [
+        4.8,
+        1.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_10",
+      "center": [
+        4.8,
+        1.8,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_11",
+      "center": [
+        4.8,
+        2.4,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_12",
+      "center": [
+        4.8,
+        3.0,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_13",
+      "center": [
+        4.8,
+        3.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryRight/right_14",
+      "center": [
+        4.8,
+        4.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_00",
+      "center": [
+        -4.2,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_01",
+      "center": [
+        -3.6,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_02",
+      "center": [
+        -3.0,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_03",
+      "center": [
+        -2.4,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_04",
+      "center": [
+        -1.8,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_05",
+      "center": [
+        -1.2,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_06",
+      "center": [
+        -0.6,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_07",
+      "center": [
+        0.0,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_08",
+      "center": [
+        0.6,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_09",
+      "center": [
+        1.2,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_10",
+      "center": [
+        1.8,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_11",
+      "center": [
+        2.4,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_12",
+      "center": [
+        3.0,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_13",
+      "center": [
+        3.6,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryBottom/bottom_14",
+      "center": [
+        4.2,
+        -4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_00",
+      "center": [
+        -4.2,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_01",
+      "center": [
+        -3.6,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_02",
+      "center": [
+        -3.0,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_03",
+      "center": [
+        -2.4,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_04",
+      "center": [
+        -1.8,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_05",
+      "center": [
+        -1.2,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_06",
+      "center": [
+        -0.6,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_07",
+      "center": [
+        0.0,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_08",
+      "center": [
+        0.6,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_09",
+      "center": [
+        1.2,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_10",
+      "center": [
+        1.8,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_11",
+      "center": [
+        2.4,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_12",
+      "center": [
+        3.0,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_13",
+      "center": [
+        3.6,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/BoundaryTop/top_14",
+      "center": [
+        4.2,
+        4.5,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_00",
+      "center": [
+        0.0,
+        -1.8,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_01",
+      "center": [
+        0.0,
+        -1.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_02",
+      "center": [
+        0.0,
+        -0.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_03",
+      "center": [
+        0.0,
+        0.0,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_04",
+      "center": [
+        0.0,
+        0.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_05",
+      "center": [
+        0.0,
+        1.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_06",
+      "center": [
+        0.0,
+        1.8,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_07",
+      "center": [
+        0.0,
+        2.4,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_08",
+      "center": [
+        0.0,
+        3.0,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_09",
+      "center": [
+        0.0,
+        3.6,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    },
+    {
+      "path": "/E1Detour/Divider/divider_10",
+      "center": [
+        0.0,
+        4.2,
+        0.5
+      ],
+      "radius": 0.35,
+      "height": 1.0
+    }
+  ],
+  "grounded_object_count": 71,
+  "suspended_object_count": 0,
+  "unknown_geometry": "Bodyband renderer pixels outside certified cylinder support remain unidentified; no full-scene semantic labels claimed",
+  "floor_geometry": "z=0 is a disclosed prior, supported by saved floor pixels only; remote floor asset is not independently resolved",
+  "source_sha256": "54c1302e6de0bc7c52ea8b9a97402f1d41b620588d480a4af9a07f58184abb81",
+  "protocol_sha256": "5a6fc0b8fe634af614ee0841d5851cff70913bcbe3e14c9426a851d123535428",
+  "scene_sha256": "d6236dea995f04e3a81fb90dcde4bde6b63841c283cc5b2470aee8cda34c8634"
+}

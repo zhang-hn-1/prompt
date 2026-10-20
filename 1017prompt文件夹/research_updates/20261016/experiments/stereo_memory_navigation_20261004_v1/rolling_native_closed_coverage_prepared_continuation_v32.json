@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-09T13:59:43.056234+00:00",
+  "stage": "native_E0_closed_no_qualification_intervention",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_native_paced_started_continuation_v31.json",
+  "superseded_sha256": "c14354a42cab2ec22144e0fe1ced4f078a0e0af2d82353d84eba2654628cb90c",
+  "physics_running": false,
+  "whole_mission_complete": false,
+  "independent_review_pending": true,
+  "assessment": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_native_e0_assessment_v1.json",
+  "remaining_coverage_budget": {
+    "known_e1": 1,
+    "known_e2": 1,
+    "native_e1": 1,
+    "native_e2": 1,
+    "retry": 0
+  },
+  "next": "Get nativeE0 independentclosed review; then execute run_rolling_endpoint_coverage_stage_v1.py known e1 once, assess_rolling_endpoint_coverage_v1.py known e1, then remainingdeclaredorder. No nativeE0retry or retune."
+}

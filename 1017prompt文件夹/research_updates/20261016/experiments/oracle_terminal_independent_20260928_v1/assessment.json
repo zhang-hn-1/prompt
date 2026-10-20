@@ -1,0 +1,187 @@
+{
+  "results": {
+    "LR_coast": {
+      "condition_start": {
+        "block": 280,
+        "distance": 0.6912255330802208,
+        "speed": 0.1939695179462433,
+        "active": true,
+        "done": false,
+        "target": [
+          0.0,
+          -0.5235987901687622
+        ]
+      },
+      "condition_release": {
+        "block": 285,
+        "distance": 0.6099859533974232,
+        "speed": 0.17486903071403503,
+        "active": true,
+        "done": true,
+        "target": null
+      },
+      "first_positive_terminal_after_release": {
+        "block": 294,
+        "distance": 0.49085795839428586,
+        "speed": 0.155328631401062,
+        "target": [
+          0.5,
+          -0.5235987901687622
+        ]
+      },
+      "outside_goal_low_speed_release": false,
+      "first_goal_s": 32.57999927178025,
+      "final_distance_m": 0.19276619796205516,
+      "min_distance_m": 0.1922975541767179,
+      "last1s_max_distance_m": 0.19571796572102446,
+      "last1s_max_speed_m_s": 0.004741133190691471,
+      "last1s_50hz_max_distance_m": 0.19572828134180115,
+      "last1s_50hz_max_speed_m_s": 0.004799666348844767,
+      "prefix_matches": true,
+      "contacts": 0,
+      "contact_valid": true,
+      "body_clearance_m": 0.2027989453188831,
+      "passed_obstacle": true,
+      "stable": true,
+      "accepted": true
+    },
+    "LR_recovery": {
+      "condition_start": {
+        "block": 292,
+        "distance": 0.4890757034169892,
+        "speed": 0.19399292767047882,
+        "active": true,
+        "done": false,
+        "target": [
+          0.0,
+          -0.5235987901687622
+        ]
+      },
+      "condition_release": {
+        "block": 309,
+        "distance": 0.3250658093704927,
+        "speed": 0.007692344486713409,
+        "active": true,
+        "done": true,
+        "target": null
+      },
+      "first_positive_terminal_after_release": {
+        "block": 309,
+        "distance": 0.3250658093704927,
+        "speed": 0.007692344486713409,
+        "target": [
+          0.5,
+          -0.5235987901687622
+        ]
+      },
+      "outside_goal_low_speed_release": true,
+      "first_goal_s": 33.939999241381884,
+      "final_distance_m": 0.17629934413628817,
+      "min_distance_m": 0.17609712647283973,
+      "last1s_max_distance_m": 0.19722679406540838,
+      "last1s_max_speed_m_s": 0.0480249784886837,
+      "last1s_50hz_max_distance_m": 0.19722679406540838,
+      "last1s_50hz_max_speed_m_s": 0.0480249784886837,
+      "prefix_matches": true,
+      "contacts": 0,
+      "contact_valid": true,
+      "body_clearance_m": 0.2027989453188831,
+      "passed_obstacle": true,
+      "stable": true,
+      "accepted": true
+    },
+    "RL_coast": {
+      "condition_start": {
+        "block": 296,
+        "distance": 0.6978691900043427,
+        "speed": 0.21019980311393738,
+        "active": true,
+        "done": false,
+        "target": [
+          0.0,
+          0.49317416548728943
+        ]
+      },
+      "condition_release": {
+        "block": 301,
+        "distance": 0.6015676554457133,
+        "speed": 0.16507942974567413,
+        "active": true,
+        "done": true,
+        "target": null
+      },
+      "first_positive_terminal_after_release": {
+        "block": 311,
+        "distance": 0.4924614870331582,
+        "speed": 0.15285322070121765,
+        "target": [
+          0.5,
+          0.5235987901687622
+        ]
+      },
+      "outside_goal_low_speed_release": false,
+      "first_goal_s": 34.19999923557043,
+      "final_distance_m": 0.18994430483909464,
+      "min_distance_m": 0.1889516779810269,
+      "last1s_max_distance_m": 0.207705101315062,
+      "last1s_max_speed_m_s": 0.05613891780376434,
+      "last1s_50hz_max_distance_m": 0.207705101315062,
+      "last1s_50hz_max_speed_m_s": 0.05613891780376434,
+      "prefix_matches": true,
+      "contacts": 0,
+      "contact_valid": true,
+      "body_clearance_m": 0.18516628280605674,
+      "passed_obstacle": true,
+      "stable": false,
+      "accepted": false
+    },
+    "RL_recovery": {
+      "condition_start": {
+        "block": 308,
+        "distance": 0.4957214568531234,
+        "speed": 0.17893528938293457,
+        "active": true,
+        "done": false,
+        "target": [
+          0.0,
+          0.5235987901687622
+        ]
+      },
+      "condition_release": {
+        "block": 327,
+        "distance": 0.33483540061389894,
+        "speed": 0.02982698194682598,
+        "active": true,
+        "done": true,
+        "target": null
+      },
+      "first_positive_terminal_after_release": {
+        "block": 327,
+        "distance": 0.33483540061389894,
+        "speed": 0.02982698194682598,
+        "target": [
+          0.4948522379480449,
+          0.5235987901687622
+        ]
+      },
+      "outside_goal_low_speed_release": true,
+      "first_goal_s": null,
+      "final_distance_m": 0.2101105825547455,
+      "min_distance_m": 0.2101105825547455,
+      "last1s_max_distance_m": 0.292868801804539,
+      "last1s_max_speed_m_s": 0.13007713854312897,
+      "last1s_50hz_max_distance_m": 0.292868801804539,
+      "last1s_50hz_max_speed_m_s": 0.13007713854312897,
+      "prefix_matches": true,
+      "contacts": 0,
+      "contact_valid": true,
+      "body_clearance_m": 0.18516628280605674,
+      "passed_obstacle": true,
+      "stable": false,
+      "accepted": false
+    }
+  },
+  "all_passed": false,
+  "passed_count": 2,
+  "formal_benchmark": false
+}

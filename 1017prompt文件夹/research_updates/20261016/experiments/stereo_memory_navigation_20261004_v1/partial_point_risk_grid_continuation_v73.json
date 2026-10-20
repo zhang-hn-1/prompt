@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-09T03:20:23.848867+00:00",
+  "whole_research_complete": false,
+  "automation_status": "ACTIVE",
+  "external_user_block": false,
+  "actual_CPU": "v1 exit1 typeadapter preserved; v2/v3/v4 exit0",
+  "physics": "NO_NEW_PHYSICAL_SEQUENCE",
+  "formal35": "NOTRUN",
+  "control_candidate": "REJECT_NOT_EXECUTED",
+  "predictions": [
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/E1_continuous_tube_navigation_run_v1/controller_prefix_clone_predictions_v3.json",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/E1_continuous_tube_navigation_run_v1/controller_prefix_clone_predictions_v4.json"
+  ],
+  "next_entry": "Fixed221371 current known .1s blocks: deterministic execution chain reconstruction separate from future feedback labels; V1 nominal sweep versus actual block XY prediction error/domain only. No veto/no rejected candidate/no repeated54.6/no second model.",
+  "scope": "fixed reference tracker clone only, historical measured feedback, not full policy/online/recursive physical model",
+  "support_domain_check": "CLOSED0_ALL_REJECT_KEEP_OLD_GATES",
+  "independent_review": "controllerclone_C0I0_scopeclarified",
+  "turn_checkpoint_reason": "Preserved active continuation after bounded causal interface and support checks; no active physics, whole research incomplete."
+}

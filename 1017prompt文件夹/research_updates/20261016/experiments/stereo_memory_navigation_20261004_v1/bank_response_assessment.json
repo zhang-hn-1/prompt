@@ -1,0 +1,137 @@
+{
+  "measured_utc": "2026-10-05T16:02:26.501861+00:00",
+  "protocol_sha256": "005f949f35a280dad5d1b08e5e8640ee28a0156dcf63696fb5e28bf04731fa61",
+  "historical_one_window": {
+    "window_start_s": 80.0,
+    "window_end_s": 84.5,
+    "samples": 225,
+    "valid_samples": 225,
+    "actual_speed_m_s": 0.18951493501663208,
+    "actual_bank_deg": -22.373663622346292,
+    "curvature_body_1_m": 0.7966033220291138,
+    "curvature_geometric_1_m": 0.7966033220291138,
+    "curvature_iqr": 0.03194379806518555,
+    "bank_span_95_5_deg": 1.0762484798853258,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true,
+    "measurement_scope": "offline centered31sample XY geometry; not online physical prediction"
+  },
+  "new_current_window": {
+    "window_start_s": 21.0,
+    "window_end_s": 25.5,
+    "samples": 225,
+    "valid_samples": 225,
+    "actual_speed_m_s": 0.1873091459274292,
+    "actual_bank_deg": -21.81700657064609,
+    "curvature_body_1_m": 0.7923734784126282,
+    "curvature_geometric_1_m": 0.7923734784126282,
+    "curvature_iqr": 0.02135998010635376,
+    "bank_span_95_5_deg": 0.6091853895218335,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true,
+    "measurement_scope": "offline centered31sample XY geometry; not online physical prediction"
+  },
+  "historical_row_exact": true,
+  "historical_source_checks": [
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_bank_mapping_20260929_v2/roll_pid.py",
+      "historical_sha256": "e205d303a8f9cb066349f8eae20e12f947596cca9603d7bac8dfb0b1b3379f47",
+      "current_sha256": "e205d303a8f9cb066349f8eae20e12f947596cca9603d7bac8dfb0b1b3379f47",
+      "same": true
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_bank_mapping_20260929_v2/run_calibration.py",
+      "historical_sha256": "106cd5aebfe90beb0f8e5e1b6445e6a4c1ce9ba94c33805bb667fe8891a85dad",
+      "current_sha256": "106cd5aebfe90beb0f8e5e1b6445e6a4c1ce9ba94c33805bb667fe8891a85dad",
+      "same": true
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_bank_mapping_20260929_v2/PROTOCOL.md",
+      "historical_sha256": "e38b76405b3cef713d7ed3eb2d9dff4040df07b5aff299a4ab3e5033c9dab4ff",
+      "current_sha256": "e38b76405b3cef713d7ed3eb2d9dff4040df07b5aff299a4ab3e5033c9dab4ff",
+      "same": true
+    },
+    {
+      "path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py",
+      "historical_sha256": "f03101e291195b122e540dc1cfe0d3a8633372d50cff548b3814380ec22bd3df",
+      "current_sha256": "72266e68bced65f81e41dbe96d99a806e4f674b13c9ae7db563016097d8a29f7",
+      "same": false
+    },
+    {
+      "path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/action_smoothing.py",
+      "historical_sha256": "5aed5a5d815895365140d22f737733441382e649f232055384c0d13eb00e8402",
+      "current_sha256": "5aed5a5d815895365140d22f737733441382e649f232055384c0d13eb00e8402",
+      "same": true
+    }
+  ],
+  "historical_old_gains": [
+    0.8,
+    0.1,
+    0.35
+  ],
+  "current_gains": [
+    0.4,
+    0.1,
+    0.7
+  ],
+  "same_pid_implementation_bytes": true,
+  "effective_smoother_config": {
+    "dt_s": 0.02,
+    "max_main_acceleration_rad_s2": 0.5,
+    "max_auxiliary_rate_rad_s": 0.5235987755982988,
+    "max_auxiliary_velocity_rad_s": 0.3
+  },
+  "requested_main_rad_s": 0.5,
+  "requested_encoded_aux_rad": -0.5235987755982988,
+  "desired_bank_rad": -0.39269908169872414,
+  "bank_map_frozen_point": {
+    "body_curvature_1_m": 0.7966033220291138,
+    "speed_point_m_s": 0.18951493501663208,
+    "level_median_speed_m_s": 0.18854965269565582,
+    "not_future_speed_input": true
+  },
+  "v1_nominal": {
+    "curvature_1_m": 0.8800519662098094,
+    "speed_m_s": 0.21453669339685325,
+    "historical_producer_definition_certified": false
+  },
+  "map_curvature_absolute_error_1_m": 0.004229843616485596,
+  "map_original_legacy_error_limit_1_m": 0.23898099660873412,
+  "map_speed_absolute_error_m_s": 0.002205789089202881,
+  "v1_curvature_absolute_error_1_m": 0.08767848779718124,
+  "v1_speed_absolute_error_m_s": 0.027227547469424046,
+  "gates": {
+    "current_steady_pass": true,
+    "legacy_map_curvature_consistency": true,
+    "current_speed_consistency": true,
+    "actual_current_configuration_exact": true
+  },
+  "bounded_case_consistency_pass": true,
+  "actual_new_sequences": 1,
+  "historical_windows_remeasured": 1,
+  "historical_matrix_or_refit_repeated": false,
+  "new_control_candidates": 0,
+  "new_planner_searches": 0,
+  "new_model_fits": 0,
+  "causal_gain_effect_isolated": false,
+  "full_bank_mapping_admitted": false,
+  "physical_dynamic_model_admitted": false,
+  "navigation_admitted": false,
+  "formal_success_rate": null,
+  "whole_research_complete": false,
+  "automation": "ACTIVE"
+}

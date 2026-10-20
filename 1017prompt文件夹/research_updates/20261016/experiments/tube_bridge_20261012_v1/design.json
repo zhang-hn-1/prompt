@@ -1,0 +1,14 @@
+{
+  "stage": "dependency_injected_bridge_and_original_block_adapter",
+  "source_provenance": "Caller claimed nativeIMU/rolling and RGB byte identity only; actual source provider not implemented",
+  "block": "Unchanged runtime.execute5controls x5; initial/future truth supervision only",
+  "clock": "Read runtime block start; require5 diagnostic endticks20ms. Request onset derived from these ticks, not separately sampled.",
+  "contact": "At block end contact stops future blocks; within-block postcontact execution remains originalruntime behavior. Complete tube becomes censored even if finalblock.",
+  "scope": "9 synthetic checks, no liveIsaac validation, no data acquisition/training admission",
+  "budget": {
+    "physics": 0,
+    "teacher": 0,
+    "predict": 0,
+    "fit": 0
+  }
+}

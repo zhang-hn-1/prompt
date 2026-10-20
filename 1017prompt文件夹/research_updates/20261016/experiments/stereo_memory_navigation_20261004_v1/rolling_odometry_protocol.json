@@ -1,0 +1,48 @@
+{
+  "sealed_utc": "2026-10-05T17:34:03.002462+00:00",
+  "role": "TWO historical ideal IMU+shell encoder causal pose diagnostics, NOT pure RGB or real sensor/online",
+  "sequences": [
+    {
+      "name": "active18",
+      "sensor_packet": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry_inputs/active18.npz",
+      "calibration": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry_inputs/active18_calibration.json",
+      "offline_truth": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/active_observation_run/physics.npz",
+      "samples": 901
+    },
+    {
+      "name": "bank32",
+      "sensor_packet": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry_inputs/bank32.npz",
+      "calibration": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry_inputs/bank32_calibration.json",
+      "offline_truth": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bank_response_run/physics.npz",
+      "samples": 1601
+    }
+  ],
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry.py": "6f384b3658e171431fd8152f97e8c8d3af19e6d358985d05cf7f32ae255a83b8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_rolling_odometry.py": "38b70c819ba2fd1e0d026a4730b2dc9237064c8993be9b8459ccf293299880dc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/audit_rolling_odometry.py": "c0d52052a8dcdb64b0c8b08b5e714929c1b873db5cb24b0f2d75bfcbd13a1d58",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/test_rolling_odometry.py": "7d2a4f4beb68960fca3bac8e8d7f9c107cd779a6b160ed101aaba1c7e004a49c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry_asset_identity_v2.json": "34263409578bc65261ceabb5a02f0bf77e428c1a07202a611be6115151ee4b15",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/specs/2026-10-06-rolling-odometry-design.md": "c2ef2145c3dad4369cec5e59504cf938cb8399042a8eb568df05d9b20a07f787",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-06-rolling-odometry.md": "ce0de14244b40b2a03c41e7fc0614ab3dd7a54c462094ee9f009ff5771400750",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/stop_bank_hold_run/runtime_configuration.json": "976d1bf5627e3ee87939cf45a23a49174939a41bf87327ad248b8c00d0caf0e5"
+  },
+  "prediction_input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry_inputs/active18.npz": "fa9099b8518347817ac7b5442e0ee17d2f37a8b6643c83f7c8cf79dfc80435e8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry_inputs/active18_calibration.json": "94609a67ddf8d842428c3d7e814688c5be697be19a5a59f237aeeab079e46d7f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry_inputs/bank32_calibration.json": "5e1349821c98f90cbaf3f896ad4f484386c0c3818ed6554da7c80db3b8a27c6d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_odometry_inputs/bank32.npz": "0767657dc5c1a4ce24fed69f71d60c4b1636062bcf8d6b3985b2f3bc0af0a053"
+  },
+  "evaluation_input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/active_observation_run/physics.npz": "60885bdf39026ceaea70831a0ca8a57cf0ad103b3cb262a9e3ee01aea2aa80ca",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bank_response_run/physics.npz": "53e79351d67f3fc7321ff06837abe072ca19febf9521c32740a6c3a7bcf3d430"
+  },
+  "gates": "all t>=1s each complete sequence, t0only alignment: RMS<=.05,peak<=.1,attitudep90<=2deg",
+  "assumptions": "radius/axisfixed; rolling-contact, zero gyro bias/noise, no unknown-to-observation; index historical last live readback only",
+  "budgets": {
+    "sequences": 2,
+    "new_physics": 0,
+    "fits": 0,
+    "scan": 0
+  }
+}

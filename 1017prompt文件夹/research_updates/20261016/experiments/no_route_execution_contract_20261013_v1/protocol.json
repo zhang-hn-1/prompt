@@ -1,0 +1,12 @@
+{
+  "hypothesis": "No-route zero requests might be mistranslated or stale in the executed PID/smoother chain",
+  "input": "Sealed v65 baseline and candidate complete4500physics ticks/current measured quaternion+joint feedback; GT motion only offline scoring",
+  "gate": "Only an actual discrepancy against installed frozen execution implementation permits an execution translation fix. Zero aux desired bank does not mean zero actuator angle. No dynamic braking efficacy claim.",
+  "stopping": "Exact full-chain reproduction rejects mistranslation hypothesis before physical run; do not bypass PID or retune old stop gains",
+  "budget": {
+    "physical": 0,
+    "fit": 0,
+    "recovery": 0
+  },
+  "old_mechanisms": "Existing ExecutionClone includes clipping, BankPID state, acceleration ramp and auxiliary feedback; old stop/cusp/zero qualification budgets not reopened"
+}

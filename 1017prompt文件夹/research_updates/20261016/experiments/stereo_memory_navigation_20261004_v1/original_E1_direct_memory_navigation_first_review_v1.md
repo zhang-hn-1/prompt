@@ -1,0 +1,34 @@
+# Original E1 direct memory navigation — one scoped first review
+
+2026-10-08. ONE first review of this distinct next artifact, not a rereview of the closed source probe. Scope: the specified plan, new driver/stage/protocol/test, and directly used policy/observation/memory/runtime interfaces. No physics launched and no code edited. Only this findings document was written.
+
+## Critical
+
+None found.
+
+## Important
+
+1. **Required action wall-latency evidence is discarded.** Driver lines 187 and 202 assign `action_wall_begin` and `execute_wall_begin`, but neither is read. `policy_records.json` is written before execution at line 200 and never updated with policy, execute/render/capture/NN, or total action latency. The plan explicitly requires wall-latency reporting. The stage's whole-process wall time includes startup, shutdown and video export and cannot substitute for closed-loop timing or recover individual action latency after the run. Record per-action policy and execute/capture durations plus total loop duration in the already existing policy row, and rewrite it after execute before terminal-stop evaluation. This is evidence instrumentation only; retain all controller/planner/source behavior.
+
+## Minor
+
+1. **Exact actor memory provenance is not persisted in the declared snapshot directory.** Line 50 creates `raw_point_memory_snapshots`, but no file is ever written there. Lines 193–196 feed the actual TTL snapshot and retain only point counts in the row. Historical acquisition times/hashes are present in source artifacts and map birth clocks, so reconstruction is possible, but explicit per-action source-frame/time/hash references would make causal replay reviewable and resolve the plan's requests/plans/maps provenance requirement without relying on an empty promised directory. Save the actual consumed snapshot or an immutable per-record provenance list alongside each request.
+
+2. **Some inherited diagnostic text remains misleading for this original-scene known-pose run.** `PartialPointRiskGrid.diagnostics()` reports `source_domain='new_appearance_development_partial_surface_only'` even though original appearance is retained. Driver line 203 says goal is not a navigation acceptance immediately before line 205 makes measured goal the success stop. Correct those descriptive fields/comments for this distinct artifact while preserving old rejection flags and full-volume non-admission.
+
+3. **New test verifies textual structure, not the changed consumer transaction.** `test_original_E1_direct_memory_navigation_v1.py` checks strings and syntax. It cannot verify initial zero settling, current GT goal transformation, actual TTL/provenance consumption, or collision-before-goal success precedence. The separately retained V4 prerequisite supplies useful behavior evidence for initial settling and pure frozen geometry; keep that distinction explicit in validation reporting.
+
+## Verified evidence
+
+- All 2,015 source hashes and 36 input hashes matched at review time. Hash maps were checked programmatically, not reproduced here. The original scene, episode, source-probe qualification artifacts and V4 CPU prerequisite remain frozen inputs. New driver syntax and stage/test syntax parse successfully.
+- The new focused test passed in the ball_wm environment: **1 passed**. No simulator/native runtime was started; this is not a claim that the complete required nineteen-test/native-import suite passed. A system-Python manifest import failed because that interpreter lacks NumPy; repeating in the existing ball_wm environment succeeded.
+- `BenchmarkEpisode.from_dict` and scene/occupancy verification succeeded for original `golden_e1_0001`. The same original start/goal/yaw and original scene URI are retained; no dataclass replacement, reference visualization path, appearance binding, or moved goal is introduced.
+- Current GT world camera poses/root position explicitly feed source registration. Current GT root rotation/velocity and body angular velocity feed the observation adapter and current pointgoal; the emitted task/identity/policy fields correctly identify this as known-pose TaskH upperbound, not estimated-pose or strict original-35 acceptance. Native pose is separately exported and marked unused by control.
+- Source prediction consumes both current RGB frames and frozen self masks; current public joint columns 9:12 feed CAD filtering after privileged proprio columns 0:9 are cleared. Whitelisted source payloads do not receive GT depth or occupancy. Partial observations/raw point memory are committed before diagnostic depth read. Existing runtime occupancy is used for its audit diagnostics/scene initialization and is not sent to the actor.
+- `TentativePointMemory` and `PartialPointRiskGrid` retain the existing 10 s acquisition-time TTL; no refresh, shape completion or free-space certification is introduced. The actor receives current/past records, current measured known pose, pointgoal and existing priors only. Empty current points do not turn unknown cells into observed free.
+- `with_command_domain_cap(with_supported_four_points(PriorRGBPolicy))` and the existing `PartialPointRiskGrid` are used unchanged. `GuardedReferencePolicy.act` still updates the map while emitting zero requests for `t<6`; planning begins at the original six-second boundary. V4 explicitly distinguishes one zero-settling act from independent geometry planning; no t0 installed-plan requirement is reintroduced.
+- Frozen gains `.4/.1/.7`, inner caps, PID supervisor, camera/light profiles, single base capture, and one initial runtime reset are retained. Current-source/TTL feedback replaces the prescribed reverse prefix; no extra scan loop, controller optimization, online map truth, or repeated reset was found.
+- The loop preserves the full 600-request / 60 s budget and checks physical-contact collision before measured goal success. Unfinished budget exhaustion remains `conditional_60s_timeout`, not success. `complete=True` denotes a closed experiment artifact, not a navigation PASS; subsequent assessment must independently enforce successful termination/contact availability and new-trajectory source geometry/membership gates.
+- Stage prerequisites retain source-only geometry and selected membership PASS plus V4 CPU scope. The stage supports one status/log/output identity and one subprocess with 600 s wall budget and bounded cleanup, no retry; post-close seal happens after child closure. The earlier source PASS is not reused as trajectory admission, and old rejection gates remain preserved in protocol/task scope.
+
+Assessment: fix the Important timing-evidence omission before launch. No Critical finding. This is one first review only; no request for another review loop. Entire-trajectory post-close source/error/membership validation and actual runtime outcome remain future evidence.

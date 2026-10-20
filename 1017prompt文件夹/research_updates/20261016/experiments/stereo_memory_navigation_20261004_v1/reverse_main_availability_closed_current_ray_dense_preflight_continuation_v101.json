@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-10T01:21:22.282745+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_memory_ray_semantics_closed_continuation_v100.json",
+  "supersedes_sha256": "86affa45469efb261dc8e37148a59ccdf16dbe90b1c560967a64a2ba9447af98",
+  "whole_mission_complete": false,
+  "state": "AVAILABILITY_COVERAGE_CLOSED_DENSE_CURRENT_INTERFACE_PRELAUNCH_PENDING",
+  "new_fit": 0,
+  "new_physics": 0,
+  "running": false,
+  "availability_review": "memory_availability_extraction_closure_review_v1.json",
+  "current_ray_review": "current_stereo_memory_ray_contract_review_v2.json",
+  "next_entry": "run_dense_current_stereo_ray_interface_v1.py",
+  "next_preflight": "dense_current_stereo_ray_interface_preflight_review_v1.json"
+}

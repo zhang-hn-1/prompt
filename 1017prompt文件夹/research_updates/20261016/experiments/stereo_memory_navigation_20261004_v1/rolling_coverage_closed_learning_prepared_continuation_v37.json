@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-09T14:27:35.641879+00:00",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_coverage_native_e2_started_continuation_v36.json",
+  "supersedes_sha256": "c15417c99058f177362f756afa9a34a12cd92dcaaa565d03a7811ed3bfccd747",
+  "actual_native_e2_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T14:17:42.329826+00:00",
+    "parent_pid": 501567,
+    "child_pid": 501568,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T14:21:05.838850+00:00"
+  },
+  "coverage_budget_consumed": 4,
+  "running_process": false,
+  "learning_fit_executed": false,
+  "fresh_teacher_inspected": false,
+  "next_step": "independent implementation review; freeze exact source; fit once; seal two feature-only predictions before teacher evaluation",
+  "whole_mission_complete": false
+}

@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-07T05:46:13.194697+00:00",
+  "protocol_sha256": "44a6d1c04607165fec94476dd1ee5500bcad794c29b6b8e015ab3d56e94284f4",
+  "scope": "Prelaunch explicit metadata overrides, original protocol bytes preserved",
+  "effective": {
+    "plan": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-07-camera-heading-observation-correction.md",
+    "experiment": "ONE_CAMERA_HEADING_OBSERVATION_CORRECTION",
+    "control_variant": "unaccepted_camera_heading_observation_only",
+    "accepted_controller": "Original B0 only; observation candidate unaccepted",
+    "actual_task": "One current measured camera-heading observation, privileged knownpose, original35s",
+    "source_base_runner": "run_neutral_bank_visibility_v1.py",
+    "source_base_runner_sha256": "95be745aebfba49aac8bbd0faba77654defb6416392e54ea6a2ce111655c63cf",
+    "unknown_cap_semantics": ".3 applies unchanged normal B0 tracking; bounded observation command +.5 is separate recorded override, not an unchanged speed-only experiment",
+    "maximum_one_sequence": true,
+    "no_scientific_retry": true,
+    "schema": "one_camera_heading_observation_probe_v1"
+  },
+  "inherited_neutral_plan_experiment_and_sourcequalification_descriptions_not_actual_execution": true,
+  "inherited_historical_2m_scores_not_comparator": true,
+  "ancestral_qualified_runner_identity_preserved": true,
+  "original_v1_scope_supplement_sha256": "b03c1efd92b25f90404885c349b9f1ceab120377126b65f58f58eabd03980c36",
+  "feedback_source": "Current measured left-camera world optical axis, privileged knownpose",
+  "inherited_schema_string_not_actual_feedback_identity": true,
+  "previous_supplement_sha256": "67207746aa97f928247e03227fdb3194caa94755de0f89924b8b451ec414f0cb"
+}

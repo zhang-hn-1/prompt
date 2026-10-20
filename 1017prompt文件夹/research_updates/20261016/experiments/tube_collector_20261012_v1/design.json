@@ -1,0 +1,21 @@
+{
+  "scope": "typed in-memory recorded-data adapter; not append-before-execution durable collector",
+  "online_fields": [
+    "estimated_xy",
+    "estimated_velocity",
+    "estimated_heading",
+    "time_s"
+  ],
+  "privileges": "These names do not attest source. Future simulator integration must prove RGB-derived pose and explicitly permitted initial gauge/ideal IMU; no GT velocity input admitted merely by field name.",
+  "snapshot": "JSON copied into immutable bytes at commitment; no future supervision in these bytes. Pose features only; RGB snapshot linkage absent.",
+  "supervision_events": "Records appended after commit. Initial position has anchor simulation time; remaining25 samples are future20ms positions. Event numbers represent record arrival, not exposure times. tube_contract checks exposure clock separately.",
+  "consumption": "Exact25 float32 pair records and20ms timestamps checked. Caller-supplied records are not evidence of actual physics consumer; no simulator bridge.",
+  "mutable_record_limit": "Public offline record lists are mutable; consistency checks reject common tampering but do not authenticate history. No write-ahead log/durable commit yet.",
+  "budget": {
+    "new_physics": 0,
+    "teacher": 0,
+    "prediction": 0,
+    "fit": 0
+  },
+  "next": "Replace in-memory mutable records with append-only commitment log and real audited sensor/request bridge; retain supervision-only initial sample and future values. Independent prelaunch acquisition protocol remains required."
+}

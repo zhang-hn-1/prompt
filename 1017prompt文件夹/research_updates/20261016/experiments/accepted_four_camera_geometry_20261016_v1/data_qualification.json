@@ -1,0 +1,38 @@
+{
+  "checked_utc": "2026-10-15T16:34:02.852778+00:00",
+  "status": "NOT_ADMITTED_BEFORE_FIT",
+  "available_data": {
+    "physical_sequences": 1,
+    "sequence_type": "4-second accepted-camera preview; all development",
+    "camera_names": [
+      "front_left",
+      "front_right",
+      "rear_left",
+      "rear_right"
+    ],
+    "exposures": 8,
+    "images": 32,
+    "independent_holdout_sequences": 0,
+    "grounded_scene_objects": 71,
+    "suspended_scene_objects": 0,
+    "model_generated_contact_predictions": 0
+  },
+  "passed": [
+    "All eight saved four-camera exposures and native IMU intervals intact",
+    "Current fixed-layout CAD and exact ray arithmetic",
+    "Necessary GT-only visible-contact geometry over complete current visible target domain"
+  ],
+  "missing_before_fit": [
+    "Independent grouped full trajectories for training and held-out evaluation at accepted geometry",
+    "Labels for visible contact versus occlusion/cropping, with explicit suspended/unknown-domain coverage; absent classes must stay unqualified",
+    "Complete causal RGB/calibration/joints/native IMU and disclosed initial pose/floor priors",
+    "Qualified current online gravity/pose-to-floor transform; current oracle used rendered camera pose",
+    "One frozen real RGB contact-boundary source and once-only fit/evaluation protocol"
+  ],
+  "next_executable": "Implement the four-camera full-trajectory recording adapter using the existing native acquisition and supervision contract; freeze independent source target, actual RGB boundary model and grouped data coverage before any fit. Register at most four physical runs total for the independent source candidate including necessary later navigation controls; do not reuse closed preview or rejected model budgets. Start with the smallest complete acquisitions that can establish missing input and label domains.",
+  "physics_dispatched_this_stage": 0,
+  "fits_dispatched": 0,
+  "old_models_reused": false,
+  "unknown_is_free": false,
+  "navigation_admitted": false
+}

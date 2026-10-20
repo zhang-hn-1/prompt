@@ -1,0 +1,41 @@
+{
+  "physical_used": 1,
+  "physical_cap": 1,
+  "recovery_used": 0,
+  "recovery_cap": 0,
+  "status": "failed",
+  "dispatches": [
+    {
+      "attempt": 1,
+      "name": "native_run",
+      "registered_utc": "2026-10-15T08:52:27.617717+00:00",
+      "timeout_s": 120,
+      "source_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_four_camera_preview_20261015_v1/protocol.json": "5041f96d824fad1e011831390eb305cbbbf9ad3b9b2388432749d9906473c5e1",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_four_camera_preview_20261015_v1/native_probe.py": "96b70068e03531011d9059b2be4c58067b593aecb8445622faa3dab2485172e9",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_four_camera_preview_20261015_v1/four_camera.py": "5933e8ff37dc7375e3c19886f2d6adb214feb6aac4d580ed198af3ca114685f8",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_four_camera_preview_20261015_v1/launch.py": "6d6191c078acef3237de1ab84e7e5e33444fd3330c108944f18d2a8526978fb2",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/camera_exposure_contract_20261015_v1/exposure_contract.py": "dfb0e0ff51d35a682b2ad4b16338f15fbb5a3e608eedda622692a2a5c9b2a421"
+      },
+      "terminal": {
+        "status": "runtime_failed",
+        "start_utc": "2026-10-15T08:52:27.618217+00:00",
+        "parent_pid": 2,
+        "child_pid": 35,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": -11,
+        "end_utc": "2026-10-15T08:52:35.848068+00:00"
+      },
+      "logical": {
+        "complete": false,
+        "reason": "Process did not complete cleanly",
+        "model": 0,
+        "navigation": 0
+      }
+    }
+  ],
+  "budget_closed": true
+}

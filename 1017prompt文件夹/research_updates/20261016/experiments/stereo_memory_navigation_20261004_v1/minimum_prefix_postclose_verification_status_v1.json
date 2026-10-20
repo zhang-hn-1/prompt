@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-08T13:51:02.812440+00:00",
+  "status": "verification_failed",
+  "not_new_physics": true,
+  "checks": [
+    {
+      "name": "verify_minimum_prefix_transition_runtime_v1",
+      "exit_code": 0
+    },
+    {
+      "name": "verify_minimum_prefix_transition_memory_v1",
+      "exit_code": 0
+    },
+    {
+      "name": "verify_minimum_prefix_transition_boundary_v1",
+      "exit_code": 0
+    },
+    {
+      "name": "assess_minimum_prefix_transition_source_v1",
+      "exit_code": 0
+    },
+    {
+      "name": "assess_minimum_prefix_transition_membership_v1",
+      "exit_code": 1
+    },
+    {
+      "name": "verify_minimum_prefix_transition_policy_causal_v2",
+      "exit_code": 0
+    },
+    {
+      "name": "verify_minimum_prefix_transition_online_shadow_v1",
+      "exit_code": 0
+    }
+  ],
+  "end_utc": "2026-10-08T13:52:44.312290+00:00"
+}

@@ -1,0 +1,10 @@
+{
+  "reason": "omni.isaac.sensor imported before SimulationApp, which original runtime constructs lazily in _initialize. Hook now installs after SimulationApp starts but before camera constructors/initialize. Zero scene starts or frames in initial attempt. No optic/layout/source numeric/gate changes; no second recovery.",
+  "sources": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/protocol.json": "6104c2954ed3b276d6c04ebe8bc8f543e09c10b26bc49a565b459c93fb79e30a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/native_probe.py": "196679f58b121dc6375498567f6ba62ad77f910d8e3cf80ec4c21be8231260bd",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/score.py": "455f32b8edc2f05ab06f5824ec82d7825dc075f708ac62d17750a47dab0f73da",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/wide_pinhole_camera_20261015_v1/launch_recovery.py": "2ab3b8f50e2bfd8a2fcd26c14fe5bb337367ca6741c353cd67bee93310837a5d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/camera_exposure_contract_20261015_v1/exposure_contract.py": "dfb0e0ff51d35a682b2ad4b16338f15fbb5a3e608eedda622692a2a5c9b2a421"
+  }
+}

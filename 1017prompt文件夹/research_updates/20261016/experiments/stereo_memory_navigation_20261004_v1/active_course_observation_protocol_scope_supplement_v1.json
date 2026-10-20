@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-07T05:20:59.576600+00:00",
+  "protocol_sha256": "826186a30928a6c926cbb59814ffade808f5c108f99233c575861c9832b76f8b",
+  "scope": "Prelaunch explicit metadata overrides, original protocol bytes preserved",
+  "effective": {
+    "plan": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-07-active-course-observation-probe.md",
+    "experiment": "ONE_ACTIVE_COURSE_OBSERVATION_PROBE",
+    "control_variant": "unaccepted_active_course_observation_only",
+    "accepted_controller": "Only original B0 baseline; new observation consumer is experimental and unaccepted",
+    "actual_task": "single knownpose RGB observer development task, unchanged initialhandoff then active course observation <=6s",
+    "source_base_runner": "run_neutral_bank_visibility_v1.py",
+    "source_base_runner_sha256": "95be745aebfba49aac8bbd0faba77654defb6416392e54ea6a2ce111655c63cf",
+    "unknown_cap_semantics": ".3 applies unchanged normal B0 tracking; bounded observation command +.5 is separate recorded override, not an unchanged speed-only experiment",
+    "maximum_one_sequence": true,
+    "no_scientific_retry": true
+  },
+  "inherited_neutral_plan_experiment_and_sourcequalification_descriptions_not_actual_execution": true,
+  "inherited_historical_2m_scores_not_comparator": true,
+  "ancestral_qualified_runner_identity_preserved": true
+}

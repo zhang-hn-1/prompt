@@ -1,0 +1,53 @@
+{
+  "frozen_at_utc": "2026-10-04T10:31:48.751512+00:00",
+  "role": "one fresh whole rotated-yaw measured-response/applicability validation; no fit/navigation",
+  "max_new_sequences": 1,
+  "duration_s": 18,
+  "fresh_start_yaw_offset_deg": 20.0,
+  "seed": 3072,
+  "goal_in_current_yaw_frame_m": [
+    0.8,
+    -0.3
+  ],
+  "prefix_s": 6.0,
+  "selection": "at prefix end current measured state+complete deterministic execution snapshot+current/past observed provenance map; known archived 6s command and its own full6s stopping tail indivisible",
+  "request": "zero6s then selected archived120request blocks; unsupported/hazard rejected ->zero12s; no alternate rerun",
+  "output_scope": "one 12s finite primitive with6s active motion, not arbitrary short stop, continuous replanning or complete navigation",
+  "tolerances": {
+    "linear_local": 0.015,
+    "angular_local": 0.04,
+    "joint_position": 0.05,
+    "joint_velocity": 0.05,
+    "tilt_angle_rad": 0.03490658503988659,
+    "pid_integral": 0.01,
+    "pid_previous_bank": 0.03490658503988659,
+    "pid_rate": 0.04,
+    "inner_action": 0.005
+  },
+  "unknown": "explicit unknown exploration risk permitted only this diagnostic, never written free; hazard reject",
+  "prediction_gate": {
+    "horizons_s": [
+      1.5,
+      3.0,
+      6.0,
+      7.5,
+      9.0,
+      12.0
+    ],
+    "max_xy_error_m": 0.1,
+    "max_yaw_error_rad": 0.15,
+    "max_bank_error_deg": 5.0,
+    "max_stop_qualification_difference_s": 0.3
+  },
+  "stop": "actualXY five10Hz<.05/reboundreset; plannedrawzero6s into response; lasttail endpoint NOT zero drift guarantee",
+  "validation": "fresh entire yaw20sequence sealed before runtime; oldpositive/negative are development. No new fitting or tolerance adjustment after validation.",
+  "scope": "same openplane, same gains/protocol/rig; height absent in oldtrace, z placeholder not measured, no terrain transfer or fullphysics clone",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/execution_snapshot.py": "bdc3086978ed78de259ef8e24b32b1a11d79461327ecee8a8c2ec937c66fc54e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/guarded_response.py": "ef3488017630f762a2843924ba23984154cc0b308f4a0ca45df291ffde11177e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_guarded_response.py": "4cb2791c3e636fa0a821e0bd55be4cd404e951370e4aaad9c35d04a3830d1f9a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/guarded_response_library.json": "3eda81d3dcfa07a5d1ceceb4c6b7a9323280e62e10e105753a27659856d9cc14",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/spatial_memory.py": "9ec85f2deb0561e05113b45d6f49e74d1890bdcc3d43927e5dfc751fb9b27f17",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/primitive_planner.py": "0a7cf9ef1f7dfc76f3ea1ebc6a95f91b78dca015e7b08581c809437fd32f29f5"
+  }
+}

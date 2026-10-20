@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-09T17:19:24.126170+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_candidate_started_continuation_v61.json",
+  "supersedes_sha256": "a9deff2731fd5a4ef534d09b27478b2a71dd62cdea1ffae87c6c3953cc7cffc3",
+  "whole_mission_complete": false,
+  "running_process": false,
+  "physical_budget_consumed": 2,
+  "maximum_physical_sequences": 2,
+  "no_retry": true,
+  "assessment": "reverse_main_navigation_e1_assessment_v1.json",
+  "closed_review": "reverse_main_navigation_e1_closed_review_v1.json",
+  "source_boundary": "reverse_main_post_reversal_boundary_audit_v1.json",
+  "next_entry": "soft_route_side_preference_design_v1.json",
+  "next_steps": [
+    "independent scope review, preserve all observed hazards and unknown semantics",
+    "TDD finite-cost planner interface only",
+    "at most2 candidate CPU queries with archived comparator; no physical unless separately reviewed"
+  ]
+}

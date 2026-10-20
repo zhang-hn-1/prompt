@@ -1,0 +1,8 @@
+# Frozen experiment: current-state reversal cost
+One candidate only. Existing Hybrid A* copied locally; production planner/B0 untouched.
+Start from the measured world-XY velocity direction projected on root heading (speed >= .05 m/s); at lower speed use controller direction latch. Reject disagreement with latch rather than assume an unmeasured stop. Keep only that root direction, but retain reverse primitives.
+All direction changes retain .5 m base cost plus current speed times (V1 interpolated stop time + .5 s confirmation). This is a fixed per-plan opportunity-cost proxy, NOT a validated dynamic prediction. Using the same proxy at later switches avoids rewarding a one-primitive detour before reversal, but does not predict future speed. Joint/smoother state and auxiliary position remain logged, not modeled.
+No gains, target range, limits, stop threshold/count, reference evaluator, planner primitive geometry or node budget changes. Plan once at the previous live handoff/progress event, original map and original goal. Preserve all runtime state. 5000 nodes; 8 s local window; total horizon <=35 s. No tuning following results.
+Tests before candidate implementation: finite state costs, speed dependence, reverse still possible, default planner exact parity.
+Run fresh B0 and candidate for 0002/0004. Gates frozen from previous experiment: both RMS <=80% B0; peak <=B0+.05 m; progress>=B0-.05 m; applied commands differ; identical prefix/current physics/smoother/policy; original reference/map verified. Failure => stop; no full-reference or formal benchmark. Pass => full reference before any formal benchmark.
+Report runtime planning wall time separately; paused-simulation planning cannot establish real-time feasibility.

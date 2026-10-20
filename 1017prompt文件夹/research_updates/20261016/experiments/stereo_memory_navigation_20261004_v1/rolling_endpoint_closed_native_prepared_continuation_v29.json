@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-09T13:42:52.512190+00:00",
+  "stage": "rolling_known_E0_actual_closed_native_layer_design",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_paced_started_continuation_v28.json",
+  "superseded_sha256": "81ac6326f1fdddf240e046696685f232031c1747baf1c5cf920d2b06b3ef32e9",
+  "physics_running": false,
+  "whole_mission_complete": false,
+  "assessment": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_navigation_e0_assessment_v1.json",
+  "independent_review_pending": true,
+  "actual_known_E0_success": true,
+  "causal_navigation_improvement": false,
+  "budget_remaining": {
+    "b0": 0,
+    "paced": 0,
+    "retry": 0
+  },
+  "next": "Native estimated pose/velocity E0: freeze two-arm35s/no-retry, same immutable law, current native precision tests, prelaunch independent review. Do not rerun closed knownpose pair."
+}

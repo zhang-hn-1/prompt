@@ -1,0 +1,123 @@
+{
+  "arms": {
+    "low": {
+      "classification": "complete_response",
+      "complete": true,
+      "window": {
+        "window_start_s": 19.0,
+        "window_end_s": 21.5,
+        "samples": 125,
+        "valid_samples": 125,
+        "actual_speed_m_s": 0.18775948882102966,
+        "actual_bank_deg": -22.62371534851761,
+        "curvature_body_1_m": 0.8033713102340698,
+        "curvature_geometric_1_m": 0.8033713102340698,
+        "curvature_iqr": 0.04151439666748047,
+        "bank_span_95_5_deg": 0.6599932344455866,
+        "valid_fraction": 1.0,
+        "direction_match_fraction": 1.0,
+        "checks": {
+          "valid_fraction": true,
+          "curvature_iqr": true,
+          "bank_span": true,
+          "direction": true
+        },
+        "accepted": true,
+        "measurement_scope": "offline centered31sample XY geometry; not online physical prediction"
+      },
+      "actual_mean_speed_m_s": 0.1892988383769989,
+      "actual_mean_bank_deg": -22.64189965090806,
+      "terminal_stop": {
+        "first_qualified_s": 24.3999994546175,
+        "last_count": 61,
+        "rebound_after_qualification": false,
+        "actual_worldXY_not_requested_target": true
+      },
+      "sealed_items": 676,
+      "videos": {
+        "stereo_view": {
+          "decoded_frames": 301,
+          "fps": 10.0
+        },
+        "third_person": {
+          "decoded_frames": 301,
+          "fps": 10.0
+        }
+      },
+      "counts": {
+        "requests": 300,
+        "captures": 301,
+        "physics": 1501,
+        "contacts": 1801
+      }
+    },
+    "high": {
+      "classification": "complete_response",
+      "complete": true,
+      "window": {
+        "window_start_s": 19.0,
+        "window_end_s": 21.5,
+        "samples": 125,
+        "valid_samples": 125,
+        "actual_speed_m_s": 0.3414778411388397,
+        "actual_bank_deg": -19.412470762140334,
+        "curvature_body_1_m": 0.9161254167556763,
+        "curvature_geometric_1_m": 0.9161254167556763,
+        "curvature_iqr": 0.16343063116073608,
+        "bank_span_95_5_deg": 1.7042387301644268,
+        "valid_fraction": 1.0,
+        "direction_match_fraction": 1.0,
+        "checks": {
+          "valid_fraction": true,
+          "curvature_iqr": true,
+          "bank_span": true,
+          "direction": true
+        },
+        "accepted": true,
+        "measurement_scope": "offline centered31sample XY geometry; not online physical prediction"
+      },
+      "actual_mean_speed_m_s": 0.34886765480041504,
+      "actual_mean_bank_deg": -19.6081734386104,
+      "terminal_stop": {
+        "first_qualified_s": 24.799999445676804,
+        "last_count": 57,
+        "rebound_after_qualification": false,
+        "actual_worldXY_not_requested_target": true
+      },
+      "sealed_items": 676,
+      "videos": {
+        "stereo_view": {
+          "decoded_frames": 301,
+          "fps": 10.0
+        },
+        "third_person": {
+          "decoded_frames": 301,
+          "fps": 10.0
+        }
+      },
+      "counts": {
+        "requests": 300,
+        "captures": 301,
+        "physics": 1501,
+        "contacts": 1801
+      }
+    }
+  },
+  "gates": {
+    "complete_both30": true,
+    "prefix_logged_requests_physics_initial_exact": true,
+    "execution_snapshot_prefix_exact": true,
+    "steady_both": true,
+    "high_speed": true,
+    "speed_gain": true,
+    "actual_bank_retained": false,
+    "terminal_stop_both": true
+  },
+  "point_response_accept": false,
+  "classification": "measured_point_response_reject",
+  "no_general_inverse_map": true,
+  "no_navigation_admission": true,
+  "execution_snapshots_compared_through_s": 12.0,
+  "no_source_precision_admission": true,
+  "whole_mission_complete": false
+}

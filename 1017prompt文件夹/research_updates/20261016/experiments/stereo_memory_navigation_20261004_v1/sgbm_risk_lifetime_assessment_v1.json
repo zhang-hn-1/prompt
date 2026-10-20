@@ -1,0 +1,128 @@
+{
+  "history": {
+    "metrics": {
+      "outcome": "timeout",
+      "success": false,
+      "budget_s": 35.0,
+      "scored_end_s": 34.99999921768904,
+      "metric_state_time_s": 34.99999921768904,
+      "goal_threshold_m": 0.2,
+      "goal_remaining_m": 5.890992164335595,
+      "goal_distance_reduction_m": 0.709007835664405,
+      "along_start_goal_axis_m": 0.7135184228420255,
+      "path_length_m": 4.1531554374307085,
+      "contact_time_s": null,
+      "arrival_time_s": null,
+      "contacts_all_available": true,
+      "contact_checks": 2101,
+      "measured_states": 351,
+      "not_based_on_path_index": true,
+      "not_strict_visual_admission": true
+    },
+    "cross_track": {
+      "rms_m": 0.2711116169724579,
+      "peak_m": 0.6107385814189916,
+      "scope": "same frozen start-goal line, not dynamically changed local references"
+    },
+    "wall_median_s": 0.3188254734986913,
+    "wall_p90_s": 1.4093500006001705,
+    "videos_decoded": {
+      "stereo_view.mp4": 351,
+      "third_person.mp4": 351
+    },
+    "manifest_items_verified": 2213,
+    "all_contacts_available": true,
+    "raw_contact_hits": 0,
+    "source_gaps": {
+      "source_epochs": 71,
+      "empty_source_epochs": 0,
+      "empty_epoch_fraction": 0.0,
+      "maximum_sampled_empty_span_s": 0.0,
+      "empty_sample_times_s": [],
+      "footprint_unknown_cells_median": 186.0,
+      "footprint_unknown_cells_max": 190,
+      "absence_is_observed_free": false,
+      "full_3d_blindzone_measured": false,
+      "interpretation": "Sampled point-source gaps and map unknown footprint only; cannot distinguish occlusion from matching/selection failure or certify unseen space. Task ground/safe-start priors remain separate; no source accuracy admission."
+    },
+    "rows": 350,
+    "risk_lifetime_labels": [
+      "original_recent10s_or_two_capture_epoch_confirmed_persistent"
+    ],
+    "seal_sha256": "efecbb99c58efe725432425e9bc8d952d7b83934da7be73532a1431612d16736"
+  },
+  "current": {
+    "metrics": {
+      "outcome": "collision",
+      "success": false,
+      "budget_s": 35.0,
+      "scored_end_s": 21.17999952659011,
+      "metric_state_time_s": 21.099999528378248,
+      "goal_threshold_m": 0.2,
+      "goal_remaining_m": 4.111466985310874,
+      "goal_distance_reduction_m": 2.488533014689126,
+      "along_start_goal_axis_m": 2.56954054236412,
+      "path_length_m": 2.991749484706337,
+      "contact_time_s": 21.17999952659011,
+      "arrival_time_s": null,
+      "contacts_all_available": true,
+      "contact_checks": 1271,
+      "measured_states": 212,
+      "not_based_on_path_index": true,
+      "not_strict_visual_admission": true
+    },
+    "cross_track": {
+      "rms_m": 0.37950307158823876,
+      "peak_m": 0.8121313512325292,
+      "scope": "same frozen start-goal line, not dynamically changed local references"
+    },
+    "wall_median_s": 0.32073909300015657,
+    "wall_p90_s": 1.3973129336007333,
+    "videos_decoded": {
+      "stereo_view.mp4": 213,
+      "third_person.mp4": 213
+    },
+    "manifest_items_verified": 1327,
+    "all_contacts_available": true,
+    "raw_contact_hits": 3,
+    "source_gaps": {
+      "source_epochs": 43,
+      "empty_source_epochs": 8,
+      "empty_epoch_fraction": 0.18604651162790697,
+      "maximum_sampled_empty_span_s": 3.4999999217689037,
+      "empty_sample_times_s": [
+        17.49999960884452,
+        17.999999597668648,
+        18.499999586492777,
+        18.999999575316906,
+        19.499999564141035,
+        19.999999552965164,
+        20.499999541789293,
+        20.999999530613422
+      ],
+      "footprint_unknown_cells_median": 186.0,
+      "footprint_unknown_cells_max": 190,
+      "absence_is_observed_free": false,
+      "full_3d_blindzone_measured": false,
+      "interpretation": "Sampled point-source gaps and map unknown footprint only; cannot distinguish occlusion from matching/selection failure or certify unseen space. Task ground/safe-start priors remain separate; no source accuracy admission."
+    },
+    "rows": 212,
+    "risk_lifetime_labels": [
+      "most_recent_actual_stereo_exposure_only"
+    ],
+    "seal_sha256": "91c47b56491fe025e9e63603d808bdbea567773c66389619ce754b3b2e8e1bc3"
+  },
+  "first_actual_request_difference_frame": 155,
+  "physical_and_request_prefix_exact": true,
+  "prefix_source_input_files_byte_identical": false,
+  "prefix_raw_point_geometry_exact": false,
+  "history_positive_current_unknown_cell_sample_count": 6082,
+  "memory_navigation_benefit": false,
+  "not_full3d_safety": true,
+  "not_strict_coldstart": true,
+  "no_new_model": true,
+  "no_native_pose_admission": true,
+  "whole_mission_complete": false,
+  "scope": "If exact causal prerequisites fail, paired observational runs only; limited progress differences never navigation success",
+  "assessor_sha256": "98cebee6345ba81dac4cd7fda57a915243332be490fa2b2aa7035c0df0ee5f83"
+}

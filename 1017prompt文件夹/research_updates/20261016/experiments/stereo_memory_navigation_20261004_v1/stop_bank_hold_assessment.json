@@ -1,0 +1,226 @@
+{
+  "protocol_sealed_before_run": true,
+  "candidate_count": 1,
+  "prefix": {
+    "all_17_nonraw_physics_exact": true,
+    "all_76_complete_snapshots_exact": true,
+    "all_75_request_blocks_exact": true,
+    "packet_arrays_exact": true,
+    "packet_sha_exact": true,
+    "raw_time_origin_difference_s": 0.019999999552965164,
+    "raw_step_origin_difference": 1
+  },
+  "execution": {
+    "main_all_raw_smoothed_applied_exact": true,
+    "changed_aux_applied_ticks": 300,
+    "measured_feedback_reconstruction_ticks": 300,
+    "measured_feedback_maxerror": 0,
+    "complete_postbranch_snapshots_exact": true,
+    "no_recursive_physical_prediction": true
+  },
+  "provenance": {
+    "future_truncation_poison_map_unchanged": true,
+    "request_source_future_truncation_poison_unchanged": true,
+    "history_shifts_once": 135,
+    "packets": 136,
+    "stereo_pairs": 28,
+    "max_camera_clock_age_s": 0.0
+  },
+  "counts": {
+    "request_blocks": 135,
+    "captures": 136,
+    "physics": 676,
+    "videos": {
+      "third_person.mp4": {
+        "r_frame_rate": "10/1",
+        "duration": "13.600000",
+        "nb_read_frames": "136"
+      },
+      "stereo_view.mp4": {
+        "r_frame_rate": "10/1",
+        "duration": "13.600000",
+        "nb_read_frames": "136"
+      }
+    }
+  },
+  "runtime_joint_configuration": {
+    "joint_names": [
+      "joint1",
+      "joint2",
+      "joint3"
+    ],
+    "dof_names": [
+      "joint1",
+      "joint2",
+      "joint3"
+    ],
+    "joint_names_available": true,
+    "requested_gains": {
+      "kp": [
+        0.0,
+        300.0,
+        0.0
+      ],
+      "kd": [
+        80.0,
+        60.0,
+        0.0
+      ]
+    },
+    "baseline_gains": {
+      "kp": [
+        0.0,
+        300.0,
+        0.0
+      ],
+      "kd": [
+        80.0,
+        60.0,
+        0.0
+      ]
+    },
+    "readback_gains": {
+      "kp": [
+        0.0,
+        300.0,
+        0.0
+      ],
+      "kd": [
+        80.0,
+        60.0,
+        0.0
+      ]
+    },
+    "gain_readback_available": true,
+    "gain_readback_error": null,
+    "auxiliary_target_rate_limit_rad_s": null,
+    "auxiliary_velocity_limit_rad_s": null
+  },
+  "obstacle_contacts": 0,
+  "contact_scope": "openplane has no obstacles;0 cannot certify safety",
+  "baseline": {
+    "first_qualification_time_s": 10.199999772012234,
+    "qualification_delay_s": 2.6999997720122337,
+    "post_qualification_rebound": false,
+    "final_low_count": 38,
+    "qualification_radial_peak_m": 0.2070225477218628,
+    "qualification_path_m": 0.3115400969982147,
+    "stop_windows": [
+      {
+        "after_zero_s": 1.5,
+        "path_m": 0.2603112459182739,
+        "radial_peak_m": 0.2026965171098709,
+        "end_displacement_m": 0.2026965171098709
+      },
+      {
+        "after_zero_s": 3.0,
+        "path_m": 0.3240928649902344,
+        "radial_peak_m": 0.2070225477218628,
+        "end_displacement_m": 0.2028513103723526
+      },
+      {
+        "after_zero_s": 6.0,
+        "path_m": 0.3860776424407959,
+        "radial_peak_m": 0.24201913177967072,
+        "end_displacement_m": 0.24201913177967072
+      }
+    ],
+    "speed_peak_m_s": 0.217742919921875,
+    "end_one_second_mean_speed_m_s": 0.01901352033019066,
+    "final_speed_m_s": 0.018969709053635597,
+    "bank_at_stop_deg": 22.186640346237493,
+    "bank_final_deg": -0.02605810904633737,
+    "bank_peak_after_stop_deg": 24.988517889606108,
+    "smoothed_main_first_zero_s": 8.099999818950891,
+    "active_delta_initial_yaw_xy_m": [
+      0.1033623978450541,
+      -0.14742488605957604
+    ],
+    "stop_delta_initial_yaw_xy_m": [
+      0.2017885458454311,
+      0.1336212594057707
+    ],
+    "whole_delta_initial_yaw_xy_m": [
+      0.3051509511396987,
+      -0.013803625711610671
+    ],
+    "root_yaw_delta_stop_rad": -0.10677127447355429,
+    "goal_initial_distance_m": 0.8544003745317531,
+    "goal_at_brake_distance_m": 0.7131501357587563,
+    "goal_final_distance_m": 0.571650201767968,
+    "along_frozen_goal_progress_m": 0.29056851568130454,
+    "lateral_to_frozen_goal_ray_m": 0.09422091465811883,
+    "scope": "localgoal metrics only; stop displacement not counted as accepted navigation"
+  },
+  "candidate": {
+    "first_qualification_time_s": 8.799999803304672,
+    "qualification_delay_s": 1.2999998033046722,
+    "post_qualification_rebound": false,
+    "final_low_count": 52,
+    "qualification_radial_peak_m": 0.1061367467045784,
+    "qualification_path_m": 0.11356078088283539,
+    "stop_windows": [
+      {
+        "after_zero_s": 1.5,
+        "path_m": 0.11595798283815384,
+        "radial_peak_m": 0.1061367467045784,
+        "end_displacement_m": 0.10542812943458557
+      },
+      {
+        "after_zero_s": 3.0,
+        "path_m": 0.14072608947753906,
+        "radial_peak_m": 0.12468351423740387,
+        "end_displacement_m": 0.12468351423740387
+      },
+      {
+        "after_zero_s": 6.0,
+        "path_m": 0.18790212273597717,
+        "radial_peak_m": 0.17139458656311035,
+        "end_displacement_m": 0.17139458656311035
+      }
+    ],
+    "speed_peak_m_s": 0.18208329379558563,
+    "end_one_second_mean_speed_m_s": 0.0158985648304224,
+    "final_speed_m_s": 0.01575576514005661,
+    "bank_at_stop_deg": 22.186640346237493,
+    "bank_final_deg": 24.580949533575186,
+    "bank_peak_after_stop_deg": 25.900639532007133,
+    "smoothed_main_first_zero_s": 8.099999818950891,
+    "active_delta_initial_yaw_xy_m": [
+      0.1033623978450541,
+      -0.14742488605957604
+    ],
+    "stop_delta_initial_yaw_xy_m": [
+      0.16872139445106607,
+      -0.030152905663193192
+    ],
+    "whole_delta_initial_yaw_xy_m": [
+      0.27208379974669283,
+      -0.17757779171189614
+    ],
+    "root_yaw_delta_stop_rad": -0.11932662169079643,
+    "goal_initial_distance_m": 0.8544003745317531,
+    "goal_at_brake_distance_m": 0.7131501357587563,
+    "goal_final_distance_m": 0.5419250142244469,
+    "along_frozen_goal_progress_m": 0.317111725822229,
+    "lateral_to_frozen_goal_ray_m": 0.07073626750062124,
+    "scope": "localgoal metrics only; stop displacement not counted as accepted navigation"
+  },
+  "pre_frozen_gate_checks": {
+    "qualified_in_window": true,
+    "qualification_no_later": true,
+    "no_post_qualification_rebound": true,
+    "speed_peak_nonregression": true,
+    "end_speed_nonregression": true,
+    "1.5s_path_m_nonregression": true,
+    "1.5s_radial_peak_m_nonregression": true,
+    "3.0s_path_m_nonregression": true,
+    "3.0s_radial_peak_m_nonregression": true,
+    "6.0s_path_m_nonregression": true,
+    "6.0s_radial_peak_m_nonregression": true,
+    "meaningful_improvement": true
+  },
+  "braking_candidate_accepted": true,
+  "verdict": "ACCEPT bounded brake intervention only",
+  "no_navigation_RGB_model_or_formal_scores": true
+}

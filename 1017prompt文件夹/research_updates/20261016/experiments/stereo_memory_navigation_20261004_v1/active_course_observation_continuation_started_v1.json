@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-07T05:24:40.621562+00:00",
+  "stage": "RUNNING_ONE_ACTUAL_ACTIVE_OBSERVATION",
+  "driver": "run_active_course_observation_stage_v2.py",
+  "managed_session": 36336,
+  "status_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/active_course_observation_status_v1.json",
+  "pid": 1240487,
+  "child_pid": 1240488,
+  "no_duplicate_or_scientific_retry": true,
+  "whole_research_complete": false,
+  "formal_navigation": false,
+  "next_afterclose": [
+    "verify_active_course_observation_interface_v1.py",
+    "verify_active_course_observation_source_v1.py",
+    "verify_active_course_observation_execution_v1.py",
+    "verify_active_course_observation_collection_v1.py",
+    "assess_active_course_observation_v1.py"
+  ],
+  "must_grade_current_course_only_within6s_event_window": true,
+  "knownpose_privileged": true
+}

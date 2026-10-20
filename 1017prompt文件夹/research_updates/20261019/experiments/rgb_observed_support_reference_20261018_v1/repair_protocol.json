@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-17T22:10:59.771768+00:00",
+  "question": "Controlled validityconsumer repair: aggregation cannot create measuredconfidence when localphotometriccost has no unique agreeing alternative.",
+  "single_change": "After unchanged aggregate decoder, require >=2 supported unary hypotheses, EXACTunique unaryminimum and selected disparity equal unaryargmin; otherwiseUNKNOWN. No new margin/coefficient, no source/SGM/params modified.",
+  "budget": {
+    "original_candidate_total_dispatch_cap": 4,
+    "already_used": 3,
+    "this_repair_check_cap": 1,
+    "recovery_cap": 0,
+    "wall_cap_s": 30,
+    "new_decoder_calls": 2,
+    "new_RGBcost_or_aggregate_calls": 0,
+    "realRGB_calls": 0,
+    "GT_reads": 0,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "gates": "Savedfailingflatfield nowUNKNOWN atfixed(5,6) ANDallflatfield; keep literalagreeingunique witness, reject unarydisagreement/tie/singleton/allmissing; allsourcearrays byteimmutable.",
+  "stop": "Anyfailureclose. This last ORIGINALbudgetslot replaces unusedrealpredict/score, not a new budget. Originalfailedfixture/diagnosis kept. Does not authorize originalpredict/score, actualRGB source or nav. No variants.",
+  "sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/protocol.json": "4c79a5b5c4deb0d620ddf717769c60f3d97a7a19b4442f646c5054763a90045c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/reference.py": "94a51d7e6470ac9d5bdb22298ddccbc54f620b1abfc38830b2282d296405d362",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/failure_analysis_arrays.npz": "13ad0f69fc5496c8023b76f9ad6cdc320cda681f3fda918ab43a4b6c0a84f25b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/failure_analysis_result.json": "edddadeb98f11329217c7463f19c15a1e358672603817e6916ab83c5fa9a34f1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/evidence_decode.py": "e4bd4a83cf4af1546262350e7891dd49cb7d84f5ca28636a12d5ab61c9b1a823",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/repair_check.py": "2c2773ee880f9040d22ef5f82233b5dddea39ed1aeef9e8cb9bac9b6ce3655af",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/repair_supervise.py": "2af929e025c18b585af964f2659b42107f95d824823f29235a39c3cd8bf89563",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c"
+  }
+}

@@ -1,0 +1,6 @@
+from pathlib import Path
+import json,numpy as np
+import matplotlib;matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+from scipy.spatial.transform import Rotation
+H=Path(__file__).resolve().parent;D=H/'native_current_motion_run_v1';z=np.load(D/'physics.npz');p=np.asarray([r['position_world'] for r in json.loads((D/'native_predictions.json').read_text())]);R=np.asarray([r['rotation_world'] for r in json.loads((D/'native_predictions.json').read_text())]);gt=Rotation.from_quat(z['root_quaternion_world_wxyz'][:,[1,2,3,0]]).as_matrix();a=np.degrees(Rotation.from_matrix(R@gt.transpose(0,2,1)).magnitude());fig,axs=plt.subplots(1,3,figsize=(13,4));axs[0].plot(*z['root_position_world_m'][:,:2].T,label='actual');axs[0].plot(*p[:,:2].T,label='native + height prior');axs[0].add_patch(plt.Circle((0,0),.35,color='gray'));axs[0].axis('equal');axs[0].legend();axs[0].set_title('Known-command sensor diagnostic / not navigation');axs[1].plot(z['simulation_time_s'],np.linalg.norm(p-z['root_position_world_m'],axis=1));axs[1].axhline(.1,color='r');axs[1].set_title('Position error (m)');axs[2].plot(z['simulation_time_s'],a);axs[2].axhline(2,color='r');axs[2].set_title('All-angle error (deg)');fig.tight_layout();fig.savefig(H/'native_current_motion_actual_v1.png',dpi=150)

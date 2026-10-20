@@ -1,0 +1,203 @@
+"""ONE bounded20s frontal RGB acquisition, knownpose diagnostic, not navigation."""
+import argparse,hashlib,json,sys,traceback,dataclasses,time
+from pathlib import Path
+import numpy as np
+import cv2
+from fast_stereo import FastStereo
+from masked_source_pair import paired_sources
+from timed_static_base_self_mask import TimedStaticBaseSelfMask as RobotSelfMask
+from stereo_geometry import restore_native
+from paired_texture_surface import PairedTextureSurfaceMemory
+from static_sparse_point_risk_grid_v1 import StaticSparsePointRiskGrid
+from route_side_commitment_grid_v1 import RouteSideCommitmentGrid
+from nonbinding_side_hypothesis_v1 import NonbindingSideHypothesisGrid
+from repeated_exposure_memory_v1 import RepeatedExposureMemoryGrid
+from readonly_boundary_shadow_v1 import ReadOnlyBoundaryShadow
+from retained_reference_tube_viability_v1 import with_tube_viability_after_measured_reversal
+from cusp_coast_acquisition_v1 import with_cusp_coast_acquisition
+from policy_row_journal_v1 import PolicyRowJournal,recover_to_files
+from prior_rgb_navigation import PriorRGBPolicy
+from execution_domain_four_point_consumer_v2 import with_supported_four_points
+from command_domain_cap import with_command_domain_cap
+from estimated_navigation_observation import EstimatedNavigationObservation
+from tentative_point_memory import TentativePointMemory
+from guarded_reference import boundary_state
+from benchmark.policies import EpisodeContext
+from scripts.run_pointgoal_benchmark import load_action_protocol
+from imu_gravity_rolling import GravityRolling
+from imu_interval_packet import interval_packet
+from scipy.spatial.transform import Rotation
+from execution_snapshot import export_execution
+from probe_cleanup import install_sigterm_cleanup,export_then_close
+from scripts.camera_rig import camera_rig_metadata
+from render_flush import fixed_render_flush
+from capture_transaction import replace_step_images
+from benchmark.artifacts import write_rgb_video
+H=Path(__file__).resolve().parent
+P=Path('/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm')
+sys.path.insert(0,str(P))
+from scripts.run_tracking_acceptance import DEFAULT_CONTRACT,DEFAULT_DRIVE_PROFILE,DEFAULT_FIXTURE,DEFAULT_OCCUPANCY,DEFAULT_SCENE_ROOT,build_tracking_episode
+from benchmark.isaac_runtime import IsaacBenchmarkRuntime,IsaacRuntimeConfig
+sys.path.insert(0,str(H.parent/'oracle_feasible_route_20260929_v9/hybrid'))
+from roll_pid import install_runtime
+sys.path.insert(0,str(H.parent/'bilateral_temporal_geometry_navigation_20261003_v1'))
+from render_boundary import hide_diagnostic_markers,marker_visibility
+sys.path.insert(0,str(H.parent/'clean_visual_hard0_intervention_20261003_v1'))
+from clock_sync import ensure_current_frames
+sys.path.insert(0,str(H.parent/'visible_surface_connectivity_20261004_v1'))
+from rig_inputs import validate_capture
+
+def main():
+    install_sigterm_cleanup()
+    a=argparse.Namespace(name='original_E1_repeated_exposure_memory_navigation')
+    config=json.loads((H/'frontal_obstacle_acquisition_protocol_v1.json').read_text())
+    for file,digest in config['source_sha256'].items():assert hashlib.sha256(Path(file).read_bytes()).hexdigest()==digest,file
+    for file,digest in config['input_sha256'].items():assert hashlib.sha256(Path(file).read_bytes()).hexdigest()==digest,file
+    out=H/'frontal_obstacle_acquisition_run_v1';out.mkdir(parents=True,exist_ok=False)
+    (out/'frames').mkdir()
+    for n in ['source_predictions','sensor_packets','known_poses','partial_observations','source_inputs','maps','local_plans','raw_point_memory_snapshots']:(out/n).mkdir()
+    extrinsics=np.load(config['rig_extrinsics'])
+    static_masks=np.load(config['static_masks']);surface_memory=PairedTextureSurfaceMemory();raw_point_memory=TentativePointMemory();depth_model=None;self_masker=None;source_rows=[]
+    actual_requests=[]
+    from benchmark.manifest import BenchmarkEpisode
+    manifest=json.loads(Path(config['episode_manifest']).read_text())
+    episode=BenchmarkEpisode.from_dict(next(e for e in manifest['episodes'] if e['episode_id']=='golden_e1_0001'))
+    (out/'task_episode.json').write_text(json.dumps(dict(actual_task='bounded frontal RGB acquisition knownpose diagnostic, not navigation',original_episode=episode.to_dict(),ground_prior_not_observation=True,not_original35=True),indent=2)+'\n')
+    clocks=[];states=[];imu_reads=[];imu_packets=[];imu_predictions=[];imu_model=None;imu_initial_normal=None;imu_interface=None;imu_path=None;imu_creation=None;gauge=None
+
+    class CaptureRuntime(IsaacBenchmarkRuntime):
+        def _configured_articulation_gains(self):
+            gains=super()._configured_articulation_gains()
+            if not hasattr(self,'_interval_original_step'):
+                self._interval_original_step=self._world.step
+                def measured_step(*args,**kwargs):
+                    begin=float(self._world.current_time);result=self._interval_original_step(*args,**kwargs)
+                    self._actual_last_interval=(begin,float(self._world.current_time));return result
+                self._world.step=measured_step
+            return gains
+        def _record_physics_diagnostic(self,*args,**kwargs):
+            nonlocal imu_model,imu_initial_normal,gauge
+            super()._record_physics_diagnostic(*args,**kwargs)
+            if gauge is None:
+                R0=Rotation.from_quat(np.asarray(self._physics_diagnostics['root_quaternion_world_wxyz'][0])[[1,2,3,0]]).as_matrix()
+                p0=np.asarray(self._physics_diagnostics['root_position_world_m'][0]).copy()
+                imu_initial_normal=R0.T@np.array([0.,0.,1.]);gauge=dict(position=p0.tolist(),rotation=R0.tolist(),initial_only=True,privileged=True)
+            reading=imu_interface.get_sensor_reading(imu_path,use_latest_data=True,read_gravity=True)
+            begin,end=self._actual_last_interval
+            assert abs(end-self._physics_diagnostics['raw_simulation_time_s'][-1])<=1e-10
+            packet,diagnostic=interval_packet(reading,begin,end,self._physics_diagnostics['simulation_time_s'][-1],self._physics_diagnostics['joint_velocity_rad_s'][-1][0])
+            imu_reads.append(diagnostic);imu_packets.append(None if packet is None else {k:np.asarray(v).tolist() for k,v in packet.items()})
+            if packet is None:imu_predictions.append(dict(time_s=diagnostic['time_s'],available=False,reason=diagnostic['reason']))
+            else:
+                if imu_model is None:imu_model=GravityRolling(imu_initial_normal)
+                result=imu_model.update(packet);R0=np.asarray(gauge['rotation']);world=np.asarray(gauge['position'])+R0@result['position'];world[2]=.4000000059604645
+                imu_predictions.append(dict(time_s=diagnostic['time_s'],available=True,relative_position=result['position'].tolist(),relative_rotation=result['rotation'].tolist(),position_world=world.tolist(),rotation_world=(R0@result['rotation']).tolist(),velocity_world_m_s=(R0@result['velocity']).tolist(),gravity_used=bool(result['gravity_used']),live_before_next_action=True,flat_height_is_prior=True))
+
+        @staticmethod
+        def _create_markers(stage,ep,path,gf,usd_geom):
+            r=IsaacBenchmarkRuntime._create_markers(stage,ep,path,gf,usd_geom)
+            hide_diagnostic_markers(stage,usd_geom)
+            nonlocal imu_interface,imu_path,imu_creation
+            import omni.kit.commands
+            from isaacsim.sensors.physics import _sensor
+            from collect_data_dubins import BASE_ROOT
+            imu_path=BASE_ROOT+'/research_native_imu'
+            ok,prim=omni.kit.commands.execute('IsaacSensorCreateImuSensor',path='/research_native_imu',parent=BASE_ROOT,sensor_period=.02,translation=gf.Vec3d(0,0,0),orientation=gf.Quatd(1,0,0,0),linear_acceleration_filter_size=1,angular_velocity_filter_size=1,orientation_filter_size=1)
+            assert ok and prim is not None
+            imu_interface=_sensor.acquire_imu_sensor_interface();imu_creation=dict(path=imu_path,period_s=.02,filter_sizes=[1,1,1],orientation_field_read=False,read_gravity=True,use_latest_data=True,lifecycle='existing marker hook before formal reset',extra_reset=False)
+            return r
+        def _capture(self):
+            nonlocal depth_model,self_masker
+            import omni.usd
+            from pxr import UsdGeom
+            from collect_data_dubins import LEFT_CAMERA_PATH,RIGHT_CAMERA_PATH,get_cam_pose,_camera_optical_to_base,_get_rgb
+            from bev_ground_truth import read_camera_depth
+            stage=omni.usd.get_context().get_stage()
+            if not getattr(self,'fresh_cameras',False):
+                for camera in (self._left_camera,self._right_camera,self._third_camera):camera.set_frequency(-1)
+                self.fresh_cameras=True
+            clock=self._clock_metadata()
+            before=[np.asarray(v).copy() for v in (*self._robot.get_world_pose(),self._robot.get_linear_velocity(),self._robot.get_angular_velocity(),self._robot.get_joint_positions(),self._robot.get_joint_velocities())]
+            ensure_current_frames((self._left_camera,self._right_camera),clock[2],self._world.render)
+            after=[np.asarray(v) for v in (*self._robot.get_world_pose(),self._robot.get_linear_velocity(),self._robot.get_angular_velocity(),self._robot.get_joint_positions(),self._robot.get_joint_velocities())]
+            assert self._clock_metadata()==clock and all(np.array_equal(x,y) for x,y in zip(before,after))
+            markers=marker_visibility(stage,UsdGeom);assert all(v['computed_visibility']=='invisible' for v in markers.values())
+            def snapshot():
+                return [np.asarray(v).copy() for v in (*self._robot.get_world_pose(),self._robot.get_linear_velocity(),self._robot.get_angular_velocity(),self._robot.get_joint_positions(),self._robot.get_joint_velocities())]
+            fixed_render_flush(self._world.render,self._clock_metadata,snapshot)
+            step=super()._capture()
+            fixed_render_flush(self._world.render,self._clock_metadata,snapshot)
+            step=replace_step_images(step,_get_rgb(self._left_camera),_get_rgb(self._right_camera),_get_rgb(self._third_camera))
+            self._captured_frames['stereo_view'][-1]=step.frames['stereo_view'].copy()
+            self._captured_frames['third_person'][-1]=step.frames['third_person'].copy()
+            i=len(clocks)
+            execution=out/'execution';execution.mkdir(exist_ok=True)
+            (execution/f'frame_{i:03d}.json').write_text(json.dumps(export_execution(self._action_smoother,self._action_protocol) if hasattr(self._action_smoother,'pid') else None,indent=2)+'\n')
+            history=out/'history';history.mkdir(exist_ok=True)
+            np.savez_compressed(history/f'frame_{i:03d}.npz',proprio_history=step.observation.proprio_history,action_history=step.observation.action_history,quaternion_world_wxyz_history=step.observation.quaternion_world_wxyz_history)
+            times={eye:float(camera.get_current_frame()['rendering_time']) for eye,camera in [('left',self._left_camera),('right',self._right_camera)]}
+            assert all(abs(float(step.raw_simulation_time_s)-t)<=1e-5 for t in times.values())
+            clocks.append(dict(frame=i,raw_time_s=float(step.raw_simulation_time_s),episode_time_s=float(step.simulation_time_s),eyes=times,markers_hidden=True))
+            position,q=self._robot.get_world_pose()
+            states.append(dict(time_s=float(step.simulation_time_s),position=np.asarray(position).tolist(),quaternion=np.asarray(q).tolist(),velocity=np.asarray(self._robot.get_linear_velocity()).tolist(),joints=np.asarray(self._robot.get_joint_positions()).tolist()))
+            if i%5==0:
+                rgb={eye+'_rgb':_get_rgb(camera) for eye,camera in [('left',self._left_camera),('right',self._right_camera)]}
+                transforms={eye+'_optical_to_base':_camera_optical_to_base(stage,path) for eye,path in [('left',LEFT_CAMERA_PATH),('right',RIGHT_CAMERA_PATH)]}
+                validate_capture(dict(**rgb,**transforms,raw_time_s=float(step.raw_simulation_time_s),left_render_time_s=times['left'],right_render_time_s=times['right']))
+                # Explicit current GT pose upperbound, never GT depth for source selection.
+                native=imu_predictions[-1];assert native['available'] and abs(native['time_s']-float(step.simulation_time_s))<1e-8
+                source_poses={eye+'_camera_usd_world':get_cam_pose(stage,path) for eye,path in [('left',LEFT_CAMERA_PATH),('right',RIGHT_CAMERA_PATH)]}
+                rootT=np.eye(4);rootT[:3,3]=position
+                residuals={eye:float(np.max(np.abs(transforms[eye+'_optical_to_base']-extrinsics[eye+'_optical_to_base']))) for eye in ('left','right')}
+                t=float(step.simulation_time_s)
+                np.savez_compressed(out/'source_inputs'/f'frame_{i:03d}.npz',**rgb,time_s=t)
+                np.savez_compressed(out/'known_poses'/f'frame_{i:03d}.npz',**source_poses,root_position_world_m=rootT[:3,3],time_s=t)
+                if depth_model is None:depth_model=FastStereo()
+                pred=depth_model.predict(rgb['left_rgb'],rgb['right_rgb'],static_masks['left'],static_masks['right'])
+                np.savez_compressed(out/'source_predictions'/f'frame_{i:03d}.npz',**pred,frame=i,time_s=t)
+                if self_masker is None:self_masker=RobotSelfMask()
+                proprio=step.observation.proprio_history.copy();proprio[:,:9]=0.
+                _,source_packet,current_masks=paired_sources(dict(depth_m=pred['depth_m'],confidence=pred['confidence'],disparity_native_px=restore_native(pred['disparity_px']),frame=i,time_s=t),dict(**source_poses,root_position_world_m=rootT[:3,3],time_s=t),proprio,self_masker,t)
+                np.savez_compressed(out/'sensor_packets'/f'source_{i:03d}.npz',**source_packet)
+                sourcefiles=[out/n/f'frame_{i:03d}.npz' for n in ('source_inputs','known_poses','source_predictions')]+[out/'sensor_packets'/f'source_{i:03d}.npz']
+                hashes={str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in sourcefiles}
+                surface=surface_memory.update(source_packet,rgb['left_rgb'],rgb['right_rgb'],t,hashes,restore_native(pred['disparity_px']))
+                np.savez_compressed(out/'partial_observations'/f'frame_{i:03d}.npz',**{k:v for k,v in surface.items() if k!='input_hashes'})
+                source_rows.append(dict(frame=i,time_s=t,points=len(surface['world']),CAD_projection_wall_s=self_masker.last_project_wall_s,provenance=surface['input_hashes'],memory_acquisition_times_s=[v['acquisition_time_s'] for v in surface_memory.at(t)],depth_truth_read_after_output=True,current_GT_pose_registration=True,rig_residual_max_abs=residuals))
+                raw_point_memory.update(dict(frame=i,time_s=t,world=surface['world'],query_pixel_id=surface['query_pixel_id'],partner_pixel_id=surface['partner_pixel_id'],input_sha256=hashes),t)
+                (out/'source_rows.json').write_text(json.dumps(source_rows,indent=2)+'\n')
+                np.savez_compressed(out/'frames'/f'frame_{i:03d}.npz',**rgb,**transforms,
+                    left_depth_m=read_camera_depth(self._left_camera),right_depth_m=read_camera_depth(self._right_camera),
+                    left_camera_usd_world=get_cam_pose(stage,LEFT_CAMERA_PATH),right_camera_usd_world=get_cam_pose(stage,RIGHT_CAMERA_PATH),
+                    root_position_world_m=position,root_quaternion_world_wxyz=q,time_s=step.simulation_time_s)
+            self._current_policy_step=step
+            return step
+    gains=json.loads((H.parent/'oracle_feasible_route_20260929_v9/gated_speed_012/selected_candidate.json').read_text())['gains']
+    Runtime=install_runtime(CaptureRuntime,**gains,output=out/'feedback')
+    runtime=Runtime(IsaacRuntimeConfig(scene_root=Path(config['scene_root']),contract_path=DEFAULT_CONTRACT.resolve(),gui=False,
+        record_video=True,occupancy_path=Path(config['occupancy']),drive_profile_path=DEFAULT_DRIVE_PROFILE.resolve(),
+        lighting_profile='fixed_camera_fill_v1',collision_mode='physical_contact_v2',diagnostic_open_plane=False,diagnostic_physics_trace=True,auxiliary_velocity_limit_rad_s=.3))
+    code=1;rows=[]
+    try:
+        runtime.reset(episode);protocol=load_action_protocol(DEFAULT_CONTRACT.resolve());initial=export_execution(runtime._action_smoother,runtime._action_protocol)
+        (out/'initial_execution_after_reset.json').write_text(json.dumps(initial,indent=2)+'\n');drive_started=False;drive_stopped=False;origin=np.asarray(states[-1]['position'][:2]);termination='bounded_acquisition_budget'
+        for block in range(200):
+            t=float(clocks[-1]['episode_time_s']);position=np.asarray(states[-1]['position'][:2]);distance=float(np.linalg.norm(position-origin))
+            # Only current/past measured RGB points select precautionary halt.
+            recent=raw_point_memory.at(t);points=np.concatenate([r['world'] for r in recent['records']]) if recent['records'] else np.empty((0,3))
+            clearance=float(np.linalg.norm(points[:,:2]-position,axis=1).min()) if len(points) else None
+            if t>=6.-1e-6:drive_started=True
+            if drive_started and (distance>=.5 or t>=14.-1e-6 or (clearance is not None and clearance<=.8707106781186548)):drive_stopped=True
+            request=np.tile(np.array([.5 if drive_started and not drive_stopped else 0.,0.],np.float32),5);actual_requests.append(request.tolist());rows.append(dict(frame=block,time_s=t,request=request.tolist(),measured_displacement_m=distance,current_past_RGB_nearest_point_m=clearance,drive_started=drive_started,drive_stopped_latched=drive_stopped,source_frame=source_rows[-1]['frame'],nominal_tracker_not_called=True,source_is_partial_not_free_volume=True))
+            current=runtime.execute(request)
+            if current.collision:termination='collision';break
+        (out/'termination.json').write_text(json.dumps(dict(termination=termination,actions=len(actual_requests),time_s=clocks[-1]['episode_time_s'],not_navigation=True,not_original35=True),indent=2)+'\n');code=0
+    finally:
+        try:
+            np.savez_compressed(out/'physics.npz',**runtime.physics_diagnostics);np.savez_compressed(out/'requests.npz',requests=np.asarray(actual_requests,np.float32).reshape(-1,10))
+            for name,frames in runtime.captured_frames.items():
+                if len(frames):write_rgb_video(out/(name+'.mp4'),frames,fps=10.)
+            for n,data in [('states',states),('camera_clocks',clocks),('source_rows',source_rows),('policy_records',rows),('physics_contacts',runtime.collision_contact_samples)]: (out/(n+'.json')).write_text(json.dumps(data,indent=2)+'\n')
+            (out/'identity.json').write_text(json.dumps(dict(complete=code==0,reset_count=1,internal_reset=False,camera_rig=camera_rig_metadata(),knownpose_source_registration=True,PID_unchanged=True,global_reference_plan_never_consumed=True,not_navigation=True,not_original35=True,source_sha256=config['source_sha256'],input_sha256=config['input_sha256']),indent=2)+'\n')
+        finally:runtime.close(return_code=code)
+if __name__=='__main__':main()

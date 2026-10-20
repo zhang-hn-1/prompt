@@ -1,0 +1,133 @@
+{
+  "utc": "2026-10-09T19:42:30.480214+00:00",
+  "epochs": {
+    "b0": [
+      {
+        "reference_epoch_sha256": "704f4af3ab0107f36c8fd17d4c497396c872ab4776905a2be0fced64eb4dfbc2",
+        "first_frame": 60,
+        "current_time_s": 5.999999865889549,
+        "remaining_original_budget_s": 29.00000013411045,
+        "nominal_supported_primitive_arc_m": {
+          "forward": 2.1,
+          "reverse": 0
+        },
+        "nominal_point_speed_m_s": {
+          "forward": 0.18854965269565582,
+          "reverse": 0.09878528863191605
+        },
+        "nominal_arithmetic_duration_s": {
+          "forward": 11.137649791324087,
+          "reverse": 0.0
+        },
+        "total_nominal_arithmetic_duration_s": 11.137649791324087,
+        "nominal_exceeds_remaining_budget": false,
+        "raw_outgoing_direction_changes": 0,
+        "first_outgoing_direction": "forward",
+        "runtime_reverse_cap_rad_s": 0.3,
+        "nominal_reverse_carrier_main_rad_s": -0.5,
+        "stopping_times_included": false,
+        "physical_lower_or_upper_bound": false
+      },
+      {
+        "reference_epoch_sha256": "3d29403cc09108919c6bc0a56324d8d37674327c172278dc642b6e181153bacb",
+        "first_frame": 120,
+        "current_time_s": 11.999999731779099,
+        "remaining_original_budget_s": 23.0000002682209,
+        "nominal_supported_primitive_arc_m": {
+          "forward": 2.9999999999999996,
+          "reverse": 1.5
+        },
+        "nominal_point_speed_m_s": {
+          "forward": 0.18854965269565582,
+          "reverse": 0.09878528863191605
+        },
+        "nominal_arithmetic_duration_s": {
+          "forward": 15.91092827332012,
+          "reverse": 15.184447206396808
+        },
+        "total_nominal_arithmetic_duration_s": 31.095375479716928,
+        "nominal_exceeds_remaining_budget": true,
+        "raw_outgoing_direction_changes": 1,
+        "first_outgoing_direction": "reverse",
+        "runtime_reverse_cap_rad_s": 0.3,
+        "nominal_reverse_carrier_main_rad_s": -0.5,
+        "stopping_times_included": false,
+        "physical_lower_or_upper_bound": false
+      }
+    ],
+    "candidate": [
+      {
+        "reference_epoch_sha256": "704f4af3ab0107f36c8fd17d4c497396c872ab4776905a2be0fced64eb4dfbc2",
+        "first_frame": 60,
+        "current_time_s": 5.999999865889549,
+        "remaining_original_budget_s": 29.00000013411045,
+        "nominal_supported_primitive_arc_m": {
+          "forward": 2.1,
+          "reverse": 0
+        },
+        "nominal_point_speed_m_s": {
+          "forward": 0.18854965269565582,
+          "reverse": 0.09878528863191605
+        },
+        "nominal_arithmetic_duration_s": {
+          "forward": 11.137649791324087,
+          "reverse": 0.0
+        },
+        "total_nominal_arithmetic_duration_s": 11.137649791324087,
+        "nominal_exceeds_remaining_budget": false,
+        "raw_outgoing_direction_changes": 0,
+        "first_outgoing_direction": "forward",
+        "runtime_reverse_cap_rad_s": 0.3,
+        "nominal_reverse_carrier_main_rad_s": -0.5,
+        "stopping_times_included": false,
+        "physical_lower_or_upper_bound": false
+      },
+      {
+        "reference_epoch_sha256": "7d81c6ebb71a16635dea396b5770629890bf162d11dd00513630b3ec52dd60aa",
+        "first_frame": 120,
+        "current_time_s": 11.999999731779099,
+        "remaining_original_budget_s": 23.0000002682209,
+        "nominal_supported_primitive_arc_m": {
+          "forward": 2.9999999999999996,
+          "reverse": 1.5
+        },
+        "nominal_point_speed_m_s": {
+          "forward": 0.18854965269565582,
+          "reverse": 0.09878528863191605
+        },
+        "nominal_arithmetic_duration_s": {
+          "forward": 15.91092827332012,
+          "reverse": 15.184447206396808
+        },
+        "total_nominal_arithmetic_duration_s": 31.095375479716928,
+        "nominal_exceeds_remaining_budget": true,
+        "raw_outgoing_direction_changes": 1,
+        "first_outgoing_direction": "reverse",
+        "runtime_reverse_cap_rad_s": 0.3,
+        "nominal_reverse_carrier_main_rad_s": -0.5,
+        "stopping_times_included": false,
+        "physical_lower_or_upper_bound": false
+      }
+    ]
+  },
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/bank_mapping.json": "b73c24fe01147bc76df45986d2214ea086da308c3b75682ac31f6adabdc1e6ef",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_straight_fitted_point_v1.json": "8c891297948e7cb4113ee39d577bd65778225247edcf1a6f3c9ffd6a6198bdbe",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/nominal_reverse_time_cost_design_v1.json": "7b4ada982256e9798100ae174404f16af8a3ae945db397ea32fa569117ab1b14",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/current_reference_epoch_geometry_assessment_v1.json": "0078b82d944074d9de7ecd61bc7ac9b05344bc392106dff2ddaf64b2272f7b0f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/transverse_velocity_feedback_e1_b0_run_v1/policy_records.json": "0c15267d2e9adc17238f3948c939d19232cf5ab2e108ed4052566b3ee08e1ce5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/transverse_velocity_feedback_e1_candidate_run_v1/policy_records.json": "c70c61f7466940c83a610c27dd6169c0302b8c3bb6a8efb116f08b4d02a0cda3"
+  },
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/audit_current_reference_nominal_duration_v1.py": "fea91a1e3665aa6eba19a72a1b9b3885ae5674c1ed45613cd40aa66255dc4940"
+  },
+  "notes": [
+    "Nonterminal waypoint action carries outgoing primitive; each nominal primitive arc is the frozen .3m, not chord length.",
+    "Forward speed is an old low-main aggregate, whereas runtime has current forward boost. Reverse carrier -.5 uses the covered executed -.3 point because runtime caps reverse.",
+    "These point-speed arithmetic values exclude stopping and transient lateral/heading response. They are not certified arrival time, feasibility bounds or evidence that35s is physically impossible.",
+    "The earlier nominal reverse cost trial remains rejected and is not rerun or rescued. This diagnostic does not grant a new query, control, gain or collection budget."
+  ],
+  "no_new_solver_physics_fit": true,
+  "no_new_gate": true,
+  "whole_mission_complete": false
+}

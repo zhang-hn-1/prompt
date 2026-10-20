@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-07T08:44:24.018811+00:00",
+  "stage": "ACTUAL_B0_RUNNING",
+  "parent_pid": 1460334,
+  "managed_session": 52563,
+  "stage_status": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/static_seed_belief_stage_status_v1.json",
+  "next_after_close": [
+    "verify_static_seed_belief_causal_v1.py",
+    "verify_static_seed_belief_collection_v1.py B0/C1 actualarms",
+    "assess_static_seed_belief_v1.py"
+  ],
+  "no_duplicate_start": true,
+  "formal_triggered": false,
+  "whole_research_complete": false,
+  "append_trace": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/research_mission.md": {
+      "old_bytes": 233011,
+      "old_sha256": "c407f25d42b2ab29349940d75ff477441e29b49fc11c70b023e9bfba1c5b6f10",
+      "new_sha256": "24025d9dd1ea62c3145cade0fa24d3cbb782d693c294f4e5fda9c52fa4c04164",
+      "old_prefix_preserved": true
+    },
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md": {
+      "old_bytes": 328879,
+      "old_sha256": "c5742802d23570901d0b87e5fe0fba2a95b7c304114e00f4025a713c8fbb178f",
+      "new_sha256": "86fc3e3b4a9dc508237308b3cdd0de62906136f3f71f12f83bf3c7a18fb61616",
+      "old_prefix_preserved": true
+    },
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md": {
+      "old_bytes": 161402,
+      "old_sha256": "45f22cd5453ecc0bcaef98c99b553b8b3585ed0cabd7df6407749d647213e75d",
+      "new_sha256": "cb00c9751013a13756a022e3127aded434367ded7cb61f14aacfac732a871a42",
+      "old_prefix_preserved": true
+    }
+  }
+}

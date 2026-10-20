@@ -1,0 +1,86 @@
+{
+  "utc": "2026-10-07T11:51:32.701409+00:00",
+  "decision": "REJECT_LOCAL_EMPIRICAL_TRACKING_TUBE",
+  "actual": {
+    "termination_reason": "timeout",
+    "actual_success": false,
+    "elapsed_s": 60.0,
+    "actual_final_distance_m": 0.8075507472718586,
+    "actual_goal_axis_progress_m": 4.268342733383179,
+    "actual_reference_progress_m": 5.428427124746191,
+    "frozen_reference_lateral_RMS_m": 1.5079567928875575,
+    "frozen_reference_lateral_peak_m": 2.605888678334467,
+    "actual_path_length_m": 6.396578672362543,
+    "actual_obstacle_segment_passed": true,
+    "contact_frames": 0,
+    "collision_frames": 0,
+    "continuous_true_body_clearance_m": 0.404751975134767,
+    "actual_handoff_time_s": 1.4999999664723873,
+    "typed_map_fields_exact": 4200,
+    "measured_free_and_occupied_cells": 0,
+    "decoded_video_frames": {
+      "stereo_view": 601,
+      "third_person": 601
+    },
+    "camera_eye_time_skew_s": 0.0,
+    "capture_partial_wall_p50_s": 0.24740268988534808,
+    "capture_partial_wall_p95_s": 2.2153100660070777,
+    "source_wall_p50_s": 1.9448082940652966,
+    "source_wall_p95_s": 2.005853309063241,
+    "real_time_replay_equivalent": false,
+    "source_updates": 121,
+    "knownpose_privileged": true,
+    "task_budget_s": 60.0,
+    "not_original_E1_or_formal35": true
+  },
+  "checks": {
+    "goal_reached": false,
+    "goal_axis_progress_ge4": true,
+    "actual_obstacle_segment_passed": true,
+    "no_contact": true,
+    "continuous_body_proxy_clearance_ge0": true,
+    "candidate_exercised": true,
+    "all_installed_nominal_references_clear_point8": true,
+    "effective_request_change": true
+  },
+  "new_reference_installs": [
+    {
+      "frame": 60,
+      "time_s": 5.999999865889549,
+      "continuous_nominal_clearance_m": 0.9210928471000529,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 300,
+      "time_s": 29.999999329447746,
+      "continuous_nominal_clearance_m": 0.8988310541639957,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 485,
+      "time_s": 48.49999891594052,
+      "continuous_nominal_clearance_m": 0.965467187355077,
+      "empirical_not_certified": true
+    }
+  ],
+  "original_guard_calls_checked": 107,
+  "manifest_checks": 6079,
+  "historical_C1_not_fresh": true,
+  "old_strict_AB_gate_false_preserved": true,
+  "initial_model_hypothesis_packet_equal": false,
+  "physical_and_request_prefix_frames": 60,
+  "first_physical_or_request_difference_frame": 60,
+  "request_different_frames": 524,
+  "applied_different_ticks": 2700,
+  "first_applied_difference_tick": 301,
+  "source_matched_causal_AB_claim": false,
+  "full_source_prefix_AB_not_verified": true,
+  "post_close_GT_only_for_actual_evaluation": true,
+  "no_stateful_policy_recall": true,
+  "no_future_plan_feedback_label": true,
+  "world_model_increment_not_tested": true,
+  "estimated_pose_not_admitted": true,
+  "formal35_not_triggered": true,
+  "whole_research_complete": false,
+  "code_sha256": "77edf6a54de27f2069d4c8d80f34fb1f7de326b61d59e6a79d1989a4df63e99a"
+}

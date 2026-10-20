@@ -1,0 +1,122 @@
+{
+  "utc": "2026-10-17T21:57:39.166003+00:00",
+  "complete": true,
+  "decision": "SMALL_MASKED_AGGREGATION_CONTRACT_PASSED_NOT_RGB_SOURCE",
+  "checks": {
+    "masked_invalid_fill_bitwise_invariant": true,
+    "masked_unique_supported_index1": true,
+    "unmasked_artificial_context_changes_winner": true,
+    "allmissing_no_invalid_winner": true,
+    "allmissing_UNKNOWN": true,
+    "tie_no_invalid_winner": true,
+    "tie_UNKNOWN": true,
+    "gap_no_invalid_winner": true,
+    "gap_restart_no_free": true,
+    "seeded0_no_invalid_winner": true,
+    "seeded1_no_invalid_winner": true,
+    "seeded2_no_invalid_winner": true,
+    "seeded3_no_invalid_winner": true,
+    "seeded4_no_invalid_winner": true,
+    "seeded5_no_invalid_winner": true,
+    "seeded6_no_invalid_winner": true,
+    "seeded7_no_invalid_winner": true,
+    "all_input_arrays_immutable": true,
+    "all_paths_match_exhaustive": true,
+    "single_hypothesis_support_can_keep_original_Z_domain": true,
+    "invalid_supported_cost_rejected": true
+  },
+  "reference_aggregate_calls": 15,
+  "total_aggregate_entry_calls": 16,
+  "rejected_interface_calls": 1,
+  "full_path_assignments_enumerated": 15879,
+  "synthetic_context_rows": [
+    {
+      "case": "unmasked_0",
+      "winners": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "case": "masked_0",
+      "winners": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "unmasked_100000",
+      "winners": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "case": "masked_100000",
+      "winners": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "single_hypothesis_witness": {
+    "query_x": 450,
+    "partner_x": 322,
+    "disparity_px": 128,
+    "Z_m": 1.49715971336455
+  },
+  "saved_arrays_sha256": "31bb3a2f1c601b3a8eb2141d72ee06e8946889abf0a42625d23c87a9b8687f62",
+  "scope": "Synthetic handcost and seededtinycost arrays only; no observed RGB data, BT cost computation, actual4eye depth, GT, spatialmap, full SGBM equivalence or performance/latency evidence.",
+  "RGB_source_calls": 0,
+  "fit": 0,
+  "physics": 0,
+  "navigation": 0
+}

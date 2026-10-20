@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-07T20:17:41.552901+00:00",
+  "state": "ONE_ACTUAL_RUNNING_NO_DUPLICATE",
+  "session_id": 8233,
+  "pid": 2204480,
+  "child_pid": 2204481,
+  "status_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_goal_camera_observation_stage_status_v1.json",
+  "next_entries": [
+    "verify_native_goal_camera_observation_runtime_v1.py",
+    "assess_native_goal_camera_observation_pose_v1.py",
+    "assess_native_goal_camera_observation_source_v1.py",
+    "assess_native_goal_camera_observation_v1.py"
+  ],
+  "whole_research_complete": false,
+  "status": "CLOSED_VERIFIED_REJECT",
+  "next_entry": "temporal_right_rgb_support_preflight_v1/assessment.json",
+  "next_status": "CLOSED_REJECT"
+}

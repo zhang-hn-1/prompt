@@ -1,0 +1,27 @@
+{
+  "classification": "readonly source mapping, no real bridge implemented",
+  "estimated_state_source": "NativeRollingShadow -> RollingPoseBridge -> FlatGroundPoseBridge; native IMU + rolling model, initial privileged gauge, flat-ground/CAD prior; NOT RGB-derived visual odometry.",
+  "rgb_source": "run_native_flat_pose_navigation_v1._capture saves online_inputs stereo RGB and runs frozen FastStereo for scene risk geometry; separate from pose estimation.",
+  "forbidden_inputs": "states/known_poses/current simulation linear velocity and GT supervision cannot enter online snapshot. Native privileged sensor/joint inputs and initial gauge must be disclosed, not called pure vision.",
+  "consumer_gap": "Existing navigator returns feedback-dependent requests at capture cycles; does not commit25 independent20ms prospective raw pairs. New consumer bridge must be independently implemented and reviewed; existing future records cannot be used as prospective program.",
+  "old_entry_correction": "v6-v8 references to RGB-derived-state source mapping were prospective wording, not factual current pose provenance. Next entry explicitly uses native sensor estimated state with privileges.",
+  "files": [
+    {
+      "path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/run_native_flat_pose_navigation_v1.py",
+      "sha256": "9e4fa16402d5986d1440272c423dee6001703b000ca027eb047cd26b8569ef50"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/flat_ground_pose_bridge.py",
+      "sha256": "14d35a3883fceeff7067d16f62f51514d06b62c89f3b77cb8cb3bd97f5edeb37"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/rolling_pose_bridge.py",
+      "sha256": "5853da0c4002a3fc60bf480b84e59facddeeb5f39a53ade984699495761a12d9"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_rolling_shadow.py",
+      "sha256": "54d441aadedbbac258a6cfdc42fd39d74cf09bc8f64cbec1cd362ddb80f0ffe9"
+    }
+  ],
+  "new_physics": 0
+}

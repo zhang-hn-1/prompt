@@ -1,0 +1,5 @@
+from pathlib import Path
+import numpy as np,json
+import matplotlib;matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+H=Path(__file__).resolve().parent;D=H/'partial_set_fresh_run_v1';p=np.load(D/'possible_sets/frame_015.npz');xy=p['possible_xy'];gt=np.load(D/'offline_occupancy_label.npz');truth=gt['origin']+np.argwhere(gt['labels']>0)*float(gt['resolution']);states=json.loads((D/'states.json').read_text());root=np.array([s['position'][:2] for s in states]);fig,ax=plt.subplots(figsize=(9,6));ax.scatter(xy[:,0],xy[:,1],s=16,label='birth possible-set model (not observation)');ax.scatter(truth[:,0],truth[:,1],s=8,color='black',label='post-close physical labels');ax.plot(root[:,0],root[:,1],color='orange',label='zero-request passive motion');ax.scatter(*root[0],marker='*',s=100,color='green');ax.scatter(2.2,0,marker='*',s=100,color='red');ax.axis('equal');ax.grid();ax.legend();ax.set_xlabel('world X m');ax.set_ylabel('world Y m');ax.set_title('Incomplete 4.4s execution / runtime guard failure / no navigation');fig.savefig(H/'partial_set_failed_prefix_v1.png',dpi=160);plt.close(fig)

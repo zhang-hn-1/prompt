@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-07T06:14:18.822078+00:00",
+  "stage": "actual_probe_and_causal_followups_closed",
+  "supersedes_started_records": true,
+  "decision": "REJECT_CAMERA_HEADING_OBSERVATION_PROBE",
+  "first_goal_time_s": 22.599999494850636,
+  "first_goal_heading_deg": 10.245404467131424,
+  "source_total": 389,
+  "source_correct": 337,
+  "source_insufficient": 0,
+  "source_finite_wrong": 52,
+  "collision_time_s": 31.2,
+  "source_common_visibility_loss_explained_by_fixed_CAD_and_vertical_FOV": true,
+  "source_shape_candidate_rejected": true,
+  "whole_research_complete": false,
+  "formal_navigation_triggered": false,
+  "actual_process_running": false,
+  "next_work": "Develop explicit predicted-geometry layer concept with ONE bounded learned completion prior; verify official input/calibration/provenance first, no extra turn/network rescue or old matrices; baseline and navigation admission remain separate"
+}

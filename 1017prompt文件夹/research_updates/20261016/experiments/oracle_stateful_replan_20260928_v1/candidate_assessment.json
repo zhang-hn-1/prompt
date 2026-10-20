@@ -1,0 +1,154 @@
+{
+  "results": {
+    "0002": {
+      "baseline": {
+        "event_block": 79,
+        "anchor": 3,
+        "segment": [
+          2,
+          42
+        ],
+        "rms_m": 0.2541479318299893,
+        "peak_m": 0.3965853087111593,
+        "entry_error_m": 0.19623620532841052,
+        "exit_error_m": 0.3965853087111593,
+        "progress_m": 1.2612726219281662,
+        "start_s_m": 0.17160055124426438,
+        "end_s_m": 1.4328731731724307,
+        "reference_segment_length_m": 11.977554936123976,
+        "entry_root_heading_error_rad": 0.731092666771747,
+        "protocol_clip_count": 80,
+        "checkpoint_1m_reached": false,
+        "checkpoint_2m_reached": false
+      },
+      "candidate": {
+        "event_block": 79,
+        "anchor": 3,
+        "segment": [
+          2,
+          42
+        ],
+        "rms_m": 0.22674153757957705,
+        "peak_m": 0.3507958381337138,
+        "entry_error_m": 0.19623620532841052,
+        "exit_error_m": 0.3507958381337138,
+        "progress_m": -0.17160055124426438,
+        "start_s_m": 0.17160055124426438,
+        "end_s_m": 0.0,
+        "reference_segment_length_m": 11.977554936123976,
+        "entry_root_heading_error_rad": 0.731092666771747,
+        "protocol_clip_count": 27,
+        "checkpoint_1m_reached": false,
+        "checkpoint_2m_reached": false
+      },
+      "prefix": {
+        "position": true,
+        "proprio": true,
+        "quaternion": true,
+        "action": true,
+        "shared_policy_scalars": true,
+        "smoother": true,
+        "all_physical_entry_fields": true
+      },
+      "changed_request_blocks": 76,
+      "changed_applied_sample_count": 80,
+      "gates": {
+        "prefix_identical": true,
+        "original_map_verified": true,
+        "original_reference_verified": true,
+        "event_verified": true,
+        "rms": false,
+        "peak": true,
+        "progress": false,
+        "applied_changed": true
+      },
+      "accepted": false,
+      "replan_status": "success",
+      "replan_seconds": 5.877157056995202,
+      "expanded_nodes": 2467,
+      "replanned_initial_direction": "reverse",
+      "braking_blocks": 52,
+      "goal_distance_at_event_m": 9.006024183320688,
+      "goal_distance_after_window_m": 9.36399110867961,
+      "normal_tracking_blocks": 28,
+      "clipped_normal_tracking_blocks": 27
+    },
+    "0004": {
+      "baseline": {
+        "event_block": 90,
+        "anchor": 4,
+        "segment": [
+          3,
+          47
+        ],
+        "rms_m": 0.33571398294013116,
+        "peak_m": 0.6159544687738205,
+        "entry_error_m": 0.18785125738704286,
+        "exit_error_m": 0.6159544687738205,
+        "progress_m": 1.0212804325083729,
+        "start_s_m": 0.18263061678981793,
+        "end_s_m": 1.2039110492981908,
+        "reference_segment_length_m": 13.178910623653794,
+        "entry_root_heading_error_rad": 0.7738280609694517,
+        "protocol_clip_count": 80,
+        "checkpoint_1m_reached": false,
+        "checkpoint_2m_reached": false
+      },
+      "candidate": {
+        "event_block": 90,
+        "anchor": 4,
+        "segment": [
+          3,
+          47
+        ],
+        "rms_m": 0.2363426898460296,
+        "peak_m": 0.36512997257978386,
+        "entry_error_m": 0.18785125738704286,
+        "exit_error_m": 0.36413500028500995,
+        "progress_m": -0.18263061678981793,
+        "start_s_m": 0.18263061678981793,
+        "end_s_m": 0.0,
+        "reference_segment_length_m": 13.178910623653794,
+        "entry_root_heading_error_rad": 0.7738280609694517,
+        "protocol_clip_count": 28,
+        "checkpoint_1m_reached": false,
+        "checkpoint_2m_reached": false
+      },
+      "prefix": {
+        "position": true,
+        "proprio": true,
+        "quaternion": true,
+        "action": true,
+        "shared_policy_scalars": true,
+        "smoother": true,
+        "all_physical_entry_fields": true
+      },
+      "changed_request_blocks": 71,
+      "changed_applied_sample_count": 80,
+      "gates": {
+        "prefix_identical": true,
+        "original_map_verified": true,
+        "original_reference_verified": true,
+        "event_verified": true,
+        "rms": true,
+        "peak": true,
+        "progress": false,
+        "applied_changed": true
+      },
+      "accepted": false,
+      "replan_status": "success",
+      "replan_seconds": 4.781100013991818,
+      "expanded_nodes": 1613,
+      "replanned_initial_direction": "reverse",
+      "braking_blocks": 48,
+      "goal_distance_at_event_m": 10.033214639336968,
+      "goal_distance_after_window_m": 10.372171291913702,
+      "normal_tracking_blocks": 32,
+      "clipped_normal_tracking_blocks": 28
+    }
+  },
+  "accepted": false,
+  "promote_to_full_reference": false,
+  "formal_benchmark_triggered": false,
+  "old_reference_is_evaluation_truth": true
+}

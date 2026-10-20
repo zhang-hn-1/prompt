@@ -1,0 +1,31 @@
+{
+  "recorded_utc": "2026-10-05T16:43:37.570995+00:00",
+  "reason": "User asks why no continuation; resume next authorized response-consumer audit now",
+  "schedule_actual_status": "ACTIVE",
+  "schedule_actual_cadence": "hourly",
+  "last_stage_finalcheck_utc": "2026-10-05T16:21:04.829019+00:00",
+  "no_scheduler_failure_established": true,
+  "explanation": "Previous bounded stage ended between scheduled wakes; no approval blocking evidence. ACTIVE alone never means continuous computation.",
+  "audit_started": true,
+  "audit_complete": false,
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/run_endpoint_navigation.py": "6c6d33e9894ea0bc52e11c8f8eb687662bd336eadf16e532715c6089a0f8c1d5",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/depth_local_curve.py": "c0617a764b1b21a7b972a50a6fad86456cbcf98b947085f40dbdc28c086d37c7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/outgoing_lookahead.py": "f0abeb4cd5d335be472fe43fefb4ee9e96bb21b9b3d8b1fca5495881e3e469c7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/oracle_feasible_route_20260929_v9/hybrid/bank_mapping.py": "0a008cd0875e7f1979e3c2107f4573d6d237e65a91757fd90365260d907216ff",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/oracle_feasible_route_20260929_v9/hybrid/roll_pid.py": "e205d303a8f9cb066349f8eae20e12f947596cca9603d7bac8dfb0b1b3379f47",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/oracle_feasible_route_20260929_v9/hybrid/hybrid_planning.py": "6fc85d4b0438728fb527019324ea5d995573217bb6175f30ac53b7c46414fd90"
+  },
+  "personally_read_source_findings": [
+    "BankMap make_policy consumes desired curvature using CURRENT measured XY speed, then encodes bank/.75 plus outer correction.",
+    "PID decodes protocol-clipped aux using .75 factor before explicit smoother/supervisor.",
+    "hybrid/hybrid_planning.py is reference chooser, not planner primitive-generation implementation; must trace formal benchmark.kinodynamic_planning separately.",
+    "Actual endpoint imports depth-local policy and execution_snapshot before runtime installation; module identity must use saved actual identity, not names."
+  ],
+  "next_required_step": "Trace formal primitive generator forward response versus actual inverse BankMap/current measured speed consumer; predeclare one eligible response-source candidate only if command-domain evidence suffices; no future measured speed input.",
+  "scientific_changes": 0,
+  "new_simulations": 0,
+  "model_fits": 0,
+  "planner_searches": 0,
+  "whole_research_complete": false
+}

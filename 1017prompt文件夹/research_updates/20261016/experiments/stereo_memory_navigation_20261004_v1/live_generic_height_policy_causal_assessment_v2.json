@@ -1,0 +1,29 @@
+{
+  "decision": "PASS_FULL_REQUEST_RECONSTRUCTION_AND_THREE_PREFIX_CAUSALITY_ONLY",
+  "all_navigation_requests_exact": 460,
+  "cutoffs": [
+    {
+      "cutoff_frame": 145,
+      "prefix_actions": 6,
+      "future_payload_poison_and_truncation_exact": true,
+      "guarded_past_file_reads": 176
+    },
+    {
+      "cutoff_frame": 300,
+      "prefix_actions": 161,
+      "future_payload_poison_and_truncation_exact": true,
+      "guarded_past_file_reads": 362
+    },
+    {
+      "cutoff_frame": 598,
+      "prefix_actions": 459,
+      "future_payload_poison_and_truncation_exact": true,
+      "guarded_past_file_reads": 719
+    }
+  ],
+  "future_source_history_file_reads_blocked": true,
+  "dummy_RGB_unused_by_tracker": true,
+  "not_another_online_run": true,
+  "source_and_nav_gates_separate": true,
+  "whole_complete": false
+}

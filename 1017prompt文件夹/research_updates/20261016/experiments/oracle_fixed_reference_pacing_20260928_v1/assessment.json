@@ -1,0 +1,102 @@
+{
+  "results": {
+    "0002": {
+      "real": {
+        "margin_067_clear_until_goal_or_end": false,
+        "first_margin_067_violation_s": 18.219999592751265,
+        "goal": [
+          8.435246183025756,
+          -0.1967960970275735
+        ],
+        "goal_reached_by35": false,
+        "first_goal_time_s": null,
+        "min_goal_distance_m": 5.730984020239486,
+        "final_goal_distance_m": 5.730984020239486,
+        "actual_distance_m": 10.110406875610352,
+        "reference_length_m": 15.592092813428538,
+        "own_reference_rms_m": 0.10094302413409846,
+        "own_reference_peak_m": 0.25980888633051513,
+        "first_inflated_map_violation_s": 29.379999343305826,
+        "original_map_clear_until_goal_or_end": false,
+        "braking_request_s": 3.8000000000000003,
+        "tracking_failure_blocks": 0
+      },
+      "reserve": {
+        "margin_067_clear_until_goal_or_end": false,
+        "first_margin_067_violation_s": 7.31999983638525,
+        "goal": [
+          8.435246183025756,
+          -0.1967960970275735
+        ],
+        "goal_reached_by35": false,
+        "first_goal_time_s": null,
+        "min_goal_distance_m": 2.0051708360412066,
+        "final_goal_distance_m": 2.0051708360412066,
+        "actual_distance_m": 16.451799392700195,
+        "reference_length_m": 15.592092813428538,
+        "own_reference_rms_m": 0.4512030675582874,
+        "own_reference_peak_m": 0.9527879469252346,
+        "first_inflated_map_violation_s": 15.17999966070056,
+        "original_map_clear_until_goal_or_end": false,
+        "braking_request_s": 3.9000000000000004,
+        "tracking_failure_blocks": 0
+      },
+      "initial_physics_identical": true,
+      "common_goal_identical": true,
+      "complete_reference_identical": true,
+      "accepted": false
+    },
+    "0004": {
+      "real": {
+        "margin_067_clear_until_goal_or_end": false,
+        "first_margin_067_violation_s": 4.799999892711639,
+        "goal": [
+          9.162605660380489,
+          0.010374062029482545
+        ],
+        "goal_reached_by35": false,
+        "first_goal_time_s": null,
+        "min_goal_distance_m": 6.879814462274388,
+        "final_goal_distance_m": 6.879814462274388,
+        "actual_distance_m": 9.452940940856934,
+        "reference_length_m": 15.592478515063764,
+        "own_reference_rms_m": 0.110072334122091,
+        "own_reference_peak_m": 0.2606794808861745,
+        "first_inflated_map_violation_s": 5.559999875724316,
+        "original_map_clear_until_goal_or_end": false,
+        "braking_request_s": 2.6,
+        "tracking_failure_blocks": 0
+      },
+      "reserve": {
+        "margin_067_clear_until_goal_or_end": false,
+        "first_margin_067_violation_s": 3.879999913275242,
+        "goal": [
+          9.162605660380489,
+          0.010374062029482545
+        ],
+        "goal_reached_by35": false,
+        "first_goal_time_s": null,
+        "min_goal_distance_m": 2.5237510777139156,
+        "final_goal_distance_m": 2.5237510777139156,
+        "actual_distance_m": 16.219621658325195,
+        "reference_length_m": 15.592478515063764,
+        "own_reference_rms_m": 0.43677775584236694,
+        "own_reference_peak_m": 0.9419617305727963,
+        "first_inflated_map_violation_s": 4.159999907016754,
+        "original_map_clear_until_goal_or_end": false,
+        "braking_request_s": 4.6000000000000005,
+        "tracking_failure_blocks": 0
+      },
+      "initial_physics_identical": true,
+      "common_goal_identical": true,
+      "complete_reference_identical": true,
+      "accepted": false
+    }
+  },
+  "pre_run_source_identity_unchanged": true,
+  "changed_identity_paths": [],
+  "runtime_identity_unchanged": true,
+  "accepted": false,
+  "formal_benchmark": false,
+  "clearance_scope": "offline original inflated map check; not physical collision validation"
+}

@@ -1,0 +1,72 @@
+{
+  "utc": "2026-10-09T10:13:55.155652+00:00",
+  "stage": "knownpose_fixed_reference_two_sequences_closed_candidate_rejected_and_causal_context_closed",
+  "whole_mission_complete": false,
+  "physics_running": false,
+  "external_process_check": "pgrep exact stage names exit1/no processes",
+  "remaining_pacing_sequence_budget": 0,
+  "b0": {
+    "status": "finished",
+    "start_utc": "2026-10-09T09:51:12.112974+00:00",
+    "parent_pid": 200251,
+    "child_pid": 200252,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T09:55:07.429208+00:00"
+  },
+  "paced": {
+    "status": "finished",
+    "start_utc": "2026-10-09T09:55:19.581176+00:00",
+    "parent_pid": 205219,
+    "child_pid": 205253,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T09:59:17.681773+00:00"
+  },
+  "candidate_accept": false,
+  "navigation_triggered": false,
+  "science_vs_runtime": "knownpose candidate performance rejected; native no intervention not assessed; v1 startup failed zero physics",
+  "next": {
+    "question": "Does ordinary retention consume actual completed local endpoint while distant global goal remains?",
+    "primary_code": [
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/guarded_reference.py",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_terminal_capture_context_v1.py",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reference_continuity_audit.py",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/root_direction_consumer.py"
+    ],
+    "next_executable_steps": [
+      "Read concrete runtime MRO plan_boundary after original current source update; inspect existing retention necessary screen at completed endpoint without act replay",
+      "Write actual-class event consumption regression with current/past state, missing-sample/rebound/ref-version cases; freeze exactly one candidate at original main .5 only",
+      "Before physics freeze separate B0/one-candidate whole35 budget, unchanged sensing/geometry/PID/action domain; durable supervisor and independent geometric gates",
+      "Then real binocular-memory closed loop with knownpose diagnostic first, estimated layer separately if admissible; preserve all old rejected branches"
+    ],
+    "prohibited": [
+      "rerun pacing candidate",
+      "retune PID/main/curvature together",
+      "future truth",
+      "cursor-only improvement",
+      "parking as navigation success"
+    ]
+  },
+  "stop_reason": "Long actual execution session closed at continuation boundary after four fixed-reference physical sequences, straight probe, causal CPU implementation/review. No user-dependent block; resume implementation, not rerun.",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fixed_reference_pacing_knownpose_paced_started_continuation_v6.json",
+  "superseded_sha256": "03fa08cbdda1439a9977e3d0b1dc9a380c03b58cd2760a5f935b293b5210c2a2",
+  "evidence_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fixed_reference_pacing_knownpose_assessment_v3.json": "58f3c47dc9db40513d99ab73435a28be1a4530eb9605dbd2955d7df370b03b20",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fixed_reference_pacing_cause_closed_v1.json": "c802e064c989335eef2bbf28766b1bd7e8d4b6f69230cdc665b92f4429a60490",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/knownpose_stop_interface_assessment_v1.json": "f29ca23bb30a0d3a1243f1b93cd7f8cbef289d34acce7322385f79fd201d5a2b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/knownpose_stop_interface_identity_v2.json": "a24dfc3278a172c7b39ee67d643f93d0e5e262943078afd02ddd2f6f8ec8e530",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_terminal_capture_assessment_v1.json": "f369e4ce587de4219c00be95db20d7a51f4e445c2b6840efb4d8b4de454ed077",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_terminal_capture_assessment_v2.json": "8aa237005c2b84f56ebededdd4bda4a056bb3c66d66df7e339fee55c4b556304",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/local_terminal_capture_review_v2.json": "dd27ebfbd4d92e68a41212def739d90eaceb62e5ae18bc6c34da75bb570e7be2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fixed_reference_pacing_knownpose_trajectory_v3.png": "d663bc2b47bcf406f324c17573eeee8841a04a5807a3019f409f60e798d21f4f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/\u8d44\u6599_\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a_2026-09-30/2026-10-09_\u7814\u7a76\u8fdb\u5c55\u66f4\u65b0/2026-10-09_\u56fa\u5b9a\u53c2\u8003\u76f4\u884c\u63d0\u901f\u5bf9\u7167.png": "d663bc2b47bcf406f324c17573eeee8841a04a5807a3019f409f60e798d21f4f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fixed_reference_pacing_knownpose_closed_append_receipts_v7.json": "98333129e9cb009c8943e70aab078d270446091e6c43366177df970c03202f7a"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-09T11:40:53.169253+00:00",
+  "stage": "reserve_paced_actual_running_B0_complete_seal2214_verified",
+  "whole_mission_complete": false,
+  "physics_running": true,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T11:40:43.291204+00:00",
+    "parent_pid": 324769,
+    "child_pid": 324770,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session_id": 48140,
+  "b0_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T11:36:11.300844+00:00",
+    "parent_pid": 319318,
+    "child_pid": 319319,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T11:40:12.625792+00:00"
+  },
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reserve_b0_started_continuation_v14.json",
+  "superseded_sha256": "fdd4110c95c2efc73d3b0363b502663630b635af893597ba1e89fbf46f3c6037",
+  "next": "Supervise existing paced PID/session without restart; after normal close assess both original envelopes/all raw seals with assess_local_reserve_fixed_reference_v1.py, request closed evidence review and plot. Gates unchanged; no formal nav.",
+  "budget_remaining": {
+    "b0": 0,
+    "paced": 0,
+    "retries": 0
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "valid_live_calls_checked": 289,
+  "events": {
+    "tracking_reference_has_stop_reserve": 230,
+    "local_endpoint_stop_with_distant_global_goal": 59
+  },
+  "current_past_reconstruction_exact": true,
+  "future_replaced_and_truncated_equal": true,
+  "actually_online_stop_branch_exercised": true,
+  "scope": "known current pose run only; branch arithmetic/interface, not zero-plan future physical prediction or stopping-bound certification",
+  "actual_policy_requests_not_relabelled_as_another_future_plan": true,
+  "model_prediction_accept": null,
+  "control_candidate_remains_rejected": true,
+  "formal_navigation_not_run": true,
+  "whole_mission_complete": false,
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fixed_reference_pacing_knownpose_paced_run_v3/policy_records.json": "f2a0a903c514115e511749a9f7996a395fb25b9e8da20402514124e0005fbbc8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fixed_reference_pacing_knownpose_paced_run_v3/states.json": "5ca8b546e2d6bfbac282cc291069d508f517675b5a8760bfbdbd5b65c5f3dba4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fixed_reference_pacing_knownpose_paced_run_v3/task_episode.json": "bd0959f3bd4eb3e604358e4403cf4e3aa62748b6351a02a04f8b8e69261b1dd1"
+  }
+}

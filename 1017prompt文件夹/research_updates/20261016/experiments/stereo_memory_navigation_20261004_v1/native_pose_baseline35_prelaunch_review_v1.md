@@ -1,0 +1,7 @@
+# 单条 native-pose E0 预运行核验
+
+独立 reviewer first_primitive_direction_first_review：Critical 0、Important 0。原 Important 为NaN记录时钟绕过比较，已测试复现再修复；5项新接口测试及27项相关接口/IMU/位姿测试通过。记录时间与消费时间都先检查有限，再允许1e-8的实际时钟容差，未来/过期/不可用/非live拒绝。来源注册与导航读取同一当前native估计，无未来状态或后续GT回退；初始GT gauge、flat-height prior及低层PID理想IMU均保留标签。协议单E0/max1/无重试，冻结SGBM、增益、速度及相机光照不变。
+
+reviewer独立跑5项测试，作者跑27项；全目录pytest未通过：26收集错误详见native_pose_baseline_full_cpu_suite_v1.log。作者源身份/输入哈希与AST通过，不称全测试通过。审查未启动物理。
+
+审查源码：consumer 1c6f3913bceb5608a6b30a78f8035888126347a34548f938a2997c513fa047f6；tests 09d238259de073859f7c2b074ae99690cfef21df8cb9ea002d50464a0fca38b7；driver 4118be571714803657e8b26e1474e51cf9d4c235ef25fdcc48b708906993a616；protocol c9fe12669adbaed743952836d76d58c849353c747259a5da39776901a80450b0。

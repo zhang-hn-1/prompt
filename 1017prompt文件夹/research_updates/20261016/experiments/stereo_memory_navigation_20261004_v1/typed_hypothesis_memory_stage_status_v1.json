@@ -1,0 +1,34 @@
+{
+  "stage": "BOTH_ACTUAL_ARMS_CLOSED_NEEDS_VERIFICATION",
+  "start_utc": "2026-10-07T10:16:28.114471+00:00",
+  "pid": 1566024,
+  "maximum_actual_sequences": 2,
+  "per_sequence_max_wall_s": 1500,
+  "formal_triggered": false,
+  "whole_research_complete": false,
+  "arms": [
+    {
+      "arm": "B0",
+      "start_utc": "2026-10-07T10:16:28.114660+00:00",
+      "stage": "ACTUAL_CLOSED",
+      "wall_begin": 1226427.253109825,
+      "child_pid": 1566025,
+      "returncode": 0,
+      "end_utc": "2026-10-07T10:26:07.632583+00:00",
+      "wall_s": 579.5179314839188,
+      "post_close_manifest_sha256": "ef82dceaf68dcff8ad4dadac9222930434da5f1b2eb506fbb81bdd68f1007188"
+    },
+    {
+      "arm": "C1",
+      "start_utc": "2026-10-07T10:26:08.282778+00:00",
+      "stage": "ACTUAL_CLOSED",
+      "wall_begin": 1227007.421236139,
+      "child_pid": 1576976,
+      "returncode": 0,
+      "end_utc": "2026-10-07T10:35:44.804281+00:00",
+      "wall_s": 576.5215134029277,
+      "post_close_manifest_sha256": "1d65bc9bb53afcb6666058ef2f3145f0370eb3f3229be650b5e28c0e489206f4"
+    }
+  ],
+  "end_utc": "2026-10-07T10:35:45.442989+00:00"
+}

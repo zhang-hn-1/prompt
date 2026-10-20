@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-09T10:57:18.156476+00:00",
+  "stage": "sgbm_risk_lifetime_history_closed_current_actual_running",
+  "whole_mission_complete": false,
+  "physics_running": true,
+  "actual_status": {
+    "status": "running",
+    "start_utc": "2026-10-09T10:57:07.012173+00:00",
+    "parent_pid": 275740,
+    "child_pid": 275741,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session_closed": 21758,
+  "interface_pass": true,
+  "navigation_improvement": false,
+  "navigation_outcome": "timeout",
+  "remaining_context_sequence_budget": 0,
+  "independent_closing_review": "requested_not_yet_received",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/sgbm_risk_lifetime_history_started_continuation_v9.json",
+  "superseded_sha256": "5c0dccb653f069516c7448c092a2c285dec7331dc433a00f70f89a7dcfe6b24d",
+  "next": {
+    "steps": [
+      "Supervise existing current arm no relaunch",
+      "After normalclose run frozen assess_sgbm_risk_lifetime_v1.py and plot_risk_lifetime_pair_v1.py; independent review actual complete source/physics prefix and causal scope",
+      "Preserve failure classification; no retries",
+      "Update research/study and pick evidence-supported next experiment without repeated matrices"
+    ],
+    "running_status_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/sgbm_risk_lifetime_current_status_v1.json"
+  },
+  "evidence_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/regular_endpoint_consumption_assessment_v1.json": "f63a780e1cc446c2f704dd2528b0fdbd96f404a718edd6d14427565fc101dbdd",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_registry_v3.json": "c0ab26f0e2c361982d6fd0fe2143a8a82f3ccbb687bd653bc94cd7e33c575010",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_assessment_v1.json": "c53abc3e66585f1f2acc2eb0466f4eecc3442148fde46e1a8131cfdca6ee3d9a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_append_receipts_v1.json": "131f32fd927abc397e861a9ca22a37fe27c0769f0c4b296001252aaa93631508"
+  },
+  "active_session": 37793,
+  "remaining_sequence_budget": {
+    "history": 0,
+    "current": 0
+  },
+  "stop_reason": null,
+  "prelaunch_review": "C0I0 independent review v3; 6CPU PASS",
+  "history_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T10:53:32.174721+00:00",
+    "parent_pid": 271414,
+    "child_pid": 271415,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T10:56:58.334821+00:00"
+  }
+}

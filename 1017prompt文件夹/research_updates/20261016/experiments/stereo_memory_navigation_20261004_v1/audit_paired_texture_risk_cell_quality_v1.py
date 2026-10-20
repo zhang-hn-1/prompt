@@ -1,0 +1,9 @@
+"""Offline risk-cell support diagnostic, no new admission threshold or actor change."""
+from pathlib import Path
+import numpy as np,json
+H=Path(__file__).resolve().parent;D=H/'live_paired_texture_navigation_run_v1';O=H/'paired_texture_risk_cell_quality_v1';O.mkdir(exist_ok=False);out=[]
+for r in json.loads((D/'policy_records.json').read_text()):
+ i=r['frame'];a=np.load(D/'maps'/f'frame_{i:03d}.npz');ij=np.argwhere(a['labels']==1);xy=a['origin']+ij*float(a['resolution']);rad=np.linalg.norm(xy,axis=1);compatible=rad<=.35+np.sqrt(2)*float(a['resolution'])/2+.1
+ out.append(dict(frame=i,time_s=r['time_s'],positive_risk_cells=len(ij),proxy_radial_compatible_cells=int(compatible.sum()),outside_proxy_plus10cm_and_halfcell=int((~compatible).sum()),max_radius_m=None if not len(rad) else float(rad.max()),reference_version=r.get('local_reference_version'),actual_guard_checked=r.get('guard_measured_this_call',False),planner_called=r.get('local_plan_created',False)))
+a=dict(scope='known fixture offline proxy only; compatibility diagnostic .1m plus half cell; NOT new gate or full observed volume',rows=len(out),positive_cell_time_pairs=sum(r['positive_risk_cells'] for r in out),outside_proxy_cell_time_pairs=sum(r['outside_proxy_plus10cm_and_halfcell'] for r in out),peak_positive_cells=max(r['positive_risk_cells'] for r in out),peak_outside_cells=max(r['outside_proxy_plus10cm_and_halfcell'] for r in out),first_outside=next((r for r in out if r['outside_proxy_plus10cm_and_halfcell']),None),last_positive=next((r for r in out[::-1] if r['positive_risk_cells']),None),not_independent_cells_over_time=True,no_grid_labels_changed=True,no_threshold_or_control_candidate=True,not_unique_navigation_cause=True)
+(O/'rows.json').write_text(json.dumps(out,indent=2)+'\n');(O/'assessment.json').write_text(json.dumps(a,indent=2)+'\n');print(json.dumps(a,indent=2))

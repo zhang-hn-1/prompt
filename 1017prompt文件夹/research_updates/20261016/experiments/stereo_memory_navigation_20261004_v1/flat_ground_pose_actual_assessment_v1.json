@@ -1,0 +1,118 @@
+{
+  "utc": "2026-10-07T12:55:55.812991+00:00",
+  "decision": "PASS_CONDITIONAL_ESTIMATED_POSE_TASK_ONLY",
+  "actual": {
+    "termination_reason": "success",
+    "actual_success": true,
+    "elapsed_s": 42.9,
+    "actual_final_distance_m": 0.19062443204416454,
+    "actual_goal_axis_progress_m": 4.486695051193237,
+    "actual_reference_progress_m": 5.852527321636307,
+    "frozen_reference_lateral_RMS_m": 0.15346320682705916,
+    "frozen_reference_lateral_peak_m": 0.31004053335636783,
+    "actual_path_length_m": 6.442273214192927,
+    "actual_obstacle_segment_passed": true,
+    "contact_frames": 0,
+    "collision_frames": 0,
+    "continuous_true_body_clearance_m": 0.4621673386915839,
+    "actual_handoff_time_s": 1.9999999552965164,
+    "typed_map_fields_exact": 3003,
+    "measured_free_and_occupied_cells": 0,
+    "decoded_video_frames": {
+      "stereo_view": 430,
+      "third_person": 430
+    },
+    "camera_eye_time_skew_s": 0.0,
+    "capture_partial_wall_p50_s": 0.2504786584759131,
+    "capture_partial_wall_p95_s": 2.359385241847485,
+    "source_wall_p50_s": 2.0703128579771146,
+    "source_wall_p95_s": 2.146609566407278,
+    "real_time_replay_equivalent": false,
+    "source_updates": 86,
+    "knownpose_privileged": false,
+    "initial_gauge_privileged": true,
+    "ideal_gyro_privileged": true,
+    "flat_ground_height_prior": true,
+    "height_prior_is_observation": false,
+    "task_budget_s": 60.0,
+    "not_original_E1_or_formal35": true
+  },
+  "checks": {
+    "pose_gate": true,
+    "consumed_birth_source_pass": true,
+    "forward_cap_actually_exercised": true,
+    "goal_reached": true,
+    "goal_axis_progress_ge4": true,
+    "actual_obstacle_segment_passed": true,
+    "no_contact": true,
+    "continuous_body_proxy_clearance_ge0": true,
+    "candidate_exercised": true,
+    "all_installed_nominal_references_clear_point8": true,
+    "effective_request_change": true
+  },
+  "new_reference_installs": [
+    {
+      "frame": 60,
+      "time_s": 5.999999865889549,
+      "continuous_nominal_clearance_m": 0.9199850170966696,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 225,
+      "time_s": 22.49999949708581,
+      "continuous_nominal_clearance_m": 0.8933870016195524,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 335,
+      "time_s": 33.49999925121665,
+      "continuous_nominal_clearance_m": 0.9917247223450872,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 410,
+      "time_s": 40.99999908357859,
+      "continuous_nominal_clearance_m": 1.0444060302407605,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 415,
+      "time_s": 41.499999072402716,
+      "continuous_nominal_clearance_m": 1.065690104477847,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 420,
+      "time_s": 41.999999061226845,
+      "continuous_nominal_clearance_m": 1.1155533860104043,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 425,
+      "time_s": 42.499999050050974,
+      "continuous_nominal_clearance_m": 1.170800490908249,
+      "empirical_not_certified": true
+    }
+  ],
+  "actual_forward_cap_changed_frames": 330,
+  "original_guard_calls_checked": 73,
+  "manifest_checks": 4747,
+  "historical_D2_not_fresh": true,
+  "old_strict_AB_gate_false_preserved": true,
+  "initial_model_hypothesis_packet_equal": false,
+  "physical_and_request_prefix_frames": 60,
+  "first_physical_or_request_difference_frame": 60,
+  "request_different_frames": 206,
+  "applied_different_ticks": 1621,
+  "first_applied_difference_tick": 326,
+  "source_matched_causal_AB_claim": false,
+  "full_source_prefix_AB_not_verified": true,
+  "post_close_GT_only_for_actual_evaluation": true,
+  "no_stateful_policy_recall": true,
+  "no_future_plan_feedback_label": true,
+  "world_model_increment_not_tested": true,
+  "estimated_pose_gate_independently_scored": true,
+  "formal35_not_triggered": true,
+  "whole_research_complete": false,
+  "code_sha256": "b7319a28d30ee529cd76644334149edfcc9c9f4831281b1a39bec82679638bda"
+}

@@ -1,0 +1,30 @@
+{
+  "LR": {
+    "status": "no_collision_clear_arc_then_line",
+    "radius_m": 2.0,
+    "start_xy": [
+      -0.5888832807540894,
+      -7.843029499053955
+    ],
+    "start_yaw_rad": 3.0936916721155736,
+    "goal": [
+      -0.058782560239089676,
+      -10.427944798596872
+    ],
+    "physical_run": false
+  },
+  "RL": {
+    "status": "no_collision_clear_arc_then_line",
+    "radius_m": 2.0,
+    "start_xy": [
+      -1.7864115238189697,
+      7.040017127990723
+    ],
+    "start_yaw_rad": -2.6971308257514632,
+    "goal": [
+      -1.989369539939844,
+      9.78309625289588
+    ],
+    "physical_run": false
+  }
+}

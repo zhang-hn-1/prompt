@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-09T14:00:18.758346+00:00",
+  "stage": "unchanged_candidate_knownE1_actual_coverage_started",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_native_closed_coverage_prepared_continuation_v32.json",
+  "superseded_sha256": "cdf10dfca46425cae32f92d0ce677be7f2fe0bd59b853c193d23dbb54d5bb466",
+  "physics_running": true,
+  "whole_mission_complete": false,
+  "session_id": 30321,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T13:59:59.828377+00:00",
+    "parent_pid": 481520,
+    "child_pid": 481521,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "nativeE0_closed_review": "C0I0M0; no intervention measured navigation reject unchanged",
+  "remaining_budget": {
+    "known_e1": 0,
+    "known_e2": 1,
+    "native_e1": 1,
+    "native_e2": 1,
+    "retry": 0
+  },
+  "next": "Supervise30321 no duplicate, postclose frozen assess_rolling_endpoint_coverage_v1.py known e1. Then declaredknown_e2/native_e1/native_e2 once. Preserve all outcomes not thresholdrescues."
+}

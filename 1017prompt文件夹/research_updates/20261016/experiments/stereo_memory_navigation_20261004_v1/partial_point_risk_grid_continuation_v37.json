@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-08T12:34:37.646173+00:00",
+  "overall_complete": false,
+  "external_user_block": false,
+  "automation_status": "ACTIVE",
+  "active": [
+    "front_view_handoff_navigation_stage_v1"
+  ],
+  "status_file": "front_view_handoff_navigation_status_v1.json",
+  "stage": "run_front_view_handoff_navigation_stage_v1.py",
+  "protocol": "front_view_handoff_navigation_protocol_v1.json",
+  "output": "front_view_handoff_navigation_run_v1",
+  "next": "Check existing actual status/process; do not duplicate. Afterclose verify seal, measured handoff/currentsource clocks, applied requests, source quality/membership, maps, true progress/contact and videos. Keep54.6gate; no newcandidate/gain/network/threshold rescue. Original35 nottriggered.",
+  "latest_closed": "reference_view_alignment_acquisition_run_v1",
+  "latest_closed_result": "PASS_ONLY_ACQUISITION source54378/918bad/98.3118percent10cm;24targetepochs>=100/contact0/20s, notnavigation",
+  "review": "one fresh reviewer: timeout preexecute fixed; stage metadata fixed; source record clocks strengthened;6testsPASS;allsource/inputhashesPASS",
+  "CPU_prefix": "currentpast-only development116exactrequests, handoff11.59999974/five current lowXY/freshRGB, notonline or freshholdout"
+}

@@ -1,0 +1,210 @@
+{
+  "role": "single fresh whole yaw20 response validation; not navigation/general-state acceptance",
+  "selected": "positive",
+  "support": {
+    "support_passed": false,
+    "unknown_cells": 195,
+    "occupied_cells": 0,
+    "checked_cells": 211,
+    "full_3d_certified": false,
+    "scope": "2.5D observed floor support and recorded hazards only"
+  },
+  "rows": [
+    {
+      "horizon_s": 1.5,
+      "xy_error_m": 1.1862705149686526e-06,
+      "yaw_delta_error_rad": 1.4237430714589272e-05,
+      "bank_error_deg": 3.534682071800613e-05,
+      "actual_xy_world": [
+        0.1806657612323761,
+        -0.09759807586669922
+      ],
+      "predicted_xy_world": [
+        0.18066627359301277,
+        -0.09759700594879925
+      ]
+    },
+    {
+      "horizon_s": 3.0,
+      "xy_error_m": 2.451307939214896e-06,
+      "yaw_delta_error_rad": 5.640937908280019e-06,
+      "bank_error_deg": 7.839251881144162e-05,
+      "actual_xy_world": [
+        0.36048567295074463,
+        -0.061810340732336044
+      ],
+      "predicted_xy_world": [
+        0.3604864896531383,
+        -0.061808029475575524
+      ]
+    },
+    {
+      "horizon_s": 6.0,
+      "xy_error_m": 6.861581125459041e-05,
+      "yaw_delta_error_rad": 0.00032051098422841706,
+      "bank_error_deg": 8.617732521361675e-05,
+      "actual_xy_world": [
+        0.7118636965751648,
+        -0.03332963585853577
+      ],
+      "predicted_xy_world": [
+        0.7118664285194338,
+        -0.03339819726192453
+      ]
+    },
+    {
+      "horizon_s": 7.5,
+      "xy_error_m": 0.00011831273048638731,
+      "yaw_delta_error_rad": 0.0004254919292514536,
+      "bank_error_deg": 9.034821331115095e-05,
+      "actual_xy_world": [
+        0.8196452260017395,
+        0.1088968813419342
+      ],
+      "predicted_xy_world": [
+        0.819698275298844,
+        0.10879112844943539
+      ]
+    },
+    {
+      "horizon_s": 9.0,
+      "xy_error_m": 0.00012937444867268817,
+      "yaw_delta_error_rad": 0.0031807100296143975,
+      "bank_error_deg": 0.00019397727395526826,
+      "actual_xy_world": [
+        0.8284718990325928,
+        0.12831555306911469
+      ],
+      "predicted_xy_world": [
+        0.8284623537812967,
+        0.12818653122543286
+      ]
+    },
+    {
+      "horizon_s": 12.0,
+      "xy_error_m": 0.00030448345450514444,
+      "yaw_delta_error_rad": 0.008655482155529248,
+      "bank_error_deg": 0.0003559868886438192,
+      "actual_xy_world": [
+        0.8470923900604248,
+        0.12583056092262268
+      ],
+      "predicted_xy_world": [
+        0.847024800894862,
+        0.1255336739428376
+      ]
+    }
+  ],
+  "measured_response_comparison_scope": "online consumer outputs archived XY and known requests; yaw/bank are supplemental historical table comparison, not online recursive outputs",
+  "xy_whole_rms_m": 0.00012608474914606248,
+  "xy_whole_peak_m": 0.00030448345450514444,
+  "yaw_delta_peak_rad": 0.008655482155529248,
+  "bank_peak_error_deg": 0.0010701249176191334,
+  "old_stop_time_s": 14.199999682605267,
+  "new_stop_time_s": 14.199999682605267,
+  "pre_frozen_whole_gate_passed": true,
+  "execution_clone_measured_feedback_exact": true,
+  "complete_live_snapshots_exact": true,
+  "causal_map_replay_exact": true,
+  "future_packet_truncate_replace_unchanged": true,
+  "requests_match_selected_and_realphysics": true,
+  "counts": {
+    "requests": 180,
+    "captures": 181,
+    "physics": 901,
+    "archived_stereo_pairs": 37,
+    "packets": 181,
+    "history_shifts_once": 180,
+    "complete_live_execution_snapshots": 180,
+    "initial_capture_before_PID_install": 1
+  },
+  "videos": {
+    "stereo_view.mp4": {
+      "r_frame_rate": "10/1",
+      "duration": "18.100000",
+      "nb_read_frames": "181"
+    },
+    "third_person.mp4": {
+      "r_frame_rate": "10/1",
+      "duration": "18.100000",
+      "nb_read_frames": "181"
+    }
+  },
+  "all_frozen_hashes_exact": true,
+  "actual_max_camera_age_s": 0.0,
+  "historical_E1": {
+    "scope": "historical applicability audit only, zplaceholder ignored/no terrain transfer",
+    "samples_after6s": 255,
+    "applicable_times_s": [
+      5.999999865889549
+    ],
+    "first_veto_state": {
+      "time_s": 28.399999365210533,
+      "gates": [
+        {
+          "name": "positive",
+          "applicable": false,
+          "reasons": [
+            "linear_local",
+            "angular_local",
+            "joint_position",
+            "joint_velocity",
+            "tilt",
+            "pid_integral_output",
+            "pid_previous_bank",
+            "inner_current_action",
+            "inner_last_smoothed_target"
+          ],
+          "deltas": {
+            "linear_local": 0.09992935254355252,
+            "angular_local": 0.08540761497022749,
+            "joint_position": 6.865675680281959,
+            "joint_velocity": 1.4889881433106948,
+            "tilt_angle_rad": 0.40977771872640045,
+            "pid_integral_output": 0.026969082199488327,
+            "pid_previous_bank": 0.40753541932421145,
+            "pid_rate": 0.0027979273373334597,
+            "current_action": 0.4926537172868848,
+            "last_smoothed_target": 0.4926537172868848
+          }
+        },
+        {
+          "name": "negative",
+          "applicable": false,
+          "reasons": [
+            "linear_local",
+            "angular_local",
+            "joint_position",
+            "joint_velocity",
+            "tilt",
+            "pid_integral_output",
+            "pid_previous_bank",
+            "inner_current_action",
+            "inner_last_smoothed_target"
+          ],
+          "deltas": {
+            "linear_local": 0.09992935254355252,
+            "angular_local": 0.08540761497022749,
+            "joint_position": 6.865675680281959,
+            "joint_velocity": 1.4889881433106948,
+            "tilt_angle_rad": 0.40977771872640045,
+            "pid_integral_output": 0.026969082199488327,
+            "pid_previous_bank": 0.40753541932421145,
+            "pid_rate": 0.0027979273373334597,
+            "current_action": 0.4926537172868848,
+            "last_smoothed_target": 0.4926537172868848
+          }
+        }
+      ]
+    },
+    "execution_measured_reconstruction_maxerror": 0.0
+  },
+  "verdict": "accept narrow same-openplane cold-state yaw transfer only if gate passes; no navigation/unknown safety or arbitrary state predictor admission",
+  "exclusions": [
+    "no stitching early stop tail",
+    "no current-run future feedback input",
+    "no measured terrain-height coverage",
+    "no safe cold-start certificate",
+    "no RGB/estimated-pose/learned increment/formal35s results"
+  ]
+}

@@ -1,0 +1,10 @@
+from pathlib import Path
+import hashlib,json,datetime
+w=Path.cwd();h=w/'experiments/stereo_memory_navigation_20261004_v1';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();r=w/'reports/benchmark_frozen_semantic_floor_adapter_20261006.md';rev=json.loads((h/'floor_adapter_review.json').read_text());assert hashlib.sha256(r.read_bytes()[:rev['report_body_bytes']]).hexdigest()==rev['report_body_sha256']
+for path,name in [(w/'research_mission.md','research_mission.md'),(w/'docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md','2026-10-04-stereo-memory-navigation.md'),(h/'progress.md','progress.md')]:assert path.read_bytes().startswith((h/('floor_adapter_pre_close_'+name)).read_bytes())
+a=json.loads((h/'floor_adapter_author_verify.json').read_text());assert a['passed'] and a['checks']==1065;assert not json.loads((h/'floor_adapter_heldout_audit.json').read_text())['candidate_accepted']
+owned={str(p):sha(p) for p in h.iterdir() if p.is_file() and p.name.startswith(('floor_adapter','frozen_floor_features','fit_floor_adapter','predict_floor_adapter','audit_floor_adapter','diagnose_floor_adapter','verify_floor_adapter','run_semantic_adapter','semantic_adapter')) and 'final_check' not in p.name and 'final_identity' not in p.name}
+for folder in ['floor_adapter_training_features','floor_adapter_heldout_predictions','semantic_adapter_heldout_inputs','semantic_adapter_heldout_run']:
+ for p in (h/folder).rglob('*'):
+  if p.is_file():owned[str(p)]=sha(p)
+owned[str(r)]=sha(r);identity=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),owned_sha256=owned,reviewed_prefix_preserved=True,master_prefix_preserved=True,stage_complete=True,whole_research_complete=False,automation='ACTIVE');(h/'floor_adapter_final_identity.json').write_text(json.dumps(identity,indent=2)+'\n');(h/'floor_adapter_final_check.json').write_text(json.dumps(dict(utc=identity['utc'],passed=True,owned_files=len(owned),author_integrity_checks=1065,stage_complete=True,whole_research_complete=False,automation='ACTIVE',identity_sha256=sha(h/'floor_adapter_final_identity.json')),indent=2)+'\n');print('ADAPTER_FINAL_PASS',len(owned))

@@ -1,0 +1,10 @@
+from pathlib import Path
+import json,hashlib,datetime
+H=Path(__file__).resolve().parent;sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();old=json.loads((H/'original_E1_static_sparse_memory_navigation_protocol_v1.json').read_text())
+p={k:old[k] for k in ['source_sha256','input_sha256','episode_manifest','scene_root','occupancy','rig_extrinsics','static_masks','pid_config','inner_config','source_gate','frozen_observation_settling_s']}
+p.update(schema='original_E1_route_side_consumer_gated120_knownpose_static_baseline_v1',utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),maximum_actual_sequences=1,requests_max=1200,sim_budget_s=120.,max_wall_s=1200,no_retry=True,only_control_change='globalroute_observed_first_component_side_continuation_prior',static_scene_assumption=True,source_raw_records_TTL_s=10,source_known_GT_pose=True,actor_current_GT_pose=True,GT_depth_labels_only_after_seal=True,local_gate=dict(sim_s=54.6,goal_remaining_max_m=4.182900500,axis_progress_min_m=2.427377623,physical_contact_allowed=False,source_gate_after_seal=True,stop_on_failure=True),goal_threshold_m=.2,formal_original35_NOTRUN=True,not_fullcausal_nav_AB=True,online_readonly_B0_shadow_until_first_request_fork=True,old_rejects_preserved=True,whole_research_complete=False)
+for f in ['route_side_commitment_grid_v1.py','readonly_boundary_shadow_v1.py','test_route_side_commitment_grid_v1.py','test_readonly_boundary_shadow_v1.py','test_E1_route_side_runner_v1.py','qualify_E1_route_side_shadow_v1.py','run_original_E1_route_side_navigation_v1.py','run_original_E1_route_side_navigation_stage_v1.py','prepare_E1_route_side_protocol_v1.py']:
+ path=H/f;p['source_sha256'][str(path)]=sha(path)
+for f in ['E1_route_side_continuation_geometry_v1/assessment.json','E1_route_side_shadow_CPU_v1/assessment.json']:
+ path=H/f;p['input_sha256'][str(path)]=sha(path)
+(H/'original_E1_route_side_navigation_protocol_v1.json').write_text(json.dumps(p,indent=2)+'\n');print('freeze',len(p['source_sha256']),len(p['input_sha256']))

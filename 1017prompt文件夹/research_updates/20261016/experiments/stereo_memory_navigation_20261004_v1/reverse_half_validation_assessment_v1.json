@@ -1,0 +1,41 @@
+{
+  "utc": "2026-10-09T16:13:55.127661+00:00",
+  "arm": "validation",
+  "measured": {
+    "window_start_s": 21.0,
+    "window_end_s": 25.5,
+    "samples": 225,
+    "valid_samples": 225,
+    "actual_speed_m_s": 0.19896849989891052,
+    "actual_bank_deg": 0.2905654879335713,
+    "curvature_body_1_m": -0.005143007729202509,
+    "curvature_geometric_1_m": 0.005143007729202509,
+    "curvature_iqr": 0.02586179878562689,
+    "bank_span_95_5_deg": 0.07543927995472005,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true,
+    "measurement_scope": "offline centered31sample XY geometry; not online physical prediction"
+  },
+  "checks": {
+    "steady": true,
+    "contact_free": true,
+    "speed_gain": true,
+    "bank_domain": true,
+    "straight_geometry": true,
+    "speed_consistency": true,
+    "curvature_consistency": true
+  },
+  "decision": "PASS_POINT_ONLY_PENDING_EXECUTION_VERIFY",
+  "not_dynamic_prediction": true,
+  "not_navigation": true,
+  "whole_research_complete": false,
+  "protocol_sha256": "ea2e4055ade857dad55f64b920200350d944d6a1af19a4f491c6f14da87ebf57",
+  "raw_manifest_sha256": "080a69f73ee8f84987eaeef2ff0bb7e27acac48363e8caccf24ecc747ac62aaa"
+}

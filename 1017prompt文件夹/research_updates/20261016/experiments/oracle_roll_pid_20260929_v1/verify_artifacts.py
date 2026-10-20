@@ -1,0 +1,13 @@
+from pathlib import Path
+import hashlib,json,cv2,numpy as np
+h=Path(__file__).resolve().parent
+identity=json.loads((h/'navigation_source_identity.json').read_text());assert all(hashlib.sha256(Path(p).read_bytes()).hexdigest()==v for p,v in identity.items())
+rows=[]
+for p in sorted(h.glob('navigation_*/episode_*/*.mp4')):
+ if '.partial' in str(p):continue
+ cap=cv2.VideoCapture(str(p));n=int(cap.get(cv2.CAP_PROP_FRAME_COUNT));fps=cap.get(cv2.CAP_PROP_FPS);first,_=cap.read();cap.set(cv2.CAP_PROP_POS_FRAMES,max(0,n-1));last,_=cap.read();cap.release();row=dict(path=str(p),frames=n,fps=fps,first_decodes=first,last_decodes=last);rows.append(row)
+ assert n>0 and fps>0 and first and last,str(p)
+assert len(rows)==20,len(rows)
+(h/'video_verification.json').write_text(json.dumps(rows,indent=2))
+assert len(json.loads((h/'navigation_comparison.json').read_text()))==10
+print('Verified unchanged frozen source, 10 compared episodes, 20 videos with readable first/last frames')

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-09T16:54:32.849462+00:00",
+  "supersedes_sha256": "e36ad9ea26ee2a43b3f79fa7f756fb0ef75ff2cafd331204d05ac5490f430dad",
+  "running_process": false,
+  "physical_budget_consumed": 0,
+  "maximum_physical_sequences": 2,
+  "no_retry": true,
+  "scope_review": "reverse_main_production_scope_review_v1.json",
+  "implementation_review_pending": true,
+  "next_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_main_producer_v1.py",
+  "next_steps": [
+    "read independent implementationreview; fix anyC/I with genuineRED/GREEN and preservebytes",
+    "derive run_reverse_main_navigation_e1_v1.py from run_qualified_start_navigation_e1_v1.py: use reverse_main_producer.policy_class(enabled), original StandbyHandoff botharms, remove qualify_initial_start call and startupidentityfields, no shadow",
+    "derive frozen actualpair scorer verifies mainonly override using actualvalidnormalreverse states, sameallcapture .3/1.25/performance budget; fullcapture35035117512101/contact/video/seals/prefix; doesnotadmit nonzeroauxmodel",
+    "new exact source/input envelope from forwardintentparent +newmodule/driver/scorer/test, prelaunch independentreview BEFORE2 actual35seq",
+    "if C0I0 run actual b0 then candidate eachonce throughdurable, score/review/report; negative remainsnegative and no matrix/thresholdrescues"
+  ],
+  "stop_reason": "current executioncontext handoffcapacity; actual previousphysical2normalclosed, newcandidateCPUonly",
+  "whole_mission_complete": false
+}

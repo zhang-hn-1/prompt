@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-09T17:34:29.271918+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_soft_prequery_continuation_v63.json",
+  "supersedes_sha256": "2d3798addf044663165532ce30062100da0e18909b437c4fcbb2e5fa12e3d6ec",
+  "whole_mission_complete": false,
+  "running_process": false,
+  "soft_CPU_budget_consumed": 2,
+  "soft_maximum_queries": 2,
+  "soft_retry": false,
+  "soft_closed_review": "soft_route_side_preference_closed_review_v1.json",
+  "next_entry": "audit_current_boundary_forward_only_v1.py",
+  "forward_query_budget_consumed": 0,
+  "maximum_forward_queries": 1,
+  "review_pending": "current_boundary_forward_only_prequery_review_v2.json",
+  "new_physics_budget": 0,
+  "next_steps": [
+    "v2 read-only input selection review then single solver query, log_v2 preserves administrative log_v1",
+    "score only frozen same-current-map geometry; no rerun oldR1 or node expansion",
+    "save actual result and bounded firstedge cause if infeasible; do not infer universal inability or physical success"
+  ]
+}

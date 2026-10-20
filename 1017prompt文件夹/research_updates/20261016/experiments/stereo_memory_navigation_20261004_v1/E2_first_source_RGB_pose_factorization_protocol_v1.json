@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-09T05:04:33.323532+00:00",
+  "script_sha256": "312f6c7f110269d0ad7d7253460a1f56230e95fed8c1d18fe36975d85e060af8",
+  "question": "earliest E2 risk difference: same cached RGB prediction crossed with known/native poses at .5s, not entirecollision attribution",
+  "streams": {
+    "knownpose_stream": "sgbm_baseline35_e2_run_v1",
+    "native_stream": "native_pose_baseline35_e2_coverage_run_v1"
+  },
+  "frame": 5,
+  "cases_max": 4,
+  "output": "E2_first_source_RGB_pose_factorization_v1",
+  "controls": "CAD measured joints and all source filters frozen",
+  "no_fit_or_threshold_scan": true,
+  "no_future_pose": true,
+  "historical_design_not_fresh": true,
+  "criterion": "diagonal source reproduction exact then report image-vs-pose contribution; no navigation/source admission"
+}

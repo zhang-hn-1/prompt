@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-07T03:55:31.804457+00:00",
+  "state": "actual_stage_waiting_existing_unique_artifact",
+  "stage_driver_pid": 1141155,
+  "stage_status": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/mvs_hero_development_stage_status_v1.json",
+  "stage_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_mvs_hero_development_stage_v1.py",
+  "artifact_status": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/mvsanywhere_source_preflight_v1/artifact_acquisition_status_v1.json",
+  "acquisition_session_id": 67081,
+  "review_gate": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/mvs_adapter_review_author_closed_v1.json",
+  "driver_log": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/mvs_hero_development_stage_driver_v1.log",
+  "workflow": [
+    "finish existing artifact acquisition (max1 same-byte range resume)",
+    "seal_mvs_hero_inputs_v1.py",
+    "predict_mvs_hero_temporal_v1.py exactly6cases",
+    "assess_mvs_hero_temporal_v1.py only afterall sealed"
+  ],
+  "next_after_finished": "Verify stage state/output seals/fullparameteridentity/all6endpointmetrics; write model report preserving older rejects then next appropriate bounded research layer. Do not launch duplicate stage or formal nav.",
+  "stop_reason": null,
+  "whole_complete": false,
+  "formal_E0_E1_E2_not_run": true
+}

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-04",
+  "user_authorization": "Complete agreed next stage autonomously; keep current camera, safety distance and controller.",
+  "question": "Does floor-hit raster sparsity hide observed contiguous support, or does actual near-field visibility prevent a safe starting corridor?",
+  "hypothesis": "Image-adjacent ground patches can repair holes only within observed surfaces; no interpolation or ray clearing across unseen near-field allowed.",
+  "unique_candidate": "Rasterize image-adjacent floor triangles, all three vertices valid and ground-hit, world 3D edges <=0.25m. Endpoints and obstacle updates unchanged.",
+  "max_edge_m": 0.25,
+  "grid_m": 0.1,
+  "clearance_m": 0.6,
+  "body_seed_m": 0.4,
+  "floor_z_interval_m": [
+    -0.05,
+    0.05
+  ],
+  "height_obstacle_interval_m": [
+    0.05,
+    1.5
+  ],
+  "root_distance_exclusion_m": 0.55,
+  "depth_interval_m": [
+    0.45,
+    8
+  ],
+  "pixel_stride": 4,
+  "replan_period_s": 0.5,
+  "action_hz": 10,
+  "budget_s": 35,
+  "goal_radius_m": 0.2,
+  "new_rig_id": "ball_stereo_front020_up005_v2",
+  "cases": [
+    "e0",
+    "e2",
+    "h3",
+    "h4"
+  ],
+  "matrix": [
+    "points",
+    "surface"
+  ],
+  "max_new_closed_loop_runs": 8,
+  "evaluation": "Frozen prior-stage initial full-map reference, identical geometry evaluator for both; real progress, cross-track, actual contacts, goal arrival. FOV/unknown evidence independent of candidate indices.",
+  "promotion_gate": "E0/E2 actual goal arrival <=35s with no contact and no unsafe unknown filling; two hard starts separately reported. No gain/speed/radius/rig tuning.",
+  "scope": "Privileged current-renderer-depth diagnostic; not RGB navigation or fresh held-out; old sequences and results remain frozen.",
+  "rgb_gate": "Prior depth models rejected, so no RGB controller promotion; no fine-tuning.",
+  "source_sha256": {
+    "local_map.py": "064cbad087836cc09abbc4f211ae0826eeec6f54b6e33c50e489fc25824bdd24",
+    "information_policy.py": "5ba7cabc56ce09414c1a4b47b26086de6015879064a6ae97d0e36c71c3dda067",
+    "run_information.py": "dfc8da0e6db3475d338ef5e98a2ad55ae63f96deba9aad6ca4a42747f7ae8442",
+    "rig_inputs.py": "a3fca79bc4d3a4d0a667c2e69086c6fe35072ea8cf97dc462f1530becfce3485",
+    "base_link_masks.npz": "7769b6ab47292ae6517489f2992fd241b94f54c5022dd401efac3c4bae2d2a19"
+  }
+}

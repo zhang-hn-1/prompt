@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-17T21:58:48.161097+00:00",
+  "bound_code_inputs_exact": true,
+  "all21_saved_checks_true": true,
+  "aggregate_entries_total": 16,
+  "valid_numeric_calls": 15,
+  "invalid_input_rejection": 1,
+  "exhaustive_assignments": 15879,
+  "RED_expected_NotImplementedError": true,
+  "qualification_normal0": true,
+  "service_readback": "MainPID=0\nExecMainStatus=0\nId=ball-observed-cost-red-20261018.service\nActiveState=inactive\n\nMainPID=0\nExecMainStatus=0\nId=ball-observed-cost-qualification-20261018.service\nActiveState=inactive\n",
+  "limits": "Author savedrecord audit only, no rerun/kernel/RGB/GT. Independent preflight/result review separate; not installed OpenCV or BT fidelity proof."
+}

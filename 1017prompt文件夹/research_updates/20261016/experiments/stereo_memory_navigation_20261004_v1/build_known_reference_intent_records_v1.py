@@ -1,0 +1,13 @@
+from pathlib import Path
+import json,hashlib,numpy as np
+from known_reference_intent_context_v1 import known_reference_intent
+H=Path(__file__).resolve().parent;D=H/'E1_continuous_tube_navigation_run_v1';rows=json.loads((D/'policy_records.json').read_text());states=json.loads((D/'states.json').read_text())
+def build(i,past_rows,current_states):
+ assert len(past_rows)==i and len(current_states)==i+1
+ assert all(r['frame']<i for r in past_rows);assert all(s['time_s']<=current_states[-1]['time_s'] for s in current_states)
+ last=past_rows[-1];st=last['tracker_state_after_act'];version=last['local_reference_version'];beg=next(r['frame'] for r in past_rows if r['local_reference_version']==version);planfile=D/'local_plans'/f'frame_{beg:03d}.json';plan=json.loads(planfile.read_text());assert plan['time_s']<=current_states[-1]['time_s'];wp=plan['waypoints'];np.testing.assert_array_equal([[w['x_m'],w['y_m']] for w in wp],last['installed_reference_xy_after_act']);intent=known_reference_intent(wp,current_states[-1]['position'][:2],st['path_index'],st['active_direction']);snapfile=D/'execution'/f'frame_{i:03d}.json';execution=json.loads(snapfile.read_text())
+ return dict(current_frame=i,current_time_s=current_states[-1]['time_s'],boundary_state_from_past_last_act=st,measured_current_state=current_states[-1],known_reference_time_s=plan['time_s'],known_reference_version=version,known_reference_intent=intent,current_execution_state=execution,source_identity=dict(plan_sha256=hashlib.sha256(planfile.read_bytes()).hexdigest(),current_execution_sha256=hashlib.sha256(snapfile.read_bytes()).hexdigest()),future_request_generator='UNIMPLEMENTED_NO_ACTUAL_FUTURE_REQUESTS_SUBSTITUTED',physical_response_model='REJECTED_PRIOR_MODELS_NO_PREDICTION_ADMISSION')
+out=[]
+for i in [221,371]:
+ a=build(i,rows[:i],states[:i+1]);assert a['boundary_state_from_past_last_act']==rows[i]['reference_decision']['state_before'];poison=list(rows);poison[i:]=[{'frame':9999,'future_actual_request':'POISON','installed_reference_xy_after_act':'POISON'}]*(len(rows)-i);b=build(i,poison[:i],states[:i+1]);assert a==b;out.append(a)
+r=dict(scope='POSTCLOSE_READONLY_CURRENT_BOUNDARY_INTERFACE_RECONSTRUCTION_NOT_ONLINE_OR_SHADOW_ADMISSION',records=out,future_policy_log_replacement_and_truncation_exact=True,current_block_act_not_read=True,current_raw_request_unknown_until_current_act=True,formal35_NOTRUN=True,no_control_changed=True);(D/'known_reference_intent_boundary_records_v1.json').write_text(json.dumps(r,indent=2)+'\n');print([(a['current_frame'],a['known_reference_intent']['same_direction_nominal_remaining_m'],a['known_reference_intent']['next_direction']) for a in out])

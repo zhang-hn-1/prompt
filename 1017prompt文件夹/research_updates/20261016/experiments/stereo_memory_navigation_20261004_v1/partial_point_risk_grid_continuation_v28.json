@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-08T10:31:33.714704+00:00",
+  "overall_complete": false,
+  "external_user_block": false,
+  "automation_status": "ACTIVE",
+  "active": [
+    {
+      "session_id": 30180,
+      "status": "original_E1_nonbinding_side_hypothesis_navigation_stage_status_v1.json",
+      "max_wall_s": 1200
+    }
+  ],
+  "latest_actual": "original_E1_nonbinding_side_hypothesis_navigation_run_v1",
+  "latest_plan": "docs/superpowers/plans/2026-10-08-E1-nonbinding-side-hypothesis.md",
+  "latest_report": "reports/benchmark_original_E1_cusp_coast_and_side_prior_diagnosis_20261008.md",
+  "previous_v27_preserved": true,
+  "next": "Check30180/postseal first. Prepared verify_E1_nonbinding_side_hypothesis_runtime_v1.py/source/member/pose/memory/policy_causal/online_shadow/segments/control_progress thenactualplots. Sameuniqueexperiment/frozengates; no duplicate/tuning/retry/GTactor. Continueafteractualresults fromevidence."
+}

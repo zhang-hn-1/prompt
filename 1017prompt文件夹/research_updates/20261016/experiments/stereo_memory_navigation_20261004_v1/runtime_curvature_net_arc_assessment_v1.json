@@ -1,0 +1,443 @@
+{
+  "arms": {
+    "b0": [
+      {
+        "start_frame": 60,
+        "end_frame_exclusive": 86,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.8272253274917603,
+        "instantaneous_threepoint_median_1_m": 2.6015801964901013,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 104,
+          "covered_arc_m": 0.4891808897997498,
+          "excluded_arc_m": 0.014400939213635333,
+          "arc_coverage": 0.9714029808385867,
+          "course_change_rad": 0.8018278124660819,
+          "net_curvature_1_m": 1.6391233369609282
+        }
+      },
+      {
+        "start_frame": 86,
+        "end_frame_exclusive": 94,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": 0.7966033220291138,
+        "instantaneous_threepoint_median_1_m": -1.9348840814559085,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 41,
+          "covered_arc_m": 0.2904288219345454,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": -0.47865179911147543,
+          "net_curvature_1_m": -1.6480864258690906
+        }
+      },
+      {
+        "start_frame": 94,
+        "end_frame_exclusive": 103,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.03296351060271263,
+        "instantaneous_threepoint_median_1_m": 1.0011358981159555,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 46,
+          "covered_arc_m": 0.30801008359069576,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": 0.23456410913292364,
+          "net_curvature_1_m": 0.7615468506694345
+        }
+      },
+      {
+        "start_frame": 103,
+        "end_frame_exclusive": 112,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.8272253274917603,
+        "instantaneous_threepoint_median_1_m": -1.3859904145004829,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 46,
+          "covered_arc_m": 0.3033609467380145,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": -0.34955950384562295,
+          "net_curvature_1_m": -1.1522890721576828
+        }
+      },
+      {
+        "start_frame": 112,
+        "end_frame_exclusive": 120,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.03296351060271263,
+        "instantaneous_threepoint_median_1_m": 0.3559549070837675,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 41,
+          "covered_arc_m": 0.2671369025091686,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": 0.043419778458326896,
+          "net_curvature_1_m": 0.1625375530317705
+        }
+      },
+      {
+        "start_frame": 145,
+        "end_frame_exclusive": 175,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": -0.9435581206201591,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 121,
+          "covered_arc_m": 0.27819926922290095,
+          "excluded_arc_m": 0.015613811351947282,
+          "arc_coverage": 0.9468580114901668,
+          "course_change_rad": -0.5552705516091789,
+          "net_curvature_1_m": -1.99594539971376
+        }
+      },
+      {
+        "start_frame": 175,
+        "end_frame_exclusive": 205,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": -0.16063832542490467,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 151,
+          "covered_arc_m": 0.39480993277433046,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": -0.10334127887611544,
+          "net_curvature_1_m": -0.26174944016716095
+        }
+      },
+      {
+        "start_frame": 205,
+        "end_frame_exclusive": 235,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": 0.17164853870967128,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 151,
+          "covered_arc_m": 0.38294833147996643,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": 0.1245308424297602,
+          "net_curvature_1_m": 0.3251896723207813
+        }
+      },
+      {
+        "start_frame": 235,
+        "end_frame_exclusive": 265,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": 0.5950780580386593,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 151,
+          "covered_arc_m": 0.3362469323412614,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": 0.07175032793516944,
+          "net_curvature_1_m": 0.2133858216507061
+        }
+      },
+      {
+        "start_frame": 265,
+        "end_frame_exclusive": 295,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": -0.11994274065871095,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 151,
+          "covered_arc_m": 0.29689944674181745,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": -0.020173413091232106,
+          "net_curvature_1_m": -0.06794695413755629
+        }
+      },
+      {
+        "start_frame": 295,
+        "end_frame_exclusive": 309,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": -0.19847530286788614,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 71,
+          "covered_arc_m": 0.13254117536154097,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": -0.004564405868503041,
+          "net_curvature_1_m": -0.034437644422968344
+        }
+      },
+      {
+        "start_frame": 321,
+        "end_frame_exclusive": 350,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": 0.7966033220291138,
+        "instantaneous_threepoint_median_1_m": -0.7589090790564454,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 123,
+          "covered_arc_m": 0.596749980176795,
+          "excluded_arc_m": 0.014897862254849015,
+          "arc_coverage": 0.975643072334529,
+          "course_change_rad": -0.19036513475999745,
+          "net_curvature_1_m": -0.319003168971366
+        }
+      }
+    ],
+    "candidate": [
+      {
+        "start_frame": 60,
+        "end_frame_exclusive": 86,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.8272253274917603,
+        "instantaneous_threepoint_median_1_m": 2.6015801964901013,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 104,
+          "covered_arc_m": 0.4891808897997498,
+          "excluded_arc_m": 0.014400939213635333,
+          "arc_coverage": 0.9714029808385867,
+          "course_change_rad": 0.8018278124660819,
+          "net_curvature_1_m": 1.6391233369609282
+        }
+      },
+      {
+        "start_frame": 86,
+        "end_frame_exclusive": 94,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": 0.7966033220291138,
+        "instantaneous_threepoint_median_1_m": -1.9348840814559085,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 41,
+          "covered_arc_m": 0.2904288219345454,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": -0.47865179911147543,
+          "net_curvature_1_m": -1.6480864258690906
+        }
+      },
+      {
+        "start_frame": 94,
+        "end_frame_exclusive": 103,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.03296351060271263,
+        "instantaneous_threepoint_median_1_m": 1.0011358981159555,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 46,
+          "covered_arc_m": 0.30801008359069576,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": 0.23456410913292364,
+          "net_curvature_1_m": 0.7615468506694345
+        }
+      },
+      {
+        "start_frame": 103,
+        "end_frame_exclusive": 112,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.8272253274917603,
+        "instantaneous_threepoint_median_1_m": -1.3859904145004829,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 46,
+          "covered_arc_m": 0.3033609467380145,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": -0.34955950384562295,
+          "net_curvature_1_m": -1.1522890721576828
+        }
+      },
+      {
+        "start_frame": 112,
+        "end_frame_exclusive": 120,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.03296351060271263,
+        "instantaneous_threepoint_median_1_m": 0.3559549070837675,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 41,
+          "covered_arc_m": 0.2671369025091686,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": 0.043419778458326896,
+          "net_curvature_1_m": 0.1625375530317705
+        }
+      },
+      {
+        "start_frame": 120,
+        "end_frame_exclusive": 125,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.8272253274917603,
+        "instantaneous_threepoint_median_1_m": -1.6031327875727261,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 26,
+          "covered_arc_m": 0.16689515904618768,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": -0.24099622241778162,
+          "net_curvature_1_m": -1.443997679711529
+        }
+      },
+      {
+        "start_frame": 150,
+        "end_frame_exclusive": 180,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": -3.3803629482471926,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 118,
+          "covered_arc_m": 0.26747584573245226,
+          "excluded_arc_m": 0.014706780056073343,
+          "arc_coverage": 0.9478820497364889,
+          "course_change_rad": -0.5807132194349558,
+          "net_curvature_1_m": -2.171086581088242
+        }
+      },
+      {
+        "start_frame": 180,
+        "end_frame_exclusive": 210,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": 0.05953590176381142,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 151,
+          "covered_arc_m": 0.37719408756896056,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": 0.01828997370460428,
+          "net_curvature_1_m": 0.0484895556621375
+        }
+      },
+      {
+        "start_frame": 210,
+        "end_frame_exclusive": 240,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": -1.3885545637427021,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 151,
+          "covered_arc_m": 0.3994892380579374,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": -0.2396170475991033,
+          "net_curvature_1_m": -0.5998085174057979
+        }
+      },
+      {
+        "start_frame": 240,
+        "end_frame_exclusive": 270,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": 1.7222741721460744,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 151,
+          "covered_arc_m": 0.3681616388223523,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": 0.4378288914463613,
+          "net_curvature_1_m": 1.1892300698325207
+        }
+      },
+      {
+        "start_frame": 270,
+        "end_frame_exclusive": 300,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": -0.5646176032340962,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 151,
+          "covered_arc_m": 0.31751992721591016,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": 0.008501592016286974,
+          "net_curvature_1_m": 0.0267749872923912
+        }
+      },
+      {
+        "start_frame": 300,
+        "end_frame_exclusive": 330,
+        "geometry_identifiable": true,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": -0.44471361821661,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 151,
+          "covered_arc_m": 0.28814943957904293,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": -0.08885072902646218,
+          "net_curvature_1_m": -0.30834947711945604
+        }
+      },
+      {
+        "start_frame": 330,
+        "end_frame_exclusive": 345,
+        "geometry_identifiable": false,
+        "oscillatory": true,
+        "nominal_course_curvature_1_m": -0.00389271997846663,
+        "instantaneous_threepoint_median_1_m": 0.7800436398064163,
+        "net_course_arc": {
+          "segments": 1,
+          "covered_samples": 76,
+          "covered_arc_m": 0.14243837461724285,
+          "excluded_arc_m": 0.0,
+          "arc_coverage": 1.0,
+          "course_change_rad": 0.07870697866691145,
+          "net_curvature_1_m": 0.5525686380402125
+        }
+      }
+    ]
+  },
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/runtime_geometric_curvature_assessment_v1.json": "6a1dc59f6fa7a6d525f113e51bb66f53a6345d1189a48992d7add6ff51574085"
+  },
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/audit_runtime_curvature_net_arc_v1.py": "a6cae69d5251af4813a811ae8406bba6ebc8a8fb108273701d69e940e2c186f4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/runtime_curvature_net_arc_v1.py": "ea4ff059d1ddb0d940437f676c50e758dd9c8c9e9938181eea4a976c827ee929",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/runtime_curvature_net_arc_scope_v1.json": "dbf10bec108b1b6ca23005caa42d715490e3c4f7c89d80157f18659044c2920e"
+  },
+  "retrospective_only": true,
+  "no_model_or_control_admission": true
+}

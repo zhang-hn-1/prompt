@@ -1,0 +1,48 @@
+{
+  "utc": "2026-10-07T10:16:48.848995+00:00",
+  "managed_session": 92619,
+  "actual_status": {
+    "stage": "RUN_ACTUAL_CURRENT_VS_STATIC_SEED",
+    "start_utc": "2026-10-07T10:16:28.114471+00:00",
+    "pid": 1566024,
+    "maximum_actual_sequences": 2,
+    "per_sequence_max_wall_s": 1500,
+    "formal_triggered": false,
+    "whole_research_complete": false,
+    "arms": [
+      {
+        "arm": "B0",
+        "start_utc": "2026-10-07T10:16:28.114660+00:00",
+        "stage": "RUNNING",
+        "wall_begin": 1226427.253109825,
+        "child_pid": 1566025
+      }
+    ]
+  },
+  "append_trace": [
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/research_mission.md",
+      "old_bytes": 241198,
+      "old_sha256": "e5dd4a4b37193177dbf52e81eac1410cb9f7f5b488a24141d8654a4b6aa5b45d",
+      "new_sha256": "15492c33613505fbb354b508ac3171aaf81b0061f290e3d22c5c570dda895d24",
+      "prefix_preserved": true
+    },
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+      "old_bytes": 337066,
+      "old_sha256": "8e8c1c9721236b8ef71814b033eabe97593e967dc811c3c6f951591364870b9e",
+      "new_sha256": "14f9c44fd931ab8e7518fa642febfa0ddd27fd8238f0030098a411f71bbe34ba",
+      "prefix_preserved": true
+    },
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md",
+      "old_bytes": 169589,
+      "old_sha256": "e28cbaeaa022828caeb9b7a12e4f62338c7574ca19a99a7e203f78f76aa68181",
+      "new_sha256": "b41054204c63b078096d6b9d5d88cda16ffa9a3555c2786cb0c35224b4c6be3a",
+      "prefix_preserved": true
+    }
+  ],
+  "next_after_close": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/verify_typed_hypothesis_memory_causal_v1.py",
+  "whole_research_complete": false,
+  "formal_triggered": false
+}

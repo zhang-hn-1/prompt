@@ -1,0 +1,37 @@
+{
+  "utc": "2026-10-17T21:59:14.292804+00:00",
+  "reviewer": "/root/observed_cost_reference_review",
+  "scope": "Independent code preflight then savedrecord/array audit only; no kernel/exhaustive/test rerun.",
+  "preflight_critical_or_important": 0,
+  "preflight_budget_clarification_fixed_before_dispatch": true,
+  "postrun_critical_or_important": 0,
+  "saved_arrays_verified": {
+    "masked_context_aggregate_bitwise_equal": true,
+    "masked_winners_1": true,
+    "allmissing_tie_UNKNOWN_minus1": true,
+    "gap_winners": [
+      [
+        1,
+        -1,
+        2
+      ]
+    ]
+  },
+  "saved_counts": {
+    "valid_numeric_calls": 15,
+    "rejection_calls": 1,
+    "total_entries": 16,
+    "checks": 21,
+    "enumerated_assignments": 15879
+  },
+  "identities": {
+    "experiments/observed_support_aggregation_reference_20261018_v1/kernel.py": "dfa28d0597e9def78c6256946dd22ec57ec96a783e92548289071edad7d93382",
+    "experiments/observed_support_aggregation_reference_20261018_v1/qualify.py": "3b8bf498470bea2485c8b5952aa2a3659e2639d890eac5ffc328eee6b1ee3f25",
+    "experiments/observed_support_aggregation_reference_20261018_v1/supervise.py": "1fc9e1cea5805a1e829e453a36cb1b779f53f5b017667c48768120a2e26cb877",
+    "experiments/observed_support_aggregation_reference_20261018_v1/protocol.json": "265d1292250137df359bfd98a031ab38b905e979dba15db3a3ebc4958329a00a",
+    "experiments/observed_support_aggregation_reference_20261018_v1/result.json": "13751cb924c79c667c8a8c67bd9a2a4cfd76c35232b5564dacdd6dd386b15f36",
+    "experiments/observed_support_aggregation_reference_20261018_v1/reference_arrays.npz": "31bb3a2f1c601b3a8eb2141d72ee06e8946889abf0a42625d23c87a9b8687f62"
+  },
+  "limitation": "No realRGB, BT, OpenCVfidelity, geometryuncertainty, sourceperformance, map or navigation reviewed. Enumeration checks relative normalizedcosts/winner, not additive pathconstants.",
+  "assessment": "SMALL_SYNTHETIC_REFERENCE_READY_WITHIN_SCOPE"
+}

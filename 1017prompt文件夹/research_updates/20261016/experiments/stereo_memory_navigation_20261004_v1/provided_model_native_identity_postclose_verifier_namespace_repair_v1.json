@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-07T21:58:50.468422+00:00",
+  "old_sensor_verifier_sha256": "81a2568bd7499bc3b05246d3356f44025f53c9034f330659e9bc93ceb1ed975d",
+  "old_actual_verifier_sha256": "9679bea5e9594d0d6c9c2e72c2a71c3cc57aa0269528d025a4bee5b7e6d8a49d",
+  "new_sensor_verifier_sha256": "f36584644fb57d19b344ca919e0e0960aba7f6cf58baccda034cac64fcf82203",
+  "new_actual_verifier_sha256": "6900c60baeb074028415f626115f63dd11fce4fdb772adbc8ccde5cacfca1efa",
+  "reason": "Inherited error-file writer accepts onlyR0/R1; actual newarmB0 would raise AFTER sensorjsonwrite. Found by author inspection before runningverifier, fixed onlyerrorarchivewriter+separateoutputnames; no estimator/gate/actual/stage change.",
+  "old_verifiers_frozen_unchanged": true,
+  "old_verifiers_not_executed": true,
+  "no_physics_repeat": true,
+  "no_source_or_control_change": true,
+  "whole_research_complete": false
+}

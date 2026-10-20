@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-08T12:50:12.504284+00:00",
+  "overall_complete": false,
+  "external_user_block": false,
+  "automation_status": "ACTIVE",
+  "active": [],
+  "current_process_running": false,
+  "latest_closed_actual": "front_view_handoff_navigation_run_v1",
+  "latest_actual_exit_code": 0,
+  "latest_report": "reports/benchmark_fixed_camera_active_view_acquisition_and_handoff_20261008.md",
+  "latest_assessment": "front_view_handoff_progress_assessment_v2.json",
+  "unique_candidate": "REJECT initialviewhandoff nav; interface/source/map/causalPASSselectedknownpose, physical54.6 FAIL; no another candidate/no observation/NN/thresholdscan",
+  "actual": {
+    "actions": 546,
+    "captures": 547,
+    "physics": 2731,
+    "NN": 110,
+    "contacts": 0,
+    "goal_m": 4.501113154157127,
+    "axis_m": 2.2452102124691007,
+    "handoff_s": 11.599999740719795
+  },
+  "bounded_cause": {
+    "first_no_plan_frame": 426,
+    "old420map425position_clear": 0.9219544457,
+    "old420map426position_clear": 0.8246211251,
+    "margin": 0.8707106781,
+    "lastref_cross_peak_m": 0.0714917824,
+    "attempts": 32,
+    "installed": 8,
+    "failed_attempts": 24
+  },
+  "next": "Start distinct interface-definition stage, not rerun this candidate. Read report and bridge/suffix audit. Freeze nominal-centre/actual-bridge/stopping-sweep semantics without lowering old gate; determine whether one causal current-state-only retention consumer has supported safe domain. Current.2 empirical bound uncertified and actualvelocity/PID tail must not be silently ignored. If unsupported, explicit admission refusal rather than second navigation; keep goal real binocular-memory executable planning. Do not repeat acquisition, matrices, NN orthresholds.",
+  "stopping_reason": "Actual navigation and fullpostseal evidence closed; continued bounded bridge/suffix audit also closed. Remaining independent interface stage requires a new frozen scoped admission/design; this execution window ended without installing unsupported secondcandidate. Notresearchcomplete/noexternaluserblock.",
+  "current": "bridge/suffix\u4e5d\u7ec4\u5408audit CLOSED0, notpending",
+  "latest_cause_audit": "front_view_handoff_bridge_suffix_audit_v1.json",
+  "cause": "At425map/426pose nominalsuffix .900>=.870711; actualbridge .824621<.870711 butold.6 necessaryretentionPASS; projectionerror.071492. Rebuild then root search rejects. No newhazardneeded; no proofsafe alternatebridge."
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "mode": "original",
+    "exit_code": 0,
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/run_acquisition.py",
+      "--manifest",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1/hard_0_dev_manifest.json",
+      "--split",
+      "dev",
+      "--episode-id",
+      "hard_0_e1_0003",
+      "--policy",
+      "goal_greedy",
+      "--scene-root",
+      "/home/an/project/NavDP/assets/scenes",
+      "--data-root",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data",
+      "--run-root",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/acquisition_pair/original",
+      "--lighting-profile",
+      "fixed_camera_fill_v1",
+      "--headless",
+      "--record-video"
+    ]
+  },
+  {
+    "mode": "every_render",
+    "exit_code": 0,
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/run_acquisition.py",
+      "--manifest",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1/hard_0_dev_manifest.json",
+      "--split",
+      "dev",
+      "--episode-id",
+      "hard_0_e1_0003",
+      "--policy",
+      "goal_greedy",
+      "--scene-root",
+      "/home/an/project/NavDP/assets/scenes",
+      "--data-root",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data",
+      "--run-root",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/acquisition_pair/every_render",
+      "--lighting-profile",
+      "fixed_camera_fill_v1",
+      "--headless",
+      "--record-video"
+    ]
+  }
+]

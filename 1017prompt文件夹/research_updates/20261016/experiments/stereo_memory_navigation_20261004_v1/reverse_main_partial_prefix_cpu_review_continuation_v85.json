@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-09T19:50:31.170324+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_partial_reference_design_continuation_v84.json",
+  "supersedes_sha256": "59b779d4734c4e3ed9dd7c095b95e7c9fce0dd27f5d29b31818c69d12d8468e5",
+  "whole_mission_complete": false,
+  "actual_running": false,
+  "CPU_selector": "bounded_forward_prefix_selection_v1.py",
+  "tests": 4,
+  "next_entry": "bounded_forward_prefix_selection_CPU_review_v1.json then before-install single-act adapter tests",
+  "live_wrapper_implemented": false,
+  "physical_budget_granted": false,
+  "stop_reason_if_handoff": "Current-context execution limit; preserve concrete continuation, no user approval dependency",
+  "whole_stage_complete": false
+}

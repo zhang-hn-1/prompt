@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-09T12:29:00.915330+00:00",
+  "stage": "missing_high_main_nonzeroaux_coverage_single_response_pair_prepared",
+  "whole_mission_complete": false,
+  "physics_running": false,
+  "external_process_check": "exact anchored pgrep new reserve/highturn runners exit1 none",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reserve_closed_domain_continuation_v16.json",
+  "superseded_sha256": "b5d2a4d80832653d98e7bd1c98a1d1c726ceded1edd59535204d2654a8b63d55",
+  "next": {
+    "entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/high_main_turn_response_protocol_v1.json",
+    "steps": [
+      "Await independent prelaunch review; resolve C/I before data and refresh protocol hashes",
+      "Run run_high_main_turn_response_stage_v1.py low once; supervise and seal; high once only iflow normal closes; never repeat retired reserve or old bank matrix",
+      "Assess with frozen measured response scorer; if rejected no bank/main thresholds scan or model refit; qualification isonepoint notnav."
+    ]
+  },
+  "budget_remaining": {
+    "low": 1,
+    "high": 1,
+    "retry": 0
+  },
+  "tests": "schedule2 stubRED\u2192GREEN; measurement3 stubRED\u2192GREEN;5PASS",
+  "archive_coverage": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/archived_high_main_nonzero_aux_coverage_v1.json"
+}

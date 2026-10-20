@@ -1,0 +1,17 @@
+## 11:46UTC outgoing endpoint actual35s — final stage closure
+
+先完整读 reports/benchmark_outgoing_endpoint_navigation_20261005.md 与独立spec/plan docs/superpowers/{specs,plans}/2026-10-05-endpoint-navigation*.md。冻结EndpointLookaheadPolicy查询已真正运行。仅query改动 vs cusp causal comparator；guarded强对照和root拒绝臂同时报告。全部旧源/rig/阈值/gate不改。一次预采集sandbox GPU/CUDA/Vulkan startupSIGSEGV失败无physics/data/metrics，原空namespace/status/log保留；事前GPU环境-only addendum/获权限后原runtime重试，2launch attempts/ONEcompletedphysical sequence，非两条导航/非调参。
+
+137source/11342inputs于11:49:58.157440presealed；fresh15fixturePASS1.40s，旧RED13fail2pass/GREEN15/fullH210原证据保留未重做matrix。唯一实际goldenE1 2026-10-05T11:51:16.855484+00:00→2026-10-05T11:54:05.194954+00:00exit0，6s观察包含原35s/350requests351captures1751physics2101contactsamples0actual，两视频351frame10fps无tail，hiddenmarkers/0age。2762postclosemanifest含PID。runtime机械diff只policy导入/装配及artifactnames，实际MRO Endpoint/ConfidentSpeed/MappedBankOracle/CuspBoundary/Oracle，原act/handler/five-low/rebound/rootcost/geometry/planner/mapper/PID/speed/auxlimit/rig/light全部保持。仍特权双depth+knownpose/source memory/unknownrisk，不是RGB估计pose或3D动态safe。原RGB/M2/停止拒绝不倒改，全研究NOTcomplete/automationACTIVE。
+
+first REAL rawdivergence175/17.5s：与cusp此前876physical×17nonraw/176fullPID/smootherexec+bilateralsource/history精确，rawclockorigin0/0tick。102rawblocks875appliedticks改变，行为非±35→30等价。之后只候选自己的actualfuture为标签，非旧188what-if或旧cusp未来轨迹。作者2026-10-05T11:55:27.055915+00:00核源137/实际2762，350因果policy/map/reference/request、351双方packet/350history移位、1745实测feedback执行（首5未clone）、3finitepastfuturepayloadtrapPASS；非递归physicalprediction/非3freshphysical。
+
+真实进度5.028426/距goal3.961658/RMS.171278/peak.384271/0contact/timeout35s。相对cusp进度+1.320864/goal距离-.794760，但RMS/peak更大，原限定5gate拒绝；相对较强guarded进度+.172851/goal-.195321/RMS-.002789/peak-.090995，5gate均PASS；相对root进度/goal失败。联合三臂限定改善REJECT；实际goal<=.2原35sgateREJECT，不能装成成功baseline或新E0E1E2成功率。4mcheckpoint18.6 vs cusp27.4，6/8m未过，6mmin1.147126。全参考评估器独立候选索引，停止不当成功。
+
+仅20.1F→R与23.7R→F两交接，各原五当前10Hz XY<.05，实际90negative raw/139applied/230mainjointtick(1750tick各层不同)。方向brake38blocks3.8s vs旧74，合理制动保留，不强制反转。version3单R段.298971m实际lifespan到335，minendpoint.033647/signedmax.342228连续描述，不由accepted/index另造成功gate。R20.1→21.9Euler yaw+.048570/worldZintegral+.060030，bankerrRMS.415646/peak.610090/PIDclip68.89%。相对旧负yaw只是不同完整轨迹，不单因果标定PID/sign。F23.7→35实际沿独立ref+1.565348m，横向.155513→.384271，currentbodyheading误差entry.292202/peak.528624/last.056954；bankRMS.126795/PIDclip73.805%。234validmoving protocolclip127(54.2735%)/V1outside103(44.0171%)，kmedian.812188。仍有正常同方向饱和欠转弯与完整35s预算问题，不默认首交接解释全部失败。
+
+描述性headingv1误读legacy数组恒0，原script/sidecar保留并拒绝；独立v2只读取actual tracking.reference_body_heading_rad/验证每validrow同reference/projection及实际rootheading，无效earlyreturn None，原控制数据不改。PIDraw/protocol中间输出在原feedbackbanklog，完整v2/phase表单独保留。Euler/worldZ不同量。计划wallp952.814430s/capturepartialp950.303882s，因果在线不是real10Hz。4计划ALLsuccess，33.5originalrasterclearance重建，没有旧25/25.5routefailure那种再次循环；旧数据不能给新动作未来标签。
+
+全部源码/preseal/diff/失败/环境addendum/fresh测试/新actual数据/PID/视频/图/hash保存，像素已检查。ONEfreshreadonlyreview与每条declined裁决在endpoint_navigation_review.json；作者append/finalhashcheck另归属，不冒称二审。旧报告/结论/验收未倒改，无无关Gitcommit/delete/upload。阶段是否已完成以endpoint_navigation_final_check freshcheck为准，整个项目未完成，不停止自动续做。
+
+下一项未做的有界CPU工作：复用本次237→335正常同方向实际data，核验planned/profile k与实际PP、BankMap当前speed支持夹边、PID动态bank、真实XY几何曲率/航向响应及33.5rasterguard失败的真实位置/已测map来源。只读当前/过去knownreference，不重复标定/换M3/扫增益/减速/裕量，不先验认定PIDbug；明确一个可隔离消费约束后另预sealed最多一条物理对照。本heartbeat不再physics/search/fit。可靠RGB+estimatedpose、唯一学习记忆/世界模型、原35s正式E0/E1/E2仍待分层推进，全研究继续ACTIVE。

@@ -1,0 +1,17 @@
+{
+  "name": "continuation_heading_planning_v1",
+  "hypothesis": "Local goal acceptance currently ignores terminal motion direction; at current saved E1 frame660 the accepted terminal reverse motion opposes outgoing grid route by153.3deg. Require positive projection on current outgoing route tangent to avoid a locally reached point that cannot continue in intended direction.",
+  "single_change": "Only local Hybrid A* goal acceptance gets terminal motion-direction half-plane condition. Same grid route,2.4m localgoal,81x81 crop,node3000,costs,primitive set,minimum initial direction,retention,source,map,IMU and controller.",
+  "tangent": "Current grid route segment from fixed localgoal index to first route arc >= localgoal arc+existing0.3m primitive. If localgoal is final goal no outgoing constraint. Test direction as heading unit times forward/reverse sign; dot(tangent)>0 strictly; no angular threshold tuning.",
+  "novelty": "Not global-route goal search, route-side lock/softprior, old short-backing or time costs; not terminal pointgoal brake consumer nor tangent-field controller. Does not forbid temporary backing or require Euclidean goal distance monotonically decrease.",
+  "fallback": "If new constrained search fails return original plan exactly; expose no constraint success claim. Original search computed once; one new search max3000.",
+  "qualification": "All10 saved reference boundaries current inputs only; original reproduce exactly; map immutable; successful candidate sampled primitives same inflated-clearance; failed candidate exactfallback. Keyframe660 must have positive terminal route projection, non-increased internalcusps and nominal cost including initial direction change <=baseline. If not, reject no physics/tuning.",
+  "actual_gate": "Fresh same-version E1 baseline+candidate each90s; retain only actualarrival <=.2m,nocontact,sourcep90<=.15/outlier>.3<=.1 and>=1000pixels,complete rawinputs/requests/maps/video/native plus mechanism used. Report path efficiency and all changed/fallback queries; no navigation causal claim if RGB differs.",
+  "budget": {
+    "physical_cap": 2,
+    "fit_cap": 0,
+    "recovery_cap": 1
+  },
+  "disclosure": "Known saved E1 development, unknown remains controlled exploration not free/certified safe; known pointgoal allowed, GT only scoring; ideal lowlevelIMU and initial gauge privileges unchanged.",
+  "created_utc": "2026-10-13T05:18:09.559897+00:00"
+}

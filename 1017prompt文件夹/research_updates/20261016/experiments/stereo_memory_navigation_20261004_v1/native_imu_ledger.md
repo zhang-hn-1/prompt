@@ -1,0 +1,11 @@
+# SDD ledger — plan: docs/superpowers/plans/2026-10-06-native-imu-gravity-assistance.md
+
+Task1 complete: model literal RED6fail.18s→GREEN6pass.22s. Native packet boundary RED6fail.14s→GREEN6pass.12s; orientation getter deliberately raises, zero reads. No actual IMU result yet.
+Ruling: actual runtime marker initialization occurs after initialworldreset/warmup and BEFORE existing formal articulation world.reset. Install there, not before initial world.reset. Existing final reset registers sensor without extra reset/physics steps. Source lines1042/1085/1089 and collect reset helper personally read; cost if wrong native output invalid and candidate rejected, never change sampling offset after result.
+Ruling: presealed native gyro matching tolerance norm1e-5rad/s/time1e-5s, startup invalid at most .04s. Known current ideal gyro used solely for interface qualification, never substitute into predictor. Whole t>=1 coverage and old3D/.05/.1/2deg gates unchanged. This repeats development B0 scene, not fresh environment/heldout.
+Task2 complete: mechanical clone shell runner + child sensor declaration before formal reset + native current readonly getter + strictpacket model. Existing RGB/rolling/shell capture/actions unchanged. No sensor orientation use, no physical setters or reset additions.
+
+Task3 actual complete: ONE19:17:31.378000→19:20:18.599376UTC exit0; 1536native/link/physics and308capture. B0 all17EXACT/rawdelta0. 315suite10.24s.
+Task4 gate REJECT: 1536time_mismatch,0/1485evaluated predictions/null errors; no sample consumed/no adjusted replay. Post-rejection only current-vs-prev gyro/acc direction diagnostic; content nearer current but timestamp meaning not uniquely proven. Both308videos fullydecoded10fps andtwo PNG personallyviewed. One fresh final readonly review pending. Next distinct bounded work is sensor event-time witness, not newfilter/gain/offsetrescue.
+
+Final complete: onefresh C0/I0/M1; deferred minor reportcurrentgyro wording clarified independentappend, previousgyroimplementation unchanged. Author2580 SHA PASS/oldbodypreserved. Rulings: nophysicalscore/fresh/hardware/nav/unique clockcause claimed; costifwrong wouldwrongly admit unsynchronizedpredictor, so qualification still REJECT. Wholemission pending; independent witness ongoing.

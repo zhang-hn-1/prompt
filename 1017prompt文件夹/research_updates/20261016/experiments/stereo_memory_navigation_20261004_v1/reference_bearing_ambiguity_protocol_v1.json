@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-08T15:04:08.492904+00:00",
+  "queries": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "role": "Read-only current installed reference vs retained uncertain image bearing interval; NOT obstacle classifier or free-space/safety certificate",
+  "slant_range_prior_m": [
+    0.5,
+    3.0
+  ],
+  "range_is_not_optical_depth": true,
+  "range_is_not_measurement": true,
+  "body_radius_m": 0.4,
+  "interval_test": "Exact continuous closest distance of ray segment and each installed reference 3D segment <=.4; not 4point sampling",
+  "reference": "Already installed_reference_xy_after_act in SAME frame policy record only, lifted at SAME current root height; no future installed plans/action truth",
+  "reference_height_not_physics_prediction": true,
+  "inputs": "Frozen6 current RGB ORBpixels+current knownpose; causal source clocks; no GTdepth/instances/model3Dpoints",
+  "TTL_s": 10.0,
+  "pose_ray_gate_m": 0.05,
+  "control_candidate_admitted": false,
+  "no_actor_or_network": true,
+  "diagnostic_replay_not_online": true,
+  "no_gate_or_scene_changes": true
+}

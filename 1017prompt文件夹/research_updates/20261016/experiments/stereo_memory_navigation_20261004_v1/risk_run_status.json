@@ -1,0 +1,62 @@
+[
+  {
+    "case": "e0",
+    "exit_code": 0,
+    "start_utc": "2026-10-04T04:37:34.568969+00:00",
+    "end_utc": "2026-10-04T04:39:28.446652+00:00",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_risk_navigation.py",
+      "--manifest",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1/golden_v1_manifest.json",
+      "--split",
+      "golden",
+      "--episode-id",
+      "golden_e0_0001",
+      "--policy",
+      "goal_greedy",
+      "--scene-root",
+      "/home/an/project/NavDP/assets/scenes",
+      "--data-root",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data",
+      "--run-root",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/risk_runs/e0",
+      "--lighting-profile",
+      "fixed_camera_fill_v1",
+      "--collision-mode",
+      "physical_contact_v2",
+      "--headless",
+      "--record-video"
+    ]
+  },
+  {
+    "case": "e2",
+    "exit_code": 0,
+    "start_utc": "2026-10-04T04:39:28.447086+00:00",
+    "end_utc": "2026-10-04T04:41:03.445113+00:00",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_risk_navigation.py",
+      "--manifest",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1/golden_v1_manifest.json",
+      "--split",
+      "golden",
+      "--episode-id",
+      "golden_e2_0001",
+      "--policy",
+      "goal_greedy",
+      "--scene-root",
+      "/home/an/project/NavDP/assets/scenes",
+      "--data-root",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data",
+      "--run-root",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/risk_runs/e2",
+      "--lighting-profile",
+      "fixed_camera_fill_v1",
+      "--collision-mode",
+      "physical_contact_v2",
+      "--headless",
+      "--record-video"
+    ]
+  }
+]

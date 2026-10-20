@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-09T15:07:34.713541+00:00",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/actual_pair_request_fork_v1.py": "7035c01bcec3331585f9b981305bd0ba99b6606d31f8b0cebaf256d3f9329050",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/test_actual_pair_request_fork_v1.py": "0651b85053255d28c15f221e6ad785943fec39311a05c746d0dd85ab6b0c6116",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/assess_forward_intent_navigation_e1_v2.py": "c7404d9814917b1cd9adbb261a3e47a51fbd19282da7448908942188ab9e3c2d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/forward_intent_navigation_e1_protocol_v1.json": "90063c340e7253c7a7071d0aa6cc1809d57b8417554ea2bd8a706e2bf18dd327",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/forward_intent_navigation_e1_design_v1.json": "5dbf742bfc92243f4a3f2545bd3ac0e1c6cae2ee83a1e3031a9a80e4cb2ed3cc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/forward_intent_navigation_e1_unassessed_v1.json": "1e5c009108933a42afad8b73e1fa9639225beb14c48c382bc8c5e0af613c8777",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/forward_intent_shadow_interface_review_v1.json": "b1fff9230fa09df82e03342b80dec7bb78c6dd5905dd9f554747afac3a3f0097",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/forward_intent_navigation_e1_b0_run_v1/artifact_manifest_post_close.json": "65a887130ebccf807944fd2b30922736143d02d485d19ce80a1d4aeb2175955e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/forward_intent_navigation_e1_candidate_run_v1/artifact_manifest_post_close.json": "01da5e6486fd16710a6830179f7790586153c35288e5eea8245d104882313e9e"
+  },
+  "correction": "invalid shadowinitial60 not actualpair fork120; true physicalpair extraction",
+  "after_data_correction": true,
+  "no_gate_threshold_change": true,
+  "old_unassessed_bytes_preserved": true,
+  "no_new_physics_or_retry": true,
+  "readonly_interface_failed": true,
+  "not_claim_online_validation": true,
+  "count_clarification": "Independent review M1: distinguish first fork event count from actual differing executed request rows; original gates unchanged"
+}

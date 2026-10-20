@@ -1,0 +1,138 @@
+[
+  {
+    "label": "capture_e0",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/capture_replay.py",
+      "--sequence",
+      "e0"
+    ],
+    "start_utc": "2026-10-04T02:14:30.247174+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "capture_e1",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/capture_replay.py",
+      "--sequence",
+      "e1"
+    ],
+    "start_utc": "2026-10-04T02:15:01.226243+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "capture_e2",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/capture_replay.py",
+      "--sequence",
+      "e2"
+    ],
+    "start_utc": "2026-10-04T02:15:26.321606+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "capture_hard_0_e1_0003",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/capture_replay.py",
+      "--sequence",
+      "hard_0_e1_0003"
+    ],
+    "start_utc": "2026-10-04T02:15:52.009281+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "capture_hard_0_e1_0004",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/capture_replay.py",
+      "--sequence",
+      "hard_0_e1_0004"
+    ],
+    "start_utc": "2026-10-04T02:16:18.830408+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "capture_direct_e1",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/capture_replay.py",
+      "--sequence",
+      "direct_e1"
+    ],
+    "start_utc": "2026-10-04T02:16:54.303686+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "da3_metric_inference",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/model_inference.py",
+      "--model",
+      "da3_metric"
+    ],
+    "start_utc": "2026-10-04T02:17:17.836878+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "unidepth_v2_inference",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/model_inference.py",
+      "--model",
+      "unidepth_v2"
+    ],
+    "start_utc": "2026-10-04T02:17:41.457666+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "depth_assessment",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/evaluate_depth.py"
+    ],
+    "start_utc": "2026-10-04T02:18:16.834561+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "confidence_assessment",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/confidence_audit.py"
+    ],
+    "start_utc": "2026-10-04T02:18:20.049505+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "online_matrix",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/run_remaining.py"
+    ],
+    "start_utc": "2026-10-04T02:18:22.928427+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  },
+  {
+    "label": "run_assessment",
+    "command": [
+      "/home/an/miniconda3/envs/ball_wm/bin/python",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/analyze_runs.py"
+    ],
+    "start_utc": "2026-10-04T02:27:00.506266+00:00",
+    "exit_code": 0,
+    "artifacts_complete": true
+  }
+]

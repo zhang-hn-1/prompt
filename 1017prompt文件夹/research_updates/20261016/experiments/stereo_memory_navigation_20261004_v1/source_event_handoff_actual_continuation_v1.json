@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-07T07:49:22.989929+00:00",
+  "actual_status": {
+    "stage": "RUN_ACTUAL_SAME_VERSION_B0_C1",
+    "start_utc": "2026-10-07T07:39:54.728947+00:00",
+    "pid": 1389137,
+    "maximum_actual_sequences": 2,
+    "per_sequence_max_wall_s": 900,
+    "formal_triggered": false,
+    "whole_research_complete": false,
+    "arms": [
+      {
+        "arm": "B0",
+        "start_utc": "2026-10-07T07:39:54.729141+00:00",
+        "stage": "ACTUAL_CLOSED",
+        "wall_begin": 1217033.867593203,
+        "child_pid": 1389207,
+        "returncode": 0,
+        "end_utc": "2026-10-07T07:46:40.997666+00:00",
+        "wall_s": 406.2685370100662,
+        "post_close_manifest_sha256": "416508c0a677a2f522ac8b52fa8170a4ee163c0b25ef2ce0ee8e8df1dce5e0ba"
+      },
+      {
+        "arm": "C1",
+        "start_utc": "2026-10-07T07:46:41.514624+00:00",
+        "stage": "RUNNING",
+        "wall_begin": 1217440.65308271,
+        "child_pid": 1397131
+      }
+    ]
+  },
+  "managed_session_id": 94677,
+  "do_not_duplicate": true,
+  "whole_research_complete": false,
+  "formal_triggered": false,
+  "next_entry": "post-close B0/C1 source, gate, execution and collection reconstruction; all-source geometry and real outcome; same-prefix comparison; report",
+  "stop_reason": null
+}

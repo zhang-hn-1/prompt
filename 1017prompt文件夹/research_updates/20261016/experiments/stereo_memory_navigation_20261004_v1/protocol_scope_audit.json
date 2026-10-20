@@ -1,0 +1,33 @@
+{
+  "role": "Posthoc scope audit, frozen protocols/results unchanged",
+  "ablation_physics_identity": {
+    "raw_command_target": true,
+    "clipped_target": true,
+    "smoothed_target": true,
+    "applied_action": true,
+    "joint_position_rad": true,
+    "joint_velocity_rad_s": true,
+    "position_world_xy": true,
+    "root_position_world_m": true,
+    "root_quaternion_world_wxyz": true,
+    "linear_velocity_world_m_s": true,
+    "angular_velocity_world_rad_s": true,
+    "yaw_world_rad": true,
+    "roll_world_rad": true,
+    "simulation_time_s": true,
+    "physics_step_index": true,
+    "raw_simulation_time_s": false,
+    "raw_physics_step_index": false,
+    "action_block_index": true,
+    "physics_step_in_block": true
+  },
+  "raw_origin_difference_s": 0.019999999552965164,
+  "raw_index_origin_difference": 1,
+  "all_video_policy_depth_transaction_claim_covers_full_video": false,
+  "scored_capture_count": 351,
+  "total_video_frame_count": 356,
+  "extra_video_physics_frames": 5,
+  "extra_video_frames_scored": false,
+  "video_tail_uses_corrected_capture_transaction": false,
+  "relative_episode_prefix_identity": true
+}

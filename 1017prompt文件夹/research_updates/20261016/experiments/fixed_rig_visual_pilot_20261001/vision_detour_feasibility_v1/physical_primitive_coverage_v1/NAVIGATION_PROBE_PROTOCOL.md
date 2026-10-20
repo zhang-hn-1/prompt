@@ -1,0 +1,9 @@
+# One post-coverage Oracle continuation probe
+
+Frozen after the eight local measurements, before this full navigation run. Keep their original 6 s gate unchanged. Local result: `reverse_positive` alone among six moving primitives survived all 6 s, moving 2.368 m while increasing goal distance by 1.566 m. This warrants exactly one continuation test; it does not justify a visual-control claim.
+
+One `hard_0_e1_0004` episode, same initial conditions and original formal 35 s runtime/physical-contact-v2 termination. Candidate first issues precisely the 60 measured `reverse_positive` blocks. At the current measured state at 6 s, use the unchanged known occupancy map, mark unknown as blocked, inflate by 0.60 m, and call the repository's existing A* once to create a goal route from this actual state. Then track it in reverse with 1.0 m lookahead and the repository's existing geometric tracker, negating its input target and both output actuator fields to preserve reverse steering semantics. No reset, forced instantaneous speed flip, gain change, new speed limit, network, or parameter scan. The measured primitive and its actual command sequence remain identical up to the transition.
+
+This is explicitly privileged Oracle exploration on an already inspected episode. Map, current localization, known goal, and past state are permitted. No future trajectory/actions are read to generate requests. Nominal grid route is not certified dynamically feasible. Keep this distinction in the report.
+
+Require prefix XY, velocities, joints, applied actions, and request blocks to match the independent reverse-positive measurement to 1e-6 through t=6 s. Assess actual physical goal entry within 0.20 m, contact, final goal distance, real path, and time under original rules. If it collides or times out, reject it as a full-navigation candidate regardless of extra survival time or reference index. Do not try a second variant in this probe.

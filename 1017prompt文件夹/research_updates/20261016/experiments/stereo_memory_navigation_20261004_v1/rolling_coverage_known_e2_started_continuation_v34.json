@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-09T14:06:54.747786+00:00",
+  "stage": "unchanged_candidate_knownE2_coverage_actual_started",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_coverage_known_e1_started_continuation_v33.json",
+  "superseded_sha256": "1ea3723041ce44f0d1c86bb2a28886d782b9a04ab0773a2f13f9c42631cc4946",
+  "physics_running": true,
+  "whole_mission_complete": false,
+  "session_id": 23121,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T14:04:52.400567+00:00",
+    "parent_pid": 487263,
+    "child_pid": 487264,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "knownE1": "CLOSED0 35timeout5.626473m contact0 14qualificationchanges",
+  "remaining_budget": {
+    "known_e1": 0,
+    "known_e2": 0,
+    "native_e1": 1,
+    "native_e2": 1,
+    "retry": 0
+  },
+  "next": "Supervise23121; freeze-assess known e2 afterseal then nativee1/nativee2 once. Specific f75floor teacher audit is diagnosticonly not runtimeinput or full-navigation guarantee; independentreviewpending."
+}

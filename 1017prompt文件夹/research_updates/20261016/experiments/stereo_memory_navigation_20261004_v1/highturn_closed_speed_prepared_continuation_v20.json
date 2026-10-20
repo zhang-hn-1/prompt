@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-09T12:45:56.523324+00:00",
+  "stage": "highmain_turn_point_rejected_speed_feedback_candidate_prelaunch_pending",
+  "whole_mission_complete": false,
+  "physics_running": false,
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/highturn_high_started_continuation_v19.json",
+  "superseded_sha256": "7eb8d6ccb4e348faf4baefb10381b230174033fdc2ee1e7d568ddcaaa7dfa255",
+  "highturn_budget_remaining": 0,
+  "new_velocity_consumer_budget_remaining": {
+    "b0": 1,
+    "paced": 1,
+    "retry": 0
+  },
+  "next": {
+    "protocol": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/measured_speed_fixed_reference_protocol_v1.json",
+    "runner": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_measured_speed_fixed_reference_stage_v1.py",
+    "scorer": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/assess_measured_speed_fixed_reference_v1.py",
+    "steps": [
+      "Resolveprelaunchreview C/I, freezehashes; runb0once andsupervise, pacedonceonlynormalbaselineclose",
+      "Measurephysicallocal35originalgatesincl20percentwithoutGTfutureinputs; domainmodelacceptnotprerequisitefor this traditionalfeedbackconsumerbutreferencecompatibility notassumed",
+      "Localpass thenseparatelyfreezefullknownpose SGBM-memory E0; nativevelocitysource scopeexplicit. Failure rejects law withoutgain/target/reserveretune."
+    ]
+  }
+}

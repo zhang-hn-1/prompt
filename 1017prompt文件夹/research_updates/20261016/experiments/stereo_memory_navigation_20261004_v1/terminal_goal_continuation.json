@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-06T22:24:33.208528+00:00",
+  "status": "actual_local_running",
+  "stage": "one terminal-goal consumer",
+  "entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_terminal_goal_navigation_stage.py",
+  "status_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/terminal_goal_navigation_status.json",
+  "protocol": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/terminal_goal_navigation_protocol.json",
+  "suite": "408 passed in21.86s",
+  "no_stage_approval_needed": true,
+  "whole_research_complete": false,
+  "exec_session_id": 77875,
+  "assessment_entry": "experiments/stereo_memory_navigation_20261004_v1/assess_terminal_goal_navigation.py",
+  "conditional_full_entry": "experiments/stereo_memory_navigation_20261004_v1/prepare_terminal_goal_full_navigation.py",
+  "actual_guard": "Do not trigger full before terminal_consumer_gate_pass true; if fail freeze reject and no nextthreshold"
+}

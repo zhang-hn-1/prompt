@@ -1,0 +1,133 @@
+{
+  "utc": "2026-10-06T19:47:30.059919+00:00",
+  "primary": {
+    "success": false,
+    "termination": "timeout",
+    "elapsed_s": 35.0,
+    "final_goal_distance_m": 4.489752512118711,
+    "contact_samples": 0,
+    "runtime_error": false,
+    "actual_goal_line_progress_m": 2.1122008979320523,
+    "max_goal_line_progress_m": 2.1122008979320523,
+    "actual_path_m": 3.8591480505832156,
+    "goal_displacement_m": 6.6,
+    "policy_calls": 350,
+    "captures": 351,
+    "physics_samples": 1751,
+    "RGB_inferences": 71,
+    "control_stage_counts": {
+      "settling": 60,
+      "no_route": 0,
+      "nonzero_request": 251,
+      "zero_tracking_request": 39
+    },
+    "stages": [
+      {
+        "kind": "settling",
+        "start_frame": 0,
+        "start_time_s": 0.0,
+        "entry_progress_m": -6.735324862283676e-07,
+        "end_frame": 59,
+        "exit_progress_m": 0.03324775099754307,
+        "elapsed_s": 6.0
+      },
+      {
+        "kind": "nonzero_request",
+        "start_frame": 60,
+        "start_time_s": 6.0,
+        "entry_progress_m": 0.03324775099754307,
+        "end_frame": 199,
+        "exit_progress_m": 1.583449167013168,
+        "elapsed_s": 14.0
+      },
+      {
+        "kind": "zero_tracking_request",
+        "start_frame": 200,
+        "start_time_s": 20.0,
+        "entry_progress_m": 1.583449167013168,
+        "end_frame": 215,
+        "exit_progress_m": 1.637547534704208,
+        "elapsed_s": 1.6
+      },
+      {
+        "kind": "nonzero_request",
+        "start_frame": 216,
+        "start_time_s": 21.6,
+        "entry_progress_m": 1.637547534704208,
+        "end_frame": 237,
+        "exit_progress_m": 1.426033419370651,
+        "elapsed_s": 2.2
+      },
+      {
+        "kind": "zero_tracking_request",
+        "start_frame": 238,
+        "start_time_s": 23.8,
+        "entry_progress_m": 1.426033419370651,
+        "end_frame": 255,
+        "exit_progress_m": 1.3150815188884732,
+        "elapsed_s": 1.8
+      },
+      {
+        "kind": "nonzero_request",
+        "start_frame": 256,
+        "start_time_s": 25.6,
+        "entry_progress_m": 1.3150815188884732,
+        "end_frame": 289,
+        "exit_progress_m": 1.5701070249080655,
+        "elapsed_s": 3.4000000000000004
+      },
+      {
+        "kind": "zero_tracking_request",
+        "start_frame": 290,
+        "start_time_s": 29.0,
+        "entry_progress_m": 1.5701070249080655,
+        "end_frame": 294,
+        "exit_progress_m": 1.6137369096279142,
+        "elapsed_s": 0.5
+      },
+      {
+        "kind": "nonzero_request",
+        "start_frame": 295,
+        "start_time_s": 29.5,
+        "entry_progress_m": 1.6137369096279142,
+        "end_frame": 349,
+        "exit_progress_m": 2.1122008979320523,
+        "elapsed_s": 5.5
+      }
+    ],
+    "first_postsettling_zero_request": 20.0
+  },
+  "interface": {
+    "same_live_RGB_source_ids_all_calls": true,
+    "source_age_max_s": 0.3999999910593033,
+    "shadow_requests_never_executed": true,
+    "shadow_different_request_blocks": 242,
+    "shadow_first_difference_s": 6.0,
+    "render_clock_delta_max_s": 0.0,
+    "primary_runtime_mutation_assertions_all_calls": true,
+    "CPU_shadow_onoff_fixture_verified": true,
+    "shadow_counterfactual_navigation_success_not_measured": true
+  },
+  "performance": {
+    "model_wall_p50_s": 0.9439948010258377,
+    "model_wall_p95_s": 0.9710795965511352,
+    "shadow_wall_p95_s": 1.8005104677635246,
+    "XY_speed_p95_m_s": 0.18651856589061627,
+    "nominal_direct_goal_speed_required_after_6s_m_s": 0.2275862068965517
+  },
+  "videos": [
+    {
+      "name": "stereo_view",
+      "frames": 351,
+      "fps": 10.0
+    },
+    {
+      "name": "third_person",
+      "frames": 351,
+      "fps": 10.0
+    }
+  ],
+  "identity_checks": 3807,
+  "scope": "one full originalgoal35s RGBknownpose explicit-risk primary plus readonly same-source memory interface; notformal RGBestimatedpose successrate or learnedworldmodel",
+  "whole_research_complete": false
+}

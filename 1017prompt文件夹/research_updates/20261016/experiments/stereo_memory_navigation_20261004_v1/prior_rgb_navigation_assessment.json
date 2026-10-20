@@ -1,0 +1,118 @@
+{
+  "utc": "2026-10-06T19:28:27.755468+00:00",
+  "arms": {
+    "current": {
+      "local_task_navigation_pass": true,
+      "success": true,
+      "termination": "success",
+      "elapsed_s": 22.6,
+      "final_goal_distance_m": 0.19302877235323554,
+      "path_m": 2.332308458493336,
+      "actual_line_final_progress_m": 1.8285527646541593,
+      "actual_line_max_progress_m": 1.8285527646541593,
+      "cross_track_rms_to_goal_line_m": 0.03915461298480492,
+      "cross_track_peak_to_goal_line_m": 0.1044234171509748,
+      "contact_samples": 0,
+      "policy_calls": 226,
+      "captures": 227,
+      "physics_samples": 1131,
+      "RGB_inferences": 46,
+      "source_age_max_s": 0.3999999910593033,
+      "peak_history_hazard_cells": 41,
+      "videos": [
+        {
+          "name": "stereo_view",
+          "frames": 227,
+          "fps": 10.0
+        },
+        {
+          "name": "third_person",
+          "frames": 227,
+          "fps": 10.0
+        }
+      ],
+      "model_latency_p50_s": 0.9527653874829412,
+      "model_latency_p95_s": 0.972296517167706,
+      "policy_latency_p95_s": 0.14915715996176004,
+      "max_render_clock_delta_s": 0.0,
+      "knownpose_privileged": true,
+      "original_strict_source_admitted": false,
+      "formal_navigation_result": false,
+      "realtime_10Hz_verified": false
+    },
+    "history": {
+      "local_task_navigation_pass": false,
+      "success": false,
+      "termination": "timeout",
+      "elapsed_s": 35.0,
+      "final_goal_distance_m": 0.5971675231003799,
+      "path_m": 1.7643285499223957,
+      "actual_line_final_progress_m": 1.4041661441326139,
+      "actual_line_max_progress_m": 1.4967546880245206,
+      "cross_track_rms_to_goal_line_m": 0.024016898833280717,
+      "cross_track_peak_to_goal_line_m": 0.06936102956533485,
+      "contact_samples": 0,
+      "policy_calls": 350,
+      "captures": 351,
+      "physics_samples": 1751,
+      "RGB_inferences": 71,
+      "source_age_max_s": 0.3999999910593033,
+      "peak_history_hazard_cells": 35,
+      "videos": [
+        {
+          "name": "stereo_view",
+          "frames": 351,
+          "fps": 10.0
+        },
+        {
+          "name": "third_person",
+          "frames": 351,
+          "fps": 10.0
+        }
+      ],
+      "model_latency_p50_s": 0.9378386540338397,
+      "model_latency_p95_s": 0.9627202010015026,
+      "policy_latency_p95_s": 1.1854049633373507,
+      "max_render_clock_delta_s": 0.0,
+      "knownpose_privileged": true,
+      "original_strict_source_admitted": false,
+      "formal_navigation_result": false,
+      "realtime_10Hz_verified": false
+    }
+  },
+  "comparison": {
+    "common_blocks": 226,
+    "first_request_divergence_frame": 135,
+    "first_request_divergence_time_s": 13.5,
+    "changed_request_blocks": 91,
+    "changed_applied_ticks": 455,
+    "exact_prefix_nonraw_fields": [
+      "raw_command_target",
+      "clipped_target",
+      "smoothed_target",
+      "applied_action",
+      "joint_position_rad",
+      "joint_velocity_rad_s",
+      "position_world_xy",
+      "root_position_world_m",
+      "root_quaternion_world_wxyz",
+      "linear_velocity_world_m_s",
+      "angular_velocity_world_rad_s",
+      "yaw_world_rad",
+      "roll_world_rad",
+      "simulation_time_s",
+      "physics_step_index",
+      "action_block_index",
+      "physics_step_in_block"
+    ],
+    "exact_prefix_physics_samples": 676,
+    "complete_prefix_execution_states": 136
+  },
+  "history_candidate_pass": false,
+  "actual_control_changed": true,
+  "history_no_regression": false,
+  "identity_checks": 5270,
+  "RGB_source_oldgate_rejected": true,
+  "scope": "two separately labelled2m RGB+knownpose prior/controlledexploration tasks, not fullE1/RGBestimatedpose/formal successrate",
+  "whole_research_complete": false
+}

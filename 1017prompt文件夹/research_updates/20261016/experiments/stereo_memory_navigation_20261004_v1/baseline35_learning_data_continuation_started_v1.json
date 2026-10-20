@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-09T05:15:13.256276+00:00",
+  "status": "right_eye_historical_label_supplement_running_check_actual_before_restarting",
+  "session_id": 64478,
+  "physics_stages_closed": true,
+  "research_complete": false,
+  "no_user_blocker": true,
+  "baseline_actual_knownpose_E0E1E2_complete": true,
+  "baseline_actual_nativepose_E0E1E2_complete": true,
+  "arrivals_knownpose": 0,
+  "arrivals_nativepose": 0,
+  "strict_original_admission": false,
+  "no_new_worldmodel_fitted": true,
+  "entry_script": "build_right_action_video_pair_supplement_v1.py",
+  "next": [
+    "check session64478/log/output assessment before any restart",
+    "verify right feature-reference seal unchanged and report data feasibility scope (not 3D or safety/learning success)",
+    "freeze only one causal action-conditioned dual-eye prediction candidate, target/control horizon and baselines before fit; collect necessary fresh whole sequences under frozen task conditions, seal entire sequence labels before fit; old four and already-inspected native E1/E2 cannot be called fresh",
+    "no repeat known/native baseline matrix, no M3/Oracle/source-threshold or network sweep; current teacher is approximate image flow only, model-generated support must remain hypothesis and cannot certify unseen free volume"
+  ],
+  "historical_old_model_rejection_preserved": true,
+  "no_Git_this_wake": true,
+  "notes": "continued after baseline report with actual four-case source factorization, six current exposures temporal support, and left/right action-conditioned fit-data feasibility; routine quiet notification policy retained"
+}

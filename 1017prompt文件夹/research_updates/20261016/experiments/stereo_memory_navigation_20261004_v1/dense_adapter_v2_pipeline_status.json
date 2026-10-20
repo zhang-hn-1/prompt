@@ -1,0 +1,29 @@
+{
+  "start_utc": "2026-10-05T20:32:14.431785+00:00",
+  "status": "finished",
+  "pid": 3351707,
+  "stages": [
+    {
+      "name": "fit_dense_adapter_v2",
+      "start_utc": "2026-10-05T20:32:14.431929+00:00",
+      "end_utc": "2026-10-05T20:34:57.256081+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "predict_dense_adapter_v2",
+      "start_utc": "2026-10-05T20:34:57.256275+00:00",
+      "end_utc": "2026-10-05T20:36:57.417097+00:00",
+      "exit_code": 0
+    },
+    {
+      "name": "assess_dense_adapter_v2",
+      "start_utc": "2026-10-05T20:36:57.417296+00:00",
+      "end_utc": "2026-10-05T20:37:03.382224+00:00",
+      "exit_code": 0
+    }
+  ],
+  "current_stage": "assess_dense_adapter_v2",
+  "stage_start_utc": "2026-10-05T20:36:57.417296+00:00",
+  "end_utc": "2026-10-05T20:37:03.382408+00:00",
+  "exit_code": 0
+}

@@ -1,0 +1,61 @@
+{
+  "utc": "2026-10-09T20:28:22.529986+00:00",
+  "guard_exact_logged_match": true,
+  "only_reject_reason": [
+    "remaining_arc_under_lookahead"
+  ],
+  "geometry": {
+    "projected_arc_m": 0.16610912271473607,
+    "projection_distance_m": 0.010028725369457514,
+    "remaining_arc_m": 0.4331204078449322,
+    "suffix_xy": [
+      [
+        -1.5837644141833709,
+        -0.5861942589980685
+      ],
+      [
+        -1.480148300111688,
+        -0.6697709863085018
+      ],
+      [
+        -1.2728178679633544,
+        -0.8865966269907836
+      ]
+    ],
+    "bridge_xy": [
+      [
+        -1.5774681568145752,
+        -0.5783883333206177
+      ],
+      [
+        -1.5837644141833709,
+        -0.5861942589980685
+      ]
+    ],
+    "suffix_clearance_m": 0.8801541709830693,
+    "bridge_clearance_m": 1.1776664800476675,
+    "continuous_clearance_pass": true,
+    "raster_clearance_pass": true,
+    "minimum_raster_clearance_m": 0.9055385138137417,
+    "raster_sample_count": 12,
+    "raster_outside_count": 0,
+    "observed_hazard_count": 47,
+    "retention_necessary_screen_pass": false,
+    "reject_reasons": [
+      "remaining_arc_under_lookahead"
+    ],
+    "nominal_geometry_only": true,
+    "certified_safe": false
+  },
+  "current_map_clock_exact": true,
+  "source_sha256": "6595d2b725dec80af64fe508558462567eaaf7b7e00182e74be05dc5766fb6c4",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_candidate_run_v1/policy_records.json": "9029bad46048e346c0b942850c80de6882d4fce55f9fe499f0c95ef854f4c87b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_candidate_run_v1/states.json": "74c6f0656bb7309fc633f89ee5257e51f1e87f925f0ef0b40fc5e2dd31fe3876",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_candidate_run_v1/maps/frame_125.npz": "c64ab1fb3451581c9c8daa3e59074a17749607450e9cb89468c05ffa7655ca1d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_first_exit_guard_scope_v1.json": "94323f0ddbc96d6f23547348abcbed202184ec9a69afeeb9cc33bc2fd3c3b776"
+  },
+  "result": "The old remaining-length predicate explains this reference exit. No observed-hazard/projection rejection at this exact boundary. Later empty source epochs cannot temporally cause this already-completed boundary decision.",
+  "limits": "Does not prove the partial curve safe or explain the whole navigation failure. No threshold change/retry authorized by this diagnosis.",
+  "whole_mission_complete": false
+}

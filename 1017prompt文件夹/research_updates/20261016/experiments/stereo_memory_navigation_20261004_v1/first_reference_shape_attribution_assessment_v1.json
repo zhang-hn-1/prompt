@@ -1,0 +1,2296 @@
+{
+  "arms": {
+    "b0": {
+      "first_reference_frame": 60,
+      "next_rebuild_frame": 120,
+      "sampled_prefix_rows": 60,
+      "reference_polyline_length_m": 2.096975202198245,
+      "last_projection_progress_m": 1.5931163218027944,
+      "maximum_projection_progress_m": 1.5931163218027944,
+      "cross_track_rms_m": 0.0543879516830228,
+      "cross_track_peak_m": 0.08346951165991527,
+      "sampled_actual_travel_m": 1.639256762101803,
+      "records": [
+        {
+          "frame": 60,
+          "time_s": 5.999999865889549,
+          "actual_xy": [
+            -3.266752243041992,
+            -0.005917796865105629
+          ],
+          "continuous_reference_progress_m": 0.0,
+          "cross_track_m": 0.0,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.12408379912376422,
+          "actual_speed_m_s": 0.013535673458142378,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 61,
+          "time_s": 6.099999863654375,
+          "actual_xy": [
+            -3.2653656005859375,
+            -0.0059819272719323635
+          ],
+          "continuous_reference_progress_m": 0.0013837618005818457,
+          "cross_track_m": 0.00010996949242233998,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.12462815372934122,
+          "actual_speed_m_s": 0.014818535327797519,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 62,
+          "time_s": 6.199999861419201,
+          "actual_xy": [
+            -3.263874053955078,
+            -0.006575724575668573
+          ],
+          "continuous_reference_progress_m": 0.0029379120644993043,
+          "cross_track_m": 0.000292427757962925,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.1263779056386345,
+          "actual_speed_m_s": 0.019357461907242347,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 63,
+          "time_s": 6.299999859184027,
+          "actual_xy": [
+            -3.262152671813965,
+            -0.008090664632618427
+          ],
+          "continuous_reference_progress_m": 0.004835408559708406,
+          "cross_track_m": 0.0015799474287113888,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.1293296225344811,
+          "actual_speed_m_s": 0.028423538554284603,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 64,
+          "time_s": 6.3999998569488525,
+          "actual_xy": [
+            -3.2600231170654297,
+            -0.010426366701722145
+          ],
+          "continuous_reference_progress_m": 0.0072406185610028526,
+          "cross_track_m": 0.0036306722840484472,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.13185996394004373,
+          "actual_speed_m_s": 0.034547040114317605,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 65,
+          "time_s": 6.499999854713678,
+          "actual_xy": [
+            -3.257270336151123,
+            -0.013292765244841576
+          ],
+          "continuous_reference_progress_m": 0.010330590085068212,
+          "cross_track_m": 0.006129896033662174,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.13234895016427917,
+          "actual_speed_m_s": 0.04547497594397116,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 66,
+          "time_s": 6.599999852478504,
+          "actual_xy": [
+            -3.253624677658081,
+            -0.017275819554924965
+          ],
+          "continuous_reference_progress_m": 0.014446210017377847,
+          "cross_track_m": 0.009625210047844371,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.13194588137756513,
+          "actual_speed_m_s": 0.06138935005285782,
+          "course_tangent_error_rad": -0.6420753074262673
+        },
+        {
+          "frame": 67,
+          "time_s": 6.69999985024333,
+          "actual_xy": [
+            -3.2487998008728027,
+            -0.022738967090845108
+          ],
+          "continuous_reference_progress_m": 0.019917065479135933,
+          "cross_track_m": 0.014441345169381154,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.131496561797515,
+          "actual_speed_m_s": 0.08102865065192787,
+          "course_tangent_error_rad": -0.6643640544403544
+        },
+        {
+          "frame": 68,
+          "time_s": 6.799999848008156,
+          "actual_xy": [
+            -3.2425239086151123,
+            -0.029764950275421143
+          ],
+          "continuous_reference_progress_m": 0.027023173943354618,
+          "cross_track_m": 0.02062636625542792,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.13073489124180737,
+          "actual_speed_m_s": 0.09875975706871748,
+          "course_tangent_error_rad": -0.6267046530735376
+        },
+        {
+          "frame": 69,
+          "time_s": 6.899999845772982,
+          "actual_xy": [
+            -3.2345967292785645,
+            -0.03748835250735283
+          ],
+          "continuous_reference_progress_m": 0.0358548889090893,
+          "cross_track_m": 0.027296593015742495,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.12646826972119563,
+          "actual_speed_m_s": 0.11567916664714924,
+          "course_tangent_error_rad": -0.5683291801277504
+        },
+        {
+          "frame": 70,
+          "time_s": 6.9999998435378075,
+          "actual_xy": [
+            -3.224811315536499,
+            -0.046107593923807144
+          ],
+          "continuous_reference_progress_m": 0.046642370018920784,
+          "cross_track_m": 0.03462297657132797,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.1203738660049547,
+          "actual_speed_m_s": 0.1365276531499291,
+          "course_tangent_error_rad": -0.535076646925349
+        },
+        {
+          "frame": 71,
+          "time_s": 7.099999841302633,
+          "actual_xy": [
+            -3.2130038738250732,
+            -0.055817555636167526
+          ],
+          "continuous_reference_progress_m": 0.05957251960407699,
+          "cross_track_m": 0.042778359329341625,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.11433331259180823,
+          "actual_speed_m_s": 0.15909812986539618,
+          "course_tangent_error_rad": -0.5091683510100884
+        },
+        {
+          "frame": 72,
+          "time_s": 7.199999839067459,
+          "actual_xy": [
+            -3.1990835666656494,
+            -0.06650201976299286
+          ],
+          "continuous_reference_progress_m": 0.07472091104198125,
+          "cross_track_m": 0.051636065687883474,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.10859024501175751,
+          "actual_speed_m_s": 0.1784796744945834,
+          "course_tangent_error_rad": -0.45853558836149233
+        },
+        {
+          "frame": 73,
+          "time_s": 7.299999836832285,
+          "actual_xy": [
+            -3.18304705619812,
+            -0.07715988159179688
+          ],
+          "continuous_reference_progress_m": 0.09196552648340314,
+          "cross_track_m": 0.060202449114658656,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.09992064465711126,
+          "actual_speed_m_s": 0.19581002761624158,
+          "course_tangent_error_rad": -0.3963617229075673
+        },
+        {
+          "frame": 74,
+          "time_s": 7.399999834597111,
+          "actual_xy": [
+            -3.164885997772217,
+            -0.08760924637317657
+          ],
+          "continuous_reference_progress_m": 0.11129187331557831,
+          "cross_track_m": 0.06829600121530546,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.08899079465685711,
+          "actual_speed_m_s": 0.21210522910714424,
+          "course_tangent_error_rad": -0.32841591975313156
+        },
+        {
+          "frame": 75,
+          "time_s": 7.499999832361937,
+          "actual_xy": [
+            -3.144622564315796,
+            -0.09717363864183426
+          ],
+          "continuous_reference_progress_m": 0.13259326431229787,
+          "cross_track_m": 0.07524834445456167,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.07522375171269369,
+          "actual_speed_m_s": 0.22661415618882824,
+          "course_tangent_error_rad": -0.24355286569842072
+        },
+        {
+          "frame": 76,
+          "time_s": 7.599999830126762,
+          "actual_xy": [
+            -3.122265577316284,
+            -0.10517796874046326
+          ],
+          "continuous_reference_progress_m": 0.1557764321380947,
+          "cross_track_m": 0.0803908047203385,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.05909203778448813,
+          "actual_speed_m_s": 0.24108585362665305,
+          "course_tangent_error_rad": -0.14901686557274596
+        },
+        {
+          "frame": 77,
+          "time_s": 7.699999827891588,
+          "actual_xy": [
+            -3.0978281497955322,
+            -0.11112713813781738
+          ],
+          "continuous_reference_progress_m": 0.18076638498199757,
+          "cross_track_m": 0.08323382023382604,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.04211352845393668,
+          "actual_speed_m_s": 0.2566957893102701,
+          "course_tangent_error_rad": -0.048852103004518366
+        },
+        {
+          "frame": 78,
+          "time_s": 7.799999825656414,
+          "actual_xy": [
+            -3.0713446140289307,
+            -0.11470649391412735
+          ],
+          "continuous_reference_progress_m": 0.20748966891241927,
+          "cross_track_m": 0.08346951165991527,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.02608595968870997,
+          "actual_speed_m_s": 0.27415537415260427,
+          "course_tangent_error_rad": 0.028077593826945968
+        },
+        {
+          "frame": 79,
+          "time_s": 7.89999982342124,
+          "actual_xy": [
+            -3.042924165725708,
+            -0.11626631021499634
+          ],
+          "continuous_reference_progress_m": 0.23588179852478,
+          "cross_track_m": 0.08145906774786082,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.013336454552405286,
+          "actual_speed_m_s": 0.29230269848963236,
+          "course_tangent_error_rad": 0.09915795207779254
+        },
+        {
+          "frame": 80,
+          "time_s": 7.999999821186066,
+          "actual_xy": [
+            -3.012566566467285,
+            -0.11524489521980286
+          ],
+          "continuous_reference_progress_m": 0.2658726915175453,
+          "cross_track_m": 0.07664518586066175,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.0018946652014055765,
+          "actual_speed_m_s": 0.3125240877464472,
+          "course_tangent_error_rad": 0.18672201109996367
+        },
+        {
+          "frame": 81,
+          "time_s": 8.099999818950891,
+          "actual_xy": [
+            -2.9803380966186523,
+            -0.11185655742883682
+          ],
+          "continuous_reference_progress_m": 0.3144882360873835,
+          "cross_track_m": 0.067571222078768,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.2399482247917315,
+          "actual_speed_m_s": 0.33117118602912565,
+          "course_tangent_error_rad": 0.48521427012418306
+        },
+        {
+          "frame": 82,
+          "time_s": 8.199999816715717,
+          "actual_xy": [
+            -2.9464235305786133,
+            -0.10689307749271393
+          ],
+          "continuous_reference_progress_m": 0.3442503419438838,
+          "cross_track_m": 0.050569722799382794,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.23229821706780118,
+          "actual_speed_m_s": 0.34711938829198846,
+          "course_tangent_error_rad": 0.5155515725695761
+        },
+        {
+          "frame": 83,
+          "time_s": 8.299999814480543,
+          "actual_xy": [
+            -2.911036491394043,
+            -0.10122215002775192
+          ],
+          "continuous_reference_progress_m": 0.3751250468890096,
+          "cross_track_m": 0.03237207033774361,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.22682760825998294,
+          "actual_speed_m_s": 0.3597937272182086,
+          "course_tangent_error_rad": 0.5141261138153705
+        },
+        {
+          "frame": 84,
+          "time_s": 8.399999812245369,
+          "actual_xy": [
+            -2.8744935989379883,
+            -0.0957440510392189
+          ],
+          "continuous_reference_progress_m": 0.40714622891275326,
+          "cross_track_m": 0.013931992805769391,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.22228391749599696,
+          "actual_speed_m_s": 0.3681920707079792,
+          "course_tangent_error_rad": 0.4943941237242808
+        },
+        {
+          "frame": 85,
+          "time_s": 8.499999810010195,
+          "actual_xy": [
+            -2.837162971496582,
+            -0.09109564870595932
+          ],
+          "continuous_reference_progress_m": 0.4402036642194398,
+          "cross_track_m": 0.0040232114638891646,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.21645344115924425,
+          "actual_speed_m_s": 0.37347430415329874,
+          "course_tangent_error_rad": 0.47565254136859814
+        },
+        {
+          "frame": 86,
+          "time_s": 8.59999980777502,
+          "actual_xy": [
+            -2.7994720935821533,
+            -0.08768482506275177
+          ],
+          "continuous_reference_progress_m": 0.4740482680792226,
+          "cross_track_m": 0.02095775561068579,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.20780991900832912,
+          "actual_speed_m_s": 0.3738134075229172,
+          "course_tangent_error_rad": 0.4297139064645248
+        },
+        {
+          "frame": 87,
+          "time_s": 8.699999805539846,
+          "actual_xy": [
+            -2.7619144916534424,
+            -0.08663222193717957
+          ],
+          "continuous_reference_progress_m": 0.5086296655591706,
+          "cross_track_m": 0.035648173722820205,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.19802497669866437,
+          "actual_speed_m_s": 0.37072967027569503,
+          "course_tangent_error_rad": 0.3592725034309172
+        },
+        {
+          "frame": 88,
+          "time_s": 8.799999803304672,
+          "actual_xy": [
+            -2.7248990535736084,
+            -0.08872323483228683
+          ],
+          "continuous_reference_progress_m": 0.5438538970222426,
+          "cross_track_m": 0.04721400741544485,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.1879673069939507,
+          "actual_speed_m_s": 0.3667562546299321,
+          "course_tangent_error_rad": 0.27422299816861884
+        },
+        {
+          "frame": 89,
+          "time_s": 8.899999801069498,
+          "actual_xy": [
+            -2.6886980533599854,
+            -0.09410041570663452
+          ],
+          "continuous_reference_progress_m": 0.5795195176086647,
+          "cross_track_m": 0.05542314858901292,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.1770449793619009,
+          "actual_speed_m_s": 0.36329141824063804,
+          "course_tangent_error_rad": 0.1917912470890295
+        },
+        {
+          "frame": 90,
+          "time_s": 8.999999798834324,
+          "actual_xy": [
+            -2.653444766998291,
+            -0.10243421047925949
+          ],
+          "continuous_reference_progress_m": 0.6151039175913094,
+          "cross_track_m": 0.060610838054077576,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.16880859429410044,
+          "actual_speed_m_s": 0.3604494108392522,
+          "course_tangent_error_rad": 0.12141080573827479
+        },
+        {
+          "frame": 91,
+          "time_s": 9.09999979659915,
+          "actual_xy": [
+            -2.6191582679748535,
+            -0.11329095810651779
+          ],
+          "continuous_reference_progress_m": 0.6509760426897604,
+          "cross_track_m": 0.06318447851988473,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.15365536065231478,
+          "actual_speed_m_s": 0.358266996594087,
+          "course_tangent_error_rad": 0.05665327625936856
+        },
+        {
+          "frame": 92,
+          "time_s": 9.199999794363976,
+          "actual_xy": [
+            -2.5857439041137695,
+            -0.12613126635551453
+          ],
+          "continuous_reference_progress_m": 0.6867702683143341,
+          "cross_track_m": 0.06359269428058328,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.1364053536180494,
+          "actual_speed_m_s": 0.3565433472536723,
+          "course_tangent_error_rad": 0.006982366578506927
+        },
+        {
+          "frame": 93,
+          "time_s": 9.299999792128801,
+          "actual_xy": [
+            -2.553022623062134,
+            -0.1402849555015564
+          ],
+          "continuous_reference_progress_m": 0.7224054745493549,
+          "cross_track_m": 0.06252441215939313,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.11773693607312907,
+          "actual_speed_m_s": 0.354737867676725,
+          "course_tangent_error_rad": -0.024085635475047162
+        },
+        {
+          "frame": 94,
+          "time_s": 9.399999789893627,
+          "actual_xy": [
+            -2.5208115577697754,
+            -0.15519051253795624
+          ],
+          "continuous_reference_progress_m": 0.7578442196975583,
+          "cross_track_m": 0.06056898377803353,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.09896390975431313,
+          "actual_speed_m_s": 0.35305651446027747,
+          "course_tangent_error_rad": -0.04434459182755335
+        },
+        {
+          "frame": 95,
+          "time_s": 9.499999787658453,
+          "actual_xy": [
+            -2.4888904094696045,
+            -0.17006823420524597
+          ],
+          "continuous_reference_progress_m": 0.7930032645057228,
+          "cross_track_m": 0.058532349547657264,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.08069050941382772,
+          "actual_speed_m_s": 0.34981615271424715,
+          "course_tangent_error_rad": -0.03547136640727411
+        },
+        {
+          "frame": 96,
+          "time_s": 9.599999785423279,
+          "actual_xy": [
+            -2.4569814205169678,
+            -0.1839521825313568
+          ],
+          "continuous_reference_progress_m": 0.8277839853648108,
+          "cross_track_m": 0.05741473887134556,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.06272844382384468,
+          "actual_speed_m_s": 0.3459182542085371,
+          "course_tangent_error_rad": -0.0018912650292630673
+        },
+        {
+          "frame": 97,
+          "time_s": 9.699999783188105,
+          "actual_xy": [
+            -2.4248342514038086,
+            -0.19609977304935455
+          ],
+          "continuous_reference_progress_m": 0.8621447687618116,
+          "cross_track_m": 0.057998692403225235,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.04523344465677015,
+          "actual_speed_m_s": 0.3424451280647685,
+          "course_tangent_error_rad": 0.047626033902757214
+        },
+        {
+          "frame": 98,
+          "time_s": 9.79999978095293,
+          "actual_xy": [
+            -2.3923373222351074,
+            -0.20630213618278503
+          ],
+          "continuous_reference_progress_m": 0.9030400041209654,
+          "cross_track_m": 0.06030990626641139,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.08530578571638925,
+          "actual_speed_m_s": 0.34044595643046377,
+          "course_tangent_error_rad": -0.017483947811707257
+        },
+        {
+          "frame": 99,
+          "time_s": 9.899999778717756,
+          "actual_xy": [
+            -2.359504222869873,
+            -0.2147376835346222
+          ],
+          "continuous_reference_progress_m": 0.936936882471623,
+          "cross_track_m": 0.06072525086209506,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.09876600751742126,
+          "actual_speed_m_s": 0.33952907520988934,
+          "course_tangent_error_rad": 0.0258213363486135
+        },
+        {
+          "frame": 100,
+          "time_s": 9.999999776482582,
+          "actual_xy": [
+            -2.326380729675293,
+            -0.2217574119567871
+          ],
+          "continuous_reference_progress_m": 0.9707450257974918,
+          "cross_track_m": 0.06258316189060462,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.10928571591518788,
+          "actual_speed_m_s": 0.3393289838639594,
+          "course_tangent_error_rad": 0.058876607746366716
+        },
+        {
+          "frame": 101,
+          "time_s": 10.099999774247408,
+          "actual_xy": [
+            -2.29304838180542,
+            -0.22787588834762573
+          ],
+          "continuous_reference_progress_m": 1.0045198560655269,
+          "cross_track_m": 0.06536560833733207,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.117330143962604,
+          "actual_speed_m_s": 0.33954310082502587,
+          "course_tangent_error_rad": 0.07567250085141808
+        },
+        {
+          "frame": 102,
+          "time_s": 10.199999772012234,
+          "actual_xy": [
+            -2.259625196456909,
+            -0.23368492722511292
+          ],
+          "continuous_reference_progress_m": 1.0383017160793744,
+          "cross_track_m": 0.06847047315336909,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.1240818251072695,
+          "actual_speed_m_s": 0.3398909111723445,
+          "course_tangent_error_rad": 0.08362806565384817
+        },
+        {
+          "frame": 103,
+          "time_s": 10.29999976977706,
+          "actual_xy": [
+            -2.2261343002319336,
+            -0.23941820859909058
+          ],
+          "continuous_reference_progress_m": 1.0721291966069582,
+          "cross_track_m": 0.07166612745589018,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.13181069862082584,
+          "actual_speed_m_s": 0.33955440977084494,
+          "course_tangent_error_rad": 0.0756735455914126
+        },
+        {
+          "frame": 104,
+          "time_s": 10.399999767541885,
+          "actual_xy": [
+            -2.192901134490967,
+            -0.24599234759807587
+          ],
+          "continuous_reference_progress_m": 1.1059270602310827,
+          "cross_track_m": 0.07398281111786062,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.1401308326365016,
+          "actual_speed_m_s": 0.33800581696667603,
+          "course_tangent_error_rad": 0.03955049779105213
+        },
+        {
+          "frame": 105,
+          "time_s": 10.499999765306711,
+          "actual_xy": [
+            -2.1601924896240234,
+            -0.2541036605834961
+          ],
+          "continuous_reference_progress_m": 1.139619263144242,
+          "cross_track_m": 0.07467873513509118,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.14881298768165463,
+          "actual_speed_m_s": 0.33641949990712616,
+          "course_tangent_error_rad": -0.01004187465403339
+        },
+        {
+          "frame": 106,
+          "time_s": 10.599999763071537,
+          "actual_xy": [
+            -2.1281440258026123,
+            -0.2640412747859955
+          ],
+          "continuous_reference_progress_m": 1.1731502080853207,
+          "cross_track_m": 0.07343940438490101,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.15839752171280708,
+          "actual_speed_m_s": 0.3352583246064299,
+          "course_tangent_error_rad": -0.06625778983757202
+        },
+        {
+          "frame": 107,
+          "time_s": 10.699999760836363,
+          "actual_xy": [
+            -2.0968194007873535,
+            -0.27589133381843567
+          ],
+          "continuous_reference_progress_m": 1.1977468940542455,
+          "cross_track_m": 0.07070656459649688,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.16925958820607478,
+          "actual_speed_m_s": 0.33500574834179353,
+          "course_tangent_error_rad": -0.12284785940914666
+        },
+        {
+          "frame": 108,
+          "time_s": 10.799999758601189,
+          "actual_xy": [
+            -2.0662119388580322,
+            -0.2895679175853729
+          ],
+          "continuous_reference_progress_m": 1.2308915812251613,
+          "cross_track_m": 0.06978523305542172,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.052407457031999005,
+          "actual_speed_m_s": 0.335457721796143,
+          "course_tangent_error_rad": -0.046390791980774004
+        },
+        {
+          "frame": 109,
+          "time_s": 10.899999756366014,
+          "actual_xy": [
+            -2.036238193511963,
+            -0.3048293888568878
+          ],
+          "continuous_reference_progress_m": 1.2644241932259397,
+          "cross_track_m": 0.0671580962398862,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.06561856123247267,
+          "actual_speed_m_s": 0.3363911720363978,
+          "course_tangent_error_rad": -0.09080318363297524
+        },
+        {
+          "frame": 110,
+          "time_s": 10.99999975413084,
+          "actual_xy": [
+            -2.006760835647583,
+            -0.32131215929985046
+          ],
+          "continuous_reference_progress_m": 1.2979656591983368,
+          "cross_track_m": 0.06321266742128633,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.07925395511956879,
+          "actual_speed_m_s": 0.33747323808392937,
+          "course_tangent_error_rad": -0.12215942979955319
+        },
+        {
+          "frame": 111,
+          "time_s": 11.099999751895666,
+          "actual_xy": [
+            -1.9776071310043335,
+            -0.3385677933692932
+          ],
+          "continuous_reference_progress_m": 1.331503924871508,
+          "cross_track_m": 0.058429348782502014,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.09271556739341236,
+          "actual_speed_m_s": 0.3381490986073621,
+          "course_tangent_error_rad": -0.14012401519649798
+        },
+        {
+          "frame": 112,
+          "time_s": 11.199999749660492,
+          "actual_xy": [
+            -1.948596715927124,
+            -0.3561159372329712
+          ],
+          "continuous_reference_progress_m": 1.3650217679206607,
+          "cross_track_m": 0.0533209504675032,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.1054750129794777,
+          "actual_speed_m_s": 0.3380945913736275,
+          "course_tangent_error_rad": -0.14485763254004214
+        },
+        {
+          "frame": 113,
+          "time_s": 11.299999747425318,
+          "actual_xy": [
+            -1.9195703268051147,
+            -0.3735194504261017
+          ],
+          "continuous_reference_progress_m": 1.3984990122656007,
+          "cross_track_m": 0.048352283846069294,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.11707412692020958,
+          "actual_speed_m_s": 0.3373935969650734,
+          "course_tangent_error_rad": -0.13759563332737335
+        },
+        {
+          "frame": 114,
+          "time_s": 11.399999745190144,
+          "actual_xy": [
+            -1.8904097080230713,
+            -0.390437513589859
+          ],
+          "continuous_reference_progress_m": 1.431914462639028,
+          "cross_track_m": 0.04388347804299998,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.12729755082310268,
+          "actual_speed_m_s": 0.33626746680682296,
+          "course_tangent_error_rad": -0.12222697042833097
+        },
+        {
+          "frame": 115,
+          "time_s": 11.49999974295497,
+          "actual_xy": [
+            -1.8610504865646362,
+            -0.4066782593727112
+          ],
+          "continuous_reference_progress_m": 1.4652541544409463,
+          "cross_track_m": 0.04011642896158628,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.13600821130186924,
+          "actual_speed_m_s": 0.33492332537632896,
+          "course_tangent_error_rad": -0.10295524293528624
+        },
+        {
+          "frame": 116,
+          "time_s": 11.599999740719795,
+          "actual_xy": [
+            -1.8314882516860962,
+            -0.4222199320793152
+          ],
+          "continuous_reference_progress_m": 1.4969776470295766,
+          "cross_track_m": 0.03710473771924399,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.1432003269722837,
+          "actual_speed_m_s": 0.3337351540341526,
+          "course_tangent_error_rad": -0.08501779711820934
+        },
+        {
+          "frame": 117,
+          "time_s": 11.699999738484621,
+          "actual_xy": [
+            -1.8017774820327759,
+            -0.4371964633464813
+          ],
+          "continuous_reference_progress_m": 1.5269527693071556,
+          "cross_track_m": 0.03878772256334276,
+          "nearest_segment": 5,
+          "tangent_rad": -0.5217920723381788,
+          "body_tangent_error_rad": -0.020029936632975254,
+          "actual_speed_m_s": 0.3327811996186778,
+          "course_tangent_error_rad": 0.056196372997058486
+        },
+        {
+          "frame": 118,
+          "time_s": 11.799999736249447,
+          "actual_xy": [
+            -1.7720259428024292,
+            -0.4518809914588928
+          ],
+          "continuous_reference_progress_m": 1.5600644680425177,
+          "cross_track_m": 0.04088649823445956,
+          "nearest_segment": 5,
+          "tangent_rad": -0.5217920723381788,
+          "body_tangent_error_rad": -0.024802750686244046,
+          "actual_speed_m_s": 0.3319832426889465,
+          "course_tangent_error_rad": 0.05930164965405238
+        },
+        {
+          "frame": 119,
+          "time_s": 11.899999734014273,
+          "actual_xy": [
+            -1.7423893213272095,
+            -0.46664533019065857
+          ],
+          "continuous_reference_progress_m": 1.5931163218027944,
+          "cross_track_m": 0.042858804919804636,
+          "nearest_segment": 5,
+          "tangent_rad": -0.5217920723381788,
+          "body_tangent_error_rad": -0.028915472020769162,
+          "actual_speed_m_s": 0.3314572021745656,
+          "course_tangent_error_rad": 0.04992847548208612
+        }
+      ]
+    },
+    "candidate": {
+      "first_reference_frame": 60,
+      "next_rebuild_frame": 150,
+      "sampled_prefix_rows": 90,
+      "reference_polyline_length_m": 2.096975202198245,
+      "last_projection_progress_m": 1.6081623571068184,
+      "maximum_projection_progress_m": 1.6081623571068184,
+      "cross_track_rms_m": 0.05230971983974446,
+      "cross_track_peak_m": 0.0986009214334002,
+      "sampled_actual_travel_m": 1.7248847528738454,
+      "records": [
+        {
+          "frame": 60,
+          "time_s": 5.999999865889549,
+          "actual_xy": [
+            -3.266752243041992,
+            -0.005917796865105629
+          ],
+          "continuous_reference_progress_m": 0.0,
+          "cross_track_m": 0.0,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.12408379912376422,
+          "actual_speed_m_s": 0.013535673458142378,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 61,
+          "time_s": 6.099999863654375,
+          "actual_xy": [
+            -3.2653656005859375,
+            -0.0059819272719323635
+          ],
+          "continuous_reference_progress_m": 0.0013837618005818457,
+          "cross_track_m": 0.00010996949242233998,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.12462815372934122,
+          "actual_speed_m_s": 0.014818535327797519,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 62,
+          "time_s": 6.199999861419201,
+          "actual_xy": [
+            -3.263874053955078,
+            -0.006575724575668573
+          ],
+          "continuous_reference_progress_m": 0.0029379120644993043,
+          "cross_track_m": 0.000292427757962925,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.1263779056386345,
+          "actual_speed_m_s": 0.019357461907242347,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 63,
+          "time_s": 6.299999859184027,
+          "actual_xy": [
+            -3.262152671813965,
+            -0.008090664632618427
+          ],
+          "continuous_reference_progress_m": 0.004835408559708406,
+          "cross_track_m": 0.0015799474287113888,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.1293296225344811,
+          "actual_speed_m_s": 0.028423538554284603,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 64,
+          "time_s": 6.3999998569488525,
+          "actual_xy": [
+            -3.2600231170654297,
+            -0.010426366701722145
+          ],
+          "continuous_reference_progress_m": 0.0072406185610028526,
+          "cross_track_m": 0.0036306722840484472,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.13185996394004373,
+          "actual_speed_m_s": 0.034547040114317605,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 65,
+          "time_s": 6.499999854713678,
+          "actual_xy": [
+            -3.257270336151123,
+            -0.013292765244841576
+          ],
+          "continuous_reference_progress_m": 0.010330590085068212,
+          "cross_track_m": 0.006129896033662174,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.13234895016427917,
+          "actual_speed_m_s": 0.04547497594397116,
+          "course_tangent_error_rad": null
+        },
+        {
+          "frame": 66,
+          "time_s": 6.599999852478504,
+          "actual_xy": [
+            -3.253624677658081,
+            -0.017275819554924965
+          ],
+          "continuous_reference_progress_m": 0.014446210017377847,
+          "cross_track_m": 0.009625210047844371,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.13194588137756513,
+          "actual_speed_m_s": 0.06138935005285782,
+          "course_tangent_error_rad": -0.6420753074262673
+        },
+        {
+          "frame": 67,
+          "time_s": 6.69999985024333,
+          "actual_xy": [
+            -3.2487998008728027,
+            -0.022738967090845108
+          ],
+          "continuous_reference_progress_m": 0.019917065479135933,
+          "cross_track_m": 0.014441345169381154,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.131496561797515,
+          "actual_speed_m_s": 0.08102865065192787,
+          "course_tangent_error_rad": -0.6643640544403544
+        },
+        {
+          "frame": 68,
+          "time_s": 6.799999848008156,
+          "actual_xy": [
+            -3.2425239086151123,
+            -0.029764950275421143
+          ],
+          "continuous_reference_progress_m": 0.027023173943354618,
+          "cross_track_m": 0.02062636625542792,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.13073489124180737,
+          "actual_speed_m_s": 0.09875975706871748,
+          "course_tangent_error_rad": -0.6267046530735376
+        },
+        {
+          "frame": 69,
+          "time_s": 6.899999845772982,
+          "actual_xy": [
+            -3.2345967292785645,
+            -0.03748835250735283
+          ],
+          "continuous_reference_progress_m": 0.0358548889090893,
+          "cross_track_m": 0.027296593015742495,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.12646826972119563,
+          "actual_speed_m_s": 0.11567916664714924,
+          "course_tangent_error_rad": -0.5683291801277504
+        },
+        {
+          "frame": 70,
+          "time_s": 6.9999998435378075,
+          "actual_xy": [
+            -3.224811315536499,
+            -0.046107593923807144
+          ],
+          "continuous_reference_progress_m": 0.046642370018920784,
+          "cross_track_m": 0.03462297657132797,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.1203738660049547,
+          "actual_speed_m_s": 0.1365276531499291,
+          "course_tangent_error_rad": -0.535076646925349
+        },
+        {
+          "frame": 71,
+          "time_s": 7.099999841302633,
+          "actual_xy": [
+            -3.213024616241455,
+            -0.055816587060689926
+          ],
+          "continuous_reference_progress_m": 0.05955181911866613,
+          "cross_track_m": 0.04277999514093481,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.11441721624863677,
+          "actual_speed_m_s": 0.15833152958387364,
+          "course_tangent_error_rad": -0.5127458008215644
+        },
+        {
+          "frame": 72,
+          "time_s": 7.199999839067459,
+          "actual_xy": [
+            -3.199225902557373,
+            -0.06649628281593323
+          ],
+          "continuous_reference_progress_m": 0.07457897674290259,
+          "cross_track_m": 0.05164819306927322,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.10914668577596087,
+          "actual_speed_m_s": 0.17572104501217176,
+          "course_tangent_error_rad": -0.4690320271953965
+        },
+        {
+          "frame": 73,
+          "time_s": 7.299999836832285,
+          "actual_xy": [
+            -3.183528423309326,
+            -0.07714278995990753
+          ],
+          "continuous_reference_progress_m": 0.09148580673930883,
+          "cross_track_m": 0.060245754850509585,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.1016504294026217,
+          "actual_speed_m_s": 0.18980015302404274,
+          "course_tangent_error_rad": -0.4148395213929521
+        },
+        {
+          "frame": 74,
+          "time_s": 7.399999834597111,
+          "actual_xy": [
+            -3.166095733642578,
+            -0.0875801295042038
+          ],
+          "continuous_reference_progress_m": 0.11008800969800442,
+          "cross_track_m": 0.06841856164276715,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.09281100900694295,
+          "actual_speed_m_s": 0.20114608600564507,
+          "course_tangent_error_rad": -0.3554820610328502
+        },
+        {
+          "frame": 75,
+          "time_s": 7.499999832361937,
+          "actual_xy": [
+            -3.1471493244171143,
+            -0.0971294492483139
+          ],
+          "continuous_reference_progress_m": 0.13008085102027922,
+          "cross_track_m": 0.07552083071513657,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.0821041219999028,
+          "actual_speed_m_s": 0.20925823317047712,
+          "course_tangent_error_rad": -0.277370415808579
+        },
+        {
+          "frame": 76,
+          "time_s": 7.599999830126762,
+          "actual_xy": [
+            -3.126885414123535,
+            -0.10519744455814362
+          ],
+          "continuous_reference_progress_m": 0.15119537944812148,
+          "cross_track_m": 0.0809884899926973,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.0697198560731489,
+          "actual_speed_m_s": 0.2160384012354036,
+          "course_tangent_error_rad": -0.18855607958160459
+        },
+        {
+          "frame": 77,
+          "time_s": 7.699999827891588,
+          "actual_xy": [
+            -3.1055305004119873,
+            -0.11132729798555374
+          ],
+          "continuous_reference_progress_m": 0.17314968976863804,
+          "cross_track_m": 0.08439667147548939,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.056805430081842356,
+          "actual_speed_m_s": 0.22009355030574676,
+          "course_tangent_error_rad": -0.08765006230274963
+        },
+        {
+          "frame": 78,
+          "time_s": 7.799999825656414,
+          "actual_xy": [
+            -3.083369255065918,
+            -0.11487966030836105
+          ],
+          "continuous_reference_progress_m": 0.19558130894994324,
+          "cross_track_m": 0.08514669431919518,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.04420515923124535,
+          "actual_speed_m_s": 0.22232738485234102,
+          "course_tangent_error_rad": 0.03270862954395515
+        },
+        {
+          "frame": 79,
+          "time_s": 7.89999982342124,
+          "actual_xy": [
+            -3.0606586933135986,
+            -0.11552990972995758
+          ],
+          "continuous_reference_progress_m": 0.21819460401928265,
+          "cross_track_m": 0.08294866667533186,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.03301002879110504,
+          "actual_speed_m_s": 0.2256139268729466,
+          "course_tangent_error_rad": 0.1456465753526066
+        },
+        {
+          "frame": 80,
+          "time_s": 7.999999821186066,
+          "actual_xy": [
+            -3.0376651287078857,
+            -0.11363314092159271
+          ],
+          "continuous_reference_progress_m": 0.2407698113181623,
+          "cross_track_m": 0.07818822965735867,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.02444188147941384,
+          "actual_speed_m_s": 0.2290461996589132,
+          "course_tangent_error_rad": 0.23717881160280907
+        },
+        {
+          "frame": 81,
+          "time_s": 8.099999818950891,
+          "actual_xy": [
+            -3.0146522521972656,
+            -0.1096370741724968
+          ],
+          "continuous_reference_progress_m": 0.26310136506702564,
+          "cross_track_m": 0.0713425929508201,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.01849576669598374,
+          "actual_speed_m_s": 0.2314886508143573,
+          "course_tangent_error_rad": 0.3109773325746428
+        },
+        {
+          "frame": 82,
+          "time_s": 8.199999816715717,
+          "actual_xy": [
+            -2.99182391166687,
+            -0.10407872498035431
+          ],
+          "continuous_reference_progress_m": 0.28505425071251744,
+          "cross_track_m": 0.0629700671103435,
+          "nearest_segment": 0,
+          "tangent_rad": -0.12552049355686973,
+          "body_tangent_error_rad": 0.014342781910546165,
+          "actual_speed_m_s": 0.23215587120137096,
+          "course_tangent_error_rad": 0.36283179641183816
+        },
+        {
+          "frame": 83,
+          "time_s": 8.299999814480543,
+          "actual_xy": [
+            -2.9692940711975098,
+            -0.09724889695644379
+          ],
+          "continuous_reference_progress_m": 0.3194375359212651,
+          "cross_track_m": 0.04994003740121737,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.25832523218578185,
+          "actual_speed_m_s": 0.2327285971617265,
+          "course_tangent_error_rad": 0.6644259286081793
+        },
+        {
+          "frame": 84,
+          "time_s": 8.399999812245369,
+          "actual_xy": [
+            -2.9471426010131836,
+            -0.08985104411840439
+          ],
+          "continuous_reference_progress_m": 0.3373596770773851,
+          "cross_track_m": 0.03496630325370125,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.2533415891447999,
+          "actual_speed_m_s": 0.22979977548738958,
+          "course_tangent_error_rad": 0.6673260455688479
+        },
+        {
+          "frame": 85,
+          "time_s": 8.499999810010195,
+          "actual_xy": [
+            -2.925393581390381,
+            -0.08308276534080505
+          ],
+          "continuous_reference_progress_m": 0.35513696879552004,
+          "cross_track_m": 0.02072560975469319,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.2479155854975632,
+          "actual_speed_m_s": 0.22440748925252121,
+          "course_tangent_error_rad": 0.625103738698356
+        },
+        {
+          "frame": 86,
+          "time_s": 8.59999980777502,
+          "actual_xy": [
+            -2.9039855003356934,
+            -0.07801132649183273
+          ],
+          "continuous_reference_progress_m": 0.37321628494057746,
+          "cross_track_m": 0.008189112868800258,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.2423010394650591,
+          "actual_speed_m_s": 0.21861306924618357,
+          "course_tangent_error_rad": 0.5385727379969953
+        },
+        {
+          "frame": 87,
+          "time_s": 8.699999805539846,
+          "actual_xy": [
+            -2.8828094005584717,
+            -0.07554785162210464
+          ],
+          "continuous_reference_progress_m": 0.3920316705477903,
+          "cross_track_m": 0.0018347174699733326,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.23672903233545473,
+          "actual_speed_m_s": 0.2136345972615489,
+          "course_tangent_error_rad": 0.4125328573790279
+        },
+        {
+          "frame": 88,
+          "time_s": 8.799999803304672,
+          "actual_xy": [
+            -2.861802339553833,
+            -0.07640102505683899
+          ],
+          "continuous_reference_progress_m": 0.41190043054944475,
+          "cross_track_m": 0.008709082383112727,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.23142642519235812,
+          "actual_speed_m_s": 0.2124276344563371,
+          "course_tangent_error_rad": 0.26154168569786673
+        },
+        {
+          "frame": 89,
+          "time_s": 8.899999801069498,
+          "actual_xy": [
+            -2.8408985137939453,
+            -0.08069362491369247
+          ],
+          "continuous_reference_progress_m": 0.4329286475294639,
+          "cross_track_m": 0.012343698672631692,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.22523036207629765,
+          "actual_speed_m_s": 0.21559872627907786,
+          "course_tangent_error_rad": 0.12187634327144847
+        },
+        {
+          "frame": 90,
+          "time_s": 8.999999798834324,
+          "actual_xy": [
+            -2.8200666904449463,
+            -0.08801835030317307
+          ],
+          "continuous_reference_progress_m": 0.45499671307073697,
+          "cross_track_m": 0.013129159901006788,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.2164739854710005,
+          "actual_speed_m_s": 0.22202884742717724,
+          "course_tangent_error_rad": 0.007730776913620119
+        },
+        {
+          "frame": 91,
+          "time_s": 9.09999979659915,
+          "actual_xy": [
+            -2.7992703914642334,
+            -0.0978768989443779
+          ],
+          "continuous_reference_progress_m": 0.47795668178702977,
+          "cross_track_m": 0.011542695544944135,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.20451408283054917,
+          "actual_speed_m_s": 0.23049864533384168,
+          "course_tangent_error_rad": -0.07840465133675689
+        },
+        {
+          "frame": 92,
+          "time_s": 9.199999794363976,
+          "actual_xy": [
+            -2.778432607650757,
+            -0.10965036600828171
+          ],
+          "continuous_reference_progress_m": 0.5016543161494551,
+          "cross_track_m": 0.008188610485377177,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.18971787888850766,
+          "actual_speed_m_s": 0.23881323338531957,
+          "course_tangent_error_rad": -0.13238665680627681
+        },
+        {
+          "frame": 93,
+          "time_s": 9.299999792128801,
+          "actual_xy": [
+            -2.757472515106201,
+            -0.12278792262077332
+          ],
+          "continuous_reference_progress_m": 0.5259637812916369,
+          "cross_track_m": 0.003609224312121278,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.1737339091542096,
+          "actual_speed_m_s": 0.2468436561766852,
+          "course_tangent_error_rad": -0.16840996380472095
+        },
+        {
+          "frame": 94,
+          "time_s": 9.399999789893627,
+          "actual_xy": [
+            -2.7362992763519287,
+            -0.13641509413719177
+          ],
+          "continuous_reference_progress_m": 0.5506504174981922,
+          "cross_track_m": 0.001348177798713014,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.1577744857315726,
+          "actual_speed_m_s": 0.24876755555283586,
+          "course_tangent_error_rad": -0.161955103852101
+        },
+        {
+          "frame": 95,
+          "time_s": 9.499999787658453,
+          "actual_xy": [
+            -2.7148289680480957,
+            -0.14929834008216858
+          ],
+          "continuous_reference_progress_m": 0.5753420505674325,
+          "cross_track_m": 0.0055045489460481805,
+          "nearest_segment": 1,
+          "tangent_rad": -0.3736880918043973,
+          "body_tangent_error_rad": 0.14245568289245014,
+          "actual_speed_m_s": 0.24528123833023913,
+          "course_tangent_error_rad": -0.11672843053251514
+        },
+        {
+          "frame": 96,
+          "time_s": 9.599999785423279,
+          "actual_xy": [
+            -2.6929962635040283,
+            -0.1603550910949707
+          ],
+          "continuous_reference_progress_m": 0.599740249243816,
+          "cross_track_m": 0.007822392046883148,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.13279604736634942,
+          "actual_speed_m_s": 0.2385566133134841,
+          "course_tangent_error_rad": -0.029842999114157998
+        },
+        {
+          "frame": 97,
+          "time_s": 9.699999783188105,
+          "actual_xy": [
+            -2.6707663536071777,
+            -0.16869112849235535
+          ],
+          "continuous_reference_progress_m": 0.6234772186956189,
+          "cross_track_m": 0.007359040391155962,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.1197928323059978,
+          "actual_speed_m_s": 0.2321873199365712,
+          "course_tangent_error_rad": 0.08742918739291561
+        },
+        {
+          "frame": 98,
+          "time_s": 9.79999978095293,
+          "actual_xy": [
+            -2.6481199264526367,
+            -0.17360948026180267
+          ],
+          "continuous_reference_progress_m": 0.6463390249113404,
+          "cross_track_m": 0.003565801201656197,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.10786288743089756,
+          "actual_speed_m_s": 0.22870518708225115,
+          "course_tangent_error_rad": 0.23400220135730132
+        },
+        {
+          "frame": 99,
+          "time_s": 9.899999778717756,
+          "actual_xy": [
+            -2.625303268432617,
+            -0.17546290159225464
+          ],
+          "continuous_reference_progress_m": 0.6682270746933402,
+          "cross_track_m": 0.003138550412884583,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.09836054496735436,
+          "actual_speed_m_s": 0.22651852771806716,
+          "course_tangent_error_rad": 0.33268252421978195
+        },
+        {
+          "frame": 100,
+          "time_s": 9.999999776482582,
+          "actual_xy": [
+            -2.6024811267852783,
+            -0.17444145679473877
+          ],
+          "continuous_reference_progress_m": 0.6890584636078363,
+          "cross_track_m": 0.012516542454818574,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.09117996538640805,
+          "actual_speed_m_s": 0.22769046198917023,
+          "course_tangent_error_rad": 0.45904198544489194
+        },
+        {
+          "frame": 101,
+          "time_s": 10.099999774247408,
+          "actual_xy": [
+            -2.5796844959259033,
+            -0.1706143468618393
+          ],
+          "continuous_reference_progress_m": 0.708829946103398,
+          "cross_track_m": 0.024492419412469952,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.08552386220575725,
+          "actual_speed_m_s": 0.22956061015694795,
+          "course_tangent_error_rad": 0.5544951199232702
+        },
+        {
+          "frame": 102,
+          "time_s": 10.199999772012234,
+          "actual_xy": [
+            -2.557112693786621,
+            -0.16492293775081635
+          ],
+          "continuous_reference_progress_m": 0.7277039648385606,
+          "cross_track_m": 0.03811775633559483,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.08176359110893738,
+          "actual_speed_m_s": 0.22933749116283927,
+          "course_tangent_error_rad": 0.6118591245447647
+        },
+        {
+          "frame": 103,
+          "time_s": 10.29999976977706,
+          "actual_xy": [
+            -2.5349416732788086,
+            -0.15842264890670776
+          ],
+          "continuous_reference_progress_m": 0.7459067982830548,
+          "cross_track_m": 0.052346767545327105,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.0797875484004722,
+          "actual_speed_m_s": 0.22564161079469547,
+          "course_tangent_error_rad": 0.6296704178679757
+        },
+        {
+          "frame": 104,
+          "time_s": 10.399999767541885,
+          "actual_xy": [
+            -2.513317823410034,
+            -0.15224209427833557
+          ],
+          "continuous_reference_progress_m": 0.7637192311445296,
+          "cross_track_m": 0.0660765663135919,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.0790062200439996,
+          "actual_speed_m_s": 0.21874319482605972,
+          "course_tangent_error_rad": 0.6015040798378815
+        },
+        {
+          "frame": 105,
+          "time_s": 10.499999765306711,
+          "actual_xy": [
+            -2.4923408031463623,
+            -0.14754736423492432
+          ],
+          "continuous_reference_progress_m": 0.7814793153305478,
+          "cross_track_m": 0.07818669756922063,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.07851363542711054,
+          "actual_speed_m_s": 0.20970787765335966,
+          "course_tangent_error_rad": 0.521501334381945
+        },
+        {
+          "frame": 106,
+          "time_s": 10.599999763071537,
+          "actual_xy": [
+            -2.4720773696899414,
+            -0.145412415266037
+          ],
+          "continuous_reference_progress_m": 0.7995216511370006,
+          "cross_track_m": 0.08765447773089215,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.07730248891535618,
+          "actual_speed_m_s": 0.2024420325496169,
+          "course_tangent_error_rad": 0.40358151272862575
+        },
+        {
+          "frame": 107,
+          "time_s": 10.699999760836363,
+          "actual_xy": [
+            -2.4523332118988037,
+            -0.14579640328884125
+          ],
+          "continuous_reference_progress_m": 0.8180117273535799,
+          "cross_track_m": 0.09458962698581738,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.07272022123933297,
+          "actual_speed_m_s": 0.1982504261366598,
+          "course_tangent_error_rad": 0.28394766437316665
+        },
+        {
+          "frame": 108,
+          "time_s": 10.799999758601189,
+          "actual_xy": [
+            -2.4331462383270264,
+            -0.14931075274944305
+          ],
+          "continuous_reference_progress_m": 0.8371401292019426,
+          "cross_track_m": 0.09840994761409823,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.06577100421575244,
+          "actual_speed_m_s": 0.19710089094001412,
+          "course_tangent_error_rad": 0.11348184514806547
+        },
+        {
+          "frame": 109,
+          "time_s": 10.899999756366014,
+          "actual_xy": [
+            -2.41455340385437,
+            -0.15649443864822388
+          ],
+          "continuous_reference_progress_m": 0.8570715708412289,
+          "cross_track_m": 0.0986009214334002,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.058114872693516784,
+          "actual_speed_m_s": 0.20192290104138988,
+          "course_tangent_error_rad": -0.05076825551933739
+        },
+        {
+          "frame": 110,
+          "time_s": 10.99999975413084,
+          "actual_xy": [
+            -2.396409511566162,
+            -0.16682271659374237
+          ],
+          "continuous_reference_progress_m": 0.8777471832185806,
+          "cross_track_m": 0.09570381848260864,
+          "nearest_segment": 2,
+          "tangent_rad": -0.37828139262379473,
+          "body_tangent_error_rad": 0.04904921435612408,
+          "actual_speed_m_s": 0.21015973876654667,
+          "course_tangent_error_rad": -0.17015129653017702
+        },
+        {
+          "frame": 111,
+          "time_s": 11.099999751895666,
+          "actual_xy": [
+            -2.3785741329193115,
+            -0.1795203983783722
+          ],
+          "continuous_reference_progress_m": 0.909345608376149,
+          "cross_track_m": 0.08975351703248027,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.0764305205188962,
+          "actual_speed_m_s": 0.2181767512540114,
+          "course_tangent_error_rad": -0.3638416665894937
+        },
+        {
+          "frame": 112,
+          "time_s": 11.199999749660492,
+          "actual_xy": [
+            -2.3609471321105957,
+            -0.19372443854808807
+          ],
+          "continuous_reference_progress_m": 0.9300659508930131,
+          "cross_track_m": 0.08063576946867901,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.08867956490255935,
+          "actual_speed_m_s": 0.22321494234436098,
+          "course_tangent_error_rad": -0.40443907050253003
+        },
+        {
+          "frame": 113,
+          "time_s": 11.299999747425318,
+          "actual_xy": [
+            -2.3434362411499023,
+            -0.20853254199028015
+          ],
+          "continuous_reference_progress_m": 0.9508316707225847,
+          "cross_track_m": 0.07090457685154877,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.10131239065885955,
+          "actual_speed_m_s": 0.22557554134887117,
+          "course_tangent_error_rad": -0.4202102986963481
+        },
+        {
+          "frame": 114,
+          "time_s": 11.399999745190144,
+          "actual_xy": [
+            -2.326000452041626,
+            -0.223362535238266
+          ],
+          "continuous_reference_progress_m": 0.9715305919247748,
+          "cross_track_m": 0.06113267311537109,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.11288642258237491,
+          "actual_speed_m_s": 0.22483511736543743,
+          "course_tangent_error_rad": -0.4058550472611473
+        },
+        {
+          "frame": 115,
+          "time_s": 11.49999974295497,
+          "actual_xy": [
+            -2.308419704437256,
+            -0.2371876835823059
+          ],
+          "continuous_reference_progress_m": 0.9921075077489874,
+          "cross_track_m": 0.05236865872546138,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.12361755205668246,
+          "actual_speed_m_s": 0.2188817220421759,
+          "course_tangent_error_rad": -0.35083229004611693
+        },
+        {
+          "frame": 116,
+          "time_s": 11.599999740719795,
+          "actual_xy": [
+            -2.2904937267303467,
+            -0.24906417727470398
+          ],
+          "continuous_reference_progress_m": 1.0125097245333887,
+          "cross_track_m": 0.04557591778704284,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.13361406817591748,
+          "actual_speed_m_s": 0.21028384879129872,
+          "course_tangent_error_rad": -0.258113061711585
+        },
+        {
+          "frame": 117,
+          "time_s": 11.699999738484621,
+          "actual_xy": [
+            -2.272020101547241,
+            -0.2583029270172119
+          ],
+          "continuous_reference_progress_m": 1.0327530229123054,
+          "cross_track_m": 0.0414724808187556,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.14278075943048174,
+          "actual_speed_m_s": 0.20342408154960745,
+          "course_tangent_error_rad": -0.13400967395657037
+        },
+        {
+          "frame": 118,
+          "time_s": 11.799999736249447,
+          "actual_xy": [
+            -2.2529287338256836,
+            -0.2647244334220886
+          ],
+          "continuous_reference_progress_m": 1.0528582808181408,
+          "cross_track_m": 0.040249913631460216,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.15028484508792106,
+          "actual_speed_m_s": 0.19998911438109565,
+          "course_tangent_error_rad": -0.011463789495052001
+        },
+        {
+          "frame": 119,
+          "time_s": 11.899999734014273,
+          "actual_xy": [
+            -2.233356237411499,
+            -0.2686278223991394
+          ],
+          "continuous_reference_progress_m": 1.072771586832627,
+          "cross_track_m": 0.041583819536258206,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.15498494647625183,
+          "actual_speed_m_s": 0.19898040056103053,
+          "course_tangent_error_rad": 0.09777879882109808
+        },
+        {
+          "frame": 120,
+          "time_s": 11.999999731779099,
+          "actual_xy": [
+            -2.213472604751587,
+            -0.2704547047615051
+          ],
+          "continuous_reference_progress_m": 1.092443949263797,
+          "cross_track_m": 0.045003542229246025,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.1565481622747833,
+          "actual_speed_m_s": 0.19887313991650657,
+          "course_tangent_error_rad": 0.1821831648293064
+        },
+        {
+          "frame": 121,
+          "time_s": 12.099999729543924,
+          "actual_xy": [
+            -2.193469524383545,
+            -0.27081727981567383
+          ],
+          "continuous_reference_progress_m": 1.111849900995618,
+          "cross_track_m": 0.04986807943873389,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.155414645809675,
+          "actual_speed_m_s": 0.1984942457135535,
+          "course_tangent_error_rad": 0.2362087890244564
+        },
+        {
+          "frame": 122,
+          "time_s": 12.19999972730875,
+          "actual_xy": [
+            -2.173513412475586,
+            -0.27033019065856934
+          ],
+          "continuous_reference_progress_m": 1.130989010505424,
+          "cross_track_m": 0.055540657820880364,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.15307637884403036,
+          "actual_speed_m_s": 0.19817399053478793,
+          "course_tangent_error_rad": 0.27595182078953995
+        },
+        {
+          "frame": 123,
+          "time_s": 12.299999725073576,
+          "actual_xy": [
+            -2.153672456741333,
+            -0.2694075107574463
+          ],
+          "continuous_reference_progress_m": 1.149903392052767,
+          "cross_track_m": 0.061603745592804175,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.15181221973309222,
+          "actual_speed_m_s": 0.19604856964600803,
+          "course_tangent_error_rad": 0.27357430248618586
+        },
+        {
+          "frame": 124,
+          "time_s": 12.399999722838402,
+          "actual_xy": [
+            -2.134263515472412,
+            -0.26914647221565247
+          ],
+          "continuous_reference_progress_m": 1.1685731793024678,
+          "cross_track_m": 0.06691544836608078,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.15149164047752217,
+          "actual_speed_m_s": 0.19181130279897246,
+          "course_tangent_error_rad": 0.21711417433093505
+        },
+        {
+          "frame": 125,
+          "time_s": 12.499999720603228,
+          "actual_xy": [
+            -2.11551833152771,
+            -0.2705467939376831
+          ],
+          "continuous_reference_progress_m": 1.1870352577286019,
+          "cross_track_m": 0.07045020185581512,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.15177659482017392,
+          "actual_speed_m_s": 0.18771592630335582,
+          "course_tangent_error_rad": 0.11171479608821144
+        },
+        {
+          "frame": 126,
+          "time_s": 12.599999718368053,
+          "actual_xy": [
+            -2.097583770751953,
+            -0.27442121505737305
+          ],
+          "continuous_reference_progress_m": 1.1977468940542455,
+          "cross_track_m": 0.07178986723271778,
+          "nearest_segment": 3,
+          "tangent_rad": -0.263735420909837,
+          "body_tangent_error_rad": -0.15250450582606057,
+          "actual_speed_m_s": 0.18530776484095576,
+          "course_tangent_error_rad": -0.02992767424981624
+        },
+        {
+          "frame": 127,
+          "time_s": 12.69999971613288,
+          "actual_xy": [
+            -2.080556869506836,
+            -0.28125855326652527
+          ],
+          "continuous_reference_progress_m": 1.2144585959389091,
+          "cross_track_m": 0.07197145474686721,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.024949547444036657,
+          "actual_speed_m_s": 0.18669137229683777,
+          "course_tangent_error_rad": -0.06442454133822872
+        },
+        {
+          "frame": 128,
+          "time_s": 12.799999713897705,
+          "actual_xy": [
+            -2.064476728439331,
+            -0.29125675559043884
+          ],
+          "continuous_reference_progress_m": 1.2331410548911024,
+          "cross_track_m": 0.06888913192789117,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.02794904204846116,
+          "actual_speed_m_s": 0.19201261377724674,
+          "course_tangent_error_rad": -0.2106323945459283
+        },
+        {
+          "frame": 129,
+          "time_s": 12.899999711662531,
+          "actual_xy": [
+            -2.0492022037506104,
+            -0.30392563343048096
+          ],
+          "continuous_reference_progress_m": 1.2521014241215878,
+          "cross_track_m": 0.06303114858582641,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.034475990382921484,
+          "actual_speed_m_s": 0.19936974932539975,
+          "course_tangent_error_rad": -0.32202292481982875
+        },
+        {
+          "frame": 130,
+          "time_s": 12.999999709427357,
+          "actual_xy": [
+            -2.034593343734741,
+            -0.318707138299942
+          ],
+          "continuous_reference_progress_m": 1.2712554094343322,
+          "cross_track_m": 0.05496662604519651,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.044955231161099896,
+          "actual_speed_m_s": 0.2066716553788041,
+          "course_tangent_error_rad": -0.4025283630393175
+        },
+        {
+          "frame": 131,
+          "time_s": 13.099999707192183,
+          "actual_xy": [
+            -2.0204668045043945,
+            -0.33495697379112244
+          ],
+          "continuous_reference_progress_m": 1.290525793904646,
+          "cross_track_m": 0.045360974246216254,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.05824478224395557,
+          "actual_speed_m_s": 0.21259353321824598,
+          "course_tangent_error_rad": -0.4490331732901529
+        },
+        {
+          "frame": 132,
+          "time_s": 13.199999704957008,
+          "actual_xy": [
+            -2.006653070449829,
+            -0.3521748483181
+          ],
+          "continuous_reference_progress_m": 1.3098777021500112,
+          "cross_track_m": 0.0347412709066704,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.07196536556215793,
+          "actual_speed_m_s": 0.21799769912278816,
+          "course_tangent_error_rad": -0.4806668961253284
+        },
+        {
+          "frame": 133,
+          "time_s": 13.299999702721834,
+          "actual_xy": [
+            -1.9928892850875854,
+            -0.36955440044403076
+          ],
+          "continuous_reference_progress_m": 1.3292453460544162,
+          "cross_track_m": 0.023953083422759026,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.08484168429937711,
+          "actual_speed_m_s": 0.21652618789748398,
+          "course_tangent_error_rad": -0.46680897563643553
+        },
+        {
+          "frame": 134,
+          "time_s": 13.39999970048666,
+          "actual_xy": [
+            -1.9788174629211426,
+            -0.3859625458717346
+          ],
+          "continuous_reference_progress_m": 1.3485257719510617,
+          "cross_track_m": 0.014180233648786606,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.09672400787140312,
+          "actual_speed_m_s": 0.20921510639761573,
+          "course_tangent_error_rad": -0.41172589435413665
+        },
+        {
+          "frame": 135,
+          "time_s": 13.499999698251486,
+          "actual_xy": [
+            -1.9640923738479614,
+            -0.4004415273666382
+          ],
+          "continuous_reference_progress_m": 1.367671347277851,
+          "cross_track_m": 0.006439684653455547,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.10753485018122788,
+          "actual_speed_m_s": 0.1998210343816709,
+          "course_tangent_error_rad": -0.3120710031450904
+        },
+        {
+          "frame": 136,
+          "time_s": 13.599999696016312,
+          "actual_xy": [
+            -1.9483925104141235,
+            -0.41222652792930603
+          ],
+          "continuous_reference_progress_m": 1.3866863697482814,
+          "cross_track_m": 0.0015610710643032938,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.11736662071735182,
+          "actual_speed_m_s": 0.19165341932249075,
+          "course_tangent_error_rad": -0.16835557979789284
+        },
+        {
+          "frame": 137,
+          "time_s": 13.699999693781137,
+          "actual_xy": [
+            -1.9314910173416138,
+            -0.4207630753517151
+          ],
+          "continuous_reference_progress_m": 1.405568200243425,
+          "cross_track_m": 0.0001434719927037607,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.12611163974132023,
+          "actual_speed_m_s": 0.1874984173828558,
+          "course_tangent_error_rad": -0.009860089232980762
+        },
+        {
+          "frame": 138,
+          "time_s": 13.799999691545963,
+          "actual_xy": [
+            -1.9137678146362305,
+            -0.4266216456890106
+          ],
+          "continuous_reference_progress_m": 1.4241841936643735,
+          "cross_track_m": 0.001514438616786203,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.13114543166860715,
+          "actual_speed_m_s": 0.18627350224319866,
+          "course_tangent_error_rad": 0.11853060496710466
+        },
+        {
+          "frame": 139,
+          "time_s": 13.899999689310789,
+          "actual_xy": [
+            -1.8951539993286133,
+            -0.429688036441803
+          ],
+          "continuous_reference_progress_m": 1.4425542961219147,
+          "cross_track_m": 0.005805849603202586,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.13360721118804575,
+          "actual_speed_m_s": 0.1904048611345193,
+          "course_tangent_error_rad": 0.27398144821358006
+        },
+        {
+          "frame": 140,
+          "time_s": 13.999999687075615,
+          "actual_xy": [
+            -1.8754944801330566,
+            -0.42985135316848755
+          ],
+          "continuous_reference_progress_m": 1.4607793453517868,
+          "cross_track_m": 0.013179515443367599,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.13524888041441185,
+          "actual_speed_m_s": 0.19775633015315217,
+          "course_tangent_error_rad": 0.4025974230422009
+        },
+        {
+          "frame": 141,
+          "time_s": 14.09999968484044,
+          "actual_xy": [
+            -1.8551286458969116,
+            -0.42791977524757385
+          ],
+          "continuous_reference_progress_m": 1.478855120484224,
+          "cross_track_m": 0.022758896987092703,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.1353682235601661,
+          "actual_speed_m_s": 0.2028134478999793,
+          "course_tangent_error_rad": 0.4759685290878166
+        },
+        {
+          "frame": 142,
+          "time_s": 14.199999682605267,
+          "actual_xy": [
+            -1.8344889879226685,
+            -0.4248996078968048
+          ],
+          "continuous_reference_progress_m": 1.4967672188134347,
+          "cross_track_m": 0.03344878125050138,
+          "nearest_segment": 4,
+          "tangent_rad": -0.39276374662400537,
+          "body_tangent_error_rad": -0.1333388926767718,
+          "actual_speed_m_s": 0.20409594927473004,
+          "course_tangent_error_rad": 0.505089044976518
+        },
+        {
+          "frame": 143,
+          "time_s": 14.299999680370092,
+          "actual_xy": [
+            -1.8139623403549194,
+            -0.4217822253704071
+          ],
+          "continuous_reference_progress_m": 1.5087063939546386,
+          "cross_track_m": 0.04607739273481293,
+          "nearest_segment": 5,
+          "tangent_rad": -0.5217920723381788,
+          "body_tangent_error_rad": -0.00038544298758891316,
+          "actual_speed_m_s": 0.20153120332801822,
+          "course_tangent_error_rad": 0.6185136490850591
+        },
+        {
+          "frame": 144,
+          "time_s": 14.399999678134918,
+          "actual_xy": [
+            -1.7939320802688599,
+            -0.41957056522369385
+          ],
+          "continuous_reference_progress_m": 1.5249688062861257,
+          "cross_track_m": 0.0579785147357187,
+          "nearest_segment": 5,
+          "tangent_rad": -0.5217920723381788,
+          "body_tangent_error_rad": 0.004667219089740993,
+          "actual_speed_m_s": 0.1940450062008775,
+          "course_tangent_error_rad": 0.5600540993476995
+        },
+        {
+          "frame": 145,
+          "time_s": 14.499999675899744,
+          "actual_xy": [
+            -1.7748594284057617,
+            -0.4192093312740326
+          ],
+          "continuous_reference_progress_m": 1.5413233581857084,
+          "cross_track_m": 0.0677981466647263,
+          "nearest_segment": 5,
+          "tangent_rad": -0.5217920723381788,
+          "body_tangent_error_rad": 0.009882642200239822,
+          "actual_speed_m_s": 0.18342427330820565,
+          "course_tangent_error_rad": 0.450142505043686
+        },
+        {
+          "frame": 146,
+          "time_s": 14.59999967366457,
+          "actual_xy": [
+            -1.7570295333862305,
+            -0.42131584882736206
+          ],
+          "continuous_reference_progress_m": 1.5578305427689167,
+          "cross_track_m": 0.07485898441572167,
+          "nearest_segment": 5,
+          "tangent_rad": -0.5217920723381788,
+          "body_tangent_error_rad": 0.01348579963528751,
+          "actual_speed_m_s": 0.1756402356835681,
+          "course_tangent_error_rad": 0.33126661549611125
+        },
+        {
+          "frame": 147,
+          "time_s": 14.699999671429396,
+          "actual_xy": [
+            -1.7403998374938965,
+            -0.4257546365261078
+          ],
+          "continuous_reference_progress_m": 1.57445972589635,
+          "cross_track_m": 0.07929969271737054,
+          "nearest_segment": 5,
+          "tangent_rad": -0.5217920723381788,
+          "body_tangent_error_rad": 0.012912242331010404,
+          "actual_speed_m_s": 0.16951810381221807,
+          "course_tangent_error_rad": 0.17094754185026284
+        },
+        {
+          "frame": 148,
+          "time_s": 14.799999669194221,
+          "actual_xy": [
+            -1.7253843545913696,
+            -0.43328574299812317
+          ],
+          "continuous_reference_progress_m": 1.59123082211431,
+          "cross_track_m": 0.08025500582668976,
+          "nearest_segment": 5,
+          "tangent_rad": -0.5217920723381788,
+          "body_tangent_error_rad": 0.010435330910909535,
+          "actual_speed_m_s": 0.16856786895467923,
+          "course_tangent_error_rad": -0.03978643750306077
+        },
+        {
+          "frame": 149,
+          "time_s": 14.899999666959047,
+          "actual_xy": [
+            -1.7122174501419067,
+            -0.44435396790504456
+          ],
+          "continuous_reference_progress_m": 1.6081623571068184,
+          "cross_track_m": 0.07722249891508202,
+          "nearest_segment": 5,
+          "tangent_rad": -0.5217920723381788,
+          "body_tangent_error_rad": 0.007759219666051642,
+          "actual_speed_m_s": 0.1759255470864975,
+          "course_tangent_error_rad": -0.25905118127036886
+        }
+      ]
+    }
+  },
+  "identical_complete_first_reference_xy": true,
+  "reference_was_known_at_start": true,
+  "current_actual_state_retrospective_only": true,
+  "source_input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/audit_first_reference_shape_attribution_v1.py": "275524c1799b1fcd8440c090070312b25aca74114c69d15a7f83f44cb0c40f2c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/first_reference_shape_attribution_scope_v1.json": "9e8d311d81493b6ac8e7c6df740644a527316e113d13d1035461b31c2780d75a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bank_qualified_navigation_e1_b0_run_v1/policy_records.json": "22324931cf73802691d6e566f5fd47e1fc5af60e73e8e5d43b71ae0e48360f27",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bank_qualified_navigation_e1_b0_run_v1/states.json": "8417061811946ecb4b8541bc5d1a54bfdd28767aa197b578072638866bdf47c5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bank_qualified_navigation_e1_b0_run_v1/local_plans/frame_060.json": "281c8da56f833a6a2eb8cc573257dbfbe4675232c37b1c551d34a7564afa37f6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bank_qualified_navigation_e1_candidate_run_v1/policy_records.json": "5e90a5807dfe0b394e84a76475732f137f5beea4344efd1496167238d170cb1c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bank_qualified_navigation_e1_candidate_run_v1/states.json": "d43e7d1d60cce778cbd8ce239775d18dfea5b9e39b2cf547142626cc6bcc26e4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bank_qualified_navigation_e1_candidate_run_v1/local_plans/frame_060.json": "3bd31974f4319b4c652644c910f4ed5ae29455330fb901603cc482e94882106b"
+  },
+  "no_solver_actor_or_physics": true,
+  "not_control_or_model_admission": true,
+  "whole_mission_complete": false
+}

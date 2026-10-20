@@ -1,0 +1,52 @@
+{
+  "stage": "frozen_interface_pilot_design_not_launch_admission",
+  "question": "Can live native/RGB anchors and original raw-action diagnostics produce exact precommitted complete/censored windows with durable provenance?",
+  "episode": {
+    "manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+    "manifest_sha256": "41fa023519cf805bedd3b0177a91638479976160a9cdb675442d76a7f61c75ce",
+    "episode_id": "golden_e0_0001",
+    "scene_root": "/home/an/project/NavDP/assets/scenes",
+    "reference_native_protocol": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json",
+    "reference_protocol_sha256": "c9fe12669adbaed743952836d76d58c849353c747259a5da39776901a80450b0",
+    "duration_s": 35,
+    "original_camera_lighting_control_rules_unchanged": true
+  },
+  "prospective_program": {
+    "raw_pair": [
+      0.0,
+      0.0
+    ],
+    "physics_dt_s": 0.02,
+    "controls_per_block": 5,
+    "blocks_per_window": 5,
+    "windows_if_uninterrupted": 70,
+    "total_blocks": 350,
+    "total_raw_requests": 1750,
+    "commit_before_first_block_of_each_window": true
+  },
+  "budget": {
+    "physical_episodes_max": 1,
+    "used": 0,
+    "retry": 0,
+    "model_queries": 0,
+    "teacher_queries": 0,
+    "fit": 0
+  },
+  "qualification_gates": [
+    "All online snapshots use exact available pose time and synchronized640x480RGB metadata",
+    "All70 windows if no contact/interruption accounted with reason; no dropping rejected records",
+    "Every complete window25 exactfloat32 raw commands and26 finite20ms supervision positions; old clock tolerance fixed",
+    "Durable commit before each window; no unacknowledgedintent treated as completed",
+    "No live futureGT in online snapshot; GTonly supervision",
+    "Contact/early termination not success or navigationperformance failure"
+  ],
+  "limits": "One zero-request episode is interface qualification, not trajectory-tube coverage, independent calibration, navigation benchmark, or representative learning corpus.70 anchors share one episode group; no splitting into train/test. Cannot expand program/episode budget automatically to rescue eligibility.",
+  "before_launch": [
+    "Build live runtime wrapper reusing actual nativeIMU/rolling/RGB capture with no depth network call",
+    "Combine provider receipts and source hashes with each committed anchor",
+    "Handle blockcontact/interruption durable terminal and finalsealed evidence",
+    "Independent actual source/driver prelaunch review; hostreadonlypreflight and frozen sourceidentity",
+    "No launch from design alone"
+  ],
+  "whole_mission_complete": false
+}

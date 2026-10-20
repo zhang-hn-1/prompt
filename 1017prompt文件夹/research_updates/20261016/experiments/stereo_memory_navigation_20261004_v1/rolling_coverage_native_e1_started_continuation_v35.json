@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-09T14:14:25.096774+00:00",
+  "stage": "unchanged_candidate_nativeE1_coverage_actual_started",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_coverage_known_e2_started_continuation_v34.json",
+  "superseded_sha256": "59d66daf334771b3e8c02a8d195cf6fae963189068e82ee8e43301a52a031869",
+  "physics_running": true,
+  "whole_mission_complete": false,
+  "session_id": 97198,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T14:12:37.278680+00:00",
+    "parent_pid": 495788,
+    "child_pid": 495789,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "knownE2": "CLOSED0 actualcollision26.68 scoredroot<=26.6; no success",
+  "remaining_budget": {
+    "known_e1": 0,
+    "known_e2": 0,
+    "native_e1": 0,
+    "native_e2": 1,
+    "retry": 0
+  },
+  "new_learning_target_design": "learned_memory_risk_qualifier_design_v1.json; distinctcurrentpast memory-risk confidence vs rejectedfutureflow; no fit/no teacherholdoutinspection",
+  "next": "Supervise97198; frozen-score nativee1 then nativee2 once. All baseline coverage closes before fitting unique reserved classifier; preserve source performance, visible-only labels, unknown semantics and old rejects."
+}

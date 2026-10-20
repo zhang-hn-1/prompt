@@ -1,0 +1,25 @@
+{
+  "question": "Can independently collected exactly executed proposed command programs support calibrated short-horizon trajectory-tube uncertainty for rejecting unsupported planner candidates?",
+  "target": "Conditional containment of the entire 0.5-second XY path, not the old mean endpoint displacement or nearest episodic ranking output.",
+  "consumer": "Future local-program support veto only; no memory risk clearing or command ranking admission now.",
+  "distinction": "New uncertainty/containment target and exact proposed-program supervision contract. Old episodic153-library, old point displacement predictors, old risk qualifier and their budgets remain closed; do not merge/expand/retrain them.",
+  "online_inputs": "Current/past estimated state and a frozen candidate program only. Current initial gauge and ideal IMU privileges must remain disclosed. The initial proposal observation time must be identical to the label starting physics sample.",
+  "program": "25 raw request pairs at20ms, total0.5s, request-domain rad/s and rad. These are the exact raw targets passed into the unchanged downstream smoother/PID; not the smoothed actuator state.",
+  "label": "Separate supervision-only26 XY world positions at20ms and actually consumed25 raw target pairs. Use current-frame relative geometry only after exact time/program match. Future positions are never proposal features.",
+  "censoring": "Interrupted/contact-stopped or mismatched execution is unscorable for complete tube calibration; preserve reason and denominator. No fabricated hold continuation or selecting only complete records to claim full coverage.",
+  "current_budget": {
+    "synthetic_interface_checks": true,
+    "new_physics": 0,
+    "new_teacher_queries": 0,
+    "new_predictions": 0,
+    "new_training": 0
+  },
+  "future_data": "A separate frozen whole-sequence acquisition protocol, initial states/program coverage, group split and containment/coverage/latency gates must be independently reviewed before collection; none are admitted by this design.",
+  "limitations": "No fitted uncertainty model, coverage guarantee, avoidance benefit, new scenario generalization or navigation admission. This is a target/interface qualification stage, not a rescue of closed learners.",
+  "stop": "If labels cannot verify exact realized programs and clocks, do not fit. If no independent acquisition protocol is defensible, retain unqualified learning status.",
+  "whole_mission_complete": false,
+  "parent_design": "design_v1.json",
+  "identity": "Required immutable sequence_id and current_observation_sha256; supervision must match both. Hash strings establish the interface identity protocol only, not provenance proof. Future adapter must verify current/past snapshot bytes, time and sequence ownership.",
+  "prospective_program": "Future consumer must prospectively commit the25 raw targets and prove actual consumption. Feedback-generated future requests cannot retrospectively be called online proposal inputs. No consumer implemented or admitted.",
+  "checks": "11 synthetic CPU tests passed including cross-sequence and cross-observation rejection; RED evidence retained."
+}

@@ -1,0 +1,10 @@
+from pathlib import Path
+import json,numpy as np
+from assess_rolling_endpoint_native_e0_v1 import arm,meaningful_snapshot_equal
+from local_reserve_execution_classification_v1 import shared_execution_prefix
+H=Path(__file__).resolve().parent
+cfg=json.loads((H/'rolling_endpoint_native_e0_protocol_v1.json').read_text());a,ar=arm('b0',cfg);b,br=arm('paced',cfg);assert not any(r.get('rolling_control_applied') for r in br['rows'])
+n=min(len(ar['requests']),len(br['requests']));pa,pb=ar['physics'],br['physics']
+checks=dict(requests_full=np.array_equal(ar['requests'],br['requests']),nonraw_physics_full=all(np.array_equal(pa[k],pb[k]) for k in pa if not k.startswith('raw_')),execution_full=shared_execution_prefix(ar['D'],br['D'],n-1,len(ar['requests']),len(br['requests'])),current_native_estimates_full=json.loads((ar['D']/'native_predictions.json').read_text())==json.loads((br['D']/'native_predictions.json').read_text()),current_native_packets_full=json.loads((ar['D']/'native_imu_packets.json').read_text())==json.loads((br['D']/'native_imu_packets.json').read_text()),RGB_full=all(all(np.array_equal(np.load(ar['D']/'source_inputs'/p.name)[k],np.load(br['D']/'source_inputs'/p.name)[k]) for k in ('left_rgb','right_rgb')) for p in (ar['D']/'source_inputs').glob('*.npz')),point_memory_full=all(meaningful_snapshot_equal(json.loads((ar['D']/'raw_point_memory_snapshots'/f'frame_{f:03d}.json').read_text()),json.loads((br['D']/'raw_point_memory_snapshots'/f'frame_{f:03d}.json').read_text())) for f in range(n)))
+r=dict(no_candidate_intervention=True,full_equivalence_checks=checks,old_assessment_prefix_flags='not computed because no first intervention; false is not evidence of measured inequality',old_gate_unchanged=True,scientific_outcome='both actual timeout, qualification adds no behavior on this pair',causal_navigation_benefit=False,whole_mission_complete=False)
+p=H/'rolling_native_nointervention_equivalence_audit_v1.json';assert not p.exists();p.write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r))

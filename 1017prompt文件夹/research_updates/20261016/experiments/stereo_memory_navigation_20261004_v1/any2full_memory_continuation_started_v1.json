@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-07T06:39:44.962884+00:00",
+  "stage": "ANY2FULL_ONE_PREDICTED_LAYER_INPUTS_SEALED_TRANSPORT_RECOVERY_RUNNING",
+  "whole_research_complete": false,
+  "formal_triggered": false,
+  "managed_session": 85006,
+  "original_transfer": "failed actual IncompleteRead after652214272 bytes, original preserved",
+  "transport_recovery": "ONE same pinned revision/artifact official hf_xet, max900s; no inference yet",
+  "input_counts": {
+    "left": [
+      0,
+      0,
+      0
+    ],
+    "right": [
+      235,
+      229,
+      190
+    ]
+  },
+  "author_tests": "6RED6GREEN full528PASS25.04s CPU official API PASS zero learned forwards",
+  "plan": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-07-memory-conditioned-predicted-geometry-layer.md",
+  "next_steps": [
+    "finish postseal assessor and guarded driver",
+    "first scoped skill review then resolve findings",
+    "check active transport session85006; do not duplicate",
+    "weights_only static audit/strict identity; three right-eye actual GPU outputs before labels",
+    "all-eye frozen gate assessment report; no candidate switching"
+  ],
+  "predict_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/predict_any2full_memory_geometry_v1.py"
+}

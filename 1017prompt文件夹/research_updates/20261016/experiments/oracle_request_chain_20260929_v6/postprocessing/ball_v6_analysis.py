@@ -1,0 +1,25 @@
+from pathlib import Path
+import sys,json,numpy as np,hashlib,cv2
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+h=Path('/home/an/Documents/ChatGPT/球型机器人导航/experiments/oracle_request_chain_20260929_v6');sys.path.insert(0,str(h));from roll_pid import BankPID
+old=h.parent/'oracle_pid_validation_20260929_v4/navigation_hard_0';result=[];videos=[];fig,axs=plt.subplots(2,3,figsize=(15,9))
+def error(xy,ref):
+ a=ref[:-1,:2];d=np.diff(ref[:,:2],axis=0);den=np.maximum((d*d).sum(axis=1),1e-12);u=np.clip(((xy[:,None,:]-a)*d).sum(axis=2)/den,0,1);return np.linalg.norm(xy[:,None,:]-(a+u[:,:,None]*d),axis=2).min(axis=1)
+for row,case in enumerate(['0002','0004']):
+ eid=f'hard_0_e1_{case}';run=h/f'navigation_course_{case}';p=run/f'episode_{eid}';b=old/f'episode_{eid}';z=np.load(p/'states.npz');bz=np.load(b/'states.npz');m=json.loads((p/'metrics.json').read_text());bm=json.loads((b/'metrics.json').read_text());ref=z['kinodynamic_reference_pose'];assert np.array_equal(ref,bz['kinodynamic_reference_pose']);track=json.loads((run/'feedback'/f'tracking_{eid}.json').read_text());active=[i for i,r in enumerate(track) if r.get('valid') and r.get('candidate_active')];first=active[0];ba=np.load(b/'actions.npz')['action_blocks'];ca=np.load(p/'actions.npz')['action_blocks'];statekeys=['position_world_xy','yaw_world_rad','linear_velocity_world_m_s','angular_velocity_world_rad_s','joint_position_rad','joint_velocity_rad_s','applied_action','roll_world_rad'];prefix={k:bool(np.array_equal(z[k][:first+1],bz[k][:first+1])) for k in statekeys};assert all(prefix.values()) and np.array_equal(ba[:first],ca[:first]);cfg=json.loads((run/'feedback'/f'runtime_audit_{eid}.json').read_text());assert cfg['effective_config']['safety_margin_m']==.1 and cfg['effective_config']['auxiliary_velocity_limit_rad_s']==.3 and cfg['effective_config']['ball_radius_m']==.4
+ fb=json.loads((run/'feedback'/f'bank_feedback_{eid}.json').read_text());pid=BankPID(kp=.4,ki=.1,kd=.7);blocked=False;errs=[]
+ for r in fb:
+  pid.step([r['main_request_rad_s'],r['aux_feedforward_rad']],r['bank_rad'],downstream_blocked=blocked);errs.append(abs(pid.last['pid_protocol_aux_rad']-r['pid_protocol_aux_rad']));blocked=r['supervisor_active']
+ assert max(errs)<1e-12 and len(fb)==5*len(track)
+ n=min(len(ba),len(ca));delta=abs(ba[:n]-ca[:n]);changed=np.flatnonzero(np.any(delta>1e-6,axis=1));na=min(len(z['applied_action']),len(bz['applied_action']));adiff=np.flatnonzero(np.any(abs(z['applied_action'][:na]-bz['applied_action'][:na])>1e-6,axis=1));assert len(changed) and len(adiff)
+ keys=['success','collision','timeout','runtime_error','elapsed_s','final_distance_m','path_length_m','minimum_clearance_m','termination_reason'];r=dict(case=case,baseline={k:bm[k] for k in keys},candidate={k:m[k] for k in keys},same_reference=True,prefix=prefix,prefix_action_equal=True,first_active_block=first,first_active_s=float(z['simulation_time_s'][first]),active_blocks=len(active),first_changed_request_block=int(changed[0]),first_changed_applied_s=float(z['simulation_time_s'][adiff[0]]),pid_ticks=len(fb),pid_max_error=max(errs),physical_contact_samples=int(z['physical_contact'].sum()),contact_available_all=all(cfg['contact_available_samples']),baseline_cross_rms=float(np.sqrt(np.mean(error(bz['position_world_xy'],ref)**2))),candidate_cross_rms=float(np.sqrt(np.mean(error(z['position_world_xy'],ref)**2))),baseline_cross_peak=float(error(bz['position_world_xy'],ref).max()),candidate_cross_peak=float(error(z['position_world_xy'],ref).max()));result.append(r)
+ axs[row,0].plot(ref[:,0],ref[:,1],'k--',label='same frozen reference');axs[row,0].plot(bz['position_world_xy'][:,0],bz['position_world_xy'][:,1],label='body-heading PID baseline');axs[row,0].plot(z['position_world_xy'][:,0],z['position_world_xy'][:,1],label='course-heading candidate');axs[row,0].set_aspect('equal');axs[row,0].set_title(case+' actual paths')
+ for zz,label in [(bz,'baseline'),(z,'candidate')]:
+  axs[row,1].plot(zz['simulation_time_s'],error(zz['position_world_xy'],ref),label=label);axs[row,2].plot(zz['simulation_time_s'],zz['clearance_m'],label=label)
+ axs[row,1].set_title('Distance to same reference [m]');axs[row,2].set_title('Formal clearance [m]');axs[row,2].axhline(0,color='red')
+ for ax in axs[row]:ax.grid();ax.legend(fontsize=7)
+ for v in p.glob('*.mp4'):
+  cap=cv2.VideoCapture(str(v));n=int(cap.get(cv2.CAP_PROP_FRAME_COUNT));fps=cap.get(cv2.CAP_PROP_FPS);a,_=cap.read();cap.set(cv2.CAP_PROP_POS_FRAMES,n-1);b,_=cap.read();cap.release();assert a and b and n>0 and fps>0;videos.append(dict(path=str(v),frames=n,fps=fps,first_decodes=a,last_decodes=b))
+fig.tight_layout();fig.savefig(h/'navigation_comparison.png',dpi=160);(h/'navigation_assessment.json').write_text(json.dumps(result,indent=2));(h/'video_verification.json').write_text(json.dumps(videos,indent=2));identity=json.loads((h/'navigation_source_identity.json').read_text());assert all(hashlib.sha256(Path(p).read_bytes()).hexdigest()==v for p,v in identity.items());print(json.dumps(result,indent=2))

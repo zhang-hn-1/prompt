@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-08T12:48:22.621762+00:00",
+  "overall_complete": false,
+  "external_user_block": false,
+  "automation_status": "ACTIVE",
+  "active": [],
+  "current_process_running": false,
+  "latest_closed_actual": "front_view_handoff_navigation_run_v1",
+  "latest_actual_exit_code": 0,
+  "latest_report": "reports/benchmark_fixed_camera_active_view_acquisition_and_handoff_20261008.md",
+  "latest_assessment": "front_view_handoff_progress_assessment_v2.json",
+  "unique_candidate": "REJECT initialviewhandoff nav; interface/source/map/causalPASSselectedknownpose, physical54.6 FAIL; no another candidate/no observation/NN/thresholdscan",
+  "actual": {
+    "actions": 546,
+    "captures": 547,
+    "physics": 2731,
+    "NN": 110,
+    "contacts": 0,
+    "goal_m": 4.501113154157127,
+    "axis_m": 2.2452102124691007,
+    "handoff_s": 11.599999740719795
+  },
+  "bounded_cause": {
+    "first_no_plan_frame": 426,
+    "old420map425position_clear": 0.9219544457,
+    "old420map426position_clear": 0.8246211251,
+    "margin": 0.8707106781,
+    "lastref_cross_peak_m": 0.0714917824,
+    "attempts": 32,
+    "installed": 8,
+    "failed_attempts": 24
+  },
+  "next": "Do not repeat observation/acquisition/fullnav/oldmatrices. Continue ONE past-only bridge-versus-nominal-reference clearance semantics audit from actual frame425/426 and frozen reference8: identify which sample of current bridge/suffix triggers oldtube .870711, compare nominal reference centre, actual position and empirical .2 tracking allowance; preserve maps/threshold/failedgate. No new actual control candidate until a distinct interface design, causal eligibility and frozen conditions justified. Estimated-pose/full35/world-model remain incomplete.",
+  "stopping_reason": "This execution window closed actual run, complete postseal layer verifications and bounded firstfailure audit. Resume concrete next geometry-interface audit; research not complete/no external blocker."
+}

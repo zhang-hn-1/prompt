@@ -1,0 +1,55 @@
+{
+  "registered_utc": "2026-10-15T16:28:42.299018+00:00",
+  "old_projection_already_exists": true,
+  "old_source": "lowest positive appearance-class pixel in each raw image column; three pixels below nonpositive, floor contact unproved",
+  "old_result": {
+    "left_n": 0,
+    "right_n": 389,
+    "right_p90_m": 1.2766681314425545,
+    "right_class_precision": 0.8817480719794345
+  },
+  "decision": "Reject simply rerunning or rotating the old bottommost-positive source. Permit only GT-only necessary qualification of a different explicit visible obstacle-floor contact target; not an online implementation or revived old source.",
+  "new_independent_target": "Visible physically grounded obstacle-floor contact, both surfaces must have separate current rendered support. Occlusion/cropping/suspended objects/unknown remain unknown. No distance network or bottommost object-mask heuristic.",
+  "shared_math": "Fixed calibrated contact ray intersects disclosed floor plane; existing math is reused without novelty claim.",
+  "new_target_oracle_only": {
+    "poses": 8,
+    "eyes": 4,
+    "target_visible_bodyband_denominator": "All previously frozen current GT-only .5–3m CAD-unmasked bodyband cells; no target shrinking",
+    "contact_geometry": "Actual saved scene grounded cylinder bottom rims; 1440 fixed angular samples per object, GT only",
+    "contact_visibility_error_m": 0.02,
+    "floor_neighbor_error_z_m": 0.01,
+    "floor_neighbor_offset_pixels": [
+      1,
+      2,
+      3
+    ],
+    "rounding": "nearest pixel",
+    "precision_min": 0.95,
+    "target_recall_min": 0.8,
+    "cell_position_p90_max_m": 0.15,
+    "require_full_sequence_and_independent_data_before_fit": true,
+    "classes_to_report": [
+      "grounded_visible_contact",
+      "grounded_contact_occluded_or_cropped",
+      "suspended",
+      "unknown_geometry"
+    ],
+    "range_m": [
+      0.5,
+      3
+    ],
+    "floor_z_m": 0.0,
+    "physics": 0,
+    "model": 0,
+    "fit": 0,
+    "timeout_s": 300,
+    "stop": "If necessary geometry coverage fails, close this target before fit; do not adjust rim sampling, visibility tolerance, floor offsets or target domain to rescue it. Passing eight frames does not grant whole-sequence/online-input/source qualification."
+  },
+  "old_identity": {
+    "experiments/stereo_memory_navigation_20261004_v1/ground_contact_hypothesis.py": "ef6ed4fa2d28a8448e4b0c025c9e4ec267c4b31413375e95d1e476535f1a988f",
+    "experiments/stereo_memory_navigation_20261004_v1/ground_contact_applicability_v1/assessment.json": "1a06e2b2cdc78577b52cdd10629123a99104e555e7a205b0b88bb781d0d8333e",
+    "experiments/stereo_memory_navigation_20261004_v1/ground_contact_applicability_v1/pose_vs_boundary_cause_v1.json": "5da0674000316542401ea226824d27bb92b2d4972c67747a59ad5cd3060691d0",
+    "experiments/stereo_memory_navigation_20261004_v1/ground_contact_edge_protocol_v1.json": "068752b143fc65d73a73150553dd445c8fb21aac9a0a60e85f8d1fa7765a1e71",
+    "experiments/stereo_memory_navigation_20261004_v1/ground_contact_edge_assessment_v1.json": "2f55f7d5e0c4cfbbc16787e530e7e4c96ef6a0a360e7c6d85565032ee7fe2466"
+  }
+}

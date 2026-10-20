@@ -1,0 +1,65 @@
+{
+  "layer": "known",
+  "condition": "e1",
+  "metrics": {
+    "outcome": "timeout",
+    "success": false,
+    "budget_s": 35.0,
+    "scored_end_s": 34.99999921768904,
+    "metric_state_time_s": 34.99999921768904,
+    "goal_threshold_m": 0.2,
+    "goal_remaining_m": 5.626473311000725,
+    "goal_distance_reduction_m": 0.9735266889992751,
+    "along_start_goal_axis_m": 0.9757793366909024,
+    "path_length_m": 4.769824627730203,
+    "contact_time_s": null,
+    "arrival_time_s": null,
+    "contacts_all_available": true,
+    "contact_checks": 2101,
+    "measured_states": 351,
+    "not_based_on_path_index": true,
+    "not_strict_visual_admission": true,
+    "cross_axis": {
+      "rms_m": 0.33521788762033966,
+      "peak_m": 0.7211842000484472,
+      "scope": "same frozen start-goal line, not dynamically changed local references"
+    },
+    "wall_median_s": 0.31908468899928266,
+    "wall_p90_s": 1.385701129001245,
+    "source_gaps": {
+      "source_epochs": 71,
+      "empty_source_epochs": 0,
+      "empty_epoch_fraction": 0.0,
+      "maximum_sampled_empty_span_s": 0.0,
+      "empty_sample_times_s": [],
+      "footprint_unknown_cells_median": 186.0,
+      "footprint_unknown_cells_max": 190,
+      "absence_is_observed_free": false,
+      "full_3d_blindzone_measured": false,
+      "interpretation": "Sampled point-source gaps and map unknown footprint only; cannot distinguish occlusion from matching/selection failure or certify unseen space. Task ground/safe-start priors remain separate; no source accuracy admission."
+    },
+    "requests": 350,
+    "captures": 351,
+    "physics_samples": 1751,
+    "raw_contact_samples": 2101,
+    "raw_contacts_zero": true,
+    "sealed_items": 2213,
+    "videos": {
+      "stereo_view": {
+        "frames": 351,
+        "fps": 10.0
+      },
+      "third_person": {
+        "frames": 351,
+        "fps": 10.0
+      }
+    }
+  },
+  "classification": "measured_navigation_failure",
+  "actual_new_qualification_changes": 14,
+  "first_change": 106,
+  "causal_navigation_improvement": false,
+  "historical_comparison_descriptive_only": true,
+  "not_strict_visual": true,
+  "whole_mission_complete": false
+}

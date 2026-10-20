@@ -1,0 +1,16 @@
+{
+  "role": "actual frozen FastStereo implementation and checkpoint provenance supplement",
+  "repository_commit": "476f4249561f7c79ca707326954f9255643412a6",
+  "weights_only": true,
+  "iterations": 8,
+  "max_disparity": 416,
+  "bilateral_lr_threshold_px": 1.5,
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fast_stereo.py": "aac1dae5402239c2f8de0f0ac5c68949021d3858b322f2b899f797cbaea911cd",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/checkpoint_loader.py": "9b3d94b659ac7ceef8b07124d99ba990d3bdb8fcd20e5568173aa3e999e44480",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/checkpoint_static_audit.json": "7ba0a1892771348731ccc9be04bbd27a8ec68e64ea76a30ee7e6ecf2092f3b42",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/third_party/fast_foundation_stereo/weights/23-36-37/model_best_bp2_serialize.pth": "af0658f289ec840b292645f8d5538978f06e8cabaa1fd31e84acc91af268e990",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/third_party/fast_foundation_stereo/weights/23-36-37/cfg.yaml": "d45afe99b176454d5aff416edf16c8da6a99579f8f374b927f37907442a7d6bc"
+  },
+  "source_clean_except_downloaded_weights": ""
+}

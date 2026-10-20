@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-07T21:59:59.236401+00:00",
+  "scope": "four selected current completed capture samples while actual ongoing; not full physical or onlineacceptance",
+  "rows": [
+    {
+      "frame": 0,
+      "request_exact": true,
+      "estimated_pose_all_fields_exact": false,
+      "current_proprio_exact": false
+    },
+    {
+      "frame": 100,
+      "request_exact": true,
+      "estimated_pose_all_fields_exact": false,
+      "current_proprio_exact": false
+    },
+    {
+      "frame": 140,
+      "request_exact": true,
+      "estimated_pose_all_fields_exact": false,
+      "current_proprio_exact": false,
+      "map5fields_exact": true
+    },
+    {
+      "frame": 250,
+      "request_exact": false,
+      "estimated_pose_all_fields_exact": false,
+      "current_proprio_exact": false,
+      "map5fields_exact": true
+    }
+  ],
+  "whole_research_complete": false
+}

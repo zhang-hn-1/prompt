@@ -1,0 +1,13 @@
+
+
+## 14:47UTC time objective source audit and single candidate — final stage closure
+
+先完整读reports/benchmark_time_objective_source_and_candidate_20261005.md 与冻结docs/superpowers/{specs,plans}/2026-10-05-time-cost*.md。本次ONE CPU候选仅替换base edge为 L*vmax/max(.05,V1speed)，normalized米单位；原42V1几何/heuristic/request类型/accepted-root/reverse1.25/switch.5/node3000保持。没有旧.75filter、13:47已拒绝曲率cap、tracker/PID/speed/rig/地图/guard或换向五低速反弹改动。旧RGB/M2/停止/全部导航拒绝及原35s gate不追改。
+
+实际callable RED9fail1pass.31s→GREEN10pass.26s，全H237pass9.44s；真实tinyfixture代价改变main1.5→.5但同端点，非实际机器人数据。162source/14200inputs14:59:55.445625UTCpreseal；旧mutable文档输入采用既有archivealias/currentdoc另存preseal字节，从开始分离避免修改旧SHA。ONE已知current175/map17.4999996088s/currXY-yaw-pointgoal-acceptedF，同2.4m目标/原.6clearance/±4crop，1sharedgrid/1newcandidateHybrid/0B0targetrepeat。候选14:59:58.491629→15:00:02.239808，完整audit14:59:56.519387→15:00:02.241984exit0。候选node_budget_exhausted3000无完整路径，所有success-dependent预sealedgate失败，CPU资格REJECT；0physics/0act/0fits/0rescue，不加节点/换heuristic救分，不触发正式E0E1E2。
+
+归档B0与原actualreference175精确：2434nodes/10primitive/3m/4.075distanceobjective/2switch/7common-domain-out/.018737localgoal。weighted normalizedarc proxy13.693638/unweightedarc11.580005/archivedchooser chord+2 13.549481，当前35sremaining17.500000391；仅局部goal且未包含真实执行动态，不证明全局35s可行，不证明缺timecost是导航失败主因。failed空result path0/switch0不可作成功量。历史14source当前12match/ninewrappermatch/two corechanged，历史整套runtime不认证；旧timeplanner额外.75curvefilter/root缺失/heuristic秒转换不能单层移植。chooser episodeinitialfull-map fixed25s筛baseline，任何success timefallback不再检查25，字面actualfunction26/28选28、20/18保留20仅语义测量，不称当前剩余预算bug。
+
+作者15:01:54.224984核162/14200/机械diff/typealiases/42primitive几何/代数/时序PASS，无science重跑。作者verifierv1_unused nonexistent import行政FAIL源/log保留，独立v2只删未用import；科学/协议/gates不变。PNG已查看，无新视频，原endpoint actual视频仅context。ONE第二人readonly审查0C0I0M，个人10fixturePASS.25s/162source14200input/三代理/图；freshdispatch因threadlimit拒绝，实际保留前nominalreview上下文公开，不冒称fresh/全suite重跑/二次review。20declined scopes与作者逐项裁决见time_cost_review.json/报告作者附录。Python3.10tomllib行政read失败转录保留，unique-status-line只读实际ACTIVE确认；设置未改。审查bodySHAe4dc994b4427aa0ea8a3836f8d193e395fde0664c96b1c42e345305e153c0874，最终报告/源/图/测试/失败/输入SHA在time_cost_final_identity/document_sync，freshfinalcheck决定stageclosure。阶段plan/spec保持原sealed字节，Taskcompletion另入time_cost_tasks.json；无无关Gitcommit/delete/upload。
+
+下一项尚未执行：关闭当前timecost候选，不继续same175搜索救分。以已有BankMap完整生产者与实际endpoint/开放平面数据核验原V1名义响应与当前roll-PID编码bank请求链的系统身份/单位/稳态条件/XY响应，列明确闭环覆盖缺口。仅确有未覆盖项才预sealed一条必要完整roll-PID运动序列（最多一条，不重做矩阵）；不能用Euler yaw替代XY曲率或宣布BankMap共同域动态安全。然后只选择一个有测量依据的名义响应消费环节改动，未证匹配不移植。原Fast直接融合/causal多视角/ORB来源拒绝保持，不重复RGB矩阵，不把先验写成观测；可靠RGB+estimatedpose/唯一学习记忆或世界模型/正式原35s E0E1E2仍待分层完成。全研究NOTcomplete，automationACTIVE，常规安静。当前阶段不再science/search/sim。

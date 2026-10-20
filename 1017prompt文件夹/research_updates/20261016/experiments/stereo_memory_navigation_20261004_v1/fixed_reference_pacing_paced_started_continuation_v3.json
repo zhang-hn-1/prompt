@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-09T09:40:43.915626+00:00",
+  "status": "b0_closed_paced_actual_running",
+  "b0": {
+    "status": "finished",
+    "start_utc": "2026-10-09T09:35:58.350203+00:00",
+    "parent_pid": 182109,
+    "child_pid": 182110,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T09:39:49.933846+00:00"
+  },
+  "paced": {
+    "status": "running",
+    "start_utc": "2026-10-09T09:40:03.034417+00:00",
+    "parent_pid": 186915,
+    "child_pid": 186916,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session": 36226,
+  "whole_mission_complete": false,
+  "next": "supervise existing paced v2 then run frozen assess_fixed_reference_pacing_v2.py; compare gates and independent closing review; if localpass actual35 E0 allowed else bounded cause and reject no threshold scan",
+  "remaining_complete_sequence_budget": 0
+}

@@ -1,0 +1,76 @@
+{
+  "presealed_utc": "2026-10-05T18:02:09.603573+00:00",
+  "frames": [
+    0,
+    60,
+    153,
+    307
+  ],
+  "role": "plane-agreement hypothesis with RGB evidence, conditional flat-world and known pose; NOT measured stereo depth/map observations/navigation",
+  "parameters": {
+    "focal": 584.8888888888889,
+    "cx": 319.5,
+    "cy": 239.5,
+    "patch_radius": 3,
+    "min_sources": 2,
+    "parallax_min": 0.5,
+    "texture_min": 3.0,
+    "max_cost": 0.2,
+    "depth_min": 0.5,
+    "depth_max": 3.0
+  },
+  "mask_path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visible_surface_connectivity_20261004_v1/base_link_masks.npz",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/floor_hypothesis.py": "10ce358c6336f45f2888ba7b878d1da7730fbf9bc438d49f5226471e6a6dfa62",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/multiview_rgb.py": "7ea629faf1725caf9d211f8c331502b206bb17fa159582355fd010d9cb451b41",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_floor_hypothesis.py": "3028284688370b4b84ee62d37fd2c1ebb2e505b612694897c5cef575371943e3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/test_floor_hypothesis.py": "7e6c05377669eca9e8f2f0eb59dc0fc6ada68fa83e6f2d65c0fcc7a7d721d043",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/specs/2026-10-06-observed-floor-hypothesis-design.md": "5f7014562c5f517fb2321a83b52b92a14c99a22b94ec0be81c34dadd690f2461",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-06-observed-floor-hypothesis.md": "0fbaff10c8ef6851c43e7b0b76edc234b641912b37ed4a765a34690ca68b1d2d"
+  },
+  "prediction_input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/floor_hypothesis_inputs/frame_000.npz": "181ef0b39ddf90ecf4148f46797b3cfd4e25c03a29d4bfb9f937d51ddb369262",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/floor_hypothesis_inputs/frame_055.npz": "1b8e9bc1e9a76588b6d01db248955aefae8252cd4c490eba4c54622abe8cd6bc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/floor_hypothesis_inputs/frame_060.npz": "113265a2dee349c8c71b91dc87f9f0a3d5728f663d6658b53ead5c78405e8b86",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/floor_hypothesis_inputs/frame_148.npz": "19ce192da0e139d678aa284bf0cca537727bde154b16492cf84713df65e4a242",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/floor_hypothesis_inputs/frame_153.npz": "7f4120ca7103dca283097f199a320ad4b4333fba5b03d12a03b56499dbad34bc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/floor_hypothesis_inputs/frame_302.npz": "d4de39abf976ce910e0d895ffebdeced95de786c6816a9906ef85d68b89e5031",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/floor_hypothesis_inputs/frame_307.npz": "1949c046ab18a7f3838c447f4a87290fcdeb88f5a16472dee0b64b89032f6838",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visible_surface_connectivity_20261004_v1/base_link_masks.npz": "7769b6ab47292ae6517489f2992fd241b94f54c5022dd401efac3c4bae2d2a19"
+  },
+  "producer_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/online_inputs/frame_000.npz": "47d7d6d7fd9ecf1515ff090b6a21b33509c977e7108ee74dbe4d6c61e04ddf9f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/known_poses/frame_000.npz": "143a701e9d796e8b640a685ba3e0055b49a876568de5ac0013d0bb8d724c7a6e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/online_inputs/frame_055.npz": "e1c9fbd146142979ca71575aa302db35d29ebce392beed76c0c393478e96fec0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/known_poses/frame_055.npz": "05830d190c00100ec46c01680dbd44c6fd768b9d0fb610fc35316b4777e513a1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/online_inputs/frame_060.npz": "036404f9c9c9be03d363bbf8f2538e59f1a4116e61a8bcf3b9ba57a446ca9fde",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/known_poses/frame_060.npz": "10a9ad3c1f30bb27a17e487c831a57f3280bb60bea4d2536ffb6c9c1f23daf4a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/online_inputs/frame_148.npz": "a658ec3601494579153d91e10f055d6c5fbf3487f278f3df41ad994601b8c2fa",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/known_poses/frame_148.npz": "30023dec8eef2b87589fb3dcc31cde4f34a210e37fc7d81698cf14ca3556ece4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/online_inputs/frame_153.npz": "84ea45ed984bb231f9aa16a9ff73bb6ad991208728384c0770a581692b9fbbeb",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/known_poses/frame_153.npz": "bca1dfda99a5d485da5e738d90bc3a242086fa60d5c384b5190fa30f0cfe9eea",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/online_inputs/frame_302.npz": "e83b9e766298d4fd9df10944d35c798f8b8fc30c880ebe5902350270959a0148",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/known_poses/frame_302.npz": "82b0f2c1d8b8647719dcbda7899e694c7236f97269a0f4f4f9f64f82eebd5174",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/online_inputs/frame_307.npz": "8b1f3afedb832c7d0d0039d8fd17987d6e7f437382004106fad76fd8ab92e98f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/known_poses/frame_307.npz": "8f7e27dcde847d7af3624a639d0a41cd3f94acaf9d2b5b745f635e28059ace89"
+  },
+  "evaluation_input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/offline_truth/frame_000.npz": "6801d16d7081fbf9bf5c910222ed6cee8748c5bb190921d9549fee00a195ca1b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/offline_truth/frame_055.npz": "5bf91f13993eb76d836c4c367dbbfa363ccccecacf54dbac0bcc52e982b7dbf6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/offline_truth/frame_060.npz": "c9ffeb0a21aa6931fc263f3155696b72851d0759c9fd93997a3af9c191198ec3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/offline_truth/frame_148.npz": "908b89e9ab329f16a34916fb614eb7098df7a15ba642b00f38eff44defab5ace",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/offline_truth/frame_153.npz": "a33ab1b85ad16ab25143c6865d2e88197698fe42b7457f1bfaa5ca5c04dd1891",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/offline_truth/frame_302.npz": "c1fb7c5f4df42baf323df67f2dfbf0943b23541585a1e62f85bb765a45e24802",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_online_run/offline_truth/frame_307.npz": "668993e122894108768430dbe5940054188913a48fe149177d05e8b33b02d287"
+  },
+  "gates": {
+    "each_min_queries": 100,
+    "each_floor_correct_all_queries": 0.9,
+    "each_all_output_floor_precision": 0.99,
+    "each_ray_p90_m": 0.1
+  },
+  "new_physics": 0,
+  "new_fits": 0,
+  "new_models": 0,
+  "whole_research_complete": false
+}

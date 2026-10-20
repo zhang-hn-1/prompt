@@ -1,0 +1,29 @@
+{
+  "metrics": {
+    "before": {
+      "pixels": 1603788,
+      "p90": 0.19897825717926027,
+      "outlier_fraction": 0.036735528635954376
+    },
+    "after": {
+      "pixels": 1602643,
+      "p90": 0.19851109981536866,
+      "outlier_fraction": 0.0361777388975586
+    }
+  },
+  "totals": {
+    "before_obstacle": 826233,
+    "after_obstacle": 826212,
+    "before_floor": 759632,
+    "after_floor": 758509,
+    "removed": 1145,
+    "original_pixels": 1603788,
+    "new_pixels": 1602643
+  },
+  "real_obstacle_pixel_retention": 0.9999745834407485,
+  "accuracy_pass": false,
+  "conservative_retention_pass": true,
+  "source_entry_qualified": false,
+  "actual_navigation_reserved": 0,
+  "scope": "Only actual181pairs development qualification. Same-frame renderer labels scored after predictionseal, not inference inputs. Correlated pixels not independent samples; groundplane prior and matching ambiguity not free volume or reliable navigation."
+}

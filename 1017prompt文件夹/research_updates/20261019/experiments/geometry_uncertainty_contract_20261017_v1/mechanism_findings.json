@@ -1,0 +1,40 @@
+{
+  "complete": true,
+  "mechanisms_examined": [
+    "BayesRays",
+    "GURecon"
+  ],
+  "downloaded_models_or_repos": false,
+  "BayesRays": {
+    "sources": [
+      "https://arxiv.org/html/2309.03185",
+      "https://github.com/BayesRays/BayesRays/blob/main/bayesrays/scripts/uncertainty.py",
+      "https://github.com/BayesRays/BayesRays/blob/main/README.md"
+    ],
+    "mechanism": "Post-hoc spatial deformation of both density/color query coordinates, RGB Jacobian/Fisher and diagonal local Laplace approximation. Metric deformation coordinates can come from existing encoder/IMU poses and K; this is different from ray termination width or feature tracking.",
+    "inputs": "Differentiable frozen field and training cameras. Official implementation computes Jacobian-based quantity without observed RGB residuals. Inference has no new metricrange observation.",
+    "output": "Spatial sensitivity/epistemic uncertainty; prior/noise/coordinate conventions matter. No direct evidence here of a calibrated absolute centimetre error interval or pose/modelbias coverage.",
+    "comparison_plan": "Same fixed camera/ray sample and two frozen wrong/qualified fields; first check observed-data stationarity in an admissible deformation direction. Only if assumptions/units supported would a separately frozen uncertainty-field comparison use postsealed target/error labels to test wrong-vs-qualified ordering. No filtering or rescue of v99.",
+    "result": "One-direction observed-RGB stationary-centre condition contradicted in both fields/aggregations. No Hessian/variance/interval calculated. This rejects treating these centres as justified observed-data posterior modes, not fullBayesRays uncertainty ranking/performance.",
+    "implementation_identity": "Official adapter supports Nerfacto/NGP/MipNeRF; local scalar diagnostic is not an installed/fullBayesRays adapter. No dependency install or model download."
+  },
+  "GURecon": {
+    "sources": [
+      "https://arxiv.org/html/2412.14939v1",
+      "https://github.com/zju3dv/GURecon"
+    ],
+    "mechanism": "Extract SDF roots/normals, tangent-plane patch homography, top-four SSIM inconsistency and continuous3D uncertainty distillation; extra view-dependent fields handle illumination.",
+    "difference": "Continuous3D surface-root/patch uncertainty target differs from the old LK feature roundtrip and triangulation. Its measurement still uses posed multi-view image consistency; learning a head does not itself create a new range reference.",
+    "inputs": "A reconstructed SDF surface and normals, calibrated posed RGB; per-scene distillation. Current surface fields were analytic engineering references, not GT-free reconstructed RGB surfaces; old closed densityfields have no qualified SDF root contract.",
+    "output": "A photometric consistency-derived score, not a calibrated metre interval in current domain. Cannot declare surface point or localpatch agreement to be zero depth uncertainty.",
+    "comparison_plan": "Would require a legitimate GT-free reconstructed surface/root extraction, fixed causal view set and complete independent pseudo-label coverage before fit; later score wrong/qualified surface geometries under identical predeclared metric calibration. Those prerequisites are absent; no root threshold/normalGT substituted.",
+    "result": "No executable standalone metric-error contract in the current repair. No implementation, distillation, model fit or performance evaluation. Official main listing checked contains project readme/assets; no training code used."
+  },
+  "direct_history": [
+    "experiments/stereo_memory_navigation_20261004_v1/lk_surface_protocol_v2.json",
+    "experiments/stereo_memory_navigation_20261004_v1/lk_surface_v1.py",
+    "experiments/stereo_memory_navigation_20261004_v1/right_temporal_observability_continuation_v1.json"
+  ],
+  "conclusion": "No new calibrated metric uncertainty or GT-free RGB surface measurement has been admitted; current surface/uncertainty repair continuation ends. Do not infer all sensors/methods impossible or that the two papers failed performance tests.",
+  "new_experiments_allowed": false
+}

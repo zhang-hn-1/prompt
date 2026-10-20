@@ -1,0 +1,62 @@
+{
+  "role": "targeted acquisition/stereo development audit, two complete frozen command sequences; NOT fresh held-out, NOT navigation success",
+  "sequence_selection_reason": "e1 simple obstacle usable conditional depth versus hard0004 large persistent error; avoid repeating six-sequence matrix",
+  "sequences": [
+    {
+      "sequence": "e1",
+      "source_root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/synchronized_v2/e1",
+      "episode_id": "golden_e1_0001",
+      "manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+      "requests_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1.npz",
+      "request_count": 148,
+      "selected_indices": [
+        0,
+        10,
+        20,
+        30,
+        40,
+        50,
+        60,
+        70,
+        80,
+        90,
+        100,
+        110,
+        120,
+        130,
+        140,
+        147
+      ],
+      "requests_sha256": "02df3b8f72519307377e4abd45babd0fa1c5f46bd1bf618715916cc88b175bae"
+    },
+    {
+      "sequence": "hard_0_e1_0004",
+      "source_root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/clean_visual_hard0_intervention_20261003_v1/synchronized_v2/hard_0_e1_0004",
+      "episode_id": "hard_0_e1_0004",
+      "manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/hard_0_e1_0004_manifest.json",
+      "requests_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/hard_0_e1_0004.npz",
+      "request_count": 24,
+      "selected_indices": [
+        0,
+        10,
+        20,
+        23
+      ],
+      "requests_sha256": "13170a5a9b43d7532ee5f91d093302f7dd01b49b179d2c33454d890fb33923ee"
+    }
+  ],
+  "selected_pairs": 20,
+  "capture": "fixed3render -> one base capture/history update -> fixed3render -> image-only replacement",
+  "online_inputs": "RGB only and frozen masks/calibration for stereo, no depth/pose fed to predictor",
+  "model": "same pinned FastStereo only, no fit or parameter changes",
+  "geometry": "same-pixel before/after current-pose world-point displacement and stereo epipolar/right-depth consistency; reconstructed-height subgroups descriptive, not independent acquisition certificate",
+  "gate": "old n>=100 and unconditional within0.10m>=90% body_overlap unchanged; no gate retuning; passing these two alone does not admit RGB online",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction_development.py": "2759bebd01b9711546e922e98eb8187688dc0073c1a984e1ca30ad491496b493",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/complete_capture.py": "b8dc45b04fed7e895e38c016e8fd8550fc3c1a822c47e68d9b92905136647004",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction.py": "316bb0ac02ee39e0220f3ed46b9abc16179e74c8014c404ab0aa5eba1f63ed15",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/render_flush.py": "f1c2c64c398ac49c109ad7068ff680bcce4c3db6e393ebcde864c003c5d2be60",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fast_stereo.py": "aac1dae5402239c2f8de0f0ac5c68949021d3858b322f2b899f797cbaea911cd",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/stereo_geometry.py": "cb178ce523c12c63b6d265cebfc2f367e8a64dbfc692b350e88ebc4ad9c2ae4d"
+  }
+}

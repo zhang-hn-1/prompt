@@ -1,0 +1,295 @@
+{
+  "complete": true,
+  "arms": {
+    "RGB_init_failed": {
+      "rows": [
+        {
+          "input": "train_00.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.0014779995486576016,
+            "minus": 0.0015652364343466112,
+            "plus": 0.00141131350313927
+          },
+          "derivative_RGB_SSE_per_m": -0.0766749233007431,
+          "central_difference_per_m": -0.07696146560367059
+        },
+        {
+          "input": "train_01.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.000593244782126573,
+            "minus": 0.000582425523751492,
+            "plus": 0.0006228747826960472
+          },
+          "derivative_RGB_SSE_per_m": 0.02057000622153282,
+          "central_difference_per_m": 0.020224629472277635
+        },
+        {
+          "input": "train_02.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.0014830690257521607,
+            "minus": 0.001334574964400547,
+            "plus": 0.0016442269235270894
+          },
+          "derivative_RGB_SSE_per_m": 0.15552887320518494,
+          "central_difference_per_m": 0.15482597956327113
+        },
+        {
+          "input": "train_03.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.00041490981736747056,
+            "minus": 0.0003562001393875558,
+            "plus": 0.0004833986354339524
+          },
+          "derivative_RGB_SSE_per_m": 0.06398473680019379,
+          "central_difference_per_m": 0.06359924802319832
+        },
+        {
+          "input": "train_04.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.0003698177311498406,
+            "minus": 0.00031606638550976527,
+            "plus": 0.00043304892210321524
+          },
+          "derivative_RGB_SSE_per_m": 0.058869123458862305,
+          "central_difference_per_m": 0.058491268296724984
+        },
+        {
+          "input": "train_05.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.001118252749155836,
+            "minus": 0.0011578330686147196,
+            "plus": 0.0010938793453974967
+          },
+          "derivative_RGB_SSE_per_m": -0.03170321136713028,
+          "central_difference_per_m": -0.03197686160861146
+        },
+        {
+          "input": "train_06.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.00039933432177690893,
+            "minus": 0.0003533406074200213,
+            "plus": 0.000460079765827204
+          },
+          "derivative_RGB_SSE_per_m": 0.05383448302745819,
+          "central_difference_per_m": 0.05336957920359136
+        },
+        {
+          "input": "train_07.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.0010050750125105345,
+            "minus": 0.0008920284560641799,
+            "plus": 0.0011370610399712817
+          },
+          "derivative_RGB_SSE_per_m": 0.12266242504119873,
+          "central_difference_per_m": 0.12251629195355088
+        }
+      ],
+      "aggregates": {
+        "equal_view": {
+          "RGB_SSE": {
+            "minus": 0.0008197131974368615,
+            "0": 0.0008577128735621157,
+            "plus": 0.0009107353647619446
+          },
+          "derivative_RGB_SSE_per_m": 0.045883939135819674,
+          "central_difference_per_m": 0.04551108366254155,
+          "fixed_descent_direction": "minus",
+          "observed_loss_decrease": 3.799967612525424e-05,
+          "corroboration_threshold": 2e-08,
+          "nonstationary_gradient": true,
+          "descent_corroborates": true,
+          "stationary_centre_contradicted": true
+        },
+        "training_expectation": {
+          "RGB_SSE": {
+            "minus": 0.0008558708267505207,
+            "0": 0.0009313939430363252,
+            "plus": 0.0010238982023666131
+          },
+          "derivative_RGB_SSE_per_m": 0.0842731820885092,
+          "central_difference_per_m": 0.08401368780804622,
+          "fixed_descent_direction": "minus",
+          "observed_loss_decrease": 7.552311628580453e-05,
+          "corroboration_threshold": 2e-08,
+          "nonstationary_gradient": true,
+          "descent_corroborates": true,
+          "stationary_centre_contradicted": true
+        }
+      },
+      "checkpoint_sha256": "7cfaa2adc6a191ebc420cb4f7417c7b203142d364fd99457ff4f29f2f13be121"
+    },
+    "known_density_init_qualified": {
+      "rows": [
+        {
+          "input": "train_00.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.0019559910795523064,
+            "minus": 0.0017047525141482558,
+            "plus": 0.002378489456323191
+          },
+          "derivative_RGB_SSE_per_m": 0.3281095623970032,
+          "central_difference_per_m": 0.3368684710874677
+        },
+        {
+          "input": "train_01.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.0017962961494363276,
+            "minus": 0.001693781721939616,
+            "plus": 0.001989345136164935
+          },
+          "derivative_RGB_SSE_per_m": 0.14001859724521637,
+          "central_difference_per_m": 0.14778170711265937
+        },
+        {
+          "input": "train_02.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.0022382713129900523,
+            "minus": 0.0022967848656075766,
+            "plus": 0.0022970813526331044
+          },
+          "derivative_RGB_SSE_per_m": -0.005606113933026791,
+          "central_difference_per_m": 0.00014824351276393477
+        },
+        {
+          "input": "train_03.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.0016033589702626396,
+            "minus": 0.0014862972597051028,
+            "plus": 0.0017893801694432274
+          },
+          "derivative_RGB_SSE_per_m": 0.14548180997371674,
+          "central_difference_per_m": 0.15154145486906226
+        },
+        {
+          "input": "train_04.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.001594399435207884,
+            "minus": 0.0014766652497766365,
+            "plus": 0.0017684493828719122
+          },
+          "derivative_RGB_SSE_per_m": 0.14094968140125275,
+          "central_difference_per_m": 0.14589206654763784
+        },
+        {
+          "input": "train_05.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.0019308876088384532,
+            "minus": 0.0016679944650119058,
+            "plus": 0.0023599045783290694
+          },
+          "derivative_RGB_SSE_per_m": 0.33746016025543213,
+          "central_difference_per_m": 0.3459550566585818
+        },
+        {
+          "input": "train_06.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.0017604943399000565,
+            "minus": 0.0016554524767486587,
+            "plus": 0.001953780056258642
+          },
+          "derivative_RGB_SSE_per_m": 0.14167316257953644,
+          "central_difference_per_m": 0.14916378975499156
+        },
+        {
+          "input": "train_07.npz",
+          "rays": 1200,
+          "RGB_SSE": {
+            "0": 0.002256250607661271,
+            "minus": 0.002308895413415816,
+            "plus": 0.0023221272753885846
+          },
+          "derivative_RGB_SSE_per_m": 0.0010293945670127869,
+          "central_difference_per_m": 0.006615930986384301
+        }
+      ],
+      "aggregates": {
+        "equal_view": {
+          "RGB_SSE": {
+            "minus": 0.0017863279957941961,
+            "0": 0.001891993687981124,
+            "plus": 0.0021073196759265832
+          },
+          "derivative_RGB_SSE_per_m": 0.15363953181076795,
+          "central_difference_per_m": 0.16049584006619355,
+          "fixed_descent_direction": "minus",
+          "observed_loss_decrease": 0.0001056656921869278,
+          "corroboration_threshold": 2e-08,
+          "nonstationary_gradient": true,
+          "descent_corroborates": true,
+          "stationary_centre_contradicted": true
+        },
+        "training_expectation": {
+          "RGB_SSE": {
+            "minus": 0.0020476117046050062,
+            "0": 0.0020741221478211974,
+            "plus": 0.0022147234756575837
+          },
+          "derivative_RGB_SSE_per_m": 0.07733446318889037,
+          "central_difference_per_m": 0.0835558855262887,
+          "fixed_descent_direction": "minus",
+          "observed_loss_decrease": 2.6510443216191167e-05,
+          "corroboration_threshold": 2.0741221478211976e-08,
+          "nonstationary_gradient": true,
+          "descent_corroborates": true,
+          "stationary_centre_contradicted": true
+        }
+      },
+      "checkpoint_sha256": "900f2605c72abb6b70f91cbf9e27997fae3fb1854ac82b0f8232d16bc060781c"
+    }
+  },
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_background_control_20261016_v1/protocol.json": "d143bbdd9204829d3a98f8cdeb21dcb4a02c059ae10cf8ddd09356f9d3c1a4b8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_background_control_20261016_v1/prepare.py": "0df80db2c4a171a1b971ce593dc9422afead8b9b329a292727c4fa5e211101d3",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_background_control_20261016_v1/predict.py": "2caf58eaa2766e6cd0bf310525b99b62a06433489041fb103f9a76db1704c7c8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_background_control_20261016_v1/score.py": "22315e3c637ab1957891fb45434e6c606c715611cacbbbdc4df57ad410fcf063",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_background_control_20261016_v1/launch.py": "4afa9fdd82c65b2ad5fdb90ebc00a7e0460c1a7871481b954899aef79d27abc3",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/causal_radiance_grid_20261016_v1/field.py": "392bd86f2deef72904825f884a8e3c0adae6af5af3431d0f25c00a5b6456b293",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/causal_radiance_grid_20261016_v1/protocol.json": "b738b9654e8213ce9a43f91e1d070fc1809a861bed0766af0c1de961301ba72a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/durable_stage_supervision_v1.py": "7189f8ae002db7866c9a36f29f5fcf24c9506c2144d0b3b362e2ce1ee18119f2",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_background_control_20261016_v1/compaction_protocol.json": "9520728ee8d608c34ade0dcae387be6a59281c24d15b5dd39024c5f4d80edf70",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_background_control_20261016_v1/compaction.py": "ad0b3ece5ae63c0b9a6bcffe92d20734dabef9134e78f4025cb8a190d24cd99d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_background_control_20261016_v1/score_compaction.py": "808819d3071f34e111100da81f588e6c5ded1f0b8bc274b5c3678bb69eb21c03",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_background_control_20261016_v1/launch_compaction.py": "254a0a9cfcb82088051bbaeb9c0e33b91d626b27093e05b05f601d4e85147345",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/protocol.json": "174569b4e24f572d1a12298d1ee859cd2c252d9c660cfc327c3ce1cc5ea040d1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/predict.py": "c2e1d0f5018c2acf021ce303f6f4babefdb619ef374a2a3c4d16ba2ff327641b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/score.py": "17a759cd664932f28dbc1a41cd0c211b5eacddda8324ef6d41804e078bab0561",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/launch.py": "52a4de6dc6e3b6613af34481c9af43fe2ead4e5a6a2fcf0e1c4ca4884c5e9a58",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/analysis/protocol.json": "74bdf10ca2dfebe8adddf09a98331b5d53eea7398a64791126b201c64a709b04",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/analysis/diagnose.py": "6af4fb8177c0429f44d896621f8c4487a21e09ba7b0ae1beb9289e7b60781447",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/analysis/launch.py": "9fdf88f19ac15a2c69d2e951a195f22d04952d5e4c1593020515682fde510a39",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/predictions/step_0000.pt": "420a1e151d38e2f9108e81561e4510c3854501a370e9fca3f60a3037d78153e4",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_background_control_20261016_v1/compaction_predictions/step_0000.pt": "817b717923ff4fff842a6c00e6bf5f2b987b8351569908d79fbfea9d96ddd4e7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/analysis/objective_protocol.json": "3e7833d67010d9922accd79c3c86ece1c3b30921e140913874a4b5e8a938ac69",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/analysis/objective.py": "227c3cff8fd87068a434e520d664d96e4d251a96905df82feb7a695ad0844166",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_rgb_initialization_20261016_v1/analysis/launch_objective.py": "433731ffdfd7165b344774d694a16f4be2dbe90fa8c5669ed1587cd0d1ad1cfc",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_pointwise_qualification_20261016_v1/protocol.json": "56d9a6db472a48b5b2e835a0e8ed7940bf897645397b3e690ff79eca12978d48",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_pointwise_qualification_20261016_v1/evaluate.py": "9e51a2e715f5ac9733fdab111e7c41b159bb36ebcc324c83e24dcaa9a85035d8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/radiance_pointwise_qualification_20261016_v1/launch.py": "84a669054749500b5b5ac68eb09e7b24b8a194e8cc8e720421e3760a2d3c4e3c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/geometry_uncertainty_contract_20261017_v1/protocol.json": "5dc0020231ad23bb5fffadf1b13d72a7a9ab94e3f866939eccb69c369c4ca9ac",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/geometry_uncertainty_contract_20261017_v1/evaluate.py": "40bd4a6bcb0119440d2609bb29196fb06a3b375823b42f173b7560ce59c40764",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/geometry_uncertainty_contract_20261017_v1/launch.py": "6bbb38b37f7922c4d42bd3cd97a5b38c48bcf97f77c943a96f2caf26482ec1b3"
+  },
+  "arrays_sha256": "320350c1aeebdcb48da07ffc42490401f4f33b1ebcabc850f285a75319d6e667",
+  "fit_calls": 0,
+  "optimizer_steps": 0,
+  "labels_read": false,
+  "parameters_unchanged_exact": true,
+  "centre_failure_count": 4,
+  "interpretation": "Observed-RGB stationary-centre condition in one valid spatial direction. Not fullBayesRays or a test of its uncertainty-ranking performance; no Hessian/variance/error interval computed. Nonzero gradient violates stationarity even with a zero-centred quadratic deformationprior. A decrease in RGB loss is not a proven decrease in depth error.",
+  "wall_s": 1.742847343091853
+}

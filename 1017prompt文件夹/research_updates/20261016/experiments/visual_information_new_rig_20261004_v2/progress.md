@@ -1,0 +1,15 @@
+# Execution ledger — plan: docs/superpowers/plans/2026-10-04-new-rig-repeat.md
+- Spec: frozen prior-stage protocol, amended only to current rig and newly rendered camera data.
+- Ruling: old six trajectories already familiar; replay their complete request blocks in live physics for matched 66-frame camera-dependent perception comparison. These are fresh captures of development trajectories, not fresh held-out. Replay is data acquisition and cannot be called closed-loop navigation validation.
+- Ruling: preserve original project/previous artifacts; write an independent v2 experiment. No branch integration/commit requested.
+- Pre-flight interfaces: new actual optical-to-base and world-camera matrices must match new mask; scoring unchanged. Checkpoints/vendor are reused read-only; predictions and timings must be newly generated.
+- Ruling: run the eight map/visible diagnostics independently of RGB qualification; rejected RGB candidates cannot be promoted to navigation. If a new perception gate passes, current shared-controller physical qualification still governs any RGB run.
+- Task 1 complete: four intended missing-validator failures followed by 26/26 full CPU tests. Controller/map/measurement/inference bytes unchanged. Current mask identity guard and measured rig/time/image guards enabled.
+- Ruling: complete offline capture → infer/score → eight online diagnostics in that order; pipeline ordering refines task boundaries without changing scope.
+- Live acquisition complete: six sequences, 66 selected pairs; sampled observed state vectors bit-equal to preserved old data for every sequence. All 66 RGB pairs changed; measured offset error max 1.6101e-6 m.
+- Offline inference/scoring complete: both official fixed models 66/66 pairs; both reject all four critical subgroup gates and exceed 0.1 s pair p95. No RGB controller admitted.
+- Intermediate checkpoint (subsequently completed): eight-run matrix was in progress; map runs preserved old outcomes. No action/control parameter changes from results.
+- Task 2 complete: all six new captures and eight actual complete closed-loop map/visible runs; both inference jobs newly completed66/66. Driver verified artifact completeness after each child.
+- Task 3 measurements/report complete: new near-path free fractions E0 24.3%, E2 24.7%, H3 24.1%, H4 20.6%; map2/4, visible0/4 with zero main requests; same old outcomes. No accepted new RGB candidate.
+- Final validation:26/26 CPU tests, unchanged prior-stage experimental sources, both exact official checkpoint SHA256,66 current calibrated/clock-checked pairs,6 observed-state matched captures,8 actual runs,16 videos decoded at first/last frames, all online source identities checked and equal. All report links and six figures present.
+- Final fresh whole-stage review complete: no material findings. Reviewer independently reproduced all depth metrics and ran 26/26 CPU tests, confirmed new images/predictions and matched states, unchanged control sources, and report scope. Source/script changes are limited to measurement adaptation, paths, identity guards and reporting, with no controller/model behavior tuning.

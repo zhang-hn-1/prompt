@@ -1,0 +1,53 @@
+{
+  "utc": "2026-10-06T21:23:14.519538+00:00",
+  "accepted": true,
+  "all_grids_exact": true,
+  "whole_sequence_frames": 226,
+  "exact_saved_arrays": 1356,
+  "exact_diagnostics": 2712,
+  "maximum_records": 77155,
+  "hot_state_timings": [
+    {
+      "frame": 0,
+      "records": 9327,
+      "old_full_snapshot_s": 0.10428916197270155,
+      "new_grid_only_s": 0.00851354282349348,
+      "speedup": 12.249795899882152,
+      "old_materializes_unused_record_copies": true,
+      "new_raw_records_omitted_only_from_return": true
+    },
+    {
+      "frame": 60,
+      "records": 48894,
+      "old_full_snapshot_s": 0.6092187711037695,
+      "new_grid_only_s": 0.024188781855627894,
+      "speedup": 25.18600460080735,
+      "old_materializes_unused_record_copies": true,
+      "new_raw_records_omitted_only_from_return": true
+    },
+    {
+      "frame": 145,
+      "records": 47961,
+      "old_full_snapshot_s": 0.5855904819909483,
+      "new_grid_only_s": 0.02879350702278316,
+      "speedup": 20.337587968273326,
+      "old_materializes_unused_record_copies": true,
+      "new_raw_records_omitted_only_from_return": true
+    },
+    {
+      "frame": 225,
+      "records": 10536,
+      "old_full_snapshot_s": 0.11740284110419452,
+      "new_grid_only_s": 0.007808691821992397,
+      "speedup": 15.0348923712857,
+      "old_materializes_unused_record_copies": true,
+      "new_raw_records_omitted_only_from_return": true
+    }
+  ],
+  "median_speedup": 17.686240169779513,
+  "raw_record_state_unchanged": true,
+  "source_identity_checks": 283,
+  "online_not_changed": true,
+  "no_navigation_improvement_claim": true,
+  "whole_research_complete": false
+}

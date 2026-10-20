@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-08T15:10:01.157866+00:00",
+  "name": "ONE frozen SegFormer-B0 structural foreground hypothesis audit",
+  "model": "nvidia/segformer-b0-finetuned-ade-512-512",
+  "revision": "Resolve public official immutable repository SHA before weights/inference; store identity",
+  "frames": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "eyes": [
+    "left",
+    "right"
+  ],
+  "maximum_image_inferences": 12,
+  "positive_labels": [
+    "wall",
+    "building",
+    "fence",
+    "pole",
+    "column"
+  ],
+  "label_mapping": "Exact names in official id2label, no broadening after scores",
+  "preprocessing": "Exactly existing fixed np.rot90(native RGB); official saved 512 processor mean/std; restore labels/confidence to native pixels; same current CAD mask. No angle/crop/model sweep.",
+  "confidence_gate": 0.9,
+  "role": "Uncertain structural-foreground MODEL hypothesis only; not measured obstacle/depth/free",
+  "model_input": "Current eye RGB only; no GTdepth/targetid/pose/futurefeedback/model3D predictions",
+  "GT_evaluator": "After 12prediction seal only: current renderer worldpoint membership in physical71 shapes, nonCAD valid pixels; unknown truth counted false positives. Targetdivider06 current pixel recall only evaluator.",
+  "frozen_gates": {
+    "positive_pixels_min": 100,
+    "precision_min": 0.95,
+    "target_recall_each_nonempty_frame_min": 0.9
+  },
+  "failure_rule": "Any failure -> reject this ONE semantic-hypothesis candidate; no class/confidence/rotation/weights rescanning or fit. No source/actor/planner admission.",
+  "not_fresh": true,
+  "no_actor_or_physical_run": true,
+  "no_training": true,
+  "no_learning_memory_increment": true,
+  "old_depth_source_and_worldmodel_rejections_preserved": true,
+  "official_sources": [
+    "https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512",
+    "https://huggingface.co/docs/transformers/v4.21.1/model_doc/segformer"
+  ]
+}

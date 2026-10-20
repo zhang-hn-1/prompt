@@ -1,0 +1,38 @@
+{
+  "utc": "2026-10-07T11:33:22.373051+00:00",
+  "actual_stage_closed": true,
+  "managed_actual_session": 52763,
+  "verifier_sessions_closed": [
+    87482,
+    40400
+  ],
+  "assessment_v1_failed_None_guard_preserved": true,
+  "current_bridge_decision": "REJECT_LOCAL_CURRENT_BRIDGE_CONSUMER",
+  "next_preflight": "PASS_SINGLE_TRACKING_TUBE_PREFLIGHT_ONLY",
+  "next_work": "Implement and verify one planner-only empirical tracking tube before first-review and one possible actual run. Restore original C1 guard, never combine rejectedbridge/pursuit.",
+  "whole_research_complete": false,
+  "formal_triggered": false,
+  "append_trace": [
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/research_mission.md",
+      "old_bytes": 244766,
+      "old_sha256": "492c133b11b70b93ca66419141d96dad42a3d7d6b6565780b8724cd12248e5c4",
+      "new_sha256": "839fe8b9389a968a3577268602ea465f31295132a935b1999f0d5ace968e8f51",
+      "old_bytes_preserved": true
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+      "old_bytes": 340634,
+      "old_sha256": "ce3e875adfbefe5b319b42c5acff3ab5d53c203385cc69b7655414c49974f857",
+      "new_sha256": "4aa4cc7962f0fce8dea92c47c3d006bdc27760fc4f2876a412e494ca3391e762",
+      "old_bytes_preserved": true
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md",
+      "old_bytes": 173157,
+      "old_sha256": "e0839533ff0d684e1b724d43e3d2acadb4c4d71cf9f21c10be07a71bd27dbef7",
+      "new_sha256": "2d3648e309d54864f8862b243c99b052275648ddb66b96f0da69ab91ba0caa96",
+      "old_bytes_preserved": true
+    }
+  ]
+}

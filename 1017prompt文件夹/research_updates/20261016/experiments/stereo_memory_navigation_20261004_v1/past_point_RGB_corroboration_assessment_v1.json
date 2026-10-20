@@ -1,0 +1,68 @@
+{
+  "utc": "2026-10-07T01:18:37.740054+00:00",
+  "seal_utc": "2026-10-07T01:18:16.794690+00:00",
+  "rows": [
+    {
+      "frame": 185,
+      "past_points": 1785,
+      "bilateral_fov_and_mask_valid": 1781,
+      "appearance_accepted": 267,
+      "both_eye_geometry_correct": 267,
+      "finite_geometry_mismatch": 0,
+      "label_insufficient": 0,
+      "conservative_precision": 1.0,
+      "current_frozenFast_hazard_points": 1784,
+      "original_geometry_time_s": 17.999999597668648,
+      "appearance_time_s": 18.499999586492777
+    },
+    {
+      "frame": 190,
+      "past_points": 1785,
+      "bilateral_fov_and_mask_valid": 1285,
+      "appearance_accepted": 30,
+      "both_eye_geometry_correct": 30,
+      "finite_geometry_mismatch": 0,
+      "label_insufficient": 0,
+      "conservative_precision": 1.0,
+      "current_frozenFast_hazard_points": 0,
+      "original_geometry_time_s": 17.999999597668648,
+      "appearance_time_s": 18.999999575316906
+    },
+    {
+      "frame": 240,
+      "past_points": 1785,
+      "bilateral_fov_and_mask_valid": 0,
+      "appearance_accepted": 0,
+      "both_eye_geometry_correct": 0,
+      "finite_geometry_mismatch": 0,
+      "label_insufficient": 0,
+      "conservative_precision": null,
+      "current_frozenFast_hazard_points": 0,
+      "original_geometry_time_s": 17.999999597668648,
+      "appearance_time_s": 23.999999463558197
+    },
+    {
+      "frame": 350,
+      "past_points": 1785,
+      "bilateral_fov_and_mask_valid": 0,
+      "appearance_accepted": 0,
+      "both_eye_geometry_correct": 0,
+      "finite_geometry_mismatch": 0,
+      "label_insufficient": 0,
+      "conservative_precision": null,
+      "current_frozenFast_hazard_points": 0,
+      "original_geometry_time_s": 17.999999597668648,
+      "appearance_time_s": 34.99999921768904
+    }
+  ],
+  "gates": {
+    "moving_frame190_nonzero_support": true,
+    "accepted_precision_all_nonempty_ge95": true
+  },
+  "decision": "READONLY_APPEARANCE_DIAGNOSTIC_PASS_ONLY",
+  "not_new_depth_measurement": true,
+  "no_geometry_age_refresh": true,
+  "not_memory_or_navigation_admission": true,
+  "knownpose_privileged": true,
+  "development_not_fresh": true
+}

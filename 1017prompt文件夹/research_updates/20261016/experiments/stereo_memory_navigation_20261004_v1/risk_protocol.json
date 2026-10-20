@@ -1,0 +1,16 @@
+{
+  "role": "bounded simulation risk-exploration diagnostic; privileged current depth and pose, never RGB navigation",
+  "reason": "Four measured observation sequences did not certify a cold-start route. Measure explicitly risky movement rather than silently filling unseen floor.",
+  "frozen_before_first_navigation_run": true,
+  "starts": ["golden_e0_0001", "golden_e2_0001"],
+  "max_new_runs": 2,
+  "episode_budget_s": 35,
+  "settle_and_observe_s": 6,
+  "unknown_region_main_cap_rad_s": 0.3,
+  "known_obstacle_clearance_m": 0.6,
+  "unknown_labels_unchanged": true,
+  "trajectory_certification": false,
+  "shared_control": "original roll PID .4/.1/.7 and protocol/smoother/supervisor; original direction latch five .05m/s confirmations",
+  "map": "previous guarded current-frame floor surface plus accumulated history",
+  "admission": "actual goal/contact/progress and unknown traversal separately reported; no promotion to a safe or RGB baseline regardless of simulation contact count"
+}

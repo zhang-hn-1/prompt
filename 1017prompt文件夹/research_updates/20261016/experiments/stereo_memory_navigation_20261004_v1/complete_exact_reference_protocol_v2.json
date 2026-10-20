@@ -1,0 +1,71 @@
+{
+  "utc": "2026-10-08T11:49:07.900435+00:00",
+  "question": "Does exact outgoing geometric target after measured reverse-forward handoff improve complete reference2 tracking and actual terminal stop?",
+  "maximum_sequences": 2,
+  "variants": [
+    "B0",
+    "exact"
+  ],
+  "manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+  "reference_kind": "previously observed installed nominal whole reference frozen as prior, NOT fresh validation reference",
+  "task": "knownpose fixed reference in original scene, endpoint before wall, not E1 navigation",
+  "prefix_requests_frames": [
+    0,
+    154
+  ],
+  "reference_install_frame": 155,
+  "sim_budget_s": 75.0,
+  "post_goal_zero_request_s": 3.0,
+  "only_change": "post accepted reverse-forward outgoing continuous geometric target",
+  "unchanged": [
+    "PID",
+    "main caps",
+    "speed strategy",
+    "direction low speed five samples and rebound reset",
+    "protocol",
+    "smoother",
+    "supervisor",
+    "rig",
+    "lighting",
+    "planner frozen off"
+  ],
+  "gates": {
+    "prefix_physical_and_execution_equal": true,
+    "effective_applied_difference_required": true,
+    "zero_collision": true,
+    "outgoing_cross_track_peak_max_m": 0.2,
+    "actual_progress_not_less_than_B0": true,
+    "outgoing_complete_and_goal_within_m": 0.2,
+    "postgoal_peak_distance_max_m": 0.2,
+    "stop_five_consecutive_samples_below_m_s": 0.05
+  },
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/exact_outgoing_lookahead.py": "74213577745a96aeaa3c162440ece1bf496ae04f05c9c82cf5c4b84b1cbcf7de",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/outgoing_lookahead.py": "f0abeb4cd5d335be472fe43fefb4ee9e96bb21b9b3d8b1fca5495881e3e469c7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/cusp_projection.py": "c6baa43536bc5ba871b336fe0907d2a3abca676650c40fb8978e17a99a7a1d8d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/estimated_navigation_observation.py": "8420edda579aadca703cd4a1e533d0b794165e17792a2379529fdaa0ebefe4a7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/original_E1_repeated_exposure_memory_navigation_run_v1/requests.npz": "95743e50b4549e22bdf35569b04b7d682ff7f4b0e2031ab75975acfac78dfa12",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/original_E1_repeated_exposure_memory_navigation_run_v1/local_plans/frame_060.json": "bf0abadde10dbffd56980719706ca892c56868f7a4847ab26f18b0cf5f4b649c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/original_E1_repeated_exposure_memory_navigation_run_v1/local_plans/frame_155.json": "a1b4e4b6a686339ba8ddcda75b1d624cdee72cf91ef6a07b3d82b2df500e0a93",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_complete_exact_reference_v2.py": "f93f4b7cf57563a005ba5a37e9c904115e90f696c3d3724f81e155902546bd2b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_complete_exact_reference_stage_v2.py": "56306b96577b3ae14847ad990b95d431e28af4722333c85d4f9ffc61c9d5867b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/depth_local_curve.py": "c0617a764b1b21a7b972a50a6fad86456cbcf98b947085f40dbdc28c086d37c7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/execution_snapshot.py": "bdc3086978ed78de259ef8e24b32b1a11d79461327ecee8a8c2ec937c66fc54e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/selected_candidate.json": "f5530c5519f16755ff8f417fdbc595e1ff2d8599f1aaa40328c2b865ca0084a6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/roll_pid.py": "e205d303a8f9cb066349f8eae20e12f947596cca9603d7bac8dfb0b1b3379f47",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py": "72266e68bced65f81e41dbe96d99a806e4f674b13c9ae7db563016097d8a29f7",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/runner.py": "975e4182837eb74249da3d917ff916e9a0186ecb313d7a2b104a80559037e7cf",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/data_contract.yaml": "72b039ac68b829bd714da28e8b69d44c0359de546bef07abade220b313ad462d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json": "41fa023519cf805bedd3b0177a91638479976160a9cdb675442d76a7f61c75ce",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/gated_speed_012/roll_pid.py": "e205d303a8f9cb066349f8eae20e12f947596cca9603d7bac8dfb0b1b3379f47"
+  },
+  "old_R1_and_velocity_V1_V2_REJECT_preserved": true,
+  "formal35_NOTRUN": true,
+  "whole_research_complete": false,
+  "sim_budget_scope": "75 seconds total including settling; full3s terminal assessment requires goal entry by72s; otherwise incomplete/reject",
+  "terminal_capture": "runner hold3.1s prevents early tail termination within3s budget; gate remains independent five consecutive10Hz samples below.05 and all3s goal peak",
+  "infrastructure_revision": "v1 failed BEFORE any capture/action: runtime unnecessary global A* rejected cached endpoint; empty video cleanup obscured exception. v2 supplies cached reference directly to runtime display/provider, leaves same scene/occupancy/contact and control goals unchanged. Not proof frozen path safe.",
+  "maximum_physical_sequences": 2,
+  "failed_attempt_action_blocks": 0
+}

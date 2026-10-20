@@ -1,0 +1,86 @@
+{
+  "results": {
+    "LR": {
+      "baseline": {
+        "selected": "brake",
+        "eligible_collected_state": true,
+        "prefix_matches_collection": true,
+        "goal_reached": false,
+        "first_goal_s": null,
+        "minimum_goal_distance_m": 3.0394813157221416,
+        "final_goal_distance_m": 3.208611062764545,
+        "contact_valid": true,
+        "contact_samples": 0,
+        "minimum_actual_body_clearance_m": 0.6817755285838081,
+        "passed_obstacle_station": false,
+        "max_forward_progress_m": 0.9791074514427516,
+        "selected4s_max_prediction_error_m": null,
+        "tracking_sources": {},
+        "local_goal_success": false
+      },
+      "candidate": {
+        "selected": "hold",
+        "eligible_collected_state": true,
+        "prefix_matches_collection": true,
+        "goal_reached": false,
+        "first_goal_s": null,
+        "minimum_goal_distance_m": 2.61567026415305,
+        "final_goal_distance_m": 3.302405442373228,
+        "contact_valid": true,
+        "contact_samples": 0,
+        "minimum_actual_body_clearance_m": 0.37457779879395536,
+        "passed_obstacle_station": false,
+        "max_forward_progress_m": 1.8859120848144855,
+        "selected4s_max_prediction_error_m": 1.6819172286353368e-07,
+        "tracking_sources": {
+          "tracking_infeasible": 117,
+          "tracking": 33
+        },
+        "local_goal_success": false
+      },
+      "pair_first16s_identical": true
+    },
+    "RL": {
+      "baseline": {
+        "selected": "brake",
+        "eligible_collected_state": true,
+        "prefix_matches_collection": true,
+        "goal_reached": false,
+        "first_goal_s": null,
+        "minimum_goal_distance_m": 3.06936008788352,
+        "final_goal_distance_m": 3.2239452757404035,
+        "contact_valid": true,
+        "contact_samples": 0,
+        "minimum_actual_body_clearance_m": 0.6908669402608336,
+        "passed_obstacle_station": false,
+        "max_forward_progress_m": 0.9512042281879634,
+        "selected4s_max_prediction_error_m": null,
+        "tracking_sources": {},
+        "local_goal_success": false
+      },
+      "candidate": {
+        "selected": "hold",
+        "eligible_collected_state": true,
+        "prefix_matches_collection": true,
+        "goal_reached": false,
+        "first_goal_s": null,
+        "minimum_goal_distance_m": 2.7027385972004683,
+        "final_goal_distance_m": 3.4822903757872448,
+        "contact_valid": true,
+        "contact_samples": 0,
+        "minimum_actual_body_clearance_m": 0.37738343322412204,
+        "passed_obstacle_station": false,
+        "max_forward_progress_m": 1.6042831263702944,
+        "selected4s_max_prediction_error_m": 2.969414650084382e-07,
+        "tracking_sources": {
+          "tracking_infeasible": 118,
+          "tracking": 32
+        },
+        "local_goal_success": false
+      },
+      "pair_first16s_identical": true
+    }
+  },
+  "accepted_local_detour": false,
+  "formal_benchmark": false
+}

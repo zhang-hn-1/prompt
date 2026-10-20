@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-07T15:18:31.186363+00:00",
+  "pid": 1905032,
+  "stage": "ACTUAL_PAIR_CLOSED_NEEDS_VERIFICATION",
+  "arms": {
+    "R0": {
+      "stage": "ACTUAL_CLOSED_NEEDS_VERIFICATION",
+      "utc": "2026-10-07T15:18:31.186525+00:00",
+      "complete": true,
+      "child_pid": 1905034,
+      "returncode": 0,
+      "wall_s": 509.5000671579037,
+      "end_utc": "2026-10-07T15:27:00.687081+00:00",
+      "forced_kill": false,
+      "wall_timeout": false,
+      "post_close_manifest_sha256": "166d6842c90e5a1f56257744bd9a81602cd84acd2aca94632164fb752dd2bb20"
+    },
+    "R1": {
+      "stage": "ACTUAL_CLOSED_NEEDS_VERIFICATION",
+      "utc": "2026-10-07T15:27:01.331586+00:00",
+      "complete": true,
+      "child_pid": 1914854,
+      "returncode": 0,
+      "wall_s": 505.66517088608816,
+      "end_utc": "2026-10-07T15:35:27.002373+00:00",
+      "forced_kill": false,
+      "wall_timeout": false,
+      "post_close_manifest_sha256": "60f8e156930995a21153c0f98967fdf927a51615eef2160631b76175afd95110"
+    }
+  },
+  "maximum_fresh_actual_sequences": 2,
+  "whole_research_complete": false,
+  "formal_triggered": false,
+  "end_utc": "2026-10-07T15:35:27.615670+00:00"
+}

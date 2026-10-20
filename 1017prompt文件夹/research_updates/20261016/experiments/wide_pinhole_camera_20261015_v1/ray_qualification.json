@@ -1,0 +1,971 @@
+{
+  "total_fixed_ray_queries": 80,
+  "scored": 72,
+  "correct_within_02m": 72,
+  "scored_fraction": 0.9,
+  "conditional_pass_fraction": 1.0,
+  "pass_gate": true,
+  "rows": [
+    {
+      "frame": "frame_000.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 2.5512026078092904,
+      "saved_depth": 2.5573532581329346,
+      "scored": true,
+      "error_m": 0.006150650323644147
+    },
+    {
+      "frame": "frame_000.npz",
+      "eye": 0,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 2.563261773437169,
+      "saved_depth": 2.58001708984375,
+      "scored": true,
+      "error_m": 0.01675531640658079
+    },
+    {
+      "frame": "frame_000.npz",
+      "eye": 0,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 2.555506513205429,
+      "saved_depth": 2.568270206451416,
+      "scored": true,
+      "error_m": 0.012763693245986918
+    },
+    {
+      "frame": "frame_000.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 2.489231742562789,
+      "saved_depth": 2.4932665824890137,
+      "scored": true,
+      "error_m": 0.004034839926224887
+    },
+    {
+      "frame": "frame_000.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": null,
+      "saved_depth": null,
+      "scored": false,
+      "error_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 0.6797166510615444,
+      "saved_depth": 0.6801885366439819,
+      "scored": true,
+      "error_m": 0.00047188558243749235
+    },
+    {
+      "frame": "frame_000.npz",
+      "eye": 1,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 0.7123581422867425,
+      "saved_depth": 0.7288799285888672,
+      "scored": true,
+      "error_m": 0.01652178630212464
+    },
+    {
+      "frame": "frame_000.npz",
+      "eye": 1,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 0.7113617907156704,
+      "saved_depth": 0.7283545136451721,
+      "scored": true,
+      "error_m": 0.016992722929501713
+    },
+    {
+      "frame": "frame_000.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 0.6969554064089173,
+      "saved_depth": 0.697144627571106,
+      "scored": true,
+      "error_m": 0.00018922116218866858
+    },
+    {
+      "frame": "frame_000.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": 0.6633207148133916,
+      "saved_depth": 0.6643813848495483,
+      "scored": true,
+      "error_m": 0.00106067003615673
+    },
+    {
+      "frame": "frame_001.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 2.5736170623915777,
+      "saved_depth": 2.5835256576538086,
+      "scored": true,
+      "error_m": 0.009908595262230868
+    },
+    {
+      "frame": "frame_001.npz",
+      "eye": 0,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 2.587866798734466,
+      "saved_depth": 2.6049327850341797,
+      "scored": true,
+      "error_m": 0.017065986299713565
+    },
+    {
+      "frame": "frame_001.npz",
+      "eye": 0,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 2.5739269542386247,
+      "saved_depth": 2.5833051204681396,
+      "scored": true,
+      "error_m": 0.009378166229514928
+    },
+    {
+      "frame": "frame_001.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 2.501573979561971,
+      "saved_depth": 2.507119655609131,
+      "scored": true,
+      "error_m": 0.00554567604715972
+    },
+    {
+      "frame": "frame_001.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": null,
+      "saved_depth": null,
+      "scored": false,
+      "error_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 0.6676898454788821,
+      "saved_depth": 0.6700090765953064,
+      "scored": true,
+      "error_m": 0.002319231116424292
+    },
+    {
+      "frame": "frame_001.npz",
+      "eye": 1,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 0.7021333951903886,
+      "saved_depth": 0.7181078791618347,
+      "scored": true,
+      "error_m": 0.015974483971446074
+    },
+    {
+      "frame": "frame_001.npz",
+      "eye": 1,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 0.6951891362337126,
+      "saved_depth": 0.713347315788269,
+      "scored": true,
+      "error_m": 0.018158179554556453
+    },
+    {
+      "frame": "frame_001.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 0.6870295633707542,
+      "saved_depth": 0.6879309415817261,
+      "scored": true,
+      "error_m": 0.0009013782109719148
+    },
+    {
+      "frame": "frame_001.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": 0.6494639603346449,
+      "saved_depth": 0.6529973149299622,
+      "scored": true,
+      "error_m": 0.0035333545953172285
+    },
+    {
+      "frame": "frame_002.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 2.5466144483141453,
+      "saved_depth": 2.558568000793457,
+      "scored": true,
+      "error_m": 0.011953552479311735
+    },
+    {
+      "frame": "frame_002.npz",
+      "eye": 0,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 2.5639345347223133,
+      "saved_depth": 2.5806901454925537,
+      "scored": true,
+      "error_m": 0.01675561077024046
+    },
+    {
+      "frame": "frame_002.npz",
+      "eye": 0,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 2.5462202737025095,
+      "saved_depth": 2.5546882152557373,
+      "scored": true,
+      "error_m": 0.008467941553227831
+    },
+    {
+      "frame": "frame_002.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 2.4978432902591665,
+      "saved_depth": 2.5042920112609863,
+      "scored": true,
+      "error_m": 0.006448721001819813
+    },
+    {
+      "frame": "frame_002.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": null,
+      "saved_depth": null,
+      "scored": false,
+      "error_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 0.6738753030678162,
+      "saved_depth": 0.6774892210960388,
+      "scored": true,
+      "error_m": 0.00361391802822264
+    },
+    {
+      "frame": "frame_002.npz",
+      "eye": 1,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 0.7107311699889449,
+      "saved_depth": 0.7255387902259827,
+      "scored": true,
+      "error_m": 0.014807620237037744
+    },
+    {
+      "frame": "frame_002.npz",
+      "eye": 1,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 0.6999167618674409,
+      "saved_depth": 0.7183198928833008,
+      "scored": true,
+      "error_m": 0.018403131015859886
+    },
+    {
+      "frame": "frame_002.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 0.6864831348259122,
+      "saved_depth": 0.6881868839263916,
+      "scored": true,
+      "error_m": 0.0017037491004794347
+    },
+    {
+      "frame": "frame_002.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": 0.6618328064331732,
+      "saved_depth": 0.6671191453933716,
+      "scored": true,
+      "error_m": 0.005286338960198367
+    },
+    {
+      "frame": "frame_003.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 2.5364351767636304,
+      "saved_depth": 2.548024892807007,
+      "scored": true,
+      "error_m": 0.011589716043376441
+    },
+    {
+      "frame": "frame_003.npz",
+      "eye": 0,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 2.5536461100797823,
+      "saved_depth": 2.570385456085205,
+      "scored": true,
+      "error_m": 0.016739346005422817
+    },
+    {
+      "frame": "frame_003.npz",
+      "eye": 0,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 2.537033546896512,
+      "saved_depth": 2.5462636947631836,
+      "scored": true,
+      "error_m": 0.009230147866671423
+    },
+    {
+      "frame": "frame_003.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 2.490662656287455,
+      "saved_depth": 2.497300386428833,
+      "scored": true,
+      "error_m": 0.006637730141378029
+    },
+    {
+      "frame": "frame_003.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": null,
+      "saved_depth": null,
+      "scored": false,
+      "error_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 0.6819143378171735,
+      "saved_depth": 0.684827446937561,
+      "scored": true,
+      "error_m": 0.002913109120387558
+    },
+    {
+      "frame": "frame_003.npz",
+      "eye": 1,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 0.7183118539619749,
+      "saved_depth": 0.7332578897476196,
+      "scored": true,
+      "error_m": 0.014946035785644685
+    },
+    {
+      "frame": "frame_003.npz",
+      "eye": 1,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 0.710004893930534,
+      "saved_depth": 0.7279666066169739,
+      "scored": true,
+      "error_m": 0.017961712686439868
+    },
+    {
+      "frame": "frame_003.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 0.6939927146772535,
+      "saved_depth": 0.6951377987861633,
+      "scored": true,
+      "error_m": 0.0011450841089097885
+    },
+    {
+      "frame": "frame_003.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": 0.6703398917929512,
+      "saved_depth": 0.6748185753822327,
+      "scored": true,
+      "error_m": 0.004478683589281496
+    },
+    {
+      "frame": "frame_004.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 2.531764196768195,
+      "saved_depth": 2.541533946990967,
+      "scored": true,
+      "error_m": 0.009769750222771822
+    },
+    {
+      "frame": "frame_004.npz",
+      "eye": 0,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 2.546929030126928,
+      "saved_depth": 2.563884735107422,
+      "scored": true,
+      "error_m": 0.016955704980493813
+    },
+    {
+      "frame": "frame_004.npz",
+      "eye": 0,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 2.5347431269438405,
+      "saved_depth": 2.5457072257995605,
+      "scored": true,
+      "error_m": 0.010964098855720028
+    },
+    {
+      "frame": "frame_004.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 2.4823997210522895,
+      "saved_depth": 2.488938808441162,
+      "scored": true,
+      "error_m": 0.006539087388872655
+    },
+    {
+      "frame": "frame_004.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": null,
+      "saved_depth": null,
+      "scored": false,
+      "error_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 0.6889375786317661,
+      "saved_depth": 0.6897662281990051,
+      "scored": true,
+      "error_m": 0.0008286495672390481
+    },
+    {
+      "frame": "frame_004.npz",
+      "eye": 1,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 0.7225376149195413,
+      "saved_depth": 0.7385062575340271,
+      "scored": true,
+      "error_m": 0.01596864261448583
+    },
+    {
+      "frame": "frame_004.npz",
+      "eye": 1,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 0.7213461537433261,
+      "saved_depth": 0.7381772994995117,
+      "scored": true,
+      "error_m": 0.016831145756185606
+    },
+    {
+      "frame": "frame_004.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 0.702594276577231,
+      "saved_depth": 0.7029315829277039,
+      "scored": true,
+      "error_m": 0.00033730635047291013
+    },
+    {
+      "frame": "frame_004.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": 0.6758358698544935,
+      "saved_depth": 0.6777119040489197,
+      "scored": true,
+      "error_m": 0.0018760341944261683
+    },
+    {
+      "frame": "frame_005.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 2.527812746266071,
+      "saved_depth": 2.537231206893921,
+      "scored": true,
+      "error_m": 0.00941846062784979
+    },
+    {
+      "frame": "frame_005.npz",
+      "eye": 0,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 2.5423065985926456,
+      "saved_depth": 2.559272527694702,
+      "scored": true,
+      "error_m": 0.01696592910205652
+    },
+    {
+      "frame": "frame_005.npz",
+      "eye": 0,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 2.5318164954872935,
+      "saved_depth": 2.5431582927703857,
+      "scored": true,
+      "error_m": 0.011341797283092259
+    },
+    {
+      "frame": "frame_005.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 2.478345298706365,
+      "saved_depth": 2.4853742122650146,
+      "scored": true,
+      "error_m": 0.007028913558649652
+    },
+    {
+      "frame": "frame_005.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": null,
+      "saved_depth": null,
+      "scored": false,
+      "error_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 0.693114665130888,
+      "saved_depth": 0.6934666037559509,
+      "scored": true,
+      "error_m": 0.0003519386250628864
+    },
+    {
+      "frame": "frame_005.npz",
+      "eye": 1,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 0.7250807716216034,
+      "saved_depth": 0.741529643535614,
+      "scored": true,
+      "error_m": 0.016448871914010565
+    },
+    {
+      "frame": "frame_005.npz",
+      "eye": 1,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 0.7281066354165947,
+      "saved_depth": 0.7441608905792236,
+      "scored": true,
+      "error_m": 0.016054255162628928
+    },
+    {
+      "frame": "frame_005.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 0.7070165728420871,
+      "saved_depth": 0.7082362771034241,
+      "scored": true,
+      "error_m": 0.0012197042613369957
+    },
+    {
+      "frame": "frame_005.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": 0.6797672542700043,
+      "saved_depth": 0.6802265048027039,
+      "scored": true,
+      "error_m": 0.0004592505326995733
+    },
+    {
+      "frame": "frame_006.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 2.5203624826401096,
+      "saved_depth": 2.5314292907714844,
+      "scored": true,
+      "error_m": 0.011066808131374728
+    },
+    {
+      "frame": "frame_006.npz",
+      "eye": 0,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 2.536197402445029,
+      "saved_depth": 2.5529210567474365,
+      "scored": true,
+      "error_m": 0.01672365430240763
+    },
+    {
+      "frame": "frame_006.npz",
+      "eye": 0,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 2.5237917334635775,
+      "saved_depth": 2.5340402126312256,
+      "scored": true,
+      "error_m": 0.010248479167648039
+    },
+    {
+      "frame": "frame_006.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 2.4718109708282636,
+      "saved_depth": 2.4803335666656494,
+      "scored": true,
+      "error_m": 0.008522595837385794
+    },
+    {
+      "frame": "frame_006.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": null,
+      "saved_depth": null,
+      "scored": false,
+      "error_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 0.7005831184685798,
+      "saved_depth": 0.7013232707977295,
+      "scored": true,
+      "error_m": 0.0007401523291497014
+    },
+    {
+      "frame": "frame_006.npz",
+      "eye": 1,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 0.7323425851682129,
+      "saved_depth": 0.7487373948097229,
+      "scored": true,
+      "error_m": 0.016394809641509966
+    },
+    {
+      "frame": "frame_006.npz",
+      "eye": 1,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 0.7374125511702732,
+      "saved_depth": 0.7529338002204895,
+      "scored": true,
+      "error_m": 0.015521249050216346
+    },
+    {
+      "frame": "frame_006.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 0.7143223680337112,
+      "saved_depth": 0.7160667181015015,
+      "scored": true,
+      "error_m": 0.001744350067790279
+    },
+    {
+      "frame": "frame_006.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": 0.6873872996072531,
+      "saved_depth": 0.6875977516174316,
+      "scored": true,
+      "error_m": 0.0002104520101785523
+    },
+    {
+      "frame": "frame_007.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 2.516128230148271,
+      "saved_depth": 2.528735637664795,
+      "scored": true,
+      "error_m": 0.012607407516524116
+    },
+    {
+      "frame": "frame_007.npz",
+      "eye": 0,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 2.533712151295798,
+      "saved_depth": 2.5499677658081055,
+      "scored": true,
+      "error_m": 0.016255614512307393
+    },
+    {
+      "frame": "frame_007.npz",
+      "eye": 0,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 2.51830382316182,
+      "saved_depth": 2.527207136154175,
+      "scored": true,
+      "error_m": 0.008903312992354806
+    },
+    {
+      "frame": "frame_007.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 2.467173244431067,
+      "saved_depth": 2.476684093475342,
+      "scored": true,
+      "error_m": 0.009510849044275016
+    },
+    {
+      "frame": "frame_007.npz",
+      "eye": 0,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": null,
+      "saved_depth": null,
+      "scored": false,
+      "error_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        320
+      ],
+      "expected_cylinder_depth": 0.7057764142889678,
+      "saved_depth": 0.7061111927032471,
+      "scored": true,
+      "error_m": 0.0003347784142793131
+    },
+    {
+      "frame": "frame_007.npz",
+      "eye": 1,
+      "pixel": [
+        200,
+        320
+      ],
+      "expected_cylinder_depth": 0.7385383615148183,
+      "saved_depth": 0.7545427680015564,
+      "scored": true,
+      "error_m": 0.016004406486738065
+    },
+    {
+      "frame": "frame_007.npz",
+      "eye": 1,
+      "pixel": [
+        280,
+        320
+      ],
+      "expected_cylinder_depth": 0.7426954385312582,
+      "saved_depth": 0.758253276348114,
+      "scored": true,
+      "error_m": 0.015557837816855824
+    },
+    {
+      "frame": "frame_007.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        280
+      ],
+      "expected_cylinder_depth": 0.7195842443610142,
+      "saved_depth": 0.7212619185447693,
+      "scored": true,
+      "error_m": 0.0016776741837550846
+    },
+    {
+      "frame": "frame_007.npz",
+      "eye": 1,
+      "pixel": [
+        240,
+        360
+      ],
+      "expected_cylinder_depth": 0.6925332464377407,
+      "saved_depth": 0.6934541463851929,
+      "scored": true,
+      "error_m": 0.0009208999474521473
+    }
+  ],
+  "scope": "Fixed 5 pixels per eye per native frame; same-runtime exported scene stage cylinder ray/depth identity, not full depth precision or monocular output. Only expected finite .5-3 eligible, no-hit/unscored unknown. Does not certify complete visibility/free/long memory/navigation."
+}

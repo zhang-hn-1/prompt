@@ -1,0 +1,16 @@
+from pathlib import Path
+import json,hashlib,datetime
+W=Path('/home/an/Documents/ChatGPT/球型机器人导航');H=W/'experiments/stereo_memory_navigation_20261004_v1';now=datetime.datetime.now(datetime.timezone.utc).isoformat();rows=[]
+for n in ('e0','e1','e2'):
+ D=H/('native_pose_baseline35_e0_run_v1' if n=='e0' else f'native_pose_baseline35_{n}_coverage_run_v1');r=json.loads((D/'native_pose_assessment_v2.json').read_text());rows.append(dict(condition=n,**{k:r[k] for k in ('outcome','scored_end_s','goal_remaining_m','along_start_goal_axis_m','matched_time_axis_progress_gain_m','native_xy_final_error_m','native_xy_p90_error_m','videos')}))
+(H/'native_pose_baseline35_three_condition_results_v1.json').write_text(json.dumps(dict(utc=now,actual_results=rows,arrivals=0,total=3,scope='native IMUencoder both registration/navigation, initialGT gauge flatheight safe-start prior lowlevelidealIMU; not pureRGB/originalstrict qualification',source_controller_frozen=True),indent=2)+'\n')
+text='\n\n## '+now+'：传统双目基线两层完整实际覆盖与首次分叉因果证据\n\n'
+text+='同一固定 SGBM＋显式风险记忆＋局部规划＋roll-PID 两层均实际完成：\n\n|条件|已知位姿35秒结果/目标剩余|估计位姿结果/目标剩余|估计位姿真实轴进度|\n|---|---|---|---|\n|E0|timeout / 3.53285m|timeout / 3.57691m|5.26905m|\n|E1|timeout / 5.89099m|timeout / 5.85050m|0.75360m|\n|E2|timeout / 8.11806m|collision 19.64s / 6.47545m|2.42632m|\n\n'
+text+='两层各0/3到达。它们严格保持35秒时间规则，但有独立TaskH先验，不冒称原严格cold-start导航成功率，也不称纯RGB。E0/E1位姿来源替换后进度差约±4cm，E2不同初始图像且真实碰撞，不能把小位置误差理解成全域导航合格。估计E1最终误差.00301972m/p90.00477791m；E2最终误差.00491894m来自19.7s最后capture，仅offline诊断，contact19.639999561s导航评分严格取之前19.6s真实位置，没有用19.7s未来位置救成绩。独立review C0I0，E1原始2212/E2 1230封存全验、视频351/198帧各10fps；作者查看两条轨迹图，没有声称逐帧观看全部视频。\n\n'
+text+='E2 firstrequest60之前14非raw物理字段精确相同，但初始RGB像素通道差左186391/右181511；最早.5s已知位姿运行有34风险点，估计位姿运行0点。唯一四格历史分解固定缓存RGB/预测分别与known/nativepose交叉，不新推理、不新物理、不读GTdepth、不动actor：A图像两种pose均34点/相同两坐标格，B两种pose均0。两原始对角逐值复现，支持最早差异跟随RGB与缓存匹配输出组合而非pose swap；没有分离RGB与匹配器内部原因，也没有归因全部后续碰撞。原v1四次数值完成后np.int64 JSON失败exit1，输出/日志保留，v2仅解析原打印整数行及验证四NPZ并写汇总，未重算source，独立C0I0。\n\n'
+text+='继而执行唯一34点的历史时间支持诊断，固定6个当前曝光6.5/7/7.5/8/10/13s，复用原LK21窗口/3层/30迭代/epsilon.01/往返1px/灰差20，无阈值扫描；出生投影回查<1e-4像素。6.5s有33可用轨迹，近点预测重投影残差median2.4545px/p903.6631px，全部超1px；7/7.5/13s缺可用轨迹只记unknown；8s/10s仍有效2/10条但残差约50/29px。它只显示保留假设缺乏相同几何的时域支持；LK不是正确对应证书，不删actor风险、不称完整安全或准入。无新网络拟合。\n\n'
+text+='已向学习阶段推进真实数据准备：4条历史完整35秒序列各349个0.1秒视频对/540查询网格，当前native IMU/encoder/实测关节/已知当次请求/上次请求特征先seal，再计算未来视频LK标签。可用LEFT-flow标签数72123/29489/31569/70820，均历史设计数据、不是fresh；压缩视频和近似光流不是3D/占据/自由真值。旧MODEL可靠性分类器拒绝保持，明确不具action-conditioned未来预测语义，不能冒称世界模型。当前没有训练或接受新模型；需双眼数据、一个完整冻结预测任务与新整序列封存验证，禁止相邻帧随机切分或未来applied/反馈输入。\n'
+receipts=[]
+for p in [W/'research_mission.md',W/'docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md',H/'progress.md',W/'reports/benchmark_baseline35_navigation_priority_20261009.md',W/'资料_球型机器人导航_2026-09-30/2026-10-09_研究进展更新/传统视觉基线导航评测优先.md']:
+ old=p.read_bytes();p.write_bytes(old+text.encode());new=p.read_bytes();assert new[:len(old)]==old;receipts.append(dict(path=str(p),old_bytes=len(old),old_sha256=hashlib.sha256(old).hexdigest(),new_sha256=hashlib.sha256(new).hexdigest(),old_prefix_preserved=True))
+(H/'baseline35_two_layers_closed_append_receipts_v1.json').write_text(json.dumps(receipts,indent=2)+'\n');print('two-layer actual results and learning-data status appended preserving old prefixes')

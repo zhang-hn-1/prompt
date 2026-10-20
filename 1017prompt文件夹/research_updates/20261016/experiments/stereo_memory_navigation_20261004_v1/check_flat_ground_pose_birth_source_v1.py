@@ -1,0 +1,12 @@
+"""Postseal check of actually consumed immutable source, not moving refill."""
+from pathlib import Path
+import json,hashlib,datetime
+import numpy as np
+from scipy.spatial import cKDTree
+H=Path(__file__).resolve().parent;D=H/'flat_ground_pose_D3_run_v1';seal=json.loads((D/'artifact_manifest_post_close.json').read_text());sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();assert all(sha(f)==s for f,s in seal['artifact_sha256'].items());seed=np.load(D/'immutable_possible_set_birth.npz');truth=np.load(D/'offline_occupancy_label.npz');xy=truth['origin']+np.argwhere(truth['labels']>0)*float(truth['resolution']);contain=float((cKDTree(seed['possible_xy']).query(xy)[0]<=np.sqrt(2)*.05+1e-9).mean());frame=int(seed['frame']);Y,X=np.mgrid[:480,:640];ray=np.stack([(X-319.5)/584.8888888888889,(Y-239.5)/584.8888888888889,np.ones_like(X)],axis=-1);views=[]
+for f in sorted((D/'partial_class_masks').glob(f'birth_{frame:03d}_*.npz')):
+ eye,vf=f.stem.split('_')[-2:];vf=int(vf);cl=np.load(f)['potential_hazard_mask'];gt=np.load(D/'offline_truth'/f'frame_{vf:03d}.npz');z=gt[eye+'_depth_m'];T=gt[eye+'_camera_usd_world'];mask=np.load(D/'masks'/f'frame_{vf:03d}.npz')[eye]
+ with np.errstate(invalid='ignore'):w=T[:3,3]+(ray*z[:,:,None])@(T[:3,:3]@np.diag([1,-1,-1])).T
+ valid=np.isfinite(z)&np.isfinite(w).all(-1)&(z>=.5)&(z<=3)&(w[:,:,2]>.05)&(w[:,:,2]<=1.5)&(np.linalg.norm(w-gt['root_position_world_m'],axis=-1)>.55)&~mask;n=int(cl.sum());precision=float((cl&valid).sum()/n) if n else 0.;views.append(dict(frame=vf,eye=eye,pixels=n,precision=precision))
+checks=dict(footprint_containment_ge95=contain>=.95,hypothesis_area_le6=len(seed['possible_xy'])*.01<=6.,birth_views_nonempty=bool(views),birth_view_precision_ge95=bool(views) and all(v['precision']>=.95 for v in views))
+r=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),decision='PASS_CONSUMED_STATIONARY_BIRTH_HYPOTHESIS_ONLY' if all(checks.values()) else 'REJECT_CONSUMED_STATIONARY_BIRTH_HYPOTHESIS',checks=checks,birth_frame=frame,footprint_cells=len(xy),contained_fraction=contain,model_XY_cells=len(seed['possible_xy']),model_area_m2=len(seed['possible_xy'])*.01,views=views,model_not_observation=True,old_full_class_and_moving_source_reject_preserved=True,GT_only_postseal=True,no_actor_retroactive_authorization=True,overall_navigation_assessment_separate=True,whole_research_complete=False,code_sha256=sha(__file__));(H/'flat_ground_pose_birth_source_check_v1.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r,indent=2))

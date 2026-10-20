@@ -92,3 +92,6 @@ research/ball_wm/data/benchmark_v1/occupancy/*
 # Keep the existing DINO-WM checkout as an independent Git repository.
 # Convert it to a submodule explicitly later if reproducible pinning is needed.
 research/ball_wm/models/dino_wm/
+
+!research/ball_wm/data/benchmark_v1/scenes/tracking_open_plane.usda
+!research/ball_wm/data/benchmark_v1/occupancy/tracking_open_plane_free.npz

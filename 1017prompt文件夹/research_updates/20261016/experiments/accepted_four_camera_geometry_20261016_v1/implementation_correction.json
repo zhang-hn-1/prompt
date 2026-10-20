@@ -1,0 +1,16 @@
+{
+  "issue": "Original label selector witnessed floor only; violated originally declared two-surface target",
+  "reproduced": "Synthetic floor-only frame produced 64 false obstacle-contact labels before correction; now zero",
+  "correction": "Upward neighbor in the same 1/2/3-pixel gravity-projected neighborhood must hit the same cylinder side above the disjoint floor band z>.01. Downward neighbor must hit floor |z|<=.01 outside footprint interiors. Existing .02 contact/side geometry tolerance, target domain and original gates kept.",
+  "initial_results_preserved": "initial_missing_obstacle_witness/",
+  "original_CAD_metadata_preserved": "initial_stale_CAD_metadata/",
+  "corrected_result": "contact_oracle_result.json",
+  "counts": {
+    "initial_target_recovered": 768,
+    "corrected_target_recovered": 750,
+    "target": 771,
+    "initial_projected_cells": 866,
+    "corrected_projected_cells": 693
+  },
+  "budgets": "No physical/model/fit/navigation or environment recovery; implementation error corrected before source admission."
+}

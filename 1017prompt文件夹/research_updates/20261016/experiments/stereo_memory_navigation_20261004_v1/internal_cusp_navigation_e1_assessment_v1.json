@@ -1,0 +1,177 @@
+{
+  "assessment_basis": "two real independently run physical arms, not unsupported readonly shadow",
+  "readonly_shadow_interface_pass": false,
+  "readonly_shadow_first_fork": 60,
+  "prior_forward_intent_reject_and_shadow_failure_preserved": true,
+  "common_parent_is_rejected_first_forward_candidate": true,
+  "numerical_gates_unchanged": true,
+  "not_online_shadow_validation": true,
+  "arms": {
+    "b0": {
+      "outcome": "timeout",
+      "success": false,
+      "budget_s": 35.0,
+      "scored_end_s": 34.99999921768904,
+      "metric_state_time_s": 34.99999921768904,
+      "goal_threshold_m": 0.2,
+      "goal_remaining_m": 4.325512728380424,
+      "goal_distance_reduction_m": 2.2744872716195754,
+      "along_start_goal_axis_m": 2.5109560310840604,
+      "path_length_m": 3.126199860202475,
+      "contact_time_s": null,
+      "arrival_time_s": null,
+      "contacts_all_available": true,
+      "contact_checks": 2101,
+      "measured_states": 351,
+      "not_based_on_path_index": true,
+      "not_strict_visual_admission": true,
+      "cross_axis": {
+        "rms_m": 0.9840924613174092,
+        "peak_m": 1.4105955421924596,
+        "scope": "same frozen start-goal line, not dynamically changed local references"
+      },
+      "wall_median_s": 0.3234049895017961,
+      "wall_p90_s": 1.4155650917993625,
+      "source_gaps": {
+        "source_epochs": 71,
+        "empty_source_epochs": 23,
+        "empty_epoch_fraction": 0.323943661971831,
+        "maximum_sampled_empty_span_s": 9.999999776482582,
+        "empty_sample_times_s": [
+          23.499999474734068,
+          23.999999463558197,
+          24.999999441206455,
+          25.499999430030584,
+          25.999999418854713,
+          26.499999407678843,
+          26.99999939650297,
+          27.4999993853271,
+          27.99999937415123,
+          28.49999936297536,
+          28.999999351799488,
+          29.499999340623617,
+          29.999999329447746,
+          30.499999318271875,
+          30.999999307096004,
+          31.499999295920134,
+          31.999999284744263,
+          32.49999927356839,
+          32.99999926239252,
+          33.49999925121665,
+          33.99999924004078,
+          34.49999922886491,
+          34.99999921768904
+        ],
+        "footprint_unknown_cells_median": 179.0,
+        "footprint_unknown_cells_max": 190,
+        "absence_is_observed_free": false,
+        "full_3d_blindzone_measured": false,
+        "interpretation": "Sampled point-source gaps and map unknown footprint only; cannot distinguish occlusion from matching/selection failure or certify unseen space. Task ground/safe-start priors remain separate; no source accuracy admission."
+      },
+      "requests": 350,
+      "captures": 351,
+      "physics_samples": 1751,
+      "raw_contact_samples": 2101,
+      "raw_contacts_zero": true,
+      "sealed_items": 2018,
+      "videos": {
+        "stereo_view": {
+          "frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "frames": 351,
+          "fps": 10.0
+        }
+      }
+    },
+    "candidate": {
+      "outcome": "timeout",
+      "success": false,
+      "budget_s": 35.0,
+      "scored_end_s": 34.99999921768904,
+      "metric_state_time_s": 34.99999921768904,
+      "goal_threshold_m": 0.2,
+      "goal_remaining_m": 6.06037634912859,
+      "goal_distance_reduction_m": 0.5396236508714098,
+      "along_start_goal_axis_m": 0.5748033940792081,
+      "path_length_m": 4.655097581130899,
+      "contact_time_s": null,
+      "arrival_time_s": null,
+      "contacts_all_available": true,
+      "contact_checks": 2101,
+      "measured_states": 351,
+      "not_based_on_path_index": true,
+      "not_strict_visual_admission": true,
+      "cross_axis": {
+        "rms_m": 0.43699360284010913,
+        "peak_m": 0.8418380677700048,
+        "scope": "same frozen start-goal line, not dynamically changed local references"
+      },
+      "wall_median_s": 0.3172300539990829,
+      "wall_p90_s": 1.3986311827000464,
+      "source_gaps": {
+        "source_epochs": 71,
+        "empty_source_epochs": 3,
+        "empty_epoch_fraction": 0.04225352112676056,
+        "maximum_sampled_empty_span_s": 0.4999999888241291,
+        "empty_sample_times_s": [
+          14.499999675899744,
+          14.999999664723873,
+          15.999999642372131
+        ],
+        "footprint_unknown_cells_median": 187.0,
+        "footprint_unknown_cells_max": 190,
+        "absence_is_observed_free": false,
+        "full_3d_blindzone_measured": false,
+        "interpretation": "Sampled point-source gaps and map unknown footprint only; cannot distinguish occlusion from matching/selection failure or certify unseen space. Task ground/safe-start priors remain separate; no source accuracy admission."
+      },
+      "requests": 350,
+      "captures": 351,
+      "physics_samples": 1751,
+      "raw_contact_samples": 2101,
+      "raw_contacts_zero": true,
+      "sealed_items": 2213,
+      "videos": {
+        "stereo_view": {
+          "frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "frames": 351,
+          "fps": 10.0
+        }
+      }
+    }
+  },
+  "gates": {
+    "actual_request_change": true,
+    "no_contact": true,
+    "arrival": false,
+    "net_progress": false,
+    "cross_axis_RMS": true,
+    "cross_axis_peak": true,
+    "latency": true,
+    "prefix_physics_execution_requests_exact": true
+  },
+  "taskH_candidate_accept": false,
+  "classification": "measured_navigation_reject",
+  "first_intervention_frame": 120,
+  "first_fork_event_count": 1,
+  "actual_different_request_rows": 212,
+  "qualification_replan_count": 17,
+  "prefix": {
+    "requests": true,
+    "nonraw_physics": true,
+    "execution": true,
+    "RGB_pixels": false,
+    "raw_point_memory": false
+  },
+  "causal_navigation_improvement": false,
+  "current_GT_pose_and_velocity_privileged": true,
+  "strict_cold_start_visual_admission": false,
+  "estimated_pose_result": null,
+  "learning_model_result": null,
+  "blindzone_full_3D_safety_not_proven": true,
+  "whole_mission_complete": false
+}

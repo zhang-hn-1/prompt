@@ -1,0 +1,20 @@
+{
+  "review_agent": "/root/heading_rate_review",
+  "verdict": "passed_no_important_errors",
+  "verified_original_files": 24951,
+  "verified_pose_inputs": 15,
+  "verified_conditions": 12,
+  "pose_samples": 9741,
+  "pose_sequences": 6,
+  "memory_boundaries": 30,
+  "changed_memory_predicates": 11,
+  "limits": [
+    "Collision scoring capture precedes contact; reported distance is not exact contact position.",
+    "All-saved pose statistics may include last post-contact capture.",
+    "GT diagnostic-only scoped to this comparison; initial GT gauge and ideal IMU remain.",
+    "Source and geometry prefixes differ; memory mechanism not navigation causal improvement."
+  ],
+  "new_physics": 0,
+  "new_predictions": 0,
+  "new_training": 0
+}

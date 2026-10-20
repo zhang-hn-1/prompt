@@ -1,0 +1,107 @@
+{
+  "existing_sequences": 12,
+  "unique_frozen_episode_groups": 3,
+  "episode_groups": [
+    "golden_e0_0001",
+    "golden_e1_0001",
+    "golden_e2_0001"
+  ],
+  "sequence_assignments": [
+    {
+      "variant": "frozen_classical",
+      "layer": "known_pose",
+      "episode_id": "golden_e0_0001",
+      "scene": "e0",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e0_coverage_run_v1"
+    },
+    {
+      "variant": "frozen_classical",
+      "layer": "known_pose",
+      "episode_id": "golden_e1_0001",
+      "scene": "e1",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e1_coverage_run_v1"
+    },
+    {
+      "variant": "frozen_classical",
+      "layer": "known_pose",
+      "episode_id": "golden_e2_0001",
+      "scene": "e2",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e2_run_v1"
+    },
+    {
+      "variant": "frozen_classical",
+      "layer": "estimated_pose",
+      "episode_id": "golden_e0_0001",
+      "scene": "e0",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1"
+    },
+    {
+      "variant": "frozen_classical",
+      "layer": "estimated_pose",
+      "episode_id": "golden_e1_0001",
+      "scene": "e1",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1"
+    },
+    {
+      "variant": "frozen_classical",
+      "layer": "estimated_pose",
+      "episode_id": "golden_e2_0001",
+      "scene": "e2",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1"
+    },
+    {
+      "variant": "rolling_endpoint",
+      "layer": "known_pose",
+      "episode_id": "golden_e0_0001",
+      "scene": "e0",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_navigation_e0_paced_run_v1"
+    },
+    {
+      "variant": "rolling_endpoint",
+      "layer": "known_pose",
+      "episode_id": "golden_e1_0001",
+      "scene": "e1",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_coverage_known_e1_run_v1"
+    },
+    {
+      "variant": "rolling_endpoint",
+      "layer": "known_pose",
+      "episode_id": "golden_e2_0001",
+      "scene": "e2",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_coverage_known_e2_run_v1"
+    },
+    {
+      "variant": "rolling_endpoint",
+      "layer": "estimated_pose",
+      "episode_id": "golden_e0_0001",
+      "scene": "e0",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_native_e0_paced_run_v1"
+    },
+    {
+      "variant": "rolling_endpoint",
+      "layer": "estimated_pose",
+      "episode_id": "golden_e1_0001",
+      "scene": "e1",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_coverage_native_e1_run_v1"
+    },
+    {
+      "variant": "rolling_endpoint",
+      "layer": "estimated_pose",
+      "episode_id": "golden_e2_0001",
+      "scene": "e2",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_coverage_native_e2_run_v1"
+    }
+  ],
+  "framewise_random_holdout_not_admitted": true,
+  "existing_data_kind": "Closed-loop selected executed trajectories in same three development episodes; not arbitrary proposed-command counterfactual labels.",
+  "new_target_selected": false,
+  "new_fit_admitted": false,
+  "new_collection_admitted": false,
+  "decision": "No new learning experiment qualified from this reused dataset alone. A separate target/consumer/whole-sequence data protocol is still required; this decision does not reject all world models.",
+  "old_qualifier_status": "unassessed_label_coverage; old fit and extra collection budget zero",
+  "old_episodic_status": "153library/30anchors/6scorable; coverage_unassessed; ranking not admitted",
+  "not_a_new_training_trial": true,
+  "reliable_navigation_complete": false,
+  "learning_navigation_increment_complete": false,
+  "whole_mission_complete": false
+}

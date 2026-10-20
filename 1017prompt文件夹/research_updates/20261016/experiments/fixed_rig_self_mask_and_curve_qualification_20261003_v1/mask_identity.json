@@ -1,0 +1,26 @@
+{
+  "asset": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/Rotunbot_wheel.usd",
+  "source_layers_sha256": {
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/Rotunbot_wheel.usd": "8f1bf378d65daca8d94948b8481f90260c34fe950a4bfb693cba531c47f4f231",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/configuration/Rotunbot_wheel_physics.usd": "f249a3d7fe02de79f2823430cc273794ad6552d646c01e396d6f807627207bf9",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/configuration/Rotunbot_wheel_base.usd": "a5589963afc6d3d96767cbbfa95188d3f90b9b34e8d6d68e18494050eddd67c5",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/configuration/Rotunbot_wheel_sensor.usd": "bdf36ddf09ab90299d27dabd98fe09d81f3e573d2213371606a858c9ee000f98"
+  },
+  "covered_body": "base_link only, rigidly fixed to both cameras",
+  "triangles": 366112,
+  "dilation_pixels": 3,
+  "scene_inputs_used": false,
+  "eyes": {
+    "left": {
+      "raw_mask_pixels": 113472,
+      "mask_pixels": 117591,
+      "image_fraction": 0.382783203125
+    },
+    "right": {
+      "raw_mask_pixels": 113448,
+      "mask_pixels": 117567,
+      "image_fraction": 0.382705078125
+    }
+  },
+  "mask_sha256": "433a9fc7c56bc13fd971a5ae7808e188ce5b901bba198fcff58152f2f10c94d0"
+}

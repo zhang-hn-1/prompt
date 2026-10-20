@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-08T15:00:10.770338+00:00",
+  "queries": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "role": "LEFT uncertain 2D bearing history only; no surface/obstacle semantic claim",
+  "source": "sealed query_xy from frozen current ORB; current knownGT pose diagnostic and fixed K",
+  "TTL_s": 10.0,
+  "pose_world_ray_gate_m": 0.05,
+  "inherited_thresholds": true,
+  "forbidden": "Future captures or backdated snapshots, depth claims, replays refreshing capture time, treating repeated identities as independent epochs",
+  "validation": "6packet causal replay, first3 truncated prefix exact, future capture rejected with no mutation, snapshots separate from measured geometry/free",
+  "not_fresh": true,
+  "no_actual_simulation": true,
+  "no_network_or_fit": true,
+  "no_action_change": true
+}

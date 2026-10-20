@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-09T10:46:47.075553+00:00",
+  "stage": "ordinary_endpoint_hypothesis_refuted_readonly_context_actual_closed_memory_ablation_preparation",
+  "whole_mission_complete": false,
+  "physics_running": false,
+  "actual_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T10:41:33.577108+00:00",
+    "parent_pid": 257165,
+    "child_pid": 257166,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T10:45:32.136655+00:00"
+  },
+  "session_closed": 21758,
+  "interface_pass": true,
+  "navigation_improvement": false,
+  "navigation_outcome": "timeout",
+  "remaining_context_sequence_budget": 0,
+  "independent_closing_review": "requested_not_yet_received",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/fixed_reference_pacing_knownpose_closed_continuation_v7.json",
+  "superseded_sha256": "a9e58f39992acfc4d8e8e2ce86ac1cf619f6e74ccba5b9998a2fdfd915a7f477",
+  "next": {
+    "question": "effect of current-exposure versus historical positive risk on real TaskH SGBM closed loop",
+    "preparation": [
+      "current_exposure_risk_grid_v1.py",
+      "test_current_exposure_risk_grid_v1.py"
+    ],
+    "steps": [
+      "Independent helper closing review; preserve causal clocks and unknown semantics",
+      "Freeze one known-current-pose E1 whole35 history/current pair, exact same actor except risk lifetime, metrics/contact/unknown/latency and budget; no old FastStereo60 repeat",
+      "Create frozen standalone runner and durable supervision; verify source hashes then actual two arms once",
+      "Native extension only after evidence and separate protocol; no new neural candidate rescue"
+    ]
+  },
+  "evidence_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/regular_endpoint_consumption_assessment_v1.json": "f63a780e1cc446c2f704dd2528b0fdbd96f404a718edd6d14427565fc101dbdd",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_registry_v3.json": "c0ab26f0e2c361982d6fd0fe2143a8a82f3ccbb687bd653bc94cd7e33c575010",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_assessment_v1.json": "c53abc3e66585f1f2acc2eb0466f4eecc3442148fde46e1a8131cfdca6ee3d9a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_append_receipts_v1.json": "131f32fd927abc397e861a9ca22a37fe27c0769f0c4b296001252aaa93631508"
+  }
+}

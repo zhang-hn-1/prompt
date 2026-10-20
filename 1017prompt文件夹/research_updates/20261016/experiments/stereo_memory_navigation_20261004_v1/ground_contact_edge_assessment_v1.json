@@ -1,0 +1,128 @@
+{
+  "protocol": {
+    "utc": "2026-10-08T14:53:18.287550+00:00",
+    "frames": [
+      215,
+      220,
+      225,
+      325,
+      330,
+      335
+    ],
+    "samples": 128,
+    "ground_edge": "fixed uniform azimuth points on known cylinder footprint radius .35 at z0; GT postseal evaluator only",
+    "visible_test": "in canvas, positive camera optical depth, rounded pixel valid actual depth, world residual<=.01m",
+    "purpose": "Separate visible low surface band from visible actual ground contact edge, including cropping",
+    "no_prediction_or_policy_inputs": true,
+    "no_network_or_physics": true,
+    "no_reselect_frames": true
+  },
+  "rows": [
+    {
+      "frame": 215,
+      "eyes": [
+        {
+          "eye": "left",
+          "projected_in_image": 0,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        },
+        {
+          "eye": "right",
+          "projected_in_image": 0,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        }
+      ]
+    },
+    {
+      "frame": 220,
+      "eyes": [
+        {
+          "eye": "left",
+          "projected_in_image": 0,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        },
+        {
+          "eye": "right",
+          "projected_in_image": 0,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        }
+      ]
+    },
+    {
+      "frame": 225,
+      "eyes": [
+        {
+          "eye": "left",
+          "projected_in_image": 36,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        },
+        {
+          "eye": "right",
+          "projected_in_image": 0,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        }
+      ]
+    },
+    {
+      "frame": 325,
+      "eyes": [
+        {
+          "eye": "left",
+          "projected_in_image": 52,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        },
+        {
+          "eye": "right",
+          "projected_in_image": 0,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        }
+      ]
+    },
+    {
+      "frame": 330,
+      "eyes": [
+        {
+          "eye": "left",
+          "projected_in_image": 64,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        },
+        {
+          "eye": "right",
+          "projected_in_image": 0,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        }
+      ]
+    },
+    {
+      "frame": 335,
+      "eyes": [
+        {
+          "eye": "left",
+          "projected_in_image": 81,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        },
+        {
+          "eye": "right",
+          "projected_in_image": 0,
+          "actual_depth_matches_within1cm": 0,
+          "visible_sample_ids": []
+        }
+      ]
+    }
+  ],
+  "no_actor_use": true,
+  "not_RGB_validation": true,
+  "no_model_admission": true,
+  "source_sha256": "88ab599a312c512123b8b5daf57bf94d9b4b600072dd739ea4d5d135b33cb3e3"
+}

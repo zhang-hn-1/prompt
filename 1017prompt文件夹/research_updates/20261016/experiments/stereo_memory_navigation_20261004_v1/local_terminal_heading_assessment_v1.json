@@ -1,0 +1,51 @@
+{
+  "samples": [
+    {
+      "arm": "b0",
+      "frame": 60,
+      "known_current_route_target_index": 21,
+      "planned_endpoint_xy": [
+        -1.3284339904754112,
+        -0.7575060295204072
+      ],
+      "local_target_xy": [
+        -1.1999999940395334,
+        -0.8999999940395327
+      ],
+      "planned_endpoint_to_target_m": 0.1918327953319475,
+      "endpoint_motion_heading_rad": -0.5366256521093971,
+      "current_route_continuation_tangent_rad": -0.7853981633974483,
+      "heading_error_rad": 0.24877251128805122,
+      "heading_error_deg": 14.253614955675966,
+      "no_actual_future_heading_used": true
+    },
+    {
+      "arm": "candidate",
+      "frame": 125,
+      "known_current_route_target_index": 21,
+      "planned_endpoint_xy": [
+        -0.624622924896091,
+        1.4941192321320549
+      ],
+      "local_target_xy": [
+        -0.599999994039532,
+        1.3000000059604666
+      ],
+      "planned_endpoint_to_target_m": 0.19567463477268363,
+      "endpoint_motion_heading_rad": 0.8082832546658181,
+      "current_route_continuation_tangent_rad": 0.0,
+      "heading_error_rad": 0.8082832546658181,
+      "heading_error_deg": 46.31121914344928,
+      "no_actual_future_heading_used": true
+    }
+  ],
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_b0_run_v1/local_plans/frame_060.json": "58227625d31eea6a53fde80ce4a0064d4fa0d3c5abbcb99d7c9fba2b9c8aa059",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/bounded_prefix_e1_candidate_run_v1/local_plans/frame_125.json": "812a6f209e7245046ed9e437ea51319801d457d4b76d91aa3a38e8395f9ec175"
+  },
+  "formal_request_source_sha256": "51c1209902b8d1de2e679faee769c1eb828b0c73df32c7fb6647519e7ba53fe7",
+  "request_has_goal_yaw": false,
+  "not_implementation_bug_claim": true,
+  "no_feasibility_or_navigation_acceptance": true,
+  "whole_mission_complete": false
+}

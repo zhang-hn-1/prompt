@@ -1,0 +1,35 @@
+{
+  "scope": "Actual closedpilot remainsexcluded, notdevelopment sample",
+  "record": {
+    "group": "qualified_zero_pilot",
+    "split": "qualification_only",
+    "planned": 70,
+    "attempted": 70,
+    "scorable": 70,
+    "programs": [
+      "stop"
+    ],
+    "state_bins": [
+      "low",
+      "moving"
+    ]
+  },
+  "assessment": {
+    "data_gate_pass": false,
+    "reasons": [
+      "insufficient_episode_groups",
+      "invalid_split",
+      "missing_group_support"
+    ],
+    "groups_per_split": {
+      "development": 0,
+      "calibration": 0,
+      "evaluation": 0
+    },
+    "fit_admitted": false,
+    "consumer_admitted": false,
+    "statistical_coverage_guaranteed": false
+  },
+  "new_physics": 0,
+  "new_fit": 0
+}

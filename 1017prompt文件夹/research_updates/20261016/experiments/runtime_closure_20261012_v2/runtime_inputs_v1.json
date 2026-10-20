@@ -1,0 +1,355 @@
+{
+  "schedule": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/tube_dataset_collection_20261012_v1/bound_schedule_v1.json",
+  "schedule_sha256": "ac2cc3d564c5f61ff04818473f7936304f09faf85e843256179a3e2ecd9002f7",
+  "bindings": [
+    {
+      "group": "development-00",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "development-01",
+      "episode_id": "golden_e1_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "development-02",
+      "episode_id": "golden_e2_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e2/e2_corridor.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e2_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "development-03",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "development-04",
+      "episode_id": "golden_e1_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "development-05",
+      "episode_id": "golden_e2_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e2/e2_corridor.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e2_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "development-06",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "development-07",
+      "episode_id": "golden_e1_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "development-08",
+      "episode_id": "golden_e2_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e2/e2_corridor.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e2_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "development-09",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "calibration-00",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "calibration-01",
+      "episode_id": "golden_e1_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "calibration-02",
+      "episode_id": "golden_e2_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e2/e2_corridor.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e2_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "calibration-03",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "calibration-04",
+      "episode_id": "golden_e1_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "calibration-05",
+      "episode_id": "golden_e2_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e2/e2_corridor.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e2_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "calibration-06",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "calibration-07",
+      "episode_id": "golden_e1_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "calibration-08",
+      "episode_id": "golden_e2_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e2/e2_corridor.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e2_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "calibration-09",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "evaluation-00",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "evaluation-01",
+      "episode_id": "golden_e1_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "evaluation-02",
+      "episode_id": "golden_e2_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e2/e2_corridor.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e2_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "evaluation-03",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "evaluation-04",
+      "episode_id": "golden_e1_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "evaluation-05",
+      "episode_id": "golden_e2_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e2/e2_corridor.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e2_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "evaluation-06",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "evaluation-07",
+      "episode_id": "golden_e1_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "evaluation-08",
+      "episode_id": "golden_e2_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/benchmark_e2/e2_corridor.usda",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e2_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json"
+      ],
+      "historical_only": true
+    },
+    {
+      "group": "evaluation-09",
+      "episode_id": "golden_e0_0001",
+      "runtime_input_paths": [
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json"
+      ],
+      "historical_only": true
+    }
+  ],
+  "files_sha256": {
+    "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd": "7125024056f83009e74f1b5c959d3cefdc7190157ec67b9d43818c613fced9f0",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz": "547dd73c52b45f9cc1aa8dca561c779349391f6ecef06ef59026921284b467da",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json": "41fa023519cf805bedd3b0177a91638479976160a9cdb675442d76a7f61c75ce",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_protocol_v1.json": "c9fe12669adbaed743952836d76d58c849353c747259a5da39776901a80450b0",
+    "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda": "d6236dea995f04e3a81fb90dcde4bde6b63841c283cc5b2470aee8cda34c8634",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json": "41fa023519cf805bedd3b0177a91638479976160a9cdb675442d76a7f61c75ce",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_protocol_v1.json": "ce7fda529c494f2e467887f2233b159365f1b3dd483529feb078e75dab24577d",
+    "/home/an/project/NavDP/assets/scenes/benchmark_e2/e2_corridor.usda": "c3514039631ac3b22d035cd02b6f7fdc44b2dd2e8a85afc1bf9a5c122ef1522d",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz": "53b7341d727c9c9dfd2b2aa49784fa3afca20638eea497d261ce6ea2f2347883",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e2_manifest.json": "41fa023519cf805bedd3b0177a91638479976160a9cdb675442d76a7f61c75ce",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_protocol_v1.json": "40578039acb054b295a3cad683502543aa8d76b46d9d9cbee42a2073ca3589e1",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/data_contract.yaml": "72b039ac68b829bd714da28e8b69d44c0359de546bef07abade220b313ad462d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/selected_candidate.json": "f5530c5519f16755ff8f417fdbc595e1ff2d8599f1aaa40328c2b865ca0084a6"
+  },
+  "formal_admission_hashes_match": true,
+  "all_budgets_closed": true,
+  "runtime_closure_complete": false
+}

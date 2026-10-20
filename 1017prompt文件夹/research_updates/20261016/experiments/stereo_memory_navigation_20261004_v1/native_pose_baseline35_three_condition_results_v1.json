@@ -1,0 +1,69 @@
+{
+  "utc": "2026-10-09T05:13:28.358788+00:00",
+  "actual_results": [
+    {
+      "condition": "e0",
+      "outcome": "timeout",
+      "scored_end_s": 34.99999921768904,
+      "goal_remaining_m": 3.5769075921170983,
+      "along_start_goal_axis_m": 5.269047628762242,
+      "matched_time_axis_progress_gain_m": -0.040172723647825787,
+      "native_xy_final_error_m": 0.023695394958438018,
+      "native_xy_p90_error_m": 0.01778015562185892,
+      "videos": {
+        "stereo_view": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        }
+      }
+    },
+    {
+      "condition": "e1",
+      "outcome": "timeout",
+      "scored_end_s": 34.99999921768904,
+      "goal_remaining_m": 5.850502276669347,
+      "along_start_goal_axis_m": 0.7536004006862638,
+      "matched_time_axis_progress_gain_m": 0.04008197784423828,
+      "native_xy_final_error_m": 0.003019719874286318,
+      "native_xy_p90_error_m": 0.004777905686603367,
+      "videos": {
+        "stereo_view": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        }
+      }
+    },
+    {
+      "condition": "e2",
+      "outcome": "collision",
+      "scored_end_s": 19.63999956101179,
+      "goal_remaining_m": 6.475445669915984,
+      "along_start_goal_axis_m": 2.4263188362121584,
+      "matched_time_axis_progress_gain_m": 0.41947460174560547,
+      "native_xy_final_error_m": 0.004918937718663021,
+      "native_xy_p90_error_m": 0.0050550811756086885,
+      "videos": {
+        "stereo_view": {
+          "decoded_frames": 198,
+          "fps": 10.0
+        },
+        "third_person": {
+          "decoded_frames": 198,
+          "fps": 10.0
+        }
+      }
+    }
+  ],
+  "arrivals": 0,
+  "total": 3,
+  "scope": "native IMUencoder both registration/navigation, initialGT gauge flatheight safe-start prior lowlevelidealIMU; not pureRGB/originalstrict qualification",
+  "source_controller_frozen": true
+}

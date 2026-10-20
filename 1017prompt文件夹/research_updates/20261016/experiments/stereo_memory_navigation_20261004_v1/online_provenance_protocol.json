@@ -1,0 +1,34 @@
+{
+  "role": "two same-start actual privileged-depth navigation diagnostic arms; not admitted RGB/not formal new success rate",
+  "episode_id": "golden_e1_0001",
+  "arms": [
+    "current",
+    "history"
+  ],
+  "budget_s": 35.0,
+  "settle_prefix_s": 6.0,
+  "unknown_main_cap_rad_s": 0.3,
+  "observed_obstacle_clearance_m": 0.6,
+  "map_representation": "points only, no surface interpolation",
+  "footprint_prior": "disabled for both; footprint mask is geometry-only diagnostic, no free writes",
+  "current": "discard previous floor and hazard evidence at each current capture",
+  "history": "observed floorTTL10s, observed hazard persists; no predicted labels",
+  "pose": "privileged current true pose; sigma=0 assumption",
+  "acquisition": "frozen fixed3render -> single base capture -> fixed3render -> image-only replace",
+  "control": "same geometric tracker, speed cap,roll PID,gains,ActionProtocol,smoother,supervisor,direction latch and5low-speed confirmations",
+  "known_map": "offline scoring label only; forbidden in packet/policy",
+  "evaluation": "independent frozen reference progress,XY path/lateral,RMS/peak,scoredcontact,outcome; occupancy-overlap false-free proxy plus observed-hazard forgetting; map area alone not acceptance",
+  "videos": "legacy runner retains5post-score physical frames outside corrected capture; score35s only",
+  "preregistered_acceptance": "interface: initial nofree/no timestamp, provenancecounts sum and monotonic histories; causal: exact6s physical/action prefix; improvement: history must show actual retained validated hazard and no score/contact regression, no claims from map area only. Local motion consumer and RGB admission remain separate pending.",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/provenance_policy.py": "b1a0ec94018f428ee4c5ec089963e5c6b02586433fd30874a8c679b078ab4c90",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/provenance_grid.py": "c380d8554e1b792cab558bdbe45a0a12cce5da10d6612892b3ca00b0c17dbe7d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/spatial_memory.py": "9ec85f2deb0561e05113b45d6f49e74d1890bdcc3d43927e5dfc751fb9b27f17",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/risk_grid.py": "f141a9df681cd5a97558330e9339af8f5c737b6d293bcc485536065479b928a3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/risk_policy.py": "23c58d1e55d843f44f6da26ff05ae5a2234fed4d77c4b245d4228c3f2afb2f11",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_provenance_navigation.py": "36ecdb9a0b7b84cade679eaf023fa2657352259bcd1791d3ebc17552ed4e9872",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/capture_transaction.py": "316bb0ac02ee39e0220f3ed46b9abc16179e74c8014c404ab0aa5eba1f63ed15",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/render_flush.py": "f1c2c64c398ac49c109ad7068ff680bcce4c3db6e393ebcde864c003c5d2be60",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visible_surface_connectivity_20261004_v1/information_policy.py": "720b16ef715f184faf08a42c30c40eaf4c271f824dc0ca8dce7ebfbc429eae5a"
+  }
+}

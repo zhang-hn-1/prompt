@@ -1,0 +1,129 @@
+{
+  "intrinsics": {
+    "left": {
+      "intrinsics": [
+        [
+          584.888916015625,
+          0.0,
+          320.0
+        ],
+        [
+          0.0,
+          584.888916015625,
+          240.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "resolution": [
+        640,
+        480
+      ],
+      "focal_length": 16.450000762939453,
+      "horizontal_aperture": 18.0,
+      "vertical_aperture": 13.5
+    },
+    "right": {
+      "intrinsics": [
+        [
+          584.888916015625,
+          0.0,
+          320.0
+        ],
+        [
+          0.0,
+          584.888916015625,
+          240.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "resolution": [
+        640,
+        480
+      ],
+      "focal_length": 16.450000762939453,
+      "horizontal_aperture": 18.0,
+      "vertical_aperture": 13.5
+    }
+  },
+  "plane_x": 2.199999362230301,
+  "ground_meshes": [
+    {
+      "path": "/World/defaultGroundPlane/Environment/Geometry",
+      "z_range": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "clocks": [
+    {
+      "index": 0,
+      "physics_clock": [
+        0.0,
+        0,
+        0.2199999950826168,
+        11
+      ],
+      "left_render_time": 0.2199999950826168
+    },
+    {
+      "index": 1,
+      "physics_clock": [
+        0.0,
+        0,
+        0.2199999950826168,
+        11
+      ],
+      "left_render_time": 0.2199999950826168
+    },
+    {
+      "index": 2,
+      "physics_clock": [
+        0.0,
+        0,
+        0.2199999950826168,
+        11
+      ],
+      "left_render_time": 0.2199999950826168
+    },
+    {
+      "index": 3,
+      "physics_clock": [
+        0.0,
+        0,
+        0.2199999950826168,
+        11
+      ],
+      "left_render_time": 0.2199999950826168
+    },
+    {
+      "index": 4,
+      "physics_clock": [
+        0.0,
+        0,
+        0.2199999950826168,
+        11
+      ],
+      "left_render_time": 0.2199999950826168
+    },
+    {
+      "index": 5,
+      "physics_clock": [
+        0.0,
+        0,
+        0.2199999950826168,
+        11
+      ],
+      "left_render_time": 0.2199999950826168
+    }
+  ],
+  "role": "static interface audit, no movement/navigation/scoring"
+}

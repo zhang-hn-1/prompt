@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-08T11:49:42.993177+00:00",
+  "overall_complete": false,
+  "external_user_block": false,
+  "automation_status": "ACTIVE",
+  "active": [],
+  "latest_actual": "original_E1_repeated_exposure_memory_navigation_run_v1",
+  "latest_admission": "complete_exact_reference_admission_v1/assessment.json",
+  "next": "Freshreview v2 then execute SAME2arm pair, no gate change",
+  "protocol": "complete_exact_reference_protocol_v2.json",
+  "driver": "run_complete_exact_reference_stage_v2.py",
+  "current_process_running": false,
+  "preflight": "native import and7existing candidate tests PASS;GPU11012MiBfree;first review in progress",
+  "failed_attempt": "v1 no capture/no action; stock unusedglobalA* rejectedcachedendpoint; failure preserved;v2cachedreferenceprovider bypass, collision unchanged"
+}

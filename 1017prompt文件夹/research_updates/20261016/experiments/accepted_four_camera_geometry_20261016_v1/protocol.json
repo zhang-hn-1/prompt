@@ -1,0 +1,50 @@
+{
+  "registered_utc": "2026-10-15T16:24:19.144068+00:00",
+  "question": "Current accepted four-camera CAD and visible GT BEV geometry; distinct from .20/.24/.40 historical configurations",
+  "input_root": "experiments/user_fov_position_only_20261015_v1/recovery_run",
+  "fixed_positions_m": [
+    [
+      0.18197,
+      0.32506,
+      0.11503
+    ],
+    [
+      0.18197,
+      -0.32506,
+      0.11503
+    ],
+    [
+      -0.18197,
+      0.32506,
+      0.11503
+    ],
+    [
+      -0.18197,
+      -0.32506,
+      0.11503
+    ]
+  ],
+  "raw_horizontal_fov_rad": 1.6528268,
+  "frames": 8,
+  "cameras": 4,
+  "range_m": [
+    0.5,
+    3.0
+  ],
+  "bodyband_world_z_m": [
+    0.05,
+    1.5
+  ],
+  "root_exclusion_m": 0.55,
+  "cell_m": 0.1,
+  "reference_tolerance_m": 0.15,
+  "ring_samples": 3600,
+  "ring_radius_m": 2,
+  "ring_body_z_m": 0.05,
+  "physics_cap": 0,
+  "fit_cap": 0,
+  "model_cap": 0,
+  "cpu_timeout_s": 300,
+  "recovery_cap": 0,
+  "stop": "All eight saved poses only; do not retune any source or change the accepted installation. No model/navigation qualification claim."
+}

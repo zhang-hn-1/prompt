@@ -1,0 +1,94 @@
+{
+  "results": {
+    "0002": {
+      "real": {
+        "goal": [
+          8.435246183025756,
+          -0.1967960970275735
+        ],
+        "goal_reached_by35": false,
+        "first_goal_time_s": null,
+        "min_goal_distance_m": 8.01864667314912,
+        "final_goal_distance_m": 8.704343376634686,
+        "actual_distance_m": 5.772817134857178,
+        "reference_length_m": 12.575481035182563,
+        "own_reference_rms_m": 0.5582649914620114,
+        "own_reference_peak_m": 1.33676579559225,
+        "first_inflated_map_violation_s": 15.439999654889107,
+        "original_map_clear_until_goal_or_end": false,
+        "braking_request_s": 2.6,
+        "tracking_failure_blocks": 36
+      },
+      "reserve": {
+        "goal": [
+          8.435246183025756,
+          -0.1967960970275735
+        ],
+        "goal_reached_by35": false,
+        "first_goal_time_s": null,
+        "min_goal_distance_m": 5.730984020239486,
+        "final_goal_distance_m": 5.730984020239486,
+        "actual_distance_m": 10.110406875610352,
+        "reference_length_m": 15.592092813428538,
+        "own_reference_rms_m": 0.10094302413409846,
+        "own_reference_peak_m": 0.25980888633051513,
+        "first_inflated_map_violation_s": 29.379999343305826,
+        "original_map_clear_until_goal_or_end": false,
+        "braking_request_s": 3.8000000000000003,
+        "tracking_failure_blocks": 0
+      },
+      "initial_physics_identical": true,
+      "common_goal_identical": true,
+      "accepted": false
+    },
+    "0004": {
+      "real": {
+        "goal": [
+          9.162605660380489,
+          0.010374062029482545
+        ],
+        "goal_reached_by35": false,
+        "first_goal_time_s": null,
+        "min_goal_distance_m": 9.095366985046839,
+        "final_goal_distance_m": 9.595419633096167,
+        "actual_distance_m": 5.965505599975586,
+        "reference_length_m": 14.076227627292287,
+        "own_reference_rms_m": 0.5426493888456109,
+        "own_reference_peak_m": 1.3235419316857728,
+        "first_inflated_map_violation_s": 13.839999690651894,
+        "original_map_clear_until_goal_or_end": false,
+        "braking_request_s": 3.2,
+        "tracking_failure_blocks": 25
+      },
+      "reserve": {
+        "goal": [
+          9.162605660380489,
+          0.010374062029482545
+        ],
+        "goal_reached_by35": false,
+        "first_goal_time_s": null,
+        "min_goal_distance_m": 6.879814462274388,
+        "final_goal_distance_m": 6.879814462274388,
+        "actual_distance_m": 9.452940940856934,
+        "reference_length_m": 15.592478515063764,
+        "own_reference_rms_m": 0.110072334122091,
+        "own_reference_peak_m": 0.2606794808861745,
+        "first_inflated_map_violation_s": 5.559999875724316,
+        "original_map_clear_until_goal_or_end": false,
+        "braking_request_s": 2.6,
+        "tracking_failure_blocks": 0
+      },
+      "initial_physics_identical": true,
+      "common_goal_identical": true,
+      "accepted": false
+    }
+  },
+  "pre_run_source_identity_unchanged": false,
+  "changed_identity_paths": [
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/oracle_curvature_reserve_20260928_v1/test_reserve.py"
+  ],
+  "runtime_identity_unchanged": true,
+  "accepted": false,
+  "formal_benchmark": false,
+  "clearance_scope": "offline original inflated map check; not physical collision validation"
+}

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-08T20:51:56.563643+00:00",
+  "schema": "ONE_current_paired_RGB_CAD_source_necessaryscreen",
+  "one_rule": "both current query/partner pixels nonblack RGB AND not original CAD; exactzero only, no thresholds",
+  "domain": "all17 epochs/all13641 original movingA1 emitted points",
+  "known_labels_historical_not_fresh": true,
+  "old_source_point_temporal_model_and_nav_rejections_kept": true,
+  "gates": {
+    "each_nonempty_eligible_epoch_precision10cm_min": 0.95,
+    "all_original_GTvalid_retention_min": 0.95,
+    "all_original_GTvalid_XY10cm_bin_retention_min": 0.95,
+    "two_distinct_eligible_hazard_updates100_required": true
+  },
+  "eligible_role": "image_supported_provisional, not physical certificate",
+  "excluded_role": "UNKNOWN with original predictions preserved",
+  "raw_NN_mutated": false,
+  "source_or_navigation_admission": false,
+  "on_failure": "reject ONE rule; no RGB threshold/CAD changes/reselect/pointgate rescue",
+  "code_sha256": "f87cc8ac8296beeb4f698dd49da2c3ffa6439587bb2c0d1deffa6b4797bfe771"
+}

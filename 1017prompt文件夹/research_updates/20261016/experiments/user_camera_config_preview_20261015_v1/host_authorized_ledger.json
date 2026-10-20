@@ -1,0 +1,44 @@
+{
+  "human_authorized": true,
+  "authorization": "User requests diagram, simulation changes and actual first-person images",
+  "physical_used": 1,
+  "physical_cap": 1,
+  "recovery_used": 0,
+  "recovery_cap": 0,
+  "status": "complete",
+  "dispatches": [
+    {
+      "attempt": 1,
+      "name": "recovery_run",
+      "registered_utc": "2026-10-15T11:02:05.406676+00:00",
+      "timeout_s": 120,
+      "source_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_camera_config_preview_20261015_v1/protocol.json": "91f1ff8e14187e2798d01644d8fce0fd4ed18a450d11acbb890cf50659585ff6",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_camera_config_preview_20261015_v1/native_probe.py": "03841eef916ba26bdfc36222fef40aff552f91c27e63efcfc0e4c474b1caae88",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_camera_config_preview_20261015_v1/four_camera.py": "41aa6dbc7f2709c1dadf523599f87c1f1175d9250be267ba7f5bcb3ea48622b1",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_camera_config_preview_20261015_v1/launch_host_authorized.py": "3e03da22a9ed88b8223a9b132ce404a03c11a47c013274bb82af36816635a6ae",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/camera_exposure_contract_20261015_v1/exposure_contract.py": "dfb0e0ff51d35a682b2ad4b16338f15fbb5a3e608eedda622692a2a5c9b2a421"
+      },
+      "terminal": {
+        "status": "finished",
+        "start_utc": "2026-10-15T11:02:05.406982+00:00",
+        "parent_pid": 978454,
+        "child_pid": 978485,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-15T11:02:39.191759+00:00"
+      },
+      "logical": {
+        "complete": true,
+        "frames": 8,
+        "camera_count": 4,
+        "model": 0,
+        "navigation": 0
+      }
+    }
+  ],
+  "budget_closed": true
+}

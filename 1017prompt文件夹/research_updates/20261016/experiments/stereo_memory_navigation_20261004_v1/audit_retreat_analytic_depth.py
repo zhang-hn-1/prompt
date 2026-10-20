@@ -1,0 +1,12 @@
+"""Independent frozen cylinder ray intersection at one closed exposure."""
+from pathlib import Path
+import numpy as np,json,hashlib,datetime
+H=Path(__file__).resolve().parent;o=H/'retreat_observation_run';files=[Path(__file__).resolve(),o/'offline_truth/frame_180.npz',H/'retreat_frozen_sgbm_probe_v2/packet_180.npz',H/'retreat_visibility_diagnostic.json'];sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();seal=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),inputs={str(p):sha(p) for p in files},scope='single completed18s SGBM query group; analytic cylinder/cap intersections; no model/control changes');(H/'retreat_analytic_depth_preanalysis.json').write_text(json.dumps(seal,indent=2)+'\n');t=np.load(files[1]);s=np.load(files[2]);q=s['query_pixel_id'].astype(int);y=q//640;x=q%640;rays=np.c_[(x-319.5)/584.8888888888889,(y-239.5)/584.8888888888889,np.ones(len(q))];T=t['left_camera_usd_world'];origin=T[:3,3];D=rays@(T[:3,:3]@np.diag([1,-1,-1])).T;geom=json.loads(files[3].read_text());centres=np.array(geom['divider_centres']);nearest=np.full(len(q),np.inf);radius=geom['radius_m']
+for c in centres:
+ V=origin[:2]-c[:2];a=(D[:,:2]**2).sum(1);b=2*(D[:,:2]*V).sum(1);cc=np.dot(V,V)-radius**2;delta=b*b-4*a*cc
+ for sign in [-1,1]:
+  tau=(-b+sign*np.sqrt(np.maximum(delta,0)))/(2*a);z=origin[2]+tau*D[:,2];valid=(delta>=0)&(tau>0)&(z>=0)&(z<=1);nearest=np.minimum(nearest,np.where(valid,tau,np.inf))
+ for cap in [0.,1.]:
+  with np.errstate(divide='ignore',invalid='ignore'):tau=(cap-origin[2])/D[:,2];xy=origin[:2]+tau[:,None]*D[:,:2]
+  valid=(tau>0)&(np.linalg.norm(xy-c[:2],axis=1)<=radius);nearest=np.minimum(nearest,np.where(valid,tau,np.inf))
+z=t['left_depth_m'][y,x];valid=np.isfinite(nearest)&np.isfinite(z);GTerr=np.abs(z-nearest)*np.linalg.norm(rays,axis=1);pred=T[:3,3]+(rays*nearest[:,None])@(T[:3,:3]@np.diag([1,-1,-1])).T;err=np.linalg.norm(s['world']-pred,axis=1);result=dict(protocol=seal,queries=len(q),finite_analytic=int(valid.sum()),renderer_vs_analytic_error_p50_p90=np.percentile(GTerr[valid],[50,90]).tolist(),renderer_vs_analytic_within_1cm=int((valid&(GTerr<=.01)).sum()),sgbm_vs_analytic_error_p50_p90=np.percentile(err[valid],[50,90]).tolist(),sgbm_vs_analytic_correct_10cm=int((valid&(err<=.1)).sum()),tessellated_mesh_vs_ideal_cylinder_limit=True,whole_research_complete=False);(H/'retreat_analytic_depth_diagnostic.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k!='protocol'}))

@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-09T04:50:33.194678+00:00",
+  "actual_results": [
+    {
+      "condition": "e0",
+      "outcome": "timeout",
+      "goal_remaining_m": 3.532847628154454,
+      "along_start_goal_axis_m": 5.309220352410068,
+      "handoff_time_s": 5.999999865889549,
+      "tracking_request_count": 290,
+      "cycle_wall_s": {
+        "median": 0.40660806908272207,
+        "p90": 1.6506888498784975,
+        "maximum": 1.9645129709970206,
+        "fraction_over_0p1": 1.0
+      },
+      "videos": {
+        "stereo_view": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        }
+      }
+    },
+    {
+      "condition": "e1",
+      "outcome": "timeout",
+      "goal_remaining_m": 5.890992164335595,
+      "along_start_goal_axis_m": 0.7135184228420255,
+      "handoff_time_s": 5.999999865889549,
+      "tracking_request_count": 257,
+      "cycle_wall_s": {
+        "median": 0.3322734299581498,
+        "p90": 1.5155689942417667,
+        "maximum": 2.2394264680333436,
+        "fraction_over_0p1": 1.0
+      },
+      "videos": {
+        "stereo_view": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        }
+      }
+    },
+    {
+      "condition": "e2",
+      "outcome": "timeout",
+      "goal_remaining_m": 8.118060229428405,
+      "along_start_goal_axis_m": 0.7856039524078371,
+      "handoff_time_s": 5.999999865889549,
+      "tracking_request_count": 213,
+      "cycle_wall_s": {
+        "median": 0.30343072954565287,
+        "p90": 1.3278783931396902,
+        "maximum": 1.4617230820003897,
+        "fraction_over_0p1": 1.0
+      },
+      "videos": {
+        "stereo_view": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        },
+        "third_person": {
+          "decoded_frames": 351,
+          "fps": 10.0
+        }
+      }
+    }
+  ],
+  "arrivals": 0,
+  "total": 3,
+  "scope": "same frozen SGBM conditional knownpose TaskH; original35 time rule retained but not original strictRGB benchmark qualification",
+  "old_rejections_preserved": true
+}

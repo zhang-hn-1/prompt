@@ -1,0 +1,59 @@
+{
+  "utc": "2026-10-07T06:47:55.198219+00:00",
+  "source_sha256": "03cb9d1038a5eb1ec7e0a40a5ed38b3948f1b983d410b1ef03426ed5047a7dbc",
+  "input_seal_sha256": "f4a0ee509351cecc9c745405a5d4fce77e7e92ecb7ad960eedce16aa885806c0",
+  "rows": [
+    {
+      "frame": 235,
+      "eye": "left",
+      "sealed_RGB_prompt_exact": true,
+      "negative_future_clock_tests": 4,
+      "truncated_history_prompts": 0,
+      "source_birth_time": 17.999999597668648
+    },
+    {
+      "frame": 235,
+      "eye": "right",
+      "sealed_RGB_prompt_exact": true,
+      "negative_future_clock_tests": 4,
+      "truncated_history_prompts": 0,
+      "source_birth_time": 17.999999597668648
+    },
+    {
+      "frame": 245,
+      "eye": "left",
+      "sealed_RGB_prompt_exact": true,
+      "negative_future_clock_tests": 4,
+      "truncated_history_prompts": 0,
+      "source_birth_time": 17.999999597668648
+    },
+    {
+      "frame": 245,
+      "eye": "right",
+      "sealed_RGB_prompt_exact": true,
+      "negative_future_clock_tests": 4,
+      "truncated_history_prompts": 0,
+      "source_birth_time": 17.999999597668648
+    },
+    {
+      "frame": 255,
+      "eye": "left",
+      "sealed_RGB_prompt_exact": true,
+      "negative_future_clock_tests": 4,
+      "truncated_history_prompts": 0,
+      "source_birth_time": 17.999999597668648
+    },
+    {
+      "frame": 255,
+      "eye": "right",
+      "sealed_RGB_prompt_exact": true,
+      "negative_future_clock_tests": 4,
+      "truncated_history_prompts": 0,
+      "source_birth_time": 17.999999597668648
+    }
+  ],
+  "future_guard_tests": 24,
+  "GT_read": false,
+  "learned_forward_calls": 0,
+  "NOT_online_shadow_or_NAV_validation": true
+}

@@ -1,0 +1,240 @@
+{
+  "boundary_frame": 120,
+  "current_time_s": 11.999999731779099,
+  "cells": [
+    {
+      "cell": [
+        229,
+        192
+      ],
+      "world_xy": [
+        -0.3999999940395327,
+        -0.7999999940395313
+      ],
+      "source_records": [
+        {
+          "source_frame": 90,
+          "time_s": 8.999999798834324,
+          "age_s": 2.9999999329447746,
+          "queries": 1,
+          "query_pixel_id": [
+            223130
+          ],
+          "predicted_world_xyz": [
+            [
+              -0.3625677839927439,
+              -0.7501974425553026,
+              0.9939159340725023
+            ]
+          ],
+          "teacher_valid_depth": [
+            false
+          ],
+          "teacher_world_xyz": [
+            [
+              null,
+              null,
+              null
+            ]
+          ],
+          "teacher_floor": 0,
+          "teacher_hazard": 0,
+          "teacher_unlabelled": 1,
+          "teacher_xy_discrepancy_m": [
+            null
+          ]
+        }
+      ],
+      "traceable": true,
+      "queries": 1,
+      "teacher_floor": 0,
+      "teacher_hazard": 0,
+      "teacher_unlabelled": 1
+    },
+    {
+      "cell": [
+        229,
+        193
+      ],
+      "world_xy": [
+        -0.3999999940395327,
+        -0.6999999940395334
+      ],
+      "source_records": [
+        {
+          "source_frame": 80,
+          "time_s": 7.999999821186066,
+          "age_s": 3.999999910593033,
+          "queries": 1,
+          "query_pixel_id": [
+            219240
+          ],
+          "predicted_world_xyz": [
+            [
+              -0.3520652166418339,
+              -0.6530235885393514,
+              0.9767118331080765
+            ]
+          ],
+          "teacher_valid_depth": [
+            true
+          ],
+          "teacher_world_xyz": [
+            [
+              -0.33051772306158567,
+              -0.659959873180985,
+              0.980395030804089
+            ]
+          ],
+          "teacher_floor": 0,
+          "teacher_hazard": 1,
+          "teacher_unlabelled": 0,
+          "teacher_xy_discrepancy_m": [
+            0.022636398216602408
+          ]
+        },
+        {
+          "source_frame": 90,
+          "time_s": 8.999999798834324,
+          "age_s": 2.9999999329447746,
+          "queries": 8,
+          "query_pixel_id": [
+            212890,
+            214170,
+            215450,
+            216730,
+            218010,
+            219290,
+            220570,
+            221850
+          ],
+          "predicted_world_xyz": [
+            [
+              -0.35066059798827753,
+              -0.6910920456067519,
+              1.0010330230300262
+            ],
+            [
+              -0.352148996238836,
+              -0.6984802202253206,
+              1.0001433869103358
+            ],
+            [
+              -0.353637394489394,
+              -0.7058683948438895,
+              0.9992537507906452
+            ],
+            [
+              -0.3551257927399525,
+              -0.7132565694624584,
+              0.9983641146709548
+            ],
+            [
+              -0.35661419099051095,
+              -0.7206447440810273,
+              0.9974744785512644
+            ],
+            [
+              -0.35810258924106897,
+              -0.7280329186995961,
+              0.9965848424315737
+            ],
+            [
+              -0.35959098749162743,
+              -0.7354210933181649,
+              0.9956952063118834
+            ],
+            [
+              -0.36107938574218545,
+              -0.7428092679367337,
+              0.994805570192193
+            ]
+          ],
+          "teacher_valid_depth": [
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false,
+            false
+          ],
+          "teacher_world_xyz": [
+            [
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ],
+            [
+              null,
+              null,
+              null
+            ]
+          ],
+          "teacher_floor": 0,
+          "teacher_hazard": 0,
+          "teacher_unlabelled": 8,
+          "teacher_xy_discrepancy_m": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "traceable": true,
+      "queries": 9,
+      "teacher_floor": 0,
+      "teacher_hazard": 1,
+      "teacher_unlabelled": 8
+    }
+  ],
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/current_forward_blocking_source_scope_v1.json": "9c501f9259b6e15693ae321d08c1eccab07162f28923fe0a3193038085ce9466",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/current_forward_root_geometry_assessment_v1.json": "acf58393c499de2aad42cba5797e33b903474cb080a33468124dab3faa1f2179",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_main_navigation_e1_b0_run_v1/maps/frame_120.npz": "acbb9c9e297ec4755d94747693142e5cb6e251ec3a56ef80499b63156f9aab31",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_main_navigation_e1_b0_run_v1/raw_point_memory_snapshots/frame_120.json": "3a22686995d239439bd20459ee79f70091eb8720f9705197777cfbc140aa2806",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/audit_current_forward_blocking_source_v1.py": "919cd2151cf2ee4abb7c23d2fa773337c788c3611e3ea2d611b2c7bef2d5ed9a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_main_navigation_e1_b0_run_v1/frames/frame_090.npz": "20ca69c55fea59e2a940dd45d1a7f060a41e09448e840b435338be5a90b31390",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_main_navigation_e1_b0_run_v1/frames/frame_080.npz": "1a7ab43dc40057b05efb2a960e55a69088dcc428af6f3b8ac7bc2989c1b4b32f"
+  },
+  "same_exposure_retrospective_teacher_only": true,
+  "no_actor_physics_solver_fit_or_mutation": true,
+  "scope_not_source_admission_or_full3D_safety": true,
+  "whole_mission_complete": false
+}

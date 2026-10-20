@@ -1,0 +1,113 @@
+{
+  "utc": "2026-10-07T12:31:28.176714+00:00",
+  "decision": "PASS_CONDITIONAL_FORWARD_CAP_TASK_ONLY",
+  "actual": {
+    "termination_reason": "success",
+    "actual_success": true,
+    "elapsed_s": 43.3,
+    "actual_final_distance_m": 0.1878509740056492,
+    "actual_goal_axis_progress_m": 4.557699680328369,
+    "actual_reference_progress_m": 5.911269837220816,
+    "frozen_reference_lateral_RMS_m": 0.15637178578424618,
+    "frozen_reference_lateral_peak_m": 0.2845322994206992,
+    "actual_path_length_m": 6.752432742116714,
+    "actual_obstacle_segment_passed": true,
+    "contact_frames": 0,
+    "collision_frames": 0,
+    "continuous_true_body_clearance_m": 0.46390302033868513,
+    "actual_handoff_time_s": 1.4999999664723873,
+    "typed_map_fields_exact": 3031,
+    "measured_free_and_occupied_cells": 0,
+    "decoded_video_frames": {
+      "stereo_view": 434,
+      "third_person": 434
+    },
+    "camera_eye_time_skew_s": 0.0,
+    "capture_partial_wall_p50_s": 0.25230623106472194,
+    "capture_partial_wall_p95_s": 2.1489272015285676,
+    "source_wall_p50_s": 1.8560298101510853,
+    "source_wall_p95_s": 2.407278476655484,
+    "real_time_replay_equivalent": false,
+    "source_updates": 87,
+    "knownpose_privileged": true,
+    "task_budget_s": 60.0,
+    "not_original_E1_or_formal35": true
+  },
+  "checks": {
+    "consumed_birth_source_pass": true,
+    "forward_cap_actually_exercised": true,
+    "goal_reached": true,
+    "goal_axis_progress_ge4": true,
+    "actual_obstacle_segment_passed": true,
+    "no_contact": true,
+    "continuous_body_proxy_clearance_ge0": true,
+    "candidate_exercised": true,
+    "all_installed_nominal_references_clear_point8": true,
+    "effective_request_change": true
+  },
+  "new_reference_installs": [
+    {
+      "frame": 60,
+      "time_s": 5.999999865889549,
+      "continuous_nominal_clearance_m": 0.9210928471000529,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 220,
+      "time_s": 21.99999950826168,
+      "continuous_nominal_clearance_m": 0.8847601422791208,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 335,
+      "time_s": 33.49999925121665,
+      "continuous_nominal_clearance_m": 1.0446749819938057,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 410,
+      "time_s": 40.99999908357859,
+      "continuous_nominal_clearance_m": 1.1455671718266403,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 420,
+      "time_s": 41.999999061226845,
+      "continuous_nominal_clearance_m": 1.224134166544821,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 425,
+      "time_s": 42.499999050050974,
+      "continuous_nominal_clearance_m": 1.2772907703472418,
+      "empirical_not_certified": true
+    },
+    {
+      "frame": 430,
+      "time_s": 42.9999990388751,
+      "continuous_nominal_clearance_m": 1.2210121361936461,
+      "empirical_not_certified": true
+    }
+  ],
+  "actual_forward_cap_changed_frames": 336,
+  "original_guard_calls_checked": 74,
+  "manifest_checks": 4366,
+  "historical_D1_not_fresh": true,
+  "old_strict_AB_gate_false_preserved": true,
+  "initial_model_hypothesis_packet_equal": false,
+  "physical_and_request_prefix_frames": 97,
+  "first_physical_or_request_difference_frame": 97,
+  "request_different_frames": 336,
+  "applied_different_ticks": 1650,
+  "first_applied_difference_tick": 516,
+  "source_matched_causal_AB_claim": false,
+  "full_source_prefix_AB_not_verified": true,
+  "post_close_GT_only_for_actual_evaluation": true,
+  "no_stateful_policy_recall": true,
+  "no_future_plan_feedback_label": true,
+  "world_model_increment_not_tested": true,
+  "estimated_pose_not_admitted": true,
+  "formal35_not_triggered": true,
+  "whole_research_complete": false,
+  "code_sha256": "f25622cfe0afbab9cd6bd1b967b2771289ad96d54bade29c5f1c8dbd72d3dd31"
+}

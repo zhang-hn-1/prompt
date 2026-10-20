@@ -1,0 +1,100 @@
+{
+  "existing_frozen_predictions_only": true,
+  "samples": [
+    {
+      "frame": 100,
+      "time_s": 9.999999776482582,
+      "confidence_pixels": 13290,
+      "finite_positive_confident_depth_pixels": 13290,
+      "confident_depth_under1m_pixels": 0,
+      "confident_depth_under2m_pixels": 20,
+      "median_confident_depth_m": 5.800550937652588,
+      "left_rgb_std": 61.858978554051745,
+      "right_rgb_std": 60.09418136340761,
+      "raw_RGB_resolution": [
+        480,
+        640,
+        3
+      ]
+    },
+    {
+      "frame": 150,
+      "time_s": 14.999999664723873,
+      "confidence_pixels": 13412,
+      "finite_positive_confident_depth_pixels": 13412,
+      "confident_depth_under1m_pixels": 0,
+      "confident_depth_under2m_pixels": 231,
+      "median_confident_depth_m": 4.8783087730407715,
+      "left_rgb_std": 60.31218156369222,
+      "right_rgb_std": 66.06944846424005,
+      "raw_RGB_resolution": [
+        480,
+        640,
+        3
+      ]
+    },
+    {
+      "frame": 180,
+      "time_s": 17.999999597668648,
+      "confidence_pixels": 3073,
+      "finite_positive_confident_depth_pixels": 3073,
+      "confident_depth_under1m_pixels": 0,
+      "confident_depth_under2m_pixels": 0,
+      "median_confident_depth_m": 39.82222366333008,
+      "left_rgb_std": 68.26496857872735,
+      "right_rgb_std": 66.13784149678406,
+      "raw_RGB_resolution": [
+        480,
+        640,
+        3
+      ]
+    },
+    {
+      "frame": 190,
+      "time_s": 18.999999575316906,
+      "confidence_pixels": 7464,
+      "finite_positive_confident_depth_pixels": 7464,
+      "confident_depth_under1m_pixels": 0,
+      "confident_depth_under2m_pixels": 340,
+      "median_confident_depth_m": 4.202794551849365,
+      "left_rgb_std": 77.3927091846288,
+      "right_rgb_std": 67.73361078871197,
+      "raw_RGB_resolution": [
+        480,
+        640,
+        3
+      ]
+    },
+    {
+      "frame": 195,
+      "time_s": 19.499999564141035,
+      "confidence_pixels": 4008,
+      "finite_positive_confident_depth_pixels": 4008,
+      "confident_depth_under1m_pixels": 0,
+      "confident_depth_under2m_pixels": 459,
+      "median_confident_depth_m": 4.122564792633057,
+      "left_rgb_std": 83.4978505860731,
+      "right_rgb_std": 71.18079963712691,
+      "raw_RGB_resolution": [
+        480,
+        640,
+        3
+      ]
+    }
+  ],
+  "inputs_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/source_predictions/frame_100.npz": "efddfcbdac307c311224a2225cb2e88cb387097b5d739996814dbe31cc3beafc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/source_inputs/frame_100.npz": "9c24b0755ba459b3ed052db706dbc86c4949487639eced6f052e40e0db29d37f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/source_predictions/frame_150.npz": "ba3df53f254051f5ab19ae6771cd49aa39023f9b0f5ffe2019390ac67c03891b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/source_inputs/frame_150.npz": "5f307d42f07ab40945d96ac50591ec97d1def457674ec8ccfb23d9d6de152fcd",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/source_predictions/frame_180.npz": "40f2bdedbef49b3a7582c1c3eacae5ade8961a6be27d09aee60ac7ca48c14996",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/source_inputs/frame_180.npz": "bd24d38aa7e7bfb3dee1412840fe19c608afb005f5e54a3ef9558d2b2284a95a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/source_predictions/frame_190.npz": "84a60dae2b0140f03f731a53a01a1df6bd1a510c25a3b6fc161afa5f86a94275",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/source_inputs/frame_190.npz": "9c0218b66f1280a7b4328d8885ce27451cebd37fd24a04b1ac98da644afe2032",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/source_predictions/frame_195.npz": "b2e91db246c030762160908dc0afcaad9e3396ec0e2a86e2c628d65bb33594f7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/source_inputs/frame_195.npz": "e5d12f9f053cb742e624836e7504583ebd263af4a465819a8405039b689584af"
+  },
+  "source_inference_calls": 0,
+  "physics_calls": 0,
+  "limits": "Pixel counts do not certify geometric free space/nearfield visibility, field-of-view or masker rejection. Need paired-source/selfmask row provenance before candidate selection."
+}

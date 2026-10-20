@@ -1,0 +1,33 @@
+{
+  "decision": "REJECT_UNIQUE_OBSERVED_REFERENCE_TUBE_NAVIGATION",
+  "physical_goal": false,
+  "source_subset_pass": true,
+  "interface_pass": true,
+  "gate54_6": {
+    "scope": "MEASURED_ORIGINAL54_6",
+    "goal_remaining_m": 5.692221594806107,
+    "axis_progress_m": 0.9608827054500577,
+    "passed": false
+  },
+  "termination": {
+    "termination": "REJECT_LOCAL54_6_PROGRESS_STOP",
+    "actions": 546,
+    "time_s": 54.5999987795949,
+    "budget_s": 120,
+    "true_goal_xy_threshold_m": 0.2,
+    "not_original35": true,
+    "not_causal_navigation_AB": true
+  },
+  "final_goal_remaining_m": 5.692221594806107,
+  "axis_progress_final_m": 0.9608827054500577,
+  "path_m": 6.046389959164886,
+  "physical_contact": 0,
+  "handoff_time_s": 11.599999740719795,
+  "not_full_causal_AB": true,
+  "not_source_complete_3D": true,
+  "known_GT_pose": true,
+  "estimated_pose_actor_NOTRUN": true,
+  "formal_original35_NOTRUN": true,
+  "world_model_increment_not_newly_passed": true,
+  "whole_research_complete": false
+}

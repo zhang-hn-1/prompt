@@ -1,0 +1,26 @@
+"""Full current-delivery pose gate; no log-replayed filter, output relabelling or rescue."""
+from pathlib import Path
+import json,hashlib,datetime
+from collections import Counter
+import numpy as np
+from scipy.spatial.transform import Rotation
+H=Path(__file__).resolve().parent;sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()
+def main():
+ p=json.loads((H/'imu_interval_protocol.json').read_text());s=json.loads((H/'imu_interval_status.json').read_text());assert s['status']=='finished' and s['exit_code']==0;out=H/'imu_interval_run';m=json.loads((out/'artifact_manifest_post_close.json').read_text());checks=0
+ for obj,key in [(p,'source_sha256'),(p,'input_sha256'),(m,'artifact_sha256')]:
+  for f,v in obj[key].items():assert sha(f)==v,f;checks+=1
+ z=np.load(out/'physics.npz');t=z['simulation_time_s'];reads=json.loads((out/'imu_reads.json').read_text());packets=json.loads((out/'imu_packets.json').read_text());pred=json.loads((out/'imu_predictions.json').read_text());assert len(reads)==len(packets)==len(pred)==len(t)==1601;assert np.array_equal([r['time_s'] for r in pred],t);assert all(not r['orientation_read'] for r in reads);assert np.all(np.diff(t)>0)
+ for packet in packets:
+  if packet is not None:assert set(packet)=={'time_s','gyro_body_rad_s','linear_acceleration_body_m_s2','main_encoder_rad_s'} and all(np.isfinite(np.asarray(v)).all() for v in packet.values())
+ availability=np.array([r['available'] for r in pred]);qualified=np.array([r['qualified'] for r in reads]);assert np.array_equal(availability,qualified);interface=all(r['qualified'] or (r['time_s']<=.04 and r['reason']=='invalid') for r in reads)
+ R=Rotation.from_quat(z['root_quaternion_world_wxyz'][:,[1,2,3,0]]).as_matrix();truth=(z['root_position_world_m']-z['root_position_world_m'][0])@R[0];trueR=R[0].T[None]@R;valid=t>=1.;ev=valid&availability;complete=bool(availability[valid].all());pe=np.full(len(t),np.nan);ae=np.full(len(t),np.nan);position=np.full((len(t),3),np.nan)
+ if availability.any():
+  est=np.array([r['rotation'] for r in pred if r['available']]);position[availability]=np.array([r['position'] for r in pred if r['available']]);pe[availability]=np.linalg.norm(position[availability]-truth[availability],axis=1);ae[availability]=np.degrees(Rotation.from_matrix(np.transpose(trueR[availability],(0,2,1))@est).magnitude())
+ rms=float(np.sqrt(np.mean(pe[ev]**2))) if ev.any() else None;peak=float(pe[ev].max()) if ev.any() else None;p90=float(np.percentile(ae[ev],90)) if ev.any() else None;gates=dict(complete=complete,rms=rms is not None and rms<=.05,peak=peak is not None and peak<=.1,attitude=p90 is not None and p90<=2.)
+ req=np.load(out/'requests.npz')['requests'];assert req.shape==(320,2)
+ assert np.array_equal(z['raw_command_target'],np.vstack([np.zeros((1,2),dtype=np.float32),np.repeat(req,5,axis=0)])), 'raw requests differ from sealed complete schedule'
+ identity=json.loads((out/'identity.json').read_text());imuidentity=json.loads((out/'imu_identity.json').read_text());assert sha(H/'imu_gravity_rolling.py')==p['candidate_model_source_sha256']==imuidentity['model_source_sha256'];assert identity['pid_config']==p['pid_config'] and identity['inner_config']==p['inner_config'];assert identity['camera_rig']==json.loads((H/'native_imu_run/identity.json').read_text())['camera_rig'];assert len(json.loads((out/'states.json').read_text()))==321;feedback=list((out/'feedback').glob('*.json'));assert len(feedback)==1 and len(json.loads(feedback[0].read_text()))==1600
+ periods=np.array([r['end_raw_s']-r['begin_raw_s'] for r in reads]);stamps=np.array([abs(r['sensor_begin_stamp_s']-r['begin_raw_s']) for r in reads]);gravity=int(sum(bool(r.get('gravity_used',False)) for r in pred if r['time_s']>=1));contacts=json.loads((out/'physics_contacts.json').read_text());result=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),actual_status=s,integrity_checks=checks,source_count=len(p['source_sha256']),postclose_artifacts=len(m['artifact_sha256']),physics_rows=len(t),captures=321,feedback_rows=1600,interval_qualification_pass=interface,unqualified_reasons=dict(Counter(r['reason'] for r in reads if not r['qualified'])),evaluated_denominator=int(valid.sum()),evaluated_available=int(ev.sum()),full_prediction_coverage=complete,translation_rms_m=rms,translation_peak_m=peak,attitude_p90_deg=p90,physical_pose_gates=gates,pose_candidate_pass=bool(interface and all(gates.values())),interval_dt_error_peak_s=float(np.max(abs(periods-.02))),begin_stamp_error_peak_s=float(stamps.max()),gravity_used_evaluation=gravity,same_frozen_model=True,initial_yaw_offset_deg=20.,whole_sequence_isolated=True,fresh_environment=False,new_physical_whole_sequence=True,old_native_v1_rejection_preserved=True,old_native_v1_pose_scores_null=True,formal_nav_result=False,formal_e0e1e2=False,new_control_candidate=False,new_fit=False,source_gate_pass=False,model_used_by_control=False,physical_contact_records=len(contacts),whole_research_complete=False)
+ np.savez_compressed(H/'imu_interval_measurement.npz',time_s=t,available=availability,position_error_m=pe,attitude_error_deg=ae,predicted_position=position,actual_position=truth)
+ (H/'imu_interval_audit.json').write_text(json.dumps(result,indent=2,allow_nan=False)+'\n');print(json.dumps(result,indent=2))
+if __name__=='__main__':main()

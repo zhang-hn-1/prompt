@@ -1,0 +1,11 @@
+# Inline ledger — 2026-10-06-rolling-odometry plan
+
+Task1 static/current identity and independent estimator complete: staticinstanceproxy sphere directpath .400000006, shelljointY; individualpastDOFidentity limitation preserved; newonlineDOF personally readjoint1/2/3. RED4fail1pass→GREEN5pass.
+Task2 two historical sanitizedcomplete901/1601predictions serialized before labels; RMS.046126/.047353, attitude1.270/1.605 withinpresealedgates. Notfresh ornavigation.
+Task3 onephysicalB0+readonlyshadow complete17:41:56→17:44:44UTCexit0,1536physics308capture;17nonrawexactB0 success30.7s/dist.195486. OnlineposeREJECT RMS.057998/p90angle3.823861. No controller consumesestimate. 277suite9.51s preflight, allartifacts/post-close retained.
+Ruling: idealgyro synthesis mayusecurrentGTquaternion only at sensor boundary, initialgravity t0; estimator whitelist notpositions/perstepquat. NotrealIMU/pureRGB. Costifwrongsensorclaim inflated, explicitlabelrestricts allclaims.
+Ruling: helperthree tests initiallywrittenwithimplementation concurrently/firstGREEN, no fabricatedTDDRED. Genuine badinitialtransaction RED→GREEN is separately retained. Costifwrongless testindependence, reviewercheck boundary fixtures; noassertionallfeaturesTDD.
+Ruling: onlineauditorpostseal is independentnew evaluationcode SHA, never addto frozenrunner sourceprotocol retroactively. Costifwrongprovenance gap, authoridentity archives separately.
+Task4 boundedcausaldiagnosis: THREEpredeclaredstandardquadratures allp90~3.8deg, nogyrofit/bias/noise/gaterescue; API validphysicsview suppliesbothrootpose/vel, cachehypothesisnotconfirmed. Verticalsettling.04608,XYRMS.03522; GTattitude diagnostic XY.00510 explicitlyprivilegednotcandidate.
+Ruling: preserve3D/attitude onlinefailure; XY/GTattitude diagnostics explanatoryonly. Do notretune to admission orlatezero vertical. Costifwronghides yaw/heightproblem, gates stayimmutable.
+Task5 authoractualdualvideo308frames decodedand0/153/307viewed, diagnosisPNG viewed. No newphysics/fit/candidate. Freshfinalreview pendingseparatelyscopedrollingstage; oldspatial/VOreviewnever repeated. Entiremission incomplete; nextvisualfloor-source feasibility bounded, no learnerbeforebase prerequisites.

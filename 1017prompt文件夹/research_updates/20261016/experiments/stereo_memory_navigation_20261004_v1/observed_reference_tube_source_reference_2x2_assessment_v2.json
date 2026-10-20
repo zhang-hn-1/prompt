@@ -1,0 +1,854 @@
+{
+  "protocol": {
+    "utc": "2026-10-08T13:14:24.485910+00:00",
+    "question": "At first crossrun action difference211, distinguish observed-map/source-history vs existing-controller/reference state under identical actual measured input",
+    "maximum_counterfactual_calls": 4,
+    "currentframe": 211,
+    "only_sealed_runs": true,
+    "no_future_data_consumed": true,
+    "not_new_physics": true,
+    "no_threshold_changes": true
+  },
+  "measurements_same_exact": true,
+  "factual_AA_BB_requests_exact": true,
+  "counterfactuals": [
+    {
+      "controller_reference_state": "A",
+      "map_source_history_state": "A",
+      "request": [
+        0.5,
+        -0.5235987901687622,
+        0.5,
+        -0.5235987901687622,
+        0.5,
+        -0.5235987901687622,
+        0.5,
+        -0.5235987901687622,
+        0.5,
+        -0.5235987901687622
+      ],
+      "reference_before": [
+        [
+          -2.594125270843506,
+          -0.09507931023836136
+        ],
+        [
+          -2.865866710433298,
+          0.032029225199710354
+        ],
+        [
+          -2.581643070968048,
+          -0.06172256414443423
+        ],
+        [
+          -2.2833049155688925,
+          -0.08553055165136872
+        ],
+        [
+          -1.9878099697856346,
+          -0.03804147656403176
+        ],
+        [
+          -1.7119543493723675,
+          0.07804535267388246
+        ],
+        [
+          -1.4714178586641429,
+          0.2561314887818721
+        ],
+        [
+          -1.2798727407861679,
+          0.486094405473268
+        ],
+        [
+          -1.1482065388856932,
+          0.7548628681194735
+        ],
+        [
+          -1.0153319996501835,
+          1.022973666762748
+        ],
+        [
+          -0.8486372619554846,
+          1.2723972642369852
+        ]
+      ],
+      "reference_after": [
+        [
+          -2.594125270843506,
+          -0.09507931023836136
+        ],
+        [
+          -2.865866710433298,
+          0.032029225199710354
+        ],
+        [
+          -2.581643070968048,
+          -0.06172256414443423
+        ],
+        [
+          -2.2833049155688925,
+          -0.08553055165136872
+        ],
+        [
+          -1.9878099697856346,
+          -0.03804147656403176
+        ],
+        [
+          -1.7119543493723675,
+          0.07804535267388246
+        ],
+        [
+          -1.4714178586641429,
+          0.2561314887818721
+        ],
+        [
+          -1.2798727407861679,
+          0.486094405473268
+        ],
+        [
+          -1.1482065388856932,
+          0.7548628681194735
+        ],
+        [
+          -1.0153319996501835,
+          1.022973666762748
+        ],
+        [
+          -0.8486372619554846,
+          1.2723972642369852
+        ]
+      ],
+      "reference_decision": {
+        "decision": "retain",
+        "measured_time_s": 21.099999528378248,
+        "guard": {
+          "projected_arc_m": 1.3119320012211713,
+          "projection_distance_m": 0.06004206430210123,
+          "remaining_arc_m": 1.682303785925817,
+          "suffix_xy": [
+            [
+              -1.8826684341104356,
+              0.006204667413217721
+            ],
+            [
+              -1.7119543493723675,
+              0.07804535267388246
+            ],
+            [
+              -1.4714178586641429,
+              0.2561314887818721
+            ],
+            [
+              -1.2798727407861679,
+              0.486094405473268
+            ],
+            [
+              -1.1482065388856932,
+              0.7548628681194735
+            ],
+            [
+              -1.0153319996501835,
+              1.022973666762748
+            ],
+            [
+              -0.8486372619554846,
+              1.2723972642369852
+            ]
+          ],
+          "bridge_xy": [
+            [
+              -1.8593794107437134,
+              -0.04913673549890518
+            ],
+            [
+              -1.8826684341104356,
+              0.006204667413217721
+            ]
+          ],
+          "suffix_clearance_m": 0.9160149462102353,
+          "bridge_clearance_m": 1.460206389953516,
+          "continuous_clearance_pass": true,
+          "raster_clearance_pass": true,
+          "minimum_raster_clearance_m": 0.894427190999916,
+          "raster_sample_count": 38,
+          "raster_outside_count": 0,
+          "observed_hazard_count": 54,
+          "retention_necessary_screen_pass": true,
+          "reject_reasons": [],
+          "nominal_geometry_only": true,
+          "certified_safe": false
+        },
+        "initial_or_no_route": false,
+        "state_before": {
+          "path_index": 4,
+          "active_direction": "forward",
+          "pending_direction": null,
+          "stopped_cycles": 0,
+          "off_reference_cycles": 0,
+          "failure": null,
+          "braking_state": "tracking",
+          "mapping_count": 95
+        },
+        "state_after": {
+          "path_index": 4,
+          "active_direction": "forward",
+          "pending_direction": null,
+          "stopped_cycles": 0,
+          "off_reference_cycles": 0,
+          "failure": null,
+          "braking_state": "tracking",
+          "mapping_count": 95
+        },
+        "certified_safe": false,
+        "direction_cost_input": null,
+        "tube_viability_armed_at_boundary": true,
+        "tube_viability_screen": {
+          "pass": true,
+          "minimum_raster_clearance_m": 0.894427190999916,
+          "existing_planning_clearance_m": 0.8707106781186548,
+          "samples": 43,
+          "outside": 0,
+          "sample_step_m": 0.05,
+          "necessary_nominal_partial_screen_only": true,
+          "no_free_or_completed_volume": true
+        }
+      },
+      "nominal_reference_version": 1,
+      "factual_request_exact": true
+    },
+    {
+      "controller_reference_state": "A",
+      "map_source_history_state": "B",
+      "request": [
+        0.5,
+        -0.5235987901687622,
+        0.5,
+        -0.5235987901687622,
+        0.5,
+        -0.5235987901687622,
+        0.5,
+        -0.5235987901687622,
+        0.5,
+        -0.5235987901687622
+      ],
+      "reference_before": [
+        [
+          -2.594125270843506,
+          -0.09507931023836136
+        ],
+        [
+          -2.865866710433298,
+          0.032029225199710354
+        ],
+        [
+          -2.581643070968048,
+          -0.06172256414443423
+        ],
+        [
+          -2.2833049155688925,
+          -0.08553055165136872
+        ],
+        [
+          -1.9878099697856346,
+          -0.03804147656403176
+        ],
+        [
+          -1.7119543493723675,
+          0.07804535267388246
+        ],
+        [
+          -1.4714178586641429,
+          0.2561314887818721
+        ],
+        [
+          -1.2798727407861679,
+          0.486094405473268
+        ],
+        [
+          -1.1482065388856932,
+          0.7548628681194735
+        ],
+        [
+          -1.0153319996501835,
+          1.022973666762748
+        ],
+        [
+          -0.8486372619554846,
+          1.2723972642369852
+        ]
+      ],
+      "reference_after": [
+        [
+          -2.594125270843506,
+          -0.09507931023836136
+        ],
+        [
+          -2.865866710433298,
+          0.032029225199710354
+        ],
+        [
+          -2.581643070968048,
+          -0.06172256414443423
+        ],
+        [
+          -2.2833049155688925,
+          -0.08553055165136872
+        ],
+        [
+          -1.9878099697856346,
+          -0.03804147656403176
+        ],
+        [
+          -1.7119543493723675,
+          0.07804535267388246
+        ],
+        [
+          -1.4714178586641429,
+          0.2561314887818721
+        ],
+        [
+          -1.2798727407861679,
+          0.486094405473268
+        ],
+        [
+          -1.1482065388856932,
+          0.7548628681194735
+        ],
+        [
+          -1.0153319996501835,
+          1.022973666762748
+        ],
+        [
+          -0.8486372619554846,
+          1.2723972642369852
+        ]
+      ],
+      "reference_decision": {
+        "decision": "retain",
+        "measured_time_s": 21.099999528378248,
+        "guard": {
+          "projected_arc_m": 1.3119320012211713,
+          "projection_distance_m": 0.06004206430210123,
+          "remaining_arc_m": 1.682303785925817,
+          "suffix_xy": [
+            [
+              -1.8826684341104356,
+              0.006204667413217721
+            ],
+            [
+              -1.7119543493723675,
+              0.07804535267388246
+            ],
+            [
+              -1.4714178586641429,
+              0.2561314887818721
+            ],
+            [
+              -1.2798727407861679,
+              0.486094405473268
+            ],
+            [
+              -1.1482065388856932,
+              0.7548628681194735
+            ],
+            [
+              -1.0153319996501835,
+              1.022973666762748
+            ],
+            [
+              -0.8486372619554846,
+              1.2723972642369852
+            ]
+          ],
+          "bridge_xy": [
+            [
+              -1.8593794107437134,
+              -0.04913673549890518
+            ],
+            [
+              -1.8826684341104356,
+              0.006204667413217721
+            ]
+          ],
+          "suffix_clearance_m": 0.9175713750149326,
+          "bridge_clearance_m": 1.460206389953516,
+          "continuous_clearance_pass": true,
+          "raster_clearance_pass": true,
+          "minimum_raster_clearance_m": 0.894427190999916,
+          "raster_sample_count": 38,
+          "raster_outside_count": 0,
+          "observed_hazard_count": 57,
+          "retention_necessary_screen_pass": true,
+          "reject_reasons": [],
+          "nominal_geometry_only": true,
+          "certified_safe": false
+        },
+        "initial_or_no_route": false,
+        "state_before": {
+          "path_index": 4,
+          "active_direction": "forward",
+          "pending_direction": null,
+          "stopped_cycles": 0,
+          "off_reference_cycles": 0,
+          "failure": null,
+          "braking_state": "tracking",
+          "mapping_count": 95
+        },
+        "state_after": {
+          "path_index": 4,
+          "active_direction": "forward",
+          "pending_direction": null,
+          "stopped_cycles": 0,
+          "off_reference_cycles": 0,
+          "failure": null,
+          "braking_state": "tracking",
+          "mapping_count": 95
+        },
+        "certified_safe": false,
+        "direction_cost_input": null,
+        "tube_viability_armed_at_boundary": true,
+        "tube_viability_screen": {
+          "pass": true,
+          "minimum_raster_clearance_m": 0.894427190999916,
+          "existing_planning_clearance_m": 0.8707106781186548,
+          "samples": 43,
+          "outside": 0,
+          "sample_step_m": 0.05,
+          "necessary_nominal_partial_screen_only": true,
+          "no_free_or_completed_volume": true
+        }
+      },
+      "nominal_reference_version": 1
+    },
+    {
+      "controller_reference_state": "B",
+      "map_source_history_state": "A",
+      "request": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference_before": [
+        [
+          -2.594125270843506,
+          -0.09507931023836136
+        ],
+        [
+          -2.865866710433298,
+          0.032029225199710354
+        ],
+        [
+          -2.581643070968048,
+          -0.06172256414443423
+        ],
+        [
+          -2.2833049155688925,
+          -0.08553055165136872
+        ],
+        [
+          -1.9878099697856346,
+          -0.03804147656403176
+        ],
+        [
+          -1.7119543493723675,
+          0.07804535267388246
+        ],
+        [
+          -1.4714178586641429,
+          0.2561314887818721
+        ],
+        [
+          -1.2798727407861679,
+          0.486094405473268
+        ],
+        [
+          -1.1154763600307895,
+          0.7370388147487636
+        ],
+        [
+          -0.9486064554866093,
+          0.9863452557195316
+        ],
+        [
+          -0.7792793457914248,
+          1.233989348066532
+        ]
+      ],
+      "reference_after": [
+        [
+          -1.8593794107437134,
+          -0.04913673549890518
+        ],
+        [
+          -2.1550072703412533,
+          -0.10016769082330695
+        ],
+        [
+          -2.4506945231032846,
+          -0.15085337248575084
+        ],
+        [
+          -2.1637916610784846,
+          -0.06565229856012597
+        ],
+        [
+          -1.9052108440546096,
+          0.08504088742838001
+        ],
+        [
+          -1.6896499658416826,
+          0.2926606914456578
+        ],
+        [
+          -1.4987786359047055,
+          0.5241070177508823
+        ],
+        [
+          -1.3056278911423833,
+          0.7536545212220702
+        ],
+        [
+          -1.1102166202635741,
+          0.9812807538175763
+        ],
+        [
+          -0.8877120165430284,
+          1.1813576011771507
+        ],
+        [
+          -0.6228795356144522,
+          1.3206515370516132
+        ],
+        [
+          -0.3319459200235766,
+          1.3906277819165969
+        ],
+        [
+          -0.03366320557734549,
+          1.4226697671029573
+        ]
+      ],
+      "reference_decision": {
+        "decision": "rebuild",
+        "measured_time_s": 21.099999528378248,
+        "guard": {
+          "projected_arc_m": 1.3119320012211713,
+          "projection_distance_m": 0.06004206430210123,
+          "remaining_arc_m": 1.6837839775999042,
+          "suffix_xy": [
+            [
+              -1.8826684341104356,
+              0.006204667413217721
+            ],
+            [
+              -1.7119543493723675,
+              0.07804535267388246
+            ],
+            [
+              -1.4714178586641429,
+              0.2561314887818721
+            ],
+            [
+              -1.2798727407861679,
+              0.486094405473268
+            ],
+            [
+              -1.1154763600307895,
+              0.7370388147487636
+            ],
+            [
+              -0.9486064554866093,
+              0.9863452557195316
+            ],
+            [
+              -0.7792793457914248,
+              1.233989348066532
+            ]
+          ],
+          "bridge_xy": [
+            [
+              -1.8593794107437134,
+              -0.04913673549890518
+            ],
+            [
+              -1.8826684341104356,
+              0.006204667413217721
+            ]
+          ],
+          "suffix_clearance_m": 0.8651540064301765,
+          "bridge_clearance_m": 1.460206389953516,
+          "continuous_clearance_pass": true,
+          "raster_clearance_pass": true,
+          "minimum_raster_clearance_m": 0.848528137423857,
+          "raster_sample_count": 38,
+          "raster_outside_count": 0,
+          "observed_hazard_count": 54,
+          "retention_necessary_screen_pass": true,
+          "reject_reasons": [],
+          "nominal_geometry_only": true,
+          "certified_safe": false
+        },
+        "initial_or_no_route": false,
+        "state_before": {
+          "path_index": 4,
+          "active_direction": "forward",
+          "pending_direction": null,
+          "stopped_cycles": 0,
+          "off_reference_cycles": 0,
+          "failure": null,
+          "braking_state": "tracking",
+          "mapping_count": 95
+        },
+        "state_after": {
+          "path_index": 0,
+          "active_direction": "forward",
+          "pending_direction": null,
+          "stopped_cycles": 0,
+          "off_reference_cycles": 0,
+          "failure": null,
+          "braking_state": "tracking",
+          "mapping_count": 95
+        },
+        "certified_safe": false,
+        "direction_cost_input": "forward",
+        "tube_viability_armed_at_boundary": true,
+        "tube_viability_screen": {
+          "pass": false,
+          "minimum_raster_clearance_m": 0.848528137423857,
+          "existing_planning_clearance_m": 0.8707106781186548,
+          "samples": 43,
+          "outside": 0,
+          "sample_step_m": 0.05,
+          "necessary_nominal_partial_screen_only": true,
+          "no_free_or_completed_volume": true
+        }
+      },
+      "nominal_reference_version": 2
+    },
+    {
+      "controller_reference_state": "B",
+      "map_source_history_state": "B",
+      "request": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reference_before": [
+        [
+          -2.594125270843506,
+          -0.09507931023836136
+        ],
+        [
+          -2.865866710433298,
+          0.032029225199710354
+        ],
+        [
+          -2.581643070968048,
+          -0.06172256414443423
+        ],
+        [
+          -2.2833049155688925,
+          -0.08553055165136872
+        ],
+        [
+          -1.9878099697856346,
+          -0.03804147656403176
+        ],
+        [
+          -1.7119543493723675,
+          0.07804535267388246
+        ],
+        [
+          -1.4714178586641429,
+          0.2561314887818721
+        ],
+        [
+          -1.2798727407861679,
+          0.486094405473268
+        ],
+        [
+          -1.1154763600307895,
+          0.7370388147487636
+        ],
+        [
+          -0.9486064554866093,
+          0.9863452557195316
+        ],
+        [
+          -0.7792793457914248,
+          1.233989348066532
+        ]
+      ],
+      "reference_after": [
+        [
+          -1.8593794107437134,
+          -0.04913673549890518
+        ],
+        [
+          -2.1550072703412533,
+          -0.10016769082330695
+        ],
+        [
+          -2.4506945231032846,
+          -0.15085337248575084
+        ],
+        [
+          -2.1637916610784846,
+          -0.06565229856012597
+        ],
+        [
+          -1.9052108440546096,
+          0.08504088742838001
+        ],
+        [
+          -1.6896499658416826,
+          0.2926606914456578
+        ],
+        [
+          -1.4987786359047055,
+          0.5241070177508823
+        ],
+        [
+          -1.3056278911423833,
+          0.7536545212220702
+        ],
+        [
+          -1.1102166202635741,
+          0.9812807538175763
+        ],
+        [
+          -0.8877120165430284,
+          1.1813576011771507
+        ],
+        [
+          -0.6228795356144522,
+          1.3206515370516132
+        ],
+        [
+          -0.3319459200235766,
+          1.3906277819165969
+        ],
+        [
+          -0.03366320557734549,
+          1.4226697671029573
+        ]
+      ],
+      "reference_decision": {
+        "decision": "rebuild",
+        "measured_time_s": 21.099999528378248,
+        "guard": {
+          "projected_arc_m": 1.3119320012211713,
+          "projection_distance_m": 0.06004206430210123,
+          "remaining_arc_m": 1.6837839775999042,
+          "suffix_xy": [
+            [
+              -1.8826684341104356,
+              0.006204667413217721
+            ],
+            [
+              -1.7119543493723675,
+              0.07804535267388246
+            ],
+            [
+              -1.4714178586641429,
+              0.2561314887818721
+            ],
+            [
+              -1.2798727407861679,
+              0.486094405473268
+            ],
+            [
+              -1.1154763600307895,
+              0.7370388147487636
+            ],
+            [
+              -0.9486064554866093,
+              0.9863452557195316
+            ],
+            [
+              -0.7792793457914248,
+              1.233989348066532
+            ]
+          ],
+          "bridge_xy": [
+            [
+              -1.8593794107437134,
+              -0.04913673549890518
+            ],
+            [
+              -1.8826684341104356,
+              0.006204667413217721
+            ]
+          ],
+          "suffix_clearance_m": 0.8651540064301765,
+          "bridge_clearance_m": 1.460206389953516,
+          "continuous_clearance_pass": true,
+          "raster_clearance_pass": true,
+          "minimum_raster_clearance_m": 0.848528137423857,
+          "raster_sample_count": 38,
+          "raster_outside_count": 0,
+          "observed_hazard_count": 57,
+          "retention_necessary_screen_pass": true,
+          "reject_reasons": [],
+          "nominal_geometry_only": true,
+          "certified_safe": false
+        },
+        "initial_or_no_route": false,
+        "state_before": {
+          "path_index": 4,
+          "active_direction": "forward",
+          "pending_direction": null,
+          "stopped_cycles": 0,
+          "off_reference_cycles": 0,
+          "failure": null,
+          "braking_state": "tracking",
+          "mapping_count": 95
+        },
+        "state_after": {
+          "path_index": 0,
+          "active_direction": "forward",
+          "pending_direction": null,
+          "stopped_cycles": 0,
+          "off_reference_cycles": 0,
+          "failure": null,
+          "braking_state": "tracking",
+          "mapping_count": 95
+        },
+        "certified_safe": false,
+        "direction_cost_input": "forward",
+        "tube_viability_armed_at_boundary": true,
+        "tube_viability_screen": {
+          "pass": false,
+          "minimum_raster_clearance_m": 0.848528137423857,
+          "existing_planning_clearance_m": 0.8707106781186548,
+          "samples": 43,
+          "outside": 0,
+          "sample_step_m": 0.05,
+          "necessary_nominal_partial_screen_only": true,
+          "no_free_or_completed_volume": true
+        }
+      },
+      "nominal_reference_version": 2,
+      "factual_request_exact": true
+    }
+  ],
+  "not_alternate_future_truth": true,
+  "not_actor_change": true,
+  "old_candidate_nonintervention_preserved": true,
+  "whole_research_complete": false
+}

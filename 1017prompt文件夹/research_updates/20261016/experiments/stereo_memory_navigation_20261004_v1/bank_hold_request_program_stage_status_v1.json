@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-08T00:40:26.747393+00:00",
+  "pid": 2533949,
+  "stage": "ACTUAL_PAIRED_CLOSED_NEEDS_VERIFICATION",
+  "arms": {
+    "B0": {
+      "stage": "ACTUAL_CLOSED_NEEDS_VERIFICATION",
+      "utc": "2026-10-08T00:40:26.747573+00:00",
+      "complete": true,
+      "child_pid": 2533951,
+      "returncode": 0,
+      "wall_s": 219.44224191294052,
+      "end_utc": "2026-10-08T00:44:06.195090+00:00",
+      "forced_kill": false,
+      "wall_timeout": false,
+      "post_close_manifest_sha256": "738e214c48859dbf708dd156e18e90066eb3ceb87bf43222034b0d4658a9a947"
+    },
+    "C": {
+      "stage": "ACTUAL_CLOSED_NEEDS_VERIFICATION",
+      "utc": "2026-10-08T00:44:06.575769+00:00",
+      "complete": true,
+      "child_pid": 2538628,
+      "returncode": 0,
+      "wall_s": 219.70538050704636,
+      "end_utc": "2026-10-08T00:47:46.286822+00:00",
+      "forced_kill": false,
+      "wall_timeout": false,
+      "post_close_manifest_sha256": "00213a1feb10b9095181d19879dbf39c2c0149315ed529d2d0762fdc9dd65ead"
+    }
+  },
+  "maximum_actual_sequences": 2,
+  "not_fresh_heldout": true,
+  "whole_research_complete": false,
+  "formal_triggered": false,
+  "end_utc": "2026-10-08T00:47:46.678838+00:00"
+}

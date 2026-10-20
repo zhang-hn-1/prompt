@@ -1,0 +1,199 @@
+{
+  "utc": "2026-10-07T16:17:03.122312+00:00",
+  "decision": "PASS_THREE_CURRENT_SEQUENCE_POINTS_ONLY",
+  "results": [
+    {
+      "requested_bank_deg": 0.0,
+      "requested_main": 0.5,
+      "current": {
+        "window_start_s": 21.0,
+        "window_end_s": 25.5,
+        "samples": 225,
+        "valid_samples": 225,
+        "actual_speed_m_s": 0.2038811445236206,
+        "actual_bank_deg": 0.287356158602061,
+        "curvature_body_1_m": -0.00952517706900835,
+        "curvature_geometric_1_m": -0.00952517706900835,
+        "curvature_iqr": 0.02908204961568117,
+        "bank_span_95_5_deg": 0.08915905102112531,
+        "valid_fraction": 1.0,
+        "direction_match_fraction": 1.0,
+        "checks": {
+          "valid_fraction": true,
+          "curvature_iqr": true,
+          "bank_span": true,
+          "direction": true
+        },
+        "accepted": true,
+        "measurement_scope": "offline centered31sample XY geometry; not online physical prediction"
+      },
+      "historical_case_point": {
+        "case": "calibration_0.5",
+        "main": 0.5,
+        "requested_bank_deg": 0,
+        "window_start_s": 95,
+        "window_end_s": 99.5,
+        "actual_speed_m_s": 0.2058676779270172,
+        "actual_bank_deg": 0.7532699456607517,
+        "curvature_body_1_m": -0.03296351060271263,
+        "curvature_geometric_1_m": -0.03296351060271263,
+        "curvature_iqr": 0.0162509772926569,
+        "bank_span_95_5_deg": 0.15993255893741765,
+        "valid_fraction": 1.0,
+        "direction_match_fraction": 1.0,
+        "sensitivity": {
+          "21": -0.03296155110001564,
+          "41": -0.03297444432973862
+        },
+        "checks": {
+          "valid_fraction": true,
+          "curvature_iqr": true,
+          "bank_span": true,
+          "direction": true
+        },
+        "accepted": true
+      },
+      "curvature_error_1_m": 0.02343833353370428,
+      "curvature_limit_1_m": 0.2,
+      "speed_error_m_s": 0.0019865334033966064,
+      "checks": {
+        "current_steady": true,
+        "frozen_point_curvature_consistency": true,
+        "frozen_point_speed_consistency": true
+      },
+      "accepted": true
+    },
+    {
+      "requested_bank_deg": 22.5,
+      "requested_main": 0.5,
+      "current": {
+        "window_start_s": 41.0,
+        "window_end_s": 45.5,
+        "samples": 225,
+        "valid_samples": 225,
+        "actual_speed_m_s": 0.16111141443252563,
+        "actual_bank_deg": 23.68843903013489,
+        "curvature_body_1_m": -0.7843829393386841,
+        "curvature_geometric_1_m": -0.7843829393386841,
+        "curvature_iqr": 0.033211350440979004,
+        "bank_span_95_5_deg": 0.372956265491009,
+        "valid_fraction": 1.0,
+        "direction_match_fraction": 1.0,
+        "checks": {
+          "valid_fraction": true,
+          "curvature_iqr": true,
+          "bank_span": true,
+          "direction": true
+        },
+        "accepted": true,
+        "measurement_scope": "offline centered31sample XY geometry; not online physical prediction"
+      },
+      "historical_case_point": {
+        "case": "calibration_0.5",
+        "main": 0.5,
+        "requested_bank_deg": 22.5,
+        "window_start_s": 40,
+        "window_end_s": 44.5,
+        "actual_speed_m_s": 0.18854965269565582,
+        "actual_bank_deg": 22.87934047989381,
+        "curvature_body_1_m": -0.8272253274917603,
+        "curvature_geometric_1_m": -0.8272253274917603,
+        "curvature_iqr": 0.02627241611480713,
+        "bank_span_95_5_deg": 0.7334190615382639,
+        "valid_fraction": 1.0,
+        "direction_match_fraction": 1.0,
+        "sensitivity": {
+          "21": -0.8278461694717407,
+          "41": -0.8264451026916504
+        },
+        "checks": {
+          "valid_fraction": true,
+          "curvature_iqr": true,
+          "bank_span": true,
+          "direction": true
+        },
+        "accepted": true
+      },
+      "curvature_error_1_m": 0.04284238815307617,
+      "curvature_limit_1_m": 0.24816759824752807,
+      "speed_error_m_s": 0.027438238263130188,
+      "checks": {
+        "current_steady": true,
+        "frozen_point_curvature_consistency": true,
+        "frozen_point_speed_consistency": true
+      },
+      "accepted": true
+    },
+    {
+      "requested_bank_deg": -22.5,
+      "requested_main": 0.5,
+      "current": {
+        "window_start_s": 61.0,
+        "window_end_s": 65.5,
+        "samples": 225,
+        "valid_samples": 225,
+        "actual_speed_m_s": 0.18716397881507874,
+        "actual_bank_deg": -21.862461137555584,
+        "curvature_body_1_m": 0.8007639050483704,
+        "curvature_geometric_1_m": 0.8007639050483704,
+        "curvature_iqr": 0.052727460861206055,
+        "bank_span_95_5_deg": 0.6206318787962886,
+        "valid_fraction": 1.0,
+        "direction_match_fraction": 1.0,
+        "checks": {
+          "valid_fraction": true,
+          "curvature_iqr": true,
+          "bank_span": true,
+          "direction": true
+        },
+        "accepted": true,
+        "measurement_scope": "offline centered31sample XY geometry; not online physical prediction"
+      },
+      "historical_case_point": {
+        "case": "calibration_0.5",
+        "main": 0.5,
+        "requested_bank_deg": -22.5,
+        "window_start_s": 80,
+        "window_end_s": 84.5,
+        "actual_speed_m_s": 0.18951493501663208,
+        "actual_bank_deg": -22.373663622346292,
+        "curvature_body_1_m": 0.7966033220291138,
+        "curvature_geometric_1_m": 0.7966033220291138,
+        "curvature_iqr": 0.03194379806518555,
+        "bank_span_95_5_deg": 1.0762484798853258,
+        "valid_fraction": 1.0,
+        "direction_match_fraction": 1.0,
+        "sensitivity": {
+          "21": 0.7968127131462097,
+          "41": 0.7960259318351746
+        },
+        "checks": {
+          "valid_fraction": true,
+          "curvature_iqr": true,
+          "bank_span": true,
+          "direction": true
+        },
+        "accepted": true
+      },
+      "curvature_error_1_m": 0.004160583019256592,
+      "curvature_limit_1_m": 0.23898099660873412,
+      "speed_error_m_s": 0.0023509562015533447,
+      "checks": {
+        "current_steady": true,
+        "frozen_point_curvature_consistency": true,
+        "frozen_point_speed_consistency": true
+      },
+      "accepted": true
+    }
+  ],
+  "new_actual_sequences": 1,
+  "no_fit_or_parameter_scan": true,
+  "not_full_bankmap_admission": true,
+  "not_physical_dynamic_prediction": true,
+  "not_navigation": true,
+  "not_formal35": true,
+  "old_rejects_preserved": true,
+  "whole_research_complete": false,
+  "protocol_sha256": "080b96c0d686624120eec8147f8525bf7cc3fa8213851befd9b2d8affa4d8a50",
+  "code_sha256": "b3c806b60912455aa09819b06efed9c1c5bbdb71afd5a3bee6f4036c9be5411b"
+}

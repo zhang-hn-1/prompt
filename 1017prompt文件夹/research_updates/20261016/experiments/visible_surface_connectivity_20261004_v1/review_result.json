@@ -1,0 +1,22 @@
+{
+  "review": "read-only independent whole-stage",
+  "remaining_findings": [],
+  "initial_important_finding": "Stride-four triangle vertices alone did not guarantee native interior support; resolved before first surface action by native closed-quad guard.",
+  "minor_findings_resolved": [
+    "E2 plot minimum axis span",
+    "amendment chronology wording"
+  ],
+  "independently_verified": [
+    "40 CPU tests",
+    "8 full actual closed-loop runs",
+    "2808 current camera pairs",
+    "source identities and versions",
+    "marker invisibility and render invariants",
+    "16 videos first/last decoding",
+    "full request vectors zero and physical contact records zero",
+    "paired raw/applied/XY equality",
+    "historical point baseline exact entire raw/applied/XY reproduction",
+    "frozen offline references not consumed online"
+  ],
+  "review_limits": "No independent GPU simulation rerun; existing actual-run evidence verified."
+}

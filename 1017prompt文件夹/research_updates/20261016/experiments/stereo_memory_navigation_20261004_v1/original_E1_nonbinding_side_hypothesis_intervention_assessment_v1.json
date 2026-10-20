@@ -1,0 +1,99 @@
+{
+  "decision": "PASS_REAL_REQUEST_INTERVENTION_IDENTITY_ONLY",
+  "actual_requests": 546,
+  "actual_online_shadow_rows": 181,
+  "first_request_fork": 180,
+  "first_fork_record": {
+    "frame": 180,
+    "time_s": 17.999999597668648,
+    "source_frame": 180,
+    "source_time_s": 17.999999597668648,
+    "B0_request": [
+      -0.30000001192092896,
+      -0.5235987901687622,
+      -0.30000001192092896,
+      -0.5235987901687622,
+      -0.30000001192092896,
+      -0.5235987901687622,
+      -0.30000001192092896,
+      -0.5235987901687622,
+      -0.30000001192092896,
+      -0.5235987901687622
+    ],
+    "candidate_request": [
+      -0.30000001192092896,
+      -0.3757525086402893,
+      -0.30000001192092896,
+      -0.3757525086402893,
+      -0.30000001192092896,
+      -0.3757525086402893,
+      -0.30000001192092896,
+      -0.3757525086402893,
+      -0.30000001192092896,
+      -0.3757525086402893
+    ],
+    "same_request": false,
+    "first_request_fork": true,
+    "B0_reference": [
+      [
+        -1.7076053619384766,
+        0.4403547942638397
+      ],
+      [
+        -1.9643496482773966,
+        0.28516986843706144
+      ],
+      [
+        -1.728389736453873,
+        0.46927688961859126
+      ],
+      [
+        -1.5427163496725442,
+        0.7040062415907132
+      ],
+      [
+        -1.417883278248054,
+        0.9760157625910441
+      ],
+      [
+        -1.3609861112843953,
+        1.2698442629575177
+      ],
+      [
+        -1.3027507774108908,
+        1.563353529276019
+      ],
+      [
+        -1.1742054073866548,
+        1.833566651406525
+      ],
+      [
+        -1.0115436698135825,
+        2.085638914223765
+      ],
+      [
+        -0.8463971704122283,
+        2.3360903072875154
+      ]
+    ],
+    "actual_online_current_past_only": true,
+    "no_B0_truth_after_fork": true,
+    "B0_state_after_act": {
+      "path_index": 0,
+      "active_direction": "reverse",
+      "pending_direction": null,
+      "stopped_cycles": 0,
+      "off_reference_cycles": 0,
+      "failure": null,
+      "braking_state": "tracking",
+      "mapping_count": 121
+    }
+  },
+  "same_policy_and_tracker_source_MRO": true,
+  "all_actual_grid_diagnostics_nonbinding": true,
+  "no_request_state_reset": true,
+  "not_alternate_future_physics": true,
+  "not_full_navigation_causal_AB": true,
+  "no_NAV_admission": true,
+  "whole_research_complete": false
+}

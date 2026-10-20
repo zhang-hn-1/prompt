@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-09T17:16:57.862492+00:00",
+  "question": "Why first rebuild after actual completed reverse->forward, geometry and one nearest cell source?",
+  "selection": "first tube_viability_event_armed then first local_plan_created; no teacher used in selection",
+  "budget": "one boundary/nearestcell, no new physical, planning query, fitting or threshold",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/audit_reverse_main_post_reversal_boundary_v1.py": "61a01e050af2de6bd7186a7fc48ae5c624467f9c4ca718f419148d34a9860330",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_main_navigation_e1_candidate_run_v1/artifact_manifest_post_close.json": "13f951c7b9eaf31ee570df48132446b08f10192606895f1b497d9ec1cf2a00bc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_main_navigation_e1_candidate_run_v1/policy_records.json": "eb58e9077bdfc9d70cbc53e3ee4617f8fda474f2afdf71f503af0697793a8878",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_main_navigation_e1_candidate_run_v1/states.json": "da77fd0a577ca971604567a79c4e1237ff895e2305fe3ecba3cb405da7d5be6c"
+  },
+  "criteria": "exact measured continuous minimum reconstruction <=1e-7; report source traceability and same-exposure teacher labels only; no control acceptance",
+  "whole_mission_complete": false
+}

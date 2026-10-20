@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-09T19:01:57.682787+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_aux_candidate_running_continuation_v76.json",
+  "supersedes_sha256": "f4d3b46c8c5ea6314b3a32beaac784155f97cb6e31cb87730571f67d77660700",
+  "whole_mission_complete": false,
+  "stage": "forward_aux_closed_next_suffix_CPU_audit_review",
+  "physical_running": false,
+  "physical_budget_used": 2,
+  "physical_budget_limit": 2,
+  "assessment": "forward_outer_yaw_e1_assessment_v1.json",
+  "review": "forward_outer_yaw_e1_closed_review_v1.json",
+  "next_assessment": "suffix_completion_semantics_assessment_v1.json",
+  "next_entry": "Review suffix_completion_semantics_review_v1.json then implement one endpoint-retention consumer only if defensible; separately freeze full pair before any physics",
+  "next_physical_budget_authorized": 0
+}

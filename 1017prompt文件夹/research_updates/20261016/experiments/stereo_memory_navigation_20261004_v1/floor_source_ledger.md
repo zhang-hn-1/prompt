@@ -1,0 +1,13 @@
+# Inline observed-floor + single frozen-semantic source boundary
+
+Question/alternatives/specs predeclared; user independentresearch authoritysupersedes freshapproval/cleanup/commit demands. No code/protocol/gateoldmutations.
+Task1 TDDplane RED6→GREENbroadcastbug6fail→only[...,None]fix6pass.15; independentdisplaced-viewliteral addedandactual13combinedfixtures.22pass. REDscaffolds andallfailureskept.
+Task2 4sanitizedRGB+knownpose/pastpackagespreseal18:02:09.6,4actualpredictions0outputbeforeGT eval. Originalfloorquery8465candidateREJECT. 0physics/fit/map/control.
+Task3 sameflat-worldsemanticprojectiondifferent1checkpointcc2189c; officialsourceverified. DownloadinitialsandboxnetworkEPERMnotautoreviewrejection, automaticauthorizedstaticdownloadsuccess. Onlybinatpinnedrevision,safetensorsnotavailable, BEFOREunsealedrunchangedtoexplicitweights_onlyTrue, no remotecode. Localtransformers4.21 ImageProcessorimport unavailable, usedofficialmatchingFeatureExtractor noinstallation. Failuresretained.
+Task4 semanticRED6→GREEN6,8CPUactual18:09:09preseal thenallserializedbeforelabels; 15142queries0out, truefloormaxP<=.154/argmaxwallbedchair=>REJECT. No cutoff/rotation/networkrescue.
+Task5 boundedsource-overlapONLYlabeldiagnostic fourfixedreferences/offset1,2,3,5: recent2truecontributors0/21.079%/.179%/0; rawonecontributor+anglethresholdtradeoff explicit. No candidategenerationafterdiagnostics. Old±.05mheightband isproxy, semanticIDnotproven; individualoldgroundzsubmm/slipwithin.4mchecks disclose limits.
+Task6 full290suite9.94s afterlastimplementation; both actualdiagnosticPNGs viewed. Freshfinalreview pendingonlythese2sourceimplementations; no rolling/spatial/VOre-review.
+Ruling: none/zerooutputs meansrejection/undefinedprecision, not safe/noerrors. Costifwrongfabricatedadmission; allgatesfalse retained.
+Ruling: knownplaneclassifiedpixels andRGBmatchingareconditionalhypotheses, notmeasureddepthorfreevolume. No actualmapwrites preventsprior-as-observation; costifwrongwouldmislabelmap, separatefutureconsumerapprovalgatesrequired.
+Ruling: reportspecgenericoldbodygate remainsrejected; narrowgroundsourcecannotreplaceit, worldmodelmemorystillblocked. Costifwrongstereoobstaclerecallhidden; allunfinishedlayerspreserved.
+Nextactualstage startedwithoutstopping: ONEfreshE2whole32sheldout visualcollection currentPID/rigno planner; sameoldcommandonlynewscene, notmotionmatrixredo. Firstadministrativepreseal printKeyErrorscene_id leftprotocolabsent; mistakenlydispatchedchildexited1 atreadbeforeoutput/runtime/physics. Originalstatus/log/code kept. Fixedrawfieldscene_uri andv2wrapperonlynewstatus/log;176sourcepreseal18:22:55.95, actualnewrunstatus_v2. Nofitbeforewholeheldoutsealed/noGTlabelinspection. Eachfailureclaimedprecisely, physicalbudgetstill1.

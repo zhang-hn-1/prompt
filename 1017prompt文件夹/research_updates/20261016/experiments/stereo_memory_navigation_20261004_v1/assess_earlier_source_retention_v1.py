@@ -1,0 +1,12 @@
+"""Eight predeclared historical retention instances, labels postseal only."""
+from pathlib import Path
+import json,hashlib,datetime,numpy as np
+H=Path(__file__).resolve().parent;D=H/'qualified_hazard_navigation_run_v1';O=H/'earlier_source_retention_v1';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();s=json.loads((O/'prediction_seal.json').read_text());assert all(sha(p)==v for p,v in s['output_sha256'].items());assert all(sha(p)==v for p,v in s['source_sha256'].items());out=O/'assessment_v1.json';assert not out.exists();rows=[];gt=[]
+for r in json.loads((O/'records.json').read_text()):
+ f=np.load(O/r['file']);tp=D/'offline_truth'/f"frame_{r['current_frame']:03d}.npz";g=np.load(tp);gt.append(tp);assert float(g['time_s'])==r['current_time_s'];e=[]
+ for eye in ['left','right']:
+  x,y=np.rint(f[eye+'_uv']).astype(np.int64).T;assert ((x>=0)&(x<640)&(y>=0)&(y<480)).all();z=g[eye+'_depth_m'][y,x];T=g[eye+'_camera_usd_world'];rays=np.c_[(x-319.5)/584.8888888888889,(y-239.5)/584.8888888888889,np.ones(len(x))]
+  with np.errstate(invalid='ignore'):w=T[:3,3]+(rays*z[:,None])@(T[:3,:3]@np.diag([1,-1,-1])).T;e.append(np.linalg.norm(f['old_world']-w,axis=1))
+ e=np.array(e).T;finite=np.isfinite(e).all(1);correct=finite&(e<=.1).all(1);n=r['n'];precision=float(correct.sum()/n) if n else None;bins=len(np.unique(np.floor(f['old_world'][correct,:2]/.1).astype(np.int64),axis=0)) if correct.any() else 0;rows.append(dict(**r,correct=int(correct.sum()),insufficient=int((~finite).sum()),finite_wrong=int((finite&~correct).sum()),precision=precision,correct_XY_bins=bins,finite_max_eye_p90_m=float(np.quantile(e[finite].max(1),.9)) if finite.any() else None,gate=bool(n>=20 and precision>=.95 and bins>=2)))
+result=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),rows=rows,decision='EARLIER_LOCAL_RETENTION_PASS_ONLY' if len(rows)==8 and all(r['gate'] for r in rows) else 'REJECT_EARLIER_LOCAL_RETENTION',total_n=sum(r['n'] for r in rows),total_correct=sum(r['correct'] for r in rows),whole_sequence_coverage_not_proven=True,old_B0_only=True,counterfactual_handoff_labels=False,actual_new_control=False,knownpose_privileged=True,fresh_heldout=False,GT_postseal_sha256={str(p):sha(p) for p in gt},prediction_seal_sha256=sha(O/'prediction_seal.json'),source_sha256=sha(Path(__file__)),whole_research_complete=False,formal_triggered=False)
+out.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

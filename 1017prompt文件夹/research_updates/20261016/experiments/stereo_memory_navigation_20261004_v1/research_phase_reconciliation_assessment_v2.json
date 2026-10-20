@@ -1,0 +1,302 @@
+{
+  "utc": "2026-10-09T22:02:30.975355+00:00",
+  "records": [
+    {
+      "variant": "frozen_classical",
+      "pose_layer": "known_pose",
+      "run": "sgbm_baseline35_e0_coverage_run_v1",
+      "outcome": "timeout",
+      "success": false,
+      "goal_remaining_m": 3.532847628154454,
+      "net_axis_progress_m": 5.309220352410068,
+      "arrival_time_s": null,
+      "contact_time_s": null,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "frozen_classical",
+      "pose_layer": "known_pose",
+      "run": "sgbm_baseline35_e1_coverage_run_v1",
+      "outcome": "timeout",
+      "success": false,
+      "goal_remaining_m": 5.890992164335595,
+      "net_axis_progress_m": 0.7135184228420255,
+      "arrival_time_s": null,
+      "contact_time_s": null,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "frozen_classical",
+      "pose_layer": "known_pose",
+      "run": "sgbm_baseline35_e2_run_v1",
+      "outcome": "timeout",
+      "success": false,
+      "goal_remaining_m": 8.118060229428405,
+      "net_axis_progress_m": 0.7856039524078371,
+      "arrival_time_s": null,
+      "contact_time_s": null,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "frozen_classical",
+      "pose_layer": "estimated_pose",
+      "run": "native_pose_baseline35_e0_run_v1",
+      "outcome": "timeout",
+      "success": false,
+      "goal_remaining_m": 3.5769075921170983,
+      "net_axis_progress_m": 5.269047628762242,
+      "arrival_time_s": null,
+      "contact_time_s": null,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "frozen_classical",
+      "pose_layer": "estimated_pose",
+      "run": "native_pose_baseline35_e1_coverage_run_v1",
+      "outcome": "timeout",
+      "success": false,
+      "goal_remaining_m": 5.850502276669347,
+      "net_axis_progress_m": 0.7536004006862638,
+      "arrival_time_s": null,
+      "contact_time_s": null,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "frozen_classical",
+      "pose_layer": "estimated_pose",
+      "run": "native_pose_baseline35_e2_coverage_run_v1",
+      "outcome": "collision",
+      "success": false,
+      "goal_remaining_m": 6.475445669915984,
+      "net_axis_progress_m": 2.4263188362121584,
+      "arrival_time_s": null,
+      "contact_time_s": 19.63999956101179,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "rolling_endpoint",
+      "pose_layer": "known_pose",
+      "run": "known_e0",
+      "outcome": "success",
+      "success": true,
+      "goal_remaining_m": 0.19804451067267942,
+      "net_axis_progress_m": 8.656946983200907,
+      "arrival_time_s": 33.399999253451824,
+      "contact_time_s": null,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "rolling_endpoint",
+      "pose_layer": "known_pose",
+      "run": "known_e1",
+      "outcome": "timeout",
+      "success": false,
+      "goal_remaining_m": 5.626473311000725,
+      "net_axis_progress_m": 0.9757793366909024,
+      "arrival_time_s": null,
+      "contact_time_s": null,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "rolling_endpoint",
+      "pose_layer": "known_pose",
+      "run": "known_e2",
+      "outcome": "collision",
+      "success": false,
+      "goal_remaining_m": 6.485318209270427,
+      "net_axis_progress_m": 2.416234922409058,
+      "arrival_time_s": null,
+      "contact_time_s": 26.67999940365553,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "rolling_endpoint",
+      "pose_layer": "estimated_pose",
+      "run": "native_e0",
+      "outcome": "timeout",
+      "success": false,
+      "goal_remaining_m": 7.487078690951467,
+      "net_axis_progress_m": 1.3591847670241033,
+      "arrival_time_s": null,
+      "contact_time_s": null,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "rolling_endpoint",
+      "pose_layer": "estimated_pose",
+      "run": "native_e1",
+      "outcome": "timeout",
+      "success": false,
+      "goal_remaining_m": 5.951324504923316,
+      "net_axis_progress_m": 0.6597538411617276,
+      "arrival_time_s": null,
+      "contact_time_s": null,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    },
+    {
+      "variant": "rolling_endpoint",
+      "pose_layer": "estimated_pose",
+      "run": "native_e2",
+      "outcome": "timeout",
+      "success": false,
+      "goal_remaining_m": 5.413113972098775,
+      "net_axis_progress_m": 3.4875439524650576,
+      "arrival_time_s": null,
+      "contact_time_s": null,
+      "budget_s": 35.0,
+      "strict_cold_start": false
+    }
+  ],
+  "success_counts": {
+    "frozen_classical": {
+      "known_pose": {
+        "arrived": 0,
+        "conditions": 3
+      },
+      "estimated_pose": {
+        "arrived": 0,
+        "conditions": 3
+      }
+    },
+    "rolling_endpoint": {
+      "known_pose": {
+        "arrived": 1,
+        "conditions": 3
+      },
+      "estimated_pose": {
+        "arrived": 0,
+        "conditions": 3
+      }
+    }
+  },
+  "learning": {
+    "target": "Can one current/past observation risk-confidence qualifier reduce floor-derived false positive risk insertion without discarding measured obstacle hazards?",
+    "classification": "unassessed_label_coverage",
+    "model_converged": true,
+    "results": {
+      "rolling_endpoint_coverage_native_e1_run_v1": {
+        "points": 43204,
+        "floor": 0,
+        "hazard": 37420,
+        "unlabelled": 5784,
+        "baseline_all_selected_risks": true,
+        "retained_floor": 0,
+        "retained_hazard": 37420,
+        "false_floor_reduction": null,
+        "hazard_retention": 1.0,
+        "constant_drop_all": false,
+        "gates": {
+          "label_coverage": false,
+          "floor_false_risk_reduction": false,
+          "hazard_retention": true
+        },
+        "passed": false
+      },
+      "rolling_endpoint_coverage_native_e2_run_v1": {
+        "points": 12883,
+        "floor": 65,
+        "hazard": 10417,
+        "unlabelled": 2401,
+        "baseline_all_selected_risks": true,
+        "retained_floor": 10,
+        "retained_hazard": 10414,
+        "false_floor_reduction": 0.8461538461538461,
+        "hazard_retention": 0.9997120092157051,
+        "constant_drop_all": false,
+        "gates": {
+          "label_coverage": true,
+          "floor_false_risk_reduction": true,
+          "hazard_retention": true
+        },
+        "passed": true
+      }
+    },
+    "runtime_trial_permitted_by_existing_design": false,
+    "remaining_fit_budget": 0,
+    "remaining_extra_collection_budget": 0,
+    "not_a_rejection_of_all_world_models": true
+  },
+  "geometry_diagnostic_closed": true,
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_registry_v3.json": "c0ab26f0e2c361982d6fd0fe2143a8a82f3ccbb687bd653bc94cd7e33c575010",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_candidate_registry_v2.json": "71281ac83485c207244a5b7e28c4ab49a14b2a1bf022110a7afffd833acb9ac0",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/learned_memory_risk_holdout_assessment_v1.json": "5fd177910aef8425c7c680ca92d94f801c0ae66130deea85e409f733710d8a87",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/learned_memory_risk_qualifier_design_v1.json": "72e948c45aa9ee1b39ecca8f76c35cd84b5591dada2ecaf4c0d0379df3a88e82",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/learned_memory_risk_offline_closed_review_v1.json": "de8f582772127bd6f6aa36db070eb1a2e312f14651a75619b9d939d631ab09ad",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/runtime_geometric_curvature_review_v2.json": "671bf74c6aa7f82d4720026541a8a96be5dd2bd73b45b8cc8fbbb364ec939978",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/research_phase_reconciliation_scope_v1.json": "c9bd29a007c800c7de186c1c2ccc7dd0fcecb08f8f9dd89f4243fe30254edb95"
+  },
+  "verified_referenced_file_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e0_coverage_run_v1/termination.json": "6d7e856341e29e4937a12e4ccc8ab4b114a26f5e3ede10ba25e5c52c4ab82581",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e0_coverage_run_v1/task_episode.json": "c547aa55509ef7b892c169c829d3226af8fb72f9c02a2990bb5ca2334f148bd2",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e0_coverage_run_v1/states.json": "c5791c70e3a7dda3b6ea53229741d14a7d655a5488ae4943c8e222681702a0cc",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e0_coverage_run_v1/physics_contacts.json": "024b7359171bc5274c9d1ce43ff5f177c869b3559ea03774f06b99a7548803ce",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e0_coverage_run_v1/identity.json": "eaf6f3852cf2c25ae0674d4e9ceb3aaa87706dfd0316238249b1d61d3a0f2f59",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e0_coverage_run_v1/artifact_manifest_post_close.json": "c5c604fcbd07771093c37b407e86d7cf92df811cd173f27e2bdabd48304d4896",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e0_coverage_run_v1/policy_records.json": "ab396d7aa0dc1cdc6d7e271632f43cd835de7fb1ac47451a0b96deb2a1d365a4",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e0_coverage_run_v1/source_rows.json": "197d0d658a062dcdb73bc708ddc7f9c5483ddad286ecd510742f2b5d4d0f482c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e1_coverage_run_v1/termination.json": "6d7e856341e29e4937a12e4ccc8ab4b114a26f5e3ede10ba25e5c52c4ab82581",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e1_coverage_run_v1/task_episode.json": "700a28b3672922992a1961ac400caa6bce1bc4df0cf7e3df991de9ce80d9814c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e1_coverage_run_v1/states.json": "25b2fb7fa14530c1ef4f42e72a5a5d1a6eac2955c79548506910e9f0b8539d3b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e1_coverage_run_v1/physics_contacts.json": "024b7359171bc5274c9d1ce43ff5f177c869b3559ea03774f06b99a7548803ce",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e1_coverage_run_v1/identity.json": "6b8c1cf572aec041be634f14f8b6d49e331265bdf13797e204fe0b0892268614",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e1_coverage_run_v1/artifact_manifest_post_close.json": "9626512f15d62ebaacca0e1ff2f4a5c39a5eeaf3b7a5103fee4ebf768cc80f38",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e1_coverage_run_v1/policy_records.json": "8a106e7d7a9f9a308479af60384644889dc1cb53d25aa5e45ee4d7bbbd409ad9",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e1_coverage_run_v1/source_rows.json": "a1a5e7a55e93155b31adb3f13c67361581a622fe0210f88f17a10adc295d6927",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e2_run_v1/termination.json": "6d7e856341e29e4937a12e4ccc8ab4b114a26f5e3ede10ba25e5c52c4ab82581",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e2_run_v1/task_episode.json": "53b68a81b2a1331d7dc68786f55853ee4c2423dd0727c8ab98d4bc6aefa42bb6",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e2_run_v1/states.json": "6b04ba8a286fc488226813639453e088494dd9498db210785b6b647d47b694ba",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e2_run_v1/physics_contacts.json": "024b7359171bc5274c9d1ce43ff5f177c869b3559ea03774f06b99a7548803ce",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e2_run_v1/identity.json": "bb513228091463fa5b176a5bd1058bcf746575fc6460afbdf94fd9896fa33c1b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e2_run_v1/artifact_manifest_post_close.json": "75a46d73bb6712fd5f5f73daaeac680834e404a7dc1033e27e53604e4b1a2ce1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e2_run_v1/policy_records.json": "8a80462be2dca6b3e7668a15058113b937077020ee8ec68cc19b718eefe5e9bd",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/sgbm_baseline35_e2_run_v1/source_rows.json": "ba3d1c29af72e78bde85b3ea3e18b327034dcb3dd2007f73b76dfe2a5e026192",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/termination.json": "6d7e856341e29e4937a12e4ccc8ab4b114a26f5e3ede10ba25e5c52c4ab82581",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/task_episode.json": "127621fbd96a1b94198a6d8d30b627dcaee5ecb5416d285f12070ea720192b2d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/states.json": "4803c32b279c9b31633b3e075f80c995b1048d0a3712e53ca9965cd2e54d7e71",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/physics_contacts.json": "024b7359171bc5274c9d1ce43ff5f177c869b3559ea03774f06b99a7548803ce",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/identity.json": "1cded100c4a995e925ac244cc2c3fbcabefe48038e9137ce54f377cc92d94cfe",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/artifact_manifest_post_close.json": "91b4aa876dac3a664e10b4502f7d7b80c3b7430604497a2272037e435e6be615",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/policy_records.json": "85c147f2b62b016121f7b8e021288054d3db8b6c9f60870ad53b1c91cdb5262b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e0_run_v1/source_rows.json": "7daed404431ef4fc6e7d0f5aee4d3aeb85c3456179bdd6419137d37efea749b6",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/termination.json": "6d7e856341e29e4937a12e4ccc8ab4b114a26f5e3ede10ba25e5c52c4ab82581",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/task_episode.json": "b92bd62debe3e86f9eacbe4176e135c0929c4331c7f7704ff69e655cb343c646",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/states.json": "de8aec6c6b156101381da826cb64ab98413e27f4827f24c3fe87314d38cfe6d3",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/physics_contacts.json": "024b7359171bc5274c9d1ce43ff5f177c869b3559ea03774f06b99a7548803ce",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/identity.json": "2a4a43cb413d2dada48e1e08d1ddf6b8b1589cea5a4362aebdd66e58d1c9768c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/artifact_manifest_post_close.json": "d24a5d8f5b73945395de03d1ac7986cee7d4f6fbc8197abdff8538f44057983d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/policy_records.json": "3dd315d89d15c266afd705b5223352d43a2758147baa55e860c8eb6bc912e1a6",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e1_coverage_run_v1/source_rows.json": "599d4a8ae0b4464b4f5304df27baa3ca5d6addc17e342fc4be32231b7afedcf8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/termination.json": "2e2cd01852d701f76d910179084ca8e8f0e46b7c68cfe25db5e8e7f33d4dd8ac",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/task_episode.json": "ac11c7586f22095c4b1e537bd471d9ead346def23ecae0bb3ae060c15264abb5",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/states.json": "907a58824cceb40786e472420b98223713f3914fbbaa4852410972b595c909ba",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/physics_contacts.json": "5c5da960ee85e5b5ffd1446a7cfba469af91602e281a45ab8af4d4dd405f18f5",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/identity.json": "dd64ed734afd61b91ae704caa897333d07acb260e998d47a8df2376b1d6db473",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/artifact_manifest_post_close.json": "1d3e0705f4d6bc41181026dbf87702c9fab738e0803adf82199013cf2c09d27b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/policy_records.json": "98f7eebdf073014c0ba26626c607adc391ea7d4a43380cb6545ade107dbfc16b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_pose_baseline35_e2_coverage_run_v1/source_rows.json": "cf249c08bca837acc1b111359038b8a61589a5a41637e7a36c2191395b0dc960",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_registry_v3.json": "c0ab26f0e2c361982d6fd0fe2143a8a82f3ccbb687bd653bc94cd7e33c575010",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_navigation_e0_assessment_v1.json": "af535b43a7a35b5941c1b98e4701999872c2360f45f2096f7fbb12f089f86d67",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_coverage_known_e1_assessment_v1.json": "8379a238b6fe6dc9b166adbd603c2e7e2b19441bfd0f2261a4bed73a9c176e0f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_coverage_known_e2_assessment_v1.json": "8a45461a917630017d173a822713c789b29b1a42c3e1492f9d33fd349cda0c7d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_native_e0_assessment_v1.json": "1363f0be4ee0b5ab3213639b96fa7a1da436cfc64109d2b81862aa13c065d62d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_coverage_native_e1_assessment_v1.json": "7df39e4474b59c183d786465c06b21eb10ec863c2994d505c9a73f7c12df48b0",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/rolling_endpoint_coverage_native_e2_assessment_v1.json": "b1dfb2eab92c38bd7faf51d1a0a4ada67b43c917af6c3ec9d5e312d0bab52b94"
+  },
+  "personally_run": "CPU reconciliation and listed referenced hashes only; original episodes/fit and full historical manifests not rerun",
+  "not_pooled_success_rate": true,
+  "strict_cold_start_navigation_unestablished": true,
+  "robust_native_navigation_unestablished": true,
+  "whole_mission_complete": false
+}

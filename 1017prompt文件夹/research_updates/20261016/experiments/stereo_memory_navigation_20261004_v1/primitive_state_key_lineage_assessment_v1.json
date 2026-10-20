@@ -1,0 +1,230 @@
+{
+  "rows": [
+    {
+      "aux_prefix": [
+        0.0
+      ],
+      "endpoint_key": [
+        42,
+        39,
+        66,
+        "forward"
+      ],
+      "whole_prefix_free": true
+    },
+    {
+      "aux_prefix": [
+        -0.5235987755982988
+      ],
+      "endpoint_key": [
+        43,
+        39,
+        68,
+        "forward"
+      ],
+      "whole_prefix_free": true
+    },
+    {
+      "aux_prefix": [
+        0.5235987755982988
+      ],
+      "endpoint_key": [
+        42,
+        38,
+        63,
+        "forward"
+      ],
+      "whole_prefix_free": true
+    },
+    {
+      "aux_prefix": [
+        0.0,
+        0.0
+      ],
+      "endpoint_key": [
+        45,
+        37,
+        65,
+        "forward"
+      ],
+      "whole_prefix_free": false
+    },
+    {
+      "aux_prefix": [
+        0.0,
+        -0.5235987755982988
+      ],
+      "endpoint_key": [
+        45,
+        37,
+        68,
+        "forward"
+      ],
+      "whole_prefix_free": false
+    },
+    {
+      "aux_prefix": [
+        0.0,
+        0.5235987755982988
+      ],
+      "endpoint_key": [
+        45,
+        37,
+        63,
+        "forward"
+      ],
+      "whole_prefix_free": false
+    },
+    {
+      "aux_prefix": [
+        -0.5235987755982988,
+        0.0
+      ],
+      "endpoint_key": [
+        45,
+        38,
+        68,
+        "forward"
+      ],
+      "whole_prefix_free": false
+    },
+    {
+      "aux_prefix": [
+        -0.5235987755982988,
+        -0.5235987755982988
+      ],
+      "endpoint_key": [
+        46,
+        38,
+        71,
+        "forward"
+      ],
+      "whole_prefix_free": false
+    },
+    {
+      "aux_prefix": [
+        -0.5235987755982988,
+        0.5235987755982988
+      ],
+      "endpoint_key": [
+        45,
+        38,
+        66,
+        "forward"
+      ],
+      "whole_prefix_free": false
+    },
+    {
+      "aux_prefix": [
+        0.5235987755982988,
+        0.0
+      ],
+      "endpoint_key": [
+        44,
+        36,
+        63,
+        "forward"
+      ],
+      "whole_prefix_free": true
+    },
+    {
+      "aux_prefix": [
+        0.5235987755982988,
+        -0.5235987755982988
+      ],
+      "endpoint_key": [
+        45,
+        36,
+        66,
+        "forward"
+      ],
+      "whole_prefix_free": false
+    },
+    {
+      "aux_prefix": [
+        0.5235987755982988,
+        0.5235987755982988
+      ],
+      "endpoint_key": [
+        44,
+        36,
+        60,
+        "forward"
+      ],
+      "whole_prefix_free": true
+    }
+  ],
+  "root_latch_keys": 2,
+  "distinct_free_prefix_keys": 5,
+  "finite_state_count_including_roots": 7,
+  "duplicate_free_endpoint_keys": 0,
+  "root_keys": [
+    [
+      40,
+      40,
+      66,
+      "forward"
+    ],
+    [
+      40,
+      40,
+      66,
+      "reverse"
+    ]
+  ],
+  "command_curvature_comparison": [
+    {
+      "request": [
+        0.5,
+        0.0
+      ],
+      "forward_only_curvature": -0.03296351060271263,
+      "four_point_forward_curvature": -0.03296351060271263,
+      "equal": true
+    },
+    {
+      "request": [
+        0.5,
+        -0.5235987755982988
+      ],
+      "forward_only_curvature": 0.7966033220291138,
+      "four_point_forward_curvature": 0.7966033220291138,
+      "equal": true
+    },
+    {
+      "request": [
+        0.5,
+        0.5235987755982988
+      ],
+      "forward_only_curvature": -0.8272253274917603,
+      "four_point_forward_curvature": -0.8272253274917603,
+      "equal": true
+    }
+  ],
+  "crop_global_key_consistency": true,
+  "saved_solver_expanded_nodes": 7,
+  "count_compatible_with_saved_prefixes": true,
+  "original_solver_result_preserved": "unreachable",
+  "root_precision_scope": "rounded root saved prefix, not exact solver expansion trace; old precision addendum unchanged",
+  "no_new_solver": true,
+  "no_new_geometry_samples": true,
+  "no_physical": true,
+  "no_bug_proven": true,
+  "interpretation": "Two initialized latches plus saved free unique forward prefix states are count-compatible. Free finite prefixes do not imply a complete route; absent expansion log prevents exact node attribution.",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/primitive_state_key_lineage_scope_v1.json": "000ca7ec99959c717a892a1e4cbf55fddf7fa9884cef6a8eb7cd4a8b484fdae2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/primitive_state_key_lineage_v1.py": "aaaf5f69e0a94fa18c7cf1b491c5ddf93c229ef83c5bd1ddff673e5a08a33f46",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/test_primitive_state_key_lineage_v1.py": "a042d5b7a9cb885c698e466b6398ee808362bcc6c09f8eacf579683dc3bed500",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/supported_four_point_planning.py": "4ed85cc3a0d49fbb03110486f83cc78f3da3aeca786ccad53490371a12f66a31",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/supported_forward_point_planning.py": "f04168fb78125232745791c429dc10e362ebf3884c31e587912f991d2665ae26",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/supported_forward_primitive_source.py": "107cc9cbb47e7d9b4aa2d248ea6075d7f670d0c91b01c072b52fa66cbff3c99e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/execution_domain_four_point_source_v2.py": "4e428f280bd5ec84a7ff606face9592abef9a21d4eb0c9f9ee4122543c9d9125"
+  },
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/current_forward_root_geometry_assessment_v1.json": "acf58393c499de2aad42cba5797e33b903474cb080a33468124dab3faa1f2179",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/current_forward_root_geometry_precision_addendum_v1.json": "a81a148f13b6b73450ce5e2f5ddc30b8ffb2e41b2d45e50790c1c03079d255d8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/current_boundary_forward_only_assessment_v1.json": "58889ed1281c8338d214f0a8c95d6e44fea11bafcab1ac9f9cafcfd2f1930bdc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_main_navigation_e1_b0_run_v1/maps/frame_120.npz": "acbb9c9e297ec4755d94747693142e5cb6e251ec3a56ef80499b63156f9aab31"
+  },
+  "whole_mission_complete": false
+}

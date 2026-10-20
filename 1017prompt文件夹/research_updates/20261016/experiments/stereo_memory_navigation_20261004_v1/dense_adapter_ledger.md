@@ -1,0 +1,12 @@
+# SDD ledger — plan: docs/superpowers/plans/2026-10-06-dense-stereo-domain-adapter.md
+Preflight: training_target owns depth-to-positiveD; mirroredright uses flippedright asleft; fixeddecoder output same bilateralsource; task2 produces wholefreshsealeddata before task3fit; source/gate/evaluator transitive dependencies frozen beforefit.
+Ruling: autonomousstageauthorization persists;noapproval/cleanup/unrelatedgit. ONEgradientprobe notfit, samechosenmoduleprefixes no alternatives. Oldsource/gatesnotchanged; fresh wholephysicalseqnotfreshenvironment. Reviewer limitedbranch finalonce.
+Task1 started; no probe/fit/freshcollection yet.
+
+Task1 RED6fail.98s→GREEN6pass.93s;345suite10.55s. Probev1 failedbeforeloss/backward: missingCcompiler officialtorch.compile; preserved. ONEpredeclaredinfraretryv2 eager botharms, not newcandidate/fit; see executionaddendum.
+Task1 gradientprobev2 actual20:25:36→39UTC feasible; nooptimizer/updatestateALLunchanged;31,977validlabel/.94461584loss,845814trainable/17654857total,peak5.579GB. Originalv1Ccompilerfailurepreserved, no modelstructuralchange. Task2 actualONEfresh collection running;do not duplicate. Task3codeprep ongoing,fitNOTstarted.
+Ruling: GradScaler initial1/growthinterval1000 means no dynamic increase in300; specified BEFOREfit to avoid FP16scale overflow, gradient checkabort instead of skipping. Same8iters/fullres/300attempt modelbudget. Officialclassactual17.65M params differsgeneric modelcard14.6M; actualcheckpointsource identity reported.
+
+Task2 actual20:26:01→28:03UTC complete ONE321/1601/65;717rawbytes+RGBsealed BEFOREfit, freshnotdecoded. Task3V1 prefitpreparationfails >100 on42label thenboundedallOLDcounts shows6empty/26nonempty. Nooptimizer/backward/update. Ruling onebefore-score dataprov correction reject6empty ONLY, preservelow39..71, original32designREJECT; sameunique300budget stillunused, v2sealed26 with allfresh stillunused; no modelselection or gatechange. V1stalerunningstatus preserved with independentterminalaudit, wrapperfailed.
+
+Task3 ONEactualfit300updates158.568s/52changed/670frozen EXACT;complete130pred beforelabels;B0 body-overlap24.7406%/99.9633→adapter30.7991%/97.6839%,0/25eligible/40insufficient,REJECT. Savedraw85.93→88.31also<90;notdeletebilateral. Source/currentfloor7pointsnotfullswept. Author1091SHA and allcounts verified;349suite10.75s. Twofull321videos decoded, actualimagesviewed. Final whole-stage readonly reviewnext;continueONE memoryconsumer diagnostic, no morenetwork fit/selection.

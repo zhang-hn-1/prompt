@@ -1,0 +1,12 @@
+{
+  "role": "reproduced original runtime independentA* reference, archived postrun, not online/consumer reference or candidate-adapted",
+  "method": "exact frozen runtime astar_path+inflate_obstacles, ball_radius.4+safety_margin.1",
+  "length_m": 8.836753236814713,
+  "manifest_reference_length_m": 8.836753236814713,
+  "source_sha256": {
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py": "06367cad4b944386568514887f73d348ee7390b07fb87a0d1c8223ac761dd1fc",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py": "72266e68bced65f81e41dbe96d99a806e4f674b13c9ae7db563016097d8a29f7",
+    "experiments/stereo_memory_navigation_20261004_v1/online_provenance_runs/current/offline_occupancy_label.npz": "bc28423128f539798090d88c0e2d85582b00e75ac8b1c8a498e9d21ad5275e90",
+    "experiments/stereo_memory_navigation_20261004_v1/online_provenance_runs/current/episode_golden_e1_0001/manifest.json": "41fa023519cf805bedd3b0177a91638479976160a9cdb675442d76a7f61c75ce"
+  }
+}

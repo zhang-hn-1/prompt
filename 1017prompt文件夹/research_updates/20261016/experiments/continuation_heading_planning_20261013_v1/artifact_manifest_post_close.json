@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-13T05:42:39.577585+00:00",
+  "artifact_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/check.py": "6bc3c6655354dac0950f43e7eadaffce7ddc80b8b15ec6e5ae44041ec60efdda",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/replay.py": "bb47ed31a1ffe5df4e1e6e6208f8c037cc5cbcfcdbbac66b7d546f31a70f7965",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/protocol.json": "5f1a6f4ce82eddb83b61c55b644cca96168fd9970c279792cae6c5131eaeb8a8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/execution_close.json": "e16c88c715a67acd63c964c25e9c77870dd70a4ca2592ee22ccc580a2de19d22",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/replay.log": "713f15e3fd05c2ad26b85bbbca70b75ffcc4d9cd1c9d10d13de97f8a3417ea32",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/replay_partial.json": "5b9914a6f0d7de940dafcab2d5ef12e8f16d0e88b44bed77e2ce5f2885d6d725",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/continuation.py": "ec368c04a9965b086a3fbe2c43ed02bc1487cb23dcc58bb980b4e04f14e65ba5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/replay.json": "c6535c690ee7474477e1f076a039ee885c13029e6576e0356399e6be75c10fd0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/supervise.py": "e1a834c56613355d51746f426a6e1487e07fde63d0f2722d0417630fcdbd049b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/continuation_search.py": "9a9c914ec2c225db07c643cae15f28740b46dc7823153fddad086e59d95055fa",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/bootstrap.py": "bd69af151d60824e8c07c0848ca8d06b910917f272c8acf9f16951528a7967a1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/decision.json": "2aec5321e5e3b479c5749af8543dcb6494013cb92bd659bda507a2dbe2d5d516",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/baseline_e1_driver.py": "0f4dab5014eb7b7e2e08c2721e2234c2f294e1698f1cdc9728fccbd54fd00e2b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/independent_closure_review.json": "b4e3f4d7acbc68bd5f3ac5eff009aba726037a8c036da404272b414bf0472e5f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/candidate_e1_driver.py": "508d0fbffd1eebf315a504b585258b587eb26f72dfad87332b83b6d820038572"
+  },
+  "whole_research_complete": false,
+  "formal_triggered": false,
+  "candidate_decision": "REJECT_FROZEN_COST_GATE",
+  "physical_used": 0,
+  "physical_cap": 2,
+  "unattempted_closed": 2,
+  "fit": 0,
+  "recovery": 0,
+  "current_stage": "offline_qualification_rejected_no_physical_admission"
+}

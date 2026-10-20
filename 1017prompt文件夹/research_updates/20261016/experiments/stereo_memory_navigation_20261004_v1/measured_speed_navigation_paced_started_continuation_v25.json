@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-09T13:12:25.768479+00:00",
+  "stage": "measured_speed_ordinary_E0_candidate_actual_started",
+  "whole_mission_complete": false,
+  "physics_running": true,
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/measured_speed_navigation_b0_started_continuation_v24.json",
+  "superseded_sha256": "eaa55093b19fe072e38c96c9454be36ea39eada283549931952ef4aa2fa5142e",
+  "session_id": 89288,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T13:12:11.002840+00:00",
+    "parent_pid": 426717,
+    "child_pid": 426718,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "baseline_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T13:07:53.067832+00:00",
+    "parent_pid": 421741,
+    "child_pid": 421742,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T13:11:53.645107+00:00"
+  },
+  "baseline_all_2213_seals_verified": true,
+  "budget_remaining": {
+    "b0": 0,
+    "paced": 0,
+    "retry": 0
+  },
+  "next": "Supervise session89288 no restart; frozen scorer after seal. Then independent closed review, actual scored plot, bounded per-reference-phase attribution, append reports. No implicit tuning/new scene before evidence."
+}

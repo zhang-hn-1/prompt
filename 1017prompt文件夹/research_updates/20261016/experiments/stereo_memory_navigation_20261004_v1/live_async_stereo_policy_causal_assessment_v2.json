@@ -1,0 +1,31 @@
+{
+  "decision": "PASS_FULL_REQUEST_RECONSTRUCTION_AND_THREE_PREFIX_CAUSALITY_ONLY",
+  "all_navigation_requests_exact": 366,
+  "cutoffs": [
+    {
+      "cutoff_frame": 145,
+      "prefix_actions": 6,
+      "future_payload_poison_and_truncation_exact": true,
+      "guarded_past_file_reads": 175
+    },
+    {
+      "cutoff_frame": 253,
+      "prefix_actions": 114,
+      "future_payload_poison_and_truncation_exact": true,
+      "guarded_past_file_reads": 302
+    },
+    {
+      "cutoff_frame": 504,
+      "prefix_actions": 365,
+      "future_payload_poison_and_truncation_exact": true,
+      "guarded_past_file_reads": 604
+    }
+  ],
+  "future_source_history_file_reads_blocked": true,
+  "past_but_unavailable_source_reads_blocked": true,
+  "immutable_birth_and_delivery_clocks": true,
+  "dummy_RGB_unused_by_tracker": true,
+  "not_another_online_run": true,
+  "source_and_nav_gates_separate": true,
+  "whole_complete": false
+}

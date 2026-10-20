@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-09T12:32:23.965981+00:00",
+  "stage": "highturn_low_actual_running",
+  "whole_mission_complete": false,
+  "physics_running": true,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T12:32:09.314912+00:00",
+    "parent_pid": 380181,
+    "child_pid": 380182,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session_id": 22471,
+  "budget_remaining": {
+    "low": 0,
+    "high": 1,
+    "retry": 0
+  },
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/highturn_prepared_continuation_v17.json",
+  "superseded_sha256": "f9d6265bb03baf1bd7a1caacc768212d485854b6ee842c77d926a82c3f779a1a",
+  "next": "Supervise existing lowPID/session without restart; if normal complete30/contact0, launchhigh once, assesspairedfrozen30response. Oldcandidate gates notchanged."
+}

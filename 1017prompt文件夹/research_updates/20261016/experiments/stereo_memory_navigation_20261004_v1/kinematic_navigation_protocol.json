@@ -1,0 +1,21 @@
+{
+  "role": "Two privileged-depth acquisition-only causality diagnostics; no RGB admission/formal success rate",
+  "case_ids": [
+    "golden_e0_0001",
+    "golden_e2_0001"
+  ],
+  "new_actual_runs_max": 2,
+  "change": "Explicit physics view update_articulations_kinematic before each of three render-only calls; require unchanged state/clock",
+  "baseline_roots": [
+    "risk_runs_corrected/e0",
+    "risk_runs_corrected/e2"
+  ],
+  "rig_lighting_mask_controls_planner_protocol_pid_speed_unchanged": true,
+  "actual_map_prior": "Inherited rolling .4m body footprint prior still marks unknown free. This arm is not pure observed memory.",
+  "known_unknown_exploration_main_cap_rad_s": 0.3,
+  "settle_s": 6,
+  "budget_s": 35,
+  "independent_measurement": "Actual frozen-reference projection, end-goal distance, XY path/contact; not policy path_index",
+  "acceptance": "Interface known-plane current-pose consistency and removal of spurious ground hazard; navigation success measured separately",
+  "development_cases_not_fresh_heldout": true
+}

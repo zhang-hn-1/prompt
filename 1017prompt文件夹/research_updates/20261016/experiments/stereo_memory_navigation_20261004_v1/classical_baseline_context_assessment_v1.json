@@ -1,0 +1,53 @@
+{
+  "gates": {
+    "normal_exit": true,
+    "complete_35": true,
+    "complete_available_contact_zero": true,
+    "contexts_every_planner_call": true,
+    "normal_tracking_exercised": true,
+    "at_least_two_installs": true
+  },
+  "interface_reproduction_pass": true,
+  "actual_online_contexts": 290,
+  "initial_prefix_rows_without_tracker_context": 60,
+  "reference_installations": 4,
+  "immutable_per_call_clock_request_context_checked": true,
+  "raw_protocol_layers_independently_checked_against_actual_tracker_emission_and_official_normalization": true,
+  "manifest_items_verified": 2213,
+  "control_candidate": null,
+  "not_on_off_physics_causal_AB": true,
+  "old_baseline_results_not_modified": true,
+  "not_navigation_improvement": true,
+  "observed_conditional_navigation_result": {
+    "outcome": "timeout",
+    "success": false,
+    "budget_s": 35.0,
+    "scored_end_s": 34.99999921768904,
+    "metric_state_time_s": 34.99999921768904,
+    "goal_threshold_m": 0.2,
+    "goal_remaining_m": 3.5677210108316504,
+    "goal_distance_reduction_m": 5.271396592187324,
+    "along_start_goal_axis_m": 5.278757044288297,
+    "path_length_m": 5.933629058080575,
+    "contact_time_s": null,
+    "arrival_time_s": null,
+    "contacts_all_available": true,
+    "contact_checks": 2101,
+    "measured_states": 351,
+    "not_based_on_path_index": true,
+    "not_strict_visual_admission": true
+  },
+  "whole_mission_complete": false,
+  "physical_runs_added": 1,
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_e0_run_v1/states.json": "2d6c366524962a9496dab8d0e6b0b1e62a863c7b36deabbaa7a4f7a9353ac1bd",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_e0_run_v1/physics.npz": "c4cbe63c997d1f84e352be426f0709045012ead84650a0e756907abf838a4c73",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_e0_run_v1/policy_records.json": "6e29c27bce672bb7bcc260d46d8b3b0368552cc367ed8be3b71d03edacfef551",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_e0_run_v1/requests.npz": "d32ee3f2647dd30fee7c700e4f40d1fb24d2789290fa42b472c40881bd767f74",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_e0_run_v1/physics_contacts.json": "024b7359171bc5274c9d1ce43ff5f177c869b3559ea03774f06b99a7548803ce",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_e0_run_v1/identity.json": "99ffebd6c4b12a7dfd3d4fd5d1e3275c2467120b4ea32a9d72278e558bb29555",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_e0_run_v1/artifact_manifest_post_close.json": "1e2c3a6b2b1332be38efc117537e01b357dfc6b333bb187ee34c873fa1130fe9",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/classical_baseline_context_e0_run_v1/reproduction_contract.json": "11723ebe892a3cc08b2834369c9f85af65bbcb473e3f71658e5f05def0eaf9d5"
+  },
+  "assessor_sha256": "bb4f0bd4a046035809e129d4130fabc8b631adf451ebd88d3f72b3651372412f"
+}

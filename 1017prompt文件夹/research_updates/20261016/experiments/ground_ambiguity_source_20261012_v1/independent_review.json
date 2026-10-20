@@ -1,0 +1,43 @@
+{
+  "reviewer": "independent_subagent_rig_candidate_review",
+  "utc": "2026-10-12T15:07:35.377498+00:00",
+  "outcome": "offline_qualification_valid_source_entry_reject_no_physical_launch",
+  "remaining_scientific_or_implementation_issues": [],
+  "verified": [
+    "Plane competition mathematics: native optical ray intersects explicit worldZ0 prior and projects to right current view; full7x7 warp remains inbounds/unmasked with fixed texture/NCC gates.",
+    "Current pose/prediction clocks checked before physical payload; saved181 input pose/RGB/prediction/measuredjointstate clocks independently equal and poses allproper rigid.",
+    "6CPU checks independently pass; outputs only remove confidence and set rejected depthNaN, leaving other depth and all disparity unchanged. Unknown/free boundary is preserved.",
+    "All prediction seal input/output hashes and exact181 output coverage independently checked.",
+    "Full post-seal same-frame renderer scoring rerun read-only and exactly matches saved assessment; truth absent from qualification inference.",
+    "Missingpxr startup failed in CAD constructor before output-directory creation; original log retained. Corrected existingSDK qualification completed181 pairs, no evidence of parameter retry."
+  ],
+  "metrics": {
+    "original_valid_pixels": 1603788,
+    "removed": 1145,
+    "remaining_valid_pixels": 1602643,
+    "p90_before_m": 0.19897825717926027,
+    "p90_after_m": 0.19851109981536866,
+    "scored_obstacle_before": 826233,
+    "scored_obstacle_after": 826212,
+    "obstacle_retention": 0.9999745834407485,
+    "source_entry_qualified": false,
+    "actual_navigation_reserved": 0
+  },
+  "limitations": [
+    "Plane is existing TaskH prior, not observed ground/free space.",
+    "Native pose and one current pair do not certify reliable geometry; all data is same E2 development trajectory with correlated pixels.",
+    "Retaining99.9975percent scored obstacle pixels does not overcome frozen p90 failure or establish navigation capability.",
+    "Additional explicit CAD/SDK runtime provenance is being recorded by parent; this review binds current implementation and inference seal, without claiming a new portable runtime qualification."
+  ],
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ground_ambiguity_source_20261012_v1/protocol.json": "964ddd8f8404c1621407c22b62639118daad51a4f7d17bd189410eefcc1b90ca",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ground_ambiguity_source_20261012_v1/ground_ambiguity.py": "8abd0cec4a97a98c24144ee1564395869763298f12af6cfe913fe846000e4ed5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ground_ambiguity_source_20261012_v1/qualify_saved.py": "45fa41ee5d30d005c888d661d51eb8cc8a34f7849a3a8895925691399b4c6e31",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ground_ambiguity_source_20261012_v1/score_saved.py": "7e11d2ce156d27a8b0ffa792b0fe32a015df6f7b59c0f67720fa6213d23e34a0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ground_ambiguity_source_20261012_v1/test_ground_ambiguity.py": "e21287df6ea3abec3bd1a336676f372fd0c9433bc1b3c49460b7cdb640d297e5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ground_ambiguity_source_20261012_v1/prediction_seal.json": "1774d51aadb8ed429c8be572101e6afa03c5038f5ae2bc3d04beb6d495ea63a6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ground_ambiguity_source_20261012_v1/assessment.json": "3d4343320e5886425f63c389fce7b15d8cae88d8f0b8bf456758613c914e6cb0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ground_ambiguity_source_20261012_v1/startup_failure.log": "23b58425c8291a22fcec823f4011ecdfeb53e99339c8399d4b27a8fee9cc1213",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ground_ambiguity_source_20261012_v1/qualification.log": "7f73239722546ff932ada2280bc7766db1965d3dfef8b4b0a4a71b69a2a49810"
+  }
+}

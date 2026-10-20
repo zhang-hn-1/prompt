@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-08T11:15:19.759161+00:00",
+  "question": "Is normal tracking using a body-heading geometric demand inconsistent with current measured course, or is progress loss required by the installed reverse geometry?",
+  "scope": "one complete sealed 546-request actual log; one exact policy replay; no new physics or candidate",
+  "artifact_seal_sha256": "f65dc4060ae4a17301e99a8ce92bcb9cbf5246bdbe89e0d14911daec1cdee325",
+  "metrics": [
+    "exact actions and installed geometry all 546",
+    "valid per-call telemetry only when tracker actually produces a new request record",
+    "current speed >= existing .05 course validity",
+    "body-v-current drive course error and reference tangent errors",
+    "raw/protocol clipping versus calibrated-bank curvature clamp",
+    "same current target virtual course curvature, diagnostic only",
+    "per installed reference forward/reverse geometric lengths and current actual progression"
+  ],
+  "limits": [
+    "no future feedback or alternate trajectory labels",
+    "no install of rejected velocity pursuit",
+    "no new acceptance gate, parameter scan, NN or physics",
+    "replay not online; course change is counterfactual geometry not causal efficacy"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-08T18:06:37.461827+00:00",
+  "parent_pid": 3678855,
+  "stage": "TWO_WHOLE_SEQUENCES_SEALED_BEFORE_FIT",
+  "maximum_whole_source_sequences": 2,
+  "fit_started": false,
+  "model_actions": false,
+  "protocol_sha256": "c71857d813743446e65e58f22e9ad5ab3b165ae408656782686db7f9f8bbe3da",
+  "closed": [
+    {
+      "case": "hypothesis_learning_H1",
+      "code": 0,
+      "wall_s": 82.04320806311443,
+      "closed_utc": "2026-10-08T18:07:59.510770+00:00",
+      "manifest_sha256": "eb5d805a58979de78fc133f7cff5c4bb4d5311ff660ec0a631571d257be11a40"
+    },
+    {
+      "case": "hypothesis_learning_H2",
+      "code": 0,
+      "wall_s": 94.6249273060821,
+      "closed_utc": "2026-10-08T18:09:34.136420+00:00",
+      "manifest_sha256": "287e8477b42b5c4382f2933608cbeeea24304254a4b501f65f63b6c4297235d1"
+    }
+  ],
+  "case": "hypothesis_learning_H2",
+  "child_pid": null,
+  "end_utc": "2026-10-08T18:09:34.137089+00:00"
+}

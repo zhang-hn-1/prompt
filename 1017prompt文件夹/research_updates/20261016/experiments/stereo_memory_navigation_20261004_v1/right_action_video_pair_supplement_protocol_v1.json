@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-09T05:14:02.846276+00:00",
+  "script_sha256": "ae828ba9258b77694a17f06fee9517506684d2bb6f45da509bf2877330df3ea2",
+  "sequences": [
+    "sgbm_baseline35_e0_coverage_run_v1",
+    "sgbm_baseline35_e1_coverage_run_v1",
+    "sgbm_baseline35_e2_run_v1",
+    "native_pose_baseline35_e0_run_v1"
+  ],
+  "output": "right_action_video_pair_supplement_v1",
+  "purpose": "finish dual-eye feasibility labels, not depth or model fitting",
+  "causal_input": "exact sealed current-time features from left feasibility; neither left nor right future labels allowed inputs",
+  "pairs_horizon_s": 0.1,
+  "LK": "same21/3/30/.01/fwdback1/gray20; no sweep",
+  "new_physics": false,
+  "new_network": false,
+  "old_train_sequences_not_fresh": true,
+  "no_heldout_used": true
+}

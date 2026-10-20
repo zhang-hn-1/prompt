@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-09T18:44:58.825697+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_tracking_closed_aux_prepared_continuation_v73.json",
+  "supersedes_sha256": "c1859e8ea094f851501080dc05e89e9a4b217080798393e65c61456658fc4e61",
+  "whole_mission_complete": false,
+  "status": "forward_aux_ablation_prelaunch_pending",
+  "running": false,
+  "protocol": "forward_outer_yaw_e1_protocol_v1.json",
+  "design": "forward_outer_yaw_ablation_design_v1.json",
+  "next_command": "/home/an/miniconda3/envs/ball_wm/bin/python run_forward_outer_yaw_e1_stage_v1.py b0",
+  "then": "candidate once only after baseline closes/seals; same source/config/initial and complete reference logic",
+  "physical_budget": 2,
+  "physical_used": 0,
+  "required_gate": "forward_outer_yaw_e1_prelaunch_review_v1.json C0I0M0 or resolved followup before physical",
+  "no_retry": true
+}

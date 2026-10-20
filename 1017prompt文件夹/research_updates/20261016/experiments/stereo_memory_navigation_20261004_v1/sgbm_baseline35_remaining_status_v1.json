@@ -1,0 +1,35 @@
+{
+  "status": "finished",
+  "start_utc": "2026-10-09T04:41:20.722528+00:00",
+  "maximum_actual_sequences": 2,
+  "role": "remaining fixed baseline coverage, not improvement migration",
+  "prior_E2_navigation_rejection_preserved": true,
+  "sequences": [
+    {
+      "condition": "e0",
+      "child_execution": {
+        "pid": 160398,
+        "timeout": false,
+        "forced_kill": false,
+        "returncode": 0
+      },
+      "normal_close_confirmed": true,
+      "exit_code": 0,
+      "end_utc": "2026-10-09T04:45:36.000145+00:00"
+    },
+    {
+      "condition": "e1",
+      "child_execution": {
+        "pid": 165252,
+        "timeout": false,
+        "forced_kill": false,
+        "returncode": 0
+      },
+      "normal_close_confirmed": true,
+      "exit_code": 0,
+      "end_utc": "2026-10-09T04:49:17.361425+00:00"
+    }
+  ],
+  "exit_code": 0,
+  "end_utc": "2026-10-09T04:49:17.361631+00:00"
+}

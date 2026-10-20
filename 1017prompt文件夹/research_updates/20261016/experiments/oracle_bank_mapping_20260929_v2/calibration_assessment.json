@@ -1,0 +1,522 @@
+[
+  {
+    "case": "calibration_-0.5",
+    "main": -0.5,
+    "requested_bank_deg": 15,
+    "window_start_s": 20,
+    "window_end_s": 24.5,
+    "actual_speed_m_s": 0.1797044724225998,
+    "actual_bank_deg": 15.546772623561761,
+    "curvature_body_1_m": -0.5533477067947388,
+    "curvature_geometric_1_m": 0.5533477067947388,
+    "curvature_iqr": 0.048506319522857666,
+    "bank_span_95_5_deg": 0.14949575922795333,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": -0.5538953542709351,
+      "41": -0.5533965229988098
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_-0.5",
+    "main": -0.5,
+    "requested_bank_deg": 22.5,
+    "window_start_s": 40,
+    "window_end_s": 44.5,
+    "actual_speed_m_s": 0.17415468394756317,
+    "actual_bank_deg": 23.259622580711884,
+    "curvature_body_1_m": -0.7978797554969788,
+    "curvature_geometric_1_m": 0.7978797554969788,
+    "curvature_iqr": 0.03497546911239624,
+    "bank_span_95_5_deg": 0.24069688626861208,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": -0.7981049418449402,
+      "41": -0.7986013293266296
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_-0.5",
+    "main": -0.5,
+    "requested_bank_deg": -15,
+    "window_start_s": 60,
+    "window_end_s": 64.5,
+    "actual_speed_m_s": 0.17954392731189728,
+    "actual_bank_deg": -15.587535014895364,
+    "curvature_body_1_m": 0.5447518229484558,
+    "curvature_geometric_1_m": -0.5447518229484558,
+    "curvature_iqr": 0.029058396816253662,
+    "bank_span_95_5_deg": 0.1048969812740097,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": 0.5442438721656799,
+      "41": 0.5448610186576843
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_-0.5",
+    "main": -0.5,
+    "requested_bank_deg": -22.5,
+    "window_start_s": 80,
+    "window_end_s": 84.5,
+    "actual_speed_m_s": 0.17483846843242645,
+    "actual_bank_deg": -22.85143472319045,
+    "curvature_body_1_m": 0.7672796845436096,
+    "curvature_geometric_1_m": -0.7672796845436096,
+    "curvature_iqr": 0.05237078666687012,
+    "bank_span_95_5_deg": 0.3805874837528833,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": 0.767715334892273,
+      "41": 0.7670097947120667
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_-0.5",
+    "main": -0.5,
+    "requested_bank_deg": 0,
+    "window_start_s": 95,
+    "window_end_s": 99.5,
+    "actual_speed_m_s": 0.20269088447093964,
+    "actual_bank_deg": 0.7752390944743591,
+    "curvature_body_1_m": -0.01947607845067978,
+    "curvature_geometric_1_m": 0.01947607845067978,
+    "curvature_iqr": 0.03488921502139419,
+    "bank_span_95_5_deg": 0.17119577955695853,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": -0.019027229398489,
+      "41": -0.02018197625875473
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_-1.5",
+    "main": -1.5,
+    "requested_bank_deg": 15,
+    "window_start_s": 20,
+    "window_end_s": 24.5,
+    "actual_speed_m_s": 0.5527063012123108,
+    "actual_bank_deg": 13.920071836001465,
+    "curvature_body_1_m": -0.7610055804252625,
+    "curvature_geometric_1_m": 0.7610055804252625,
+    "curvature_iqr": 0.14494037628173828,
+    "bank_span_95_5_deg": 1.6688090821387185,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": -0.7622227072715759,
+      "41": -0.7613627910614014
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_-1.5",
+    "main": -1.5,
+    "requested_bank_deg": 22.5,
+    "window_start_s": 40,
+    "window_end_s": 44.5,
+    "actual_speed_m_s": 0.5349056124687195,
+    "actual_bank_deg": 18.554616252572686,
+    "curvature_body_1_m": -0.8313074707984924,
+    "curvature_geometric_1_m": 0.8313074707984924,
+    "curvature_iqr": 0.1024201512336731,
+    "bank_span_95_5_deg": 2.4895987458737423,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": -0.8317524790763855,
+      "41": -0.8306875228881836
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_-1.5",
+    "main": -1.5,
+    "requested_bank_deg": -15,
+    "window_start_s": 60,
+    "window_end_s": 64.5,
+    "actual_speed_m_s": 0.5569796562194824,
+    "actual_bank_deg": -12.572834128815522,
+    "curvature_body_1_m": 0.7014573216438293,
+    "curvature_geometric_1_m": -0.7014573216438293,
+    "curvature_iqr": 0.12861382961273193,
+    "bank_span_95_5_deg": 1.6627398145289636,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": 0.7018077969551086,
+      "41": 0.7006555199623108
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_-1.5",
+    "main": -1.5,
+    "requested_bank_deg": -22.5,
+    "window_start_s": 80,
+    "window_end_s": 84.5,
+    "actual_speed_m_s": 0.5428604483604431,
+    "actual_bank_deg": -15.637289582139683,
+    "curvature_body_1_m": 0.784541130065918,
+    "curvature_geometric_1_m": -0.784541130065918,
+    "curvature_iqr": 0.09609901905059814,
+    "bank_span_95_5_deg": 2.300133834280617,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": 0.7867506146430969,
+      "41": 0.7841842770576477
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_-1.5",
+    "main": -1.5,
+    "requested_bank_deg": 0,
+    "window_start_s": 95,
+    "window_end_s": 99.5,
+    "actual_speed_m_s": 0.5670250654220581,
+    "actual_bank_deg": -0.23707669178933358,
+    "curvature_body_1_m": 0.006065914407372475,
+    "curvature_geometric_1_m": -0.006065914407372475,
+    "curvature_iqr": 0.05241524428129196,
+    "bank_span_95_5_deg": 0.5813295007235636,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": 0.005682779010385275,
+      "41": 0.00659882090985775
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_0.5",
+    "main": 0.5,
+    "requested_bank_deg": 15,
+    "window_start_s": 20,
+    "window_end_s": 24.5,
+    "actual_speed_m_s": 0.16615770757198334,
+    "actual_bank_deg": 15.788770785313364,
+    "curvature_body_1_m": -0.5321496725082397,
+    "curvature_geometric_1_m": -0.5321496725082397,
+    "curvature_iqr": 0.033576786518096924,
+    "bank_span_95_5_deg": 0.31582950259933007,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": -0.5317794680595398,
+      "41": -0.5317607522010803
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_0.5",
+    "main": 0.5,
+    "requested_bank_deg": 22.5,
+    "window_start_s": 40,
+    "window_end_s": 44.5,
+    "actual_speed_m_s": 0.18854965269565582,
+    "actual_bank_deg": 22.87934047989381,
+    "curvature_body_1_m": -0.8272253274917603,
+    "curvature_geometric_1_m": -0.8272253274917603,
+    "curvature_iqr": 0.02627241611480713,
+    "bank_span_95_5_deg": 0.7334190615382639,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": -0.8278461694717407,
+      "41": -0.8264451026916504
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_0.5",
+    "main": 0.5,
+    "requested_bank_deg": -15,
+    "window_start_s": 60,
+    "window_end_s": 64.5,
+    "actual_speed_m_s": 0.16621240973472595,
+    "actual_bank_deg": -15.80025691705519,
+    "curvature_body_1_m": 0.5220345854759216,
+    "curvature_geometric_1_m": 0.5220345854759216,
+    "curvature_iqr": 0.05022716522216797,
+    "bank_span_95_5_deg": 0.29529101101968713,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": 0.5224800109863281,
+      "41": 0.5215635299682617
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_0.5",
+    "main": 0.5,
+    "requested_bank_deg": -22.5,
+    "window_start_s": 80,
+    "window_end_s": 84.5,
+    "actual_speed_m_s": 0.18951493501663208,
+    "actual_bank_deg": -22.373663622346292,
+    "curvature_body_1_m": 0.7966033220291138,
+    "curvature_geometric_1_m": 0.7966033220291138,
+    "curvature_iqr": 0.03194379806518555,
+    "bank_span_95_5_deg": 1.0762484798853258,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": 0.7968127131462097,
+      "41": 0.7960259318351746
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_0.5",
+    "main": 0.5,
+    "requested_bank_deg": 0,
+    "window_start_s": 95,
+    "window_end_s": 99.5,
+    "actual_speed_m_s": 0.2058676779270172,
+    "actual_bank_deg": 0.7532699456607517,
+    "curvature_body_1_m": -0.03296351060271263,
+    "curvature_geometric_1_m": -0.03296351060271263,
+    "curvature_iqr": 0.0162509772926569,
+    "bank_span_95_5_deg": 0.15993255893741765,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": -0.03296155110001564,
+      "41": -0.03297444432973862
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_1.5",
+    "main": 1.5,
+    "requested_bank_deg": 15,
+    "window_start_s": 20,
+    "window_end_s": 24.5,
+    "actual_speed_m_s": 0.5494036078453064,
+    "actual_bank_deg": 13.884324668930967,
+    "curvature_body_1_m": -0.7420651912689209,
+    "curvature_geometric_1_m": -0.7420651912689209,
+    "curvature_iqr": 0.0922083854675293,
+    "bank_span_95_5_deg": 1.4254146866001296,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": -0.7439315915107727,
+      "41": -0.7418242692947388
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_1.5",
+    "main": 1.5,
+    "requested_bank_deg": 22.5,
+    "window_start_s": 40,
+    "window_end_s": 44.5,
+    "actual_speed_m_s": 0.538341224193573,
+    "actual_bank_deg": 18.59084558425812,
+    "curvature_body_1_m": -0.8339095711708069,
+    "curvature_geometric_1_m": -0.8339095711708069,
+    "curvature_iqr": 0.07907611131668091,
+    "bank_span_95_5_deg": 2.7451051632264907,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": -0.8347609639167786,
+      "41": -0.8327545523643494
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_1.5",
+    "main": 1.5,
+    "requested_bank_deg": -15,
+    "window_start_s": 60,
+    "window_end_s": 64.5,
+    "actual_speed_m_s": 0.5522681474685669,
+    "actual_bank_deg": -12.453412375171258,
+    "curvature_body_1_m": 0.6933363676071167,
+    "curvature_geometric_1_m": 0.6933363676071167,
+    "curvature_iqr": 0.1144263744354248,
+    "bank_span_95_5_deg": 1.698153834335077,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": 0.6935866475105286,
+      "41": 0.6931658387184143
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_1.5",
+    "main": 1.5,
+    "requested_bank_deg": -22.5,
+    "window_start_s": 80,
+    "window_end_s": 84.5,
+    "actual_speed_m_s": 0.5467474460601807,
+    "actual_bank_deg": -15.906132771686279,
+    "curvature_body_1_m": 0.781502366065979,
+    "curvature_geometric_1_m": 0.781502366065979,
+    "curvature_iqr": 0.08088475465774536,
+    "bank_span_95_5_deg": 2.523897246249053,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": 0.7821879386901855,
+      "41": 0.7819167375564575
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  },
+  {
+    "case": "calibration_1.5",
+    "main": 1.5,
+    "requested_bank_deg": 0,
+    "window_start_s": 95,
+    "window_end_s": 99.5,
+    "actual_speed_m_s": 0.5683144330978394,
+    "actual_bank_deg": -0.21316373583083786,
+    "curvature_body_1_m": 0.01237515453249216,
+    "curvature_geometric_1_m": 0.01237515453249216,
+    "curvature_iqr": 0.012021466623991728,
+    "bank_span_95_5_deg": 0.16267615860285672,
+    "valid_fraction": 1.0,
+    "direction_match_fraction": 1.0,
+    "sensitivity": {
+      "21": 0.012274044565856457,
+      "41": 0.01238442026078701
+    },
+    "checks": {
+      "valid_fraction": true,
+      "curvature_iqr": true,
+      "bank_span": true,
+      "direction": true
+    },
+    "accepted": true
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "results": {
+    "LR": {
+      "baseline": {
+        "hold_s": null,
+        "navigation_gate": false,
+        "model_gate": false,
+        "selected": "brake",
+        "eligible_collected_state": true,
+        "prefix_matches_collection": true,
+        "goal_reached": false,
+        "first_goal_s": null,
+        "minimum_goal_distance_m": 3.0394813157221416,
+        "final_goal_distance_m": 3.208611062764545,
+        "contact_valid": true,
+        "contact_samples": 0,
+        "minimum_actual_body_clearance_m": 0.6817755285838081,
+        "passed_obstacle_station": false,
+        "max_forward_progress_m": 0.9791074514427516,
+        "compound_max_prediction_error_m": null,
+        "tracking_sources": {},
+        "local_goal_success": false
+      },
+      "candidate": {
+        "hold_s": 1.5,
+        "navigation_gate": true,
+        "model_gate": true,
+        "selected": "compound",
+        "eligible_collected_state": true,
+        "prefix_matches_collection": true,
+        "goal_reached": true,
+        "first_goal_s": 31.25999930128455,
+        "minimum_goal_distance_m": 0.19895736919905768,
+        "final_goal_distance_m": 0.29551245996924036,
+        "contact_valid": true,
+        "contact_samples": 0,
+        "minimum_actual_body_clearance_m": 0.2027989453188831,
+        "passed_obstacle_station": true,
+        "max_forward_progress_m": 4.345955518614702,
+        "compound_max_prediction_error_m": 0.03266507301624771,
+        "tracking_sources": {
+          "tracking": 91,
+          "goal_braking": 7
+        },
+        "local_goal_success": true
+      },
+      "pair_first16s_identical": true
+    },
+    "RL": {
+      "baseline": {
+        "hold_s": null,
+        "navigation_gate": false,
+        "model_gate": false,
+        "selected": "brake",
+        "eligible_collected_state": true,
+        "prefix_matches_collection": true,
+        "goal_reached": false,
+        "first_goal_s": null,
+        "minimum_goal_distance_m": 3.06936008788352,
+        "final_goal_distance_m": 3.2239452757404035,
+        "contact_valid": true,
+        "contact_samples": 0,
+        "minimum_actual_body_clearance_m": 0.6908669402608336,
+        "passed_obstacle_station": false,
+        "max_forward_progress_m": 0.9512042281879634,
+        "compound_max_prediction_error_m": null,
+        "tracking_sources": {},
+        "local_goal_success": false
+      },
+      "candidate": {
+        "hold_s": 1.5,
+        "navigation_gate": true,
+        "model_gate": true,
+        "selected": "compound",
+        "eligible_collected_state": true,
+        "prefix_matches_collection": true,
+        "goal_reached": true,
+        "first_goal_s": 32.53999927267432,
+        "minimum_goal_distance_m": 0.11766348757784179,
+        "final_goal_distance_m": 0.24837080919265844,
+        "contact_valid": true,
+        "contact_samples": 0,
+        "minimum_actual_body_clearance_m": 0.18516628280605674,
+        "passed_obstacle_station": true,
+        "max_forward_progress_m": 4.247570137458612,
+        "compound_max_prediction_error_m": 0.06399179972788864,
+        "tracking_sources": {
+          "tracking": 109,
+          "goal_braking": 2
+        },
+        "local_goal_success": true
+      },
+      "pair_first16s_identical": true
+    }
+  },
+  "accepted_local_detour": true,
+  "all_compound_model_gates_pass": true,
+  "formal_benchmark": false
+}

@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-09T14:36:58.183244+00:00",
+  "supersedes_sha256": "41d2567dddbe89af5a45c53612723a7767f944bd7f4b37d9bd23e6932e146a1f",
+  "actual_fit_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T14:36:21.669714+00:00",
+    "parent_pid": 2,
+    "child_pid": 3,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T14:36:35.963748+00:00"
+  },
+  "session_id": 20932,
+  "pids_scope": "sandbox-local namespace; do not mistake 2/3 for host PIDs",
+  "no_retry": true,
+  "actual_fit_budget": 1,
+  "import_and_legacy_schema_errors_before_fit": true,
+  "old_failed_status_bytes_preserved": true,
+  "review": "learned_memory_risk_prefit_schema_recovery_review_v3.json C0I0M0",
+  "cpu_tests": 8,
+  "fresh_teacher_inspected": false,
+  "next_step": "supervise sole fit; if closed0 seal both feature-only heldout predictions; independent no-truth-read audit before teacher evaluation",
+  "whole_mission_complete": false
+}

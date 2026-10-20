@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-09T18:29:26.670919+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_bank_closed_continuation_v70.json",
+  "supersedes_sha256": "24116170465c284657ae8a066e6c3ceda13b364a6f42c8de0d1e33b87c3d77d6",
+  "whole_mission_complete": false,
+  "status": "readonly_tracking_chain_prelaunch_pending",
+  "running": false,
+  "scope": "current_tracking_chain_telemetry_scope_v1.json",
+  "protocol": "current_tracking_chain_e1_protocol_v1.json",
+  "next_command": "/home/an/miniconda3/envs/ball_wm/bin/python run_current_tracking_chain_e1_stage_v1.py b0",
+  "physical_budget": 1,
+  "physical_used": 0,
+  "required_gate": "current_tracking_chain_e1_prelaunch_review_v2.json C0 I0 before launch"
+}

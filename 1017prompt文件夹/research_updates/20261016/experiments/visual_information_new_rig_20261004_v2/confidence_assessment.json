@@ -1,0 +1,164 @@
+{
+  "role": "exploratory historical development; rank within current image, not calibrated risk probability",
+  "selection": "lowest reported-error quartile within each eye and frame; no inference or scale fitting",
+  "sequences": {
+    "e0": {
+      "lowest_reported_error_quartile": {
+        "n": 824,
+        "invalid": 0,
+        "within_0p3m": 0.0,
+        "p50_m": 2.0512207345146605,
+        "p90_m": 2.87815817868962,
+        "finite_p90_m": 2.87815817868962
+      },
+      "other_three_quartiles": {
+        "n": 2480,
+        "invalid": 0,
+        "within_0p3m": 0.0,
+        "p50_m": 2.248583803381056,
+        "p90_m": 3.181316822446598,
+        "finite_p90_m": 3.181316822446598
+      },
+      "all_obstacles": {
+        "n": 3304,
+        "invalid": 0,
+        "within_0p3m": 0.0,
+        "p50_m": 2.230696703568354,
+        "p90_m": 3.136185718504593,
+        "finite_p90_m": 3.136185718504593
+      }
+    },
+    "e1": {
+      "lowest_reported_error_quartile": {
+        "n": 13613,
+        "invalid": 0,
+        "within_0p3m": 0.1458164989348417,
+        "p50_m": 0.9015797743640706,
+        "p90_m": 2.4033553235177028,
+        "finite_p90_m": 2.4033553235177028
+      },
+      "other_three_quartiles": {
+        "n": 40866,
+        "invalid": 0,
+        "within_0p3m": 0.15019820877991485,
+        "p50_m": 0.9182748155629699,
+        "p90_m": 2.3223322580161647,
+        "finite_p90_m": 2.3223322580161647
+      },
+      "all_obstacles": {
+        "n": 54479,
+        "invalid": 0,
+        "within_0p3m": 0.14910332421667064,
+        "p50_m": 0.911451794326846,
+        "p90_m": 2.333936143686791,
+        "finite_p90_m": 2.333936143686791
+      }
+    },
+    "e2": {
+      "lowest_reported_error_quartile": {
+        "n": 13572,
+        "invalid": 0,
+        "within_0p3m": 0.055334512231063955,
+        "p50_m": 0.8743517626013577,
+        "p90_m": 3.1283397355341926,
+        "finite_p90_m": 3.1283397355341926
+      },
+      "other_three_quartiles": {
+        "n": 40748,
+        "invalid": 0,
+        "within_0p3m": 0.043781289879257876,
+        "p50_m": 1.1020218323971593,
+        "p90_m": 3.086463526073149,
+        "finite_p90_m": 3.086463526073149
+      },
+      "all_obstacles": {
+        "n": 54320,
+        "invalid": 0,
+        "within_0p3m": 0.046667893961708395,
+        "p50_m": 1.0118621443115172,
+        "p90_m": 3.089131115677586,
+        "finite_p90_m": 3.089131115677586
+      }
+    },
+    "hard_0_e1_0003": {
+      "lowest_reported_error_quartile": {
+        "n": 174,
+        "invalid": 0,
+        "within_0p3m": 0.3850574712643678,
+        "p50_m": 1.190703931754732,
+        "p90_m": 1.5321279992068944,
+        "finite_p90_m": 1.5321279992068944
+      },
+      "other_three_quartiles": {
+        "n": 531,
+        "invalid": 0,
+        "within_0p3m": 0.3559322033898305,
+        "p50_m": 1.2214631282521706,
+        "p90_m": 1.5336224543900336,
+        "finite_p90_m": 1.5336224543900336
+      },
+      "all_obstacles": {
+        "n": 705,
+        "invalid": 0,
+        "within_0p3m": 0.36312056737588655,
+        "p50_m": 1.2140124653339504,
+        "p90_m": 1.5334853170236926,
+        "finite_p90_m": 1.5334853170236926
+      }
+    },
+    "hard_0_e1_0004": {
+      "lowest_reported_error_quartile": {
+        "n": 6636,
+        "invalid": 0,
+        "within_0p3m": 0.41500904159132007,
+        "p50_m": 0.46720280117770707,
+        "p90_m": 1.7478324383238237,
+        "finite_p90_m": 1.7478324383238237
+      },
+      "other_three_quartiles": {
+        "n": 19920,
+        "invalid": 0,
+        "within_0p3m": 0.3312751004016064,
+        "p50_m": 0.49416275852623504,
+        "p90_m": 1.8608689614633973,
+        "finite_p90_m": 1.8608689614633973
+      },
+      "all_obstacles": {
+        "n": 26556,
+        "invalid": 0,
+        "within_0p3m": 0.352199126374454,
+        "p50_m": 0.48275220921417744,
+        "p90_m": 1.8156368329252417,
+        "finite_p90_m": 1.8156368329252417
+      }
+    },
+    "direct_e1": {
+      "lowest_reported_error_quartile": {
+        "n": 13570,
+        "invalid": 0,
+        "within_0p3m": 0.21879145173176123,
+        "p50_m": 0.4584767599531695,
+        "p90_m": 1.2214577226748422,
+        "finite_p90_m": 1.2214577226748422
+      },
+      "other_three_quartiles": {
+        "n": 40732,
+        "invalid": 0,
+        "within_0p3m": 0.22888637925955024,
+        "p50_m": 0.48767282028663883,
+        "p90_m": 1.2434493542909728,
+        "finite_p90_m": 1.2434493542909728
+      },
+      "all_obstacles": {
+        "n": 54302,
+        "invalid": 0,
+        "within_0p3m": 0.22636366984641448,
+        "p50_m": 0.47858749802576617,
+        "p90_m": 1.2357609243028047,
+        "finite_p90_m": 1.2357609243028047
+      }
+    }
+  },
+  "per_image_spearman_n": 74,
+  "per_image_spearman_median": 0.1067161705679533
+}

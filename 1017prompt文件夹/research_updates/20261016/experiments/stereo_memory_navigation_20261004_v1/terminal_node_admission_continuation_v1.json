@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-07T23:29:54.222368+00:00",
+  "state": "CLOSED_REJECT_CANDIDATE_AND_FIRST_INTERIOR_CONTRACT",
+  "active_session": null,
+  "external_block": false,
+  "stop_reason": "Current turn execution budget; all invoked bounded experiments and checks closed, whole research remains incomplete.",
+  "completed_entrypoints": [
+    "preflight_terminal_node_admission_v1.py",
+    "audit_terminal_search_state_merger_v2.py",
+    "audit_terminal_primitive_interior_v1.py",
+    "audit_first_interior_reference_contract_v1.py"
+  ],
+  "canonical_results": [
+    "terminal_node_admission_preflight_v1/assessment.json",
+    "terminal_node_search_merger_v2/state_merger_cause_assessment_v2.json",
+    "terminal_primitive_interior_v1/interior_cause_assessment_v1.json",
+    "first_interior_reference_contract_v1/reference_contract_assessment_v1.json"
+  ],
+  "next": "Read latest mission plan and task_conditions_resumed_20261007.json; reconcile closed partial-depth coverage and terminal direction-change constraints before a distinct bounded perception-memory integration task. Do not retry old candidate, pick another of7, rerun search/matcher or widen gates.",
+  "whole_research_complete": false,
+  "formal35_triggered": false,
+  "learning_triggered": false
+}

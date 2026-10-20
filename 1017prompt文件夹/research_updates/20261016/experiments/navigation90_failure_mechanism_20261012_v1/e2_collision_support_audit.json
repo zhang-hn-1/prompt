@@ -1,0 +1,91 @@
+{
+  "scope": "Existing90s raw failure localization only, truth solely scoring; no newsolver/physics/model",
+  "events": [
+    {
+      "time_s": 14.999999664723873,
+      "frame": 150,
+      "scoring_true_xy": [
+        -2.8543338775634766,
+        -0.07368719577789307
+      ],
+      "current_points": 0,
+      "historical_points": 12,
+      "raw_point_nearest_scoring_body_center_m": 2.7937377627441617,
+      "nominal_guard_clearance_m": 1.9980884789901023,
+      "guard_certified_safe": false,
+      "request_main": 0.5,
+      "request_aux": -0.3348248600959778,
+      "unknown_footprint_cells": 185,
+      "reference_version": 1
+    },
+    {
+      "time_s": 17.999999597668648,
+      "frame": 180,
+      "scoring_true_xy": [
+        -2.3276379108428955,
+        -0.1099623367190361
+      ],
+      "current_points": 0,
+      "historical_points": 62,
+      "raw_point_nearest_scoring_body_center_m": 2.271554461409905,
+      "nominal_guard_clearance_m": 0.9229485577076607,
+      "guard_certified_safe": false,
+      "request_main": 0.5,
+      "request_aux": 0.5235987901687622,
+      "unknown_footprint_cells": 188,
+      "reference_version": 2
+    },
+    {
+      "time_s": 19.499999564141035,
+      "frame": 195,
+      "scoring_true_xy": [
+        -2.0426766872406006,
+        -0.19264377653598785
+      ],
+      "current_points": 61,
+      "historical_points": 62,
+      "raw_point_nearest_scoring_body_center_m": 1.9752592432254725,
+      "nominal_guard_clearance_m": 0.9229485577076607,
+      "guard_certified_safe": false,
+      "request_main": 0.5,
+      "request_aux": 0.5235987901687622,
+      "unknown_footprint_cells": 188,
+      "reference_version": 2
+    },
+    {
+      "time_s": 19.59999956190586,
+      "frame": 196,
+      "scoring_true_xy": [
+        -2.0236597061157227,
+        -0.2010972499847412
+      ],
+      "current_points": 0,
+      "historical_points": 123,
+      "raw_point_nearest_scoring_body_center_m": 1.9548379769558766,
+      "nominal_guard_clearance_m": 0.9229485577076607,
+      "guard_certified_safe": false,
+      "request_main": 0.5,
+      "request_aux": 0.5235987901687622,
+      "unknown_footprint_cells": 188,
+      "reference_version": 2
+    }
+  ],
+  "inputs_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/raw_point_memory_snapshots/frame_150.json": "832deeb5df05d2d188b18ec2f652f35baf8e89c15939723e9ebd55093e7cbb81",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/raw_point_memory_snapshots/frame_180.json": "40fd233272e106bee98d7ee8d62a75d081f02745ac66a9e538190bbe21499be6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/raw_point_memory_snapshots/frame_195.json": "c6e331f4aaf3f26dc00d1a11adb020441451c3a4c722ae565e1e023efa8521c2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/raw_point_memory_snapshots/frame_196.json": "ba965dc4206b4b6de999dc535b10d1b2df25314a580b75ab57bce2dff9997c9e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/physics.npz": "94b0afa1f567dd7e78b6021da41519491ad0ba9b4d6e7677305228127973ce19",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/policy_rows.ndjson": "af13ff7f2bec6a3c0734e070bb0f0c1138e9717057e13de3d573188927476455",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e2_run/physics_contacts.json": "5c5da960ee85e5b5ffd1446a7cfba469af91602e281a45ab8af4d4dd405f18f5"
+  },
+  "conclusion": "Nominal geometric retained-reference clearance does not certify collision safety; sparse observed risk is not complete obstacle coverage",
+  "causal_limit": "Nearest point/body-center distance is not full3D swept-body clearance or proof of why stereo lacks points",
+  "old_rejection_constraints": [
+    "Repeated exposure persistence exists; no TTL deletion or free-space reinterpretation",
+    "Unknown/recent unavailable cannot clear hazard",
+    "Old control/course/cap/endpoint/memory rescue closed"
+  ],
+  "candidate_admitted": false,
+  "next_design_question": "A distinct current-visibility/obstacle-support qualification before commanding movement must specify unknown handling and how navigation remains possible; simply stopping or loweringcap is not navigation improvement"
+}

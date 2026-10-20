@@ -1,0 +1,11 @@
+{
+ "version":"ground_ambiguity_confidence_v1",
+ "hypothesis":"Systematic stereo floor miscorrespondence may have high localNCC at wrong depth. A competing current-pair flat-floor homography explanation can qualify matching ambiguity without truth online.",
+ "mechanism":"For original confident0.5-3m points departing absworldheight>.05 from declaredflatfloor0, compute7px current left patch and native-pose floor-warped right patch. Floor rival must be entirely inframe/unmasked inboth currentCAD masks, depth0.5-3, bothtexturestd>=2, NCC>=existing diagnostic.9 and NCC>=original given-disparity patchNCC. Invalidate confidence only; ambiguousUNKNOWN, neverfree. No depth correction, new network, threshold sweep, or clearingoldrisks.",
+ "control":"viewpoint_confirmation_navigation_20261012_v1/candidate_e2_run frozen negative actual90s; same rig/height/viewpoint/IMU/planner/control; initial ground test evidence came fromheight control, development only",
+ "qualification":"Output on all181 currentRGB/nativeposes/measuredjointCAD frames sealed before score. SixCPU checks. New conditionalaccuracy unchanged >=1000,p90<=.15m,error>.3fraction<=.1. Extra conservative retention:>=95percent original finiteGT positiveheightobstacle pixels retained. Truth onlypost-output score. Failure=>reject source entry, no threshold tuning/no physical dispatch.",
+ "budget":{"qualification_sequences":1,"actual_navigation_reserved":0,"new_candidate_default_cap_if_qualified":3,"retry":0},
+ "fixed":"Original SGBM448/block5/LR1.5 and masks7px geometry, forward60cm, lights, scenes, current nativeIMUencoder source/initialprivilegedgauge and ideal lowlevelIMU,90s/nav/contact thresholds. Groundprior alreadyTaskH, disclosed as prior notmeasurement.",
+ "distinct_from_closed":"Not sign-only below-floor prior annotation, not directNCC cutoff consumer, not temporal ray-sweep depth prediction. New current-pair rival prior appearance explains ambiguity; all old budgets/rejects remain closed.",
+ "whole_mission_complete":false
+}

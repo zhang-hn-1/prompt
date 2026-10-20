@@ -1,0 +1,37 @@
+{
+  "role": "single_geometry_correspondence_candidate_development_not_online",
+  "queries": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "sources": "same LEFT at frame-20,frame-15,frame-10,frame-5 only",
+  "query_detector": "existing frozen ORB full CAD support, at most256; unchanged",
+  "unique_change": "replace descriptor correspondence with pyramidal LK current-to-past and roundtrip",
+  "LK": {
+    "window": 21,
+    "maxLevel": 3,
+    "iterations": 30,
+    "epsilon": 0.01,
+    "minEigThreshold": 0.0001,
+    "forward_backward_max_px": 1.0,
+    "photometric_mean_absolute_max": 20.0
+  },
+  "source_support": "21x21 noCAD patch, nativebounds; current existing full ORB support",
+  "geometry": "existing triangulate parallax>=.5deg,reprojection<=1.5px, +/-1pixel sensitivity<=.1m; perquery candidateagreement<=.1m unchanged",
+  "gates": {
+    "selected_points_min": 100,
+    "precision_10cm_min": 0.95,
+    "unconditional_error_p90_max_m": 0.1,
+    "target_captures_with_points_min": 2,
+    "target_points_each_capture_min": 100
+  },
+  "GT": "postsealed evaluation only; knownpose diagnostic current/past, not deployment or freshheldout",
+  "on_reject": "no LK window, threshold, source, detector or network scan; preserve original gates",
+  "no_actor_change": true,
+  "old_protocol_sha256": "966013720aaa1e6fe16e236477399e5aab0668f2b19886602bbc7acb4e0dd047",
+  "clarification": "Old gate requires at least100targetpoints in each of2captures, not merely2nonemptycaptures. Frozen ORB querycounts40..71 cannot meet it; preexecution source admission impossible. Sixpacket diagnostic still measures correspondence/geometry, never admission."
+}

@@ -1,0 +1,66 @@
+{
+  "action_protocol_id": "ball_action_v2_aux30",
+  "benchmark_version": "v1",
+  "episodes": [
+    {
+      "classification_evidence": {
+        "scope": "fresh whole-sequence acquisition only, not formal scene classification/clearance/oracle certification",
+        "parent_condition_historical_evidence": {
+          "corridor_intersection": false,
+          "corridor_path_length_m": 0.0,
+          "corridor_width_m": null,
+          "detour_ratio": 1.0823370822177611,
+          "euclidean_distance_m": 8.83911760301898,
+          "goal_clearance_m": 2.9000000000000004,
+          "line_is_free": true,
+          "nearby_obstacle_count": 4,
+          "oracle_path_length_m": 9.566904755831214,
+          "start_clearance_m": 0.7615773105863909
+        },
+        "parent_condition_historical_human_review": {
+          "notes": "Reviewed frozen hard_0 open straight-line task, clearance and direct path.",
+          "reviewer": "project_owner",
+          "status": "approved"
+        },
+        "parent_oracle_path_length_m_legacy_parser_field": 9.566904755831214,
+        "oracle_path_length_m_scope": "retained historical parent field for parser compatibility; no new oracle computation, not used for SPL or admission",
+        "new_start_euclidean_recomputed": true,
+        "initial_gauge_and_flat_ground_prior_not_observation": true
+      },
+      "difficulty": "E0",
+      "episode_id": "action_video_fresh_e0_offset_v1",
+      "euclidean_distance_m": 8.89620705694286,
+      "goal_position_world_m": [
+        26.55,
+        -2.9499999999999993,
+        0.45
+      ],
+      "human_review": {
+        "status": "needs_adjustment",
+        "reviewer": "experimental_manifest_not_human_certified",
+        "notes": "Fresh offset acquisition authorized as experimental TaskH. Parent human approval does not certify this new start. Not formal benchmark admission."
+      },
+      "occupancy_sha256": "547dd73c52b45f9cc1aa8dca561c779349391f6ecef06ef59026921284b467da",
+      "oracle_path_length_m": 9.566904755831214,
+      "scene_sha256": "7125024056f83009e74f1b5c959d3cefdc7190157ec67b9d43818c613fced9f0",
+      "scene_uri": "${SCENE_ROOT}/cluttered_hard/hard_0/cluttered-0.usd",
+      "schema_version": "benchmark_episode_v1",
+      "seed": 20260912,
+      "split": "golden",
+      "start_position_world_m": [
+        18.350000000000005,
+        0.5000000000000014,
+        0.45
+      ],
+      "start_quaternion_world_wxyz": [
+        0.9817572029709172,
+        0.0,
+        0.0,
+        -0.19013888191193676
+      ]
+    }
+  ],
+  "localization_source": "perfect_localization",
+  "manifest_sha256": "f44193318f8200018a2f44f79bbe3a6b3208e7fb9010c873928337a422c58d51",
+  "schema_version": "ball_pointgoal_benchmark_v1"
+}

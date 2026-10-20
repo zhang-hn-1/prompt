@@ -1,0 +1,60 @@
+{
+  "dispatch_cap": 2,
+  "dispatch_used": 2,
+  "recovery_cap": 1,
+  "recovery_used": 0,
+  "runs": [
+    {
+      "stage": "red",
+      "status": "runtime_failed",
+      "parent_pid": 331529,
+      "kernel_sha256": "d0f939d2a85307f6dddf20a92537e207cca6198d76c2efa2d5fe597f9885c814",
+      "execution": {
+        "status": "runtime_failed",
+        "start_utc": "2026-10-17T19:55:42.788557+00:00",
+        "parent_pid": 331529,
+        "child_pid": 331530,
+        "process_group_id": 331530,
+        "child_returncode": 1,
+        "timeout": false,
+        "parent_signal": null,
+        "forced_kill": false,
+        "no_retry": true,
+        "remaining_live_group_pids": [],
+        "remaining_zombie_group_pids": [],
+        "end_utc": "2026-10-17T19:55:42.989770+00:00"
+      },
+      "expected_red": true
+    },
+    {
+      "stage": "qualification",
+      "status": "finished",
+      "parent_pid": 453686,
+      "kernel_sha256": "dfa28d0597e9def78c6256946dd22ec57ec96a783e92548289071edad7d93382",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-17T21:57:38.975232+00:00",
+        "parent_pid": 453686,
+        "child_pid": 453688,
+        "process_group_id": 453688,
+        "child_returncode": 0,
+        "timeout": false,
+        "parent_signal": null,
+        "forced_kill": false,
+        "no_retry": true,
+        "remaining_live_group_pids": [],
+        "remaining_zombie_group_pids": [],
+        "end_utc": "2026-10-17T21:57:39.229479+00:00"
+      },
+      "expected_red": false
+    }
+  ],
+  "fit": 0,
+  "RGB_source_calls": 0,
+  "physics": 0,
+  "navigation": 0,
+  "closed": true,
+  "remaining_dispatch": 0,
+  "remaining_recovery": 0,
+  "closure_reason": "REDexpected1 then qualificationnormal0; frozen2dispatch complete. Unusedrecovery closed. No sourcefit or actualinput admission."
+}

@@ -1,0 +1,55 @@
+{
+  "utc": "2026-10-08T10:27:09.324957+00:00",
+  "decision": "PASS_NATIVE_IMPORT_CLASS_IDENTITY_AND_RESET_ONLY",
+  "simulation_initialized": false,
+  "NN_initialized": false,
+  "policy_MRO": [
+    "<class 'command_domain_cap.with_command_domain_cap.<locals>.CommandDomainCap'>",
+    "<class 'cusp_coast_acquisition_v1.with_cusp_coast_acquisition.<locals>.CuspCoastAcquisition'>",
+    "<class 'retained_reference_tube_viability_v1.with_tube_viability_after_measured_reversal.<locals>.TubeViability'>",
+    "<class 'execution_domain_four_point_consumer_v2.with_supported_four_points.<locals>.TrackingTube'>",
+    "<class 'prior_rgb_navigation.PriorRGBPolicy'>",
+    "<class 'outgoing_lookahead.EndpointLookaheadPolicy'>",
+    "<class 'cusp_projection.CuspProjectionPolicy'>",
+    "<class 'root_direction_consumer.RootDirectionPolicy'>",
+    "<class 'guarded_reference.GuardedReferencePolicy'>",
+    "<class 'depth_local_curve.DepthLocalCurvePolicy'>",
+    "<class 'object'>"
+  ],
+  "tracker_MRO": [
+    "<class 'cusp_coast_acquisition_v1.with_cusp_coast_tracker.<locals>.CoastAwareCusp'>",
+    "<class 'outgoing_lookahead.with_outgoing_endpoint.<locals>.OutgoingEndpoint'>",
+    "<class 'gated_speed.with_confident_speed.<locals>.ConfidentSpeed'>",
+    "<class 'bank_mapping.make_policy.<locals>.MappedBankOracle'>",
+    "<class 'cusp_projection.with_cusp_boundary.<locals>.CuspBoundary'>",
+    "<class 'benchmark.policies.OraclePathPolicy'>",
+    "<class 'benchmark.policies._PolicyBase'>"
+  ],
+  "baseline_policy_MRO": [
+    "<class 'command_domain_cap.with_command_domain_cap.<locals>.CommandDomainCap'>",
+    "<class 'cusp_coast_acquisition_v1.with_cusp_coast_acquisition.<locals>.CuspCoastAcquisition'>",
+    "<class 'retained_reference_tube_viability_v1.with_tube_viability_after_measured_reversal.<locals>.TubeViability'>",
+    "<class 'execution_domain_four_point_consumer_v2.with_supported_four_points.<locals>.TrackingTube'>",
+    "<class 'prior_rgb_navigation.PriorRGBPolicy'>",
+    "<class 'outgoing_lookahead.EndpointLookaheadPolicy'>",
+    "<class 'cusp_projection.CuspProjectionPolicy'>",
+    "<class 'root_direction_consumer.RootDirectionPolicy'>",
+    "<class 'guarded_reference.GuardedReferencePolicy'>",
+    "<class 'depth_local_curve.DepthLocalCurvePolicy'>",
+    "<class 'object'>"
+  ],
+  "baseline_tracker_MRO": [
+    "<class 'cusp_coast_acquisition_v1.with_cusp_coast_tracker.<locals>.CoastAwareCusp'>",
+    "<class 'outgoing_lookahead.with_outgoing_endpoint.<locals>.OutgoingEndpoint'>",
+    "<class 'gated_speed.with_confident_speed.<locals>.ConfidentSpeed'>",
+    "<class 'bank_mapping.make_policy.<locals>.MappedBankOracle'>",
+    "<class 'cusp_projection.with_cusp_boundary.<locals>.CuspBoundary'>",
+    "<class 'benchmark.policies.OraclePathPolicy'>",
+    "<class 'benchmark.policies._PolicyBase'>"
+  ],
+  "candidate_grid": "<class 'nonbinding_side_hypothesis_v1.NonbindingSideHypothesisGrid'>",
+  "baseline_grid": "<class 'route_side_commitment_grid_v1.RouteSideCommitmentGrid'>",
+  "candidate_plan_source": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/nonbinding_side_hypothesis_v1.py",
+  "driver_sha256": "d85b03f34e5d201c90ae794e2275425bd69f2a87e25054de6d3bb8aae5e0f8db",
+  "whole_research_complete": false
+}

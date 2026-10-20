@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-08T13:22:55.937628+00:00",
+  "whole_research_complete": false,
+  "automation_status": "ACTIVE",
+  "external_user_block": false,
+  "active": [],
+  "current_process_running": false,
+  "latest_closed_actual": "observed_reference_tube_navigation_run_v1",
+  "latest_report": "reports/benchmark_observed_reference_tube_retention_20261008.md",
+  "latest_assessment": "observed_reference_tube_progress_assessment_v2.json",
+  "control_candidate": "REJECT_NONINTERVENTION,546onlineB0same/exception0; noteffectgain/loss",
+  "actual": {
+    "actions": 546,
+    "captures": 547,
+    "physics": 2731,
+    "NN": 110,
+    "contact0": true,
+    "goal_m": 5.692221594806107,
+    "axis_m": 0.9608827054500577,
+    "source_points": 69880,
+    "source10cm": 0.9871493989696623
+  },
+  "latest_causal": "observed_reference_tube_source_reference_2x2_assessment_v2.json",
+  "cause": "old/newfirstdifference211,physicalsame1055ticks/RGBfrom0diff/samecamera; refgeometrydiff116. AA/ABmove,BA/BBzero: existingreference/controller state governs firstrequestdifference under identicalcurrentmeasurements. Latestfailure18.1sreverse/12.6sconfirm/0no-plan; old426bridgefailure not reproduced.",
+  "next": "Continue one bounded current accepted motion vs first replanned primitive-direction interface necessary probe. Existing initial_direction is root COST, not hard first-expansion domain (supported_four_point_planning.py457/495). Inspect first211 B replanning/currentspeed/latch; only if currentnormal actual motion qualifies, prefreeze ONE root-first-primitive constraint query (laterreverse allowed), distinct from old all-forward-only REJECT. No force latches/earlyreverse/no PID/gains/source/threshold/margin rewrite; no actual control trial without accepted localdomain/review/frozen entry. Do not repeat tube nav or firstdifference/2x2/source matrices.",
+  "no_model_fits": true,
+  "original35_NOTRUN": true,
+  "no_new_git_push": true
+}

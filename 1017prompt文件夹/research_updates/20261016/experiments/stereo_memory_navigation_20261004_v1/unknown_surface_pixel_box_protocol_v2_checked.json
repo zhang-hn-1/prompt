@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-08T18:27:56.243948+00:00",
+  "question": "ONE conditional continuous pixelbox envelope from currentpast LEFT, not another depthNN or learner",
+  "frames": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "producer": "all nonnull geometries from frozen LK predictions; no target GT or match reselection",
+  "domain": "fixed independently +/-1pixel boxes in u0/v0/u1/v1, exact saved knownGT poses, pinhole and same static correspondence assumptions; statistical noise/pose uncertainty uncalibrated",
+  "method": "LP intersection of positive-depth camera cones; all six coordinate extrema, explicit empty/unbounded/solver_failure, no fallback depth or clips",
+  "gates": {
+    "bounded_fraction_all_nominal_min": 0.95,
+    "GT_depth_label_available_fraction_all_nominal_min": 0.95,
+    "conditional_polytope_containment_of_valid_GT_min": 0.95
+  },
+  "teacher": "postseal current capture depth at nearest native query pixel, reconstruct at unrounded query bearing; numerical inequality tolerance1e-7 in homogeneous projection; no semantics/targetselection",
+  "labels_invalid": "unavailable data, never obstacle absent/free; labelavailability gate separate",
+  "conditional_polytope_not_statistical_3D_safety": true,
+  "no_actor_current_risk_or_free_upgrade": true,
+  "old_LK_sigma8_point_gate_unchanged": true,
+  "old_selected_queries_not_100point_admission": true,
+  "historical_already_seen_not_fresh": true,
+  "source_GT_pose_diagnostic_only": true,
+  "source_sha256": {
+    "experiments/stereo_memory_navigation_20261004_v1/feature_tracks.py": "26432b42101ca47550af9efb99b1a02b813f6d934bf5fb2ec0a05d3b2c76e3b1",
+    "experiments/stereo_memory_navigation_20261004_v1/lk_surface_development_v1/predictions.json": "6a21898822c430a09d02e8be505709d5c0968432992dc9ba1c967a1b8e50b501",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/pixel_box_polytope_v2.py": "9228499896fec6605054cbc18480ec35d308fc08034422cdee37856b88684d68"
+  },
+  "original_protocol_sha256": "701aa76504d52191b83d75f9fae1d9215c0b7bc9b213f476030868617254f4b3",
+  "numerical_repair": "independentv2 validates feasible and extrema points by positive optical depth and pixel-box reprojection with1e-6pixel numerical tolerance; bounds consistency1e-9m; invalid results solver_failure UNKNOWN; no gate/domain changes"
+}

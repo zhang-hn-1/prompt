@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-09T14:45:25.693801+00:00",
+  "supersedes_sha256": "76d72b15a2dff48f9e152a9422533c47db7f8ecfcb552e02fcd8af5b6eb09f59",
+  "fit_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T14:36:21.669714+00:00",
+    "parent_pid": 2,
+    "child_pid": 3,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T14:36:35.963748+00:00"
+  },
+  "prediction_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T14:37:05.232804+00:00",
+    "parent_pid": 2,
+    "child_pid": 4,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T14:37:14.664958+00:00"
+  },
+  "assessment_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T14:39:04.120475+00:00",
+    "parent_pid": 2,
+    "child_pid": 3,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T14:39:06.639131+00:00"
+  },
+  "learning_classification": "unassessed_label_coverage",
+  "physical_learning_admission": false,
+  "running_process": false,
+  "next_actual_step": "exact same-current-boundary CPU replan of knownE1 f120 first-direction intent versus reused empirical cusp-coast domain; freeze one qualification candidate before any physical trial",
+  "whole_mission_complete": false
+}

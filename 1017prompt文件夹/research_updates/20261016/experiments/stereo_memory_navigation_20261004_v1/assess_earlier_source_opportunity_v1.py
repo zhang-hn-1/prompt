@@ -1,0 +1,12 @@
+"""ALL two frozen sources afterseal, existing binocular endpoint metric."""
+from pathlib import Path
+import json,hashlib,datetime,numpy as np
+H=Path(__file__).resolve().parent;D=H/'qualified_hazard_navigation_run_v1';O=H/'earlier_source_opportunity_v1';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();s=json.loads((O/'prediction_seal.json').read_text());assert all(sha(p)==v for p,v in s['output_sha256'].items());r=json.loads((O/'records.json').read_text());rows=[];truthfiles=[];out=O/'assessment_v1.json';assert not out.exists()
+for frame in r['pair']:
+ f=np.load(O/f'source_{frame:03d}.npz');tp=D/'offline_truth'/f'frame_{frame:03d}.npz';truthfiles.append(tp);g=np.load(tp);assert float(g['time_s'])==float(f['time_s']);w=f['world'];errors=[]
+ for eye,key in [('left','query_pixel_id'),('right','partner_pixel_id')]:
+  ids=f[key];x=ids%640;y=ids//640;assert ((x>=0)&(x<640)&(y>=0)&(y<480)).all();z=g[eye+'_depth_m'][y,x];T=g[eye+'_camera_usd_world'];ray=np.c_[(x-319.5)/584.8888888888889,(y-239.5)/584.8888888888889,np.ones(len(x))]
+  with np.errstate(invalid='ignore'):trueworld=T[:3,3]+(ray*z[:,None])@(T[:3,:3]@np.diag([1,-1,-1])).T;errors.append(np.linalg.norm(w-trueworld,axis=1))
+ e=np.array(errors).T;finite=np.isfinite(e).all(1);correct=finite&(e<=.1).all(1);bins=len(np.unique(np.floor(w[correct,:2]/.1).astype(np.int64),axis=0)) if correct.any() else 0;n=len(w);precision=float(correct.sum()/n);rows.append(dict(frame=frame,time_s=float(f['time_s']),n=n,correct=int(correct.sum()),insufficient=int((~finite).sum()),finite_wrong=int((finite&~correct).sum()),precision=precision,correct_XY_bins=bins,finite_max_eye_error_p90_m=float(np.quantile(e[finite].max(1),.9)) if finite.any() else None,gate=bool(n>=100 and precision>=.95 and bins>=2)))
+result=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),rows=rows,decision='EARLIER_LOCAL_SOURCE_OPPORTUNITY_PASS_ONLY' if all(x['gate'] for x in rows) else 'REJECT_EARLIER_LOCAL_SOURCE_OPPORTUNITY',old_seed180_time_s=17.999999597668648,pair_confirmation_s=r['event_time_s'],potential_schedule_difference_s=17.999999597668648-r['event_time_s'],actual_control_change=False,new_navigation_result=False,fresh_heldout=False,knownpose_privileged=True,old_fixed_window_and_REJECT_preserved=True,GT_after_seal_sha256={str(p):sha(p) for p in truthfiles},source_sha256=sha(Path(__file__)),whole_research_complete=False)
+out.write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))

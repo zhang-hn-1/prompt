@@ -1,0 +1,8 @@
+from pathlib import Path
+import json,hashlib,os,sys,subprocess,datetime
+H=Path(__file__).resolve().parent;now=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat();p=H/'observation_handoff_recovery_status_v2.json';assert not p.exists();old=json.loads((H/'observation_handoff_navigation_status.json').read_text());assert old['arms'][0]['arm']=='B0' and old['arms'][0]['exit_code']==0 and (H/'observation_handoff_B0_run/artifact_manifest_post_close.json').exists();r=dict(start_utc=now(),status='running',arm='observe',B0_reused_not_repeated=True,administrative_recovery=1,original_partial_not_scored=True,controller_parameters_unchanged=True,pid=os.getpid());p.write_text(json.dumps(r,indent=2)+'\n');env=dict(os.environ,PYTHONDONTWRITEBYTECODE='1',OPENBLAS_NUM_THREADS='1',PYTHONPATH='/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm',MPLCONFIGDIR='/tmp/mpl_prior_rgb',TORCH_COMPILE_DISABLE='1')
+with (H/'observation_handoff_observe_recovery_v2.log').open('w') as log:child=subprocess.run([sys.executable,str(H/'run_observation_handoff_navigation_recovery_v2.py'),'observe'],stdout=log,stderr=subprocess.STDOUT,env=env)
+r.update(status='finished' if child.returncode==0 else 'runtime_failed',exit_code=child.returncode,end_utc=now());p.write_text(json.dumps(r,indent=2)+'\n');o=H/'observation_handoff_observe_run_recovery_v2'
+if child.returncode==0:
+ m={str(f):hashlib.sha256(f.read_bytes()).hexdigest() for f in o.rglob('*') if f.is_file()};(o/'artifact_manifest_post_close.json').write_text(json.dumps(dict(utc=now(),artifact_sha256=m,administrative_recovery=True,partial_v1_retained=True,scientific_conditions_unchanged=True),indent=2)+'\n')
+print(json.dumps(r),flush=True)

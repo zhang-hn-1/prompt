@@ -1,0 +1,39 @@
+{
+  "scope": "one historical anchor schema/time compatibility only; not fresh data or new learner qualification",
+  "time_s": 0.0,
+  "camera_clock_record": {
+    "frame": 0,
+    "time_s": 0.0,
+    "raw_time_s": 0.2199999950826168,
+    "eyes": {
+      "left": 0.2199999950826168,
+      "right": 0.2199999950826168
+    },
+    "rgb_source_wall_s": 3.4963373381178826,
+    "source_predicted": true,
+    "source_frame": 0,
+    "source_time_s": 0.0,
+    "source_age_s": 0.0,
+    "capture_partial_wall_s": 3.81471441895701
+  },
+  "estimated_pose_flags": {
+    "pose_estimated": true,
+    "initial_gauge_privileged": true,
+    "flat_ground_height_prior": true,
+    "height_prior_is_observation": false
+  },
+  "files": [
+    {
+      "path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_flat_pose_navigation_R1_run_v1/online_inputs/frame_000.npz",
+      "sha256": "5af59d470e118d290a27cd8262290d6dd6b8530ea8b701ebdcbaa2fa0ca36c0d"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_flat_pose_navigation_R1_run_v1/estimated_poses/frame_000.npz",
+      "sha256": "fb5efa14ac247f185d77e7594f1d90eeca891213445d5cef86db1905f0b64efc"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/native_flat_pose_navigation_R1_run_v1/camera_clocks.json",
+      "sha256": "8e690df714f1c83a19b3d96e0750e4041ceef77d89496acd5ebdcbb2bed43a9d"
+    }
+  ]
+}

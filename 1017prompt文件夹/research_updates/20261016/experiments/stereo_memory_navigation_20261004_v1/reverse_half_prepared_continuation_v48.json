@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-09T16:01:33.737128+00:00",
+  "supersedes_sha256": "bb2a8c93965cf8cab43af5635e777b810b7b2e94746a562685879be93ef58b75",
+  "running_process": false,
+  "maximum_sequences": 2,
+  "consumed_sequences": 0,
+  "design": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_half_request_design_v1.json",
+  "protocol_sha256": "b72e4648cc3bcbd47ee568a0cdc75f06150a277f92e01ee60a2fdc01b3473566",
+  "review_pending": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/reverse_half_prelaunch_review_v1.json",
+  "next_command": "after C0/I0 only: /home/an/miniconda3/envs/ball_wm/bin/python /home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_reverse_half_stage_v1.py development",
+  "next_after_close": "assess then verify; independent review and developmentpointseal before validation; validation no automatic after failed point",
+  "whole_mission_complete": false
+}

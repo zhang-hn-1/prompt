@@ -1,0 +1,178 @@
+{
+  "scope": "read-only explanation of existing fresh-data E1 90s; no new navigation or causal A/B",
+  "references": [
+    {
+      "version": 1,
+      "start_s": 6.0,
+      "end_s": 17.5,
+      "planned_length_m": 2.4,
+      "planned_reverse_length_m": 0.0,
+      "planned_direction_changes": 0,
+      "actual_goal_progress_m": 1.7459798806362228,
+      "actual_travel_m": 2.0794865779271774,
+      "closest_reference_distance_p50_p90_m": [
+        0.036655770261164115,
+        0.10971365004483133
+      ],
+      "direction_change_state_s": 0.0
+    },
+    {
+      "version": 2,
+      "start_s": 17.5,
+      "end_s": 50.5,
+      "planned_length_m": 5.1,
+      "planned_reverse_length_m": 2.6999998465731556,
+      "planned_direction_changes": 1,
+      "actual_goal_progress_m": -1.074820274946056,
+      "actual_travel_m": 3.829129502404274,
+      "closest_reference_distance_p50_p90_m": [
+        0.014743928178805259,
+        0.10433726196965826
+      ],
+      "direction_change_state_s": 3.1
+    },
+    {
+      "version": 3,
+      "start_s": 50.5,
+      "end_s": 51.0,
+      "planned_length_m": 3.0,
+      "planned_reverse_length_m": 0.29999998295257285,
+      "planned_direction_changes": 1,
+      "actual_goal_progress_m": 0.08850501265041544,
+      "actual_travel_m": 0.09419783168436338,
+      "closest_reference_distance_p50_p90_m": [
+        0.04765984726321567,
+        0.06201436991699189
+      ],
+      "direction_change_state_s": 0.5
+    },
+    {
+      "version": 4,
+      "start_s": 51.0,
+      "end_s": 66.0,
+      "planned_length_m": 3.3,
+      "planned_reverse_length_m": 0.5999999659051454,
+      "planned_direction_changes": 1,
+      "actual_goal_progress_m": -0.008687845192650201,
+      "actual_travel_m": 1.7049081757166609,
+      "closest_reference_distance_p50_p90_m": [
+        0.054739833965419635,
+        0.17526695491633454
+      ],
+      "direction_change_state_s": 4.6000000000000005
+    },
+    {
+      "version": 5,
+      "start_s": 66.0,
+      "end_s": 66.5,
+      "planned_length_m": 3.0,
+      "planned_reverse_length_m": 0.2999999829525727,
+      "planned_direction_changes": 1,
+      "actual_goal_progress_m": 0.09598245321984589,
+      "actual_travel_m": 0.09622029372546734,
+      "closest_reference_distance_p50_p90_m": [
+        0.004419479610747255,
+        0.008093066917596085
+      ],
+      "direction_change_state_s": 0.0
+    },
+    {
+      "version": 6,
+      "start_s": 66.5,
+      "end_s": 67.0,
+      "planned_length_m": 3.3,
+      "planned_reverse_length_m": 0.5999999659051458,
+      "planned_direction_changes": 1,
+      "actual_goal_progress_m": 0.0937497570841348,
+      "actual_travel_m": 0.0943032214905031,
+      "closest_reference_distance_p50_p90_m": [
+        0.050416865730557675,
+        0.0804859336324025
+      ],
+      "direction_change_state_s": 0.5
+    },
+    {
+      "version": 7,
+      "start_s": 67.0,
+      "end_s": 71.0,
+      "planned_length_m": 3.3,
+      "planned_reverse_length_m": 0.5999999659051459,
+      "planned_direction_changes": 1,
+      "actual_goal_progress_m": -0.0025814013740479425,
+      "actual_travel_m": 0.3951585616577004,
+      "closest_reference_distance_p50_p90_m": [
+        0.15251348967773948,
+        0.1991193562407742
+      ],
+      "direction_change_state_s": 2.0
+    },
+    {
+      "version": 8,
+      "start_s": 71.0,
+      "end_s": 81.5,
+      "planned_length_m": 3.3,
+      "planned_reverse_length_m": 0.5999999659051456,
+      "planned_direction_changes": 1,
+      "actual_goal_progress_m": 0.036878870550826726,
+      "actual_travel_m": 1.5007452637543002,
+      "closest_reference_distance_p50_p90_m": [
+        0.03468691437514634,
+        0.09318636753475495
+      ],
+      "direction_change_state_s": 2.0
+    },
+    {
+      "version": 9,
+      "start_s": 81.5,
+      "end_s": 85.5,
+      "planned_length_m": 3.9,
+      "planned_reverse_length_m": 0.8999999488577185,
+      "planned_direction_changes": 1,
+      "actual_goal_progress_m": 0.14824103836917235,
+      "actual_travel_m": 0.42911821665487204,
+      "closest_reference_distance_p50_p90_m": [
+        0.23218471246031114,
+        0.2721956409539565
+      ],
+      "direction_change_state_s": 2.5
+    },
+    {
+      "version": 10,
+      "start_s": 85.5,
+      "end_s": 90.0,
+      "planned_length_m": 3.9,
+      "planned_reverse_length_m": 0.8999999488577186,
+      "planned_direction_changes": 1,
+      "actual_goal_progress_m": -0.3799323729349826,
+      "actual_travel_m": 0.5127730902520362,
+      "closest_reference_distance_p50_p90_m": [
+        0.060179331940148864,
+        0.08682972145132702
+      ],
+      "direction_change_state_s": 0.0
+    }
+  ],
+  "reference_versions": 10,
+  "goal_remaining_m": 5.823439797431462,
+  "goal_net_progress_m": 0.7765608761010245,
+  "actual_travel_m": 10.842508474480383,
+  "direction_change_state_s": 15.200000000000001,
+  "metric_cautions": "Closest segment distance is geometric only, can underestimate cursor/direction error on overlaps; reverse length is planned, not actual reverse travel; direction-change state duration is not fully stopped time.",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/policy_records.json": "fa6e9f29f307174b49f1907c7255f91f444ac55b204efa7c1ca3701e63beadca",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/states.json": "13c667085f07f8a76f0efcd5220eabb0051d6442be933a63a51ddea739dd946d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/task_episode.json": "17f178cf6f1a6a5c1ac8dde37d7ebac245090c8867ababdee69d152cdf5bfd05",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_protocol.json": "3aeec5b22378123ecaf32baca6646dbe41ee38fdf2dc5f6ffc7daa22279b71fa",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/local_plans/frame_060.json": "bab95d22d267e4eaa84b10ba1d6223cfca840cf7a8049510bc7f2c4d4f84a131",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/local_plans/frame_175.json": "904f67cb705e31f36ce4230239d1c47a93d93ccd7134e7df9d834dbaf4f0ad2a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/local_plans/frame_505.json": "873c7bdb0832e0225a598eb3ddf718a8ce80723e30a02aaed4fb2ad66ba26fbc",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/local_plans/frame_510.json": "0e42be07c373507068f1d4883d63e076a3876180078da0bac4f91e349e75932a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/local_plans/frame_660.json": "5c24e6f851ca54ebd47bd1296a10b2f520a38fc4f64a9db822f3c04f4b14952b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/local_plans/frame_665.json": "d057820c636cc90c022e55b870e444785d86234856c43e42a221a529689a7d21",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/local_plans/frame_670.json": "575a0554a9612a4fe7d68a703a7eb5a85fd47f847b6d9c98d9f9d85ed4bb72d2",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/local_plans/frame_710.json": "ff0f1e8ac862352d6dd158a2c431149e491440046370b38d5bcad2322b93947b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/local_plans/frame_815.json": "44ca2064478e7337ad7bb521a673aaeb0a4a1e5458dc0527e8e65148d56d62da",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1/data_e1_run/local_plans/frame_855.json": "4f694fc0ef784e55e7db3d4be490b04314c0f572cc1d736d5ea2a6e8e7dc977c"
+  }
+}

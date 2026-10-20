@@ -1,0 +1,42 @@
+{
+  "utc": "2026-10-08T06:45:35.734360+00:00",
+  "decision": "BLOCKED_GPU_RESOURCE_BEFORE_ANY_NAVIGATION_ACTION",
+  "actual_stage_exit_code": 1,
+  "actual_wall_s": 22.81695429002866,
+  "planned_wall_timeout": false,
+  "forced_kill": false,
+  "seal_sha256": "c2429a75dba2fbafdedb6c9ee717c5f53161543f78fffea849ce4e272fb15a80",
+  "sealed_artifacts_verified": 18,
+  "protocol_sources_verified": 2034,
+  "protocol_inputs_verified": 39,
+  "issued_requests": 0,
+  "physics_samples": 1,
+  "capture_clock_records": 1,
+  "completed_NN_outputs": 0,
+  "source_gate": "NOTMEASURABLE",
+  "interface_gate": "CPU_PASS_ONLY_ONLINE_NOTRUN",
+  "control_gate": "NOTRUN_STARTUP_RESOURCE_FAILURE_NOT_CONTROL_REJECTION",
+  "local54_6_gate": "NOTRUN",
+  "conditional_extended_navigation": "NOTRUN",
+  "original35": "NOTRUN",
+  "videos": [
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/original_E1_route_side_navigation_run_v1/stereo_view.mp4",
+      "decoded_frames": 1
+    },
+    {
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/original_E1_route_side_navigation_run_v1/third_person.mp4",
+      "decoded_frames": 1
+    }
+  ],
+  "failure_layer": "initial_FastStereo_CUDA_warmup_at_reset",
+  "GPU_external_process": {
+    "pid": 2925376,
+    "application": "Dota2",
+    "GPU_memory_MiB": 2475,
+    "observed_readonly": true,
+    "not_terminated": true
+  },
+  "next": "Require externally held GPU resources released; do not retry the failed v1 stage or mutate its frozen files. New execution entry only after resource-change evidence and explicitly preserved failed attempt; same unique candidate/gates, no NN/light/control changes.",
+  "whole_research_complete": false
+}

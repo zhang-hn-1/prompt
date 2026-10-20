@@ -1,0 +1,4 @@
+# Independent review
+Reviewer: /root/recovery_presteer_review, 2026-09-28.
+No blocking code issue found before completion of the four runs. Both frozen reference files match prior C byte-for-byte. Candidate only overrides magnitude scheduler; original direction confirmation, inverse mapping, feedback and execution limit chain retained. Independent two lightweight tests passed. Acceptance gates match PROTOCOL.
+Limitations: whole-polyline nearest error is not topology-aware local projection. Command bins alone do not prove actual joint/XY response; physical_summary.py is descriptive post-run analysis added after the pre-run identity manifest, and does not change any gate or simulation. Runtime/assessment source identity must still be checked after completion. Simulation pairing and outcomes are checked by assess.py.

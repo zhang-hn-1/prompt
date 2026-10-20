@@ -1,0 +1,25 @@
+{
+  "stage": "acquisition_readiness_requirements_not_launch_protocol",
+  "sequence_unit": "One independently initialized complete physical episode; all overlapping anchors from it share one group. Scenes E0/E1/E2 are strata, not independent groups themselves.",
+  "split": "Assign independent episode groups to development/calibration/untouched evaluation before labels; no adjacent frame split; old12streams/3groups remain historical only.",
+  "coverage_required": [
+    "initial estimated velocity and heading/tilt ranges",
+    "prospectively committed program and command-domain support",
+    "all complete/censored/rejected anchors with denominators",
+    "risk/unknown and scenario strata without treating unavailable as clear"
+  ],
+  "measurement_required": [
+    "whole-path containment and tube size",
+    "unscorable/censored fraction and support coverage",
+    "latency and exact program consumption",
+    "held-out group counts plus privilege disclosure"
+  ],
+  "not_frozen": [
+    "actual collector and safe commitment consumer",
+    "independent initial-state schedule",
+    "finite episode budget",
+    "numerical containment/coverage/latency falsification thresholds"
+  ],
+  "stop": "Do not collect or fit while not_frozen items remain; no numerical guarantees from synthetic traces.",
+  "old_budget_reopening": false
+}

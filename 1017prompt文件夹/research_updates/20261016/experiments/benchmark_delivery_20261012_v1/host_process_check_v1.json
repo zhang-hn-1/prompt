@@ -1,0 +1,30 @@
+{
+  "utc": "2026-10-11T16:47:14.475702+00:00",
+  "scope": "Known two-arm durable parent/child PIDs only; not a global host process assertion",
+  "checks": [
+    {
+      "pid": 3595308,
+      "arm": "b0",
+      "role": "parent_pid",
+      "heading_rate_active": false
+    },
+    {
+      "pid": 3595309,
+      "arm": "b0",
+      "role": "child_pid",
+      "heading_rate_active": false
+    },
+    {
+      "pid": 3599774,
+      "arm": "candidate",
+      "role": "parent_pid",
+      "heading_rate_active": false
+    },
+    {
+      "pid": 3599775,
+      "arm": "candidate",
+      "role": "child_pid",
+      "heading_rate_active": false
+    }
+  ]
+}

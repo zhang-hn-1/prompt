@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-10T00:08:16.555121+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_course_cpu_closed_prelaunch_pending_continuation_v95.json",
+  "supersedes_sha256": "dbf55ffb885c465ba1dd02c4eddab29a0eaf42f0b3bbcd00474fa3c1024dc78a",
+  "whole_mission_complete": false,
+  "state": "REVISED_FULL_PRELAUNCH_REVIEW_PENDING",
+  "actual_physical_process_running": false,
+  "new_physics": 0,
+  "next_entry": "forward_course_geometry_e1_protocol_v2.json",
+  "review_pending": "forward_course_prelaunch_review_v2.json",
+  "driver": "run_forward_course_geometry_e1_v3.py",
+  "stage": "run_forward_course_geometry_e1_stage_v3.py",
+  "scorer": "assess_forward_course_geometry_e1_v3.py",
+  "stop_reason": "Not stopped: full revised independent prelaunch review in progress; next launch only after I1/I2 closure, no physical budget consumed."
+}

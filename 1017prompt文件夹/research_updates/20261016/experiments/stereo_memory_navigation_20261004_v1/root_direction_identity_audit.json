@@ -1,0 +1,50 @@
+{
+  "saved_utc": "2026-10-05T07:54:23.297455+00:00",
+  "outer_class": "<class 'root_direction_consumer.RootDirectionPolicy'>",
+  "outer_mro": [
+    {
+      "name": "RootDirectionPolicy",
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/root_direction_consumer.py",
+      "sha256": "748ac9f81bc09477b47409d460db715e446f17289a972f8f202ceb5d6be3c5d3"
+    },
+    {
+      "name": "GuardedReferencePolicy",
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/guarded_reference.py",
+      "sha256": "30c8b79fef8bb097f2306f6579f51fe932288a6a320bc41604d725f56cec41bf"
+    },
+    {
+      "name": "DepthLocalCurvePolicy",
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/depth_local_curve.py",
+      "sha256": "c0617a764b1b21a7b972a50a6fad86456cbcf98b947085f40dbdc28c086d37c7"
+    }
+  ],
+  "inner_mro": [
+    {
+      "name": "with_confident_speed.<locals>.ConfidentSpeed",
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/gated_speed.py",
+      "sha256": "152f25764480542f32ad2f3f28119e1ab4b20bc4f9ca794bb04a57115901c55b"
+    },
+    {
+      "name": "make_policy.<locals>.MappedBankOracle",
+      "file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/bank_mapping.py",
+      "sha256": "0a008cd0875e7f1979e3c2107f4573d6d237e65a91757fd90365260d907216ff"
+    },
+    {
+      "name": "OraclePathPolicy",
+      "file": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "sha256": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f"
+    },
+    {
+      "name": "_PolicyBase",
+      "file": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/policies.py",
+      "sha256": "02961ecac3a2901f8236e87e8319515c84a2ebba3f8c98f1561d095d9ec8e84f"
+    }
+  ],
+  "act_exact_guarded_baseline": true,
+  "reset_exact_guarded_baseline": true,
+  "initial_uninstalled_latch_cost_input": null,
+  "sensor_privileged": true,
+  "global_reference_online": false,
+  "original_tracker_unchanged": true,
+  "original_objective_summary_not_consumed": true
+}

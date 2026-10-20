@@ -1,0 +1,13 @@
+from pathlib import Path
+import json,hashlib,datetime,numpy as np
+from terminal_goal_bank_source import TerminalGoalBankSource
+from execution_snapshot import ExecutionClone
+from roll_pid import bank_from_quaternion
+H=Path(__file__).resolve().parent;D=H/'native_flat_pose_navigation_R1_run_v1';O=H/'terminal_goal_bank_source_probe_v1';O.mkdir(exist_ok=False);sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();trace=json.loads((H/'native_terminal_factual_chain_v2/trace.json').read_text());es=json.loads((D/'execution_states.json').read_text());ph=np.load(D/'physics.npz');latch=TerminalGoalBankSource();changed=[];outputs=[];probes=[]
+for row in trace:
+ source=row['request_diagnostics']['request_source'];parent=np.asarray(row['request'],np.float32);final,info=latch.apply(parent,source);np.testing.assert_array_equal(final[::2],parent[::2]);outputs.append(final)
+ if not np.array_equal(final,parent):
+  assert source=='goal_braking';i=row['frame'];changed.append(i);idx=5*i;kwargs=dict(bank_rad=bank_from_quaternion(ph['root_quaternion_world_wxyz'][idx]),aux_position_rad=ph['joint_position_rad'][idx,1],aux_velocity_rad_s=ph['joint_velocity_rad_s'][idx,1]);a=ExecutionClone.from_snapshot(es[i]);b=ExecutionClone.from_snapshot(es[i]);aa,ss=a.step(parent[:2],**kwargs);bb,tt=b.step(final[:2],**kwargs);np.testing.assert_equal(aa[0],bb[0]);probes.append(dict(frame=i,parent_raw=parent[:2].tolist(),held_raw=final[:2].tolist(),parent_applied=aa.tolist(),held_applied=bb.tolist(),applied_different=not np.array_equal(aa,bb),current_feedback_only=True,no_successor_feedback_or_physics_prediction=True))
+prefix=TerminalGoalBankSource()
+for row,expected in zip(trace[:415],outputs[:415]):np.testing.assert_array_equal(prefix.apply(row['request'],row['request_diagnostics']['request_source'])[0],expected)
+np.savez_compressed(O/'current_algebra_outputs.npz',requests=np.asarray(outputs));r=dict(utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),decision='PASS_CURRENT_EXECUTION_EFFECT_ONLY' if changed and any(x['applied_different'] for x in probes) else 'REJECT_BEHAVIOR_EQUIVALENT_BEFORE_GPU',changed_parent_frames=changed,prefix555_parent_outputs_identical=True,current_feedback_execution_probes=probes,prefix_truncation_exact=True,no_new_navigation=True,not_fresh_heldout=True,no_recursive_future_physics=True,input_sha256={str(f):sha(f) for f in [H/'native_terminal_factual_chain_v2/trace.json',D/'execution_states.json',D/'physics.npz',H/'terminal_goal_bank_source.py',H.parent.parent/'docs/superpowers/plans/2026-10-08-terminal-goal-brake-bank-source.md']},code_sha256=sha(__file__),whole_research_complete=False);(O/'assessment.json').write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r,indent=2))

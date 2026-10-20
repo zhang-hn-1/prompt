@@ -1,0 +1,3340 @@
+{
+  "sample_count": 256,
+  "ray_raster_disagreements": [],
+  "masked_render_depth_count": 127,
+  "masked_render_depth_error_p90_m": 7.139379770426668e-08,
+  "masked_render_depth_error_max_m": 0.00014948331633382606,
+  "all_eight_saved_set_counts_exact": true,
+  "wall_s": 28.997921452042647,
+  "samples": [
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267773,
+      "rendered_depth_m": 0.09728549420833588,
+      "difference_m": 1.565565814487524e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_left",
+      "uv": [
+        15,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677895,
+      "rendered_depth_m": 0.0700141116976738,
+      "difference_m": 3.414089484732319e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_left",
+      "uv": [
+        58,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060267338221728514,
+      "rendered_depth_m": 0.060267362743616104,
+      "difference_m": 2.4521887589945557e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_left",
+      "uv": [
+        519,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.05422802249178486,
+      "rendered_depth_m": 0.05422806739807129,
+      "difference_m": 4.490628643244454e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.5259324908256531,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_left",
+      "uv": [
+        109,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.8268712162971497,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_left",
+      "uv": [
+        218,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.9328467845916748,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784954,
+      "rendered_depth_m": 0.0542280375957489,
+      "difference_m": 1.5103963947604715e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_right",
+      "uv": [
+        43,
+        25
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06054830483348483,
+      "rendered_depth_m": 0.06054830551147461,
+      "difference_m": 6.779897823716574e-10
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_right",
+      "uv": [
+        93,
+        55
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07039355765193764,
+      "rendered_depth_m": 0.07039358466863632,
+      "difference_m": 2.7016698683768325e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_right",
+      "uv": [
+        14,
+        107
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09801970857949041,
+      "rendered_depth_m": 0.09801968932151794,
+      "difference_m": 1.9257972466713014e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_right",
+      "uv": [
+        528,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_right",
+      "uv": [
+        528,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_right",
+      "uv": [
+        583,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "front_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.08007431837653592,
+      "rendered_depth_m": 0.08007431775331497,
+      "difference_m": 6.232209470713457e-10
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_left",
+      "uv": [
+        360,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172855,
+      "rendered_depth_m": 0.060267359018325806,
+      "difference_m": 2.0796597256789173e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_left",
+      "uv": [
+        285,
+        54
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677898,
+      "rendered_depth_m": 0.07001406699419022,
+      "difference_m": 1.0562588761975356e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_left",
+      "uv": [
+        18,
+        105
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09656216644447946,
+      "rendered_depth_m": 0.09656217694282532,
+      "difference_m": 1.0498345859311087e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_left",
+      "uv": [
+        533,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_left",
+      "uv": [
+        453,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.9841313362121582,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_left",
+      "uv": [
+        546,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267775,
+      "rendered_depth_m": 0.09728547185659409,
+      "difference_m": 6.6960836597740325e-09
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_right",
+      "uv": [
+        77,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677898,
+      "rendered_depth_m": 0.07001407444477081,
+      "difference_m": 3.1120081650515274e-09
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_right",
+      "uv": [
+        156,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060267338221728514,
+      "rendered_depth_m": 0.06026735529303551,
+      "difference_m": 1.707130699302173e-08
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_right",
+      "uv": [
+        521,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.05422802249178488,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.4326952397823334,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_right",
+      "uv": [
+        102,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.6188638210296631,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_right",
+      "uv": [
+        204,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.0425509214401245,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_000.npz",
+      "camera": "rear_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267773,
+      "rendered_depth_m": 0.09728545695543289,
+      "difference_m": 2.15972448397439e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_left",
+      "uv": [
+        31,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677895,
+      "rendered_depth_m": 0.0700141042470932,
+      "difference_m": 2.669031425039936e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_left",
+      "uv": [
+        55,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060267338221728514,
+      "rendered_depth_m": 0.06026734784245491,
+      "difference_m": 9.6207263960979e-09
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_left",
+      "uv": [
+        517,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.05422802249178483,
+      "rendered_depth_m": 0.05422798916697502,
+      "difference_m": 3.332480980750008e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.6030413508415222,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_left",
+      "uv": [
+        111,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.997357964515686,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_left",
+      "uv": [
+        223,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 2.7328882217407227,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784954,
+      "rendered_depth_m": 0.054228026419878006,
+      "difference_m": 3.928093052218973e-09
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_right",
+      "uv": [
+        431,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172844,
+      "rendered_depth_m": 0.06026735156774521,
+      "difference_m": 1.3346016770887648e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_right",
+      "uv": [
+        47,
+        55
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07039355765193764,
+      "rendered_depth_m": 0.07039357721805573,
+      "difference_m": 1.9566118086844497e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_right",
+      "uv": [
+        33,
+        106
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267773,
+      "rendered_depth_m": 0.09728553891181946,
+      "difference_m": 6.035914172641821e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_right",
+      "uv": [
+        530,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_right",
+      "uv": [
+        536,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_right",
+      "uv": [
+        587,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "front_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.08007431837653588,
+      "rendered_depth_m": 0.08007432520389557,
+      "difference_m": 6.827359691485846e-09
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_left",
+      "uv": [
+        442,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172846,
+      "rendered_depth_m": 0.0602673664689064,
+      "difference_m": 2.8247177943918622e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_left",
+      "uv": [
+        352,
+        54
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0700140775567789,
+      "rendered_depth_m": 0.0700141116976738,
+      "difference_m": 3.414089490283434e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_left",
+      "uv": [
+        67,
+        105
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09656216644447947,
+      "rendered_depth_m": 0.09656217694282532,
+      "difference_m": 1.0498345845433299e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_left",
+      "uv": [
+        536,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_left",
+      "uv": [
+        391,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.9562050104141235,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_left",
+      "uv": [
+        515,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.851795494556427,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_right",
+      "uv": [
+        5,
+        372
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09801970857949042,
+      "rendered_depth_m": 0.09801968187093735,
+      "difference_m": 2.670855307751463e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_right",
+      "uv": [
+        57,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677895,
+      "rendered_depth_m": 0.07001405954360962,
+      "difference_m": 1.8013169331143608e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_right",
+      "uv": [
+        41,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172852,
+      "rendered_depth_m": 0.06026730686426163,
+      "difference_m": 3.135746689392205e-08
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_right",
+      "uv": [
+        509,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0542280224917849,
+      "rendered_depth_m": 0.054228026419878006,
+      "difference_m": 3.928093107730124e-09
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.3877513110637665,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_right",
+      "uv": [
+        141,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.6394673585891724,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_right",
+      "uv": [
+        283,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.011343002319336,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_001.npz",
+      "camera": "rear_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0972854785526776,
+      "rendered_depth_m": 0.09728547930717468,
+      "difference_m": 7.544970759276737e-10
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_left",
+      "uv": [
+        114,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677895,
+      "rendered_depth_m": 0.07001405954360962,
+      "difference_m": 1.8013169331143608e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_left",
+      "uv": [
+        101,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060267338221728514,
+      "rendered_depth_m": 0.06026731804013252,
+      "difference_m": 2.0181595991597412e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_left",
+      "uv": [
+        517,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784836,
+      "rendered_depth_m": 0.05422800034284592,
+      "difference_m": 2.214893891905323e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.5825673341751099,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_left",
+      "uv": [
+        142,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.137319564819336,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_left",
+      "uv": [
+        284,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 2.8142030239105225,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784954,
+      "rendered_depth_m": 0.05422800034284592,
+      "difference_m": 2.2148939037014426e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_right",
+      "uv": [
+        345,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172851,
+      "rendered_depth_m": 0.060267314314842224,
+      "difference_m": 2.3906886283120432e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_right",
+      "uv": [
+        300,
+        54
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677894,
+      "rendered_depth_m": 0.07001402229070663,
+      "difference_m": 5.526607230188496e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_right",
+      "uv": [
+        41,
+        106
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267762,
+      "rendered_depth_m": 0.09728547930717468,
+      "difference_m": 7.544970620498859e-10
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_right",
+      "uv": [
+        532,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_right",
+      "uv": [
+        481,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_right",
+      "uv": [
+        560,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "front_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.08007431837653582,
+      "rendered_depth_m": 0.08007428795099258,
+      "difference_m": 3.0425543237622144e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_left",
+      "uv": [
+        442,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0602673382217284,
+      "rendered_depth_m": 0.06026731804013252,
+      "difference_m": 2.018159588057511e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_left",
+      "uv": [
+        351,
+        54
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677878,
+      "rendered_depth_m": 0.07001405954360962,
+      "difference_m": 1.8013169164610154e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_left",
+      "uv": [
+        58,
+        105
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09656216644447935,
+      "rendered_depth_m": 0.09656211733818054,
+      "difference_m": 4.9106298805057236e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_left",
+      "uv": [
+        536,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_left",
+      "uv": [
+        465,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.9378243088722229,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_left",
+      "uv": [
+        552,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0972854785526776,
+      "rendered_depth_m": 0.09728553146123886,
+      "difference_m": 5.290856125439447e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_right",
+      "uv": [
+        70,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677899,
+      "rendered_depth_m": 0.07001406699419022,
+      "difference_m": 1.0562588775853143e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_right",
+      "uv": [
+        42,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172852,
+      "rendered_depth_m": 0.06026731804013252,
+      "difference_m": 2.0181595998536306e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_right",
+      "uv": [
+        521,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.05422802249178487,
+      "rendered_depth_m": 0.05422805994749069,
+      "difference_m": 3.7455705821642926e-08
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.39624571800231934,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_right",
+      "uv": [
+        124,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.6201134920120239,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_right",
+      "uv": [
+        248,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.020237684249878,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_002.npz",
+      "camera": "rear_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267772,
+      "rendered_depth_m": 0.09728560596704483,
+      "difference_m": 1.2741436711261045e-07
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_left",
+      "uv": [
+        47,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677895,
+      "rendered_depth_m": 0.07001414895057678,
+      "difference_m": 7.139379783194233e-08
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_left",
+      "uv": [
+        70,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060267338221728514,
+      "rendered_depth_m": 0.060267381370067596,
+      "difference_m": 4.314833908225513e-08
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_left",
+      "uv": [
+        517,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0542280224917849,
+      "rendered_depth_m": 0.054228052496910095,
+      "difference_m": 3.000512519696352e-08
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.5663280487060547,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_left",
+      "uv": [
+        135,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.0372490882873535,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_left",
+      "uv": [
+        270,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 2.788093090057373,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784954,
+      "rendered_depth_m": 0.054228056222200394,
+      "difference_m": 3.3730415439914285e-08
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_right",
+      "uv": [
+        414,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060566296801374306,
+      "rendered_depth_m": 0.06070801988244057,
+      "difference_m": 0.0001417230810662612
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_right",
+      "uv": [
+        0,
+        55
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07039355765193765,
+      "rendered_depth_m": 0.07039366662502289,
+      "difference_m": 1.0897308523605265e-07
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_right",
+      "uv": [
+        29,
+        106
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267775,
+      "rendered_depth_m": 0.09728558361530304,
+      "difference_m": 1.0506262529408339e-07
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_right",
+      "uv": [
+        529,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_right",
+      "uv": [
+        456,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_right",
+      "uv": [
+        547,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "front_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.08007431837653592,
+      "rendered_depth_m": 0.08007431775331497,
+      "difference_m": 6.232209470713457e-10
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_left",
+      "uv": [
+        371,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172855,
+      "rendered_depth_m": 0.060267429798841476,
+      "difference_m": 9.157711292756554e-08
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_left",
+      "uv": [
+        273,
+        54
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677898,
+      "rendered_depth_m": 0.07001414895057678,
+      "difference_m": 7.139379780418675e-08
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_left",
+      "uv": [
+        32,
+        105
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09656216644447946,
+      "rendered_depth_m": 0.0965622290968895,
+      "difference_m": 6.265241003777788e-08
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_left",
+      "uv": [
+        523,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.05422805994749069,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_left",
+      "uv": [
+        296,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.0094817876815796,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_left",
+      "uv": [
+        467,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.9061645269393921,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267775,
+      "rendered_depth_m": 0.09728560596704483,
+      "difference_m": 1.2741436708485487e-07
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_right",
+      "uv": [
+        105,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677914,
+      "rendered_depth_m": 0.07001414895057678,
+      "difference_m": 7.13937976376533e-08
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_right",
+      "uv": [
+        74,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172852,
+      "rendered_depth_m": 0.060267385095357895,
+      "difference_m": 4.687362937377815e-08
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_right",
+      "uv": [
+        508,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0542280224917849,
+      "rendered_depth_m": 0.05422809720039368,
+      "difference_m": 7.470860877850649e-08
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.405105322599411,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_right",
+      "uv": [
+        148,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.7156834006309509,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_right",
+      "uv": [
+        296,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.0152595043182373,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_003.npz",
+      "camera": "rear_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267787,
+      "rendered_depth_m": 0.09728553891181946,
+      "difference_m": 6.035914158764033e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_left",
+      "uv": [
+        31,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677895,
+      "rendered_depth_m": 0.07001401484012604,
+      "difference_m": 6.271665291268658e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_left",
+      "uv": [
+        60,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060267338221728514,
+      "rendered_depth_m": 0.060267314314842224,
+      "difference_m": 2.3906886290059326e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_left",
+      "uv": [
+        519,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784954,
+      "rendered_depth_m": 0.05422802269458771,
+      "difference_m": 2.028027537570587e-10
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.5617867112159729,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_left",
+      "uv": [
+        112,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.9034488201141357,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_left",
+      "uv": [
+        224,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 2.3057165145874023,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784954,
+      "rendered_depth_m": 0.05422805994749069,
+      "difference_m": 3.74557057383762e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_right",
+      "uv": [
+        20,
+        25
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06054830483348483,
+      "rendered_depth_m": 0.06054830178618431,
+      "difference_m": 3.0473005160902567e-09
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_right",
+      "uv": [
+        22,
+        55
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07039355765193764,
+      "rendered_depth_m": 0.07039358466863632,
+      "difference_m": 2.7016698683768325e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_right",
+      "uv": [
+        13,
+        107
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09801970857949052,
+      "rendered_depth_m": 0.09801976382732391,
+      "difference_m": 5.5247833391502965e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_right",
+      "uv": [
+        528,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_right",
+      "uv": [
+        493,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_right",
+      "uv": [
+        566,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "front_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.08007431837653597,
+      "rendered_depth_m": 0.08007431030273438,
+      "difference_m": 8.073801599506325e-09
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_left",
+      "uv": [
+        354,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172855,
+      "rendered_depth_m": 0.06026731804013252,
+      "difference_m": 2.018159602629188e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_left",
+      "uv": [
+        287,
+        54
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677898,
+      "rendered_depth_m": 0.07001407444477081,
+      "difference_m": 3.1120081650515274e-09
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_left",
+      "uv": [
+        18,
+        105
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09656216644447958,
+      "rendered_depth_m": 0.09656217694282532,
+      "difference_m": 1.0498345734410996e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_left",
+      "uv": [
+        534,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_left",
+      "uv": [
+        430,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.9743165373802185,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_left",
+      "uv": [
+        534,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267787,
+      "rendered_depth_m": 0.09728556126356125,
+      "difference_m": 8.271088337841181e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_right",
+      "uv": [
+        29,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677898,
+      "rendered_depth_m": 0.07001413404941559,
+      "difference_m": 5.64926366103391e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_right",
+      "uv": [
+        129,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172851,
+      "rendered_depth_m": 0.06026735529303551,
+      "difference_m": 1.7071306999960623e-08
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_right",
+      "uv": [
+        522,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.05422802249178496,
+      "rendered_depth_m": 0.05422801896929741,
+      "difference_m": 3.5224875516437493e-09
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.40849512815475464,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_right",
+      "uv": [
+        71,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.5186716914176941,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_right",
+      "uv": [
+        142,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.71023029088974,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_004.npz",
+      "camera": "rear_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267772,
+      "rendered_depth_m": 0.09728553146123886,
+      "difference_m": 5.290856114337217e-08
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_left",
+      "uv": [
+        67,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677895,
+      "rendered_depth_m": 0.0700141116976738,
+      "difference_m": 3.414089484732319e-08
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_left",
+      "uv": [
+        90,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060267338221728514,
+      "rendered_depth_m": 0.06026734411716461,
+      "difference_m": 5.8954360976359865e-09
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_left",
+      "uv": [
+        520,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784884,
+      "rendered_depth_m": 0.05422801524400711,
+      "difference_m": 7.24777777377783e-09
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.5557219982147217,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_left",
+      "uv": [
+        137,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.0458531379699707,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_left",
+      "uv": [
+        275,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 2.7799456119537354,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784954,
+      "rendered_depth_m": 0.05422806367278099,
+      "difference_m": 4.1180996036838113e-08
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_right",
+      "uv": [
+        3,
+        25
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.08111475620268464,
+      "rendered_depth_m": 0.08114900439977646,
+      "difference_m": 3.42481970918157e-05
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_right",
+      "uv": [
+        305,
+        54
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677895,
+      "rendered_depth_m": 0.0700141042470932,
+      "difference_m": 2.669031425039936e-08
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_right",
+      "uv": [
+        19,
+        106
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267773,
+      "rendered_depth_m": 0.09728541970252991,
+      "difference_m": 5.885014782436304e-08
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_right",
+      "uv": [
+        527,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_right",
+      "uv": [
+        330,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 2.814420700073242,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_right",
+      "uv": [
+        484,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "front_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0800743183765359,
+      "rendered_depth_m": 0.08007432520389557,
+      "difference_m": 6.82735966373027e-09
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_left",
+      "uv": [
+        419,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172848,
+      "rendered_depth_m": 0.06026735156774521,
+      "difference_m": 1.3346016729254284e-08
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_left",
+      "uv": [
+        325,
+        54
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0701106017458342,
+      "rendered_depth_m": 0.0700141116976738,
+      "difference_m": 9.649004816039697e-05
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_left",
+      "uv": [
+        13,
+        106
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267781,
+      "rendered_depth_m": 0.09728547185659409,
+      "difference_m": 6.6960837291629716e-09
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_left",
+      "uv": [
+        535,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_left",
+      "uv": [
+        521,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_left",
+      "uv": [
+        580,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267773,
+      "rendered_depth_m": 0.09728553146123886,
+      "difference_m": 5.290856112949438e-08
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_right",
+      "uv": [
+        34,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677898,
+      "rendered_depth_m": 0.07001412659883499,
+      "difference_m": 4.904205601341527e-08
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_right",
+      "uv": [
+        148,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172853,
+      "rendered_depth_m": 0.060267314314842224,
+      "difference_m": 2.3906886303937114e-08
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_right",
+      "uv": [
+        521,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491785835,
+      "rendered_depth_m": 0.05422806739807129,
+      "difference_m": 4.49062854540605e-08
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.41279295086860657,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_right",
+      "uv": [
+        131,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.6650795340538025,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_right",
+      "uv": [
+        263,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.033649206161499,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_005.npz",
+      "camera": "rear_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267772,
+      "rendered_depth_m": 0.09728545695543289,
+      "difference_m": 2.1597244825866113e-08
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_left",
+      "uv": [
+        68,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677895,
+      "rendered_depth_m": 0.07001406699419022,
+      "difference_m": 1.056258873421978e-08
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_left",
+      "uv": [
+        97,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060267338221728514,
+      "rendered_depth_m": 0.06026732921600342,
+      "difference_m": 9.00572509621167e-09
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_left",
+      "uv": [
+        520,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.05422802249178487,
+      "rendered_depth_m": 0.0542280487716198,
+      "difference_m": 2.6279834926257184e-08
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.5536810755729675,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_left",
+      "uv": [
+        104,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.8558158874511719,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_left",
+      "uv": [
+        208,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.883745551109314,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784954,
+      "rendered_depth_m": 0.05422799289226532,
+      "difference_m": 2.9599519633938254e-08
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_right",
+      "uv": [
+        67,
+        25
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060548304833484855,
+      "rendered_depth_m": 0.06054830923676491,
+      "difference_m": 4.403280053077996e-09
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_right",
+      "uv": [
+        65,
+        55
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07039355765193765,
+      "rendered_depth_m": 0.07039353996515274,
+      "difference_m": 1.768678491165243e-08
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_right",
+      "uv": [
+        31,
+        106
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267773,
+      "rendered_depth_m": 0.09728553891181946,
+      "difference_m": 6.035914172641821e-08
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_right",
+      "uv": [
+        527,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_right",
+      "uv": [
+        436,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_right",
+      "uv": [
+        537,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "front_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.08007431837653589,
+      "rendered_depth_m": 0.08007431775331497,
+      "difference_m": 6.232209193157701e-10
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_left",
+      "uv": [
+        421,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172847,
+      "rendered_depth_m": 0.06026735529303551,
+      "difference_m": 1.7071307034655092e-08
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_left",
+      "uv": [
+        322,
+        54
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07083931052008444,
+      "rendered_depth_m": 0.07068982720375061,
+      "difference_m": 0.00014948331633382606
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_left",
+      "uv": [
+        10,
+        106
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267781,
+      "rendered_depth_m": 0.09728548675775528,
+      "difference_m": 8.205077464684685e-09
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_left",
+      "uv": [
+        533,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_left",
+      "uv": [
+        479,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.9731616973876953,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_left",
+      "uv": [
+        559,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267775,
+      "rendered_depth_m": 0.09728554636240005,
+      "difference_m": 6.780972230946425e-08
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_right",
+      "uv": [
+        11,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677899,
+      "rendered_depth_m": 0.07001400738954544,
+      "difference_m": 7.016723355124377e-08
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_right",
+      "uv": [
+        116,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172851,
+      "rendered_depth_m": 0.060267310589551926,
+      "difference_m": 2.7632176581582346e-08
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_right",
+      "uv": [
+        521,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784864,
+      "rendered_depth_m": 0.054228030145168304,
+      "difference_m": 7.653383440886508e-09
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.4140484035015106,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_right",
+      "uv": [
+        131,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.6676049828529358,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_right",
+      "uv": [
+        263,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.0382665395736694,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_006.npz",
+      "camera": "rear_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267769,
+      "rendered_depth_m": 0.09728546440601349,
+      "difference_m": 1.414666420118671e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_left",
+      "uv": [
+        18,
+        425
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677895,
+      "rendered_depth_m": 0.0700141191482544,
+      "difference_m": 4.159147544424702e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_left",
+      "uv": [
+        80,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.060267338221728514,
+      "rendered_depth_m": 0.060267314314842224,
+      "difference_m": 2.3906886290059326e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_left",
+      "uv": [
+        517,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.05422802249178488,
+      "rendered_depth_m": 0.05422798916697502,
+      "difference_m": 3.3324809856072335e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.5590514540672302,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_left",
+      "uv": [
+        65,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.7120086550712585,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_left",
+      "uv": [
+        130,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.980190098285675,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.054228022491784954,
+      "rendered_depth_m": 0.05422801896929741,
+      "difference_m": 3.5224875447048554e-09
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_right",
+      "uv": [
+        36,
+        25
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06054830483348483,
+      "rendered_depth_m": 0.060548339039087296,
+      "difference_m": 3.4205602468528884e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_right",
+      "uv": [
+        77,
+        55
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07039355765193764,
+      "rendered_depth_m": 0.07039356976747513,
+      "difference_m": 1.2115537489920669e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_right",
+      "uv": [
+        49,
+        106
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267772,
+      "rendered_depth_m": 0.09728547930717468,
+      "difference_m": 7.544969649053712e-10
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_right",
+      "uv": [
+        528,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_right",
+      "uv": [
+        353,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_right",
+      "uv": [
+        496,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "front_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_left",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.08007431837653589,
+      "rendered_depth_m": 0.08007431775331497,
+      "difference_m": 6.232209193157701e-10
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_left",
+      "uv": [
+        387,
+        24
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172855,
+      "rendered_depth_m": 0.06026739999651909,
+      "difference_m": 6.177479053987023e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_left",
+      "uv": [
+        296,
+        54
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07001407755677898,
+      "rendered_depth_m": 0.0700141042470932,
+      "difference_m": 2.6690314222643785e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_left",
+      "uv": [
+        8,
+        106
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0972854785526778,
+      "rendered_depth_m": 0.09728553891181946,
+      "difference_m": 6.035914165702927e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_left",
+      "uv": [
+        532,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_left",
+      "uv": [
+        387,
+        201
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.0072476863861084,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_left",
+      "uv": [
+        513,
+        340
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_left",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        373
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.09728547855267776,
+      "rendered_depth_m": 0.09728549420833588,
+      "difference_m": 1.5655658117119664e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_right",
+      "uv": [
+        318,
+        424
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.07039355765193758,
+      "rendered_depth_m": 0.07039352506399155,
+      "difference_m": 3.258794603611115e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_right",
+      "uv": [
+        68,
+        455
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.06026733822172852,
+      "rendered_depth_m": 0.060267362743616104,
+      "difference_m": 2.4521887583006663e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_right",
+      "uv": [
+        520,
+        479
+      ],
+      "raster_masked": true,
+      "ray_hit": true,
+      "CAD_depth_m": 0.0542280224917849,
+      "rendered_depth_m": 0.0542280375957489,
+      "difference_m": 1.5103964003115866e-08
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_right",
+      "uv": [
+        0,
+        0
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.4103592336177826,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_right",
+      "uv": [
+        146,
+        139
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 0.7119570374488831,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_right",
+      "uv": [
+        292,
+        278
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": 1.0357732772827148,
+      "difference_m": null
+    },
+    {
+      "frame": "frame_007.npz",
+      "camera": "rear_right",
+      "uv": [
+        639,
+        479
+      ],
+      "raster_masked": false,
+      "ray_hit": false,
+      "CAD_depth_m": null,
+      "rendered_depth_m": null,
+      "difference_m": null
+    }
+  ],
+  "scope": "Four safely interior CAD and four non-CAD pixels per camera per saved pose; selected by CAD only. Not exhaustive ray or renderer certification."
+}

@@ -1,0 +1,36 @@
+{
+  "utc": "2026-10-08T14:57:10.963881+00:00",
+  "whole_research_complete": false,
+  "automation_status": "ACTIVE",
+  "external_user_block": false,
+  "current_process_running": false,
+  "active": [],
+  "latest_report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/benchmark_unilateral_bearing_observability_and_ground_contact_20261008.md",
+  "helper_review": "C0I0 six scoped PASS conditional geometry only",
+  "nominal_turn": "REJECT_FIXED_ENDPOINT_OBSERVATION; no physical run",
+  "ground_contact": "GT_NECESSARY_DIAGNOSTIC_NOT_RGB_METHOD; first215/220 contact outside canvas",
+  "next": "Implement test-first timestamped uncertain-bearing store with raw 2D/current calibrated poses; retain historical provenance/TTL and never update observed occupancy/free. Then diagnose the interface against causal installed reference snapshots (not future plans) before one actor candidate. Do not rerun already sealed geometry/ORB/navigation/calibration or alter rejection gates.",
+  "stop_reason": "Concrete continuation recorded while work proceeds; not completion/approval wait.",
+  "original35_NOTRUN": true,
+  "no_Git_push": true,
+  "append_receipts": [
+    {
+      "path": "/home/an/Documents/ChatGPT/球型机器人导航/research_mission.md",
+      "old_bytes": 400998,
+      "old_sha256": "1a7d5b88e58ccb618ab95e06207bdb15c99cc1413aabd272f3e85db146fff9c1",
+      "new_sha256": "e51dc88d59633d193f422fbb9b273dd97dc75278b7acd91c997f44d4221ba8e0"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/progress.md",
+      "old_bytes": 495475,
+      "old_sha256": "30c4175c0c75d4d9594fb492f673750ed1f5d6570401ac4b09f21980f4ed4e4c",
+      "new_sha256": "8291e954a8d935a812653139dc72a74fb955f1f6687320b029efc445aabc5546"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/球型机器人导航/docs/superpowers/plans/2026-10-04-stereo-memory-navigation.md",
+      "old_bytes": 209658,
+      "old_sha256": "f4bd395f9bb3c501d47348da0a24d9388493a30d86a19632a14fe0680585d036",
+      "new_sha256": "8b682962e9d384af766e3384f6a9799eeebe8e5b20f7a25fa7c293929150cac0"
+    }
+  ]
+}

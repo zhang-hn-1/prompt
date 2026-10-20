@@ -1,0 +1,176 @@
+{
+  "utc": "2026-10-17T22:12:52.476634+00:00",
+  "count": 34,
+  "files": [
+    {
+      "path": "analysis.log",
+      "sha256": "29bf69254bf724a7d9fa875b5e659ed9636e04b668df29bd5c7db44b72066f03",
+      "bytes": 316
+    },
+    {
+      "path": "analysis_protocol.json",
+      "sha256": "faa132bf41a648c3d5931fcf52595b90313e9400e9d6fb6ad37954c703be4ea1",
+      "bytes": 2563
+    },
+    {
+      "path": "analysis_status.json",
+      "sha256": "789d29f93753c9e801494c6125afbc64e4139751965757687e78715dc70b9356",
+      "bytes": 390
+    },
+    {
+      "path": "analysis_supervise.py",
+      "sha256": "382c5f01bb3d15d066ef40decff77c7ac3150f1f40b9429b1fd995a25892b65d",
+      "bytes": 1020
+    },
+    {
+      "path": "closure.json",
+      "sha256": "b45751cc805ef98ceee36fcdbc88ab21e5a4c8f08b1568b55acab0de10807805",
+      "bytes": 3478
+    },
+    {
+      "path": "evidence_decode.py",
+      "sha256": "e4bd4a83cf4af1546262350e7891dd49cb7d84f5ca28636a12d5ab61c9b1a823",
+      "bytes": 951
+    },
+    {
+      "path": "failure_analysis.py",
+      "sha256": "ab6f34ff1b9965764f1e5bb50999510d119adcad39ecf602fe7d427638ab9c16",
+      "bytes": 2450
+    },
+    {
+      "path": "failure_analysis_arrays.npz",
+      "sha256": "13ad0f69fc5496c8023b76f9ad6cdc320cda681f3fda918ab43a4b6c0a84f25b",
+      "bytes": 1582
+    },
+    {
+      "path": "failure_analysis_result.json",
+      "sha256": "edddadeb98f11329217c7463f19c15a1e358672603817e6916ab83c5fa9a34f1",
+      "bytes": 1661
+    },
+    {
+      "path": "fixed_flat_cause_and_repair.png",
+      "sha256": "3eeaff69e834ceda95616efcf7a0cdfa26cc664480c705e4730130edbf7641e3",
+      "bytes": 89981
+    },
+    {
+      "path": "fixtures.log",
+      "sha256": "6a16f418712f501533351b960a422ac7e0aa88eee26c885c67f6c94393490c62",
+      "bytes": 775
+    },
+    {
+      "path": "fixtures.py",
+      "sha256": "b505af6be7b6d0a0ad0452caf54eb38ac429e33831ca9feed5478917e73c9e47",
+      "bytes": 3384
+    },
+    {
+      "path": "fixtures_failure_record.json",
+      "sha256": "d09806ef3c5a6b056a143cccba211a12e142c24a785ad2157da705dfdb058460",
+      "bytes": 715
+    },
+    {
+      "path": "fixtures_status.json",
+      "sha256": "e4f54c0026be2ccc23fc4bb41afce807af3439125f4d7807e1c3dddc6fb3a0d5",
+      "bytes": 396
+    },
+    {
+      "path": "independent_review.json",
+      "sha256": "bb1cd5a1264eb21a3fb91bdf1919467b77d09c6c076aba15e69ae010946fb33c",
+      "bytes": 3034
+    },
+    {
+      "path": "ledger.json",
+      "sha256": "fed16c89c4560f0ffd553606cb7cdbf5533fb0e89bc05cc3a97689225d059539",
+      "bytes": 2936
+    },
+    {
+      "path": "predict.py",
+      "sha256": "acab25b39187eaa25b3b9b4983dc6fceadded8f4fc5b77160dfb2e76ba2c785c",
+      "bytes": 4366
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "4c79a5b5c4deb0d620ddf717769c60f3d97a7a19b4442f646c5054763a90045c",
+      "bytes": 14513
+    },
+    {
+      "path": "protocol_preimplementation.json",
+      "sha256": "1591c78f851527f1d65174198539bc646585ebfe7512f8805b0b5d5f0966ca6a",
+      "bytes": 13449
+    },
+    {
+      "path": "red.log",
+      "sha256": "4569f640c3b2ef604fd4de63410a2982093108e9a07ac86c1a22de3dcee5e733",
+      "bytes": 487
+    },
+    {
+      "path": "red_check.py",
+      "sha256": "576d0c9511fe01cd67746cacf3d4f05f0524981f934bab191b73b558b8ee73a1",
+      "bytes": 158
+    },
+    {
+      "path": "red_status.json",
+      "sha256": "486e4b18a1af4105743e9d880001427f325b5f82d5594f2717bf8065641f01f8",
+      "bytes": 396
+    },
+    {
+      "path": "reference.py",
+      "sha256": "94a51d7e6470ac9d5bdb22298ddccbc54f620b1abfc38830b2282d296405d362",
+      "bytes": 3884
+    },
+    {
+      "path": "reference_red.py",
+      "sha256": "1546f50e82d42f35a945bb7701e760f2a56e0e40b111ae7e849afe77bbe85d62",
+      "bytes": 419
+    },
+    {
+      "path": "render.py",
+      "sha256": "d6413f4e8618629db6a004c4ea32c430b0b6639fca3a84286870a6be1cec47d3",
+      "bytes": 1506
+    },
+    {
+      "path": "repair.log",
+      "sha256": "4e8b77c6776c65d718f450a91e33dbf164563a473185b46b1656426b5779321b",
+      "bytes": 351
+    },
+    {
+      "path": "repair_arrays.npz",
+      "sha256": "549a977bbad5c391d212f6c3b19aac9bdafe72cbcbab74c641455ac6f9a0e95b",
+      "bytes": 1299
+    },
+    {
+      "path": "repair_check.py",
+      "sha256": "2c2773ee880f9040d22ef5f82233b5dddea39ed1aeef9e8cb9bac9b6ce3655af",
+      "bytes": 2443
+    },
+    {
+      "path": "repair_protocol.json",
+      "sha256": "0246fc07ce41baea75e55bd0c6d2530baa46bf9f7f9060311540892377e017ae",
+      "bytes": 2980
+    },
+    {
+      "path": "repair_result.json",
+      "sha256": "60be69c2996e0aeeab4a23298b0939aaef0018340468c98dee38bd98387945f4",
+      "bytes": 1110
+    },
+    {
+      "path": "repair_status.json",
+      "sha256": "35dd664bc7e04f536317b184bdad1c85c0d617f03d9da98736056cc96f177411",
+      "bytes": 390
+    },
+    {
+      "path": "repair_supervise.py",
+      "sha256": "2af929e025c18b585af964f2659b42107f95d824823f29235a39c3cd8bf89563",
+      "bytes": 963
+    },
+    {
+      "path": "score.py",
+      "sha256": "d13e5dd646ec1a5bbfaa380a91169da05a05728d2b24571881802495bc1e20c7",
+      "bytes": 6650
+    },
+    {
+      "path": "supervise.py",
+      "sha256": "18babfd1e17616ea79967ffe5a1c152da4e3b9d4d5a2b1a4b27f8f0aad0b43f1",
+      "bytes": 1658
+    }
+  ]
+}

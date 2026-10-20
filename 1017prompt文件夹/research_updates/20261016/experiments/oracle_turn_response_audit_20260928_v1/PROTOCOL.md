@@ -1,0 +1,7 @@
+# Read-only turn-response audit
+Use all four prior fixed-reference pacing runs unchanged. Historical design/diagnostic data, not fresh held-out.
+Identify first sustained large auxiliary request reversal after completed first direction handoff, considering tracking records with XY speed>=.15m/s. Arm on three consecutive requests at least20deg in one sign; trigger three consecutive requests at least10deg of opposite sign. Report first sample of three. No episode/time-specific trigger.
+For same event record smoothed/applied/actual auxiliary reaching opposite10deg (three physics samples), actual zero crossing, speed, offline course curvature and error. All timings descriptive, no acceptance gate changes. Do not equate joint sign with stopping eligibility or root yaw with geometric curvature.
+Geometry estimator: chords spanning .5s before/after each sample, signed angle between chords divided by average chord length. Valid only when both chord lengths>=.075m. Centered offline estimator reads future for measurement only, never a policy input; invalid values null.
+Reference audit: compare protocol angle differences at same-direction primitive boundaries against available nominal next primitive travel time using frozen V1. Target slew30deg/s and .30rad/s supervisor are separate; .30 is NOT a proven actual physical hard rate bound. This is a warning proxy, not proof of path infeasibility.
+No controller modifications, no parameters scans, no fresh simulation if evidence does not isolate a defensible single correction.

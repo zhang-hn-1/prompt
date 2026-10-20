@@ -1,0 +1,26 @@
+[
+  {
+    "case": "limit060_0.5",
+    "limit": "0.60",
+    "returncode": 0,
+    "wall_s": 41.80805063247681
+  },
+  {
+    "case": "limit060_-1.5",
+    "limit": "0.60",
+    "returncode": 0,
+    "wall_s": 36.6465425491333
+  },
+  {
+    "case": "limitoff_0.5",
+    "limit": "none",
+    "returncode": 0,
+    "wall_s": 37.742021799087524
+  },
+  {
+    "case": "limitoff_-1.5",
+    "limit": "none",
+    "returncode": 0,
+    "wall_s": 39.44346356391907
+  }
+]

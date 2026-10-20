@@ -1,0 +1,96 @@
+{
+  "LR": {
+    "eligible": true,
+    "repeat": {
+      "max_xy_error_m": 0.0,
+      "max_yaw_error_deg": 0.0,
+      "max_aux_error_deg": 0.0,
+      "max_main_speed_error_rad_s": 0.0,
+      "accepted_exact_state_repeatability": true
+    },
+    "instant_V1_speed_m_s": 0.5577101248327805,
+    "instant_V1_curvature_1_m": 0.5,
+    "horizons": {
+      "0.5": {
+        "instant_xy_error_m": 0.03125402159430642,
+        "measured_displacement_m": 0.2775283086984018,
+        "measured_aux_deg": 9.642629623413086
+      },
+      "1.0": {
+        "instant_xy_error_m": 0.10813410818671729,
+        "measured_displacement_m": 0.5475201213478709,
+        "measured_aux_deg": 2.33634614944458
+      },
+      "1.5": {
+        "instant_xy_error_m": 0.23829485604821238,
+        "measured_displacement_m": 0.8187905809019168,
+        "measured_aux_deg": -4.5275187492370605
+      },
+      "2.0": {
+        "instant_xy_error_m": 0.4350914896420139,
+        "measured_displacement_m": 1.0920770727516063,
+        "measured_aux_deg": -11.540323257446289
+      },
+      "4.0": {
+        "instant_xy_error_m": 1.3987130404618093,
+        "measured_displacement_m": 2.2158412514676566,
+        "measured_aux_deg": -19.853485107421875
+      }
+    },
+    "start_aux_deg": 14.776939392089844,
+    "start_main_rad_s": 1.4747153520584106,
+    "end_local_xy_m": [
+      2.205171900501209,
+      -0.21718503849399295
+    ],
+    "end_body_yaw_delta_deg": 14.184544300893359,
+    "scope": "exact state reproducibility only; not generalization or navigation validation"
+  },
+  "RL": {
+    "eligible": true,
+    "repeat": {
+      "max_xy_error_m": 0.0,
+      "max_yaw_error_deg": 0.0,
+      "max_aux_error_deg": 0.0,
+      "max_main_speed_error_rad_s": 0.0,
+      "accepted_exact_state_repeatability": true
+    },
+    "instant_V1_speed_m_s": 0.5512258514118993,
+    "instant_V1_curvature_1_m": -0.5,
+    "horizons": {
+      "0.5": {
+        "instant_xy_error_m": 0.03898287475110608,
+        "measured_displacement_m": 0.27806720010522606,
+        "measured_aux_deg": -14.077042579650879
+      },
+      "1.0": {
+        "instant_xy_error_m": 0.11835779379746827,
+        "measured_displacement_m": 0.5468636511096089,
+        "measured_aux_deg": -6.474572658538818
+      },
+      "1.5": {
+        "instant_xy_error_m": 0.24613319674788678,
+        "measured_displacement_m": 0.8183953968727781,
+        "measured_aux_deg": 1.314706802368164
+      },
+      "2.0": {
+        "instant_xy_error_m": 0.44404897005691846,
+        "measured_displacement_m": 1.0926903465345617,
+        "measured_aux_deg": 8.835521697998047
+      },
+      "4.0": {
+        "instant_xy_error_m": 1.4752576849675165,
+        "measured_displacement_m": 2.214958611887374,
+        "measured_aux_deg": 14.65079402923584
+      }
+    },
+    "start_aux_deg": -19.26314926147461,
+    "start_main_rad_s": 1.4741319417953491,
+    "end_local_xy_m": [
+      2.191599268659241,
+      0.3208337544372809
+    ],
+    "end_body_yaw_delta_deg": -9.5484288725939,
+    "scope": "exact state reproducibility only; not generalization or navigation validation"
+  }
+}

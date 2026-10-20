@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-10T00:30:36.531857+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_forward_course_candidate_running_continuation_v98.json",
+  "supersedes_sha256": "925d7ab8790d8af8f5eb7324ffa5ec4f717624f7e45dc8a7b64cb24224e6fc16",
+  "whole_mission_complete": false,
+  "state": "ACTUAL_NAVIGATION_PAIR_REJECTED_NEXT_MEMORY_RAY_PREFLIGHT_PENDING",
+  "actual_physical_process_running": false,
+  "physical_budget_completed": 2,
+  "retry": 0,
+  "new_fit": 0,
+  "navigation_assessment": "forward_course_geometry_e1_assessment_v1.json",
+  "navigation_review": "forward_course_geometry_e1_closure_review_v1.json",
+  "new_next_entry": "memory_temporal_ray_probe_next_entry_v1.json",
+  "new_probe": "memory_temporal_ray_label_probe_v1.json",
+  "review_pending": "memory_temporal_ray_label_probe_review_v1.json",
+  "stop_reason": "Current execution context handoff after multiple actual experiments and full navigation closure; remaining source/mask/visibility preflight review and new target/input/budget preparation have exact saved entry. No user blocker, no physics/fit running."
+}

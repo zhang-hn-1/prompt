@@ -1,0 +1,105 @@
+{
+  "metrics": {
+    "0002_real": {
+      "event_block": 79,
+      "anchor": 3,
+      "segment": [
+        2,
+        42
+      ],
+      "rms_m": 0.2541479318299893,
+      "peak_m": 0.3965853087111593,
+      "entry_error_m": 0.19623620532841052,
+      "exit_error_m": 0.3965853087111593,
+      "progress_m": 1.2612726219281662,
+      "start_s_m": 0.17160055124426438,
+      "end_s_m": 1.4328731731724307,
+      "reference_segment_length_m": 11.977554936123976,
+      "entry_root_heading_error_rad": 0.731092666771747,
+      "protocol_clip_count": 80,
+      "checkpoint_1m_reached": false,
+      "checkpoint_2m_reached": false
+    },
+    "0002_aligned": {
+      "event_block": 79,
+      "anchor": 3,
+      "segment": [
+        2,
+        42
+      ],
+      "rms_m": 0.08571383407814241,
+      "peak_m": 0.1432821704264209,
+      "entry_error_m": 4.163336342344337e-17,
+      "exit_error_m": 0.10397709792656339,
+      "progress_m": 1.8933116148419875,
+      "start_s_m": 0.29881534200617144,
+      "end_s_m": 2.192126956848159,
+      "reference_segment_length_m": 11.977554936123976,
+      "entry_root_heading_error_rad": -4.809364462232679e-09,
+      "protocol_clip_count": 24,
+      "checkpoint_1m_reached": true,
+      "checkpoint_2m_reached": false
+    },
+    "0004_real": {
+      "event_block": 90,
+      "anchor": 4,
+      "segment": [
+        3,
+        47
+      ],
+      "rms_m": 0.33571398294013116,
+      "peak_m": 0.6159544687738205,
+      "entry_error_m": 0.18785125738704286,
+      "exit_error_m": 0.6159544687738205,
+      "progress_m": 1.0212804325083729,
+      "start_s_m": 0.18263061678981793,
+      "end_s_m": 1.2039110492981908,
+      "reference_segment_length_m": 13.178910623653794,
+      "entry_root_heading_error_rad": 0.7738280609694517,
+      "protocol_clip_count": 80,
+      "checkpoint_1m_reached": false,
+      "checkpoint_2m_reached": false
+    },
+    "0004_aligned": {
+      "event_block": 90,
+      "anchor": 4,
+      "segment": [
+        3,
+        47
+      ],
+      "rms_m": 0.09298522366131594,
+      "peak_m": 0.1947735706578317,
+      "entry_error_m": 2.7755575615628914e-17,
+      "exit_error_m": 0.08896164039792774,
+      "progress_m": 1.7447452905551628,
+      "start_s_m": 0.29881534200617105,
+      "end_s_m": 2.043560632561334,
+      "reference_segment_length_m": 13.178910623653794,
+      "entry_root_heading_error_rad": -1.3527509334920751e-08,
+      "protocol_clip_count": 51,
+      "checkpoint_1m_reached": true,
+      "checkpoint_2m_reached": false
+    }
+  },
+  "parity": {
+    "0002": {
+      "position": true,
+      "proprio": true,
+      "quaternion": true,
+      "action": true,
+      "entry_full_snapshot_equal": true,
+      "physical_and_policy_state_untouched_by_alignment": true,
+      "historical_B0_position_max_delta_m": 0.0
+    },
+    "0004": {
+      "position": true,
+      "proprio": true,
+      "quaternion": true,
+      "action": true,
+      "entry_full_snapshot_equal": true,
+      "physical_and_policy_state_untouched_by_alignment": true,
+      "historical_B0_position_max_delta_m": 0.0
+    }
+  },
+  "interpretation": "Alignment removes entry XY/root-yaw error only. Dynamics, joints and smoother are unchanged. Does not establish an ideal dynamically settled state."
+}

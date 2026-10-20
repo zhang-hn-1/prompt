@@ -1,0 +1,66 @@
+{
+  "action_protocol_id": "ball_action_v2_aux30",
+  "benchmark_version": "v1",
+  "episodes": [
+    {
+      "classification_evidence": {
+        "scope": "fresh whole-sequence acquisition only, not formal scene classification/clearance/oracle certification",
+        "parent_condition_historical_evidence": {
+          "corridor_intersection": false,
+          "corridor_path_length_m": 0.0,
+          "corridor_width_m": null,
+          "detour_ratio": 1.3389020055779868,
+          "euclidean_distance_m": 6.6000000000000005,
+          "goal_clearance_m": 1.2000000000000002,
+          "line_is_free": false,
+          "nearby_obstacle_count": 1,
+          "oracle_path_length_m": 8.836753236814713,
+          "start_clearance_m": 1.2000000000000002
+        },
+        "parent_condition_historical_human_review": {
+          "notes": "Reviewed frozen single-obstacle detour, inflated map and endpoint clearance.",
+          "reviewer": "project_owner",
+          "status": "approved"
+        },
+        "parent_oracle_path_length_m_legacy_parser_field": 8.836753236814713,
+        "oracle_path_length_m_scope": "retained historical parent field for parser compatibility; no new oracle computation, not used for SPL or admission",
+        "new_start_euclidean_recomputed": true,
+        "initial_gauge_and_flat_ground_prior_not_observation": true
+      },
+      "difficulty": "E1",
+      "episode_id": "action_video_fresh_e1_offset_v1",
+      "euclidean_distance_m": 6.6017043253996155,
+      "goal_position_world_m": [
+        3.300000005960465,
+        5.960465010446114e-09,
+        0.45
+      ],
+      "human_review": {
+        "status": "needs_adjustment",
+        "reviewer": "experimental_manifest_not_human_certified",
+        "notes": "Fresh offset acquisition authorized as experimental TaskH. Parent human approval does not certify this new start. Not formal benchmark admission."
+      },
+      "occupancy_sha256": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7",
+      "oracle_path_length_m": 8.836753236814713,
+      "scene_sha256": "d6236dea995f04e3a81fb90dcde4bde6b63841c283cc5b2470aee8cda34c8634",
+      "scene_uri": "${SCENE_ROOT}/benchmark_e1/e1_detour.usda",
+      "schema_version": "benchmark_episode_v1",
+      "seed": 9101,
+      "split": "golden",
+      "start_position_world_m": [
+        -3.2999999940395353,
+        -0.14999999403953498,
+        0.45
+      ],
+      "start_quaternion_world_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "localization_source": "perfect_localization",
+  "manifest_sha256": "d9431f5ac83c7764ab098ae5be531c97bdb26af566e3e9f21823ed36fa7bdafb",
+  "schema_version": "ball_pointgoal_benchmark_v1"
+}

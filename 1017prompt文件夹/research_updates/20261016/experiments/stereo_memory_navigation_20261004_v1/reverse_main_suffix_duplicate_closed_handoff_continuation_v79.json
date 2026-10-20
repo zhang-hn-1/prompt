@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-09T19:04:23.994437+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_suffix_duplicate_handoff_continuation_v78.json",
+  "supersedes_sha256": "354a5df839d3a16d5fa6fa5d5e73b8ea1c7ec26d6937ff4f8033d3cdf32046f4",
+  "whole_mission_complete": false,
+  "stage": "suffix_duplicate_closed_context_handoff",
+  "physics_running": false,
+  "fit_running": false,
+  "review": "suffix_completion_semantics_review_v1.json",
+  "stop_reason": "current_context_execution_limit; concrete next entry preserved in v78",
+  "next_entry": "Read reverse_main_suffix_duplicate_handoff_continuation_v78.json and perform specified existing-source primitive/state-key lineage check without solver rerun",
+  "duplicate_control_hypothesis": "endpoint_tail_retention_v1",
+  "new_physical_budget": 0,
+  "external_blocker": false
+}

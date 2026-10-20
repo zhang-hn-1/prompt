@@ -1,0 +1,39 @@
+{
+  "utc": "2026-10-09T13:52:24.488951+00:00",
+  "stage": "native_rolling_E0_candidate_actual_started",
+  "supersedes": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/rolling_native_b0_started_continuation_v30.json",
+  "superseded_sha256": "9688fb95d5e80848c4b39122d069110dadb3e8d6695faa680aa317d74582abde",
+  "physics_running": true,
+  "whole_mission_complete": false,
+  "session_id": 74925,
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T13:52:03.806380+00:00",
+    "parent_pid": 472110,
+    "child_pid": 472111,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "baseline_status": {
+    "status": "finished",
+    "start_utc": "2026-10-09T13:47:38.676337+00:00",
+    "parent_pid": 466978,
+    "child_pid": 466979,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-09T13:51:33.911101+00:00"
+  },
+  "baseline_all2213_seals_verified": true,
+  "budget_remaining": {
+    "b0": 0,
+    "paced": 0,
+    "retry": 0
+  },
+  "next": "Supervise74925 no duplicate, native frozen assessor after seal, independent closed review. Remaining four coverage sequences prepared/prelaunchC0I0; launch only after nativeE0 closure. No action/model retune."
+}
