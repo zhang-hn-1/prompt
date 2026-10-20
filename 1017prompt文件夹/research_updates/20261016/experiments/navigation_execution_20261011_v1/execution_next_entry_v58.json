@@ -1,0 +1,41 @@
+{
+  "stage": "ordered_scanline_joint_utf8_recovery_running",
+  "updated_utc": "2026-10-13T09:09:22.158514+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v57.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1",
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-13T09:07:45.196992+00:00",
+    "parent_pid": 2037979,
+    "child_pid": 2037980,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "supervisor_exec_session": 8285,
+  "budget": {
+    "candidate": "ordered_scanline_joint_depth_v1",
+    "status": "source_generation_recovery_registered",
+    "utc": "2026-10-13T08:39:25.404431+00:00",
+    "physical_cap": 4,
+    "physical_used": 0,
+    "fit": 0,
+    "recovery_used": 1,
+    "parent_pid": 2037979,
+    "source_hashes": {
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/protocol.json": "e5646f73e37e4795443ac5d9b565b801edf85214765c75c6911fdc5cb4ba6a26",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/joint.py": "730f1ca525ba42fda59c44e61db3f15db2e2e000d34d84aa848ba4b02860ddbc",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/frozen_cost.py": "76b6bd1db9ffff9de0e1c9dc2c1c0472d7f1cec7e20e0250ef09ba60a149a4ac",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/generate.py": "be5e3ed1127938fc81ac2b3e65f2f2b76ea626a1b82ddce67516cc5f78fee7be",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ordered_scanline_depth_20261013_v1/common.py": "fc8d1b5eb2a3e3c31e82d7dcfcf867b3a5e75a80d9e4a3ea59abc7a1d4cd3ab8"
+    }
+  },
+  "summary": "v58联合扫描线源资格首次运行在三完整组后因宿主默认ASCII读取UTF8配置退出，原runtime_failed和1653个完整前缀输出保留；不能记性能失败。独立1653输出/5科学源身份核验后，唯一恢复仅设PYTHONUTF8=1，算法/协议/生成代码均不变。新宿主2037979/2037980和exec8285运行中，既有前三组预测复用，投影和地图仍重新核对不覆盖旧输出；GT未读。",
+  "next_action": "监督既有2037979/2037980与exec8285，完成全部905对封存且正常退出后运行launch_score.py，独立复核完整源资格。恢复已用1/1，不再派生恢复；失败需如实交接，不写性能结论。",
+  "stop_reason": null,
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

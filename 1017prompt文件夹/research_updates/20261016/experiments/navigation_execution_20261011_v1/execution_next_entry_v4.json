@@ -1,0 +1,34 @@
+{
+  "stage": "heading_rate_E1_rejected_closed_roadmap_tasks1and2_complete",
+  "candidate_closed": true,
+  "classification": "measured_navigation_reject",
+  "review": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/independent_actual_closure_review_v1.json",
+  "report": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/report_final_v1.md",
+  "actual_sequence_budget_consumed": 2,
+  "actual_sequence_budget_remaining": 0,
+  "startup_failures_preserved": 1,
+  "unique_environment_recovery_consumed": true,
+  "no_retry": true,
+  "running_processes": false,
+  "estimated_pose_admission": false,
+  "strict_visual_admission": false,
+  "full_causal_claim": false,
+  "completed_roadmap_tasks": [
+    1,
+    2
+  ],
+  "next_task": 3,
+  "next_actions": [
+    "Reuse existing12condition matrix from remaining_phase_evidence_index_v1.json; no retained new feedback candidate, so do not launch candidate estimated-pose tests.",
+    "Review existing risk-memory ablation protocol/identities/raw source and actual request eligibility evidence; retain fair-source limitations. Do not authorize new physics automatically.",
+    "For learning, define independent target and sequence coverage or explicitly conclude insufficient design/data qualification; old fit/query/collection budgets remain closed.",
+    "Build authoritative baseline/benchmark deliverable with separate reliable-navigation and learning-increment status."
+  ],
+  "not_allowed": [
+    "Repeat or tune heading-rate candidate",
+    "Reopen dense source, course geometry, episodic retrieval or old model budgets",
+    "Treat benchmark negative-result delivery as reliable navigation completion",
+    "Create duplicate automation"
+  ],
+  "whole_mission_complete": false
+}

@@ -1,0 +1,7 @@
+{
+  "stage": "original_four_monocular_cameras_identity_required",
+  "parent_entry": "execution_next_entry_v83.json",
+  "summary": "用户明确实际机器人有四台固定单目：前置两台、后置两台。此事实纠正v83“原有两台同朝向相机即全部配置”的错误，固定相机位置/朝向/光学/标定约束仍有效。不得移动、转向、改变光学或自行猜设后相机坐标。正确方向是四路原装RGB分别估计，按各自真实标定与当前IMU投影到统一BEV，保留前左/前右/后左/后右来源、重叠冲突与未知；四台不自动等于360度覆盖。当前只读核对所用Rotunbot_wheel.usd无UsdGeom.Camera节点，collect_data_dubins.py动态创建并接入cam_left/cam_right两路；这说明现有采集接口不完整，不能否定用户四相机硬件事实，也不能把旧两路实验冒称四路结果。已询问四相机安装图/配置/标定所在文件；真实几何缺失时不猜位置、不派新仿真，可继续只读定位真实配置及沿用旧两路结果作明确局限的诊断。v78-v82改布局结果继续历史封存，不作为原四相机覆盖证据；v77模型拒绝不变，旧预算不重开。下一优先建立真实四相机身份/原有标定/现有RGB接口对应；来源确认后仅补采集与算法，不改安装。无新增物理/拟合，原项目只读，可靠导航/学习增量未成立，automation原id/每小时/ACTIVE保持。",
+  "running_experiments": [],
+  "whole_complete": false
+}

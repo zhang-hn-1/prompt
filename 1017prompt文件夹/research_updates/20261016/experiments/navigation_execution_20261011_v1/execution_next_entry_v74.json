@@ -1,0 +1,12 @@
+{
+  "stage": "dual_monocular_bev_direction_authorized",
+  "parent_entry": "execution_next_entry_v73.json",
+  "updated_utc": "2026-10-14T16:10:24.868861+00:00",
+  "user_direction": "两个单目独立估计障碍，经标定和IMU在BEV坐标融合；重新启用原定时任务。",
+  "next_action": "先核相机互补/重叠及单目米制尺度/几何资格，冻结唯一预训练米制模型和独立BEV消费者后完整同输入验证；合格才新预算实际导航。",
+  "fit": 0,
+  "physical": 0,
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

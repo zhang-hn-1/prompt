@@ -1,0 +1,37 @@
+{
+  "stage": "pretrained_stereo_bev_official_weights_download_running",
+  "updated_utc": "2026-10-13T15:58:29.541244+00:00",
+  "parent_entry": "execution_next_entry_v67.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/pretrained_stereo_bev_20261013_v1",
+  "summary": "v68按用户BEV优先选定标准FoundationStereo ViT-large官方23-51-11未微调权重，区别旧Fast-FoundationStereo历史测试/失败adapter，不重开旧预算。官方源码commit6e8806816b533e4d13ddbb95ffa907b797060a62已获取，科研非商用许可核对，纯模型依赖导入通过；原双目原生rotate90/LR1.5/CAD/paired-height/nativepose/风险消费者回放接口已接好，但尚未运行模型或BEV评分。",
+  "next_action": "首先监督现有权重下载exec78210/host2482594(parent)/2482596(child)，不要重复下载/派发。官方配置已499bytes，权重part约62MiB且在增长，7分钟约62MiB；完成后核权重SHA和官方cfg/strictstate身份，冻结最终模型封存，再作一个有界GPU模型运行/显存/时延接口检查。之后完善冻结BEV可见目标精确召回/位置/错误通道起点/长期/地面/覆盖评分器，完整7开发组1267对预测与6300同轨迹地图先seal后GT评分，附原16阻塞点和全序列灾难误差。源码/接口准备不能代替研究结果，不准仅凭import启动导航。源和BEV门槛合格才新cap<=4含同版B0与fresh90秒验证；失败不微调/扫参/换网救分。下载失败属于外部获取不可用，不是模型性能失败；原部分zip超时和未安装可视化导入记录与模型科学预算分开。",
+  "budget": {
+    "fit": 0,
+    "physical_used": 0,
+    "physical_cap": 4,
+    "source_inference_used": 0,
+    "recovery_used": 0,
+    "recovery_cap": 1,
+    "launch_admitted": false
+  },
+  "processes": {
+    "running_physics": [],
+    "weight_download_exec": 78210,
+    "weight_download_host_parent": 2482594,
+    "weight_download_host_child": 2482596,
+    "collected_exec": [
+      19542,
+      13106,
+      71315,
+      4568,
+      31486,
+      91253,
+      91814,
+      1493
+    ]
+  },
+  "stop_reason": "实际外部权重下载速度限制，文件持续增长；进程保持运行继续监督，未做推理/评分/导航，不是性能结论或整体完成。",
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

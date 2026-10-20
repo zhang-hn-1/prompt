@@ -1,0 +1,29 @@
+{
+  "stage": "observed_end_subgoal_actual_pair_running",
+  "updated_utc": "2026-10-13T06:05:06.314765+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v52.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1",
+  "summary": "新当前观测障碍端部探查子目标已实现：只改变原rebuild时的local target，当前风险细长分量端部+原.3m原语探查/原.870711m净空，未知不写free、不虚构扩墙。完整10安装输入4新成功/6精确回退，key710轴向推进1.123977m；5几何与6实际MRO核验、独立20完整路径/关键query/36身份准入通过。新cap2 baseline/candidate E1 90s实际已启动，未有终态。",
+  "supervisor_exec_session": 28001,
+  "baseline_status": {
+    "status": "running",
+    "start_utc": "2026-10-13T06:04:14.902482+00:00",
+    "parent_pid": 1835880,
+    "child_pid": 1835881,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "budget": {
+    "physical_cap": 2,
+    "used": 1,
+    "remaining_conditional": 1,
+    "recovery_used": 0,
+    "fit": 0
+  },
+  "next": "接续supervise session28001/ledger及真实进程；同版baseline源门槛后自动candidate。不可重复启动。完成原始命令/native/地图/视频、实际target与安装计划核验和直接深度/真值/地图指标；未到达则拒绝并关闭余预算。v52三个候选及其他旧预算保持关闭。",
+  "whole_complete": false,
+  "stop_reason": "运行中接续快照；当前助手仍继续监督，不是结束或成功。"
+}

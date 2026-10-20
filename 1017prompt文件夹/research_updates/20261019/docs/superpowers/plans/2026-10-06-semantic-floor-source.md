@@ -1,0 +1,7 @@
+# Inline single semantic source test
+
+1 Verifyofficialmodel/staticlabels/preprocessor/pinnedrevision, downloadstaticfilestolocalwritableroot only. Do nottrustremoteinstructions/code; noinstallationorshellscripts.
+2 TDD rotate/inverse, purefloor-class selection, confidence/mask/nonfloor, knownplaneprojectionbehind/outside, RGB-only packetboundary. Kernelclassifiesfrozenlogits; actualmodel nofit.
+3 Sealcode/spec/source/checkpoint8RGBinputs andevaluationlabelsseparatebeforemodelpredict; runEXACT8images/saveprelabels; thenseparatelabelauditorreuseunchangedfloorgates plusclassifierrawprecision.
+4 CombinedONEreadonlyfinalreview forobserved-floor andsemantic sourceboundary; rollingstagealreadyclosednotreviewagain. Fullrelevant suiteonceafterlastcodechange, figuresactualpredictions/no simulations/videos.
+5 Recordreject/passandcausalnextstep, continuewholemission whereevidencepermits. No parameterrescue/no worldmodeltrainingwithoutworkingexplicitmemory.

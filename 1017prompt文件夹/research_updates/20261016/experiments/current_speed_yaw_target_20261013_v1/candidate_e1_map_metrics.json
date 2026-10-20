@@ -1,0 +1,25 @@
+{
+  "scene": "candidate_e1",
+  "terminal": {
+    "termination": "timeout90",
+    "actions": 900,
+    "time_s": 89.99999798834324,
+    "budget_s": 90.0,
+    "true_goal_xy_threshold_m": 0.2,
+    "not_original35": true,
+    "not_causal_navigation_AB": true
+  },
+  "accepted_point_instances": 235338,
+  "truth_valid_instances": 200353,
+  "truth_valid_fraction": 0.851341474814947,
+  "floor_false_instances": 579,
+  "floor_false_fraction": 0.002889899327686633,
+  "position_error_p50_m": 0.024298666909905436,
+  "position_error_p90_m": 0.10025327593094528,
+  "final_risk_cells": 235,
+  "older10s_cells": 147,
+  "farther015m_reference_cells": 24,
+  "limits": "Map reference is existing vertical_max_body_band occupancy (not exact 3D surface). 0.15m cell-centre tolerance only evaluation; no online change. No full-image recall. Accepted-point metrics exclude invalid truth.",
+  "older10s_far_reference_cells": 18,
+  "recent_far_reference_cells": 6
+}

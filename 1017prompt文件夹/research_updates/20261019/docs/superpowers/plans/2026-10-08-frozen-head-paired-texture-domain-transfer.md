@@ -1,0 +1,7 @@
+# Conditional frozen-head paired-texture domain transfer
+
+Old generic-height frozen-head transfer remains NOTRUN because G pose/source/navigation failed. This independent case may execute only after ONE fresh paired-texture whole run closes with all original point gates, predeclared .015/.035/2 native pose, collision-free true goal entry, exact execution/map/request reconstruction and future-prefix tests. No gate, fit, network, camera, scene, PID or planner change.
+
+Use exactly frozen Mmem1.pt/original 21-feature processor/.5 threshold/35s CellMemory plus original10s PointSupportMap comparator. All current-past RGB/NN paired points/nativeposes and known preceding requests only; no simulator future/labels read by predictor. Seal all whole-sequence predictions and source/input SHA before independent static2D proxy scoring. Old weights/protocol/original source identities must remain exact. Same known fixture, eligible cells only; no whole3D/free/novel-scene claim.
+
+Existing gates: precision>=.95, recall>=.80, TP>=25, FP and FN no worse than explicit-memory comparator. Pass only eligible-proxy transfer, not isolated learned-weight benefit because35s vs10s retained ashistoricalconfound. No training/newarchitecture/secondcandidate/threshold sweep. Old far/near/D3 learned-head rejections unchanged. If any prerequisite or transfer gate fails, reject and do not admit learned head to online control or original35E0/E1/E2.

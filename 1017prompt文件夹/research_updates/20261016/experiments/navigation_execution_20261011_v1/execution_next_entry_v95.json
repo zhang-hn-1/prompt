@@ -1,0 +1,231 @@
+{
+  "version": 95,
+  "created_utc": "2026-10-15T17:55:06.787375+00:00",
+  "root": "experiments/contact_boundary_source_20261016_v1",
+  "status": "complete_four_camera_trajectory_contact_source_rejected_before_fit",
+  "fixed_camera_root": "experiments/user_fov_position_only_20261015_v1",
+  "fixed_camera_scope": "Accepted position/FOV/orientation/resolution/lighting unchanged; simulation nominal calibration, not measured hardware calibration",
+  "acquisition": {
+    "complete": true,
+    "termination": "request_program_complete",
+    "frames": 110,
+    "images": 440,
+    "native_IMU_packets": 2716,
+    "request_blocks": 543,
+    "time_s": 54.29999878630042,
+    "max_pair_error": 3.422854880059934e-08,
+    "four_video_frame_counts": {
+      "front_left": 110,
+      "front_right": 110,
+      "rear_left": 110,
+      "rear_right": 110
+    },
+    "all_input_source_frame_SHA_verified": true,
+    "clock_and_causal_estimated_pose_checks": true,
+    "model": 0,
+    "fit": 0,
+    "navigation": 0
+  },
+  "full_target_grid_instances": 11652,
+  "aggregate": {
+    "oracle": {
+      "prediction_cells": 2696,
+      "target_cells": 11652,
+      "correct": 2696,
+      "recovered": 4842,
+      "precision": 1.0,
+      "recall": 0.4155509783728115,
+      "position_p90_m": 0.0,
+      "contact_point_position_p90_m": 0.014642539580971451
+    },
+    "native": {
+      "prediction_cells": 2618,
+      "target_cells": 11652,
+      "correct": 2544,
+      "recovered": 4646,
+      "precision": 0.9717341482047365,
+      "recall": 0.39872983178853416,
+      "position_p90_m": 0.10000000000000142,
+      "contact_point_position_p90_m": 0.14123096063320761
+    }
+  },
+  "gates": {
+    "oracle": {
+      "precision": true,
+      "recall": false,
+      "position": true,
+      "every_frame_recall": false,
+      "every_frame_precision": true,
+      "every_frame_position": true
+    },
+    "native": {
+      "precision": true,
+      "recall": false,
+      "position": true,
+      "every_frame_recall": false,
+      "every_frame_precision": false,
+      "every_frame_position": false
+    }
+  },
+  "visible_category_coverage": {
+    "oracle": {
+      "base_on_floor": {
+        "target": 0,
+        "recovered": 0,
+        "recall": null
+      },
+      "floor_intersecting": {
+        "target": 9117,
+        "recovered": 4842,
+        "recall": 0.5310957551826259
+      },
+      "suspended": {
+        "target": 2535,
+        "recovered": 0,
+        "recall": 0.0
+      },
+      "unidentified": {
+        "target": 0,
+        "recovered": 0,
+        "recall": null
+      }
+    },
+    "native": {
+      "base_on_floor": {
+        "target": 0,
+        "recovered": 0,
+        "recall": null
+      },
+      "floor_intersecting": {
+        "target": 9117,
+        "recovered": 4646,
+        "recall": 0.5095974553032796
+      },
+      "suspended": {
+        "target": 2535,
+        "recovered": 0,
+        "recall": 0.0
+      },
+      "unidentified": {
+        "target": 0,
+        "recovered": 0,
+        "recall": null
+      }
+    }
+  },
+  "object_categories": {
+    "base_on_floor": 0,
+    "floor_intersecting": 227,
+    "suspended": 73,
+    "below_floor": 0
+  },
+  "contact_pixels": 24553,
+  "source_decision": "REJECT_BEFORE_FIT",
+  "failed_initial_start": {
+    "status": "runtime_failed",
+    "parent": 1371645,
+    "child": 1371662,
+    "start_utc": "2026-10-15T17:31:12.452366+00:00",
+    "end_utc": "2026-10-15T17:31:37.421206+00:00",
+    "returncode": 1,
+    "valid_exposures": 0,
+    "reason": "Initial strict CameraParams renderProductResolution check failed; no recorded parameter dump, not unique root cause proof; not model performance."
+  },
+  "recovery": {
+    "parent": 1378078,
+    "child": 1378096,
+    "start_utc": "2026-10-15T17:37:10.149184+00:00",
+    "end_utc": "2026-10-15T17:39:51.765427+00:00",
+    "returncode": 0,
+    "change": "Attach metadata before formal-reset priming; eight fixed render-only refreshes at unchanged physics time before atomic snapshot. Scientific parameters unchanged."
+  },
+  "scoring_correction": {
+    "issue": "Native root exclusion formerly used USD camera rotation; now B=N@inverse(local). Added originally registered per-frame position gate.",
+    "unchanged": "All physical data, contact UV labels, oracle outputs, target domains, thresholds and category memberships.",
+    "original_source_sha256": "a0cf6e45df6acd936ed5ff83725555bc31c837c78b4ccd42b5b56f9bd9305951",
+    "corrected_driver_sha256": "3767f4e37f4d62cfd0d40dde236ea039bcc3951a54c69a84fbe091dbdd53c590",
+    "native_reprojection_source_sha256": "7f2d19f8ce0bce8be890070ab39caedb0df50aa0c1974ebc6c5f07e4d34b0fcf",
+    "frames_changed_native_cells": 0,
+    "maximum_independent_homogeneous_difference_m": 0.0,
+    "wall_s": 2.893865946913138
+  },
+  "independent_check": {
+    "complete": true,
+    "camera_frames_checked": 440,
+    "full_GT_bodyband_pixels_reprojected": 4476747,
+    "all_contact_ray_cells_and_pixel_error_quantiles_exact": true,
+    "all_unions_category_counts_and_gate_denominators_exact": true,
+    "contact_samples": 3259,
+    "actual_obstacle_contact_samples": 0,
+    "all_captured_file_SHA_verified": true,
+    "wall_s": 5.570537386927754,
+    "scope": "Independent arithmetic full-sequence verification, not RGB/model performance."
+  },
+  "review": {
+    "complete": true,
+    "reviewer": "accepted_geometry_review",
+    "verdict": "No important remaining findings",
+    "checked": [
+      "Body recovery B=N@inverse(local)",
+      "Originally frozen every-frame P90<=.3m gate in both score paths",
+      "440 eye-frame full target domain and aggregate unions/denominators",
+      "Full-domain rejection before fit, E1 and navigation",
+      "Plot scope: fixed middle vs complete sequence and GT labels vs learned predictions"
+    ],
+    "notes": "Initial incorrect native exclusion and omitted gate are preserved. Final independent replay found zero changed native cell sets, and complete target arithmetic matched."
+  },
+  "budget": {
+    "status": "rejected_before_fit",
+    "physical_used": 2,
+    "physical_cap": 4,
+    "acquisition_used": 1,
+    "acquisition_cap": 2,
+    "recovery_used": 1,
+    "recovery_cap": 1,
+    "fit_used": 0,
+    "fit_cap": 1,
+    "navigation_used": 0,
+    "budget_closed": true,
+    "closed_utc": "2026-10-15T17:55:06.787375+00:00",
+    "reason": "Complete full-visible target oracle and causal-pose source gates failed; do not acquire E1, fit or navigate.",
+    "physical_unused_closed": 2,
+    "acquisition_unused_closed": 1,
+    "fit_unused_closed": 1,
+    "model_inference_used": 0
+  },
+  "scope": {
+    "GT_labels_only": true,
+    "learned_source_admitted": false,
+    "fit": 0,
+    "model": 0,
+    "navigation": 0,
+    "predicted_depth_error": null,
+    "ground_false_positive": null,
+    "long_term_map": null,
+    "actual_obstacle_contact_samples": 0,
+    "inherited_sensor_phase": "Begin-labelled sensor packet is assigned interval end by existing estimator, retaining one-tick phase lag; no truth repair.",
+    "initial_pose_prior": "Privileged initial gauge; live causal IMU/main encoder pose; fixed disclosed floor/height prior; low-level ideal bank feedback"
+  },
+  "processes": {
+    "recorded_physical_PIDs_exited": true,
+    "services_inactive": true,
+    "CPU_sessions_finished": true,
+    "experiment_running": false
+  },
+  "original_project_SHA_unchanged": {
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/camera_rig.py": true,
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/collect_data_dubins.py": true,
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py": true
+  },
+  "next_executable": "有限核对显式使用已知相机内参/射线形成米制尺度的当前单目源，与旧RGB直接回归距离/固定倍率及已拒绝模型的机制、在线输入和消费者是否实质不同；只有实质区别和完整可见目标消费者资格成立才独立冻结一个候选。若仅换网络或常数缩放则停止，不下载/重推理/微调救分。不能复活当前接触源或旧预算。当前新E0已用于资格检查，后续只算开发资料，不能冒称未见留出。",
+  "old_budgets_closed": true,
+  "automation_status": "ACTIVE",
+  "overall_navigation_complete": false,
+  "learned_navigation_increment": false,
+  "seal_path": "experiments/contact_boundary_source_20261016_v1/seal.json",
+  "automation_update_confirmed": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "same_hourly_schedule": true
+  }
+}

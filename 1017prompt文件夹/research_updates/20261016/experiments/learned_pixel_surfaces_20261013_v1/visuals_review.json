@@ -1,0 +1,23 @@
+{
+  "render_admitted": true,
+  "source_sha256": "23fb44f20887ec43a38432e6cf02854d305e5585137f56364a312aeb3ffb14fd",
+  "reviewed": [
+    "Original map clock fallback uses hazard_acquisition_time; replay maps use clock.",
+    "Frames E1 450/C54 495 fixed/preselected and explicitly disclosed.",
+    "Learned range and memory are labelled prior inference; target references explicitly offline.",
+    "Ground never free; recorded trajectory replay not new navigation.",
+    "SGBM+ideal category panel is oracle diagnostic; it does not certify SGBM category performance."
+  ],
+  "limits": [
+    "All groups seen development, not fresh holdout.",
+    "Local map gauge cancellation means local overlap does not certify world registration.",
+    "Reference distance uses existing body-band occupancy; obstacle surface points outside it can be real surfaces.",
+    "Any-point memory vs four-count raster admission are different denominators."
+  ],
+  "fit": 0,
+  "physics": 0,
+  "correction": "Visualization-only original SGBM range is now filtered by confidence, finite depth and .5\u20133m before display/scoring. Prior unfiltered metric is not consumer-domain performance. Source scoring/model/gates unchanged.",
+  "admitted_regeneration": "one visualization-only regeneration under distinct visuals_reviewed_status",
+  "corrected_metrics_independently_verified": true,
+  "corrected_status": "visuals_reviewed finished0"
+}

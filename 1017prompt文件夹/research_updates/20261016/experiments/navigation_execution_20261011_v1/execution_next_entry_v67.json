@@ -1,0 +1,27 @@
+{
+  "stage": "world_registration_decomposition_rejected",
+  "updated_utc": "2026-10-13T14:36:22.158668+00:00",
+  "parent_entry": "execution_next_entry_v66.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/world_registration_decomposition_20261013_v1",
+  "summary": "v67世界配准/测距误差分解完整两E1共362源完成：基线257177/296346、候选268327/304926点GT可用，pose-only位置P90 .039153/.043361m，measurement-only .053728/.062323m，full .064743/.068351m。相机位置最大.046082m，旋转最大.026449/.024874rad。阻塞格(-1.1,-.1)仅22/22.5s十+六=16点，GT16/16，pose贡献.018986–.020290m，真位姿重投影后测距误差仍.963131–1.020285m；否定本次阻塞由累计位姿主导假设，不启动pose修正/物理，fit0physical0recovery0。误差向量相加exact但范数分位不可相加，GT仅离线，原query域不补洞。",
+  "next_action": "## 2026-10-13 用户最新方向：BEV优先与预训练双目\n用户指出导航更重要的是平面BEV地图，并同意调整方向。本指令覆盖v67区域平面下一步，历史负结论和封闭预算不变。\n下一研究问题：一个现成预训练双目模型能否在相同原始双RGB/标定/IMU输入下，减少错误BEV占据及永久错误风险，同时保持真实可见障碍覆盖和位置精度。优先有限核查FoundationStereo或其可运行官方版本的本地依赖、权重获取、许可证、显存/时延，冻结一个模型与权重版本，先不微调。不要并行扫多个模型。Depth Anything是单目相对/米制深度路线，不能冒称双目；当前优先真正联合双目。\n先冻结同输入完整序列BEV指标：真实可见障碍精确/召回与定位，错误占据导致的通道/起点阻塞，地面误报，有限标签/可见目标/未知覆盖与分母，长期正确/错误风险保留，逐帧灾难错误，实际推理耗时；原深度门槛仍辅助，不放宽旧失败门槛。观测障碍、观测自由、未知及单眼先验分开，不凭稠密预测宣称自由或清除旧风险。固定原投影/风险消费者先公平比较，若需要新BEV消费者须独立冻结，不把模型与规划同时修改。\n完整已见H/E0/E1/B54/C54/v65两臂仍仅开发数据；真值只监督或评分。先模型输出封存再GT评分；必须检查原阻塞来源16点及全序列，不能只挑好帧。预训练模型原始效果合格才安排新cap<=4含必要同版baseline/fresh90s导航对照，恢复<=1，每次派发登记。BEV源改善不等于可靠导航。\n微调不自动作为失败救分：只有冻结的新目标、完整因果标签/输入覆盖及独立整场景/轨迹留出资格支持域适应时，另立一次拟合预算；不能加载旧拒绝模型、扫参/换网络/扩旧库救分，不能把相邻帧随机划分当泛化。新鲜来源或大规模训练超出常规资源时才提出具体资源选择。优先先直接测试预训练权重。\n不启动区域平面候选、不恢复旧Census/扫描线/BEV小模型或闭合控制预算。保持当前原项目只读、定时任务同一id/频率/ACTIVE、无重复自动任务；无变化保持安静。有实质结果直接呈现同刻RGB、深度/真值/误差、真实/预测/长期BEV地图与完整分母。整体可靠导航与学习导航增量尚未完成。",
+  "budget": {
+    "physical": 0,
+    "fit": 0,
+    "recovery": 0,
+    "status": "closed_before_correction"
+  },
+  "processes": {
+    "running_experiments": [],
+    "collected_exec": [
+      50296,
+      46267
+    ]
+  },
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/world_registration_decomposition_results_20261013.md",
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false,
+  "stop_reason": "完整当前世界配准假设与实际阻塞全来源资格否定；无新pose改动准入，不是导航性能成功。",
+  "latest_user_priority_override": "BEV地图优先；先冻结并测试一个官方预训练双目模型，暂缓区域平面。完整指令见mission最新追加。历史v67否定不变。"
+}

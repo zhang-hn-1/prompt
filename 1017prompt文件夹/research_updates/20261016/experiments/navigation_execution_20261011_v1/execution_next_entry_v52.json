@@ -1,0 +1,103 @@
+{
+  "stage": "three_planning_candidates_implemented_qualified_rejected",
+  "updated_utc": "2026-10-13T05:43:42.825768+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v51.json",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/planning_consumer_results_20261013.md",
+  "summary": "v52按用户要求完成三个独立规划改动的实现、保存输入资格及独立审查，均未准入物理。全局运动约束路线10次查询有解，但关键17.5秒完整路线仍初始倒车2.7m；原表面准入pass仅截断至2.4m造成，原记录保留并独立拒绝。终点运动方向仅66秒变化，夹角153.27→13.68度，完整长度均3m/内部换向均1；额外初始换向0→1使冻结名义成本3.575→4.075，拒绝。当前执行腿投影在167个有参考规划边界中138次有资格/29回退，16次投影改变但保留决定改变0，拒绝。三个独立physical0/2、余2各自关闭，fit0/recovery0；没有新物理导航或新学习。",
+  "finding": "全部10条原参考在生成地图上满足固定0.870711m连续净空，最小0.890013–1.005354m。66/81.5秒剩余未来路径至新观测风险仅0.732954/0.745692m，对应风险格在参考生成时未知；投影修正后仍失效。该证据支持后续观测改变未来路径可通行性，不证明风险格均真，也不排除控制误差。",
+  "candidate_roots": [
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/global_kinematic_guidance_20261013_v1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/continuation_heading_planning_20261013_v1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1"
+  ],
+  "decisions": [
+    {
+      "decision": "REJECT_NO_PREDECLARED_FULL_REVERSE_EFFECT",
+      "reason": "frame175 full initial reverse still2.7m; installed2.4m reduction only prefix truncation. Original replay pass retained but insufficient for admission.",
+      "physical_used": 0,
+      "physical_cap": 2,
+      "unattempted_closed": 2,
+      "fit": 0,
+      "recovery": 0,
+      "utc": "2026-10-13T05:18:09.559765+00:00"
+    },
+    {
+      "decision": "REJECT_FROZEN_COST_GATE",
+      "physical_used": 0,
+      "physical_cap": 2,
+      "unattempted_closed": 2,
+      "fit": 0,
+      "recovery": 0,
+      "keyframe660": {
+        "old_cost": 3.575,
+        "new_cost": 4.075,
+        "old_internal_cusps": 1,
+        "new_internal_cusps": 1,
+        "old_initial_switch": 0,
+        "new_initial_switch": 1
+      }
+    },
+    {
+      "decision": "REJECT_ZERO_RETENTION_DECISION_EFFECT",
+      "physical_used": 0,
+      "physical_cap": 2,
+      "unattempted_closed": 2,
+      "fit": 0,
+      "recovery": 0,
+      "guard_boundaries": 167,
+      "changed_decisions": 0,
+      "utc": "2026-10-13T05:35:04.470339+00:00"
+    }
+  ],
+  "seal_verification": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/planning_stage_seal_verification_v52.json",
+  "same_time_development_e1_metrics": {
+    "scene": "saved fresh E1",
+    "time_s": 66.0,
+    "selection": "planning event chosen after old-run analysis, not random or worst-depth example",
+    "full_image_pixels": 307200,
+    "confident_range_pixels": 45444,
+    "finite_scored_pixels": 25062,
+    "conditional_coverage": 0.5514919461315025,
+    "full_image_scored_fraction": 0.08158203125,
+    "absolute_depth_error_p50_p90_p95_m": [
+      0.02449887990951538,
+      0.09530647993087771,
+      0.17847598791122404
+    ],
+    "accepted_point_instances": 1936,
+    "accepted_point_valid_truth": 1641,
+    "accepted_point_ground_false": 0,
+    "ground_false_fraction_among_valid": 0.0,
+    "accepted_point_position_p50_p90_m": [
+      0.015942854189752595,
+      0.029727041127055792
+    ],
+    "map_risk_cells": 147,
+    "map_farther015_cells": 31,
+    "map_old10s_cells": 68,
+    "map_old10s_farther015_cells": 12,
+    "map_age_is_last_acquisition_not_original_birth": true,
+    "scope": "pixel/accepted point/cell denominators separate; bodyband reference not exact 3D; nohit not free; identical saved map, not new physical navigation"
+  },
+  "figures": [
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/E1_66s_depth.png",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/E1_66s_map.png",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/E1_66s_plans.png"
+  ],
+  "next": "优先部分观测地图下的绕障子目标选择：先有限核对旧route-side绑定/soft bias/再观测/ray/未知探索机制，判断是否能用当前双目+IMU观测支持与未知边界选择持续可观测的局部绕障子目标，避免向尚未看清的障碍端部反复规划。证据支持才冻结一个不同的单环节机制、输入、完整保存输入资格、停止条件和新cap<=4含必要同版90秒实际对照。固定感知源/地图风险语义/控制与安全间距；未知非自由，不用GT在线，不虚构扩墙、不缩安全距离；源误差与规划结果分别报告。三个v52候选全部关闭，不调参、截短统计或换名重做。该下一方法尚未实现/准入，学习路线按用户最新规划优先级暂缓；旧所有封闭预算继续关闭。",
+  "new_physical": 0,
+  "new_fit": 0,
+  "live_experiment_processes": [],
+  "process_evidence": "All local exec CPU qualification and visualization sessions collected normal exit 0; no new Isaac dispatch/admission/ledger created. See each execution_close.json.",
+  "budget_note": "Each of three candidates independently cap2 used0 remainder2closed, not transferable; old budgets remain sealed.",
+  "benchmark_evidence_delivery": "available; these additions are saved-development-state qualification only",
+  "reliable_navigation_complete": false,
+  "learning_navigation_increment_established": false,
+  "whole_complete": false,
+  "automation_status": "ACTIVE",
+  "stop_reason": "本轮三个独立候选均已实际实现并完成完整对应保存输入资格与独立关闭，得到有证据的否定结果；阶段交接。未运行物理，因为均未达到冻结准入；没有资源或许可阻塞，不是整体完成。",
+  "delivery_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/reports/planning_consumer_results_20261013.md": "7ac650fce4ff357b87dff4200d85c53cf96b8cf908b83f4ff2e0b3600ba37dc3",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/planning_stage_seal_verification_v52.json": "ee5f15c22dde33258c8cd253118218e494dc3714df0c45f2ed412d7823df43bd"
+  }
+}

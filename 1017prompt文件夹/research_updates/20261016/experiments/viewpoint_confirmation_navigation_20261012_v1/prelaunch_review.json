@@ -1,0 +1,48 @@
+{
+  "reviewer": "independent_subagent_rig_candidate_review",
+  "utc": "2026-10-12T14:31:31.737404+00:00",
+  "outcome": "implementation_review_pass_for_bounded_physical_launch",
+  "remaining_important_issues": [],
+  "resolved_metadata": [
+    "Driver names now viewpoint_confirmation; protocol validates actual executed request count up to900 and supports earlier arrival."
+  ],
+  "verified": [
+    "Only persistent promotion criterion changes; immediate recent10s risk uses original PartialPointRiskGrid, confirmed cells remain through absent data.",
+    "Driver captures exact current native left-camera pose and transports past positions keyed by capture frame; grid rejects future/changing/missing identities before world payload.",
+    "5 provided CPU checks independently passed; additional real set_source\u2192update_points transport check passed and confirmed risk survived expiry/empty source.",
+    "Same height-filtered forward60cm source, camera/masks/IMU/scene/controller identities; all3 protocol source/input maps match.",
+    "Supervisor audits actual source selection, request/physical target mapping and camera clocks/native registration plus full map reconstruction before score/conditional next arm.",
+    "Depth/arrival/contact/two-video gates unchanged; cap3 E2first then conditionalE0/E1 with unused closure on rejection.",
+    "Authoritative replay references latest measured height-control;180baseline maps exact; new terminal clearance1m is only saved-trajectory memory counterfactual, not navigation success."
+  ],
+  "identity_binding_counts": {
+    "candidate_e2": 2218,
+    "candidate_e0": 2220,
+    "candidate_e1": 2218
+  },
+  "limitations": [
+    "One-cell camera-centre separation is heuristic, not statistical independence or stereo correctness.",
+    "Native camera-centre displacement includes camera movement due to body rotation; not guaranteed new scene coverage.",
+    "Same E2 development reuse and differing RGB prohibit fullcausal/generalization claims."
+  ],
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/protocol.json": "0166838c895bfa7f7a66f7d7ce139f2a2c6051ffb348dbb705aa9fd457da9af7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/prepare.py": "41e320d64f9737b61e9ca05d5becda7d819cf6ca9b0d5b0c63b2cfd3a710f5ee",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/viewpoint_confirmation.py": "1e3c581b61ccf8668bbdcb9ef855ef1e13fa3e68fe34ce02a6295fc6367b137e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/verify_actual_maps.py": "2570cbcf7977278d1905811554c0686007cddd0cbcdbe32ba01b817b88e3dd8e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/audit_actual.py": "e8ba17b6ed7e5a8079f914511cc44bb807183763160c7bcc7a4f3191e137327b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/supervise.py": "09d104e06c3b1fcae1179aefceb132bbaac29facf4a0ad22a77e974c3188fa4d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/score.py": "aa49b5adf95c2c5d0602f35e5e6640fca6be3641d0596bde435558b975b6da6a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/height_interval.py": "ebd177b11a3244d01fdee8a31d777d4746f0b67dedd6d0ed54524f9d99c87653",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/rig_adapter.py": "4c356908a0e68503ea8fbb434dee1c05cc8cab580413ad2564c39c4b4a9f0a4f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/test_confirmation.py": "5eef65f698ec1240e17d420c50542acad5cee3b8a698fcb70845f02e96b4142c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/replay_height_control.py": "ee9d01232c8abbe53cf5d82823c1f6736f5032e2922bc97a6ec7e9530557f661",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/height_control_replay_assessment.json": "500ebc9e31af5ad6e0f55485b6d4ad0504ab8299cea869f2248ead71a5f8aab9",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/candidate_e2_driver.py": "10a45905129cbc0a5bf447fc4c85198a26a58cc2fa1924dadf6e121a6534ebb3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/candidate_e2_protocol.json": "acd13c79d3283e5fe7ccc12af1ca1d8ae4887e802756802f638ccfffd616e1f8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/candidate_e0_driver.py": "b57881037a2b40a78c319f0aa654cbf42f6020d1e91d87162ee5e4bf585a4f72",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/candidate_e0_protocol.json": "04c5e92f98304e7890da117583d26790a047502bd911a9ac082005b6290be4f7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/candidate_e1_driver.py": "6d43e6439cd21cff1b2c8f2a02d57921a938ff0989b1269de108b7edb90588ce",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/viewpoint_confirmation_navigation_20261012_v1/candidate_e1_protocol.json": "3f17cbb097a22f59bd8eda2a90d416b4beb2e0af8896a4ae0b3f043da96d3fa8"
+  }
+}

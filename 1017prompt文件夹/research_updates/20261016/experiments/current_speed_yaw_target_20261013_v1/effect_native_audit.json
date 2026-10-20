@@ -1,0 +1,10 @@
+{
+  "checked": 649,
+  "logged_changed_corrections": 649,
+  "below020_changed_corrections": 586,
+  "above020_float_precision_changes": 63,
+  "above020_max_correction_difference_rad": 2.1854798942788634e-09,
+  "errors": [],
+  "pass_gate": true,
+  "scope": "recomputed against live-before-action native velocity cast by observation float32, original norm float32 vs audit norm float64; does not prove each final issued command changed; precision discrepancy disclosed, no candidate source edits after run"
+}

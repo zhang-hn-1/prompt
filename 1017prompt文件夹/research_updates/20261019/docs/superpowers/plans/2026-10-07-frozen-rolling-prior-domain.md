@@ -1,0 +1,5 @@
+# Inline regression
+1.Freeze2wholecases/staticmodel/sensorassumptions andoldgates;reuseoriginal9unitfixtures (397whole suite alreadypasses).
+2.Exportwhitelistcurrentidealgyro/encoder/initialnormalfromold emulator; onlythenrununchangedmodel/serializeallpredictions.
+3.Offline oldgates andboundedposition/tilt/yaw decompositionafterpredictioncomplete;saveidentity/report.
+4.NOcontrol orheldoutclaim, preserveoldgate; ONEfreshreview iftoolslotspermit otherwise recordunavailablekernel agentlimit andauthorchecks. Continueadmissiblenextstepbaseddata.

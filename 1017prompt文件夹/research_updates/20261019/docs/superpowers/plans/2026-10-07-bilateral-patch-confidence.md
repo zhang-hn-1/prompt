@@ -1,0 +1,11 @@
+# One RGB-only bilateral patch confidence candidate
+
+Cause evidence: heading-20 controlledfixture actual61s has zero mutual obstacle coverage; separate heading0 one8s actual has mutual13932..19572pixels and source event[10,15], but raw qualifying precisions86.189%/98.697%, postqualification currentprecision9.184%..100%. Heading-only source prerequisite rejected; no unchanged memory pair launched. Old point source and all95%/0.10m gates retained, not relabelled source reliable. No camera/light/mapping/PID/speed/network change.
+
+ONE confidence candidate for existing frozenFast output: native9x9 bilaterally CAD-unmasked grayscale patches at query and predicted partner. Both texturestd>=3 RGBlevels; zero-mean normalized correlation>=0.8; selected correlation exceeds every valid competing partner at native vertical offsets[-4,-3,-2,2,3,4] by>=0.05. All challenger patches must be inside image and CAD-unmasked; no futureRGB, poses, GT or requested action used. Invalid/ambiguous is rejected, not free. Fixed values predeclared before computing scores; no threshold scan/fit or new network. Pixel IDs/world/sigma/clock of retained points unchanged.
+
+Offline first on already-used heading0 full17packets: historical development regression, NOT freshheldout. Require frozen >=95%/0.10m dual-eyeGT precision in every nonempty accepted hazard packet and >=100hazards/2correctXYbins in two consecutive2Hz samples, plus current source-opportunitylow5 unaffected. Show remaining counts, class/task coverage and rejection reasons. Do not infer geometry confidence from raw left-right disparity alone.
+
+If preflight fails/unexercised, reject this confidence candidate; no physics retry or another confidence family. Preserve detailed cause and direct next task to uncertainty-aware occupancy/observable geometry (independently typed and separately preregistered), not M3/Oracle/PID. If preflight passes, seal candidate and validate one independent fresh whole8s sequence before any memory/control pair; old17data cannot be called fresh. All source actors remain unadmitted untilactual freshgates. New representations cannot rewrite old source point rejection or formal35 rules.
+
+Implementation meaningful RED→GREEN confidence tests, unchangedpayload/futureclock rejection, fixedhistorical scoring and artifact identities. One candidate only, no actualnavigation here.

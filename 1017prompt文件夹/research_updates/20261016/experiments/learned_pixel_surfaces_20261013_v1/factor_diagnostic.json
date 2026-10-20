@@ -1,0 +1,178 @@
+{
+  "group": "E1",
+  "pairs": 181,
+  "metrics": {
+    "ideal_category_learned_range": {
+      "predicted_risk_cells": 30990,
+      "true_visible_risk_cells": 6423,
+      "matched_predicted": 12939,
+      "matched_truth": 5438,
+      "precision": 0.4175217812197483,
+      "recall": 0.8466448699984431,
+      "ground_false_cells": 12531,
+      "ground_cells": 39412,
+      "ground_false_fraction": 0.3179488480665787,
+      "unsupported_predictions": 8643,
+      "unsupported_fraction": 0.2788964181994192,
+      "visible_cells": 45835,
+      "visible_surface_recall": 0.9604668921130141,
+      "localization_p90_m": 0.5830951894845301,
+      "exact_overlap_height_accuracy": 1.0,
+      "exact_overlap_height_cells": 4714,
+      "per_height": {
+        "2": {
+          "predicted": 30990,
+          "truth": 6423,
+          "precision": 0.4175217812197483,
+          "recall": 0.8466448699984431,
+          "absent_truth": false
+        },
+        "3": {
+          "predicted": 0,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        },
+        "4": {
+          "predicted": 0,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        }
+      },
+      "pass_gate": false
+    },
+    "learned_category_ideal_range": {
+      "predicted_risk_cells": 6629,
+      "true_visible_risk_cells": 6423,
+      "matched_predicted": 6347,
+      "matched_truth": 6378,
+      "precision": 0.9574596470055815,
+      "recall": 0.9929939280709948,
+      "ground_false_cells": 371,
+      "ground_cells": 39412,
+      "ground_false_fraction": 0.009413376636557393,
+      "unsupported_predictions": 0,
+      "unsupported_fraction": 0.0,
+      "visible_cells": 45835,
+      "visible_surface_recall": 0.9334351478128068,
+      "localization_p90_m": 0.0,
+      "exact_overlap_height_accuracy": 1.0,
+      "exact_overlap_height_cells": 6186,
+      "per_height": {
+        "2": {
+          "predicted": 6629,
+          "truth": 6423,
+          "precision": 0.9574596470055815,
+          "recall": 0.9929939280709948,
+          "absent_truth": false
+        },
+        "3": {
+          "predicted": 0,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        },
+        "4": {
+          "predicted": 0,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        }
+      },
+      "pass_gate": true
+    },
+    "learned_both_same_gt_support": {
+      "predicted_risk_cells": 30152,
+      "true_visible_risk_cells": 6423,
+      "matched_predicted": 12425,
+      "matched_truth": 5285,
+      "precision": 0.41207880074290265,
+      "recall": 0.8228242254398256,
+      "ground_false_cells": 12532,
+      "ground_cells": 39412,
+      "ground_false_fraction": 0.3179742210494266,
+      "unsupported_predictions": 8346,
+      "unsupported_fraction": 0.2767975590342266,
+      "visible_cells": 45835,
+      "visible_surface_recall": 0.9604668921130141,
+      "localization_p90_m": 0.5830951894845301,
+      "exact_overlap_height_accuracy": 1.0,
+      "exact_overlap_height_cells": 4488,
+      "per_height": {
+        "2": {
+          "predicted": 30152,
+          "truth": 6423,
+          "precision": 0.41207880074290265,
+          "recall": 0.8228242254398256,
+          "absent_truth": false
+        },
+        "3": {
+          "predicted": 0,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        },
+        "4": {
+          "predicted": 0,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        }
+      },
+      "pass_gate": false
+    },
+    "actual_learned": {
+      "predicted_risk_cells": 35079,
+      "true_visible_risk_cells": 6423,
+      "matched_predicted": 12648,
+      "matched_truth": 5346,
+      "precision": 0.360557598563243,
+      "recall": 0.8323213451658104,
+      "ground_false_cells": 17022,
+      "ground_cells": 39412,
+      "ground_false_fraction": 0.4318989140363341,
+      "unsupported_predictions": 8492,
+      "unsupported_fraction": 0.2420821574161179,
+      "visible_cells": 45835,
+      "visible_surface_recall": 0.9627577179011673,
+      "localization_p90_m": 0.8062257748298549,
+      "exact_overlap_height_accuracy": 1.0,
+      "exact_overlap_height_cells": 4531,
+      "per_height": {
+        "2": {
+          "predicted": 35079,
+          "truth": 6423,
+          "precision": 0.360557598563243,
+          "recall": 0.8323213451658104,
+          "absent_truth": false
+        },
+        "3": {
+          "predicted": 0,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        },
+        "4": {
+          "predicted": 0,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        }
+      },
+      "pass_gate": false
+    }
+  },
+  "confidence_domain": "learned positive/GT eligible support retained; oracle replacement does not fill unknown predictions; same-GT-support learned-both control distinguishes unsupported-domain removal",
+  "scope": "Whole seen E1 diagnostic: authored-compatible category or renderer range substituted only offline; no source rescue/nav/second fit. Actual learned includes unsupported predictions; compare factor arms to same-support control, not attribute all change from actual to one factor.",
+  "map_sha256": "16339331a87dc4037d7a795a39a9b67ef490875905633d742c16a9b5c5a3fea8",
+  "source_sha256": "76217471b8c9cd1ca3c30ff3781eac81c5975dbca7a97ebe71041f5ebc940211"
+}

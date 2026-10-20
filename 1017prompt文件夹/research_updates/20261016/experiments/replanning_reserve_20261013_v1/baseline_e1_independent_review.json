@@ -1,0 +1,27 @@
+{
+  "independent_review_pass": true,
+  "arm": "baseline_e1",
+  "raw_audit_recomputed_exact": true,
+  "source_depth_recomputed_exact": true,
+  "manifest_identity_reviewed": true,
+  "termination": {
+    "termination": "timeout90",
+    "actions": 900,
+    "time_s": 89.99999798834324,
+    "budget_s": 90.0,
+    "true_goal_xy_threshold_m": 0.2,
+    "not_original35": true,
+    "not_causal_navigation_AB": true
+  },
+  "remaining_m": 5.214377144368039,
+  "contacts_detected": 0,
+  "unavailable_contacts": 0,
+  "depth_p90_m": 0.11362934112548828,
+  "depth_gate": true,
+  "arrival": false,
+  "retain": false,
+  "intervention": {},
+  "scope": "Actual terminal/contact/current source/native registration/map/request audit; no independent IMU dynamics reconstruction or causal paired replication. Reserve unverified assumption; sameE1 development.",
+  "review_fit": 0,
+  "review_physical": 0
+}

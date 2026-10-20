@@ -1,0 +1,72 @@
+[
+  {
+    "sequence": "E0",
+    "rows": [
+      {
+        "arm": "before",
+        "risk_cells": 127,
+        "older10s": 108,
+        "far015": 8,
+        "older_far015": 2,
+        "accepted_points": 147261,
+        "finite_gt_points": 143261,
+        "gt_floor_false": 14213,
+        "point_error_p50_p90": [
+          0.0822786728502594,
+          0.5380287196927944
+        ]
+      },
+      {
+        "arm": "after",
+        "risk_cells": 127,
+        "older10s": 108,
+        "far015": 8,
+        "older_far015": 2,
+        "accepted_points": 146823,
+        "finite_gt_points": 142823,
+        "gt_floor_false": 14202,
+        "point_error_p50_p90": [
+          0.08190909733733427,
+          0.5387849131585842
+        ]
+      }
+    ],
+    "map_time_s": 89.89999799057841,
+    "point_stats_scope": "all181 source captures0..90s; last capture90s is after final map89.9s; point stats not map cell membership"
+  },
+  {
+    "sequence": "E1",
+    "rows": [
+      {
+        "arm": "before",
+        "risk_cells": 175,
+        "older10s": 115,
+        "far015": 30,
+        "older_far015": 20,
+        "accepted_points": 262774,
+        "finite_gt_points": 225334,
+        "gt_floor_false": 771,
+        "point_error_p50_p90": [
+          0.024321788020552022,
+          0.06199648244609149
+        ]
+      },
+      {
+        "arm": "after",
+        "risk_cells": 175,
+        "older10s": 115,
+        "far015": 30,
+        "older_far015": 20,
+        "accepted_points": 261079,
+        "finite_gt_points": 223679,
+        "gt_floor_false": 766,
+        "point_error_p50_p90": [
+          0.024334038654860505,
+          0.062054917724854504
+        ]
+      }
+    ],
+    "map_time_s": 89.89999799057841,
+    "point_stats_scope": "all181 source captures0..90s; last capture90s is after final map89.9s; point stats not map cell membership"
+  }
+]

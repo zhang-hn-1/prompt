@@ -1,0 +1,28 @@
+{
+  "pass_check": true,
+  "input_shape": [
+    10,
+    240,
+    320
+  ],
+  "semantic_shape": [
+    1,
+    2,
+    3,
+    240,
+    320
+  ],
+  "range_shape": [
+    1,
+    2,
+    240,
+    320
+  ],
+  "finite_gradient": true,
+  "translation_independent_features": true,
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_pixel_surfaces_20261013_v1/causal_input.py": "996c9eeab2d97a2bdf13009698872bf59302899e7c64359429e87bad1d8ed76d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_pixel_surfaces_20261013_v1/model.py": "596429ff2b3f455d252327fd55141326258f4e3c475cddd94fa79c1abde67524",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_pixel_surfaces_20261013_v1/check.py": "5c0afb8c543ddb041950fe9c6d0af497b4023ba3edad3658f75245670e50a2d3"
+  }
+}

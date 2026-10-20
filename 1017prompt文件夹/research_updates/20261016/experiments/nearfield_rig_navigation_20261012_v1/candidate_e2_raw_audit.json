@@ -1,0 +1,32 @@
+{
+  "pass_audit": true,
+  "captures": 901,
+  "requests": 900,
+  "registration_pairs": 181,
+  "max_extrinsic_residual": 3.262284890004352e-07,
+  "all_contacts_available": true,
+  "journal_lines": 1800,
+  "physics_fields": [
+    "raw_command_target",
+    "clipped_target",
+    "smoothed_target",
+    "applied_action",
+    "joint_position_rad",
+    "joint_velocity_rad_s",
+    "position_world_xy",
+    "root_position_world_m",
+    "root_quaternion_world_wxyz",
+    "linear_velocity_world_m_s",
+    "angular_velocity_world_rad_s",
+    "yaw_world_rad",
+    "roll_world_rad",
+    "simulation_time_s",
+    "physics_step_index",
+    "raw_simulation_time_s",
+    "raw_physics_step_index",
+    "action_block_index",
+    "physics_step_in_block"
+  ],
+  "source_and_input_hashes": 2200,
+  "scope": "clocks/current native registration/source identities; not independent IMU dynamics reconstruction or causal replication"
+}

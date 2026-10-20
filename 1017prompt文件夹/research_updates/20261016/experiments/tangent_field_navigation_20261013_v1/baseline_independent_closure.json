@@ -1,0 +1,33 @@
+{
+  "scope": "independent baseline review, all sealed raw hashes once read-only, running candidate untouched",
+  "artifact_count_verified": 5732,
+  "artifact_hash_failures": [],
+  "admission_hash_failures": [],
+  "baseline_comparison_qualified": true,
+  "baseline_arrival": false,
+  "baseline_remaining_m": 5.347276390467599,
+  "baseline_net_progress_m": 1.2527242830648877,
+  "baseline_outcome": "timeout90 no contacts/all contacts available; source conditional p90 .116962 gate passes; not successful navigation",
+  "raw_evidence": {
+    "captures": 901,
+    "requests": 900,
+    "physical_commands": 4500,
+    "exact_maps": 900
+  },
+  "map_evidence": {
+    "risk_cells": 179,
+    "farreference_cells": 22,
+    "limits": "22/179 centres far>.15m from vertical-max bodybandreference; no fullmaprecall, acceptedpoint metrics exclude invalid truth"
+  },
+  "effect_audit_review": "Valid narrowly for logged target arithmetic plus native float32 current XY/installed reference endpoint binding; source original diagnostic clearly legacy. No static blocker. Does not verify guard eligibility/remaining arc or final issued request change, and is not causal navigation benefit. Physical journal separately audited.",
+  "receipt_sha256": {
+    "baseline_e1_status.json": "90481ea1fc6c7d72018f9dbf6fef87d4bc380259712f138a222a507e11de5334",
+    "baseline_e1_raw_audit.json": "604efe276d5263c70bb8fcaf38ec3710fed74f067a75b132023cded177f753ef",
+    "baseline_e1_assessment.json": "9992284ec0b0ed3a8ddf68a4dce6dc4dc44e5dbaf4bb7a44d07d4f551661abbf",
+    "baseline_e1_map_metrics.json": "6e950210f9d6aab028453d789dee7684905c4ec399484fdf05854c4d8c8011eb",
+    "protocol.json": "e2eeaa761c8fbd9493028620bc5cbfcbfc6befd793d0ec9d0fc3807ffed0ad97",
+    "baseline_e1_protocol.json": "ea21a9a885144e9baef3e288782f26c5ff0c604f4b89f2a3c687edb73a44b737",
+    "admission.json": "9102d163ab6196759aaea0b085c9b1f792b4df14e05d2a4a417ee09d6bea4203",
+    "effect_audit.py": "410495cca83b1f3365a49e15bcb2dc3ef75817dab446ab49b6e59f844279e7a4"
+  }
+}

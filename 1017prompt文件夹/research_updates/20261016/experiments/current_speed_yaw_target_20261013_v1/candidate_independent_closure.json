@@ -1,0 +1,36 @@
+{
+  "scope": "read-only sealed run review; all raw hashes verified once; videos and native arithmetic independently checked; no simulation",
+  "artifact_count_verified": 5657,
+  "artifact_hash_failures": [],
+  "admission_hash_failures": [],
+  "video_frames": {
+    "stereo_view.mp4": 901,
+    "third_person.mp4": 901
+  },
+  "native_arithmetic_checked": 649,
+  "native_arithmetic_errors": [],
+  "raw_audit_pass": true,
+  "decision": "reject frozen navigation arrival gate; both timeout90, no contacts",
+  "candidate_remaining_m": 4.688895008858183,
+  "candidate_net_progress_m": 1.9111056646743032,
+  "baseline_net_progress_m": 1.3856235291644472,
+  "observed_progress_increment_m": 0.525482135509856,
+  "conditional_source_gate": true,
+  "conditional_source_p90_m": 0.12292091846466069,
+  "request_effect_review": "649 requests match bank+newcorrection;410 same candidate-state counterfactual aux changes,409belowfloor+1precision. This is not actualbaseline trajectory counterfactual.",
+  "precision_review": "586belowfloor correction changes plus63abovefloor norm32vsnorm64 differences <=2.185e-9rad disclosed; no exactin-domain actual claim",
+  "pair_identity": "0/181 identical pairedRGB; no full causal prefix, development E1 only",
+  "limits": "No arrival success/generalization/fullcausal efficacy. Source passes conditional measuredpixel gate only.",
+  "receipt_sha256": {
+    "candidate_e1_status.json": "b6a5d24263d67526bd83b1bc264a53dc4a38e7fe6463e9a4d96bc8070ae06061",
+    "candidate_e1_assessment.json": "1d93be84b1ccbbf384824aa2b25ddb7bc9b89b09f69cf72193ae8acc2f8be8d7",
+    "candidate_e1_raw_audit.json": "5936a4fe1bebd4a6d71de80a657120a0965802b0626205f227622f3be5743e0d",
+    "candidate_e1_protocol.json": "8d9bd87b858ece9d759d1cc94ee749ad8d0cf1a081455caa763d460ad6b66114",
+    "protocol.json": "7882528f06971fb632d6bd8257876d2ffcd0c54bd09f75540736692488d3d35d",
+    "effect_native_audit.py": "825925f23c458dbc6108d91ca95e6e16b067faa8e0ed969b9e1ef30c38688b8e",
+    "effect_native_audit.json": "56f41a34255eee8f2cfb4dfe82ea7be8b97fd519b59c382f4bc1985a3b64552c",
+    "request_effect.py": "2ead47b24a14b4ee73599a7969428b9afe8c92dd8d60d294c0fb3c0eecfd81c0",
+    "request_effect.json": "4ac2e3819a3609c711a4c05b0f74197a9aeec9b11703bd37efc1202b565cf187",
+    "pair_identity.json": "842ec095ee6abee537f0824d895b181ecd1b17ec9a1e3b882ddb729bd89ae2ca"
+  }
+}

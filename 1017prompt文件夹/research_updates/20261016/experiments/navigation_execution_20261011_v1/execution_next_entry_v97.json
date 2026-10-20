@@ -1,0 +1,97 @@
+{
+  "version": 97,
+  "created_utc": "2026-10-15T19:25:25.503084+00:00",
+  "status": "temporal_encoder_added_scale_branch_closed_no_new_source",
+  "authority": "v96 explicitly requested finite novelty check and branch closure if covered",
+  "fixed_camera_root": "experiments/user_fov_position_only_20261015_v1",
+  "decision": "No new input or measurement-generation mechanism established by adding known native encoder translation; close this branch before implementation or dispatch.",
+  "evidence": [
+    {
+      "claim": "Known metric displacement already exists in live native pose; no newly added measurement",
+      "source": "imu_gravity_rolling.py",
+      "evidence": "shellomega=R@(gyro+[0,main_encoder,0]); velocity=known_radius*cross(shellomega,gravity); integrate prior velocity*dt"
+    },
+    {
+      "claim": "Current accepted four-camera capture already consumes this native encoder/IMU estimator",
+      "source": "contact_boundary_source_20261016_v1/collect.py",
+      "evidence": "main encoder packet -> GravityRolling.update -> estimated_base_world -> body_est@fixed camera local matrix before next action"
+    },
+    {
+      "claim": "Old closed temporal geometry already triangulates using supplied metric native camera transforms",
+      "source": "audit_right_temporal_observability_v1.py/right_temporal_observability.py",
+      "evidence": "Loads estimated_poses, uses current/past camera translations, baseline>=.1m, parallax>=1degree, epipolar<=1.5px; future views excluded"
+    },
+    {
+      "claim": "Historical counterpart did not become qualified solely with true pose",
+      "source": "right_temporal_observability_cause_v1/cause_assessment_v2.json",
+      "evidence": "78 candidate tracks; native accepted0, GT-pose accepted0; posthoc existing dataset, not a new four-view evaluation"
+    },
+    {
+      "claim": "Later old LK current/past projection already inspected measurement consistency",
+      "source": "temporal_first_risk_support_protocol_v1.json",
+      "evidence": "Fixed current/past-only projection and LK; not independent new metric source, not certified free or risk clearing"
+    }
+  ],
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/right_temporal_observability_continuation_v1.json": "e85ae6e9c0c795830c5d3bcc21def44df27108fe6f37f18c310636a56eda4ff2",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/right_temporal_observability_cause_v1/cause_assessment_v2.json": "7c3bace4a7da89d867f488e301eddd42ed45bb7b319fdee2421525095f534248",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/temporal_first_risk_support_protocol_v1.json": "2a39fcba520720ad22c58fa1764e10498c25be535450cb0c11c11ae854a3b9c8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/audit_right_temporal_observability_v1.py": "8dc877cb770ac9897a1a4c0d2803617fd3d9bb1e64948a82739931af520b3188",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/right_temporal_observability.py": "01a54f6796d00f218eb15acce80c50fc9b1d91aced0c466a0fd11a223ffdc650",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/imu_gravity_rolling.py": "ee495d9c7741e28416e11f131eaab4f01b3b363d0bed1d6607d24653ccafd5ce",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contact_boundary_source_20261016_v1/collect.py": "ec18c660a3628c970cbeafc0825921fc19eb9871ec5bea86d2dc7da1b76f5857"
+  },
+  "historical_only": {
+    "candidate_tracks": 78,
+    "native_pose_accepted": 0,
+    "GT_pose_accepted": 0,
+    "within10cm_pairs": 21,
+    "warning": "Old domain/track subset, no performance/generalization claim for accepted current four-camera rig"
+  },
+  "scope_limits": [
+    "Not a proof that all temporal or monocular methods fail",
+    "New camera FOV/domain may change observability but alone is not a new source or permission to reopen old budgets",
+    "v96 ideal metric-surface consumer qualification remains necessary only; true categories/depth cannot enter online navigation",
+    "No scientific source outputs, RGB/depth predictions, map replay, image or metric recomputation this turn; no new plots; current metrics N/A"
+  ],
+  "work_done": "Read-only bounded source and prior terminal evidence audit; no expanding dependencies or replaying closed methods",
+  "new_physics": 0,
+  "new_fit": 0,
+  "new_model_inference": 0,
+  "new_navigation": 0,
+  "new_experiment_candidate": null,
+  "old_budgets_closed": true,
+  "original_project_read_only": true,
+  "prior_CPU_status": {
+    "status": "finished",
+    "start_utc": "2026-10-15T18:28:09.319115+00:00",
+    "parent_pid": 3,
+    "child_pid": 4,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-15T18:28:27.171766+00:00"
+  },
+  "no_relevant_CPU_process_found": true,
+  "new_runtime_dispatched": false,
+  "limitation": "This continuation has no qualified online metric perception source or distinct implementable new mechanism. Not a GPU/storage failure, not proof the whole research space is impossible.",
+  "external_information_to_request": null,
+  "external_information_question": "Whether the actual robot already has any additional usable range measurement or known-size visual reference with calibration beyond the four RGB cameras and current IMU/main encoder; asked for hardware facts, not a research-method decision.",
+  "external_information_answer": "只有四路RGB、IMU和主轴编码器",
+  "external_information_answer_date_local": "2026-10-16 Asia/Shanghai",
+  "available_online_inputs_confirmed_by_user": ["four RGB cameras", "IMU", "main-axis encoder"],
+  "external_information_answer_scope": "User reports only these existing inputs; no additional range sensor or known-size visual-reference information was supplied. This closes the hardware question, establishes no new admitted metric source, and is not proof that every method with these inputs is impossible.",
+  "next_executable": "This branch is closed. The user has answered the hardware question; do not ask it again or request hardware changes. Keep research within the confirmed four RGB cameras, IMU and main encoder. Do not rerun this novelty audit, previous oracle or rejected model on later heartbeats. Only resume a new independently frozen source when concrete new usable calibration/reference evidence or a substantively different implementable measurement mechanism is identified. If there is no new evidence, stay quiet; do not create another report/entry or spend scientific budget.",
+  "automation_status": "ACTIVE",
+  "overall_navigation_complete": false,
+  "learned_navigation_increment": false,
+  "automation_update_confirmed": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "same_hourly_schedule": true
+  },
+  "external_information_question_sent": true,
+  "external_information_answer_pending": false
+}

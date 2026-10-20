@@ -1,0 +1,38 @@
+{
+  "stage": "replanning_reserve_navigation_rejected",
+  "updated_utc": "2026-10-13T13:34:05.734283+00:00",
+  "parent_entry": "execution_next_entry_v64.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/replanning_reserve_20261013_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/replanning_reserve_navigation_results_20261013.md",
+  "summary": "v65新未来重规划余量原.870711之外+.2m完成真实同版E1两90秒：基线净1.385624/余5.214377m，候选净1.199410/余5.400591m，均超时无接触；总走11.032761/7.251095m，sourceP90 .113629/.128968m。候选70尝试6安装64失败，全部64起点低于额外1.070711、13也低于原.870711；58-90秒320零请求仍走.626826m，不能等同零物理动作或证明制动故障。导航候选拒绝physical2/2关闭fit0recovery0，不调余量/缩安全间距复跑。",
+  "next_action": "下一有限核对无路回退零请求到实际执行合同：先区分旧制动/归零/安全停等封闭机制，完整重构当前nativeIMU、请求、平滑/限幅目标、物理动作和实际位移，判断是否存在新的执行语义或惯性证据。只有有实质区别与证据才冻结独立单环节实现和必要全输入资格及新cap<=4同版90秒对照。不能直接宣称控制故障，不复活旧拒绝候选，不调本余量，不在线删风险/缩安全距离；GT只评分。",
+  "budget": {
+    "physical_used": 2,
+    "physical_cap": 2,
+    "status": "closed_rejected",
+    "fit": 0,
+    "recovery_used": 0
+  },
+  "root_sha_verified": 11209,
+  "processes": {
+    "running_experiments": [],
+    "exited_host_pids": [
+      2301129,
+      2301145,
+      2313019
+    ],
+    "collected_exec": [
+      28457,
+      8445,
+      13122,
+      14686,
+      93646,
+      84400
+    ]
+  },
+  "independent_scope": "两臂900map/4500commands/181native/5401contacts/双901video及source/full hashes；6安装连续screen/98retention/64阻塞/320零请求与轨迹；77全部规划query为主执行者复算，独立未重复全部77搜索。",
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false,
+  "stop_reason": "完整有界真实研究阶段否定验收与封存，无实验运行/外部资源阻塞；不是静态小检查停点。"
+}

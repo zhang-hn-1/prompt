@@ -1,0 +1,159 @@
+{
+  "status": "review_complete_no_blocking_correctness_findings",
+  "checks": {
+    "inputs_hashes_matched": 1089,
+    "outputs_hashes_matched": 543,
+    "sources_hashes_matched": 3,
+    "truth_hashes_matched": 543
+  },
+  "groups": [
+    {
+      "sequence": "H",
+      "epochs": 181,
+      "all_identities_and_counts_matched": true,
+      "exact_frame_coverage": "0..900 in steps of 5",
+      "first_time_s": 0.0,
+      "last_time_s": 89.99999798834324,
+      "monotonic_clocks": true,
+      "all_reported_metrics_reproduced": true,
+      "source_gate": true,
+      "before_outlier030_fraction": 0.012124617902244728,
+      "after_outlier030_fraction": 0.012115974089100956
+    },
+    {
+      "sequence": "E0",
+      "epochs": 181,
+      "all_identities_and_counts_matched": true,
+      "exact_frame_coverage": "0..900 in steps of 5",
+      "first_time_s": 0.0,
+      "last_time_s": 89.99999798834324,
+      "monotonic_clocks": true,
+      "all_reported_metrics_reproduced": true,
+      "source_gate": false,
+      "before_outlier030_fraction": 0.18342934822830123,
+      "after_outlier030_fraction": 0.1834003697753595
+    },
+    {
+      "sequence": "E1",
+      "epochs": 181,
+      "all_identities_and_counts_matched": true,
+      "exact_frame_coverage": "0..900 in steps of 5",
+      "first_time_s": 0.0,
+      "last_time_s": 89.99999798834324,
+      "monotonic_clocks": true,
+      "all_reported_metrics_reproduced": true,
+      "source_gate": true,
+      "before_outlier030_fraction": 0.011009369993204399,
+      "after_outlier030_fraction": 0.011023467656574283
+    }
+  ],
+  "decision": "reject mechanism; E0 fails fixed p90 and outlier gates; close unused physical budget",
+  "critical_findings": [],
+  "important_findings": [],
+  "observations": [
+    "Static code review: truth frames are first opened after all 543 predictions and prediction seal are written.",
+    "Hash verification supports artifact consistency; static review is not an OS-enforced information-flow proof.",
+    "New relative to cited local baseline: packet-wide right integer pixel ownership; existing LR and paired texture gates do not ensure uniqueness.",
+    "Scope is CAD/range/outside-body/stride2 selected source packet only. Integer collisions can occur for valid surfaces.",
+    "Scoring is conditional on finite positive GT; infinite truth counts are reported separately and no full-image or navigation accuracy is established.",
+    "H/E0/E1 are previously inspected development groups, with no heldout/generalization claim.",
+    "No source-generated free-space or deletion of old risk is performed by the reviewed ownership output.",
+    "check_ownership.py prints 8 cases while its code contains four ordinary, three invalid-input, and one immutability/free-space scenario."
+  ],
+  "audited_artifact_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/ownership.py": "50bace1f44c041a995fb87b346e3161f0eb5e42730a31ac19e8f9bce193c7871",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/protocol.json": "7380c3dc3af0056ae58b66c3d6014a8cf5ccf55c867fbd51c166a184a33a62b6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/run.py": "61b4f42b6fd8f2b6690318f17bd808b7f649d209633c7414fe06429823ed36fc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/check_ownership.py": "4400e714326177d4139f029c1f1da9c5b623abb5d08e8e591ae7db84053d5998",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/result.json": "2e54d6011d4812ec2cbaf851d6481b14039d9e06250cf728729dcf71c36f7c8b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/prediction_seal.json": "49f5a72f9c4cc6b6a41c5270b83be2899f1972f18a38b0c726e251332c275070",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/truth_scoring_sha.json": "c2ddbf5a7b45734da46e093f15aaf57458f66b520b641d33451122b4a3f99ac4"
+  },
+  "reproduce": "PYTHONDONTWRITEBYTECODE=1 /home/an/miniconda3/envs/ball_wm/bin/python experiments/stereo_partner_ownership_20261013_v1/audit_independent.py",
+  "map_review": {
+    "groups": [
+      {
+        "sequence": "E0",
+        "metrics_reproduced": true,
+        "all_admitted_points_subset_of_source": true,
+        "final_baseline_labels_exact": true,
+        "final_map_time_s": 89.89999799057841,
+        "point_metric_frame_range": "0..900 step5; full source run",
+        "changed_final_label_cells": 0
+      },
+      {
+        "sequence": "E1",
+        "metrics_reproduced": true,
+        "all_admitted_points_subset_of_source": true,
+        "final_baseline_labels_exact": true,
+        "final_map_time_s": 89.89999799057841,
+        "point_metric_frame_range": "0..900 step5; full source run",
+        "changed_final_label_cells": 0
+      }
+    ],
+    "map_output_hashes_matched": 4,
+    "map_source_hashes_matched": 4,
+    "ownership_output_hashes_matched": 543,
+    "ownership_seal_binding_verified": true,
+    "scope": "fixed historical trajectories; no new physical run or navigation success",
+    "notes": [
+      "Map snapshots end at frame899 (~89.9s); admitted point metrics include frame900 (~90s).",
+      "Source candidate points and admitted map points are distinct populations."
+    ],
+    "reviewed_map_artifact_sha256": {
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/maps_and_visuals.py": "453937a797ba80ad5f6294defbe4e24140a5bfa24cf6ac48f922c056abbfde92",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/map_results.json": "f5510ec1f877569dbf6e7a516dd8f401558c055198e45895bab46796c2b535da",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/map_prediction_seal.json": "0d460a6da676465d4b0f10c0088caaadf396a006482f04ee602f522aa3474df0"
+    }
+  },
+  "posthoc_partition_review": {
+    "groups": [
+      {
+        "sequence": "H",
+        "all_partition_counts_reproduced": true,
+        "partition_total_matches_original_finite_score": true
+      },
+      {
+        "sequence": "E0",
+        "all_partition_counts_reproduced": true,
+        "partition_total_matches_original_finite_score": true
+      },
+      {
+        "sequence": "E1",
+        "all_partition_counts_reproduced": true,
+        "partition_total_matches_original_finite_score": true
+      }
+    ],
+    "original_result_and_protocol_hashes_unchanged": true,
+    "scope": "GT-conditioned descriptive error origin only; not an online classifier, causal explanation, revised gate, or rescue",
+    "artifact_sha256": {
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/error_partition.py": "73a5f242bebf7e1877e2467b53b870a155a6e710a3c0b9b3f03fdb4d769e8a61",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/error_partition.json": "2eba292cdfcb12819baa50e350f377c800f96035e8246251b3770a5800d1cbbe"
+    }
+  },
+  "map_recovery_review": {
+    "initial_shell_returncode": 143,
+    "initial_interruption_is_not_performance_evidence": true,
+    "recovery_child_returncode": 0,
+    "parent_pid": 1642794,
+    "child_pid": 1642795,
+    "physics": 0
+  },
+  "visual_review": {
+    "status": "resolved_and_visually_verified",
+    "resolved_issue": "Initial E0 map used X=-5..5.5 while its risk, trajectory and goal occupy X=18..27. Revised figure uses identical data-derived bounds in all three panels.",
+    "depth_figure": "E0 45s sampled points plotted with discrete enlarged markers; no interpolated depth; GT evaluation separately labeled.",
+    "numeric_artifacts_unchanged": true,
+    "images_inspected": [
+      "E0_map_comparison.png",
+      "E0_depth_comparison.png",
+      "E1_map_comparison.png"
+    ],
+    "sha256": {
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/render_readable.py": "390b733fa77f248beb711bff4227e1f8014aa166842d277b4b0bd8133326f789",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/E0_map_comparison.png": "8a9e35e1cca5d67da9d4cb9418dd1a2535802b9f3c2df068daabb580aa2beb2c",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/E0_depth_comparison.png": "8a438727aae7406b73ab8e173749bd85fabf85ba8009c1f3b71ed87b1a9618c2",
+      "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/E1_map_comparison.png": "199ec13587d7442689660c95d190cad0a3186d6856ecf9f8d51816e3d9fd0c0f"
+    }
+  }
+}

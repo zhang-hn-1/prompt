@@ -1,0 +1,219 @@
+{
+  "stage": "static_mdl_candidates_and_source_bundle_sealed",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v18.json",
+  "evidence_report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/benchmark_delivery_20261012.md",
+  "delivery_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/benchmark_delivery_20261012_v1",
+  "manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/benchmark_delivery_20261012_v1/delivery_manifest_v1.json",
+  "verification_log": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/benchmark_delivery_20261012_v1/verification_run_v1.log",
+  "independent_review": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/benchmark_delivery_20261012_v1/independent_evidence_review_v1.json",
+  "completed_work": [
+    "12 sealed condition full raw metric and artifact identity audit",
+    "6native online prediction diagnostic with all9741 samples",
+    "30 same-exposure reference predicates,11 changed",
+    "local authority report CSV manifest and repeatable integrity entry"
+  ],
+  "budget": {
+    "new_physics": 3,
+    "new_model_queries": 0,
+    "new_training": 0,
+    "heading_rate_remaining": 0,
+    "memory_pair_remaining": 0,
+    "old_learning_remaining": 0,
+    "pilot_remaining": 0,
+    "new_teacher_queries": 0,
+    "dataset_remaining": 0
+  },
+  "active_experiment_processes": false,
+  "remaining_work": [
+    "SDK material resolver for2OmniPBR references and MDL imports",
+    "Portable code/environment path configuration and runtime asset scope",
+    "Cross-machine runtime validation not yet established",
+    "Reliable navigation and learned increment remain unestablished; closed physics/data budgets cannot be reopened"
+  ],
+  "next_action": "Use sealed static MDL candidate graph and relative frozen Python bundle. Next audit dynamic imports/data dependencies and design explicit controller path configuration without altering archived originals; live resolver and cross-machine runtime remain unvalidated. All physical/data/fit budgets closed.",
+  "whole_mission_complete": false,
+  "supplement_report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/benchmark_runtime_and_learning_qualification_20261012.md",
+  "runtime_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/runtime_entry_20261012_v1/preflight_v2.py",
+  "learning_design": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/execution_tube_qualification_20261012_v1/design_v2.json",
+  "learning_manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/execution_tube_qualification_20261012_v1/manifest_v1.json",
+  "provenance_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_provenance_20261012_v1",
+  "provenance_manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_provenance_20261012_v1/manifest.json",
+  "acquisition_readiness": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_provenance_20261012_v1/acquisition_readiness.json",
+  "stop_reason": "Offline source bundle and static MDL candidate graph sealed; runtime portability still incomplete.",
+  "collector_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_collector_20261012_v1",
+  "collector_manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_collector_20261012_v1/manifest.json",
+  "journal_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_journal_20261012_v1",
+  "journal_manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_journal_20261012_v1/manifest.json",
+  "source_mapping": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_journal_20261012_v1/source_mapping.json",
+  "bridge_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_bridge_20261012_v1",
+  "bridge_manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_bridge_20261012_v1/manifest.json",
+  "anchor_provider": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_anchor_provider_20261012_v1/provider.py",
+  "anchor_provider_manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_anchor_provider_20261012_v1/manifest.json",
+  "collector_pilot_design": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_anchor_provider_20261012_v1/collector_pilot_design_v1.json",
+  "pilot_budget": {
+    "physical_episode_max": 1,
+    "used": 1,
+    "attempt_reserved": 1,
+    "retry": 0,
+    "remaining": 0,
+    "closed": true
+  },
+  "pilot_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_live_pilot_20261012_v1",
+  "pilot_status": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_live_pilot_20261012_v1/run_status_v1.json",
+  "pilot_log": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_live_pilot_20261012_v1/run_durable_v1.log",
+  "pilot_admission": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_live_pilot_20261012_v1/pilot_admission_v1.json",
+  "processes": {
+    "status": "coverage_rejected",
+    "parent_pid": 23702,
+    "used": 2,
+    "cap": 30,
+    "retries": 0,
+    "groups": [
+      {
+        "group": "development-00",
+        "split": "development",
+        "planned": 70,
+        "attempted": 70,
+        "scorable": 70,
+        "execution_identity": [
+          "2026-10-12T02:13:47.014838+00:00",
+          23733
+        ],
+        "programs": [
+          "forward",
+          "left",
+          "right",
+          "stop"
+        ],
+        "state_bins": [
+          "low",
+          "moving"
+        ],
+        "support_cells": [
+          [
+            "forward",
+            "low"
+          ],
+          [
+            "forward",
+            "moving"
+          ],
+          [
+            "left",
+            "low"
+          ],
+          [
+            "left",
+            "moving"
+          ],
+          [
+            "right",
+            "low"
+          ],
+          [
+            "right",
+            "moving"
+          ],
+          [
+            "stop",
+            "low"
+          ],
+          [
+            "stop",
+            "moving"
+          ]
+        ],
+        "support_from": "complete_scorable_only"
+      },
+      {
+        "group": "development-01",
+        "split": "development",
+        "planned": 70,
+        "attempted": 58,
+        "scorable": 57,
+        "execution_identity": [
+          "2026-10-12T02:16:28.109830+00:00",
+          27004
+        ],
+        "programs": [
+          "forward",
+          "left",
+          "right",
+          "stop"
+        ],
+        "state_bins": [
+          "low",
+          "moving"
+        ],
+        "support_cells": [
+          [
+            "forward",
+            "low"
+          ],
+          [
+            "forward",
+            "moving"
+          ],
+          [
+            "left",
+            "low"
+          ],
+          [
+            "left",
+            "moving"
+          ],
+          [
+            "right",
+            "low"
+          ],
+          [
+            "right",
+            "moving"
+          ],
+          [
+            "stop",
+            "low"
+          ],
+          [
+            "stop",
+            "moving"
+          ]
+        ],
+        "support_from": "complete_scorable_only"
+      }
+    ],
+    "fit_admitted": false,
+    "current_group": "development-01",
+    "unattempted": 28,
+    "end_utc": "2026-10-12T02:18:26.132684+00:00"
+  },
+  "pilot_assessment": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_live_pilot_20261012_v1/assessment_v1.json",
+  "pilot_independent_closure": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_live_pilot_20261012_v1/independent_actual_closure_v1.json",
+  "pilot_delivery_manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_live_pilot_20261012_v1/delivery_manifest_v1.json",
+  "learning_coverage_checkpoint": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_live_pilot_20261012_v1/learning_coverage_checkpoint_v1.json",
+  "coverage_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_dataset_qualification_20261012_v1",
+  "coverage_manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_dataset_qualification_20261012_v1/manifest.json",
+  "acquisition_draft": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_dataset_qualification_20261012_v1/acquisition_design_draft_v1.json",
+  "new_data_budget": {
+    "cap": 30,
+    "used": 2,
+    "unattempted": 28,
+    "available": 0,
+    "retries": 0,
+    "closed": true
+  },
+  "dataset_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_dataset_collection_20261012_v1",
+  "dataset_ledger": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_dataset_collection_20261012_v1/collection_status_v1.json",
+  "dataset_admission": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_dataset_collection_20261012_v1/dataset_admission_v1.json",
+  "dataset_assessment": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_dataset_collection_20261012_v1/dataset_assessment_v1.json",
+  "dataset_independent_closure": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_dataset_collection_20261012_v1/independent_actual_closure_v1.json",
+  "dataset_archive": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/tube_dataset_collection_20261012_v1/artifact_manifest_post_close.json",
+  "authority_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/authoritative_delivery_20261012_v1",
+  "authority_catalogue": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/authoritative_delivery_20261012_v1/catalogue_v3.json",
+  "authority_manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/authoritative_delivery_20261012_v1/authority_manifest_v3.json",
+  "authority_verifier": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/authoritative_delivery_20261012_v1/verify_v3.py",
+  "authority_archive": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/authoritative_delivery_20261012_v1/artifact_manifest_post_close.json",
+  "authority_verified_unique_files": 32146,
+  "portable_configuration_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/portable_configuration_20261012_v1",
+  "portable_source_directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/portable_source_20261012_v1"
+}

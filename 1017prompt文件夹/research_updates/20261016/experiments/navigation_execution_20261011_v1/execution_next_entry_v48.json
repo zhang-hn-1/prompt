@@ -1,0 +1,197 @@
+{
+  "stage": "partner_ownership_full_source_and_map_reject",
+  "updated_utc": "2026-10-13T03:29:03.061883+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v47.json",
+  "experiment": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_partner_ownership_20261013_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/stereo_partner_ownership_results_20261013.md",
+  "results": {
+    "results": [
+      {
+        "sequence": "H",
+        "candidates": 1047726,
+        "retained": 1044392,
+        "rejected": 3334,
+        "finite_before": 809675,
+        "finite_after": 806456,
+        "conditional_scoring_coverage_before": 0.7727926958002378,
+        "conditional_scoring_coverage_after": 0.7721774965721683,
+        "full_image_scored_fraction_after": 0.014503769567219153,
+        "before_percentiles": [
+          0.023504257202148438,
+          0.10052614212036126,
+          0.17871663570404048
+        ],
+        "after_percentiles": [
+          0.023467838764190674,
+          0.10021066665649414,
+          0.17839455604553223
+        ],
+        "above030_fraction": 0.012115974089100956,
+        "obstacle_before": 244559,
+        "obstacle_after": 243084,
+        "obstacle_retention": 0.993968735560744,
+        "candidate_retention": 0.9968178703210572,
+        "infinite_truth_before": 238051,
+        "infinite_truth_after": 237936,
+        "source_gate": true
+      },
+      {
+        "sequence": "E0",
+        "candidates": 517800,
+        "retained": 516000,
+        "rejected": 1800,
+        "finite_before": 513462,
+        "finite_after": 511662,
+        "conditional_scoring_coverage_before": 0.99162224797219,
+        "conditional_scoring_coverage_after": 0.991593023255814,
+        "full_image_scored_fraction_after": 0.009202024343922652,
+        "before_percentiles": [
+          0.047588229179382324,
+          0.4267312645912175,
+          0.5836993813514708
+        ],
+        "after_percentiles": [
+          0.04755359888076782,
+          0.4269334197044374,
+          0.5838343918323511
+        ],
+        "above030_fraction": 0.1834003697753595,
+        "obstacle_before": 361830,
+        "obstacle_after": 360588,
+        "obstacle_retention": 0.9965674488019236,
+        "candidate_retention": 0.996523754345307,
+        "infinite_truth_before": 4338,
+        "infinite_truth_after": 4338,
+        "source_gate": false
+      },
+      {
+        "sequence": "E1",
+        "candidates": 1619230,
+        "retained": 1613196,
+        "rejected": 6034,
+        "finite_before": 1209606,
+        "finite_after": 1203614,
+        "conditional_scoring_coverage_before": 0.7470254380168352,
+        "conditional_scoring_coverage_after": 0.746105246975569,
+        "full_image_scored_fraction_after": 0.021646487971915287,
+        "before_percentiles": [
+          0.02731102705001831,
+          0.11759066581726074,
+          0.1448490023612976
+        ],
+        "after_percentiles": [
+          0.027355730533599854,
+          0.11764594316482543,
+          0.1448906302452087
+        ],
+        "above030_fraction": 0.011023467656574283,
+        "obstacle_before": 748823,
+        "obstacle_after": 744624,
+        "obstacle_retention": 0.9943925333490023,
+        "candidate_retention": 0.996273537422108,
+        "infinite_truth_before": 409624,
+        "infinite_truth_after": 409582,
+        "source_gate": true
+      }
+    ],
+    "pass_gate": false,
+    "physics": 0,
+    "fit": 0,
+    "scope": "development source packet ownership; no navigation"
+  },
+  "map_results": [
+    {
+      "sequence": "E0",
+      "rows": [
+        {
+          "arm": "before",
+          "risk_cells": 127,
+          "older10s": 108,
+          "far015": 8,
+          "older_far015": 2,
+          "accepted_points": 147261,
+          "finite_gt_points": 143261,
+          "gt_floor_false": 14213,
+          "point_error_p50_p90": [
+            0.0822786728502594,
+            0.5380287196927944
+          ]
+        },
+        {
+          "arm": "after",
+          "risk_cells": 127,
+          "older10s": 108,
+          "far015": 8,
+          "older_far015": 2,
+          "accepted_points": 146823,
+          "finite_gt_points": 142823,
+          "gt_floor_false": 14202,
+          "point_error_p50_p90": [
+            0.08190909733733427,
+            0.5387849131585842
+          ]
+        }
+      ],
+      "map_time_s": 89.89999799057841,
+      "point_stats_scope": "all181 source captures0..90s; last capture90s is after final map89.9s; point stats not map cell membership"
+    },
+    {
+      "sequence": "E1",
+      "rows": [
+        {
+          "arm": "before",
+          "risk_cells": 175,
+          "older10s": 115,
+          "far015": 30,
+          "older_far015": 20,
+          "accepted_points": 262774,
+          "finite_gt_points": 225334,
+          "gt_floor_false": 771,
+          "point_error_p50_p90": [
+            0.024321788020552022,
+            0.06199648244609149
+          ]
+        },
+        {
+          "arm": "after",
+          "risk_cells": 175,
+          "older10s": 115,
+          "far015": 30,
+          "older_far015": 20,
+          "accepted_points": 261079,
+          "finite_gt_points": 223679,
+          "gt_floor_false": 766,
+          "point_error_p50_p90": [
+            0.024334038654860505,
+            0.062054917724854504
+          ]
+        }
+      ],
+      "map_time_s": 89.89999799057841,
+      "point_stats_scope": "all181 source captures0..90s; last capture90s is after final map89.9s; point stats not map cell membership"
+    }
+  ],
+  "budget": {
+    "status": "closed_source_qualification_reject",
+    "physical_cap": 4,
+    "physical_used": 0,
+    "physical_unattempted_closed": 4,
+    "fit": 0,
+    "physical_environment_recovery_used": 0,
+    "cpu_map_interrupted": 1,
+    "cpu_map_recovery_used": 1,
+    "no_tuning_or_relaunch": true,
+    "utc": "2026-10-13T03:29:03.061883+00:00"
+  },
+  "processes": {
+    "parent": 1642794,
+    "child": 1642795,
+    "status": "finished0",
+    "all_exited": true
+  },
+  "next": "Finite novelty check then freeze one distinct current-pair ordinal/Census matching-cost depth estimator, replacing measurement generation rather than filtering or retuning the rejected SGBM confidences. Existing ORB sparse matching and temporal variants are already rejected (mission229-248/1501), do not replace descriptor or replay them. Only current paired RGB/native calibration/CAD masks; no lighting or camera changes; no GT online. Specify fixed correspondence/domain/ambiguity rule and complete grouped sequence accuracy plus true-obstacle/measurement coverage before execution; known H/E0/E1 are development only. No threshold sweep or old candidate rescue. If source gate fails close candidate; if passes newcap<=4 including necessary sameversion baseline/fresh actual test. This is an unimplemented research hypothesis, not an admitted source or promise of navigation.",
+  "stop_reason": "Completed frozen543-pair source qualification plus complete same-trajectory E0/E1 map consequences and independent review; scientifically rejected before physical admission. No approval or resource blocker.",
+  "reliable_navigation": false,
+  "learning_navigation_increment": false,
+  "whole_project_complete": false
+}

@@ -1,0 +1,44 @@
+{
+  "code_review_pass": true,
+  "offline_replay_admitted": true,
+  "physical_admitted": true,
+  "blocking_issues": [],
+  "source_checks": {
+    "planning_change": "Global A* plan/local occupied crop/continuous retained suffix use old mandatory margin +.2, no risk label edits.",
+    "function_clone": "Clones old plan/local/screen code into private globals; no global monkeypatch or old checkpoint/model reuse.",
+    "MRO": "Outer ReplanningReserve overrides only plan_boundary/reset/logging act. Inherited FirstPrimitiveDirection.act still sets measured current_first_direction; inherited reversal arming act retained. Override manually preserves original boundary first-direction prefix-search request and installation transaction.",
+    "control": "Candidate vs baseline driver difference limited name/config/output+reserve wrapper; original control/source/pose/90s unchanged.",
+    "novelty": "Distinct from missed-trigger hypothesis (existing full suffix already screened) and closed tube geometry screen/firstdirection mechanisms. Additional reserve is uncertain future-replan-feasibility assumption; not proven safe tube or stopping certificate.",
+    "fallback": "Return None plan leaves inherited original fallback, no alternative new source or GT access.",
+    "guard_scope": "New continuous reserve retention applies every retained boundary, even before inherited tube_armed; this is disclosed extra reserve condition, not a duplicate observation trigger."
+  },
+  "issues": [
+    {
+      "priority": "minor",
+      "finding": "ReserveGrid sets exploration_unknown_fraction on wrapper during A*; base grid diagnostic field does not update. local metadata correctly reads wrapper value, so this is a reporting detail, not changed control."
+    }
+  ],
+  "source_sha256": {
+    "protocol.json": "935d47decca2b31bef505adfdd49eb50ba38c71bdff4de7befbf38cc518d3581",
+    "reserve.py": "dec591c1e5ccb34fa2c7be2df22d3ad6ce2927d376962b722e8c0a0a817e094e",
+    "candidate_e1_driver.py": "06a8bfff6e249c00ff7f71b3612467a8f78805cb1680ef4773e2d47fa8a4f74a",
+    "baseline_e1_driver.py": "4e11dd90135419375b61a82268756b7ffa50e649bb7af1e1ea865a6b6331dd46",
+    "bootstrap.py": "bd69af151d60824e8c07c0848ca8d06b910917f272c8acf9f16951528a7967a1",
+    "supervise.py": "d25f4287280ca31d459515e8aa975f70add251bd8d159712d7412fba36717ed2"
+  },
+  "review_fit": 0,
+  "review_physical": 0,
+  "scope": "Code review only. Bounded2actual90s admission pending frozen offline evidence; sameE1 known development, no independent generalization.",
+  "resolved_issues": [
+    {
+      "priority": "P2",
+      "file": "candidate_e1_driver.py",
+      "finding": "Candidate task_episode metadata still states only_planning_change=baseline_none and observed_end_subgoal baseline comparison, while actual candidate overrides reserve planner. Correct metadata before physical run.",
+      "resolution": "Candidate only_planning_change and comparison now identify reserve mechanism."
+    }
+  ],
+  "metadata_correction": "Later corrected planning/comparison metadata only; original review SHA preserved in prior context, current SHA is addendum.",
+  "consistency_review": "continuous_consistency_review.json",
+  "continuous_guard_correction": "Current reserve_curve performs same-map generated reference continuous reserve screen before returning installable plan; failure returns None and inherited local_no_route fallback. Initial source/replay preserved.",
+  "final_admission": "admission.json; all prior metadata/continuous/input-validation blockers resolved; bounded2actual90s only"
+}

@@ -1,0 +1,7 @@
+# Frozen sparse-support footprint and width semantics
+
+Both local-refinement domains are now closed: reverse451pointrecords99.33%10cm andfrontal240records100%, both rejected because no100point exposure. Do not lower that gate or try another matcher. The frontal case is a different historical view/motion prefix, not a yaw-only causal comparison.
+
+One remaining measurement question: do these repeated records represent broad spatial evidence, or only a narrow surface band? For each domain at14s, union all qualified current/past point records into .05mXYcells, and compute the same existing .2m MODEL-support disk footprint on the archived TaskH grid geometry. Save these MODEL cells before reading occupancy labels. This is an applicability diagnostic, never measured-free, hidden-volume safety, model admission or a new navigation candidate. Then report coverage of the existing185 physical cylinderXYcells; no shape completion/fixture geometry in producer and no radius/density threshold search.
+
+Also reconstruct the +/-1pixel depth-sensitivity width implied byf*.6/d at the refined disparity/ray, then posthoc report error-to-width coverage. It is a sensitivity heuristic, not calibrated standard deviation, Gaussian probability or certified pose uncertainty. Do not infer zero pose uncertainty from old pose_sigma_m=0. No fitted scale/bias, GT-corrected actor points or gate change. Preserve all source, interface and navigation failures.

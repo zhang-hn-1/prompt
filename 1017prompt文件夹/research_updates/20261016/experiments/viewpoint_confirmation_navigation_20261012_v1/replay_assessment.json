@@ -1,0 +1,311 @@
+{
+  "baseline_map_replay_exact_frames": 180,
+  "changed_map_frames": 152,
+  "rows": [
+    {
+      "frame": 0,
+      "time_s": 0.0,
+      "old": {
+        "hazards": 30,
+        "confirmed": 0,
+        "root_clearance_m": 2.23606797749979,
+        "root_pass": true
+      },
+      "new": {
+        "hazards": 30,
+        "confirmed": 0,
+        "root_clearance_m": 2.23606797749979,
+        "root_pass": true
+      }
+    },
+    {
+      "frame": 50,
+      "time_s": 4.999999888241291,
+      "old": {
+        "hazards": 44,
+        "confirmed": 30,
+        "root_clearance_m": 2.23606797749979,
+        "root_pass": true
+      },
+      "new": {
+        "hazards": 44,
+        "confirmed": 0,
+        "root_clearance_m": 2.23606797749979,
+        "root_pass": true
+      }
+    },
+    {
+      "frame": 100,
+      "time_s": 9.999999776482582,
+      "old": {
+        "hazards": 91,
+        "confirmed": 60,
+        "root_clearance_m": 1.47648230602334,
+        "root_pass": true
+      },
+      "new": {
+        "hazards": 91,
+        "confirmed": 46,
+        "root_clearance_m": 1.47648230602334,
+        "root_pass": true
+      }
+    },
+    {
+      "frame": 150,
+      "time_s": 14.999999664723873,
+      "old": {
+        "hazards": 97,
+        "confirmed": 75,
+        "root_clearance_m": 1.746424919657298,
+        "root_pass": true
+      },
+      "new": {
+        "hazards": 95,
+        "confirmed": 58,
+        "root_clearance_m": 1.746424919657298,
+        "root_pass": true
+      }
+    },
+    {
+      "frame": 200,
+      "time_s": 19.999999552965164,
+      "old": {
+        "hazards": 99,
+        "confirmed": 87,
+        "root_clearance_m": 1.5,
+        "root_pass": true
+      },
+      "new": {
+        "hazards": 93,
+        "confirmed": 70,
+        "root_clearance_m": 1.5,
+        "root_pass": true
+      }
+    },
+    {
+      "frame": 250,
+      "time_s": 24.999999441206455,
+      "old": {
+        "hazards": 119,
+        "confirmed": 106,
+        "root_clearance_m": 1.8,
+        "root_pass": true
+      },
+      "new": {
+        "hazards": 108,
+        "confirmed": 80,
+        "root_clearance_m": 1.8,
+        "root_pass": true
+      }
+    },
+    {
+      "frame": 300,
+      "time_s": 29.999999329447746,
+      "old": {
+        "hazards": 170,
+        "confirmed": 135,
+        "root_clearance_m": 1.7029386365926404,
+        "root_pass": true
+      },
+      "new": {
+        "hazards": 156,
+        "confirmed": 113,
+        "root_clearance_m": 1.7029386365926404,
+        "root_pass": true
+      }
+    },
+    {
+      "frame": 350,
+      "time_s": 34.99999921768904,
+      "old": {
+        "hazards": 169,
+        "confirmed": 138,
+        "root_clearance_m": 2.3021728866442674,
+        "root_pass": true
+      },
+      "new": {
+        "hazards": 153,
+        "confirmed": 117,
+        "root_clearance_m": 2.7,
+        "root_pass": true
+      }
+    },
+    {
+      "frame": 400,
+      "time_s": 39.99999910593033,
+      "old": {
+        "hazards": 196,
+        "confirmed": 172,
+        "root_clearance_m": 1.4142135623730951,
+        "root_pass": true
+      },
+      "new": {
+        "hazards": 181,
+        "confirmed": 142,
+        "root_clearance_m": 1.4142135623730951,
+        "root_pass": true
+      }
+    },
+    {
+      "frame": 450,
+      "time_s": 44.99999899417162,
+      "old": {
+        "hazards": 212,
+        "confirmed": 185,
+        "root_clearance_m": 0.7211102550927979,
+        "root_pass": false
+      },
+      "new": {
+        "hazards": 197,
+        "confirmed": 155,
+        "root_clearance_m": 0.7211102550927979,
+        "root_pass": false
+      }
+    },
+    {
+      "frame": 500,
+      "time_s": 49.99999888241291,
+      "old": {
+        "hazards": 191,
+        "confirmed": 185,
+        "root_clearance_m": 0.5656854249492381,
+        "root_pass": false
+      },
+      "new": {
+        "hazards": 161,
+        "confirmed": 155,
+        "root_clearance_m": 0.5656854249492381,
+        "root_pass": false
+      }
+    },
+    {
+      "frame": 550,
+      "time_s": 54.9999987706542,
+      "old": {
+        "hazards": 187,
+        "confirmed": 185,
+        "root_clearance_m": 0.6403124237432849,
+        "root_pass": false
+      },
+      "new": {
+        "hazards": 157,
+        "confirmed": 155,
+        "root_clearance_m": 0.6403124237432849,
+        "root_pass": false
+      }
+    },
+    {
+      "frame": 600,
+      "time_s": 59.99999865889549,
+      "old": {
+        "hazards": 185,
+        "confirmed": 185,
+        "root_clearance_m": 0.670820393249937,
+        "root_pass": false
+      },
+      "new": {
+        "hazards": 155,
+        "confirmed": 155,
+        "root_clearance_m": 0.670820393249937,
+        "root_pass": false
+      }
+    },
+    {
+      "frame": 650,
+      "time_s": 64.99999854713678,
+      "old": {
+        "hazards": 185,
+        "confirmed": 185,
+        "root_clearance_m": 0.670820393249937,
+        "root_pass": false
+      },
+      "new": {
+        "hazards": 155,
+        "confirmed": 155,
+        "root_clearance_m": 0.670820393249937,
+        "root_pass": false
+      }
+    },
+    {
+      "frame": 700,
+      "time_s": 69.99999843537807,
+      "old": {
+        "hazards": 185,
+        "confirmed": 185,
+        "root_clearance_m": 0.670820393249937,
+        "root_pass": false
+      },
+      "new": {
+        "hazards": 155,
+        "confirmed": 155,
+        "root_clearance_m": 0.670820393249937,
+        "root_pass": false
+      }
+    },
+    {
+      "frame": 750,
+      "time_s": 74.99999832361937,
+      "old": {
+        "hazards": 185,
+        "confirmed": 185,
+        "root_clearance_m": 0.7280109889280518,
+        "root_pass": false
+      },
+      "new": {
+        "hazards": 155,
+        "confirmed": 155,
+        "root_clearance_m": 0.7280109889280518,
+        "root_pass": false
+      }
+    },
+    {
+      "frame": 800,
+      "time_s": 79.99999821186066,
+      "old": {
+        "hazards": 185,
+        "confirmed": 185,
+        "root_clearance_m": 0.7280109889280518,
+        "root_pass": false
+      },
+      "new": {
+        "hazards": 155,
+        "confirmed": 155,
+        "root_clearance_m": 0.7280109889280518,
+        "root_pass": false
+      }
+    },
+    {
+      "frame": 850,
+      "time_s": 84.99999810010195,
+      "old": {
+        "hazards": 185,
+        "confirmed": 185,
+        "root_clearance_m": 0.7280109889280518,
+        "root_pass": false
+      },
+      "new": {
+        "hazards": 155,
+        "confirmed": 155,
+        "root_clearance_m": 0.7280109889280518,
+        "root_pass": false
+      }
+    },
+    {
+      "frame": 895,
+      "time_s": 89.49999799951911,
+      "old": {
+        "hazards": 185,
+        "confirmed": 185,
+        "root_clearance_m": 0.7280109889280518,
+        "root_pass": false
+      },
+      "new": {
+        "hazards": 155,
+        "confirmed": 155,
+        "root_clearance_m": 0.7280109889280518,
+        "root_pass": false
+      }
+    }
+  ],
+  "scope": "Saved trajectory counterfactual memory only; unchanged recent10s. Camera translation screen necessary heuristic, not correctness or independence certificate. No truth consulted, no navigation benefit claim."
+}

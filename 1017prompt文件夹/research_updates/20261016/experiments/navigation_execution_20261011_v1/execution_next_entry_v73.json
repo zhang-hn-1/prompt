@@ -1,0 +1,13 @@
+{
+  "stage": "pretrained_stereo_fixed_consumer_rejected",
+  "parent_entry": "execution_next_entry_v72.json",
+  "updated_utc": "2026-10-14T05:04:53.999194+00:00",
+  "summary": "v73标准FoundationStereo未微调完成7开发组1267对先seal后GT与6300地图。H/E0/E1/B54/C54/B65/C65深度P90 .011853/.082576/.017671/.018824/.018770/.017519/.017337m，显著改善；BEV召回51.25/66.99/73.08/70.56/68.53/74.64/66.54%全部<80%，H/C54precision93.70/94.00%<95%。原障碍query保留55.93–81.35%<95%，E0 frame385(38.5s)1灾难帧；整体源/固定BEV消费者拒绝physical0/4余4关闭fit0recovery1/1。最终E1错误风险30→0、C5412→0；C65错误3→0/旧错误3→0，H21→21/B6557→20。C65原16阻塞源13测量误差.004624–.055019m、3未知；全900map起点风险阻塞70→0，非导航。完整参考通道计数未评估，已由其他门槛提前拒绝。完整耗时median约2.86s/P90约2.87–3.02s>0.5s，非实时。生成02:56:53–04:23:22UTC finished0，parent3162608child3162609退出；全部评分结束。报告reports/pretrained_stereo_bev_results_20261014.md直接同刻图/分母。独立2534方法帧聚合核验，6300地图回放与保存56map clock/labels exact。下一有限当前BEV可见目标覆盖损失分解：固定本次权重/输出，核当前左右支持域、CAD、query采样、paired投影/纹理/高度消费者各层对目标的损失，GT仅评分；只有明确新消费者机制与完整域证据才独立冻结消费者oracle资格/新预算，不调模型/LR/原失败门槛、不微调救分，不自动派导航。全部已见开发，整体/可靠导航/学习导航增量未完成，ACTIVE。",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/pretrained_stereo_bev_20261013_v1",
+  "next_action": "有限BEV消费者覆盖损失资格，不微调/扫参/派导航；完整报告和原结果保留。",
+  "whole_complete": false,
+  "fit": 0,
+  "physical": 0,
+  "recovery": 1,
+  "running_experiments": []
+}

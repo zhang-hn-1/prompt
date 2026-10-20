@@ -1,0 +1,62 @@
+{
+  "qualification_pass": true,
+  "fit": 1,
+  "physics": 0,
+  "model_iterations": 15,
+  "results": [
+    {
+      "sequence": "H",
+      "scope": "whole",
+      "candidates": 1047726,
+      "scored_before": 809675,
+      "scored_after": 808952,
+      "before_p90_m": 0.10052614212036126,
+      "after_p90_m": 0.09996945858001713,
+      "above030_fraction": 0.011584123656286157,
+      "obstacle_retention": 0.9977755878949456,
+      "all_candidate_retention": 0.9981798676371494,
+      "epoch_retention_gate_fraction": 1.0,
+      "source_gate": true,
+      "positive_infinite_truth_candidates": 238051,
+      "positive_infinite_truth_retained": 236867
+    },
+    {
+      "sequence": "E0",
+      "scope": "whole",
+      "candidates": 517800,
+      "scored_before": 513462,
+      "scored_after": 513438,
+      "before_p90_m": 0.4267312645912175,
+      "after_p90_m": 0.4266517400741577,
+      "above030_fraction": 0.18341260288486633,
+      "obstacle_retention": 0.9999972362711771,
+      "all_candidate_retention": 0.999905368868289,
+      "epoch_retention_gate_fraction": 1.0,
+      "source_gate": false,
+      "positive_infinite_truth_candidates": 4338,
+      "positive_infinite_truth_retained": 4313
+    },
+    {
+      "sequence": "E1",
+      "scope": "whole",
+      "candidates": 1619230,
+      "scored_before": 1209606,
+      "scored_after": 1209065,
+      "before_p90_m": 0.11759066581726074,
+      "after_p90_m": 0.11751332283020022,
+      "above030_fraction": 0.010853014519484065,
+      "obstacle_retention": 0.9994391197919935,
+      "all_candidate_retention": 0.9991860328674741,
+      "epoch_retention_gate_fraction": 1.0,
+      "source_gate": true,
+      "positive_infinite_truth_candidates": 409624,
+      "positive_infinite_truth_retained": 408847
+    }
+  ],
+  "heldout_gate": false,
+  "limits": [
+    "H training E2; E0/E1 frozen-source heldout; navigation increment unverified",
+    "No online consumer or navigation increment yet",
+    "Truth unavailable pixels excluded from error, counted in coverage; candidate retention covers all"
+  ]
+}

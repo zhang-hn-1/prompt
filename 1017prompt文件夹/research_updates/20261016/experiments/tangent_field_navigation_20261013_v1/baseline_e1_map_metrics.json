@@ -1,0 +1,25 @@
+{
+  "scene": "baseline_e1",
+  "terminal": {
+    "termination": "timeout90",
+    "actions": 900,
+    "time_s": 89.99999798834324,
+    "budget_s": 90.0,
+    "true_goal_xy_threshold_m": 0.2,
+    "not_original35": true,
+    "not_causal_navigation_AB": true
+  },
+  "accepted_point_instances": 275861,
+  "truth_valid_instances": 238187,
+  "truth_valid_fraction": 0.8634312207959806,
+  "floor_false_instances": 1370,
+  "floor_false_fraction": 0.005751783262730544,
+  "position_error_p50_m": 0.025374439557169053,
+  "position_error_p90_m": 0.07388974685838362,
+  "final_risk_cells": 179,
+  "older10s_cells": 118,
+  "farther015m_reference_cells": 22,
+  "limits": "Map reference is existing vertical_max_body_band occupancy (not exact 3D surface). 0.15m cell-centre tolerance only evaluation; no online change. No full-image recall. Accepted-point metrics exclude invalid truth.",
+  "older10s_far_reference_cells": 13,
+  "recent_far_reference_cells": 9
+}

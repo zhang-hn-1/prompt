@@ -1,0 +1,16 @@
+{
+  "review_agent": "/root/heading_rate_review",
+  "admitted": true,
+  "reason": "Fatal startup stack stops at SimulationApp construction before scene construction or initial capture",
+  "startup_attempts_failed": 1,
+  "actual_physical_sequences_before_recovery": 0,
+  "unique_environment_recovery": true,
+  "no_further_recovery_or_retry": true,
+  "both_arms_identical_host_environment": true,
+  "permission_review_required": true,
+  "protocol_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/heading_rate_e1_b0_protocol_v3.json": "e7941552c54987972d7e8c60961bac09b311a9aad5f459bc3d161f0f5c688112",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/heading_rate_e1_candidate_protocol_v3.json": "17b812e477d29aac03037ce0482deec218fb0cf0a1a4b70245d87cf7bbdb9cf4"
+  },
+  "conditions": "Keep original bytes and no_retry, fixed350requests35s, B0 must finish before candidate; any actual sequence consumes arm even if unsuccessful."
+}

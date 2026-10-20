@@ -1,0 +1,27 @@
+{
+  "question": "Does coordinate-consistent projected-heading-rate feedback improve the frozen known-pose E1 closed loop?",
+  "cause": "OraclePathPolicy uses proprio world omega_z as measured yaw rate while yaw is atan2 of the world projection of the rotated body X axis. These differ under tilt. Archived E1 physics gives materially lower heading-difference residual with the analytic projected-axis derivative.",
+  "only_change": "At a genuine current tracking request, replace the measured rate in the existing outer yaw auxiliary correction with the instantaneous derivative of atan2(e_y,e_x), e=R(q)*[1,0,0], de=world_omega cross e. Keep desired yaw rate, feedback gain, plus/minus5degree clip, BankMap, all main requests and inherited tracker state transitions unchanged.",
+  "distinction": "Not body-course pure pursuit, not deleting yaw feedback, not gyro integration or pose estimator changes, not retraining closed execution memory.",
+  "inputs": "Only the current PolicyObservation quaternion and world angular velocity; no future observations, state labels, solver query, imagery or learned predictions.",
+  "singular": "Horizontal-axis norm squared <=1e-8 returns unsupported and inherits the original request. Invalid nonfinite/nonunit quaternion or angular velocity rejects. Quaternion horizontal heading must match observation yaw within1e-6 radians at qualified tracking requests.",
+  "interface": "Tracker subclass wraps one inherited act with current-observation context cleared in finally; it adjusts the existing correction immediately before inherited BankMap request consumption. Nontracking requests unchanged. Preserve measured_world_yaw_rate_rad_s as physical omega_z, record projected heading rate separately, mark preconsumer model-proxy diagnostics as such.",
+  "implementation": "heading_rate.py with projected_heading_rate(q,world_omega), with_heading_rate_tracker(base,enabled), and with_heading_rate_policy(base,enabled)",
+  "offline_budget": "One archived sparse dense_current_live_e1_b0_run_v1 coordinate-consistency audit, no policy act replay/solver/CAD/prediction/teacher budgets from closed candidates.",
+  "physical_proposal": "At most one same-driver known-pose TaskH E1 B0 and one candidate, 35s and350 requests each, no retries. Requires independent CPU/interface/identity/prelaunch review first; no physics admitted by this design file alone.",
+  "gates": {
+    "arrival_radius_m": 0.2,
+    "time_budget_s": 35.0,
+    "actual_contacts_max": 0,
+    "candidate_net_progress_min": "B0",
+    "candidate_cross_rms_max": "max(.2,1.2*B0)",
+    "candidate_cross_peak_max": "max(.4,1.2*B0)",
+    "candidate_latency_median_p90_max": "1.5*B0",
+    "actual_changed_current_aux_required": true,
+    "same_current_boundary_main_and_tracker_state_required": true,
+    "strict_causal_AB_requires_complete_source_prefix": true
+  },
+  "scope": "Current and past known simulator pose/kinematics privileged diagnostic; fixed SGBM sparse source, risk memory and TaskH ground/start/unknown priors. No pureRGB/native/fullmatrix admission.",
+  "stop": "No actual intervention => unassessed incremental effect. Runtime/integrity failures retain exact class. Valid intervention with failed navigation gates rejects this fixed candidate, no gain/clip/singularity scans.",
+  "whole_mission_complete": false
+}

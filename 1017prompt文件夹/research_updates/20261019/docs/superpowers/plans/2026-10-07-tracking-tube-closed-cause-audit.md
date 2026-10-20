@@ -1,0 +1,7 @@
+# Closed D1 boundary/time/source audit
+
+D1 actual60s timeout/final.807551, goal-axis4.268343, obstaclepassed/no contact, bodyproxyclearance.404752. Original overall gate REJECT retained. No extension of60/35, margin/cap scan or new controller variant.
+
+Immediately use sealed D1 plus historical C1 to measure actual segment times, periods of zero requested main while nominaltracking valid, full own initial A* route and common frozen B0 route separately. Common-reference RMS cannot alone diagnose tracking when reference planning changed detour side. Record immutable source model packet differences and independent complete own-reference errors; do not score candidatepath_index as progress or overwrite existing common-evaluator output. Check current/past source actual footprint containment against fixed physical fixture only postseal; measurement cannot retroactively authorize the actor.
+
+Identify first actual crossing of obstacle x=.75 and x=1.5 and continued motion until60; decompose late tracking/boundary failures, bank-map low-speed clamping and actual active speed. Do not claim extending budget would be success, extrapolate trajectory or useactual feedback as truth for changedplans. Inspect existing response-bank speed support limits and actual final unknown main cap. If source/coverage fails, preserve reject at that layer. If time/control domain mismatch remains, specify the exact next bounded interface prerequisite, no global model claim or repeatedOracle/IMU/network/threshold matrix.

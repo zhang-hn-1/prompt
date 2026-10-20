@@ -1,0 +1,51 @@
+{
+  "reviewer": "/root/heading_rate_review",
+  "result": "independent_raw_closure_pass",
+  "source_hashes": 2206,
+  "scenarios": {
+    "e0": {
+      "sealed_files": 3435,
+      "requests": 543,
+      "physics": 2716,
+      "contacts": 3259,
+      "contact_true": 0,
+      "videos_frames": [
+        544,
+        544
+      ],
+      "native_and_pose_reconstruction_exact": true
+    },
+    "e1": {
+      "sealed_files": 5602,
+      "requests": 900,
+      "physics": 4501,
+      "contacts": 5401,
+      "contact_true": 0,
+      "videos_frames": [
+        901,
+        901
+      ],
+      "native_and_pose_reconstruction_exact": true
+    },
+    "e2": {
+      "sealed_files": 1230,
+      "requests": 197,
+      "physics": 986,
+      "contacts": 1183,
+      "contact_true": 1,
+      "first_contact_time": 19.63999956101179,
+      "block_stop_time": 19.699999559670687,
+      "videos_frames": [
+        198,
+        198
+      ],
+      "native_and_pose_reconstruction_exact": true
+    }
+  },
+  "all_source_and_seals_match": true,
+  "all_three_durable_finished0": true,
+  "navigation_suite_pass": false,
+  "arrival_count": 1,
+  "episodes": 3,
+  "generalization_or_pure_rgb_claim": false
+}

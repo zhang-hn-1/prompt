@@ -1,0 +1,61 @@
+{
+  "stage": "height_interval_candidate_measured_rejected",
+  "updated_utc": "2026-10-12T13:58:59.611773+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/execution_next_entry_v36.json",
+  "candidate_directory": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1",
+  "report": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/height_interval_navigation_20261012.md",
+  "root_sealed_identities_verified": 5330,
+  "root_seal_sha256": "fc1703ad56ace5808325351d0b4de1f677dd244313ced3efb4c4907e99a92368",
+  "verdict": "Source filtering intervened, all900requests and20physicalfields identical to control; no navigation increment. Actual90s timeout, no contact, remaining8.2121823358m. Independent raw closure passed.",
+  "budget": {
+    "cap": 3,
+    "used": 1,
+    "unattempted_closed": 2,
+    "remaining": 0,
+    "recovery_used": 0,
+    "fit": 0
+  },
+  "process_state": {
+    "active_experiments": false,
+    "verified_host_pids_absent": [
+      772023,
+      772039
+    ],
+    "session64545": "exited0",
+    "checked_utc": "2026-10-12T13:58:59.611773+00:00"
+  },
+  "offline_terminal_evidence": {
+    "map_frame": 899,
+    "blocked_cell": [
+      211,
+      200
+    ],
+    "source_frames": [
+      230,
+      235
+    ],
+    "source_points": 119,
+    "valid_truth_floor": 119,
+    "clearance_m": 0.806225774829855,
+    "planning_clearance_m": 0.8707106781186548,
+    "limit": "Same-frame renderer scoring only; terminal-cell explanation, not sole whole-run failure causality."
+  },
+  "next_action": "Implement and qualify a distinct risk-confirmation mechanism addressing correlated two-epoch false stereo points becoming persistent. Use only current/past binocular and native IMU geometry, preserve immediate observed risks and unknown labels; compare with unchanged control and freeze bounded90s navigation before dispatch. Check overlap with closed temporal/NCC-memory candidates first; do not rename them, tune height/sigma/NCC thresholds, clear by absence, rerun camera alternatives, or stop at diagnostics. Geometric/viewpoint support is an unproven candidate, not automatic admission.",
+  "authority": "User2026-10-12 autonomous local implementation+validation authorization; no routine feasibility approval required. New mechanism default cap4 actual scenarios, recovery<=1; historical budgets stay closed.",
+  "completion": {
+    "reliable_navigation": false,
+    "learning_increment": false,
+    "whole_mission": false,
+    "evidence_package": "previously delivered, current phase supplement sealed",
+    "cross_machine_runtime": "unverified"
+  },
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "duplicate_created": false,
+    "prompt_sha256": "416e8d506508ad0247856d865ba8f071b64ff6f8885dd6e84184b05a5807b7aa",
+    "latest_entry_bound": true,
+    "schedule": "FREQ=HOURLY;INTERVAL=1"
+  },
+  "stop_reason": "Complete implemented candidate research stage accepted as a measured negative result: actual90s run, full execution/source/video verification and independent closure. No external approval blocker or running process. Next distinct mechanism requires its own qualification; no claim of overall completion."
+}

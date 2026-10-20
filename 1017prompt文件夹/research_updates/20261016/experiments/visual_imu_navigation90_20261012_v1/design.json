@@ -1,0 +1,21 @@
+{
+  "authorized_by_user": true,
+  "new_budget": {
+    "episodes": 3,
+    "scenarios": [
+      "e0",
+      "e1",
+      "e2"
+    ],
+    "per_scenario": 1,
+    "retry": 0,
+    "used": 0
+  },
+  "pose": "native IMU/encoder initial gauge/flat-ground prior, not pureRGB",
+  "camera_lighting_controller_matcher": "unchanged",
+  "35s_results": "preserved; not causal horizon comparison due to online RGB variation",
+  "acceptance": "each scene arrival<=.2m and no contact within90;3/3 needed for this fixed-suite pass, no generalization claim",
+  "runtime_failure": "stop supervisor, no implicit retry",
+  "collision": "preserve navigation failure then continue next independent scenario",
+  "learning_fit": 0
+}

@@ -1,0 +1,40 @@
+{
+  "scope": "baseline independent completed arm review; all sealed raw artifact hashes verified once read-only; candidate not touched",
+  "artifact_count_verified": 5732,
+  "artifact_hash_failures": [],
+  "admission_hash_failures": [],
+  "seal_sha256": "0e6420e3a33e18c83652b108d3b45da17ceb93cfb19b1af2559048be27fe732b",
+  "reviewed_receipts_sha256": {
+    "baseline_e1_status.json": "a9ca1dd89196450ff3c4b3607b897013383796fc86923917065cb661f21fe3a5",
+    "baseline_e1_raw_audit.json": "e533f9640dffad74fae90133b2c849edc0e5f2de42105e18e49ee63e905a5679",
+    "baseline_e1_assessment.json": "1a4e01db7b112bfe1a4746c5fc1a55945b59e0165f8cdbe153c340ee679d84fc",
+    "baseline_e1_map_metrics.json": "3a865280b49840d1ce657fc0cf45cf07efb4f505c9f2f9702643ea483ba0f21b",
+    "baseline_e1_depth_coverage.json": "4bcabce6027a2f4ec8f511f597b76276641a655b7a2e6b31d9853eb599e831e6",
+    "admission.json": "6a7d9b0b18767839695e0ef59e5c0d282b68bff9b21b18136c04c61406a70295",
+    "protocol.json": "7882528f06971fb632d6bd8257876d2ffcd0c54bd09f75540736692488d3d35d",
+    "baseline_e1_protocol.json": "16bd2daa7cdc019003a3d35611bebb2d0234b884ed17305e77213d5e4f52fb99"
+  },
+  "baseline_qualifies_planned_candidate_comparison": true,
+  "baseline_navigation_success": false,
+  "baseline_outcome": "timeout90, remaining5.214377m; no contacts/all available; valid comparison baseline, not successful navigation",
+  "raw_evidence": {
+    "captures": 901,
+    "requests": 900,
+    "physical_commands": 4500,
+    "exact_maps": 900
+  },
+  "source_evidence": {
+    "conditional_finite_scored_coverage": 0.7365830479005427,
+    "full_image_scored_fraction": 0.09319654264502762,
+    "finite_error_p90_m": 0.11351984739303589,
+    "outlier030_fraction": 0.00898258711940079,
+    "nohit_prediction_pixels": 1853197,
+    "meaning": "73.66% finite-label coverage among confident0.5-3m predictions;9.32% of all image pixels scored. Conditional error gate passes; no full coverage/recall or physicalfree proof."
+  },
+  "map_evidence": {
+    "final_risk_cells": 216,
+    "farther015m_reference_cells": 58,
+    "meaning": "58/216 cell centres farther than .15m from bodybandreference; reference is vertical-max occupancy, not exact3D surface; no fullmaprecall claim"
+  },
+  "limitations": "single same-scene development pair, RGB may diverge; candidate efficacy/closure pending candidate actual receipts; no rerun needed"
+}

@@ -1,0 +1,6 @@
+{
+  "stage": "host_available_waiting_extra_preview_budget",
+  "summary": "v90只读执行环境核对：沙箱nvidia-smi退出9、systemctl用户bus Operation not permitted；经标准提权审批只读宿主nvidia-smi正常，RTX3060 driver580.178.04 free11013MiB，DISPLAY=:0 XDG_RUNTIME_DIR=/run/user/1000，DerivedDataCache可写，用户bus可访问且ball-*four*无加载服务。支持沙箱访问限制是v89启动失败的重要因素，未证明唯一根因或渲染恢复。无新增仿真/曝光/模型，v89预算used1/1仍关闭。已向用户提出一次宿主环境额外120秒/8曝光同参数预览授权，等待回复；只读提权批准不是实验预算批准。原参数/场景/光学/门槛不变，不自动重新运行，不移动硬件。授权后单独登记额外cap1/recovery0并复用native_probe.py的recovery_run输出与durable监督，不覆盖失败记录；否则保持安静。原四路及可靠导航/学习增量仍未成立，automationACTIVE。",
+  "running_experiments": [],
+  "whole_complete": false
+}

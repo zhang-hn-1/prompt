@@ -1,0 +1,76 @@
+{
+  "stage": "observed_end_subgoal_navigation_rejected_and_closed",
+  "updated_utc": "2026-10-13T06:51:21.873518+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v53.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/observed_end_subgoal_navigation_results_20261013.md",
+  "summary": "v54当前观测端部探索子目标真实E1两90秒闭合：基线净.762636/余5.837365m，候选净1.586684/余5.013316m，均超时无接触；路径总走11.318547/6.776275m。候选76次规划尝试仅4次成功安装，其中2次实际改动、2次精确回退，另72失败；全87次原生位姿/地图/全局路线/局部查询复现及独立审查通过。源P90 .118129/.133587m均通过条件门槛，但未到达拒绝，新cap2used2关闭fit0recovery0，不能调端部偏移/PCA/视距重跑或迁E0/E2。两臂181对RGB全不同，非完整因果或独立泛化。",
+  "failure_evidence": "54.5–89.5秒71次失败均为同一风险格(-1.1,-.1)导致起点格净空.781025<固定.870711；目标未阻塞。该格距bodyband参照.8m，来自49.5/50秒29+17=46点，有限GT46/46、ground0。实测预测深度1.1466–1.1952m而真值1.9709–2.1485m，逐点误差.8208–.9594m；49.5秒帧P90 .917682m，有限30903/60015=51.49%、占整图10.06%，不能以全程P90掩盖瞬态大误差。该格89.5秒年龄39.5秒仍保留。独立复核支持后半段阻塞解释，GT只离线，不是在线删格依据。",
+  "decision": "measured_navigation_reject",
+  "budget": {
+    "cap": 2,
+    "used": 2,
+    "remaining": 0,
+    "closed": true,
+    "fit": 0,
+    "recovery_used": 0
+  },
+  "actual_processes": {
+    "utc": "2026-10-13T06:35:02.740575+00:00",
+    "pids": {
+      "1835880": false,
+      "1835881": false,
+      "1846895": false
+    },
+    "free_bytes": 210951766016
+  },
+  "run_status": {
+    "baseline_e1": {
+      "status": "finished",
+      "start_utc": "2026-10-13T06:04:14.902482+00:00",
+      "parent_pid": 1835880,
+      "child_pid": 1835881,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-13T06:12:34.493069+00:00"
+    },
+    "candidate_e1": {
+      "status": "finished",
+      "start_utc": "2026-10-13T06:13:35.926742+00:00",
+      "parent_pid": 1835880,
+      "child_pid": 1846895,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-13T06:21:50.426367+00:00"
+    }
+  },
+  "supervisor_exec_session_closed": 28001,
+  "seal_verification": {
+    "utc": "2026-10-13T06:47:22.487437+00:00",
+    "manifest": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/artifact_manifest_post_close.json",
+    "manifest_sha256": "9ca1ec7d86db7ccc3434aa10368e84bfb9e0bf5ecb820a39580d20e143f3cc20",
+    "verified_files": 11196,
+    "all_match": true,
+    "report_sha256": "6801dc03f673867314ee16fadb84c7f2c2487271f5c0ab57a083ebc0d1314572"
+  },
+  "independent_reviews": [
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/independent_prelaunch_review.json",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/baseline_independent_closure.json",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/candidate_independent_closure.json",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/observed_end_subgoal_20261013_v1/blocker_independent_review.json"
+  ],
+  "next": "下一优先执行此前尚未实现的当前双目序数/Census匹配代价测距有限研究，针对这次假近障碍，改变测量生成而非给已拒绝SGBM置信度换阈值。先有限核对旧ORB/时序/竞争测距机制区分，冻结一个固定对应域/歧义规则及完整分组序列精度、真实障碍和测量覆盖门槛，明确逐帧灾难误差及入图后果。H/E0/E1和本次两臂均已见开发，不能冒称新留出；固定RGB/标定/IMU/CAD与照明，GT仅评分。源资格失败直接关闭，不扫阈值/换描述子救旧ORB；资格通过才新cap<=4含必要同版baseline与fresh实际90秒验证。旧全部预算封闭，不能再改当前子目标或简单缩安全间距；v50语义学习仍暂缓，不能称新源已实现或已准入。",
+  "completed_scope": "真实两臂导航闭环及原始作用/地图失败链验收；不是仅定位、报告或清单。",
+  "stop_reason": "当前单环节实际研究阶段已完整验收并拒绝；无运行进程/许可/资源阻塞。后续按新独立测量生成研究接续。",
+  "benchmark_evidence_delivered": true,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false,
+  "whole_complete": false,
+  "automation_status": "ACTIVE"
+}

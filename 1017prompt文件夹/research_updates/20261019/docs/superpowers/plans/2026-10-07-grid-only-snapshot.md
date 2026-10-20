@@ -1,0 +1,5 @@
+# Inline grid-only snapshot
+1.TDD4literalfixtures, independentvectorizedhelper no oldcode mutations.
+2.Fullclosed226map sequencerebuildfromsource updatecausal oldPointSupportMap; compare6arrays and12diagnostics,4hotstate snapshot timings/immutability.
+3.Ifpass usehelper onlyinposthocnewfullaudit toreduceverificationcost, retain produceroriginalmapper. Onlineconsumer requiresseparatelydeclaredgate/behaviorproof, no currentrunchange.
+4.ReportONEfreshreview/close; continuecurrent35sactualbaselineassessment.

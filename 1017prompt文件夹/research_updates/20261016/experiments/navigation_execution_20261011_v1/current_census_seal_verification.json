@@ -1,0 +1,18 @@
+{
+  "command": "PYTHONDONTWRITEBYTECODE=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 /home/an/miniconda3/envs/ball_wm/bin/python experiments/current_census_depth_20261013_v1/verify_readonly.py",
+  "exit_code": 0,
+  "result": {
+    "identity_pass": true,
+    "counts": {
+      "inputs": 14446,
+      "outputs": 2755,
+      "sources": 15,
+      "whole_stage_files": 2807
+    },
+    "source_pass": false,
+    "physical": 0,
+    "fit": 0,
+    "navigation_success_claim": false,
+    "scope": "artifact identity and decision aggregation; raw scientific recomputation documented in independent_closure.json"
+  }
+}

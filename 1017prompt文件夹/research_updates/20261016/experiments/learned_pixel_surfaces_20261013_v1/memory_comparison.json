@@ -1,0 +1,132 @@
+[
+  {
+    "group": "H",
+    "arms": [
+      {
+        "method": "original",
+        "risk": 138,
+        "far015": 21,
+        "older10s": 138,
+        "old_far015": 21
+      },
+      {
+        "method": "oracle",
+        "risk": 93,
+        "far015": 5,
+        "older10s": 86,
+        "old_far015": 5
+      },
+      {
+        "method": "learned",
+        "risk": 301,
+        "far015": 119,
+        "older10s": 279,
+        "old_far015": 110
+      }
+    ]
+  },
+  {
+    "group": "E0",
+    "arms": [
+      {
+        "method": "original",
+        "risk": 127,
+        "far015": 8,
+        "older10s": 108,
+        "old_far015": 2
+      },
+      {
+        "method": "oracle",
+        "risk": 148,
+        "far015": 6,
+        "older10s": 94,
+        "old_far015": 2
+      },
+      {
+        "method": "learned",
+        "risk": 382,
+        "far015": 178,
+        "older10s": 229,
+        "old_far015": 83
+      }
+    ]
+  },
+  {
+    "group": "E1",
+    "arms": [
+      {
+        "method": "original",
+        "risk": 175,
+        "far015": 30,
+        "older10s": 115,
+        "old_far015": 20
+      },
+      {
+        "method": "oracle",
+        "risk": 127,
+        "far015": 5,
+        "older10s": 74,
+        "old_far015": 5
+      },
+      {
+        "method": "learned",
+        "risk": 1125,
+        "far015": 698,
+        "older10s": 787,
+        "old_far015": 542
+      }
+    ]
+  },
+  {
+    "group": "B54",
+    "arms": [
+      {
+        "method": "original",
+        "risk": 181,
+        "far015": 24,
+        "older10s": 104,
+        "old_far015": 15
+      },
+      {
+        "method": "oracle",
+        "risk": 124,
+        "far015": 5,
+        "older10s": 68,
+        "old_far015": 0
+      },
+      {
+        "method": "learned",
+        "risk": 1169,
+        "far015": 725,
+        "older10s": 800,
+        "old_far015": 534
+      }
+    ]
+  },
+  {
+    "group": "C54",
+    "arms": [
+      {
+        "method": "original",
+        "risk": 142,
+        "far015": 12,
+        "older10s": 135,
+        "old_far015": 12
+      },
+      {
+        "method": "oracle",
+        "risk": 118,
+        "far015": 4,
+        "older10s": 92,
+        "old_far015": 2
+      },
+      {
+        "method": "learned",
+        "risk": 1080,
+        "far015": 646,
+        "older10s": 939,
+        "old_far015": 629
+      }
+    ]
+  }
+]

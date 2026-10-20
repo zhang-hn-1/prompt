@@ -1,0 +1,109 @@
+{
+  "utc": "2026-10-12T14:43:31.869130+00:00",
+  "pass_independent_closure": true,
+  "score": {
+    "termination": {
+      "termination": "timeout90",
+      "actions": 900,
+      "time_s": 89.99999798834324,
+      "budget_s": 90.0,
+      "true_goal_xy_threshold_m": 0.2,
+      "not_original35": true,
+      "not_causal_navigation_AB": true
+    },
+    "initial_distance_m": 8.899999809265136,
+    "remaining_m": 5.560068218309853,
+    "net_progress_m": 3.339931590955283,
+    "captures": 901,
+    "contact_schema_example": {
+      "simulation_time_s": 0.0,
+      "physics_step_index": 0,
+      "source": "capture",
+      "available": true,
+      "contact": false
+    },
+    "contact_records": 5401,
+    "contacts_detected_by_named_fields": 0,
+    "unavailable_contacts": 0,
+    "depth_scoring": {
+      "pixels": 1603788,
+      "p90_absolute_error_m": 0.19897825717926027,
+      "outlier_fraction_above_0p3m": 0.036735528635954376,
+      "under1m_confident_pixels": 10855,
+      "source_points": 719279,
+      "saved_pairs": 181,
+      "pass_gate": false,
+      "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+    },
+    "video_frames": {
+      "stereo_view.mp4": 901,
+      "third_person.mp4": 901
+    },
+    "raw_arrival_pass": false,
+    "first_contact_s": null,
+    "retain": false
+  },
+  "raw_audit": {
+    "pass_audit": true,
+    "map_audit": {
+      "actual_maps_exact": 900,
+      "known_native_camera_views": 181,
+      "recent10s_unchanged": true,
+      "viewpoint_separation_m": 0.1,
+      "truth_read": false
+    },
+    "captures": 901,
+    "requests": 900,
+    "verified_physical_commands": 4500,
+    "registration_pairs": 181,
+    "max_extrinsic_residual": 3.2146749739947467e-07,
+    "all_contacts_available": true,
+    "journal_lines": 1800,
+    "physics_fields": [
+      "raw_command_target",
+      "clipped_target",
+      "smoothed_target",
+      "applied_action",
+      "joint_position_rad",
+      "joint_velocity_rad_s",
+      "position_world_xy",
+      "root_position_world_m",
+      "root_quaternion_world_wxyz",
+      "linear_velocity_world_m_s",
+      "angular_velocity_world_rad_s",
+      "yaw_world_rad",
+      "roll_world_rad",
+      "simulation_time_s",
+      "physics_step_index",
+      "raw_simulation_time_s",
+      "raw_physics_step_index",
+      "action_block_index",
+      "physics_step_in_block"
+    ],
+    "interval_ambiguous_points_removed": 4037,
+    "accepted_points": 76002,
+    "source_and_input_hashes": 2218,
+    "scope": "clocks/current native registration/source identities, actual surface selection and executed journal/request/physical targets; not independent IMU dynamics reconstruction or causal replication"
+  },
+  "seal_files": 5712,
+  "identity_binding_counts": {
+    "admission.json": 2232,
+    "prelaunch_review.json": 18
+  },
+  "comparison": {
+    "different_request_blocks": 585,
+    "RGB_different_saved_pairs": {
+      "left": 181,
+      "right": 181
+    },
+    "control_remaining_m": 8.212182335782233,
+    "measured_additional_progress_m": 2.6521141174723795,
+    "causal_claim": "Development same E2; RGB differs and trajectories diverge, no complete causal or independent generalization claim."
+  },
+  "conclusion": "Observed navigation progress increased but arrival failed and frozen conditional depth p90 gate failed. Candidate correctly rejected; no threshold relaxation.",
+  "physical_budget": {
+    "used": 1,
+    "cap": 3,
+    "remaining_closed": 2
+  }
+}

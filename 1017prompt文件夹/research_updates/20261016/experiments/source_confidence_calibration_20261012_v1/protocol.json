@@ -1,0 +1,14 @@
+{
+ "target":"current original SGBM optical depth absolute error >0.15m",
+ "consumer":"confidence only; excluded points unknown, no free-space certificate or memory erasure",
+ "train":"H complete E2; raw-forward/H identical physics one group",
+ "validation":"V whole E2 descriptive; only suffix after first native physical-position divergence +10s is gate",
+ "features":"current RGB paired patch texture/NCC/residual, original disparity/depth local gradients, current native camera registered height and disparity sensitivity; sensor packet membership carries existing CAD mask",
+ "truth":"labels/scoring only; no future input; no position/frame/time as fitted features",
+ "coverage_gate":{"input_epochs":181,"required_label_fraction":0.70,"epochs_with_20_labels_fraction_of_epochs_with_20_candidates":0.95,"held_suffix_min_seconds":30,"held_suffix_min_epochs":50},
+ "model":"single ridge logistic, 12 features, train-only mean/std, scipy L-BFGS-B maxiter150, lambda0.01, threshold P(bad)<0.5",
+ "fit_sampling":"per-epoch sorted packet every8th point, deterministic; no validation sampling for scoring",
+ "source_gate":{"depth_p90_max_m":0.15,"above030_fraction_max":0.10,"positive_environment_obstacle_point_retention_min":0.95,"all_candidate_retention_min":0.70,"per_eligible_epoch_retention_min":0.50,"eligible_epoch_retention_pass_fraction_min":0.95},
+ "fit_cap":1,"offline_parameter_sweep":false,"physics_cap":4,"physics_used":0,"environment_recovery_cap":1,"environment_recovery_used":0,
+ "fresh_E0_E1_validation_required_before_generalization":true,"failure":"reject frozen model, no threshold/feature/model rescue; next distinct mechanism needs evidence"
+}

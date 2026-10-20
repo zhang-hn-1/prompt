@@ -1,0 +1,17 @@
+{
+  "checks": [
+    "in_domain_exact",
+    "in_domain_exact",
+    "zero_target",
+    "in_domain_exact",
+    "in_domain_exact",
+    "zero_target",
+    "invalid_reject",
+    "invalid_reject",
+    "invalid_reject",
+    "aux_only_wrapper",
+    "nontracking_unchanged"
+  ],
+  "count": 11,
+  "scope": "synthetic scalar/wrapper plus exactexisting source_ast; not navigation efficacy"
+}

@@ -1,0 +1,32 @@
+{
+  "scope": "static prelaunch review; no physical launch",
+  "sha256": {
+    "speed_target.py": "55b105c12ffa1f6a6f9867c6da39cedb5e8949825f9b11d9d8eda69dc26e5630",
+    "protocol.json": "7882528f06971fb632d6bd8257876d2ffcd0c54bd09f75540736692488d3d35d",
+    "candidate_e1_driver.py": "e70e30f9997595692e36ed5ae83897d7dd8eb7ecf7db0782a416d671ef62e0b1",
+    "baseline_e1_driver.py": "2a645ef39708a30b9234ac50f286206d7c0f8a786ee8059d5987ff725ef6b1c9",
+    "check.py": "10c3e505bbf4b793a99c85e33dc958de8ed430bfc6511d4793413a6bc4ea0ce9",
+    "interface_checks.json": "8f50ad166adea87d08c5bb9e9e06c16cf91763dcd762455d881c82a36dbfc860"
+  },
+  "findings": [
+    "single tracking desired-rate change curvature*direction*current native speed; original worldyaw gain and5degreeclip retained",
+    "outer CurrentSpeedTarget audit mutation precedes MappedBankOracle correction lookup; mapped branch bankmap+new correction avoids double application",
+    "unmapped fallback passed auxiliary adjusted bynew-old",
+    "speeds>=.2 scalar expression identical old maxfloor formula; braking/nontracking wrapper passes unchanged",
+    "driver changes arm metadata wrapper injection logging; source/native/grid/PID unchanged"
+  ],
+  "limitations": [
+    {
+      "severity": "important_for_evidence",
+      "issue": "upstream model_proxy_curvature andgap audit use old correction but audit desired/correction overwritten",
+      "action": "Treat stale proxy fields as legacy-only; use actual final requests and map records for candidate efficacy"
+    },
+    {
+      "severity": "verification_gap",
+      "issue": "11syntheticchecks use Base stub, not full actual MappedBankOracle MRO",
+      "action": "Confirm no-physics full tracker dispatch and exact in-domain final requests beforelaunch"
+    }
+  ],
+  "scientific": "new desired-speedfloor mechanism distinct from old measured headingrate replacement; same-scene development actual arms, RGB inputs may diverge; no independent generalization or pureRGB claim",
+  "admission": "No static doublecorrection or source-truth leak blocker found; actual MRO check remains requested"
+}

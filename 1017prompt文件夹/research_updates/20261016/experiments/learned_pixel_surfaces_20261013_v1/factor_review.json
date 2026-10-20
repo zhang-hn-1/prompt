@@ -1,0 +1,13 @@
+{
+  "diagnostic_admitted": true,
+  "source_sha256": "76217471b8c9cd1ca3c30ff3781eac81c5975dbca7a97ebe71041f5ebc940211",
+  "scope": "Offline rejected-model mechanism diagnostic only; all181 E1; no fit/physics; factor arms compare against same-GT-support learned-both control, actual unsupported-domain removal separately disclosed.",
+  "checks": [
+    "Full oracle/coverage/prediction source-input-output-model seals",
+    "181 frame sequence/time identity",
+    "Learned positive confidence mask retained in all arms",
+    "No old checkpoint/source rescue or online oracle admissibility"
+  ],
+  "fit": 0,
+  "physics": 0
+}

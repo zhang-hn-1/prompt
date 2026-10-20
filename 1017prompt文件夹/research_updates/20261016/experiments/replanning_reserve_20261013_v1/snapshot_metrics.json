@@ -1,0 +1,60 @@
+{
+  "baseline_e1": {
+    "selection": "temporal midpoint of complete saved source sequence, not worst frame",
+    "time_s": 44.99999899417162,
+    "scored_pixels": 18655,
+    "predicted_confident_pixels": 18677,
+    "full_image_pixels": 307200,
+    "p50_p90_p95_m": [
+      0.029561758041381836,
+      0.07924828529357927,
+      0.25598561763763417
+    ],
+    "accepted_point_instances": 9,
+    "truth_valid_point_instances": 3,
+    "ground_false_point_instances": 0,
+    "snapshot_map": {
+      "time_s": 44.99999899417162,
+      "risk_cells": 110,
+      "farther015m_cells": 9,
+      "old10s_cells": 72,
+      "old10s_farther015m_cells": 4
+    },
+    "final_map": {
+      "time_s": 89.89999799057841,
+      "risk_cells": 212,
+      "farther015m_cells": 57,
+      "old10s_cells": 74,
+      "old10s_farther015m_cells": 7
+    }
+  },
+  "candidate_e1": {
+    "selection": "temporal midpoint of complete saved source sequence, not worst frame",
+    "time_s": 44.99999899417162,
+    "scored_pixels": 35203,
+    "predicted_confident_pixels": 40811,
+    "full_image_pixels": 307200,
+    "p50_p90_p95_m": [
+      0.03513622283935547,
+      0.10750937461853027,
+      0.12352039813995364
+    ],
+    "accepted_point_instances": 1917,
+    "truth_valid_point_instances": 1709,
+    "ground_false_point_instances": 0,
+    "snapshot_map": {
+      "time_s": 44.99999899417162,
+      "risk_cells": 100,
+      "farther015m_cells": 7,
+      "old10s_cells": 19,
+      "old10s_farther015m_cells": 1
+    },
+    "final_map": {
+      "time_s": 89.89999799057841,
+      "risk_cells": 103,
+      "farther015m_cells": 3,
+      "old10s_cells": 94,
+      "old10s_farther015m_cells": 3
+    }
+  }
+}

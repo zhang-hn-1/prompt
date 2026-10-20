@@ -1,0 +1,13 @@
+# ONE causal source probe: initial robot heading alignment
+
+Previous controlled-static-belief task is closed as BOOTSTRAP_NOT_EXERCISED; C1 unlaunched, original maximum pair/no-retry and gates retained. It is not a memory/control rejection or success. NativeGT postclose at0/2/8/30/60s shows left cylinder domain-unmasked47962/38317/41697/51144/54902 but mutually visible same-surface0 in every sampled frame; at0 right renderer cylinder visible0. This proves no available binocular correspondence for those surfaces, not a network bug or self-mask removal permission.
+
+New question, one actual8s sequence: does initial root yaw0 (instead of-20deg) make the SAME authored cylinder actually mutually visible and provide usable unchanged frozenFast source? Start/goal/fixture/rig/light implementation identical. Zero final requests for all80blocks, canonical rollPID/smoother/supervisor unchanged. This compares sensing geometry/source to the first8s zero-request prefix of previous actual B0; no route, candidate memory or planner action effect is claimed. The changed initial heading is explicit task condition, not moving camera/rewriting reference or fixing original yaw-20 gate.
+
+Exactly1 sequence, wall<=400s, no scientific retry/yaw sweep/model switch/threshold change. If it fails, reject heading-only prerequisite, do not guess that commonFOV repairs model accuracy. No formal navigation. Fresh full sequence sealed beforeGT, not random-frame training/test split. No training; oldsource rejection retained.
+
+Postclose gates separately: physical and raw/executed protocol consistency; native actual cylinder common visibility>=100pixels and>=2XYbins at at leasttwo consecutive2Hz captures; original source opportunity two>=100hazards/2bins/low5 and each underlying raw qualifying hazard packet precision>=95% at<=0.10m dual-eyeGT, insufficiency countsfalse. Every subsequent consumed qualified nonempty hazard packet also>=95%; labels notused to select source. Source support is partial geometry, not complete occupancy/free certificate. CAD/currentmask/0.5..3m/root.55 domain unchanged.
+
+Record real zero-request drift/path/speed because zero request is not pose hold: previous60s root moved0.831m, appliedmain0, actualmainjoint changed2.177rad, auxPID applied up to0.03314rad. No new motion-response fitting or motor-control change.
+
+If visibility+source prerequisites pass, next actual task may validate current-vs-static-memory closure with shared new initial condition under separate frozen protocol. If not, one bounded source-layer cause identifies occlusion vs correspondence failure; no unchanged memory pair is launched. Continue meaningful work, not return only a plan.

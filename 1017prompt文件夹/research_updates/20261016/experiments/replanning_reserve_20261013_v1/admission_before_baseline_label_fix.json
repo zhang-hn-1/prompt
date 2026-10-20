@@ -1,0 +1,36 @@
+{
+  "launch_admitted": true,
+  "cap": 2,
+  "sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/protocol.json": "935d47decca2b31bef505adfdd49eb50ba38c71bdff4de7befbf38cc518d3581",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/reserve.py": "dec591c1e5ccb34fa2c7be2df22d3ad6ce2927d376962b722e8c0a0a817e094e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/bootstrap.py": "bd69af151d60824e8c07c0848ca8d06b910917f272c8acf9f16951528a7967a1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/baseline_e1_driver.py": "4e11dd90135419375b61a82268756b7ffa50e649bb7af1e1ea865a6b6331dd46",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/candidate_e1_driver.py": "06a8bfff6e249c00ff7f71b3612467a8f78805cb1680ef4773e2d47fa8a4f74a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/baseline_e1_protocol.json": "77b507ee8c1722e92e20480af1f670f56dbdd4becb32d70ec701af193122d0f7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/candidate_e1_protocol.json": "6b04643ac362a88cf936a43d3ac683ce2abc91192e051cf8272a66ef01477df5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/supervise.py": "d25f4287280ca31d459515e8aa975f70add251bd8d159712d7412fba36717ed2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/replay.py": "1ec27a1734b2b10ef967aa42b7e0509ef822a47228147f5ff0da1f2368046594",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/replay.json": "c982335e6e7c7e7a50db0fb9d5b007f252b82d03915b6546f46e9dbe6b06e856",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/mro_check.py": "b044317ca79d6a4197763f6094e83263f1a68b5b2fa5e9233752cf374116246d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/mro_checks.json": "0dd9fdbd6ba7ddf324ac1d721c72a7dc0d7e441ac7ace0b7d3dd3f957633f0bf",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/continuous_guard_review.json": "3dea887b93b014bb423dcdb4de79cddeb41a88eea008a78cde0cb65cfebc0f6b"
+  },
+  "review": "Independent final bounded physical admission; reviewer did not launch physical runs",
+  "evidence": {
+    "MRO_checks": "Reviewer reran eight actual Viewpoint grid checks; pass. Prefix check manually sets forward eligibility; inherited measured eligibility logic unchanged and source reviewed, not a new measured dynamics certificate.",
+    "original_input_validation": "ReserveGrid now calls original base.plan for finite/fixed-goal validation and nonbinding audit, discards route then sole reserve route returned.",
+    "provenance": "All2226baseline/2227candidate protocol input/source hashes independently verified.",
+    "offline": "10 exact original installed references;167eligible boundaries/138effects;147accepted plans continuous reserve screen independently reviewed;boundary215 rejected.",
+    "fallback": "Generated continuous failure returnsNone before installation; inherited local_no_route zero fallback and tracker state preserved.",
+    "supervision": "Exclusive ledger create, before-run physical slot reservation, paircap2, original durable audit/score; source/contact baseline failure closes candidate slot."
+  },
+  "conditions": [
+    "Mandatory .870710678 unchanged; reserve .2 uncertain assumption, not stopping certificate.",
+    "Each arm max90seconds; arrival<=.2m/no contact/sourceP90<=.15; source/map/controller unchanged.",
+    "No followup E0/E2/threshold tuning or additional run on reject; sameE1 development no generalization claim.",
+    "No GT pose registration/source correction or risk clearing."
+  ],
+  "fit": 0,
+  "review_physical": 0
+}

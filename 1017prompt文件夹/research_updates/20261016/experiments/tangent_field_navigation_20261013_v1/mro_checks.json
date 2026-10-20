@@ -1,0 +1,40 @@
+{
+  "cases": [
+    [
+      0.6642383454426296,
+      -0.014304661822948178
+    ],
+    [
+      0.7,
+      0.0
+    ],
+    [
+      0.6642383454426296,
+      0.014304661822948178
+    ],
+    [
+      0.6642383454426296,
+      -0.014304661822948178
+    ],
+    [
+      0.7,
+      0.0
+    ],
+    [
+      0.6642383454426296,
+      0.014304661822948178
+    ]
+  ],
+  "cusp_unchanged": true,
+  "MRO": [
+    "TangentField",
+    "CoastAwareCusp",
+    "OutgoingEndpoint",
+    "ConfidentSpeed",
+    "MappedBankOracle",
+    "CuspBoundary",
+    "OraclePathPolicy",
+    "_PolicyBase",
+    "object"
+  ]
+}

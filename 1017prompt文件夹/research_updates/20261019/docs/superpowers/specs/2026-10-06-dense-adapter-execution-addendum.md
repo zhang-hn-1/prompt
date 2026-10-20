@@ -1,0 +1,3 @@
+# 梯度入口基础设施失败与唯一执行补充
+
+首probe在任何loss/backward/update前因官方torch.compile找不到C compiler失败，原log/protocol保留，不是模型梯度失败或物理成绩。禁用编译执行TORCH_COMPILE_DISABLE=1，保留原Torch算子/权重/层/超参，B0及adapter必须同一eager执行路径。只重试该基础设施probe一次，没有训练和参数保存，失败不换结构。源码不改官方函数。新probe独立命名和封存，运行前声明此执行方式；旧Fast历史结果不倒改，fresh B0唯一直接对照。InvalidGT inf-inf仅labelbool被排除的NumPy告警，不能把它当有效监督。

@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-13T05:42:39.581567+00:00",
+  "checks": [
+    {
+      "root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/global_kinematic_guidance_20261013_v1",
+      "manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/global_kinematic_guidance_20261013_v1/artifact_manifest_post_close.json",
+      "verified_files": 19,
+      "all_sha256_match": true,
+      "decision": "REJECT_NO_PREDECLARED_FULL_REVERSE_EFFECT"
+    },
+    {
+      "root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1",
+      "manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/continuation_heading_planning_20261013_v1/artifact_manifest_post_close.json",
+      "verified_files": 15,
+      "all_sha256_match": true,
+      "decision": "REJECT_FROZEN_COST_GATE"
+    },
+    {
+      "root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/cursor_leg_retention_20261013_v1",
+      "manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/cursor_leg_retention_20261013_v1/artifact_manifest_post_close.json",
+      "verified_files": 20,
+      "all_sha256_match": true,
+      "decision": "REJECT_ZERO_RETENTION_DECISION_EFFECT"
+    }
+  ],
+  "all_pass": true
+}

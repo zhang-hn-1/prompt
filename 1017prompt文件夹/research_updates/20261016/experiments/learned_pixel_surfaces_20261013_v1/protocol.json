@@ -1,0 +1,65 @@
+{
+  "target": "independent per-eye ground/obstacle/unknown pixel class and separate optical range .5–3m, fixed calibrated category projection",
+  "novelty": "new pixel supervision, distance and semantic heads with explicit pinhole consumer; no v49 BEV checkpoint/target/model reuse",
+  "inputs": "current paired RGB, fixed optical rays and native orientation from disclosed ideal IMU; current public joint encoders/CAD for consumer only",
+  "labels": "frozen oracle authored-compatible identities, ambiguous and unsupported unknown; GT ranges only train/scoring",
+  "train": [
+    "H",
+    "E0"
+  ],
+  "fit_excluded_seen_development": [
+    "E1",
+    "B54",
+    "C54"
+  ],
+  "fresh": false,
+  "model": "10channel compact encoder-decoder 16/32/64; two eyes semantic3 and independent range; 240x320 even sample training, native480x640 bilinear output",
+  "fit": {
+    "seed": 20261013,
+    "epochs": 30,
+    "batch": 4,
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "selection": "final only, no early stop",
+    "standardization": "train only",
+    "loss": "train-count inverse-sqrt-weighted semantic CE plus equally weighted ground/obstacle smoothL1 range beta.1"
+  },
+  "consumer": {
+    "confidence": 0.9,
+    "range": [
+      0.5,
+      3
+    ],
+    "body_exclusion": 0.55,
+    "grid": [
+      40,
+      60
+    ],
+    "resolution": 0.1,
+    "category_points_per_cell": 4,
+    "unknown": "not free; no risk clearing",
+    "scope": "all range/category are learned priors, not certified binocular measurements"
+  },
+  "gates": {
+    "all_five_required": true,
+    "precision": 0.9,
+    "recall": 0.8,
+    "ground_false_max": 0.05,
+    "unsupported_max": 0.1,
+    "visible_surface_recall": 0.7,
+    "map_p90_max": 0.15,
+    "range_p90_max": 0.15,
+    "obstacle_range_p90_max": 0.15,
+    "frame_p90_max": 0.3,
+    "minimum_frame_samples": 1000,
+    "retained_label_pixels": 0.7,
+    "retained_obstacle_pixels": 0.8
+  },
+  "budget": {
+    "fit_cap": 1,
+    "physical_cap": 4,
+    "recovery_cap": 1
+  },
+  "stop": "any full source gate failure closes unused physical budget; no sweep/network/checkpoint rescue",
+  "privileges": "native ideal IMU, fixed calibrated rig/height/initial gauge; no GT online; local gauge cancels translation/yaw, not world registration"
+}

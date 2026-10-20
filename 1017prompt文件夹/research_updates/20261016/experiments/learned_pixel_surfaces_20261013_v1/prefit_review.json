@@ -1,0 +1,41 @@
+{
+  "prefit_admitted": true,
+  "reviewed_requirements": {
+    "distinct_model_target": "pass; new pixel ground/obstacle/unknown head with separate optical range; no previous network/checkpoint loaded",
+    "causal_features": "pass; current two RGBs, fixed optical rays, native optical gravity component only, no GT depth/scene/root translation",
+    "split_and_standardization": "pass; train H/E0 only; train-only mean/std and inverse sqrt class counts; all other groups explicitly seen dev",
+    "loss": "pass; weighted 3class CE and equally averaged ground/obstacle smoothL1 range beta.1; invalid unknown ranges excluded",
+    "geometry": "pass; fixed original category/range point packet/raster, no world height category conversion, four-count risk override, unknown never free",
+    "gates": "pass; fixed map metrics and range/obstacle range/frame range/retention gates all-five required",
+    "once_fit": "pass; launch_started and fit_started exclusive creation; launch checks fit_used0 and reserves fit before train; final epoch30 only",
+    "public_joints": "4505 history epochs vs states current joints exact, max absolute error0"
+  },
+  "nonblocking_limits": [
+    "All groups development, no new independent holdout.",
+    "Native root/camera gauge cancellation limits local metric localization claims.",
+    "Bilinear native output is a learned prior, not verified binocular measurement.",
+    "Legacy reused metric height field names compare categories."
+  ],
+  "source_sha256": {
+    "protocol.json": "ed46ac27b488d16ef6673e2d8800a32ea57a967195ec591452cab2c9bb35d9db",
+    "common.py": "f428708d93011904c495232748b1a6a896f7d93456180b75e30ec227f258b995",
+    "causal_input.py": "996c9eeab2d97a2bdf13009698872bf59302899e7c64359429e87bad1d8ed76d",
+    "model.py": "596429ff2b3f455d252327fd55141326258f4e3c475cddd94fa79c1abde67524",
+    "prepare.py": "238f2321a046b4f6feb17d1f1fe497416fdc5a7fb86c71b1c6695bfdfe02d3fe",
+    "train_predict.py": "e12613d580181ff4c794c71b9cf40b1a5a6154a93620d3ee70f8e4f2c3ffb3c5",
+    "score.py": "ddceb546e82a9daac207b7e70c2788c3d47edb0e294618dfd152b41bf92aed5f",
+    "launch.py": "75e06b6e64dbb8b745d1ff2cd7517e89ea932b18f59973f51cf7eb4e5481143f"
+  },
+  "fit": 0,
+  "physics": 0,
+  "resolved_issues": [
+    {
+      "priority": "P1",
+      "file": "train_predict.py/score.py",
+      "finding": "Declared provenance seals are not fully enforced: training trusts qualified coverage without verifying sealed cache/supervision hashes; scoring verifies prediction outputs only, omitting model/source/input hashes and oracle qualification input/output seals.",
+      "required_correction": "Verify coverage input/output hashes before fitting; verify full prediction output/input/source/model seal plus coverage and oracle reference seals before scoring. Freeze reviewed source hashes at launch.",
+      "resolution": "common verify_oracle enforces complete oracle hashes; prepare/train/score invoke; train verifies coverage input/output and before prediction output; score verifies coverage and full prediction input/output/source/model; exclusive launch/fit markers and launch reviewed source SHA verification; ledger reserves fit before training."
+    }
+  ],
+  "blocking_issues": []
+}

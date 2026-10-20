@@ -1,0 +1,13 @@
+{
+  "template": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_dense_current_live_e1_v5.py",
+  "template_sha256": "831df98092eae76af1f57020d2740919fdc71f256fe3db00851471a94c65faf8",
+  "derived": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/run_heading_rate_e1_v1.py",
+  "derived_sha256": "1036ace0d0b8104f46683adf568b0359e3631aaf47ecd81743bc2ac1f52c17e4",
+  "adaptations": [
+    "bootstrap legacy imports",
+    "new output/protocol names",
+    "same sparse sampler in both arms",
+    "one tracker wrapper flag",
+    "sparse-source and control-scope metadata"
+  ]
+}

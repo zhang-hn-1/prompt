@@ -1,0 +1,89 @@
+{
+  "stage": "stereo_map_truth_audit_closed",
+  "updated_utc": "2026-10-12T15:48:45.708255+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v39.json",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/stereo_map_truth_audit_20261012.md",
+  "current_results": {
+    "viewpoint": {
+      "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1",
+      "actual90s": "timeout_no_contact",
+      "remaining_m": 5.560068218309853,
+      "net_progress_m": 3.339931590955283,
+      "extra_net_progress_vs_height_control_m": 2.6521141174723795,
+      "depth_p90_m": 0.19897825717926027,
+      "retain": false,
+      "budget": {
+        "cap": 3,
+        "used": 1,
+        "unattempted_closed": 2,
+        "remaining": 0,
+        "recovery_used": 0,
+        "fit": 0
+      },
+      "independent_closure": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1/independent_closure.json"
+    },
+    "ground_ambiguity": {
+      "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ground_ambiguity_source_20261012_v1",
+      "complete_saved_pairs": 181,
+      "removed_pixels": 1145,
+      "depth_p90_m": 0.19851109981536866,
+      "obstacle_retention": 0.9999745834407485,
+      "source_entry_qualified": false,
+      "actual_runs": 0,
+      "fit": 0,
+      "independent_review": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ground_ambiguity_source_20261012_v1/independent_review.json"
+    }
+  },
+  "sealed": {
+    "viewpoint_confirmation_navigation_20261012_v1": {
+      "verified_identities": 5759,
+      "seal_sha256": "f3bd6d47717a6b865415dd387f90a1babcfb87bba63d4ef2accf2a94a35c5bb4"
+    },
+    "ground_ambiguity_source_20261012_v1": {
+      "verified_identities": 200,
+      "seal_sha256": "abb85afcc8cb03fd900b707ed5ce1349ef2ede4830e9bcf8bbbe921ecd915680"
+    }
+  },
+  "process_state": {
+    "active_experiments": false,
+    "verified_host_pids_absent": [
+      828882,
+      828900
+    ],
+    "session68464": "exited0",
+    "cpu_sessions78152_31276_79686_11553": "exited0"
+  },
+  "next_action": "Immediately implement source-confidence calibration input/label and grouped full-sequence qualification: target current SGBM absolute-error>.15m, confidence consumer, causal current binocular/disparity/IMU/CAD/local features, truth only training/score. Prefer existing complete H and V E2 data for development training/validation if eligible; raw-forward and height have identical full physics and belong to same group, H/V common physical prefix must be disclosed and unshared suffix separately qualified. Coverage per complete actual terminal sequence; baseline success not prerequisite. Eligible data→one frozen train-only-scaling/single-fit model then source qualification and bounded fresh E0/E1 actual heldout/navigation verification. Insufficient coverage→only targeted fresh data under new explicit cap<=4 including collection/control/pilot; no old30/153 reuse, static-manifest loop, tuning/network rescue, or routine approval stop. New current-error objective has no future prediction window. Reliable navigation and learning navigation increment require actual same-version90s gate verification.",
+  "authority": "User2026-10-12 autonomy covers reversible local research/implementation/bounded checks and simulation; no routine design/feasibility approval pending.",
+  "limits": [
+    "Extra progress is same-scene development historical comparison with differing RGB; no fullcausal or independent generalization.",
+    "Viewpoint failed arrival and depth gates; ground source failed depth. Neither a reliable navigation solution.",
+    "Independent confidence objective is not command ranking; old153memory/30holdout coverage_unassessed and old2/30 data fit0 remain closed."
+  ],
+  "completion": {
+    "reliable_navigation": false,
+    "learning_navigation_increment": false,
+    "whole_mission_complete": false,
+    "research_evidence_package": "previously delivered plus current verified supplements",
+    "cross_machine_runtime": "unverified"
+  },
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "prompt_sha256": "2260c8c5106251c61d60135ee4a8703ca928b7a1b1b3277a738747a1a94e48ca",
+    "latest_entry_bound": false,
+    "schedule": "FREQ=HOURLY;INTERVAL=1",
+    "note": "Saved prompt references v39 minimum and instructs follow mission latest; mission now v40; no schedule change."
+  },
+  "stop_reason": "User-requested quantitative and visual current stereo/map/memory truth comparison completed:181pairs,900exact maps,2347sealed inputs. Concrete audit delivered; autonomous source-confidence calibration remains next; no new physics/fit or reopened budgets.",
+  "map_truth_audit": {
+    "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_map_truth_audit_20261012_v1",
+    "final_hazards": 145,
+    "false_spatial_cells_over_010m": 16,
+    "accepted_point_error_p90_m": 0.2641646243264807,
+    "truth_pose_stereo_error_p90_m": 0.2435261842731262,
+    "native_registration_p90_m": 0.05443371009462157,
+    "physical_runs": 0,
+    "fit": 0
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "scope": "independent static prelaunch review; no simulation/source changes",
+  "sha256": {
+    "field.py": "1a37dd3089701a4a3a582bd9fbfb82f4b8bc39ab023c11eb638cb0da2effb48b",
+    "protocol.json": "e2eeaa761c8fbd9493028620bc5cbfcbfc6befd793d0ec9d0fc3807ffed0ad97",
+    "candidate_e1_driver.py": "48a402f9518225a0cbf88a2a7f3356776bbe85cfd62529a2b115a3e4f9db3f29",
+    "baseline_e1_driver.py": "2a645ef39708a30b9234ac50f286206d7c0f8a786ee8059d5987ff725ef6b1c9",
+    "mro_check.py": "4a2cc2aafac5dfc7cbc83fb0287d28e4c2e79ad4215a540911397a2370dbc33e",
+    "mro_checks.json": "ab00583af64230d5c78d1d603a82ab186e963249783cd5ac04eaf5fb43cd1fc4",
+    "check.py": "4e50ccfdf9b93403059dfe75dbcc4c36c2746f45e37291df69bce78d862d0628"
+  },
+  "confirmed": [
+    "current native position and installed reference only; no truth access in field",
+    "unit directed tangent and signed lateral correction normalized to existing lookahead",
+    "outer act current-position lifecycle wraps CoastAwareCusp and OutgoingEndpoint; originaltarget obtained before override",
+    "candidate driver differs only wrapper/arm identity/logging; native source/map/PID unchanged",
+    "inherits original purepursuit curvature and worldgyrofeedback; no current-speed wrapper",
+    "reverse uses path directed tangent; inherited tracker direction sign retained"
+  ],
+  "important_findings": [
+    {
+      "issue": "cusp/end guard distance increases with progress inside current segment",
+      "code": "arc=norm(xy[i]-p)+sum(remaining edge lengths)",
+      "implication": "can override near endpoint despite actual along-path remainder below lookahead and extend virtualtarget beyond terminal",
+      "action": "define projected remaining-arclength guard and add withinsegment near-cusp/terminal cases before admission"
+    },
+    {
+      "issue": "six MRO checks call lookahead directly; cusp check immediate nextdirection only",
+      "action": "verify current act lifecycle and penultimate/progress/offtrack endpoint fallback"
+    }
+  ],
+  "nonblocking_limits": [
+    "outgoing-edge semantics makes nextdirection mismatch fallback whole last incoming edge; conservative if explicit",
+    "upstream lookahead index/accumulated audit remains original endpoint geometry; use field_last for newtarget evidence",
+    "vectorfield heuristic distinct from waypoint interpolation/heading-measurement/speedfloor changes but no dynamic stability or efficacy claim"
+  ],
+  "admission": "hold candidate admission until intended endpoint/cusp guard resolved and evidence bound; baseline unchanged"
+}

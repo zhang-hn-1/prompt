@@ -1,0 +1,132 @@
+{
+  "status": "calibrated_model_rejected",
+  "purpose": "new_current_error_training_qualification_not_old_navigation_candidate_rerun",
+  "cap": 4,
+  "used": 2,
+  "fit": 1,
+  "recovery_used": 0,
+  "parent_pid": 925422,
+  "groups": [
+    {
+      "arm": "data_e0",
+      "state": "data_terminal_needs_coverage_and_raw_audit",
+      "utc": "2026-10-12T16:00:05.272495+00:00",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-12T16:00:05.272704+00:00",
+        "parent_pid": 925422,
+        "child_pid": 925441,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-12T16:09:24.937944+00:00"
+      },
+      "navigation_descriptive": {
+        "termination": {
+          "termination": "timeout90",
+          "actions": 900,
+          "time_s": 89.99999798834324,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "initial_distance_m": 8.839117302538428,
+        "remaining_m": 3.9385457250237454,
+        "net_progress_m": 4.9005715775146825,
+        "captures": 901,
+        "contact_schema_example": {
+          "simulation_time_s": 0.0,
+          "physics_step_index": 0,
+          "source": "capture",
+          "available": true,
+          "contact": false
+        },
+        "contact_records": 5401,
+        "contacts_detected_by_named_fields": 0,
+        "unavailable_contacts": 0,
+        "depth_scoring": {
+          "pixels": 2053180,
+          "p90_absolute_error_m": 0.4272070050239563,
+          "outlier_fraction_above_0p3m": 0.18349584546897982,
+          "under1m_confident_pixels": 4104,
+          "source_points": 517800,
+          "saved_pairs": 181,
+          "pass_gate": false,
+          "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+        },
+        "video_frames": {
+          "stereo_view.mp4": 901,
+          "third_person.mp4": 901
+        },
+        "raw_arrival_pass": false,
+        "first_contact_s": null,
+        "retain": false
+      }
+    },
+    {
+      "arm": "data_e1",
+      "state": "data_terminal_needs_coverage_and_raw_audit",
+      "utc": "2026-10-12T16:09:29.568737+00:00",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-12T16:09:29.569117+00:00",
+        "parent_pid": 925422,
+        "child_pid": 936520,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-12T16:18:30.892620+00:00"
+      },
+      "navigation_descriptive": {
+        "termination": {
+          "termination": "timeout90",
+          "actions": 900,
+          "time_s": 89.99999798834324,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "initial_distance_m": 6.600000673532486,
+        "remaining_m": 5.823439797431462,
+        "net_progress_m": 0.7765608761010245,
+        "captures": 901,
+        "contact_schema_example": {
+          "simulation_time_s": 0.0,
+          "physics_step_index": 0,
+          "source": "capture",
+          "available": true,
+          "contact": false
+        },
+        "contact_records": 5401,
+        "contacts_detected_by_named_fields": 0,
+        "unavailable_contacts": 0,
+        "depth_scoring": {
+          "pixels": 4837237,
+          "p90_absolute_error_m": 0.11770772933959961,
+          "outlier_fraction_above_0p3m": 0.010951499792133402,
+          "under1m_confident_pixels": 6751,
+          "source_points": 1619230,
+          "saved_pairs": 181,
+          "pass_gate": true,
+          "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+        },
+        "video_frames": {
+          "stereo_view.mp4": 901,
+          "third_person.mp4": 901
+        },
+        "raw_arrival_pass": false,
+        "first_contact_s": null,
+        "retain": false
+      }
+    }
+  ],
+  "unattempted_closed": 2,
+  "remaining": 0,
+  "decision": "E0 sourcep90 .42665>.15 after single fit; no calibrated-navigation dispatch"
+}

@@ -1,0 +1,36 @@
+{
+  "stage": "pixel_surface_projection_oracle_running",
+  "updated_utc": "2026-10-13T10:18:47.656175+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v59.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/pixel_surface_projection_20261013_v1",
+  "protocol": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/pixel_surface_projection_20261013_v1/protocol.json",
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-13T10:18:01.417965+00:00",
+    "parent_pid": 2,
+    "child_pid": 20,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "pid_namespace": "sandbox process namespace; supervise exec session, do not treat p2/p4 as host PIDs",
+  "supervisor_exec_session": 3993,
+  "budget": {
+    "phase": "offline_pixel_projection_qualification",
+    "utc": "2026-10-13T10:12:24.423300+00:00",
+    "parent_pid": 2,
+    "physical_cap": 0,
+    "physical_used": 0,
+    "fit": 0,
+    "recovery_used": 1,
+    "interface": "exporter assumed explicit upAxis; H has no authored upAxis, reference does not convert coordinates"
+  },
+  "summary": "v60像素表面身份/距离独立消费者已实现，七表面身份与四类别/高度独立测试、独立投影/类别/记忆预审通过。旧数据缺renderer实例标签，采用冻结原场景Sphere/Cylinder/实际地面表面与渲染有限深度的唯一.03m兼容离线标签，未知/模糊不当自由。H未声明upAxis导致首次导出假设失败保留，唯一恢复修正元数据读取且验证引用不转换坐标；五场景几何导出完成，905帧完整oracle投影/覆盖/长期风险诊断在运行。",
+  "next_action": "接续exec3993和qualify_status，不重复启动；完整905帧oracle结果及独立覆盖/投影复核后，资格通过才新冻结像素类别+距离目标一次拟合与fresh预算<=4，失败不拟合。不使用oracle在线导航。",
+  "stop_reason": null,
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false
+}

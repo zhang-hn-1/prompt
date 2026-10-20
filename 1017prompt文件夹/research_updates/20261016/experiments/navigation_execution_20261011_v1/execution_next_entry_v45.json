@@ -1,0 +1,199 @@
+{
+  "stage": "memory_and_speed_target_closed_resource_limited",
+  "updated_utc": "2026-10-12T18:48:12.886186+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/execution_next_entry_v44.json",
+  "report": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/reports/memory_conflict_and_speed_target_results_20261013.md",
+  "memory_result": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/dual_eye_memory_conflict_20261013_v1/closure.json",
+  "speed_result": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_speed_yaw_target_20261013_v1/ledger.json",
+  "actual_budget": {
+    "cap": 2,
+    "used": 2,
+    "remaining": 0,
+    "recovery": 0,
+    "fit": 0
+  },
+  "processes": {
+    "parent": 1079769,
+    "baseline": 1079785,
+    "candidate": 1091663,
+    "all_absent_host_ps": true
+  },
+  "baseline": {
+    "termination": {
+      "termination": "timeout90",
+      "actions": 900,
+      "time_s": 89.99999798834324,
+      "budget_s": 90.0,
+      "true_goal_xy_threshold_m": 0.2,
+      "not_original35": true,
+      "not_causal_navigation_AB": true
+    },
+    "initial_distance_m": 6.600000673532486,
+    "remaining_m": 5.214377144368039,
+    "net_progress_m": 1.3856235291644472,
+    "captures": 901,
+    "contact_schema_example": {
+      "simulation_time_s": 0.0,
+      "physics_step_index": 0,
+      "source": "capture",
+      "available": true,
+      "contact": false
+    },
+    "contact_records": 5401,
+    "contacts_detected_by_named_fields": 0,
+    "unavailable_contacts": 0,
+    "depth_scoring": {
+      "pixels": 5182026,
+      "p90_absolute_error_m": 0.11351984739303589,
+      "outlier_fraction_above_0p3m": 0.00898258711940079,
+      "under1m_confident_pixels": 4414,
+      "source_points": 1759143,
+      "saved_pairs": 181,
+      "pass_gate": true,
+      "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+    },
+    "video_frames": {
+      "stereo_view.mp4": 901,
+      "third_person.mp4": 901
+    },
+    "raw_arrival_pass": false,
+    "first_contact_s": null,
+    "retain": false
+  },
+  "candidate": {
+    "termination": {
+      "termination": "timeout90",
+      "actions": 900,
+      "time_s": 89.99999798834324,
+      "budget_s": 90.0,
+      "true_goal_xy_threshold_m": 0.2,
+      "not_original35": true,
+      "not_causal_navigation_AB": true
+    },
+    "initial_distance_m": 6.600000673532486,
+    "remaining_m": 4.688895008858183,
+    "net_progress_m": 1.9111056646743032,
+    "captures": 901,
+    "contact_schema_example": {
+      "simulation_time_s": 0.0,
+      "physics_step_index": 0,
+      "source": "capture",
+      "available": true,
+      "contact": false
+    },
+    "contact_records": 5401,
+    "contacts_detected_by_named_fields": 0,
+    "unavailable_contacts": 0,
+    "depth_scoring": {
+      "pixels": 4008134,
+      "p90_absolute_error_m": 0.12292091846466069,
+      "outlier_fraction_above_0p3m": 0.010177304451398082,
+      "under1m_confident_pixels": 6130,
+      "source_points": 1370035,
+      "saved_pairs": 181,
+      "pass_gate": true,
+      "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+    },
+    "video_frames": {
+      "stereo_view.mp4": 901,
+      "third_person.mp4": 901
+    },
+    "raw_arrival_pass": false,
+    "first_contact_s": null,
+    "retain": false
+  },
+  "source_and_map_metrics": {
+    "baseline_e1": {
+      "depth": {
+        "total_source_image_pixels": 55603200,
+        "predicted_confident_range_pixels": 7035223,
+        "finite_scored_pixels": 5182026,
+        "conditional_scoring_coverage": 0.7365830479005427,
+        "full_image_scored_fraction": 0.09319654264502762,
+        "predicted_on_renderer_nohit_pixels": 1853197,
+        "p50": 0.029560446739196777,
+        "p90": 0.11351984739303589,
+        "p95": 0.14393877983093262,
+        "scope": "181 source images; confident0.5-3m predictions; renderer nohit not physical free; instance counts not unique coverage or recall"
+      },
+      "map": {
+        "scene": "baseline_e1",
+        "terminal": {
+          "termination": "timeout90",
+          "actions": 900,
+          "time_s": 89.99999798834324,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "accepted_point_instances": 295641,
+        "truth_valid_instances": 256556,
+        "truth_valid_fraction": 0.8677957387507146,
+        "floor_false_instances": 2251,
+        "floor_false_fraction": 0.008773912907903149,
+        "position_error_p50_m": 0.025813859821172527,
+        "position_error_p90_m": 0.06457778293874417,
+        "final_risk_cells": 216,
+        "older10s_cells": 76,
+        "farther015m_reference_cells": 58,
+        "limits": "Map reference is existing vertical_max_body_band occupancy (not exact 3D surface). 0.15m cell-centre tolerance only evaluation; no online change. No full-image recall. Accepted-point metrics exclude invalid truth.",
+        "older10s_far_reference_cells": 8,
+        "recent_far_reference_cells": 50
+      }
+    },
+    "candidate_e1": {
+      "depth": {
+        "total_source_image_pixels": 55603200,
+        "predicted_confident_range_pixels": 5475587,
+        "finite_scored_pixels": 4008134,
+        "conditional_scoring_coverage": 0.7320007882259929,
+        "full_image_scored_fraction": 0.07208459225368324,
+        "predicted_on_renderer_nohit_pixels": 1467453,
+        "p50": 0.025505542755126953,
+        "p90": 0.12292091846466069,
+        "p95": 0.14893865585327148,
+        "scope": "181 source images; confident0.5-3m predictions; renderer nohit not physical free; instance counts not unique coverage or recall"
+      },
+      "map": {
+        "scene": "candidate_e1",
+        "terminal": {
+          "termination": "timeout90",
+          "actions": 900,
+          "time_s": 89.99999798834324,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "accepted_point_instances": 235338,
+        "truth_valid_instances": 200353,
+        "truth_valid_fraction": 0.851341474814947,
+        "floor_false_instances": 579,
+        "floor_false_fraction": 0.002889899327686633,
+        "position_error_p50_m": 0.024298666909905436,
+        "position_error_p90_m": 0.10025327593094528,
+        "final_risk_cells": 235,
+        "older10s_cells": 147,
+        "farther015m_reference_cells": 24,
+        "limits": "Map reference is existing vertical_max_body_band occupancy (not exact 3D surface). 0.15m cell-centre tolerance only evaluation; no online change. No full-image recall. Accepted-point metrics exclude invalid truth.",
+        "older10s_far_reference_cells": 18,
+        "recent_far_reference_cells": 6
+      }
+    }
+  },
+  "resource_block": {
+    "termination_pending": false,
+    "current_arm": "candidate_e1",
+    "resource": "same root filesystem across workspace/tmp/project, no alternate mounted data volume observed",
+    "next_run_minimum_free_bytes": 6442450944,
+    "policy": "finish reserved pair, preserve sealed evidence, no new full physical pair if free<6GiB; user external storage/free-space decision needed then resume next frozen single-mechanism research",
+    "all_processes_exited": true,
+    "available_bytes": 1474936832
+  },
+  "next": "Do not repeat rejected memory/current-speed or old candidates. Need >=6GiB available or external writable storage before another full actual pair. Then use existing complete E1 reference/trajectory current inputs to freeze distinct single mechanism for unresolved bypass execution, separate from source map scoring. Routine unchanged resource triggers quiet; no report-only repetitions.",
+  "reliable_navigation": false,
+  "learning_navigation_increment": false,
+  "benchmark_evidence_delivered": true,
+  "whole_project_complete": false
+}

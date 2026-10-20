@@ -1,0 +1,9 @@
+{
+  "stage": "dual_monocular_height_consumer_oracle_rejected",
+  "parent_entry": "execution_next_entry_v74.json",
+  "updated_utc": "2026-10-14T16:31:33.300269+00:00",
+  "summary": "v75两路独立单目BEV高度代理消费者已实现并完成七组1267对完整GT-only oracle资格，整体precision/location失败，physical0/4余4关闭fit0/modelinference0/recovery0。官方DA V2 Metric Hypersim Small commit a561b849ebae10a6f5ef49e26c83cbbcd36c71bf、99,222,290byte权重完整/239state strict通过，未模型推理，非模型拒绝。现有两眼同朝向非环视。B65事后最差precision47s（至少20预测格）29/374正确、14/14目标覆盖，左右地面误报10075/12008及10339/19024，pose点P90.0870/.0865m，两路重叠冲突0不能保证正确。完整目标初版误用2像素采样已保留并纠正为全像素，1267正式完整资格及独立计数聚合通过，门槛未变；未生成长期地图/真实推理误差不冒充结果。报告reports/dual_monocular_geometry_results_20261015.md直接两RGB/GT/两路与融合oracle图及分母。下一接续用户两单目方向：先有限核对v62理想像素类别消费者代码，针对新的左右联合完整可见域冻结类别地面/障碍/未知与距离分离的几何资格；只诊断GT、真实消费者类别必须来自当前RGB/在线可用信息，不用GT在线，不将世界高度再次当语义，不改本次高度/冲突门槛救分。旧v62模型拒绝和预算不重开；新域oracle成立才有限选一个真实在线类别来源、冻结消费者与独立预算并运行已取得单目权重、预测seal后GT完整评分。未知非自由/缺失不清风险，真实导航仍cap<=4含同版baseline/fresh90s且源资格通过，授权常规步骤自主完成不逐阶段问用户。无实验在运行，整体/可靠导航/学习导航增量未完成，automationACTIVE。",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/dual_monocular_bev_20261015_v1",
+  "whole_complete": false,
+  "running_experiments": []
+}

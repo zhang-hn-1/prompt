@@ -1,0 +1,11 @@
+{
+  "hypothesis": "Current segment tangent+signed lateral error target may recover reference tracking when endpoint pure pursuit saturates; not claimed root cause",
+  "single_change": "replace lookahead target geometry with directed current-segment vector field using existing lookahead as lateral scale; existing root projection/cusps/braking/main caps/gyrofeedback/gain/PID/map/source/rig untouched",
+  "inputs": "current native position and installed reference only, GT scorer only",
+  "novelty": "not waypoint interpolation/heading-rate source/targetspeedfloor/old measuredcourse primitive; target uses path-tangent field",
+  "physical_cap": 2,
+  "recovery_cap": 1,
+  "fit": 0,
+  "acceptance": "same original candidate arrival<=.2m within90s no contact sourcep90<=.15/outlier>.3<=.1, full raw transport/native/maps/video; otherwise reject and close without tuning",
+  "limitations": "heuristic path field not certified dynamic model; same E1 development, RGB may differ; cap2 includes sameversion baseline"
+}

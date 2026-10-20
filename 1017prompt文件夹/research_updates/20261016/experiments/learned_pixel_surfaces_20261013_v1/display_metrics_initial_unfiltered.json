@@ -1,0 +1,40 @@
+[
+  {
+    "group": "E1",
+    "frame": 450,
+    "selection": "fixed45s display, not selected by learned score",
+    "full_pixels": 307200,
+    "eligible_labelled": 60670,
+    "learned_scored": 55854,
+    "original_scored_same_label": 18753,
+    "learned_p50_p90_p95": [
+      0.0738379955291748,
+      0.12289069890975954,
+      0.13752027750015258
+    ],
+    "original_p50_p90_p95": [
+      0.029441118240356445,
+      0.07253046035766601,
+      0.10098004341125487
+    ]
+  },
+  {
+    "group": "C54",
+    "frame": 495,
+    "selection": "prior-blocker source selection, not random/new worst search",
+    "full_pixels": 307200,
+    "eligible_labelled": 147313,
+    "learned_scored": 105701,
+    "original_scored_same_label": 39841,
+    "learned_p50_p90_p95": [
+      0.19593894481658936,
+      0.3899928331375122,
+      0.4348640441894531
+    ],
+    "original_p50_p90_p95": [
+      0.03356003761291504,
+      9.161701202392578,
+      22.50888442993164
+    ]
+  }
+]

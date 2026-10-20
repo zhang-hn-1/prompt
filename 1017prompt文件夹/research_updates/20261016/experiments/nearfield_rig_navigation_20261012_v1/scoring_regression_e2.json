@@ -1,0 +1,42 @@
+{
+  "termination": {
+    "termination": "collision",
+    "actions": 197,
+    "time_s": 19.699999559670687,
+    "budget_s": 90.0,
+    "true_goal_xy_threshold_m": 0.2,
+    "not_original35": true,
+    "not_causal_navigation_AB": true
+  },
+  "initial_distance_m": 8.899999809265136,
+  "remaining_m": 6.459022242153061,
+  "net_progress_m": 2.440977567112075,
+  "captures": 198,
+  "contact_schema_example": {
+    "simulation_time_s": 0.0,
+    "physics_step_index": 0,
+    "source": "capture",
+    "available": true,
+    "contact": false
+  },
+  "contact_records": 1183,
+  "contacts_detected_by_named_fields": 1,
+  "unavailable_contacts": 0,
+  "depth_scoring": {
+    "pixels": 3371,
+    "p90_absolute_error_m": 1.769327998161316,
+    "outlier_fraction_above_0p3m": 0.8077721744289529,
+    "under1m_confident_pixels": 0,
+    "source_points": 591,
+    "saved_pairs": 40,
+    "pass_gate": false,
+    "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+  },
+  "video_frames": {
+    "stereo_view.mp4": 198,
+    "third_person.mp4": 198
+  },
+  "raw_arrival_pass": false,
+  "first_contact_s": 19.63999956101179,
+  "retain": false
+}

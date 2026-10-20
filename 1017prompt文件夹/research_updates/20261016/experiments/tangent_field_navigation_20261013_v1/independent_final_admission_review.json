@@ -1,0 +1,22 @@
+{
+  "scope": "independent final static prelaunch review, no edits or launch",
+  "sha256": {
+    "field.py": "31c15cdb6f0ac20fe2f403b765f55005b363fa64dc8ff35b20794a7c81ae7d92",
+    "field_pre_review.py.txt": "1a37dd3089701a4a3a582bd9fbfb82f4b8bc39ab023c11eb638cb0da2effb48b",
+    "mro_check.py": "f5ae597d565fbd5310e3d0dda4519bd110e612ed958c4b0872367dfa52de026d",
+    "mro_checks.json": "ab00583af64230d5c78d1d603a82ab186e963249783cd5ac04eaf5fb43cd1fc4",
+    "protocol.json": "e2eeaa761c8fbd9493028620bc5cbfcbfc6befd793d0ec9d0fc3807ffed0ad97",
+    "candidate_e1_driver.py": "48a402f9518225a0cbf88a2a7f3356776bbe85cfd62529a2b115a3e4f9db3f29",
+    "baseline_e1_driver.py": "2a645ef39708a30b9234ac50f286206d7c0f8a786ee8059d5987ff725ef6b1c9"
+  },
+  "prior_endpoint_blocker": "resolved: guard subtracts clipped currentsegment projected progress from remaining directed arc; lateral error does not increase remaining; zerolength falls back",
+  "near_terminal_case": "position[1.8,.3] on penultimate [1,0]\u2192[2,0], remaining .2<lookahead.5 returns original[2,0] without field application; case present after existing six MRO and cusp tests",
+  "static_admission": "no remaining blocking source/geometry/leakage issue found for bounded sameversion twoarm E1 comparison",
+  "boundaries": [
+    "last outgoing edge with direction mismatch uses inherited endpoint fallback",
+    "field changes virtualtarget only; preserves projection/cusp acquisition/gyrofeedback/bankmap/PID/source/memory",
+    "same development E1 pair, RGB may differ; motivation228/720auxbound not causalrootproof",
+    "no dynamic stability/free-space/generalization claim"
+  ],
+  "receipt_note": "mro_checks JSON written before added terminal assertion, so bind successful full mro_check log or move receipt after all checks before final launch admission; this is evidence completeness only"
+}

@@ -1,0 +1,9 @@
+# Follow-up after ONE fresh original E1 source probe
+
+First validate all sealed runtime counts, exact prescribed requests, synchronized exposure clocks, original uncached-CAD paired-source reconstruction; assess frozen selected-point geometry and nativepose separately. Source uses current GT pose, so nativepose cannot rescue a failed source gate or imply estimated-pose source acceptance.
+
+If geometry fails: one bounded same-run offline error-layer diagnosis, no extra physics/NN/filter/threshold. Evaluate selected points with stored actual depth reference and GT-camera transformations: same-pixel depth error projected by ray length vs world error; true right-eye CAD and depth visibility, self-distance and actual scene collision-cylinder membership are diagnostic labels, never source filtering. All29 frames bounded; cannot upgrade truth acquisition certification or old dense gate. Make rejection and next blocking layer specific.
+
+If geometry passes: qualify selected-point original scene membership against ALL collision cylinders of original E1 (not old single origin cylinder label); ≥95% selected GT scene-obstacle precision, no changed geometry mask, actor/full-volume completion forbidden. Sparse observations never satisfy old dense90% gate. Before any E1 closed-loop launch separately freeze knownpose TaskH prior/unknown scope, initial conditions/reference/terminal progress/no-contact and budget. Do not claim 35s original admission. No additional source collection now, no hard rescue.
+
+Both branches save original-scene trajectory/two videos/sample visualization, clocks/source/code hashes and append-only record. Rejected head remains rejected; no second network. Existing conditional fixture result remains scope-limited. This is source transfer validation, not control tuning.

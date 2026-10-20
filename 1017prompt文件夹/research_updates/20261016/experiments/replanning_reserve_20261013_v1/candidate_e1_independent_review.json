@@ -1,0 +1,59 @@
+{
+  "independent_review_pass": true,
+  "arm": "candidate_e1",
+  "raw_audit_recomputed_exact": true,
+  "source_depth_recomputed_exact": true,
+  "manifest_identity_reviewed": true,
+  "termination": {
+    "termination": "timeout90",
+    "actions": 900,
+    "time_s": 89.99999798834324,
+    "budget_s": 90.0,
+    "true_goal_xy_threshold_m": 0.2,
+    "not_original35": true,
+    "not_causal_navigation_AB": true
+  },
+  "remaining_m": 5.400590599264686,
+  "contacts_detected": 0,
+  "unavailable_contacts": 0,
+  "depth_p90_m": 0.1289684772491455,
+  "depth_gate": true,
+  "arrival": false,
+  "retain": false,
+  "intervention": {
+    "boundaries": 168,
+    "reserve_screens": 102,
+    "successful_installs": 6,
+    "fallback_no_route": 320,
+    "actual_installed_geometry_independently_screened": [
+      {
+        "frame": 60,
+        "minimum_continuous_m": 1.2306880275245637
+      },
+      {
+        "frame": 90,
+        "minimum_continuous_m": 1.2474509830769946
+      },
+      {
+        "frame": 220,
+        "minimum_continuous_m": 1.124790081578208
+      },
+      {
+        "frame": 225,
+        "minimum_continuous_m": 1.183365642357838
+      },
+      {
+        "frame": 380,
+        "minimum_continuous_m": 1.1370136371226724
+      },
+      {
+        "frame": 435,
+        "minimum_continuous_m": 1.1206808310096954
+      }
+    ],
+    "fallback_no_route_scope": "320 recorded control cycles carrying no-route status, not320 distinct planner attempts"
+  },
+  "scope": "Actual terminal/contact/current source/native registration/map/request audit; no independent IMU dynamics reconstruction or causal paired replication. Reserve unverified assumption; sameE1 development.",
+  "review_fit": 0,
+  "review_physical": 0
+}

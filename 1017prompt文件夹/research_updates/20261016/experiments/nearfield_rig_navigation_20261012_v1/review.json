@@ -1,0 +1,38 @@
+{
+  "reviewer": "independent_subagent_rig_candidate_review",
+  "utc": "2026-10-12T12:59:42.942519+00:00",
+  "outcome": "implementation_review_pass_for_bounded_physical_launch",
+  "remaining_important_issues": [],
+  "verified": [
+    "Runtime camera creation reads patched geometry before reset; current native camera registration, depth scaling, sigma and CAD masks use the same selected rig.",
+    "No change to navigation/control branch logic; renderer truth remains post-output scoring only. Initial gauge and ideal low-level IMU privileges preserved.",
+    "Independent 5 CPU checks passed. Four arm source/input maps matched on review; baseline projected static masks exactly equal historical masks.",
+    "Stale active protocol metadata moved to parent_metadata; cap4 and current geometry/depth/navigation gates explicit.",
+    "Scoring uses actual contact/available fields, raw distance/time consistency, exact two required videos and matching decoded frames; interrupted/timeout execution is not scored as performance.",
+    "Historical E2 scoring regression rejects: one contact, first19.639999561s, two198-frame videos, depth gate fails."
+  ],
+  "limits": [
+    "CAD screen is sampled geometry, not demonstrated obstacle visibility or collision causality.",
+    "Selected forward candidate retains zero support at body x0.9/1.0m; improvement at1.2/1.5m.",
+    "No Isaac execution in review. Actual runtime extrinsics/depth/contact/trajectory audits remain required."
+  ],
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/protocol.json": "94262c444d66540686f31abc0ce209f67c1ce8af65c0c6966d50dc5a38138b43",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/geometry_screen.py": "4c5b37973cd1d423021c6639a88455a75d01fd2a2340ade44abaa3308d60f438",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/geometry_assessment.json": "3fc1bd960117a8a3efaca54da4fbe9bebf70436fa578fd8f63272fc4bda56779",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/rig_adapter.py": "4c356908a0e68503ea8fbb434dee1c05cc8cab580413ad2564c39c4b4a9f0a4f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/prepare.py": "3aa306a52496dcbbf4ae8fb28999c4582a8009e0264e837ca5ff5cb40b6c4332",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/score.py": "aa49b5adf95c2c5d0602f35e5e6640fca6be3641d0596bde435558b975b6da6a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/supervise.py": "3d17fca08e70619b6c628f53ff0ae379d90ebd737aee30a12ae99e4d72aab4de",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/test_rig_adapter.py": "580b3f9971666d716b8971da3d1997f594526ed2d647e03ebd30650d683247f4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/scoring_regression_e2.json": "f93ebf2f9cfe5b226b003524f90910c390ebbe134a62aa8f70277a2f33d1bebb",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/baseline_e2_driver.py": "f814350a4ae2b00335939f50add91ac44496e0abf864efc67b5612b777177451",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/baseline_e2_protocol.json": "d70d677986ebdeb6986a07d351e89187b78c2ceb38f0e8c8fd798fe6305a7516",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e2_driver.py": "9a33f87d172ac2a4f066fb6f4b3c441109a8157a19eb870d0265bee097b9067a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e2_protocol.json": "bede431e934b26fab85c7cd96f11d34fe5a5dac2c799ede8d64ecf5d542f3706",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e0_driver.py": "4b1fabd5f5fa4cd3c8d64fc1b7f6fb741cee33c0375d2de74c3e93238e5d7c39",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e0_protocol.json": "ce9d2b4d7819d855e353b6ca7d5533ef1c3b43d5a70f45926716acedb4e83801",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e1_driver.py": "1c168749734529f40158d6836fdef41581d5be1c5a743da728ac6b2d26013892",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e1_protocol.json": "afd6c8f878e7203acf2a2ba9ba803bc0710214f487ed1f27280928cc8a194c08"
+  }
+}

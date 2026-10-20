@@ -1,0 +1,458 @@
+{
+  "stage": "geometry_visible_qualification_reject",
+  "updated_utc": "2026-10-13T04:48:35.279034+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v49.json",
+  "experiment": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/geometry_visible_qualification_20261013_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/geometry_visible_qualification_results_20261013.md",
+  "summary": "v50固定几何资格已实现并完成543帧全序列GT诊断与独立核验，全部原目标exact。H/E0/E1双眼FOV+CAD+范围+格计数条件潜在召回52.1706/79.9017/62.8215%，双眼最近像素深度核对51.0790/78.8848/62.5565%，均低于80%。不是所有学习方法的理论上限，仅当前明确双眼测量域。即使真深度配原生姿态，H/E1风险精确率78.4292/87.6286%、位置P90 .5/.316228m；地面误报H1367/65331、E0942/68608、E11166/39461。GT仅离线oracle；没有新预测源、fit0/physical0/recovery0。严格当前双眼共同观测覆盖完整可见目标无训练资格，未启动新拟合。当前局部重心/航向重置抵消xy漂移，不是世界累计配准审计；理想原生IMU、特权初始规范及固定.4m高度先验如实披露。durable CPU 04:40:42–04:44:49 UTC finished0，exec session10758已正常收回，无实验在运行。",
+  "results": [
+    {
+      "group": "H",
+      "frames": 181,
+      "pixel_counts": {
+        "all": 43052696,
+        "potential": 21525027,
+        "verified": 20955561,
+        "opposite_occluded": 384037,
+        "opposite_nohit": 14372,
+        "opposite_unavailable": 17992
+      },
+      "metrics": {
+        "potential": {
+          "predicted_risk_cells": 1912,
+          "true_visible_risk_cells": 3939,
+          "matched_predicted": 1912,
+          "matched_truth": 2055,
+          "precision": 1.0,
+          "recall": 0.5217060167555218,
+          "ground_false_cells": 0,
+          "ground_cells": 65331,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 69270,
+          "visible_surface_recall": 0.682099032770319,
+          "localization_p90_m": 0.0,
+          "exact_overlap_height_accuracy": 0.9633891213389121,
+          "exact_overlap_height_cells": 1912,
+          "per_height": {
+            "2": {
+              "predicted": 143,
+              "truth": 207,
+              "precision": 0.5454545454545454,
+              "recall": 0.3526570048309179,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 1769,
+              "truth": 3732,
+              "precision": 1.0,
+              "recall": 0.5112540192926045,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        },
+        "verified": {
+          "predicted_risk_cells": 1823,
+          "true_visible_risk_cells": 3939,
+          "matched_predicted": 1823,
+          "matched_truth": 2012,
+          "precision": 1.0,
+          "recall": 0.5107895404925108,
+          "ground_false_cells": 0,
+          "ground_cells": 65331,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 69270,
+          "visible_surface_recall": 0.6811606756171503,
+          "localization_p90_m": 0.0,
+          "exact_overlap_height_accuracy": 0.9643444871091608,
+          "exact_overlap_height_cells": 1823,
+          "per_height": {
+            "2": {
+              "predicted": 130,
+              "truth": 207,
+              "precision": 0.5384615384615384,
+              "recall": 0.3285024154589372,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 1693,
+              "truth": 3732,
+              "precision": 1.0,
+              "recall": 0.5042872454448017,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        },
+        "native": {
+          "predicted_risk_cells": 5373,
+          "true_visible_risk_cells": 3939,
+          "matched_predicted": 4214,
+          "matched_truth": 3939,
+          "precision": 0.7842918295179602,
+          "recall": 1.0,
+          "ground_false_cells": 1367,
+          "ground_cells": 65331,
+          "ground_false_fraction": 0.020924216681208002,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 69270,
+          "visible_surface_recall": 0.942702468601126,
+          "localization_p90_m": 0.5,
+          "exact_overlap_height_accuracy": 0.7357288481141692,
+          "exact_overlap_height_cells": 3924,
+          "per_height": {
+            "2": {
+              "predicted": 1608,
+              "truth": 207,
+              "precision": 0.14303482587064675,
+              "recall": 0.961352657004831,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 2728,
+              "truth": 3732,
+              "precision": 1.0,
+              "recall": 0.8027867095391211,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 1037,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        }
+      },
+      "qualification_pass": false
+    },
+    {
+      "group": "E0",
+      "frames": 181,
+      "pixel_counts": {
+        "all": 39610834,
+        "potential": 21086606,
+        "verified": 19967089,
+        "opposite_occluded": 1081759,
+        "opposite_nohit": 10739,
+        "opposite_unavailable": 5836
+      },
+      "metrics": {
+        "potential": {
+          "predicted_risk_cells": 5984,
+          "true_visible_risk_cells": 8752,
+          "matched_predicted": 5984,
+          "matched_truth": 6993,
+          "precision": 1.0,
+          "recall": 0.7990173674588665,
+          "ground_false_cells": 0,
+          "ground_cells": 68608,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 77360,
+          "visible_surface_recall": 0.5901240951396071,
+          "localization_p90_m": 0.0,
+          "exact_overlap_height_accuracy": 0.9821189839572193,
+          "exact_overlap_height_cells": 5984,
+          "per_height": {
+            "2": {
+              "predicted": 4368,
+              "truth": 6100,
+              "precision": 0.9913003663003663,
+              "recall": 0.8091803278688524,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 264,
+              "truth": 495,
+              "precision": 0.9696969696969697,
+              "recall": 0.5252525252525253,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 1352,
+              "truth": 2157,
+              "precision": 1.0,
+              "recall": 0.7450162262401484,
+              "absent_truth": false
+            }
+          },
+          "pass_gate": false
+        },
+        "verified": {
+          "predicted_risk_cells": 5689,
+          "true_visible_risk_cells": 8752,
+          "matched_predicted": 5689,
+          "matched_truth": 6904,
+          "precision": 1.0,
+          "recall": 0.7888482632541134,
+          "ground_false_cells": 0,
+          "ground_cells": 68608,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 77360,
+          "visible_surface_recall": 0.5035160289555326,
+          "localization_p90_m": 0.0,
+          "exact_overlap_height_accuracy": 0.958340657409035,
+          "exact_overlap_height_cells": 5689,
+          "per_height": {
+            "2": {
+              "predicted": 4287,
+              "truth": 6100,
+              "precision": 0.9909027291812457,
+              "recall": 0.8039344262295082,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 231,
+              "truth": 495,
+              "precision": 0.961038961038961,
+              "recall": 0.45252525252525255,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 1171,
+              "truth": 2157,
+              "precision": 1.0,
+              "recall": 0.7264719517848864,
+              "absent_truth": false
+            }
+          },
+          "pass_gate": false
+        },
+        "native": {
+          "predicted_risk_cells": 9686,
+          "true_visible_risk_cells": 8752,
+          "matched_predicted": 8757,
+          "matched_truth": 8752,
+          "precision": 0.9040883749741896,
+          "recall": 1.0,
+          "ground_false_cells": 942,
+          "ground_cells": 68608,
+          "ground_false_fraction": 0.01373017723880597,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 77360,
+          "visible_surface_recall": 0.9448810754912099,
+          "localization_p90_m": 0.0,
+          "exact_overlap_height_accuracy": 0.9907237746220797,
+          "exact_overlap_height_cells": 8732,
+          "per_height": {
+            "2": {
+              "predicted": 7038,
+              "truth": 6100,
+              "precision": 0.8674339300937767,
+              "recall": 1.0,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 490,
+              "truth": 495,
+              "precision": 0.9877551020408163,
+              "recall": 0.9616161616161616,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 2158,
+              "truth": 2157,
+              "precision": 1.0,
+              "recall": 1.0,
+              "absent_truth": false
+            }
+          },
+          "pass_gate": true
+        }
+      },
+      "qualification_pass": false
+    },
+    {
+      "group": "E1",
+      "frames": 181,
+      "pixel_counts": {
+        "all": 65875988,
+        "potential": 36994592,
+        "verified": 36401083,
+        "opposite_occluded": 537217,
+        "opposite_nohit": 4583,
+        "opposite_unavailable": 1829
+      },
+      "metrics": {
+        "potential": {
+          "predicted_risk_cells": 3516,
+          "true_visible_risk_cells": 6415,
+          "matched_predicted": 3516,
+          "matched_truth": 4030,
+          "precision": 1.0,
+          "recall": 0.6282151208106002,
+          "ground_false_cells": 0,
+          "ground_cells": 39461,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 45876,
+          "visible_surface_recall": 0.5812625337867294,
+          "localization_p90_m": 0.0,
+          "exact_overlap_height_accuracy": 0.9650170648464164,
+          "exact_overlap_height_cells": 3516,
+          "per_height": {
+            "2": {
+              "predicted": 167,
+              "truth": 160,
+              "precision": 0.2754491017964072,
+              "recall": 0.275,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 3349,
+              "truth": 6255,
+              "precision": 1.0,
+              "recall": 0.6167865707434053,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        },
+        "verified": {
+          "predicted_risk_cells": 3393,
+          "true_visible_risk_cells": 6415,
+          "matched_predicted": 3393,
+          "matched_truth": 4013,
+          "precision": 1.0,
+          "recall": 0.6255650818394388,
+          "ground_false_cells": 0,
+          "ground_cells": 39461,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 45876,
+          "visible_surface_recall": 0.5803906181881594,
+          "localization_p90_m": 0.0,
+          "exact_overlap_height_accuracy": 0.964633068081344,
+          "exact_overlap_height_cells": 3393,
+          "per_height": {
+            "2": {
+              "predicted": 161,
+              "truth": 160,
+              "precision": 0.2546583850931677,
+              "recall": 0.2625,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 3232,
+              "truth": 6255,
+              "precision": 1.0,
+              "recall": 0.6140687450039968,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        },
+        "native": {
+          "predicted_risk_cells": 7679,
+          "true_visible_risk_cells": 6415,
+          "matched_predicted": 6729,
+          "matched_truth": 6415,
+          "precision": 0.8762859747362938,
+          "recall": 1.0,
+          "ground_false_cells": 1166,
+          "ground_cells": 39461,
+          "ground_false_fraction": 0.029548161475887586,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 45876,
+          "visible_surface_recall": 0.9457886476589066,
+          "localization_p90_m": 0.316227766016838,
+          "exact_overlap_height_accuracy": 0.6583802376485304,
+          "exact_overlap_height_cells": 6396,
+          "per_height": {
+            "2": {
+              "predicted": 1351,
+              "truth": 160,
+              "precision": 0.12805329385640266,
+              "recall": 0.9625,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 4148,
+              "truth": 6255,
+              "precision": 1.0,
+              "recall": 0.7421262989608314,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 2180,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        }
+      },
+      "qualification_pass": false
+    }
+  ],
+  "budget": {
+    "status": "closed_geometry_qualification_reject",
+    "fit": 0,
+    "physical": 0,
+    "fit_cap": 0,
+    "physical_cap": 0,
+    "recovery": 0,
+    "all_experiments_exited": true,
+    "whole_complete": false
+  },
+  "processes": {
+    "status": "finished",
+    "start_utc": "2026-10-13T04:40:42.364283+00:00",
+    "parent_pid": 2,
+    "child_pid": 5,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-13T04:44:49.707630+00:00"
+  },
+  "next": "先冻结新的像素表面类别（地面/障碍/未知）与距离分开输出、固定标定投影消费者；用理想像素类别/深度和实际原生姿态完整核验其目标身份、地面误报、位置精度与可见障碍覆盖，GT仅诊断监督。不用现有世界高度阈值重新分类预测语义，也不能把GT语义用于实际导航。资格通过才冻结一个像素级学习候选、训练整序列覆盖/一次拟合/新鲜验证；分别标注双眼匹配支持和单眼先验推断。该目标尚未实现，不能换网络救v49或放宽v50门槛。原H/E0/E1仍开发数据、旧所有预算封闭；合格源才进入新cap<=4真实90秒对照。",
+  "whole_complete": false,
+  "stop_reason": "Complete grouped geometry qualification implemented and independently reviewed; necessary training gate failed, no unsupported fit."
+}

@@ -1,0 +1,14 @@
+{
+  "hypothesis": "Nominal safe path may lead actual tracking tube into states where fixed-margin replanning impossible. Additional existing .2 tracking assumption reserve preserves future planner feasible root states.",
+  "mandatory_safety_margin": 0.8707106781186548,
+  "reserve": 0.2,
+  "total_planning_margin": 1.0707106781186548,
+  "mechanism": "only global/local planning and retention constraint gains derived reserve; map, yaw/IMU/control/90sec unchanged",
+  "old_mechanism": "Original full reference screen already every.5s, 49.5s passed .936898; missed-observation hypothesis rejected, no duplicate implementation",
+  "offline_gate": "original10installed queries exact; immutable maps; all accepted reserve primitives pass1.070711; at least1 original retention-only reserve failure has successful current reserve plan; original fallback/first-direction/MRO unchanged",
+  "physical_cap": 2,
+  "recovery_cap": 1,
+  "fit": 0,
+  "navigation_gate": "arrival<=.2m within90s no contact and original source p90<=.15m; no tuning/further E0/E2 on reject",
+  "scope": "Known development E1 and disclosed ideal native IMU/initial gauge/height; reserve is uncertain assumption not safe stopping certificate; sameE1 not independent generalization"
+}

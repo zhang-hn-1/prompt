@@ -1,0 +1,95 @@
+{
+  "results": [
+    {
+      "sequence": "H",
+      "candidates": 1047726,
+      "retained": 1044392,
+      "rejected": 3334,
+      "finite_before": 809675,
+      "finite_after": 806456,
+      "conditional_scoring_coverage_before": 0.7727926958002378,
+      "conditional_scoring_coverage_after": 0.7721774965721683,
+      "full_image_scored_fraction_after": 0.014503769567219153,
+      "before_percentiles": [
+        0.023504257202148438,
+        0.10052614212036126,
+        0.17871663570404048
+      ],
+      "after_percentiles": [
+        0.023467838764190674,
+        0.10021066665649414,
+        0.17839455604553223
+      ],
+      "above030_fraction": 0.012115974089100956,
+      "obstacle_before": 244559,
+      "obstacle_after": 243084,
+      "obstacle_retention": 0.993968735560744,
+      "candidate_retention": 0.9968178703210572,
+      "infinite_truth_before": 238051,
+      "infinite_truth_after": 237936,
+      "source_gate": true
+    },
+    {
+      "sequence": "E0",
+      "candidates": 517800,
+      "retained": 516000,
+      "rejected": 1800,
+      "finite_before": 513462,
+      "finite_after": 511662,
+      "conditional_scoring_coverage_before": 0.99162224797219,
+      "conditional_scoring_coverage_after": 0.991593023255814,
+      "full_image_scored_fraction_after": 0.009202024343922652,
+      "before_percentiles": [
+        0.047588229179382324,
+        0.4267312645912175,
+        0.5836993813514708
+      ],
+      "after_percentiles": [
+        0.04755359888076782,
+        0.4269334197044374,
+        0.5838343918323511
+      ],
+      "above030_fraction": 0.1834003697753595,
+      "obstacle_before": 361830,
+      "obstacle_after": 360588,
+      "obstacle_retention": 0.9965674488019236,
+      "candidate_retention": 0.996523754345307,
+      "infinite_truth_before": 4338,
+      "infinite_truth_after": 4338,
+      "source_gate": false
+    },
+    {
+      "sequence": "E1",
+      "candidates": 1619230,
+      "retained": 1613196,
+      "rejected": 6034,
+      "finite_before": 1209606,
+      "finite_after": 1203614,
+      "conditional_scoring_coverage_before": 0.7470254380168352,
+      "conditional_scoring_coverage_after": 0.746105246975569,
+      "full_image_scored_fraction_after": 0.021646487971915287,
+      "before_percentiles": [
+        0.02731102705001831,
+        0.11759066581726074,
+        0.1448490023612976
+      ],
+      "after_percentiles": [
+        0.027355730533599854,
+        0.11764594316482543,
+        0.1448906302452087
+      ],
+      "above030_fraction": 0.011023467656574283,
+      "obstacle_before": 748823,
+      "obstacle_after": 744624,
+      "obstacle_retention": 0.9943925333490023,
+      "candidate_retention": 0.996273537422108,
+      "infinite_truth_before": 409624,
+      "infinite_truth_after": 409582,
+      "source_gate": true
+    }
+  ],
+  "pass_gate": false,
+  "physics": 0,
+  "fit": 0,
+  "scope": "development source packet ownership; no navigation"
+}

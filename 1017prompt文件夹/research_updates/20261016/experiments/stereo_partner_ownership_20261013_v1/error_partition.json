@@ -1,0 +1,74 @@
+{
+  "scope": "post-hoc GT-only explanation of retained packet measurements; categories not online labels; no old gate rescue",
+  "results": [
+    {
+      "sequence": "H",
+      "partitions": {
+        "ground_absz_le03": {
+          "n": 556695,
+          "bad030": 4985,
+          "accepted": 1553,
+          "accepted_bad030": 560
+        },
+        "positive_obstacle_05_15": {
+          "n": 243084,
+          "bad030": 4720,
+          "accepted": 56639,
+          "accepted_bad030": 2007
+        },
+        "other_finite": {
+          "n": 6677,
+          "bad030": 66,
+          "accepted": 118,
+          "accepted_bad030": 2
+        }
+      }
+    },
+    {
+      "sequence": "E0",
+      "partitions": {
+        "ground_absz_le03": {
+          "n": 142695,
+          "bad030": 14641,
+          "accepted": 14202,
+          "accepted_bad030": 13924
+        },
+        "positive_obstacle_05_15": {
+          "n": 360588,
+          "bad030": 79198,
+          "accepted": 128616,
+          "accepted_bad030": 19834
+        },
+        "other_finite": {
+          "n": 8379,
+          "bad030": 0,
+          "accepted": 5,
+          "accepted_bad030": 0
+        }
+      }
+    },
+    {
+      "sequence": "E1",
+      "partitions": {
+        "ground_absz_le03": {
+          "n": 441183,
+          "bad030": 10995,
+          "accepted": 766,
+          "accepted_bad030": 0
+        },
+        "positive_obstacle_05_15": {
+          "n": 744624,
+          "bad030": 2251,
+          "accepted": 222723,
+          "accepted_bad030": 927
+        },
+        "other_finite": {
+          "n": 17807,
+          "bad030": 22,
+          "accepted": 190,
+          "accepted_bad030": 3
+        }
+      }
+    }
+  ]
+}

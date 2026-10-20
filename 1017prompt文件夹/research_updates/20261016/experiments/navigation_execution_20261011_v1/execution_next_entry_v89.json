@@ -1,0 +1,7 @@
+{
+  "stage": "user_camera_preview_runtime_failure",
+  "parent_entry": "execution_next_entry_v88.json",
+  "summary": "v89接续用户x=24,z=8厘米四路实际画面预览，独立新cap1/120秒、恢复0、8曝光预算已登记。仅另建preview相机，原相机和原项目不改；光学/场景/照明/动作沿用v86。08:52:27.618–08:52:35.848UTC启动失败child-11，durable状态runtime_failed；当前沙箱进程命名空间parent2/child35均已随exec30250退出。日志GPU列表空、Driver Version0、GLFW/display和DerivedDataCache初始化错误，尚不能唯一归因。0有效曝光、无seal，model/fit/nav0；不是遮挡/模型性能失败。used1/1预算关闭、不自动重试或换名恢复。v88八姿态CAD零遮挡结论保持仅离线几何，实际新RGB仍N/A。下一先只读确认可用宿主GPU/显示/缓存执行通道与原成功systemd运行环境差异，禁止用无GPU当前沙箱反复启动；若无可用通道则明确执行环境限制。后续额外实际启动须独立明确资源/预算决定，旧预算保持关闭。原四相机固定约束和用户参数预览身份不变。可靠导航/学习增量未成立，automationACTIVE。",
+  "running_experiments": [],
+  "whole_complete": false
+}

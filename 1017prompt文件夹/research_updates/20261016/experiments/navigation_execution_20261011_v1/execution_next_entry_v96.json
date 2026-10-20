@@ -1,0 +1,171 @@
+{
+  "version": 96,
+  "created_utc": "2026-10-15T18:34:51.002108+00:00",
+  "root": "experiments/intrinsic_surface_qualification_20261016_v1",
+  "status": "necessary_consumer_qualified_no_new_source_admitted",
+  "fixed_camera_root": "experiments/user_fov_position_only_20261015_v1",
+  "question": "Known-camera input novelty and full current four-view ideal metric-surface consumer eligibility",
+  "novelty": {
+    "UniDepth_known_K_already_used": true,
+    "old_assessment_rejected_unchanged": true,
+    "Metric3D_download": 0,
+    "Metric3D_model_inference": 0,
+    "Metric3D_scientific_performance_not_evaluated": true,
+    "conclusion": "Adding known K alone is not a new candidate; inspected focal de-canonicalization and learned joint depth/normal recurrence did not establish an independent new measured scale constraint. No model/source admitted."
+  },
+  "data": {
+    "root": "experiments/contact_boundary_source_20261016_v1/e0_recovery_run",
+    "frames": 110,
+    "eye_frames": 440,
+    "duration_s": 54.2999987863,
+    "role": "Already inspected development; no new acquisition",
+    "original_full_target_instances": 11652,
+    "full_target_pixels": 4476747,
+    "target_domain": "Exactly prior finite .5–3m/CAD/bodyband/self domain, all pixels; suspended/unidentified targets retained."
+  },
+  "aggregate": {
+    "oracle": {
+      "predicted": 10985,
+      "target": 11652,
+      "correct": 10985,
+      "covered": 11634,
+      "precision": 1.0,
+      "recall": 0.9984552008238929,
+      "position_p90_m": 0.0
+    },
+    "native": {
+      "predicted": 10981,
+      "target": 11652,
+      "correct": 10981,
+      "covered": 11635,
+      "precision": 1.0,
+      "recall": 0.9985410230003433,
+      "position_p90_m": 0.0
+    }
+  },
+  "gates": {
+    "oracle": {
+      "precision": true,
+      "recall": true,
+      "position": true,
+      "every_frame_precision": true,
+      "every_frame_recall": true,
+      "every_frame_position": true
+    },
+    "native": {
+      "precision": true,
+      "recall": true,
+      "position": true,
+      "every_frame_precision": true,
+      "every_frame_recall": true,
+      "every_frame_position": true
+    }
+  },
+  "minimum_per_frame_recall": 0.9824561403508771,
+  "native_continuous_pixel_XY_p50_p90_p95_m": [
+    0.011660043747946616,
+    0.03290078061644143,
+    0.035291217186254296
+  ],
+  "suspended_target_coverage": {
+    "oracle": {
+      "target": 2535,
+      "covered": 2534
+    },
+    "native": {
+      "target": 2535,
+      "covered": 2535
+    }
+  },
+  "ground": {
+    "ideal_category_false_obstacle_pixels": 0,
+    "GT_floor_pixel_denominator": 38598040,
+    "actual_RGB_false_positive": null,
+    "note": "Zero is tautological under ideal GT category, not measured RGB semantics performance."
+  },
+  "unknown_GT_category_pixels": 92093213,
+  "necessary_consumer_pass": true,
+  "real_source_admitted": false,
+  "ray_normal_scale_diagnostic": {
+    "scope": "Geometric ray/normal identifiability diagnostic on a posthoc largest suspended patch in the fixed middle frame. NOT an equal-RGB render, illumination/occlusion/multiview equivalence, model accuracy or proof all monocular methods fail.",
+    "frame": "frame_055.npz",
+    "time_s": 27.4999993853271,
+    "camera": "front_left",
+    "object_id": 167,
+    "object_type": "Sphere",
+    "selected_points": 29751,
+    "alternative_scale": 0.8,
+    "equation": "X_alternative=C+0.8*(X-C), with object center and size both scaled about the current camera; known K, IMU attitude and floor plane stay fixed.",
+    "original_optical_Z_median_m": 0.9419854283332825,
+    "alternative_optical_Z_median_m": 0.753588342666626,
+    "maximum_reprojection_difference_px": 8.526512829121202e-14,
+    "normal_unit_vector_difference": 1.336885555457667e-15,
+    "original_object_bottom_m": 0.09462710591668178,
+    "alternative_object_bottom_m": 0.19181951980809459,
+    "metric_reference": "Normals and rays alone admit this per-surface scale ambiguity; image learned priors or a measured metric reference may still constrain it.",
+    "physics": 0,
+    "model": 0,
+    "fit": 0
+  },
+  "independent_check": {
+    "complete": true,
+    "eye_frames": 440,
+    "full_target_pixels": 4476747,
+    "target_sets_exact": true,
+    "four_view_fused_sets_exact": true,
+    "full_counts_and_continuous_quantiles_exact": true,
+    "all_capture_SHA_exact": true,
+    "wall_s": 10.832386672031134
+  },
+  "review": {
+    "complete": true,
+    "reviewer": "accepted_geometry_review",
+    "verdict": "No important remaining issues",
+    "scope": "Full original domain, B=N@inverse(local), same ideal labels and depth under two poses, front/rear fusion and full instance denominator, every-frame gates, ray/normal diagnostic limited to single-frame geometry. Author independently inspected both output figures; no model/source or navigation admitted."
+  },
+  "budget": {
+    "status": "necessary_consumer_qualified_no_new_source_admitted",
+    "closed": true,
+    "physics_used": 0,
+    "physics_cap": 0,
+    "model_used": 0,
+    "model_cap": 0,
+    "fit_used": 0,
+    "fit_cap": 0,
+    "navigation": 0,
+    "implementation_repairs": 0,
+    "CPU_status": {
+      "status": "finished",
+      "start_utc": "2026-10-15T18:28:09.319115+00:00",
+      "parent_pid": 3,
+      "child_pid": 4,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-15T18:28:27.171766+00:00"
+    },
+    "CPU_check_and_plot_exit_code": 0,
+    "closed_utc": "2026-10-15T18:34:51.002108+00:00",
+    "old_budgets_closed": true
+  },
+  "predicted_depth_error": null,
+  "long_term_map": null,
+  "model_latency": null,
+  "original_project_read_only": true,
+  "old_v95_root_SHA_verified": 393,
+  "all_processes_finished": true,
+  "physical_experiment_running": false,
+  "automation_status": "ACTIVE",
+  "overall_navigation_complete": false,
+  "learned_navigation_increment": false,
+  "next_executable": "先有限读取已关闭right_temporal_observability_continuation_v1.json及其cause_assessment_v2.json、temporal_first_risk_support_protocol_v1.json，核对现有原生编码器米制平移与因果多曝光约束是否已被旧ORB/LK/时序测距机制完整覆盖。目标是在当前RGB+IMU/encoder真实输入中找到未重复的米制约束，而非仅换匹配器/描述子/网络或换名重跑。若原机制已覆盖且无新输入证据，直接结束该分支并明确尚缺合格在线米制源；不得重复当前oracle或继续扩大历史诊断。只有找到具体、可实现且实质不同的测量生成机制，才冻结新输入/目标/消费者和独立有界预算。全部已见E0/七开发组不能冒称新留出；不复活旧源或接触模型。",
+  "scope": "Ideal pixel categories/depth only; 0.1m nearest-set grid P90=0 is not zero pose error. Inherited known initial gauge, flat height/floor prior, ideal sensor/bank feedback and one-tick sensor phase retained. No new fit, source outputs, physics or navigation.",
+  "automation_update_confirmed": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "same_hourly_schedule": true
+  },
+  "seal_path": "experiments/intrinsic_surface_qualification_20261016_v1/seal.json"
+}

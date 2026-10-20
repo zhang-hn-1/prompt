@@ -1,0 +1,9 @@
+# One local binocular refinement candidate, CPU preflight only
+
+The reverse observation is closed/rejected. Seen raw depth error persists under true-pose substitution and frozen positive temporal support; this motivates a distinct classical correspondence check, not a source admission or fresh heldout claim. Do not modify the old network, source packet builder, masks, PID, runtime or gates.
+
+For each already selected raw partial-surface query pixel, search one fixed ±4pixel window around the frozen NN native vertical disparity, in0.5pixel steps. Use7×7 grayscale zero-mean normalized correlation, native RIGHT y=LEFT y−disparity, bilinear sampling. Entire current LEFT and sampled RIGHT patches must be in image and outside current CAD masks; grayscale std≥2 inboth, best correlation≥.9 and uniqueness gap≥.05 against other candidates separated≥1.5pixel. Both current frozen appearance-class centres must be positive. Retain only qualified unique matches, recompute f×baseline/disparity ray depth with current supplied estimated LEFT pose. No fit, scalar bias subtraction, true geometry, future exposures or coordinate-source selection. Missing/ambiguous patches abstain; not free/hidden-volume proof.
+
+Before any truth scoring seal all outputs and code/input SHA. Reuse original source gate100points,95%10cm,p90 .1m,class95%,two100exposures, frozen pose gate. Do not alter those gates after seeing this candidate. If rejected, no new search window, patch size, confidence threshold, network or motion trial. If CPU passes, it is development-only; no online or navigation claim and no immediate formal35/learning. Raw axis/source and all old rejects stay unchanged.
+
+First test synthetic textured vertical disparity including fractional sampling, ambiguous texture and current CAD occlusion. One first scoped code review before scoring; author can repair implementation bugs without tuning after evidence. No new GPU actual in this preflight.

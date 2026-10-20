@@ -1,0 +1,259 @@
+{
+  "independent_review_pass": true,
+  "source_qualified": false,
+  "frames_verified": 905,
+  "rows": [
+    {
+      "group": "H",
+      "frames": 181,
+      "maps_exact": true,
+      "memory_exact": [
+        450,
+        495,
+        500,
+        899
+      ],
+      "retained_label_fraction": 0.9431997796566449,
+      "retained_obstacle_fraction": 0.9499283225520381,
+      "range_quantiles": [
+        0.05543804168701172,
+        0.1725398302078247,
+        0.2256629467010498
+      ],
+      "obstacle_range_quantiles": [
+        0.05625122785568237,
+        0.2043389081954956,
+        0.26755883097648603
+      ],
+      "gates": {
+        "local_map": false,
+        "range_p90": false,
+        "obstacle_range_p90": false,
+        "per_frame_range": false,
+        "retained_label_pixels": true,
+        "retained_obstacle_pixels": true
+      },
+      "pass_gate": false
+    },
+    {
+      "group": "E0",
+      "frames": 181,
+      "maps_exact": true,
+      "memory_exact": [
+        450,
+        495,
+        500,
+        899
+      ],
+      "retained_label_fraction": 0.9628804153630821,
+      "retained_obstacle_fraction": 0.961897206227645,
+      "range_quantiles": [
+        0.04636669158935547,
+        0.14307641983032227,
+        0.19013118743896484
+      ],
+      "obstacle_range_quantiles": [
+        0.04951679706573486,
+        0.1474969148635864,
+        0.19852915406227079
+      ],
+      "gates": {
+        "local_map": false,
+        "range_p90": true,
+        "obstacle_range_p90": true,
+        "per_frame_range": false,
+        "retained_label_pixels": true,
+        "retained_obstacle_pixels": true
+      },
+      "pass_gate": false
+    },
+    {
+      "group": "E1",
+      "frames": 181,
+      "maps_exact": true,
+      "memory_exact": [
+        450,
+        495,
+        500,
+        899
+      ],
+      "retained_label_fraction": 0.613161859172688,
+      "retained_obstacle_fraction": 0.4610704975732916,
+      "range_quantiles": [
+        0.1733025312423706,
+        0.5006462156772615,
+        0.6486485004425049
+      ],
+      "obstacle_range_quantiles": [
+        0.21951210498809814,
+        0.6244602799415588,
+        0.7914843559265137
+      ],
+      "gates": {
+        "local_map": false,
+        "range_p90": false,
+        "obstacle_range_p90": false,
+        "per_frame_range": false,
+        "retained_label_pixels": false,
+        "retained_obstacle_pixels": false
+      },
+      "pass_gate": false
+    },
+    {
+      "group": "B54",
+      "frames": 181,
+      "maps_exact": true,
+      "memory_exact": [
+        450,
+        495,
+        500,
+        899
+      ],
+      "retained_label_fraction": 0.5809896298611369,
+      "retained_obstacle_fraction": 0.4370494983830355,
+      "range_quantiles": [
+        0.17947816848754883,
+        0.518578052520752,
+        0.6545522212982178
+      ],
+      "obstacle_range_quantiles": [
+        0.228973388671875,
+        0.6162397384643556,
+        0.7689961910247796
+      ],
+      "gates": {
+        "local_map": false,
+        "range_p90": false,
+        "obstacle_range_p90": false,
+        "per_frame_range": false,
+        "retained_label_pixels": false,
+        "retained_obstacle_pixels": false
+      },
+      "pass_gate": false
+    },
+    {
+      "group": "C54",
+      "frames": 181,
+      "maps_exact": true,
+      "memory_exact": [
+        450,
+        495,
+        500,
+        899
+      ],
+      "retained_label_fraction": 0.5046604163775472,
+      "retained_obstacle_fraction": 0.35826176051679864,
+      "range_quantiles": [
+        0.1964414119720459,
+        0.5350058436393739,
+        0.6885953187942491
+      ],
+      "obstacle_range_quantiles": [
+        0.27446937561035156,
+        0.6231042563915252,
+        0.7865760833024977
+      ],
+      "gates": {
+        "local_map": false,
+        "range_p90": false,
+        "obstacle_range_p90": false,
+        "per_frame_range": false,
+        "retained_label_pixels": false,
+        "retained_obstacle_pixels": false
+      },
+      "pass_gate": false
+    }
+  ],
+  "train_only_mean_weights_counts_exact": true,
+  "train_only_std_tolerance": 1e-12,
+  "fit": 1,
+  "epochs": 30,
+  "physical": 0,
+  "statuses": {
+    "prepare": {
+      "status": "finished",
+      "start_utc": "2026-10-13T10:49:09.719827+00:00",
+      "parent_pid": 2153156,
+      "child_pid": 2153157,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-13T10:50:40.155666+00:00"
+    },
+    "train_predict": {
+      "status": "finished",
+      "start_utc": "2026-10-13T10:50:40.162294+00:00",
+      "parent_pid": 2153156,
+      "child_pid": 2155134,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-13T10:56:32.331246+00:00"
+    },
+    "score": {
+      "status": "finished",
+      "start_utc": "2026-10-13T10:56:32.331734+00:00",
+      "parent_pid": 2153156,
+      "child_pid": 2162423,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-13T11:03:28.632748+00:00"
+    }
+  },
+  "provenance_verified": true,
+  "review_source_sha256": "858d8986300878d1361c474c66c1bb79ff0e61d6e670a56c96b54022e5b4ada4",
+  "limits": [
+    "All groups seen development.",
+    "Learned category/range are priors; no binocular measurement certification.",
+    "Local native root/camera gauge cancels translation/yaw; maps do not prove world registration.",
+    "Ground and unknown are never free; no actual new navigation.",
+    "Range errors are conditional on retained eligible labels with explicit retention gates; not full-image depth accuracy."
+  ],
+  "factor_review": {
+    "independent_review_pass": true,
+    "metrics_full_frames": 181,
+    "map_replay_frames": [
+      0,
+      450,
+      495,
+      900
+    ],
+    "map_replay_arms": 3,
+    "scope": "Full saved-map independent metrics; 4frames x3arms pixel projection replay. No full181 projection replay. Same-support comparison required.",
+    "source_sha256": "76217471b8c9cd1ca3c30ff3781eac81c5975dbca7a97ebe71041f5ebc940211",
+    "map_sha256": "16339331a87dc4037d7a795a39a9b67ef490875905633d742c16a9b5c5a3fea8",
+    "fit": 0,
+    "physical": 0
+  },
+  "visuals_review": {
+    "render_admitted": true,
+    "source_sha256": "23fb44f20887ec43a38432e6cf02854d305e5585137f56364a312aeb3ffb14fd",
+    "reviewed": [
+      "Original map clock fallback uses hazard_acquisition_time; replay maps use clock.",
+      "Frames E1 450/C54 495 fixed/preselected and explicitly disclosed.",
+      "Learned range and memory are labelled prior inference; target references explicitly offline.",
+      "Ground never free; recorded trajectory replay not new navigation.",
+      "SGBM+ideal category panel is oracle diagnostic; it does not certify SGBM category performance."
+    ],
+    "limits": [
+      "All groups seen development, not fresh holdout.",
+      "Local map gauge cancellation means local overlap does not certify world registration.",
+      "Reference distance uses existing body-band occupancy; obstacle surface points outside it can be real surfaces.",
+      "Any-point memory vs four-count raster admission are different denominators."
+    ],
+    "fit": 0,
+    "physics": 0,
+    "correction": "Visualization-only original SGBM range is now filtered by confidence, finite depth and .5\u20133m before display/scoring. Prior unfiltered metric is not consumer-domain performance. Source scoring/model/gates unchanged.",
+    "admitted_regeneration": "one visualization-only regeneration under distinct visuals_reviewed_status",
+    "corrected_metrics_independently_verified": true,
+    "corrected_status": "visuals_reviewed finished0"
+  },
+  "report_review": "No blocking claim issue: seen development, learned priors, conditional retained-range denominator, local gauge cancellation, body-band reference/any-point memory differences and no fresh navigation disclosed. Source rejected and no second fit permitted."
+}

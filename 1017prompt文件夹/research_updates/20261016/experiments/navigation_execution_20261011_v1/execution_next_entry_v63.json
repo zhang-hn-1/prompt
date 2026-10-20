@@ -1,0 +1,43 @@
+{
+  "stage": "metric_residual_fixed_query_oracle_reject",
+  "updated_utc": "2026-10-13T11:53:13.754202+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v62.json",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/metric_residual_domain_20261013_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/metric_residual_domain_results_20261013.md",
+  "summary": "v63固定当前双目query域的完美残差oracle完整五组905源/1810局部图/4500地图时钟/40记忆完成且独立exact。H/E0/E1/B54/C54高度代理风险精确90.58/95.82/95.25/95.75/94.47%、覆盖44.02/57.12/58.91/56.76/54.27%；额外真类别覆盖44.15/57.13/59.21/57.07/54.38%，五组均低于80%，目标拒绝beforefit，fit0physical0recovery0。区别旧标量3.455px校正/二元置信分类已有限核对，无旧预算重开。GT_ONLY代理省略纹理/不确定性，不是原完整链路或全学习方法理论上界。",
+  "next_action": "下一转独立已安装参考路径失效合同：先有限核对原框架新风险映射后的剩余整条可执行参考检查/失效触发/原回退，以及旧v52执行腿投影和闭合规划/制动机制的实质区别。C54首次假风险49.5/50s根到该格距1.643460/1.553600m>固定.870711，54.5s .817137已低于；仅支持可能反应窗口，不证明剩余路径已失效或及时制动可行。直接重构观测时刻实际地图、安装参考的完整未执行后缀/进度和当前native状态，GT只评分，确认在安全余量尚足时是否可触发既有重规划。差别与证据成立则同轮冻结单环节观测触发参考失效检查、实现全保存输入和原回退接口资格；合格才新cap<=4含必要同版B0/candidate90s闭合。不使用GT删格/缩安全间距，不调旧目标/控制，不复活v54端部策略或任何旧拒绝候选。若原机制已覆盖或全输入资格失败，直接关闭而非换名重跑。旧所有源/学习/规划预算关闭；该下一机制未实现/未准入，可靠导航及学习增量仍未成立。",
+  "budget": {
+    "status": "fixed_query_residual_target_rejected_before_fit",
+    "fit": 0,
+    "physical": 0,
+    "recovery_used": 0,
+    "recovery_cap": 1,
+    "fit_budget_opened": false,
+    "physical_budget_opened": false
+  },
+  "qualify_status": {
+    "status": "finished",
+    "start_utc": "2026-10-13T11:38:14.404698+00:00",
+    "parent_pid": 2,
+    "child_pid": 4,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-13T11:38:37.409574+00:00"
+  },
+  "processes": {
+    "running_experiments": [],
+    "collected_exec": [
+      47665,
+      47083,
+      86085
+    ],
+    "namespace": "qualify p2/p4 CPU sandbox namespace, not host IDs"
+  },
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false,
+  "stop_reason": "完整新的残差目标准入资格及独立否定阶段验收，未拟合/未物理；不是只定位一个问题/静态报告停点。无外部阻塞。"
+}

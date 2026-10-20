@@ -1,0 +1,23 @@
+{
+  "post_review_pass": true,
+  "blocking_issues": [],
+  "scope": "Limited independent review: effect source inspected and full input hashes/counts checked, not all77 planner searches independently rerun. Actual6 installed plans already independently verified. All98 retention screens independently recomputed; all64 start-clearance blockers,320zero request blocks and actual travel independently recomputed; both45s error quantiles exact.",
+  "conclusion": "Candidate rejected on90s arrival; additional reserve failed to ensure feasible future replanning.64queries blocked at reserve start,13already below mandatory margin. Nearby risk offset from body-band reference does not prove false obstacle or authorize clearing. Zero high-level requests do not prove zero actuator targets or braking. SameE1 development/current-map replay not counterfactual trajectory.",
+  "counts": {
+    "candidate_queries": 70,
+    "success": 6,
+    "failed": 64,
+    "retention_screens": 98,
+    "zero_request_blocks": 320
+  },
+  "travel_after_zero_requests_m": 0.6268255509386598,
+  "source_sha256": {
+    "actual_effect.py": "4907440afa1d1de19461f8c5b83b8cac15008f6720a2e14474028d62065e3efd",
+    "actual_effect.json": "7e7e71ad2442040527fe84f08f06921036755fe64c36b2967f2a32c0a8f3dba5",
+    "blocked_queries.json": "0e0c7c9f70b82b8d1774874bb20b6969086a1a077c1b255ef3414f63b9d56ba5",
+    "no_route_motion.json": "a0618eda4ce206ee6a44a2f3b6c6c7955873e8fb66376591015af7ae673b5ca7",
+    "snapshot_metrics.json": "0d2d10e013d140da7eece7a3fce04a1e25c263510cfa3dca72f01a514afd350b"
+  },
+  "review_fit": 0,
+  "review_physical": 0
+}

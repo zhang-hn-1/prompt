@@ -1,0 +1,79 @@
+{
+  "utc": "2026-10-12T14:30:48.211847+00:00",
+  "independent_scoring_semantics_pass": true,
+  "checks": [
+    "Both scoring scripts recomputed read-only and outputs exactly match existing results.",
+    "Grid.cells uses nearest-cell np.rint with actual saved map origin/resolution; root uses exact last-map native time89.8999979906s; points selected by actual occupied cell membership.",
+    "Source-point query_pixel_id retrieves SAME-frame image-plane-depth and measured USD camera pose; optical-to-world sign conversion is correct.",
+    "Ground absworldZ<=.03 and obstacle .05<worldZ<=1.5 are offline evaluation bands, not sensor inputs or updated navigation thresholds."
+  ],
+  "limitations": [
+    "119 points are historical source instances in the one terminal margin-blocking cell, not119 currently independent measurements.",
+    "Terminal-cell attribution does not establish unique whole-episode failure cause.",
+    "Height score counts overlap/correlate across pixels and frames; removal also loses752 scored obstacle instances.",
+    "No new NCC threshold or stereo tuning justified by these diagnostics."
+  ],
+  "results": {
+    "terminal_blocking_points.json": {
+      "map_frame": "frame_899",
+      "time_s": 89.89999799057841,
+      "native_root": [
+        -3.7236489451622705,
+        -0.77180652381387,
+        0.4000000059604645
+      ],
+      "nearest_hazard_cell_clearance_m": 0.806225774829855,
+      "planning_clearance_m": 0.8707106781186548,
+      "cells_inside_planning_margin": [
+        [
+          211,
+          200
+        ]
+      ],
+      "saved_point_provenance": {
+        "point_instances": 119,
+        "truth_valid": 119,
+        "truth_floor": 119,
+        "truth_obstacle": 0,
+        "frame_count": 2
+      },
+      "source_frames": [
+        {
+          "frame": 230,
+          "points": 78,
+          "truth_floor": 78,
+          "truth_obstacle": 0,
+          "median_predicted_height": 0.21272143624500844,
+          "median_truth_height": 1.4179584251206023e-07
+        },
+        {
+          "frame": 235,
+          "points": 41,
+          "truth_floor": 41,
+          "truth_obstacle": 0,
+          "median_predicted_height": 0.21078224338076268,
+          "median_truth_height": 6.577299793697478e-08
+        }
+      ],
+      "scope": "All saved admitted source point instances in current blocking cells, not assertion that every point still has active individual lifetime. Same-frame renderer only offline; invalid pixels excluded; no altered labels or clearance and no alternate physical outcome."
+    },
+    "height_effect_assessment.json": {
+      "counts": {
+        "before_points": 78001,
+        "after_points": 74496,
+        "truth_valid": 62286,
+        "before_floor": 4145,
+        "after_floor": 1557,
+        "before_obstacle": 57856,
+        "after_obstacle": 57104
+      },
+      "scope": "Same actual candidate source packets with unchanged baseline shadow; renderer same-frame only offline scoring. Ground bandabsZ<=.03 scoring tolerance. Counts correlated across frames/pixels, not independent observations; uncertainty not calibrated; source effect does not establish navigation causality."
+    }
+  },
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/score_blocking_points.py": "d65dcaac92f6d275d0f186bdb9d9b4575b971c7d18305c7e2139cfb865e4bf64",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/terminal_blocking_points.json": "fb69e7e7289d1f3c0b9fe2e517bf1f953584f903871edbf26b492f89fd0fb7ce",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/score_height_effect.py": "b7bc49273f92a9a5678844248fd7b5c02ca4264fae4692f97db5530ab5d7f8ff",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/height_effect_assessment.json": "ec41bcda6b0bd197a4f5bc3e307a9a7e9ea8a1f3a2cc276fda62448b691cd79f"
+  }
+}

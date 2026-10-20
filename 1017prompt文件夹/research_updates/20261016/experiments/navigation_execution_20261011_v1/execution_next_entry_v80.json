@@ -1,0 +1,24 @@
+{
+  "stage": "wide_optical_geometry_pass_native_exposure_unqualified_additional_budget_requested",
+  "parent_entry": "execution_next_entry_v79.json",
+  "updated_utc": "2026-10-14T22:55:31.499453+00:00",
+  "summary": "v80当前窄视锥与测量域完成7组1267帧完整分解：原目标格实例H/E0/E1/B54/C54/B65/C65=3681/8963/5553/5278/4775/5690/4923，固定.5–3m域都保留100%，独立预冻结F/3=194.962963px宽针孔视锥也都保留100%，共38863/38863；只为已见原目标无新增遮挡上界，不是新全场景union召回/模型/导航。原窄视锥比例仍65.80/89.72/77.35/76.68/72.02/78.14/75.87，不改写v79拒绝。1267聚合与条件原depth>=.55的独立解析支撑界核对通过。采集合同已实现：安装版API明确USD轴，在Camera构造/initialize前固定光学，RGB/depth/CameraParams同回调原子复制、单调曝光帧/原生time/焦距/单位检查；渲染world-to-view依安装PointCloudGenerator求逆，GT仅标签。11纯接口判据及实际启动覆盖AST顺序核验通过，非GPU帧通过。新光学原生8帧probe两次启动尝试22:40:31–22:40:35和22:42:44–22:42:56UTC均无实际有效帧/无完成scene reset；首先SDK懒启动前import omni.isaac，唯一恢复又早于原_initialize加scripts路径导入collect_data，异常已保留。第二次durable返回finished0但exception存在/无seal，完成守卫明确拒绝；其后score退出1因无seal，不当模型失败。固定光学/门槛未改，预算used2/cap2恢复1/1关闭；实际模型0/导航0/有效曝光0。已修脚本路径、自持App清理、原子完成校验及输出隔离并完成离线启动顺序核验，不能称真实曝光已修好。host187270/187271/189624/189626/190105退出，services inactive，无运行。报告reports/wide_optics_and_exposure_contract_results_20261015.md直接完整分解与原B65固定45s旧RGB/旧v77深度/GT/误差/BEV/记忆作为未解决源背景，明确不是新宽视角输出；新源像素/地图/记忆指标N/A。已向用户请求一个额外、上限120秒/8帧原生启动验证预算，具体reviewable runner launch_authorized_validation.py需additional_startup_authorization.json的human_authorized=true/cap1才能运行，尚未授权，不自动派发或换名恢复。用户选择后才接续；原预算保持封闭，新授权单次也不训练/导航/改光学门槛。资源/授权未变化时保持安静不重复请求或复跑。整体可靠导航/学习导航增量未成立，automationACTIVE。",
+  "experiment_roots": [
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/camera_exposure_contract_20261015_v1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/wide_pinhole_camera_20261015_v1"
+  ],
+  "dispatch_attempts": 2,
+  "attempt_cap": 2,
+  "recovery": 1,
+  "recovery_cap": 1,
+  "actual_scene_reset_completed": 0,
+  "actual_exposures": 0,
+  "fit": 0,
+  "model": 0,
+  "navigation": 0,
+  "running_experiments": [],
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learned_navigation_increment": false,
+  "pending_resource_choice": "One extra <=120s,8 native exposure startup validation; explicit human authorization required; do not infer approval from elapsed time."
+}

@@ -1,0 +1,25 @@
+{
+  "creation": {
+    "path": "/World/BallRobot/base_link/research_native_imu",
+    "period_s": 0.02,
+    "filter_sizes": [
+      1,
+      1,
+      1
+    ],
+    "orientation_field_read": false,
+    "read_gravity": true,
+    "use_latest_data": true,
+    "lifecycle": "existing marker hook before formal reset",
+    "extra_reset": false
+  },
+  "initial_normal": [
+    3.907970495106787e-06,
+    -6.652175737086215e-08,
+    0.9999999999923617
+  ],
+  "orientation_field_read": false,
+  "predictions_used_by_control": true,
+  "known_GT_pose_control": false,
+  "no_prescribed_observation_prefix": true
+}

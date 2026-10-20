@@ -1,0 +1,128 @@
+{
+  "status": "candidate_rejected",
+  "used": 2,
+  "cap": 4,
+  "retry": 0,
+  "parent_pid": 719962,
+  "groups": [
+    {
+      "arm": "baseline_e2",
+      "state": "attempt_reserved",
+      "utc": "2026-10-12T13:00:16.518073+00:00",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-12T13:00:16.518280+00:00",
+        "parent_pid": 719962,
+        "child_pid": 719979,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-12T13:02:19.939100+00:00"
+      },
+      "assessment": {
+        "termination": {
+          "termination": "collision",
+          "actions": 197,
+          "time_s": 19.699999559670687,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "initial_distance_m": 8.899999809265136,
+        "remaining_m": 6.459046232575118,
+        "net_progress_m": 2.440953576690018,
+        "captures": 198,
+        "contact_schema_example": {
+          "simulation_time_s": 0.0,
+          "physics_step_index": 0,
+          "source": "capture",
+          "available": true,
+          "contact": false
+        },
+        "contact_records": 1183,
+        "contacts_detected_by_named_fields": 1,
+        "unavailable_contacts": 0,
+        "depth_scoring": {
+          "pixels": 3029,
+          "p90_absolute_error_m": 2.5260390758514406,
+          "outlier_fraction_above_0p3m": 0.8164410696599538,
+          "under1m_confident_pixels": 0,
+          "source_points": 460,
+          "saved_pairs": 40,
+          "pass_gate": false,
+          "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+        },
+        "video_frames": {
+          "stereo_view.mp4": 198,
+          "third_person.mp4": 198
+        },
+        "raw_arrival_pass": false,
+        "first_contact_s": 19.63999956101179,
+        "retain": false
+      }
+    },
+    {
+      "arm": "candidate_e2",
+      "state": "attempt_reserved",
+      "utc": "2026-10-12T13:02:20.439664+00:00",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-12T13:02:20.444921+00:00",
+        "parent_pid": 719962,
+        "child_pid": 722621,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-12T13:09:29.111856+00:00"
+      },
+      "assessment": {
+        "termination": {
+          "termination": "timeout90",
+          "actions": 900,
+          "time_s": 89.99999798834324,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "initial_distance_m": 8.899999809265136,
+        "remaining_m": 8.212182335782233,
+        "net_progress_m": 0.6878174734829035,
+        "captures": 901,
+        "contact_schema_example": {
+          "simulation_time_s": 0.0,
+          "physics_step_index": 0,
+          "source": "capture",
+          "available": true,
+          "contact": false
+        },
+        "contact_records": 5401,
+        "contacts_detected_by_named_fields": 0,
+        "unavailable_contacts": 0,
+        "depth_scoring": {
+          "pixels": 3227637,
+          "p90_absolute_error_m": 0.1022591114044189,
+          "outlier_fraction_above_0p3m": 0.012715804162611843,
+          "under1m_confident_pixels": 681,
+          "source_points": 1044959,
+          "saved_pairs": 181,
+          "pass_gate": true,
+          "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+        },
+        "video_frames": {
+          "stereo_view.mp4": 901,
+          "third_person.mp4": 901
+        },
+        "raw_arrival_pass": false,
+        "first_contact_s": null,
+        "retain": false
+      }
+    }
+  ],
+  "remaining_closed": 2
+}

@@ -1,0 +1,27 @@
+{
+  "version": "viewpoint_confirmation_v1",
+  "hypothesis": "Two adjacent captures can repeat a systematic stereo floor error. Requiring native-camera translation of at least one fixed grid cell before permanent risk admission may prevent same-view correlated false points from blocking navigation; current/recent10s risk remains immediate.",
+  "only_change": "Persistent confirmation criterion: same risk cell seen in two distinct epochs AND camera centres separated >=existing gridresolution0.1m. Same source points, same recent10s lifecycle, same confirmed-risk permanence, no observed-free claims.",
+  "input": "Saved/current causal native IMU encoder left-camera position at each capture with exact frame/time; raw paired RGB depth point records. No renderer truth or future trajectory online.",
+  "control": {
+    "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/candidate_e2_run",
+    "seal_sha256": "5fd517c7620ffbd3c4a76052950f576d10f739d93fcf6746add3e7e869a1339d",
+    "scope": "historical same frozen height-filtered forward60cm control, development E2, RGB may differ, no fullcausal AB"
+  },
+  "distinct_from_closed": "No new temporal correspondence/depth predictor, additional NCC/source filtering, MODEL replacement, TTL change or old candidate retry. Changes only promotion evidence from frame count to measured viewpoint diversity. One-cell threshold is a fixed map-domain heuristic, not a fitted independence/correctness certificate.",
+  "offline_admission": "5 meaningful CPU checks; saved current/past map replay baseline exact and actual candidate source/evidence causal qualification. Gate only necessary, not navigation benefit.",
+  "physical_budget": {
+    "cap": 3,
+    "order": [
+      "candidate_e2",
+      "candidate_e0_if_E2_pass",
+      "candidate_e1_if_E2_pass"
+    ],
+    "automatic_retry": 0,
+    "environment_recovery_cap": 1
+  },
+  "navigation_gate": "Retain only actual E2 arrivalwithin90s/raw<=.2m, all contactrecords available and zero contacts, depth conditionalp90<=.15/outlier>.3<=.1/count>=1000, current-native registration/time/input andeach actually executed request(up to900)/5physicsstep execution consistent, actual map/source mechanism verified, two decoded full videos. Otherwise close remaining budget; no threshold/TTL tuning.",
+  "fixed": "Forward60cm rig and masks, source allfilters including frozen height interval unchanged relative to the latest measured control, floor/safestart/controlledunknown priors, IMU/encoder initialgauge and lowlevelidealIMU privileged, scene/start/light, planner/clearance/PID/gains and90s unchanged.",
+  "stop": "Reject on failed source/execution or navigation gate; no same candidate rerun or threshold scan. New distinct candidate cap3, old closed budgets stay closed.",
+  "whole_mission_complete": false
+}

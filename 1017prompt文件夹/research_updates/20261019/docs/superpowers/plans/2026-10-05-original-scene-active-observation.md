@@ -1,0 +1,28 @@
+# Original-scene active observation, one fixed whole sequence
+
+Execute inline, user authorized whole research; keep frozen prior results and source project read-only. This is one bounded acquisition and frozen feature-source regression, not a new descriptor candidate or navigation benchmark.
+
+1. Verify old79 artifacts and read mission/main plan/ledger/latest report completely. Reuse measured positive whole12s response (6s turn + own6s zero stop), after6s actual settling. Preserve original golden_e1_0001 scene/rig/light/PID/gains/protocol/smoother/material. One18s reset-once sequence, no internal reset/repeat/fallback motion.
+2. Before simulation seal all code/source/old identities, original E1 initial episode, request blocks60zero+120positive-response, all181 RGB/pose captures at0.1s, independent gates. Use existing complete action-chain and physical-state applicability. Privileged original full occupancy is ONLY acquisition precondition/evaluation, never ORB or observed map. Full measured sweep body.5+originalmargin.1+frozenresponseerror.1 plusgridhalfdiagonal clearance, nounknowncells. Oldcold state and measuredflat-floorheight must agree; live6s state guard must pass or abort before motion. Known-map2D guard is not full3D or RGB guarantee; active original-scene collision truth recorded.
+3. New finite timestamp wrapper around unchanged ORB/memory: NaN reference/provenance reject before payload/mutation, finite outputs unchanged. Four meaningful literal tests RED→GREEN, whole stage suite.
+4. Save complete capture transaction, RGB-only files separately from permissible known poses and offline depth; record execution/history/physics/clocks/hiddenmarkers/bodyconfiguration/runtime sources, two181frame10fps videos. No prediction/control reads future requests/feedback/depth/boardgeometry. First6s compare archived E1 common prefix; scope raw origins separately.
+5. Exactly362 fixed current/history ORB predictions on all181 pairs in order (last3 past pairs unchanged), reset memory once. Save all before source labels. No ratio, support, network or feature-budget changes. Only after manifest exists, current renderer nearestpixel labels+subpixel rays with limits; full query denominator, unsupported retained; keep missing body-ID scope. Source gate originalmin100/fullcorrect90%/retainedlabelledp90<=.10m. Old candidate rejection persists even if this new sequence passes; no formal/navigation admission from one witness.
+6. Freeze motion gate XYwholepeak<=.10m to compatible measuredresponse, yaw<=.15rad/bank<=5deg at old six horizons, actualfive-lowstop-time difference<=.3s, no physicalcontact. Report actualalong-measured-reference progress, observed queries/retained/correct/provenance/memory contamination, motion/risk/time separately. No movement or endpoint matching alone is navigation success. Full-query support counts and source quality decide whether activeview yields useful observations; no posthoc frame filtering to satisfymin100.
+7. One fresh-context readonly final whole-stage review per executing-plans; author final verification, report benchmark_original_scene_active_observation_20261005.md and mission/ledger/plan append. Keep artifacts, no unrelated commits/cleanup/notification. If guard/collision/source quality fails, reject this fixed sequence as reliable observation mechanism, no second motion/config; causally identify layer and select one bounded next consumer only with evidence.
+
+Notrun: learning/poseestimation/control A/B/formal35s E0E1E2. Whole mission remains ACTIVE and incomplete until the authorized research is actually delivered.
+
+
+## 00:36UTC original-scene active observation — final stage closure
+
+完整报告 `reports/benchmark_original_scene_active_observation_20261005.md`。一次原 golden E1 的18秒完整采集，00:45:55.968560—00:47:12.551316UTC、退出0；180请求、181双目对、901物理采样、1081可用接触记录均无实际接触，两视频各181帧/10fps。相机、照明、材质、roll PID与执行链冻结。已知完整地图只作受控采集的二维扫掠前提，未成为视觉观测/自由区；这不是视觉决定动作或E1导航成功。
+
+实际整段转弯和自身停车响应通过原运动门槛：XY peak .000072081m、六时域yaw最大.000694rad/bank .000632°；五个实际10Hz XY速度低于.05m/s的资格14.2秒，与原实测响应相同。同六秒前缀17非原始时钟字段301物理采样、61执行状态及历史逐值一致，raw原点相同。readonly报表初稿通配排除raw_漏检raw_command_target已保留；独立精确版本补齐17字段，所有点/标签/误差/运动/gate及其他字段完全不变，没有重采或重推理。
+
+冻结ORB的362 current/history预测在00:48:04.371701UTC全部保存后才读离线标签；模型/gate采集前冻结，推理runner/367输入身份推理前封存。完整5531查询（5087有限renderer标签、444无标签）current 226保留/206正确、3.724%完整准确/p90 .044577m；history 568/512、9.257%/p90 .051520m。历史正确查询净增306，不是地图面积或导航增益。两臂原90%完整门槛均拒绝，不用91.150%/90.141%的条件比例宣布可用。终态249记忆记录、203有标签/200正确、46无标签/3错误、247旧查询；从未认证free。旧ORB、hard错误、V1/Fast/M2及所有历史结论保持。
+
+128CPU测试通过，四个坏时间/整段停车支持/初态测试RED→GREEN。作者最终验证 2026-10-05T01:14:05.342714+00:00：479去重旧SHA、1131新产物身份，181双眼特征重提取、362预测/有限wrapper等价/未来payload替换、181记忆快照、180历史移位与17字段完整前缀核验。一次独立只读whole-stage审查及其实际范围/限制见 `active_observation_review.json`；初次作者核验把当时仍写出的stdout log按空文件散列，独立审查确认为Minor；初次JSON保留并明确此局限，最终改用已预留排除的final日志输出，重新散列已完成的初次log。候选/数据/验证器未修改，最终完整身份逐项匹配；最终log在文档同步记录单独封存。不将作者检查冒充审查者执行。四张实际图作者已检查，六事件大图有缩放，另检查原尺寸两事件图。最终报告SHA `dda3ef8b69fa3d54e656b704f57b83dc2727b36dbe62a3584670383ed6254a65`。
+
+这是预封存后的完整新采集，但环境/初态来自已使用E1，不是新的独立环境泛化。known-pose诊断不是估计位姿；nearest-pixel renderer深度/亚像素射线、边界混合、body-ID不足与ORB完整滤波支撑限制保留。未新增全robot资产或DOF/gain读回审计，不将此单一初态响应迁移作通用安全证书。没有新导航率、学习/世界模型或原35秒E0/E1/E2结果。阶段实际进程均结束；全研究未完成、automation ACTIVE，常规不发完成通知。
+
+下一项只做同181帧的只读“稀疏来源地图→完整前进与停车扫掠支持”诊断shadow。固定同一实测参考及完整181帧；current/history同口径，unknown/当前/历史/predicted与来源/位姿层次明确，不重采动作、不换网络/描述子/阈值、不用真值过滤或seed脚下free。这些181帧的标签已被本阶段评价使用，消费者设计继承此知识，只能称历史开发诊断，不能称fresh held-out。先冻结消费者语义/预算及仅观测输入，消费者输出保存后才重新读取标签作分层核验；明确全查询比例不能替代任务空间面积。若本段支持仍不足，给出具体冷启动/观测任务条件阻塞并关闭这一分支，避免无限局部审计。拒绝候选shadow不获得控制准入；只有来源与消费者各自验证通过才改变动作，再验证估计位姿、唯一学习增量和原35秒评测。

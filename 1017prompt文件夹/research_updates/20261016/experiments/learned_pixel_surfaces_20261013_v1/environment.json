@@ -1,0 +1,21 @@
+{
+  "python": "/home/an/miniconda3/envs/ball_wm/bin/python",
+  "python_version": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]",
+  "torch": "2.5.1+cu121",
+  "torch_cuda_build": "12.1",
+  "numpy": "1.26.4",
+  "scipy": "1.15.3",
+  "opencv": "4.6.0",
+  "usd_extension": "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310",
+  "environment": {
+    "PYTHONUTF8": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "command": "PYTHONUTF8=1 PYTHONDONTWRITEBYTECODE=1 /home/an/miniconda3/envs/ball_wm/bin/python experiments/learned_pixel_surfaces_20261013_v1/launch.py",
+  "replay": "single-use launch must use a fresh experiment destination; sealed output roots are read-only evidence, never rerun into them",
+  "external_resources": "none; existing GPU/Python/USD only",
+  "physical_nav": "none",
+  "scope": "This host only, cross-machine execution not established"
+}

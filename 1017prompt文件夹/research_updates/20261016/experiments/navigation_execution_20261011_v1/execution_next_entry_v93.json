@@ -1,0 +1,47 @@
+{
+  "version": 93,
+  "user_authorization_date": "2026-10-16",
+  "status": "camera_configuration_accepted_automation_resumed",
+  "camera_root": "experiments/user_fov_position_only_20261015_v1",
+  "positions_m": [
+    [
+      0.18197,
+      0.32506,
+      0.11503
+    ],
+    [
+      0.18197,
+      -0.32506,
+      0.11503
+    ],
+    [
+      -0.18197,
+      0.32506,
+      0.11503
+    ],
+    [
+      -0.18197,
+      -0.32506,
+      0.11503
+    ]
+  ],
+  "raw_horizontal_fov_rad": 1.6528268,
+  "upright_fov_degrees": [
+    78.3,
+    94.7
+  ],
+  "preserve": [
+    "orientation",
+    "resolution_640x480",
+    "clip",
+    "exposure_contract"
+  ],
+  "automation_requested_status": "ACTIVE",
+  "closed_budgets_remain_closed": true,
+  "next": "Use sealed eight poses for finite CAD and coverage qualification; then finite novelty check against closed 2026-10-08 ground-contact mechanism before any independent new source target. No repeated preview or rejected model inference.",
+  "limitations": [
+    "not hardware calibration",
+    "four-camera full sequences not yet acquired",
+    "no reliable navigation or learned navigation increment"
+  ]
+}

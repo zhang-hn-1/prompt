@@ -1,0 +1,141 @@
+{
+  "source": "User pasted camera configuration on 2026-10-15; physical calibration status and extrinsic rotation convention not independently confirmed",
+  "cameras": {
+    "cam_left": {
+      "hz": 1,
+      "horizontal_fov": 1.6528268,
+      "resolution": [
+        1024,
+        768
+      ],
+      "distortion_model": "plumb_bob",
+      "D": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "K": [
+        471.631890742425,
+        0,
+        512.5,
+        0,
+        471.631890742425,
+        384.5,
+        0,
+        0,
+        1
+      ],
+      "R": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "P": [
+        471.631890742425,
+        0,
+        512.5,
+        0,
+        0,
+        471.631890742425,
+        384.5,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "range": [
+        0.02,
+        145
+      ],
+      "topic": "/cam_left/image_raw",
+      "extrinsics": [
+        0.18197,
+        0.32506,
+        0.11503,
+        -1.570796,
+        0,
+        0
+      ]
+    },
+    "cam_right": {
+      "hz": 1,
+      "horizontal_fov": 1.6528268,
+      "resolution": [
+        1024,
+        768
+      ],
+      "distortion_model": "plumb_bob",
+      "D": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "K": [
+        471.631890742425,
+        0,
+        512.5,
+        0,
+        471.631890742425,
+        384.5,
+        0,
+        0,
+        1
+      ],
+      "R": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "P": [
+        471.631890742425,
+        0,
+        512.5,
+        0,
+        0,
+        471.631890742425,
+        384.5,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "range": [
+        0.02,
+        145
+      ],
+      "topic": "/cam_right/image_raw",
+      "extrinsics": [
+        0.18197,
+        -0.32506,
+        0.11503,
+        -1.570796,
+        0,
+        0
+      ]
+    }
+  },
+  "derived_fov": {
+    "declared_horizontal_deg": 94.6999999061134,
+    "K_horizontal_deg": 94.70018325260784,
+    "K_vertical_deg": 78.30456957175582
+  },
+  "application_status": "saved only; simulation unchanged; automation remains paused"
+}

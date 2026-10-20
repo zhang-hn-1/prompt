@@ -1,0 +1,437 @@
+{
+  "stage": "learned_visible_map_source_reject",
+  "updated_utc": "2026-10-13T04:31:09.897573+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v48.json",
+  "experiment": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/learned_visible_obstacles_20261013_v1",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/learned_visible_obstacles_results_20261013.md",
+  "summary": "用户明确要求直接实现视觉+IMU学习可见障碍。新独立目标已完成三条完整序列543对输入标签资格（H/E0共362对训练、E1共181对不参与拟合，但均为已见开发数据）、唯一冻结30epoch拟合和先预测封存后评分。训练H/E0精确率96.66/98.91%、召回100/99.93%；E1精确率27.74%、召回33.55%、地面误报7.04%、无可见标签支持53.67%、局部地图定位P90 1.264911m，五项门槛失败。当前SGBM同图口径精确率95.34%、召回58.52%、定位P90 .1m；并非导航因果对照。独立2751身份核验及全部评分/543原双目格图复现通过，CPU与GPU有3/434400格差异、拒绝不变。最高高度层E1真值0需N/A；地面标签/无标签均不当自由。模型拒绝fit1/1、physical0/4余4关闭、recovery0，host1712265/1712266退出。诊断接口保留但禁止命令/永久记忆；没有新导航、可靠导航或学习导航增量。报告reports/learned_visible_obstacles_results_20261013.md直接展示同刻RGB/可见真值/学习地图/原双目图/错误图。",
+  "budget": {
+    "status": "closed_source_qualification_reject",
+    "fit_used": 1,
+    "fit_cap": 1,
+    "physical_used": 0,
+    "physical_cap": 4,
+    "unattempted_physical_closed": 4,
+    "recovery_used": 0,
+    "all_processes_exited": true,
+    "host_pids": [
+      1712265,
+      1712266
+    ],
+    "utc": "2026-10-13T04:29:39.976596+00:00",
+    "retain_source": false,
+    "admit_navigation": false,
+    "whole_complete": false
+  },
+  "results": {
+    "results": [
+      {
+        "group": "H",
+        "role": "training",
+        "model": {
+          "predicted_risk_cells": 6458,
+          "true_visible_risk_cells": 3939,
+          "matched_predicted": 6242,
+          "matched_truth": 3939,
+          "precision": 0.9665531124187055,
+          "recall": 1.0,
+          "ground_false_cells": 1206,
+          "ground_cells": 65331,
+          "ground_false_fraction": 0.018459842953574872,
+          "unsupported_predictions": 99,
+          "unsupported_fraction": 0.015329823474759988,
+          "visible_cells": 69270,
+          "visible_surface_recall": 0.9999855637361051,
+          "localization_p90_m": 0.1,
+          "exact_overlap_height_accuracy": 0.9908798283261803,
+          "exact_overlap_height_cells": 3728,
+          "per_height": {
+            "2": {
+              "predicted": 301,
+              "truth": 207,
+              "precision": 0.8571428571428571,
+              "recall": 0.748792270531401,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 6157,
+              "truth": 3732,
+              "precision": 0.9686535650479129,
+              "recall": 0.9994640943193998,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": true
+        },
+        "all_unknown": {
+          "predicted_risk_cells": 0,
+          "true_visible_risk_cells": 3939,
+          "matched_predicted": 0,
+          "matched_truth": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "ground_false_cells": 0,
+          "ground_cells": 65331,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 69270,
+          "visible_surface_recall": 0.0,
+          "localization_p90_m": null,
+          "exact_overlap_height_accuracy": 0.0,
+          "exact_overlap_height_cells": 0,
+          "per_height": {
+            "2": {
+              "predicted": 0,
+              "truth": 207,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 0,
+              "truth": 3732,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        },
+        "train_frequency_map": {
+          "predicted_risk_cells": 0,
+          "true_visible_risk_cells": 3939,
+          "matched_predicted": 0,
+          "matched_truth": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "ground_false_cells": 0,
+          "ground_cells": 65331,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 69270,
+          "visible_surface_recall": 0.9830662624512776,
+          "localization_p90_m": null,
+          "exact_overlap_height_accuracy": 0.0,
+          "exact_overlap_height_cells": 0,
+          "per_height": {
+            "2": {
+              "predicted": 0,
+              "truth": 207,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 0,
+              "truth": 3732,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        }
+      },
+      {
+        "group": "E0",
+        "role": "training",
+        "model": {
+          "predicted_risk_cells": 10012,
+          "true_visible_risk_cells": 8752,
+          "matched_predicted": 9903,
+          "matched_truth": 8746,
+          "precision": 0.9891130643228127,
+          "recall": 0.9993144424131627,
+          "ground_false_cells": 1096,
+          "ground_cells": 68608,
+          "ground_false_fraction": 0.01597481343283582,
+          "unsupported_predictions": 13,
+          "unsupported_fraction": 0.0012984418697562924,
+          "visible_cells": 77360,
+          "visible_surface_recall": 0.9996509824198552,
+          "localization_p90_m": 0.1,
+          "exact_overlap_height_accuracy": 0.9584120982986768,
+          "exact_overlap_height_cells": 8464,
+          "per_height": {
+            "2": {
+              "predicted": 7099,
+              "truth": 6100,
+              "precision": 0.9883082124242851,
+              "recall": 0.9934426229508196,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 509,
+              "truth": 495,
+              "precision": 0.825147347740668,
+              "recall": 0.6444444444444445,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 2404,
+              "truth": 2157,
+              "precision": 0.9958402662229617,
+              "recall": 1.0,
+              "absent_truth": false
+            }
+          },
+          "pass_gate": true
+        },
+        "all_unknown": {
+          "predicted_risk_cells": 0,
+          "true_visible_risk_cells": 8752,
+          "matched_predicted": 0,
+          "matched_truth": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "ground_false_cells": 0,
+          "ground_cells": 68608,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 77360,
+          "visible_surface_recall": 0.0,
+          "localization_p90_m": null,
+          "exact_overlap_height_accuracy": 0.0,
+          "exact_overlap_height_cells": 0,
+          "per_height": {
+            "2": {
+              "predicted": 0,
+              "truth": 6100,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 0,
+              "truth": 495,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 2157,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            }
+          },
+          "pass_gate": false
+        },
+        "train_frequency_map": {
+          "predicted_risk_cells": 0,
+          "true_visible_risk_cells": 8752,
+          "matched_predicted": 0,
+          "matched_truth": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "ground_false_cells": 0,
+          "ground_cells": 68608,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 77360,
+          "visible_surface_recall": 0.9897104446742503,
+          "localization_p90_m": null,
+          "exact_overlap_height_accuracy": 0.0,
+          "exact_overlap_height_cells": 0,
+          "per_height": {
+            "2": {
+              "predicted": 0,
+              "truth": 6100,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 0,
+              "truth": 495,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 2157,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            }
+          },
+          "pass_gate": false
+        }
+      },
+      {
+        "group": "E1",
+        "role": "fit_excluded_development",
+        "model": {
+          "predicted_risk_cells": 11476,
+          "true_visible_risk_cells": 6415,
+          "matched_predicted": 3184,
+          "matched_truth": 2152,
+          "precision": 0.277448588358313,
+          "recall": 0.3354637568199532,
+          "ground_false_cells": 2780,
+          "ground_cells": 39461,
+          "ground_false_fraction": 0.07044930437647297,
+          "unsupported_predictions": 6159,
+          "unsupported_fraction": 0.5366852561868247,
+          "visible_cells": 45876,
+          "visible_surface_recall": 0.9583660301682797,
+          "localization_p90_m": 1.264911064067352,
+          "exact_overlap_height_accuracy": 0.9960975609756098,
+          "exact_overlap_height_cells": 1025,
+          "per_height": {
+            "2": {
+              "predicted": 798,
+              "truth": 160,
+              "precision": 0.041353383458646614,
+              "recall": 0.0625,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 10678,
+              "truth": 6255,
+              "precision": 0.2927514515826934,
+              "recall": 0.33685051958433254,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        },
+        "all_unknown": {
+          "predicted_risk_cells": 0,
+          "true_visible_risk_cells": 6415,
+          "matched_predicted": 0,
+          "matched_truth": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "ground_false_cells": 0,
+          "ground_cells": 39461,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 45876,
+          "visible_surface_recall": 0.0,
+          "localization_p90_m": null,
+          "exact_overlap_height_accuracy": 0.0,
+          "exact_overlap_height_cells": 0,
+          "per_height": {
+            "2": {
+              "predicted": 0,
+              "truth": 160,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 0,
+              "truth": 6255,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        },
+        "train_frequency_map": {
+          "predicted_risk_cells": 0,
+          "true_visible_risk_cells": 6415,
+          "matched_predicted": 0,
+          "matched_truth": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "ground_false_cells": 0,
+          "ground_cells": 39461,
+          "ground_false_fraction": 0.0,
+          "unsupported_predictions": 0,
+          "unsupported_fraction": 0.0,
+          "visible_cells": 45876,
+          "visible_surface_recall": 0.9688508152410846,
+          "localization_p90_m": null,
+          "exact_overlap_height_accuracy": 0.0,
+          "exact_overlap_height_cells": 0,
+          "per_height": {
+            "2": {
+              "predicted": 0,
+              "truth": 160,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "3": {
+              "predicted": 0,
+              "truth": 6255,
+              "precision": 0.0,
+              "recall": 0.0,
+              "absent_truth": false
+            },
+            "4": {
+              "predicted": 0,
+              "truth": 0,
+              "precision": 0.0,
+              "recall": null,
+              "absent_truth": true
+            }
+          },
+          "pass_gate": false
+        }
+      }
+    ],
+    "retain_source": false,
+    "fit": 1,
+    "physics": 0,
+    "limits": "frame-cell instances, not independent trials; one-cell Chebyshev tolerance for precision/recall, Euclidean for localization; labels are finite visible surfaces not hidden volume/full real free space; E1 researcher-seen development only; ground prediction not free; no navigation"
+  },
+  "next": "先对固定标定、IMU重力补偿和显式射线/特征投影进行有限非训练几何资格与旧机制区分；仅在证据支持时冻结新的几何约束当前可见表面重建目标、分组覆盖、一次拟合与fresh验证预算。不能把换网络/调本模型/扩旧库作为救分。H/E0/E1均开发，不冒称新泛化；真值仅监督/评分。Census仍未实现且暂缓，用户学习路线优先。任何新候选需完整源资格，合格才有界实际90秒导航；所有旧预算保持关闭。",
+  "processes": {
+    "host_pids": [
+      1712265,
+      1712266
+    ],
+    "all_exited": true,
+    "status": "finished0"
+  },
+  "whole_complete": false,
+  "reliable_navigation": false,
+  "learning_navigation_increment": false,
+  "stop_reason": "Actual new learning target implemented, one frozen fit and whole-sequence comparison independently verified; source gate rejected. This is a completed research stage, not a static checklist."
+}

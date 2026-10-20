@@ -1,0 +1,125 @@
+{
+  "stage": "new_scene_data_single_calibration_and_competing_source_rejected",
+  "updated_utc": "2026-10-12T16:41:49.260822+00:00",
+  "parent_entry": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/navigation_execution_20261011_v1/execution_next_entry_v41.json",
+  "report": "/home/an/Documents/ChatGPT/球型机器人导航/reports/source_confidence_and_new_map_results_20261013.md",
+  "current_results": {
+    "viewpoint": {
+      "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1",
+      "actual90s": "timeout_no_contact",
+      "remaining_m": 5.560068218309853,
+      "net_progress_m": 3.339931590955283,
+      "extra_net_progress_vs_height_control_m": 2.6521141174723795,
+      "depth_p90_m": 0.19897825717926027,
+      "retain": false,
+      "budget": {
+        "cap": 3,
+        "used": 1,
+        "unattempted_closed": 2,
+        "remaining": 0,
+        "recovery_used": 0,
+        "fit": 0
+      },
+      "independent_closure": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/viewpoint_confirmation_navigation_20261012_v1/independent_closure.json"
+    },
+    "ground_ambiguity": {
+      "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ground_ambiguity_source_20261012_v1",
+      "complete_saved_pairs": 181,
+      "removed_pixels": 1145,
+      "depth_p90_m": 0.19851109981536866,
+      "obstacle_retention": 0.9999745834407485,
+      "source_entry_qualified": false,
+      "actual_runs": 0,
+      "fit": 0,
+      "independent_review": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/ground_ambiguity_source_20261012_v1/independent_review.json"
+    }
+  },
+  "sealed": {
+    "viewpoint_confirmation_navigation_20261012_v1": {
+      "verified_identities": 5759,
+      "seal_sha256": "f3bd6d47717a6b865415dd387f90a1babcfb87bba63d4ef2accf2a94a35c5bb4"
+    },
+    "ground_ambiguity_source_20261012_v1": {
+      "verified_identities": 200,
+      "seal_sha256": "abb85afcc8cb03fd900b707ed5ce1349ef2ede4830e9bcf8bbbe921ecd915680"
+    }
+  },
+  "process_state": {
+    "active_experiments": false,
+    "verified_host_pids_absent": [
+      925422,
+      925441,
+      936520
+    ],
+    "session14782": "exited0",
+    "cpu_sessions33984_21314": "exited0"
+  },
+  "next_action": "Do not repeat closed calibration/competitor/camera/memory candidates or old budgets. Next distinct current finite-surface-validity objective: first confirm installed +inf no-hit/clipping semantics using saved frames, current CAD/source and scene/camera identities; distinguish finite-depth errors, no-hit false finite predictions and unavailable labels. Public docs describe0/inf noobject, local extractor preserves+inf; proof must precede labels. If semantic qualification valid, predeclare independent no-hit/finite-surface validity target and current-input confidence consumer, grouped complete-development data H/E0/E1 (now seen, not new heldout), one bounded candidate fit with independent fresh verification before increment claims. Preserve existing finite-depth rejection and old153/30 budget closure. Require retained finite obstacles/coverage and conditionaldepth qualification; E0 finite error .43 remains unresolved, so no broad reliable-navigation claim. Report every substantive result with RGB/predicted/true/error and current/longterm map figures.",
+  "authority": "User2026-10-12 autonomy covers reversible local research/implementation/bounded checks and simulation; no routine design/feasibility approval pending.",
+  "limits": [
+    "Extra progress is same-scene development historical comparison with differing RGB; no fullcausal or independent generalization.",
+    "Viewpoint failed arrival and depth gates; ground source failed depth. Neither a reliable navigation solution.",
+    "Independent confidence objective is not command ranking; old153memory/30holdout coverage_unassessed and old2/30 data fit0 remain closed."
+  ],
+  "completion": {
+    "reliable_navigation": false,
+    "learning_navigation_increment": false,
+    "whole_mission_complete": false,
+    "research_evidence_package": "previously delivered plus current verified supplements",
+    "cross_machine_runtime": "unverified"
+  },
+  "automation": {
+    "id": "automation",
+    "status": "ACTIVE",
+    "prompt_sha256": "97a3de40b3eeb730c468d4dd93aeb1ddc36e416c801e6768417d81614989e82e",
+    "latest_entry_bound": true,
+    "schedule": "FREQ=HOURLY;INTERVAL=1",
+    "note": "Existing hourly automation updated and read back; current-map quantitative visual reporting required."
+  },
+  "stop_reason": "Completed substantive research stage: two actual90s scenes, whole terminal/native/map/execution audits and seals, one admitted frozen model independently rejected, followed in same turn by distinct implemented whole-source competing-depth negative with limitations. No active process/permission blocker; next independent truth-semantic/surface-validity stage remains required. Reliable navigation and learning navigation increment unachieved.",
+  "map_truth_audit": {
+    "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_map_truth_audit_20261012_v1",
+    "final_hazards": 145,
+    "false_spatial_cells_over_010m": 16,
+    "accepted_point_error_p90_m": 0.2641646243264807,
+    "truth_pose_stereo_error_p90_m": 0.2435261842731262,
+    "native_registration_p90_m": 0.05443371009462157,
+    "physical_runs": 0,
+    "fit": 0
+  },
+  "calibration_stage": {
+    "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/source_confidence_calibration_20261012_v1",
+    "fresh_data_actual": 2,
+    "budget": {
+      "cap": 4,
+      "used": 2,
+      "remaining_closed": 2,
+      "remaining": 0,
+      "fit": 1,
+      "recovery": 0
+    },
+    "H_E0_E1_label_fraction": [
+      0.7727926958,
+      0.99162224797,
+      0.747025438
+    ],
+    "E0_source_p90_before_after_m": [
+      0.42673126459,
+      0.42665174007
+    ],
+    "heldout_gate": false,
+    "navigation_increment_run": 0
+  },
+  "competing_stage": {
+    "directory": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_competing_depth_20261013_v1",
+    "fit": 0,
+    "physical": 0,
+    "unused4_closed": true,
+    "E0_p90_before_after_m": [
+      0.42673126459,
+      0.42633724213
+    ],
+    "gate": false,
+    "limitations": "Primary-right patch CAD/std missing; implemented variant negative, not strict variant certificate; no corrected rescoring to rescue"
+  }
+}

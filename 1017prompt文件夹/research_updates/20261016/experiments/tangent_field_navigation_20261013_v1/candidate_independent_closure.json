@@ -1,0 +1,36 @@
+{
+  "scope": "independent read-only candidate closure; raw hashes once/videos/currentinput-target-request arithmetic independently recomputed; no new simulation",
+  "artifact_count_verified": 5727,
+  "artifact_hash_errors": [],
+  "admission_hash_errors": [],
+  "video_frames": {
+    "stereo_view.mp4": 901,
+    "third_person.mp4": 901
+  },
+  "status": "finished",
+  "returncode": 0,
+  "raw_audit_pass": true,
+  "native_target_request_calls_checked": 523,
+  "arithmetic_errors": [],
+  "same_candidate_state_oldtarget_aux_differences": 342,
+  "decision": "reject frozen navigation gate; timeout90 no contacts",
+  "candidate_remaining_m": 6.054107846460264,
+  "candidate_net_progress_m": 0.5458928270722225,
+  "baseline_net_progress_m": 1.2527242830648877,
+  "observed_progress_difference_m": -0.7068314559926652,
+  "conditional_depth_gate": true,
+  "conditional_p90_m": 0.12169368267059333,
+  "precision": "correct float64 position exactnative verified; former float32 checker defect does not change runtime",
+  "limits": "0/181 identical paired RGB; no causal input prefix/independent generalization, same-state oldtarget arithmetic not baseline physical trajectory",
+  "receipts_sha256": {
+    "effect_audit.py": "4eca1442b0148c015738a710d34b7e0b5237d89695381a8876ff895e33331947",
+    "effect_audit.json": "842dda3e043b197cec4ade6f19ec2ecad88cb035ce0021abfa82d050100a78c1",
+    "request_effect.py": "5d79a4c8ffd67d56c3e3d27bb54697aaf319a45fb0450a876a9e58b893c8c5da",
+    "request_effect.json": "b9cb4a57eb262c5977e45123833b375a3d1f92552f829cede098a1f9ed1e8ad3",
+    "pair_identity.json": "842ec095ee6abee537f0824d895b181ecd1b17ec9a1e3b882ddb729bd89ae2ca",
+    "candidate_e1_protocol.json": "90cfa50d558db0146ff00a69f05b6a81a227ab8a4611b261818c1606a136eb2b",
+    "protocol.json": "e2eeaa761c8fbd9493028620bc5cbfcbfc6befd793d0ec9d0fc3807ffed0ad97",
+    "candidate_e1_raw_audit.json": "4c5d15d4ce30dfbd4ad12c8497ef305752ef8536bdca1ead3e122036cf317d4c",
+    "candidate_e1_assessment.json": "cc4bf54d202dc7fbc1df12628aca58634e22a4787b9cc73521d9686974ab03e4"
+  }
+}

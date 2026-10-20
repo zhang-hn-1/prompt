@@ -1,0 +1,45 @@
+{
+  "target": "current original SGBM optical depth absolute error >0.15m",
+  "consumer": "confidence only; excluded points unknown, no free-space certificate or memory erasure",
+  "train": "H complete E2",
+  "validation": "fresh E0 and E1 whole actual legally terminated sequences; both gates required",
+  "features": "current RGB paired patch texture/NCC/residual, original disparity/depth local gradients, current native camera registered height and disparity sensitivity; sensor packet membership carries existing CAD mask",
+  "truth": "labels/scoring only; no future input; no position/frame/time as fitted features",
+  "coverage_gate": {
+    "required_label_fraction": 0.7,
+    "epochs_with_20_labels_fraction_of_epochs_with_20_candidates": 0.95,
+    "min_valid_labels_per_sequence": 1000,
+    "input_epochs": "all scheduled capture indices0,5,... through actual legal terminal; counts may differ",
+    "legal_terminal": "success/collision/timeout90; timeout ends90; raw audit/status/seal prerequisite"
+  },
+  "model": "single ridge logistic, 12 features, train-only mean/std, scipy L-BFGS-B maxiter150, lambda0.01, threshold P(bad)<0.5",
+  "fit_sampling": "per-epoch sorted packet every8th point, deterministic; no validation sampling for scoring",
+  "source_gate": {
+    "depth_p90_max_m": 0.15,
+    "above030_fraction_max": 0.1,
+    "positive_environment_obstacle_point_retention_min": 0.95,
+    "all_candidate_retention_min": 0.7,
+    "per_eligible_epoch_retention_min": 0.5,
+    "eligible_epoch_retention_pass_fraction_min": 0.95
+  },
+  "fit_cap": 1,
+  "offline_parameter_sweep": false,
+  "physics_cap": 4,
+  "physics_used": 0,
+  "environment_recovery_cap": 1,
+  "environment_recovery_used": 0,
+  "fresh_E0_E1_validation_required_before_generalization": true,
+  "failure": "reject frozen model, no threshold/feature/model rescue; next distinct mechanism needs evidence",
+  "fresh_data_qualification": {
+    "legal_terminal_complete": "success/collision/timeout actual capture to terminal, schedule every5 captures; no future window",
+    "train": "H E2",
+    "heldout": "fresh E0 and E1, both must qualify >=70% valid point labels and >=95% eligible epochs, at least1000 total valid labels",
+    "model_and_retention_gates": "unchanged; one fit; no old V fit or selected threshold",
+    "data_budget": {
+      "cap": 4,
+      "collection_e0_e1": 2,
+      "conditional_navigation": 2
+    }
+  },
+  "effective_precedence": "This fresh protocol supersedes original V/181 sequence qualification; same features/model/error and retention gates, fit cap1 unchanged."
+}

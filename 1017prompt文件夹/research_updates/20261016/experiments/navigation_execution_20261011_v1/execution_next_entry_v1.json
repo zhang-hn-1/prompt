@@ -1,0 +1,12 @@
+{
+  "stage": "heading_rate_E1_host_B0_running",
+  "status_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/heading_rate_e1_b0_status_v2.json",
+  "candidate_status_file": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/heading_rate_e1_candidate_status_v2.json",
+  "entry": "Inspect durable statuses; never launch duplicate running arm. After finished B0 launch sole candidate via approved host stage, then immutable host scorer; failures close budget and retain actual class.",
+  "driver": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/run_heading_rate_host_stage_v1.py",
+  "scorer": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/navigation_execution_20261011_v1/assess_heading_rate_e1_host_v1.py",
+  "actual_physics_sequences_max": 2,
+  "no_retry": true,
+  "unique_environment_recovery_already_used": true,
+  "whole_mission_complete": false
+}

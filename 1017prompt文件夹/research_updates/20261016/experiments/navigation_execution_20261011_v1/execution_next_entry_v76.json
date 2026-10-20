@@ -1,0 +1,55 @@
+{
+  "stage": "dual_monocular_semantic_full_prediction_running",
+  "parent_entry": "execution_next_entry_v75.json",
+  "updated_utc": "2026-10-14T17:23:53.347117+00:00",
+  "summary": "v76新的双视角像素类别/距离分离消费者已冻结并完成7组1267对完整GT-only oracle资格，融合precision全部1、recall最低.996197、格定位P90<=.1m；独立1267融合帧计数聚合通过。不是在线类别或模型通过，不重开旧v62训练。已冻结唯一真实RGB类别来源SegFormer B0 ADE512官方revision 489d5cd81a0b59fab9b7ea758d3548ebe99677da，配置与15,092,257byte权重SHA保存，NVIDIA非商用科研许可；距离沿用DA V2 Metric Hypersim Small旧未评估权重，float32原生固定rotate90/inverse，DA输入518/seg官方512，语义prob .8和类别映射见protocol/adapter，不扫参或微调。现有transformers4.21.1用官方FeatureExtractor兼容接口，首次新ImageProcessor名称不支持的静态导入保留，不改环境或数值模型；实际GPU首个B65 47s两眼480x640全finite，推理同步.731487s、两路投影wall.747922s、峰值495607296bytes、左右166/125融合247格（未GT评分，不是导航）。完整GPU生成已经注册并启动systemd ball-dual-monocular-semantic-v76，durable parent4046472 child4046473 start2026-10-14T17:22:19.610185+00:00 timeout7200s，generation_status.json/log为准，已有H61/181生成；no GT读取，1267对全部完成prediction_seal后launch自动score.py（score_status.json/log，timeout1800s），完整6300同轨迹CategoryMemory时钟最近10s/2曝光/.1m位移规则不变、每眼及联合BEV分母分开。先核真实进程/日志/终态，不重复派发；源/完整地图门槛未评分前禁止物理。score完成后独立核完整分母、原始结果、长期错误/全帧灾难/推理耗时，并直接展示同刻两RGB/单目预测/类别/GT/误差/左右融合与长期图。若失败如实关闭不调阈值/微调/换模型救分，预算fit0physical0/4recovery0/1，已见开发非新泛化。当前停止原因是完整GPU计算仍在运行，后台服务不会随回合退出中断；下一轮接续监督/结果闭环，整体/可靠导航/学习导航增量未完成，ACTIVE。",
+  "experiment_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/dual_monocular_semantic_bev_20261015_v1",
+  "processes": {
+    "status": "running",
+    "start_utc": "2026-10-14T17:22:19.610185+00:00",
+    "parent_pid": 4046472,
+    "child_pid": 4046473,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "preflight": {
+    "pair": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/replanning_reserve_20261013_v1/baseline_e1_run/source_inputs/frame_470.npz",
+    "sync_seconds": 0.7314865819644183,
+    "pair_projection_seconds": 0.7479218179942109,
+    "peak_gpu_bytes": 495607296,
+    "cells": [
+      166,
+      125,
+      247
+    ],
+    "conflicts": [
+      {
+        "overlap_queries": 4025,
+        "conflict_queries": 102
+      },
+      {
+        "overlap_queries": 1301,
+        "conflict_queries": 28
+      }
+    ],
+    "shape": [
+      [
+        480,
+        640
+      ],
+      [
+        480,
+        640
+      ]
+    ],
+    "finite_depth": [
+      307200,
+      307200
+    ],
+    "truth_read": false
+  },
+  "whole_complete": false
+}
