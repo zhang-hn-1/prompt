@@ -82,7 +82,23 @@ JSON 中的 `contact_force_norm` 是地面接触诊断量；探针场景只有�
 
 ## PointGoal V1 golden benchmark
 
+2026-09-29 的后续实测时间规划/速度门实验在同版物理接触、35 秒 hard_0 七条中由 3/7 提升至 5/7，golden E0/E1/E2 仍为 3/3；0002、0004 依旧超时。该实验保存在 `runs/benchmark_oracle_measured_time_hybrid_20260929_v9`，报告见 [docs/benchmark_oracle_measured_time_hybrid_navigation_20260929.md](../../docs/benchmark_oracle_measured_time_hybrid_navigation_20260929.md)。原默认 Oracle 未替换。
+
+
+2026-09-29 起，正式入口默认 `--collision-mode physical_contact_v2`，评测协议为
+`ball_pointgoal_v1_2_contact_35s`：每个 50 Hz 物理步检查过滤后的障碍接触力 >1 N，
+块内锁存至 10 Hz 状态，地面不算障碍。地图净空继续记录风险，不再直接判碰撞；
+接触数据不可用返回运行错误。`collision_audit.json` 保存逐步可用性和接触证据，
+包括未发布的失败目录。新模式的 `physical_contact` 是本动作块曾接触，不是瞬时值。
+历史复现须显式指定 `--collision-mode map_clearance_v1`，继续使用
+`ball_pointgoal_v1_1_35s`；两种协议不能混合汇总。35 秒时限与控制器保持不变。
+本次修复和五条真实回归见
+[碰撞判定修复报告](../../docs/benchmark_oracle_collision_adjudication_fix_20260929.md)。
+
+
 `configs/benchmark_v1/golden_v1_manifest.json` 是当前冻结的最小可复现实验集，包含一项 E0 开放目标、一项 E1 单障碍绕行和一项 E2 窄通道任务。manifest 保存场景、占据图、起终点、任务分类证据和 SHA256；E1/E2 的场景源以及 E2 的占据图和 corridor mask 也随仓库保存。E0 使用 NavDP 的 `cluttered_hard/hard_0` 场景，运行时通过 `SCENE_ROOT` 提供该外部场景库。
+
+E2 场景中的 Cylinder/Sphere 同时写入与物理尺寸一致的 `double radius/height` 和显式 `extent`，以避免 Isaac Sim 将未解析的几何属性退化为单位半径碰撞体。若 `SCENE_ROOT` 指向外部 NavDP 场景库，请将仓库中的 `data/benchmark_v1/scenes/benchmark_e2/e2_corridor.usda` 同步到对应的 `benchmark_e2/e2_corridor.usda`；manifest 会拒绝任何不匹配的副本。
 
 在 Isaac Sim 环境中运行 Oracle 和三个健全性基线：
 
@@ -100,6 +116,21 @@ $PYTHON research/ball_wm/scripts/run_pointgoal_benchmark.py \
 ```
 
 将 `--policy oracle` 替换为 `stop`、`goal_greedy` 或 `random`，并为每个策略使用独立的 `--run-root`。每个 episode 都在独立 Isaac 进程中运行，结果目录包含 `metrics.json`、`environment.json`、`manifest.json`、NPZ 状态/动作、轨迹图和双目/第三人称视频；`summary.json` 汇总 Success、Collision、Timeout、SPL 和协议哈希。
+
+如果要评估副轴 `0.30 rad/s` 速度包络，先运行限速标定矩阵：
+
+```bash
+$PYTHON research/ball_wm/scripts/probe_drive_dynamics.py \
+  --out research/ball_wm/runs/drive_dynamics_auxvel030_extended_20260918 \
+  --profile-out research/ball_wm/configs/benchmark_v1/drive_dynamics_auxvel030_v2.json \
+  --auxiliary-velocity-limit-rad-s 0.30
+```
+
+这会生成包含限速控制器元数据的 `drive_dynamics_v2` profile。正式评测通过
+`--auxiliary-velocity-limit-rad-s 0.30 --drive-profile .../drive_dynamics_auxvel030_v2.json`
+显式启用；省略两个参数仍使用冻结的 V1 profile 和原始控制器。限速 profile 的原始
+54 工况报告保存在对应的 `runs/drive_dynamics_*` 目录中，不能用未完成稳态的早期报告
+替代最终 profile。
 
 2026-09-17 的冻结结果记录在 `docs/benchmark_golden_v1_20260917.md`。Oracle 是特权上界诊断，不属于无地图公平赛道；它在 E0/E1/E2 上分别得到 collision、success、timeout，失败样本必须保留，不能从汇总中删除。
 

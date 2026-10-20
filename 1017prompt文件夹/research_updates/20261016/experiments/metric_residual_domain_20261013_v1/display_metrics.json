@@ -1,0 +1,30 @@
+[
+  {
+    "group": "E1",
+    "frame": 450,
+    "selection": "fixed45s, not score-selected",
+    "queries": 4898,
+    "finite_queries": 4637,
+    "full_pixels": 307200,
+    "original_query_error_p50_p90_p95": [
+      0.028991222381591797,
+      0.07028541564941407,
+      0.08321905136108398
+    ],
+    "oracle_range_error_m": 0.0
+  },
+  {
+    "group": "C54",
+    "frame": 495,
+    "selection": "previous blocker source selection, not random/new worst search",
+    "queries": 14969,
+    "finite_queries": 7712,
+    "full_pixels": 307200,
+    "original_query_error_p50_p90_p95": [
+      0.019124269485473633,
+      0.9085372686386113,
+      1.208670526742935
+    ],
+    "oracle_range_error_m": 0.0
+  }
+]

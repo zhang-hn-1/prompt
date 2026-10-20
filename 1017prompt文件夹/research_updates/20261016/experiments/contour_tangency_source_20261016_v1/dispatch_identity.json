@@ -1,0 +1,19 @@
+{
+  "registered_utc": "2026-10-16T06:17:17.667147+00:00",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contour_tangency_source_20261016_v1/protocol.json": "a2821b6af48ddfa12ea5fafc6dc599d4a17e816f85d7c7eba1fa086b7632fd7a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contour_tangency_source_20261016_v1/geometry.py": "b887b0427913cce8cebfd496b044730e123bd22255668b780bbaa81a8e9af7e6",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contour_tangency_source_20261016_v1/run.py": "fc61720f44fc7346a90d59984dd58b9754ac05c4a5ec4da11448b082951c89c8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contour_tangency_source_20261016_v1/launch.py": "5e36ed1cd92813fb1478884de4636af8939b74b587a27d5a0179fc894148b69e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/dual_monocular_semantic_bev_20261015_v1/projection.py": "5d44e0668ecd1c269933cd3baf573b7bc99a835e0022f8d941e17f72504e8c86",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/dual_monocular_semantic_bev_20261015_v1/semantic_projection.py": "d3117b3781e5e07fd460daa6148250c8cd7d8d83182f407cb43bbaabe115b20d"
+  },
+  "capture_seal_sha256": "f2cac34cb2a3a7e701401628c310a1910fa3dfeafa2e09437c1204ef5d256667",
+  "geometry_contract": {
+    "sphere_unknown_centre_radius": true,
+    "cylinder_unknown_centre_radius": true,
+    "single_view_abstains": true,
+    "zero_baseline_abstains": true,
+    "ray_intersection_exact": true
+  }
+}

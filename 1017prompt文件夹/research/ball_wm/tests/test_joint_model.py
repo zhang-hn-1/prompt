@@ -300,11 +300,15 @@ def test_legacy_pose_disabled_config_loads_strictly_without_pose_parameters():
     """Catches default pose parameters that would make old checkpoint loading silently non-strict."""
 
     legacy = build_joint_model(_dummy_config())
-    restored = build_joint_model(JointModelConfig(**asdict(_dummy_config())))
+    legacy_config = asdict(_dummy_config())
+    legacy_config.pop("action_source", None)
+    restored_config = JointModelConfig(**legacy_config)
+    restored = build_joint_model(restored_config)
 
     restored.load_state_dict(legacy.state_dict(), strict=True)
 
     assert restored.pose_head is None
+    assert restored_config.action_source == "applied_action"
 
 
 def test_rollout_uses_first_candidate_action_for_first_prediction():
@@ -336,6 +340,62 @@ def test_rollout_uses_first_candidate_action_for_first_prediction():
     assert torch.all(predicted[0, 0, 0] == 7.0)
 
 
+def test_rollout_conditions_each_prediction_on_its_candidate_action_in_order():
+    """Catches delayed candidate actions and stale final context actions after step one."""
+
+    torch.manual_seed(31)
+    model = _tiny_rollout_model().eval()
+    # AdaLN starts at zero and therefore ignores actions before learning. Use
+    # nonzero weights to exercise the real action-conditioned predictor.
+    for block in model.predictor.transformer.layers:
+        torch.nn.init.normal_(block.adaLN_modulation[-1].weight, std=0.2)
+    context = {
+        "pixels_left": torch.randn(2, 3, 3, 8, 8),
+        "pixels_right": torch.randn(2, 3, 3, 8, 8),
+        "action": torch.randn(2, 3, 10),
+        "proprio": torch.randn(2, 3, 17),
+    }
+    context["action"][:, -1] = 9.0  # Placeholder replaced by candidate a0.
+    context_action_before = context["action"].clone()
+    actions = torch.randn(2, 2, 3, 10)
+    candidate_actions_before = actions.clone()
+
+    with torch.no_grad():
+        encoded = model.encode(dict(context))["emb"]
+        emb = encoded.repeat_interleave(2, dim=0)
+        past = context["action"].repeat_interleave(2, dim=0)
+        a0, a1, a2 = actions.reshape(4, 3, 10).split(1, dim=1)
+        # Explicitly pair each state with the action that leads to the next
+        # frame: [c0,c1,a0], [c1,a0,a1], then [a0,a1,a2].
+        p0 = model.predict(
+            emb, model.action_encoder(torch.cat((past[:, :2], a0), dim=1))
+        )[:, -1:]
+        p1 = model.predict(
+            torch.cat((emb[:, 1:], p0), dim=1),
+            model.action_encoder(torch.cat((past[:, 1:2], a0, a1), dim=1)),
+        )[:, -1:]
+        p2 = model.predict(
+            torch.cat((emb[:, 2:], p0, p1), dim=1),
+            model.action_encoder(torch.cat((a0, a1, a2), dim=1)),
+        )[:, -1:]
+        expected = torch.cat((p0, p1, p2), dim=1).reshape(2, 2, 3, 16)
+
+        predicted = model.rollout(context, actions, history_size=3)
+        # Candidates sharing a0/a1 must have the same first two predictions,
+        # while changing a2 must affect the third prediction.
+        changed_actions = actions.clone()
+        changed_actions[:, :, 2] += 2.0
+        changed = model.rollout(context, changed_actions, history_size=3)
+
+    torch.testing.assert_close(predicted[:, :, 0], expected[:, :, 0])
+    torch.testing.assert_close(predicted[:, :, 1], expected[:, :, 1])
+    torch.testing.assert_close(predicted[:, :, 2], expected[:, :, 2])
+    torch.testing.assert_close(changed[:, :, :2], predicted[:, :, :2])
+    assert not torch.allclose(changed[:, :, 2], predicted[:, :, 2])
+    torch.testing.assert_close(context["action"], context_action_before)
+    torch.testing.assert_close(actions, candidate_actions_before)
+
+
 def _tiny_rollout_model() -> JointJEPA:
     config_embed = 16
     predictor = ARPredictor(
@@ -349,7 +409,9 @@ def _tiny_rollout_model() -> JointJEPA:
         dim_head=8,
     )
     model = JointJEPA(
-        encoder=torch.nn.Identity(),
+        encoder=torch.nn.Sequential(
+            torch.nn.Flatten(), torch.nn.Linear(6 * 8 * 8, config_embed)
+        ),
         predictor=predictor,
         action_encoder=Embedder(10, emb_dim=config_embed),
         proprio_encoder=torch.nn.Linear(17, config_embed),

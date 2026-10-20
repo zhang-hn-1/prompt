@@ -1,0 +1,63 @@
+{
+  "status": "execution_failed",
+  "physical_used": 0,
+  "physical_cap": 0,
+  "ML_fit_used": 0,
+  "ML_fit_cap": 0,
+  "model_inference_used": 0,
+  "navigation_used": 0,
+  "CPU_used": 1,
+  "CPU_cap": 1,
+  "recovery_used": 0,
+  "recovery_cap": 1,
+  "budget_closed": false,
+  "stages": [
+    {
+      "action": "prepare",
+      "terminal": {
+        "status": "finished",
+        "start_utc": "2026-10-16T06:17:17.667709+00:00",
+        "parent_pid": 2,
+        "child_pid": 3,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-16T06:17:28.401279+00:00"
+      }
+    },
+    {
+      "action": "predict",
+      "terminal": {
+        "status": "finished",
+        "start_utc": "2026-10-16T06:17:28.402174+00:00",
+        "parent_pid": 2,
+        "child_pid": 4,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-16T06:17:36.932949+00:00"
+      }
+    },
+    {
+      "action": "score",
+      "terminal": {
+        "status": "runtime_failed",
+        "start_utc": "2026-10-16T06:17:36.934820+00:00",
+        "parent_pid": 2,
+        "child_pid": 5,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 1,
+        "end_utc": "2026-10-16T06:17:41.809457+00:00"
+      }
+    }
+  ],
+  "scope": "Necessary ideal-annotation qualification, not RGB inference. Ideal primitive-family, instance association, oriented silhouette tangents, rim identity and target semantic masks are privileged offline labels. Predictor receives no object centres/radii/heights or pixel depth. Sphere/vertical-cylinder family is an explicit restricted scene prior, not arbitrary obstacle geometry. All 300 objects and all original targets including suspended/unidentified remain in evaluation. Dataset is already seen development.",
+  "wall_s": 24.14260354603175
+}

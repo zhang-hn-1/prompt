@@ -1,0 +1,54 @@
+{
+  "reviewer": "/root/heading_rate_review",
+  "verdict": "pre_fit_dataset_coverage_reject",
+  "source_SHA_matches": 2282,
+  "group_seal_files": [
+    86,
+    74
+  ],
+  "complete_windows": [
+    70,
+    57
+  ],
+  "attempted_windows": [
+    70,
+    58
+  ],
+  "second_group_planned": 70,
+  "second_group_complete_fraction": 0.8142857142857143,
+  "second_group_first_contact_s": 28.77999935671687,
+  "second_group_last_physics_s": 28.799999356269836,
+  "second_group_partial_consumed": 15,
+  "partial_committed": 25,
+  "physics_samples": [
+    1751,
+    1441
+  ],
+  "contact_samples": [
+    2101,
+    1729
+  ],
+  "capture_counts": [
+    351,
+    289
+  ],
+  "videos": {
+    "count": 4,
+    "decoded_frames": [
+      351,
+      351,
+      289,
+      289
+    ],
+    "fps": 10
+  },
+  "all_children_finished_zero": true,
+  "no_timeout_signal_or_kill": true,
+  "used_groups": 2,
+  "unattempted_groups": 28,
+  "budget_closed": true,
+  "retry": 0,
+  "fit_admitted": false,
+  "navigation_performance_assessed": false,
+  "whole_mission_complete": false
+}

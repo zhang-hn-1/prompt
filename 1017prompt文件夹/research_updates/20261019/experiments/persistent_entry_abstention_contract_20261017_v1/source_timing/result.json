@@ -1,0 +1,80 @@
+{
+  "complete": true,
+  "utc": "2026-10-17T09:54:30.229473+00:00",
+  "initialization_s": 0.6112029349897057,
+  "rows": [
+    {
+      "frame": 0,
+      "source_wall_s": 3.2273035360267386,
+      "internal_wall_s": 3.2272933629574254,
+      "dynamic_CAD_masks_s": 1.4236815449548885,
+      "four_stereo_compute_s": 1.761504615074955,
+      "other_predict_s": 0.042117375996895134,
+      "calls": [
+        {
+          "stage": "dynamic_CAD_masks",
+          "wall_s": 1.4236815449548885
+        },
+        {
+          "stage": "left_compute",
+          "wall_s": 0.4503947769990191
+        },
+        {
+          "stage": "right_compute",
+          "wall_s": 0.4374092820798978
+        },
+        {
+          "stage": "left_compute",
+          "wall_s": 0.4398895079502836
+        },
+        {
+          "stage": "right_compute",
+          "wall_s": 0.43381104804575443
+        }
+      ],
+      "all16_output_arrays_byte_exact": true,
+      "raw_sha256": "635230a0ed52e8a1bde2d359250280fa8f2c37c9659aa01a89985fa5c0f053ef",
+      "prediction_sha256": "2941afb5084ebec8c804372b1ae47bb73f243e267aa86769817bf626ed3e238b"
+    },
+    {
+      "frame": 90,
+      "source_wall_s": 3.1221413139719516,
+      "internal_wall_s": 3.1221253679832444,
+      "dynamic_CAD_masks_s": 1.3536664590938017,
+      "four_stereo_compute_s": 1.7385206681210548,
+      "other_predict_s": 0.029954186757095158,
+      "calls": [
+        {
+          "stage": "dynamic_CAD_masks",
+          "wall_s": 1.3536664590938017
+        },
+        {
+          "stage": "left_compute",
+          "wall_s": 0.43718017905484885
+        },
+        {
+          "stage": "right_compute",
+          "wall_s": 0.4349975750083104
+        },
+        {
+          "stage": "left_compute",
+          "wall_s": 0.43518235604278743
+        },
+        {
+          "stage": "right_compute",
+          "wall_s": 0.4311605580151081
+        }
+      ],
+      "all16_output_arrays_byte_exact": true,
+      "raw_sha256": "bbdfa133264c7fceddc863b6277ba5d6332ca97bf96b692ee4d32acf155f8a97",
+      "prediction_sha256": "407ea02ec36b39734fc1fed7d7afd3ebb909cab7d0d74fedf0096a17223a6f06"
+    }
+  ],
+  "source_invocations": 2,
+  "disparity_compute_calls": 8,
+  "new_model": 0,
+  "fit": 0,
+  "physics": 0,
+  "navigation": 0,
+  "scope": "One invocation each frozenframe0and90, ordinary warmed-state ordering as declared; two descriptive samples only, no realtime, speedup or full-domain performance claim. Original source and outputs unmodified; actual same-SGBM source recomputation2 for output-equality timing attribution only."
+}

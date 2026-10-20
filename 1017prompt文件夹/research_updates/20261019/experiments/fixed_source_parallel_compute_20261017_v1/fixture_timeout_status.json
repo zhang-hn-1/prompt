@@ -1,0 +1,19 @@
+{
+  "status": "timeout",
+  "start_utc": "2026-10-17T10:03:30.169147+00:00",
+  "parent_pid": 3922690,
+  "child_pid": 3922692,
+  "process_group_id": 3922692,
+  "child_returncode": -15,
+  "timeout": true,
+  "parent_signal": null,
+  "forced_kill": false,
+  "no_retry": true,
+  "cleanup_live_pids_before_TERM": [
+    3922692,
+    3922693
+  ],
+  "remaining_live_group_pids": [],
+  "remaining_zombie_group_pids": [],
+  "end_utc": "2026-10-17T10:03:30.716374+00:00"
+}

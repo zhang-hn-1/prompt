@@ -31,6 +31,7 @@ if __package__ in (None, ""):
     from training.navigation_metrics import spearman_rank_correlation
     from training.planner import plan, score_action_sequences
     from training.pose_utils import pointgoal_in_base
+    from training.proprioception import checkpoint_velocity_frame
 else:
     from .ball_wm_dataset import BallWMDataset, _load_episode
     from .action_protocol import ActionProtocol, load_action_protocol
@@ -48,6 +49,7 @@ else:
     from .navigation_metrics import spearman_rank_correlation
     from .planner import plan, score_action_sequences
     from .pose_utils import pointgoal_in_base
+    from .proprioception import checkpoint_velocity_frame
 
 
 _CANDIDATE_NAMES = ("zero", "aux_positive", "aux_negative", "random", "cem")
@@ -262,6 +264,7 @@ def run_planner_calibration(
     if not isinstance(checkpoint, Mapping) or "config" not in checkpoint or "model" not in checkpoint:
         raise ValueError("checkpoint must contain config and model")
     require_checkpoint_protocol(checkpoint, action_protocol.protocol_id)
+    checkpoint_velocity_frame(checkpoint)
     config = JointModelConfig(**checkpoint["config"])
     if not config.pose_head_enabled:
         raise ValueError("calibration requires a pose-enabled checkpoint")
@@ -276,6 +279,8 @@ def run_planner_calibration(
         num_preds=config.num_preds,
         rollout_horizon=config.rollout_horizon,
         image_size=(config.image_size, config.image_size),
+        action_source=config.action_source,
+        proprio_velocity_frame=config.proprio_velocity_frame,
         action_block=action_protocol.controls_per_block,
         with_bev=False,
         with_visibility=False,
@@ -345,6 +350,7 @@ def run_planner_calibration(
                         image_size=config.image_size,
                         ball_radius_m=float(metadata.get("ball_radius_m", 0.4)),
                         device=str(device),
+                        proprio_velocity_frame=config.proprio_velocity_frame,
                     )
                     _ACTIVE_RUNTIME = runtime
                 initial_observation = runtime.reset_to_context(state_row)

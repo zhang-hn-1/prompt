@@ -1,0 +1,89 @@
+{
+  "schema": "independent_prefit_review_v1",
+  "reviewer": "visible_learning_review subagent",
+  "reviewed_utc": "2026-10-13T04:18:05.805556+00:00",
+  "admit_fit": true,
+  "admission_scope": "Exactly one fixed 30-epoch final-checkpoint development fit; no navigation or physical deployment admission.",
+  "blockers": [],
+  "reviewed_source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/build_dataset.py": "1cc736436140d6a62b1b542555e058f11fb45952b5c338aa0f798b126275a88a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/visible_target.py": "c8661561c586ba65af510a46337acce2920075b7a84100f594f351c77b03d66c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/model.py": "b391f70db67dfcdcd9bc33e3e815f56e7377c4d9dcb25e2460bb79ddfb7a2080",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/prepare_inference.py": "605a612c95ea393e6abd27b7ddfaa693cd7e01c54bcd34387f54fca98e9089f9",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/train_and_predict.py": "d6130f090a03b47926d4689c2775a80ee2933b60e9c333f699004918c5be0f38",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/score.py": "cf0424a59a893bcddf2167b464115ba820236c6db8660b5e03bcf84b275bc33c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/protocol.json": "d686d654a6123ccf61d76e502365bdad0b680ec1d32c561256035962c24d3dd6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/coverage.json": "c1d4deaa2e6ce49026adc6ae8df69f3b79544fc2a5e507e65855f75e1bd3d30f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/inference_inputs.json": "87ab7ea7f1f8d6d81d004c9b4400ae8da9c4b4207536857bec3f8710d009896e",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/docs/superpowers/plans/2026-10-13-learned-visible-obstacles.md": "fe3f79248eea9d036f4a2f9cff81ab1185f1838bab2d013794d825ed76a72309"
+  },
+  "qualification": {
+    "pass_coverage": true,
+    "training_class_counts": [
+      722170,
+      133939,
+      6307,
+      4227,
+      2157
+    ],
+    "train_E1_exact_pair_overlap": {
+      "H": 0,
+      "E0": 0
+    },
+    "frames_per_group": 181,
+    "all_three_groups_pass": true
+  },
+  "resolved_findings": [
+    {
+      "issue": "Per-height denominators were absent from scorer.",
+      "fix": "Scorer now reports per-height predictions, truth, precision, recall and absent_truth; absent-truth recall is null."
+    },
+    {
+      "issue": "Fit admission did not bind reviewed code and sanitized inference identity.",
+      "fix": "Runner checks coverage source/dataset hashes, review hashes and sanitized inference manifests before exclusive fit receipt."
+    },
+    {
+      "issue": "Scoring verified predictions only.",
+      "fix": "Scorer verifies sealed source/checkpoint and coverage dataset hashes before scoring."
+    }
+  ],
+  "evidence": {
+    "static_input_review": "Network input is only current paired RGB and native gravity; GT depth/pose/joints only create supervision. No SGBM, GT pose, map history, time or layout ID network argument.",
+    "native_pose_identity": "All 543 known-pose rotations reconstructed and matched same-clock native_predictions with available/live flags.",
+    "calibration": "All 1086 actual optical-to-base extrinsics match forward .4 m, lateral +/- .3 m, up .05 m and declared optical rotation.",
+    "target_geometry": "Depth is distance_to_image_plane; unprojection signs and yaw rotation correct. Four global-yaw invariance fixtures passed. Three datasets passed shapes/dtypes/finite gravity/time monotonicity checks.",
+    "sanitized_inputs": "All three sanitized RGB/gravity archives are bytewise-array equal to their dataset fields and contain no labels.",
+    "metric_fixtures": "Exact prediction passes; all unknown fails; absent top height recall null.",
+    "split": "Entire H/E2 and E0 fit; entire E1 excluded. Three distinct source scene identities; exact paired-RGB overlap with E1 zero.",
+    "fit_guard": "Exclusive fit_started.json creation, fixed seed2026/30epochs/batch16/Adam .001, final checkpoint only; no E1 optimizer/loss/normalization."
+  },
+  "native_gt_attitude_error_deg": {
+    "H": {
+      "yaw_p90": 0.7957096132616308,
+      "yaw_max": 1.0484001726232388,
+      "tilt_p90": 0.8448038757840218,
+      "tilt_max": 1.5360929201469127
+    },
+    "E0": {
+      "yaw_p90": 1.0106793842899227,
+      "yaw_max": 1.2618586658553603,
+      "tilt_p90": 0.6704717335907318,
+      "tilt_max": 1.2081148486364004
+    },
+    "E1": {
+      "yaw_p90": 0.46466606345698364,
+      "yaw_max": 0.5816967436769748,
+      "tilt_p90": 1.1077505833209114,
+      "tilt_max": 1.4820662053454101
+    }
+  },
+  "limitations": [
+    "E1 is researcher-seen development data and supplies no fresh independent generalization evidence.",
+    "E1 has zero true top-height-band cells; aggregate source admission does not validate all height bands.",
+    "Gravity determines heading-aligned tilt; no absolute yaw network input is needed because target is globally yaw invariant. Horizontal body-forward norms exceed .982 here; vertical heading singularity is outside tested data.",
+    "GT local target yaw differs from native yaw used for eventual global registration. End-to-end pose/map error is not evaluated by these local source metrics.",
+    "The class per cell is the highest supported visible height band; overlapping lower bands are not retained. Ground is an observed surface, never free-space certification.",
+    "CAD mask, finite .5-3 m axial depth, root exclusion and fixed height range define the qualified visible target; hidden surfaces, excluded heights and unlabelled cells remain unknown.",
+    "Native gravity is estimated from causal IMU history with privileged initial gauge and fixed calibration; it is not an independently calibrated real sensor evaluation."
+  ]
+}

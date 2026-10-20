@@ -1,0 +1,42 @@
+{
+  "review": "independent bounded offline admission review",
+  "offline_admitted": true,
+  "admission_scope": "Run saved-data authored-surface compatibility and ideal-category/range oracle only; no fit or physics. Does not certify learned performance or navigation.",
+  "blocking_issues": [],
+  "issues": [
+    {
+      "severity": "limitation",
+      "finding": "Native camera and root transforms are used together for local rasterization; translation and global yaw gauge error cancel. Local raster passing cannot establish global map localization. World point errors and memory diagnostics remain separate and must be reported."
+    },
+    {
+      "severity": "limitation",
+      "finding": "Authored primitive signed-distance compatibility is not renderer instance identity. Approximate subdivided visuals, unrecognized geometry, floor overlaps and ambiguous contact pixels remain coverage gated; export assertions and 95%/80% coverage gates must actually pass."
+    },
+    {
+      "severity": "minor",
+      "finding": "Reused metrics retain legacy exact_overlap_height_accuracy/per_height field names. Here those compare category codes (2 obstacle), not reconstructed obstacle height, and should not be described as height performance."
+    },
+    {
+      "severity": "limitation",
+      "finding": "Memory any-positive-point cell admissions and local four-pixel class raster admissions have distinct denominators. Memory snapshots are diagnostic and do not certify successful navigation."
+    }
+  ],
+  "checks": {
+    "existing_authored_category_tests": "passed: 7 authored identity + 4 category/height/unknown/count cases",
+    "independent_transform_checks": "passed: pinhole roundtrip, root reconstruction, yaw local raster",
+    "independent_memory_checks": "passed: H two epochs; other displacement >=.1; .099 does not persist; category ground never clears confirmed risk",
+    "code_review": "consumer files have no scene/GT label dependency; GT/authored use confined to qualification and scene export; risk overrides ground; finite .5..3m; CAD/body filter; all-five-group frame sequence assertions; protocol thresholds match reused metric gates"
+  },
+  "source_sha256": {
+    "protocol.json": "0fc9f31b1b2e68039361bd8cc7859fe44f624354fe1c903905ba4a241f8da3fd",
+    "surface_identity.py": "7e50389fb18325bf73602fd3e0082a0dfea85314040b3280972df8a35280a73b",
+    "category_projection.py": "e8d436532bdeb9ed9f2358773a6fadbb5de7b5293ee26bf5917e933ed14e6fec",
+    "category_memory.py": "29333053e5e4089f34f298800ae5743ca525e62f1cc8192a3372ba490f5102ee",
+    "export_scenes.py": "b2e3547ba853f1a222c68b62d86b10afae813f3432c4458bee61fd6f041dc0c1",
+    "qualify.py": "0282067f1eed63fe668792790385a64ad0f60e0d3d0ce63c27d24ace644ea3e3",
+    "launch.py": "eafb1de889f9bca6b144660b4bad834724b54ba4331be83631c446da06490688",
+    "projection.py": "97782115e637eaaf89b85de0eddbac7fa577e2263be65a8af65200f1ed487da7",
+    "test_categories.py": "39b7567ca671208b4a8d70a0c9437fe02a5d5e22a5d24de8e95af9124c74b007",
+    "common.py": "fc8d1b5eb2a3e3c31e82d7dcfcf867b3a5e75a80d9e4a3ea59abc7a1d4cd3ab8"
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "scope": "independent provenance and 3-frame-per-group geometry review; no physics or training",
+  "rows": [
+    {
+      "group": "H",
+      "native_records_checked": 181,
+      "max_native_matrix_error": 0.0,
+      "max_native_root_error": 8.881784197001252e-16,
+      "max_sampled_gt_rig_matrix_error": 2.9398732692698104e-07,
+      "max_sampled_roundtrip_error": 2.874422011700517e-05,
+      "samples": [
+        {
+          "frame": 0,
+          "eyes": {
+            "left": {
+              "samples": 1006,
+              "median_opposite_u_shift": 1.4374469358813258e-05,
+              "median_opposite_v_shift": -220.92586802309887,
+              "max_abs_u_shift": 2.3444085513801838e-05
+            },
+            "right": {
+              "samples": 1006,
+              "median_opposite_u_shift": -1.4666749009961677e-05,
+              "median_opposite_v_shift": 224.33357722941062,
+              "max_abs_u_shift": 2.344408846965962e-05
+            }
+          }
+        },
+        {
+          "frame": 450,
+          "eyes": {
+            "left": {
+              "samples": 1006,
+              "median_opposite_u_shift": 1.1177390476291293e-05,
+              "median_opposite_v_shift": -283.6265031940476,
+              "max_abs_u_shift": 4.1463878574177215e-05
+            },
+            "right": {
+              "samples": 1007,
+              "median_opposite_u_shift": 1.873211999736668e-06,
+              "median_opposite_v_shift": 274.7563008611356,
+              "max_abs_u_shift": 1.3204706021952006e-05
+            }
+          }
+        },
+        {
+          "frame": 900,
+          "eyes": {
+            "left": {
+              "samples": 1007,
+              "median_opposite_u_shift": 1.953741104898654e-06,
+              "median_opposite_v_shift": -286.2412771468313,
+              "max_abs_u_shift": 3.436784527366399e-05
+            },
+            "right": {
+              "samples": 1013,
+              "median_opposite_u_shift": -2.0617555151147826e-05,
+              "median_opposite_v_shift": 217.72503206426097,
+              "max_abs_u_shift": 3.002952269071102e-05
+            }
+          }
+        }
+      ],
+      "initial_gauge": {
+        "position": [
+          -4.449999809265137,
+          -0.049999989569187164,
+          0.44608166813850403
+        ],
+        "rotation": [
+          [
+            0.9999999999923637,
+            1.0714759169041146e-08,
+            -3.908048256191021e-06
+          ],
+          [
+            -1.0714499198665871e-08,
+            0.9999999999999979,
+            6.652181345525982e-08
+          ],
+          [
+            3.908048256903778e-06,
+            -6.65217715819719e-08,
+            0.9999999999923616
+          ]
+        ],
+        "initial_only": true,
+        "privileged": true
+      },
+      "native_identity": {
+        "creation": {
+          "path": "/World/BallRobot/base_link/research_native_imu",
+          "period_s": 0.02,
+          "filter_sizes": [
+            1,
+            1,
+            1
+          ],
+          "orientation_field_read": false,
+          "read_gravity": true,
+          "use_latest_data": true,
+          "lifecycle": "existing marker hook before formal reset",
+          "extra_reset": false
+        },
+        "initial_normal": [
+          3.908048256903778e-06,
+          -6.65217715819719e-08,
+          0.9999999999923616
+        ],
+        "orientation_field_read": false,
+        "predictions_used_by_control": true,
+        "known_GT_pose_control": false,
+        "no_prescribed_observation_prefix": true
+      }
+    },
+    {
+      "group": "E0",
+      "native_records_checked": 181,
+      "max_native_matrix_error": 0.0,
+      "max_native_root_error": 2.220446049250313e-16,
+      "max_sampled_gt_rig_matrix_error": 2.105463320134504e-06,
+      "max_sampled_roundtrip_error": 2.146398441027486e-05,
+      "samples": [
+        {
+          "frame": 0,
+          "eyes": {
+            "left": {
+              "samples": 1001,
+              "median_opposite_u_shift": 0.0003630839336210556,
+              "median_opposite_v_shift": -252.17209647969952,
+              "max_abs_u_shift": 0.0008443906124284695
+            },
+            "right": {
+              "samples": 1001,
+              "median_opposite_u_shift": -0.00034270001131631034,
+              "median_opposite_v_shift": 252.1729504598298,
+              "max_abs_u_shift": 0.0008131572611205229
+            }
+          }
+        },
+        {
+          "frame": 450,
+          "eyes": {
+            "left": {
+              "samples": 1007,
+              "median_opposite_u_shift": 0.00026691688742630504,
+              "median_opposite_v_shift": -246.3688174693587,
+              "max_abs_u_shift": 0.0006231516475736498
+            },
+            "right": {
+              "samples": 1008,
+              "median_opposite_u_shift": -0.0002484898827503912,
+              "median_opposite_v_shift": 247.64723219015897,
+              "max_abs_u_shift": 0.0006247900207085877
+            }
+          }
+        },
+        {
+          "frame": 900,
+          "eyes": {
+            "left": {
+              "samples": 1011,
+              "median_opposite_u_shift": 0.0005579044675982914,
+              "median_opposite_v_shift": -461.70039597163793,
+              "max_abs_u_shift": 0.0010235447249442586
+            },
+            "right": {
+              "samples": 1005,
+              "median_opposite_u_shift": -0.0003358259642993744,
+              "median_opposite_v_shift": 267.73316137083896,
+              "max_abs_u_shift": 0.0007373340947651741
+            }
+          }
+        }
+      ],
+      "initial_gauge": {
+        "position": [
+          18.350000381469727,
+          0.35000014305114746,
+          0.44608166813850403
+        ],
+        "rotation": [
+          [
+            0.9276944181057796,
+            0.3733404165134203,
+            -3.600654070439875e-06
+          ],
+          [
+            -0.3733404165103288,
+            0.9276944181127648,
+            1.5208077403724607e-06
+          ],
+          [
+            3.9080856779295665e-06,
+            -6.657516138796198e-08,
+            0.9999999999923611
+          ]
+        ],
+        "initial_only": true,
+        "privileged": true
+      },
+      "native_identity": {
+        "creation": {
+          "path": "/World/BallRobot/base_link/research_native_imu",
+          "period_s": 0.02,
+          "filter_sizes": [
+            1,
+            1,
+            1
+          ],
+          "orientation_field_read": false,
+          "read_gravity": true,
+          "use_latest_data": true,
+          "lifecycle": "existing marker hook before formal reset",
+          "extra_reset": false
+        },
+        "initial_normal": [
+          3.9080856779295665e-06,
+          -6.657516138796198e-08,
+          0.9999999999923611
+        ],
+        "orientation_field_read": false,
+        "predictions_used_by_control": true,
+        "known_GT_pose_control": false,
+        "no_prescribed_observation_prefix": true
+      }
+    },
+    {
+      "group": "E1",
+      "native_records_checked": 181,
+      "max_native_matrix_error": 0.0,
+      "max_native_root_error": 4.440892098500626e-16,
+      "max_sampled_gt_rig_matrix_error": 2.4050086944171767e-07,
+      "max_sampled_roundtrip_error": 3.2050900529156934e-05,
+      "samples": [
+        {
+          "frame": 0,
+          "eyes": {
+            "left": {
+              "samples": 1005,
+              "median_opposite_u_shift": 9.275884167436743e-06,
+              "median_opposite_v_shift": -137.40708732579407,
+              "max_abs_u_shift": 2.344379407759334e-05
+            },
+            "right": {
+              "samples": 1005,
+              "median_opposite_u_shift": -9.275884110593324e-06,
+              "median_opposite_v_shift": 137.40708663180686,
+              "max_abs_u_shift": 2.344379703345112e-05
+            }
+          }
+        },
+        {
+          "frame": 450,
+          "eyes": {
+            "left": {
+              "samples": 1014,
+              "median_opposite_u_shift": 2.4905743742920095e-05,
+              "median_opposite_v_shift": -185.58187598125696,
+              "max_abs_u_shift": 3.8442485390532966e-05
+            },
+            "right": {
+              "samples": 1006,
+              "median_opposite_u_shift": 4.866568346528766e-06,
+              "median_opposite_v_shift": 156.95005747729692,
+              "max_abs_u_shift": 1.1707314968134597e-05
+            }
+          }
+        },
+        {
+          "frame": 900,
+          "eyes": {
+            "left": {
+              "samples": 1001,
+              "median_opposite_u_shift": 5.760488107853234e-06,
+              "median_opposite_v_shift": -203.18171316255848,
+              "max_abs_u_shift": 2.599371225642244e-05
+            },
+            "right": {
+              "samples": 1006,
+              "median_opposite_u_shift": -7.835643344833443e-06,
+              "median_opposite_v_shift": 192.72981584485177,
+              "max_abs_u_shift": 2.392280094909438e-05
+            }
+          }
+        }
+      ],
+      "initial_gauge": {
+        "position": [
+          -3.3000006675720215,
+          1.7695128917694092e-08,
+          0.44608166813850403
+        ],
+        "rotation": [
+          [
+            0.9999999999923639,
+            1.0715102891475376e-08,
+            -3.907970494394009e-06
+          ],
+          [
+            -1.0714842926328489e-08,
+            0.9999999999999978,
+            6.652179924466014e-08
+          ],
+          [
+            3.907970495106787e-06,
+            -6.652175737086215e-08,
+            0.9999999999923617
+          ]
+        ],
+        "initial_only": true,
+        "privileged": true
+      },
+      "native_identity": {
+        "creation": {
+          "path": "/World/BallRobot/base_link/research_native_imu",
+          "period_s": 0.02,
+          "filter_sizes": [
+            1,
+            1,
+            1
+          ],
+          "orientation_field_read": false,
+          "read_gravity": true,
+          "use_latest_data": true,
+          "lifecycle": "existing marker hook before formal reset",
+          "extra_reset": false
+        },
+        "initial_normal": [
+          3.907970495106787e-06,
+          -6.652175737086215e-08,
+          0.9999999999923617
+        ],
+        "orientation_field_read": false,
+        "predictions_used_by_control": true,
+        "known_GT_pose_control": false,
+        "no_prescribed_observation_prefix": true
+      }
+    }
+  ]
+}

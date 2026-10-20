@@ -1,0 +1,27 @@
+{
+  "recovery_admitted": true,
+  "blocking_issues": [],
+  "review": "Independent axis metadata and recovery interface review",
+  "evidence": {
+    "H": {
+      "scene_hash_matches": true,
+      "GetMetadata_upAxis": "Y",
+      "HasAuthoredMetadata_upAxis": false,
+      "meters_per_unit": 1.0
+    },
+    "E0_E1_B54_C54": {
+      "scene_hash_matches": true,
+      "GetMetadata_upAxis": "Z",
+      "HasAuthoredMetadata_upAxis": true,
+      "meters_per_unit": 1.0
+    },
+    "reference_composition": "USD-only in-memory Z-up target, /World/Scene external reference; all primitive transforms unchanged: H30 E0600 E171 B5471 C5471",
+    "runtime_loader": "_load_collection_scene adds default floor, references /World/Scene and sets translation zeros; no axis conversion",
+    "recovery_budget": "ledger recovery_used0; initial export runtime_failed; no scene JSON generated"
+  },
+  "scope": "Metadata/interface recovery only; no changed label rules or performance gates; no fit/physics",
+  "source_sha256": {
+    "export_scenes.py": "309612a5cc98eb5d99f5bcb5ab54336e381141f42cb08ed8662e66d9562d1b1d",
+    "launch_recovery.py": "6916fa7c3589f25b117ad2eb1777b5fa8f0cb2d67144593f7b29dbbf91f07eac"
+  }
+}

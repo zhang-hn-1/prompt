@@ -1,0 +1,72 @@
+{
+  "artifact_type": "independent_preflight_review",
+  "recorded_utc": "2026-10-17T22:19:09.892666+00:00",
+  "reviewer": "observed_cost_reference_review independent reviewer",
+  "review_mode": "Read-only preflight already completed; this step only records that review as a new audit artifact.",
+  "reviewed_protocol_sha256": "530aac1b68f9b1258488993a4847bec526181052169c4c6f53d50f2563deb2e7",
+  "reviewed_code_sha256": {
+    "interfaces.py": "d994452ff3e244d5b051c63e86746a09142ab7b5942c335c538af3cb4041e694",
+    "reference.py": "94a51d7e6470ac9d5bdb22298ddccbc54f620b1abfc38830b2282d296405d362",
+    "predict.py": "9b39c43ac2d8c476d87cedf2d721f0fb82d5f1086d3a957d46784cfd6d406dce",
+    "score.py": "b4b98a79d390240fdb1241d89ca17b1d36983049c3ff41935ab4ce24f4306d7f",
+    "supervise.py": "84663f72be62471d744a02c12f9032b4146ecfc0bda0d275e9de37318bb38946",
+    "evidence_decode.py": "e4bd4a83cf4af1546262350e7891dd49cb7d84f5ca28636a12d5ab61c9b1a823"
+  },
+  "scope": {
+    "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/rgb_evidence_supported_reference_20261018_v1",
+    "fixed_frames": [
+      {
+        "sequence": "E0",
+        "frame": 0
+      },
+      {
+        "sequence": "E0",
+        "frame": 55
+      },
+      {
+        "sequence": "E1B",
+        "frame": 0
+      },
+      {
+        "sequence": "E1A",
+        "frame": 90
+      }
+    ],
+    "image_domain": "Four full 640x480 RGB eyes per fixed frame; unchanged rig and signed bidirectional pairing.",
+    "implementation": "New float64 RGB BT/5x5 and three-path numerical reference; not OpenCV output equivalence or a single-factor patch of original OpenCV.",
+    "arms": "Both arms share the same evidence_decode consumer and actual unary support; only aggregation support mask on/off differs.",
+    "GT_boundary": "Predict reads RGB, archived CAD, estimated pose and origin. Numeric GT scoring follows a complete eight-output prediction seal and matching protocol SHA.",
+    "scoring": "Same fixed four-frame visible-height target, full pixel counts and original local gates. No denominator selection based on repaired outputs.",
+    "source_helpers": "Reuse archived source LR/depth/points helpers; original OpenCV matcher is not instantiated or invoked."
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "timing_limitation": "LR/depth/projection timing is now included separately and in the combined source sum. The without_IO field excludes prediction NPZ saving, but its first segment still contains progress writes; it is not a pure no-I/O measurement or actual online end-to-end latency.",
+    "external_resource_requirement": "Predict must run under externally enforced MemoryMax=8G (8 GiB) and MemorySwapMax=0. These are not implemented inside supervise.py; this preflight did not independently verify an active systemd unit.",
+    "supervision": "Predict timeout 900 seconds; other stages 90 seconds. No recovery allowance in this repaired ledger."
+  },
+  "saved_evidence_at_preflight": {
+    "interfaces_status": "finished",
+    "interfaces_child_returncode": 0,
+    "interfaces_saved_checks": 5,
+    "interfaces_saved_checks_all_true": true,
+    "registered_code_and_input_SHA_mismatches": [],
+    "inherited_repair_status_SHA_matched": true,
+    "ledger_dispatch_used": 2,
+    "ledger_dispatch_cap": 4,
+    "remaining_stages": [
+      "predict",
+      "score"
+    ],
+    "original_prerepair_root_remains_closed": true
+  },
+  "assessment": "Eligible for one frozen-protocol predict dispatch after saved successful interfaces, subject to external memory/swap enforcement; this is not a completed source-output audit.",
+  "no_rerun": {
+    "reviewer_experiments_or_tests": 0,
+    "reviewer_cost_aggregate_decode_calls": 0,
+    "reviewer_GT_numeric_reads": 0,
+    "during_this_recording": "No experiment, source, test, decoder, cost, aggregation or GT access was performed. Frozen source and protocol were not edited."
+  },
+  "limits": "No real RGB accuracy, coverage, obstacle, full-sequence, OpenCV-equivalence, calibrated confidence, map, navigation or online latency conclusion. Original fixture failure and its diagnosis remain preserved. Saved-output audit is pending the completed seal and scoring."
+}

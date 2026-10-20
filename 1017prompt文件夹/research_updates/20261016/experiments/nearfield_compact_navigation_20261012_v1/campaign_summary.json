@@ -1,0 +1,49 @@
+{
+  "actual_runs": 3,
+  "all_normal_exit": true,
+  "camera_family_closed": true,
+  "reliable_navigation": false,
+  "learning_increment": false,
+  "rows": [
+    {
+      "name": "Original rig",
+      "remaining_m": 6.459046232575118,
+      "net_progress_m": 2.440953576690018,
+      "termination": "collision",
+      "first_contact_s": 19.63999956101179,
+      "depth_p90_m": 2.5260390758514406,
+      "depth_outlier_fraction": 0.8164410696599538,
+      "depth_gate": false,
+      "navigation_retained": false,
+      "assessment": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/baseline_e2_assessment.json",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/baseline_e2_run"
+    },
+    {
+      "name": "Forward rig",
+      "remaining_m": 8.212182335782233,
+      "net_progress_m": 0.6878174734829035,
+      "termination": "timeout90",
+      "first_contact_s": null,
+      "depth_p90_m": 0.1022591114044189,
+      "depth_outlier_fraction": 0.012715804162611843,
+      "depth_gate": true,
+      "navigation_retained": false,
+      "assessment": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e2_assessment.json",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e2_run"
+    },
+    {
+      "name": "Compact rig",
+      "remaining_m": 7.84533057313418,
+      "net_progress_m": 1.0546692361309562,
+      "termination": "timeout90",
+      "first_contact_s": null,
+      "depth_p90_m": 0.14328646659851074,
+      "depth_outlier_fraction": 0.017908334886239493,
+      "depth_gate": true,
+      "navigation_retained": false,
+      "assessment": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/candidate_e2_assessment.json",
+      "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/candidate_e2_run"
+    }
+  ],
+  "scope": "same E2 development episode, distinct rig inputs; no independent generalization or strict causal claim"
+}

@@ -1,0 +1,26 @@
+{
+  "pass_gate": true,
+  "checks": [
+    "actual_policy_MRO",
+    "single_install",
+    "retain_no_rebuild",
+    "exact_failure_fallback",
+    "first_direction_two_primitives",
+    "current_maps_only"
+  ],
+  "MRO": [
+    "CommandDomainCap",
+    "CuspCoastAcquisition",
+    "GlobalGuidance",
+    "FirstPrimitiveDirection",
+    "TubeViability",
+    "TrackingTube",
+    "PriorRGBPolicy",
+    "EndpointLookaheadPolicy",
+    "CuspProjectionPolicy",
+    "RootDirectionPolicy",
+    "GuardedReferencePolicy",
+    "DepthLocalCurvePolicy",
+    "object"
+  ]
+}

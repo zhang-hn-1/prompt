@@ -1,0 +1,22 @@
+{
+  "checkpoint_sha": "284c648a520f923975e4782ce68882e999854a2fb3dd0580bf1212981449e5f2",
+  "predictions": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/predictions/E0.npz": "b47c7deb71420d6e25dd433213892e0764327b846ce631110342cafb2cad4d06",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/predictions/E1.npz": "954920d8331d5a52e43a3843acb494a7c06b56b699902fe258f58d5e514276a3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/predictions/H.npz": "87adeededac5ce5c6a7d8139226c1a6ba156be1cbf17af8aa763c89ba0fe0153"
+  },
+  "inputs": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/inference_inputs/E0.npz": "65ca042840a4558db6152caeaf1cd3a43f1c180469f0f1597142bce33ba29eaf",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/inference_inputs/E1.npz": "2fec47e12add526d046b5d872931b923805ba87528892d5e1e6e26347fe9d6d1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/inference_inputs/H.npz": "94b3fad274270248e03c756aedc3a82a2a0de0b610a764f8daf9c9fe06c0e666"
+  },
+  "train_trace_sha": "4e00e0b85533f99b0b328341a89c5be7ede946305fbad299b6768cb1702d671c",
+  "fit": 1,
+  "epochs": 30,
+  "no_E1_loss_or_selection": true,
+  "source_sha": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/model.py": "b391f70db67dfcdcd9bc33e3e815f56e7377c4d9dcb25e2460bb79ddfb7a2080",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/train_and_predict.py": "d6130f090a03b47926d4689c2775a80ee2933b60e9c333f699004918c5be0f38",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/protocol.json": "d686d654a6123ccf61d76e502365bdad0b680ec1d32c561256035962c24d3dd6"
+  }
+}

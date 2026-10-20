@@ -1,0 +1,220 @@
+{
+  "complete": true,
+  "review_utc": "2026-10-17T12:27:09.153065+00:00",
+  "reviewer": "persistent_entry_qualification_review",
+  "review_kind": "independent_read_only_postfit_saved_artifact_audit",
+  "verdict": "NO_IMPORTANT_IMPLEMENTATION_OR_INTEGRITY_ISSUES_FOUND_FIXED_LEARNER_REJECTION_CONFIRMED",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/capture_admission_action_learning_20261017_v1",
+  "reviewed_protocol_sha256": "932bbc724da0f9db758031bc4eb78f90bc7d4b5785304273d0ab119149cb1766",
+  "reviewed_result_sha256": "29191da1d8d16028c2c3f1a7a7b7e6fd45c62306a163a14699f0316f9c56ba8b",
+  "reviewed_artifact_sha256": {
+    "weights.json": "4c91477c2c28e4c62461b3d072460a83b27ef769f2090782d720528a052fe177",
+    "weight_seal.json": "050012af12e6cc922a4123cfb765185d32b93cde76f95e0e3ec710573181812e",
+    "fit_dataset_receipt.json": "59d9c5012ff45c5d5a9ea69eb24178e589607b133b778fbdccb4b373e1155c67",
+    "prediction_seal.json": "98173350c2037099652b843969b80cf3dda38029ff7787aad7c1e64d35a8adb2",
+    "replay_seal.json": "bb279d610d5f262256ce17abdd31eb9f28f36bd22e550db287d12347a70748e4",
+    "ledger.json": "82e787241b985b7458e546d8d9daedf8ea1a6360b5cce3d14b6c4e96243675b1",
+    "status.json": "474aa1aab0d0e2c011825fd89e7576c0f32fb2f7ff1b9b513f7711d09dfd4827",
+    "heldout_preregistration.json": "2c34e85e9d73555b461e77eec09c22064a5147df09526642c2943e3e9a0293db"
+  },
+  "identity_audit": {
+    "all_frozen_inputs_verified": 2917,
+    "all_frozen_code_files_verified": 12,
+    "all470_prediction_and470_map_SHA_verified": true,
+    "all470_source_feature_action_prediction_map_keys_matched": true,
+    "seal_hash_chain_and_weight_prediction_map_score_timestamp_order_verified": true
+  },
+  "independent_numeric_audit": {
+    "all470_saved_scores_finite_in_range": true,
+    "all470_saved_model_scores_equal_prediction_arrays": true,
+    "all470_teacher_action_counts_recomputed": true,
+    "all470_B_Q_last_epochs_persistence_labels_reconstructed_from_original_cells_and_saved_scores": true,
+    "full_original_unfiltered_support_domain_recomputed": true,
+    "evaluation_times": 1910,
+    "original_B_label_arrays_exact": 1010,
+    "E0_training_rows": 2038,
+    "E0_WITHHOLD_training_actions": 156,
+    "E0_only_mean_std_exact_to_weights": true,
+    "recorded_fit_count": 1,
+    "optimizer_converged": true,
+    "optimizer_iterations": 67,
+    "objective_evaluations": 71,
+    "prediction_rows": 40052,
+    "total_recorded_score_rows": 42091,
+    "total_score_rows_breakdown": "2038 original producer fit-consistency scores +40052 sealed prediction scores +1 original NaN-guard row",
+    "source_UID_rows_in_canonical_features": 2985832
+  },
+  "per_sequence": {
+    "E0": {
+      "evaluation_times": 110,
+      "metrics": {
+        "B": {
+          "false_cell_seconds": 1768.5999604687095,
+          "active_cell_seconds": 10246.699770968407,
+          "blind_supported_queries": 18868,
+          "blind_missing": 2161,
+          "blind_missing_fraction": 0.11453254186983253
+        },
+        "Q": {
+          "false_cell_seconds": 612.7999863028526,
+          "active_cell_seconds": 8951.699799913913,
+          "blind_supported_queries": 18868,
+          "blind_missing": 2300,
+          "blind_missing_fraction": 0.12189951240195039
+        }
+      },
+      "false_reduction": 0.6535112518376116,
+      "blind_missing_increase": 0.007366970532117864,
+      "gates": {
+        "false_reduction_ge20pct": true,
+        "blind_missing_increase_le5pp": true,
+        "HOLD_teacher_retained_ge95pct": true,
+        "physical_positive_rejection_le5pct": true,
+        "physical_UNKNOWN_rejection_le5pct": false,
+        "interface_invariants": true
+      },
+      "action_metrics": {
+        "rows": 2038,
+        "WITHHOLD_NEW": 124,
+        "HOLD_teacher": 1882,
+        "HOLD_rejected": 20,
+        "physical_positive": 1765,
+        "positive_rejected": 9,
+        "physical_UNKNOWN": 117,
+        "UNKNOWN_rejected": 11,
+        "physical_negative": 156,
+        "negative_rejected": 104,
+        "positive_rejected_fraction": 0.0050991501416430595,
+        "UNKNOWN_rejected_fraction": 0.09401709401709402,
+        "negative_rejected_fraction": 0.6666666666666666,
+        "HOLD_retained_fraction": 0.9893730074388948
+      }
+    },
+    "E1B": {
+      "evaluation_times": 900,
+      "metrics": {
+        "B": {
+          "false_cell_seconds": 14501.299999999972,
+          "active_cell_seconds": 52609.10000000013,
+          "blind_supported_queries": 75700,
+          "blind_missing": 634,
+          "blind_missing_fraction": 0.008375165125495377
+        },
+        "Q": {
+          "false_cell_seconds": 14079.000000000038,
+          "active_cell_seconds": 52186.299999999814,
+          "blind_supported_queries": 75700,
+          "blind_missing": 634,
+          "blind_missing_fraction": 0.008375165125495377
+        }
+      },
+      "false_reduction": 0.029121527035502637,
+      "blind_missing_increase": 0.0,
+      "gates": {
+        "false_reduction_ge20pct": false,
+        "blind_missing_increase_le5pp": true,
+        "HOLD_teacher_retained_ge95pct": true,
+        "physical_positive_rejection_le5pct": true,
+        "physical_UNKNOWN_rejection_le5pct": true,
+        "interface_invariants": true
+      },
+      "action_metrics": {
+        "rows": 21162,
+        "WITHHOLD_NEW": 31,
+        "HOLD_teacher": 18021,
+        "HOLD_rejected": 1,
+        "physical_positive": 14349,
+        "positive_rejected": 1,
+        "physical_UNKNOWN": 3672,
+        "UNKNOWN_rejected": 0,
+        "physical_negative": 3141,
+        "negative_rejected": 30,
+        "positive_rejected_fraction": 6.969126768415918e-05,
+        "UNKNOWN_rejected_fraction": 0.0,
+        "negative_rejected_fraction": 0.009551098376313277,
+        "HOLD_retained_fraction": 0.9999445091837301
+      }
+    },
+    "E1A": {
+      "evaluation_times": 900,
+      "metrics": {
+        "B": {
+          "false_cell_seconds": 25688.49999999992,
+          "active_cell_seconds": 60443.49999999988,
+          "blind_supported_queries": 66215,
+          "blind_missing": 708,
+          "blind_missing_fraction": 0.010692441289737975
+        },
+        "Q": {
+          "false_cell_seconds": 24198.89999999999,
+          "active_cell_seconds": 58953.900000000096,
+          "blind_supported_queries": 66215,
+          "blind_missing": 708,
+          "blind_missing_fraction": 0.010692441289737975
+        }
+      },
+      "false_reduction": 0.05798703700099006,
+      "blind_missing_increase": 0.0,
+      "gates": {
+        "false_reduction_ge20pct": false,
+        "blind_missing_increase_le5pp": true,
+        "HOLD_teacher_retained_ge95pct": true,
+        "physical_positive_rejection_le5pct": true,
+        "physical_UNKNOWN_rejection_le5pct": true,
+        "interface_invariants": true
+      },
+      "action_metrics": {
+        "rows": 16852,
+        "WITHHOLD_NEW": 108,
+        "HOLD_teacher": 14753,
+        "HOLD_rejected": 0,
+        "physical_positive": 12073,
+        "positive_rejected": 0,
+        "physical_UNKNOWN": 2680,
+        "UNKNOWN_rejected": 0,
+        "physical_negative": 2099,
+        "negative_rejected": 108,
+        "positive_rejected_fraction": 0.0,
+        "UNKNOWN_rejected_fraction": 0.0,
+        "negative_rejected_fraction": 0.05145307289185326,
+        "HOLD_retained_fraction": 1.0
+      }
+    }
+  },
+  "confirmed_failures": {
+    "E0": "UNKNOWN rejection11/117=.09401709401709402 exceeds .05 on training scene",
+    "E1B": "false-risk gain .029121527035502637 below .20; only30/3141 negative teacher-action cells rejected",
+    "E1A": "false-risk gain .05798703700099006 below .20; only108/2099 negative teacher-action cells rejected"
+  },
+  "scope": {
+    "E0": "training descriptive, not validation",
+    "E1A_E1B": "same seen development scene on two trajectories, not independent heldouts",
+    "no_physical_known_relabelling": true,
+    "not_a_general_model_upper_bound": true,
+    "learning_increment_proven": false,
+    "heldout_and_physical_reservation_eligible": false,
+    "closure": "Offline failure closes fixed candidate and reserved physical work; no refit, threshold/feature/model/TTL sweep or substitute scenes"
+  },
+  "process_cleanup": {
+    "finished0": true,
+    "no_parent_or_child_PID_remaining": true,
+    "no_live_or_zombie_group_members": true
+  },
+  "review_execution": {
+    "new_fit": 0,
+    "model_predict_calls": 0,
+    "feature_frontend_calls": 0,
+    "source_calls": 0,
+    "physics": 0,
+    "navigation": 0,
+    "score_regeneration_from_weights": 0,
+    "new_experimental_outputs": 0,
+    "existing_saved_array_recounts_and_state_scoring_recomputations_only": true
+  },
+  "limits": [
+    "No optimizer or fitted-model inference was rerun. Weight normalization was independently recomputed from E0 features; model score arithmetic was not re-executed.",
+    "The review verifies saved predictions and frozen producer identity, not independently reproduced model predictions.",
+    "All1910 fixed-input map evaluations were recalculated; this is offline stored-artifact assessment, not actual policy/navigation execution.",
+    "A follow-up saved-score/feature-distribution interpretation can be descriptive only and must not reopen this fixed candidate."
+  ]
+}

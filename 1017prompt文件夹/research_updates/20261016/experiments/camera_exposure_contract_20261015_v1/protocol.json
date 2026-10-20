@@ -1,0 +1,11 @@
+{
+  "question":"Can a distinct wider pinhole field preserve original visible obstacle targets without changing .5-3m measurement eligibility, and can future native acquisition reject mismatched exposure/pose?",
+  "optical_hypothesis":"Centered front/rear geometry from the closed narrow layout is held fixed only as a reference; a single new optical configuration focal=584.8888888888889/3, sensor dimensions unchanged, enlarges angular support. This is lens/FOV mechanism, not angle or mounting sweep, not model rescue.",
+  "target":"Original seven complete full-pixel qualified left/right union bodyband target cells and original domain retained, no target shrink. New union directions not assumed scored.",
+  "gates":{"each_group_original_target_retention":0.95,"clock_and_exposure_identity_required":true},
+  "source":"Saved qualified renderer pose and calibration only offline for geometry. No GT input to prediction, no learned model, no navigation.",
+  "stopping":"If fixed wide angular domain still cannot meet .95 due range/support, close optics before physics. If gate passes, freeze new optical protocol separately and one native acquisition geometry probe, with cameras installed BEFORE initialize, atomic frame RGB/depth labels and base-link frame explicit. Do not reopen v79 or teleport/reconfigure initialized cameras.",
+  "budget":{"CPU_complete_pairs":1267,"fit":0,"physical":0},
+  "no_sweep":true,
+  "old_budgets_closed":true
+}

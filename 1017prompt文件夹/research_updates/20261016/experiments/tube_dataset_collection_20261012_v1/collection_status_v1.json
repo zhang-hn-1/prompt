@@ -1,0 +1,125 @@
+{
+  "status": "coverage_rejected",
+  "parent_pid": 23702,
+  "used": 2,
+  "cap": 30,
+  "retries": 0,
+  "groups": [
+    {
+      "group": "development-00",
+      "split": "development",
+      "planned": 70,
+      "attempted": 70,
+      "scorable": 70,
+      "execution_identity": [
+        "2026-10-12T02:13:47.014838+00:00",
+        23733
+      ],
+      "programs": [
+        "forward",
+        "left",
+        "right",
+        "stop"
+      ],
+      "state_bins": [
+        "low",
+        "moving"
+      ],
+      "support_cells": [
+        [
+          "forward",
+          "low"
+        ],
+        [
+          "forward",
+          "moving"
+        ],
+        [
+          "left",
+          "low"
+        ],
+        [
+          "left",
+          "moving"
+        ],
+        [
+          "right",
+          "low"
+        ],
+        [
+          "right",
+          "moving"
+        ],
+        [
+          "stop",
+          "low"
+        ],
+        [
+          "stop",
+          "moving"
+        ]
+      ],
+      "support_from": "complete_scorable_only"
+    },
+    {
+      "group": "development-01",
+      "split": "development",
+      "planned": 70,
+      "attempted": 58,
+      "scorable": 57,
+      "execution_identity": [
+        "2026-10-12T02:16:28.109830+00:00",
+        27004
+      ],
+      "programs": [
+        "forward",
+        "left",
+        "right",
+        "stop"
+      ],
+      "state_bins": [
+        "low",
+        "moving"
+      ],
+      "support_cells": [
+        [
+          "forward",
+          "low"
+        ],
+        [
+          "forward",
+          "moving"
+        ],
+        [
+          "left",
+          "low"
+        ],
+        [
+          "left",
+          "moving"
+        ],
+        [
+          "right",
+          "low"
+        ],
+        [
+          "right",
+          "moving"
+        ],
+        [
+          "stop",
+          "low"
+        ],
+        [
+          "stop",
+          "moving"
+        ]
+      ],
+      "support_from": "complete_scorable_only"
+    }
+  ],
+  "fit_admitted": false,
+  "current_group": "development-01",
+  "unattempted": 28,
+  "end_utc": "2026-10-12T02:18:26.132684+00:00"
+}

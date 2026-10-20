@@ -1,0 +1,14 @@
+{
+ "question":"Can calibrated current binocular correspondence support the frozen visible obstacle map target before training a new geometry-constrained learner?",
+ "scope":"diagnostic qualification, GT oracle only for labelling/upper-bound evaluation; not an online source or new depth prediction",
+ "prior_distinction":"Not v49 appearance-to-grid refit, not rejected SGBM confidence, not ORB/Census measurement variant; checks supervision and observation domain before any new fit",
+ "groups":["H","E0","E1"],"all_development":true,"frames_per_group":181,
+ "source_range_m":[0.5,3],"rig":{"forward":0.4,"half_baseline":0.3,"up":0.05},
+ "grid":{"forward":[0,4],"lateral":[-3,3],"resolution_m":0.1},
+ "label_counts_per_height":4,"opposite_depth_agreement_m":0.03,
+ "variants":["all-visible GT target identity","geometric opposite FOV/CAD/range potential support","finite opposite-depth verified co-visible labels","same perfect current depth projected with actual native pose"],
+ "qualification":{"each_group_potential_risk_recall_min":0.8,"each_group_verified_risk_recall_min":0.8,"each_group_native_risk_precision_min":0.9,"each_group_native_risk_recall_min":0.8,"each_group_native_localization_p90_max_m":0.15},
+ "stop":"If qualification fails, do not fit binocular-only visible-map learner against unsupported full target. No threshold sweep; report binocular and monocular-visible coverage separately. Ground/absence not free. Passing diagnostics does not prove learned or navigational performance.",
+ "fit_cap":0,"physical_cap":0,"recovery_cap":1,
+ "next_if_pass":"freeze a distinct geometric stereo correspondence learning objective with train-only grouped labels and bounded fresh verification; no v49 refit"
+}

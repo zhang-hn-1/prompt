@@ -1,0 +1,160 @@
+{
+  "utc": "2026-10-17T22:26:34.468183+00:00",
+  "execution": {
+    "interfaces": {
+      "status": "finished",
+      "start_utc": "2026-10-17T22:15:24.664693+00:00",
+      "parent_pid": 472835,
+      "child_pid": 472837,
+      "process_group_id": 472837,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-17T22:15:24.815900+00:00"
+    },
+    "predict": {
+      "status": "finished",
+      "start_utc": "2026-10-17T22:16:28.168691+00:00",
+      "parent_pid": 473939,
+      "child_pid": 473940,
+      "process_group_id": 473940,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-17T22:25:06.646550+00:00"
+    },
+    "score": {
+      "status": "finished",
+      "start_utc": "2026-10-17T22:25:22.807675+00:00",
+      "parent_pid": 483428,
+      "child_pid": 483429,
+      "process_group_id": 483429,
+      "child_returncode": 0,
+      "timeout": false,
+      "parent_signal": null,
+      "forced_kill": false,
+      "no_retry": true,
+      "remaining_live_group_pids": [],
+      "remaining_zombie_group_pids": [],
+      "end_utc": "2026-10-17T22:25:23.965041+00:00"
+    }
+  },
+  "services": {
+    "ball-evidence-rgb-interfaces-20261018.service": "MainPID=0\nExecMainStatus=0\nActiveState=inactive\n",
+    "ball-evidence-rgb-predict-20261018.service": "MainPID=0\nExecMainStatus=0\nActiveState=inactive\n",
+    "ball-evidence-rgb-score-20261018.service": "MainPID=0\nExecMainStatus=0\nActiveState=inactive\n"
+  },
+  "remaining_runtime": null,
+  "budget": {
+    "dispatch_cap": 4,
+    "dispatch_used": 4,
+    "recovery_cap": 0,
+    "recovery_used": 0,
+    "inherited_dispatch": {
+      "root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1",
+      "stage": "controlled_validity_repair_check",
+      "status_path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_observed_support_reference_20261018_v1/repair_status.json",
+      "sha256": "35dd664bc7e04f536317b184bdad1c85c0d617f03d9da98736056cc96f177411",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-17T22:10:59.811361+00:00",
+        "parent_pid": 468341,
+        "child_pid": 468342,
+        "process_group_id": 468342,
+        "child_returncode": 0,
+        "timeout": false,
+        "parent_signal": null,
+        "forced_kill": false,
+        "no_retry": true,
+        "remaining_live_group_pids": [],
+        "remaining_zombie_group_pids": [],
+        "end_utc": "2026-10-17T22:10:59.963716+00:00"
+      }
+    },
+    "runs": [
+      {
+        "stage": "interfaces",
+        "status": "finished",
+        "parent_pid": 472835,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-17T22:15:24.664693+00:00",
+          "parent_pid": 472835,
+          "child_pid": 472837,
+          "process_group_id": 472837,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-17T22:15:24.815900+00:00"
+        }
+      },
+      {
+        "stage": "predict",
+        "status": "finished",
+        "parent_pid": 473939,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-17T22:16:28.168691+00:00",
+          "parent_pid": 473939,
+          "child_pid": 473940,
+          "process_group_id": 473940,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-17T22:25:06.646550+00:00"
+        }
+      },
+      {
+        "stage": "score",
+        "status": "finished",
+        "parent_pid": 483428,
+        "execution": {
+          "status": "finished",
+          "start_utc": "2026-10-17T22:25:22.807675+00:00",
+          "parent_pid": 483428,
+          "child_pid": 483429,
+          "process_group_id": 483429,
+          "child_returncode": 0,
+          "timeout": false,
+          "parent_signal": null,
+          "forced_kill": false,
+          "no_retry": true,
+          "remaining_live_group_pids": [],
+          "remaining_zombie_group_pids": [],
+          "end_utc": "2026-10-17T22:25:23.965041+00:00"
+        }
+      }
+    ],
+    "original_prerepair_ledger_closed": true,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0,
+    "closed": true,
+    "closed_utc": "2026-10-17T22:26:22.826961+00:00",
+    "close_reason": "REJECT_FIXED_RGB_REFERENCE_BEFORE_FULL_SEQUENCE_OR_NAV",
+    "full_sequence_allowed": false,
+    "navigation_allowed": false,
+    "repeat_or_sweep_allowed": false
+  },
+  "decision": "REJECT_FIXED_RGB_REFERENCE_BEFORE_FULL_SEQUENCE_OR_NAV",
+  "old_budgets_reopened": false,
+  "fit": 0,
+  "physics": 0,
+  "navigation": 0
+}

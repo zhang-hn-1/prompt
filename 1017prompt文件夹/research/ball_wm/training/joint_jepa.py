@@ -11,6 +11,7 @@ import torch.nn.functional as F
 from einops import rearrange
 
 from .lewm_modules import ARPredictor, Embedder, MLP, SIGReg
+from .proprioception import validate_velocity_frame
 
 
 @dataclass
@@ -42,6 +43,11 @@ class JointModelConfig:
     pose_head_enabled: bool = False
     pose_loss_weight: float = 1.0
     pose_horizons: tuple[int, ...] = (1, 3, 5)
+    action_source: str = "applied_action"
+    proprio_velocity_frame: str = "world"
+
+    def __post_init__(self) -> None:
+        validate_velocity_frame(self.proprio_velocity_frame)
 
 
 def build_default_encoder(config: JointModelConfig) -> nn.Module:
@@ -488,21 +494,18 @@ class JointJEPA(nn.Module):
         history = history_size or getattr(self, "history_size", self.predictor.pos_embedding.size(1))
         batch, samples, horizon, action_dim = action_sequence.shape
         emb = emb.unsqueeze(1).expand(batch, samples, -1, -1)
-        act = context_action.float().unsqueeze(1).expand(batch, samples, -1, -1)
+        # Replace the final context action with candidate a0, then pair each
+        # predicted frame with a1, a2, ... before predicting the next frame.
+        act = context_action[:, :-1].float().unsqueeze(1).expand(batch, samples, -1, -1)
         emb = rearrange(emb, "b s t d -> (b s) t d")
         act = rearrange(act, "b s t a -> (b s) t a")
 
         for step in range(horizon):
             next_act = action_sequence[:, :, step, :].reshape(batch * samples, action_dim)
-            if step == 0:
-                pred_act = act[:, -history:].clone()
-                pred_act[:, -1] = next_act
-            else:
-                pred_act = act[:, -history:]
-            act_emb = self.action_encoder(pred_act)
+            act = torch.cat([act, next_act.unsqueeze(1)], dim=1)
+            act_emb = self.action_encoder(act[:, -history:])
             pred = self.predict(emb[:, -history:], act_emb)[:, -1:]
             emb = torch.cat([emb, pred], dim=1)
-            act = torch.cat([act, next_act.unsqueeze(1)], dim=1)
 
         future = emb[:, history:]
         return rearrange(future, "(b s) t d -> b s t d", b=batch, s=samples)

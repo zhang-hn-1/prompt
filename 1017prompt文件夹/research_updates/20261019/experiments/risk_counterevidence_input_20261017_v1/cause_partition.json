@@ -1,0 +1,375 @@
+{
+  "complete": true,
+  "false_historical_partition": {
+    "strict_dispute": 513,
+    "some_farther_but_not_all_anchor_dispute": 348,
+    "no_farther_with_compatible_pair": 643,
+    "no_farther_with_closer_pair": 516,
+    "only_partial_mixed_pairs": 1400,
+    "all_pairs_unavailable": 21943
+  },
+  "real_historical_partition": {
+    "strict_dispute": 30,
+    "some_farther_but_not_all_anchor_dispute": 33,
+    "no_farther_with_compatible_pair": 1811,
+    "no_farther_with_closer_pair": 1207,
+    "only_partial_mixed_pairs": 1261,
+    "all_pairs_unavailable": 54596
+  },
+  "first_event_all15_false_cells": [
+    {
+      "cell": [
+        189,
+        203
+      ],
+      "current_positive": false,
+      "reason": "all_pairs_unavailable",
+      "anchor_frames": [
+        1
+      ],
+      "anchor_eyes": [
+        2
+      ],
+      "pair_codes": [
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        190,
+        199
+      ],
+      "current_positive": false,
+      "reason": "only_partial_mixed_pairs",
+      "anchor_frames": [
+        3,
+        3
+      ],
+      "anchor_eyes": [
+        2,
+        3
+      ],
+      "pair_codes": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "cell": [
+        190,
+        200
+      ],
+      "current_positive": false,
+      "reason": "only_partial_mixed_pairs",
+      "anchor_frames": [
+        7,
+        7
+      ],
+      "anchor_eyes": [
+        2,
+        3
+      ],
+      "pair_codes": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "cell": [
+        190,
+        201
+      ],
+      "current_positive": false,
+      "reason": "only_partial_mixed_pairs",
+      "anchor_frames": [
+        7,
+        7
+      ],
+      "anchor_eyes": [
+        2,
+        3
+      ],
+      "pair_codes": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "cell": [
+        191,
+        200
+      ],
+      "current_positive": false,
+      "reason": "all_pairs_unavailable",
+      "anchor_frames": [
+        8,
+        8
+      ],
+      "anchor_eyes": [
+        2,
+        3
+      ],
+      "pair_codes": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        192,
+        200
+      ],
+      "current_positive": true,
+      "reason": "current_positive_protected",
+      "anchor_frames": [],
+      "anchor_eyes": [],
+      "pair_codes": []
+    },
+    {
+      "cell": [
+        217,
+        197
+      ],
+      "current_positive": false,
+      "reason": "only_partial_mixed_pairs",
+      "anchor_frames": [
+        0,
+        0
+      ],
+      "anchor_eyes": [
+        0,
+        1
+      ],
+      "pair_codes": [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        217,
+        198
+      ],
+      "current_positive": false,
+      "reason": "strict_dispute",
+      "anchor_frames": [
+        0,
+        0
+      ],
+      "anchor_eyes": [
+        0,
+        1
+      ],
+      "pair_codes": [
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        217,
+        199
+      ],
+      "current_positive": false,
+      "reason": "strict_dispute",
+      "anchor_frames": [
+        0,
+        0
+      ],
+      "anchor_eyes": [
+        0,
+        1
+      ],
+      "pair_codes": [
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        217,
+        201
+      ],
+      "current_positive": false,
+      "reason": "strict_dispute",
+      "anchor_frames": [
+        0
+      ],
+      "anchor_eyes": [
+        1
+      ],
+      "pair_codes": [
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        217,
+        202
+      ],
+      "current_positive": false,
+      "reason": "only_partial_mixed_pairs",
+      "anchor_frames": [
+        0,
+        0
+      ],
+      "anchor_eyes": [
+        0,
+        1
+      ],
+      "pair_codes": [
+        [
+          4,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        217,
+        203
+      ],
+      "current_positive": false,
+      "reason": "only_partial_mixed_pairs",
+      "anchor_frames": [
+        0
+      ],
+      "anchor_eyes": [
+        1
+      ],
+      "pair_codes": [
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        226,
+        202
+      ],
+      "current_positive": false,
+      "reason": "strict_dispute",
+      "anchor_frames": [
+        3,
+        3
+      ],
+      "anchor_eyes": [
+        0,
+        1
+      ],
+      "pair_codes": [
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        226,
+        203
+      ],
+      "current_positive": false,
+      "reason": "some_farther_but_not_all_anchor_dispute",
+      "anchor_frames": [
+        3,
+        3
+      ],
+      "anchor_eyes": [
+        0,
+        1
+      ],
+      "pair_codes": [
+        [
+          3,
+          0
+        ],
+        [
+          4,
+          0
+        ]
+      ]
+    },
+    {
+      "cell": [
+        229,
+        209
+      ],
+      "current_positive": false,
+      "reason": "no_farther_with_compatible_pair",
+      "anchor_frames": [
+        4
+      ],
+      "anchor_eyes": [
+        0
+      ],
+      "pair_codes": [
+        [
+          2,
+          0
+        ]
+      ]
+    }
+  ],
+  "teacher_selection_only_postseal": true,
+  "advisory_changed": false,
+  "scope": "Mutually exclusive cell-query explanation, prioritizes strict, any paired farther, compatible, closer, mixed, unavailable. Not a new policy or a clearance certificate."
+}

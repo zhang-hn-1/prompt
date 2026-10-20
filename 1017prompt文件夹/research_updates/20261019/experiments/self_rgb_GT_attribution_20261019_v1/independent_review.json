@@ -1,0 +1,326 @@
+{
+  "artifact_type": "independent_saved_self_RGB_GT_attribution_review",
+  "utc": "2026-10-19T09:44:12.722052+00:00",
+  "scope": "Independent read-only saved-data review. Loaded16 sealed attribution NPZs and frozen native prediction/mask arrays; independently checked UID populations, direct CAD-free rectangles, already-saved per-query depth/reference arithmetic, transitions, partitions and sums. No attribute.py/helper/scorer/source/matcher/model/planner/test or simulator execution; no raw renderer depth-label image or pose was loaded, no new full-frame GT target projection/score was performed. Only this audit JSON is new.",
+  "reviewed_SHA256": {
+    "protocol.json": "b8733f465ff365e75d19f1436b370fe425cf09fd0df94ab62e121fb67f2d77d1",
+    "attribute.py": "c014e10c3090ad2fc5f750b7a6073a8caf658be8cda295fff13dad794161d963",
+    "supervise.py": "0d6317f8f304cfe134caf9b655b7f23570574e4f410a5bbfe8db7b5e093aef23",
+    "attribution_seal.json": "6a61348ffd9e1edfc5954dd44ba3df1a60c615a613591bf1b0377ceb4fc6cea3",
+    "result.json": "bf8095f1b0b6eb4e42834453e6b623cd6c6f757e415479567ace6c216c53e169",
+    "ledger.json": "60b1a8226b0363b12b2ce4bc49dc582ce9d011ef8f88a1204084c52f58c49757",
+    "status.json": "4449ccde5978c6c77cee737ceebf4485d404920e7f5d364d78bc88b86bfd8788"
+  },
+  "output_SHA256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E0_000_front_left.npz": "6bd4d953b1a79e31ecf49f5051c125cf8bf210261858e13284790c7a89cef35a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E0_000_front_right.npz": "6bd4d953b1a79e31ecf49f5051c125cf8bf210261858e13284790c7a89cef35a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E0_000_rear_left.npz": "f979b547d1da948c4e34aa43d513b80e6b593fc17ab168385c2b59de1abc33a7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E0_000_rear_right.npz": "d4873bf878ca88ee33aa2f780849d18d053d1516c62fe9fc7419b2eb7128b8a7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E0_055_front_left.npz": "88494eec8fa68647069c13e228edc1a9dccb93e82a1f7b142b2a543ef2186fbd",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E0_055_front_right.npz": "10d64f6c6bc1ac19eb61ce249b93f48b168f1f034a525f3416dafa91a2265c16",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E0_055_rear_left.npz": "6bd4d953b1a79e31ecf49f5051c125cf8bf210261858e13284790c7a89cef35a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E0_055_rear_right.npz": "6bd4d953b1a79e31ecf49f5051c125cf8bf210261858e13284790c7a89cef35a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E1B_000_front_left.npz": "d099997c35642ef76d34f7d1461d5403c6b948f5a628f770a400de4147893e8d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E1B_000_front_right.npz": "f672d383afede79bc678f032577dd92110bf7b00796abfbdafb0668f258b8aa5",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E1B_000_rear_left.npz": "4cff6f17919504849cd725d5a8e09eb0cfcbc713ea7e9c95115b43d904a7044a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E1B_000_rear_right.npz": "63574985e9f8cdc835353336056c4dc019a78496d1689736fb3c1c6dadfab9d8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E1A_090_front_left.npz": "a255a561b070cdc00dd648515d47e93bc0236b3548120facdcfa803e32b8b714",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E1A_090_front_right.npz": "ba410b97cd23a23c8cd8b37dfef09f062040b3f1f81de2412189c8d8b40a66b7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E1A_090_rear_left.npz": "aa5fc885d86f091cbd72ec8dadf5ddcddee7186f9cc5f56bb83c015918478644",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/E1A_090_rear_right.npz": "64da9cfb654717e53d89881a3b43ef916941f1428a2d9f326666d4a2ca83f24d"
+  },
+  "checks": {
+    "exact_frozen_protocol_SHA": true,
+    "all_registered_code_input_SHA_match": true,
+    "16_saved_attribution_SHA_and_protocol_seal_match": true,
+    "one_dispatch_recovery0_normal0_no_residual_group": true,
+    "source_matcher_prediction_fit_physics_nav_zero_and_old_rejection_preserved": true,
+    "native_outputs_preexist_attribution_no_teacher_feedback": true,
+    "all16_arrays_shape_bool_int_UID_schema": true,
+    "all_saved_query_partner_IDs_byteexact_original_population": true,
+    "all_saved_original_intervened_depth_vectors_equal_native_snapshots": true,
+    "protected9x7_direct_window_flags_and_old_dependency_UIDsets_exact": true,
+    "saved_per_query_reference_arithmetic_and_inrange_target_flags_consistent": true,
+    "all64_group_rows_exhaustive_good_bad_transition_arithmetic": true,
+    "all16_full_counts_match_frozen_prior_GT_pixel_metadata": true,
+    "all16_non_scorable_domain_partitions_exact": true,
+    "all_aggregate_groups_and_totals_equal_independent_sums": true,
+    "exact854_753_101_0corrected_753harmed_and_12unscorable": true,
+    "continuation_gates_and_stop_decision_match": true,
+    "all_full_domain_counts_and_old_repair4of4_closed_unchanged": true
+  },
+  "check_counts": {
+    "named_checks": 18,
+    "passed": 18,
+    "frozen_input_code_files": 22,
+    "attribution_NPZs": 16,
+    "query_IDs_preserved": 12267,
+    "row_group_records": 64,
+    "GT_scoring_or_source_dispatches_by_reviewer": 0
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": []
+  },
+  "verified_totals": {
+    "all_risk": 12267,
+    "protected": 12052,
+    "affected_all": 980,
+    "affected_protected": 866,
+    "full_pixels": 4915200,
+    "finite_positive_GT": 2887203,
+    "invalid_GT_UNKNOWN": 2027997,
+    "target_pixels": 527344
+  },
+  "verified_groups": {
+    "all_finite_in_range": {
+      "scorable": 11621,
+      "old_good": 10597,
+      "old_bad": 1024,
+      "still_good": 9764,
+      "harmed": 833,
+      "corrected": 10,
+      "still_bad": 1014,
+      "old_good_lost_validity": 810,
+      "new_valid": 10665
+    },
+    "protected_finite_in_range": {
+      "scorable": 11420,
+      "old_good": 10486,
+      "old_bad": 934,
+      "still_good": 9712,
+      "harmed": 774,
+      "corrected": 10,
+      "still_bad": 924,
+      "old_good_lost_validity": 753,
+      "new_valid": 10566
+    },
+    "affected_protected_finite_in_range": {
+      "scorable": 854,
+      "old_good": 753,
+      "old_bad": 101,
+      "still_good": 0,
+      "harmed": 753,
+      "corrected": 0,
+      "still_bad": 101,
+      "old_good_lost_validity": 753,
+      "new_valid": 0
+    },
+    "affected_protected_target": {
+      "scorable": 854,
+      "old_good": 753,
+      "old_bad": 101,
+      "still_good": 0,
+      "harmed": 753,
+      "corrected": 0,
+      "still_bad": 101,
+      "old_good_lost_validity": 753,
+      "new_valid": 0
+    }
+  },
+  "non_scorable_domain_totals": {
+    "affected_protected_invalid_GT": 11,
+    "affected_protected_positive_GT_outside_range": 1,
+    "affected_protected_in_range": 854,
+    "affected_protected_in_target": 854
+  },
+  "row_query_partition_summary": [
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "eye": "front_left",
+      "queries": 0,
+      "protected": 0,
+      "affected_protected": 0,
+      "affected_scorable": 0,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "eye": "front_right",
+      "queries": 0,
+      "protected": 0,
+      "affected_protected": 0,
+      "affected_scorable": 0,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "eye": "rear_left",
+      "queries": 214,
+      "protected": 155,
+      "affected_protected": 24,
+      "affected_scorable": 23,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "eye": "rear_right",
+      "queries": 223,
+      "protected": 161,
+      "affected_protected": 23,
+      "affected_scorable": 22,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "eye": "front_left",
+      "queries": 2,
+      "protected": 0,
+      "affected_protected": 0,
+      "affected_scorable": 0,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "eye": "front_right",
+      "queries": 2,
+      "protected": 1,
+      "affected_protected": 0,
+      "affected_scorable": 0,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "eye": "rear_left",
+      "queries": 0,
+      "protected": 0,
+      "affected_protected": 0,
+      "affected_scorable": 0,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "eye": "rear_right",
+      "queries": 0,
+      "protected": 0,
+      "affected_protected": 0,
+      "affected_scorable": 0,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "eye": "front_left",
+      "queries": 3522,
+      "protected": 3509,
+      "affected_protected": 183,
+      "affected_scorable": 183,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "eye": "front_right",
+      "queries": 3529,
+      "protected": 3515,
+      "affected_protected": 169,
+      "affected_scorable": 169,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "eye": "rear_left",
+      "queries": 402,
+      "protected": 402,
+      "affected_protected": 64,
+      "affected_scorable": 64,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "eye": "rear_right",
+      "queries": 394,
+      "protected": 394,
+      "affected_protected": 66,
+      "affected_scorable": 66,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "eye": "front_left",
+      "queries": 1371,
+      "protected": 1356,
+      "affected_protected": 147,
+      "affected_scorable": 144,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "eye": "front_right",
+      "queries": 1310,
+      "protected": 1297,
+      "affected_protected": 125,
+      "affected_scorable": 122,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "eye": "rear_left",
+      "queries": 645,
+      "protected": 628,
+      "affected_protected": 35,
+      "affected_scorable": 32,
+      "affected_native_valid": 0
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "eye": "rear_right",
+      "queries": 653,
+      "protected": 634,
+      "affected_protected": 30,
+      "affected_scorable": 29,
+      "affected_native_valid": 0
+    }
+  ],
+  "affected_scorable_raw_native_valid_count": 0,
+  "affected_scorable_reference_admissible_new_valid_count": 0,
+  "verified_continuation_gates": {
+    "affected_target_nonempty": true,
+    "original_error_majority": false,
+    "corrections_exceed_harm": false
+  },
+  "key_interpretation": {
+    "affected_subset": "866 protected nuisance-sensitive original queries comprise854 finite/in-range references and12 outside this scoring domain. All854 are also in the saved visible-height target. Within those854,753 originally agree axially within15cm,101 do not; intervened reference-admissible validity is0, so753 are harmed and0 corrected by this declared transition metric.",
+    "broader_groups": "Zero corrections applies to the affected-protected subset. Across all protected finite/in-range queries, the saved attribution has10 corrections and774 harms; do not report zero corrections for every original query or all protected queries.",
+    "transition_labels": "Good/bad mean agreement/nonagreement with saved axial renderer reference within15cm, conditional on finite GT Z∈[.5,3]. The new non-good category includes invalid/missing/out-of-range output, not only wrong finite depth. Twelve unscorable affected queries remain separate UNKNOWN, not automatically bad.",
+    "stopping_rule": "The diagnostic continuation conditions are heuristic necessary research conditions and fail original-error-majority and corrections-exceed-harm. The protocol forbids candidate/fit/nav admission regardless of a positive result; no new candidate follows."
+  },
+  "pipeline_and_causal_limits": [
+    "These outputs are frozen native OpenCV predictions under CAD-interior RGB inversion. They are not outputs of the copied float64 CAD-hypothesis-availability repair, and must not be treated as that repair pipeline.",
+    "The native intervention changes nuisance RGB; the separate repair changes hypothesis availability in both aggregation and local evidence decoder. This attribution cannot uniquely explain why the separate repair achieved only7.595% false-visible reduction or identify a unique SGM/postprocessing cause.",
+    "Axial15cm reference agreement differs from radial/world/grid-nearness/semantic/occupancy/physical truth. No3D safety, calibrated uncertainty, observed free-space or collision certificate.",
+    "Protected rectangles refer only to original selected query and rounded partner local9x7 supports, not all candidate disparities/LR/subpixel/median/speckle/whole-SGM dependencies.",
+    "The affected population is selected by a fixed nuisance-output change criterion, not a random sample of source error. Do not generalize753/854 to all pixels or source accuracy.",
+    "Saved GT_in_target flags and full-frame GT metadata are checked for consistency and lineage; raw label extraction/pose projection was not independently rerun."
+  ],
+  "budget_assessment": {
+    "this_attribution_cap": 1,
+    "used": 1,
+    "recovery": 0,
+    "source_calls": 0,
+    "matcher_calls": 0,
+    "new_predictions": 0,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0,
+    "old_repair_used_cap": "4/4 unchanged",
+    "no_new_budget_authorized": true
+  },
+  "assessment": "SAVED_ATTRIBUTION_IDENTITIES_ARITHMETIC_PARTITIONS_AND_STOP_DECISION_CONSISTENT_NO_NEW_CRITICAL_IMPORTANT",
+  "no_rerun": true
+}

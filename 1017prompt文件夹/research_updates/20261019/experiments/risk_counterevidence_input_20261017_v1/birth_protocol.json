@@ -1,0 +1,45 @@
+{
+  "utc": "2026-10-17T07:48:15.256206+00:00",
+  "question": "One bounded teacher attribution of current E1 risk-input birth: measured depth vs native pose vs weak height proxy. Completes failure-layer explanation, not a new RGB source or changed memory.",
+  "domain": "All181 sealed sources, all four eyes, ALL1553767 originally selected risk endpoints. Original UIDs unchanged, no teacher-selected candidate evaluation. Special first-event15false-cell provenance only postseal.",
+  "expected_total_source_points": 1553767,
+  "interventions": [
+    "original pred-depth/native-pose",
+    "GT-depth/native-pose",
+    "pred-depth/GT-render-pose",
+    "GT-depth/GT-render-pose"
+  ],
+  "eligibility": "Each counterfactual uses same original IDs then .5..3 axial range,rootdistance>=.55,height(.05,1.5]. Removed inputs are counterfactual unknown, never observed free. Source selection not expanded. Fullstatic bodyband grid within.15m XY at map cell center.",
+  "numeric_checks": {
+    "all181_frames_required": true,
+    "all1553767_sourcepoints_required": true,
+    "identity_clock_seal_required": true,
+    "depth_dominance_hypothesis": "GTdepth reduces originalfalse remaining>=50% AND GTpose reduces originalfalse remaining<=10%; otherwise hypothesis not supported. Engineering attribution only, no source/nav admission."
+  },
+  "budget": {
+    "dispatch_cap": 1,
+    "recovery_cap": 1,
+    "timeout_s": 180,
+    "fit": 0,
+    "source_regeneration": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "stop": "Identity/parser/domain failure stops; at most1 implementation-only recovery, no altered thresholds/inputs or additional diagnostic arms.",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/source_seal.json": "88053a806dc81e7c7abbb42940ab333c8ac818167af65341bff7b464e5c5b0df",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/capture_seal.json": "52c6a7e2835f341def06f9c7a590a02f11e8d90c2c68920e9604b21c2e8c15e2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/artifact_manifest_post_close.json": "0787b89f01fa65d3b8bf117f5d55d43b2eb98a7ac4cf1d5f503c15b823471b54",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_counterevidence_input_20261017_v1/prediction_seal.json": "223e49da27f3d78267298aa87f55625e33568b308f52983d32e6ad38b2366026",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_counterevidence_input_20261017_v1/result.json": "78d9bd73281d88ba8b721f65a4bc354ad5c532d7fab1ea4564130ea7ed25d6cc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/maps/frame_000.npz": "b266804c5a39cb8f2a0dcbe801c3bcdf0c0d92e1598973dd7514844b414b94d2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/maps/frame_061.npz": "9b541b5f4ce9cd2554790591c3a03faa00be39b3edf7b651d459a9825ced1de4",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7"
+  },
+  "occupancy": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_counterevidence_input_20261017_v1/common.py": "c371ea21200245f855417d52087138ca373d39d183a88f510d2458319e86e3ae",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_counterevidence_input_20261017_v1/birth.py": "b04a0e9e55dda64d730f0434d8c254e488a042b6b5faefb99a0aae69e89c285c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_counterevidence_input_20261017_v1/birth_supervise.py": "31b04707b7301db2db2029abd90551a109a0ca8fe99fb47a439df2943f05e97d"
+  }
+}

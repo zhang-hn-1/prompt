@@ -1,0 +1,16 @@
+{
+  "fit": 1,
+  "seed": 2026,
+  "epochs": 30,
+  "train_groups": [
+    "H",
+    "E0"
+  ],
+  "fit_excluded": "E1",
+  "start": 1791865127.3418329,
+  "protocol_sha": "d686d654a6123ccf61d76e502365bdad0b680ec1d32c561256035962c24d3dd6",
+  "source_sha": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/model.py": "b391f70db67dfcdcd9bc33e3e815f56e7377c4d9dcb25e2460bb79ddfb7a2080",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/train_and_predict.py": "d6130f090a03b47926d4689c2775a80ee2933b60e9c333f699004918c5be0f38"
+  }
+}

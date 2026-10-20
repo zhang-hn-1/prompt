@@ -1,0 +1,726 @@
+{
+  "complete": true,
+  "utc": "2026-10-17T22:25:06.526171+00:00",
+  "rows": [
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "time_s": 0.0,
+      "arm": "unmasked",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E0_000_unmasked.npz",
+      "sha256": "b80c1eb93ea7113cdbed5697a97147310448eb8ca78fe7ccfff746e9e63782c6",
+      "risk_points": 327,
+      "combined_twoarm_cost_aggregate_decode_s": 130.66493924695533,
+      "post_LR_projection_s": 0.03830788703635335,
+      "component_timings": [
+        {
+          "eye": "front_left",
+          "arm": "unmasked",
+          "cost_shared_s": 12.322019485989586,
+          "aggregate_decode_s": 8.48330248403363,
+          "cost_sha256": "f6a6679e9dd1ad9f067350f01ac7361215429a26616c03bbd70d3a016ffe5111",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_left",
+          "arm": "masked",
+          "cost_shared_s": 12.322019485989586,
+          "aggregate_decode_s": 6.753201654064469,
+          "cost_sha256": "f6a6679e9dd1ad9f067350f01ac7361215429a26616c03bbd70d3a016ffe5111",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "unmasked",
+          "cost_shared_s": 10.979300110018812,
+          "aggregate_decode_s": 12.727448291960172,
+          "cost_sha256": "0ef5e2bed16707bf4e2d95a69f852931ecb7444f85629697dc4ba8e943bc7e52",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "masked",
+          "cost_shared_s": 10.979300110018812,
+          "aggregate_decode_s": 9.826880875043571,
+          "cost_sha256": "0ef5e2bed16707bf4e2d95a69f852931ecb7444f85629697dc4ba8e943bc7e52",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "unmasked",
+          "cost_shared_s": 10.912752934964374,
+          "aggregate_decode_s": 12.1126300500473,
+          "cost_sha256": "cd49d7d8e11e8264f5bce54f51e13fb77d890708266dcacf2ba901e667b95db6",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "masked",
+          "cost_shared_s": 10.912752934964374,
+          "aggregate_decode_s": 9.919638162013143,
+          "cost_sha256": "cd49d7d8e11e8264f5bce54f51e13fb77d890708266dcacf2ba901e667b95db6",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "unmasked",
+          "cost_shared_s": 10.952837388031185,
+          "aggregate_decode_s": 12.169356548925862,
+          "cost_sha256": "c632be804aed7680ec64adcea79b3a335b6a8b1d3c8d455e2a42472e06a23195",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "masked",
+          "cost_shared_s": 10.952837388031185,
+          "aggregate_decode_s": 10.725821063038893,
+          "cost_sha256": "c632be804aed7680ec64adcea79b3a335b6a8b1d3c8d455e2a42472e06a23195",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        }
+      ],
+      "GT_read": false,
+      "combined_twoarm_LR_projection_s": 0.07397889799904078,
+      "combined_twoarm_total_source_without_IO_s": 130.73891814495437,
+      "combined_twoarm_including_IO_s": 130.91411010699812
+    },
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "time_s": 0.0,
+      "arm": "masked",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E0_000_masked.npz",
+      "sha256": "dbc3c3b7a820a498ab0bbda47e101110ebf74b1770534a6354325417136a378c",
+      "risk_points": 330,
+      "combined_twoarm_cost_aggregate_decode_s": 130.66493924695533,
+      "post_LR_projection_s": 0.03567101096268743,
+      "component_timings": [
+        {
+          "eye": "front_left",
+          "arm": "unmasked",
+          "cost_shared_s": 12.322019485989586,
+          "aggregate_decode_s": 8.48330248403363,
+          "cost_sha256": "f6a6679e9dd1ad9f067350f01ac7361215429a26616c03bbd70d3a016ffe5111",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_left",
+          "arm": "masked",
+          "cost_shared_s": 12.322019485989586,
+          "aggregate_decode_s": 6.753201654064469,
+          "cost_sha256": "f6a6679e9dd1ad9f067350f01ac7361215429a26616c03bbd70d3a016ffe5111",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "unmasked",
+          "cost_shared_s": 10.979300110018812,
+          "aggregate_decode_s": 12.727448291960172,
+          "cost_sha256": "0ef5e2bed16707bf4e2d95a69f852931ecb7444f85629697dc4ba8e943bc7e52",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "masked",
+          "cost_shared_s": 10.979300110018812,
+          "aggregate_decode_s": 9.826880875043571,
+          "cost_sha256": "0ef5e2bed16707bf4e2d95a69f852931ecb7444f85629697dc4ba8e943bc7e52",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "unmasked",
+          "cost_shared_s": 10.912752934964374,
+          "aggregate_decode_s": 12.1126300500473,
+          "cost_sha256": "cd49d7d8e11e8264f5bce54f51e13fb77d890708266dcacf2ba901e667b95db6",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "masked",
+          "cost_shared_s": 10.912752934964374,
+          "aggregate_decode_s": 9.919638162013143,
+          "cost_sha256": "cd49d7d8e11e8264f5bce54f51e13fb77d890708266dcacf2ba901e667b95db6",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "unmasked",
+          "cost_shared_s": 10.952837388031185,
+          "aggregate_decode_s": 12.169356548925862,
+          "cost_sha256": "c632be804aed7680ec64adcea79b3a335b6a8b1d3c8d455e2a42472e06a23195",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "masked",
+          "cost_shared_s": 10.952837388031185,
+          "aggregate_decode_s": 10.725821063038893,
+          "cost_sha256": "c632be804aed7680ec64adcea79b3a335b6a8b1d3c8d455e2a42472e06a23195",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        }
+      ],
+      "GT_read": false,
+      "combined_twoarm_LR_projection_s": 0.07397889799904078,
+      "combined_twoarm_total_source_without_IO_s": 130.73891814495437,
+      "combined_twoarm_including_IO_s": 130.91411065193824
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "time_s": 27.4999993853271,
+      "arm": "unmasked",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E0_055_unmasked.npz",
+      "sha256": "0a4422c3a4189f5648caab00139fa4e85c5663bbacadac24cb8a440ae9748867",
+      "risk_points": 41,
+      "combined_twoarm_cost_aggregate_decode_s": 132.7030232619727,
+      "post_LR_projection_s": 0.0349179069744423,
+      "component_timings": [
+        {
+          "eye": "front_left",
+          "arm": "masked",
+          "cost_shared_s": 11.143934121937491,
+          "aggregate_decode_s": 9.706912621040829,
+          "cost_sha256": "5d89702725403c218f799fcf1aaa257a1acab94219c69dcbeb721c99c5d62d01",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_left",
+          "arm": "unmasked",
+          "cost_shared_s": 11.143934121937491,
+          "aggregate_decode_s": 12.203703370993026,
+          "cost_sha256": "5d89702725403c218f799fcf1aaa257a1acab94219c69dcbeb721c99c5d62d01",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "masked",
+          "cost_shared_s": 11.265160277951509,
+          "aggregate_decode_s": 9.825657843030058,
+          "cost_sha256": "f30eeaed4d23cadca8a6d689b904ea7010cd26c18dcc8f091baa75e74c6cb7bd",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "unmasked",
+          "cost_shared_s": 11.265160277951509,
+          "aggregate_decode_s": 11.697376907919534,
+          "cost_sha256": "f30eeaed4d23cadca8a6d689b904ea7010cd26c18dcc8f091baa75e74c6cb7bd",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "masked",
+          "cost_shared_s": 10.99303092295304,
+          "aggregate_decode_s": 10.20339569193311,
+          "cost_sha256": "999964803afdba6a9dd172a0f96af20f4be92701a7d4b1798cc0d00d6f7310ee",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "unmasked",
+          "cost_shared_s": 10.99303092295304,
+          "aggregate_decode_s": 11.833043847000226,
+          "cost_sha256": "999964803afdba6a9dd172a0f96af20f4be92701a7d4b1798cc0d00d6f7310ee",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "masked",
+          "cost_shared_s": 10.998773525003344,
+          "aggregate_decode_s": 8.861685176030733,
+          "cost_sha256": "fd935a55b7cec417dc0c1ff162884864ab2c0b0b57fb0da9a2ef2318f945722d",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "unmasked",
+          "cost_shared_s": 10.998773525003344,
+          "aggregate_decode_s": 11.235739080002531,
+          "cost_sha256": "fd935a55b7cec417dc0c1ff162884864ab2c0b0b57fb0da9a2ef2318f945722d",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        }
+      ],
+      "GT_read": false,
+      "combined_twoarm_LR_projection_s": 0.06687321397475898,
+      "combined_twoarm_total_source_without_IO_s": 132.76989647594746,
+      "combined_twoarm_including_IO_s": 132.94294007495046
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "time_s": 27.4999993853271,
+      "arm": "masked",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E0_055_masked.npz",
+      "sha256": "7b0a1b284d1f16cf64f3b6f3a5aad5f6c5f8ab6049bd17785d47ee289e0dde8e",
+      "risk_points": 41,
+      "combined_twoarm_cost_aggregate_decode_s": 132.7030232619727,
+      "post_LR_projection_s": 0.03195530700031668,
+      "component_timings": [
+        {
+          "eye": "front_left",
+          "arm": "masked",
+          "cost_shared_s": 11.143934121937491,
+          "aggregate_decode_s": 9.706912621040829,
+          "cost_sha256": "5d89702725403c218f799fcf1aaa257a1acab94219c69dcbeb721c99c5d62d01",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_left",
+          "arm": "unmasked",
+          "cost_shared_s": 11.143934121937491,
+          "aggregate_decode_s": 12.203703370993026,
+          "cost_sha256": "5d89702725403c218f799fcf1aaa257a1acab94219c69dcbeb721c99c5d62d01",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "masked",
+          "cost_shared_s": 11.265160277951509,
+          "aggregate_decode_s": 9.825657843030058,
+          "cost_sha256": "f30eeaed4d23cadca8a6d689b904ea7010cd26c18dcc8f091baa75e74c6cb7bd",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "unmasked",
+          "cost_shared_s": 11.265160277951509,
+          "aggregate_decode_s": 11.697376907919534,
+          "cost_sha256": "f30eeaed4d23cadca8a6d689b904ea7010cd26c18dcc8f091baa75e74c6cb7bd",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "masked",
+          "cost_shared_s": 10.99303092295304,
+          "aggregate_decode_s": 10.20339569193311,
+          "cost_sha256": "999964803afdba6a9dd172a0f96af20f4be92701a7d4b1798cc0d00d6f7310ee",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "unmasked",
+          "cost_shared_s": 10.99303092295304,
+          "aggregate_decode_s": 11.833043847000226,
+          "cost_sha256": "999964803afdba6a9dd172a0f96af20f4be92701a7d4b1798cc0d00d6f7310ee",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "masked",
+          "cost_shared_s": 10.998773525003344,
+          "aggregate_decode_s": 8.861685176030733,
+          "cost_sha256": "fd935a55b7cec417dc0c1ff162884864ab2c0b0b57fb0da9a2ef2318f945722d",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "unmasked",
+          "cost_shared_s": 10.998773525003344,
+          "aggregate_decode_s": 11.235739080002531,
+          "cost_sha256": "fd935a55b7cec417dc0c1ff162884864ab2c0b0b57fb0da9a2ef2318f945722d",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        }
+      ],
+      "GT_read": false,
+      "combined_twoarm_LR_projection_s": 0.06687321397475898,
+      "combined_twoarm_total_source_without_IO_s": 132.76989647594746,
+      "combined_twoarm_including_IO_s": 132.9429405289702
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "time_s": 0.0,
+      "arm": "unmasked",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E1B_000_unmasked.npz",
+      "sha256": "2ee5429e3e1ffb1f29a4e08684024ea8daa55d2881f1b1cd4fbb36d3ea21fad1",
+      "risk_points": 1373,
+      "combined_twoarm_cost_aggregate_decode_s": 125.50263765000273,
+      "post_LR_projection_s": 0.0312536678975448,
+      "component_timings": [
+        {
+          "eye": "front_left",
+          "arm": "unmasked",
+          "cost_shared_s": 10.980479972902685,
+          "aggregate_decode_s": 10.46194257994648,
+          "cost_sha256": "a92a18708c1028828cb7948fdf4314fb5ab2fcd6e57dc91b9c626599d20c9327",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_left",
+          "arm": "masked",
+          "cost_shared_s": 10.980479972902685,
+          "aggregate_decode_s": 9.38307671295479,
+          "cost_sha256": "a92a18708c1028828cb7948fdf4314fb5ab2fcd6e57dc91b9c626599d20c9327",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "unmasked",
+          "cost_shared_s": 11.084963283035904,
+          "aggregate_decode_s": 10.812879387987778,
+          "cost_sha256": "9791aed7f82d75d27b57eb5cc22b7d33d5154c8ef713f4289792cf7cf304b385",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "masked",
+          "cost_shared_s": 11.084963283035904,
+          "aggregate_decode_s": 9.126994590973482,
+          "cost_sha256": "9791aed7f82d75d27b57eb5cc22b7d33d5154c8ef713f4289792cf7cf304b385",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "unmasked",
+          "cost_shared_s": 11.02080505399499,
+          "aggregate_decode_s": 10.20048336009495,
+          "cost_sha256": "bfe839f89a5bf0775c1acbfdc9dccbc2aefc9b1dd49f3663b3628f20effc6e34",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "masked",
+          "cost_shared_s": 11.02080505399499,
+          "aggregate_decode_s": 8.387522162054665,
+          "cost_sha256": "bfe839f89a5bf0775c1acbfdc9dccbc2aefc9b1dd49f3663b3628f20effc6e34",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "unmasked",
+          "cost_shared_s": 11.025699028046802,
+          "aggregate_decode_s": 11.124570640968159,
+          "cost_sha256": "0ba7d116b0a834d8ba48c3b9b814369670df69fc950161b212becef5a0192811",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "masked",
+          "cost_shared_s": 11.025699028046802,
+          "aggregate_decode_s": 9.183265107916668,
+          "cost_sha256": "0ba7d116b0a834d8ba48c3b9b814369670df69fc950161b212becef5a0192811",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        }
+      ],
+      "GT_read": false,
+      "combined_twoarm_LR_projection_s": 0.062349708867259324,
+      "combined_twoarm_total_source_without_IO_s": 125.56498735886998,
+      "combined_twoarm_including_IO_s": 125.6829752069898
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "time_s": 0.0,
+      "arm": "masked",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E1B_000_masked.npz",
+      "sha256": "6f583a73b4e4207758d9537d2444e69f37877cf61debc645ec5dafd2986d4c1a",
+      "risk_points": 1383,
+      "combined_twoarm_cost_aggregate_decode_s": 125.50263765000273,
+      "post_LR_projection_s": 0.031096040969714522,
+      "component_timings": [
+        {
+          "eye": "front_left",
+          "arm": "unmasked",
+          "cost_shared_s": 10.980479972902685,
+          "aggregate_decode_s": 10.46194257994648,
+          "cost_sha256": "a92a18708c1028828cb7948fdf4314fb5ab2fcd6e57dc91b9c626599d20c9327",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_left",
+          "arm": "masked",
+          "cost_shared_s": 10.980479972902685,
+          "aggregate_decode_s": 9.38307671295479,
+          "cost_sha256": "a92a18708c1028828cb7948fdf4314fb5ab2fcd6e57dc91b9c626599d20c9327",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "unmasked",
+          "cost_shared_s": 11.084963283035904,
+          "aggregate_decode_s": 10.812879387987778,
+          "cost_sha256": "9791aed7f82d75d27b57eb5cc22b7d33d5154c8ef713f4289792cf7cf304b385",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "masked",
+          "cost_shared_s": 11.084963283035904,
+          "aggregate_decode_s": 9.126994590973482,
+          "cost_sha256": "9791aed7f82d75d27b57eb5cc22b7d33d5154c8ef713f4289792cf7cf304b385",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "unmasked",
+          "cost_shared_s": 11.02080505399499,
+          "aggregate_decode_s": 10.20048336009495,
+          "cost_sha256": "bfe839f89a5bf0775c1acbfdc9dccbc2aefc9b1dd49f3663b3628f20effc6e34",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "masked",
+          "cost_shared_s": 11.02080505399499,
+          "aggregate_decode_s": 8.387522162054665,
+          "cost_sha256": "bfe839f89a5bf0775c1acbfdc9dccbc2aefc9b1dd49f3663b3628f20effc6e34",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "unmasked",
+          "cost_shared_s": 11.025699028046802,
+          "aggregate_decode_s": 11.124570640968159,
+          "cost_sha256": "0ba7d116b0a834d8ba48c3b9b814369670df69fc950161b212becef5a0192811",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "masked",
+          "cost_shared_s": 11.025699028046802,
+          "aggregate_decode_s": 9.183265107916668,
+          "cost_sha256": "0ba7d116b0a834d8ba48c3b9b814369670df69fc950161b212becef5a0192811",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        }
+      ],
+      "GT_read": false,
+      "combined_twoarm_LR_projection_s": 0.062349708867259324,
+      "combined_twoarm_total_source_without_IO_s": 125.56498735886998,
+      "combined_twoarm_including_IO_s": 125.68297582794912
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "time_s": 44.99999899417162,
+      "arm": "unmasked",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E1A_090_unmasked.npz",
+      "sha256": "e7ea2b482f8fa81af49284894c1db02f57aedae97a6eaa04dfa2089822052438",
+      "risk_points": 877,
+      "combined_twoarm_cost_aggregate_decode_s": 127.47916981193703,
+      "post_LR_projection_s": 0.03305316704791039,
+      "component_timings": [
+        {
+          "eye": "front_left",
+          "arm": "unmasked",
+          "cost_shared_s": 10.984255799092352,
+          "aggregate_decode_s": 11.122190495021641,
+          "cost_sha256": "025f2b20e16bc00754ad46459e35b79dea72eb97edd1dce8a851919c76ac61da",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_left",
+          "arm": "masked",
+          "cost_shared_s": 10.984255799092352,
+          "aggregate_decode_s": 9.1526657899376,
+          "cost_sha256": "025f2b20e16bc00754ad46459e35b79dea72eb97edd1dce8a851919c76ac61da",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "unmasked",
+          "cost_shared_s": 11.188616198021919,
+          "aggregate_decode_s": 11.435306231956929,
+          "cost_sha256": "da1c5a43e856607ea936d6a50e0715564f7b93f432ef35b8ee74540481cc53af",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "masked",
+          "cost_shared_s": 11.188616198021919,
+          "aggregate_decode_s": 9.48737515299581,
+          "cost_sha256": "da1c5a43e856607ea936d6a50e0715564f7b93f432ef35b8ee74540481cc53af",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "unmasked",
+          "cost_shared_s": 11.04511616693344,
+          "aggregate_decode_s": 10.833686557947658,
+          "cost_sha256": "cbe8bca5ea1850c3a5949912f7627cb0941dd760c426d152bf4297f143ceee81",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "masked",
+          "cost_shared_s": 11.04511616693344,
+          "aggregate_decode_s": 9.195474118925631,
+          "cost_sha256": "cbe8bca5ea1850c3a5949912f7627cb0941dd760c426d152bf4297f143ceee81",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "unmasked",
+          "cost_shared_s": 11.21175201504957,
+          "aggregate_decode_s": 10.695377529948018,
+          "cost_sha256": "7ebd6e56935676ccd3999c01e6046a3c5daa1e0645ad181120cf4c69d3d1262d",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "masked",
+          "cost_shared_s": 11.21175201504957,
+          "aggregate_decode_s": 8.405134078930132,
+          "cost_sha256": "7ebd6e56935676ccd3999c01e6046a3c5daa1e0645ad181120cf4c69d3d1262d",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        }
+      ],
+      "GT_read": false,
+      "combined_twoarm_LR_projection_s": 0.06611880310811102,
+      "combined_twoarm_total_source_without_IO_s": 127.54528861504514,
+      "combined_twoarm_including_IO_s": 127.68164932203945
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "time_s": 44.99999899417162,
+      "arm": "masked",
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/rgb_evidence_supported_reference_20261018_v1/E1A_090_masked.npz",
+      "sha256": "946f36a372e731e5f49ce2049777e7ce776864ffc5024ad1febc54d60375229a",
+      "risk_points": 896,
+      "combined_twoarm_cost_aggregate_decode_s": 127.47916981193703,
+      "post_LR_projection_s": 0.03306563606020063,
+      "component_timings": [
+        {
+          "eye": "front_left",
+          "arm": "unmasked",
+          "cost_shared_s": 10.984255799092352,
+          "aggregate_decode_s": 11.122190495021641,
+          "cost_sha256": "025f2b20e16bc00754ad46459e35b79dea72eb97edd1dce8a851919c76ac61da",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_left",
+          "arm": "masked",
+          "cost_shared_s": 10.984255799092352,
+          "aggregate_decode_s": 9.1526657899376,
+          "cost_sha256": "025f2b20e16bc00754ad46459e35b79dea72eb97edd1dce8a851919c76ac61da",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "unmasked",
+          "cost_shared_s": 11.188616198021919,
+          "aggregate_decode_s": 11.435306231956929,
+          "cost_sha256": "da1c5a43e856607ea936d6a50e0715564f7b93f432ef35b8ee74540481cc53af",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "front_right",
+          "arm": "masked",
+          "cost_shared_s": 11.188616198021919,
+          "aggregate_decode_s": 9.48737515299581,
+          "cost_sha256": "da1c5a43e856607ea936d6a50e0715564f7b93f432ef35b8ee74540481cc53af",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "unmasked",
+          "cost_shared_s": 11.04511616693344,
+          "aggregate_decode_s": 10.833686557947658,
+          "cost_sha256": "cbe8bca5ea1850c3a5949912f7627cb0941dd760c426d152bf4297f143ceee81",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_right",
+          "arm": "masked",
+          "cost_shared_s": 11.04511616693344,
+          "aggregate_decode_s": 9.195474118925631,
+          "cost_sha256": "cbe8bca5ea1850c3a5949912f7627cb0941dd760c426d152bf4297f143ceee81",
+          "supported_hypotheses": 70581952,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "unmasked",
+          "cost_shared_s": 11.21175201504957,
+          "aggregate_decode_s": 10.695377529948018,
+          "cost_sha256": "7ebd6e56935676ccd3999c01e6046a3c5daa1e0645ad181120cf4c69d3d1262d",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        },
+        {
+          "eye": "rear_left",
+          "arm": "masked",
+          "cost_shared_s": 11.21175201504957,
+          "aggregate_decode_s": 8.405134078930132,
+          "cost_sha256": "7ebd6e56935676ccd3999c01e6046a3c5daa1e0645ad181120cf4c69d3d1262d",
+          "supported_hypotheses": 70297920,
+          "total_hypotheses": 137625600
+        }
+      ],
+      "GT_read": false,
+      "combined_twoarm_LR_projection_s": 0.06611880310811102,
+      "combined_twoarm_total_source_without_IO_s": 127.54528861504514,
+      "combined_twoarm_including_IO_s": 127.6816500510322
+    }
+  ],
+  "RGB_frames": 4,
+  "RGB_cost_volumes": 16,
+  "full_aggregations": 32,
+  "four_eye_predictions": 8,
+  "raw_RGB_bytes_unchanged": true,
+  "GT_read": false,
+  "protocol_sha256": "530aac1b68f9b1258488993a4847bec526181052169c4c6f53d50f2563deb2e7",
+  "timing_scope": "Measured combinedtwoarm four-eye cost/aggregate/decode plus LR/depth/projection; masks/pose preloaded/shared, excludes currentCADgeneration/render/semantics/map/planner/controller. Source component sum excludes outputIO; includingIO reported separately. Not actualonline endtoend."
+}

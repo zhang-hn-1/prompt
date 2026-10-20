@@ -3,7 +3,7 @@
 Each episode directory contains ``states.npz``, ``metadata.json``, paired
 ``left_*.png``/``right_*.png`` RGB images, and optional BEV/mask PNGs.  The
 dataset slices aligned sub-trajectories at 10 Hz stereo cadence, with each
-visual transition carrying a block of 5 applied 50 Hz actions (frame skip).
+visual transition carrying a block of 5 selected 50 Hz actions (frame skip).
 """
 
 from __future__ import annotations
@@ -20,6 +20,7 @@ import torch
 from .action_protocol import LEGACY_ACTION_PROTOCOL_ID, declared_action_protocol_id
 from .dataset_paths import discover_episode_paths
 from .pose_utils import relative_planar_pose
+from .proprioception import transform_proprio_velocities, validate_velocity_frame
 
 IMAGENET_MEAN = torch.tensor([0.485, 0.456, 0.406])
 IMAGENET_STD = torch.tensor([0.229, 0.224, 0.225])
@@ -35,8 +36,13 @@ class SampleConfig:
     with_bev: bool = True
     with_visibility: bool = True
     normalize: bool = True
+    action_source: str = "applied_action"
+    proprio_velocity_frame: str = "world"
 
     def __post_init__(self) -> None:
+        validate_velocity_frame(self.proprio_velocity_frame)
+        if self.action_source not in ("applied_action", "commanded_action"):
+            raise ValueError("action_source must be applied_action or commanded_action")
         if self.history_frames < 1 or self.num_preds < 1 or self.rollout_horizon < 1:
             raise ValueError("history_frames, num_preds, and rollout_horizon must be positive")
         if self.action_block < 1:
@@ -70,10 +76,10 @@ def _gravity_in_base(quat: np.ndarray) -> np.ndarray:
     return rotation.T @ np.array([0.0, 0.0, -1.0])
 
 
-def _proprio17(states: dict[str, np.ndarray], state_index: int) -> np.ndarray:
+def _proprio17(states: dict[str, np.ndarray], state_index: int, *, velocity_frame: str = "world") -> np.ndarray:
     quat = states["quat"][state_index].astype(np.float64)
     gravity = _gravity_in_base(quat)
-    return np.concatenate(
+    proprio = np.concatenate(
         [
             states["lin_vel"][state_index].astype(np.float32),
             states["ang_vel"][state_index].astype(np.float32),
@@ -84,6 +90,7 @@ def _proprio17(states: dict[str, np.ndarray], state_index: int) -> np.ndarray:
         ],
         axis=0,
     )
+    return transform_proprio_velocities(proprio, quat, frame=velocity_frame)
 
 
 @lru_cache(maxsize=32)
@@ -110,6 +117,8 @@ class BallWMDataset(torch.utils.data.Dataset):
         with_bev: bool = True,
         with_visibility: bool = True,
         normalize: bool = True,
+        action_source: str = "applied_action",
+        proprio_velocity_frame: str = "world",
     ) -> None:
         roots = [root] if isinstance(root, (str, Path)) else list(root)
         self.roots = [Path(path) for path in roots]
@@ -122,7 +131,11 @@ class BallWMDataset(torch.utils.data.Dataset):
             with_bev=with_bev,
             with_visibility=with_visibility,
             normalize=normalize,
+            action_source=action_source,
+            proprio_velocity_frame=proprio_velocity_frame,
         )
+        self.action_source = self.config.action_source
+        self.proprio_velocity_frame = self.config.proprio_velocity_frame
         self.episode_paths = discover_episode_paths(self.roots)
         if not self.episode_paths:
             raise FileNotFoundError(f"no schema-1.1/1.2 episodes found under {self.roots}")
@@ -214,12 +227,12 @@ class BallWMDataset(torch.utils.data.Dataset):
         for frame in range(start, start + total):
             next_start = config.action_block * (frame + 1)
             next_end = next_start + config.action_block
-            if next_end <= len(states["applied_action"]):
-                action_rows.append(states["applied_action"][next_start:next_end].reshape(-1))
+            if next_end <= len(states[config.action_source]):
+                action_rows.append(states[config.action_source][next_start:next_end].reshape(-1))
             else:
                 action_rows.append(np.zeros(config.action_block * 2, dtype=np.float32))
             state_index = config.action_block * (frame + 1) - 1
-            proprio_rows.append(_proprio17(states, state_index))
+            proprio_rows.append(_proprio17(states, state_index, velocity_frame=config.proprio_velocity_frame))
 
         result = {
             "pixels_left": left_images,

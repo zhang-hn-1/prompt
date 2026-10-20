@@ -1,0 +1,17 @@
+{
+  "name": "cursor_leg_retention_v1",
+  "hypothesis": "Observed 24 old E1 guard projections fall on a different drive leg than tracker cursor, notably after measured reverse-to-forward at660/815. Whole-polyline nearest projection can reinclude already-traversed reverse edges and spuriously reject the remaining forward reference after new risks appear.",
+  "single_change": "Only projection used by existing reference retention geometry; eligible when active direction equals outgoing cursor edge, pending_direction isNone and braking_state istracking. Restrict nearest-point choice to contiguous same-direction leg containing existing cursor. Compute remaining arc and full future suffix from chosen projection through original path end. No path/cursor/command/constraint/map changes.",
+  "unchanged": "Original .6 continuous/raster necessary screen, .5 projection and .5 remaining guard, existing .870710678 continuous cell-tube after measured reversal, planner3000/four-point/minimum prefix, source/IMU/camera/map/control anddirection confirmation.",
+  "fallback": "Ineligible pending/braking/invalid cursor falls back exact original geometry; malformed arrays fail validation. A single-direction path is exactly old output except extra diagnostics. Future opposite leg remains in suffix for hazard check.",
+  "qualification": "Saved full E1 all actual planning boundaries; reproduce original guard fields and old retain/rebuild decision first; eligible corrected projection must not use already traversed opposite leg and preserve map. Predeclared target660 or815 must prevent old rebuild with all unchanged bridge/future-suffix geometric criteria passing. No relaxation of any distance gate. Known replay is development only, new physical required.",
+  "actual_gate": "Fresh sameversion baseline/candidate E1 cap2 total90s each. Actual arrival<=.2m withno contact/unavailable contacts, original source p90<=.15/outlier>.3<=.1 and>=1000 pixels, complete raw traces/videos, realretention effect; otherwise reject. No tuning/followupbudget.",
+  "budget": {
+    "physical_cap": 2,
+    "fit_cap": 0,
+    "recovery_cap": 1
+  },
+  "novelty": "Old cusp_projection changes tracker projection/index qualification; this changes outer reference-retention geometry only. Old continuous-cell-tube changed distance metric, this preserves it. Not globalgoal/terminalheading/sideprior/timecost/waypointlookahead.",
+  "limitations": "Cursor leg assumes inherited cursor correctly qualified. No future truth or safety certificate; pending changes useoldguard. Unknown remains unknown and prior privileges remain disclosed.",
+  "utc": "2026-10-13T05:26:30.005576+00:00"
+}

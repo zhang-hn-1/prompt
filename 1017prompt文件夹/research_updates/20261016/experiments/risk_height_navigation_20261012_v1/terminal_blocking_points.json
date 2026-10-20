@@ -1,0 +1,43 @@
+{
+  "map_frame": "frame_899",
+  "time_s": 89.89999799057841,
+  "native_root": [
+    -3.7236489451622705,
+    -0.77180652381387,
+    0.4000000059604645
+  ],
+  "nearest_hazard_cell_clearance_m": 0.806225774829855,
+  "planning_clearance_m": 0.8707106781186548,
+  "cells_inside_planning_margin": [
+    [
+      211,
+      200
+    ]
+  ],
+  "saved_point_provenance": {
+    "point_instances": 119,
+    "truth_valid": 119,
+    "truth_floor": 119,
+    "truth_obstacle": 0,
+    "frame_count": 2
+  },
+  "source_frames": [
+    {
+      "frame": 230,
+      "points": 78,
+      "truth_floor": 78,
+      "truth_obstacle": 0,
+      "median_predicted_height": 0.21272143624500844,
+      "median_truth_height": 1.4179584251206023e-07
+    },
+    {
+      "frame": 235,
+      "points": 41,
+      "truth_floor": 41,
+      "truth_obstacle": 0,
+      "median_predicted_height": 0.21078224338076268,
+      "median_truth_height": 6.577299793697478e-08
+    }
+  ],
+  "scope": "All saved admitted source point instances in current blocking cells, not assertion that every point still has active individual lifetime. Same-frame renderer only offline; invalid pixels excluded; no altered labels or clearance and no alternate physical outcome."
+}

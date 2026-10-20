@@ -9,6 +9,8 @@ from typing import ClassVar
 
 import numpy as np
 
+from .action_layers import normalize_action_request
+
 from benchmark.drive_model import DriveModel
 from benchmark.dynamic_lattice_planning import DynamicWaypoint
 from benchmark.kinodynamic_planning import KinodynamicWaypoint
@@ -192,6 +194,8 @@ class PolicyObservation:
     action_history: np.ndarray
     position_world_xy: np.ndarray
     yaw_world_rad: float
+    # Measured attitudes aligned to each row; controller proprio stays world-frame.
+    quaternion_world_wxyz_history: np.ndarray | None = None
 
     def __post_init__(self) -> None:
         left = _immutable_array(
@@ -222,6 +226,17 @@ class PolicyObservation:
         )
         if proprio.shape[0] != actions.shape[0]:
             raise ValueError("proprio_history and action_history must have equal lengths")
+        quaternion_history = self.quaternion_world_wxyz_history
+        if quaternion_history is not None:
+            quaternion_history = _immutable_array(
+                quaternion_history,
+                name="quaternion_world_wxyz_history",
+                dtype=np.float32,
+                shape=(proprio.shape[0], 4),
+            )
+            quaternion_norms = np.linalg.norm(quaternion_history.astype(np.float64), axis=-1)
+            if np.any(quaternion_norms <= np.finfo(np.float64).eps):
+                raise ValueError("quaternion_world_wxyz_history must have non-zero norms")
         position = _immutable_array(
             self.position_world_xy,
             name="position_world_xy",
@@ -237,6 +252,7 @@ class PolicyObservation:
         object.__setattr__(self, "action_history", actions)
         object.__setattr__(self, "position_world_xy", position)
         object.__setattr__(self, "yaw_world_rad", yaw)
+        object.__setattr__(self, "quaternion_world_wxyz_history", quaternion_history)
 
 
 @dataclass(frozen=True)
@@ -511,6 +527,25 @@ class OraclePathPolicy(_PolicyBase):
         self._cross_track_error_m = 0.0
         self._desired_drive_direction = "forward"
         self._braking_state = "tracking"
+        self._reference_progress_s_m = 0.0
+        self._reference_heading_rad = 0.0
+        self._reference_curvature_1_m = 0.0
+        self._desired_curvature_1_m = 0.0
+        self._baseline_main_command_rad_s = 0.0
+        self._scheduled_main_command_rad_s = 0.0
+        self._auxiliary_target_angle_rad = 0.0
+        self._auxiliary_velocity_rad_s = 0.0
+        self._scheduler_active = False
+        self._scheduler_trigger_code = 0
+        self._policy_raw_main_command_rad_s = 0.0
+        self._policy_raw_auxiliary_target_rad = 0.0
+        self._policy_protocol_main_command_rad_s = 0.0
+        self._policy_protocol_auxiliary_target_rad = 0.0
+        self._policy_request_clipped = False
+        self._policy_request_clip_reason: str | None = None
+        self._request_source = "reset"
+        self._tracking_audit: dict[str, object] = {}
+        self._tracking_records: list[dict[str, object]] = []
 
     @property
     def path_index(self) -> int:
@@ -529,6 +564,73 @@ class OraclePathPolicy(_PolicyBase):
             "desired_drive_direction": self._desired_drive_direction,
             "braking_state": self._braking_state,
         }
+
+    @property
+    def request_diagnostics(self) -> dict[str, object]:
+        """Round 6 action-boundary telemetry kept outside frozen B0 diagnostics."""
+
+        return {
+            "policy_raw_main_command_rad_s": self._policy_raw_main_command_rad_s,
+            "policy_raw_auxiliary_target_rad": self._policy_raw_auxiliary_target_rad,
+            "policy_protocol_main_command_rad_s": self._policy_protocol_main_command_rad_s,
+            "policy_protocol_auxiliary_target_rad": self._policy_protocol_auxiliary_target_rad,
+            "policy_request_clipped": self._policy_request_clipped,
+            "policy_request_clip_reason": self._policy_request_clip_reason,
+            "request_source": self._request_source,
+        }
+
+    @property
+    def tracking_diagnostics(self) -> dict[str, object]:
+        """Round 8 single-call tracking telemetry for the current action."""
+
+        return dict(self._tracking_audit)
+
+    @property
+    def tracking_records(self) -> tuple[dict[str, object], ...]:
+        """Action-aligned snapshots captured without another policy call."""
+
+        return tuple(dict(record) for record in self._tracking_records)
+
+    def _begin_tracking_audit(self, observation: PolicyObservation) -> None:
+        velocity = np.asarray(observation.proprio_history[-1, :2], dtype=np.float64)
+        speed = float(np.linalg.norm(velocity))
+        course_valid = speed >= 0.05
+        self._tracking_audit = {
+            "valid": False,
+            "source": "act_start",
+            "position_world_x_m": float(observation.position_world_xy[0]),
+            "position_world_y_m": float(observation.position_world_xy[1]),
+            "root_heading_rad": float(observation.yaw_world_rad),
+            "velocity_world_x_m_s": float(velocity[0]),
+            "velocity_world_y_m_s": float(velocity[1]),
+            "world_xy_speed_m_s": speed,
+            "velocity_course_valid": course_valid,
+            "velocity_course_rad": (
+                float(math.atan2(velocity[1], velocity[0])) if course_valid else None
+            ),
+            "actual_main_joint_velocity_rad_s": float(
+                observation.proprio_history[-1, 12]
+            ),
+            "actual_auxiliary_angle_rad": float(
+                observation.proprio_history[-1, 10]
+            ),
+            "actual_auxiliary_velocity_rad_s": float(
+                observation.proprio_history[-1, 13]
+            ),
+            "previous_applied_main_rad_s": float(
+                observation.proprio_history[-1, 15]
+            ),
+            "previous_applied_auxiliary_rad": float(
+                observation.proprio_history[-1, 16]
+            ),
+        }
+
+    def _mark_tracking_audit_source(self, source: str) -> None:
+        self._tracking_audit["source"] = source
+
+    @staticmethod
+    def _wrapped_angle(value: float) -> float:
+        return (float(value) + math.pi) % (2.0 * math.pi) - math.pi
 
     def reset(self, context: EpisodeContext) -> None:
         self._validate_context_protocol(context)
@@ -557,6 +659,25 @@ class OraclePathPolicy(_PolicyBase):
         self._cross_track_error_m = 0.0
         self._desired_drive_direction = self._active_drive_direction
         self._braking_state = "tracking"
+        self._reference_progress_s_m = 0.0
+        self._reference_heading_rad = float(self._reference[0].yaw_rad)
+        self._reference_curvature_1_m = 0.0
+        self._desired_curvature_1_m = 0.0
+        self._baseline_main_command_rad_s = 0.0
+        self._scheduled_main_command_rad_s = 0.0
+        self._auxiliary_target_angle_rad = 0.0
+        self._auxiliary_velocity_rad_s = 0.0
+        self._scheduler_active = False
+        self._scheduler_trigger_code = 0
+        self._policy_raw_main_command_rad_s = 0.0
+        self._policy_raw_auxiliary_target_rad = 0.0
+        self._policy_protocol_main_command_rad_s = 0.0
+        self._policy_protocol_auxiliary_target_rad = 0.0
+        self._policy_request_clipped = False
+        self._policy_request_clip_reason = None
+        self._request_source = "reset"
+        self._tracking_audit = {}
+        self._tracking_records = []
 
     def _require_reference(
         self,
@@ -591,6 +712,13 @@ class OraclePathPolicy(_PolicyBase):
             target_index += 1
             if accumulated >= lookahead_m:
                 break
+        self._tracking_audit.update(
+            {
+                "lookahead_index": int(target_index),
+                "lookahead_accumulated_m": float(accumulated),
+                "lookahead_requested_m": float(lookahead_m),
+            }
+        )
         return reference_xy[target_index]
 
     def _remaining_path_length(self, position_world_xy: np.ndarray) -> float:
@@ -606,8 +734,65 @@ class OraclePathPolicy(_PolicyBase):
         )
         return distance_to_path + float(segments.sum())
 
-    def _zero_action(self) -> np.ndarray:
-        return np.zeros(self.protocol.action_block_dim, dtype=np.float32)
+    def _effective_main_command(self, reference: tuple[KinodynamicWaypoint, ...]) -> float:
+        """Keep tracking when the terminal waypoint is a zero-speed marker."""
+
+        planned_main = float(reference[self._path_index].main_command_rad_s)
+        if planned_main != 0.0:
+            return planned_main
+        direction = reference[self._path_index].drive_direction
+        for index in range(self._path_index - 1, -1, -1):
+            candidate = reference[index]
+            if candidate.drive_direction != direction:
+                break
+            if candidate.main_command_rad_s != 0.0:
+                return float(candidate.main_command_rad_s)
+        return 0.0
+
+    def _request_action(
+        self, main_velocity: float, auxiliary_angle: float, *, source: str
+    ) -> np.ndarray:
+        layers = normalize_action_request(
+            self.protocol,
+            main_velocity=main_velocity,
+            auxiliary_angle=auxiliary_angle,
+            source=source,
+        )
+        self._policy_raw_main_command_rad_s = layers.raw_component[0]
+        self._policy_raw_auxiliary_target_rad = layers.raw_component[1]
+        self._policy_protocol_main_command_rad_s = layers.protocol_component[0]
+        self._policy_protocol_auxiliary_target_rad = layers.protocol_component[1]
+        self._policy_request_clipped = layers.clipped
+        self._policy_request_clip_reason = layers.clip_reason
+        self._request_source = source
+        self._tracking_audit.update(
+            {
+                "source": source,
+                "policy_raw_main_command_rad_s": float(layers.raw_component[0]),
+                "policy_raw_auxiliary_target_rad": float(layers.raw_component[1]),
+                "policy_protocol_main_command_rad_s": float(
+                    layers.protocol_component[0]
+                ),
+                "policy_protocol_auxiliary_target_rad": float(
+                    layers.protocol_component[1]
+                ),
+                "protocol_clipped": bool(layers.clipped),
+                "protocol_clip_reason": layers.clip_reason,
+                "angle_target_at_bound": bool(
+                    math.isclose(
+                        abs(float(layers.protocol_component[1])),
+                        float(self.protocol.maximum[1]),
+                        rel_tol=0.0,
+                        abs_tol=1e-7,
+                    )
+                ),
+            }
+        )
+        self._tracking_records.append(dict(self._tracking_audit))
+        return layers.protocol_block.copy()
+
+    def _zero_action(self, source: str = "zero_request") -> np.ndarray:
+        return self._request_action(0.0, 0.0, source=source)
 
     def _handle_direction_change(
         self, desired_direction: str, speed_m_s: float
@@ -624,12 +809,45 @@ class OraclePathPolicy(_PolicyBase):
         else:
             self._stopped_cycles = 0
         if self._stopped_cycles < 5:
-            return self._zero_action()
+            return self._zero_action("direction_change_braking")
         self._active_drive_direction = desired_direction
         self._pending_drive_direction = None
         self._stopped_cycles = 0
         self._braking_state = "tracking"
         return None
+
+    def _schedule_main_magnitude(
+        self,
+        observation: PolicyObservation,
+        *,
+        baseline_magnitude: float,
+        planned_main_command_rad_s: float,
+        desired_curvature_1_m: float,
+        cross_track_error_m: float,
+    ) -> float:
+        """Hook for candidates; the frozen Oracle returns its baseline cap."""
+
+        del observation, planned_main_command_rad_s, desired_curvature_1_m
+        del cross_track_error_m
+        return float(baseline_magnitude)
+
+    def _compose_tracking_curvature(
+        self,
+        observation: PolicyObservation,
+        *,
+        waypoint: KinodynamicWaypoint,
+        geometric_curvature_1_m: float,
+    ) -> tuple[float, dict[str, object]]:
+        """Hook for one isolated curvature-composition candidate."""
+
+        del observation, waypoint
+        return float(geometric_curvature_1_m), {
+            "candidate_active": False,
+            "curvature_composition": "pure_pursuit_only",
+            "profile_curvature_role": "diagnostic_only",
+            "cross_track_feedback_role": "not_applicable",
+            "heading_feedback_role": "not_applicable",
+        }
 
     def act(
         self,
@@ -638,10 +856,62 @@ class OraclePathPolicy(_PolicyBase):
     ) -> np.ndarray:
         pointgoal = self._validate_act_inputs(observation, pointgoal_base_xy)
         reference, _ = self._require_reference()
+        self._begin_tracking_audit(observation)
+        self._scheduler_trigger_code = 0
+        self._scheduler_active = False
         current_speed = float(np.linalg.norm(observation.proprio_history[-1, :2]))
         current_yaw_rate = float(observation.proprio_history[-1, 5])
         cross_track_error = self._project_to_reference(observation.position_world_xy)
         self._cross_track_error_m = cross_track_error
+        if self._path_index > 0:
+            reference_xy = self._reference_xy
+            assert reference_xy is not None
+            self._reference_progress_s_m = float(
+                np.linalg.norm(np.diff(reference_xy[: self._path_index + 1], axis=0), axis=1).sum()
+            )
+        else:
+            self._reference_progress_s_m = 0.0
+        waypoint = reference[self._path_index]
+        assert self._reference_xy is not None
+        direction_sign = 1.0 if waypoint.drive_direction == "forward" else -1.0
+        motion_tangent = float(waypoint.yaw_rad) + (
+            math.pi if direction_sign < 0.0 else 0.0
+        )
+        projection_delta = observation.position_world_xy - self._reference_xy[
+            self._path_index
+        ]
+        self._tracking_audit.update(
+            {
+                "projection_kind": "nearest_waypoint",
+                "projection_index": int(self._path_index),
+                "projection_x_m": float(self._reference_xy[self._path_index, 0]),
+                "projection_y_m": float(self._reference_xy[self._path_index, 1]),
+                "projection_progress_s_m": float(self._reference_progress_s_m),
+                "projection_distance_m": float(cross_track_error),
+                "signed_lateral_error_m": float(
+                    -math.sin(motion_tangent) * projection_delta[0]
+                    + math.cos(motion_tangent) * projection_delta[1]
+                ),
+                "reference_body_heading_rad": float(waypoint.yaw_rad),
+                "reference_motion_tangent_rad": self._wrapped_angle(motion_tangent),
+                "signed_body_heading_error_rad": self._wrapped_angle(
+                    float(waypoint.yaw_rad) - observation.yaw_world_rad
+                ),
+                "active_drive_direction": self._active_drive_direction,
+                "reference_drive_direction": waypoint.drive_direction,
+            }
+        )
+        self._reference_heading_rad = float(waypoint.yaw_rad)
+        if abs(float(waypoint.main_command_rad_s)) > 1e-12:
+            self._reference_curvature_1_m = float(
+                self.drive_model.curvature(
+                    float(waypoint.main_command_rad_s),
+                    float(waypoint.auxiliary_angle_rad),
+                )
+            )
+        else:
+            self._reference_curvature_1_m = 0.0
+        self._auxiliary_velocity_rad_s = float(observation.proprio_history[-1, 13])
         desired_direction = reference[self._path_index].drive_direction
         self._desired_drive_direction = desired_direction
         if cross_track_error > 1.0:
@@ -652,11 +922,11 @@ class OraclePathPolicy(_PolicyBase):
             self._failure_subreason = "tracking_infeasible"
         if self._failure_subreason is not None:
             self._braking_state = "tracking_infeasible"
-            return self._zero_action()
+            return self._zero_action("tracking_infeasible")
 
         if float(np.linalg.norm(pointgoal)) <= 0.2:
             self._braking_state = "goal_reached"
-            return self._zero_action()
+            return self._zero_action("goal_reached")
         direction_action = self._handle_direction_change(
             desired_direction, current_speed
         )
@@ -679,43 +949,223 @@ class OraclePathPolicy(_PolicyBase):
             dtype=np.float64,
         )
         distance_squared = float(np.dot(target_base, target_base))
-        desired_curvature = (
+        geometric_curvature = (
             0.0
             if distance_squared <= 1e-9
             else 2.0 * float(target_base[1]) / distance_squared
         )
-        planned_main = float(reference[self._path_index].main_command_rad_s)
+        desired_curvature, composition = self._compose_tracking_curvature(
+            observation,
+            waypoint=waypoint,
+            geometric_curvature_1_m=geometric_curvature,
+        )
+        self._desired_curvature_1_m = float(desired_curvature)
+        self._tracking_audit.update(
+            {
+                "valid": True,
+                "source": "tracking_geometry",
+                "lookahead_x_m": float(target_world[0]),
+                "lookahead_y_m": float(target_world[1]),
+                "target_base_x_m": float(target_base[0]),
+                "target_base_y_m": float(target_base[1]),
+                "geometric_pure_pursuit_curvature_1_m": float(
+                    geometric_curvature
+                ),
+                "requested_curvature_1_m": float(desired_curvature),
+                **composition,
+            }
+        )
+        planned_main = self._effective_main_command(reference)
         if planned_main == 0.0:
-            return self._zero_action()
+            return self._zero_action("planned_zero")
         sign = 1.0 if desired_direction == "forward" else -1.0
         main_magnitude = abs(planned_main)
         if abs(desired_curvature) >= 0.55:
             main_magnitude = min(main_magnitude, 0.5)
         elif abs(desired_curvature) >= 0.25:
             main_magnitude = min(main_magnitude, 1.0)
+        self._baseline_main_command_rad_s = float(sign * main_magnitude)
+        main_magnitude = self._schedule_main_magnitude(
+            observation,
+            baseline_magnitude=main_magnitude,
+            planned_main_command_rad_s=planned_main,
+            desired_curvature_1_m=desired_curvature,
+            cross_track_error_m=cross_track_error,
+        )
+        if not math.isfinite(main_magnitude) or main_magnitude <= 0.0:
+            raise ValueError("scheduled main magnitude must be finite and positive")
         main_command = sign * main_magnitude
+        self._scheduled_main_command_rad_s = float(main_command)
 
         remaining = self._remaining_path_length(observation.position_world_xy)
         if remaining <= self.drive_model.stopping_distance(
             current_speed, desired_direction
         ) + 0.1:
             self._braking_state = "goal_braking"
-            return self._zero_action()
+            return self._zero_action("goal_braking")
 
         auxiliary = self.drive_model.auxiliary_for_curvature(
             main_command, desired_curvature
         )
+        support_rows = tuple(
+            sample
+            for sample in self.drive_model.steering_samples
+            if math.isclose(
+                sample.main_command_rad_s,
+                main_command,
+                rel_tol=0.0,
+                abs_tol=1e-12,
+            )
+        )
+        support_min = min(sample.curvature_1_m for sample in support_rows)
+        support_max = max(sample.curvature_1_m for sample in support_rows)
         desired_yaw_rate = desired_curvature * sign * max(current_speed, 0.2)
         correction = -sign * self.yaw_rate_feedback_gain_s * (
             desired_yaw_rate - current_yaw_rate
         )
         correction = float(np.clip(correction, math.radians(-5.0), math.radians(5.0)))
         self._braking_state = "tracking"
-        return _repeated_control(
-            self.protocol,
-            main_velocity=main_command,
-            auxiliary_angle=auxiliary + correction,
+        self._auxiliary_target_angle_rad = float(auxiliary + correction)
+        protocol_auxiliary = float(
+            np.clip(
+                auxiliary + correction,
+                self.protocol.minimum[1],
+                self.protocol.maximum[1],
+            )
         )
+        self._tracking_audit.update(
+            {
+                "main_inverse_query_rad_s": float(main_command),
+                "v1_curvature_support_min_1_m": float(support_min),
+                "v1_curvature_support_max_1_m": float(support_max),
+                "requested_curvature_outside_v1_support": bool(
+                    desired_curvature < support_min
+                    or desired_curvature > support_max
+                ),
+                "v1_inverse_auxiliary_rad": float(auxiliary),
+                "desired_world_yaw_rate_rad_s": float(desired_yaw_rate),
+                "measured_world_yaw_rate_rad_s": float(current_yaw_rate),
+                "yaw_rate_feedback_auxiliary_rad": float(correction),
+                "model_proxy_curvature_at_protocol_aux_1_m": float(
+                    self.drive_model.curvature(main_command, protocol_auxiliary)
+                ),
+                "model_proxy_curvature_gap_1_m": float(
+                    desired_curvature
+                    - self.drive_model.curvature(main_command, protocol_auxiliary)
+                ),
+            }
+        )
+        return self._request_action(
+            main_command,
+            auxiliary + correction,
+            source="tracking",
+        )
+
+
+class Round8ProfileBlendOraclePolicy(OraclePathPolicy):
+    """Use one bounded profile/feedback blend after the first real handoff.
+
+    The event gate is diagnostic: until the active direction has changed and
+    the reference index subsequently advances, every action follows the B0
+    implementation exactly.  Once active, only curvature composition changes;
+    projection, reference, direction-change rules, speed thresholds, and the
+    V1 inverse mapping remain inherited from ``OraclePathPolicy``.
+    """
+
+    policy_name = "oracle_round8_profile_blend"
+
+    def __init__(self, *args: object, **kwargs: object) -> None:
+        super().__init__(*args, **kwargs)
+        self._round8_profile: SpatialReferenceProfile | None = None
+        self._round8_initial_direction = "forward"
+        self._round8_handoff_index: int | None = None
+
+    def reset(self, context: EpisodeContext) -> None:
+        super().reset(context)
+        assert self._reference is not None
+        self._round8_profile = SpatialReferenceProfile.from_waypoints(
+            self._reference,
+            smoothing_window_m=0.40,
+        )
+        self._round8_initial_direction = self._active_drive_direction
+        self._round8_handoff_index = None
+
+    def _handle_direction_change(
+        self, desired_direction: str, speed_m_s: float
+    ) -> np.ndarray | None:
+        previous = self._active_drive_direction
+        action = super()._handle_direction_change(desired_direction, speed_m_s)
+        if (
+            self._round8_handoff_index is None
+            and previous == self._round8_initial_direction
+            and self._active_drive_direction != previous
+        ):
+            self._round8_handoff_index = int(self._path_index)
+        return action
+
+    def _compose_tracking_curvature(
+        self,
+        observation: PolicyObservation,
+        *,
+        waypoint: KinodynamicWaypoint,
+        geometric_curvature_1_m: float,
+    ) -> tuple[float, dict[str, object]]:
+        profile = self._round8_profile
+        if profile is None:
+            raise RuntimeError("policy.reset() must be called before act()")
+        active = (
+            self._round8_handoff_index is not None
+            and self._path_index > self._round8_handoff_index
+            and self._pending_drive_direction is None
+            and self._active_drive_direction == waypoint.drive_direction
+        )
+        if not active:
+            baseline, diagnostics = super()._compose_tracking_curvature(
+                observation,
+                waypoint=waypoint,
+                geometric_curvature_1_m=geometric_curvature_1_m,
+            )
+            return baseline, {
+                **diagnostics,
+                "round8_handoff_index": self._round8_handoff_index,
+            }
+
+        sign = 1.0 if waypoint.drive_direction == "forward" else -1.0
+        pure_pursuit_spatial = sign * float(geometric_curvature_1_m)
+        profile_curvature = float(profile.curvature_1_m[self._path_index])
+        lateral_error = float(self._tracking_audit["signed_lateral_error_m"])
+        heading_error = float(self._tracking_audit["signed_body_heading_error_rad"])
+        feedback_curvature = float(
+            np.clip(
+                -0.20 * lateral_error + 0.15 * math.sin(heading_error),
+                -0.20,
+                0.20,
+            )
+        )
+        weight = curvature_blend_weight(
+            profile_curvature,
+            blend_start_1_m=0.05,
+            blend_full_1_m=0.20,
+        )
+        command_spatial = blend_tracking_curvature(
+            pure_pursuit_spatial,
+            profile_curvature,
+            feedback_curvature,
+            weight=weight,
+        )
+        return sign * command_spatial, {
+            "candidate_active": True,
+            "round8_handoff_index": int(self._round8_handoff_index),
+            "curvature_composition": "profile_pure_pursuit_blend_plus_bounded_feedback",
+            "pure_pursuit_spatial_curvature_1_m": pure_pursuit_spatial,
+            "profile_spatial_curvature_1_m": profile_curvature,
+            "feedback_spatial_curvature_1_m": feedback_curvature,
+            "profile_blend_weight": weight,
+            "command_spatial_curvature_1_m": command_spatial,
+            "profile_curvature_role": "blend_feedforward",
+            "cross_track_feedback_role": "bounded_additive_feedback",
+            "heading_feedback_role": "bounded_additive_feedback",
+        }
 
 
 class TrajectoryOraclePolicy(_PolicyBase):
@@ -1243,6 +1693,11 @@ class DelayAwareTrajectoryOraclePolicy(_PolicyBase):
         self._terminal_hold_cycles = 0
         self._terminal_runway_s = self.episode_budget_s
         self._budget_infeasible = False
+        self._auxiliary_velocity_rad_s = 0.0
+        self._auxiliary_velocity_utilization = 0.0
+        self._auxiliary_saturation_active = False
+        self._scheduled_main_cap_rad_s = self.supported_main_command_rad_s
+        self._planned_main_command_rad_s = 0.0
 
     @property
     def online_input_permissions(self) -> frozenset[str]:
@@ -1297,6 +1752,13 @@ class DelayAwareTrajectoryOraclePolicy(_PolicyBase):
             "elapsed_s": float(self._elapsed_s),
             "terminal_runway_s": float(self._terminal_runway_s),
             "budget_infeasible": bool(self._budget_infeasible),
+            "auxiliary_velocity_rad_s": float(self._auxiliary_velocity_rad_s),
+            "auxiliary_velocity_utilization": float(
+                self._auxiliary_velocity_utilization
+            ),
+            "auxiliary_saturation_active": bool(self._auxiliary_saturation_active),
+            "scheduled_main_cap_rad_s": float(self._scheduled_main_cap_rad_s),
+            "planned_main_command_rad_s": float(self._planned_main_command_rad_s),
             "terminal_brake_start_s": terminal_timing["terminal_brake_start_s"],
             "goal_entry_s": terminal_timing["goal_entry_s"],
             "stop_below_0p05_s": terminal_timing["stop_below_0p05_s"],
@@ -1362,6 +1824,11 @@ class DelayAwareTrajectoryOraclePolicy(_PolicyBase):
         self._terminal_hold_cycles = 0
         self._terminal_runway_s = self.episode_budget_s
         self._budget_infeasible = False
+        self._auxiliary_velocity_rad_s = 0.0
+        self._auxiliary_velocity_utilization = 0.0
+        self._auxiliary_saturation_active = False
+        self._scheduled_main_cap_rad_s = self.supported_main_command_rad_s
+        self._planned_main_command_rad_s = 0.0
 
     def _require_reference(
         self,
@@ -1713,6 +2180,34 @@ class DelayAwareTrajectoryOraclePolicy(_PolicyBase):
             if delay < -1e-9 or delay > self.maximum_delay_distance_m + 1e-9:
                 raise ValueError("V2 delay distance exceeds configured bound")
 
+    def _select_main_command(
+        self,
+        observation: PolicyObservation,
+        *,
+        planned_main_command_rad_s: float,
+        sign: float,
+        command_curvature_1_m: float,
+        lateral_error_m: float,
+        heading_error_rad: float,
+    ) -> float:
+        """Select the signed main command after spatial tracking is computed.
+
+        The V2 compatibility policy keeps its calibrated 0.50 rad/s operating
+        point.  Constraint-aware variants override this hook to schedule the
+        main axis from measured auxiliary-joint state while retaining V2's
+        reference, curvature, and yaw-rate calculations.
+        """
+
+        del command_curvature_1_m, lateral_error_m, heading_error_rad
+        auxiliary_velocity = float(observation.proprio_history[-1, 13])
+        if not math.isfinite(auxiliary_velocity):
+            raise ValueError("auxiliary joint velocity must be finite")
+        self._auxiliary_velocity_rad_s = auxiliary_velocity
+        self._auxiliary_velocity_utilization = abs(auxiliary_velocity) / 0.30
+        self._planned_main_command_rad_s = float(planned_main_command_rad_s)
+        self._scheduled_main_cap_rad_s = self.supported_main_command_rad_s
+        return float(sign) * self.supported_main_command_rad_s
+
     def act(
         self,
         observation: PolicyObservation,
@@ -1877,16 +2372,20 @@ class DelayAwareTrajectoryOraclePolicy(_PolicyBase):
             self._validate_v2_diagnostics()
             return self._zero_action()
 
-        main_command = sign * self.supported_main_command_rad_s
-        if not math.isclose(
-            abs(main_command),
-            self._CALIBRATED_MAIN_COMMAND_RAD_S,
-            rel_tol=0.0,
-            abs_tol=1e-12,
-        ):
-            raise ValueError(
-                "moving V2 command is outside the calibrated 0.50 rad/s operating point"
-            )
+        main_command = self._select_main_command(
+            observation,
+            planned_main_command_rad_s=planned_main,
+            sign=sign,
+            command_curvature_1_m=command_curvature,
+            lateral_error_m=lateral_error,
+            heading_error_rad=heading_error,
+        )
+        if not math.isfinite(main_command) or abs(main_command) <= 0.0:
+            raise ValueError("moving V2 main command must be finite and non-zero")
+        if math.copysign(1.0, main_command) != math.copysign(1.0, sign):
+            raise ValueError("moving V2 main command sign must match drive direction")
+        if abs(main_command) > float(self.protocol.maximum[0]) + 1e-12:
+            raise ValueError("moving V2 main command exceeds protocol maximum")
         drive_profile_curvature = sign * profile_curvature
         drive_command_curvature = sign * command_curvature
         auxiliary_feedforward = self.drive_model.auxiliary_for_curvature(
@@ -1907,7 +2406,7 @@ class DelayAwareTrajectoryOraclePolicy(_PolicyBase):
             np.clip(correction, math.radians(-5.0), math.radians(5.0))
         )
         final_auxiliary = auxiliary_command + correction
-        self._main_cap_rad_s = self.supported_main_command_rad_s
+        self._main_cap_rad_s = abs(float(main_command))
         self._auxiliary_feedforward_rad = float(auxiliary_feedforward)
         self._auxiliary_feedback_rad = float(
             final_auxiliary - auxiliary_feedforward
@@ -1919,6 +2418,205 @@ class DelayAwareTrajectoryOraclePolicy(_PolicyBase):
             main_velocity=main_command,
             auxiliary_angle=final_auxiliary,
         )
+
+
+class ConstraintAwareTrajectoryOraclePolicy(OraclePathPolicy):
+    """Preserve Oracle tracking while reducing main drive near aux saturation."""
+
+    policy_name = "oracle_constraint_v1"
+
+    def __init__(
+        self,
+        protocol: ActionProtocol,
+        *,
+        auxiliary_velocity_limit_rad_s: float = 0.30,
+        auxiliary_saturation_threshold_rad_s: float = 0.25,
+        auxiliary_release_threshold_rad_s: float = 0.20,
+        scheduled_main_command_rad_s: float = 0.50,
+        maximum_main_command_rad_s: float = 1.50,
+        turning_curvature_threshold_1_m: float = 0.20,
+        lateral_error_threshold_m: float = 0.15,
+        heading_error_threshold_rad: float = math.radians(20.0),
+        **kwargs: object,
+    ) -> None:
+        super().__init__(protocol, **kwargs)
+        self.auxiliary_velocity_limit_rad_s = _validate_trajectory_scalar(
+            auxiliary_velocity_limit_rad_s, name="auxiliary_velocity_limit_rad_s", strictly_positive=True
+        )
+        self.auxiliary_saturation_threshold_rad_s = _validate_trajectory_scalar(
+            auxiliary_saturation_threshold_rad_s, name="auxiliary_saturation_threshold_rad_s", strictly_positive=True
+        )
+        self.auxiliary_release_threshold_rad_s = _validate_trajectory_scalar(
+            auxiliary_release_threshold_rad_s, name="auxiliary_release_threshold_rad_s", strictly_positive=True
+        )
+        if self.auxiliary_saturation_threshold_rad_s > self.auxiliary_velocity_limit_rad_s:
+            raise ValueError("auxiliary_saturation_threshold_rad_s must not exceed the velocity limit")
+        if self.auxiliary_release_threshold_rad_s >= self.auxiliary_saturation_threshold_rad_s:
+            raise ValueError("auxiliary_release_threshold_rad_s must be below the saturation threshold")
+        self.scheduled_main_command_rad_s = _validate_trajectory_scalar(
+            scheduled_main_command_rad_s, name="scheduled_main_command_rad_s", strictly_positive=True
+        )
+        self.maximum_main_command_rad_s = _validate_trajectory_scalar(
+            maximum_main_command_rad_s, name="maximum_main_command_rad_s", strictly_positive=True
+        )
+        if self.scheduled_main_command_rad_s > self.maximum_main_command_rad_s:
+            raise ValueError("scheduled_main_command_rad_s must not exceed maximum_main_command_rad_s")
+        if self.maximum_main_command_rad_s > float(protocol.maximum[0]) + 1e-12:
+            raise ValueError("maximum_main_command_rad_s exceeds protocol maximum")
+        self.turning_curvature_threshold_1_m = _validate_trajectory_scalar(
+            turning_curvature_threshold_1_m, name="turning_curvature_threshold_1_m"
+        )
+        self.lateral_error_threshold_m = _validate_trajectory_scalar(
+            lateral_error_threshold_m, name="lateral_error_threshold_m"
+        )
+        self.heading_error_threshold_rad = _validate_trajectory_scalar(
+            heading_error_threshold_rad, name="heading_error_threshold_rad"
+        )
+        self._auxiliary_velocity_rad_s = 0.0
+        self._auxiliary_velocity_utilization = 0.0
+        self._auxiliary_saturation_active = False
+        self._scheduled_main_cap_rad_s = 0.0
+        self._planned_main_command_rad_s = 0.0
+
+    @property
+    def diagnostics(self) -> dict[str, object]:
+        values = dict(super().diagnostics)
+        values.update(
+            {
+                "auxiliary_velocity_rad_s": float(self._auxiliary_velocity_rad_s),
+                "auxiliary_velocity_utilization": float(self._auxiliary_velocity_utilization),
+                "auxiliary_saturation_active": bool(self._auxiliary_saturation_active),
+                "scheduled_main_cap_rad_s": float(self._scheduled_main_cap_rad_s),
+                "planned_main_command_rad_s": float(self._planned_main_command_rad_s),
+            }
+        )
+        return values
+
+    def reset(self, context: EpisodeContext) -> None:
+        super().reset(context)
+        self._auxiliary_velocity_rad_s = 0.0
+        self._auxiliary_velocity_utilization = 0.0
+        self._auxiliary_saturation_active = False
+        self._scheduled_main_cap_rad_s = 0.0
+        self._planned_main_command_rad_s = 0.0
+
+    def _schedule_main_magnitude(
+        self,
+        observation: PolicyObservation,
+        *,
+        baseline_magnitude: float,
+        planned_main_command_rad_s: float,
+        desired_curvature_1_m: float,
+        cross_track_error_m: float,
+    ) -> float:
+        auxiliary_velocity = float(observation.proprio_history[-1, 13])
+        if not math.isfinite(auxiliary_velocity):
+            raise ValueError("auxiliary joint velocity must be finite")
+        absolute_velocity = abs(auxiliary_velocity)
+        self._auxiliary_velocity_rad_s = auxiliary_velocity
+        self._auxiliary_velocity_utilization = absolute_velocity / self.auxiliary_velocity_limit_rad_s
+        self._planned_main_command_rad_s = float(planned_main_command_rad_s)
+        error_segment = (
+            abs(float(desired_curvature_1_m)) >= self.turning_curvature_threshold_1_m
+            or abs(float(cross_track_error_m)) >= self.lateral_error_threshold_m
+        )
+        if self._auxiliary_saturation_active:
+            if absolute_velocity <= self.auxiliary_release_threshold_rad_s:
+                self._auxiliary_saturation_active = False
+                self._scheduler_trigger_code = 3
+        elif absolute_velocity >= self.auxiliary_saturation_threshold_rad_s and error_segment:
+            self._auxiliary_saturation_active = True
+            self._scheduler_trigger_code = 1
+        elif self._auxiliary_saturation_active:
+            self._scheduler_trigger_code = 2
+        if self._auxiliary_saturation_active and self._scheduler_trigger_code == 0:
+            self._scheduler_trigger_code = 2
+        self._scheduler_active = bool(self._auxiliary_saturation_active)
+        cap = min(float(baseline_magnitude), self.maximum_main_command_rad_s)
+        if self._auxiliary_saturation_active:
+            cap = min(cap, self.scheduled_main_command_rad_s)
+        self._scheduled_main_cap_rad_s = float(cap)
+        return cap
+
+
+class AngleAwareConstraintOraclePolicy(ConstraintAwareTrajectoryOraclePolicy):
+    """R3 candidate: hold the main command when the target angle saturates."""
+
+    policy_name = "oracle_intervention_v1"
+
+    def __init__(
+        self,
+        protocol: ActionProtocol,
+        *,
+        auxiliary_angle_saturation_threshold_rad: float = 0.50,
+        auxiliary_angle_release_threshold_rad: float = 0.42,
+        angle_scheduled_main_command_rad_s: float = 0.35,
+        **kwargs: object,
+    ) -> None:
+        super().__init__(protocol, **kwargs)
+        self.auxiliary_angle_saturation_threshold_rad = _validate_trajectory_scalar(
+            auxiliary_angle_saturation_threshold_rad,
+            name="auxiliary_angle_saturation_threshold_rad",
+        )
+        self.auxiliary_angle_release_threshold_rad = _validate_trajectory_scalar(
+            auxiliary_angle_release_threshold_rad,
+            name="auxiliary_angle_release_threshold_rad",
+        )
+        if self.auxiliary_angle_release_threshold_rad >= self.auxiliary_angle_saturation_threshold_rad:
+            raise ValueError("auxiliary_angle_release_threshold_rad must be below the saturation threshold")
+        self.angle_scheduled_main_command_rad_s = _validate_trajectory_scalar(
+            angle_scheduled_main_command_rad_s,
+            name="angle_scheduled_main_command_rad_s",
+            strictly_positive=True,
+        )
+        if self.angle_scheduled_main_command_rad_s > self.maximum_main_command_rad_s:
+            raise ValueError("angle_scheduled_main_command_rad_s must not exceed maximum_main_command_rad_s")
+        self._angle_saturation_active = False
+
+    def reset(self, context: EpisodeContext) -> None:
+        super().reset(context)
+        self._angle_saturation_active = False
+
+    def _schedule_main_magnitude(
+        self,
+        observation: PolicyObservation,
+        *,
+        baseline_magnitude: float,
+        planned_main_command_rad_s: float,
+        desired_curvature_1_m: float,
+        cross_track_error_m: float,
+    ) -> float:
+        del observation
+        sign = 1.0 if planned_main_command_rad_s >= 0.0 else -1.0
+        baseline_signed = sign * float(baseline_magnitude)
+        predicted_angle = float(
+            self.drive_model.auxiliary_for_curvature(
+                baseline_signed, desired_curvature_1_m
+            )
+        )
+        error_segment = (
+            abs(float(desired_curvature_1_m)) >= self.turning_curvature_threshold_1_m
+            or abs(float(cross_track_error_m)) >= self.lateral_error_threshold_m
+        )
+        if self._angle_saturation_active:
+            if abs(predicted_angle) <= self.auxiliary_angle_release_threshold_rad and not error_segment:
+                self._angle_saturation_active = False
+                self._scheduler_trigger_code = 13
+        elif abs(predicted_angle) >= self.auxiliary_angle_saturation_threshold_rad and error_segment:
+            self._angle_saturation_active = True
+            self._scheduler_trigger_code = 11
+        elif self._angle_saturation_active:
+            self._scheduler_trigger_code = 12
+        if self._angle_saturation_active and self._scheduler_trigger_code == 0:
+            self._scheduler_trigger_code = 12
+        self._scheduler_active = bool(self._angle_saturation_active)
+        self._auxiliary_saturation_active = bool(self._angle_saturation_active)
+        cap = min(float(baseline_magnitude), self.maximum_main_command_rad_s)
+        if self._angle_saturation_active:
+            cap = min(cap, self.angle_scheduled_main_command_rad_s)
+        self._scheduled_main_cap_rad_s = float(cap)
+        self._planned_main_command_rad_s = float(planned_main_command_rad_s)
+        return cap
 
 
 class DynamicOraclePolicy(_PolicyBase):

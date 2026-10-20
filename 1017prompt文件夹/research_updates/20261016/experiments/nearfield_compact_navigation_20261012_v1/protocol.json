@@ -1,0 +1,70 @@
+{
+  "hypothesis": "At the already-measured forward camera position, reduce baseline60cm to20cm to increase bilateral support at body0.9-1m. Keep matcher thresholds and navigation fixed. Forward-only improved measured depth but failed arrival; this is a separate baseline-width intervention, not a retry of forward-only.",
+  "offline_candidates": [
+    {
+      "name": "baseline",
+      "forward": 0.2,
+      "half_baseline": 0.3,
+      "up": 0.05
+    },
+    {
+      "name": "forward",
+      "forward": 0.4,
+      "half_baseline": 0.3,
+      "up": 0.05
+    },
+    {
+      "name": "compact",
+      "forward": 0.4,
+      "half_baseline": 0.1,
+      "up": 0.05
+    }
+  ],
+  "geometry_gate": "Across zero joints and five saved E2 measured joint configurations, candidate must increase worst-state unmasked bilateral target support in the body-front0.9-1.5m corridor compared with baseline; no degradation at2-3m below80percent of baseline. Disparity plus/minus1px worst depth uncertainty at3m optical depth must remain below0.1m. Screen only these three, select minimal change passing gates; do not claim scene visibility from CAD screen.",
+  "target_grid": {
+    "body_x_m": [
+      0.9,
+      1.0,
+      1.2,
+      1.5,
+      2.0,
+      3.0
+    ],
+    "body_y_m": [
+      -0.3,
+      -0.2,
+      -0.1,
+      0.0,
+      0.1,
+      0.2,
+      0.3
+    ],
+    "body_z_m": [
+      -0.3,
+      -0.2,
+      -0.1,
+      0.0,
+      0.1,
+      0.2,
+      0.3
+    ]
+  },
+  "online_depth_gate": "Before outcome acceptance, compare confident retained-depth range0.5-3m with saved renderer depth (scoring only). At least1000 comparable pixels, p90absolute error<=0.15m and >0.3m error fraction<=0.1. Ground-truth scoring never feeds control.",
+  "physical_budget": {
+    "cap": 3,
+    "used": 0,
+    "recovery_cap": 1,
+    "order": [
+      "candidate_e2",
+      "candidate_e0_if_E2_pass",
+      "candidate_e1_if_E2_pass"
+    ]
+  },
+  "navigation_gate": "E2 candidate must reach the goal without contact within90s and pass depth gate to retain and proceed E0/E1. Otherwise reject navigation candidate, preserve results and choose a distinct mechanism. E0/E1 then report raw outcomes without claiming independent generalization.",
+  "fixed": "SGBM448block5LR1.5, masks7pxdilation, original point range0.5-3m and filters, image640x480 focal584.8889 optical rotation, lighting, IMU and initial gauge, risk memory/planning/control/scene/start/90s thresholds all unchanged. Only stereo baseline changes relative to measured forward control; corresponding masks, camera poses, metric depth and disparity uncertainty use20cm consistently. Camera prims have no added physical housing or mounting collision model; this is simulated sensing, not hardware mount qualification.",
+  "ruling": "User explicitly authorized autonomous design implementation and bounded verification. Reuse specified workspace in a new experiment directory; preserve all original files and closed protocols. No routine design approval pending. Existing measured E2 joint states are development geometry screening, not held-out evidence.",
+  "control_evidence": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e2_run",
+  "control_assessment": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e2_assessment.json",
+  "created_utc": "2026-10-12T13:11:00.737245+00:00",
+  "camera_family_stop": "This is the final pre-screened rig alternative. If it fails, close camera geometry campaign; no third rig, baseline scan or gate tuning."
+}

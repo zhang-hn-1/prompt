@@ -1,0 +1,77 @@
+{
+  "schema": "presentation_interface_review_addendum_v1",
+  "reviewed_utc": "2026-10-13T04:31:12.018074+00:00",
+  "parent_review_sha256": "e9943a99a3996a21f812ac8758c11697c473599576156e3c2db4d69f6b7bfd68",
+  "accepted": true,
+  "retain_source": false,
+  "admit_navigation": false,
+  "scope": "Presentation wording changes and new diagnostic inference interface only; no full audit rerun, fitting or physics.",
+  "presentation": {
+    "preserved_original_matches_reviewed_hash": true,
+    "only_two_literal_changes": true,
+    "current_E1_image_visually_checked": true,
+    "midpoint_description": "fixed sequence midpoint (45s)",
+    "error_description": "unmatched relative to qualified visible GT; not certified empty volume",
+    "model_prediction_seal_and_both_score_files_unchanged": true
+  },
+  "interface": {
+    "inputs": [
+      "left_rgb uint8 480x640x3",
+      "right_rgb uint8 480x640x3",
+      "finite unit gravity3",
+      "finite time_s"
+    ],
+    "network_inputs": [
+      "resized paired RGB",
+      "gravity3"
+    ],
+    "time_metadata_only": true,
+    "malformed_sensor_cases_rejected": 5,
+    "extra_GT_keyword_rejected": true,
+    "CLI_extra_depth_field_rejected": true,
+    "checkpoint_sha256": "284c648a520f923975e4782ce68882e999854a2fb3dd0580bf1212981449e5f2",
+    "ground_bounds_corrected": [
+      -0.03,
+      0.03
+    ],
+    "height_interval_class_ids": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "five_explicit_class_names": [
+      "unknown",
+      "visible_ground_not_free",
+      "obstacle_005_05",
+      "obstacle_05_1",
+      "obstacle_1_15"
+    ],
+    "diagnostic_refusal_flags_verified": true,
+    "midpoint_replay": {
+      "frame": 450,
+      "source_time_s": 44.99999899417162,
+      "class_differences": 0,
+      "max_probability_delta": 0.00013741850852966309,
+      "probabilities_bit_exact": false
+    },
+    "limitations": [
+      "The interface is diagnostic and has no command or free-space consumer integration. Refusal flags are metadata that a future consumer must honor.",
+      "A supplied common timestamp is validated for finiteness; this standalone file API does not itself verify sensor acquisition synchronization or live freshness.",
+      "The CLI whitelist and fixed Python signature exclude additional GT fields; ordinary caller-supplied RGB/gravity provenance remains the caller responsibility.",
+      "Cross-backend numeric differences remain disclosed; single-frame class equality does not replace the full-sequence CPU discrepancy recorded in the parent review."
+    ]
+  },
+  "reviewed_artifact_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/compare_and_plot.py": "b92cba2073d77ddbc32fe1c753776dfe7a3c18d5ef66a89e49c542a1c300a5c4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/compare_and_plot_reviewed_original.py.txt": "c581ad66570ea5d1314a47459f20a60a2b73dcf5ec0efe9526bd26726a794146",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/E0_local_map.png": "79c7a6660378e33ceefc6b924cceb735ce8e7c6290eb258642a171605626a095",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/E1_local_map.png": "93d08c9e8a7d151f6d58b3c91a0f39d7d6bbcf2f2805155a01f420da395ca510",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/training_loss.png": "346c6dc8e154b86fe21514c6542a7dbe009baa89bf9c95a5011209a1a6d2fc85",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/predict_local_map.py": "540f161dc863ab34a3c2754e433d8b00f4751b8e7d76387673d23eea3785f3bc",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/predict_local_map_before_metadata_fix.py.txt": "68e42714a6db699de2bc18266bf7759028fafe46a138fed2b0d6658de311717f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/inference_api_check.json": "244161dca7b7cdb7deb8d18fa44c0d20f85d201a1fbdeaf9170d89028ff20580",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/inference_api_device_difference.json": "2fb126da5e051da6e418e5fd477fcd66473eb44798dc1db009f634a213865307",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/inference_metadata_check.json": "dc5d9407a0ee6e1f235c1356a0c9f95f6352865f22b0867b0fc2939f199deed7"
+  }
+}

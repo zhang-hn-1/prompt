@@ -1,0 +1,21 @@
+from pathlib import Path
+import sys,json,hashlib,numpy as np,cv2
+from scipy.spatial.transform import Rotation
+D=Path(__file__).resolve().parent;W=D.parents[1];H=W/'experiments/stereo_memory_navigation_20261004_v1';V=W/'experiments/viewpoint_confirmation_navigation_20261012_v1';C=W/'experiments/source_confidence_calibration_20261012_v1';P=Path('/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm');sys.path[:0]=[str(D),str(V),str(H),str(P)]
+from rig_adapter import Rig,RigMask,ROTATION
+from visible_target import rasterize,unproject
+cad=RigMask(Rig('forward',.4,.3,.05));sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest();inputs={};rows=[];rgb_hash={};out=D/'data';out.mkdir(exist_ok=False)
+for name,R in [('H',W/'experiments/risk_height_navigation_20261012_v1/candidate_e2_run'),('E0',C/'data_e0_run'),('E1',C/'data_e1_run')]:
+ paths=sorted((R/'source_inputs').glob('*.npz'));assert [int(p.stem.split('_')[1]) for p in paths]==list(range(0,901,5));states=json.loads((R/'states.json').read_text());xs=[];gs=[];ys=[];times=[];counts=[];rgb_hash[name]=[]
+ for p in paths:
+  i=int(p.stem.split('_')[1]);a=np.load(p);kp=R/'known_poses'/p.name;b=np.load(kp);fp=R/'frames'/p.name;f=np.load(fp);t=float(a['time_s']);assert t==float(b['time_s'])==float(f['time_s']);assert abs(t-float(states[i]['time_s']))<1e-6
+  for eye in ['left','right']:assert np.array_equal(a[eye+'_rgb'],f[eye+'_rgb'])
+  # Current native camera orientation -> current root attitude -> gravity in root frame.
+  nativeR=b['left_camera_usd_world'][:3,:3]@np.diag([1,-1,-1])@ROTATION.T;gravity=-nativeR.T@np.array([0.,0.,1.]);assert np.isclose(np.linalg.norm(gravity),1,atol=1e-5)
+  x=np.concatenate([cv2.resize(a[eye+'_rgb'],(160,120),interpolation=cv2.INTER_AREA) for eye in ['left','right']],axis=2).transpose(2,0,1);xs.append(x);gs.append(gravity);times.append(t);rgb_hash[name].append(hashlib.sha256(a['left_rgb'].tobytes()+a['right_rgb'].tobytes()).hexdigest())
+  masks=cad.project(np.array(states[i]['joints']));world=np.concatenate([unproject(f[eye+'_depth_m'],f[eye+'_camera_usd_world'],masks[eye]) for eye in ['left','right']]);root=f['root_position_world_m'];world=world[np.linalg.norm(world-root,axis=1)>=.55];q=f['root_quaternion_world_wxyz'];Rgt=Rotation.from_quat(q[[1,2,3,0]]).as_matrix();yaw=np.arctan2(Rgt[1,0],Rgt[0,0]);y=rasterize(world,root,yaw);ys.append(y);counts.append(int((y>0).sum()))
+  for pp in [p,kp,fp]:inputs[str(pp)]=sha(pp)
+ termination=json.loads((R/'termination.json').read_text());assert termination['termination']=='timeout90';inputs[str(R/'termination.json')]=sha(R/'termination.json');inputs[str(R/'states.json')]=sha(R/'states.json');Y=np.stack(ys);np.savez_compressed(out/f'{name}.npz',rgb=np.stack(xs),gravity=np.stack(gs).astype(np.float32),labels=Y,times=np.array(times));hist=np.bincount(Y.ravel(),minlength=5);row=dict(group=name,role='fit' if name!='E1' else 'unseen_by_fit_development_check',epochs=len(paths),class_cells=hist.tolist(),fraction_frames_at_least20_labelled=float(np.mean(np.array(counts)>=20)),obstacle_cells=int((Y>=2).sum()),min_visible_cells=min(counts),terminal=termination);row['coverage_pass']=bool(row['fraction_frames_at_least20_labelled']>=.9 and row['obstacle_cells']>=100);rows.append(row);print(row,flush=True)
+traincounts=np.sum([r['class_cells'] for r in rows if r['group']!='E1'],0);overlap={name:len(set(rgb_hash[name])&set(rgb_hash['E1'])) for name in ['H','E0']};passgate=all(r['coverage_pass'] for r in rows) and bool((traincounts>=100).all()) and sum(overlap.values())==0
+manifest=dict(rows=rows,training_class_counts=traincounts.tolist(),train_E1_exact_pair_overlap=overlap,pass_coverage=passgate,input_sha256=inputs,dataset_sha256={str(p):sha(p) for p in out.glob('*.npz')},source_sha256={str(p):sha(p) for p in [D/'build_dataset.py',D/'visible_target.py',D/'protocol.json']},privileges='GT only target world ground and camera/root geometry; native current estimated IMU attitude input, fixed calibrated rig; no GT pose or SGBM or time/layoutID in network; E1 already seen by research but not used in fit',not_navigation_admission=True)
+(D/'coverage.json').write_text(json.dumps(manifest,indent=2)+'\n');print('FIT COVERAGE',passgate,traincounts,overlap,flush=True)

@@ -39,6 +39,9 @@ if __package__ in (None, ""):
         summarize_navigation,
     )
     from training.pose_utils import pointgoal_in_base
+    from training.proprioception import (
+        checkpoint_velocity_frame, transform_proprio_velocities, validate_velocity_frame,
+    )
 else:
     from .ball_wm_dataset import (
         IMAGENET_MEAN,
@@ -58,6 +61,12 @@ else:
         summarize_navigation,
     )
     from .pose_utils import pointgoal_in_base
+    from .proprioception import (
+        checkpoint_velocity_frame, transform_proprio_velocities, validate_velocity_frame,
+    )
+
+
+from scripts.camera_rig import CAMERA_FORWARD_M, CAMERA_HALF_BASELINE_M, CAMERA_UP_M
 
 
 _CONTEXT_MANIFEST_SCHEMA = "pointgoal_context_manifest_v1"
@@ -206,6 +215,7 @@ def _observation_from_state(
     previous_action: np.ndarray,
     clearance_m: float,
     image_size: tuple[int, int],
+    proprio_velocity_frame: str = "world",
 ) -> RuntimeObservation:
     """Convert a current simulator sensor/state snapshot to model inputs."""
 
@@ -222,6 +232,7 @@ def _observation_from_state(
     proprio = np.concatenate(
         [linear, angular, _gravity_in_base(quaternion).astype(np.float32), joints, joint_rates, action]
     ).astype(np.float32)
+    proprio = transform_proprio_velocities(proprio, quaternion, frame=proprio_velocity_frame)
     return RuntimeObservation(
         pixels_left=_rgb_to_model_tensor(left_rgb, image_size),
         pixels_right=_rgb_to_model_tensor(right_rgb, image_size),
@@ -247,6 +258,7 @@ class IsaacNavigationRuntime:
         image_size: int | tuple[int, int],
         ball_radius_m: float,
         device: str,
+        proprio_velocity_frame: str = "world",
     ) -> None:
         self._simulation_app: Any | None = None
         self._closed = False
@@ -254,6 +266,7 @@ class IsaacNavigationRuntime:
         self._trajectory: list[np.ndarray] = []
         self._previous_action = np.zeros(2, dtype=np.float32)
         self.device = str(device)
+        self.proprio_velocity_frame = validate_velocity_frame(proprio_velocity_frame)
         self.scene_path = Path(scene_path)
         if not self.scene_path.is_file():
             raise FileNotFoundError(f"Isaac scene does not exist: {self.scene_path}")
@@ -368,7 +381,7 @@ class IsaacNavigationRuntime:
                 position=np.asarray([0.0, 0.0, 0.45], dtype=np.float32),
             )
         )
-        camera_x, camera_y, camera_z = 0.1, 0.30, 0.10
+        camera_x, camera_y, camera_z = CAMERA_FORWARD_M, CAMERA_HALF_BASELINE_M, CAMERA_UP_M
         focal_length, horizontal_aperture = 16.45, 18.0
         vertical_aperture = horizontal_aperture * self._contract.image_height_px / self._contract.image_width_px
 
@@ -512,6 +525,7 @@ class IsaacNavigationRuntime:
             previous_action=self._previous_action,
             clearance_m=clearance,
             image_size=self.image_size,
+            proprio_velocity_frame=self.proprio_velocity_frame,
         )
         self._trajectory.append(observation.position_xy.copy())
         return replace(observation, trajectory_xy=np.stack(self._trajectory).astype(np.float32))
@@ -936,7 +950,10 @@ def _recorded_goal_info(
         "pixels_left": left.unsqueeze(0).unsqueeze(0),
         "pixels_right": right.unsqueeze(0).unsqueeze(0),
         "action": torch.zeros((1, 1, 10), dtype=torch.float32),
-        "proprio": torch.from_numpy(_proprio17(states, state_index)).unsqueeze(0).unsqueeze(0),
+        "proprio": torch.from_numpy(_proprio17(
+            states, state_index,
+            velocity_frame=getattr(dataset.config, "proprio_velocity_frame", "world"),
+        )).unsqueeze(0).unsqueeze(0),
     }
 
 
@@ -974,9 +991,13 @@ def _recorded_context_sample(
         next_end = next_start + action_block
         if state_index >= len(states["pos"]):
             raise ValueError("context frame does not have an aligned state")
-        proprio_rows.append(_proprio17(states, state_index))
-        if next_end <= len(states["applied_action"]):
-            action_rows.append(states["applied_action"][next_start:next_end].reshape(-1))
+        proprio_rows.append(_proprio17(
+            states, state_index,
+            velocity_frame=getattr(dataset.config, "proprio_velocity_frame", "world"),
+        ))
+        action_source = getattr(dataset.config, "action_source", "applied_action")
+        if next_end <= len(states[action_source]):
+            action_rows.append(states[action_source][next_start:next_end].reshape(-1))
         else:
             action_rows.append(np.zeros(action_block * 2, dtype=np.float32))
     return {
@@ -1196,6 +1217,7 @@ def run_navigation_evaluation(
     if "config" not in checkpoint or "model" not in checkpoint:
         raise ValueError("checkpoint must contain config and model")
     require_checkpoint_protocol(checkpoint, action_protocol.protocol_id)
+    checkpoint_velocity_frame(checkpoint)
     config = JointModelConfig(**checkpoint["config"])
     goal_source = resolve_planner_goal_source(
         policy=policy,
@@ -1212,6 +1234,8 @@ def run_navigation_evaluation(
         num_preds=config.num_preds,
         rollout_horizon=config.rollout_horizon,
         image_size=(config.image_size, config.image_size),
+        action_source=config.action_source,
+        proprio_velocity_frame=config.proprio_velocity_frame,
         action_block=action_protocol.controls_per_block,
         with_bev=False,
         with_visibility=False,
@@ -1274,6 +1298,7 @@ def run_navigation_evaluation(
                         image_size=config.image_size,
                         ball_radius_m=float(metadata.get("ball_radius_m", 0.4)),
                         device=str(device),
+                        proprio_velocity_frame=config.proprio_velocity_frame,
                     )
                     runtime_scene = context.scene_path
                 elif runtime_scene != context.scene_path:

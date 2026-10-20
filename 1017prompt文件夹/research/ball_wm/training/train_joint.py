@@ -30,6 +30,7 @@ if __package__ in (None, ""):
     from training.candidate_rollout_dataset import CandidateRolloutDataset
     from training.joint_jepa import JointModelConfig, build_joint_model
     from training.lewm_modules import SIGReg
+    from training.proprioception import checkpoint_velocity_frame, validate_velocity_frame
 else:
     from .action_protocol import require_action_protocol
     from .ball_wm_dataset import BallWMDataset, make_train_val_test_split
@@ -42,6 +43,7 @@ else:
     from .candidate_rollout_dataset import CandidateRolloutDataset
     from .joint_jepa import JointModelConfig, build_joint_model
     from .lewm_modules import SIGReg
+    from .proprioception import checkpoint_velocity_frame, validate_velocity_frame
 
 
 _CANDIDATE_CONFIG_KEYS = frozenset(
@@ -74,6 +76,8 @@ def training_protocol_metadata(dataset: object) -> dict[str, object]:
     return {
         "action_protocol_id": protocol_id,
         "controls_per_block": controls_per_block,
+        "action_source": getattr(dataset, "action_source", "applied_action"),
+        "proprio_velocity_frame": validate_velocity_frame(getattr(dataset, "proprio_velocity_frame", "world")),
     }
 
 
@@ -85,6 +89,26 @@ def require_initial_checkpoint_protocol(
     return require_action_protocol(
         checkpoint, expected_protocol_id, artifact="initial checkpoint"
     )
+
+
+def require_initial_checkpoint_action_source(
+    checkpoint: Mapping[str, object], expected_action_source: str
+) -> str:
+    """Keep warm starts on the same action boundary as their training data."""
+    config = checkpoint.get("config", {})
+    source = config.get("action_source", "applied_action") if isinstance(config, Mapping) else "applied_action"
+    if checkpoint.get("action_source", source) != source or source != expected_action_source:
+        raise ValueError(
+            f"initial checkpoint action_source {source!r} does not match {expected_action_source!r}"
+        )
+    return str(source)
+
+
+def require_initial_checkpoint_velocity_frame(checkpoint: Mapping, expected_frame: str) -> str:
+    frame = checkpoint_velocity_frame(checkpoint)
+    if frame != validate_velocity_frame(expected_frame):
+        raise ValueError(f"initial checkpoint proprio_velocity_frame {frame!r} does not match {expected_frame!r}")
+    return frame
 
 
 def split_training_config(values: Mapping[str, object]) -> tuple[dict[str, object], dict[str, object]]:
@@ -401,6 +425,8 @@ def main() -> None:
     if candidate_expected_candidates is not None:
         candidate_expected_candidates = int(candidate_expected_candidates)
     if candidate_root_value is not None:
+        if model_config.action_source != "applied_action":
+            raise ValueError("candidate training currently requires action_source=applied_action")
         if not model_config.pose_head_enabled or model_config.rollout_horizon < 5:
             raise ValueError("candidate training requires pose_head_enabled and rollout_horizon >= 5")
         if not 0.0 <= candidate_batch_ratio <= 1.0:
@@ -420,6 +446,8 @@ def main() -> None:
         num_preds=model_config.num_preds,
         rollout_horizon=model_config.rollout_horizon,
         image_size=(model_config.image_size, model_config.image_size),
+        action_source=model_config.action_source,
+        proprio_velocity_frame=model_config.proprio_velocity_frame,
     )
     protocol_metadata = training_protocol_metadata(dataset)
     train_idx, val_idx, test_idx = make_train_val_test_split(
@@ -458,6 +486,7 @@ def main() -> None:
             candidate_formal_root,
             image_size=(model_config.image_size, model_config.image_size),
             expected_candidates=candidate_expected_candidates,
+            proprio_velocity_frame=model_config.proprio_velocity_frame,
         )
         if candidate_dataset.action_protocol_id != dataset.action_protocol_id:
             raise ValueError(
@@ -496,6 +525,8 @@ def main() -> None:
         require_initial_checkpoint_protocol(
             initial_checkpoint, dataset.action_protocol_id
         )
+        require_initial_checkpoint_action_source(initial_checkpoint, dataset.action_source)
+        require_initial_checkpoint_velocity_frame(initial_checkpoint, dataset.proprio_velocity_frame)
         model.load_state_dict(initial_checkpoint["model"])
     sigreg = SIGReg(knots=17, num_proj=1024).to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=args.weight_decay)

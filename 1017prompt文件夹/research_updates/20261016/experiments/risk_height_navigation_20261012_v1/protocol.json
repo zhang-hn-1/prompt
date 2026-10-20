@@ -1,0 +1,32 @@
+{
+  "version": "height_interval_source_qualification_v1",
+  "hypothesis": "Existing accepted points include ground incorrectly above the fixed .05m floor boundary. Qualifying new positive-height points with their existing one-pixel range sensitivity may change early risk maps/routes and prevent stalled navigation. Saved-trajectory filtering alone does not unblock the terminal root; navigation improvement is unproven.",
+  "mechanism": "After the unchanged paired texture and height filtering, admit a NEW occupied point only if world_z - existing sigma_m > .05. Aligned fields preserved; ambiguous points remain unknown. Existing confirmed risks, TTL and planning clearance are unchanged.",
+  "inputs": "Only current causal binocular packet world coordinates, sigma_m, paired RGB/texture, disparity and current native IMU encoder registration. Same forward60cm rig as measured control; no additional geometry change.",
+  "control": {
+    "run": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/candidate_e2_run",
+    "seal_sha256": "554a43f57a4289c5e3d6f28b822200ca319110032a2db1eb6f7a1e7958597126",
+    "result": "90s timeout no contacts remaining8.2121823358m",
+    "limitations": "Historical same-configuration development E2; RGB may differ, no complete causal A/B or heldout claim. Forward rig remains navigation rejected; reused fixed research sensor platform only."
+  },
+  "offline_evidence": [
+    "surface_height_audit.json",
+    "grid_replay.json"
+  ],
+  "qualification": "4CPU checks passed. Full saved accepted-surface replay must match implemented predicate and preserve clocks/pixel alignment/history. No online renderer truth.",
+  "navigation_gate": "E2 actual success within90s, raw final distance<=.2m, all contacts available and no contact, valid source clocks/registration and request execution, two fully decoded videos, unchanged depth gate. Only then E0/E1, otherwise stop and close unused budget.",
+  "online_depth_gate": "Same conditional confident0.5-3m depth accuracy: >=1000 comparable pixels,p90<=.15m, fraction error>.3m<=.1; truth only scoring; not whole coverage.",
+  "physical_budget": {
+    "cap": 3,
+    "order": [
+      "candidate_e2",
+      "candidate_e0_if_E2_pass",
+      "candidate_e1_if_E2_pass"
+    ],
+    "environment_recovery_cap": 1,
+    "automatic_retry": 0
+  },
+  "fixed": "Rig, masks, SGBM, lighting, scene,90s, IMU/encoder source and privileged initial gauge/ideal lowlevelIMU, floor/safe-start/controlled-unknown priors, memory lifecycle, planner, clearance, control and gains unchanged.",
+  "stop": "Reject on navigation/source/execution failure, no sigma multiplier tuning or alternate floor thresholds. Closed camera/control/data budgets stay closed.",
+  "whole_mission_complete": false
+}

@@ -23,6 +23,7 @@ class CandidateRolloutDataset(torch.utils.data.Dataset):
         normalize: bool = True,
         expected_horizon: int = 5,
         expected_candidates: int | None = None,
+        proprio_velocity_frame: str = "world",
     ) -> None:
         if int(expected_horizon) != 5:
             raise ValueError("candidate protocol requires expected_horizon=5")
@@ -41,6 +42,7 @@ class CandidateRolloutDataset(torch.utils.data.Dataset):
             with_bev=False,
             with_visibility=False,
             normalize=normalize,
+            proprio_velocity_frame=proprio_velocity_frame,
         )
         self.context_paths = self._discover_contexts()
         if not self.context_paths:

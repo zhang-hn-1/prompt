@@ -193,6 +193,24 @@ def test_trial_stages_apply_and_remove_commands_for_each_mode():
     assert all(stage.duration_s > 0.0 for stage in (*braking, *steering))
 
 
+def test_trial_stages_extend_steady_turn_for_auxiliary_velocity_limit():
+    case = CalibrationCase("turn", "steady_turn", 1.5, math.radians(30.0))
+
+    nominal = trial_stages(
+        case,
+        main_acceleration_rad_s2=0.5,
+        auxiliary_rate_rad_s=math.radians(30.0),
+    )
+    limited = trial_stages(
+        case,
+        main_acceleration_rad_s2=0.5,
+        auxiliary_rate_rad_s=math.radians(30.0),
+        auxiliary_velocity_limit_rad_s=0.30,
+    )
+
+    assert limited[0].duration_s > nominal[0].duration_s
+
+
 def test_drive_dynamics_module_import_does_not_start_isaac():
     program = f"""
 import sys
@@ -347,6 +365,39 @@ def test_compact_profile_preserves_measured_signed_steering_and_braking():
     assert all(row["speed_m_s"] >= 0.0 for row in profile["braking_samples"])
 
 
+def test_compact_profile_marks_velocity_limited_calibration_as_v2():
+    report = _complete_signed_report_fixture()
+    report["controller"]["auxiliary_velocity_limit_rad_s"] = 0.30
+
+    profile = drive_probe.compact_drive_profile(report)
+
+    assert profile["schema_version"] == "drive_dynamics_v2"
+    assert profile["controller"]["auxiliary_velocity_limit_rad_s"] == pytest.approx(0.30)
+
+
+def test_compact_profile_monotonicizes_small_curvature_measurement_noise():
+    report = _complete_signed_report_fixture()
+    rows = [
+        case
+        for case in report["cases"]
+        if case["mode"] == "steady_turn"
+        and case["main_command_rad_s"] == 0.5
+    ]
+    rows[1]["steady_curvature_1_m"] = rows[0]["steady_curvature_1_m"] + 0.02
+
+    profile = drive_probe.compact_drive_profile(report)
+    curvatures = [
+        row["curvature_1_m"]
+        for row in sorted(
+            profile["steering_samples"],
+            key=lambda row: (row["main_command_rad_s"], row["auxiliary_angle_rad"]),
+        )
+        if row["main_command_rad_s"] == 0.5
+    ]
+
+    assert all(right < left for left, right in zip(curvatures, curvatures[1:]))
+
+
 def test_compact_profile_rejects_incomplete_reverse_measurements():
     assert hasattr(drive_probe, "compact_drive_profile"), (
         "calibration report needs a validated compact profile exporter"
@@ -407,6 +458,18 @@ def test_compact_profile_writer_creates_reloadable_json(tmp_path: Path):
     assert len(payload["steering_samples"]) == 42
 
 
+def test_compact_profile_writer_preserves_velocity_limit_metadata(tmp_path: Path):
+    output = tmp_path / "drive_dynamics_v2.json"
+    report = _complete_signed_report_fixture()
+    report["controller"]["auxiliary_velocity_limit_rad_s"] = 0.30
+
+    drive_probe.write_compact_drive_profile(output, report)
+
+    payload = json.loads(output.read_text(encoding="utf-8"))
+    assert payload["schema_version"] == "drive_dynamics_v2"
+    assert payload["controller"]["auxiliary_velocity_limit_rad_s"] == pytest.approx(0.30)
+
+
 def test_render_calibration_report_writes_summary_png(tmp_path: Path):
     output = tmp_path / "drive_dynamics_calibration.png"
 
@@ -435,6 +498,30 @@ def test_cli_defaults_to_headless_full_calibration(tmp_path: Path):
     assert args.gui is False
     assert args.main_accel_rad_s2 == pytest.approx(0.5)
     assert args.aux_rate_deg_s == pytest.approx(30.0)
+    assert args.auxiliary_velocity_limit_rad_s is None
+
+
+def test_cli_accepts_auxiliary_velocity_limit_for_calibration(tmp_path: Path):
+    args = _parse_args(
+        [
+            "--out",
+            str(tmp_path),
+            "--auxiliary-velocity-limit-rad-s",
+            "0.30",
+        ]
+    )
+
+    assert args.auxiliary_velocity_limit_rad_s == pytest.approx(0.30)
+
+
+def test_cli_accepts_round4_manifest(tmp_path: Path):
+    manifest = tmp_path / "round4.json"
+
+    args = _parse_args(
+        ["--out", str(tmp_path / "run"), "--manifest", str(manifest)]
+    )
+
+    assert args.manifest == manifest
 
 
 def test_cli_accepts_explicit_compact_profile_destination(tmp_path: Path):
@@ -460,3 +547,172 @@ def test_runtime_rejects_invalid_controller_parameters_before_importing_isaac(
             auxiliary_kd=60.0,
             auxiliary_rate_rad_s=math.radians(30.0),
         )
+
+
+def _round4_manifest_fixture() -> dict[str, object]:
+    return {
+        "schema_version": "round4_drive_calibration_v1",
+        "action_protocol_id": "ball_action_v2_aux30",
+        "drive_profile": {"path": "drive.json", "sha256": "a" * 64},
+        "controller": {
+            "physics_hz": 50,
+            "control_hz": 50,
+            "main_acceleration_limit_rad_s2": 0.5,
+            "main_derivative_gain": 80.0,
+            "auxiliary_kp": 300.0,
+            "auxiliary_kd": 60.0,
+            "auxiliary_target_rate_limit_rad_s": math.radians(30.0),
+            "auxiliary_velocity_limit_rad_s": 0.30,
+        },
+        "procedure": {
+            "steady_window_s": 1.0,
+            "maximum_steer_hold_s": 6.0,
+            "maximum_release_s": 4.0,
+            "diagnostic_radius_m": 12.0,
+        },
+        "stability": {
+            "maximum_auxiliary_median_error_rad": 0.035,
+            "maximum_auxiliary_p95_abs_velocity_rad_s": 0.04,
+            "minimum_planar_speed_m_s": 0.05,
+            "maximum_speed_coefficient_of_variation": 0.10,
+            "maximum_abs_yaw_rate_trend_rad_s2": 0.04,
+            "minimum_geometric_path_length_m": 0.15,
+        },
+        "candidate_gates": {
+            "minimum_valid_heldout_cases": 1,
+            "minimum_curvature_mae_improvement_fraction": 0.2,
+            "maximum_speed_mae_regression_fraction": 0.05,
+        },
+        "cases": [
+            {
+                "case_id": "core",
+                "dataset_role": "fit_core",
+                "mode": "steering_step",
+                "main_command_rad_s": 0.35,
+                "auxiliary_command_rad": math.radians(30.0),
+            },
+            {
+                "case_id": "heldout",
+                "dataset_role": "heldout_validation",
+                "mode": "steering_step",
+                "main_command_rad_s": 0.50,
+                "auxiliary_command_rad": math.radians(22.5),
+            },
+        ],
+    }
+
+
+def test_round4_manifest_preserves_roles_units_and_case_order(tmp_path: Path):
+    manifest_path = tmp_path / "round4.json"
+    manifest_path.write_text(json.dumps(_round4_manifest_fixture()), encoding="utf-8")
+
+    manifest, cases = drive_probe.load_round4_manifest(manifest_path, _contract())
+
+    assert manifest["controller"]["auxiliary_velocity_limit_rad_s"] == pytest.approx(0.30)
+    assert [case.case_id for case in cases] == ["core", "heldout"]
+    assert cases[0].dataset_role == "fit_core"
+    assert cases[1].dataset_role == "heldout_validation"
+    assert cases[0].auxiliary_command_rad == pytest.approx(math.radians(30.0))
+
+
+def test_round4_manifest_rejects_more_than_declared_run_limits(tmp_path: Path):
+    payload = _round4_manifest_fixture()
+    payload["cases"] = [
+        {
+            "case_id": f"core_{index}",
+            "dataset_role": "fit_core",
+            "mode": "straight",
+            "main_command_rad_s": 0.35,
+            "auxiliary_command_rad": 0.0,
+        }
+        for index in range(21)
+    ]
+    manifest_path = tmp_path / "too_many.json"
+    manifest_path.write_text(json.dumps(payload), encoding="utf-8")
+
+    with pytest.raises(ValueError, match="at most 20 core"):
+        drive_probe.load_round4_manifest(manifest_path, _contract())
+
+
+def test_geometric_curvature_uses_xy_path_and_rejects_low_travel():
+    theta = np.linspace(0.0, math.pi / 4.0, 25)
+    left_arc = np.column_stack((2.0 * np.sin(theta), 2.0 * (1.0 - np.cos(theta))))
+
+    estimate = drive_probe.estimate_geometric_curvature(
+        left_arc, minimum_path_length_m=0.15
+    )
+    invalid = drive_probe.estimate_geometric_curvature(
+        [[0.0, 0.0], [0.01, 0.0], [0.02, 0.0]],
+        minimum_path_length_m=0.15,
+    )
+
+    assert estimate["valid"] is True
+    assert estimate["curvature_1_m"] == pytest.approx(0.5, rel=0.03)
+    assert estimate["source"] == "xy_motion_tangent_vs_arc_length"
+    assert invalid["valid"] is False
+    assert invalid["curvature_1_m"] is None
+    assert invalid["invalid_reason"] == "insufficient_path_length"
+
+
+def test_round4_analysis_marks_nonsteady_and_keeps_null_curvature():
+    case = CalibrationCase(
+        "unstable", "steering_step", 0.35, math.radians(30.0), "fit_core"
+    )
+    time = np.linspace(0.0, 2.0, 101)
+    phase = np.asarray(["baseline"] * 40 + ["steer"] * 61)
+    positions = np.column_stack((0.01 * time, np.zeros_like(time)))
+    traces = {
+        "time_s": time,
+        "phase": phase,
+        "requested_main_rad_s": np.full(time.size, 0.35),
+        "final_main_rad_s": np.full(time.size, 0.35),
+        "main_joint_velocity_rad_s": np.full(time.size, 0.34),
+        "requested_auxiliary_rad": np.where(phase == "steer", math.radians(30.0), 0.0),
+        "final_auxiliary_rad": np.where(phase == "steer", math.radians(30.0), 0.0),
+        "auxiliary_joint_rad": np.zeros(time.size),
+        "auxiliary_joint_velocity_rad_s": np.zeros(time.size),
+        "position_xy_m": positions,
+        "linear_velocity_world_xy_m_s": np.column_stack((np.full(time.size, 0.01), np.zeros(time.size))),
+        "body_yaw_rate_rad_s": np.zeros(time.size),
+    }
+
+    result = drive_probe.analyze_round4_response(
+        case=case,
+        traces=traces,
+        stability=_round4_manifest_fixture()["stability"],
+        steady_window_s=1.0,
+    )
+
+    assert result["steady_state_valid"] is False
+    assert "auxiliary_target_not_reached" in result["invalid_reasons"]
+    assert "low_planar_speed" in result["invalid_reasons"]
+    assert result["steady_curvature_1_m"] is None
+
+
+def test_candidate_evaluation_uses_heldout_rows_only():
+    rows = [
+        {
+            "dataset_role": "fit_core",
+            "v1_speed_error_m_s": 9.0,
+            "candidate_speed_error_m_s": 0.0,
+            "v1_curvature_error_1_m": 9.0,
+            "candidate_curvature_error_1_m": 0.0,
+            "steady_state_valid": True,
+        },
+        {
+            "dataset_role": "heldout_validation",
+            "v1_speed_error_m_s": 0.10,
+            "candidate_speed_error_m_s": 0.11,
+            "v1_curvature_error_1_m": 0.20,
+            "candidate_curvature_error_1_m": 0.19,
+            "steady_state_valid": True,
+        },
+    ]
+
+    result = drive_probe.evaluate_candidate_on_heldout(
+        rows, _round4_manifest_fixture()["candidate_gates"]
+    )
+
+    assert result["heldout_case_count"] == 1
+    assert result["curvature_mae_improvement_fraction"] == pytest.approx(0.05)
+    assert result["passed"] is False

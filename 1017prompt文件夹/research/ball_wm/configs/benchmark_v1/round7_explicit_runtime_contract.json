@@ -1,0 +1,99 @@
+{
+  "schema_version": "round7_explicit_runtime_contract_v1",
+  "frozen_before_fresh_collection": true,
+  "baseline_unchanged": true,
+  "model_identity": {
+    "name": "M2_explicit_runtime_round7_local_v1",
+    "role": "local_stop_and_reversal_diagnostic_only",
+    "unified_m1_replacement_claimed": false,
+    "ridge_lambda": 0.0001,
+    "fit_sources": [
+      "round5_fit_core",
+      "round6_fit_core"
+    ],
+    "fresh_sequences_used_for_fit": false,
+    "physical_state": [
+      "main_joint_velocity_rad_s",
+      "auxiliary_joint_rad",
+      "auxiliary_joint_velocity_rad_s",
+      "body_forward_velocity_m_s",
+      "body_lateral_velocity_m_s",
+      "world_z_angular_velocity_rad_s"
+    ],
+    "deterministic_execution_state": [
+      "current_applied_main_rad_s",
+      "current_applied_auxiliary_rad",
+      "last_smoothed_main_rad_s_audit_only",
+      "last_smoothed_auxiliary_rad_audit_only",
+      "dt_s",
+      "physics_tick_phase"
+    ],
+    "learned_input": [
+      "current_physical_state",
+      "explicit_applied_main_rad_s",
+      "explicit_applied_auxiliary_rad"
+    ],
+    "feature_order": [
+      "bias",
+      "physical_state_6",
+      "explicit_applied_2",
+      "main_velocity_times_auxiliary_angle",
+      "body_forward_times_auxiliary_angle",
+      "applied_main_minus_main_velocity",
+      "applied_auxiliary_minus_auxiliary_angle"
+    ],
+    "learned_output": "next_physical_state_minus_current_physical_state",
+    "output_clipping": false
+  },
+  "runtime": {
+    "action_protocol_id": "ball_action_v2_aux30",
+    "physics_hz": 50,
+    "policy_hz": 10,
+    "dt_s": 0.02,
+    "main_target_rate_rad_s2": 0.5,
+    "auxiliary_target_rate_rad_s": 0.5235987755982988,
+    "auxiliary_velocity_supervisor_threshold_rad_s": 0.3,
+    "supervisor_comparison": "abs(auxiliary_velocity_rad_s) > threshold",
+    "supervisor_hold_value": "measured_auxiliary_position_rad",
+    "supervisor_has_persistent_internal_state": false,
+    "sample_order": "measure_pre_step_feedback_then_update_execution_chain_then_apply_then_measure_post_step_state"
+  },
+  "events": {
+    "horizons_s": [1.5, 3.0, 6.0],
+    "main_new_direction_deadband_rad_s": 0.05,
+    "auxiliary_new_direction_deadband_rad": 0.008726646259971648,
+    "stop_ready_primary_horizon_s": 3.0,
+    "stop_speed_threshold_m_s": 0.05,
+    "stop_speed_comparison": "strictly_less_than",
+    "stop_consecutive_policy_samples": 5,
+    "policy_sample_period_s": 0.1,
+    "counter_reset_on_rebound": true,
+    "fifth_qualifying_sample_is_event": true,
+    "probe_counter_initialization": "derive consecutive qualifying 10Hz samples ending at the last pre-transition post-step state; cap at four; do not read future samples"
+  },
+  "validation_gates": {
+    "minimum_fresh_complete_sequences": 4,
+    "maximum_trajectory_rms_error_m_at_1p5s": 0.1,
+    "maximum_terminal_main_error_rad_s_at_1p5s": 0.08,
+    "maximum_terminal_auxiliary_angle_error_rad_at_1p5s": 0.05,
+    "maximum_main_event_mae_s": 0.25,
+    "maximum_auxiliary_event_mae_s": 0.2,
+    "minimum_observable_main_event_sequences": 2,
+    "minimum_observable_auxiliary_event_sequences": 2,
+    "stop_ready_maximum_mae_s": 0.25,
+    "stop_ready_maximum_early_error_s": 0.1,
+    "stop_ready_false_positives_allowed": 0,
+    "minimum_stop_ready_positive_sequences": 2,
+    "minimum_stop_ready_not_observed_sequences": 2,
+    "support_requires_every_recursive_tick": true,
+    "support_maximum_standardized_nearest_neighbor_distance": 1.75
+  },
+  "online_shadow": {
+    "allowed_only_if_all_local_gates_pass": true,
+    "maximum_new_runs": 2,
+    "primary_horizon_s": 1.5,
+    "continue_b0_plan_semantics": "hold_current_protocol_request",
+    "truth_label_only_while_future_protocol_request_matches_plan": true,
+    "control_action_change_allowed": false
+  }
+}

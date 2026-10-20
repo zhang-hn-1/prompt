@@ -1,0 +1,9 @@
+{
+  "complete_count_frames": 1267,
+  "all_7_count_fields_exact": true,
+  "fixed_lens_support_at_original_depth_ge_055": {
+    "max_native_u_over_z": 0.601823708206687,
+    "max_native_v_over_z": 1.0513677811550153
+  },
+  "scope": "Analytic frustum support conditional on original depth>=.55; full count aggregation independently checked. Does not certify unseen/occluded views or new neural/source performance."
+}

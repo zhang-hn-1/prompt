@@ -1,6 +1,7 @@
 """Deterministic BEV geometry plus lazy Isaac Sim occupancy adapters.
 
-The pure functions in this module import only NumPy.  Isaac Sim modules are
+The pure functions require only NumPy; an available Numba installation can
+accelerate depth-ray sampling without changing its arithmetic. Isaac Sim modules are
 loaded only by :class:`IsaacOccupancyProvider`, ``enable_camera_depth``, and
 ``read_camera_depth`` when an initialized simulator is actually in use.
 """
@@ -8,6 +9,7 @@ loaded only by :class:`IsaacOccupancyProvider`, ``enable_camera_depth``, and
 from contextlib import contextmanager
 from collections import deque
 from dataclasses import dataclass
+from functools import lru_cache
 import importlib
 import math
 from typing import Any, Iterator, Mapping, Sequence
@@ -853,6 +855,34 @@ def _as_matrix(value: Any, shape: tuple[int, int], name: str) -> np.ndarray:
     return matrix
 
 
+def _rasterize_visibility_samples(
+    directions, lengths, sample_counts, camera_origin, resolution, center_row, center_col, mask
+):
+    """Scalar half-cell sampling kernel; optionally compiled without fast math."""
+
+    spacing = resolution / 2.0
+    for ray in range(lengths.size):
+        for sample in range(sample_counts[ray]):
+            fraction = 0.0 if lengths[ray] == 0.0 else min(float(sample) * spacing / lengths[ray], 1.0)
+            x = camera_origin[0] + fraction * directions[ray, 0]
+            y = camera_origin[1] + fraction * directions[ray, 1]
+            row = int(np.floor(center_row - x / resolution + 0.5))
+            col = int(np.floor(center_col - y / resolution + 0.5))
+            if 0 <= row < mask.shape[0] and 0 <= col < mask.shape[1]:
+                mask[row, col] = 1
+
+
+@lru_cache(maxsize=1)
+def _numba_visibility_rasterizer():
+    """Use an available Numba installation; NumPy remains the only requirement."""
+
+    try:
+        from numba import njit
+    except ImportError:
+        return None
+    return njit(cache=True, fastmath=False)(_rasterize_visibility_samples)
+
+
 def depth_to_visible_mask(
     depth: Any,
     intrinsics: Any,
@@ -883,29 +913,72 @@ def depth_to_visible_mask(
 
     inverse_intrinsics = np.linalg.inv(calibration)
     camera_origin = transform[:3, 3]
-    for row, col in zip(valid_rows, valid_cols):
-        pixel = np.array([float(col), float(row), 1.0])
-        endpoint_camera = inverse_intrinsics @ (pixel * depths[row, col])
-        endpoint_homogeneous = transform @ np.append(endpoint_camera, 1.0)
-        if endpoint_homogeneous[3] == 0.0:
-            continue
-        endpoint = endpoint_homogeneous[:3] / endpoint_homogeneous[3]
-        direction = endpoint[:2] - camera_origin[:2]
-        length = float(np.linalg.norm(direction))
-        if length == 0.0:
-            points = camera_origin[:2][None, :]
-        else:
-            spacing = config.resolution_m / 2.0
-            fractions = np.minimum(np.arange(0.0, length + spacing, spacing) / length, 1.0)
-            points = camera_origin[:2] + fractions[:, None] * direction
-        rows, cols = _nearest_local_bev_indices(points, config)
-        in_bounds = (
-            (rows >= 0)
-            & (rows < config.shape[0])
-            & (cols >= 0)
-            & (cols < config.shape[1])
+    spacing = config.resolution_m / 2.0
+    # Batched matrix-vector products preserve the scalar projection
+    # operation order (a matrix-matrix rewrite can round grid-edge ties apart).
+    pixels = np.stack((valid_cols, valid_rows, np.ones(valid_rows.size)), axis=-1)
+    camera_points = np.matmul(
+        inverse_intrinsics,
+        (pixels * depths[valid_rows, valid_cols, None])[..., None],
+    )[..., 0]
+    homogeneous = np.empty((valid_rows.size, 4), dtype=np.float64)
+    homogeneous[:, :3] = camera_points
+    homogeneous[:, 3] = 1.0
+    endpoints = np.matmul(transform, homogeneous[..., None])[..., 0]
+    endpoints = endpoints[endpoints[:, 3] != 0.0]
+    if endpoints.shape[0] == 0:
+        return mask
+    directions = endpoints[:, :2] / endpoints[:, 3, None] - camera_origin[:2]
+    lengths = np.sqrt(np.matmul(directions[:, None, :], directions[..., None])[:, 0, 0])
+    if not np.isfinite(lengths).all():
+        # Preserve the scalar np.arange failure for unrepresentable rays.
+        invalid_length = float(lengths[~np.isfinite(lengths)][0])
+        np.arange(0.0, invalid_length + spacing, spacing)
+    # np.arange(0, length + spacing, spacing) uses this same ceiling.
+    # Zero-length rays have just their origin; padded points are excluded.
+    count_values = np.ceil((lengths + spacing) / spacing)
+    max_arange_size = np.iinfo(np.intp).max // np.dtype(np.float64).itemsize
+    if np.any(count_values >= max_arange_size):
+        # Match scalar arange's error instead of overflowing the loop bound.
+        excessive_length = float(lengths[count_values >= max_arange_size][0])
+        np.arange(0.0, excessive_length + spacing, spacing)
+    sample_counts = count_values.astype(np.int64)
+    center_row, center_col = config.center
+    rasterizer = _numba_visibility_rasterizer()
+    if rasterizer is not None:
+        rasterizer(
+            directions, lengths, sample_counts, camera_origin,
+            config.resolution_m, center_row, center_col, mask,
         )
-        mask[rows[in_bounds], cols[in_bounds]] = 1
+        return mask
+    # Similar ray lengths share a batch to avoid large padded sample arrays.
+    # Only evaluation order changes; every valid pixel is still rasterized.
+    order = np.argsort(sample_counts)
+    height, width = config.shape
+    for start in range(0, order.size, 2048):
+        selected = order[start : start + 2048]
+        counts = sample_counts[selected]
+        ray_directions = directions[selected]
+        denominators = np.where(lengths[selected] == 0.0, 1.0, lengths[selected])
+        max_samples = int(counts[-1])
+        for first_sample in range(0, max_samples, 128):
+            indices = np.arange(first_sample, min(first_sample + 128, max_samples))
+            distances = indices.astype(np.float64) * spacing
+            fractions = np.minimum(distances[None, :] / denominators[:, None], 1.0)
+            # Keep the scalar arithmetic order, computing each coordinate
+            # separately to avoid an extra (rays, samples, 2) temporary.
+            x = camera_origin[0] + fractions * ray_directions[:, 0, None]
+            y = camera_origin[1] + fractions * ray_directions[:, 1, None]
+            rows = np.floor(center_row - x / config.resolution_m + 0.5).astype(np.int64)
+            cols = np.floor(center_col - y / config.resolution_m + 0.5).astype(np.int64)
+            in_bounds = (
+                (indices[None, :] < counts[:, None])
+                & (rows >= 0)
+                & (rows < height)
+                & (cols >= 0)
+                & (cols < width)
+            )
+            mask[rows[in_bounds], cols[in_bounds]] = 1
     return mask
 
 

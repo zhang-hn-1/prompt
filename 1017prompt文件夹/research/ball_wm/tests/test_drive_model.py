@@ -33,6 +33,16 @@ def test_drive_model_preserves_measured_forward_and_reverse_response():
     assert model.curvature(-1.0, 0.0) == pytest.approx(-0.05682728334598315)
 
 
+def test_drive_model_loads_velocity_limited_v2_profile_metadata():
+    payload = json.loads(PROFILE_PATH.read_text(encoding="utf-8"))
+    payload["schema_version"] = "drive_dynamics_v2"
+    payload["controller"]["auxiliary_velocity_limit_rad_s"] = 0.30
+
+    model = DriveModel.from_mapping(payload)
+
+    assert model.auxiliary_velocity_limit_rad_s == pytest.approx(0.30)
+
+
 def test_drive_model_interpolates_without_mixing_drive_directions():
     model = DriveModel.from_json(PROFILE_PATH)
 
@@ -50,6 +60,21 @@ def test_speed_is_zero_at_zero_main_and_continuous_between_calibrated_commands()
     midpoint = model.speed(0.75, 0.0)
     assert model.speed(0.5, 0.0) < midpoint < model.speed(1.0, 0.0)
     assert model.speed(-0.75, 0.0) > 0.0
+
+
+def test_below_domain_0p35_query_uses_mixed_documented_endpoint_behavior():
+    model = DriveModel.from_json(PROFILE_PATH)
+    auxiliary = math.radians(20.0)
+
+    assert model.curvature(0.35, auxiliary) == pytest.approx(
+        model.curvature(0.5, auxiliary)
+    )
+    assert model.auxiliary_for_curvature(
+        0.35, model.curvature(0.5, auxiliary)
+    ) == pytest.approx(auxiliary)
+    assert model.speed(0.35, auxiliary) == pytest.approx(
+        0.7 * model.speed(0.5, auxiliary)
+    )
 
 
 def test_repeated_speed_and_curvature_queries_reuse_directional_interpolation_tables(

@@ -1,0 +1,26 @@
+{
+  "utc": "2026-10-17T12:31:24.003005+00:00",
+  "input_sha256_exact": 2917,
+  "code_sha256_exact": 12,
+  "prediction_and_map_sealed_files_exact": 940,
+  "seal_order": [
+    "weight_seal.json",
+    "prediction_seal.json",
+    "replay_seal.json",
+    "result.json"
+  ],
+  "seal_times": [
+    "2026-10-17T12:24:30.872516+00:00",
+    "2026-10-17T12:24:31.424395+00:00",
+    "2026-10-17T12:24:40.959824+00:00",
+    "2026-10-17T12:24:47.570706+00:00"
+  ],
+  "result_sha256": "29191da1d8d16028c2c3f1a7a7b7e6fd45c62306a163a14699f0316f9c56ba8b",
+  "independent_review_sha256": "06851a6f05a4986a9f53155bb43fdb82aa85e0f7eff59281ea254029e4ac4843",
+  "diagnosis_review_sha256": "5502dd0aa13b91d75d3ed588af1f8ea9241dd95d16c1ee28c9a41de09c005ca1",
+  "no_new_model_calls": true,
+  "fit_used": 1,
+  "source_calls": 0,
+  "physics": 0,
+  "navigation": 0
+}

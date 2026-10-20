@@ -21,6 +21,7 @@ from action_smoothing import (  # noqa: E402
     DEFAULT_MAIN_DERIVATIVE_GAIN,
     ActionSmoother,
     default_articulation_gains,
+    velocity_limited_position_target,
 )
 
 
@@ -80,6 +81,73 @@ def test_action_smoother_reset_starts_from_saved_applied_action():
     applied = smoother.step([0.5, math.radians(30.0)], minimum, maximum)
 
     np.testing.assert_allclose(applied, [0.21, math.radians(10.6)])
+
+
+def test_velocity_limited_position_target_uses_actual_joint_state():
+    target = velocity_limited_position_target(
+        requested_target_rad=1.0,
+        actual_position_rad=0.0,
+        actual_velocity_rad_s=0.0,
+        maximum_velocity_rad_s=0.25,
+        dt_s=0.02,
+    )
+
+    assert target == pytest.approx(1.0)
+
+
+def test_velocity_limited_position_target_holds_when_joint_is_already_too_fast():
+    target = velocity_limited_position_target(
+        requested_target_rad=1.0,
+        actual_position_rad=0.2,
+        actual_velocity_rad_s=0.4,
+        maximum_velocity_rad_s=0.25,
+        dt_s=0.02,
+    )
+
+    assert target == pytest.approx(0.2)
+
+
+def test_action_smoother_can_apply_feedback_velocity_envelope():
+    minimum, maximum = _bounds()
+    smoother = ActionSmoother(
+        dt_s=0.02,
+        max_auxiliary_rate_rad_s=math.radians(30.0),
+        max_auxiliary_velocity_rad_s=0.25,
+    )
+
+    applied = smoother.step(
+        [0.0, 1.0],
+        minimum,
+        maximum,
+        auxiliary_position_rad=0.0,
+        auxiliary_velocity_rad_s=0.0,
+    )
+
+    assert applied[1] == pytest.approx(math.radians(0.6))
+
+
+def test_action_smoother_exposes_pre_supervisor_smoothed_target_separately():
+    minimum, maximum = _bounds()
+    smoother = ActionSmoother(
+        dt_s=0.02,
+        max_auxiliary_rate_rad_s=math.radians(30.0),
+        max_auxiliary_velocity_rad_s=0.25,
+    )
+
+    applied = smoother.step(
+        [0.5, math.radians(30.0)],
+        minimum,
+        maximum,
+        auxiliary_position_rad=0.2,
+        auxiliary_velocity_rad_s=0.4,
+    )
+
+    np.testing.assert_allclose(
+        smoother.last_smoothed_target,
+        [0.01, math.radians(0.6)],
+    )
+    assert applied[1] == pytest.approx(0.2)
+    assert smoother.last_smoothed_target[1] != pytest.approx(applied[1])
 
 
 @pytest.mark.parametrize(

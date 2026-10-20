@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-17T22:15:24.745177+00:00",
+  "checks": {
+    "integrated_flat_RGB_no_false_measurement": true,
+    "knownshift_supported_localcostzero": true,
+    "knownshift_emitted_only_if_unique_evidence": true,
+    "rotated_query_partner_index_identity": true,
+    "inherited_previous_cost_48scalar_and_path4checks": true
+  },
+  "synthetic_RGB_cost_calls": 2,
+  "aggregations": 2,
+  "decodes": 2,
+  "real_RGB_calls": 0,
+  "GT_reads": 0,
+  "prior_checks_bound_by_SHA": true
+}

@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-17T10:03:30.117862+00:00",
+  "interface_fixture_cap": 2,
+  "source_invocations": 0,
+  "fit": 0,
+  "physics": 0,
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/fixture_child.py": "0a69579c5b25bc5e4318f12643a90bc0e31034872787e0ad2e591d154ee387bd"
+  },
+  "gates": "One normal child mustfinish0; one child+grandchild timeout mustleave no live processgroupmembers; no SGBM/realdata touched."
+}

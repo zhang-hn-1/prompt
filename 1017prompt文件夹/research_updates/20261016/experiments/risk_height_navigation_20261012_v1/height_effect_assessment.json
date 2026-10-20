@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "before_points": 78001,
+    "after_points": 74496,
+    "truth_valid": 62286,
+    "before_floor": 4145,
+    "after_floor": 1557,
+    "before_obstacle": 57856,
+    "after_obstacle": 57104
+  },
+  "scope": "Same actual candidate source packets with unchanged baseline shadow; renderer same-frame only offline scoring. Ground bandabsZ<=.03 scoring tolerance. Counts correlated across frames/pixels, not independent observations; uncertainty not calibrated; source effect does not establish navigation causality."
+}

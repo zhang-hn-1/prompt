@@ -1,0 +1,32 @@
+{
+  "utc": "2026-10-17T12:26:26.099361+00:00",
+  "question": "One bounded failure-layer attribution: fixed-score errors and declared feature support on saved full development rows",
+  "feature_seal": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json",
+  "action_seal": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/action_seal.json",
+  "prediction_seal": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/capture_admission_action_learning_20261017_v1/prediction_seal.json",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json": "038b9fbee4fe89d7f14221df397ab71f669cd483e77ab42e621acc8060b8e439",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/conservative_capture_admission_20261017_v1/action_seal.json": "f7760628d2764c877839409a686e22e650b0cee571d199cb9c3c12f398e58ce2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/capture_admission_action_learning_20261017_v1/prediction_seal.json": "98173350c2037099652b843969b80cf3dda38029ff7787aad7c1e64d35a8adb2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/capture_admission_action_learning_20261017_v1/result.json": "29191da1d8d16028c2c3f1a7a7b7e6fd45c62306a163a14699f0316f9c56ba8b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/capture_admission_action_learning_20261017_v1/weight_seal.json": "050012af12e6cc922a4123cfb765185d32b93cde76f95e0e3ec710573181812e"
+  },
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/capture_admission_action_learning_20261017_v1/diagnosis/analyze.py": "333f7c0c49ecfc1439414f814cbf0609cdea25680a66d9e1b66eb73a7de2af33",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/capture_admission_action_learning_20261017_v1/diagnosis/supervise.py": "60bbbf810dd4f97983b94475aec6c514eac0db53c9fe344afb6d722504305716",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c"
+  },
+  "budget": {
+    "dispatch_cap": 1,
+    "recovery_cap": 0,
+    "wall_cap_s": 120,
+    "rows": 40052,
+    "exposures": 470,
+    "fit": 0,
+    "model_score_calls": 0,
+    "source_calls": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "stop": "Single statistics pass, fixed .95 only; no threshold sweep/reclassification/feature changes/refit. Envelope is evidence scope, not causal proof."
+}

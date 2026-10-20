@@ -1,0 +1,31 @@
+{
+  "utc": "2026-10-17T10:59:30.633117+00:00",
+  "status": "closed_before_fit_data_qualification_rejected",
+  "runtime": null,
+  "actual_execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T10:55:31.921939+00:00",
+    "parent_pid": 3976173,
+    "child_pid": 3976175,
+    "process_group_id": 3976175,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T10:55:56.568592+00:00"
+  },
+  "dispatch": "1/1 closed",
+  "recovery": "0/1 unused remainder closed",
+  "fit": 0,
+  "source_calls": 0,
+  "physics": 0,
+  "navigation": 0,
+  "map_replay": 0,
+  "old_budgets_reopened": false,
+  "result_sha256": "c313a05bf0b0157b04b4634362b1a8d5398bbf1640cf8de67505b22ae817f35e",
+  "review_sha256": "cfb3248d9df56e418d0a9436ff938724f74084bddbad56f44f906b6f168c611f",
+  "cause_sha256": "83cb7e02fbe190135587d6e7666ebbb069aec8134a5f578b7d74b0bba0596a81"
+}

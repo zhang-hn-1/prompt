@@ -1,0 +1,29 @@
+{
+  "scene": "saved fresh E1",
+  "time_s": 66.0,
+  "selection": "planning event chosen after old-run analysis, not random or worst-depth example",
+  "full_image_pixels": 307200,
+  "confident_range_pixels": 45444,
+  "finite_scored_pixels": 25062,
+  "conditional_coverage": 0.5514919461315025,
+  "full_image_scored_fraction": 0.08158203125,
+  "absolute_depth_error_p50_p90_p95_m": [
+    0.02449887990951538,
+    0.09530647993087771,
+    0.17847598791122404
+  ],
+  "accepted_point_instances": 1936,
+  "accepted_point_valid_truth": 1641,
+  "accepted_point_ground_false": 0,
+  "ground_false_fraction_among_valid": 0.0,
+  "accepted_point_position_p50_p90_m": [
+    0.015942854189752595,
+    0.029727041127055792
+  ],
+  "map_risk_cells": 147,
+  "map_farther015_cells": 31,
+  "map_old10s_cells": 68,
+  "map_old10s_farther015_cells": 12,
+  "map_age_is_last_acquisition_not_original_birth": true,
+  "scope": "pixel/accepted point/cell denominators separate; bodyband reference not exact 3D; nohit not free; identical saved map, not new physical navigation"
+}

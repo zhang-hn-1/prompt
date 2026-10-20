@@ -1,0 +1,15 @@
+{
+  "sha256": {
+    "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/exts/isaacsim.sensors.camera/isaacsim/sensors/camera/camera.py": "0780286d6882527500062200f986a97ea8c705fcd94211b9dae37dfac12023b4",
+    "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.replicator.core-1.11.35+106.5.0.lx64.r.cp310/omni/replicator/core/scripts/annotators_default.py": "756dbfb4f262e623606bcbff2ddb315be723cf371e7a72983493d7e9977ddd56",
+    "/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.replicator.core-1.11.35+106.5.0.lx64.r.cp310/omni/replicator/core/ogn/python/_impl/nodes/OgnPointCloudGenerator.py": "3d03668f01c875474db96fd2632a7c0388e7297fa5e7c0cd762f73180ee74ea0"
+  },
+  "findings": [
+    "Camera.initialize creates/attaches render products and registers same callback for rgba/custom frame fields",
+    "set_local_pose defaults world axes; explicit usd axes skips conversion",
+    "CameraParams cameraViewTransform is inverted by installed PointCloudGenerator as world-to-local",
+    "v79 changed USD after initialize and mixed current USD/physics root with cached frame; contributing mechanism supported, all failure causes not proven",
+    "snapshot now takes render-product parameters and RGB/depth from same callback, checks monotonic frames and physics time; physical root never asserted equal to base_link"
+  ],
+  "not_confirmed_GPU": true
+}

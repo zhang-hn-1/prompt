@@ -1,0 +1,243 @@
+{
+  "artifact_type": "independent_saved_output_review",
+  "utc": "2026-10-17T22:27:11.408878+00:00",
+  "scope": "Independent audit of already sealed saved artifacts only. Read eight repaired NPZ outputs, four archived comparator NPZs, four saved raw frame label containers and saved feature origins; independently checked fixed geometry, count/set/ratio arithmetic. Did not execute source, reference, decoder, scorer or tests; no new experiment.",
+  "identities": {
+    "protocol.json": "530aac1b68f9b1258488993a4847bec526181052169c4c6f53d50f2563deb2e7",
+    "prediction_seal.json": "d8daa8f2e2e87f85ed59a915e8778bc8f3fe250332d6af2298f69715c45c9601",
+    "result.json": "711be5dd56aab0a20dee3070a2c6e48c6339399547a7a4ac95d97c6c9d9205ee",
+    "ledger.json": "74f67b9cd7df39a7dcd8cccdf104cde73fd0259a649e4441d8ca9719bfe9f17a",
+    "resource_evidence.json": "ce9a857ba8d1ffa0e613eddd627410c19be140cac613dc5bffdbe71c6516564f",
+    "predict_status.json": "548f2c6657b201a97fcf7da24e517cbbf2f31f7f220cb9e2e9beb7c632977574",
+    "score_status.json": "e6a5ea121d652ac03bea4f2e73c9f88dae46dd7fc3bb2fab2d1a47337fcac366"
+  },
+  "check_counts": {
+    "named_audit_checks": 27,
+    "named_passed": 27,
+    "registered_SHA_files": 35,
+    "new_saved_output_files": 8,
+    "new_eye_arrays": 32,
+    "source_point_eye_mapping_checks": 32,
+    "GT_eye_domain_records": 16,
+    "per_eye_metric_records": 48,
+    "frame_union_metric_records": 12,
+    "difference_metric_records": 8,
+    "pooled_arm_records": 3,
+    "new_cost_aggregate_decoder_calls": 0,
+    "source_predict_score_or_test_reruns": 0
+  },
+  "checks": {
+    "registered_code_and_input_SHA_match": true,
+    "protocol_SHA_matches_seal": true,
+    "result_seal_SHA_matches": true,
+    "all_eight_prediction_SHA_match": true,
+    "exact_eight_unique_expected_frame_arm_keys": true,
+    "all_stages_normal_zero_and_no_remaining_group_processes": true,
+    "saved_ledger_stage_statuses_match": true,
+    "predict_seal_before_normal_finish_before_score_before_result": true,
+    "budget_four_of_four_including_inherited_repair_no_recovery": true,
+    "resource_saved_samples_8GiB_swap0_no_OOM_and_matching_PIDs": true,
+    "seal_declares_no_prediction_GT_access": true,
+    "32_new_eye_shapes_dtypes": true,
+    "32_new_eye_basic_depth_integer_disparity": true,
+    "32_new_eye_exact_LR_valid_mask": true,
+    "32_new_eye_complete_source_point_query_partner_mapping": true,
+    "32_new_eye_world_projection": true,
+    "new_CAD_masks_match_archived": true,
+    "new_pose_time_origin_risk_counts_match": true,
+    "all_finite_new_disparities_have_required_x4_y3_support": true,
+    "16_GT_eye_domains_and_fullpixel_counts": true,
+    "48_saved_per_eye_metric_counts": true,
+    "12_saved_frame_union_metric_counts": true,
+    "8_difference_metric_records": true,
+    "all_three_pooled_aggregate_counts_ratios": true,
+    "full_domain_4915200pixels_target527344_cell_exposures420": true,
+    "gates_reduction_recall_change_and_rejection_arithmetic": true,
+    "four_combined_twoarm_timing_sums_and_shared_cost_SHA_pairs": true
+  },
+  "findings": {
+    "critical": [],
+    "important": [],
+    "minor": [
+      "The without_IO timing excludes prediction NPZ save/hash but includes progress writes and other bookkeeping; it is not pure no-I/O execution."
+    ]
+  },
+  "audit_outcome": "SAVED_OUTPUTS_CONSISTENT_FIXED_LOCAL_CANDIDATE_REJECTED",
+  "pooled_verified": {
+    "original": {
+      "predicted_cells": 162,
+      "correct_cells": 152,
+      "false_visible_cells": 10,
+      "target_cells": 420,
+      "covered_cells": 128,
+      "target_pixels": 527344,
+      "valid_target_pixels": 48825,
+      "precision": 0.9382716049382716,
+      "recall": 0.3047619047619048
+    },
+    "unmasked": {
+      "predicted_cells": 224,
+      "correct_cells": 146,
+      "false_visible_cells": 78,
+      "target_cells": 420,
+      "covered_cells": 138,
+      "target_pixels": 527344,
+      "valid_target_pixels": 9207,
+      "precision": 0.6517857142857143,
+      "recall": 0.32857142857142857
+    },
+    "masked": {
+      "predicted_cells": 227,
+      "correct_cells": 148,
+      "false_visible_cells": 79,
+      "target_cells": 420,
+      "covered_cells": 139,
+      "target_pixels": 527344,
+      "valid_target_pixels": 9253,
+      "precision": 0.6519823788546255,
+      "recall": 0.33095238095238094
+    }
+  },
+  "difference_verified": [
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "lost": {
+        "predicted_cells": 0,
+        "correct_cells": 0,
+        "false_visible_cells": 0,
+        "target_cells": 159,
+        "covered_cells": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      "added": {
+        "predicted_cells": 0,
+        "correct_cells": 0,
+        "false_visible_cells": 0,
+        "target_cells": 159,
+        "covered_cells": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      "added_cells": []
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "lost": {
+        "predicted_cells": 0,
+        "correct_cells": 0,
+        "false_visible_cells": 0,
+        "target_cells": 89,
+        "covered_cells": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      "added": {
+        "predicted_cells": 0,
+        "correct_cells": 0,
+        "false_visible_cells": 0,
+        "target_cells": 89,
+        "covered_cells": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      "added_cells": []
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "lost": {
+        "predicted_cells": 0,
+        "correct_cells": 0,
+        "false_visible_cells": 0,
+        "target_cells": 95,
+        "covered_cells": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      "added": {
+        "predicted_cells": 0,
+        "correct_cells": 0,
+        "false_visible_cells": 0,
+        "target_cells": 95,
+        "covered_cells": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      "added_cells": []
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "lost": {
+        "predicted_cells": 0,
+        "correct_cells": 0,
+        "false_visible_cells": 0,
+        "target_cells": 77,
+        "covered_cells": 0,
+        "precision": null,
+        "recall": 0.0
+      },
+      "added": {
+        "predicted_cells": 3,
+        "correct_cells": 2,
+        "false_visible_cells": 1,
+        "target_cells": 77,
+        "covered_cells": 4,
+        "precision": 0.6666666666666666,
+        "recall": 0.05194805194805195
+      },
+      "added_cells": [
+        [
+          184,
+          196
+        ],
+        [
+          230,
+          220
+        ],
+        [
+          231,
+          220
+        ]
+      ]
+    }
+  ],
+  "timing": {
+    "combined_twoarm_four_eye_source_s": [
+      130.73891814495437,
+      132.76989647594746,
+      125.56498735886998,
+      127.54528861504514
+    ],
+    "min_s": 125.56498735886998,
+    "max_s": 132.76989647594746,
+    "scope": "Cost/aggregation/decode plus LR/depth/projection for both arms together; excludes prediction NPZ output saving, includes progress I/O, input masks/pose preloaded, excludes CAD generation/render/map/planner/navigation; not per-arm or online end-to-end latency."
+  },
+  "resource": {
+    "saved_samples": 2,
+    "memory_max_bytes": 8589934592,
+    "swap_max_bytes": 0,
+    "observed_sampled_peak_bytes": 3896905728,
+    "scope": "Saved running-unit cgroup snapshots for predict, not a new resource measurement."
+  },
+  "mapping_world_max_abs_error_m": 0.0,
+  "GT_formula_scope": "GT depth and label poses construct fixed finite Z[.5,3], non-CAD, body clearance>=.55m, world height(.05,1.5] visible targets only after complete prediction seal. Target and predicted xy round to .1m cells; <=.15m nearest-cell tolerance defines near-target precision/recall. Counts are frame-cell exposures, not independent physical occupancy truth.",
+  "ordering": {
+    "prediction_seal_utc": "2026-10-17T22:25:06.526171+00:00",
+    "predict_finished_utc": "2026-10-17T22:25:06.646550+00:00",
+    "score_started_utc": "2026-10-17T22:25:22.807675+00:00",
+    "result_utc": "2026-10-17T22:25:23.871671+00:00"
+  },
+  "limits": [
+    "Raw RGB inputs were not reprocessed; saved cost SHA pairs confirm shared-cost identity claims but saved volumes/unary winners are absent, so BT/SGM/evidence-decoder numerical outputs were not recomputed.",
+    "Conditional axial/radial quantiles were not independently recomputed in this count/set audit.",
+    "GT-read separation is supported by frozen code plus seal/status ordering and declarations, not a system-level file-access trace.",
+    "Masked effect adds three union cells (two near target, one farther than tolerance) and removes zero in E1A90; this fails the predeclared false-visible reduction gate.",
+    "Original comparator has disclosed numerical differences; no OpenCV-equivalence or single-factor original-source repair conclusion.",
+    "No semantic/static occupancy truth, geometric calibration, full sequence, independence, online latency, map, memory, planner or navigation qualification."
+  ],
+  "no_rerun": true
+}

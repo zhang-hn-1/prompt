@@ -1,0 +1,123 @@
+{
+  "identity_match": true,
+  "assets_present": true,
+  "modules_discoverable": true,
+  "gpu_visible": false,
+  "runtime_preflight_ready": false,
+  "physics_launch_admitted": false,
+  "scene_runtime_validated": false,
+  "transitive_USD_assets_validated": false,
+  "portable_installation_complete": false,
+  "reliable_navigation_complete": false,
+  "whole_mission_complete": false,
+  "python": {
+    "executable": "/home/an/miniconda3/envs/ball_wm/bin/python",
+    "version": "3.10.20 (main, Jun 11 2026, 15:17:37) [GCC 14.3.0]"
+  },
+  "identity_issues": [],
+  "verified_identities": 2236,
+  "primary_assets": [
+    {
+      "path": "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda",
+      "present": true,
+      "sha256": "d6236dea995f04e3a81fb90dcde4bde6b63841c283cc5b2470aee8cda34c8634"
+    },
+    {
+      "path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/project/rl_env_0.4/rl_env/rotunbot_wheel_sim_model_0.4/Rotunbot_wheel.usd",
+      "present": true,
+      "sha256": "8f1bf378d65daca8d94948b8481f90260c34fe950a4bfb693cba531c47f4f231"
+    },
+    {
+      "path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/data_contract.yaml",
+      "present": true,
+      "sha256": "72b039ac68b829bd714da28e8b69d44c0359de546bef07abade220b313ad462d"
+    },
+    {
+      "path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+      "present": true,
+      "sha256": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/partial_surface_frozen_extrinsics_v1.npz",
+      "present": true,
+      "sha256": "226d467cc677ca4e38edcebaf8ce8cbee255ab9f5ca1241fe60da74eed45e0d8"
+    },
+    {
+      "path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visible_surface_connectivity_20261004_v1/base_link_masks.npz",
+      "present": true,
+      "sha256": "7769b6ab47292ae6517489f2992fd241b94f54c5022dd401efac3c4bae2d2a19"
+    }
+  ],
+  "modules": [
+    {
+      "module": "numpy",
+      "discoverable": true,
+      "distributions": {}
+    },
+    {
+      "module": "scipy",
+      "discoverable": true,
+      "distributions": {}
+    },
+    {
+      "module": "cv2",
+      "discoverable": true,
+      "distributions": {
+        "opencv-python": "4.6.0.66"
+      }
+    },
+    {
+      "module": "torch",
+      "discoverable": true,
+      "distributions": {
+        "torch": "2.5.1+cu121"
+      }
+    },
+    {
+      "module": "yaml",
+      "discoverable": true,
+      "distributions": {
+        "PyYAML": "6.0.3"
+      }
+    },
+    {
+      "module": "isaacsim",
+      "discoverable": true,
+      "distributions": {
+        "isaacsim-ros1": "4.5.0.0",
+        "isaacsim-test": "4.5.0.0",
+        "isaacsim-extscache-kit": "4.5.0.0",
+        "isaacsim-ros2": "4.5.0.0",
+        "isaacsim-benchmark": "4.5.0.0",
+        "isaacsim-replicator": "4.5.0.0",
+        "isaacsim-robot-motion": "4.5.0.0",
+        "isaacsim-sensor": "4.5.0.0",
+        "isaacsim-asset": "4.5.0.0",
+        "isaacsim-robot": "4.5.0.0",
+        "isaacsim-extscache-kit-sdk": "4.5.0.0",
+        "isaacsim-extscache-physics": "4.5.0.0",
+        "isaacsim-app": "4.5.0.0",
+        "isaacsim-storage": "4.5.0.0",
+        "isaacsim-gui": "4.5.0.0",
+        "isaacsim-utils": "4.5.0.0",
+        "isaacsim-robot-setup": "4.5.0.0",
+        "isaacsim-core": "4.5.0.0",
+        "isaacsim-example": "4.5.0.0",
+        "isaacsim-kernel": "4.5.0.0",
+        "isaacsim": "4.5.0.0",
+        "isaacsim-rl": "4.5.0.0",
+        "isaacsim-code-editor": "4.5.0.0",
+        "isaacsim-template": "4.5.0.0",
+        "isaacsim-cortex": "4.5.0.0"
+      }
+    }
+  ],
+  "gpu": {
+    "program": "/usr/bin/nvidia-smi",
+    "visible": false,
+    "returncode": 9,
+    "stdout": "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.",
+    "stderr": ""
+  },
+  "scope": "Discovery only, no runtime module import, model load, USD reference resolution or physics."
+}

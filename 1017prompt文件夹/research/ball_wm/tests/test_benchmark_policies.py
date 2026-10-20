@@ -19,6 +19,8 @@ from benchmark.policies import (
     RandomPolicy,
     StopPolicy,
     DelayAwareTrajectoryOraclePolicy,
+    ConstraintAwareTrajectoryOraclePolicy,
+    AngleAwareConstraintOraclePolicy,
     TrajectoryOraclePolicy,
     adaptive_lookahead_distance,
     calibrated_auxiliary_angle,
@@ -47,11 +49,13 @@ def valid_observation(
     forward_speed_m_s: float = 0.0,
     yaw_rate_rad_s: float = 0.0,
     auxiliary_angle_rad: float = 0.0,
+    auxiliary_velocity_rad_s: float = 0.0,
 ) -> PolicyObservation:
     proprio = np.zeros((5, 17), dtype=np.float32)
     proprio[-1, 0] = forward_speed_m_s
     proprio[-1, 5] = yaw_rate_rad_s
     proprio[-1, 10] = auxiliary_angle_rad
+    proprio[-1, 13] = auxiliary_velocity_rad_s
     return PolicyObservation(
         stereo_left_rgb=np.zeros((480, 640, 3), dtype=np.uint8),
         stereo_right_rgb=np.zeros((480, 640, 3), dtype=np.uint8),
@@ -282,6 +286,7 @@ def test_formal_policy_observation_does_not_expose_privileged_reference():
         "action_history",
         "position_world_xy",
         "yaw_world_rad",
+        "quaternion_world_wxyz_history",
     }
 
 
@@ -793,6 +798,28 @@ def test_oracle_uses_calibrated_braking_distance_before_path_goal():
     assert policy.diagnostics["braking_state"] == "goal_braking"
 
 
+def test_oracle_continues_from_terminal_zero_waypoint_until_goal_tolerance():
+    path = np.asarray(((0.0, 0.0), (1.0, 0.0), (1.5, 0.0)), dtype=np.float64)
+    policy = OraclePathPolicy(protocol=aux30_protocol())
+    policy.reset(
+        EpisodeContext(
+            episode_id="terminal-waypoint-lag",
+            privileged=True,
+            oracle_path_xy=path,
+            action_protocol_id="ball_action_v2_aux30",
+            kinodynamic_reference=reference_from_xy(path),
+        )
+    )
+
+    action = policy.act(
+        valid_observation(position_world_xy=(1.35, 0.0)),
+        pointgoal_base_xy=(0.21, 0.0),
+    )
+
+    assert action[0] > 0.0
+    assert policy.diagnostics["braking_state"] == "tracking"
+
+
 def test_oracle_stops_for_five_cycles_before_reversing_main_command_sign():
     policy = OraclePathPolicy(protocol=aux30_protocol())
     policy.reset(
@@ -1020,7 +1047,7 @@ def test_trajectory_oracle_straight_reference_has_zero_curvature_feedforward():
     policy = TrajectoryOraclePolicy(
         aux30_protocol(), smoothing_window_m=0.0, curvature_preview_m=0.0
     )
-    policy.reset(trajectory_line_context(include_oracle_path=False))
+    policy.reset(trajectory_line_context(include_oracle_path=True))
 
     action = policy.act(
         valid_observation(), pointgoal_base_xy=(10.0, 0.0)
@@ -1244,7 +1271,7 @@ def test_trajectory_oracle_preserves_goal_and_remaining_distance_braking():
 
 def test_trajectory_oracle_latches_off_reference_failure_with_finite_new_diagnostics():
     policy = TrajectoryOraclePolicy(aux30_protocol(), smoothing_window_m=0.0)
-    policy.reset(trajectory_line_context(include_oracle_path=False))
+    policy.reset(trajectory_line_context(include_oracle_path=True))
 
     actions = [
         policy.act(
@@ -1764,3 +1791,90 @@ def test_trajectory_v2_waits_five_stopped_cycles_before_reverse_command():
     assert stopped[4][0] == pytest.approx(-0.50)
     assert policy.diagnostics["active_drive_direction"] == "reverse"
     assert policy.diagnostics["desired_drive_direction"] == "reverse"
+
+
+def test_constraint_oracle_reduces_main_axis_when_auxiliary_rate_is_saturated():
+    policy = ConstraintAwareTrajectoryOraclePolicy(
+        aux30_protocol()
+    )
+    reference = _constant_curvature_reference(1.0 / 3.0)
+    policy.reset(trajectory_context_from_reference(reference, include_oracle_path=True))
+
+    action = policy.act(
+        valid_observation(auxiliary_velocity_rad_s=0.28),
+        pointgoal_base_xy=(20.0, 0.0),
+    )
+
+    assert action[0] == pytest.approx(0.50)
+    assert policy.diagnostics["auxiliary_saturation_active"] is True
+    assert policy.diagnostics["auxiliary_velocity_utilization"] == pytest.approx(
+        0.28 / 0.30
+    )
+    assert policy.diagnostics["scheduled_main_cap_rad_s"] == pytest.approx(0.50)
+
+
+def test_constraint_oracle_preserves_high_main_command_on_straight_segment():
+    policy = ConstraintAwareTrajectoryOraclePolicy(
+        aux30_protocol()
+    )
+    policy.reset(trajectory_line_context(include_oracle_path=True))
+
+    action = policy.act(
+        valid_observation(auxiliary_velocity_rad_s=0.28),
+        pointgoal_base_xy=(20.0, 0.0),
+    )
+
+    assert action[0] == pytest.approx(1.50)
+    assert policy.diagnostics["auxiliary_saturation_active"] is False
+
+
+def test_constraint_oracle_releases_main_axis_cap_after_auxiliary_rate_recovers():
+    policy = ConstraintAwareTrajectoryOraclePolicy(
+        aux30_protocol()
+    )
+    reference = _constant_curvature_reference(1.0 / 3.0)
+    context = trajectory_context_from_reference(reference, include_oracle_path=True)
+    policy.reset(context)
+
+    policy.act(
+        valid_observation(auxiliary_velocity_rad_s=0.28),
+        pointgoal_base_xy=(20.0, 0.0),
+    )
+    action = policy.act(
+        valid_observation(auxiliary_velocity_rad_s=0.10),
+        pointgoal_base_xy=(20.0, 0.0),
+    )
+
+    assert action[0] == pytest.approx(1.00)
+    assert policy.diagnostics["auxiliary_saturation_active"] is False
+
+
+def test_intervention_oracle_caps_when_predicted_auxiliary_angle_saturates():
+    policy = AngleAwareConstraintOraclePolicy(aux30_protocol())
+    policy.reset(trajectory_line_context(include_oracle_path=True))
+
+    cap = policy._schedule_main_magnitude(
+        valid_observation(),
+        baseline_magnitude=1.0,
+        planned_main_command_rad_s=1.5,
+        desired_curvature_1_m=1.0,
+        cross_track_error_m=0.2,
+    )
+
+    assert cap == pytest.approx(0.35)
+    assert policy.diagnostics["auxiliary_saturation_active"] is True
+    assert policy._scheduler_trigger_code == 11
+
+
+@pytest.mark.parametrize(
+    "kwargs",
+    (
+        {"auxiliary_velocity_limit_rad_s": 0.0},
+        {"auxiliary_saturation_threshold_rad_s": 0.31},
+        {"auxiliary_release_threshold_rad_s": 0.25},
+        {"scheduled_main_command_rad_s": 1.6},
+    ),
+)
+def test_constraint_oracle_rejects_invalid_scheduler_configuration(kwargs):
+    with pytest.raises(ValueError):
+        ConstraintAwareTrajectoryOraclePolicy(aux30_protocol(), **kwargs)

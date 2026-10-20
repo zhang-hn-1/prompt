@@ -1,0 +1,137 @@
+[
+  {
+    "group": "H",
+    "sgbm_current_surface": {
+      "predicted_risk_cells": 2084,
+      "true_visible_risk_cells": 3939,
+      "matched_predicted": 1955,
+      "matched_truth": 1898,
+      "precision": 0.9380998080614203,
+      "recall": 0.48184818481848185,
+      "ground_false_cells": 246,
+      "ground_cells": 65331,
+      "ground_false_fraction": 0.0037654406024704963,
+      "unsupported_predictions": 37,
+      "unsupported_fraction": 0.017754318618042227,
+      "visible_cells": 69270,
+      "visible_surface_recall": 0.06506424137433232,
+      "localization_p90_m": 0.1,
+      "exact_overlap_height_accuracy": 0.44437215354586856,
+      "exact_overlap_height_cells": 1537,
+      "per_height": {
+        "2": {
+          "predicted": 209,
+          "truth": 207,
+          "precision": 0.019138755980861243,
+          "recall": 0.014492753623188406,
+          "absent_truth": false
+        },
+        "3": {
+          "predicted": 935,
+          "truth": 3732,
+          "precision": 0.9700534759358289,
+          "recall": 0.31564844587352625,
+          "absent_truth": false
+        },
+        "4": {
+          "predicted": 940,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        }
+      },
+      "pass_gate": false
+    }
+  },
+  {
+    "group": "E0",
+    "sgbm_current_surface": {
+      "predicted_risk_cells": 2270,
+      "true_visible_risk_cells": 8752,
+      "matched_predicted": 2187,
+      "matched_truth": 4396,
+      "precision": 0.9634361233480176,
+      "recall": 0.5022851919561243,
+      "ground_false_cells": 283,
+      "ground_cells": 68608,
+      "ground_false_fraction": 0.0041248833955223885,
+      "unsupported_predictions": 1,
+      "unsupported_fraction": 0.0004405286343612335,
+      "visible_cells": 77360,
+      "visible_surface_recall": 0.08646587383660806,
+      "localization_p90_m": 0.1,
+      "exact_overlap_height_accuracy": 0.7383603238866396,
+      "exact_overlap_height_cells": 1976,
+      "per_height": {
+        "2": {
+          "predicted": 1383,
+          "truth": 6100,
+          "precision": 0.9479392624728851,
+          "recall": 0.48868852459016393,
+          "absent_truth": false
+        },
+        "3": {
+          "predicted": 367,
+          "truth": 495,
+          "precision": 0.21798365122615804,
+          "recall": 0.18585858585858586,
+          "absent_truth": false
+        },
+        "4": {
+          "predicted": 520,
+          "truth": 2157,
+          "precision": 0.676923076923077,
+          "recall": 0.3096893834028744,
+          "absent_truth": false
+        }
+      },
+      "pass_gate": false
+    }
+  },
+  {
+    "group": "E1",
+    "sgbm_current_surface": {
+      "predicted_risk_cells": 3841,
+      "true_visible_risk_cells": 6415,
+      "matched_predicted": 3662,
+      "matched_truth": 3754,
+      "precision": 0.9533975527206456,
+      "recall": 0.585190958690569,
+      "ground_false_cells": 352,
+      "ground_cells": 39461,
+      "ground_false_fraction": 0.008920199690833987,
+      "unsupported_predictions": 80,
+      "unsupported_fraction": 0.020827909398594115,
+      "visible_cells": 45876,
+      "visible_surface_recall": 0.16339698317202894,
+      "localization_p90_m": 0.1,
+      "exact_overlap_height_accuracy": 0.33447802197802196,
+      "exact_overlap_height_cells": 2912,
+      "per_height": {
+        "2": {
+          "predicted": 273,
+          "truth": 160,
+          "precision": 0.029304029304029304,
+          "recall": 0.0375,
+          "absent_truth": false
+        },
+        "3": {
+          "predicted": 1378,
+          "truth": 6255,
+          "precision": 0.974600870827286,
+          "recall": 0.3592326139088729,
+          "absent_truth": false
+        },
+        "4": {
+          "predicted": 2190,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        }
+      },
+      "pass_gate": false
+    }
+  }
+]

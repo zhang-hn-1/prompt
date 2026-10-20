@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "eye": "left",
+      "inferred_obstacle_points": 605,
+      "true_ground": 2,
+      "pose_point_p90_m": 0.02737825514001986
+    },
+    {
+      "eye": "right",
+      "inferred_obstacle_points": 6828,
+      "true_ground": 1,
+      "pose_point_p90_m": 0.0269331165485786
+    }
+  ],
+  "conflicts": [
+    {
+      "overlap_queries": 603,
+      "conflict_queries": 0
+    },
+    {
+      "overlap_queries": 469,
+      "conflict_queries": 0
+    }
+  ],
+  "scope": "GT-only same-pixel classification diagnostic, fixed mid frame not worst search; no model inference."
+}

@@ -1,0 +1,200 @@
+{
+  "records": [
+    {
+      "rig": {
+        "name": "baseline",
+        "forward": 0.2,
+        "half_baseline": 0.3,
+        "up": 0.05
+      },
+      "joint_rows": [
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 0,
+          "1.5": 5,
+          "2.0": 18,
+          "3.0": 49
+        },
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 0,
+          "1.5": 5,
+          "2.0": 18,
+          "3.0": 49
+        },
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 0,
+          "1.5": 5,
+          "2.0": 18,
+          "3.0": 49
+        },
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 0,
+          "1.5": 5,
+          "2.0": 18,
+          "3.0": 49
+        },
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 0,
+          "1.5": 5,
+          "2.0": 18,
+          "3.0": 49
+        },
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 0,
+          "1.5": 5,
+          "2.0": 18,
+          "3.0": 49
+        }
+      ],
+      "near_worst": 5,
+      "far_worst": 67,
+      "depth3m_plus1px_uncertainty_m": 0.02586702433416388,
+      "geometry_pass": false
+    },
+    {
+      "rig": {
+        "name": "forward",
+        "forward": 0.4,
+        "half_baseline": 0.3,
+        "up": 0.05
+      },
+      "joint_rows": [
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 7,
+          "1.5": 21,
+          "2.0": 49,
+          "3.0": 49
+        },
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 7,
+          "1.5": 21,
+          "2.0": 49,
+          "3.0": 49
+        },
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 7,
+          "1.5": 21,
+          "2.0": 49,
+          "3.0": 49
+        },
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 7,
+          "1.5": 21,
+          "2.0": 49,
+          "3.0": 49
+        },
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 7,
+          "1.5": 21,
+          "2.0": 49,
+          "3.0": 49
+        },
+        {
+          "0.9": 0,
+          "1.0": 0,
+          "1.2": 7,
+          "1.5": 21,
+          "2.0": 49,
+          "3.0": 49
+        }
+      ],
+      "near_worst": 28,
+      "far_worst": 98,
+      "depth3m_plus1px_uncertainty_m": 0.02586702433416388,
+      "geometry_pass": true
+    },
+    {
+      "rig": {
+        "name": "compact",
+        "forward": 0.4,
+        "half_baseline": 0.1,
+        "up": 0.05
+      },
+      "joint_rows": [
+        {
+          "0.9": 18,
+          "1.0": 18,
+          "1.2": 35,
+          "1.5": 49,
+          "2.0": 49,
+          "3.0": 49
+        },
+        {
+          "0.9": 18,
+          "1.0": 18,
+          "1.2": 35,
+          "1.5": 49,
+          "2.0": 49,
+          "3.0": 49
+        },
+        {
+          "0.9": 18,
+          "1.0": 18,
+          "1.2": 35,
+          "1.5": 49,
+          "2.0": 49,
+          "3.0": 49
+        },
+        {
+          "0.9": 18,
+          "1.0": 18,
+          "1.2": 35,
+          "1.5": 49,
+          "2.0": 49,
+          "3.0": 49
+        },
+        {
+          "0.9": 18,
+          "1.0": 18,
+          "1.2": 35,
+          "1.5": 49,
+          "2.0": 49,
+          "3.0": 49
+        },
+        {
+          "0.9": 18,
+          "1.0": 18,
+          "1.2": 35,
+          "1.5": 49,
+          "2.0": 49,
+          "3.0": 49
+        }
+      ],
+      "near_worst": 120,
+      "far_worst": 98,
+      "depth3m_plus1px_uncertainty_m": 0.07896276077208064,
+      "geometry_pass": true
+    }
+  ],
+  "selected": {
+    "name": "compact",
+    "forward": 0.4,
+    "half_baseline": 0.1,
+    "up": 0.05
+  },
+  "scope": "CAD sampled targets and first-order disparity uncertainty only; no real obstacle visibility, scene stereo accuracy or navigation claim",
+  "selection_reason": "Second pre-screened alternative after first forward-only90s navigation rejection; CAD screen not rerun or retuned",
+  "original_screen": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_rig_navigation_20261012_v1/geometry_assessment.json",
+  "original_screen_sha256": "3fc1bd960117a8a3efaca54da4fbe9bebf70436fa578fd8f63272fc4bda56779"
+}

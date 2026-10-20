@@ -1,0 +1,76 @@
+{
+  "schema": "wm_diverse_requested_sequence_v1",
+  "id": "easy_5_stop_curve_restart",
+  "physics_hz": 50,
+  "stereo_hz": 10,
+  "duration_seed": 2026092211,
+  "total_steps": 1200,
+  "segments": [
+    {
+      "name": "segment_01",
+      "steps": 175,
+      "seconds": 3.5,
+      "request": [
+        0.0,
+        -0.13962634015954636
+      ],
+      "request_main_rad_s": 0.0,
+      "request_aux_deg": -8
+    },
+    {
+      "name": "segment_02",
+      "steps": 180,
+      "seconds": 3.6,
+      "request": [
+        0.8,
+        0.4363323129985824
+      ],
+      "request_main_rad_s": 0.8,
+      "request_aux_deg": 25
+    },
+    {
+      "name": "segment_03",
+      "steps": 170,
+      "seconds": 3.4,
+      "request": [
+        0.35,
+        -0.4886921905584123
+      ],
+      "request_main_rad_s": 0.35,
+      "request_aux_deg": -28
+    },
+    {
+      "name": "segment_04",
+      "steps": 275,
+      "seconds": 5.5,
+      "request": [
+        -0.75,
+        0.2617993877991494
+      ],
+      "request_main_rad_s": -0.75,
+      "request_aux_deg": 15
+    },
+    {
+      "name": "segment_05",
+      "steps": 220,
+      "seconds": 4.4,
+      "request": [
+        0.0,
+        0.0
+      ],
+      "request_main_rad_s": 0.0,
+      "request_aux_deg": 0
+    },
+    {
+      "name": "segment_06",
+      "steps": 180,
+      "seconds": 3.6,
+      "request": [
+        0.6,
+        -0.08726646259971647
+      ],
+      "request_main_rad_s": 0.6,
+      "request_aux_deg": -5
+    }
+  ]
+}

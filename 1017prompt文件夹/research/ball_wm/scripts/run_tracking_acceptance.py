@@ -231,6 +231,22 @@ def _parse_auxiliary_latency_s(value: str) -> float:
     return _parse_v2_scalar(value, name="auxiliary_latency_s")
 
 
+def _parse_auxiliary_target_rate_deg_s(value: str) -> float:
+    return _parse_v2_scalar(
+        value,
+        name="auxiliary_target_rate_deg_s",
+        strictly_positive=True,
+    )
+
+
+def _parse_auxiliary_velocity_limit_rad_s(value: str) -> float:
+    return _parse_v2_scalar(
+        value,
+        name="auxiliary_velocity_limit_rad_s",
+        strictly_positive=True,
+    )
+
+
 def _parse_maximum_delay_distance_m(value: str) -> float:
     return _parse_v2_scalar(value, name="maximum_delay_distance_m")
 
@@ -688,6 +704,8 @@ def load_harness_config(
     supported_main_command_rad_s: float | None = None,
     episode_budget_s: float | None = None,
     terminal_brake_buffer_m: float | None = None,
+    auxiliary_target_rate_deg_s: float | None = None,
+    auxiliary_velocity_limit_rad_s: float | None = None,
 ) -> dict[str, object]:
     """Load and freeze the fixed case configuration plus runtime paths."""
 
@@ -751,6 +769,32 @@ def load_harness_config(
     result = dict(payload)
     result["policy_variant"] = variant
     result.update(resolved_parameters)
+    if any(
+        value is not None
+        for value in (
+            auxiliary_target_rate_deg_s,
+            auxiliary_velocity_limit_rad_s,
+        )
+    ):
+        raw_controller = result.get("controller", {})
+        if not isinstance(raw_controller, Mapping):
+            raise ValueError("controller configuration must be an object")
+        controller = dict(raw_controller)
+        if auxiliary_target_rate_deg_s is not None:
+            controller["auxiliary_target_rate_limit_rad_s"] = math.radians(
+                _validate_v2_scalar(
+                    auxiliary_target_rate_deg_s,
+                    name="auxiliary_target_rate_deg_s",
+                    strictly_positive=True,
+                )
+            )
+        if auxiliary_velocity_limit_rad_s is not None:
+            controller["auxiliary_velocity_limit_rad_s"] = _validate_v2_scalar(
+                auxiliary_velocity_limit_rad_s,
+                name="auxiliary_velocity_limit_rad_s",
+                strictly_positive=True,
+            )
+        result["controller"] = controller
     if variant in (TRAJECTORY_POLICY_VARIANT, TRAJECTORY_POLICY_V2_VARIANT):
         result["trajectory_policy"] = {
             "name": variant,
@@ -951,6 +995,7 @@ def _trace(result: object, name: str, *, ndim: int | None = None) -> np.ndarray:
 _PHYSICS_DIAGNOSTIC_SHAPES: dict[str, tuple[int, ...]] = {
     "raw_command_target": (2,),
     "clipped_target": (2,),
+    "smoothed_target": (2,),
     "applied_action": (2,),
     "joint_position_rad": (3,),
     "joint_velocity_rad_s": (3,),
@@ -994,8 +1039,16 @@ def _validated_physics_diagnostics(
             "runtime physics_diagnostics field names must be non-empty strings"
         )
     expected_names = set(_PHYSICS_DIAGNOSTIC_SHAPES)
+    legacy_names = expected_names - {"smoothed_target"}
     actual_names = set(names)
-    if actual_names != expected_names:
+    if actual_names == legacy_names:
+        diagnostics = dict(diagnostics)
+        diagnostics["smoothed_target"] = np.asarray(
+            diagnostics["applied_action"]
+        ).copy()
+        names = tuple(diagnostics)
+        actual_names = set(names)
+    elif actual_names != expected_names:
         missing = sorted(expected_names - actual_names)
         extra = sorted(actual_names - expected_names)
         details = []
@@ -1004,7 +1057,8 @@ def _validated_physics_diagnostics(
         if extra:
             details.append("extra=" + ",".join(extra))
         raise DiagnosticValidationError(
-            "runtime physics_diagnostics fields must match the exact 18-field "
+                "runtime physics_diagnostics fields must match the exact 18-field legacy "
+                "or 19-field Round 6 "
             "contract (" + "; ".join(details) + ")"
         )
 
@@ -2590,6 +2644,20 @@ def run_tracking_case(
             drive_profile_path=profile_path,
             diagnostic_open_plane=True,
             diagnostic_physics_trace=True,
+            diagnostic_auxiliary_target_rate_rad_s=(
+                float(effective_harness_config["controller"]["auxiliary_target_rate_limit_rad_s"])
+                if isinstance(effective_harness_config.get("controller"), Mapping)
+                and "auxiliary_target_rate_limit_rad_s"
+                in effective_harness_config["controller"]
+                else None
+            ),
+            diagnostic_auxiliary_velocity_limit_rad_s=(
+                float(effective_harness_config["controller"]["auxiliary_velocity_limit_rad_s"])
+                if isinstance(effective_harness_config.get("controller"), Mapping)
+                and "auxiliary_velocity_limit_rad_s"
+                in effective_harness_config["controller"]
+                else None
+            ),
         )
     )
     # Keep the third-person diagnostic overlay on the injected geometry.  The
@@ -2768,6 +2836,18 @@ def _build_parser() -> argparse.ArgumentParser:
         action=_MarkProvidedAction,
         default=TRAJECTORY_POLICY_V2_DEFAULTS["terminal_brake_buffer_m"],
     )
+    parser.add_argument(
+        "--auxiliary-target-rate-deg-s",
+        type=_parse_auxiliary_target_rate_deg_s,
+        default=None,
+        help="diagnostic auxiliary target slew rate in degrees per second",
+    )
+    parser.add_argument(
+        "--auxiliary-velocity-limit-rad-s",
+        type=_parse_auxiliary_velocity_limit_rad_s,
+        default=None,
+        help="diagnostic measured auxiliary joint velocity limit",
+    )
     parser.set_defaults(
         _auxiliary_latency_s_provided=False,
         _maximum_delay_distance_m_provided=False,
@@ -2837,6 +2917,14 @@ def _child_command(args: argparse.Namespace, case_id: str) -> list[str]:
             command.extend((flag, str(parameters[name])))
     if args.fixture is not None:
         command.extend(("--fixture", str(args.fixture)))
+    if args.auxiliary_target_rate_deg_s is not None:
+        command.extend(
+            ("--auxiliary-target-rate-deg-s", str(args.auxiliary_target_rate_deg_s))
+        )
+    if args.auxiliary_velocity_limit_rad_s is not None:
+        command.extend(
+            ("--auxiliary-velocity-limit-rad-s", str(args.auxiliary_velocity_limit_rad_s))
+        )
     return command
 
 
@@ -4055,6 +4143,8 @@ def main(argv: list[str] | None = None) -> int:
             ],
             episode_budget_s=v2_config_parameters["episode_budget_s"],
             terminal_brake_buffer_m=v2_config_parameters["terminal_brake_buffer_m"],
+            auxiliary_target_rate_deg_s=args.auxiliary_target_rate_deg_s,
+            auxiliary_velocity_limit_rad_s=args.auxiliary_velocity_limit_rad_s,
         )
         metrics = run_tracking_case(
             cases[0],

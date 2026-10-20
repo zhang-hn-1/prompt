@@ -1,0 +1,88 @@
+{
+  "status": "necessary_qualification_rejected",
+  "physical_used": 0,
+  "physical_cap": 0,
+  "ML_fit_used": 0,
+  "ML_fit_cap": 0,
+  "model_inference_used": 0,
+  "navigation_used": 0,
+  "CPU_used": 1,
+  "CPU_cap": 1,
+  "recovery_used": 1,
+  "recovery_cap": 1,
+  "budget_closed": true,
+  "stages": [
+    {
+      "action": "prepare",
+      "terminal": {
+        "status": "finished",
+        "start_utc": "2026-10-16T06:17:17.667709+00:00",
+        "parent_pid": 2,
+        "child_pid": 3,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-16T06:17:28.401279+00:00"
+      }
+    },
+    {
+      "action": "predict",
+      "terminal": {
+        "status": "finished",
+        "start_utc": "2026-10-16T06:17:28.402174+00:00",
+        "parent_pid": 2,
+        "child_pid": 4,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-16T06:17:36.932949+00:00"
+      }
+    },
+    {
+      "action": "score",
+      "terminal": {
+        "status": "runtime_failed",
+        "start_utc": "2026-10-16T06:17:36.934820+00:00",
+        "parent_pid": 2,
+        "child_pid": 5,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 1,
+        "end_utc": "2026-10-16T06:17:41.809457+00:00"
+      }
+    },
+    {
+      "action": "score_recovery",
+      "terminal": {
+        "status": "runtime_failed",
+        "start_utc": "2026-10-16T06:18:56.233094+00:00",
+        "parent_pid": 2,
+        "child_pid": 3,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 1,
+        "end_utc": "2026-10-16T06:19:01.206374+00:00"
+      }
+    }
+  ],
+  "scope": "Necessary ideal-annotation qualification, not RGB inference. Ideal primitive-family, instance association, oriented silhouette tangents, rim identity and target semantic masks are privileged offline labels. Predictor receives no object centres/radii/heights or pixel depth. Sphere/vertical-cylinder family is an explicit restricted scene prior, not arbitrary obstacle geometry. All 300 objects and all original targets including suspended/unidentified remain in evaluation. Dataset is already seen development.",
+  "wall_s": 24.14260354603175,
+  "recovery_reason": "Only JSON serialization of numpy bool at final result write; no generation or scientific arithmetic change.",
+  "recovery_scoring_sha256": "c2874625767f532c7d79f46883f7fe59f7bb2b5e73e3e747051dea5c68f15a31",
+  "source_admitted": false,
+  "score_completion": "Complete110-frame result file was written before second console-print serialization error. Independently reconstructed all counts/quantiles and verified all110 predictions; no second recovery or scientific rerun.",
+  "scientific_arithmetic_changed": false,
+  "predictor_AST_unchanged_after_generation": true,
+  "execution_exit_history": "prepare0, predict0, initial_score1, score_recovery1 after result write, independent_check_and_plot0; retained, never relabelled normal0",
+  "remaining_recovery": 0,
+  "next": "Close candidate before actual RGB detector, ML fitting or navigation; no threshold/feature/shape-family rescue.",
+  "post_generation_logging_fix": "JSON scalar conversion now also applied to console JSON; no additional score or generation execution performed."
+}

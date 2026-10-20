@@ -1,0 +1,17 @@
+{
+  "pass_gate": true,
+  "checks": [
+    "known_renderer_view_inverse",
+    "copied_RGB",
+    "inf_stays_unknown",
+    "paired_current_frames",
+    "rejected_stale",
+    "rejected_time",
+    "rejected_missing",
+    "rejected_focal",
+    "rejected_units",
+    "rejected_shape",
+    "rejected_nan"
+  ],
+  "scope": "Pure deterministic SDK contract fixtures, no real exposure/runtime admission. Numeric/model/old budgets unchanged."
+}

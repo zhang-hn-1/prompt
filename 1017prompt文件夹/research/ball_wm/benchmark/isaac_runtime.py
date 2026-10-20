@@ -2,6 +2,10 @@
 
 from __future__ import annotations
 
+from scripts.camera_rig import (
+    CAMERA_HALF_BASELINE_M, camera_translation_base_link,
+)
+
 from dataclasses import dataclass
 import math
 from pathlib import Path
@@ -25,6 +29,12 @@ from .kinodynamic_planning import (
     KinodynamicPlanResult,
     plan_kinodynamic_path,
 )
+from .lighting import (
+    FIXED_CAMERA_FILL_V1,
+    LEGACY_SUN_V1,
+    LIGHTING_PROFILES,
+    install_fixed_camera_fill,
+)
 from .manifest import BenchmarkEpisode
 from .policies import PolicyObservation
 from .runner import RuntimeStep
@@ -44,6 +54,7 @@ class IsaacRuntimeConfig:
     contract_path: Path
     gui: bool
     record_video: bool
+    collision_mode: str = "physical_contact_v2"
     ball_radius_m: float = 0.4
     safety_margin_m: float = 0.1
     occupancy_path: Path | None = None
@@ -52,8 +63,17 @@ class IsaacRuntimeConfig:
     diagnostic_physics_trace: bool = False
     diagnostic_auxiliary_kp: float | None = None
     diagnostic_auxiliary_kd: float | None = None
+    diagnostic_auxiliary_target_rate_rad_s: float | None = None
+    diagnostic_auxiliary_velocity_limit_rad_s: float | None = None
+    auxiliary_target_rate_rad_s: float | None = None
+    auxiliary_velocity_limit_rad_s: float | None = None
+    lighting_profile: str = LEGACY_SUN_V1
 
     def __post_init__(self) -> None:
+        if self.lighting_profile not in LIGHTING_PROFILES:
+            raise ValueError(f"unknown lighting_profile: {self.lighting_profile!r}")
+        if self.collision_mode not in {"physical_contact_v2", "map_clearance_v1"}:
+            raise ValueError("unknown collision_mode")
         scene_root = Path(self.scene_root)
         contract_path = Path(self.contract_path)
         occupancy_path = None if self.occupancy_path is None else Path(self.occupancy_path)
@@ -66,6 +86,22 @@ class IsaacRuntimeConfig:
         auxiliary_kd = _optional_positive_gain(
             self.diagnostic_auxiliary_kd, "diagnostic_auxiliary_kd"
         )
+        auxiliary_target_rate = _optional_positive_gain(
+            self.diagnostic_auxiliary_target_rate_rad_s,
+            "diagnostic_auxiliary_target_rate_rad_s",
+        )
+        auxiliary_velocity_limit = _optional_positive_gain(
+            self.diagnostic_auxiliary_velocity_limit_rad_s,
+            "diagnostic_auxiliary_velocity_limit_rad_s",
+        )
+        formal_auxiliary_target_rate = _optional_positive_gain(
+            self.auxiliary_target_rate_rad_s,
+            "auxiliary_target_rate_rad_s",
+        )
+        formal_auxiliary_velocity_limit = _optional_positive_gain(
+            self.auxiliary_velocity_limit_rad_s,
+            "auxiliary_velocity_limit_rad_s",
+        )
         if not isinstance(self.gui, bool) or not isinstance(self.record_video, bool):
             raise ValueError("gui and record_video must be booleans")
         if not isinstance(self.diagnostic_open_plane, bool):
@@ -74,10 +110,15 @@ class IsaacRuntimeConfig:
             raise ValueError("diagnostic_physics_trace must be a boolean")
         if (
             not self.diagnostic_open_plane
-            and (auxiliary_kp is not None or auxiliary_kd is not None)
+            and (
+                auxiliary_kp is not None
+                or auxiliary_kd is not None
+                or auxiliary_target_rate is not None
+                or auxiliary_velocity_limit is not None
+            )
         ):
             raise ValueError(
-                "diagnostic auxiliary gain overrides require diagnostic_open_plane"
+                "diagnostic auxiliary overrides require diagnostic_open_plane"
             )
         if not math.isfinite(radius) or radius <= 0.0:
             raise ValueError("ball_radius_m must be finite and positive")
@@ -91,6 +132,10 @@ class IsaacRuntimeConfig:
         object.__setattr__(self, "diagnostic_physics_trace", self.diagnostic_physics_trace)
         object.__setattr__(self, "diagnostic_auxiliary_kp", auxiliary_kp)
         object.__setattr__(self, "diagnostic_auxiliary_kd", auxiliary_kd)
+        object.__setattr__(self, "diagnostic_auxiliary_target_rate_rad_s", auxiliary_target_rate)
+        object.__setattr__(self, "diagnostic_auxiliary_velocity_limit_rad_s", auxiliary_velocity_limit)
+        object.__setattr__(self, "auxiliary_target_rate_rad_s", formal_auxiliary_target_rate)
+        object.__setattr__(self, "auxiliary_velocity_limit_rad_s", formal_auxiliary_velocity_limit)
         object.__setattr__(self, "ball_radius_m", radius)
         object.__setattr__(self, "safety_margin_m", safety_margin)
 
@@ -226,6 +271,7 @@ class IsaacBenchmarkRuntime:
     _PHYSICS_DIAGNOSTIC_FIELDS = (
         "raw_command_target",
         "clipped_target",
+        "smoothed_target",
         "applied_action",
         "joint_position_rad",
         "joint_velocity_rad_s",
@@ -254,6 +300,7 @@ class IsaacBenchmarkRuntime:
         self._reset_observation: PolicyObservation | None = None
         self._dynamic_plan: DynamicPlanResult | None = None
         self._history_proprio: list[np.ndarray] = []
+        self._history_quaternion_world_wxyz: list[np.ndarray] = []
         self._history_actions: list[np.ndarray] = []
         self._previous_action = np.zeros(2, dtype=np.float32)
         self._oracle_path = np.empty((0, 2), dtype=np.float64)
@@ -263,6 +310,8 @@ class IsaacBenchmarkRuntime:
             "third_person": [],
             "stereo_view": [],
         }
+        self._block_physical_contact = False
+        self._collision_contact_samples: list[dict[str, object]] = []
         self._contact_available = True
         self._clock_epoch_current_time: float | None = None
         self._clock_epoch_current_time_step_index: int | None = None
@@ -330,7 +379,23 @@ class IsaacBenchmarkRuntime:
             "readback_gains": {"kp": None, "kd": None},
             "gain_readback_available": False,
             "gain_readback_error": "not initialized",
+            "auxiliary_target_rate_limit_rad_s": None,
+            "auxiliary_velocity_limit_rad_s": None,
         }
+
+    def _auxiliary_target_rate_rad_s(self) -> float | None:
+        return (
+            getattr(self.config, "auxiliary_target_rate_rad_s", None)
+            if getattr(self.config, "auxiliary_target_rate_rad_s", None) is not None
+            else getattr(self.config, "diagnostic_auxiliary_target_rate_rad_s", None)
+        )
+
+    def _auxiliary_velocity_limit_rad_s(self) -> float | None:
+        return (
+            getattr(self.config, "auxiliary_velocity_limit_rad_s", None)
+            if getattr(self.config, "auxiliary_velocity_limit_rad_s", None) is not None
+            else getattr(self.config, "diagnostic_auxiliary_velocity_limit_rad_s", None)
+        )
 
     @classmethod
     def _copy_diagnostic_configuration(
@@ -629,12 +694,15 @@ class IsaacBenchmarkRuntime:
             "readback_gains": {"kp": readback_kps, "kd": readback_kds},
             "gain_readback_available": readback_kps is not None and readback_kds is not None,
             "gain_readback_error": readback_error,
+            "auxiliary_target_rate_limit_rad_s": self._auxiliary_target_rate_rad_s(),
+            "auxiliary_velocity_limit_rad_s": self._auxiliary_velocity_limit_rad_s(),
         }
 
     def _record_physics_diagnostic(
         self,
         raw_command_target: object,
         clipped_target: object,
+        smoothed_target: object,
         applied_action: object,
         *,
         action_block_index: int,
@@ -696,10 +764,12 @@ class IsaacBenchmarkRuntime:
         roll = _roll_from_wxyz(quaternion)
         raw_target = _finite_vector(raw_command_target, (2,), "raw_command_target")
         clipped = _finite_vector(clipped_target, (2,), "clipped_target")
+        smoothed = _finite_vector(smoothed_target, (2,), "smoothed_target")
         applied = _finite_vector(applied_action, (2,), "applied_action")
         values: dict[str, object] = {
             "raw_command_target": raw_target.copy(),
             "clipped_target": clipped.copy(),
+            "smoothed_target": smoothed.copy(),
             "applied_action": applied.copy(),
             "joint_position_rad": joint_positions.copy(),
             "joint_velocity_rad_s": joint_velocities.copy(),
@@ -779,6 +849,7 @@ class IsaacBenchmarkRuntime:
                     zero_action,
                     zero_action,
                     zero_action,
+                    zero_action,
                     action_block_index=0,
                     physics_step_in_block=0,
                 )
@@ -844,7 +915,19 @@ class IsaacBenchmarkRuntime:
         self._contract = load_contract(self.config.contract_path)
         self._action_protocol = ActionProtocol.from_contract(self._contract)
         self._action_smoother = ActionSmoother(
-            dt_s=1.0 / self._contract.schedule.physics_hz
+            dt_s=1.0 / self._contract.schedule.physics_hz,
+            **(
+                {
+                    "max_auxiliary_rate_rad_s": float(
+                        auxiliary_target_rate
+                    )
+                }
+                if (auxiliary_target_rate := self._auxiliary_target_rate_rad_s()) is not None
+                else {}
+            ),
+            max_auxiliary_velocity_rad_s=(
+                self._auxiliary_velocity_limit_rad_s()
+            ),
         )
         self._world = World(
             stage_units_in_meters=1.0,
@@ -865,6 +948,13 @@ class IsaacBenchmarkRuntime:
             stage.RemovePrim(path)
         sunlight = UsdLux.DistantLight.Define(stage, "/World/SunLight")
         sunlight.CreateIntensityAttr(1000.0)
+        self.lighting_lamp_positions_world_m = ()
+        if self.config.lighting_profile == FIXED_CAMERA_FILL_V1:
+            self.lighting_lamp_positions_world_m = install_fixed_camera_fill(
+                stage,
+                episode.start_position_world_m,
+                episode.goal_position_world_m,
+            )
         carb.settings.get_settings().set("/rtx/rendermode", "RaytracedLighting")
 
         robot_usd = Path(ROBOT_USD)
@@ -929,11 +1019,11 @@ class IsaacBenchmarkRuntime:
             camera_prim.GetClippingRangeAttr().Set(Gf.Vec2f(0.01, 1000.0))
             xform = UsdGeom.Xformable(camera_prim)
             xform.ClearXformOpOrder()
-            xform.AddTranslateOp().Set(Gf.Vec3d(0.1, y_offset, 0.1))
+            xform.AddTranslateOp().Set(Gf.Vec3d(*camera_translation_base_link(y_offset)))
             xform.AddRotateYZXOp().Set(Gf.Vec3f(0.0, -90.0, 0.0))
 
-        add_stereo_camera(LEFT_CAMERA_PATH, 0.30)
-        add_stereo_camera(RIGHT_CAMERA_PATH, -0.30)
+        add_stereo_camera(LEFT_CAMERA_PATH, CAMERA_HALF_BASELINE_M)
+        add_stereo_camera(RIGHT_CAMERA_PATH, -CAMERA_HALF_BASELINE_M)
         third_path = "/World/BenchmarkThirdPersonCamera"
         third_prim = UsdGeom.Camera.Define(stage, third_path)
         third_prim.GetFocalLengthAttr().Set(20.0)
@@ -1105,6 +1195,7 @@ class IsaacBenchmarkRuntime:
     def execute(self, action_block: np.ndarray) -> RuntimeStep:
         if self._episode is None:
             raise RuntimeError("reset() must be called before execute()")
+        self._block_physical_contact = False
         clipped_block = self._action_protocol.clip_block(action_block)
         raw_block = np.asarray(action_block, dtype=np.float32)
         raw_controls = raw_block.reshape(
@@ -1120,10 +1211,29 @@ class IsaacBenchmarkRuntime:
         for index, (raw_target, target) in enumerate(zip(raw_controls, controls)):
             if self.config.gui and not self._simulation_app.is_running():
                 raise RuntimeError("Isaac GUI was closed before the episode completed")
-            applied = self._action_smoother.step(
-                target,
-                self._action_protocol.minimum,
-                self._action_protocol.maximum,
+            if self._auxiliary_velocity_limit_rad_s() is None:
+                applied = self._action_smoother.step(
+                    target,
+                    self._action_protocol.minimum,
+                    self._action_protocol.maximum,
+                )
+            else:
+                joint_positions = _finite_vector(
+                    self._robot.get_joint_positions(), (3,), "joint_positions"
+                )
+                joint_velocities = _finite_vector(
+                    self._robot.get_joint_velocities(), (3,), "joint_velocities"
+                )
+                applied = self._action_smoother.step(
+                    target,
+                    self._action_protocol.minimum,
+                    self._action_protocol.maximum,
+                    auxiliary_position_rad=float(joint_positions[1]),
+                    auxiliary_velocity_rad_s=float(joint_velocities[1]),
+                )
+            smoothed = np.asarray(
+                getattr(self._action_smoother, "last_smoothed_target", applied),
+                dtype=np.float32,
             )
             self._controller.apply_action(
                 self._ArticulationAction(
@@ -1136,11 +1246,14 @@ class IsaacBenchmarkRuntime:
             # five physics substeps, so use the non-rendering path here and
             # refresh the cameras once after the complete control block.
             self._world.step(render=False)
+            if self._uses_physical_collision():
+                self._sample_collision_contact("physics")
             self._previous_action = applied.copy()
             if diagnostic_trace:
                 self._record_physics_diagnostic(
                     raw_target,
                     target,
+                    smoothed,
                     applied,
                     action_block_index=diagnostic_block_index,
                     physics_step_in_block=index + 1,
@@ -1169,6 +1282,33 @@ class IsaacBenchmarkRuntime:
                 np.concatenate((left, right), axis=1).copy()
             )
             self._captured_frames["third_person"].append(third.copy())
+
+    def _uses_physical_collision(self) -> bool:
+        # Missing mode is supported only for historical duck-typed test configs.
+        return getattr(self.config, "collision_mode", "map_clearance_v1") == "physical_contact_v2"
+
+    @property
+    def collision_contact_samples(self) -> list[dict[str, object]]:
+        return [dict(sample) for sample in self._collision_contact_samples]
+
+    def _sample_collision_contact(self, source: str) -> bool:
+        contact = self._physical_contact()
+        available = bool(self._contact_available)
+        time_s, step, _, _ = self._clock_metadata()
+        self._collision_contact_samples.append({
+            "simulation_time_s": time_s, "physics_step_index": step,
+            "source": source, "available": available, "contact": bool(contact),
+        })
+        if not available:
+            raise RuntimeError("obstacle contact measurement unavailable")
+        self._block_physical_contact = self._block_physical_contact or contact
+        return bool(self._block_physical_contact)
+
+    def _collision_state(self, clearance: float) -> tuple[bool, bool]:
+        if self._uses_physical_collision():
+            contact = self._sample_collision_contact("capture")
+            return contact, contact
+        return self._physical_contact(), bool(clearance <= 0.0)
 
     def _physical_contact(self) -> bool:
         """Return contact with filtered scene obstacles, excluding the ground."""
@@ -1240,9 +1380,14 @@ class IsaacBenchmarkRuntime:
             )
         ).astype(np.float32)
         self._history_proprio.append(proprio)
+        self._history_proprio = self._history_proprio[-5:]
+        self._history_quaternion_world_wxyz.append(quaternion.copy())
+        self._history_quaternion_world_wxyz = self._history_quaternion_world_wxyz[-5:]
         if not self._history_actions:
             self._history_actions.append(np.zeros(10, dtype=np.float32))
+        self._history_actions = self._history_actions[-5:]
         proprio_history = self._padded_history(self._history_proprio, 5)
+        quaternion_history = self._padded_history(self._history_quaternion_world_wxyz, 5)
         action_history = self._padded_history(self._history_actions, 5)
         observation = PolicyObservation(
             stereo_left_rgb=left,
@@ -1251,6 +1396,7 @@ class IsaacBenchmarkRuntime:
             action_history=action_history,
             position_world_xy=position[:2].astype(np.float64),
             yaw_world_rad=yaw,
+            quaternion_world_wxyz_history=quaternion_history,
         )
         frames = {
             "left_rgb": left,
@@ -1261,8 +1407,7 @@ class IsaacBenchmarkRuntime:
         if self.config.record_video:
             self._captured_frames["stereo_view"].append(frames["stereo_view"].copy())
             self._captured_frames["third_person"].append(third.copy())
-        contact = self._physical_contact()
-        collision = bool(clearance <= 0.0)
+        contact, collision = self._collision_state(clearance)
         return RuntimeStep(
             observation=observation,
             truth_clearance_m=clearance,

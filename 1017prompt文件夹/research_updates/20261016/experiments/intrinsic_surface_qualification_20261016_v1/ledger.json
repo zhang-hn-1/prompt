@@ -1,0 +1,27 @@
+{
+  "status": "necessary_consumer_qualified_no_new_source_admitted",
+  "closed": true,
+  "physics_used": 0,
+  "physics_cap": 0,
+  "model_used": 0,
+  "model_cap": 0,
+  "fit_used": 0,
+  "fit_cap": 0,
+  "navigation": 0,
+  "implementation_repairs": 0,
+  "CPU_status": {
+    "status": "finished",
+    "start_utc": "2026-10-15T18:28:09.319115+00:00",
+    "parent_pid": 3,
+    "child_pid": 4,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-15T18:28:27.171766+00:00"
+  },
+  "CPU_check_and_plot_exit_code": 0,
+  "closed_utc": "2026-10-15T18:34:51.002108+00:00",
+  "old_budgets_closed": true
+}

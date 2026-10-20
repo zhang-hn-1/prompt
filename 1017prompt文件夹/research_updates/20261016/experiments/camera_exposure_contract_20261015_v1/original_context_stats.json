@@ -1,0 +1,17 @@
+{
+  "rows": [
+    {
+      "eye": "left",
+      "full_pixels": 307200,
+      "conditional_GT_range_static_CAD_pixels": 60878,
+      "error_p90": 0.5165324449539185
+    },
+    {
+      "eye": "right",
+      "full_pixels": 307200,
+      "conditional_GT_range_static_CAD_pixels": 85691,
+      "error_p90": 0.7316150665283203
+    }
+  ],
+  "scope": "Selected fixed midpoint old v77 predictions; condition .5-3 GT/static CAD; denominator excludes nohit/masked. Not all-image recall, not new optic inference."
+}

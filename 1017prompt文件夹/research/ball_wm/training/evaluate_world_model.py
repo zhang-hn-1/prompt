@@ -21,10 +21,12 @@ if __package__ in (None, ""):
     from training.action_protocol import require_action_protocol
     from training.ball_wm_dataset import BallWMDataset, make_train_val_test_split
     from training.joint_jepa import JointModelConfig, build_joint_model
+    from training.proprioception import checkpoint_velocity_frame
 else:
     from .action_protocol import require_action_protocol
     from .ball_wm_dataset import BallWMDataset, make_train_val_test_split
     from .joint_jepa import JointModelConfig, build_joint_model
+    from .proprioception import checkpoint_velocity_frame
 
 
 _INPUT_KEYS = ("pixels_left", "pixels_right", "action", "proprio")
@@ -338,6 +340,7 @@ def run_future_prediction_evaluation(
     checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=False)
     if not isinstance(checkpoint, Mapping) or "config" not in checkpoint or "model" not in checkpoint:
         raise ValueError("checkpoint must contain config and model")
+    checkpoint_velocity_frame(checkpoint)
     config = JointModelConfig(**checkpoint["config"])
     if not config.pose_head_enabled:
         raise ValueError("future prediction evaluation requires a pose-enabled checkpoint")
@@ -349,6 +352,8 @@ def run_future_prediction_evaluation(
         num_preds=config.num_preds,
         rollout_horizon=config.rollout_horizon,
         image_size=(config.image_size, config.image_size),
+        action_source=config.action_source,
+        proprio_velocity_frame=config.proprio_velocity_frame,
         action_block=5,
         with_bev=True,
         with_visibility=True,

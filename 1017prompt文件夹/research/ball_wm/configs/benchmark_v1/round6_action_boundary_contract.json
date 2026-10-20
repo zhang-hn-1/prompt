@@ -1,0 +1,55 @@
+{
+  "schema_version": "round6_action_boundary_contract_v1",
+  "created_before_new_collection": true,
+  "baseline": {
+    "policy": "B0/oracle",
+    "drive_profile_sha256": "2de28cdfe98ecd6d45d5158261efb436acabaf31c1df4774f75b708a9086ddfd",
+    "action_protocol_id": "ball_action_v2_aux30",
+    "policy_hz": 10,
+    "physics_hz": 50,
+    "seed": 3072,
+    "episode_budget_s": 35.0
+  },
+  "action_layers": [
+    "policy_raw_intent",
+    "protocol_clipped_request",
+    "smoothed_target",
+    "supervisor_applied_target"
+  ],
+  "direction_deadbands": {
+    "request_main_rad_s": 0.02,
+    "joint_main_rad_s": 0.05,
+    "body_forward_m_s": 0.05
+  },
+  "shadow": {
+    "primary_horizon_s": 1.5,
+    "plans": ["continue_b0", "handoff_candidate"],
+    "maximum_plan_count": 2,
+    "support_max_standardized_nearest_neighbor_distance": 1.75,
+    "support_requires_feature_box": true,
+    "minimum_endpoint_separation_m": 0.15,
+    "minimum_progress_gain_m": 0.10,
+    "maximum_cross_track_worsening_m": 0.05,
+    "forbidden_inputs": [
+      "future_measured_state",
+      "future_supervisor_action",
+      "future_applied_action",
+      "second_live_policy_call"
+    ]
+  },
+  "expanded_model_gate": {
+    "maximum_new_complete_sequences": 12,
+    "minimum_fresh_heldout_sequences": 4,
+    "maximum_trajectory_rms_error_m_at_1p5s": 0.10,
+    "maximum_main_zero_crossing_mae_s": 0.25,
+    "maximum_auxiliary_zero_crossing_mae_s": 0.20,
+    "maximum_terminal_main_error_rad_s": 0.08,
+    "maximum_terminal_auxiliary_error_rad": 0.05,
+    "round5_gates_still_required": true
+  },
+  "control_candidate_gate": {
+    "requires_supported_resolvable_same_conclusion_on_0002_and_0004": true,
+    "maximum_candidate_runs": 2,
+    "formal_navigation_requires_fixed_reference_ab_pass": true
+  }
+}

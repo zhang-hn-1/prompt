@@ -1,4 +1,5 @@
 from pathlib import Path
+import json
 import sys
 
 import pytest
@@ -127,6 +128,8 @@ def test_training_artifacts_copy_dataset_action_protocol():
     assert train_joint.training_protocol_metadata(Dataset()) == {
         "action_protocol_id": "ball_action_v2_aux30",
         "controls_per_block": 5,
+        "action_source": "applied_action",
+        "proprio_velocity_frame": "world",
     }
 
 
@@ -135,3 +138,39 @@ def test_v2_training_rejects_unlabelled_initial_checkpoint():
         train_joint.require_initial_checkpoint_protocol(
             {"model": {}}, "ball_action_v2_aux30"
         )
+
+
+def test_commanded_training_config_reaches_dataset_and_run_manifest(tmp_path, monkeypatch):
+    """A parsed action-source field must reach the actual loader and saved run."""
+    from test_ball_wm_dataset import _write_synthetic_episode
+
+    data_root = tmp_path / "data"
+    for index, scene in enumerate(("scene_a", "scene_b", "scene_c")):
+        _write_synthetic_episode(data_root, f"ep{index:04d}", scene)
+    config_path = tmp_path / "train.yaml"
+    config_path.write_text("history_size: 3\nrollout_horizon: 3\naction_source: commanded_action\n")
+    split_path = tmp_path / "split.json"
+    split_path.write_text(json.dumps({"train": ["scene_a"], "val": ["scene_b"], "test": ["scene_c"]}))
+    out = tmp_path / "run"
+    monkeypatch.setattr(sys, "argv", [
+        "train_joint", "--data_root", str(data_root), "--config", str(config_path),
+        "--out_dir", str(out), "--scene_split_manifest", str(split_path),
+        "--epochs", "0", "--batch_size", "1", "--device", "cpu",
+    ])
+    # Only the expensive network allocation is replaced; config, data and artifact paths are real.
+    monkeypatch.setattr(train_joint, "build_joint_model", lambda config: torch.nn.Linear(1, 1))
+    train_joint.main()
+    saved = json.loads((out / "run_manifest.json").read_text())
+    assert saved["action_source"] == "commanded_action"
+    assert saved["config"]["action_source"] == "commanded_action"
+    assert saved["sample_counts"] == {"train": 1, "val": 1, "test": 1}
+
+
+def test_warm_start_rejects_changed_action_source():
+    with pytest.raises(ValueError, match="action_source"):
+        train_joint.require_initial_checkpoint_action_source(
+            {"config": {}}, "commanded_action"
+        )
+    assert train_joint.require_initial_checkpoint_action_source(
+        {"config": {}}, "applied_action"
+    ) == "applied_action"

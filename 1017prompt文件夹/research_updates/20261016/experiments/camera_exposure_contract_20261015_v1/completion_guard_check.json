@@ -1,0 +1,16 @@
+{
+  "checks": [
+    {
+      "stage": "native_run",
+      "rejected": true,
+      "reason": "Actual process not normally finished"
+    },
+    {
+      "stage": "native_recovery_run",
+      "rejected": true,
+      "reason": "Recorded exception invalidates nominal exit zero"
+    }
+  ],
+  "nominal_zero_rejected": true,
+  "scope": "Existing raw failed attempts only; no actual SDK success proof."
+}

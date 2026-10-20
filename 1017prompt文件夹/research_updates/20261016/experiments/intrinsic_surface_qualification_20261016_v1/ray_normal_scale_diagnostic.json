@@ -1,0 +1,21 @@
+{
+  "scope": "Geometric ray/normal identifiability diagnostic on a posthoc largest suspended patch in the fixed middle frame. NOT an equal-RGB render, illumination/occlusion/multiview equivalence, model accuracy or proof all monocular methods fail.",
+  "frame": "frame_055.npz",
+  "time_s": 27.4999993853271,
+  "camera": "front_left",
+  "object_id": 167,
+  "object_type": "Sphere",
+  "selected_points": 29751,
+  "alternative_scale": 0.8,
+  "equation": "X_alternative=C+0.8*(X-C), with object center and size both scaled about the current camera; known K, IMU attitude and floor plane stay fixed.",
+  "original_optical_Z_median_m": 0.9419854283332825,
+  "alternative_optical_Z_median_m": 0.753588342666626,
+  "maximum_reprojection_difference_px": 8.526512829121202e-14,
+  "normal_unit_vector_difference": 1.336885555457667e-15,
+  "original_object_bottom_m": 0.09462710591668178,
+  "alternative_object_bottom_m": 0.19181951980809459,
+  "metric_reference": "Normals and rays alone admit this per-surface scale ambiguity; image learned priors or a measured metric reference may still constrain it.",
+  "physics": 0,
+  "model": 0,
+  "fit": 0
+}

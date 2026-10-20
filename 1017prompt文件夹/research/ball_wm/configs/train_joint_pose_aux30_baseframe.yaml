@@ -1,0 +1,30 @@
+# Aux30 pilot: train from scratch on complete sequences and an explicit scene split.
+# Predict from requested controls; applied controls remain past proprio feedback.
+# This config validates the existing pose pipeline, not benchmark navigation quality.
+image_size: 224
+embed_dim: 192
+action_dim: 10
+action_source: commanded_action
+proprio_dim: 17
+bev_classes: 3
+bev_size: 80
+history_size: 5
+num_preds: 1
+rollout_horizon: 5
+rollout_loss_weight: 0.25
+encoder_name: vit_tiny_patch16_224
+predictor_depth: 6
+predictor_heads: 8
+predictor_mlp_dim: 768
+predictor_hidden_dim: 192
+predictor_dim_head: 64
+predictor_dropout: 0.0
+bev_class_weights: [1.0, 8.0, 1.0]
+bev_decoder: spatial
+bev_dice_weight: 0.5
+pose_head_enabled: true
+pose_loss_weight: 1.0
+pose_horizons: [1, 3, 5]
+
+# Single controlled change: rotate measured velocities into each observed base frame.
+proprio_velocity_frame: base

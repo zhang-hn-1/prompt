@@ -1,0 +1,161 @@
+{
+  "schema": "independent_postfit_review_v1",
+  "reviewed_utc": "2026-10-13T04:25:37.563868+00:00",
+  "accept_negative_result": true,
+  "retain_source": false,
+  "admit_navigation": false,
+  "unresolved_blockers": [],
+  "hash_bindings_checked": 2751,
+  "checkpoint": {
+    "epoch": 30,
+    "seed": 2026,
+    "train_groups": [
+      "H",
+      "E0"
+    ],
+    "class_weights_reproduced_from_train_only": [
+      0.11015377193689346,
+      0.2557794153690338,
+      1.178712010383606,
+      1.4398027658462524,
+      2.015552043914795
+    ]
+  },
+  "inference_reproduction": {
+    "group": "E1",
+    "device": "cpu",
+    "frames": 181,
+    "label_disagreements": 3,
+    "cells": 434400,
+    "probability_max_abs_error": 0.0005258023738861084,
+    "exact_replay": false,
+    "decision_unchanged": true,
+    "cpu_metrics": {
+      "predicted_risk_cells": 11477,
+      "true_visible_risk_cells": 6415,
+      "matched_predicted": 3185,
+      "matched_truth": 2152,
+      "ground_false_cells": 2781,
+      "ground_cells": 39461,
+      "unsupported_predictions": 6159,
+      "visible_cells": 45876,
+      "exact_overlap_height_cells": 1025,
+      "precision": 0.27751154482878804,
+      "recall": 0.3354637568199532,
+      "ground_false_fraction": 0.07047464585286739,
+      "unsupported_fraction": 0.5366384943800645,
+      "visible_surface_recall": 0.9583660301682797,
+      "localization_p90_m": 1.264911064067352,
+      "exact_overlap_height_accuracy": 0.9960975609756098,
+      "per_height": {
+        "2": {
+          "predicted": 798,
+          "truth": 160,
+          "precision": 0.041353383458646614,
+          "recall": 0.0625,
+          "absent_truth": false
+        },
+        "3": {
+          "predicted": 10679,
+          "truth": 6255,
+          "precision": 0.292817679558011,
+          "recall": 0.33685051958433254,
+          "absent_truth": false
+        },
+        "4": {
+          "predicted": 0,
+          "truth": 0,
+          "precision": 0.0,
+          "recall": null,
+          "absent_truth": true
+        }
+      },
+      "pass_gate": false
+    }
+  },
+  "metric_reproduction": "Independent cKDTree nearest-neighbor implementation reproduces all saved model, unknown and train-frequency metrics for H/E0/E1 including every height band; all SGBM comparator metrics also reproduced.",
+  "sgbm_current_point_audit": {
+    "H": {
+      "points": 74496,
+      "min_z": 0.05597138357329923,
+      "max_z": 1.095553070521658,
+      "frames": 181
+    },
+    "E0": {
+      "points": 147261,
+      "min_z": 0.05295855647185399,
+      "max_z": 1.4997906654434234,
+      "frames": 181
+    },
+    "E1": {
+      "points": 262774,
+      "min_z": 0.055669037791303,
+      "max_z": 1.2158295969627066,
+      "frames": 181
+    }
+  },
+  "E1_metrics": {
+    "predicted_risk_cells": 11476,
+    "true_visible_risk_cells": 6415,
+    "matched_predicted": 3184,
+    "matched_truth": 2152,
+    "ground_false_cells": 2780,
+    "ground_cells": 39461,
+    "unsupported_predictions": 6159,
+    "visible_cells": 45876,
+    "exact_overlap_height_cells": 1025,
+    "precision": 0.277448588358313,
+    "recall": 0.3354637568199532,
+    "ground_false_fraction": 0.07044930437647297,
+    "unsupported_fraction": 0.5366852561868247,
+    "visible_surface_recall": 0.9583660301682797,
+    "localization_p90_m": 1.264911064067352,
+    "exact_overlap_height_accuracy": 0.9960975609756098,
+    "per_height": {
+      "2": {
+        "predicted": 798,
+        "truth": 160,
+        "precision": 0.041353383458646614,
+        "recall": 0.0625,
+        "absent_truth": false
+      },
+      "3": {
+        "predicted": 10678,
+        "truth": 6255,
+        "precision": 0.2927514515826934,
+        "recall": 0.33685051958433254,
+        "absent_truth": false
+      },
+      "4": {
+        "predicted": 0,
+        "truth": 0,
+        "precision": 0.0,
+        "recall": null,
+        "absent_truth": true
+      }
+    },
+    "pass_gate": false
+  },
+  "observations": [
+    "Training groups pass aggregate source metrics while fit-excluded E1 fails five of six source criteria. This supports failure to generalize to E1 in this experiment; it does not identify one specific root cause.",
+    "High exact-overlap height accuracy is conditional on 1025 overlapping risk cells and does not offset low overall obstacle recall.",
+    "Unsupported predictions mean lacking nearby qualified current visible labels, not proven physically empty volume.",
+    "E1 upper-height truth count is zero, hence recall remains null.",
+    "SGBM comparator uses current accepted points from original height-qualified source and native local coordinates, no truth filtering or historical memory. It has no ground output and different prediction density; comparison is diagnostic rather than a causal navigation A/B.",
+    "SGBM initial time_s schema error corrected to acquisition_time_s before comparator outputs; original error/source retained. Model fit and sealed scores unaffected.",
+    "No new fit, checkpoint selection, data acquisition or physics was run during review."
+  ],
+  "reviewed_artifact_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/prefit_review.json": "cce9c7ff3340d1b0d9d29e257b62180fb182e1afa011f2ae7004480013fa39c6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/fit_started.json": "9ace12f229081ab108187ce62b6676b692983d2dde3f5a0973b5069b27899e33",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/fit_status.json": "ae04d7335d3ba77639f505eed13c1d01c88b43641dcb648828cc68ba8b12ba80",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/prediction_seal.json": "edd3fb20eb4489d40cad9a04935c6453649852941225b4bf3eb6e5e8e20adf9d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/model_final.pt": "284c648a520f923975e4782ce68882e999854a2fb3dd0580bf1212981449e5f2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/train_trace.json": "4e00e0b85533f99b0b328341a89c5be7ede946305fbad299b6768cb1702d671c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/result.json": "1d7a304a6d1bf2101b9eb6c51f589012ab92a9ac8b2a61309f0e5f8a06f5ea3f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/sgbm_baseline.py": "e62683d666aaa901c43b35601be246337926d978d695aa8c8515991418ff804b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/sgbm_prediction_seal.json": "62c0b07aec39164af9fc7abcec346aa6a8f077760fee37aaefe01953d3ae4cc0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/sgbm_comparison.json": "bc2b1d7ebd0729f36758c14f5e98a5dddc2213e82a3abc0cea931c64ff7696d3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/learned_visible_obstacles_20261013_v1/compare_and_plot.py": "c581ad66570ea5d1314a47459f20a60a2b73dcf5ec0efe9526bd26726a794146"
+  }
+}

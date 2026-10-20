@@ -8,7 +8,11 @@ then records the resulting state at the completed-step timestamp.
 
 from __future__ import annotations
 
+from camera_rig import CAMERA_FORWARD_M, CAMERA_HALF_BASELINE_M, CAMERA_UP_M
+
 import argparse
+import hashlib
+import json
 from contextlib import contextmanager
 from dataclasses import replace
 import math
@@ -148,10 +152,14 @@ def _prime_stereo_cameras(
 
     last_error: RuntimeError | None = None
     for _ in range(max_steps):
-        world.step(render=True)
+        _advance_collection_step(world, is_stereo=True)
         try:
             read_camera_depth(left_camera)
             read_camera_depth(right_camera)
+            _validate_stereo_capture(
+                [camera.get_current_frame() for camera in (left_camera,right_camera)],
+                float(world.current_time), None,
+            )
         except RuntimeError as exc:
             last_error = exc
             continue
@@ -205,6 +213,10 @@ def _build_parser(contract: CollectionContract) -> argparse.ArgumentParser:
     parser.add_argument("--num_episodes", type=int, default=100)
     parser.add_argument("--episode_len", type=int, default=300)
     parser.add_argument("--num_waypoints", type=int, default=4)
+    parser.add_argument("--command_sequence", type=Path)
+    parser.add_argument("--seed", type=int, default=0)
+    parser.add_argument("--initial_yaw_deg", type=float, default=0.0)
+    parser.add_argument("--auxiliary_velocity_limit_rad_s", type=float, default=None)
     parser.add_argument("--img_w", type=int, default=contract.image_width_px)
     parser.add_argument("--img_h", type=int, default=contract.image_height_px)
     parser.add_argument("--save_dir", type=Path, default=DEFAULT_SAVE_DIR)
@@ -307,9 +319,103 @@ def _parse_args(argv: list[str] | None) -> tuple[argparse.Namespace, CollectionC
         or min(args.main_accel_rad_s2, args.aux_kp, args.aux_kd, args.aux_rate_deg_s) <= 0.0
     ):
         parser.error("--main_accel_rad_s2, --aux_kp, --aux_kd, and --aux_rate_deg_s must be positive")
+    if args.seed < 0:
+        parser.error("--seed must be non-negative")
+    if not math.isfinite(args.initial_yaw_deg):
+        parser.error("--initial_yaw_deg must be finite")
+    if args.auxiliary_velocity_limit_rad_s is not None and (not math.isfinite(args.auxiliary_velocity_limit_rad_s) or args.auxiliary_velocity_limit_rad_s <= 0):
+        parser.error("--auxiliary_velocity_limit_rad_s must be finite and positive")
+    if args.command_sequence is not None:
+        if args.sign_probe != "none":
+            parser.error("--command_sequence and --sign_probe are mutually exclusive")
+        try:
+            _load_command_sequence(args.command_sequence, contract, args.episode_len)
+        except (OSError, ValueError, TypeError, KeyError) as exc:
+            parser.error(str(exc))
     if args.scene and not Path(args.scene).is_file():
         parser.error(f"scene does not exist: {args.scene}")
     return args, replace(contract, schedule=schedule)
+
+
+
+def _initial_orientation_wxyz(yaw_degrees: float) -> np.ndarray:
+    half_yaw = math.radians(yaw_degrees) / 2.0
+    return np.array([math.cos(half_yaw), 0.0, 0.0, math.sin(half_yaw)])
+
+
+def _load_command_sequence(path: Path, contract: CollectionContract, expected_steps: int) -> np.ndarray:
+    """Load a finite request schedule aligned with complete 10 Hz action blocks."""
+    payload = json.loads(Path(path).read_text())
+    segments = payload.get("segments")
+    if not isinstance(segments, list) or not segments:
+        raise ValueError("command sequence needs nonempty segments")
+    blocks = []
+    for segment in segments:
+        steps = segment["steps"]
+        request = np.asarray(segment["request"], dtype=np.float64)
+        if isinstance(steps, bool) or not isinstance(steps, int) or steps <= 0 or steps % contract.controls_per_block:
+            raise ValueError("segment steps must be positive complete action blocks")
+        if request.shape != (2,) or not np.isfinite(request).all() or np.any(request < contract.action_minimum) or np.any(request > contract.action_maximum):
+            raise ValueError("sequence request must be finite and inside the active protocol")
+        blocks.append(np.tile(request.astype(np.float32), (steps, 1)))
+    commands = np.concatenate(blocks)
+    if len(commands) != expected_steps:
+        raise ValueError("command sequence duration differs from episode_len")
+    return commands
+
+
+def _advance_collection_step(world, *, is_stereo: bool) -> None:
+    """Match the formal runtime: one physics tick, optional render only."""
+    world.step(render=False)
+    if is_stereo:
+        world.render()
+
+
+def _validate_stereo_capture(frames, world_time_s, previous_frame_ids) -> None:
+    """Reject cached images before assigning them the current state's label."""
+    times = np.asarray([frame['rendering_time'] for frame in frames], dtype=float)
+    if not np.isfinite(times).all() or np.any(np.abs(times - world_time_s) > 0.002):
+        raise RuntimeError(f'stale stereo capture: camera times={times}, world={world_time_s}')
+    if abs(times[0] - times[1]) > 0.002:
+        raise RuntimeError('stereo captures are not synchronized')
+    if previous_frame_ids is not None and any(
+        int(frame['rendering_frame']) <= previous
+        for frame, previous in zip(frames, previous_frame_ids)
+    ):
+        raise RuntimeError('stereo rendering frame IDs did not advance')
+
+
+def _read_current_stereo(world, cameras, previous_frame_ids, max_extra_renders=8):
+    """Wait for asynchronous render callbacks with the physical state frozen."""
+    capture_time = float(world.current_time)
+    for extra in range(max_extra_renders + 1):
+        frames = [camera.get_current_frame() for camera in cameras]
+        try:
+            _validate_stereo_capture(frames, capture_time, previous_frame_ids)
+            return frames, extra
+        except RuntimeError:
+            if extra == max_extra_renders:
+                raise
+        world.render()
+        if float(world.current_time) != capture_time:
+            raise RuntimeError('stereo refresh unexpectedly advanced physics')
+
+
+def _make_collection_smoother(args: argparse.Namespace, contract: CollectionContract) -> ActionSmoother:
+    return ActionSmoother(
+        dt_s=1.0 / contract.schedule.physics_hz,
+        max_main_acceleration_rad_s2=args.main_accel_rad_s2,
+        max_auxiliary_rate_rad_s=math.radians(args.aux_rate_deg_s),
+        max_auxiliary_velocity_rad_s=args.auxiliary_velocity_limit_rad_s,
+    )
+
+
+def _collection_applied_action(smoother, request, contract, joint_positions, joint_velocities):
+    return smoother.step(
+        request, contract.action_minimum, contract.action_maximum,
+        auxiliary_position_rad=float(joint_positions[1]),
+        auxiliary_velocity_rad_s=float(joint_velocities[1]),
+    )
 
 
 def norm_angle(angle: float) -> float:
@@ -502,7 +608,10 @@ def _episode_metadata(
         "contract_path": str(args.contract.resolve()),
         "scene": str(Path(args.scene).resolve()) if args.scene else "ground_only",
         "episode_index": episode,
-        "random_seed": episode * 1000,
+        "random_seed": getattr(args, "seed", 0) + episode * 1000,
+        "initial_yaw_deg": getattr(args, "initial_yaw_deg", 0.0),
+        "request_source": "frozen_command_sequence" if getattr(args, "command_sequence", None) else "collector_policy",
+        "command_sequence_sha256": hashlib.sha256(args.command_sequence.read_bytes()).hexdigest() if getattr(args, "command_sequence", None) else None,
         "rates_hz": {
             "physics": contract.schedule.physics_hz,
             "control": contract.schedule.control_hz,
@@ -520,6 +629,7 @@ def _episode_metadata(
         "action_maximum": contract.action_maximum,
         "action_semantics": "slew_limited_target; recorded after completed physics step",
         "action_execution": {
+            "auxiliary_velocity_supervisor_rad_s": getattr(args, "auxiliary_velocity_limit_rad_s", None),
             "main_acceleration_limit_rad_s2": getattr(
                 args, "main_accel_rad_s2", DEFAULT_MAIN_ACCELERATION_RAD_S2
             ),
@@ -672,7 +782,7 @@ def _run_collection(args: argparse.Namespace, contract: CollectionContract) -> i
         robot = world.scene.add(
             Articulation(prim_path=ROBOT_ROOT, name="ball_robot", position=ROBOT_START)
         )
-        camera_x, camera_y, camera_z = 0.1, 0.30, 0.10
+        camera_x, camera_y, camera_z = CAMERA_FORWARD_M, CAMERA_HALF_BASELINE_M, CAMERA_UP_M
         focal_length, horizontal_aperture = 16.45, 18.0
         vertical_aperture = horizontal_aperture * args.img_h / args.img_w
 
@@ -692,21 +802,24 @@ def _run_collection(args: argparse.Namespace, contract: CollectionContract) -> i
         world.reset()
 
         proportional_gains, derivative_gains = default_articulation_gains()
-        action_smoother = ActionSmoother(
-            dt_s=1.0 / schedule.physics_hz,
-            max_main_acceleration_rad_s2=args.main_accel_rad_s2,
-            max_auxiliary_rate_rad_s=math.radians(args.aux_rate_deg_s),
+        action_smoother = _make_collection_smoother(args, contract)
+        command_sequence = (
+            _load_command_sequence(args.command_sequence, contract, args.episode_len)
+            if args.command_sequence is not None else None
         )
 
+        # Capture every render; the collection schedule already renders at 10 Hz.
+        # A second floating-time frequency gate drops alternating 0.099999998 s
+        # intervals as "shorter than 0.1 s" in this Isaac Camera implementation.
         left_camera = Camera(
             prim_path=LEFT_CAMERA_PATH,
             resolution=(args.img_w, args.img_h),
-            frequency=schedule.stereo_hz,
+            frequency=-1,
         )
         right_camera = Camera(
             prim_path=RIGHT_CAMERA_PATH,
             resolution=(args.img_w, args.img_h),
-            frequency=schedule.stereo_hz,
+            frequency=-1,
         )
         left_camera.initialize()
         right_camera.initialize()
@@ -803,7 +916,7 @@ def _run_collection(args: argparse.Namespace, contract: CollectionContract) -> i
         )
 
         def reset_robot(episode: int) -> tuple[float, float, float]:
-            rng = np.random.default_rng(episode * 1000 + 7)
+            rng = np.random.default_rng(args.seed + episode * 1000 + 7)
             start_x = start_y = 0.0
             found_free_spawn = False
             for _ in range(100):
@@ -823,7 +936,7 @@ def _run_collection(args: argparse.Namespace, contract: CollectionContract) -> i
                     "no collision-free episode start found after 100 samples; "
                     "check scene occupancy and spawn bounds"
                 )
-            robot.set_world_pose(position=np.array([start_x, start_y, ROBOT_START[2]]))
+            robot.set_world_pose(position=np.array([start_x, start_y, ROBOT_START[2]]), orientation=_initial_orientation_wxyz(args.initial_yaw_deg))
             robot.set_linear_velocity(np.zeros(3))
             robot.set_angular_velocity(np.zeros(3))
             robot.set_joint_positions(np.zeros(robot.num_dof))
@@ -841,7 +954,8 @@ def _run_collection(args: argparse.Namespace, contract: CollectionContract) -> i
         for episode in range(episode_count):
             current_x, current_y, current_yaw = reset_robot(episode)
             probe_start = np.array([current_x, current_y, current_yaw], dtype=np.float64)
-            waypoints = [] if args.sign_probe != "none" else generate_waypoints(args.num_waypoints)
+            random.seed(args.seed + episode * 1000)
+            waypoints = [] if args.sign_probe != "none" or command_sequence is not None else generate_waypoints(args.num_waypoints)
             current_path = waypoints.copy()
             reached = 0
             episode_steps = args.sign_probe_steps if args.sign_probe != "none" else args.episode_len
@@ -871,11 +985,15 @@ def _run_collection(args: argparse.Namespace, contract: CollectionContract) -> i
                 config=contract.bev,
             )
             stereo_frame_id = 0
+            previous_capture_frame_ids = None
 
+            execution_trace = []
             for loop_index in range(episode_steps):
                 decision = collection_step(loop_index, schedule)
                 if decision.is_control:
-                    if args.sign_probe != "none":
+                    if command_sequence is not None:
+                        held_commanded = command_sequence[loop_index].copy()
+                    elif args.sign_probe != "none":
                         held_commanded = _probe_action(
                             args.sign_probe,
                             action_minimum,
@@ -903,11 +1021,24 @@ def _run_collection(args: argparse.Namespace, contract: CollectionContract) -> i
                         action_minimum,
                         action_maximum,
                     ).astype(np.float32)
-                    held_applied = action_smoother.step(
-                        clipped_target,
-                        action_minimum,
-                        action_maximum,
+                    pre_joint_positions = robot.get_joint_positions()
+                    pre_joint_velocities = robot.get_joint_velocities()
+                    held_applied = _collection_applied_action(
+                        action_smoother, clipped_target, contract,
+                        pre_joint_positions, pre_joint_velocities,
                     )
+                    execution_trace.append({
+                        "request": held_commanded.copy(), "protocol": clipped_target.copy(),
+                        "smoothed": action_smoother.last_smoothed_target.copy(),
+                        "applied": held_applied.copy(),
+                        "pre_joint_position": np.asarray(pre_joint_positions).copy(),
+                        "pre_joint_velocity": np.asarray(pre_joint_velocities).copy(),
+                        "world_pre_time_s": float(world.current_time),
+                        "world_pre_step": int(world.current_time_step_index),
+                        "left_rendering_time_s": np.nan, "right_rendering_time_s": np.nan,
+                        "left_rendering_frame": -1, "right_rendering_frame": -1,
+                        "extra_camera_renders": 0,
+                    })
                     controller.apply_action(
                         ArticulationAction(
                             joint_velocities=np.array([held_applied[0], np.nan, np.nan]),
@@ -915,8 +1046,10 @@ def _run_collection(args: argparse.Namespace, contract: CollectionContract) -> i
                         )
                     )
 
-                world.step(render=decision.is_stereo)
+                _advance_collection_step(world, is_stereo=decision.is_stereo)
 
+                execution_trace[-1]["world_post_time_s"] = float(world.current_time)
+                execution_trace[-1]["world_post_step"] = int(world.current_time_step_index)
                 position, quaternion = robot.get_world_pose()
                 linear_velocity = robot.get_linear_velocity()
                 angular_velocity = robot.get_angular_velocity()
@@ -944,6 +1077,14 @@ def _run_collection(args: argparse.Namespace, contract: CollectionContract) -> i
                 )
 
                 if decision.is_stereo:
+                    sensor_frames, extra_renders = _read_current_stereo(
+                        world, (left_camera,right_camera), previous_capture_frame_ids,
+                    )
+                    execution_trace[-1]['extra_camera_renders'] = extra_renders
+                    previous_capture_frame_ids = [int(frame['rendering_frame']) for frame in sensor_frames]
+                    for side, sensor_frame in zip(("left", "right"), sensor_frames):
+                        execution_trace[-1][side + "_rendering_time_s"] = float(sensor_frame["rendering_time"])
+                        execution_trace[-1][side + "_rendering_frame"] = int(sensor_frame["rendering_frame"])
                     left_rgb = _get_rgb(left_camera)
                     right_rgb = _get_rgb(right_camera)
                     left_depth = read_camera_depth(left_camera)
@@ -1016,6 +1157,10 @@ def _run_collection(args: argparse.Namespace, contract: CollectionContract) -> i
                     )
                     stereo_frame_id += 1
 
+            np.savez_compressed(
+                writer.partial_dir / "execution_trace.npz",
+                **{key: np.asarray([row[key] for row in execution_trace]) for key in execution_trace[0]},
+            )
             output_path = writer.finalize(buffer)
             if args.audit_after_episode:
                 _audit_episode_in_subprocess(output_path)

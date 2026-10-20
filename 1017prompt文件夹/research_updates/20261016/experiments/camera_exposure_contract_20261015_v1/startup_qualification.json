@@ -1,0 +1,13 @@
+{
+  "pass_check": true,
+  "actual_override_AST_executed": true,
+  "events": [
+    "SimulationApp_started",
+    "SDK_hook_after_app_and_path_before_camera",
+    "Original_camera_initialization_after_hook"
+  ],
+  "original_app_camera_restored": true,
+  "app_owned_before_hook_failure_cleanup": true,
+  "real_collect_script_exists": true,
+  "scope": "Deterministic startup contract, no real SDK exposure qualification or camera success claim."
+}

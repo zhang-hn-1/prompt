@@ -1,0 +1,46 @@
+{
+  "schema": "wm_pilot_requested_sequence_v1",
+  "physics_hz": 50,
+  "segments": [
+    {
+      "name": "straight",
+      "steps": 100,
+      "request": [
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "turn",
+      "steps": 150,
+      "request": [
+        0.7,
+        -0.5235987755982988
+      ]
+    },
+    {
+      "name": "steering_reversal",
+      "steps": 150,
+      "request": [
+        0.7,
+        0.5235987755982988
+      ]
+    },
+    {
+      "name": "straighten",
+      "steps": 100,
+      "request": [
+        0.7,
+        0.0
+      ]
+    },
+    {
+      "name": "decelerate",
+      "steps": 100,
+      "request": [
+        0.0,
+        0.0
+      ]
+    }
+  ]
+}

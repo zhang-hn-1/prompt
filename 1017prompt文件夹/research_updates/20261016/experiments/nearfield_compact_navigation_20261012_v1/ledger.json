@@ -1,0 +1,69 @@
+{
+  "status": "candidate_rejected",
+  "used": 1,
+  "cap": 3,
+  "retry": 0,
+  "parent_pid": 735465,
+  "groups": [
+    {
+      "arm": "candidate_e2",
+      "state": "attempt_reserved",
+      "utc": "2026-10-12T13:13:19.079737+00:00",
+      "execution": {
+        "status": "finished",
+        "start_utc": "2026-10-12T13:13:19.079910+00:00",
+        "parent_pid": 735465,
+        "child_pid": 735549,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-12T13:20:51.428858+00:00"
+      },
+      "assessment": {
+        "termination": {
+          "termination": "timeout90",
+          "actions": 900,
+          "time_s": 89.99999798834324,
+          "budget_s": 90.0,
+          "true_goal_xy_threshold_m": 0.2,
+          "not_original35": true,
+          "not_causal_navigation_AB": true
+        },
+        "initial_distance_m": 8.899999809265136,
+        "remaining_m": 7.84533057313418,
+        "net_progress_m": 1.0546692361309562,
+        "captures": 901,
+        "contact_schema_example": {
+          "simulation_time_s": 0.0,
+          "physics_step_index": 0,
+          "source": "capture",
+          "available": true,
+          "contact": false
+        },
+        "contact_records": 5401,
+        "contacts_detected_by_named_fields": 0,
+        "unavailable_contacts": 0,
+        "depth_scoring": {
+          "pixels": 7689883,
+          "p90_absolute_error_m": 0.14328646659851074,
+          "outlier_fraction_above_0p3m": 0.017908334886239493,
+          "under1m_confident_pixels": 26657,
+          "source_points": 2456699,
+          "saved_pairs": 181,
+          "pass_gate": true,
+          "scope": "all confident range0.5-3m pixels, includes robot surfaces; conditional measurement audit, not full coverage"
+        },
+        "video_frames": {
+          "stereo_view.mp4": 901,
+          "third_person.mp4": 901
+        },
+        "raw_arrival_pass": false,
+        "first_contact_s": null,
+        "retain": false
+      }
+    }
+  ],
+  "remaining_closed": 2
+}

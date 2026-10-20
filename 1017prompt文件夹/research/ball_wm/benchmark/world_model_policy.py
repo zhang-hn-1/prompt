@@ -19,6 +19,7 @@ import torch.nn.functional as F
 from training.action_protocol import ActionProtocol, declared_action_protocol_id
 from training.joint_jepa import JointModelConfig, build_joint_model
 from training.planner import plan
+from training.proprioception import checkpoint_velocity_frame, transform_proprio_velocities
 
 from .policies import PolicyObservation, _PolicyBase
 
@@ -94,7 +95,13 @@ class WorldModelPolicy(_PolicyBase):
             self.model_protocol = LEGACY_PROTOCOL
         else:
             raise ValueError(f"unsupported checkpoint action protocol: {self.checkpoint_protocol_id}")
-        config = JointModelConfig(**dict(payload["config"]))
+        config_values = dict(payload["config"])
+        config_values["proprio_velocity_frame"] = checkpoint_velocity_frame(payload)
+        config = JointModelConfig(**config_values)
+        if config.action_source not in ("applied_action", "commanded_action"):
+            raise ValueError("unsupported checkpoint action_source")
+        if payload.get("action_source", config.action_source) != config.action_source:
+            raise ValueError("checkpoint action_source metadata disagrees with config")
         if not config.pose_head_enabled:
             raise ValueError("world-model benchmark adapter requires a pose-enabled checkpoint")
         self.config = config
@@ -112,21 +119,24 @@ class WorldModelPolicy(_PolicyBase):
 
     @property
     def online_input_permissions(self) -> frozenset[str]:
-        return frozenset(
-            {
-                "stereo_rgb",
-                "proprio_history",
-                "action_history",
-                "perfect_position_yaw",
-                "pointgoal_base_xy",
-            }
-        )
+        permissions = {
+            "stereo_rgb",
+            "proprio_history",
+            "action_history",
+            "perfect_position_yaw",
+            "pointgoal_base_xy",
+        }
+        if getattr(self.config, "proprio_velocity_frame", "world") == "base":
+            permissions.add("quaternion_world_wxyz_history")
+        return frozenset(permissions)
 
     @property
     def adapter_metadata(self) -> dict[str, object]:
         return {
             "checkpoint": str(self.checkpoint_path),
             "checkpoint_protocol_id": self.checkpoint_protocol_id,
+            "action_source": self.config.action_source,
+            "proprio_velocity_frame": self.config.proprio_velocity_frame,
             "planner_protocol_id": self.model_protocol.protocol_id,
             "adapter": "legacy_aux16_to_benchmark_v2",
             "legacy_auxiliary_limit_rad": LEGACY_AUXILIARY_LIMIT_RAD,
@@ -155,12 +165,20 @@ class WorldModelPolicy(_PolicyBase):
             raise RuntimeError("world-model image history is empty")
         left_history = [self._left_history[0]] * (self.config.history_size - len(self._left_history)) + self._left_history
         right_history = [self._right_history[0]] * (self.config.history_size - len(self._right_history)) + self._right_history
-        proprio = torch.from_numpy(np.array(observation.proprio_history, dtype=np.float32, copy=True))
+        proprio = torch.from_numpy(transform_proprio_velocities(
+            observation.proprio_history,
+            observation.quaternion_world_wxyz_history,
+            frame=getattr(self.config, "proprio_velocity_frame", "world"),
+        ))
         actions = torch.from_numpy(np.array(observation.action_history, dtype=np.float32, copy=True))
         if proprio.shape != (self.config.history_size, self.config.proprio_dim):
             raise ValueError("benchmark proprio history does not match checkpoint config")
         if actions.shape != (self.config.history_size, self.config.action_dim):
             raise ValueError("benchmark action history does not match checkpoint config")
+        if getattr(self.config, "action_source", "applied_action") == "commanded_action":
+            # Runtime histories contain incoming requests. Dataset actions describe
+            # the transition leaving each frame, so retain the latest completed block.
+            actions = torch.cat((actions[1:], torch.zeros_like(actions[:1])), dim=0)
         # The planner replaces this row with its first candidate action.
         actions[-1] = 0.0
         return {

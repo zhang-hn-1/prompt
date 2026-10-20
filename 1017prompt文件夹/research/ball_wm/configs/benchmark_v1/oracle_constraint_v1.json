@@ -1,0 +1,12 @@
+{
+  "schema_version": "oracle_constraint_v1",
+  "policy_name": "oracle_constraint_v1",
+  "auxiliary_velocity_limit_rad_s": 0.3,
+  "auxiliary_saturation_threshold_rad_s": 0.25,
+  "auxiliary_release_threshold_rad_s": 0.2,
+  "scheduled_main_command_rad_s": 0.5,
+  "maximum_main_command_rad_s": 1.5,
+  "turning_curvature_threshold_1_m": 0.2,
+  "lateral_error_threshold_m": 0.15,
+  "heading_error_threshold_rad": 0.3490658503988659
+}

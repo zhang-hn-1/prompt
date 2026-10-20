@@ -1,0 +1,348 @@
+{
+  "baseline_replay_exact_frames": 180,
+  "scope": "Same saved trajectory map replay; interval-ambiguous points remain unknown, no observed-free claim or navigation counterfactual claim",
+  "rows": [
+    {
+      "frame": 0,
+      "time_s": 0.0,
+      "old": {
+        "hazard_cells": 30,
+        "root_clearance_m": 2.23606797749979,
+        "goal_clearance_m": 5.5,
+        "root_pass": true,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 30,
+        "root_clearance_m": 2.23606797749979,
+        "goal_clearance_m": 5.5,
+        "root_pass": true,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 50,
+      "time_s": 4.999999888241291,
+      "old": {
+        "hazard_cells": 44,
+        "root_clearance_m": 2.23606797749979,
+        "goal_clearance_m": 5.5,
+        "root_pass": true,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 44,
+        "root_clearance_m": 2.23606797749979,
+        "goal_clearance_m": 5.5,
+        "root_pass": true,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 100,
+      "time_s": 9.999999776482582,
+      "old": {
+        "hazard_cells": 91,
+        "root_clearance_m": 1.47648230602334,
+        "goal_clearance_m": 4.9365980188789935,
+        "root_pass": true,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 76,
+        "root_clearance_m": 1.47648230602334,
+        "goal_clearance_m": 4.9365980188789935,
+        "root_pass": true,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 150,
+      "time_s": 14.999999664723873,
+      "old": {
+        "hazard_cells": 97,
+        "root_clearance_m": 1.746424919657298,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 81,
+        "root_clearance_m": 1.746424919657298,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 200,
+      "time_s": 19.999999552965164,
+      "old": {
+        "hazard_cells": 99,
+        "root_clearance_m": 1.5,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 91,
+        "root_clearance_m": 1.5,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 250,
+      "time_s": 24.999999441206455,
+      "old": {
+        "hazard_cells": 119,
+        "root_clearance_m": 1.8,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 107,
+        "root_clearance_m": 1.8,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 300,
+      "time_s": 29.999999329447746,
+      "old": {
+        "hazard_cells": 170,
+        "root_clearance_m": 1.7029386365926404,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 130,
+        "root_clearance_m": 1.7029386365926404,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 350,
+      "time_s": 34.99999921768904,
+      "old": {
+        "hazard_cells": 169,
+        "root_clearance_m": 2.3021728866442674,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 128,
+        "root_clearance_m": 2.3021728866442674,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 400,
+      "time_s": 39.99999910593033,
+      "old": {
+        "hazard_cells": 196,
+        "root_clearance_m": 1.4142135623730951,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 162,
+        "root_clearance_m": 1.4142135623730951,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": true,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 450,
+      "time_s": 44.99999899417162,
+      "old": {
+        "hazard_cells": 212,
+        "root_clearance_m": 0.7211102550927979,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 177,
+        "root_clearance_m": 0.7211102550927979,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 500,
+      "time_s": 49.99999888241291,
+      "old": {
+        "hazard_cells": 191,
+        "root_clearance_m": 0.5656854249492381,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 148,
+        "root_clearance_m": 0.7211102550927979,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 550,
+      "time_s": 54.9999987706542,
+      "old": {
+        "hazard_cells": 187,
+        "root_clearance_m": 0.6403124237432849,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 145,
+        "root_clearance_m": 0.7810249675906654,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 600,
+      "time_s": 59.99999865889549,
+      "old": {
+        "hazard_cells": 185,
+        "root_clearance_m": 0.670820393249937,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 143,
+        "root_clearance_m": 0.7810249675906654,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 650,
+      "time_s": 64.99999854713678,
+      "old": {
+        "hazard_cells": 185,
+        "root_clearance_m": 0.670820393249937,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 143,
+        "root_clearance_m": 0.7810249675906654,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 700,
+      "time_s": 69.99999843537807,
+      "old": {
+        "hazard_cells": 185,
+        "root_clearance_m": 0.670820393249937,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 143,
+        "root_clearance_m": 0.7810249675906654,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 750,
+      "time_s": 74.99999832361937,
+      "old": {
+        "hazard_cells": 185,
+        "root_clearance_m": 0.7280109889280518,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 143,
+        "root_clearance_m": 0.8062257748298549,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 800,
+      "time_s": 79.99999821186066,
+      "old": {
+        "hazard_cells": 185,
+        "root_clearance_m": 0.7280109889280518,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 143,
+        "root_clearance_m": 0.8062257748298549,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 850,
+      "time_s": 84.99999810010195,
+      "old": {
+        "hazard_cells": 185,
+        "root_clearance_m": 0.7280109889280518,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 143,
+        "root_clearance_m": 0.8062257748298549,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      }
+    },
+    {
+      "frame": 895,
+      "time_s": 89.49999799951911,
+      "old": {
+        "hazard_cells": 185,
+        "root_clearance_m": 0.7280109889280518,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      },
+      "filtered": {
+        "hazard_cells": 143,
+        "root_clearance_m": 0.8062257748298549,
+        "goal_clearance_m": 4.925444142409901,
+        "root_pass": false,
+        "goal_pass": true
+      }
+    }
+  ]
+}

@@ -183,6 +183,35 @@ def test_action_block_alignment(synthetic_root: Path):
     )
 
 
+def test_commanded_actions_exclude_future_execution_feedback(tmp_path: Path):
+    """Changing future applied controls must not change predictive inputs."""
+    samples = []
+    for name, future_applied in (("first", 3.0), ("second", 9.0)):
+        root = tmp_path / name
+        episode = _write_synthetic_episode(root, "ep0000", "scene_a")
+        with np.load(episode / "states.npz") as loaded:
+            states = {key: loaded[key].copy() for key in loaded.files}
+        states["commanded_action"][:] = [0.75, 0.2]
+        states["applied_action"][:] = [0.25, 0.1]
+        states["applied_action"][15:] = future_applied
+        np.savez_compressed(episode / "states.npz", **states)
+        dataset = BallWMDataset(
+            root, history_frames=3, rollout_horizon=3, image_size=(16, 16),
+            action_source="commanded_action",
+        )
+        samples.append(dataset[0])
+        assert dataset.action_source == "commanded_action"
+    np.testing.assert_allclose(samples[0]["action"][:5], np.tile([0.75, 0.2], (5, 5)))
+    np.testing.assert_array_equal(samples[0]["action"], samples[1]["action"])
+    np.testing.assert_array_equal(samples[0]["proprio"][:3], samples[1]["proprio"][:3])
+    np.testing.assert_allclose(samples[0]["proprio"][:3, -2:], np.tile([0.25, 0.1], (3, 1)))
+
+
+def test_dataset_rejects_unknown_action_source(synthetic_root: Path):
+    with pytest.raises(ValueError, match="action_source"):
+        BallWMDataset(synthetic_root, action_source="future_supervisor_action")
+
+
 def test_dataset_derives_future_relative_pose_from_context_last_frame_without_writing_episode(
     synthetic_root: Path,
 ):

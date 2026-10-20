@@ -13,6 +13,8 @@ import numpy as np
 
 
 PROFILE_SCHEMA = "drive_dynamics_v1"
+VELOCITY_LIMITED_PROFILE_SCHEMA = "drive_dynamics_v2"
+SUPPORTED_PROFILE_SCHEMAS = frozenset((PROFILE_SCHEMA, VELOCITY_LIMITED_PROFILE_SCHEMA))
 ACTION_PROTOCOL_ID = "ball_action_v2_aux30"
 MAIN_COMMANDS_RAD_S = (-1.5, -1.0, -0.5, 0.5, 1.0, 1.5)
 AUXILIARY_ANGLES_RAD = tuple(
@@ -80,6 +82,7 @@ class DriveModel:
     controller: tuple[tuple[str, float], ...]
     steering_samples: tuple[SteeringSample, ...]
     braking_samples: tuple[BrakingSample, ...]
+    auxiliary_velocity_limit_rad_s: float | None = None
     _steering_groups_by_direction: tuple[
         tuple[str, tuple[tuple[SteeringSample, ...], ...]], ...
     ] = field(init=False, repr=False, compare=False)
@@ -126,8 +129,11 @@ class DriveModel:
     def from_mapping(cls, payload: object) -> "DriveModel":
         if not isinstance(payload, Mapping):
             raise ValueError("drive profile must be an object")
-        if payload.get("schema_version") != PROFILE_SCHEMA:
-            raise ValueError(f"drive profile must use schema {PROFILE_SCHEMA}")
+        schema_version = payload.get("schema_version")
+        if schema_version not in SUPPORTED_PROFILE_SCHEMAS:
+            raise ValueError(
+                "drive profile must use schema drive_dynamics_v1 or drive_dynamics_v2"
+            )
         if payload.get("action_protocol_id") != ACTION_PROTOCOL_ID:
             raise ValueError(f"drive profile must use {ACTION_PROTOCOL_ID}")
         timestamp = payload.get("measurement_timestamp_utc")
@@ -147,6 +153,17 @@ class DriveModel:
                 raise ValueError("controller metadata does not match accepted settings")
             controller.append((name, actual))
 
+        auxiliary_velocity_limit = None
+        if schema_version == VELOCITY_LIMITED_PROFILE_SCHEMA:
+            auxiliary_velocity_limit = _finite_float(
+                controller_payload.get("auxiliary_velocity_limit_rad_s"),
+                name="controller.auxiliary_velocity_limit_rad_s",
+            )
+            if auxiliary_velocity_limit <= 0.0:
+                raise ValueError(
+                    "controller.auxiliary_velocity_limit_rad_s must be positive"
+                )
+
         steering = cls._parse_steering(payload.get("steering_samples"))
         braking = cls._parse_braking(payload.get("braking_samples"))
         return cls(
@@ -155,6 +172,7 @@ class DriveModel:
             controller=tuple(controller),
             steering_samples=steering,
             braking_samples=braking,
+            auxiliary_velocity_limit_rad_s=auxiliary_velocity_limit,
         )
 
     @staticmethod

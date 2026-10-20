@@ -1,0 +1,166 @@
+{
+  "registered_utc": "2026-10-15T17:27:37.746610+00:00",
+  "hypothesis": "RGB can identify explicit jointly visible obstacle-floor contact, then known rays/current causal IMU/encoder pose plus disclosed floor prior locate 2D risk without a learned depth scale.",
+  "new_target_vs_old": "Direct witnessed interface labels; all contact pixels rather than lowest appearance-positive pixel. Separate obstacle/floor witnesses. No old distance/semantic/BEV model weights.",
+  "fixed_camera_root": "experiments/user_fov_position_only_20261015_v1",
+  "positions_m": [
+    [
+      0.18197,
+      0.32506,
+      0.11503
+    ],
+    [
+      0.18197,
+      -0.32506,
+      0.11503
+    ],
+    [
+      -0.18197,
+      0.32506,
+      0.11503
+    ],
+    [
+      -0.18197,
+      -0.32506,
+      0.11503
+    ]
+  ],
+  "focal_mm": 8.290430948305513,
+  "focal_px": 294.77087816197377,
+  "resolution": [
+    640,
+    480
+  ],
+  "lighting_profile": "fixed_camera_fill_v1",
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/contact_boundary_source_20261016_v1/collect.py": "ec18c660a3628c970cbeafc0825921fc19eb9871ec5bea86d2dc7da1b76f5857",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/contact_boundary_source_20261016_v1/model.py": "54feaf82ea07ff52e44a4ed4ad969fcde6cc8718b77930fafa6601020b84aa79",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/user_fov_position_only_20261015_v1/four_camera.py": "5933e8ff37dc7375e3c19886f2d6adb214feb6aac4d580ed198af3ca114685f8",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/camera_exposure_contract_20261015_v1/exposure_contract.py": "dfb0e0ff51d35a682b2ad4b16338f15fbb5a3e608eedda622692a2a5c9b2a421",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_interval_packet.py": "38f862da3746e709240a216d7c5693774ea866475d35a8a3a67edd9c6ec47b55",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/imu_gravity_rolling.py": "ee495d9c7741e28416e11f131eaab4f01b3b363d0bed1d6607d24653ccafd5ce",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/oracle_feasible_route_20260929_v9/hybrid/roll_pid.py": "e205d303a8f9cb066349f8eae20e12f947596cca9603d7bac8dfb0b1b3379f47",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/camera_rig.py": "5177063575b6dabde0822eb0c2472bd5f9ddf5e253a41be1feb42b4eacb2800a",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/collect_data_dubins.py": "9a0ccec4dddb6fd1372f85a83fb09c6678e2a5059eb44e5716cc4d0dc8afa934",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/isaac_runtime.py": "72266e68bced65f81e41dbe96d99a806e4f674b13c9ae7db563016097d8a29f7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/contact_boundary_source_20261016_v1/validate.py": "88e717a15d3bbf1b19fc2f10c0fe1ff7a2baa07b94026b1c436d72d5de2ffd57",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/contact_boundary_source_20261016_v1/launch.py": "a3ab9b073fa678d39e82a1d0206685b9a6a3ea44b9b53e8f93da8a0ffd846efc"
+  },
+  "acquisitions": {
+    "e0": {
+      "scene_root": "/home/an/project/NavDP/assets/scenes",
+      "episode_manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json",
+      "episode_id": "golden_e0_0001",
+      "occupancy": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+      "role": "held_out_no_fit",
+      "request_program": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e0_run/requests.npz",
+      "request_blocks": 543,
+      "program_duration_s": 54.300000000000004,
+      "input_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_imu_navigation90_20261012_v1/e0_run/requests.npz": "f05d75a055c608beb6adafa82049b7120f3cc2a426a359614e0032ba1e3c5b79",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e0_manifest.json": "41fa023519cf805bedd3b0177a91638479976160a9cdb675442d76a7f61c75ce",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz": "547dd73c52b45f9cc1aa8dca561c779349391f6ecef06ef59026921284b467da",
+        "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_0/cluttered-0.usd": "7125024056f83009e74f1b5c959d3cefdc7190157ec67b9d43818c613fced9f0"
+      }
+    },
+    "e1": {
+      "scene_root": "/home/an/project/NavDP/assets/scenes",
+      "episode_manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+      "episode_id": "golden_e1_0001",
+      "occupancy": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+      "role": "train_only",
+      "request_program": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/baseline_e1_run/requests.npz",
+      "request_blocks": 900,
+      "program_duration_s": 90.0,
+      "input_sha256": {
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/baseline_e1_run/requests.npz": "94e3ee5e95c5f0e31a26ecd28ff10fab5f40b5ef5641370679c8e6c9d9dde9bf",
+        "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json": "41fa023519cf805bedd3b0177a91638479976160a9cdb675442d76a7f61c75ce",
+        "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7",
+        "/home/an/project/NavDP/assets/scenes/benchmark_e1/e1_detour.usda": "d6236dea995f04e3a81fb90dcde4bde6b63841c283cc5b2470aee8cda34c8634"
+      }
+    }
+  },
+  "collection": "Frozen historical requests used only as predetermined drive excitation; native PID ideal bank feedback retained. No source model/control selection inference, no navigation performance claim. No teleports/internal resets/scene changes.",
+  "acquisition_order": [
+    "e0",
+    "e1"
+  ],
+  "early_stop": "After e0 complete, perform whole-sequence GT-only necessary oracle and causal-pose consumer gates. On failure close candidate and do not collect e1 or fit.",
+  "termination": "At end of frozen request program, or the first 0.1-second request block whose native contact latch is true. The inherited executor completes the current five-tick block (up to four additional 0.02-second ticks after contact) before capture/stop. Preserve every contact and tick. A legal acquisition end, not navigation success.",
+  "capture_cadence_s": 0.5,
+  "always_capture_initial_and_terminal": true,
+  "native_IMU_hz": 50,
+  "fixed_height_prior_m": 0.4000000059604645,
+  "initial_gauge": "Known initial position/orientation calibration privileged once; live pose from native gyro/acceleration/main encoder only; low-level bank feedback uses ideal current quaternion and is disclosed.",
+  "oracle": {
+    "target_domain": "All finite range .5\u20133m, nonCAD, outside root .55m, world height .05\u20131.5m GT visible cells. Full sphere/cylinder visible targets retained, including suspended objects.",
+    "floor_z": 0.0,
+    "contact_samples_per_object": 1440,
+    "contact_and_side_tolerance_m": 0.02,
+    "floor_witness_abs_z_m": 0.01,
+    "obstacle_side_min_z_m": 0.01,
+    "witness_offset_pixels": [
+      1,
+      2,
+      3
+    ],
+    "source_geometry": "Exact actual runtime primitive floor-plane intersection, cylinders or spheres; objects whose bottom is above floor have no contact target and stay unknown. Buried/intersecting vs base-on-floor vs suspended reported separately. Unsupported render surfaces remain unknown and in full denominator.",
+    "precision_min": 0.95,
+    "recall_min": 0.8,
+    "position_p90_max_m": 0.15,
+    "per_frame_catastrophic_position_m": 0.3,
+    "unknown_not_free": true,
+    "range_m": [
+      0.5,
+      3.0
+    ],
+    "root_exclusion_m": 0.55,
+    "world_bodyband_m": [
+      0.05,
+      1.5
+    ],
+    "every_nonempty_frame_recall_min": 0.8,
+    "every_nonempty_frame_precision_min": 0.95,
+    "causal_pose_consumer_gate": "The same contact labels must pass precision>=.95, full-visible target recall>=.8, XY cell P90<=.15 with native IMU/encoder estimated camera transforms; truth used only for labels/scoring. Record inherited begin/end timestamp phase lag; no online correction using truth.",
+    "empty_target_handling": "No target and no projection => N/A frame, counts retained; any projected cells with no true target are false positives; visible target with no projection has recall0. No omitted suspended/unknown cells."
+  },
+  "model_frozen": {
+    "module": "model.py:ContactNet",
+    "input": "Independent current RGB+calibrated ray x/y+current estimated camera gravity3+current estimated camera height (9 channels), each eye shared model",
+    "size_wh": [
+      320,
+      240
+    ],
+    "output": "One contact logit per pixel, raw image axes; no depth/GT/future/other-camera network input",
+    "seed": 20261016,
+    "epochs": 30,
+    "batch": 4,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "loss": "BCEWithLogitsLoss(pos_weight=20), supported labelled domain only",
+    "train_normalization": "RGB [0,1], fixed ray/gravity/height scales; no holdout statistics",
+    "prediction_rule": "p>=.8 and local maximum along current projected gravity within +/-2 original pixels; current CAD exclusion; no bottommost-column selection",
+    "fits_cap": 1,
+    "input_and_label_coverage_before_fit": true,
+    "heldout_group": "Entire e0 new trajectory; no e0 fitting or hyperparameter/model changes",
+    "train_group": "Entire e1 new trajectory, only if preceding gates pass"
+  },
+  "budgets": {
+    "physical_cap": 4,
+    "initial_acquisitions_cap": 2,
+    "recovery_cap": 1,
+    "fit_cap": 1,
+    "model_inference_before_data_gate": 0,
+    "navigation_before_source_gate": 0
+  },
+  "stop_rules": [
+    "No threshold/window/sampling/model sweep after failure",
+    "No rejected model inference/revival or old budgets reopened",
+    "No GT contact labels used online",
+    "Geometry/data/pose gate fail => no fit or navigation"
+  ],
+  "wall_timeout_per_physical_s": 1800,
+  "acquisition_count_contract": "At most2 distinct initial trajectory acquisitions plus at most1 environment recovery; every launch including recovery consumes the total physical_cap4. No extra navigation if the total budget cannot cover required controls.",
+  "recovery": "One interface/environment recovery only. CameraParams attaches before formal reset priming; eight fixed render-only refreshes at unchanged physical clock before strict atomic capture. Preserve first failed start and all scientific gates."
+}

@@ -1,0 +1,79 @@
+{
+  "registered_utc": "2026-10-15T18:26:47.763665+00:00",
+  "question": "With the accepted four-camera K/FOV, can the existing category-separated metric surface projection consumer retain the full visible collision-height target using causal native pose, including suspended objects?",
+  "hypothesis": "Perfect per-pixel surface category and depth may remove contact-target coverage loss; native registration, sampling and overlap conflicts may still prevent admission.",
+  "novelty_scope": "No new perception source admitted. Extends frozen v76 necessary consumer oracle to current full four-camera E0 and actual native camera matrices; not a new algorithm or the rejected source rerun.",
+  "old_intrinsic_source": {
+    "adapter": "experiments/visual_information_new_rig_20261004_v2/model_inference.py",
+    "already_passed_known_K_to_UniDepth": true,
+    "official_ray_conditioning": true,
+    "old_assessment_stays_rejected": true
+  },
+  "Metric3D_inspected_not_admitted": {
+    "official": "https://github.com/YvanYin/Metric3D",
+    "demo": "https://github.com/YvanYin/Metric3D/blob/main/hubconf.py",
+    "decoder": "https://github.com/YvanYin/Metric3D/blob/main/mono/model/decode_heads/RAFTDepthNormalDPTDecoder5.py",
+    "paper": "https://arxiv.org/abs/2404.15506",
+    "finding": "Demo inference receives RGB; de-canonicalization multiplies predicted depth by processed fx/1000. Learned six-channel recurrent update jointly changes depth/confidence/normals; no new measured metric reference or calibrated-ray geometry equation is established by this inspection. This does not claim model performance failure.",
+    "download": 0,
+    "inference": 0
+  },
+  "data_root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contact_boundary_source_20261016_v1/e0_recovery_run",
+  "data_role": "Already inspected development sequence only; not fresh holdout for this question.",
+  "frames": 110,
+  "cameras": 4,
+  "target_domain": "Exactly v95 full finite optical-Z .5–3m, dynamic CAD excluded, >.55m from true body, true collision-height .05<z<=1.5, all pixels, all four eyes. Suspended/unidentified retained. Truth labels offline only.",
+  "GT_class": "1 for original visible collision-height target pixels; 2 for true floor abs(z)<=.03; 0 otherwise. No reconstructed predicted-height semantic reclassification. No RGB semantic source admitted.",
+  "consumer": {
+    "existing": "v76 project_semantic/world_points/consistent/cells",
+    "focal": "Actual recorded optical focal_mm/18*640; every recorded camera optics checked",
+    "surface_stride": 2,
+    "target_stride": 1,
+    "range_m": [
+      0.5,
+      3.0
+    ],
+    "root_exclusion_m": 0.55,
+    "pairings": [
+      [
+        "front_left",
+        "front_right"
+      ],
+      [
+        "rear_left",
+        "rear_right"
+      ]
+    ],
+    "overlap_abs_depth_m": 0.15,
+    "cell_m": 0.1,
+    "union": "Union front and rear fused risk sets; no free or risk clearing",
+    "native_body": "B=N@inverse(local), supplied to existing consumer; actual per-eye native camera matrices"
+  },
+  "gates": {
+    "precision_min": 0.95,
+    "recall_min": 0.8,
+    "cell_p90_max_m": 0.15,
+    "every_nonempty_frame_recall_min": 0.8,
+    "every_nonempty_prediction_precision_min": 0.95,
+    "every_nonempty_prediction_cell_p90_max_m": 0.3
+  },
+  "controls": "Same ideal source labels/depth rendered vs native pose. No perception model, threshold sweep, changes to sensor phase or current cameras.",
+  "budget": {
+    "physics_cap": 0,
+    "physics_used": 0,
+    "model_cap": 0,
+    "model_used": 0,
+    "fit_cap": 0,
+    "fit_used": 0,
+    "CPU_wall_limit_s": 600,
+    "implementation_repair_cap": 1
+  },
+  "stop": "After whole sequence necessary gate, retain negative or qualified-consumer-only conclusion. No source model or actual navigation admitted by oracle alone.",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contact_boundary_source_20261016_v1/e0_recovery_run/capture_seal.json": "f2cac34cb2a3a7e701401628c310a1910fa3dfeafa2e09437c1204ef5d256667",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contact_boundary_source_20261016_v1/e0_qualification.json": "1991d745300554edb3ab3fffcb1448c7c839abf697bd510f2ea4bed7dbae6893",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/dual_monocular_semantic_bev_20261015_v1/projection.py": "5d44e0668ecd1c269933cd3baf573b7bc99a835e0022f8d941e17f72504e8c86",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/dual_monocular_semantic_bev_20261015_v1/semantic_projection.py": "d3117b3781e5e07fd460daa6148250c8cd7d8d83182f407cb43bbaabe115b20d",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/visual_information_new_rig_20261004_v2/model_inference.py": "cc1b512dfaca69a30815eebb182c534f6151eebbae8804d0693eebc3effa7804"
+  }
+}

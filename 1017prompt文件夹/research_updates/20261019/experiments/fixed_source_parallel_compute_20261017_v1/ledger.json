@@ -1,0 +1,33 @@
+{
+  "dispatch_cap": 1,
+  "dispatch_used": 1,
+  "recovery_cap": 1,
+  "recovery_used": 0,
+  "source_invocations_cap": 478,
+  "fit": 0,
+  "learned_inference": 0,
+  "physics": 0,
+  "navigation": 0,
+  "parent_pid": 3923519,
+  "utc": "2026-10-17T10:04:20.724189+00:00",
+  "old_budgets_reopened": false,
+  "execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T10:04:20.724382+00:00",
+    "parent_pid": 3923519,
+    "child_pid": 3923521,
+    "process_group_id": 3923521,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T10:12:29.168548+00:00"
+  },
+  "status": "closed_qualification_passed_no_online_claim",
+  "close_utc": "2026-10-17T10:19:43.401521+00:00",
+  "unused_recovery_closed": true,
+  "active_runtime": false
+}

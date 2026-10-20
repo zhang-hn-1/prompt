@@ -1,0 +1,115 @@
+{
+  "stage": "collector_qualified_learning_data_not_qualified",
+  "episode_groups": 1,
+  "scorable_windows": 70,
+  "distinct_programs": 1,
+  "program": [
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "train_calibration_test_split_admitted": false,
+  "consumer_admitted": false,
+  "fit_budget": 0,
+  "physics_remaining_under_this_pilot": 0,
+  "reason": "Single zero-request episode cannot assess nonzero proposed-program support or independent whole-sequence calibration.70 anchors are correlated, not70 independent samples.",
+  "next": "Independent acquisition design must predeclare whole-episode groups, action/state support and numerical falsification/latency gates with finite budget, independently review; do not extend this closed pilot or reopen old learners.",
+  "whole_mission_complete": false
+}

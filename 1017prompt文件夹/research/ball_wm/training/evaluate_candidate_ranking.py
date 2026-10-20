@@ -16,6 +16,7 @@ from .candidate_losses import candidate_goal_distances, candidate_ranking_accura
 from .candidate_rollout_dataset import CandidateRolloutDataset
 from .joint_jepa import JointModelConfig, build_joint_model
 from .navigation_metrics import spearman_rank_correlation
+from .proprioception import checkpoint_velocity_frame
 
 
 def _finite_candidate_vector(value: object, name: str) -> np.ndarray:
@@ -138,7 +139,10 @@ def evaluate_candidate_ranking(
     checkpoint = torch.load(Path(checkpoint_path), map_location=device, weights_only=False)
     if not isinstance(checkpoint, Mapping) or "config" not in checkpoint or "model" not in checkpoint:
         raise ValueError("checkpoint must contain config and model")
+    checkpoint_velocity_frame(checkpoint)
     config = JointModelConfig(**checkpoint["config"])
+    if config.action_source != "applied_action":
+        raise ValueError("candidate ranking currently requires action_source=applied_action")
     if not config.pose_head_enabled:
         raise ValueError("candidate ranking evaluation requires an enabled pose head")
     if int(config.rollout_horizon) < 5:
@@ -154,6 +158,7 @@ def evaluate_candidate_ranking(
         normalize=True,
         expected_horizon=5,
         expected_candidates=expected_candidates,
+        proprio_velocity_frame=config.proprio_velocity_frame,
     )
     require_action_protocol(
         checkpoint, dataset.action_protocol_id, artifact="checkpoint"

@@ -1,0 +1,48 @@
+{
+  "reviewer": "independent_subagent_rig_candidate_review",
+  "utc": "2026-10-12T13:43:21.792456+00:00",
+  "outcome": "implementation_review_pass_for_bounded_physical_launch",
+  "launch_scope": "cap3 E2 first; E0/E1 only after verified actual E2 retain",
+  "remaining_important_issues": [],
+  "resolved_issues": [
+    "Supervisor previously scored without raw source/execution qualification. It now audits journal/request/physical target alignment, current-native registration/clocks, and actual interval selection before scoring or advancing; validation failure closes unused budget."
+  ],
+  "verified": [
+    "Single online mechanism: newly admitted paired-texture positive-height points require world_z-existing sigma_m>.05. No change to forward60cm rig, SGBM, IMU registration, memory lifecycle, retained risks, clearance, planner or controller.",
+    "Causal time checks precede payload; scalar sigma finite/nonnegative/aligned; no truth input; absent/ambiguous remains unknown; previous records retained.",
+    "8 CPU checks independently passed, including negative execution-target/pending/journal cases. New execution validator also passed4500 command rows in measuredforward control.",
+    "181-pair saved replay runs implemented class and preserves world/sigma/pixel alignment:77627 baseline accepted,3437 filtered,74190 retained.",
+    "All three protocol source/input identities match; raw control seal matches; score retains unchanged arrival/time/contact/depth/video requirements."
+  ],
+  "source_binding_counts": {
+    "candidate_e2": 2208,
+    "candidate_e0": 2210,
+    "candidate_e1": 2208
+  },
+  "limitations": [
+    "Existing scalar one-pixel range sensitivity is not calibrated confidence and excludes systematic stereo/pose error.",
+    "Saved map replay does not unblock terminal root; physical navigation benefit unproven.",
+    "Development E2 reused; RGB may differ; no heldout or full causal claim."
+  ],
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/height_interval.py": "ebd177b11a3244d01fdee8a31d777d4746f0b67dedd6d0ed54524f9d99c87653",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/protocol.json": "52e727a11379fd8e38ba31957aaed374a8caef862824b11cc934db488c66129a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/prepare.py": "6e680fba9474c583a3c6e4faa80630278b67dd69c83a124891f9e96d93718931",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/rig_adapter.py": "4c356908a0e68503ea8fbb434dee1c05cc8cab580413ad2564c39c4b4a9f0a4f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/score.py": "aa49b5adf95c2c5d0602f35e5e6640fca6be3641d0596bde435558b975b6da6a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/supervise.py": "09d104e06c3b1fcae1179aefceb132bbaac29facf4a0ad22a77e974c3188fa4d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/audit_actual.py": "8f5f5410d61782576c824b8acf46abf0d8c8610289c9c75943976edf1dac9fe6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/test_height_interval.py": "2210d9f9325a1ec86be85a46d917b900489f09e52e605c26e9568e2303ae574a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/test_execution_gate.py": "04de9fb0a6508694b2197fbf1f2e9dc83e03b17c248ed191c35f785d405780e7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/verify_saved_filter.py": "8ea4f7c0454f4c23cfd761d49b0ba68f1c17740e4ab61b3d58ab1a5bd2d9844f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/saved_filter_verification.json": "9b2a698f855a580e78de32108f85ea08888aabe7ba56404e6d17cd6d49f2de03",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/grid_replay.json": "3ac5fee43ffb1a09fecdfde7ff6d760f41387e03c089d7d5ea20dedf69fda362",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/surface_height_audit.json": "f84e00ba96df1a1449d1fa2ab742108319de451eb44dda3d6cb2052e0b060f48",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/candidate_e2_driver.py": "e2e551dfa4c98506c1a802bbea4a7f9b9fe58e967334004d85d80a7baff40974",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/candidate_e2_protocol.json": "e5f355deaefec44571fef726b683eeaedc30da2e54bba8282e737b4c676993e2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/candidate_e0_driver.py": "39b04b0337d017809b1a915d22883e604e58e9eaefa53304cf6b1f52c365d57c",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/candidate_e0_protocol.json": "726fee6fe1e6ecb3df6d0e2bc1830b456b3719239fdc5ba017e1b7f1d236233f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/candidate_e1_driver.py": "785f11c5de1c7727d5f6e90240184e471fcfae741ddd34b00e52a2d2fcf85f59",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/risk_height_navigation_20261012_v1/candidate_e1_protocol.json": "cd6c7837ac5edf44f89f0d4613b26950ebb4ad748133ac3c378cf13a5819bc55"
+  }
+}

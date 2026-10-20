@@ -1,0 +1,29 @@
+{
+  "utc": "2026-10-17T22:26:22.827142+00:00",
+  "observed_failure": "Frozen >=20% pooled false-visible-target cell reduction gate failed:78\u219279",
+  "evidence": {
+    "full_frame_GT_counts": {
+      "full_pixels": 4915200,
+      "finite_positive_GT": 2887203,
+      "invalid_GT_UNKNOWN": 2027997,
+      "target_pixels": 527344
+    },
+    "target_cell_exposures": 420,
+    "unchanged_unmasked_risk_cells": 224,
+    "removed_cells": 0,
+    "added_cells": 3,
+    "added_near_target": 2,
+    "added_far_target": 1,
+    "masked_valid_target": 9253,
+    "target_pixels": 527344
+  },
+  "supported_interpretation": "Supported local costs plus unique agreeing photometric evidence are insufficient for the registered benefit in this new four-frame reference. Removing unsupported aggregation hypotheses removed no existing risk cells. This rules out the fixed proposed repair as a useful correction under its protocol, not all stereo boundary methods.",
+  "not_established": [
+    "No isolation of why all remaining wrong matches occur: ambiguous texture, regularizer preference, integer discretization, geometry/pose errors remain unseparated",
+    "Newreference vs originalOpenCV differs in several declared factors; cannot attribute worseprecision solely to supportmask",
+    "Far from visibleGT target is not certified staticphysicalfree orhazardtruth",
+    "Four seenframes are not full110/470, independent scenes, map/memory ornavigation"
+  ],
+  "decision": "Close fixedrepairedreference withoutfullsequence/navigation or parameter/decoder/threshold sweep; preserve baseline, oldfailures and budgets.",
+  "next_executable_repair": null
+}

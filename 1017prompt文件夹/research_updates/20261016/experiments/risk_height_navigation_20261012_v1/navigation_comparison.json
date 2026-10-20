@@ -1,0 +1,63 @@
+{
+  "control_forward_rig": {
+    "remaining_m": 8.212182335782233,
+    "closest_m": 8.212182335782233,
+    "net_progress_m": 0.6878174734829035,
+    "path_length_m": 5.525138251212773,
+    "zero_main_requests": 595,
+    "positive_main_requests": 129,
+    "negative_main_requests": 176,
+    "reference_versions": 98,
+    "final_plan": {
+      "status": "observed_obstacle_blocks_route",
+      "certified_safe": false,
+      "unknown_fraction": 1.0,
+      "local_target": null,
+      "nominal_geometry_only": true,
+      "initial_direction": "forward",
+      "planning_clearance_m": 0.8707106781186548,
+      "empirical_tracking_error_m": 0.2,
+      "empirical_tracking_error_certified": false
+    },
+    "termination": {
+      "termination": "timeout90",
+      "actions": 900,
+      "time_s": 89.99999798834324,
+      "budget_s": 90.0,
+      "true_goal_xy_threshold_m": 0.2,
+      "not_original35": true,
+      "not_causal_navigation_AB": true
+    }
+  },
+  "height_interval_candidate": {
+    "remaining_m": 8.212182335782233,
+    "closest_m": 8.212182335782233,
+    "net_progress_m": 0.6878174734829035,
+    "path_length_m": 5.525138251212773,
+    "zero_main_requests": 595,
+    "positive_main_requests": 129,
+    "negative_main_requests": 176,
+    "reference_versions": 98,
+    "final_plan": {
+      "status": "observed_obstacle_blocks_route",
+      "certified_safe": false,
+      "unknown_fraction": 1.0,
+      "local_target": null,
+      "nominal_geometry_only": true,
+      "initial_direction": "forward",
+      "planning_clearance_m": 0.8707106781186548,
+      "empirical_tracking_error_m": 0.2,
+      "empirical_tracking_error_certified": false
+    },
+    "termination": {
+      "termination": "timeout90",
+      "actions": 900,
+      "time_s": 89.99999798834324,
+      "budget_s": 90.0,
+      "true_goal_xy_threshold_m": 0.2,
+      "not_original35": true,
+      "not_causal_navigation_AB": true
+    }
+  },
+  "limits": "Historical control RGB may differ; same development E2, not full causal A/B or independent generalization. Partial surface qualification does not establish free volume or reliable navigation."
+}

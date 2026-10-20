@@ -1,0 +1,116 @@
+{
+  "utc": "2026-10-19T09:40:48.323110+00:00",
+  "question": "Among alreadysealed knownselfRGB-sensitive native risk queries, does perturbation preferentially correct actualaxialreference disagreements or harm previouslyaccurate measurements?",
+  "type": "One bounded postfailure attribution, not sourceprediction/repair/oldstage retry",
+  "native_dependency_result": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/result.json",
+  "rows": [
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "input_rgb_frame": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contact_boundary_source_20261016_v1/e0_recovery_run/frames/frame_000.npz",
+      "original_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E0_000_original.npz",
+      "intervened_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E0_000_self_inverted.npz"
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "input_rgb_frame": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contact_boundary_source_20261016_v1/e0_recovery_run/frames/frame_055.npz",
+      "original_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E0_055_original.npz",
+      "intervened_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E0_055_self_inverted.npz"
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "input_rgb_frame": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/e1_run/frames/frame_000.npz",
+      "original_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E1B_000_original.npz",
+      "intervened_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E1B_000_self_inverted.npz"
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "input_rgb_frame": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1/e1_run/frames/frame_090.npz",
+      "original_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E1A_090_original.npz",
+      "intervened_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E1A_090_self_inverted.npz"
+    }
+  ],
+  "eyes": [
+    "front_left",
+    "front_right",
+    "rear_left",
+    "rear_right"
+  ],
+  "partners": {
+    "front_left": "front_right",
+    "front_right": "front_left",
+    "rear_left": "rear_right",
+    "rear_right": "rear_left"
+  },
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E0_000_original.npz": "9c950a40e5e0cddbcdf0d6b71c0003aa84c0f51fd03389fb2b20a8cbd8ad975e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E0_000_self_inverted.npz": "343f956d11c965fb4671ed29839b7d6c4050a18f8640eac0b122bf444caf6870",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contact_boundary_source_20261016_v1/e0_recovery_run/frames/frame_000.npz": "be1cbda22f0d52cd2043a78520ec17379f098547da1dc37abc24419ca95c476c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E0_055_original.npz": "cf7a328a2b3df5144a97ce1b0afe007846ceaa05840b9ad1a2e935895bdaca50",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E0_055_self_inverted.npz": "d541c064b4b403f3c26c68eba726259caac7bbc7a0ac3fa9751b12a9e1f9567f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/contact_boundary_source_20261016_v1/e0_recovery_run/frames/frame_055.npz": "a53b14b71960d41ee9cb80314ddc1c611fb89912e039895c0f74de1598cb378c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E1B_000_original.npz": "2941afb5084ebec8c804372b1ae47bb73f243e267aa86769817bf626ed3e238b",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E1B_000_self_inverted.npz": "397612875625067e5114e7d9bf5455ac1ffded6b692a61dc4671e173cdc4b490",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/e1_run/frames/frame_000.npz": "635230a0ed52e8a1bde2d359250280fa8f2c37c9659aa01a89985fa5c0f053ef",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E1A_090_original.npz": "2d1f2d7d48b69f56652b0a29495dc027dd6d82a70155df5fdd9985963e32f52c",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/E1A_090_self_inverted.npz": "a440d29ca7215147565482ee72148a796be2290c857c17e58278c259c19cd7a6",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_exposure_baseline_navigation_20261017_v1/e1_run/frames/frame_090.npz": "a2e0337860fc3207eea5bf27f52a4331509fe956bf5f5f5ce0161713fab8d60a",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/protocol.json": "8f0eb91909041cea49e855b03159392efffcc1191fe7193d47b9d18724d22294",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/prediction_seal.json": "d4b130bb7aa09c95a92c19e67201020be696949a98918e1568f722ea96771162",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/result.json": "888f49b040a6e7ea68e309e4ea971e04d5510f40b6d61c598ca87f7e6026e64e",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_dependency_20261019_v1/ledger.json": "f27314816fccf1eff6a103fd22d16ac97b985971841e6d15f96a33abac2eb8c3",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_supported_cost_repair_20261019_v1/protocol.json": "93cebe5fb894f5cb38bd5406163e123d8ef2b27d8273ce0b716686a33bf81e50",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_supported_cost_repair_20261019_v1/result.json": "46a6545a8018aced09495c3ccdd135542010f05d22defbcfbc7be2bfce995bff",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_supported_cost_repair_20261019_v1/ledger.json": "3964d9224b7a6d182ce8448f87b6f13b6f67b6b3dc966879f33db71304832fad"
+  },
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/attribute.py": "c014e10c3090ad2fc5f750b7a6073a8caf658be8cda295fff13dad794161d963",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/self_rgb_GT_attribution_20261019_v1/supervise.py": "0d6317f8f304cfe134caf9b655b7f23570574e4f410a5bbfe8db7b5e093aef23",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/fixed_source_parallel_compute_20261017_v1/group_supervision.py": "bcf73edf6ae33d737f396866681107e87d6f8844318aed59fb0741e83363e38c"
+  },
+  "budget": {
+    "dispatch_cap": 1,
+    "recovery_cap": 0,
+    "wall_cap_s": 90,
+    "GT_attribution": 1,
+    "source_calls": 0,
+    "matcher_calls": 0,
+    "new_CAD": 0,
+    "new_predictions": 0,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "frozen_numerical_contract": {
+    "axial_agreement_m": 0.15,
+    "reference_Z_range_m": [
+      0.5,
+      3
+    ],
+    "protected_original_row_margin": 4,
+    "protected_original_column_margin": 3,
+    "groups": [
+      "all_finite_in_range",
+      "protected_finite_in_range",
+      "affected_protected_finite_in_range",
+      "affected_protected_target"
+    ],
+    "counts_partition_exact": true,
+    "continuation_necessary_conditions": "Affectedtargetnonempty AND originalbad>originalgood AND corrected>harmed. Heuristicresearch-prerequisite, notmethodperformancegate or permissionforfit/nav."
+  },
+  "full_denominators": {
+    "original_risk": 12267,
+    "protected_risk": 12052,
+    "affected_protected": 866,
+    "full_pixels": 4915200,
+    "target_pixels": 527344
+  },
+  "GT_only": true,
+  "selection": "Allsame4prospecteddevelopmentframes andfulloriginalriskqueries, noGT-selectedsamples; nonfinite/out-of-rangeGT separatelyUNKNOWN",
+  "not_old_budget_reopened": "v1234/4andallolderbudgets stayclosed; no source regeneration/oldfailedteacher restart. Thisindependentonce scoringquestion closesafteroneattribution, nootherGTdecomposition.",
+  "stop": "Anyidentity/count/partition orruntime failure stopswithrecovery0. No threshold/frames/perturbationcolor/CADmarginchanges or newcandidate/fit/nav either outcome.",
+  "nonexecuting_syntax_check": "2files ASTparsed beforedispatch; no imports/GT/scientificdata work inparse"
+}

@@ -1,0 +1,28 @@
+{
+  "reviewer": "/root/heading_rate_review",
+  "verdict": "interface_record_qualification_pass",
+  "source_SHA_matches": 2265,
+  "parent_seal_files": 85,
+  "complete_windows": 70,
+  "raw_zero_requests": 1750,
+  "physics_samples": 1751,
+  "native_read_reconstruction": "all1751 exact",
+  "anchor_state_reconstruction": "all70 exact",
+  "contact_samples": 2101,
+  "contacts": 0,
+  "capture_clocks": 351,
+  "videos": {
+    "count": 2,
+    "decoded_frames_each": 351,
+    "fps": 10
+  },
+  "durable_status": "finished",
+  "child_returncode": 0,
+  "pilot_budget_used": 1,
+  "pilot_budget_max": 1,
+  "retries": 0,
+  "closed": true,
+  "pixel_freshness_attested": false,
+  "learning_coverage_qualified": false,
+  "navigation_benefit_assessed": false
+}

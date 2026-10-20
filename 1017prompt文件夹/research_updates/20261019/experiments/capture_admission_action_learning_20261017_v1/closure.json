@@ -1,0 +1,50 @@
+{
+  "utc": "2026-10-17T12:30:45.675583+00:00",
+  "actual_execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T12:24:30.329300+00:00",
+    "parent_pid": 4066631,
+    "child_pid": 4066651,
+    "process_group_id": 4066651,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T12:24:47.717937+00:00"
+  },
+  "diagnosis_execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T12:26:26.147946+00:00",
+    "parent_pid": 4068700,
+    "child_pid": 4068701,
+    "process_group_id": 4068701,
+    "child_returncode": 0,
+    "timeout": false,
+    "parent_signal": null,
+    "forced_kill": false,
+    "no_retry": true,
+    "remaining_live_group_pids": [],
+    "remaining_zombie_group_pids": [],
+    "end_utc": "2026-10-17T12:26:26.699058+00:00"
+  },
+  "fit_cap": 1,
+  "fit_used": 1,
+  "optimizer_iterations": 67,
+  "dispatch_closed": true,
+  "recovery_used": 0,
+  "physical_reservation": {
+    "cap": 4,
+    "used": 0,
+    "status": "closed_unused_after_development_failure",
+    "replacement_or_refit_allowed": false
+  },
+  "source_calls": 0,
+  "feature_regeneration": 0,
+  "physics": 0,
+  "navigation": 0,
+  "decision": "REJECT_FIXED_ACTION_LEARNER_NO_REFIT_NO_PHYSICAL",
+  "old_budgets_reopened": false
+}

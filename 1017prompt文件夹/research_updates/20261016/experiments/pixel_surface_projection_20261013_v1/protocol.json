@@ -1,0 +1,72 @@
+{
+  "candidate": "pixel_surface_identity_and_range_projection_v1",
+  "phase": "offline oracle qualification before independent pixel learning",
+  "hypothesis": "Surface identity predicted in image coordinates and range predicted separately may avoid native-pose height relabelling ground as obstacle while calibrated projection preserves geometry.",
+  "novelty": "v50 classified reconstructed native world height; v49 directly learned BEV height occupancy. This consumer uses per-eye pixel surface identities ground/obstacle/unknown without reclassifying from predicted world height. It is not old ground NCC/height filter or confidence model rescue.",
+  "input_online": "Current paired RGB, native calibrated camera transform/current IMU and existing CAD; future predicted per-eye category and range. No authored scene/GT depth/root pose online.",
+  "label_source": "Offline saved renderer range plus frozen authored visible primitive surface identity (Sphere/Cylinder and actual ground plane), unique ground versus authored-obstacle compatibility within fixed .03m; disagreement/ambiguous/unrecognized/inf remain unknown. Not recorded renderer instance ID; analytic parent surfaces approximate subdivided visuals, label agreement coverage explicitly gated.",
+  "classes": {
+    "0": "unknown/unavailable/ambiguous/outside range/CAD",
+    "1": "authored ground surface, not certified free",
+    "2": "authored obstacle surface, independent of reconstructed world height"
+  },
+  "range_m": [
+    0.5,
+    3
+  ],
+  "rig": {
+    "forward": 0.4,
+    "half_baseline": 0.3,
+    "up": 0.05
+  },
+  "grid": {
+    "forward": [
+      0,
+      4
+    ],
+    "lateral": [
+      -3,
+      3
+    ],
+    "resolution_m": 0.1,
+    "count_min_per_class": 4,
+    "obstacle_over_ground": true
+  },
+  "consumer": "fixed pinhole per-eye backprojection, current native estimated camera pose, outside body radius.55 and CAD, per-class cell count; no world-height category conversion; ground never clears risk.",
+  "groups": [
+    "H",
+    "E0",
+    "E1",
+    "B54",
+    "C54"
+  ],
+  "group_scope": "each181 complete current pairs, all seen development; H/forward shared physical source only counted once",
+  "qualification": {
+    "each_group_authored_label_coverage_min": 0.95,
+    "each_frame_authored_coverage_min_when_eligible1000": 0.8,
+    "each_group_native_oracle_risk_precision_min": 0.9,
+    "each_group_native_oracle_risk_recall_min": 0.8,
+    "each_group_ground_false_fraction_max": 0.05,
+    "each_group_unsupported_fraction_max": 0.1,
+    "each_group_visible_surface_recall_min": 0.7,
+    "each_group_map_localization_p90_max_m": 0.15
+  },
+  "gates_scope": "frame-cell instances against finite renderer+authored-class target, one-cell Chebyshev match tolerance, Euclidean localization; conditional visible-domain and pixel label coverage explicitly reported, no full-world recall",
+  "diagnostics": [
+    "ideal categories+ideal ranges/current native pose",
+    "ideal categories+existing SGBM left range/current native pose; identity does not certify mismatched range",
+    "binocular verified visible obstacle subset vs monocular-only prior requirement; depth agreement.03 only diagnostics"
+  ],
+  "budget": {
+    "physical_cap": 0,
+    "fit_cap": 0,
+    "recovery_cap": 1
+  },
+  "stop": "any oracle target/projection gate fails: no fit, keep old failures. Pass -> independently freeze one pixel category+range learner and coverage/one fit/fresh budget<=4; ideal oracle is not learned/nav performance.",
+  "privileges": "ideal native IMU, encoder pose, fixed.4m root height and initial gauge inherited. GT pose/depth/authored CAD used only in offline labels/reference, never actual navigation.",
+  "preselected_visuals": [
+    "E1 frame450 fixed45s",
+    "C54 frame495 prior blocker-selected before this new stage, not random or new worst search"
+  ],
+  "memory": "Positive category2 world points, current/recent10s risk, two exposure persistent confirmation; H two epochs, other groups nativecamera displacement>=original.1m. Only category2 source validation replaces old .05..1.5 reconstructed-height validity. Ground/unknown never clear. No neural or actual navigation. Memory any-point cell admission vs local raster4 count are separate denominators and reported."
+}

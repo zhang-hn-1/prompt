@@ -1,0 +1,35 @@
+{
+  "reviewer": "independent_subagent_rig_candidate_review",
+  "utc": "2026-10-12T13:12:28.640971+00:00",
+  "outcome": "delta_review_pass_for_bounded_physical_launch",
+  "remaining_important_issues": [],
+  "verified": [
+    "Only stereo baseline changes60cm to20cm relative to measured forward control; adapter and fixed SGBM unchanged.",
+    "Metric depth scaling, sigma, native camera registration and CAD masks consistently use compact rig.",
+    "Compact masks/extrinsics exactly match pre-existing screened candidate; original geometry screen hash verified.",
+    "Three arm source/input maps match; cap3 supervisor E2 first, E0/E1 only after E2 retain; same frozen scoring gates.",
+    "Compact exported experiment names/version/comparison corrected and regenerated.",
+    "Camera family explicitly closes after this candidate; no third rig or threshold tuning."
+  ],
+  "limits": [
+    "Prior forward run is development control; RGB differs and full causal replication is not established.",
+    "Screened geometry is not depth accuracy/navigation evidence; actual runtime and scoring still required.",
+    "Camera prims add no physical housing or collision model; no hardware mounting qualification."
+  ],
+  "source_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/protocol.json": "d07f61b53948b57de67c5138f7eded25ec53d6bef387e98791517a1c567cad1d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/geometry_assessment.json": "917cdd6a31dc59761e16a4e17584f4e3ac9afd8828437453e82c0ab1572a7a75",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/rig_adapter.py": "4c356908a0e68503ea8fbb434dee1c05cc8cab580413ad2564c39c4b4a9f0a4f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/prepare.py": "ac0206817596e3a93919dbf6f4b4aea7e09a3b5afcb12d6a75a2942a7c65f37a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/score.py": "aa49b5adf95c2c5d0602f35e5e6640fca6be3641d0596bde435558b975b6da6a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/supervise.py": "0d28f5349d990e4130cf627a65d0434d5342645f088b9ba208c68b57e1456371",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/compact_masks.npz": "666afe2b63aba5b1a03e0a05ae56a10199ec87398dbee8bad38171aa0df25894",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/compact_extrinsics.npz": "a5d91215c383f56b4641985c300e4018fac0f7eeb15701fbdb15c3a6ccf2ac52",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/candidate_e2_driver.py": "46deb05e43d894db6d29fda7c08eaf0f3b798c104ddedd134cd238620bc56000",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/candidate_e2_protocol.json": "5357cd3c191df60f22cbf6ae9b75003de011dc2969d5268a08eb49d089cd21a5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/candidate_e0_driver.py": "880bd18db7a07d7c9a84f96d0cf9931b605080fb7cecb7b182bd99901027dec1",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/candidate_e0_protocol.json": "6189151b9f89d72a0a8fa2fa63f89ae4914fa41152bab8e610b21fa265aa1369",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/candidate_e1_driver.py": "d53a339eed34b010de3cf61d6248f7cd16c34b63b0755a38daa6dd24c2683fe3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/nearfield_compact_navigation_20261012_v1/candidate_e1_protocol.json": "ecef6ffc228989a12d07c65b3a011a2243b8a01a8b3f68d0ddf344e5d8b343f9"
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "group": "E0",
+    "time_s": 45,
+    "scope": "raw full image, before CAD/source selection, prediction and GT both .5-3m; not map-point scoring",
+    "predicted_pixels": 12201,
+    "scored_pixels": 12076,
+    "image_pixels": 307200,
+    "conditional_scored_fraction": 0.9897549381198263,
+    "full_image_scored_fraction": 0.03930989583333333,
+    "error_p50_p90_p95_m": [
+      0.004345357418060303,
+      0.03242683410644531,
+      0.0959043800830841
+    ]
+  },
+  {
+    "group": "E1",
+    "time_s": 45,
+    "scope": "raw full image, before CAD/source selection, prediction and GT both .5-3m; not map-point scoring",
+    "predicted_pixels": 19304,
+    "scored_pixels": 18328,
+    "image_pixels": 307200,
+    "conditional_scored_fraction": 0.9494405304600083,
+    "full_image_scored_fraction": 0.059661458333333334,
+    "error_p50_p90_p95_m": [
+      0.028602004051208496,
+      0.06833951473236083,
+      0.08322656154632564
+    ]
+  }
+]

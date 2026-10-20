@@ -52,3 +52,22 @@ def test_policy_context_has_model_shapes(monkeypatch: pytest.MonkeyPatch) -> Non
     assert context["proprio"].shape == (1, 5, 17)
     assert context["action"].shape == (1, 5, 10)
     assert np.allclose(context["action"][0, -1].numpy(), 0.0)
+
+
+def test_commanded_policy_aligns_completed_requests_with_outgoing_frame_actions():
+    """Incoming runtime blocks must shift left without losing the latest request."""
+    from dataclasses import replace
+
+    policy = object.__new__(WorldModelPolicy)
+    policy.config = type("Config", (), {
+        "image_size": 8, "history_size": 5, "proprio_dim": 17, "action_dim": 10,
+        "action_source": "commanded_action",
+    })()
+    policy._left_history = []
+    policy._right_history = []
+    observation = replace(
+        _observation(),
+        action_history=np.repeat(np.arange(1, 6, dtype=np.float32)[:, None], 10, axis=1),
+    )
+    context = policy._model_context(observation)
+    np.testing.assert_array_equal(context["action"][0, :, 0], [2, 3, 4, 5, 0])

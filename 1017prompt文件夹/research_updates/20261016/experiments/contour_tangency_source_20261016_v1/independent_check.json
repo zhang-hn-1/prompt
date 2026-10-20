@@ -1,0 +1,107 @@
+{
+  "frames": 110,
+  "eyes": 440,
+  "all_rows_and_aggregate_counts_exact": true,
+  "depth_quantiles_exact": true,
+  "coarse_position_quantile_exact": true,
+  "all_input_prediction_files_sha256_match": true,
+  "all_target_pixels": 4476747,
+  "category_coverage": {
+    "render": {
+      "suspended": [
+        2149,
+        2535
+      ],
+      "floor_intersecting": [
+        5592,
+        9117
+      ],
+      "base_on_floor": [
+        0,
+        0
+      ],
+      "unidentified": [
+        0,
+        0
+      ]
+    },
+    "native": {
+      "suspended": [
+        2050,
+        2535
+      ],
+      "floor_intersecting": [
+        3577,
+        9117
+      ],
+      "base_on_floor": [
+        0,
+        0
+      ],
+      "unidentified": [
+        0,
+        0
+      ]
+    }
+  },
+  "wall_s": 5.121453781030141,
+  "scope": "Independent integer-grid brute-force nearest distances and full saved-depth quantiles; no generation rerun. Categories can share a cell; their counts are separate.",
+  "per_eye_depth_metrics": {
+    "front_left": {
+      "render": {
+        "all_target_pixels": 1087708,
+        "finite_depth_pixels": 910205,
+        "finite_pixel_coverage": 0.8368100629948478,
+        "conditional_depth_p90_m": 0.005338191986083984
+      },
+      "native": {
+        "all_target_pixels": 1087708,
+        "finite_depth_pixels": 902579,
+        "finite_pixel_coverage": 0.829798990170156,
+        "conditional_depth_p90_m": 0.05629339218139649
+      }
+    },
+    "front_right": {
+      "render": {
+        "all_target_pixels": 676244,
+        "finite_depth_pixels": 419102,
+        "finite_pixel_coverage": 0.6197496761523947,
+        "conditional_depth_p90_m": 0.003707754611968997
+      },
+      "native": {
+        "all_target_pixels": 676244,
+        "finite_depth_pixels": 378889,
+        "finite_pixel_coverage": 0.5602844535404381,
+        "conditional_depth_p90_m": 0.2901910543441773
+      }
+    },
+    "rear_left": {
+      "render": {
+        "all_target_pixels": 997331,
+        "finite_depth_pixels": 785686,
+        "finite_pixel_coverage": 0.7877886077942027,
+        "conditional_depth_p90_m": 0.005510658025741577
+      },
+      "native": {
+        "all_target_pixels": 997331,
+        "finite_depth_pixels": 702188,
+        "finite_pixel_coverage": 0.7040671552373284,
+        "conditional_depth_p90_m": 0.059237229824066234
+      }
+    },
+    "rear_right": {
+      "render": {
+        "all_target_pixels": 1715464,
+        "finite_depth_pixels": 1173836,
+        "finite_pixel_coverage": 0.6842673469102237,
+        "conditional_depth_p90_m": 0.004242062568664551
+      },
+      "native": {
+        "all_target_pixels": 1715464,
+        "finite_depth_pixels": 1075705,
+        "finite_pixel_coverage": 0.6270635816315586,
+        "conditional_depth_p90_m": 0.12979402542114254
+      }
+    }
+  }
+}

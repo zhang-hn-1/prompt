@@ -1,0 +1,118 @@
+{
+  "complete": true,
+  "review_utc": "2026-10-17T12:20:47.203057+00:00",
+  "review_kind": "independent_postexecution_read_only_audit",
+  "reviewer": "persistent_entry_qualification_review",
+  "root": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/conservative_capture_admission_20261017_v1",
+  "verdict": "NO_IMPORTANT_ISSUES_FOUND_WITHIN_REVIEWED_SCOPE",
+  "reviewed_protocol_sha256": "195e345c8ffc65766246287ee4e46170e938a31d50601ab0f90d2e8ce2c5343f",
+  "reviewed_result_sha256": "62f7932fb25c3065f7cb3bc9838457e40abe52d946ab42689f217ffd984f5f2a",
+  "reviewed_status_sha256": "5bdd2d7c83549fddd9fc2b3c432be4d09c923f764adbe580660c8f2924d79c69",
+  "new_experiments": 0,
+  "source_calls_during_review": 0,
+  "model_calls_during_review": 0,
+  "physics_during_review": 0,
+  "navigation_during_review": 0,
+  "experimental_output_regeneration_during_review": 0,
+  "original_files_changed_during_review": false,
+  "reviewed_bindings": {
+    "action_data_prerequisite.json": "453a7aadf91ce9bdd512a62f618311da4d74a5855133f3310daf48d5969a559c",
+    "action_seal.json": "f7760628d2764c877839409a686e22e650b0cee571d199cb9c3c12f398e58ce2",
+    "replay_seal.json": "2101a7e161d8e4974a3de807770b78068cbce2eb1a86c2a94609f764af7520de"
+  },
+  "identity_audit": {
+    "protocol_input_files": 2439,
+    "all_protocol_input_SHA_verified": true,
+    "all_code_and_reference_SHA_verified": true,
+    "all470_action_and_map_artifact_SHA_verified": true,
+    "seal_chain_verified": true
+  },
+  "independently_checked": {
+    "exposures": 470,
+    "current_cell_exposure_rows": 40052,
+    "original_source_UID_rows": 2985832,
+    "action_mapping": "WITHHOLD_NEW iff original physical teacher is negative; positive and physical UNKNOWN HOLD",
+    "physical_UNKNOWN_withheld": 0,
+    "all470_feature_cell_keys_and_source_UID_bounds_uniqueness_checked": true,
+    "all470_actions_matched_original_static_labels": true,
+    "all470_B_and_Q_last_epochs_persistent_and_labels_reconstructed_from_admitted_cells": true,
+    "withholding_does_not_insert_refresh_count_or_clear_old_risk": true,
+    "full_unfiltered_original_source_supported_blind_domain_recomputed": true,
+    "evaluation_times": 1910,
+    "old_B_label_arrays_exact": 1010,
+    "old_B_route": "Producer B arm uses CaptureAdmission with all HOLD; reviewer compared all1010 reconstructed B label arrays with original maps, without calling the consumer",
+    "joint_action_support_counts_and_distinct_teacher_cells_recomputed": true,
+    "policy_and_action_data_AND_gate_verified": true
+  },
+  "action_data_counts": {
+    "E0": {
+      "cells": 2038,
+      "physical_positive": 1765,
+      "physical_negative": 156,
+      "physical_unknown": 117,
+      "HOLD_BASELINE": 1882,
+      "WITHHOLD_NEW": 156,
+      "unique_HOLD_BASELINE_teacher_cells": 344,
+      "unique_WITHHOLD_NEW_teacher_cells": 138,
+      "HOLD_exposures": 96,
+      "WITHHOLD_exposures": 47,
+      "physical_known_fraction": 0.9425907752698724
+    },
+    "E1": {
+      "cells": 38014,
+      "physical_positive": 26422,
+      "physical_negative": 5240,
+      "physical_unknown": 6352,
+      "HOLD_BASELINE": 32774,
+      "WITHHOLD_NEW": 5240,
+      "unique_HOLD_BASELINE_teacher_cells": 870,
+      "unique_WITHHOLD_NEW_teacher_cells": 890,
+      "HOLD_exposures": 360,
+      "WITHHOLD_exposures": 301,
+      "physical_known_fraction": 0.8329036670700268
+    }
+  },
+  "per_sequence_metrics": {
+    "E0": {
+      "evaluation_times": 110,
+      "B_false_cell_seconds": 1768.5999604687095,
+      "Q_false_cell_seconds": 70.79999841749668,
+      "false_cell_seconds_reduction": 0.9599683365373742,
+      "original_unfiltered_blind_denominator": 18868,
+      "B_blind_missing": 2161,
+      "Q_blind_missing": 2161,
+      "blind_missing_increase": 0.0
+    },
+    "E1B": {
+      "evaluation_times": 900,
+      "B_false_cell_seconds": 14501.299999999972,
+      "Q_false_cell_seconds": 1361.0999999999965,
+      "false_cell_seconds_reduction": 0.9061394495665906,
+      "original_unfiltered_blind_denominator": 75700,
+      "B_blind_missing": 634,
+      "Q_blind_missing": 634,
+      "blind_missing_increase": 0.0
+    },
+    "E1A": {
+      "evaluation_times": 900,
+      "B_false_cell_seconds": 25688.49999999992,
+      "Q_false_cell_seconds": 1048.4000000000062,
+      "false_cell_seconds_reduction": 0.959187963485606,
+      "original_unfiltered_blind_denominator": 66215,
+      "B_blind_missing": 708,
+      "Q_blind_missing": 708,
+      "blind_missing_increase": 0.0
+    }
+  },
+  "process_cleanup": {
+    "finished0": true,
+    "independently_observed_parent_child_absent": true,
+    "independently_observed_no_live_or_zombie_process_group_members": true
+  },
+  "limits": [
+    "Privileged fixed teacher-action policy and proxy scoring only; no RGB/learned performance, fresh validation, fit admission, deployment, navigation improvement or universal model upper-bound claim.",
+    "Physical-known fractions remain unchanged: current-cell E0 .9425907752698724 and E1 .8329036670700268. Action completeness does not pass the older physical-known gates.",
+    "Review used saved artifacts and independent state/scoring calculations; it did not call CaptureAdmission, rerun the producer, regenerate predictions or create replacement action/map outputs.",
+    "Saved artifacts were reviewed, not every possible malformed or concurrent runtime payload."
+  ]
+}

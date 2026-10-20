@@ -1,0 +1,49 @@
+{
+  "schema_version": "round5_transition_manifest_v1",
+  "action_protocol_id": "ball_action_v2_aux30",
+  "drive_profile": {
+    "path": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1/drive_dynamics_v1.json",
+    "sha256": "2de28cdfe98ecd6d45d5158261efb436acabaf31c1df4774f75b708a9086ddfd"
+  },
+  "controller": {
+    "main_acceleration_limit_rad_s2": 0.5,
+    "main_derivative_gain": 80.0,
+    "auxiliary_kp": 300.0,
+    "auxiliary_kd": 60.0,
+    "auxiliary_target_rate_limit_rad_s": 0.5235987755982988,
+    "auxiliary_velocity_limit_rad_s": 0.3
+  },
+  "procedure": {
+    "settle_steps_before_each_sequence": 50,
+    "precondition_default_s": 4.0,
+    "transition_hold_s": 6.0,
+    "finite_horizons_s": [0.5, 1.5, 3.0, 6.0],
+    "full_reset_at_sequence_start": true,
+    "reset_inside_sequence": false,
+    "smoother_reset_inside_sequence": false,
+    "maximum_core_sequences": 12,
+    "maximum_heldout_sequences": 4,
+    "maximum_repeat_or_coverage_sequences": 4,
+    "maximum_total_new_sequences": 20
+  },
+  "sequences": [
+    {"sequence_id":"core_reverse_a0","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":1.0,"main_request_rad_s":0.0,"auxiliary_request_rad":0.0},{"phase":"transition","duration_s":6.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":0.0}]},
+    {"sequence_id":"core_reverse_an15","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":1.0,"main_request_rad_s":0.0,"auxiliary_request_rad":0.0},{"phase":"transition","duration_s":6.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":-0.2617993877991494}]},
+    {"sequence_id":"core_reverse_ap15","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":1.0,"main_request_rad_s":0.0,"auxiliary_request_rad":0.0},{"phase":"transition","duration_s":6.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":0.2617993877991494}]},
+    {"sequence_id":"core_reverse_an30","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":1.0,"main_request_rad_s":0.0,"auxiliary_request_rad":0.0},{"phase":"transition","duration_s":6.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":-0.5235987755982988}]},
+    {"sequence_id":"core_reverse_ap30","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":1.0,"main_request_rad_s":0.0,"auxiliary_request_rad":0.0},{"phase":"transition","duration_s":6.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":0.5235987755982988}]},
+    {"sequence_id":"core_forward_aux_an30_to_ap30","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":4.0,"main_request_rad_s":0.5,"auxiliary_request_rad":-0.5235987755982988},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":0.5235987755982988}]},
+    {"sequence_id":"core_forward_aux_ap30_to_an30","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":4.0,"main_request_rad_s":0.5,"auxiliary_request_rad":0.5235987755982988},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":-0.5235987755982988}]},
+    {"sequence_id":"core_main_reverse_to_forward_a0","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":4.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":0.0},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":0.0}]},
+    {"sequence_id":"core_joint_fp_an30_to_rp_ap30","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":4.0,"main_request_rad_s":0.5,"auxiliary_request_rad":-0.5235987755982988},{"phase":"transition","duration_s":6.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":0.5235987755982988}]},
+    {"sequence_id":"core_joint_fp_ap30_to_rp_an30","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":4.0,"main_request_rad_s":0.5,"auxiliary_request_rad":0.5235987755982988},{"phase":"transition","duration_s":6.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":-0.5235987755982988}]},
+    {"sequence_id":"core_joint_rp_an30_to_fp_ap30","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":4.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":-0.5235987755982988},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":0.5235987755982988}]},
+    {"sequence_id":"core_joint_rp_ap30_to_fp_an30","dataset_role":"fit_core","stages":[{"phase":"precondition","duration_s":4.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":0.5235987755982988},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":-0.5235987755982988}]},
+    {"sequence_id":"heldout_forward_an15_to_ap30","dataset_role":"heldout_validation","sealed_before_fit":true,"stages":[{"phase":"precondition","duration_s":3.0,"main_request_rad_s":0.5,"auxiliary_request_rad":-0.2617993877991494},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":0.5235987755982988}]},
+    {"sequence_id":"heldout_forward_ap15_to_an30","dataset_role":"heldout_validation","sealed_before_fit":true,"stages":[{"phase":"precondition","duration_s":3.0,"main_request_rad_s":0.5,"auxiliary_request_rad":0.2617993877991494},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":-0.5235987755982988}]},
+    {"sequence_id":"heldout_reverse_an15_to_forward_ap15","dataset_role":"heldout_validation","sealed_before_fit":true,"stages":[{"phase":"precondition","duration_s":3.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":-0.2617993877991494},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":0.2617993877991494}]},
+    {"sequence_id":"heldout_reverse_ap15_to_forward_an15","dataset_role":"heldout_validation","sealed_before_fit":true,"stages":[{"phase":"precondition","duration_s":3.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":0.2617993877991494},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":-0.2617993877991494}]},
+    {"sequence_id":"repeat_main_reverse_to_forward_a0","dataset_role":"repeat_validation","repeat_of":"core_main_reverse_to_forward_a0","stages":[{"phase":"precondition","duration_s":4.0,"main_request_rad_s":-0.5,"auxiliary_request_rad":0.0},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":0.0}]},
+    {"sequence_id":"repeat_forward_aux_an30_to_ap30","dataset_role":"repeat_validation","repeat_of":"core_forward_aux_an30_to_ap30","stages":[{"phase":"precondition","duration_s":4.0,"main_request_rad_s":0.5,"auxiliary_request_rad":-0.5235987755982988},{"phase":"transition","duration_s":6.0,"main_request_rad_s":0.5,"auxiliary_request_rad":0.5235987755982988}]}
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "review": "independent_closure_review",
+  "utc": "2026-10-13T05:33:16.633411+00:00",
+  "candidate": "cursor_leg_retention_v1",
+  "verdict": "CONFIRM_REJECTION_NO_RETENTION_DECISION_EFFECT",
+  "launch_admitted": false,
+  "physical_runs_started_by_review": 0,
+  "planner_searches_by_review": 0,
+  "parameters_modified_by_review": false,
+  "formal_baseline_modified_by_review": false,
+  "old_budgets_reopened": false,
+  "assessment": "The frozen target condition fails at both frame660 and frame815, and there is no retain/rebuild change at any replayed existing-reference boundary. Close this candidate without physical execution, threshold relaxation or baseline installation.",
+  "mechanical_diff": {
+    "guard": "Only adds optional segment_interval validation and bounds nearest-projection argmin to it; the projected arc, full future suffix, bridge, hazard distances, raster sampling, 0.6 clearance, 0.5 projection distance and 0.5 remaining-arc criteria are unchanged. Extra projection diagnostics do not feed decisions.",
+    "consumer": "Compared with continuous_cell_tube_consumer_v1.py, changes the guard import/factory name and passes leg_interval(tracker) at the same boundary. Reversal arming, additional continuous tube gate, planner call, reference installation, tracker state preservation and return transaction are unchanged.",
+    "leg": "Eligible only with pending=None, braking=tracking, a cursor with a real outgoing edge, and matching accepted/outgoing direction. Scans only contiguous same-direction outgoing edges around that cursor. Retains the full later path, including future opposite-direction legs, for the safety check.",
+    "fallback": "Actual replay includes 29 pending direction-change states, each returning all original guard fields exactly. Independent finite-state checks also cover braking, active-direction mismatch, negative/terminal/out-of-range cursor, and full-leg equivalence for a single-direction path.",
+    "existing_cusp_fix_distinct": true
+  },
+  "counts": {
+    "all_actual_current_planning_decisions": 168,
+    "first_install_without_old_guard": {
+      "frame": 60,
+      "decision": "rebuild"
+    },
+    "existing_reference_boundaries_replayed": 167,
+    "baseline_retain": 158,
+    "baseline_rebuild": 9,
+    "candidate_eligible": 138,
+    "candidate_fallback": 29,
+    "preimplementation_unfiltered_leg_disagreements": 24,
+    "eligible_projection_changes": 16,
+    "ineligible_disagreements_falling_back": 8,
+    "retain_rebuild_changes": 0,
+    "eligible_disagreement_frames": [
+      625,
+      630,
+      635,
+      640,
+      645,
+      650,
+      655,
+      660,
+      780,
+      785,
+      790,
+      795,
+      800,
+      805,
+      810,
+      815
+    ],
+    "ineligible_disagreement_frames": [
+      445,
+      450,
+      510,
+      610,
+      615,
+      620,
+      770,
+      775
+    ]
+  },
+  "count_interpretation": "24/167 refers to potential geometric disagreements before eligibility filtering, not changed candidate projections or changed decisions. Candidate actually changes projection at 16/167 boundaries and changes no decisions. The initial frame60 has no retained reference and is correctly outside the 167 guard comparisons.",
+  "independent_recomputation": {
+    "input_sha256_count": 178,
+    "all_input_hashes_match": true,
+    "all_167_original_guard_and_decisions_exact": true,
+    "all_167_candidate_guard_and_tube_outputs_match": true,
+    "map_arrays_unchanged": true,
+    "candidate_eligible_projection_always_inside_current_leg": true,
+    "all_fallback_original_guard_fields_exact": true,
+    "method": "Reloaded saved maps, path versions and factual boundary states and recomputed guard/tube geometry only. No planner calls, physics, prior candidate replay or source changes.",
+    "details_file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/independent_geometry_checks.json"
+  },
+  "key_geometry": [
+    {
+      "frame": 660,
+      "reference_birth_frame": 510,
+      "unchanged_candidate_and_baseline_tube_minimum_m": 0.7329542319273309,
+      "required_m": 0.8707106781186548,
+      "relevant_line": "suffix_xy",
+      "candidate_suffix_segment": 7,
+      "nearest_risk_cell": [
+        230,
+        189
+      ],
+      "nearest_risk_world": [
+        -0.2999999940395348,
+        -1.099999994039532
+      ],
+      "closest_reference_point": [
+        -0.5449501787568416,
+        -1.79081206190397
+      ],
+      "risk_label_at_reference_birth": -1,
+      "risk_label_now": 1,
+      "conclusion": "The limiting cell was unknown at reference birth and is now observed risk. It is closest to the retained future suffix near its end, not the opposite-direction prefix removed from projection eligibility. This explains why correcting projection does not save retention at this factual boundary."
+    },
+    {
+      "frame": 815,
+      "reference_birth_frame": 710,
+      "unchanged_candidate_and_baseline_tube_minimum_m": 0.7456921104745191,
+      "required_m": 0.8707106781186548,
+      "relevant_line": "suffix_xy",
+      "candidate_suffix_segment": 6,
+      "nearest_risk_cell": [
+        230,
+        184
+      ],
+      "nearest_risk_world": [
+        -0.2999999940395348,
+        -1.599999994039532
+      ],
+      "closest_reference_point": [
+        -0.6488224728156533,
+        -2.2590748015723543
+      ],
+      "risk_label_at_reference_birth": -1,
+      "risk_label_now": 1,
+      "conclusion": "The limiting cell was unknown at reference birth and is now observed risk. It is closest to the retained future suffix near its end, not the opposite-direction prefix removed from projection eligibility. This explains why correcting projection does not save retention at this factual boundary."
+    }
+  ],
+  "initial_reference_diagnostic": {
+    "count": 10,
+    "all_pass": true,
+    "minimum_clearance_range_m": [
+      0.8900132214026184,
+      1.0053536087101986
+    ],
+    "required_m": 0.8707106781186548,
+    "interpretation": "Each of the ten complete installed paths passes the same continuous tube test on its own installation map. This rules out immediate same-map inconsistency for these ten cases; it does not certify future observations or actual motion."
+  },
+  "issues": [],
+  "reporting_corrections": [
+    {
+      "importance": "clarity",
+      "detail": "Use 168 total planning decisions, including one initial install, and167 existing-reference guard boundaries."
+    },
+    {
+      "importance": "clarity",
+      "detail": "Use24 unfiltered geometric disagreements,16 eligible projection changes and0 decision changes; do not call24 changed candidate decisions."
+    },
+    {
+      "importance": "scientific scope",
+      "detail": "New risk labels are perception outputs, not proof that the nearest cell corresponds to a real physical obstacle. Current-map nominal safety is not physical certification."
+    }
+  ],
+  "limitations": [
+    "Actual cursors are inherited factual states; this review does not prove the old tracker cursor is always semantically correct.",
+    "The extra finite-state fallback checks cover integer cursor indices in the existing tracker domain, not arbitrary malformed tracker objects.",
+    "Because all decisions are unchanged, the saved-state comparison has no discovered branch divergence; it still does not constitute an independently executed candidate trajectory.",
+    "The map can reveal new hazards along a previously unknown future suffix. Birth-time clearance passing does not prove that suffix will remain clear."
+  ],
+  "next_direction_status": "Visibility/unknown-boundary-aware subgoal selection is a possible future research question only. This review does not admit, implement or tune it, and does not authorize reducing clearance or relabeling unknown as free.",
+  "declined_to_judge": [
+    {
+      "behavior": "Actual navigation arrival, contact and downstream candidate trajectory",
+      "reason": "No physics requested or run; saved geometry cannot establish these outcomes."
+    },
+    {
+      "behavior": "Admission of a visibility/unknown-boundary subgoal method",
+      "reason": "Not implemented or admitted in this task; requires a separately frozen hypothesis and evidence."
+    }
+  ],
+  "protocol_freeze_evidence": {
+    "declared_utc": "2026-10-13T05:26:30.005576+00:00",
+    "local_mtime_utc": {
+      "protocol.json": "2026-10-13T05:26:30.004952+00:00",
+      "cursor_guard.py": "2026-10-13T05:27:03.263959+00:00",
+      "cursor_consumer.py": "2026-10-13T05:27:03.263959+00:00",
+      "replay.json": "2026-10-13T05:27:41.427851+00:00"
+    },
+    "scope": "Local chronological evidence; not an independent immutable timestamp seal."
+  },
+  "reviewed_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/protocol.json": "e484a68f69f9b5a97520d8eb74a26916c6520f1fbb552ef0b054fd6d1d93a931",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/cursor_guard.py": "8d1478ee4f075f7cdc064432b1c7348d9069c97b6d900652d075881d94d924c5",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/cursor_consumer.py": "222e52739c42776dd8cd1eed590d5dd32af2c8b0e44cb636c6abfb3fcb496a55",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/check.py": "6b5902cda03807bc4be833ce8dbc475961f2d55e4a6f3a8cfdfc8eef7800e9e8",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/replay.py": "06c9bd2145dcef251e331f3ac6bcdec4ef9cbc121bb501a69eb79e0a82c694fd",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/replay.json": "aaf0e9c6efe10f97b96c1497b54463719af1e82d21a87e3ba5dda6d37eedad4f",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/preimplementation_leg_evidence.json": "ac0d35ad1396c432acf733eff4b045a4824ebfe60a030a5f826d20590a307ff6",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/initial_reference_tube_diagnostic.json": "e526ccf2c461bc680fe9a0a67afe64a53f20cc58cf4dd3fa95eb2ba5513a8cb1",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/cursor_leg_retention_20261013_v1/independent_geometry_checks.json": "dad9f5bb6225213d7479e4dcc2c5869b1d19997d18da03454b4a4e3b4c1859ed"
+  }
+}

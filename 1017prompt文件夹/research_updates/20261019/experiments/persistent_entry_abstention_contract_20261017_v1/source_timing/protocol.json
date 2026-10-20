@@ -1,0 +1,47 @@
+{
+  "utc": "2026-10-17T09:54:22.931847+00:00",
+  "question": "Where does unchanged four-camera weaksource CPU time go? Independent implementation performance diagnosis after longterm-only learner necessary failure.",
+  "single_change": "Timers wrap masks and four original compute calls, delegate exact input/output; original code/config/matchers/thresholds unchanged. No optimization yet.",
+  "frames": [
+    {
+      "frame": 0,
+      "raw": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/frames/frame_000.npz",
+      "prediction": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/predictions/frame_000.npz",
+      "raw_sha256": "635230a0ed52e8a1bde2d359250280fa8f2c37c9659aa01a89985fa5c0f053ef",
+      "prediction_sha256": "2941afb5084ebec8c804372b1ae47bb73f243e267aa86769817bf626ed3e238b"
+    },
+    {
+      "frame": 90,
+      "raw": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/frames/frame_090.npz",
+      "prediction": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/predictions/frame_090.npz",
+      "raw_sha256": "bbdfa133264c7fceddc863b6277ba5d6332ca97bf96b692ee4d32acf155f8a97",
+      "prediction_sha256": "407ea02ec36b39734fc1fed7d7afd3ebb909cab7d0d74fedf0096a17223a6f06"
+    }
+  ],
+  "budget": {
+    "dispatch_cap": 1,
+    "recovery_cap": 1,
+    "source_invocations_cap": 2,
+    "wall_cap_s": 120,
+    "fit": 0,
+    "physics": 0,
+    "navigation": 0
+  },
+  "numerical_checks": "All16 output arrays perframe dtype/shape/rawbytes EXACT sealed original. Any discrepancy rejects attribution implementation; no source deploy or speedup claim.",
+  "selection": "Fixed frame0 and90 of knownE1B, chosen before recompute without GT/error selection; exactly one invocation each, one matcher reused in order.",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/source.py": "0f8918810cc2e9b3f6d6cb4bf4c64acb5ce3fe4bc882678c6a5ae9cfbeb38e8a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/paths.py": "aefffb4d9fef97bc861d25c94e0e9d6430717196222d33ce160d0ed9ad7fc3a5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/source_seal.json": "88053a806dc81e7c7abbb42940ab333c8ac818167af65341bff7b464e5c5b0df",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/capture_seal.json": "52c6a7e2835f341def06f9c7a590a02f11e8d90c2c68920e9604b21c2e8c15e2",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/frames/frame_000.npz": "635230a0ed52e8a1bde2d359250280fa8f2c37c9659aa01a89985fa5c0f053ef",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/predictions/frame_000.npz": "2941afb5084ebec8c804372b1ae47bb73f243e267aa86769817bf626ed3e238b",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/frames/frame_090.npz": "bbdfa133264c7fceddc863b6277ba5d6332ca97bf96b692ee4d32acf155f8a97",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/predictions/frame_090.npz": "407ea02ec36b39734fc1fed7d7afd3ebb909cab7d0d74fedf0096a17223a6f06"
+  },
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_abstention_contract_20261017_v1/source_timing/profile.py": "39189b23a39bc764a7f4fc14277257e2085f62d540f2213f2c1db4b22a413d60",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_abstention_contract_20261017_v1/source_timing/supervise.py": "9ef9aa793141a163c03d23cfcab1b76f2ee0d81f92d5cea51f37fd532d8f84f9"
+  },
+  "old_budgets_reopened": false
+}

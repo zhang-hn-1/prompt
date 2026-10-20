@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "utc": "2026-10-17T12:00:51.060233+00:00",
+  "qualified": true,
+  "counts": {
+    "E0": {
+      "cells": 2038,
+      "physical_positive": 1765,
+      "physical_negative": 156,
+      "physical_unknown": 117,
+      "HOLD_BASELINE": 1882,
+      "WITHHOLD_NEW": 156,
+      "unique_HOLD_BASELINE_teacher_cells": 344,
+      "unique_WITHHOLD_NEW_teacher_cells": 138,
+      "HOLD_exposures": 96,
+      "WITHHOLD_exposures": 47,
+      "physical_known_fraction": 0.9425907752698724
+    },
+    "E1": {
+      "cells": 38014,
+      "physical_positive": 26422,
+      "physical_negative": 5240,
+      "physical_unknown": 6352,
+      "HOLD_BASELINE": 32774,
+      "WITHHOLD_NEW": 5240,
+      "unique_HOLD_BASELINE_teacher_cells": 870,
+      "unique_WITHHOLD_NEW_teacher_cells": 890,
+      "HOLD_exposures": 360,
+      "WITHHOLD_exposures": 301,
+      "physical_known_fraction": 0.8329036670700268
+    }
+  },
+  "gates": {
+    "E0": {
+      "HOLD_instances_ge50": true,
+      "WITHHOLD_instances_ge50": true,
+      "HOLD_distinct_cells_ge20": true,
+      "WITHHOLD_distinct_cells_ge20": true,
+      "HOLD_exposures_ge11": true,
+      "WITHHOLD_exposures_ge11": true
+    },
+    "E1": {
+      "HOLD_instances_ge50": true,
+      "WITHHOLD_instances_ge50": true,
+      "HOLD_distinct_cells_ge20": true,
+      "WITHHOLD_distinct_cells_ge20": true,
+      "HOLD_exposures_ge11": true,
+      "WITHHOLD_exposures_ge11": true
+    }
+  },
+  "physical_known90pct_gate_not_claimed": true,
+  "physical_UNKNOWN_retained": true,
+  "no_fit_admission": true,
+  "fresh_holdout_available": false,
+  "causal_features_finite24": true,
+  "note": "Complete action policy defaults to HOLD on physical UNKNOWN; action counts are not physical risk labels. Distinct cell/exposure support is not independence. Counts refer to CURRENT capture cells, never promotion-eligible-only."
+}

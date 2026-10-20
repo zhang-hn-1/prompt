@@ -17,6 +17,8 @@
   joint3 - 辅助关节 (effort_limit=18N, damping=5)
 """
 
+from camera_rig import CAMERA_FORWARD_M, CAMERA_HALF_BASELINE_M, CAMERA_UP_M
+
 import argparse
 import sys
 import threading
@@ -33,9 +35,9 @@ parser.add_argument("--scene",     type=str,   default="",    help="场景USD路
 parser.add_argument("--robot_z",   type=float, default=0.45,  help="机器人初始高度 (m)")
 parser.add_argument("--robot_x",   type=float, default=0.0,   help="机器人初始X位置 (m)")
 parser.add_argument("--robot_y",   type=float, default=0.0,   help="机器人初始Y位置 (m)")
-parser.add_argument("--cam_x",     type=float, default=0.1,   help="摄像头X偏移(前后, m)")
-parser.add_argument("--cam_y",     type=float, default=0.30,  help="摄像头Y偏移(左右半距, m)")
-parser.add_argument("--cam_z",     type=float, default=0.10,  help="摄像头Z偏移(高于球心, m)")
+parser.add_argument("--cam_x",     type=float, default=CAMERA_FORWARD_M,   help="摄像头X偏移(前后, m)")
+parser.add_argument("--cam_y",     type=float, default=CAMERA_HALF_BASELINE_M,  help="摄像头Y偏移(左右半距, m)")
+parser.add_argument("--cam_z",     type=float, default=CAMERA_UP_M,  help="摄像头Z偏移(高于球心, m)")
 parser.add_argument("--fwd_vel",   type=float, default=1.0,   help="前进目标速度 (rad/s, joint1)")
 parser.add_argument("--turn_pos",  type=float, default=0.2,   help="转向摆角目标 (rad, ~11度)")
 parser.add_argument("--kp_vel",    type=float, default=80.0,  help="joint1速度控制增益(damping)")
@@ -171,7 +173,7 @@ robot.get_articulation_controller().set_gains(kps=kps, kds=kds)
 
 # 双目摄像头
 # 挂在 base_link 上，随球体运动
-# 位置相对于球心：左/右 ±0.3m，高度 +0.1m，朝前 (X轴)
+# 位置相对于球心：前方 +0.20m，左/右 ±0.30m，高度 +0.05m，朝前 (X轴)
 # 使用 USD API 直接创建（跟随 base_link 坐标系）
 stage = omni.usd.get_context().get_stage()
 

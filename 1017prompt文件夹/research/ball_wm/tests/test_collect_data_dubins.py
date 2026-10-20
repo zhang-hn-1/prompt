@@ -203,13 +203,20 @@ def test_stereo_priming_waits_until_both_depth_annotators_are_images():
 
     class World:
         steps = 0
+        current_time = 0.0
 
         def step(self, render):
-            assert render
+            assert render is False
             self.steps += 1
+            self.current_time = self.steps * 0.1
             if self.steps == 3:
                 left.frame["distance_to_image_plane"] = np.ones((2, 3), dtype=np.float32)
                 right.frame["distance_to_image_plane"] = np.ones((2, 3), dtype=np.float32)
+                for camera in (left, right):
+                    camera.frame.update(rendering_time=self.current_time,rendering_frame=self.steps)
+
+        def render(self):
+            pass
 
     world = World()
 
@@ -232,6 +239,9 @@ def test_stereo_priming_fails_after_its_explicit_bound():
 
         def step(self, render):
             self.steps += 1
+
+        def render(self):
+            pass
 
     world = World()
 

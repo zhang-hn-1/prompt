@@ -1,0 +1,82 @@
+{
+  "status": "PRE_FIT_PREREGISTRATION_RESERVATION_NOT_PHYSICAL_DISPATCH",
+  "groups": [
+    {
+      "scene_asset": "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_8/cluttered-8.usd",
+      "sha256": "a168ab0afc372444584efa8573e9bb13c3f402dfbb2b49ceb2aaee377777b4f7",
+      "seed": 8032026,
+      "order": [
+        "B",
+        "L"
+      ]
+    },
+    {
+      "scene_asset": "/home/an/project/NavDP/assets/scenes/cluttered_hard/hard_9/cluttered-9.usd",
+      "sha256": "48d332ff4a928e935a85b1dd8a3a476ccd255c6236c8bc74d22442719afded74",
+      "seed": 9032026,
+      "order": [
+        "L",
+        "B"
+      ]
+    }
+  ],
+  "unseen_status": "Only asset names/existence and opaque bytes SHA examined beforefit. No USD scene parsing/rendering/GT/trajectory/outcome opened. Not yet certified globally unseen; E0/E1/E2 and oldseven known groups remain development.",
+  "contamination_gate": "Before any task construction or physics, compare dependency/geometry signature against declared E0/E1/E2 and directly relevant oldseven manifests and training identities. Any overlap or unresolved provenance closes heldout reservation; no substitute scenes/seeds after fit. Asset SHA alone is not geometric independence proof.",
+  "task_recipe": {
+    "generator_code_sha256": {
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/generate_benchmark_tasks.py": "10fd42947ee48d8f45c9ff359fe98dfdb5a43d1b8b68e425c3f448c5ec601e8b",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_generation.py": "8c1ffa146cd31f6fcb006133051a24a32c5a1f7a764dee7e0d143b5d8550a8be",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/grid_planning.py": "06367cad4b944386568514887f73d348ee7390b07fb87a0d1c8223ac761dd1fc",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/manifest.py": "da989bf520e04a4a847e49ca68e528d11b57b556f1b2b240d4877f15e7d5631b",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/benchmark/task_cards.py": "85b9f6889ed2ec37791d7c3776cf6653f6e1a80552bd370b30930865b80c05c2",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/configs/benchmark_v1.yaml": "634d2ddaa985645b812bea410cec5ee405164c73eea5854a2950d23b03bcf3c7",
+      "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py": "818e7c5cf2fc64081861dae3b173e68c5765cae8fd18859eb618aa8be63f8a67",
+      "/home/an/Documents/ChatGPT/球型机器人导航/experiments/four_camera_weak_baseline_20261017_v1/navigation_protocol.json": "014e9bba3c3e65a2199bdf08e504e837890fc9ac6c079279729908c6e263ef71"
+    },
+    "algorithm": "E1-only faithful _candidate_from_pair/validate_task branch of pinned generate_benchmark_tasks.py; no E0/E2 attempt consumption. Deterministic numpy.default_rng(seed), at each attempt choose two distinct inflated-free cell indices; select first geometrically valid E1 candidate, max50000 attempts, no outcome/model screening.",
+    "world_map": "Afterweightfreeze+devpass only: pureUSD scene reference with identity placement/units1, canonical build_analytic_global_map bodyband around nominal z.4000000059604645/radius.4 using reference-only robot prim; no SimulationApp/world/physics. Reject dynamic nonkinematic scene or unresolved dependencies. This is coarse evaluation/task construction proxy, never online model/global-observation input.",
+    "numeric": {
+      "resolution_m": 0.1,
+      "ball_radius_m": 0.4,
+      "safety_margin_m": 0.1,
+      "initial_euclidean_m": [
+        6,
+        10
+      ],
+      "e1_min_detour_ratio": 1.3,
+      "nearby_obstacle_radius_m": 2,
+      "minimum_nearby_obstacles": 3,
+      "minimum_corridor_path_length_m": 0.8,
+      "navigation_z_m": 0.45,
+      "goal_tolerance_m": 0.2
+    },
+    "review": "Retain human_review needs_adjustment/unassigned. Programmatic research task, not official human-approved golden benchmark. No fabricated approval. Failure closes task reservation without alternative."
+  },
+  "acquisition_gate": "Requires frozen learned weights, complete offline development gates, qualified causal runtime model+consumer integration, exact numerical task/config/code/dependency manifest, original geometry/clock/source checks, durable per-run PID/budget. This reservation does not dispatch physical work.",
+  "fixed_chain": "Original SERIAL FourSGBM source/navigation/pose/lighting/camera/control/planner and unknown exploration prior. v113 acceleration not switched. Both arms same passive FeatureTracker instrumentation, B allHOLD; L one frozen action model; source feature memory independent from risk admission; reset allfeature/riskstate each arm.",
+  "budget": {
+    "physical_attempt_cap": 4,
+    "scenes": 2,
+    "arms_per_scene": 2,
+    "simulated_s_per_arm": 90,
+    "wall_s_per_arm": 2400,
+    "environment_recovery_total_cap": 1,
+    "fit_during_heldout": 0,
+    "source_or_memory_tuning": 0
+  },
+  "accounting": "Any attempt with physicsstarted consumes one of4; no5thrun including recovery. Startup errors beforephysics distinct; at most1 environmentrecovery and norefit. One L obstaclecontact stops remaining candidate physicalbudget. Taskconstruction/contamination/unresolvedruntime stops reservation, no replacements.",
+  "terminals": "Success goalXYdistance<=.2m before90s and zero obstaclecontacts; first obstaclecontact terminatesarm;90s timeout. Crash/startuperror/signal/walltimeout separately recorded, not performance failure/success. Each arm must have>=11 nonempty exposures and>=100 riskpoints else visual/memorycomparison UNASSESSED.",
+  "paired_metrics": {
+    "each_scene_L_obstaclecontacts": 0,
+    "each_scene_L_success_ge_B": true,
+    "each_scene_L_netprogress_ge_B_minus_m": 0.1,
+    "each_scene_L_original_source_supported_blind_missing_increase_max": 0.05,
+    "each_scene_L_fullchain_P90_le_B_times": 1.1,
+    "each_scene_L_fullchain_P90_additive_s": 0.1,
+    "each_scene_false_cell_seconds_reduction_min": 0.2
+  },
+  "duration_control": "Falsecellseconds paired benefit evaluated on common simulated time prefix to min terminaltime, with fullarm separately. Bfalse0 requiresLfalse0 and no improvement claim. Blind denominators original unfilteredsource support eacharm, not identical RGB or identical target availability; report each complete denominator.",
+  "actual_navigation_increment": "At least one pair additionally Lsuccess and Bnot, OR Lnetprogress-B>=.5m, OR bothsuccess and Larrivaltime<=.9*B. No safety/noninferiority-only navigation gain claim. Offline map improvement doesnotcount as actual navigation increment.",
+  "limitations": "2 scene pairs, not4 independent scenes; no general reliable-navigation/statistical-significance claim. Same nominalseed doesnotguarantee identicalRGB; retain first action/RGB divergence and prefix identities.",
+  "stop": "Offlinefailure closes4reservedrunsunused. Any fixedmodel failure no secondfit/thresholdchange/scenealternative. Current actualphysics/nav0."
+}

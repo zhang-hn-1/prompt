@@ -1,0 +1,87 @@
+{
+  "status": "rejected_before_fit",
+  "physical_used": 2,
+  "physical_cap": 4,
+  "acquisition_used": 1,
+  "acquisition_cap": 2,
+  "recovery_used": 1,
+  "recovery_cap": 1,
+  "fit_used": 0,
+  "fit_cap": 1,
+  "navigation_used": 0,
+  "dispatches": [
+    {
+      "condition": "e0",
+      "utc": "2026-10-15T17:31:12.452035+00:00",
+      "purpose": "fresh four-camera acquisition only",
+      "physical_attempt": 1,
+      "terminal": {
+        "status": "runtime_failed",
+        "start_utc": "2026-10-15T17:31:12.452366+00:00",
+        "parent_pid": 1371645,
+        "child_pid": 1371662,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 1,
+        "end_utc": "2026-10-15T17:31:37.421206+00:00"
+      },
+      "logical": {
+        "complete": false,
+        "reason": "{'status': 'runtime_failed', 'start_utc': '2026-10-15T17:31:12.452366+00:00', 'parent_pid': 1371645, 'child_pid': 1371662, 'no_retry': True, 'timeout': False, 'forced_kill': False, 'parent_signal': None, 'child_returncode': 1, 'end_utc': '2026-10-15T17:31:37.421206+00:00'}",
+        "model": 0,
+        "fit": 0,
+        "navigation": 0
+      }
+    },
+    {
+      "condition": "e0",
+      "utc": "2026-10-15T17:37:10.148829+00:00",
+      "purpose": "fresh four-camera acquisition only",
+      "physical_attempt": 2,
+      "recovery": true,
+      "root_name": "e0_recovery_run",
+      "terminal": {
+        "status": "finished",
+        "start_utc": "2026-10-15T17:37:10.149184+00:00",
+        "parent_pid": 1378078,
+        "child_pid": 1378096,
+        "no_retry": true,
+        "timeout": false,
+        "forced_kill": false,
+        "parent_signal": null,
+        "child_returncode": 0,
+        "end_utc": "2026-10-15T17:39:51.765427+00:00"
+      },
+      "logical": {
+        "complete": true,
+        "termination": "request_program_complete",
+        "frames": 110,
+        "images": 440,
+        "native_IMU_packets": 2716,
+        "request_blocks": 543,
+        "time_s": 54.29999878630042,
+        "max_pair_error": 3.422854880059934e-08,
+        "four_video_frame_counts": {
+          "front_left": 110,
+          "front_right": 110,
+          "rear_left": 110,
+          "rear_right": 110
+        },
+        "all_input_source_frame_SHA_verified": true,
+        "clock_and_causal_estimated_pose_checks": true,
+        "model": 0,
+        "fit": 0,
+        "navigation": 0
+      }
+    }
+  ],
+  "budget_closed": true,
+  "closed_utc": "2026-10-15T17:55:06.787375+00:00",
+  "reason": "Complete full-visible target oracle and causal-pose source gates failed; do not acquire E1, fit or navigate.",
+  "physical_unused_closed": 2,
+  "acquisition_unused_closed": 1,
+  "fit_unused_closed": 1,
+  "model_inference_used": 0
+}

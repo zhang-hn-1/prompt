@@ -1,0 +1,93 @@
+{
+  "complete": true,
+  "review_utc": "2026-10-17T12:28:20.253246+00:00",
+  "reviewer": "persistent_entry_qualification_review",
+  "review_kind": "independent_saved_array_distribution_statistics_audit",
+  "verdict": "FORMULAS_COUNTS_AND_LIMITED_DESCRIPTIVE_CONCLUSIONS_VERIFIED_NO_IMPORTANT_ISSUES_FOUND",
+  "reviewed_protocol_sha256": "9eb1d03002ac87370e4efacb6ef84783f764ecf1ed23f65d1f981ef57484a2d7",
+  "reviewed_result_sha256": "2fcd90ea0588076265625207f69e5c8bf7dc15735046f3c5c982dd901162d3ce",
+  "reviewed_status_sha256": "80f726c93a97609bf427d4c791323c89478376dd740efc81dfdfffffb1a5dfa7",
+  "reviewed_weights_sha256": "4c91477c2c28e4c62461b3d072460a83b27ef769f2090782d720528a052fe177",
+  "identity": {
+    "protocol_input_files": 5,
+    "code_files": 3,
+    "all_declared_SHA_verified": true,
+    "all470_feature_action_prediction_SHA_and_cell_alignment_verified": true
+  },
+  "independent_audit": {
+    "exposures": 470,
+    "cell_exposure_rows": 40052,
+    "classes_per_sequence": 3,
+    "all24_marginal_min_max_envelopes_recomputed": true,
+    "all_per_class_score_quantiles_rejection_counts_feature_quantiles_and_envelope_counts_recomputed": true,
+    "full_saved_reference_index_verified": true,
+    "fixed_threshold": 0.95
+  },
+  "negative_action_population_summary": {
+    "E0": {
+      "negative_rows": 156,
+      "stored_score_median": 0.9688747684924837,
+      "fixed95_rejections": 104,
+      "any_feature_outside_E0_allclass_box": 0,
+      "any_feature_outside_E0_negative_box": 0,
+      "selected_marginal_outside_counts": {
+        "gray_mean_over255": 0,
+        "gradient_mean_over255": 0,
+        "log_lifetime_capture_count": 0
+      }
+    },
+    "E1B": {
+      "negative_rows": 3141,
+      "stored_score_median": 4.5595801159424766e-07,
+      "fixed95_rejections": 30,
+      "any_feature_outside_E0_allclass_box": 2744,
+      "any_feature_outside_E0_negative_box": 3014,
+      "selected_marginal_outside_counts": {
+        "gray_mean_over255": 2597,
+        "gradient_mean_over255": 2563,
+        "log_lifetime_capture_count": 1153
+      }
+    },
+    "E1A": {
+      "negative_rows": 2099,
+      "stored_score_median": 0.0701758269796743,
+      "fixed95_rejections": 108,
+      "any_feature_outside_E0_allclass_box": 536,
+      "any_feature_outside_E0_negative_box": 1475,
+      "selected_marginal_outside_counts": {
+        "gray_mean_over255": 487,
+        "gradient_mean_over255": 440,
+        "log_lifetime_capture_count": 0
+      }
+    }
+  },
+  "standardized_coefficient_values": {
+    "gray_mean_over255": 1.884194578830005,
+    "log_lifetime_capture_count": -2.364326044877311
+  },
+  "formula_interpretation": [
+    "Outside-any is an OR over24 marginal min/max violations; per-feature counts overlap and must not be added as independent row counts.",
+    "Envelope bounds use E0 all physical classes or E0 physical-negative rows exactly as separately named; they are not confidence limits or guarantees of joint distribution support.",
+    "The score statistics use only existing sealed scores; no model outputs were recalculated.",
+    "The coefficient signs describe conditional change of the fitted linear logit per standardized feature unit with other feature coordinates fixed, not marginal importance or physical causality."
+  ],
+  "conclusions": {
+    "observed": "E1 negative-action rows have saved scores much lower than E0 negatives, with substantial marginal feature-range differences from the original E0 training population.",
+    "limits": "This is evidence of training-support/distribution mismatch for this fixed learner, not proof of the complete or unique failure cause, all-feature nonidentifiability, a nonlinear-model cure, or the impossibility of all learned admission methods.",
+    "inside_box": "Rows inside every marginal E0 range may still have unrepresented joint combinations or class-conditional relationships; box membership does not establish training support or explain successful/failing predictions.",
+    "population": "Rows are correlated current cell-exposure instances, not distinct independent cells/scenes or new navigation outcomes.",
+    "candidate_status": "The original fixed learner and physical reservation remain closed. No threshold/normalization/feature change, additional acquisition/refit or model selection is admitted by this diagnosis.",
+    "next_scope": "Any further work can first specify a separate training-support contract on already-seen scenes; it cannot reinterpret those scenes as fresh validation or retroactively reopen the rejected fit."
+  },
+  "review_execution": {
+    "model_calls": 0,
+    "model_fit": 0,
+    "feature_extraction_calls": 0,
+    "source_calls": 0,
+    "physics": 0,
+    "navigation": 0,
+    "alternative_thresholds": 0,
+    "old_artifacts_modified": false,
+    "only_new_file": "diagnosis/independent_review.json"
+  }
+}

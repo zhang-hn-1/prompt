@@ -16,11 +16,13 @@ if __package__ in (None, ""):
     from training.ball_wm_dataset import BallWMDataset, _load_episode
     from training.joint_jepa import JointModelConfig, build_joint_model
     from training.planner import bev_safety_cost, latent_goal_cost, plan
+    from training.proprioception import checkpoint_velocity_frame
 else:
     from .action_protocol import ActionProtocol, load_action_protocol, require_action_protocol
     from .ball_wm_dataset import BallWMDataset, _load_episode
     from .joint_jepa import JointModelConfig, build_joint_model
     from .planner import bev_safety_cost, latent_goal_cost, plan
+    from .proprioception import checkpoint_velocity_frame
 
 
 _CONTRACT_PATH = Path(__file__).resolve().parents[1] / "configs" / "data_contract.yaml"
@@ -111,6 +113,7 @@ def main() -> None:
     require_action_protocol(
         checkpoint, action_protocol.protocol_id, artifact="checkpoint"
     )
+    checkpoint_velocity_frame(checkpoint)
     config = JointModelConfig(**checkpoint["config"])
     model = build_joint_model(config).to(device)
     model.load_state_dict(checkpoint["model"])
@@ -122,6 +125,8 @@ def main() -> None:
         num_preds=config.num_preds,
         rollout_horizon=config.rollout_horizon,
         image_size=(config.image_size, config.image_size),
+        action_source=config.action_source,
+        proprio_velocity_frame=config.proprio_velocity_frame,
         action_block=action_protocol.controls_per_block,
     )
     if dataset.action_protocol_id != action_protocol.protocol_id:

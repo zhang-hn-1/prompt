@@ -1,0 +1,9 @@
+# 本机复现环境只读入口
+
+用户授权自主补齐可复现交付。本工具只检查封存配置、源码/输入SHA、主场景USD、机器人USD与Python模块可发现性及nvidia-smi可见性；不导入Isaac、加载模型或启动场景。不复制外部场景/资源，不自动安装依赖。预算与导航结论不因检查通过而改变。
+
+采用单个标准库入口和依赖清单，沿用现有封存协议。替代方案：完整镜像迁移需外部大资源与驱动环境，当前无必要；重新运行已关闭实验违反预算。因此不做上述动作。
+
+输出分别记录identity_match、assets_present、modules_discoverable、gpu_visible、runtime_preflight_ready与physics_launch_admitted=false。缺失文件、SHA漂移、不可见GPU均明确列出。主USD通过不证明其所有transitive引用都可解析，未启动SimulationApp不证明Isaac场景可运行。当前只支持原绝对路径的本机准备检查，不声称可迁移独立包完成。
+
+先以临时文件和判定函数RED/GREEN验证，再在隔离与宿主分别实际运行入口、保存两个环境结果、独立复核。原项目与旧协议均不改，未授权新物理/预测/teacher/fit。

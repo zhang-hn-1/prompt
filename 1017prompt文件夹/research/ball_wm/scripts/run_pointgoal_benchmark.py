@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import math
 import os
@@ -19,14 +20,23 @@ import numpy as np
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
+from scripts.camera_rig import camera_rig_metadata  # noqa: E402
+
 from benchmark.artifacts import (  # noqa: E402
     REQUIRED_TRAJECTORY_LAYERS,
     AuditBundleWriter,
     write_rgb_video,
 )
-from benchmark.isaac_runtime import IsaacBenchmarkRuntime, IsaacRuntimeConfig  # noqa: E402
+from benchmark.isaac_runtime import (  # noqa: E402
+    DEFAULT_DRIVE_PROFILE,
+    IsaacBenchmarkRuntime,
+    IsaacRuntimeConfig,
+)
+from benchmark.lighting import LEGACY_SUN_V1, LIGHTING_PROFILES  # noqa: E402
 from benchmark.manifest import BenchmarkEpisode, load_manifest  # noqa: E402
 from benchmark.policies import (  # noqa: E402
+    AngleAwareConstraintOraclePolicy,
+    ConstraintAwareTrajectoryOraclePolicy,
     DynamicOraclePolicy,
     GoalGreedyPolicy,
     OraclePathPolicy,
@@ -53,6 +63,18 @@ DEFAULT_SCENE_INDEX = (
     Path(__file__).resolve().parents[1] / "configs" / "benchmark_v1" / "scene_index.json"
 )
 DEFAULT_ORACLE_LOOKAHEAD_M = 0.5
+DEFAULT_CONSTRAINT_POLICY_CONFIG = (
+    Path(__file__).resolve().parents[1]
+    / "configs"
+    / "benchmark_v1"
+    / "oracle_constraint_v1.json"
+)
+DEFAULT_INTERVENTION_POLICY_CONFIG = (
+    Path(__file__).resolve().parents[1]
+    / "configs"
+    / "benchmark_v1"
+    / "oracle_intervention_v1.json"
+)
 
 
 def _validate_oracle_lookahead_m(value: object) -> float:
@@ -74,14 +96,115 @@ def _parse_oracle_lookahead_m(value: str) -> float:
         raise argparse.ArgumentTypeError(str(error)) from error
 
 
+def _parse_auxiliary_velocity_limit_rad_s(value: str) -> float:
+    try:
+        limit = float(value)
+    except (TypeError, ValueError, OverflowError) as error:
+        raise argparse.ArgumentTypeError(
+            "auxiliary_velocity_limit_rad_s must be finite and positive"
+        ) from error
+    if not math.isfinite(limit) or limit <= 0.0:
+        raise argparse.ArgumentTypeError(
+            "auxiliary_velocity_limit_rad_s must be finite and positive"
+        )
+    return limit
+
+
+def _load_constraint_policy_config(path: Path | None) -> tuple[dict[str, object], str, Path]:
+    selected = DEFAULT_CONSTRAINT_POLICY_CONFIG if path is None else Path(path)
+    resolved = selected.expanduser().resolve()
+    raw = resolved.read_bytes()
+    digest = hashlib.sha256(raw).hexdigest()
+    try:
+        payload = json.loads(raw.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise ValueError(f"constraint policy config is not valid JSON: {resolved}") from error
+    if not isinstance(payload, dict):
+        raise ValueError("constraint policy config must be a JSON object")
+    if payload.get("schema_version") != "oracle_constraint_v1":
+        raise ValueError("constraint policy config schema_version must be oracle_constraint_v1")
+    if payload.get("policy_name") != "oracle_constraint_v1":
+        raise ValueError("constraint policy config policy_name must be oracle_constraint_v1")
+    allowed = {
+        "auxiliary_velocity_limit_rad_s",
+        "auxiliary_saturation_threshold_rad_s",
+        "auxiliary_release_threshold_rad_s",
+        "scheduled_main_command_rad_s",
+        "maximum_main_command_rad_s",
+        "turning_curvature_threshold_1_m",
+        "lateral_error_threshold_m",
+        "heading_error_threshold_rad",
+    }
+    unknown = sorted(set(payload) - {"schema_version", "policy_name", *allowed})
+    if unknown:
+        raise ValueError(f"constraint policy config contains unknown keys: {unknown}")
+    return {key: payload[key] for key in allowed if key in payload}, digest, resolved
+
+
+def _load_intervention_policy_config(path: Path | None) -> tuple[dict[str, object], str, Path]:
+    selected = DEFAULT_INTERVENTION_POLICY_CONFIG if path is None else Path(path)
+    resolved = selected.expanduser().resolve()
+    raw = resolved.read_bytes()
+    digest = hashlib.sha256(raw).hexdigest()
+    try:
+        payload = json.loads(raw.decode("utf-8"))
+    except (UnicodeDecodeError, json.JSONDecodeError) as error:
+        raise ValueError(f"intervention policy config is not valid JSON: {resolved}") from error
+    if not isinstance(payload, dict):
+        raise ValueError("intervention policy config must be a JSON object")
+    if payload.get("schema_version") != "oracle_intervention_v1":
+        raise ValueError("intervention policy config schema_version must be oracle_intervention_v1")
+    if payload.get("policy_name") != "oracle_intervention_v1":
+        raise ValueError("intervention policy config policy_name must be oracle_intervention_v1")
+    allowed = {
+        "auxiliary_velocity_limit_rad_s",
+        "auxiliary_saturation_threshold_rad_s",
+        "auxiliary_release_threshold_rad_s",
+        "scheduled_main_command_rad_s",
+        "maximum_main_command_rad_s",
+        "turning_curvature_threshold_1_m",
+        "lateral_error_threshold_m",
+        "heading_error_threshold_rad",
+        "auxiliary_angle_saturation_threshold_rad",
+        "auxiliary_angle_release_threshold_rad",
+        "angle_scheduled_main_command_rad_s",
+    }
+    unknown = sorted(set(payload) - {"schema_version", "policy_name", *allowed})
+    if unknown:
+        raise ValueError(f"intervention policy config contains unknown keys: {unknown}")
+    return {key: payload[key] for key in allowed if key in payload}, digest, resolved
+
+
+def _evaluation_protocol_id(args: argparse.Namespace) -> str:
+    mode = getattr(args, "collision_mode", "map_clearance_v1")
+    return {
+        "map_clearance_v1": "ball_pointgoal_v1_1_35s",
+        "physical_contact_v2": "ball_pointgoal_v1_2_contact_35s",
+    }[mode]
+
+
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--collision-mode", choices=("physical_contact_v2", "map_clearance_v1"),
+        default="physical_contact_v2",
+        help="Physical obstacle contact (default), or explicit historical map-clearance scoring.",
+    )
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--split", required=True, choices=("golden", "dev", "test"))
     parser.add_argument(
         "--policy",
         required=True,
-        choices=("stop", "random", "goal_greedy", "oracle", "oracle_v2", "world_model"),
+        choices=(
+            "stop",
+            "random",
+            "goal_greedy",
+            "oracle",
+            "oracle_v2",
+            "oracle_constraint_v1",
+            "oracle_intervention_v1",
+            "world_model",
+        ),
     )
     parser.add_argument("--scene-root", type=Path, required=True)
     parser.add_argument("--run-root", type=Path, required=True)
@@ -94,6 +217,18 @@ def _build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--contract", type=Path, default=DEFAULT_CONTRACT)
     parser.add_argument("--scene-index", type=Path, default=DEFAULT_SCENE_INDEX)
     parser.add_argument("--data-root", type=Path)
+    parser.add_argument(
+        "--drive-profile",
+        type=Path,
+        default=DEFAULT_DRIVE_PROFILE,
+        help="drive dynamics profile used by the Oracle and runtime",
+    )
+    parser.add_argument(
+        "--lighting-profile",
+        choices=LIGHTING_PROFILES,
+        default=LEGACY_SUN_V1,
+        help="versioned scene lighting; fixed_camera_fill_v1 brightens the frozen camera view",
+    )
     parser.add_argument(
         "--checkpoint",
         type=Path,
@@ -123,6 +258,24 @@ def _build_parser() -> argparse.ArgumentParser:
             "with --policy oracle; default: %(default)s)"
         ),
     )
+    parser.add_argument(
+        "--auxiliary-velocity-limit-rad-s",
+        type=_parse_auxiliary_velocity_limit_rad_s,
+        default=None,
+        help=(
+            "formal auxiliary joint velocity supervisor in rad/s; omitted keeps "
+            "the tracked baseline controller"
+        ),
+    )
+    parser.add_argument(
+        "--policy-config",
+        type=Path,
+        default=None,
+        help=(
+            "versioned policy JSON; used by the constraint/intervention Oracle policies "
+            "(defaults to its checked-in config)"
+        ),
+    )
     parser.add_argument("--_worker", action="store_true", help=argparse.SUPPRESS)
     return parser
 
@@ -141,6 +294,7 @@ def _make_policy(
     wm_iterations: int = 3,
     wm_safety_weight: float = 0.0,
     allow_legacy_checkpoint: bool = False,
+    policy_config: Path | None = None,
 ) -> Any:
     lookahead_m = _validate_oracle_lookahead_m(oracle_lookahead_m)
     if name != "oracle" and lookahead_m != DEFAULT_ORACLE_LOOKAHEAD_M:
@@ -155,6 +309,12 @@ def _make_policy(
         return OraclePathPolicy(protocol, lookahead_m=lookahead_m)
     if name == "oracle_v2":
         return DynamicOraclePolicy(protocol)
+    if name == "oracle_constraint_v1":
+        config, _, _ = _load_constraint_policy_config(policy_config)
+        return ConstraintAwareTrajectoryOraclePolicy(protocol, **config)
+    if name == "oracle_intervention_v1":
+        config, _, _ = _load_intervention_policy_config(policy_config)
+        return AngleAwareConstraintOraclePolicy(protocol, **config)
     if name == "world_model":
         if checkpoint is None:
             raise ValueError("--checkpoint is required with --policy world_model")
@@ -459,7 +619,22 @@ def _execution_state_arrays(result: Any) -> dict[str, np.ndarray]:
         "dynamic_yaw_error_rad",
         "dynamic_auxiliary_error_rad",
     )
-    return {name: np.asarray(getattr(result, name)) for name in names}
+    arrays = {name: np.asarray(getattr(result, name)) for name in names}
+    intervention_names = (
+        "policy_reference_progress_s_m",
+        "policy_reference_heading_rad",
+        "policy_reference_curvature_1_m",
+        "policy_desired_curvature_1_m",
+        "policy_baseline_main_command_rad_s",
+        "policy_scheduled_main_command_rad_s",
+        "policy_auxiliary_target_angle_rad",
+        "policy_auxiliary_velocity_rad_s",
+        "policy_scheduler_active",
+        "policy_scheduler_trigger_code",
+    )
+    if all(hasattr(result, name) for name in intervention_names):
+        arrays.update({name: np.asarray(getattr(result, name)) for name in intervention_names})
+    return arrays
 
 
 def _command_text(command: Sequence[str]) -> str | None:
@@ -483,6 +658,19 @@ def _environment_payload(
     runtime: IsaacBenchmarkRuntime,
 ) -> dict[str, object]:
     oracle_lookahead_m = _selected_oracle_lookahead_m(args)
+    policy_config_payload: dict[str, object] | None = None
+    if args.policy in {"oracle_constraint_v1", "oracle_intervention_v1"}:
+        loader = (
+            _load_constraint_policy_config
+            if args.policy == "oracle_constraint_v1"
+            else _load_intervention_policy_config
+        )
+        config_values, config_sha256, config_path = loader(getattr(args, "policy_config", None))
+        policy_config_payload = {
+            "path": str(config_path),
+            "sha256": config_sha256,
+            "values": config_values,
+        }
     try:
         import cv2
 
@@ -505,7 +693,7 @@ def _environment_payload(
     manifest = load_manifest(args.manifest)
     payload: dict[str, object] = {
         "benchmark_version": manifest.benchmark_version,
-        "evaluation_protocol_id": "ball_pointgoal_v1_1_35s",
+        "evaluation_protocol_id": _evaluation_protocol_id(args),
         "episode_budget_s": RunnerConfig().episode_budget_s,
         "max_action_blocks": RunnerConfig().max_action_blocks,
         "manifest_sha256": manifest.manifest_sha256,
@@ -526,11 +714,27 @@ def _environment_payload(
         "action_maximum": list(protocol.maximum),
         "controls_per_block": protocol.controls_per_block,
         "localization_source": "perfect_localization",
+        "camera_rig_installation": camera_rig_metadata(),
         "scene_uri": episode.scene_uri,
         "scene_sha256": episode.scene_sha256,
         "occupancy_sha256": episode.occupancy_sha256,
         "policy": args.policy,
+        "policy_config": policy_config_payload,
         "oracle_lookahead_m": oracle_lookahead_m,
+        "drive_profile_path": str(
+            getattr(
+                getattr(runtime, "config", None),
+                "drive_profile_path",
+                DEFAULT_DRIVE_PROFILE,
+            )
+        ),
+        "lighting_profile": getattr(
+            getattr(runtime, "config", None), "lighting_profile", LEGACY_SUN_V1
+        ),
+        "lighting_lamp_positions_world_m": [
+            list(point) for point in
+            getattr(runtime, "lighting_lamp_positions_world_m", ())
+        ],
         "policy_online_input_permissions": sorted(policy.online_input_permissions),
         "privileged": bool(policy.privileged),
         "cli_seed": args.seed,
@@ -547,7 +751,11 @@ def _environment_payload(
             if runtime.contact_measurement_available
             else "unavailable"
         ),
-        "collision_source": "frozen_truth_clearance_le_zero",
+        "collision_mode": getattr(args, "collision_mode", "map_clearance_v1"),
+        "collision_source": ("filtered_obstacle_contact_gt_1N_50Hz_block_latched"
+            if getattr(args, "collision_mode", "map_clearance_v1") == "physical_contact_v2"
+            else "frozen_truth_clearance_le_zero"),
+        "map_clearance_role": "diagnostic_risk_only" if getattr(args, "collision_mode", "map_clearance_v1") == "physical_contact_v2" else "collision_adjudication",
         "execution_state_alignment": "reset_plus_post_action_states",
         "policy_diagnostic_alignment": "post_policy_act_pre_runtime_execute",
         "drive_direction_codes": {"reverse": -1, "none_or_unknown": 0, "forward": 1},
@@ -561,6 +769,9 @@ def _environment_payload(
         },
         "trajectory_overlay_layers": sorted(REQUIRED_TRAJECTORY_LAYERS),
     }
+    auxiliary_velocity_limit = getattr(args, "auxiliary_velocity_limit_rad_s", None)
+    if auxiliary_velocity_limit is not None:
+        payload["auxiliary_velocity_limit_rad_s"] = float(auxiliary_velocity_limit)
     adapter_metadata = getattr(policy, "adapter_metadata", None)
     if adapter_metadata is not None:
         payload["policy_adapter"] = adapter_metadata
@@ -652,6 +863,16 @@ def _write_failure_audit(
     )
 
 
+def _collision_audit_payload(args: argparse.Namespace, runtime: IsaacBenchmarkRuntime) -> dict[str, object]:
+    return {
+        "evaluation_protocol_id": _evaluation_protocol_id(args),
+        "collision_mode": getattr(args, "collision_mode", "map_clearance_v1"),
+        "contact_measurement_available": runtime.contact_measurement_available,
+        "contact_threshold_n": 1.0,
+        "samples": runtime.collision_contact_samples,
+    }
+
+
 def _run_one(args: argparse.Namespace, episode: BenchmarkEpisode) -> Path:
     writer = AuditBundleWriter(args.run_root, episode.episode_id)
     writer.begin()
@@ -665,11 +886,17 @@ def _run_one(args: argparse.Namespace, episode: BenchmarkEpisode) -> Path:
     )
     runtime = IsaacBenchmarkRuntime(
         IsaacRuntimeConfig(
+            collision_mode=getattr(args, "collision_mode", "map_clearance_v1"),
+            lighting_profile=getattr(args, "lighting_profile", LEGACY_SUN_V1),
             scene_root=args.scene_root,
             contract_path=args.contract,
             gui=bool(args.gui),
             record_video=True,
             occupancy_path=occupancy_path,
+            drive_profile_path=getattr(args, "drive_profile", DEFAULT_DRIVE_PROFILE),
+            auxiliary_velocity_limit_rad_s=getattr(
+                args, "auxiliary_velocity_limit_rad_s", None
+            ),
         )
     )
     return_code = 1
@@ -691,6 +918,7 @@ def _run_one(args: argparse.Namespace, episode: BenchmarkEpisode) -> Path:
             wm_iterations=getattr(args, "wm_iterations", 3),
             wm_safety_weight=getattr(args, "wm_safety_weight", 0.0),
             allow_legacy_checkpoint=getattr(args, "allow_legacy_checkpoint", False),
+            policy_config=getattr(args, "policy_config", None),
         )
         runner_config = RunnerConfig()
         if args.policy == "oracle_v2":
@@ -748,10 +976,24 @@ def _run_one(args: argparse.Namespace, episode: BenchmarkEpisode) -> Path:
             **reference_arrays,
         )
         metrics = result.to_metrics_dict()
-        metrics["evaluation_protocol_id"] = "ball_pointgoal_v1_1_35s"
+        metrics["evaluation_protocol_id"] = _evaluation_protocol_id(args)
+        metrics["collision_mode"] = getattr(args, "collision_mode", "map_clearance_v1")
+        metrics["map_nonpositive_clearance_samples"] = int(np.count_nonzero(np.asarray(result.clearances_m) <= 0.0))
         metrics["episode_budget_s"] = runner_config.episode_budget_s
         metrics["max_action_blocks"] = runner_config.max_action_blocks
         metrics["oracle_lookahead_m"] = oracle_lookahead_m
+        if args.policy in {"oracle_constraint_v1", "oracle_intervention_v1"}:
+            loader = (
+                _load_constraint_policy_config
+                if args.policy == "oracle_constraint_v1"
+                else _load_intervention_policy_config
+            )
+            config_values, config_sha256, config_path = loader(getattr(args, "policy_config", None))
+            metrics["policy_config"] = {
+                "path": str(config_path),
+                "sha256": config_sha256,
+                "values": config_values,
+            }
         if metrics["minimum_clearance_m"] is not None and not math.isfinite(
             float(metrics["minimum_clearance_m"])
         ):
@@ -795,6 +1037,7 @@ def _run_one(args: argparse.Namespace, episode: BenchmarkEpisode) -> Path:
                     "maximum_auxiliary_rate_rad_s": maximum_auxiliary_rate,
                 }
             )
+        writer.write_json("collision_audit.json", _collision_audit_payload(args, runtime))
         writer.write_json("metrics.json", metrics)
         writer.write_json(
             "environment.json",
@@ -809,6 +1052,12 @@ def _run_one(args: argparse.Namespace, episode: BenchmarkEpisode) -> Path:
         return published
     except BaseException as error:
         failure_error = error
+        # Persist sensor failures before native close terminates the process.
+        # Audit I/O must not mask the original execution failure.
+        try:
+            writer.write_json("collision_audit.json", _collision_audit_payload(args, runtime))
+        except Exception:
+            pass
         _write_failure_audit(
             writer,
             episode,
@@ -866,8 +1115,22 @@ def _child_command(args: argparse.Namespace, episode_id: str) -> list[str]:
         str(args.contract),
         "--scene-index",
         str(args.scene_index),
+        "--drive-profile",
+        str(getattr(args, "drive_profile", DEFAULT_DRIVE_PROFILE)),
+        "--lighting-profile",
+        getattr(args, "lighting_profile", LEGACY_SUN_V1),
+        "--collision-mode",
+        getattr(args, "collision_mode", "map_clearance_v1"),
         "--_worker",
     ]
+    auxiliary_velocity_limit = getattr(args, "auxiliary_velocity_limit_rad_s", None)
+    if auxiliary_velocity_limit is not None:
+        command.extend(
+            ("--auxiliary-velocity-limit-rad-s", str(auxiliary_velocity_limit))
+        )
+    policy_config = getattr(args, "policy_config", None)
+    if policy_config is not None:
+        command.extend(("--policy-config", str(policy_config)))
     if args.data_root is not None:
         command.extend(("--data-root", str(args.data_root)))
     checkpoint = getattr(args, "checkpoint", None)
@@ -925,9 +1188,12 @@ def _write_summary(
         payload["scene_id"] = Path(episode.scene_uri).stem
         metrics.append(payload)
     config = RunnerConfig()
+    protocol_ids = {item.get("evaluation_protocol_id") for item in metrics}
+    if len(protocol_ids) != 1 or not protocol_ids <= {"ball_pointgoal_v1_1_35s", "ball_pointgoal_v1_2_contact_35s"}:
+        raise ValueError("summary requires matching 35-second evaluation protocols")
+    evaluation_protocol_id = next(iter(protocol_ids))
     if any(
         item.get("episode_budget_s") != config.episode_budget_s
-        or item.get("evaluation_protocol_id") != "ball_pointgoal_v1_1_35s"
         for item in metrics
     ):
         raise ValueError("summary requires matching 35-second evaluation protocols")
@@ -936,7 +1202,8 @@ def _write_summary(
         goal_tolerance_m=config.goal_tolerance_m,
         max_mpc_steps=config.max_action_blocks,
     )
-    summary["evaluation_protocol_id"] = "ball_pointgoal_v1_1_35s"
+    summary["evaluation_protocol_id"] = evaluation_protocol_id
+    summary["collision_mode"] = "physical_contact_v2" if evaluation_protocol_id == "ball_pointgoal_v1_2_contact_35s" else "map_clearance_v1"
     summary["episode_budget_s"] = config.episode_budget_s
     summary["oracle_lookahead_m"] = selected_oracle_lookahead_m
     summary["scene_cluster_bootstrap"] = {

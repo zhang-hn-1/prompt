@@ -1,0 +1,189 @@
+{
+  "review_role": "independent scientific code review under requesting-code-review",
+  "decision": "Accept this bounded diagnostic failure and close without fit; no blocking implementation defect found.",
+  "qualification_pass": false,
+  "critical_findings": [],
+  "important_code_findings": [],
+  "execution": {
+    "status": {
+      "status": "finished",
+      "start_utc": "2026-10-13T04:40:42.364283+00:00",
+      "parent_pid": 2,
+      "child_pid": 5,
+      "no_retry": true,
+      "timeout": false,
+      "forced_kill": false,
+      "parent_signal": null,
+      "child_returncode": 0,
+      "end_utc": "2026-10-13T04:44:49.707630+00:00"
+    },
+    "training_run_by_reviewer": 0,
+    "physics_run_by_reviewer": 0,
+    "implementation_files_modified_by_reviewer": false,
+    "projection_unit_checks": "4 passed"
+  },
+  "verified": [
+    "All 543 all-oracle raster maps exactly equal frozen learned-visible labels; risk sets nest verified <= potential <= all at exact cells.",
+    "Independent vectorized scoring of all three groups exactly reproduces risk counts, tolerant precision/recall and Euclidean p90; no pooled group conceals a failing sequence.",
+    "All 543 saved native camera matrices exactly reconstruct from current timestamp-matched native_predictions and fixed rig; recovered root maximum residual <9e-16.",
+    "GT calibration checked at frames 0, 450 and 900 per group: maximum matrix mismatch <=2.11e-6; projection roundtrip error <=3.21e-5 pixels.",
+    "Native v axis carries disparity for this rig orientation: left-to-right projection shifts v negative. Current code and sign test agree with saved rig.",
+    "All 55 files in previous learned-visible sealed artifact manifest still match SHA256."
+  ],
+  "results": [
+    {
+      "group": "H",
+      "frames": 181,
+      "target_exact_identity": true,
+      "risk_subset_nesting": true,
+      "metrics_match_official": true,
+      "metrics": {
+        "potential": {
+          "true_visible_risk_cells": 3939,
+          "predicted_risk_cells": 1912,
+          "matched_predicted": 1912,
+          "matched_truth": 2055,
+          "precision": 1.0,
+          "recall": 0.5217060167555218,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.4854023863924854
+        },
+        "verified": {
+          "true_visible_risk_cells": 3939,
+          "predicted_risk_cells": 1823,
+          "matched_predicted": 1823,
+          "matched_truth": 2012,
+          "precision": 1.0,
+          "recall": 0.5107895404925108,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.4628078192434628
+        },
+        "native": {
+          "true_visible_risk_cells": 3939,
+          "predicted_risk_cells": 5373,
+          "matched_predicted": 4214,
+          "matched_truth": 3939,
+          "precision": 0.7842918295179602,
+          "recall": 1.0,
+          "localization_p90_m": 0.5,
+          "exact_cell_recall": 0.9961919268849961
+        }
+      }
+    },
+    {
+      "group": "E0",
+      "frames": 181,
+      "target_exact_identity": true,
+      "risk_subset_nesting": true,
+      "metrics_match_official": true,
+      "metrics": {
+        "potential": {
+          "true_visible_risk_cells": 8752,
+          "predicted_risk_cells": 5984,
+          "matched_predicted": 5984,
+          "matched_truth": 6993,
+          "precision": 1.0,
+          "recall": 0.7990173674588665,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.6837294332723949
+        },
+        "verified": {
+          "true_visible_risk_cells": 8752,
+          "predicted_risk_cells": 5689,
+          "matched_predicted": 5689,
+          "matched_truth": 6904,
+          "precision": 1.0,
+          "recall": 0.7888482632541134,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.6500228519195612
+        },
+        "native": {
+          "true_visible_risk_cells": 8752,
+          "predicted_risk_cells": 9686,
+          "matched_predicted": 8757,
+          "matched_truth": 8752,
+          "precision": 0.9040883749741896,
+          "recall": 1.0,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.9977148080438757
+        }
+      }
+    },
+    {
+      "group": "E1",
+      "frames": 181,
+      "target_exact_identity": true,
+      "risk_subset_nesting": true,
+      "metrics_match_official": true,
+      "metrics": {
+        "potential": {
+          "true_visible_risk_cells": 6415,
+          "predicted_risk_cells": 3516,
+          "matched_predicted": 3516,
+          "matched_truth": 4030,
+          "precision": 1.0,
+          "recall": 0.6282151208106002,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.5480904130943102
+        },
+        "verified": {
+          "true_visible_risk_cells": 6415,
+          "predicted_risk_cells": 3393,
+          "matched_predicted": 3393,
+          "matched_truth": 4013,
+          "precision": 1.0,
+          "recall": 0.6255650818394388,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.5289166017147311
+        },
+        "native": {
+          "true_visible_risk_cells": 6415,
+          "predicted_risk_cells": 7679,
+          "matched_predicted": 6729,
+          "matched_truth": 6415,
+          "precision": 0.8762859747362938,
+          "recall": 1.0,
+          "localization_p90_m": 0.316227766016838,
+          "exact_cell_recall": 0.9970381917381138
+        }
+      }
+    }
+  ],
+  "required_interpretation": [
+    "Metrics count frame-cell instances from 181 frames per development sequence, not independent trials or unique physical obstacles. Risk denominator is every frozen visible risk cell, including cells without opposite-eye support.",
+    "Precision and recall allow one 0.1 m grid-cell Chebyshev tolerance, including diagonal distance sqrt(2)*0.1 m. Localization uses Euclidean nearest GT-risk distance. Exact-cell recalls are separately included in independent_metric_checks.json.",
+    "E0 potential recall is 0.7990173674588665, strictly below 0.8; rounding to 80% cannot pass it.",
+    "Potential support combines opposite FOV, 0.5-3 m optical-depth range, CAD mask, retained same-eye points and minimum four samples per height bin. It is an optimistic support bound for this specific direct-correspondence/rasterization domain, not a pure FOV or universal learning ceiling.",
+    "Verified support uses nearest-pixel opposite rendered depth agreement within 0.03 m. Rasterization, depth discontinuities and rounding affect this diagnostic; disagreement is not automatically proof of occlusion.",
+    "Pixel counts pool both eye samples; they are not unique 3D surfaces or risk-only counts. Potential-minus-verified includes farther-depth mismatch as well as the separately counted near-depth/occluded, nohit and unavailable categories.",
+    "Ground and unknown cells are not certified free. Labelled visible points exclude self-mask, within-0.55 m root radius, outside range, outside forward 0-4/lateral -3-3 map and unlabelled height bands; this is not complete obstacle volume.",
+    "Saved current poses derive from native gyro/encoder estimates, with privileged initial world gauge and fixed-height prior. Each native map is recentered using native root/yaw, so horizontal translation/yaw gauge cancels; this does not qualify global trajectory or long-term map registration.",
+    "All oracle variants use rendered truth diagnostically, and native variant still uses perfect rendered depth. None are measured online depth, new learned predictions or source admission.",
+    "Failure supports stopping a strictly current-binocular-correspondence learner against the full frozen visible-map target. It does not prove all learned methods, monocular priors or temporal evidence incapable of useful inference."
+  ],
+  "next_mechanism_limited_review": {
+    "scope": "Finite comparison to learned_visible_obstacles, nohit_surface_validity, stereo_competing_depth, safe_start_disparity_anchor, stereo_partner_ownership and dual_eye_memory_conflict protocols only; not exhaustive novelty certification.",
+    "proposed": "Pixel-level surface class plus depth, followed by fixed geometry projection, with monocular inference distinguished from binocular correspondence support.",
+    "assessment": "Not an obvious repeat of the examined closed map-classifier or SGBM confidence/matching/memory mechanisms, provided the target, observation support and consumer semantics actually change and are preregistered.",
+    "prerequisites": [
+      "Freeze pixel labels and unknown/nohit/ground semantics; do not relabel inferred monocular depth as stereo measurement.",
+      "Before fitting, qualify ideal pixel surface labels and depth through the proposed native-pose consumer against a clearly specified target. Perfect depth with current native rasterization already fails H/E1, so a new depth estimator alone is insufficient.",
+      "Freeze how surface classes affect ground rejection, height bins and projection; preserve uncertainty instead of silently overwriting geometric contradictions.",
+      "Use grouped development coverage and one frozen fit budget; E1 remains researcher-seen development and fresh verification is separate. Do not reopen v49 with a new network and unchanged rescue objective."
+    ]
+  },
+  "evidence_files": [
+    "independent_geometry_checks.json",
+    "independent_metric_checks.json",
+    "independent_review_input_sha256.json",
+    "qualification.json",
+    "status.json"
+  ],
+  "reviewed_source_sha256": {
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/geometry_visible_qualification_20261013_v1/protocol.json": "3e0bb00f5f20330fad61c7584a897b0688b6caa9023aae69357e5d64d1728d25",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/geometry_visible_qualification_20261013_v1/projection.py": "97782115e637eaaf89b85de0eddbac7fa577e2263be65a8af65200f1ed487da7",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/geometry_visible_qualification_20261013_v1/check_projection.py": "8a5a9c542ed672257c9302195075fbd21457c16e1451523f7d53ad41f67f4f41",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/geometry_visible_qualification_20261013_v1/run_qualification.py": "9babee4dcbfa5003179e9e0a6d6dffe64192eeda6932849af0d3bed5f9c2b7ee",
+    "/home/an/Documents/ChatGPT/球型机器人导航/experiments/geometry_visible_qualification_20261013_v1/qualification.json": "1d1d375f33bb78616eb7b2265ab3dd9e4314e643ada03b1fae58e6be346a5070"
+  }
+}

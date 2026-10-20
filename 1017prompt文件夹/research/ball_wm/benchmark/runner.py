@@ -276,6 +276,39 @@ class EpisodeRun:
     dynamic_auxiliary_error_rad: np.ndarray = field(
         default_factory=lambda: np.empty(0, dtype=np.float64)
     )
+    # Round-3 intervention telemetry.  These arrays are action-aligned and
+    # deliberately separate from the legacy policy diagnostic tuple so old
+    # bundles and policies retain their schema and zero-fill behavior.
+    policy_reference_progress_s_m: np.ndarray = field(
+        default_factory=lambda: np.empty(0, dtype=np.float64)
+    )
+    policy_reference_heading_rad: np.ndarray = field(
+        default_factory=lambda: np.empty(0, dtype=np.float64)
+    )
+    policy_reference_curvature_1_m: np.ndarray = field(
+        default_factory=lambda: np.empty(0, dtype=np.float64)
+    )
+    policy_desired_curvature_1_m: np.ndarray = field(
+        default_factory=lambda: np.empty(0, dtype=np.float64)
+    )
+    policy_baseline_main_command_rad_s: np.ndarray = field(
+        default_factory=lambda: np.empty(0, dtype=np.float64)
+    )
+    policy_scheduled_main_command_rad_s: np.ndarray = field(
+        default_factory=lambda: np.empty(0, dtype=np.float64)
+    )
+    policy_auxiliary_target_angle_rad: np.ndarray = field(
+        default_factory=lambda: np.empty(0, dtype=np.float64)
+    )
+    policy_auxiliary_velocity_rad_s: np.ndarray = field(
+        default_factory=lambda: np.empty(0, dtype=np.float64)
+    )
+    policy_scheduler_active: np.ndarray = field(
+        default_factory=lambda: np.empty(0, dtype=bool)
+    )
+    policy_scheduler_trigger_code: np.ndarray = field(
+        default_factory=lambda: np.empty(0, dtype=np.int8)
+    )
     # State-aligned measured telemetry.  Empty defaults preserve construction
     # compatibility for callers that predate the clock/roll contract.
     simulation_time_s: np.ndarray = field(
@@ -427,6 +460,16 @@ class EpisodeRun:
             "dynamic_position_error_m",
             "dynamic_yaw_error_rad",
             "dynamic_auxiliary_error_rad",
+            "policy_reference_progress_s_m",
+            "policy_reference_heading_rad",
+            "policy_reference_curvature_1_m",
+            "policy_desired_curvature_1_m",
+            "policy_baseline_main_command_rad_s",
+            "policy_scheduled_main_command_rad_s",
+            "policy_auxiliary_target_angle_rad",
+            "policy_auxiliary_velocity_rad_s",
+            "policy_scheduler_active",
+            "policy_scheduler_trigger_code",
             "simulation_time_s",
             "physics_step_index",
             "raw_simulation_time_s",
@@ -804,8 +847,11 @@ def _v2_policy_diagnostic(
 
 def _policy_diagnostic_sample(
     policy: BenchmarkPolicy,
+    *,
+    diagnostics: Mapping[object, object] | None = None,
 ) -> tuple[object, ...]:
-    diagnostics = getattr(policy, "diagnostics", {})
+    if diagnostics is None:
+        diagnostics = getattr(policy, "diagnostics", {})
     if not isinstance(diagnostics, Mapping):
         diagnostics = {}
     is_v2 = str(getattr(policy, "policy_name", "")) == "oracle_trajectory_v2"
@@ -855,6 +901,50 @@ def _policy_diagnostic_sample(
     return sample
 
 
+_INTERVENTION_DIAGNOSTIC_NAMES = (
+    "reference_progress_s_m",
+    "reference_heading_rad",
+    "reference_curvature_1_m",
+    "desired_curvature_1_m",
+    "baseline_main_command_rad_s",
+    "scheduled_main_command_rad_s",
+    "auxiliary_target_angle_rad",
+    "auxiliary_velocity_rad_s",
+    "scheduler_active",
+    "scheduler_trigger_code",
+)
+
+
+def _policy_intervention_sample(
+    policy: BenchmarkPolicy,
+    *,
+    diagnostics: Mapping[object, object] | None = None,
+) -> tuple[object, ...]:
+    """Read the action-level scheduler telemetry without changing legacy traces."""
+
+    if diagnostics is None:
+        diagnostics = getattr(policy, "diagnostics", {})
+    if not isinstance(diagnostics, Mapping):
+        diagnostics = {}
+    private_names = {
+        name: f"_{name}" for name in _INTERVENTION_DIAGNOSTIC_NAMES
+    }
+    values_by_name = {
+        name: diagnostics.get(name, getattr(policy, private_names[name], 0.0))
+        for name in _INTERVENTION_DIAGNOSTIC_NAMES
+    }
+    values = tuple(
+        _finite_policy_diagnostic(values_by_name[name])
+        for name in _INTERVENTION_DIAGNOSTIC_NAMES[:8]
+    )
+    active = bool(values_by_name["scheduler_active"])
+    try:
+        trigger_code = int(values_by_name["scheduler_trigger_code"])
+    except (TypeError, ValueError, OverflowError):
+        trigger_code = 0
+    return values + (active, trigger_code)
+
+
 def run_episode(
     runtime: BenchmarkRuntime,
     policy: BenchmarkPolicy,
@@ -894,6 +984,7 @@ def run_episode(
     speed_trace: list[float] = []
     proprio_states: list[np.ndarray] = []
     policy_diagnostics: list[tuple[object, ...]] = []
+    policy_intervention_diagnostics: list[tuple[object, ...]] = []
     termination_reason = "runtime_error"
     runtime_error: str | None = None
     diagnostic_settling_runtime_error: str | None = None
@@ -906,6 +997,7 @@ def run_episode(
     initial_distance = float(episode.euclidean_distance_m)
     final_distance = initial_distance
     latest_policy_diagnostic = None
+    latest_policy_intervention_diagnostic = None
     reset_simulation_time_s: float | None = None
     last_relative_time_s = 0.0
     diagnostic_terminal_brake_start_time_s: float | None = None
@@ -1087,7 +1179,13 @@ def run_episode(
                 # There is no real policy act when an episode starts inside
                 # the goal tolerance.  Capture one finite post-reset sample
                 # as the cache for every subsequent settling block.
-                latest_policy_diagnostic = _policy_diagnostic_sample(policy)
+                diagnostics = getattr(policy, "diagnostics", {})
+                latest_policy_diagnostic = _policy_diagnostic_sample(
+                    policy, diagnostics=diagnostics
+                )
+                latest_policy_intervention_diagnostic = _policy_intervention_sample(
+                    policy, diagnostics=diagnostics
+                )
                 diagnostic_settling_active = True
                 diagnostic_stop_hold_passed = False
                 if speed_trace[-1] < config.diagnostic_stop_speed_m_s:
@@ -1114,7 +1212,12 @@ def run_episode(
                     raise RuntimeError(
                         "diagnostic settling has no cached policy diagnostics"
                     )
+                if latest_policy_intervention_diagnostic is None:
+                    raise RuntimeError(
+                        "diagnostic settling has no cached intervention diagnostics"
+                    )
                 diagnostic_sample = latest_policy_diagnostic
+                intervention_sample = latest_policy_intervention_diagnostic
             else:
                 if termination is not None:
                     break
@@ -1127,8 +1230,15 @@ def run_episode(
                     policy.act(current.observation, pointgoal_base),
                     action_protocol,
                 )
-                diagnostic_sample = _policy_diagnostic_sample(policy)
+                diagnostics = getattr(policy, "diagnostics", {})
+                diagnostic_sample = _policy_diagnostic_sample(
+                    policy, diagnostics=diagnostics
+                )
                 latest_policy_diagnostic = diagnostic_sample
+                intervention_sample = _policy_intervention_sample(
+                    policy, diagnostics=diagnostics
+                )
+                latest_policy_intervention_diagnostic = intervention_sample
                 record_brake_start(diagnostic_sample, action_start_time_s)
             if settling_action:
                 diagnostic_settling_blocks += 1
@@ -1139,6 +1249,7 @@ def run_episode(
             actions.append(action)
             settling_mask.append(settling_action)
             policy_diagnostics.append(diagnostic_sample)
+            policy_intervention_diagnostics.append(intervention_sample)
             positions.append(current.observation.position_world_xy.copy())
             yaws.append(current.observation.yaw_world_rad)
             simulation_times.append(current.simulation_time_s)
@@ -1259,6 +1370,19 @@ def run_episode(
             dtype=np.float64,
         )
     )
+    intervention_array = (
+        np.asarray(policy_intervention_diagnostics, dtype=object)
+        if policy_intervention_diagnostics
+        else np.empty((0, len(_INTERVENTION_DIAGNOSTIC_NAMES)), dtype=object)
+    )
+    if intervention_array.size:
+        intervention_numeric = np.asarray(intervention_array[:, :8], dtype=np.float64)
+        intervention_active = np.asarray(intervention_array[:, 8], dtype=bool)
+        intervention_trigger = np.asarray(intervention_array[:, 9], dtype=np.int8)
+    else:
+        intervention_numeric = np.empty((0, 8), dtype=np.float64)
+        intervention_active = np.empty(0, dtype=bool)
+        intervention_trigger = np.empty(0, dtype=np.int8)
     if nominal_success and diagnostic_goal_entry_action_block is not None:
         nominal_state_count = min(
             positions_array.shape[0], diagnostic_goal_entry_action_block + 1
@@ -1317,6 +1441,16 @@ def run_episode(
         policy_pending_drive_direction=diagnostic_array[:, 4].astype(np.int8),
         policy_stopped_cycles=diagnostic_array[:, 5].astype(np.int64),
         policy_braking_state_code=diagnostic_array[:, 6].astype(np.int8),
+        policy_reference_progress_s_m=intervention_numeric[:, 0],
+        policy_reference_heading_rad=intervention_numeric[:, 1],
+        policy_reference_curvature_1_m=intervention_numeric[:, 2],
+        policy_desired_curvature_1_m=intervention_numeric[:, 3],
+        policy_baseline_main_command_rad_s=intervention_numeric[:, 4],
+        policy_scheduled_main_command_rad_s=intervention_numeric[:, 5],
+        policy_auxiliary_target_angle_rad=intervention_numeric[:, 6],
+        policy_auxiliary_velocity_rad_s=intervention_numeric[:, 7],
+        policy_scheduler_active=intervention_active,
+        policy_scheduler_trigger_code=intervention_trigger,
         reference_curvature_1_m=diagnostic_array[:, 10],
         feedback_curvature_1_m=diagnostic_array[:, 11],
         command_curvature_1_m=diagnostic_array[:, 12],

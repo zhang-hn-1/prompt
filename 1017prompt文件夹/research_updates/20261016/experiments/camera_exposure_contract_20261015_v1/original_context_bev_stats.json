@@ -1,0 +1,29 @@
+{
+  "arms": [
+    {
+      "arm": "left_cells",
+      "predicted_cells": 332,
+      "within_visible_target_015": 0,
+      "visible_targets": 11,
+      "covered_visible": 0
+    },
+    {
+      "arm": "right_cells",
+      "predicted_cells": 202,
+      "within_visible_target_015": 0,
+      "visible_targets": 11,
+      "covered_visible": 0
+    },
+    {
+      "arm": "fused_cells",
+      "predicted_cells": 388,
+      "within_visible_target_015": 0,
+      "visible_targets": 11,
+      "covered_visible": 0
+    }
+  ],
+  "old_memory_risk": 1437,
+  "old_memory_far": 960,
+  "old_memory_old10": 635,
+  "scope": "Old v77 current/long memory context; current uses visible GT, memory uses full bodyband reference. Not new optic model or map."
+}

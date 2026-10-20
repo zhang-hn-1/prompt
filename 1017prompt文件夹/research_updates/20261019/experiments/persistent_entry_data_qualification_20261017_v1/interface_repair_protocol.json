@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-17T08:50:57.594524+00:00",
+  "reason": "Reject reindexed same physical exposure before payload/state changes; observed470 strictly increasing so immutable result unchanged.",
+  "original_sha": "30d3b886c34f3a459e036f5023521bf8122bdee68fcb42634524651a631b679f",
+  "repaired_sha": "cfcf4de59b327bed52636df963c3a10eb6f60b05c2acbdc1813c739c3725c424",
+  "single_edit": {
+    "old": "or (frame==self.frame and source_time!=self.source_time):raise",
+    "new": "or (frame==self.frame and source_time!=self.source_time) or (frame>self.frame and source_time<=self.source_time):raise"
+  },
+  "recovery_cap": 1,
+  "recovery_used_before": 0,
+  "fixtures_only_cap": 1,
+  "source_regeneration": 0,
+  "label_regeneration": 0,
+  "fit": 0,
+  "physics": 0,
+  "stop": "Any fixture failure ends this recovery; do not repeat full dataset or change thresholds."
+}

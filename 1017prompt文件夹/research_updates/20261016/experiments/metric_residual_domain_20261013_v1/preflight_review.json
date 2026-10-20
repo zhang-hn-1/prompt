@@ -1,0 +1,33 @@
+{
+  "admitted": true,
+  "blocking_issues": [],
+  "checks": {
+    "offline_boundary": "GT range/category used only qualification; no learner/nav source; launch only one read-only oracle stage",
+    "domain": "Fixed saved unique left query IDs; finite .5\u20133m depth; no query expansion or hole filling. Target is original binocular visible category raster, so left-query footprint limitation intentional.",
+    "gates": "All five exact frozen precision/recall/ground/unsupported/P90 thresholds; primary fixed-height arm gates independent of optimistic category arm; no full-scene upper-bound claim.",
+    "time": "181 source epochs0..900 step5 validated; memory replay900 original map clocks0..899; epochs admitted only once source time <= map clock; frame900 deliberately not consumed before899",
+    "consumer": "Native pinhole/fixed-body exclusion and four-count local categories; memory any-point positive10s/twoepoch/viewpoint.1; no negative/free/clearing",
+    "scope": "Fixed-height zero-uncertainty proxy omits original texture/uncertainty filters; correct explicit optimistic diagnostic, not exact original pipeline/theoretical bound",
+    "provenance": "Complete prior oracle input/output/source verified; current query/frame/native/labels and all900 map clocks per group hashed; reviewed launch exclusive marker and source hashes"
+  },
+  "issues": [
+    {
+      "priority": "P2",
+      "finding": "Occupancy reference array is read for memory metrics but direct occupancy file SHA is not added to result inputs; add it for diagnostic provenance.",
+      "scope": "Does not affect primary local gates; prior protocol path hash alone does not bind file content."
+    },
+    {
+      "priority": "limitation",
+      "finding": "Finite_correctable/labelled query counts are measured before native body exclusion, whereas local/memory replay uses after-body points. Keep denominators explicitly distinct."
+    }
+  ],
+  "source_sha256": {
+    "protocol.json": "7d0fb1077d782ec2c6fd6e3068a8fc5520a95a7688d5fc1005d4c9b2cdfbac07",
+    "common.py": "ac34b82a3725b9f272238fb7ad922e773fefb01ceb5069857d6e57622627b7c8",
+    "qualify.py": "90ff45fc45489918d87b2dbef17512d4b75f99236f2e6ffb927e531713b52726",
+    "launch.py": "f7bd3a760a8cb0fd1f04a90a56ee74e6b317956a07251c5446d203b2abab77be"
+  },
+  "fit": 0,
+  "physical": 0,
+  "minor_correction": "Added direct occupancy file hash only; reviewed algorithm and protocol unchanged"
+}

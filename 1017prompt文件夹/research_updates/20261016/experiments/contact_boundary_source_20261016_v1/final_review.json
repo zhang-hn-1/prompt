@@ -1,0 +1,13 @@
+{
+  "complete": true,
+  "reviewer": "accepted_geometry_review",
+  "verdict": "No important remaining findings",
+  "checked": [
+    "Body recovery B=N@inverse(local)",
+    "Originally frozen every-frame P90<=.3m gate in both score paths",
+    "440 eye-frame full target domain and aggregate unions/denominators",
+    "Full-domain rejection before fit, E1 and navigation",
+    "Plot scope: fixed middle vs complete sequence and GT labels vs learned predictions"
+  ],
+  "notes": "Initial incorrect native exclusion and omitted gate are preserved. Final independent replay found zero changed native cell sets, and complete target arithmetic matched."
+}

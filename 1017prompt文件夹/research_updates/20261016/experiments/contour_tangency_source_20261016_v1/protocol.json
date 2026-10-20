@@ -1,0 +1,17 @@
+{
+  "question": "Can ideal visible sphere/cylinder silhouette tangencies generate metric depth for the complete accepted four-camera E0 target, without point correspondences, known object sizes or input depth?",
+  "mechanism": "Back-project oriented silhouette tangent lines into planes; solve unknown sphere centre/radius or vertical-cylinder XY centre/radius jointly from multiple calibrated camera centres. Infer cylinder cap heights from visible rim image rays and reconstructed radius. No point-patch matching, positive-cone voxel voting or fitting an existing metric point cloud.",
+  "novelty_evidence": ["Old causal multi-view plane sweep estimates per-pixel depth from ZNCC patches.", "Old positive-cone memory retains possible voxels with positive mask support, without a tangent-surface equality.", "Old qualified-seed shape identifiability fits an already measured 3D point cloud. This candidate instead generates metric shape/depth from 2D tangent planes."],
+  "references": ["https://arxiv.org/abs/2212.02319", "https://www.robots.ox.ac.uk/~vgg/publications/1998/Cross98/", "https://i.cs.hku.hk/~kykwong/publications/kykwong_eccv2008.pdf"],
+  "data_root": "experiments/contact_boundary_source_20261016_v1/e0_recovery_run",
+  "scope": "Necessary ideal-annotation qualification, not RGB inference. Ideal primitive-family, instance association, oriented silhouette tangents, rim identity and target semantic masks are privileged offline labels. Predictor receives no object centres/radii/heights or pixel depth. Sphere/vertical-cylinder family is an explicit restricted scene prior, not arbitrary obstacle geometry. All 300 objects and all original targets including suspended/unidentified remain in evaluation. Dataset is already seen development.",
+  "frames": 110,
+  "eyes": 4,
+  "label_sampling": {"sphere_circle_points": 128, "cylinder_generator_height_points": 17, "cap_rim_points": 64, "visibility_depth_witness_m": 0.02, "visibility_pixel_radius": 1, "sphere_local_visible_samples": 3},
+  "geometry": {"history_seconds": 10.0, "min_camera_baseline_m": 0.1, "max_condition_number": 1000, "minimum_distinct_views": 2, "max_tangent_equation_rms_m": 0.02, "radius_positive_only": true, "depth_range_m": [0.5,3.0], "cell_m": 0.1, "body_exclusion_m": 0.55},
+  "gates": {"precision_min": 0.95, "recall_min": 0.8, "cell_p90_max_m": 0.15, "every_frame_precision_min": 0.95, "every_frame_recall_min": 0.8, "every_frame_cell_p90_max_m": 0.3, "depth_p90_max_m": 0.15},
+  "arms": ["ideal_annotations_render_pose", "ideal_annotations_causal_native_pose"],
+  "controls": "All original frame targets reused unchanged; no target shrinkage. Ideal annotations are identical across pose arms. GT annotations never enter real navigation. No free-space or risk clearing. Frame t uses only exposures <=t from the last10s.",
+  "budget": {"physical_cap": 0, "physical_used": 0, "ML_fit_cap": 0, "ML_fit_used": 0, "model_inference_cap": 0, "navigation_cap": 0, "CPU_qualification_cap": 1, "CPU_wall_s": 900, "implementation_recovery_cap": 1, "note": "Analytic least-squares geometry solves are performed; ML fit0 does not mean no geometric parameter estimation."},
+  "stop": "Complete all110 frames and assess original gates. Failure closes this contour mechanism before RGB detector training/model acquisition/navigation; no tolerance/sampling/shape-family sweep. Passing admits only this privileged necessary geometric consumer, requiring a separately frozen actual RGB contour source and independent data qualification."
+}

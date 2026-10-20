@@ -15,6 +15,8 @@ Use ``collect_data_dubins.py`` and the schema 1.1 contract instead.
   states.npz           本体状态+动作+相机位姿序列
 """
 
+from camera_rig import CAMERA_FORWARD_M, CAMERA_HALF_BASELINE_M, CAMERA_UP_M
+
 import argparse, os, sys, json
 import numpy as np
 from pathlib import Path
@@ -84,7 +86,7 @@ robot = world.scene.add(
     Articulation(prim_path="/World/BallRobot", name="ball_robot", position=ROBOT_START)
 )
 
-CAM_X, CAM_Y, CAM_Z = 0.1, 0.30, 0.10
+CAM_X, CAM_Y, CAM_Z = CAMERA_FORWARD_M, CAMERA_HALF_BASELINE_M, CAMERA_UP_M
 FOCAL_LEN, H_APT = 16.45, 18.0
 V_APT = H_APT * args.img_h / args.img_w
 

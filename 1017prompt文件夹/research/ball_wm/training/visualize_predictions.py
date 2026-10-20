@@ -18,10 +18,12 @@ if __package__ in (None, ""):
     from training.action_protocol import require_action_protocol
     from training.ball_wm_dataset import BallWMDataset, IMAGENET_MEAN, IMAGENET_STD
     from training.joint_jepa import JointModelConfig, build_joint_model
+    from training.proprioception import checkpoint_velocity_frame
 else:
     from .action_protocol import require_action_protocol
     from .ball_wm_dataset import BallWMDataset, IMAGENET_MEAN, IMAGENET_STD
     from .joint_jepa import JointModelConfig, build_joint_model
+    from .proprioception import checkpoint_velocity_frame
 
 
 def multiclass_metrics(
@@ -201,6 +203,7 @@ def evaluate_visuals(
     device_name: str,
 ) -> dict[str, object]:
     checkpoint = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
+    checkpoint_velocity_frame(checkpoint)
     config = JointModelConfig(**checkpoint["config"])
     dataset = BallWMDataset(
         data_root,
@@ -208,6 +211,8 @@ def evaluate_visuals(
         num_preds=config.num_preds,
         rollout_horizon=config.rollout_horizon,
         image_size=(config.image_size, config.image_size),
+        action_source=config.action_source,
+        proprio_velocity_frame=config.proprio_velocity_frame,
     )
     require_action_protocol(
         checkpoint, dataset.action_protocol_id, artifact="checkpoint"

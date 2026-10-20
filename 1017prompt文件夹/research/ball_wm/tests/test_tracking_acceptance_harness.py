@@ -213,6 +213,17 @@ def _expected_producer_diagnostics() -> dict[str, np.ndarray]:
             ],
             dtype=np.float32,
         ),
+        "smoothed_target": np.asarray(
+            [
+                [0.0, 0.0],
+                [0.2, -0.1],
+                [0.2, -0.1],
+                [0.2, -0.1],
+                [0.2, -0.1],
+                [0.2, -0.1],
+            ],
+            dtype=np.float32,
+        ),
         "applied_action": np.asarray(
             [
                 [0.0, 0.0],
@@ -1362,6 +1373,45 @@ def test_harness_cli_propagates_selected_lookahead_to_child_command():
     command = harness._child_command(selected, "line_forward_0p5")
 
     assert command[command.index("--lookahead-m") + 1] == "1.0"
+
+
+def test_harness_cli_propagates_auxiliary_velocity_limits_to_child_command():
+    parser = harness._build_parser()
+    selected = parser.parse_args(
+        [
+            "--config",
+            str(CONFIG_PATH),
+            "--run-root",
+            "/tmp/aux-limit-run",
+            "--case-id",
+            "line_forward_0p5",
+            "--auxiliary-target-rate-deg-s",
+            "20",
+            "--auxiliary-velocity-limit-rad-s",
+            "0.25",
+        ]
+    )
+
+    command = harness._child_command(selected, "line_forward_0p5")
+    child_args = parser.parse_args(command[2:])
+
+    assert child_args.auxiliary_target_rate_deg_s == pytest.approx(20.0)
+    assert child_args.auxiliary_velocity_limit_rad_s == pytest.approx(0.25)
+
+
+def test_harness_config_applies_auxiliary_velocity_limits():
+    loaded = harness.load_harness_config(
+        CONFIG_PATH,
+        auxiliary_target_rate_deg_s=20.0,
+        auxiliary_velocity_limit_rad_s=0.25,
+    )
+
+    controller = loaded["controller"]
+    assert isinstance(controller, dict)
+    assert controller["auxiliary_target_rate_limit_rad_s"] == pytest.approx(
+        np.deg2rad(20.0)
+    )
+    assert controller["auxiliary_velocity_limit_rad_s"] == pytest.approx(0.25)
 
 
 def test_harness_cli_propagates_selected_yaw_rate_feedback_gain_to_child_command():

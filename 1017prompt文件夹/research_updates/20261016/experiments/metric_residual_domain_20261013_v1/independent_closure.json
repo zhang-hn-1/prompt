@@ -1,0 +1,177 @@
+{
+  "independent_review_pass": true,
+  "qualified": false,
+  "optimistic_qualified": false,
+  "rows": [
+    {
+      "group": "H",
+      "source_frames": 181,
+      "local_arms": 2,
+      "local_maps_exact": 362,
+      "memory_snapshots_exact": 8,
+      "map_clocks_exact": 900,
+      "source_epoch900_not_consumed": true,
+      "pre_body_queries": 1047726,
+      "pre_body_finite": 802994,
+      "pre_body_labelled": 784858,
+      "post_body_finite": 802994,
+      "post_body_labelled": 784858,
+      "gates": {
+        "range_height": {
+          "precision": true,
+          "recall": false,
+          "ground_false": true,
+          "unsupported": true,
+          "localization": true
+        },
+        "range_category": {
+          "precision": true,
+          "recall": false,
+          "ground_false": true,
+          "unsupported": true,
+          "localization": true
+        }
+      },
+      "qualified": false,
+      "optimistic_qualified": false
+    },
+    {
+      "group": "E0",
+      "source_frames": 181,
+      "local_arms": 2,
+      "local_maps_exact": 362,
+      "memory_snapshots_exact": 8,
+      "map_clocks_exact": 900,
+      "source_epoch900_not_consumed": true,
+      "pre_body_queries": 517800,
+      "pre_body_finite": 507492,
+      "pre_body_labelled": 480373,
+      "post_body_finite": 507492,
+      "post_body_labelled": 480373,
+      "gates": {
+        "range_height": {
+          "precision": true,
+          "recall": false,
+          "ground_false": true,
+          "unsupported": true,
+          "localization": true
+        },
+        "range_category": {
+          "precision": true,
+          "recall": false,
+          "ground_false": true,
+          "unsupported": true,
+          "localization": true
+        }
+      },
+      "qualified": false,
+      "optimistic_qualified": false
+    },
+    {
+      "group": "E1",
+      "source_frames": 181,
+      "local_arms": 2,
+      "local_maps_exact": 362,
+      "memory_snapshots_exact": 8,
+      "map_clocks_exact": 900,
+      "source_epoch900_not_consumed": true,
+      "pre_body_queries": 1619230,
+      "pre_body_finite": 1206594,
+      "pre_body_labelled": 1115241,
+      "post_body_finite": 1206594,
+      "post_body_labelled": 1115241,
+      "gates": {
+        "range_height": {
+          "precision": true,
+          "recall": false,
+          "ground_false": true,
+          "unsupported": true,
+          "localization": true
+        },
+        "range_category": {
+          "precision": true,
+          "recall": false,
+          "ground_false": true,
+          "unsupported": true,
+          "localization": true
+        }
+      },
+      "qualified": false,
+      "optimistic_qualified": false
+    },
+    {
+      "group": "B54",
+      "source_frames": 181,
+      "local_arms": 2,
+      "local_maps_exact": 362,
+      "memory_snapshots_exact": 8,
+      "map_clocks_exact": 900,
+      "source_epoch900_not_consumed": true,
+      "pre_body_queries": 1428695,
+      "pre_body_finite": 1099241,
+      "pre_body_labelled": 1014356,
+      "post_body_finite": 1099241,
+      "post_body_labelled": 1014356,
+      "gates": {
+        "range_height": {
+          "precision": true,
+          "recall": false,
+          "ground_false": true,
+          "unsupported": true,
+          "localization": true
+        },
+        "range_category": {
+          "precision": true,
+          "recall": false,
+          "ground_false": true,
+          "unsupported": true,
+          "localization": true
+        }
+      },
+      "qualified": false,
+      "optimistic_qualified": false
+    },
+    {
+      "group": "C54",
+      "source_frames": 181,
+      "local_arms": 2,
+      "local_maps_exact": 362,
+      "memory_snapshots_exact": 8,
+      "map_clocks_exact": 900,
+      "source_epoch900_not_consumed": true,
+      "pre_body_queries": 1031409,
+      "pre_body_finite": 758557,
+      "pre_body_labelled": 711036,
+      "post_body_finite": 758557,
+      "post_body_labelled": 711036,
+      "gates": {
+        "range_height": {
+          "precision": true,
+          "recall": false,
+          "ground_false": true,
+          "unsupported": true,
+          "localization": true
+        },
+        "range_category": {
+          "precision": true,
+          "recall": false,
+          "ground_false": true,
+          "unsupported": true,
+          "localization": true
+        }
+      },
+      "qualified": false,
+      "optimistic_qualified": false
+    }
+  ],
+  "full_source_frames": 905,
+  "local_maps_replayed": 1810,
+  "memory_snapshots_replayed": 40,
+  "map_clocks_replayed": 4500,
+  "provenance_verified": true,
+  "fit": 0,
+  "physical": 0,
+  "minor_correction_review": "Added only direct occupancy path-content SHA to result inputs; author-updated preflight SHA is explicitly later correction, not earlier reviewed source identity.",
+  "scope": "Offline perfect finite-range fixed left-query proxy, not exact original whole pipeline or theoretical bound. Primary height gate and ideal-category optimistic arm distinct. Counts pre-body and post-body reported separately; no missing query filling, free or clearing.",
+  "review_source_sha256": "09420a7f9c8ac83f92cf48fc28ba98252a550bbb95a353e872ab323f2448934f"
+}

@@ -1,0 +1,32 @@
+{
+  "dispatch_cap": 1,
+  "dispatch_used": 1,
+  "recovery_cap": 1,
+  "recovery_used": 1,
+  "status": "closed_before_fit_data_not_qualified",
+  "parent_pid": 3842152,
+  "fit": 0,
+  "learned_inference": 0,
+  "source_regeneration": 0,
+  "physics": 0,
+  "old_budgets_reopened": false,
+  "utc": "2026-10-17T08:45:23.837263+00:00",
+  "execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T08:45:23.837774+00:00",
+    "parent_pid": 3842152,
+    "child_pid": 3842171,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-17T08:46:28.071011+00:00"
+  },
+  "recovery_scope": "Single isolated capture-clock interface repair fixtures; original immutable outputs unchanged",
+  "unused_recovery_closed": true,
+  "child_pid": 3842171,
+  "active_runtime": false,
+  "close_utc": "2026-10-17T08:53:57.267395+00:00",
+  "author_checks_returncode": 0
+}

@@ -1,0 +1,398 @@
+{
+  "results": [
+    {
+      "group": "H",
+      "role": "training",
+      "model": {
+        "predicted_risk_cells": 6458,
+        "true_visible_risk_cells": 3939,
+        "matched_predicted": 6242,
+        "matched_truth": 3939,
+        "precision": 0.9665531124187055,
+        "recall": 1.0,
+        "ground_false_cells": 1206,
+        "ground_cells": 65331,
+        "ground_false_fraction": 0.018459842953574872,
+        "unsupported_predictions": 99,
+        "unsupported_fraction": 0.015329823474759988,
+        "visible_cells": 69270,
+        "visible_surface_recall": 0.9999855637361051,
+        "localization_p90_m": 0.1,
+        "exact_overlap_height_accuracy": 0.9908798283261803,
+        "exact_overlap_height_cells": 3728,
+        "per_height": {
+          "2": {
+            "predicted": 301,
+            "truth": 207,
+            "precision": 0.8571428571428571,
+            "recall": 0.748792270531401,
+            "absent_truth": false
+          },
+          "3": {
+            "predicted": 6157,
+            "truth": 3732,
+            "precision": 0.9686535650479129,
+            "recall": 0.9994640943193998,
+            "absent_truth": false
+          },
+          "4": {
+            "predicted": 0,
+            "truth": 0,
+            "precision": 0.0,
+            "recall": null,
+            "absent_truth": true
+          }
+        },
+        "pass_gate": true
+      },
+      "all_unknown": {
+        "predicted_risk_cells": 0,
+        "true_visible_risk_cells": 3939,
+        "matched_predicted": 0,
+        "matched_truth": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ground_false_cells": 0,
+        "ground_cells": 65331,
+        "ground_false_fraction": 0.0,
+        "unsupported_predictions": 0,
+        "unsupported_fraction": 0.0,
+        "visible_cells": 69270,
+        "visible_surface_recall": 0.0,
+        "localization_p90_m": null,
+        "exact_overlap_height_accuracy": 0.0,
+        "exact_overlap_height_cells": 0,
+        "per_height": {
+          "2": {
+            "predicted": 0,
+            "truth": 207,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "3": {
+            "predicted": 0,
+            "truth": 3732,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "4": {
+            "predicted": 0,
+            "truth": 0,
+            "precision": 0.0,
+            "recall": null,
+            "absent_truth": true
+          }
+        },
+        "pass_gate": false
+      },
+      "train_frequency_map": {
+        "predicted_risk_cells": 0,
+        "true_visible_risk_cells": 3939,
+        "matched_predicted": 0,
+        "matched_truth": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ground_false_cells": 0,
+        "ground_cells": 65331,
+        "ground_false_fraction": 0.0,
+        "unsupported_predictions": 0,
+        "unsupported_fraction": 0.0,
+        "visible_cells": 69270,
+        "visible_surface_recall": 0.9830662624512776,
+        "localization_p90_m": null,
+        "exact_overlap_height_accuracy": 0.0,
+        "exact_overlap_height_cells": 0,
+        "per_height": {
+          "2": {
+            "predicted": 0,
+            "truth": 207,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "3": {
+            "predicted": 0,
+            "truth": 3732,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "4": {
+            "predicted": 0,
+            "truth": 0,
+            "precision": 0.0,
+            "recall": null,
+            "absent_truth": true
+          }
+        },
+        "pass_gate": false
+      }
+    },
+    {
+      "group": "E0",
+      "role": "training",
+      "model": {
+        "predicted_risk_cells": 10012,
+        "true_visible_risk_cells": 8752,
+        "matched_predicted": 9903,
+        "matched_truth": 8746,
+        "precision": 0.9891130643228127,
+        "recall": 0.9993144424131627,
+        "ground_false_cells": 1096,
+        "ground_cells": 68608,
+        "ground_false_fraction": 0.01597481343283582,
+        "unsupported_predictions": 13,
+        "unsupported_fraction": 0.0012984418697562924,
+        "visible_cells": 77360,
+        "visible_surface_recall": 0.9996509824198552,
+        "localization_p90_m": 0.1,
+        "exact_overlap_height_accuracy": 0.9584120982986768,
+        "exact_overlap_height_cells": 8464,
+        "per_height": {
+          "2": {
+            "predicted": 7099,
+            "truth": 6100,
+            "precision": 0.9883082124242851,
+            "recall": 0.9934426229508196,
+            "absent_truth": false
+          },
+          "3": {
+            "predicted": 509,
+            "truth": 495,
+            "precision": 0.825147347740668,
+            "recall": 0.6444444444444445,
+            "absent_truth": false
+          },
+          "4": {
+            "predicted": 2404,
+            "truth": 2157,
+            "precision": 0.9958402662229617,
+            "recall": 1.0,
+            "absent_truth": false
+          }
+        },
+        "pass_gate": true
+      },
+      "all_unknown": {
+        "predicted_risk_cells": 0,
+        "true_visible_risk_cells": 8752,
+        "matched_predicted": 0,
+        "matched_truth": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ground_false_cells": 0,
+        "ground_cells": 68608,
+        "ground_false_fraction": 0.0,
+        "unsupported_predictions": 0,
+        "unsupported_fraction": 0.0,
+        "visible_cells": 77360,
+        "visible_surface_recall": 0.0,
+        "localization_p90_m": null,
+        "exact_overlap_height_accuracy": 0.0,
+        "exact_overlap_height_cells": 0,
+        "per_height": {
+          "2": {
+            "predicted": 0,
+            "truth": 6100,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "3": {
+            "predicted": 0,
+            "truth": 495,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "4": {
+            "predicted": 0,
+            "truth": 2157,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          }
+        },
+        "pass_gate": false
+      },
+      "train_frequency_map": {
+        "predicted_risk_cells": 0,
+        "true_visible_risk_cells": 8752,
+        "matched_predicted": 0,
+        "matched_truth": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ground_false_cells": 0,
+        "ground_cells": 68608,
+        "ground_false_fraction": 0.0,
+        "unsupported_predictions": 0,
+        "unsupported_fraction": 0.0,
+        "visible_cells": 77360,
+        "visible_surface_recall": 0.9897104446742503,
+        "localization_p90_m": null,
+        "exact_overlap_height_accuracy": 0.0,
+        "exact_overlap_height_cells": 0,
+        "per_height": {
+          "2": {
+            "predicted": 0,
+            "truth": 6100,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "3": {
+            "predicted": 0,
+            "truth": 495,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "4": {
+            "predicted": 0,
+            "truth": 2157,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          }
+        },
+        "pass_gate": false
+      }
+    },
+    {
+      "group": "E1",
+      "role": "fit_excluded_development",
+      "model": {
+        "predicted_risk_cells": 11476,
+        "true_visible_risk_cells": 6415,
+        "matched_predicted": 3184,
+        "matched_truth": 2152,
+        "precision": 0.277448588358313,
+        "recall": 0.3354637568199532,
+        "ground_false_cells": 2780,
+        "ground_cells": 39461,
+        "ground_false_fraction": 0.07044930437647297,
+        "unsupported_predictions": 6159,
+        "unsupported_fraction": 0.5366852561868247,
+        "visible_cells": 45876,
+        "visible_surface_recall": 0.9583660301682797,
+        "localization_p90_m": 1.264911064067352,
+        "exact_overlap_height_accuracy": 0.9960975609756098,
+        "exact_overlap_height_cells": 1025,
+        "per_height": {
+          "2": {
+            "predicted": 798,
+            "truth": 160,
+            "precision": 0.041353383458646614,
+            "recall": 0.0625,
+            "absent_truth": false
+          },
+          "3": {
+            "predicted": 10678,
+            "truth": 6255,
+            "precision": 0.2927514515826934,
+            "recall": 0.33685051958433254,
+            "absent_truth": false
+          },
+          "4": {
+            "predicted": 0,
+            "truth": 0,
+            "precision": 0.0,
+            "recall": null,
+            "absent_truth": true
+          }
+        },
+        "pass_gate": false
+      },
+      "all_unknown": {
+        "predicted_risk_cells": 0,
+        "true_visible_risk_cells": 6415,
+        "matched_predicted": 0,
+        "matched_truth": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ground_false_cells": 0,
+        "ground_cells": 39461,
+        "ground_false_fraction": 0.0,
+        "unsupported_predictions": 0,
+        "unsupported_fraction": 0.0,
+        "visible_cells": 45876,
+        "visible_surface_recall": 0.0,
+        "localization_p90_m": null,
+        "exact_overlap_height_accuracy": 0.0,
+        "exact_overlap_height_cells": 0,
+        "per_height": {
+          "2": {
+            "predicted": 0,
+            "truth": 160,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "3": {
+            "predicted": 0,
+            "truth": 6255,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "4": {
+            "predicted": 0,
+            "truth": 0,
+            "precision": 0.0,
+            "recall": null,
+            "absent_truth": true
+          }
+        },
+        "pass_gate": false
+      },
+      "train_frequency_map": {
+        "predicted_risk_cells": 0,
+        "true_visible_risk_cells": 6415,
+        "matched_predicted": 0,
+        "matched_truth": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "ground_false_cells": 0,
+        "ground_cells": 39461,
+        "ground_false_fraction": 0.0,
+        "unsupported_predictions": 0,
+        "unsupported_fraction": 0.0,
+        "visible_cells": 45876,
+        "visible_surface_recall": 0.9688508152410846,
+        "localization_p90_m": null,
+        "exact_overlap_height_accuracy": 0.0,
+        "exact_overlap_height_cells": 0,
+        "per_height": {
+          "2": {
+            "predicted": 0,
+            "truth": 160,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "3": {
+            "predicted": 0,
+            "truth": 6255,
+            "precision": 0.0,
+            "recall": 0.0,
+            "absent_truth": false
+          },
+          "4": {
+            "predicted": 0,
+            "truth": 0,
+            "precision": 0.0,
+            "recall": null,
+            "absent_truth": true
+          }
+        },
+        "pass_gate": false
+      }
+    }
+  ],
+  "retain_source": false,
+  "fit": 1,
+  "physics": 0,
+  "limits": "frame-cell instances, not independent trials; one-cell Chebyshev tolerance for precision/recall, Euclidean for localization; labels are finite visible surfaces not hidden volume/full real free space; E1 researcher-seen development only; ground prediction not free; no navigation"
+}

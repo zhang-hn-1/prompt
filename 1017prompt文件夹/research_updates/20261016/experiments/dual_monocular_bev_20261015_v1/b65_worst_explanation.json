@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "eye": "left",
+      "inferred_obstacle_points": 12008,
+      "true_ground": 10075,
+      "pose_point_p90_m": 0.08704054684818419
+    },
+    {
+      "eye": "right",
+      "inferred_obstacle_points": 19024,
+      "true_ground": 10339,
+      "pose_point_p90_m": 0.08652068630342429
+    }
+  ],
+  "conflicts": [
+    {
+      "overlap_queries": 9639,
+      "conflict_queries": 0
+    },
+    {
+      "overlap_queries": 7604,
+      "conflict_queries": 0
+    }
+  ],
+  "scope": "GT-only same-pixel classification diagnostic, post-selected B65 minimum precision among frames with >=20 predicted cells; no model inference."
+}

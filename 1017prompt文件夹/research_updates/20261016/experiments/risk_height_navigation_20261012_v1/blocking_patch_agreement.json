@@ -1,0 +1,33 @@
+{
+  "scope": "Bounded two source exposures, existing7pxNCC diagnostic cutoff. Not source or navigation admission; no sweep; no online truth.",
+  "rows": [
+    {
+      "frame": 230,
+      "points": 445,
+      "blocking_points": 78,
+      "blocking_ncc_quantiles": [
+        0.6699488162994385,
+        0.909302943944931,
+        0.9848520755767822,
+        0.9908040344715119,
+        0.9950138926506042
+      ],
+      "blocking_ncc_ge_0p9": 72,
+      "all_ncc_ge_0p9": 235
+    },
+    {
+      "frame": 235,
+      "points": 387,
+      "blocking_points": 41,
+      "blocking_ncc_quantiles": [
+        0.8593204021453857,
+        0.9669378995895386,
+        0.985710859298706,
+        0.9919735789299011,
+        0.9947230815887451
+      ],
+      "blocking_ncc_ge_0p9": 39,
+      "all_ncc_ge_0p9": 199
+    }
+  ]
+}

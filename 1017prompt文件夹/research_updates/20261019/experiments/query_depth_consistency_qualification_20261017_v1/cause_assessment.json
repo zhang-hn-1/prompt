@@ -1,0 +1,33 @@
+{
+  "utc": "2026-10-17T10:59:30.633117+00:00",
+  "scope": "One bounded cause interpretation of the newly saved full contingency table; no rerun/intervention",
+  "coverage_failure": {
+    "E0": {
+      "overall_known": 0.734399113608484,
+      "static_negative_proxy_known": 0.6311584553928096,
+      "invalid": 3407,
+      "finite_margin": 23441
+    },
+    "E1": {
+      "overall_known": 0.6910620962385623,
+      "static_negative_proxy_known": 0.20509473197781886,
+      "invalid": 362619,
+      "finite_margin": 528589
+    }
+  },
+  "target_consumer_mismatch": {
+    "E0": {
+      "negative_labels": 57985,
+      "negative_labels_in_static_positive_proxy": 56344,
+      "fraction": 0.9716995774769337
+    },
+    "E1": {
+      "negative_labels": 38812,
+      "negative_labels_in_static_positive_proxy": 25510,
+      "fraction": 0.6572709471297536
+    }
+  },
+  "inference": "Two distinct failures: unknown reference/margin coverage and geometric-supervision mismatch with coarse risk-cell correctness. They are not fixed by more iterations, a different classifier, or threshold sweep. This does not prove the target unlearnable or all learned risk methods impossible.",
+  "decision": "Close this fixed query-depth supervision before fit; no model, source filtering or current-risk change.",
+  "next": "Only one bounded target/consumer design check: source-specific current risk-cell support, aligned with existing cell-distance teacher while keeping boundary UNKNOWN and other same-cell/old sources. Compare against old global static-cell prior head explicitly; no new learner if identical. Determine whether a genuinely different consumer and complete uncertainty-aware teacher contract exist before any data computation/fit/collection. Existing v111 longterm-only and current query-depth target stay closed; no replay/source/nav or new oracle by default."
+}

@@ -1,0 +1,81 @@
+{
+  "utc": "2026-10-17T09:47:46.246642+00:00",
+  "question": "Before collecting new learning data, does perfect existing three-way risk/margin teacher give a viable persistent-entry consumer while all current/recent risk stays unchanged?",
+  "single_change": "O gates ONLY persistent admission on original positive teacher; B always admits after two capture epochs. Negative and UNKNOWN are separate labels, neither creates current/recent deletion or free. Privileged necessary diagnostic, never deployed.",
+  "reason": "v111 E0 lacks persistent negatives and E1 UNKNOWN is deliberate margin. Proposed data contract must model abstention explicitly; do not relabel UNKNOWN as negative or pretend old binary qualification passed.",
+  "consumer": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/consumer_repaired.py",
+  "feature_seal": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json",
+  "label_result": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/qualification_result.json",
+  "sequences": [
+    {
+      "name": "E0",
+      "old_B_maps": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/view_supported_memory_20261017_v1/maps",
+      "occupancy": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+      "target_root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/contact_boundary_source_20261016_v1/e0_recovery_qualification",
+      "prior_result": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/view_supported_memory_20261017_v1/result.json"
+    },
+    {
+      "name": "E1B",
+      "old_B_maps": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/maps",
+      "occupancy": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+      "policy_records": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/policy_records.json",
+      "prior_result": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_result.json",
+      "supported_result": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/supported_memory_result.json"
+    },
+    {
+      "name": "E1A",
+      "old_B_maps": null,
+      "occupancy": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+      "policy_records": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/e1_run/policy_records.json",
+      "prior_result": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/e1_result.json",
+      "supported_result": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/supported_memory_result.json"
+    }
+  ],
+  "domain": "All470active original exposures; E0 110 acquisition evaluations and E1B/E1A900 each policy times. E1A/B same development scene, not independent validation. All existing source supported blind domain retained.",
+  "teacher": "Original<=.10m positive,>=.20m negative,between/outsideUNKNOWN, byte-identical archived labels. Original .15m map/blind evaluation unchanged.",
+  "necessary_gates": {
+    "each_sequence_false_cell_seconds_reduction_min": 0.2,
+    "each_sequence_blind_missing_increase_max": 0.05,
+    "current_recent_discarded": 0,
+    "all_maps_unknown_or_risk": true,
+    "exposures": 470,
+    "original_B_policy_maps_exact": 1010
+  },
+  "budget": {
+    "dispatch_cap": 1,
+    "recovery_cap": 1,
+    "timeout_s": 300,
+    "fit_cap": 0,
+    "learned_inference_cap": 0,
+    "source_regeneration_cap": 0,
+    "physics_cap": 0,
+    "navigation_cap": 0
+  },
+  "stop": "Any necessary gate failure stops this fixed positive/negative/margin-abstention proposal before new acquisition/fit. No band/threshold/TTL/role sweep. A pass authorizes data-contract design only, not fitted or online qualification.",
+  "input_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/protocol.json": "15b8d0984e6c9cf168e1119b8a57f8415c6498672f53d3c766b97788718acfad",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/feature_seal.json": "038b9fbee4fe89d7f14221df397ab71f669cd483e77ab42e621acc8060b8e439",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/qualification_result.json": "569911c7b225ea2db265d4063ef045e79acd0278dd9350d3212c56a1cbd27e03",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/label_seal.json": "4c4fc911103a27ad538d2f3e7686eedf5a05ca476225d3ff1bd60de66f7b19df",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/artifact_manifest_post_close.json": "4a78a7dbf7cfbab1ea958ab15346d0442efca92d8faa6eef86ad16703a05745a",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/interface_repair_result.json": "a981d20ab7fcabd8217444c9b1f662b29f409c6125ce42fa30c9d4c368c3b24e",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz": "547dd73c52b45f9cc1aa8dca561c779349391f6ecef06ef59026921284b467da",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/view_supported_memory_20261017_v1/result.json": "788304887885b20722f21e90fbd17cd629795fbcc431bea9195acc60c0e49f3f",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_result.json": "8486298aa67083ae30ad7368a2e6d70a8fc909ab534447495bf695c92a1431e0",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/supported_memory_result.json": "15c02dc4d48a2d64889c6a0e76ec22f6a436c764d4298c712a7664d12ae5af68",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/four_camera_weak_baseline_20261017_v1/e1_run/policy_records.json": "29006ee8f15d888c393a5e9ed4fd7c5f2d876d18bf436702b261139bd81b0d5f",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/e1_result.json": "c8d222dcf06c03eb90de52f566428f9a50842a6c1879c817a8f7b59c6e07d3f4",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/supported_memory_result.json": "91061afe7ab8d09f1b49925f6c71845c220ad61692fd189ff39a2d9086dc4a03",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/current_exposure_baseline_navigation_20261017_v1/e1_run/policy_records.json": "82cca57644aac65199f6fbabe5bf54edf62bde52b30cbf5f7dc94fdff17dd069"
+  },
+  "code_sha256": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_abstention_contract_20261017_v1/replay.py": "b3a85b0209b0b75081e897d6a0f02267ca4f7201b83381fb28fa56e50700ecb5",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_abstention_contract_20261017_v1/supervise.py": "34b0e8e0ea5ec623c0b29b9c95e6b1d065a787928d8fd76ea5fc06660a699365",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_abstention_contract_20261017_v1/stage.py": "9bf89c6b997fd281c6ac50e79df9652472682fce460b8b33f6dad7d5c9a18ab3",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_abstention_contract_20261017_v1/score.py": "d41d52cbc5245c8703f06b8092fa8a6c0a1d96eb9ae9a7ac00fe8222e4373666",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/persistent_entry_data_qualification_20261017_v1/consumer_repaired.py": "cfcf4de59b327bed52636df963c3a10eb6f60b05c2acbdc1813c739c3725c424"
+  },
+  "original_v111_unchanged": true,
+  "old_budgets_reopened": false
+}

@@ -1,0 +1,89 @@
+{
+  "schema_version": "round5_measurement_protocol_v1",
+  "created_before_new_collection": true,
+  "round4_decision_is_immutable": true,
+  "round4_reanalysis_role": "development_evidence_not_fresh_heldout",
+  "coordinates": {
+    "root_prim": "/World/BallRobot",
+    "quaternion_order": "wxyz",
+    "world_up_axis": "+z",
+    "angles": "radians",
+    "position_frame": "world_xy_at_articulation_root",
+    "linear_velocity_frame": "world",
+    "angular_velocity_frame": "world",
+    "course_definition": "atan2(world_vy, world_vx)",
+    "local_transition_frame": "fixed_start_navigation_yaw_frame"
+  },
+  "time_alignment": {
+    "physics_hz": 50,
+    "dt_s": 0.02,
+    "sample_semantics": "requested_smoothed_and_final_commands_are_applied_over_the_preceding_tick_and_the_state_is_sampled_after_that_tick",
+    "transition_start_semantics": "last_precondition_post_step_state_before_the_first_transition_command_tick"
+  },
+  "analysis_window": {
+    "preferred_phase": "steer",
+    "maximum_duration_s": 3.0,
+    "minimum_duration_s": 1.0,
+    "minimum_path_length_m": 0.15,
+    "minimum_planar_speed_m_s": 0.05,
+    "maximum_auxiliary_median_target_error_rad": 0.035,
+    "maximum_auxiliary_p95_abs_velocity_rad_s": 0.04,
+    "maximum_speed_coefficient_of_variation": 0.15,
+    "maximum_abs_world_z_rate_trend_rad_s2": 0.06,
+    "oscillation_min_course_rate_peak_to_peak_rad_s": 0.20,
+    "oscillation_min_curvature_interdecile_range_1_m": 0.75,
+    "derivative_method": "numpy_gradient_on_unwrapped_angles",
+    "geometry_cross_checks": [
+      "velocity_acceleration_cross_over_speed_cubed",
+      "course_change_over_arc_length",
+      "local_three_point_geometry"
+    ]
+  },
+  "finite_horizons_s": [0.5, 1.5, 3.0, 6.0],
+  "t90": {
+    "fraction": 0.9,
+    "report_relative_to_requested_target": true,
+    "report_relative_to_observed_final": true,
+    "request_change_and_final_command_change_are_separate_origins": true
+  },
+  "candidate": {
+    "name": "M1_round5_linear_state_delta_v1",
+    "type": "ridge_regularized_linear_recursive_state_delta",
+    "ridge_lambda": 0.0001,
+    "state": [
+      "main_joint_velocity_rad_s",
+      "auxiliary_joint_rad",
+      "auxiliary_joint_velocity_rad_s",
+      "body_forward_velocity_m_s",
+      "body_lateral_velocity_m_s",
+      "world_z_angular_velocity_rad_s",
+      "final_main_rad_s",
+      "final_auxiliary_rad"
+    ],
+    "known_inputs": [
+      "requested_main_rad_s",
+      "requested_auxiliary_rad"
+    ],
+    "forbidden_inputs": [
+      "future_measured_joint_state",
+      "future_measured_velocity",
+      "future_final_supervisor_action"
+    ],
+    "rollout": "initialize_once_then_recursive_without_truth_reset"
+  },
+  "candidate_gates": {
+    "minimum_valid_heldout_sequences": 4,
+    "minimum_endpoint_mae_improvement_fraction_over_m0": 0.20,
+    "maximum_endpoint_position_mae_m_all_horizons": 0.20,
+    "maximum_endpoint_position_p90_m_at_6s": 0.40,
+    "maximum_root_heading_change_mae_rad": 0.35,
+    "maximum_repeat_endpoint_difference_m_at_6s": 0.05,
+    "maximum_repeat_heading_difference_rad_at_6s": 0.10,
+    "basis": "errors must be materially below the roughly 0.54 m frozen-reference cross-track RMS; these are model-development tolerances and not safety-clearance claims"
+  },
+  "reference_progress": {
+    "abnormal_jump_threshold_m_per_control_tick": 0.50,
+    "report_recorded_and_independent_segment_projection": true
+  }
+}
+

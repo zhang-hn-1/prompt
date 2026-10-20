@@ -1,0 +1,33 @@
+{
+  "question": "Can fixed original current SGBM query footprint support accurate visible-obstacle reconstruction if finite distance residuals were perfect?",
+  "novelty": "not scalar disparity median calibration (closed20261008), not binary >.15 error confidence classification, not competing match/cost, not RGB prior network; offline feasibility of arbitrary per-query metric correction before any fit",
+  "groups": [
+    "H",
+    "E0",
+    "E1",
+    "B54",
+    "C54"
+  ],
+  "role": "all seen development",
+  "domain": "original sensor_packets query IDs, no new query/matching/hole filling; only finite GT .5–3m scored, nohit/out-of-range unknown",
+  "arms": [
+    "ideal range + fixed native height .05..1.5 zero-uncertainty proxy",
+    "ideal range + ideal authored-compatible pixel categories optimistic diagnostic"
+  ],
+  "consumer": "same pinhole/nativeIMU and category raster4points; fixed-height risk only unknown elsewhere; positive memory10s/twoepochs with original group viewpoint .1, no clearing/free",
+  "gates": {
+    "precision": 0.9,
+    "recall": 0.8,
+    "ground_false_max": 0.05,
+    "unsupported_max": 0.1,
+    "localization_p90_max": 0.15,
+    "all_five_required": true
+  },
+  "scope": "offline oracle prerequisite, not prediction/nav or mathematical upper bound. Fixed-height proxy omits texture and uncertainty, not exact original whole pipeline. Labels and GT never online.",
+  "budget": {
+    "fit_cap": 0,
+    "physical_cap": 0,
+    "recovery_cap": 1
+  },
+  "stop": "full oracle failure closes fixed-query residual target before training; no threshold/source/domain rescue"
+}

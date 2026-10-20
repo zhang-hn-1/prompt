@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-17T08:53:57.267395+00:00",
+  "reads": {
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/generate_benchmark_tasks.py": "10fd42947ee48d8f45c9ff359fe98dfdb5a43d1b8b68e425c3f448c5ec601e8b",
+    "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/scripts/bev_ground_truth.py": "818e7c5cf2fc64081861dae3b173e68c5765cae8fd18859eb618aa8be63f8a67"
+  },
+  "scope": "Only canonical teacher metadata/export/rasterization direct chain, no scene launch or new labels.",
+  "evidence": "bodyband is vertical maximum of analytic collider Cylinder/Sphere footprints over robot height, rasterized by cell centers at.1m. Existing distances already recomputed exactly.",
+  "cause": "All eligible UNKNOWN is intentionally .10-.20m label margin, not missing image, teacher-domain hole or failed nearest-neighbor query. Reading more geometry cannot change this frozen distance-band definition.",
+  "decision": "No margin narrowing, class relabeling or role swapping; current data protocol remains failed. Need a separately frozen data/teacher design before any fit. Coarse2D labels are not exact render meshes or collision safety.",
+  "new_labels": 0,
+  "fit": 0,
+  "physics": 0
+}

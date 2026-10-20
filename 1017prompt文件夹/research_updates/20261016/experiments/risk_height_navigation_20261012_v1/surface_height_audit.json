@@ -1,0 +1,145 @@
+{
+  "scope": "Only saved accepted surface points; renderer same-frame truth for offline qualification; floor bandabsZ<=.03 is scoring tolerance, not an online gate. Sigma is existing1pixel approximation, not calibrated confidence. Multiple points/frames are not independent samples.",
+  "runs": [
+    {
+      "name": "original",
+      "counts": {
+        "accepted": 128,
+        "truth_valid": 82,
+        "truth_floor": 0,
+        "truth_obstacle": 82,
+        "interval_ambiguous": 0,
+        "ambiguous_truth_floor": 0,
+        "ambiguous_truth_obstacle": 0
+      },
+      "largest_false_floor_frames": [
+        {
+          "frame": "frame_135",
+          "n": 12,
+          "floor": 0,
+          "obstacle": 8,
+          "ambiguous": 0
+        },
+        {
+          "frame": "frame_165",
+          "n": 51,
+          "floor": 0,
+          "obstacle": 30,
+          "ambiguous": 0
+        },
+        {
+          "frame": "frame_170",
+          "n": 4,
+          "floor": 0,
+          "obstacle": 1,
+          "ambiguous": 0
+        },
+        {
+          "frame": "frame_195",
+          "n": 61,
+          "floor": 0,
+          "obstacle": 43,
+          "ambiguous": 0
+        }
+      ]
+    },
+    {
+      "name": "forward",
+      "counts": {
+        "accepted": 77627,
+        "truth_valid": 61915,
+        "truth_floor": 4122,
+        "truth_obstacle": 57513,
+        "interval_ambiguous": 3437,
+        "ambiguous_truth_floor": 2558,
+        "ambiguous_truth_obstacle": 714
+      },
+      "largest_false_floor_frames": [
+        {
+          "frame": "frame_365",
+          "n": 1317,
+          "floor": 961,
+          "obstacle": 268,
+          "ambiguous": 549
+        },
+        {
+          "frame": "frame_265",
+          "n": 2499,
+          "floor": 718,
+          "obstacle": 1482,
+          "ambiguous": 428
+        },
+        {
+          "frame": "frame_370",
+          "n": 904,
+          "floor": 643,
+          "obstacle": 156,
+          "ambiguous": 386
+        },
+        {
+          "frame": "frame_260",
+          "n": 1840,
+          "floor": 375,
+          "obstacle": 1230,
+          "ambiguous": 344
+        },
+        {
+          "frame": "frame_270",
+          "n": 2055,
+          "floor": 254,
+          "obstacle": 1481,
+          "ambiguous": 257
+        }
+      ]
+    },
+    {
+      "name": "compact",
+      "counts": {
+        "accepted": 137889,
+        "truth_valid": 116049,
+        "truth_floor": 6053,
+        "truth_obstacle": 109027,
+        "interval_ambiguous": 13238,
+        "ambiguous_truth_floor": 5980,
+        "ambiguous_truth_obstacle": 6332
+      },
+      "largest_false_floor_frames": [
+        {
+          "frame": "frame_320",
+          "n": 2881,
+          "floor": 1611,
+          "obstacle": 973,
+          "ambiguous": 1687
+        },
+        {
+          "frame": "frame_225",
+          "n": 2668,
+          "floor": 1353,
+          "obstacle": 1040,
+          "ambiguous": 1410
+        },
+        {
+          "frame": "frame_075",
+          "n": 3199,
+          "floor": 1298,
+          "obstacle": 1523,
+          "ambiguous": 1500
+        },
+        {
+          "frame": "frame_230",
+          "n": 1925,
+          "floor": 707,
+          "obstacle": 912,
+          "ambiguous": 765
+        },
+        {
+          "frame": "frame_325",
+          "n": 1831,
+          "floor": 474,
+          "obstacle": 1027,
+          "ambiguous": 528
+        }
+      ]
+    }
+  ]
+}

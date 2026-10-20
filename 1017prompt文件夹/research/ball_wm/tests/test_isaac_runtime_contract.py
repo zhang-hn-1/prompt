@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 from dataclasses import replace
+import math
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -394,6 +395,7 @@ def test_reset_state_zero_is_identical_after_variable_camera_priming(
     expected_diagnostic_fields = {
         "raw_command_target",
         "clipped_target",
+        "smoothed_target",
         "applied_action",
         "joint_position_rad",
         "joint_velocity_rad_s",
@@ -429,6 +431,7 @@ def test_reset_state_zero_is_identical_after_variable_camera_priming(
         np.testing.assert_array_equal(trace["joint_velocity_rad_s"][0], np.zeros(3))
         np.testing.assert_array_equal(trace["raw_command_target"][0], np.zeros(2))
         np.testing.assert_array_equal(trace["clipped_target"][0], np.zeros(2))
+        np.testing.assert_array_equal(trace["smoothed_target"][0], np.zeros(2))
         np.testing.assert_array_equal(trace["applied_action"][0], np.zeros(2))
         np.testing.assert_array_equal(trace["simulation_time_s"], [0.0])
         np.testing.assert_array_equal(trace["physics_step_index"], [0])
@@ -665,6 +668,86 @@ def test_runtime_config_rejects_nonpositive_nonfinite_or_formal_gain_overrides(
         IsaacRuntimeConfig(**base, diagnostic_auxiliary_kp=123.0)
 
 
+def test_runtime_config_defaults_to_no_auxiliary_velocity_override(tmp_path: Path):
+    config = IsaacRuntimeConfig(
+        scene_root=tmp_path,
+        contract_path=tmp_path / "contract.yaml",
+        gui=False,
+        record_video=False,
+    )
+
+    assert config.diagnostic_auxiliary_target_rate_rad_s is None
+    assert config.diagnostic_auxiliary_velocity_limit_rad_s is None
+
+
+def test_runtime_config_accepts_auxiliary_velocity_override_only_in_diagnostics(
+    tmp_path: Path,
+):
+    config = IsaacRuntimeConfig(
+        scene_root=tmp_path,
+        contract_path=tmp_path / "contract.yaml",
+        gui=False,
+        record_video=False,
+        diagnostic_open_plane=True,
+        diagnostic_auxiliary_target_rate_rad_s=math.radians(20.0),
+        diagnostic_auxiliary_velocity_limit_rad_s=0.25,
+    )
+
+    assert config.diagnostic_auxiliary_target_rate_rad_s == pytest.approx(
+        math.radians(20.0)
+    )
+    assert config.diagnostic_auxiliary_velocity_limit_rad_s == pytest.approx(0.25)
+
+    with pytest.raises(ValueError, match="diagnostic_open_plane"):
+        IsaacRuntimeConfig(
+            scene_root=tmp_path,
+            contract_path=tmp_path / "contract.yaml",
+            gui=False,
+            record_video=False,
+            diagnostic_auxiliary_velocity_limit_rad_s=0.25,
+        )
+
+
+def test_runtime_config_accepts_formal_auxiliary_velocity_override(tmp_path: Path):
+    config = IsaacRuntimeConfig(
+        scene_root=tmp_path,
+        contract_path=tmp_path / "contract.yaml",
+        gui=False,
+        record_video=False,
+        auxiliary_velocity_limit_rad_s=0.30,
+    )
+
+    assert config.diagnostic_open_plane is False
+    assert config.auxiliary_velocity_limit_rad_s == pytest.approx(0.30)
+
+
+@pytest.mark.parametrize(
+    "field,value",
+    [
+        ("diagnostic_auxiliary_target_rate_rad_s", 0.0),
+        ("diagnostic_auxiliary_velocity_limit_rad_s", -1.0),
+        ("diagnostic_auxiliary_velocity_limit_rad_s", np.nan),
+    ],
+)
+def test_runtime_config_rejects_invalid_auxiliary_velocity_overrides(
+    tmp_path: Path, field: str, value: object
+):
+    with pytest.raises(ValueError, match="finite and positive"):
+        IsaacRuntimeConfig(
+            scene_root=tmp_path,
+            contract_path=tmp_path / "contract.yaml",
+            gui=False,
+            record_video=False,
+            diagnostic_open_plane=True,
+            diagnostic_auxiliary_target_rate_rad_s=0.25
+            if field != "diagnostic_auxiliary_target_rate_rad_s"
+            else value,
+            diagnostic_auxiliary_velocity_limit_rad_s=0.25
+            if field != "diagnostic_auxiliary_velocity_limit_rad_s"
+            else value,
+        )
+
+
 def test_runtime_config_accepts_diagnostic_trace_and_gain_overrides(tmp_path: Path):
     config = IsaacRuntimeConfig(
         scene_root=tmp_path,
@@ -820,6 +903,7 @@ def test_diagnostic_execute_records_post_step_50hz_truth_and_copies_arrays():
         np.zeros(2, dtype=np.float32),
         np.zeros(2, dtype=np.float32),
         np.zeros(2, dtype=np.float32),
+        np.zeros(2, dtype=np.float32),
         action_block_index=0,
         physics_step_in_block=0,
     )
@@ -830,6 +914,7 @@ def test_diagnostic_execute_records_post_step_50hz_truth_and_copies_arrays():
     assert set(trace) >= {
         "raw_command_target",
         "clipped_target",
+        "smoothed_target",
         "applied_action",
         "joint_position_rad",
         "joint_velocity_rad_s",

@@ -1,0 +1,28 @@
+{
+  "service": "ball-evidence-rgb-predict-20261018.service",
+  "samples": [
+    {
+      "utc": "2026-10-17T22:20:40.637945+00:00",
+      "cgroup": {
+        "memory.max": "8589934592",
+        "memory.swap.max": "0",
+        "memory.peak": "3893751808",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+        "memory.swap.peak": "0",
+        "cgroup.procs": "473939\n473940"
+      },
+      "systemd_show": "MainPID=473939\nExecMainStatus=0\nMemoryMax=8589934592\nMemorySwapMax=0\nActiveState=active\n"
+    },
+    {
+      "utc": "2026-10-17T22:24:38.332335+00:00",
+      "cgroup": {
+        "memory.max": "8589934592",
+        "memory.swap.max": "0",
+        "memory.peak": "3896905728",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0",
+        "memory.swap.peak": "0",
+        "cgroup.procs": "473939\n473940"
+      }
+    }
+  ]
+}

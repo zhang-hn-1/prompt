@@ -1,0 +1,29 @@
+{
+  "complete": true,
+  "rows_verified": 180,
+  "generation_identities_verified": 365,
+  "teacher_identities_verified": 3,
+  "saved_vote_independent_homogeneous_inverse_exact": true,
+  "all_cell_reductions_exact": true,
+  "all_teacher_dispute_counts_exact": true,
+  "total_camera_anchor_queries": 739048,
+  "camera_anchor_input_reasons": {
+    "anchor_outside_axial_range": 444522,
+    "outside_native_FOV": 147319,
+    "CAD": 15596,
+    "matching_or_depth_invalid": 112738,
+    "usable": 18873
+  },
+  "first_event_camera_anchor_reasons": {
+    "anchor_outside_axial_range": 154,
+    "outside_native_FOV": 0,
+    "CAD": 3,
+    "matching_or_depth_invalid": 73,
+    "usable": 78
+  },
+  "source_seal_sha256": "223e49da27f3d78267298aa87f55625e33568b308f52983d32e6ad38b2366026",
+  "audit_source_sha256": "28d4410fd6b53641fff0ff87e73c7cccc0e31143486e20b3378713d9b968e2be",
+  "no_output_regeneration": true,
+  "fit": 0,
+  "physics": 0
+}

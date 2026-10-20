@@ -1,0 +1,25 @@
+{
+  "utc": "2026-10-17T12:24:30.872516+00:00",
+  "weight_sha256": "4c91477c2c28e4c62461b3d072460a83b27ef769f2090782d720528a052fe177",
+  "protocol_sha256": "932bbc724da0f9db758031bc4eb78f90bc7d4b5785304273d0ab119149cb1766",
+  "fit_dataset_receipt_sha256": "59d9c5012ff45c5d5a9ea69eb24178e589607b133b778fbdccb4b373e1155c67",
+  "fit_sequences": [
+    "E0"
+  ],
+  "dev_sequences": [
+    "E1B",
+    "E1A"
+  ],
+  "E1A_B_one_seen_development_scene": true,
+  "heldout_acquired": false,
+  "heldout_pixels_or_teacher_opened": false,
+  "optimizer_iterations": 67,
+  "objective_evaluations": 71,
+  "final_objective": 295.2460003047548,
+  "fit_converged": true,
+  "optimizer_status": 0,
+  "optimizer_message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+  "fit_used": 1,
+  "fit_source_rows": 2038,
+  "fit_consistency_score_rows": 2038
+}

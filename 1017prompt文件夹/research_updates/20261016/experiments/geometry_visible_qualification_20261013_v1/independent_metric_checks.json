@@ -1,0 +1,124 @@
+{
+  "rows": [
+    {
+      "group": "H",
+      "frames": 181,
+      "target_exact_identity": true,
+      "risk_subset_nesting": true,
+      "metrics_match_official": true,
+      "metrics": {
+        "potential": {
+          "true_visible_risk_cells": 3939,
+          "predicted_risk_cells": 1912,
+          "matched_predicted": 1912,
+          "matched_truth": 2055,
+          "precision": 1.0,
+          "recall": 0.5217060167555218,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.4854023863924854
+        },
+        "verified": {
+          "true_visible_risk_cells": 3939,
+          "predicted_risk_cells": 1823,
+          "matched_predicted": 1823,
+          "matched_truth": 2012,
+          "precision": 1.0,
+          "recall": 0.5107895404925108,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.4628078192434628
+        },
+        "native": {
+          "true_visible_risk_cells": 3939,
+          "predicted_risk_cells": 5373,
+          "matched_predicted": 4214,
+          "matched_truth": 3939,
+          "precision": 0.7842918295179602,
+          "recall": 1.0,
+          "localization_p90_m": 0.5,
+          "exact_cell_recall": 0.9961919268849961
+        }
+      }
+    },
+    {
+      "group": "E0",
+      "frames": 181,
+      "target_exact_identity": true,
+      "risk_subset_nesting": true,
+      "metrics_match_official": true,
+      "metrics": {
+        "potential": {
+          "true_visible_risk_cells": 8752,
+          "predicted_risk_cells": 5984,
+          "matched_predicted": 5984,
+          "matched_truth": 6993,
+          "precision": 1.0,
+          "recall": 0.7990173674588665,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.6837294332723949
+        },
+        "verified": {
+          "true_visible_risk_cells": 8752,
+          "predicted_risk_cells": 5689,
+          "matched_predicted": 5689,
+          "matched_truth": 6904,
+          "precision": 1.0,
+          "recall": 0.7888482632541134,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.6500228519195612
+        },
+        "native": {
+          "true_visible_risk_cells": 8752,
+          "predicted_risk_cells": 9686,
+          "matched_predicted": 8757,
+          "matched_truth": 8752,
+          "precision": 0.9040883749741896,
+          "recall": 1.0,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.9977148080438757
+        }
+      }
+    },
+    {
+      "group": "E1",
+      "frames": 181,
+      "target_exact_identity": true,
+      "risk_subset_nesting": true,
+      "metrics_match_official": true,
+      "metrics": {
+        "potential": {
+          "true_visible_risk_cells": 6415,
+          "predicted_risk_cells": 3516,
+          "matched_predicted": 3516,
+          "matched_truth": 4030,
+          "precision": 1.0,
+          "recall": 0.6282151208106002,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.5480904130943102
+        },
+        "verified": {
+          "true_visible_risk_cells": 6415,
+          "predicted_risk_cells": 3393,
+          "matched_predicted": 3393,
+          "matched_truth": 4013,
+          "precision": 1.0,
+          "recall": 0.6255650818394388,
+          "localization_p90_m": 0.0,
+          "exact_cell_recall": 0.5289166017147311
+        },
+        "native": {
+          "true_visible_risk_cells": 6415,
+          "predicted_risk_cells": 7679,
+          "matched_predicted": 6729,
+          "matched_truth": 6415,
+          "precision": 0.8762859747362938,
+          "recall": 1.0,
+          "localization_p90_m": 0.316227766016838,
+          "exact_cell_recall": 0.9970381917381138
+        }
+      }
+    }
+  ],
+  "previous_sealed_root_hashes_all_match": true,
+  "previous_seal_files_checked": 55,
+  "qualifying_gate_result": false
+}

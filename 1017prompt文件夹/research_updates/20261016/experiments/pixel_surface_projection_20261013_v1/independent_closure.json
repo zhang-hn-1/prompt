@@ -1,0 +1,169 @@
+{
+  "offline_oracle_review_pass": true,
+  "qualification_pass": true,
+  "frames_verified": 905,
+  "hash_counts": {
+    "input_sha256": 3648,
+    "output_sha256": 930,
+    "source_sha256": 6
+  },
+  "rows": [
+    {
+      "group": "H",
+      "frames": 181,
+      "pixel_masks_and_times_verified": 362,
+      "full_target_native_map_identity": true,
+      "memory_snapshots_verified": [
+        450,
+        495,
+        500,
+        899
+      ],
+      "authored_label_sample_points": 1707,
+      "label_coverage": 0.9808593403767327,
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "ground_false_fraction": 0.0009800468584904216,
+        "unsupported_fraction": 0.0,
+        "visible_surface_recall": 1.0,
+        "localization_p90_m": 0.0,
+        "pass_gate": true
+      },
+      "world_point_error_p50_p90_p95": [
+        0.01676180776149916,
+        0.03588527256673959,
+        0.046081705375805304
+      ],
+      "qualification_pass": true
+    },
+    {
+      "group": "E0",
+      "frames": 181,
+      "pixel_masks_and_times_verified": 362,
+      "full_target_native_map_identity": true,
+      "memory_snapshots_verified": [
+        450,
+        495,
+        500,
+        899
+      ],
+      "authored_label_sample_points": 1807,
+      "label_coverage": 0.9777644924113438,
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "ground_false_fraction": 0.00020407270819060392,
+        "unsupported_fraction": 0.0,
+        "visible_surface_recall": 1.0,
+        "localization_p90_m": 0.0,
+        "pass_gate": true
+      },
+      "world_point_error_p50_p90_p95": [
+        0.0260622104936728,
+        0.04190968176069563,
+        0.04755230606195866
+      ],
+      "qualification_pass": true
+    },
+    {
+      "group": "E1",
+      "frames": 181,
+      "pixel_masks_and_times_verified": 362,
+      "full_target_native_map_identity": true,
+      "memory_snapshots_verified": [
+        450,
+        495,
+        500,
+        899
+      ],
+      "authored_label_sample_points": 2007,
+      "label_coverage": 0.9704837519856249,
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "ground_false_fraction": 0.0021567035420684056,
+        "unsupported_fraction": 0.0,
+        "visible_surface_recall": 1.0,
+        "localization_p90_m": 0.0,
+        "pass_gate": true
+      },
+      "world_point_error_p50_p90_p95": [
+        0.016686475823966332,
+        0.03468893859983059,
+        0.04269213666383888
+      ],
+      "qualification_pass": true
+    },
+    {
+      "group": "B54",
+      "frames": 181,
+      "pixel_masks_and_times_verified": 362,
+      "full_target_native_map_identity": true,
+      "memory_snapshots_verified": [
+        450,
+        495,
+        500,
+        899
+      ],
+      "authored_label_sample_points": 2006,
+      "label_coverage": 0.9709999600156013,
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "ground_false_fraction": 0.0023008340523439745,
+        "unsupported_fraction": 0.0,
+        "visible_surface_recall": 0.9999755477308294,
+        "localization_p90_m": 0.0,
+        "pass_gate": true
+      },
+      "world_point_error_p50_p90_p95": [
+        0.015409950927762355,
+        0.030205485822522693,
+        0.03725111641646853
+      ],
+      "qualification_pass": true
+    },
+    {
+      "group": "C54",
+      "frames": 181,
+      "pixel_masks_and_times_verified": 362,
+      "full_target_native_map_identity": true,
+      "memory_snapshots_verified": [
+        450,
+        495,
+        500,
+        899
+      ],
+      "authored_label_sample_points": 1907,
+      "label_coverage": 0.986288680823287,
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "ground_false_fraction": 0.0012913583693982967,
+        "unsupported_fraction": 0.0,
+        "visible_surface_recall": 1.0,
+        "localization_p90_m": 0.0,
+        "pass_gate": true
+      },
+      "world_point_error_p50_p90_p95": [
+        0.019282488553183205,
+        0.026783030203693263,
+        0.030652331726534324
+      ],
+      "qualification_pass": true
+    }
+  ],
+  "label_recast_scope": "Sampled frames 0/450/495/900 both eyes; uniform points plus up to100 unknown per eye. Full eligible masks/categories codes/counts/maps replayed all905 frames. No full authored-surface recast.",
+  "limits": [
+    "All groups seen development; no independent navigation or predictor performance.",
+    "Native root/camera gauge cancellation limits local raster localization; separate world-point errors are reported.",
+    "Authored compatibility approximates renderer surfaces; coverage gates retained.",
+    "Any-point memory admission versus four-count raster denominators remain distinct."
+  ],
+  "fit": 0,
+  "physics": 0,
+  "review_source_sha256": "c6fb230d6cad2c088d8a768cad320b3e9dfc104a4f6036623754fdba552182cb",
+  "authored_boundary_and_ambiguous_tests": "Passed test_categories.py: exact sphere/cylinder side and cap; ground-contact ambiguous points remain unknown; unsupported point unknown; category independent of reconstructed height.",
+  "exporter_recovery_review_sha_verified": true
+}

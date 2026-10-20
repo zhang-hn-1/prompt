@@ -1,0 +1,36 @@
+{
+  "hypothesis": "Two independent metric monocular priors fused in calibrated world BEV improve visible obstacle coverage/false risk without stereo matching.",
+  "model": "DepthAnythingV2 Metric Hypersim Small vits",
+  "commit": "a561b849ebae10a6f5ef49e26c83cbbcd36c71bf",
+  "model_configuration": {
+    "features": 64,
+    "out_channels": [
+      48,
+      96,
+      192,
+      384
+    ],
+    "max_depth": 20,
+    "input_size": 518,
+    "upright": "fixed native rotate90 CCW then invert outputs",
+    "precision": "float32",
+    "fit": 0
+  },
+  "fusion": "per-eye even pixel sample, metric .5\u20133m CAD mask, root exclusion .55m, inferred world bodyband .05\u20131.5m; union .1m cells. Bilateral reprojected usable metric predictions must agree .15m in overlap; conflicts unknown, no free or old risk clearing.",
+  "input": "current separate RGB, native calibration/IMU estimated pose, fixed known CAD; renderer GT only oracle/scoring",
+  "gates": {
+    "precision_min": 0.95,
+    "visible_union_recall_min": 0.8,
+    "location_p90_max_m": 0.15,
+    "ground_false_max": 0.01,
+    "depth_p90_max_m": 0.15,
+    "catastrophic_above030_allowed": 0,
+    "pair_fusion_deadline_s": 0.5
+  },
+  "data": "7 complete seen development groups, 1267 pairs, each eye and union target denominators separate from previous left-only target",
+  "physical_cap": 4,
+  "physical_used": 0,
+  "recovery_cap": 1,
+  "recovery_used": 0,
+  "stop": "oracle qualification failure -> no model execution; pretrained performance failure -> no fine tuning/sweep/navigation. New target not old budget rescue."
+}

@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "checks": {
+    "all_admit": true,
+    "none_admit": true,
+    "unknown": true,
+    "current_and_recent10s_protected": true,
+    "duplicate_capture_not_independent": true,
+    "future_before_payload": true,
+    "unknown_never_free": true,
+    "fixtures_not_learned_predictions": true,
+    "reindexed_same_timestamp_rejected_before_payload": true,
+    "duplicate_rejection_state_exact": true,
+    "original_loophole_reproduced": true,
+    "observed_dataset_unchanged": true,
+    "no_learned_output": true
+  },
+  "repair_protocol_sha256": "13b71f367d6947bc5c7dc35ff747571e218d39ff30790d7c8414fac96646410b",
+  "result_sha256": "569911c7b225ea2db265d4063ef045e79acd0278dd9350d3212c56a1cbd27e03",
+  "feature_seal_sha256": "038b9fbee4fe89d7f14221df397ab71f669cd483e77ab42e621acc8060b8e439",
+  "fit": 0,
+  "source_regeneration": 0,
+  "label_regeneration": 0,
+  "physics": 0
+}

@@ -1,0 +1,69 @@
+{
+  "complete": true,
+  "utc": "2026-10-17T08:50:57.593510+00:00",
+  "files": 470,
+  "feature_label_SHA_pairs": 470,
+  "finite24": true,
+  "strict_increasing_observed_timestamps": true,
+  "recomputed_teacher_nearest_distances_max_error_m": 0.0,
+  "source_points": 2985832,
+  "by_group": {
+    "E0": {
+      "rows": 2038,
+      "eligible": 1556,
+      "eligible_positive": 1466,
+      "eligible_negative": 18,
+      "eligible_unknown": 72,
+      "unknown_inside_margin": 72,
+      "unknown_outside_teacher": 0,
+      "negative_not_yet_eligible": 138
+    },
+    "E1": {
+      "rows": 38014,
+      "eligible": 35708,
+      "eligible_positive": 25402,
+      "eligible_negative": 4220,
+      "eligible_unknown": 6086,
+      "unknown_inside_margin": 6086,
+      "unknown_outside_teacher": 0,
+      "negative_not_yet_eligible": 1020
+    }
+  },
+  "by_sequence": {
+    "E0": {
+      "rows": 2038,
+      "eligible": 1556,
+      "eligible_positive": 1466,
+      "eligible_negative": 18,
+      "eligible_unknown": 72,
+      "unknown_inside_margin": 72,
+      "unknown_outside_teacher": 0,
+      "negative_not_yet_eligible": 138
+    },
+    "E1B": {
+      "rows": 21162,
+      "eligible": 20088,
+      "eligible_positive": 13794,
+      "eligible_negative": 2762,
+      "eligible_unknown": 3532,
+      "unknown_inside_margin": 3532,
+      "unknown_outside_teacher": 0,
+      "negative_not_yet_eligible": 379
+    },
+    "E1A": {
+      "rows": 16852,
+      "eligible": 15620,
+      "eligible_positive": 11608,
+      "eligible_negative": 1458,
+      "eligible_unknown": 2554,
+      "unknown_inside_margin": 2554,
+      "unknown_outside_teacher": 0,
+      "negative_not_yet_eligible": 641
+    }
+  },
+  "original_result_SHA": "569911c7b225ea2db265d4063ef045e79acd0278dd9350d3212c56a1cbd27e03",
+  "immutable_protocol_inputs_verified": 25,
+  "fit": 0,
+  "source_regeneration": 0,
+  "physics": 0
+}

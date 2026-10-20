@@ -1,0 +1,60 @@
+{
+  "task": "current pairedRGB plus nativeIMU to visible surface local map",
+  "user_authorized": true,
+  "scope": "independent target, not SGBM error classifier; replaces v48 next unimplemented Census",
+  "input": [
+    "pairedRGB160x120",
+    "current native gravity3"
+  ],
+  "output": [
+    "unknown",
+    "visible ground not certified free",
+    "obstacle z .05-.5",
+    ".5-1",
+    "1-1.5"
+  ],
+  "grid": {
+    "forward": [
+      0,
+      4
+    ],
+    "lateral": [
+      -3,
+      3
+    ],
+    "resolution": 0.1
+  },
+  "GT_surface_range": [
+    0.5,
+    3
+  ],
+  "minimum_pixels_per_height_bin": 4,
+  "train": [
+    "H",
+    "E0"
+  ],
+  "eval": [
+    "E1"
+  ],
+  "all_existing_development": true,
+  "epochs": 30,
+  "batch": 16,
+  "lr": 0.001,
+  "seed": 2026,
+  "fit_cap": 1,
+  "physical_cap": 4,
+  "recovery_cap": 1,
+  "gate": {
+    "precision": 0.9,
+    "recall": 0.8,
+    "ground_false_fraction_max": 0.05,
+    "unsupported_fraction_max": 0.1,
+    "localization_p90_max_m": 0.15,
+    "visible_surface_recall": 0.7
+  },
+  "decision_threshold": 0.5,
+  "spatial_tolerance_cells": 1,
+  "architecture": "6ch conv16/32/48/64 stride2 ReLU, flatten+gravity FC256 FC1280 reshape32x5x8 bilinear40x60 conv32/5",
+  "loss": "cross entropy sqrt inverse train counts normalized mean1, all cells unknown observable-absence target notfree",
+  "stop": "no refit/hyperparameter/threshold sweep if source fails; only final epoch checkpoint; source pass still requires fresh real verification"
+}

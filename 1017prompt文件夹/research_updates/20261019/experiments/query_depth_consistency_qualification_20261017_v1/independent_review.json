@@ -1,0 +1,35 @@
+{
+  "utc": "2026-10-17T10:59:30.633117+00:00",
+  "reviewer": "/root/persistent_entry_qualification_review",
+  "stage": "readonly post-result audit",
+  "important_issues": [],
+  "accepted_rejection": true,
+  "full_saved_label_arrays": 470,
+  "full_saved_point_instances": 2985832,
+  "full_derived_feature_and_static_label_mapping": 470,
+  "raw_formula_sample": {
+    "frames": [
+      "E0/0",
+      "E0/55",
+      "E1B/0",
+      "E1A/90"
+    ],
+    "point_instances": 12267,
+    "max_residual_diff_m": 8.9e-16,
+    "all_labels_exact": true,
+    "other466_raw_formula_independently_recomputed": false
+  },
+  "all_SHA_and_gates_exact": true,
+  "remaining_processes": false,
+  "source_regeneration": 0,
+  "fit": 0,
+  "map_replay": 0,
+  "navigation": 0,
+  "result_sha256": "c313a05bf0b0157b04b4634362b1a8d5398bbf1640cf8de67505b22ae817f35e",
+  "limitations": [
+    "Renderer query consistency is not necessarily first RGB surface or obstacle risk truth.",
+    "Negative static proxy is >=.20m domain, not complete original>.15m map error domain.",
+    "Invalid references all+inf; no object/free interpretation admitted.",
+    "Point contingency cannot be converted to cells lost or navigation/learning performance."
+  ]
+}

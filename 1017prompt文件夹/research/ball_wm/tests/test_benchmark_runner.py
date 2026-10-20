@@ -587,6 +587,57 @@ def test_runner_records_state_and_policy_diagnostics_with_correct_time_alignment
     np.testing.assert_array_equal(result.policy_braking_state_code, (1, 2))
 
 
+def test_runner_records_round3_intervention_telemetry_and_zero_fills_legacy_policies():
+    events: list[str] = []
+
+    class Round3DiagnosedPolicy(SpyPolicy):
+        @property
+        def diagnostics(self) -> dict[str, object]:
+            index = len(self.goals)
+            return {
+                "reference_progress_s_m": 0.1 * index,
+                "reference_heading_rad": -0.2 * index,
+                "reference_curvature_1_m": 0.3 * index,
+                "desired_curvature_1_m": 0.4 * index,
+                "baseline_main_command_rad_s": 1.0,
+                "scheduled_main_command_rad_s": 0.5,
+                "auxiliary_target_angle_rad": 0.25,
+                "auxiliary_velocity_rad_s": 0.12,
+                "scheduler_active": index == 1,
+                "scheduler_trigger_code": 11 if index == 1 else 0,
+            }
+
+    runtime = SequenceRuntime(
+        [runtime_step((0.0, 0.0)), runtime_step((0.5, 0.0)), runtime_step((1.0, 0.0))],
+        events,
+    )
+    result = run_episode(
+        runtime,
+        Round3DiagnosedPolicy(events),
+        episode(),
+        action_protocol=protocol(),
+        config=RunnerConfig(episode_budget_s=2.0, replan_hz=10, goal_tolerance_m=0.2),
+    )
+    np.testing.assert_allclose(result.policy_reference_progress_s_m, (0.1, 0.2))
+    np.testing.assert_allclose(result.policy_reference_heading_rad, (-0.2, -0.4))
+    np.testing.assert_allclose(result.policy_scheduled_main_command_rad_s, (0.5, 0.5))
+    np.testing.assert_array_equal(result.policy_scheduler_active, (True, False))
+    np.testing.assert_array_equal(result.policy_scheduler_trigger_code, (11, 0))
+
+    legacy = run_episode(
+        SequenceRuntime(
+            [runtime_step((0.0, 0.0)), runtime_step((0.5, 0.0)), runtime_step((1.0, 0.0))],
+            [],
+        ),
+        SpyPolicy([]),
+        episode(),
+        action_protocol=protocol(),
+        config=RunnerConfig(episode_budget_s=2.0, replan_hz=10, goal_tolerance_m=0.2),
+    )
+    np.testing.assert_allclose(legacy.policy_reference_progress_s_m, (0.0, 0.0))
+    np.testing.assert_array_equal(legacy.policy_scheduler_active, (False, False))
+
+
 def test_runner_transports_v1_policy_diagnostics_and_defaults_missing_fields():
     events: list[str] = []
 
@@ -1306,6 +1357,39 @@ def test_formal_cli_oracle_lookahead_defaults_and_rejects_nonfinite_values():
             parser.parse_args(required + ["--oracle-lookahead-m", value])
 
 
+def test_formal_cli_auxiliary_velocity_limit_is_opt_in():
+    from scripts.run_pointgoal_benchmark import _build_parser
+
+    parser = _build_parser()
+    required = [
+        "--manifest", "manifest.json", "--split", "golden", "--policy", "oracle",
+        "--scene-root", "scenes", "--run-root", "runs", "--headless",
+        "--record-video",
+    ]
+    default = parser.parse_args(required)
+    assert default.auxiliary_velocity_limit_rad_s is None
+
+    selected = parser.parse_args(
+        required + ["--auxiliary-velocity-limit-rad-s", "0.30"]
+    )
+    assert selected.auxiliary_velocity_limit_rad_s == pytest.approx(0.30)
+
+
+def test_formal_cli_accepts_explicit_drive_profile():
+    from scripts.run_pointgoal_benchmark import _build_parser
+
+    parser = _build_parser()
+    required = [
+        "--manifest", "manifest.json", "--split", "golden", "--policy", "oracle",
+        "--scene-root", "scenes", "--run-root", "runs", "--headless",
+        "--record-video",
+    ]
+
+    selected = parser.parse_args(required + ["--drive-profile", "drive_dynamics_v2.json"])
+
+    assert selected.drive_profile == Path("drive_dynamics_v2.json")
+
+
 def test_formal_oracle_lookahead_reaches_only_v1_oracle_and_rejects_other_policies():
     from scripts.run_pointgoal_benchmark import _make_policy
 
@@ -1341,6 +1425,53 @@ def test_formal_child_command_propagates_oracle_lookahead_to_worker():
     command = _child_command(args, "runner_e0_0001")
 
     assert command[command.index("--oracle-lookahead-m") + 1] == "1.0"
+
+
+def test_formal_child_command_propagates_auxiliary_velocity_limit_to_worker():
+    from scripts.run_pointgoal_benchmark import _child_command
+
+    args = SimpleNamespace(
+        manifest=Path("manifest.json"),
+        split="golden",
+        policy="oracle",
+        scene_root=Path("scenes"),
+        run_root=Path("runs"),
+        gui=False,
+        seed=3072,
+        contract=Path("contract.yaml"),
+        scene_index=Path("scene_index.json"),
+        data_root=None,
+        oracle_lookahead_m=0.5,
+        auxiliary_velocity_limit_rad_s=0.30,
+    )
+
+    command = _child_command(args, "golden_e0_0001")
+
+    assert command[command.index("--auxiliary-velocity-limit-rad-s") + 1] == "0.3"
+
+
+def test_formal_child_command_propagates_drive_profile_to_worker():
+    from scripts.run_pointgoal_benchmark import _child_command
+
+    args = SimpleNamespace(
+        manifest=Path("manifest.json"),
+        split="golden",
+        policy="oracle",
+        scene_root=Path("scenes"),
+        run_root=Path("runs"),
+        gui=False,
+        seed=3072,
+        contract=Path("contract.yaml"),
+        scene_index=Path("scene_index.json"),
+        data_root=None,
+        oracle_lookahead_m=0.5,
+        auxiliary_velocity_limit_rad_s=0.30,
+        drive_profile=Path("drive_dynamics_v2.json"),
+    )
+
+    command = _child_command(args, "golden_e0_0001")
+
+    assert command[command.index("--drive-profile") + 1] == "drive_dynamics_v2.json"
 
 
 def test_formal_environment_and_summary_record_oracle_lookahead(tmp_path: Path, monkeypatch):

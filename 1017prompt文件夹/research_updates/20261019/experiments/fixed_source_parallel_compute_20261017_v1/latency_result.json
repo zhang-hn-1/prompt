@@ -1,0 +1,46 @@
+{
+  "complete": true,
+  "rows": [
+    {
+      "sequence": "E0",
+      "frame": 0,
+      "serial": 3.112074834993109,
+      "parallel": 1.6034671659581363,
+      "ratio": 0.5152405552489507,
+      "all16_arrays_byte_exact": true
+    },
+    {
+      "sequence": "E0",
+      "frame": 55,
+      "parallel": 1.890996064990759,
+      "serial": 2.912406327901408,
+      "ratio": 0.649289917713286,
+      "all16_arrays_byte_exact": true
+    },
+    {
+      "sequence": "E1B",
+      "frame": 0,
+      "serial": 2.8012862839968875,
+      "parallel": 1.5901513019343838,
+      "ratio": 0.5676504079638547,
+      "all16_arrays_byte_exact": true
+    },
+    {
+      "sequence": "E1A",
+      "frame": 90,
+      "parallel": 1.54272923595272,
+      "serial": 2.7617945870151743,
+      "ratio": 0.5585966614628041,
+      "all16_arrays_byte_exact": true
+    }
+  ],
+  "gates": {
+    "all4_output_exact": true,
+    "median_ratio_le80pct": true,
+    "all4_ratio_le110pct": true
+  },
+  "pass_local_development": true,
+  "source_invocations_serial": 4,
+  "source_invocations_parallel": 4,
+  "scope": "Four prospectively frozen known development captures, alternating serial/parallel order once each; no statistical generalization or complete onlinechain latency claim."
+}

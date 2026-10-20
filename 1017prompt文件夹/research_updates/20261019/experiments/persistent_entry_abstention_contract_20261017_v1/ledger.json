@@ -1,0 +1,30 @@
+{
+  "dispatch_cap": 1,
+  "dispatch_used": 1,
+  "recovery_cap": 1,
+  "recovery_used": 0,
+  "status": "closed",
+  "parent_pid": 3907288,
+  "utc": "2026-10-17T09:48:41.104073+00:00",
+  "fit": 0,
+  "learned_inference": 0,
+  "source_regeneration": 0,
+  "physics": 0,
+  "navigation": 0,
+  "old_budgets_reopened": false,
+  "execution": {
+    "status": "finished",
+    "start_utc": "2026-10-17T09:48:41.104240+00:00",
+    "parent_pid": 3907288,
+    "child_pid": 3907304,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 0,
+    "end_utc": "2026-10-17T09:48:57.849351+00:00"
+  },
+  "close_utc": "2026-10-17T10:05:34.401015+00:00",
+  "unused_recovery_closed": true,
+  "active_runtime": false
+}
