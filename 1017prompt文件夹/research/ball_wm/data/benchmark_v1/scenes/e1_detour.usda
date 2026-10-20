@@ -1,0 +1,526 @@
+#usda 1.0
+(
+    defaultPrim = "E1Detour"
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "E1Detour"
+{
+    def Xform "BoundaryLeft"
+    {
+        def Cylinder "left_00" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, -4.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_01" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, -3.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_02" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, -3.0, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_03" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, -2.4, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_04" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, -1.8, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_05" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, -1.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_06" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, -0.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_07" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, 0.0, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_08" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, 0.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_09" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, 1.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_10" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, 1.8, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_11" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, 2.4, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_12" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, 3.0, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_13" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, 3.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "left_14" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.8, 4.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+
+    def Xform "BoundaryRight"
+    {
+        def Cylinder "right_00" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, -4.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_01" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, -3.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_02" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, -3.0, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_03" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, -2.4, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_04" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, -1.8, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_05" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, -1.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_06" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, -0.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_07" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, 0.0, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_08" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, 0.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_09" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, 1.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_10" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, 1.8, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_11" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, 2.4, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_12" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, 3.0, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_13" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, 3.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "right_14" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.8, 4.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+
+    def Xform "BoundaryBottom"
+    {
+        def Cylinder "bottom_00" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.2, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_01" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-3.6, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_02" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-3.0, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_03" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-2.4, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_04" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-1.8, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_05" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-1.2, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_06" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-0.6, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_07" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_08" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.6, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_09" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (1.2, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_10" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (1.8, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_11" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (2.4, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_12" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (3.0, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_13" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (3.6, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "bottom_14" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.2, -4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+
+    def Xform "BoundaryTop"
+    {
+        def Cylinder "top_00" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-4.2, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_01" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-3.6, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_02" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-3.0, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_03" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-2.4, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_04" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-1.8, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_05" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-1.2, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_06" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (-0.6, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_07" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_08" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.6, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_09" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (1.2, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_10" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (1.8, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_11" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (2.4, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_12" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (3.0, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_13" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (3.6, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "top_14" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (4.2, 4.5, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+
+    def Xform "Divider"
+    {
+        def Cylinder "divider_00" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, -1.8, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "divider_01" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, -1.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "divider_02" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, -0.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "divider_03" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, 0.0, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "divider_04" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, 0.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "divider_05" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, 1.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "divider_06" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, 1.8, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "divider_07" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, 2.4, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "divider_08" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, 3.0, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "divider_09" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, 3.6, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+        def Cylinder "divider_10" (prepend apiSchemas = ["PhysicsCollisionAPI"])
+        {
+            double height = 1.0
+            double radius = 0.35
+            double3 xformOp:translate = (0.0, 4.2, 0.5)
+            uniform token[] xformOpOrder = ["xformOp:translate"]
+        }
+    }
+}

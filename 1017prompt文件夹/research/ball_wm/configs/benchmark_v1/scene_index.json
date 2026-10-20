@@ -1,0 +1,67 @@
+{
+  "schema_version": "ball_pointgoal_scene_index_v1",
+  "benchmark_version": "v1",
+  "scenes": [
+    {
+      "scene_id": "cluttered_easy_0",
+      "scene_uri": "${SCENE_ROOT}/cluttered_easy/easy_0/cluttered-0.usd",
+      "occupancy_uri": "${DATA_ROOT}/benchmark_v1/occupancy/cluttered_easy_0_bodyband.npz",
+      "occupancy_sha256": "e85524de14a52a44f4512fe46183d387b353b4eec4ec4b53fe62fca68060d134",
+      "occupancy_projection": "vertical_max_body_band",
+      "body_radius_m": 0.4,
+      "scene_sha256": "8086e4a490ec4088edbbce7f8c19762a52b9428fd7774b8665a1581a189d45fe",
+      "navigation_z_m": 0.45,
+      "difficulties": [
+        "E0",
+        "E1"
+      ]
+    },
+    {
+      "scene_id": "cluttered_hard_0",
+      "scene_uri": "${SCENE_ROOT}/cluttered_hard/hard_0/cluttered-0.usd",
+      "occupancy_uri": "${DATA_ROOT}/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz",
+      "occupancy_sha256": "547dd73c52b45f9cc1aa8dca561c779349391f6ecef06ef59026921284b467da",
+      "occupancy_projection": "vertical_max_body_band",
+      "body_radius_m": 0.4,
+      "scene_sha256": "7125024056f83009e74f1b5c959d3cefdc7190157ec67b9d43818c613fced9f0",
+      "navigation_z_m": 0.45,
+      "difficulties": [
+        "E0",
+        "E1"
+      ]
+    },
+    {
+      "scene_id": "e1_detour",
+      "scene_uri": "${SCENE_ROOT}/benchmark_e1/e1_detour.usda",
+      "occupancy_uri": "${DATA_ROOT}/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+      "occupancy_sha256": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7",
+      "occupancy_projection": "vertical_max_body_band",
+      "body_radius_m": 0.4,
+      "scene_sha256": "d6236dea995f04e3a81fb90dcde4bde6b63841c283cc5b2470aee8cda34c8634",
+      "navigation_z_m": 0.45,
+      "minimum_nearby_obstacles": 0,
+      "difficulties": [
+        "E1"
+      ]
+    },
+    {
+      "scene_id": "e2_corridor",
+      "scene_uri": "${SCENE_ROOT}/benchmark_e2/e2_corridor.usda",
+      "occupancy_uri": "${DATA_ROOT}/benchmark_v1/occupancy/e2_corridor_bodyband.npz",
+      "occupancy_sha256": "113bdb0f4d6ee86720718065950785b4c2b9d9abb1cc81a6aa34038c4181a257",
+      "occupancy_projection": "vertical_max_body_band",
+      "body_radius_m": 0.4,
+      "scene_sha256": "3ef266856cc35215f190e8de85cc002b4835cea6a3ec4b7fea4a91e424db15b4",
+      "navigation_z_m": 0.45,
+      "difficulties": [
+        "E2"
+      ],
+      "corridors": [
+        {
+          "mask_uri": "${DATA_ROOT}/benchmark_v1/corridors/e2_corridor_bodyband_two_sided_1p0_1p4.npy",
+          "width_m": 1.2
+        }
+      ]
+    }
+  ]
+}

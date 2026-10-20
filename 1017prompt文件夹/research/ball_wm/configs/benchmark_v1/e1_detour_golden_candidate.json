@@ -1,0 +1,57 @@
+{
+  "action_protocol_id": "ball_action_v2_aux30",
+  "benchmark_version": "v1",
+  "episodes": [
+    {
+      "classification_evidence": {
+        "corridor_intersection": false,
+        "corridor_path_length_m": 0.0,
+        "corridor_width_m": null,
+        "detour_ratio": 1.3389020055779868,
+        "euclidean_distance_m": 6.6000000000000005,
+        "goal_clearance_m": 1.2000000000000002,
+        "line_is_free": false,
+        "nearby_obstacle_count": 1,
+        "oracle_path_length_m": 8.836753236814713,
+        "start_clearance_m": 1.2000000000000002
+      },
+      "difficulty": "E1",
+      "episode_id": "e1_detour_golden_0001",
+      "euclidean_distance_m": 6.6000000000000005,
+      "goal_position_world_m": [
+        3.300000005960465,
+        5.960465010446114e-09,
+        0.45
+      ],
+      "human_review": {
+        "notes": "Reviewed raw and inflated maps, blocked direct line, lower A* detour, endpoints, and scene correspondence.",
+        "reviewer": "project_owner",
+        "status": "approved"
+      },
+      "minimum_nearby_obstacles": 0,
+      "occupancy_sha256": "e61a4c4a6f30598606ae8628ce0abf95a9e92fcd9916d8ecbe91243031927bd7",
+      "occupancy_uri": "${DATA_ROOT}/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+      "oracle_path_length_m": 8.836753236814713,
+      "scene_sha256": "d6236dea995f04e3a81fb90dcde4bde6b63841c283cc5b2470aee8cda34c8634",
+      "scene_uri": "${SCENE_ROOT}/benchmark_e1/e1_detour.usda",
+      "schema_version": "benchmark_episode_v1",
+      "seed": 9101,
+      "split": "golden",
+      "start_position_world_m": [
+        -3.2999999940395353,
+        5.960465010446114e-09,
+        0.45
+      ],
+      "start_quaternion_world_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "generation_seed": 9101,
+  "localization_source": "perfect_localization",
+  "manifest_schema_version": "ball_pointgoal_benchmark_v1",
+  "schema_version": "ball_pointgoal_candidates_v1"
+}

@@ -1,0 +1,94 @@
+# Operating-system and editor metadata
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+.worktrees/
+
+# Python bytecode, caches, and test/coverage artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Local Python environments and packaging output
+.venv/
+venv/
+env/
+.conda/
+build/
+dist/
+*.egg-info/
+
+# Local secrets and machine-specific environment files
+.env
+.env.*
+!.env.example
+
+# ROS/colcon and simulator-generated output
+install/
+log/
+.cache/
+.nv/
+kit/cache/
+
+# Logs, temporary files, and experiment tracking
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+outputs/
+runs/
+wandb/
+mlruns/
+tensorboard/
+lightning_logs/
+multirun/
+
+# Trained weights, checkpoints, and exported models
+*.ckpt
+*.pt
+*.pth
+*.onnx
+*.safetensors
+checkpoints/
+weights/
+
+# Generated datasets and recorded media. Keep only the frozen scene and map
+# assets needed to reproduce the benchmark; all other generated benchmark data
+# stays ignored.
+research/ball_wm/data/*
+!research/ball_wm/data/benchmark_v1/
+research/ball_wm/data/benchmark_v1/*
+!research/ball_wm/data/benchmark_v1/scenes/
+research/ball_wm/data/benchmark_v1/scenes/*
+!research/ball_wm/data/benchmark_v1/scenes/e1_detour.usda
+!research/ball_wm/data/benchmark_v1/scenes/benchmark_e1/
+!research/ball_wm/data/benchmark_v1/scenes/benchmark_e1/e1_detour.usda
+!research/ball_wm/data/benchmark_v1/scenes/benchmark_e2/
+!research/ball_wm/data/benchmark_v1/scenes/benchmark_e2/e2_corridor.usda
+!research/ball_wm/data/benchmark_v1/occupancy/
+research/ball_wm/data/benchmark_v1/occupancy/*
+!research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz
+!research/ball_wm/data/benchmark_v1/occupancy/cluttered_hard_0_bodyband.npz
+!research/ball_wm/data/benchmark_v1/occupancy/e2_corridor_bodyband.npz
+!research/ball_wm/data/benchmark_v1/corridors/
+!research/ball_wm/data/benchmark_v1/corridors/e2_corridor_bodyband_two_sided_1p0_1p4.npy
+*.bag
+*.db3
+*.mcap
+
+# Keep the existing DINO-WM checkout as an independent Git repository.
+# Convert it to a submodule explicitly later if reproducible pinning is needed.
+research/ball_wm/models/dino_wm/

@@ -1,0 +1,20 @@
+schema_version: ball_pointgoal_benchmark_config_v1
+benchmark_version: v1
+evaluation_protocol_id: ball_pointgoal_v1_1_35s
+action_protocol_id: ball_action_v2_aux30
+localization_source: perfect_localization
+ball_radius_m: 0.4
+safety_margin_m: 0.1
+occupancy_resolution_m: 0.1
+goal_tolerance_m: 0.2
+episode_budget_s: 35.0
+physics_hz: 50
+control_hz: 50
+stereo_hz: 10
+replan_hz: 10
+initial_goal_distance_m: [6.0, 10.0]
+e1_min_detour_ratio: 1.3
+e2_extra_width_range_m: [0.0, 0.4]
+nearby_obstacle_radius_m: 2.0
+minimum_nearby_obstacles: 3
+minimum_corridor_path_length_m: 0.8

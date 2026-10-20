@@ -1,0 +1,218 @@
+#usda 1.0
+(
+    defaultPrim = "Scene"
+    metersPerUnit = 1
+)
+
+def Xform "Scene" {
+    def Cylinder "CorridorLeft_00" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (-2.1, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_01" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (-1.4, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_02" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (-0.7, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_03" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (0.0, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_04" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (0.7, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_05" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (1.4, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_06" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (2.1, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_00" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (-2.1, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_01" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (-1.4, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_02" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (-0.7, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_03" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (0.0, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_04" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (0.7, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_05" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (1.4, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_06" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (2.1, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    # Intermediate cylinders keep the corridor width inside 1.0–1.4 m
+    # throughout the passage instead of creating periodic wide gaps.
+    def Cylinder "CorridorLeft_M01" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (-1.75, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_M02" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (-1.05, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_M03" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (-0.35, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_M04" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (0.35, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_M05" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (1.05, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorLeft_M06" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.12, 0.45, 0.85)]
+        double3 xformOp:translate = (1.75, 1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_M01" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (-1.75, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_M02" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (-1.05, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_M03" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (-0.35, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_M04" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (0.35, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_M05" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (1.05, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Cylinder "CorridorRight_M06" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.45
+        float height = 1.0
+        color3f[] primvars:displayColor = [(0.85, 0.35, 0.12)]
+        double3 xformOp:translate = (1.75, -1.05, 0.5)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+
+    def Sphere "SideObstacle_North" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.30
+        color3f[] primvars:displayColor = [(0.95, 0.75, 0.10)]
+        double3 xformOp:translate = (0.0, 2.0, 0.30)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Sphere "SideObstacle_South" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.30
+        color3f[] primvars:displayColor = [(0.75, 0.15, 0.75)]
+        double3 xformOp:translate = (0.0, -2.0, 0.30)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Sphere "Boundary_NorthWest" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.15
+        color3f[] primvars:displayColor = [(0.20, 0.75, 0.35)]
+        double3 xformOp:translate = (-4.5, 3.5, 0.15)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+    def Sphere "Boundary_SouthEast" (prepend apiSchemas = ["PhysicsCollisionAPI"]) {
+        float radius = 0.15
+        color3f[] primvars:displayColor = [(0.20, 0.75, 0.35)]
+        double3 xformOp:translate = (4.5, -3.5, 0.15)
+        uniform token[] xformOpOrder = ["xformOp:translate"]
+    }
+}

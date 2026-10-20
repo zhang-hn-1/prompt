@@ -1,0 +1,20 @@
+image_size: 224
+embed_dim: 192
+action_dim: 10
+proprio_dim: 17
+bev_classes: 3
+bev_size: 80
+history_size: 5
+num_preds: 1
+rollout_horizon: 3
+rollout_loss_weight: 0.25
+encoder_name: vit_tiny_patch16_224
+predictor_depth: 6
+predictor_heads: 8
+predictor_mlp_dim: 768
+predictor_hidden_dim: 192
+predictor_dim_head: 64
+predictor_dropout: 0.0
+bev_class_weights: [1.0, 8.0, 1.0]
+bev_decoder: spatial
+bev_dice_weight: 0.5
