@@ -1,0 +1,75 @@
+{
+  "review": "independent requesting-code-review",
+  "offline_admitted": true,
+  "estimator_admitted": true,
+  "scope": "Offline recorded-source generation only. No physical or navigation success admission.",
+  "nonblocking_issues": [
+    {
+      "id": "R2",
+      "severity": "minor",
+      "file": "test_joint.py",
+      "issue": "All 462 random direct-cost checks are threshold-invalid (0 finite eligible matches).",
+      "mitigation": "Independent review_independent_checks.py verifies 70 supported d=2 zero-cost matches; 256 binary exhaustive n=2 alignments also pass.",
+      "resolution": "Updated test_joint.py includes 70 eligible d=2 zero-cost pairs; reviewer reran successfully:48 brute cases,462 random direct costs,70 eligible pairs,all-masked unknown.",
+      "status": "resolved"
+    }
+  ],
+  "findings": {
+    "dynamic_program": "Forward prefixes and backward suffixes traverse all legal match/left-gap/right-gap paths by antidiagonal. Positive costs and large invalid cost prohibit invalid production matches. Full supported scanline maximum all-gap cost 108W is below int32 sentinel for native W=480.",
+    "all_optimal_ambiguity": "A match edge lies on some optimal path exactly when prefix+edge+suffix equals optimum. possible==1 and absence of any optimal left-gap edge implies that exact pair belongs to every optimum. Distinct accepted pairs inherit strict monotone and one-to-one constraints.",
+    "frozen_cost": "frozen_cost.py is byte-identical to sealed current_census_depth_20261013_v1/census.py, SHA256 76b6bd1db9ffff9de0e1c9dc2c1c0472d7f1cec7e20e0250ef09ba60a149a4ac. Joint costs use identical strict Census48 and nine Hamming sums with complete9x9 bilateral CAD support. Joint applies inherited ceiling108 as admissible match domain.",
+    "gap_semantics": "Each supported unmatched pixel pays54; unsupported pays0. A cost108 match ties two supported gaps and is rejected unless mandatory globally. Gap cost is preregistered new joint-objective choice, not a descriptor change.",
+    "geometry": "Native CCW90 rotation, xr=xl-d positive disparity and depth=f*.6/d follow existing stereo_geometry.py. Output native restoration is CW90; valid enforces .5..3m.",
+    "novelty": "Exact full-scanline ordered assignment replaces local winner selection, rather than collision-rejecting previously selected sampled partners. SGBM baseline instead uses disparity transition penalties and LR postcheck. No claim of novel literature algorithm.",
+    "causality": "Joint estimator inputs only current RGB and static masks. Generation loads old source depth solely after new inference for paired/surface identity checks, not as a matcher seed; source inspection finds no GT reads. Map comparisons are recorded-trajectory offline counterfactuals.",
+    "integration": "Generation enforces five181-source sequences, current native poses/histories, original paired/surface arithmetic and900 baseline map identity checks per group, seals905 predictions before scoring. Production sealing and source gates not yet executed. Repaired launch source registration is admitted. launch_score requires finished generation with child returncode0 and existing seal; durable supervision records nonzero stage exits as runtime_failed."
+  },
+  "evidence": {
+    "existing_preflight": {
+      "exhaustive_cases": 48,
+      "exact_ordered_case": true,
+      "direct_local_costs": 462,
+      "all_masked_unknown": true,
+      "alignment_cpu_gpu_exact": true,
+      "pair_cpu_gpu_exact": true,
+      "full_native_pair_wall_s": 1.0393776450073346,
+      "predicted_native_pixels": 9640,
+      "input_sha256": "16594352749a97e76e0ec2f7e4641ea23688aea9a16e979dd08ce243e136bb7c",
+      "truth_read": false,
+      "physical": 0,
+      "fit": 0
+    },
+    "independent_checks": {
+      "binary_exhaustive_n2": 256,
+      "shifted_zero_cost_pairs": 70,
+      "truth_read": false
+    },
+    "reviewed_sha256": {
+      "protocol.json": "e5646f73e37e4795443ac5d9b565b801edf85214765c75c6911fdc5cb4ba6a26",
+      "joint.py": "730f1ca525ba42fda59c44e61db3f15db2e2e000d34d84aa848ba4b02860ddbc",
+      "frozen_cost.py": "76b6bd1db9ffff9de0e1c9dc2c1c0472d7f1cec7e20e0250ef09ba60a149a4ac",
+      "test_joint.py": "cf10178e38851d7fe6d7de56290725d820687f3514620e360b51d6fca2a50dcd",
+      "preflight.py": "5d51864b5f5fd8f684fc803721d8989b1897af1b93f9807399e3f6b9d686650e",
+      "generate.py": "be5e3ed1127938fc81ac2b3e65f2f2b76ea626a1b82ddce67516cc5f78fee7be",
+      "launch.py": "1c42057621c8551d6755f5225b86ef348917d6c6ee570b79181b19c14bf905eb",
+      "launch_score.py": "5d2b9c023fdb50e876fbefc4245f11c2e4136ee69eb3fb8c198aecd9ce0042d7"
+    },
+    "updated_cpu_tests": {
+      "exhaustive_cases": 48,
+      "direct_local_costs": 462,
+      "eligible_zero_cost_pairs": 70,
+      "all_masked_unknown": true
+    }
+  },
+  "resolved_issues": [
+    {
+      "id": "R1",
+      "severity": "important",
+      "file": "launch.py",
+      "issue": "Ledger source hash list references absent census.py. Exclusive ledger creation happens before hashing completes; launch fails and leaves an empty ledger.",
+      "required_fix": "Hash joint.py and frozen_cost.py; prepare complete metadata before exclusive open.",
+      "resolution": "Confirmed launch metadata and all existing-source hashes are computed before exclusive ledger open; joint.py and frozen_cost.py replace absent census.py. No ledger existed at review."
+    }
+  ],
+  "blocking_issues": []
+}

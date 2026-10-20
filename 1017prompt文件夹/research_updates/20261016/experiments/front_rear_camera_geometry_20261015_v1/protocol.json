@@ -1,0 +1,67 @@
+{
+  "question": "Can distinct centered front/rear two-camera installation preserve visible front obstacles and add rear coverage without CAD occlusion?",
+  "layout": {
+    "front_position_m": [
+      0.45,
+      0,
+      0.05
+    ],
+    "rear_position_m": [
+      -0.45,
+      0,
+      0.05
+    ],
+    "yaw_degrees": [
+      0,
+      180
+    ],
+    "focal_px": 584.8888888888889,
+    "width": 640,
+    "height": 480
+  },
+  "baseline": {
+    "positions_m": [
+      [
+        0.4,
+        0.3,
+        0.05
+      ],
+      [
+        0.4,
+        -0.3,
+        0.05
+      ]
+    ],
+    "yaw_degrees": [
+      0,
+      0
+    ]
+  },
+  "novelty": "New physical camera installation split across front/rear centered positions and opposing optical directions; not yaw adjustment of v78 outward rig, not old forward/height offsets. Intrinsics/lighting/scene unchanged.",
+  "data": "Seven seen development sequences for CAD-motion qualification; B65 complete E1 saved sequence for same-pose rendering comparison. Original physical poses/joints are replayed ONLY for offline geometry, not online navigation. Native IMU/pose records retained as source provenance, not absolute IMU position claim.",
+  "range_m": [
+    0.5,
+    3
+  ],
+  "domain": "Full-pixel finite depth .5-3, CAD-current unmasked, bodyband .05<worldz<=1.5, root norm>=.55, .1m BEV cells. Old common and candidate visible union and joint union targets separately; absence unknown, never free.",
+  "gates": {
+    "calibration_tolerance_m": 2e-05,
+    "calibration_tolerance_rotation": 2e-05,
+    "maximum_each_eye_CAD_occlusion_fraction": 0.05,
+    "original_visible_target_retention_min": 0.95,
+    "body_front_axis_at_1_2_3_m": true
+  },
+  "stop": "CAD/calibration fail => no render; complete rendered original-domain retention below .95 => reject layout. Additional rear visible target and blind ring reported separately, cannot rescue retention. No model/depth fitting/navigation.",
+  "capture": "181 replayed B65 root/joint poses; fixed 4 renders per rig/per pose, no physics steps after reset. Native camera/readback, robot physical state and clock checked. Baseline and candidate rendered in same runtime, illumination untouched.",
+  "physical_cap": 2,
+  "physical_used": 0,
+  "recovery_cap": 1,
+  "fit": 0,
+  "model_inference": 0,
+  "scene_root": "/home/an/project/NavDP/assets/scenes",
+  "occupancy": "/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm/data/benchmark_v1/occupancy/e1_detour_bodyband.npz",
+  "episode_manifest": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/visual_information_new_rig_20261004_v2/request_sequences/e1_manifest.json",
+  "record_root": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/replanning_reserve_20261013_v1/baseline_e1_run",
+  "lighting_profile": "fixed_camera_fill_v1",
+  "no_GT_online": true
+}

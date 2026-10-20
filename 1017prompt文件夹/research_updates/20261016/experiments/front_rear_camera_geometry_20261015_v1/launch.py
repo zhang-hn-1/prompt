@@ -1,0 +1,7 @@
+from pathlib import Path
+import sys,os,json,datetime,hashlib
+D=Path(__file__).resolve().parent;sys.path.insert(0,str(D.parent/'stereo_memory_navigation_20261004_v1'));from durable_stage_supervision_v1 import run_durable
+assert json.loads((D/'cad_qualification.json').read_text())['pass_gate'];assert not (D/'render_status.json').exists();ledger=json.loads((D/'ledger.json').read_text());assert ledger['physical_used']==0;ledger.update(physical_used=1,status='render_probe_dispatched',dispatch_utc=datetime.datetime.now(datetime.timezone.utc).isoformat());(D/'ledger.json').write_text(json.dumps(ledger,indent=2)+'\n')
+files=[D/n for n in ['protocol.json','cad_qualification.json','render_probe.py','launch.py']];(D/'dispatch_identity.json').write_text(json.dumps({str(p):hashlib.sha256(p.read_bytes()).hexdigest() for p in files},indent=2)+'\n')
+usd=Path('/home/an/miniconda3/envs/ball_wm/lib/python3.10/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+d02c707b.lx64.r.cp310');P='/home/an/project/ball_wm_project_full/.worktrees/e1-detour-benchmark/research/ball_wm';env={**os.environ,'PYTHONPATH':str(usd)+':'+P,'LD_LIBRARY_PATH':str(usd/'bin')+':'+os.environ.get('LD_LIBRARY_PATH',''),'OPENBLAS_NUM_THREADS':'1','OMP_NUM_THREADS':'1','PYTHONDONTWRITEBYTECODE':'1','PYTHONUTF8':'1','MPLCONFIGDIR':'/tmp/ball_nav_mpl','TORCH_COMPILE_DISABLE':'1'}
+r=run_durable([sys.executable,str(D/'render_probe.py')],D/'render_status.json',D/'render.log',timeout=1800,grace=30,env=env);print(json.dumps(r),flush=True)

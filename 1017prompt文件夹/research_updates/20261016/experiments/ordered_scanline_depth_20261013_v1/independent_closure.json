@@ -1,0 +1,1984 @@
+{
+  "utc": "2026-10-13T09:35:46.670464+00:00",
+  "reviewer": "independent_ordered_joint_review",
+  "decision": "CONFIRMED_SOURCE_REJECTION_AND_CLOSED_UNUSED_PHYSICAL_BUDGET",
+  "source_pass": false,
+  "source_admitted": false,
+  "navigation_admitted": false,
+  "physical": 0,
+  "fit": 0,
+  "hash_checks": {
+    "inputs": 14446,
+    "outputs": 2755,
+    "sources": 16,
+    "preserved_prefix": 1653,
+    "recovery_scientific_sources": 5,
+    "scoring_truth": 908
+  },
+  "correspondence_structure": {
+    "pairs": 905,
+    "mandatory_pairs": 144964873,
+    "packet_pairs": 5050618,
+    "surface_pairs": 669706,
+    "integer_positive_supported": true,
+    "mandatory_flags_exact_confidence": true,
+    "strict_ordering_and_no_right_reuse": true,
+    "depth_and_native_partner_identity": true,
+    "unknown_nan_and_not_certified_free": true,
+    "truth_read": false
+  },
+  "interface_recovery": {
+    "used": 1,
+    "change": "PYTHONUTF8=1",
+    "preserved_npz": 1653,
+    "original_runtime_failure_preserved": true,
+    "scientific_sources_unchanged": true
+  },
+  "numerical_fields_compared": 25049,
+  "max_float_difference": 4.440892098500626e-16,
+  "independently_scored_pairs": 905,
+  "frame_arm_metric_sets": 1810,
+  "selected_map_metric_sets": 40,
+  "groups": [
+    {
+      "group": "H",
+      "arms": [
+        {
+          "arm": "baseline",
+          "predicted": 4189009,
+          "finite": 3237900,
+          "nohit": 951109,
+          "accepted_points": 74496,
+          "finite_accepted_points": 58781,
+          "ground_false_points": 1557,
+          "gt_obstacle_points": 57104,
+          "finite_scoring_coverage": 0.7729513113960844,
+          "full_image_scored_fraction": 0.058232260013812154,
+          "depth_p50_p90_p95": [
+            0.023535609245300293,
+            0.10047082901000981,
+            0.17897249460220332
+          ],
+          "above030_fraction": 0.012315389604373205,
+          "ground_false_fraction": 0.02648815093312465,
+          "point_error_p50_p90_p95": [
+            0.04901332305719285,
+            0.19061985935462883,
+            0.2963281448363557
+          ]
+        },
+        {
+          "arm": "joint",
+          "predicted": 4223632,
+          "finite": 4065291,
+          "nohit": 158341,
+          "accepted_points": 53107,
+          "finite_accepted_points": 48816,
+          "ground_false_points": 4235,
+          "gt_obstacle_points": 44394,
+          "finite_scoring_coverage": 0.9625107016899199,
+          "full_image_scored_fraction": 0.07311253668853591,
+          "depth_p50_p90_p95": [
+            0.08649444580078125,
+            0.5553618669509888,
+            0.8815467953681946
+          ],
+          "above030_fraction": 0.20276211469240454,
+          "ground_false_fraction": 0.08675434283841363,
+          "point_error_p50_p90_p95": [
+            0.08246817035745395,
+            0.34077366123068864,
+            0.6806586402030772
+          ]
+        }
+      ],
+      "original_true_obstacle_queries": 57104,
+      "still_measured_obstacle_queries": 26123,
+      "obstacle_query_retention": 0.45746357523115716,
+      "dense_count_ratio": 1.0082652006715669,
+      "catastrophic_frames": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95,
+        100,
+        105,
+        110,
+        115,
+        120,
+        125,
+        130,
+        135,
+        140,
+        145,
+        150,
+        155,
+        160,
+        165,
+        170,
+        175,
+        180,
+        185,
+        190,
+        195,
+        200,
+        205,
+        210,
+        215,
+        220,
+        225,
+        230,
+        235,
+        240,
+        245,
+        250,
+        255,
+        260,
+        270,
+        280,
+        285,
+        290,
+        295,
+        300,
+        305,
+        320,
+        325,
+        370,
+        375,
+        380,
+        385,
+        390,
+        395,
+        400,
+        405,
+        410,
+        415,
+        425,
+        430,
+        435,
+        440,
+        445,
+        450,
+        455,
+        460,
+        465,
+        470,
+        475,
+        480,
+        485,
+        490,
+        495,
+        500,
+        505,
+        510,
+        515,
+        520,
+        525,
+        530,
+        535,
+        540,
+        545,
+        550,
+        555,
+        560,
+        565,
+        570,
+        575,
+        580,
+        585,
+        590,
+        595,
+        600,
+        605,
+        610,
+        615,
+        620,
+        625,
+        630,
+        635,
+        640,
+        645,
+        650,
+        655,
+        660,
+        665,
+        670,
+        675,
+        680,
+        685,
+        690,
+        695,
+        700,
+        705,
+        710,
+        715,
+        720,
+        725,
+        730,
+        735,
+        740,
+        745,
+        750,
+        755,
+        760,
+        765,
+        770,
+        775,
+        780,
+        785,
+        790,
+        795,
+        800,
+        805,
+        810,
+        815,
+        820,
+        825,
+        830,
+        835,
+        840,
+        845,
+        850,
+        855,
+        860,
+        865,
+        870,
+        875,
+        880,
+        885,
+        890,
+        895,
+        900
+      ],
+      "frame_coverage_failures": [
+        80,
+        170,
+        175,
+        180,
+        185,
+        190,
+        390,
+        395
+      ],
+      "gates": {
+        "finite_count": true,
+        "depth_p90": false,
+        "outlier": false,
+        "dense_coverage": true,
+        "per_frame_coverage": false,
+        "catastrophic_frame": false,
+        "obstacle_retention": false
+      },
+      "source_gate": false,
+      "maps": [
+        {
+          "frame": 450,
+          "time_s": 44.99999899417162,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 175,
+              "far015": 56,
+              "older10s": 56,
+              "old_far015": 6,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999876,
+                0.6324555320336737,
+                0.8705560299154854
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 431,
+              "far015": 240,
+              "older10s": 120,
+              "old_far015": 57,
+              "cell_distance_p50_p90_p95": [
+                0.20000000000000018,
+                0.7211102550927968,
+                0.9559519696952261
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 495,
+          "time_s": 49.49999889358878,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 144,
+              "far015": 25,
+              "older10s": 95,
+              "old_far015": 21,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999698,
+                0.29999999999999893,
+                0.5830951894845293
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 416,
+              "far015": 227,
+              "older10s": 247,
+              "old_far015": 145,
+              "cell_distance_p50_p90_p95": [
+                0.20000000000000018,
+                0.7810249675906636,
+                0.9899494936611647
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 500,
+          "time_s": 49.99999888241291,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 142,
+              "far015": 25,
+              "older10s": 101,
+              "old_far015": 21,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999698,
+                0.29999999999999893,
+                0.5830951894845293
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 411,
+              "far015": 228,
+              "older10s": 263,
+              "old_far015": 153,
+              "cell_distance_p50_p90_p95": [
+                0.20000000000000018,
+                0.7999999999999998,
+                0.9899494936611652
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 899,
+          "time_s": 89.89999799057841,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 138,
+              "far015": 21,
+              "older10s": 138,
+              "old_far015": 21,
+              "cell_distance_p50_p90_p95": [
+                0.050000000000000475,
+                0.2999999999999997,
+                0.5856309110618496
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 445,
+              "far015": 270,
+              "older10s": 396,
+              "old_far015": 221,
+              "cell_distance_p50_p90_p95": [
+                0.2999999999999998,
+                1.2999999999999998,
+                1.6000000000000005
+              ]
+            }
+          ]
+        }
+      ],
+      "frame_metrics_checked": 181
+    },
+    {
+      "group": "E0",
+      "arms": [
+        {
+          "arm": "baseline",
+          "predicted": 2070622,
+          "finite": 2053180,
+          "nohit": 17442,
+          "accepted_points": 147261,
+          "finite_accepted_points": 143261,
+          "ground_false_points": 14213,
+          "gt_obstacle_points": 129043,
+          "finite_scoring_coverage": 0.991576444179575,
+          "full_image_scored_fraction": 0.036925572628913446,
+          "depth_p50_p90_p95": [
+            0.04780799150466919,
+            0.4272070050239563,
+            0.5836746275424954
+          ],
+          "above030_fraction": 0.18349584546897982,
+          "ground_false_fraction": 0.09921053182652641,
+          "point_error_p50_p90_p95": [
+            0.0822786728502594,
+            0.5380287196927944,
+            0.9803413337254283
+          ]
+        },
+        {
+          "arm": "joint",
+          "predicted": 4683705,
+          "finite": 4639328,
+          "nohit": 44377,
+          "accepted_points": 218119,
+          "finite_accepted_points": 216080,
+          "ground_false_points": 23225,
+          "gt_obstacle_points": 192847,
+          "finite_scoring_coverage": 0.9905252358976494,
+          "full_image_scored_fraction": 0.08343634898710865,
+          "depth_p50_p90_p95": [
+            0.235578715801239,
+            1.0188432455062868,
+            1.2967882513999938
+          ],
+          "above030_fraction": 0.42404762068989305,
+          "ground_false_fraction": 0.10748333950388744,
+          "point_error_p50_p90_p95": [
+            0.24486697078091907,
+            1.0608146350626082,
+            1.3600333304914032
+          ]
+        }
+      ],
+      "original_true_obstacle_queries": 129043,
+      "still_measured_obstacle_queries": 84059,
+      "obstacle_query_retention": 0.6514030206985268,
+      "dense_count_ratio": 2.2619797336259344,
+      "catastrophic_frames": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95,
+        100,
+        105,
+        110,
+        115,
+        120,
+        125,
+        130,
+        135,
+        140,
+        145,
+        160,
+        175,
+        180,
+        185,
+        190,
+        195,
+        200,
+        205,
+        210,
+        215,
+        220,
+        225,
+        230,
+        235,
+        240,
+        245,
+        250,
+        255,
+        260,
+        265,
+        270,
+        275,
+        280,
+        285,
+        290,
+        295,
+        300,
+        305,
+        310,
+        315,
+        320,
+        325,
+        330,
+        335,
+        340,
+        345,
+        350,
+        355,
+        360,
+        365,
+        370,
+        375,
+        380,
+        385,
+        390,
+        395,
+        400,
+        405,
+        410,
+        415,
+        420,
+        425,
+        430,
+        435,
+        475,
+        495,
+        500,
+        505,
+        510,
+        515,
+        575,
+        580,
+        590,
+        595,
+        600,
+        605,
+        615,
+        630,
+        635,
+        640,
+        645,
+        650,
+        655,
+        660,
+        665,
+        670,
+        675,
+        680,
+        685,
+        690,
+        695,
+        700,
+        705,
+        710,
+        715,
+        720,
+        725,
+        730,
+        735,
+        740,
+        745,
+        750,
+        755,
+        760,
+        765,
+        770,
+        775,
+        780,
+        785,
+        790,
+        795,
+        800,
+        805,
+        810,
+        815,
+        820,
+        825,
+        830,
+        835,
+        840,
+        845,
+        850,
+        855,
+        860,
+        865,
+        870,
+        875,
+        880,
+        885,
+        890,
+        895,
+        900
+      ],
+      "frame_coverage_failures": [],
+      "gates": {
+        "finite_count": true,
+        "depth_p90": false,
+        "outlier": false,
+        "dense_coverage": true,
+        "per_frame_coverage": true,
+        "catastrophic_frame": false,
+        "obstacle_retention": false
+      },
+      "source_gate": false,
+      "maps": [
+        {
+          "frame": 450,
+          "time_s": 44.99999899417162,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 123,
+              "far015": 6,
+              "older10s": 13,
+              "old_far015": 0,
+              "cell_distance_p50_p90_p95": [
+                3.552713678800501e-15,
+                0.10000000000000142,
+                0.14142135623731378
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 821,
+              "far015": 552,
+              "older10s": 216,
+              "old_far015": 196,
+              "cell_distance_p50_p90_p95": [
+                0.412310562561765,
+                1.299999999999998,
+                1.4212670403551868
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 495,
+          "time_s": 49.49999889358878,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 122,
+              "far015": 2,
+              "older10s": 82,
+              "old_far015": 1,
+              "cell_distance_p50_p90_p95": [
+                3.552713678800501e-15,
+                0.10000000000000142,
+                0.10000000000000142
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 865,
+              "far015": 592,
+              "older10s": 471,
+              "old_far015": 267,
+              "cell_distance_p50_p90_p95": [
+                0.41231056256177195,
+                1.2649110640673533,
+                1.4142135623730951
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 500,
+          "time_s": 49.99999888241291,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 123,
+              "far015": 2,
+              "older10s": 82,
+              "old_far015": 1,
+              "cell_distance_p50_p90_p95": [
+                3.552713678800501e-15,
+                0.10000000000000142,
+                0.10000000000000142
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 860,
+              "far015": 586,
+              "older10s": 498,
+              "old_far015": 294,
+              "cell_distance_p50_p90_p95": [
+                0.41231056256176546,
+                1.252996408614169,
+                1.4142135623730954
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 899,
+          "time_s": 89.89999799057841,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 127,
+              "far015": 8,
+              "older10s": 108,
+              "old_far015": 2,
+              "cell_distance_p50_p90_p95": [
+                3.552713678800501e-15,
+                0.10000000000000142,
+                0.4559797974644643
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 888,
+              "far015": 614,
+              "older10s": 678,
+              "old_far015": 424,
+              "cell_distance_p50_p90_p95": [
+                0.4242640687119295,
+                1.2649110640673478,
+                1.3999999999999986
+              ]
+            }
+          ]
+        }
+      ],
+      "frame_metrics_checked": 181
+    },
+    {
+      "group": "E1",
+      "arms": [
+        {
+          "arm": "baseline",
+          "predicted": 6475844,
+          "finite": 4837237,
+          "nohit": 1638607,
+          "accepted_points": 262774,
+          "finite_accepted_points": 225334,
+          "ground_false_points": 771,
+          "gt_obstacle_points": 224373,
+          "finite_scoring_coverage": 0.7469662641657211,
+          "full_image_scored_fraction": 0.08699565852325046,
+          "depth_p50_p90_p95": [
+            0.02733922004699707,
+            0.11770772933959961,
+            0.14495923519134524
+          ],
+          "above030_fraction": 0.010951499792133402,
+          "ground_false_fraction": 0.003421587510096124,
+          "point_error_p50_p90_p95": [
+            0.024321788020552022,
+            0.06199648244609149,
+            0.11126605029885255
+          ]
+        },
+        {
+          "arm": "joint",
+          "predicted": 4644139,
+          "finite": 4576762,
+          "nohit": 67377,
+          "accepted_points": 161192,
+          "finite_accepted_points": 145654,
+          "ground_false_points": 1686,
+          "gt_obstacle_points": 143550,
+          "finite_scoring_coverage": 0.9854920363064068,
+          "full_image_scored_fraction": 0.08231112597836096,
+          "depth_p50_p90_p95": [
+            0.06697100400924683,
+            0.4860089898109436,
+            0.8880442142486573
+          ],
+          "above030_fraction": 0.1516513203002472,
+          "ground_false_fraction": 0.01157537726392684,
+          "point_error_p50_p90_p95": [
+            0.03296960306016189,
+            0.14947439806871937,
+            0.18720999828240747
+          ]
+        }
+      ],
+      "original_true_obstacle_queries": 224373,
+      "still_measured_obstacle_queries": 95110,
+      "obstacle_query_retention": 0.4238923578148886,
+      "dense_count_ratio": 0.7171480659509402,
+      "catastrophic_frames": [
+        65,
+        80,
+        85,
+        90,
+        100,
+        105,
+        110,
+        115,
+        120,
+        125,
+        130,
+        135,
+        140,
+        145,
+        150,
+        155,
+        160,
+        165,
+        170,
+        175,
+        180,
+        185,
+        190,
+        195,
+        200,
+        205,
+        210,
+        215,
+        220,
+        225,
+        230,
+        235,
+        245,
+        250,
+        255,
+        260,
+        265,
+        270,
+        275,
+        280,
+        285,
+        290,
+        295,
+        300,
+        305,
+        310,
+        320,
+        325,
+        330,
+        335,
+        340,
+        345,
+        350,
+        355,
+        360,
+        365,
+        370,
+        380,
+        385,
+        390,
+        395,
+        400,
+        405,
+        410,
+        415,
+        420,
+        425,
+        430,
+        435,
+        440,
+        445,
+        450,
+        455,
+        460,
+        480,
+        500,
+        505,
+        510,
+        515,
+        520,
+        525,
+        530,
+        535,
+        540,
+        545,
+        550,
+        555,
+        560,
+        565,
+        570,
+        575,
+        585,
+        615,
+        620,
+        650,
+        655,
+        660,
+        665,
+        670,
+        675,
+        680,
+        685,
+        690,
+        695,
+        700,
+        705,
+        710,
+        715,
+        720,
+        725,
+        730,
+        735,
+        740,
+        745,
+        750,
+        755,
+        760,
+        765,
+        770,
+        775,
+        780,
+        785,
+        790,
+        795,
+        800,
+        805,
+        810,
+        815,
+        820,
+        825,
+        830,
+        835,
+        840,
+        845,
+        850,
+        855,
+        860,
+        865,
+        870,
+        875,
+        880,
+        885,
+        890,
+        895,
+        900
+      ],
+      "frame_coverage_failures": [
+        175,
+        215,
+        280,
+        285,
+        290,
+        300,
+        305,
+        310,
+        315,
+        320,
+        325,
+        475,
+        480,
+        495,
+        610,
+        635,
+        685,
+        690,
+        695,
+        725
+      ],
+      "gates": {
+        "finite_count": true,
+        "depth_p90": false,
+        "outlier": false,
+        "dense_coverage": true,
+        "per_frame_coverage": false,
+        "catastrophic_frame": false,
+        "obstacle_retention": false
+      },
+      "source_gate": false,
+      "maps": [
+        {
+          "frame": 450,
+          "time_s": 44.99999899417162,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 114,
+              "far015": 13,
+              "older10s": 70,
+              "old_far015": 4,
+              "cell_distance_p50_p90_p95": [
+                0.0999999999999952,
+                0.21652475842498234,
+                0.702487373415291
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 231,
+              "far015": 22,
+              "older10s": 169,
+              "old_far015": 15,
+              "cell_distance_p50_p90_p95": [
+                4.440892098500626e-15,
+                0.1414213562373109,
+                0.36426916428930034
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 495,
+          "time_s": 49.49999889358878,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 144,
+              "far015": 43,
+              "older10s": 62,
+              "old_far015": 5,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999787,
+                0.8191025200354263,
+                1.1999999999999993
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 297,
+              "far015": 88,
+              "older10s": 173,
+              "old_far015": 15,
+              "cell_distance_p50_p90_p95": [
+                5.687116766346677e-15,
+                1.1045361017187236,
+                1.204159457879229
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 500,
+          "time_s": 49.99999888241291,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 142,
+              "far015": 41,
+              "older10s": 60,
+              "old_far015": 6,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999787,
+                0.8056031973468666,
+                1.1999999999999993
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 301,
+              "far015": 88,
+              "older10s": 166,
+              "old_far015": 15,
+              "cell_distance_p50_p90_p95": [
+                5.687116766346677e-15,
+                1.1045361017187236,
+                1.204159457879229
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 899,
+          "time_s": 89.89999799057841,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 175,
+              "far015": 30,
+              "older10s": 115,
+              "old_far015": 20,
+              "cell_distance_p50_p90_p95": [
+                0.0999999999999952,
+                0.29313708498984614,
+                0.635793377120872
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 430,
+              "far015": 124,
+              "older10s": 300,
+              "old_far015": 84,
+              "cell_distance_p50_p90_p95": [
+                0.05000000000000045,
+                0.6082762530298249,
+                0.8034241761564193
+              ]
+            }
+          ]
+        }
+      ],
+      "frame_metrics_checked": 181
+    },
+    {
+      "group": "B54",
+      "arms": [
+        {
+          "arm": "baseline",
+          "predicted": 5712462,
+          "finite": 4404338,
+          "nohit": 1308124,
+          "accepted_points": 262072,
+          "finite_accepted_points": 228157,
+          "ground_false_points": 712,
+          "gt_obstacle_points": 226941,
+          "finite_scoring_coverage": 0.7710052163147869,
+          "full_image_scored_fraction": 0.07921015337246777,
+          "depth_p50_p90_p95": [
+            0.025712907314300537,
+            0.11812925338745117,
+            0.1416168212890625
+          ],
+          "above030_fraction": 0.008265714393400325,
+          "ground_false_fraction": 0.0031206581432960635,
+          "point_error_p50_p90_p95": [
+            0.024083461773946945,
+            0.06602396025978738,
+            0.13156947624969384
+          ]
+        },
+        {
+          "arm": "joint",
+          "predicted": 4146270,
+          "finite": 4087609,
+          "nohit": 58661,
+          "accepted_points": 153931,
+          "finite_accepted_points": 140798,
+          "ground_false_points": 1437,
+          "gt_obstacle_points": 138837,
+          "finite_scoring_coverage": 0.9858521032156613,
+          "full_image_scored_fraction": 0.07351391646523942,
+          "depth_p50_p90_p95": [
+            0.07191598415374756,
+            0.5004565954208375,
+            0.9268834590911861
+          ],
+          "above030_fraction": 0.15775138962655186,
+          "ground_false_fraction": 0.01020611088225685,
+          "point_error_p50_p90_p95": [
+            0.03517034479638629,
+            0.1587698098761526,
+            0.20607907987423107
+          ]
+        }
+      ],
+      "original_true_obstacle_queries": 226941,
+      "still_measured_obstacle_queries": 91982,
+      "obstacle_query_retention": 0.40531239397023894,
+      "dense_count_ratio": 0.7258288982928902,
+      "catastrophic_frames": [
+        65,
+        75,
+        80,
+        85,
+        90,
+        100,
+        105,
+        110,
+        115,
+        120,
+        125,
+        130,
+        135,
+        140,
+        145,
+        150,
+        155,
+        160,
+        165,
+        170,
+        175,
+        180,
+        185,
+        190,
+        195,
+        200,
+        205,
+        210,
+        215,
+        220,
+        225,
+        230,
+        235,
+        245,
+        250,
+        255,
+        260,
+        265,
+        270,
+        275,
+        280,
+        285,
+        290,
+        295,
+        300,
+        305,
+        310,
+        315,
+        320,
+        325,
+        330,
+        335,
+        340,
+        345,
+        350,
+        355,
+        360,
+        365,
+        370,
+        375,
+        385,
+        390,
+        395,
+        400,
+        405,
+        410,
+        415,
+        420,
+        425,
+        430,
+        435,
+        440,
+        445,
+        455,
+        460,
+        480,
+        490,
+        500,
+        505,
+        510,
+        515,
+        520,
+        525,
+        530,
+        535,
+        540,
+        555,
+        560,
+        565,
+        570,
+        575,
+        580,
+        585,
+        590,
+        595,
+        600,
+        610,
+        615,
+        630,
+        635,
+        640,
+        645,
+        650,
+        655,
+        660,
+        665,
+        680,
+        685,
+        690,
+        695,
+        700,
+        705,
+        715,
+        720,
+        725,
+        730,
+        735,
+        740,
+        755,
+        760,
+        765,
+        770,
+        775,
+        780,
+        785,
+        790,
+        795,
+        800,
+        805,
+        810,
+        815,
+        820,
+        825,
+        830,
+        835,
+        840,
+        850,
+        855,
+        860,
+        865,
+        885,
+        890,
+        895,
+        900
+      ],
+      "frame_coverage_failures": [
+        175,
+        215,
+        280,
+        285,
+        290,
+        305,
+        310,
+        315,
+        320,
+        325,
+        475,
+        480,
+        495,
+        500,
+        545,
+        550,
+        555,
+        605,
+        610,
+        615,
+        620,
+        655,
+        660,
+        665,
+        670,
+        675,
+        680,
+        685,
+        690,
+        695,
+        710,
+        735,
+        775,
+        800,
+        835
+      ],
+      "gates": {
+        "finite_count": true,
+        "depth_p90": false,
+        "outlier": false,
+        "dense_coverage": true,
+        "per_frame_coverage": false,
+        "catastrophic_frame": false,
+        "obstacle_retention": false
+      },
+      "source_gate": false,
+      "maps": [
+        {
+          "frame": 450,
+          "time_s": 44.99999899417162,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 113,
+              "far015": 13,
+              "older10s": 71,
+              "old_far015": 4,
+              "cell_distance_p50_p90_p95": [
+                0.0999999999999952,
+                0.2188854381999798,
+                0.702842712474618
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 236,
+              "far015": 24,
+              "older10s": 172,
+              "old_far015": 14,
+              "cell_distance_p50_p90_p95": [
+                4.440892098500626e-15,
+                0.17071067811865603,
+                0.399999999999999
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 495,
+          "time_s": 49.49999889358878,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 152,
+              "far015": 49,
+              "older10s": 64,
+              "old_far015": 4,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999787,
+                0.8999999999999986,
+                1.204159457879229
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 308,
+              "far015": 94,
+              "older10s": 177,
+              "old_far015": 14,
+              "cell_distance_p50_p90_p95": [
+                0.05000000000000045,
+                1.0334912934784628,
+                1.204159457879229
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 500,
+          "time_s": 49.99999888241291,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 149,
+              "far015": 46,
+              "older10s": 62,
+              "old_far015": 5,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999787,
+                0.901107702762747,
+                1.204159457879229
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 309,
+              "far015": 91,
+              "older10s": 175,
+              "old_far015": 15,
+              "cell_distance_p50_p90_p95": [
+                5.687116766346677e-15,
+                1.02399004968967,
+                1.204159457879229
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 899,
+          "time_s": 89.89999799057841,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 181,
+              "far015": 24,
+              "older10s": 104,
+              "old_far015": 15,
+              "cell_distance_p50_p90_p95": [
+                0.0999999999999952,
+                0.1999999999999993,
+                0.2828427124746155
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 433,
+              "far015": 108,
+              "older10s": 268,
+              "old_far015": 69,
+              "cell_distance_p50_p90_p95": [
+                5.17892563931115e-15,
+                0.5877032961426931,
+                0.7280109889280513
+              ]
+            }
+          ]
+        }
+      ],
+      "frame_metrics_checked": 181
+    },
+    {
+      "group": "C54",
+      "arms": [
+        {
+          "arm": "baseline",
+          "predicted": 4125580,
+          "finite": 3047249,
+          "nohit": 1078331,
+          "accepted_points": 183060,
+          "finite_accepted_points": 157644,
+          "ground_false_points": 569,
+          "gt_obstacle_points": 156802,
+          "finite_scoring_coverage": 0.7386231754080639,
+          "full_image_scored_fraction": 0.054803482533379376,
+          "depth_p50_p90_p95": [
+            0.0287625789642334,
+            0.13358716964721684,
+            0.15291514396667483
+          ],
+          "above030_fraction": 0.014008044633044428,
+          "ground_false_fraction": 0.00360939839131207,
+          "point_error_p50_p90_p95": [
+            0.02729674861878624,
+            0.14629029028575735,
+            0.16972744856820568
+          ]
+        },
+        {
+          "arm": "joint",
+          "predicted": 2514943,
+          "finite": 2480939,
+          "nohit": 34004,
+          "accepted_points": 83357,
+          "finite_accepted_points": 75414,
+          "ground_false_points": 1268,
+          "gt_obstacle_points": 73815,
+          "finite_scoring_coverage": 0.9864792164275691,
+          "full_image_scored_fraction": 0.04461863705686004,
+          "depth_p50_p90_p95": [
+            0.06646490097045898,
+            0.5332800626754762,
+            0.9786387920379641
+          ],
+          "above030_fraction": 0.16011195760959862,
+          "ground_false_fraction": 0.016813854191529424,
+          "point_error_p50_p90_p95": [
+            0.03745046913195872,
+            0.16084674627633128,
+            0.226429706437649
+          ]
+        }
+      ],
+      "original_true_obstacle_queries": 156802,
+      "still_measured_obstacle_queries": 48382,
+      "obstacle_query_retention": 0.30855473782222165,
+      "dense_count_ratio": 0.6095974384207796,
+      "catastrophic_frames": [
+        65,
+        70,
+        75,
+        85,
+        90,
+        95,
+        100,
+        105,
+        110,
+        115,
+        120,
+        125,
+        130,
+        135,
+        140,
+        145,
+        150,
+        155,
+        160,
+        165,
+        170,
+        175,
+        180,
+        185,
+        190,
+        195,
+        200,
+        205,
+        210,
+        215,
+        220,
+        225,
+        230,
+        235,
+        240,
+        245,
+        250,
+        255,
+        260,
+        265,
+        270,
+        275,
+        280,
+        285,
+        290,
+        295,
+        300,
+        305,
+        310,
+        315,
+        320,
+        325,
+        330,
+        335,
+        340,
+        345,
+        350,
+        355,
+        360,
+        365,
+        370,
+        375,
+        380,
+        385,
+        390,
+        395,
+        400,
+        405,
+        410,
+        415,
+        420,
+        425,
+        430,
+        435,
+        440,
+        445,
+        450,
+        455,
+        460,
+        480,
+        495,
+        500,
+        505,
+        510,
+        515,
+        520,
+        525,
+        530,
+        535,
+        540,
+        545
+      ],
+      "frame_coverage_failures": [
+        305,
+        530,
+        535,
+        540,
+        550,
+        555,
+        560,
+        565,
+        570,
+        575,
+        580,
+        585,
+        590,
+        595,
+        600,
+        605,
+        610,
+        615,
+        620,
+        625,
+        630,
+        635,
+        640,
+        645,
+        650,
+        655,
+        660,
+        665,
+        670,
+        675,
+        680,
+        685,
+        690,
+        695,
+        700,
+        705,
+        710,
+        715,
+        720,
+        725,
+        730,
+        735,
+        740,
+        745,
+        750,
+        755,
+        760,
+        765,
+        770,
+        775,
+        780,
+        785,
+        790,
+        795,
+        800,
+        805,
+        810,
+        815,
+        820,
+        825,
+        830,
+        835,
+        840,
+        845,
+        850,
+        855,
+        860,
+        865,
+        870,
+        875,
+        880,
+        885,
+        890,
+        895,
+        900
+      ],
+      "gates": {
+        "finite_count": true,
+        "depth_p90": false,
+        "outlier": false,
+        "dense_coverage": false,
+        "per_frame_coverage": false,
+        "catastrophic_frame": false,
+        "obstacle_retention": false
+      },
+      "source_gate": false,
+      "maps": [
+        {
+          "frame": 450,
+          "time_s": 44.99999899417162,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 122,
+              "far015": 8,
+              "older10s": 91,
+              "old_far015": 4,
+              "cell_distance_p50_p90_p95": [
+                4.903641518006767e-15,
+                0.1414213562373083,
+                0.22360679774997613
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 236,
+              "far015": 24,
+              "older10s": 185,
+              "old_far015": 13,
+              "cell_distance_p50_p90_p95": [
+                4.440892098500626e-15,
+                0.1707106781186551,
+                0.23841577643113884
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 495,
+          "time_s": 49.49999889358878,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 151,
+              "far015": 35,
+              "older10s": 77,
+              "old_far015": 5,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999787,
+                0.7999999999999972,
+                1.1999999999999993
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 324,
+              "far015": 108,
+              "older10s": 181,
+              "old_far015": 13,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999787,
+                1.0759411708155646,
+                1.2041594578792285
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 500,
+          "time_s": 49.99999888241291,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 151,
+              "far015": 35,
+              "older10s": 77,
+              "old_far015": 5,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999787,
+                0.7999999999999972,
+                1.1999999999999993
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 325,
+              "far015": 107,
+              "older10s": 181,
+              "old_far015": 13,
+              "cell_distance_p50_p90_p95": [
+                0.09999999999999698,
+                1.067921561087423,
+                1.2041594578792285
+              ]
+            }
+          ]
+        },
+        {
+          "frame": 899,
+          "time_s": 89.89999799057841,
+          "arms": [
+            {
+              "arm": "baseline",
+              "risk_cells": 142,
+              "far015": 12,
+              "older10s": 135,
+              "old_far015": 12,
+              "cell_distance_p50_p90_p95": [
+                5.355706317067378e-15,
+                0.14142135623730895,
+                0.3537077110565723
+              ]
+            },
+            {
+              "arm": "candidate",
+              "risk_cells": 284,
+              "far015": 60,
+              "older10s": 284,
+              "old_far015": 60,
+              "cell_distance_p50_p90_p95": [
+                5.101610753549616e-15,
+                0.6252017483325192,
+                0.8052919086053741
+              ]
+            }
+          ]
+        }
+      ],
+      "frame_metrics_checked": 181
+    }
+  ],
+  "C54_replay": {
+    "steps": 900,
+    "both_arms_count_exact": true,
+    "baseline_full_labels_and_clocks_exact_steps": 900,
+    "selected_full_labels_and_clocks_exact_arrays": 8,
+    "candidate_source_records_consumed": 180,
+    "final_map_time_s": 89.89999799057841,
+    "memory_code_reused_unchanged": true,
+    "generator_and_scorer_not_imported": true
+  },
+  "prior_blocker": {
+    "cell_xy": [
+      -1.099999994039532,
+      -0.09999999403953197
+    ],
+    "rows": [
+      {
+        "frame": 495,
+        "queries": 29,
+        "joint_measured": 0,
+        "joint_unknown": 29,
+        "error_le015": 0,
+        "error_gt030": 0,
+        "old_error_quantiles": [
+          0.9228460788726807,
+          0.9496072769165039,
+          0.9506621837615967
+        ],
+        "new_error_quantiles": [
+          null,
+          null,
+          null
+        ],
+        "source_pixels": [
+          280546,
+          280548,
+          280550,
+          280552,
+          281822,
+          281824,
+          281826,
+          281828,
+          281830,
+          281832,
+          283098,
+          283100,
+          283102,
+          283104,
+          283106,
+          283108,
+          283110,
+          284372,
+          284374,
+          284376,
+          284378,
+          284380,
+          284382,
+          284384,
+          285652,
+          285654,
+          285656,
+          285658,
+          286934
+        ]
+      },
+      {
+        "frame": 500,
+        "queries": 17,
+        "joint_measured": 2,
+        "joint_unknown": 15,
+        "error_le015": 1,
+        "error_gt030": 0,
+        "old_error_quantiles": [
+          0.8591147661209106,
+          0.9050740957260132,
+          0.9088246107101441
+        ],
+        "new_error_quantiles": [
+          0.11407440900802612,
+          0.20402740240097048,
+          0.2152715265750885
+        ],
+        "source_pixels": [
+          251082,
+          251084,
+          251086,
+          252360,
+          252362,
+          252364,
+          252366,
+          253642,
+          253644,
+          253646,
+          254920,
+          254922,
+          254924,
+          254926,
+          256198,
+          256200,
+          256202
+        ]
+      }
+    ],
+    "final_original_blocker_cell": [
+      {
+        "arm": "baseline",
+        "risk": true,
+        "age_s": 39.8999991081655
+      },
+      {
+        "arm": "candidate",
+        "risk": false,
+        "age_s": null
+      }
+    ]
+  },
+  "identity": {
+    "prediction_seal_sha256": "104a71e84fecd4a664b4e976aca21f25c39909d0150f8789696bbdf9b8746a18",
+    "result_sha256": "14ec795cd1b3942a16a3db8de93b17c73c01655d85bc4fcddef740fb1363852d",
+    "reviewer_script_sha256": "8274169b54310bb22fe5fba391c803c231d368c360f0a2fc4f484c42a96fc1ba"
+  },
+  "issues": [],
+  "limitations": [
+    "All five trajectories are previously seen development; no independent holdout or actual navigation run.",
+    "Depth metrics score only confident .5..3m predictions with finite positive rendered depth; nohit counts are reported separately, not assigned zero error or free space.",
+    "Obstacle retention covers original accepted GT-obstacle query pixels, not all visible obstacles; retained correspondence does not certify location accuracy.",
+    "Ground false and accepted-point location metrics use renderer pose/depth only offline. Native pose, ideal IMU, encoder, initial gauge and fixed height priors remain inherited privileges.",
+    "Independent complete map replay is C54 only. Other group full baseline replay identity is supported by hashed generator assertions; this review independently rescored all 40 selected map arrays.",
+    "Memory replay reuses the unchanged production memory/grid classes. Raw depth, world projection scoring, gate aggregation and map error counts are reviewer implementations.",
+    "905 outputs were not regenerated with an independent matcher. Saved mandatory flags, integer disparity, support, one-to-one ordering and depth/packet identities were checked; DP optimality was independently tested on exhaustive small inputs before generation.",
+    "Offline counterfactual map removal is unknown, not certified free space, and does not prove an actual controller would succeed."
+  ],
+  "elapsed_s": 84.03412845596904
+}

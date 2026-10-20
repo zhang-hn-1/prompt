@@ -1,0 +1,79 @@
+{
+  "review": "Independent direct visual inspection",
+  "files": {
+    "C54_depth_495.png": "5bd94cf858e12709c8c7667870898a16d64d3bd1da8e1d692de87fab98f84b66",
+    "C54_maps_495.png": "261142831492988ee72cb99be58f01d5d822a083d49eca20a9da5039d7b89c44",
+    "C54_maps_899.png": "594626e4aa2d4a901316324d961327a60012e3e1ae07101fd7a8c83da518b7e3"
+  },
+  "labels_and_scope_correct": true,
+  "inspected_map_metrics": [
+    {
+      "frame": 495,
+      "time_s": 49.49999889358878,
+      "arms": [
+        {
+          "arm": "baseline",
+          "risk_cells": 151,
+          "far015": 35,
+          "older10s": 77,
+          "old_far015": 5,
+          "cell_distance_p50_p90_p95": [
+            0.09999999999999787,
+            0.7999999999999972,
+            1.1999999999999993
+          ]
+        },
+        {
+          "arm": "candidate",
+          "risk_cells": 324,
+          "far015": 108,
+          "older10s": 181,
+          "old_far015": 13,
+          "cell_distance_p50_p90_p95": [
+            0.09999999999999787,
+            1.0759411708155646,
+            1.2041594578792285
+          ]
+        }
+      ]
+    },
+    {
+      "frame": 899,
+      "time_s": 89.89999799057841,
+      "arms": [
+        {
+          "arm": "baseline",
+          "risk_cells": 142,
+          "far015": 12,
+          "older10s": 135,
+          "old_far015": 12,
+          "cell_distance_p50_p90_p95": [
+            5.355706317067378e-15,
+            0.14142135623730895,
+            0.3537077110565723
+          ]
+        },
+        {
+          "arm": "candidate",
+          "risk_cells": 284,
+          "far015": 60,
+          "older10s": 284,
+          "old_far015": 60,
+          "cell_distance_p50_p90_p95": [
+            5.101610753549616e-15,
+            0.6252017483325192,
+            0.8052919086053741
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Depth495 explicitly marked previously preselected; unknown/outside .5..3m white and rendered truth scoring-only. No new worst-frame search claim.",
+    "Maps495 and899 are explicitly recorded-trajectory replay rather than new navigation; red means more than .15m from body-band reference, purple ring acquisition age>10s, blank unknown.",
+    "Displayed495 numbers: baseline risk151/far35/old77; joint risk324/far108/old181. Displayed899 numbers: baseline142/12/135; joint284/60/284. These match independently recomputed selected-map metrics.",
+    "Single prior blocker removal does not certify free space or source success. Full finite depth error conditional on confident finite renderer targets; retention is original accepted true-obstacle query cohort, not all scene obstacles."
+  ],
+  "physical": 0,
+  "fit": 0
+}

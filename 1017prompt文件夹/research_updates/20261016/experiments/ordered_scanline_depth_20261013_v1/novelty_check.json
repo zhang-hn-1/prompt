@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-13T08:43:59.978855+00:00",
+  "inputs": {
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/stereo_geometry.py": "cb178ce523c12c63b6d265cebfc2f367e8a64dbfc692b350e88ebc4ad9c2ae4d",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/ownership.py": "50bace1f44c041a995fb87b346e3161f0eb5e42730a31ac19e8f9bce193c7871",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_partner_ownership_20261013_v1/protocol.json": "7380c3dc3af0056ae58b66c3d6014a8cf5ccf55c867fbd51c166a184a33a62b6",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ordered_scanline_depth_20261013_v1/protocol.json": "e5646f73e37e4795443ac5d9b565b801edf85214765c75c6911fdc5cb4ba6a26",
+    "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/ordered_scanline_depth_20261013_v1/joint.py": "730f1ca525ba42fda59c44e61db3f15db2e2e000d34d84aa848ba4b02860ddbc"
+  },
+  "novel_mechanism_within_project": true,
+  "not_literature_novelty": true,
+  "existing_SGBM": "P1/P2 penalize disparity transitions with local uniqueness/LR, no explicit full ordered bijection with separate occlusion gaps in local wrapper",
+  "old_ownership": "reject all repeated rounded partner claimants after preexisting selected stride2 source; no new correspondences",
+  "new": "joint full scanline optimum with match/left-gap/right-gap transitions and mandatory edges across all optimum paths; frozen old local costs unchanged",
+  "limitations": "Ordering assumes opaque surfaces and no correspondence crossing; row independence can cause inconsistent adjacent scanlines. Evidence is limited current-pair source qualification, not a promised navigation fix.",
+  "references": [
+    "https://docs.opencv.org/4.10.0/d2/d85/classcv_1_1StereoSGBM.html",
+    "https://scholars.duke.edu/individual/pub785998"
+  ]
+}

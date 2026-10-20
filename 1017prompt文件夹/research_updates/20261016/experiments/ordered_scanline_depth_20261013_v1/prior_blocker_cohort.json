@@ -1,0 +1,103 @@
+{
+  "rows": [
+    {
+      "frame": 495,
+      "queries": 29,
+      "joint_measured": 0,
+      "joint_unknown": 29,
+      "error_le015": 0,
+      "error_gt030": 0,
+      "old_error_quantiles": [
+        0.9228460788726807,
+        0.9496072769165039,
+        0.9506621837615967
+      ],
+      "new_error_quantiles": [
+        null,
+        null,
+        null
+      ],
+      "source_pixels": [
+        280546,
+        280548,
+        280550,
+        280552,
+        281822,
+        281824,
+        281826,
+        281828,
+        281830,
+        281832,
+        283098,
+        283100,
+        283102,
+        283104,
+        283106,
+        283108,
+        283110,
+        284372,
+        284374,
+        284376,
+        284378,
+        284380,
+        284382,
+        284384,
+        285652,
+        285654,
+        285656,
+        285658,
+        286934
+      ]
+    },
+    {
+      "frame": 500,
+      "queries": 17,
+      "joint_measured": 2,
+      "joint_unknown": 15,
+      "error_le015": 1,
+      "error_gt030": 0,
+      "old_error_quantiles": [
+        0.8591147661209106,
+        0.9050740957260132,
+        0.9088246107101441
+      ],
+      "new_error_quantiles": [
+        0.11407440900802612,
+        0.20402740240097048,
+        0.2152715265750885
+      ],
+      "source_pixels": [
+        251082,
+        251084,
+        251086,
+        252360,
+        252362,
+        252364,
+        252366,
+        253642,
+        253644,
+        253646,
+        254920,
+        254922,
+        254924,
+        254926,
+        256198,
+        256200,
+        256202
+      ]
+    }
+  ],
+  "final_original_blocker_cell": [
+    {
+      "arm": "baseline",
+      "risk": true,
+      "age_s": 39.8999991081655
+    },
+    {
+      "arm": "candidate",
+      "risk": false,
+      "age_s": null
+    }
+  ],
+  "scope": "offline previously selected error provenance; no GT online deletion, unknown not free; full map impacts scored separately"
+}

@@ -1,0 +1,61 @@
+{
+  "candidate": "ordered_scanline_joint_depth_v1",
+  "hypothesis": "Joint monotone one-to-one assignment with explicit unmatched pixels may reduce false-near correspondences that independent local winners accept.",
+  "single_change": "Replace independent pixel winners with exact joint scanline assignment; use byte-identical v56 7x7 Census / 3x3 Hamming costs and complete support. No local cost tuning.",
+  "novelty": "SGBM penalizes disparity transitions and postchecks LR; old ownership only rejects colliding already-generated sampled partners. This candidate optimizes full image joint one-to-one ordering plus per-pixel occlusion transitions, generating correspondences before downstream filtering.",
+  "input": "Current RGB pair, frozen native vertical stereo calibration f=584.8888888888889 px and baseline=.6m, existing static CAD mask. Native IMU/encoder pose and dynamic CAD only in inherited projection consumer. No truth, task geometry or future input to estimator.",
+  "matching": {
+    "rectification": "90deg CCW native vertical stereo; partner xr=xl-d",
+    "local_cost": "byte-identical v56 7x7 strict Census48 and complete9x9 bilateral CAD support, 3x3 summed Hamming",
+    "match_domain": "all positive integer disparities with true bilateral support, no padding, matchcost<=108 inherited",
+    "gap_cost": "54 for each supported unmatched pixel, exactly half inherited108 match ceiling; unsupported pixels gap0",
+    "objective": "min total matched cost plus left/right gap costs over full monotone scanline alignment from(0,0)to(W,W)",
+    "ambiguity": "accept pair only if the same partner occurs on all globally minimal alignments and skipping that left pixel is impossible on any minimum alignment; any exact alternative -> unknown",
+    "disparity": "integer only; no local subpixel movement that could violate ordering",
+    "depth_range_m": [
+      0.5,
+      3.0
+    ],
+    "unknown": "gap/ambiguity/CAD/out-of-range -> NaN, no risk clearing or observed free"
+  },
+  "groups": [
+    "H",
+    "E0",
+    "E1",
+    "B54",
+    "C54"
+  ],
+  "coverage": "5 complete 181-pair 0..90s sequences, H/E0/E1 and both v54 arms all previously seen development. No independent holdout claim. Original forward/height trajectory shares group H; no duplicate counting.",
+  "gates": {
+    "all_groups_required": true,
+    "finite_depth_samples_min": 1000,
+    "finite_depth_p90_max_m": 0.15,
+    "finite_error_above_0_3_max_fraction": 0.1,
+    "dense_count_vs_baseline_min": 0.7,
+    "per_frame_count_vs_baseline_min_when_baseline_ge1000": 0.5,
+    "per_frame_p90_max_m_when_candidate_finite_ge1000": 0.3,
+    "accepted_true_obstacle_query_retention_vs_baseline_min": 0.95
+  },
+  "gate_denominators": "Finite error is conditional on candidate confidence and finite rendered surface, not all pixels. Full-image coverage and nohit predictions reported separately. Obstacle retention is original accepted query pixels with GT surface height .05..1.5m still accepted by new fixed downstream consumer, not visible-scene recall. All gates frozen before any candidate outputs or scores.",
+  "output_order": "all905 outputs and complete map updates sealed before GT reads; source gates identical to v56; no candidate tuning",
+  "maps": "same recorded native trajectory; preserve original risk consumer. Map changes are offline counterfactual, not actual navigation. H original uses repeated exposure, others viewpoint confirmation.",
+  "budget": {
+    "physical_cap": 4,
+    "used": 0,
+    "fit_cap": 0,
+    "recovery_cap": 1,
+    "recovery_used": 0,
+    "compute_stage_timeout_s": 7200
+  },
+  "stop": "Any complete source gate failure closes candidate and unused physical budget. No sweep, descriptor swap, repeat tuning or rehabilitation of old candidates. Passing source still requires separately registered same-version 90s navigation comparison within cap.",
+  "privileges": "Ideal native IMU, encoder rolling estimate, privileged initial gauge and fixed .4m height prior inherited; GT surface depth/body-band reference only offline scoring. Unknown geometry not treated free.",
+  "preselected_visuals": [
+    "E0 frame450 at45s",
+    "C54 frame495 at49.5s prior blocker source; selected after previous experiment, not random or newly worst-searched"
+  ],
+  "reference": "https://scholars.duke.edu/individual/pub785998",
+  "local_cost_source": {
+    "file": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/current_census_depth_20261013_v1/census.py",
+    "sha256": "76b6bd1db9ffff9de0e1c9dc2c1c0472d7f1cec7e20e0250ef09ba60a149a4ac"
+  }
+}

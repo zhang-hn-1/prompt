@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "eye": 0,
+      "pixel": [
+        240,
+        320
+      ],
+      "saved_renderer_depth": 2.743375539779663,
+      "analytic_scene_cylinder_depth": 2.500007391765708,
+      "object": "/E1Detour/Divider/divider_03",
+      "absolute_difference": 0.24336814801395512
+    },
+    {
+      "eye": 1,
+      "pixel": [
+        240,
+        320
+      ],
+      "saved_renderer_depth": 2.743375539779663,
+      "analytic_scene_cylinder_depth": 0.6999995556041504,
+      "object": "/E1Detour/BoundaryLeft/left_07",
+      "absolute_difference": 2.043375984175513
+    }
+  ],
+  "scope": "Offline scene-asset cylinder rays at one central pixel per eye. No full runtime scene-stage seal was captured; verifies inconsistency with configured identity, not universal renderer diagnosis. Saved first-pose data not qualified new-view input."
+}

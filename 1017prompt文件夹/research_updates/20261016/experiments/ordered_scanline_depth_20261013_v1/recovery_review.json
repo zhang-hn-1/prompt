@@ -1,0 +1,26 @@
+{
+  "interface_recovery_admitted": true,
+  "scope": "One preregistered UTF8 interface recovery only; no truth scoring or physical/navigation admission.",
+  "cause": "UnicodeDecodeError in ASCII read_text of B54 UTF8 configuration after first3 complete groups.",
+  "verified_hashes": {
+    "preserved_prefix": 1653,
+    "source_hashes": 5
+  },
+  "preserved_by_group": {
+    "E0": 551,
+    "E1": 551,
+    "H": 551
+  },
+  "scientific_sources_and_protocol_unchanged": true,
+  "old_failure_preserved": true,
+  "truth_read": false,
+  "physical": 0,
+  "fit": 0,
+  "recovery_ledger_before": 0,
+  "required_runtime_change": "PYTHONUTF8=1",
+  "issues": [],
+  "limitations": [
+    "Recovery launcher verifies saved prefix and original source hashes before spending the single recovery allowance. Inherited packet/map arithmetic is recomputed and old NPZ arrays are compared without overwriting. Full output seal remains required before truth reads."
+  ],
+  "elapsed_s": 0.27403033699374646
+}
