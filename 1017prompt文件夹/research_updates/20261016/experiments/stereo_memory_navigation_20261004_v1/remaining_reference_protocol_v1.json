@@ -1,0 +1,17 @@
+{
+  "role": "read_only_remaining_reference_diagnostic",
+  "queries": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "projection": "nearest XY segment; earliest arc progress tie, all distinct tied progresses reported; 1e-9m distance tolerance",
+  "not_temporal_progress_certificate": true,
+  "same_time_reference_only": true,
+  "pose": "knownGT diagnostic only",
+  "no_actor_change": true,
+  "no_source_or_safety_admission": true
+}

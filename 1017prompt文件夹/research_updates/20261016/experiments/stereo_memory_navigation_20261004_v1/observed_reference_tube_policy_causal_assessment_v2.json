@@ -1,0 +1,30 @@
+{
+  "decision": "PASS_WHOLE_REQUEST_AND_PREFIX_CAUSALITY_RECONSTRUCTION_ONLY",
+  "requests_exact": 546,
+  "cutoffs": [
+    {
+      "cutoff": 65,
+      "actions": 66,
+      "future_poison_truncation_exact": true,
+      "guarded_reads": 80
+    },
+    {
+      "cutoff": 121,
+      "actions": 122,
+      "future_poison_truncation_exact": true,
+      "guarded_reads": 147
+    },
+    {
+      "cutoff": 273,
+      "actions": 274,
+      "future_poison_truncation_exact": true,
+      "guarded_reads": 329
+    }
+  ],
+  "known_GT_pose_current_only": true,
+  "dummyRGB_unused_by_tracker": true,
+  "no_future_file_reads": true,
+  "not_another_online_run": true,
+  "no_alternate_plan_truth_labels": true,
+  "whole_research_complete": false
+}

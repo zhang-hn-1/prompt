@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-09T16:43:21.802518+00:00",
+  "question": "Do the first two actual rebuilt local endpoints already satisfy the frozen previous terminal forward/globalgoal predicate?",
+  "selection": "first two B0 created successful plans in newly closed qualified_start pair, event-based",
+  "budget": {
+    "current_contexts": 2,
+    "planner_queries": 0,
+    "new_physics": 0
+  },
+  "no_new_thresholds": true,
+  "one_reused_predicate": "terminal_node_admission.goal_approach_allowed",
+  "scope": "CPU endpoint compatibility only, no future actual motion as input or counterfactual label, no fit/no actorchange",
+  "keep_all_rejections": true
+}

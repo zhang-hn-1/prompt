@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-09T20:13:53.712996+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_partial_prefix_cpu_closed_continuation_v86.json",
+  "supersedes_sha256": "a879185c56a18a83cd4c132be17154cbc7716d5ac15dab41c16d5389df37613b",
+  "whole_mission_complete": false,
+  "actual_process_running": false,
+  "interface": "bounded_prefix_live_adapter_v1.py",
+  "driver": "run_bounded_prefix_e1_v1.py",
+  "scorer": "assess_bounded_prefix_e1_v1.py",
+  "next": "close independent adapter/full envelope review then original35 pair; no physics admission yet"
+}

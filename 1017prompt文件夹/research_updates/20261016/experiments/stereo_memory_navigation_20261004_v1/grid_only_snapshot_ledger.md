@@ -1,0 +1,3 @@
+4literalRED→GREEN.15s;v1auditorNPZ ndarray scalar query unhashable beforefirstframe/nooutput; v1source/protocol/log preserved. IndependentnormalizerRED→GREEN1 with4gridtotal5pass.24s; v2whole226mappedframe1356arrays2712diag283SHA exact, max77155records;4fixedtimermedian17.686xPASS. Adaptercurrent/history RED→GREEN2/7total1.25s inverseonemethodexact; usedonlyposthocfull71source350maps,notonlineactualproducer. All397suite20.75s. Report ready, ONEfreshreview next. No science/action/source/gate/TTL change; rawrecords retained.
+
+Closed joint ONE fresh review C0/I0/M1; report old prefix preserved. Full baseline terminal distance 4.749973411m, CAD points 140008 authoritative; earlier ledger shorthand typo is not a metric.

@@ -1,0 +1,28 @@
+{
+  "decision": "PASS_ACTUAL_ONLINE_READONLY_SHADOW_CURRENT_PAST_INTERFACE",
+  "actual_online_rows": 546,
+  "first_request_fork": null,
+  "stopped_at_first_request_fork": true,
+  "actual_shadow_rows_and_candidate_requests_exact": true,
+  "cutoffs": [
+    {
+      "cutoff": 65,
+      "future_poison_truncation_exact": true,
+      "guarded_reads": 80
+    },
+    {
+      "cutoff": 155,
+      "future_poison_truncation_exact": true,
+      "guarded_reads": 188
+    },
+    {
+      "cutoff": 545,
+      "future_poison_truncation_exact": true,
+      "guarded_reads": 656
+    }
+  ],
+  "B0_future_physical_labels_after_fork_NOTAPPLICABLE": true,
+  "not_new_online_replay": true,
+  "no_alternate_navigation_result": true,
+  "whole_research_complete": false
+}

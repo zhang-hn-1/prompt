@@ -1,0 +1,21 @@
+{
+  "utc": "2026-10-09T09:33:24.942052+00:00",
+  "status": "actual_b0_running",
+  "session": 2653,
+  "stage": {
+    "status": "runtime_failed",
+    "start_utc": "2026-10-09T09:33:06.385873+00:00",
+    "parent_pid": 178442,
+    "child_pid": 178443,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": 1,
+    "end_utc": "2026-10-09T09:33:23.901417+00:00"
+  },
+  "prelaunch_review": "C0I0;9CPU PASS;2128source98input checked",
+  "next": "supervise same b0 process until closed; if normal launch paced one arm only, no retry; assessor frozen before both",
+  "whole_mission_complete": false,
+  "no_formal_nav_success_claim": true
+}

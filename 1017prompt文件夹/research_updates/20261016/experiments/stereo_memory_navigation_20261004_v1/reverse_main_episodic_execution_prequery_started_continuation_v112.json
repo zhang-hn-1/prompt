@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-10T03:07:57.706317+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_dense_live_final_checkpoint_continuation_v111.json",
+  "supersedes_sha256": "525ad758960dfa302b2dfb5c4d7aa0b5ad8fe715665313c52c5bc749d441bcac",
+  "whole_mission_complete": false,
+  "state": "EPISODIC_EXECUTION_PREQUERY_PENDING",
+  "running": false,
+  "design": "episodic_execution_memory_design_v2.json",
+  "protocol": "episodic_execution_memory_protocol_v2.json",
+  "CPU": "episodic_execution_preflight_CPU_v2.txt",
+  "next": "review then run run_episodic_execution_memory_v2.py predict and score under durable supervision",
+  "new_target_not_reopening_closed_visual_budgets": true
+}

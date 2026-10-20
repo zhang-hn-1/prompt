@@ -1,0 +1,1 @@
+Independent reviewer: C0/I0; candidate and B0 raw seals exact; first contact25.919999s, positional metrics from prior25.899999s capture; not26s postcontact. Functional handoff not navigation acceptance. Minor assessor lacked B0 seal self-check; v2 adds it, preserves v1. Reviewer did not run physics or read active E1.

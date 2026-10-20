@@ -1,0 +1,10 @@
+{
+  "decision": "PASS_FIRST_QUALIFIED_PREFIX_CAUSALITY_ONLY",
+  "cutoff_frame": 70,
+  "compared_source_epochs": 15,
+  "native_samples": 351,
+  "future_native_payload_poison_and_truncation_exact": true,
+  "future_RGB_packets_not_opened_by_prefix_loop": true,
+  "not_all29_output_poison_test": true,
+  "not_source_quality_or_navigation_pass": true
+}

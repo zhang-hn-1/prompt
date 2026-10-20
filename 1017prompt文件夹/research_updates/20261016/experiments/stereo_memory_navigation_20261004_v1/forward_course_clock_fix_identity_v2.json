@@ -1,0 +1,11 @@
+{
+  "old_adapter_sha256": "8636ca5fc332d18a3cff1aff3c589547242c94719a999d08643d5f3daf226b42",
+  "old_test_sha256": "48de3278f4b2c0048da4a3f7bce67d1d80abf9ec8ec6d33bbfdcb6ddd6ba4c97",
+  "cause": "Actual valid future packet accepted by historical setter, and adapter read proprio before checking new/history10Hz timing. Poison test proves gap. Tracking_failed test used nonexistent field instead of actual _failure_subreason.",
+  "changes": [
+    "v2 adapter checks monotonic finite consecutive history and packet interval before payload, no fallback on invalid time",
+    "v2 genuine test uses actual failure branch field"
+  ],
+  "not_performance_rejection": true,
+  "old_bytes_preserved": true
+}

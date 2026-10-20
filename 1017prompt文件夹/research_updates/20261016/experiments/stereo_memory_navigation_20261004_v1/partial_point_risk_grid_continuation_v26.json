@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-08T10:25:35.203880+00:00",
+  "overall_complete": false,
+  "external_user_block": false,
+  "automation_status": "ACTIVE",
+  "active": [
+    {
+      "session_id": 85557,
+      "kind": "nonbinding_side_CPU_necessary",
+      "log": "nonbinding_side_CPU_v1.log"
+    }
+  ],
+  "latest_plan": "docs/superpowers/plans/2026-10-08-E1-nonbinding-side-hypothesis.md",
+  "latest_report": "reports/benchmark_original_E1_cusp_coast_and_side_prior_diagnosis_20261008.md",
+  "previous_v25_preserved": true,
+  "next": "Check85557; rejectactualentry ifnoforkorstartblocked. IfnecessaryPASS prepareONEreviewedactualnonbindingsideconsumer withsamecuspbaseline/hardware/PID/source/gates. No fullGTactor."
+}

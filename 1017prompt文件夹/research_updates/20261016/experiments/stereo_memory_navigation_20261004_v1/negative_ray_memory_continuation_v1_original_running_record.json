@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-07T15:07:15.939901+00:00",
+  "state": "actual_pair_running_do_not_duplicate",
+  "managed_session_id": 66053,
+  "status_path": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/negative_ray_memory_stage_status_v1.json",
+  "next_commands": [
+    "verify_negative_ray_memory_sensor_v1.py R0",
+    "verify_negative_ray_memory_sensor_v1.py R1",
+    "verify_negative_ray_memory_source_v1.py R0",
+    "verify_negative_ray_memory_source_v1.py R1",
+    "assess_negative_ray_memory_actual_v1.py"
+  ],
+  "overall_complete": false,
+  "stopped": false
+}

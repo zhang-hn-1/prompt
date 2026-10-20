@@ -1,0 +1,26 @@
+{
+  "start_utc": "2026-10-06T22:44:58.412238+00:00",
+  "status": "finished",
+  "arms": [
+    {
+      "arm": "current",
+      "primary_memory": "current",
+      "shadow_memory": "history",
+      "status": "finished",
+      "start_utc": "2026-10-06T22:44:58.412342+00:00",
+      "exit_code": 0,
+      "end_utc": "2026-10-06T22:47:05.158485+00:00"
+    },
+    {
+      "arm": "history",
+      "primary_memory": "history",
+      "shadow_memory": "current",
+      "status": "finished",
+      "start_utc": "2026-10-06T22:47:05.346287+00:00",
+      "exit_code": 0,
+      "end_utc": "2026-10-06T22:52:42.545443+00:00"
+    }
+  ],
+  "maximum_sequences": 2,
+  "end_utc": "2026-10-06T22:52:43.085867+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-08T21:02:10.164383+00:00",
+  "stage": "RUNNING",
+  "parent_pid": 3860768,
+  "child_pid": 3860769,
+  "protocol_sha256": "56a4ba861197b877072781238d91fa16a16c650e64716ae3e292d2215b7751e5",
+  "actual_whole_sequences_max": 1,
+  "no_fit": true,
+  "no_retry": true,
+  "no_navigation_or_source_admission": true,
+  "session_id": 93735,
+  "whole_research_complete": false,
+  "next": "Poll existing session93735; after CLOSED and postclose seal run assess_paired_current_fresh_v1.py; verify readonly flags/counts/videos; do not restart",
+  "scope": "one4s zero-request fresh bootstrap, not navigation or moving coverage"
+}

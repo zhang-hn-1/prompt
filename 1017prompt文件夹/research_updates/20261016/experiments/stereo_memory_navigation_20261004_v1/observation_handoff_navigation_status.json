@@ -1,0 +1,25 @@
+{
+  "start_utc": "2026-10-06T23:53:54.893450+00:00",
+  "status": "running",
+  "arms": [
+    {
+      "arm": "B0",
+      "control_variant": "B0",
+      "primary_memory": "current",
+      "shadow_memory": "history",
+      "status": "finished",
+      "start_utc": "2026-10-06T23:53:54.893558+00:00",
+      "exit_code": 0,
+      "end_utc": "2026-10-06T23:55:43.342507+00:00"
+    },
+    {
+      "arm": "observe",
+      "control_variant": "observe",
+      "primary_memory": "current",
+      "shadow_memory": "history",
+      "status": "running",
+      "start_utc": "2026-10-06T23:55:43.512091+00:00"
+    }
+  ],
+  "maximum_sequences": 2
+}

@@ -1,0 +1,22 @@
+{
+  "managed_session": 91570,
+  "status": {
+    "utc": "2026-10-07T12:44:56.153054+00:00",
+    "pid": 1734892,
+    "stage": "RUNNING",
+    "maximum_fresh_actual_sequences": 1,
+    "historical_D2_not_fresh": true,
+    "model_retention_s": 60,
+    "only_estimated_pose_consumer_changed": true,
+    "formal_triggered": false,
+    "whole_research_complete": false,
+    "child_pid": 1734893
+  },
+  "whole_research_complete": false,
+  "missing_auditor": "sensor_observation exactaudit",
+  "next_scripts": [
+    "verify_flat_ground_pose_causal_v1.py",
+    "check_flat_ground_pose_birth_source_v1.py",
+    "assess_flat_ground_pose_actual_v1.py"
+  ]
+}

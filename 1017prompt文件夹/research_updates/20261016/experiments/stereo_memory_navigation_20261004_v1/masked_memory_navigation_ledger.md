@@ -1,0 +1,1 @@
+Newmemory2tests importRED→GREEN; maskedpair4regressions6pass3.96s; meaningfulprecallsource1pass1.04s. Exactrunner reverse/staticglobals. Currentmaskbranchreview C0I0M1 resolvedtest-onlyversion. Protocolpresealed1264. ONEhistory2m35s vs same-currentmaskedshadow; scientificchange memory only. Next actualdriver, oldgates/wholeNOTcomplete/ACTIVE.

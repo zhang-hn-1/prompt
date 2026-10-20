@@ -1,0 +1,1 @@
+ONE fresh readonly final C0/I0/M1. Scoped interval delivery/1550pose gatePASS only. M1 source copied firstdocstringfour complete sequences inaccurate; actualONEsealedE2yaw20; keep frozen source. Reviewer personal12fixtures .32s following baseconda missingpytest firstattempt,914SHA/allarithmetic/video. Review scopes JSON; no rereview.

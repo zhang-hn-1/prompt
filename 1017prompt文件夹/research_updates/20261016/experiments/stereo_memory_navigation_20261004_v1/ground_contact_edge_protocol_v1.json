@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-08T14:53:18.287550+00:00",
+  "frames": [
+    215,
+    220,
+    225,
+    325,
+    330,
+    335
+  ],
+  "samples": 128,
+  "ground_edge": "fixed uniform azimuth points on known cylinder footprint radius .35 at z0; GT postseal evaluator only",
+  "visible_test": "in canvas, positive camera optical depth, rounded pixel valid actual depth, world residual<=.01m",
+  "purpose": "Separate visible low surface band from visible actual ground contact edge, including cropping",
+  "no_prediction_or_policy_inputs": true,
+  "no_network_or_physics": true,
+  "no_reselect_frames": true
+}

@@ -1,0 +1,22 @@
+{
+  "utc": "2026-10-07T16:59:14.268920+00:00",
+  "pid": 2019525,
+  "stage": "FAILED_NO_NEXT_ARM_NO_RETRY",
+  "arms": {
+    "R1": {
+      "stage": "FAILED_PARTIAL_EVIDENCE_NO_RETRY",
+      "utc": "2026-10-07T16:59:14.269091+00:00",
+      "complete": false,
+      "child_pid": 2019526,
+      "returncode": 1,
+      "wall_s": 141.27590053994209,
+      "end_utc": "2026-10-07T17:01:35.545531+00:00",
+      "forced_kill": false,
+      "wall_timeout": false,
+      "post_close_manifest_sha256": "fce65c4fe86d835c5a51bb63099dc9010569db94efd038be70bb05b0c626a169"
+    }
+  },
+  "maximum_fresh_actual_sequences": 1,
+  "whole_research_complete": false,
+  "formal_triggered": false
+}

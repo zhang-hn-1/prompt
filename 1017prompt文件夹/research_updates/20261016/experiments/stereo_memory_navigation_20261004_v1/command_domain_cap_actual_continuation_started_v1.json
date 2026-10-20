@@ -1,0 +1,21 @@
+{
+  "managed_session": 15190,
+  "stage": {
+    "utc": "2026-10-07T12:23:47.940979+00:00",
+    "pid": 1710622,
+    "stage": "RUNNING",
+    "maximum_fresh_actual_sequences": 1,
+    "historical_D1_not_fresh": true,
+    "model_retention_s": 60,
+    "only_unknown_task_main_cap_changed": true,
+    "formal_triggered": false,
+    "whole_research_complete": false,
+    "child_pid": 1710623
+  },
+  "whole_research_complete": false,
+  "next_scripts": [
+    "check_command_domain_cap_birth_source_v1.py",
+    "verify_command_domain_cap_causal_v1.py",
+    "assess_command_domain_cap_actual_v1.py"
+  ]
+}

@@ -1,0 +1,1 @@
+C0/I0;双方rawseals exact, independent scoring exactly agrees. No contact plus退回/timeout is not improvement. firstfork60 prefix14nonraw exact, RGB historical/fullcausal false. Compare source gaps on common time if used. Next only fixed60 source→map→reference cause; no new network/threshold. Author current sealed CPU47196 found34 false-near points, no actor modification.

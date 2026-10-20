@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-07T22:08:34.536254+00:00",
+  "old_verifier_sha256": "ec302dbef8b9c41b0e5bef6b871e345da5a9676cf012d12b8a991a50167b2866",
+  "new_verifier_sha256": "48fe5812a838cdefd565e793d177e88eddfcd9f48e8970e0feabade06552580a",
+  "old_failed_log_sha256": "d92c47ebc8810845407719b087c53405b04d7031a458066723fcb9d8e807cc70",
+  "reason": "blocked field is preceding supervisor state, not an all-zero-policy block. Nonzero requestedmain is legitimate. V4 reconstructs every initialized snapshot, including blocked=True, skips onlyes0None/zero request as original parent verifier does; no simulation/gate/controllerchange.",
+  "whole_research_complete": false
+}

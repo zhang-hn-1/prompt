@@ -1,0 +1,23 @@
+{
+  "stage": "BASELINE_BOOTSTRAP_NOT_EXERCISED_C1_NOT_LAUNCHED",
+  "start_utc": "2026-10-07T08:43:35.427748+00:00",
+  "pid": 1460334,
+  "maximum_actual_sequences": 2,
+  "per_sequence_max_wall_s": 1500,
+  "formal_triggered": false,
+  "whole_research_complete": false,
+  "arms": [
+    {
+      "arm": "B0",
+      "start_utc": "2026-10-07T08:43:35.428090+00:00",
+      "stage": "ACTUAL_CLOSED",
+      "wall_begin": 1220854.566544467,
+      "child_pid": 1460335,
+      "returncode": 0,
+      "end_utc": "2026-10-07T08:52:04.081832+00:00",
+      "wall_s": 508.6539974871557,
+      "post_close_manifest_sha256": "49450e83deb03f5aab9bfe82a14a111955a60b2f426cc28c759e584d5cf724a2"
+    }
+  ],
+  "end_utc": "2026-10-07T08:52:04.835651+00:00"
+}

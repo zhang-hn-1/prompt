@@ -1,0 +1,24 @@
+{
+  "utc": "2026-10-08T10:42:40.486303+00:00",
+  "decision": "POSTSEAL_PREDECLARED_THREE_STATE_BLOCKING_ORIGIN_DIAGNOSTIC_ONLY",
+  "queries": [
+    535,
+    540,
+    545
+  ],
+  "labels_changed535to540": 0,
+  "new_hazard_cells535to540": 0,
+  "blockers_source_frames": [
+    75,
+    365
+  ],
+  "blockers_birth_point_instances": 3,
+  "blockers_unique_source_epochs_per_cell": 1,
+  "local_geometry10cm_fraction": 0.0,
+  "global_source10cm_fraction": 0.9931852744541046,
+  "not_global_sensor_failure": true,
+  "not_sole_whole_navigation_failure_cause": true,
+  "not_actor_GT_filter": true,
+  "no_controller_change": true,
+  "whole_research_complete": false
+}

@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-10T02:19:12.373308+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_dense_live_b0_actual_started_continuation_v107.json",
+  "supersedes_sha256": "50459d77e61831794e9b30372bc7fc1780afb8b3e3ff0f091e1d238488acc32a",
+  "whole_mission_complete": false,
+  "state": "DENSE_LIVE_B0_CLOSED_CANDIDATE_ACTUAL_RUNNING",
+  "running": true,
+  "b0_validation": "dense_current_live_e1_b0_personal_validation_v1.json",
+  "status_path": "dense_current_live_e1_candidate_status_v1.json",
+  "next": "Wait candidate stage normalclose; run assess_dense_current_live_e1_v2.py, independent actual closure and plots/report."
+}

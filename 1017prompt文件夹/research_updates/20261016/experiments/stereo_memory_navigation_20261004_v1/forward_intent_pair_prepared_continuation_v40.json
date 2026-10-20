@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-09T14:56:00.431834+00:00",
+  "supersedes_sha256": "f3c1d86692ab07c62e1aaf4bdae369ae4341207caf4fa7069b703997b62ec11d",
+  "learning_fullgate_admission": false,
+  "learning_no_more_fit": true,
+  "CPU_original_waypoint_error": 0,
+  "candidate_cpu_gate": true,
+  "candidate_negative_geometry": "path4.5->6m,cusps1->2; not improvement claim",
+  "actual_new_physical_sequences": 0,
+  "physical_budget": 2,
+  "cpu_queries_consumed": 2,
+  "tests": 6,
+  "run_entry": "run_forward_intent_navigation_e1_stage_v1.py b0 then candidate only after prelaunch C0I0",
+  "review_pending": true,
+  "running_process": false,
+  "whole_mission_complete": false
+}

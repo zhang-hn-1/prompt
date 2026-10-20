@@ -1,0 +1,1 @@
+ONE local actualFINISHED/taskPASS/candidateREJECT终距+3.951mm；fullgoalNOTtriggered。3RED→GREEN/408suite/2204identity，实际请求已生效但实际速度未稳。No threshold scan. Next bounded memory reference-side audit using closedhistory; no policyact/repeatGPU/newmodel.

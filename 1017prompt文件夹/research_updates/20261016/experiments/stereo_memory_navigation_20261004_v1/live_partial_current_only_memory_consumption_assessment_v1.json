@@ -1,0 +1,13 @@
+{
+  "decision": "PASS_LATEST_EXPOSURE_PARTIAL_GRID_CONSUMPTION_ONLY",
+  "control_maps_exact": 463,
+  "source_points_before_last_postaction": 36628,
+  "local_plan_snapshots": 323,
+  "no_free_or_completed_volume": true,
+  "final_postaction_source_not_a_control_map": true,
+  "legacy_policy_pose_privileged_flag_inherited": true,
+  "raw_history_is_readonly_diagnostic_not_control_input": true,
+  "actual_inputs": "current native IMU+encoder pose; privileged initial gauge/flatheight; measured joints/RGB; idealIMU lowlevel PID",
+  "not_full_volume_or_formal35_pass": true,
+  "whole_complete": false
+}

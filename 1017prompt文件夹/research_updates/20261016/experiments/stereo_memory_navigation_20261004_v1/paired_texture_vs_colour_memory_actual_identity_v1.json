@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-08T03:10:07.245491+00:00",
+  "all_requests_exact": true,
+  "full_actual_physics_exact": {
+    "root_position_world_m": true,
+    "root_quaternion_world_wxyz": true,
+    "joint_position_rad": true,
+    "joint_velocity_rad_s": true,
+    "smoothed_target": true,
+    "applied_action": true,
+    "position_world_xy": true,
+    "simulation_time_s": true
+  },
+  "installed_references_exact": true,
+  "NOT_identical_source_or_map_assertion": true,
+  "source_is_different_rule": true,
+  "no_incremental_control_improvement_over_old_colour_memory_run": true,
+  "no_memory_or_worldmodel_benefit_claim": true,
+  "single_fixture_not_generalized": true
+}

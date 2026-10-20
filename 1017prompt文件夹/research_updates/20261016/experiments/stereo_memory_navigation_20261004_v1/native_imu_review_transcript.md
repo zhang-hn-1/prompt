@@ -1,0 +1,1 @@
+Fresh readonly review C0/I0/M1; accepted interface REJECT closure. M1 report wording current gyro SO3 inaccurate; actual previousgyro SO3, currentgyro velocity. Reviewer personal/inherited/declined scopes saved in JSON. No rereview.

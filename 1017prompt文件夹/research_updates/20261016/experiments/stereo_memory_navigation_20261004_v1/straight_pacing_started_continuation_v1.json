@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-09T09:16:34.823869+00:00",
+  "status": "actually_started",
+  "session_id": 74220,
+  "supervision": {
+    "status": "running",
+    "start_utc": "2026-10-09T09:15:07.141589+00:00",
+    "parent_pid": 157990,
+    "child_pid": 157991,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "maximum_sequences": 1,
+  "no_retry": true,
+  "whole_mission_complete": false,
+  "next_entry": "Poll straight_pacing_probe_status_v1.json and existing session74220; no duplicate launch. If finished0, execute assess_straight_pacing_probe_v1.py, verify seals/decodedvideo and compare frozen windows; if interrupted/failure preserve partial no automaticretry."
+}

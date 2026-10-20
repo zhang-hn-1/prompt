@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-09T17:55:48.053433+00:00",
+  "supersedes_path": "/home/an/Documents/ChatGPT/球型机器人导航/experiments/stereo_memory_navigation_20261004_v1/reverse_main_stop_and_bank_closed_continuation_v66.json",
+  "supersedes_sha256": "8e20277152eda503782a93e34bc547c3a9cfa2d5c2bb5d89239b6d383b7d3766",
+  "whole_mission_complete": false,
+  "no_physics_running": true,
+  "candidate": "bank_qualified_forward_boost_v1.py",
+  "protocol": "bank_qualified_navigation_e1_protocol_v1.json",
+  "next_entry": "run_bank_qualified_navigation_e1_stage_v1.py b0",
+  "budget_used": 0,
+  "requires_before_launch": "current independent prelaunch C0I0, then B0 once/candidate once under durable supervision, frozen scorer"
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "native_imu_gravity_assistance",
+  "status_receipt": "native_imu_status.json",
+  "running_entry": "run_native_imu_stage.py",
+  "next_post_exit": "audit_native_imu.py",
+  "maximum_actual_runs": 1,
+  "on_first_rejection": "retain full candidate and interface rejection; bounded source diagnosis without parameter/offset/gate rescue",
+  "if_development_pass": "only one separately presealed changed-condition whole-sequence validation, not navigation admission",
+  "whole_research_complete": false
+}

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-09T09:36:13.763503+00:00",
+  "status": "actual_v2_B0_running",
+  "stage": {
+    "status": "running",
+    "start_utc": "2026-10-09T09:35:58.350203+00:00",
+    "parent_pid": 182109,
+    "child_pid": 182110,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session": 30522,
+  "whole_mission_complete": false,
+  "next": "supervise existing B0 v2; onlynormalexit then paced v2 once; no remaining startup repair",
+  "prelaunch_review": "C0I0;10CPU pass",
+  "entry": "/home/an/Documents/ChatGPT/\u7403\u578b\u673a\u5668\u4eba\u5bfc\u822a/experiments/stereo_memory_navigation_20261004_v1/run_fixed_reference_pacing_stage_v2.py"
+}

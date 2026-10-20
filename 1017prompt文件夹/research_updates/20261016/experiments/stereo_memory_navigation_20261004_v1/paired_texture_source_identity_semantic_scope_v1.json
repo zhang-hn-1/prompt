@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-08T03:19:45.004326+00:00",
+  "legacy_policy_record_source_layer": "RGB_depth_knownpose",
+  "legacy_layer_string_is_not_actor_permission": true,
+  "actual_source_poses": "Current native IMU+main encoder estimates; .4 fixed flat-height prior; single privileged initial gauge",
+  "source_reconstruction_102_epochs_exact": true,
+  "no_moving_GT_position_or_rotation_to_source_or_planner": true,
+  "lowlevel_roll_PID_ideal_IMU_feedback_privileged": true,
+  "GT_used_only_archival_terminal_and_closed_evaluation": true,
+  "LAB_class_masks_computed_diagnostic_not_selector": true,
+  "paired_texture_required_support_not_matching_or_free_certificate": true,
+  "old_bytes_preserved": true,
+  "whole_complete": false
+}

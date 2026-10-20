@@ -1,0 +1,14 @@
+{
+  "utc": "2026-10-08T13:28:24.371186+00:00",
+  "question": "Does a first-expansion-only direction domain preserve a feasible local path at already-moving normal tracking replan211?",
+  "max_actual_queries": 2,
+  "frame": 211,
+  "arm": "latest observed-tube raw sequence",
+  "knownpose": true,
+  "no_new_physics": true,
+  "no_future_truth": true,
+  "candidate": "first primitive forward only, later reverse retained",
+  "admission": "unchanged map and .870710678 margin, successful path with at least 2 waypoints, actual normal F state verified; necessary CPU only",
+  "reject": "infeasible/unsupported/unchanged request means no navigation admission",
+  "old_forward_only_rejection_preserved": true
+}

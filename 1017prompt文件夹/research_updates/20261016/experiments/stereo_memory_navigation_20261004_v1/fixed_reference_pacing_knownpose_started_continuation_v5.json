@@ -1,0 +1,19 @@
+{
+  "utc": "2026-10-09T09:51:53.108623+00:00",
+  "stage": "actual_knownpose_b0_v3_running",
+  "status": {
+    "status": "running",
+    "start_utc": "2026-10-09T09:51:12.112974+00:00",
+    "parent_pid": 200251,
+    "child_pid": 200252,
+    "no_retry": true,
+    "timeout": false,
+    "forced_kill": false,
+    "parent_signal": null,
+    "child_returncode": null
+  },
+  "session": 55896,
+  "review": "C0I0;6CPU actualrequestsemantics/composition;minor protocolwordingfixedbeforelaunch",
+  "next": "sameprocesssupervise; ifnormalthenpacedknownposev3once; frozenassessorv3; no native/visual gate upgraded",
+  "whole_mission_complete": false
+}

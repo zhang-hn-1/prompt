@@ -1,0 +1,1 @@
+One fresh final readonly C0/I0/M1. Freecube Z scope supports begin-label/current-content; does not certify within-step moment/allaxes/constrainedrobot. Personal/inherited/declined scopes JSON. M1 reset initialization separate from50excitation samples; no secondreview.

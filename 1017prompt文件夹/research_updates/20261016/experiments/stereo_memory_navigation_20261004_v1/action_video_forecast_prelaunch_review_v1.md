@@ -1,0 +1,6 @@
+独立reviewer first_primitive_direction_first_review：采集manifest Important1已修复关闭；fit teacher/CAD lineage Important1已修复关闭。最终Critical0 Important0。未读取fresh图像/teacher、未启动物理/拟合。23维、current/past flow、四历史整序列训练、train-only scale、alpha1、frameweight、两fresh全部prediction seal before teacher符合冻结协议。独立4项单测通过，含未来图像/请求替换与日志截断。
+
+fit driver SHA256 3fc591e3ff5c8bc12c03937d1400a321e4a0ce507bd9848020f07fee1fe687ec
+identity SHA256 4b1b576164328aa84f641862e349bbd76b5dd3ca3c965156b39ed6acca834501
+
+仅离线近似2D预测scope，不是在线接口、物理模型或安全准入。

@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-09T05:26:09.218382+00:00",
+  "status": "fresh acquisition running, sole forecaster implementation prepared not fit",
+  "actual_session_id": 11402,
+  "stage_script": "experiments/stereo_memory_navigation_20261004_v1/run_action_video_fresh_acquisitions_stage_v1.py",
+  "status_file": "experiments/stereo_memory_navigation_20261004_v1/action_video_fresh_status_v1.json",
+  "next": "review sole forecast implementation, wait full two fresh seals, then fit once historical only and evaluate fresh after prediction seals",
+  "no_repeated_acquisition": true,
+  "whole_mission_complete": false
+}

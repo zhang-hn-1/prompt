@@ -1,0 +1,23 @@
+{
+  "start_utc": "2026-10-06T23:28:46.553133+00:00",
+  "status": "finished_both_validation_sequences_sealed",
+  "maximum_sequences": 2,
+  "sequences": [
+    {
+      "kind": "far",
+      "status": "finished",
+      "start_utc": "2026-10-06T23:28:46.553235+00:00",
+      "exit_code": 0,
+      "end_utc": "2026-10-06T23:34:02.536515+00:00"
+    },
+    {
+      "kind": "near",
+      "status": "finished",
+      "start_utc": "2026-10-06T23:34:02.738000+00:00",
+      "exit_code": 0,
+      "end_utc": "2026-10-06T23:37:04.051748+00:00"
+    }
+  ],
+  "purpose": "seal two entire validation sequences before fitting; do not read heldout labels/scores",
+  "end_utc": "2026-10-06T23:37:04.312058+00:00"
+}

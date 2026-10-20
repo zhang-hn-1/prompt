@@ -1,0 +1,12 @@
+{
+  "start_utc": "2026-10-07T06:53:21.185338+00:00",
+  "pid": 1340120,
+  "stage": "FAILED_PRESERVED_NO_RETRY",
+  "max_wall_s": 600,
+  "expected_learned_calls": 3,
+  "formal_triggered": false,
+  "whole_research_complete": false,
+  "failure": "AssertionError: prediction process failed; preserve namespace and log",
+  "end_utc": "2026-10-07T06:53:26.509522+00:00",
+  "wall_s": 5.324212874053046
+}

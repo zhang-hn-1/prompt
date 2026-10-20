@@ -1,0 +1,1 @@
+Read-only reviewer independently8PASS .34s C0I0; scope frozenknownGT replay only. Minor snapshot clock documented latestupdate, dependencysealaddendumv2 added feature_tracks hash preservingv1. No online/source/depth/free/actor admission.

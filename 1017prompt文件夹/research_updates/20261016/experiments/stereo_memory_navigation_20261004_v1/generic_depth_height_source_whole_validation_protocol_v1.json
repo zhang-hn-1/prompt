@@ -1,0 +1,20 @@
+{
+  "frozen_at": "2026-10-08T02:15:41.274461+00:00",
+  "candidate_sha256": "5bb5bb5cdb46fb207baddcbff5fd66a18e4c5ca292fdf1197552f86be0dc2e02",
+  "adapter_sha256": "bbb0d62aec8e0d4fa1a33957c422f4a1321a92a6ed86b5d6fa6daaccd7b23687",
+  "data_sequence": "live_partial_current_only_navigation_run_v1",
+  "new_generic_truth_labels_not_read": true,
+  "known_fixture": true,
+  "predict_all_before_labels": true,
+  "gates": {
+    "n": 100,
+    "within_10cm": 0.95,
+    "unconditional_p90_m": 0.1,
+    "obstacle_precision": 0.95,
+    "two_epochs_n100": true,
+    "pose_peak_m": 0.035,
+    "pose_rms_m": 0.015,
+    "angle_p90_deg": 2
+  },
+  "no_refit_or_rescue": true
+}

@@ -1,0 +1,1 @@
+4TDD importRED→GREEN4passed3.28s; originalrunner exact reversible derivation; staticglobals empty. Geometryreview C0I0M1 beforeactual. ONEcurrent2m/35s dynamic maskprimary oldmaskcurrent shadow sameLIVErawoutputs. No historystrategy/speed/control/plannerchange. Protocol sourcepreseal saved. Next actualdriver; wholeNOTcomplete.

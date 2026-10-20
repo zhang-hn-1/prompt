@@ -1,0 +1,1 @@
+独立审查 /root/first_primitive_direction_first_review：Critical0 Important0。原时间guard Important用独立v2/RED→GREEN trap关闭；5项测试通过；旧v2与新v3封存全验；2105源码/92输入hash一致；driver唯一act前hook，不读shadow结果发动作，单次35秒timeout1200无重试。Minor旧whole-stage2/时间metadata已启动前修正为当前1条，不改actor。真实在线接口尚未验证。

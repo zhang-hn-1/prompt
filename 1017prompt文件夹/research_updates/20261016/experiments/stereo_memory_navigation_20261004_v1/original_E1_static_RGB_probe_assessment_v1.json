@@ -1,0 +1,18 @@
+{
+  "utc": "2026-10-08T06:13:11.393958+00:00",
+  "decision": "PROVEN_RENDER_ONLY_RGB_VARIATION_AT_FROZEN_PHYSICS_CLOCK",
+  "snapshots": 24,
+  "RGB_changed_adjacent_eye_pairs": 46,
+  "GT_depth_all24_exact": true,
+  "GT_camera_pose_all24_exact": true,
+  "rendering_time_all24_frozen_raw_time": true,
+  "runtime_asserted_physical_state_clock_every_render": true,
+  "no_physics_or_commands_after_reset": true,
+  "no_NN_or_quality_seed_changes": true,
+  "video_decode_frames": 24,
+  "not_complete_crossrun_cause_proof": true,
+  "not_a_fix_or_source_gate": true,
+  "known_initial_scene_diagnostic_only": true,
+  "whole_research_complete": false,
+  "post_close_manifest_sha256": "4c725d3da8ba7bc7111e22b2aa9ef442f09d2154da640d4e1ca4ea221374f4b1"
+}

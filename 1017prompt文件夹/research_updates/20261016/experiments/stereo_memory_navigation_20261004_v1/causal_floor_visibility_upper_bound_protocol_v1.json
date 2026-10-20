@@ -1,0 +1,15 @@
+{
+  "queries": [
+    116,
+    216,
+    221,
+    331
+  ],
+  "maximum_queries": 4,
+  "role": "GT-visible floor upper bound on possible RGB-floor plus plane-prior source; not implemented classifier/actor",
+  "GT_semantics_only_postseal": true,
+  "memory": "best-case unlimited causal past visible-floor memory, deliberately optimistic information bound not actualTTL10memory",
+  "ground_pixels": "GT valid world|z|<=.01; evaluator not actor input",
+  "no_new_physics_NN_fit": true,
+  "no_free_volume_certificate": true
+}

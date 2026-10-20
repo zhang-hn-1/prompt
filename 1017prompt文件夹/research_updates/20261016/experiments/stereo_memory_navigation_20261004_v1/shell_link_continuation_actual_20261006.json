@@ -1,0 +1,12 @@
+{
+  "utc": "2026-10-05T18:58:32.602382+00:00",
+  "stage": "actualprocess running",
+  "status": "shell_link_status.json",
+  "log": "shell_link_run.log",
+  "started": "2026-10-05T18:57:02.378943+00:00",
+  "session_id": 37648,
+  "do_not_duplicate": true,
+  "next": "Wait actualprocess exit0 then audit_shell_link_measurement.py; preserve any failure; inspect perlinkCOM/frame conventions, B0equivalence, report+one review",
+  "whole_research_complete": false,
+  "automation": "ACTIVE"
+}

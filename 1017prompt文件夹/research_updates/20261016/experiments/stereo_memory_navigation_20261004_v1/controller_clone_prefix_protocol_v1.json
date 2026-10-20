@@ -1,0 +1,12 @@
+{
+  "scope": "Historical measured-feedback controller reconstruction, fixed boundaries221371; not recursive physical prediction or online admission",
+  "boundaries": [
+    221,
+    371
+  ],
+  "read_prefix_only": true,
+  "comparison": "exact current uncapped request and boundary state",
+  "future_plan_rule": "Only known current request hold may be constructed; cannot claim B0 feedback-following plan beyond current call",
+  "no_control_change": true,
+  "no_new_physics": true
+}

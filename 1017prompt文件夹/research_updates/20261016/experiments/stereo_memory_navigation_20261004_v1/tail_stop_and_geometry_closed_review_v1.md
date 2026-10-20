@@ -1,0 +1,1 @@
+独立审查：/root/first_primitive_direction_first_review。两项只读audit分别Critical0 Important0，未发现需修复Minor。停止规则数值独立逐值重算，165不同版本排除；几何165原计划全部waypoints/340nodes复现，155新查询仅反事实名义几何。无act/物理/actor变更。源与输出身份见各protocol/artifact_manifest.json。
