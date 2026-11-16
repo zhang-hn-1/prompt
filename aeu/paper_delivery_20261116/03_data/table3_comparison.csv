@@ -15,8 +15,8 @@ MC3-18,3D CNN,90.11,90.15,89.99,90.03,86.82,97.88,11.47M
 R(2+1)D-18,3D CNN,90.26,90.33,90.13,90.18,87.03,97.89,31.30M
 R18-Transformer,Transformer,91.05,91.07,91.03,90.98,88.11,98.11,17.48M
 Swin-Tiny,Transformer,85.95,86.07,85.78,85.85,81.29,97.27,27.52M
-ViT-B/16,Transformer,,,,,,,85.67M
-Swin-S,Transformer,,,,,,,48.80M
+ViT-B/16,Transformer,80.80,81.13,80.41,80.48,74.57,95.03,85.67M
+Swin-S,Transformer,83.58,83.68,83.34,83.40,78.16,96.41,48.80M
 TimeSformer-Base,Transformer,,,,,,,121.13M
-Video Swin-S,Transformer,,,,,,,49.51M
+Video Swin-S,Transformer,85.98,86.19,85.82,85.84,81.42,97.23,49.51M
 L-RDTNet,R-D-T structured,92.43,92.43,92.39,92.37,89.93,98.46,8.37M
