@@ -1,0 +1,21 @@
+\begin{table*}[!t]
+\centering
+\caption{Short-observation recognition and frame-order sensitivity for L-RDTNet (mean $\pm$ std over three seeds). R0--R3 are class-wise recalls; classes 2 and 3 are bird and floating balloon.}
+\label{tab:short_observation_metrics}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.05}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llcccccccccc}
+\hline
+Cohort & Input & Sequences & AC & Macro-P & Macro-R & Macro-F1 & MCC & R0 & R1 & R2 (bird) & R3 (balloon) \\
+\hline
+$\geq3$ frames & 1 frame & 4489 & 76.36$\pm$1.58 & 77.92$\pm$1.06 & 76.14$\pm$1.54 & 75.67$\pm$1.51 & 69.48$\pm$1.91 & 69.28$\pm$4.45 & 79.74$\pm$3.02 & 61.21$\pm$1.22 & 94.32$\pm$0.58 \\
+$\geq3$ frames & 2 frames & 4489 & 85.94$\pm$0.36 & 85.64$\pm$0.33 & 85.74$\pm$0.39 & 85.46$\pm$0.35 & 81.37$\pm$0.49 & 83.33$\pm$2.42 & 89.28$\pm$0.86 & 77.68$\pm$1.47 & 92.68$\pm$0.64 \\
+$\geq3$ frames & 3 frames & 4489 & 85.41$\pm$0.85 & 86.32$\pm$0.73 & 84.30$\pm$0.93 & 84.64$\pm$0.95 & 80.68$\pm$1.10 & 68.87$\pm$3.40 & 95.61$\pm$0.62 & 87.99$\pm$2.19 & 84.74$\pm$1.75 \\
+$\geq6$ frames & Repeat first & 848 & 62.85$\pm$2.60 & 67.94$\pm$0.21 & 50.66$\pm$2.40 & 50.74$\pm$3.10 & 46.02$\pm$3.01 & 63.87$\pm$5.28 & 19.61$\pm$6.63 & 28.93$\pm$0.00 & 90.22$\pm$1.56 \\
+$\geq6$ frames & Original 6 & 848 & 87.62$\pm$0.35 & 85.58$\pm$1.07 & 80.37$\pm$1.08 & 82.36$\pm$0.66 & 80.83$\pm$0.47 & 96.80$\pm$0.37 & 68.63$\pm$3.70 & 70.25$\pm$3.79 & 85.81$\pm$3.10 \\
+$\geq6$ frames & Shuffled 6 & 848 & 84.87$\pm$0.30 & 83.22$\pm$0.65 & 76.83$\pm$0.24 & 79.32$\pm$0.24 & 76.45$\pm$0.38 & 96.88$\pm$0.24 & 68.14$\pm$1.70 & 61.98$\pm$4.60 & 80.30$\pm$2.42 \\
+\hline
+\end{tabular}}
+\end{table*}
