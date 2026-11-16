@@ -41,5 +41,5 @@ L-RDTNet & R-D-T structured & \textbf{92.43} & \textbf{92.43} & \textbf{92.39} &
 \hline
 \end{tabular}}
 \vspace{2pt}
-\parbox{\textwidth}{\scriptsize ResNet18-Frame Feature Avg.\ is evaluated from the only available checkpoint (seed~42); all other rows use three seeds. ViT-B/16, Swin-S, TimeSformer-Base and Video Swin-S have no checkpoints for the frozen split and are marked with ``--''. SVM/RF/XGBoost operate on 24-dimensional handcrafted features and have no end-to-end parameter count.}
+\parbox{\textwidth}{\scriptsize ResNet18-Frame Feature Avg.\ is evaluated from the only available checkpoint (seed~42); all other rows use three seeds. ViT-B/16, Swin-S, TimeSformer-Base and Video Swin-S have no checkpoints for the frozen split and are marked with ``--''; on the available 8\,GB laptop GPU their measured from-scratch training cost is about 3, 3, 9.4 and 1.3 minutes per epoch, i.e.\ 1--6 hours per seed at 40 epochs. SVM/RF/XGBoost operate on 24-dimensional handcrafted features and have no end-to-end parameter count.}
 \end{table*}

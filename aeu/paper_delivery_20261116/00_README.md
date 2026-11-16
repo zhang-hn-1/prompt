@@ -88,7 +88,7 @@ paper_delivery_20261116/
 4. **M06 Frame Feature Average 只有 seed42**：混淆矩阵里该面板是单种子，其余 5 个模型是 3 种子均值。
 5. **CAM 是解释性可视化**，图注建议 “Grad-CAM on the last convolutional stage”；不要写成注意力机制的直接证据。
 6. **摘要数字**：5,194 条测试序列来自 **277 条留出记录**；**1,384 条是全数据集记录数**。若 IEEE Access 摘要仍写成“1,384 条测试记录”，务必改。
-7. **Table 3 的 4 个空行**：ViT-B/16、Swin-S、TimeSformer-Base、Video Swin-S 在本机备份中没有冻结划分的 checkpoint；从零训练每个模型需要数小时到十几小时（8GB 笔记本 GPU），因此标为 `--`。ResNet18-LSTM 已补训 3 个种子（90.53 Macro-F1）。
+7. **Table 3 的 4 个空行**：ViT-B/16、Swin-S、TimeSformer-Base、Video Swin-S 在本机备份中没有冻结划分的 checkpoint。实测从零训练约 3 / 3 / 9.4 / 1.3 分钟每 epoch（8GB 笔记本 GPU），40 epoch 单种子需 1–6 小时，三件套全部跑完需十几小时，因此标为 `--`。ResNet18-LSTM 已补训 3 个种子（90.53 Macro-F1）。若提供 AutoDL/服务器算力，配置已备好，可直接开跑。
 
 ## 6. 完整原始预测
 

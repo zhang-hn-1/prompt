@@ -102,3 +102,4 @@
 | TimeSformer-Base | Transformer | -- | -- | -- | -- | -- | -- | 121.13M |
 | Video Swin-S | Transformer | -- | -- | -- | -- | -- | -- | 49.51M |
 | L-RDTNet | R-D-T structured | 92.43 | 92.43 | 92.39 | 92.37 | 89.93 | 98.46 | 8.37M |
+
