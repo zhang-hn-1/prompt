@@ -18,6 +18,7 @@ paper_delivery_20261116/
 
 | 文件 | 内容 | 建议位置 |
 |---|---|---|
+| `fig0_table3_comparison` | Table 3 完整对比表的渲染图（PNG+PDF） | 主结果表 |
 | `fig1_robustness_snr` | Clean + SNR 30/25/20/18/15/10 dB，4 条模型曲线 | 4.4 鲁棒性主图 |
 | `fig2_robustness_combined` | Clean + combined very light/light/medium/heavy | 4.4 鲁棒性 |
 | `fig3_robustness_weak_global` | Clean + 全局衰减 0.9/0.8/0.7/0.6 | 4.4 鲁棒性 / 弱目标分析 |
@@ -48,13 +49,15 @@ paper_delivery_20261116/
 | `tab9_record_level_cumulative` | 累计判决 1/2/3/4 段 | 连续判决补充 |
 | `tab10_short_observation` | 1/2/3 帧 + 6 帧原序/乱序，AC/P/R/F1/MCC/R0–R3 | 短观测主表 |
 | `tab11_efficiency` | 11 模型 × 14 项：Params/Size/MACs/FLOPs/GPU/CPU/AC/P/R/F1/MCC/AUC | 轻量化/推理小节 |
+| `tab12_table3_comparison` | Table 3：20 个基线与 L-RDTNet 的 AC/P/R/F1/MCC/AUC/Params 对比 | 主结果表 |
 
 表格均带 `\resizebox{\textwidth}{!}`，双栏期刊可直接 `\input{...}`；单栏需改成 `table` 或拆分。
 
 ## 4. 关键数字速查（写正文用）
 
 **Clean / 温和条件**
-- Clean Macro-F1：L-RDTNet **92.37**，R18-Transformer 90.98，R18-GRU 90.79，R(2+1)D-18 90.18，Handcrafted+XGB 82.99。
+- Clean Macro-F1：L-RDTNet **92.37**，R18-Transformer 90.98，R18-GRU 90.79，R18-LSTM 90.53，R(2+1)D-18 90.18，Handcrafted+XGB 82.99。
+- Table 3 新增基线：C3D 80.25、Swin-Tiny 85.85、ResNet18-Frame Feature Avg. 89.31（单种子）、SVM 39.70、RF 82.43。
 - L-RDTNet 在 19 个条件中 **9 个第一**：Clean、SNR30/25/20、Comb very light/light、WG0.9/0.8、WP0.9。
 
 **强扰动（必须如实写）**
@@ -85,6 +88,7 @@ paper_delivery_20261116/
 4. **M06 Frame Feature Average 只有 seed42**：混淆矩阵里该面板是单种子，其余 5 个模型是 3 种子均值。
 5. **CAM 是解释性可视化**，图注建议 “Grad-CAM on the last convolutional stage”；不要写成注意力机制的直接证据。
 6. **摘要数字**：5,194 条测试序列来自 **277 条留出记录**；**1,384 条是全数据集记录数**。若 IEEE Access 摘要仍写成“1,384 条测试记录”，务必改。
+7. **Table 3 的 4 个空行**：ViT-B/16、Swin-S、TimeSformer-Base、Video Swin-S 在本机备份中没有冻结划分的 checkpoint；从零训练每个模型需要数小时到十几小时（8GB 笔记本 GPU），因此标为 `--`。ResNet18-LSTM 已补训 3 个种子（90.53 Macro-F1）。
 
 ## 6. 完整原始预测
 
