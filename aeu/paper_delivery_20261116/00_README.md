@@ -57,7 +57,7 @@ paper_delivery_20261116/
 
 **Clean / 温和条件**
 - Clean Macro-F1：L-RDTNet **92.37**，R18-Transformer 90.98，R18-GRU 90.79，R18-LSTM 90.53，R(2+1)D-18 90.18，Handcrafted+XGB 82.99。
-- Table 3 新增基线：C3D 80.25、Swin-Tiny 85.85、Video Swin-S 86.11、Swin-S 83.97、ViT-B/16 81.14（三者均为 3 种子）、ResNet18-Frame Feature Avg. 89.31（单种子）、SVM 39.70、RF 82.43。
+- Table 3 新增基线：C3D 80.25、Swin-Tiny 85.85、Video Swin-S 86.11、Swin-S 83.97、ViT-B/16 81.14（三者均为 3 种子）、MS-RadarNet 89.80（3 种子）、ConvNeXt-Tiny 83.94（单种子）、ResNet18-Frame Feature Avg. 89.31（单种子）、SVM 39.70、RF 82.43。
 - L-RDTNet 在 19 个条件中 **9 个第一**：Clean、SNR30/25/20、Comb very light/light、WG0.9/0.8、WP0.9。
 
 **强扰动（必须如实写）**
@@ -88,8 +88,9 @@ paper_delivery_20261116/
 4. **M06 Frame Feature Average 只有 seed42**：混淆矩阵里该面板是单种子，其余 5 个模型是 3 种子均值。
 5. **CAM 是解释性可视化**，图注建议 “Grad-CAM on the last convolutional stage”；不要写成注意力机制的直接证据。
 6. **摘要数字**：5,194 条测试序列来自 **277 条留出记录**；**1,384 条是全数据集记录数**。若 IEEE Access 摘要仍写成“1,384 条测试记录”，务必改。
-7. **Table 3 的单种子行**：只有 ResNet18-Frame Feature Avg. 是 seed42 单种子（只有该权重）。ViT-B/16、Swin-S、Video Swin-S、ResNet18-LSTM、C3D、Swin-Tiny 均已补齐 3 种子。
+7. **Table 3 的单种子行**：ResNet18-Frame Feature Avg. 和 ConvNeXt-Tiny Frame Feature Avg. 是 seed42 单种子（只有这两个权重）。ViT-B/16、Swin-S、Video Swin-S、ResNet18-LSTM、C3D、Swin-Tiny、MS-RadarNet 均已补齐 3 种子。
 8. **TimeSformer-Base 未跑**：实测约 9.4 分钟/epoch（8GB 笔记本 GPU），单种子 40 epoch 超过 6 小时，表中标 `--`。配置与代码已备好，可在服务器上补跑。
+9. **BiGRU / Multi-Head Attention / TCN-k5**：代码和训练配置已实现（`models/cnn_sequence_models.py`、`configs/train_ext/resnet18_{bigru,mha,tcn_k5}_seed*.yaml`），但训练时 GPU 被同机其它 overnight 任务占用，速度降到 ~23 分钟/epoch，未能完成；GPU 空出后可直接补跑。当前表里这三个分组仍是 LSTM/GRU/TCN/Attention 各一个代表。
 
 ## 6. 完整原始预测
 
