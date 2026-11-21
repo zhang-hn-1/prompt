@@ -1,0 +1,87 @@
+{
+  "window": [
+    31,
+    130
+  ],
+  "models": [
+    "ResNet18-GRU",
+    "R18-Transformer",
+    "R(2+1)D-18",
+    "L-RDTNet"
+  ],
+  "selected": {
+    "UAV-L": {
+      "sample": "113_6",
+      "n_correct": 4,
+      "min_probability": 0.9694337248802185,
+      "predictions": {
+        "ResNet18-GRU": 0,
+        "R18-Transformer": 0,
+        "R(2+1)D-18": 0,
+        "L-RDTNet": 0
+      },
+      "probabilities": {
+        "ResNet18-GRU": 0.9710728526115417,
+        "R18-Transformer": 0.9694337248802185,
+        "R(2+1)D-18": 0.9713963866233826,
+        "L-RDTNet": 0.9938398003578186
+      }
+    },
+    "UAV-S": {
+      "sample": "302_15",
+      "n_correct": 4,
+      "min_probability": 0.9672635793685913,
+      "predictions": {
+        "ResNet18-GRU": 1,
+        "R18-Transformer": 1,
+        "R(2+1)D-18": 1,
+        "L-RDTNet": 1
+      },
+      "probabilities": {
+        "ResNet18-GRU": 0.9680400490760803,
+        "R18-Transformer": 0.9730530977249146,
+        "R(2+1)D-18": 0.9672635793685913,
+        "L-RDTNet": 0.990279495716095
+      }
+    },
+    "Bird": {
+      "sample": "522_13",
+      "n_correct": 4,
+      "min_probability": 0.9675933718681335,
+      "predictions": {
+        "ResNet18-GRU": 2,
+        "R18-Transformer": 2,
+        "R(2+1)D-18": 2,
+        "L-RDTNet": 2
+      },
+      "probabilities": {
+        "ResNet18-GRU": 0.9715566635131836,
+        "R18-Transformer": 0.9699621200561523,
+        "R(2+1)D-18": 0.9675933718681335,
+        "L-RDTNet": 0.982709527015686
+      }
+    },
+    "Balloon": {
+      "sample": "2995_3",
+      "n_correct": 4,
+      "min_probability": 0.9494824409484863,
+      "predictions": {
+        "ResNet18-GRU": 3,
+        "R18-Transformer": 3,
+        "R(2+1)D-18": 3,
+        "L-RDTNet": 3
+      },
+      "probabilities": {
+        "ResNet18-GRU": 0.9586216807365417,
+        "R18-Transformer": 0.9812270402908325,
+        "R(2+1)D-18": 0.9494824409484863,
+        "L-RDTNet": 0.9938549399375916
+      }
+    }
+  },
+  "outputs": [
+    "/media/jason/Elements SE/radar-autodl/paper_addendum_20261119/figures/visual_suite/suite_model_cam_comparison.png",
+    "/media/jason/Elements SE/radar-autodl/paper_addendum_20261119/figures/visual_suite/suite_model_cam_comparison.pdf",
+    "/media/jason/Elements SE/radar-autodl/paper_addendum_20261119/figures/visual_suite/suite_model_cam_comparison.svg"
+  ]
+}
